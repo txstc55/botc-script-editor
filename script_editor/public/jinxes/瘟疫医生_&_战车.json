@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "如果瘟疫医生死亡且说书人选择获得战车的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",
       "targets": [
         "瘟疫医生",
@@ -28,6 +31,13 @@
         "targetId": "30_lockedspace",
         "targetName": "战车"
       },
+      "rules": [
+        {
+          "sourceCharacter": "瘟疫医生",
+          "targetId": "30_lockedspace",
+          "targetName": "战车"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

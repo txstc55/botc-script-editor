@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "The Emissary receives an out-of-play good character instead of a Demon bluff.",
       "targets": [
         "密使",
@@ -28,6 +31,13 @@
         "targetId": "lilmonsta",
         "targetName": ""
       },
+      "rules": [
+        {
+          "sourceCharacter": "密使",
+          "targetId": "lilmonsta",
+          "targetName": ""
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": [
         "nested_jinx_target_id_unresolved"

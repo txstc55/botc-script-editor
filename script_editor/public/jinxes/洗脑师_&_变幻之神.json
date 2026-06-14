@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "洗脑师可以改为选择一名玩家，一名说书人和正确/错误：他明天需要“疯狂”的证明那名说书人是正确/错误之神，不然他可能被处决。",
       "targets": [
         "变幻之神",
@@ -28,6 +31,13 @@
         "targetId": "vfq5kt89",
         "targetName": "变幻之神"
       },
+      "rules": [
+        {
+          "sourceCharacter": "洗脑师",
+          "targetId": "vfq5kt89",
+          "targetName": "变幻之神"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

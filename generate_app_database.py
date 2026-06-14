@@ -370,6 +370,61 @@ def jinx_variant(row: dict[str, str], variant_index: int) -> dict[str, Any]:
   }
 
 
+def merged_jinx_variant(rows: list[dict[str, str]], variant_index: int) -> dict[str, Any]:
+  variants = [jinx_variant(row, variant_index) for row in rows]
+  first = variants[0]
+  rules = dedupe_rules([variant["rule"] for variant in variants])
+  source_teams = dedupe([variant["sourceTeam"] for variant in variants])
+  return {
+    "id": first["name"],
+    "name": first["name"],
+    "variantIndex": variant_index,
+    "team": "jinx",
+    "sourceTeam": source_teams[0] if source_teams else "jinx",
+    "sourceTeams": source_teams,
+    "ability": first["ability"],
+    "targets": dedupe([target for variant in variants for target in variant["targets"]]),
+    "targetCount": 0,
+    "occurrenceCount": sum(variant["occurrenceCount"] for variant in variants),
+    "rule": rules[0] if rules else {
+      "sourceCharacter": "",
+      "targetId": "",
+      "targetName": "",
+    },
+    "rules": rules,
+    "targetDetectionNotes": dedupe([
+      note
+      for variant in variants
+      for note in variant["targetDetectionNotes"]
+    ]),
+    "issueNotes": dedupe([
+      note
+      for variant in variants
+      for note in variant["issueNotes"]
+    ]),
+  }
+
+
+def dedupe_rules(rules: list[dict[str, str]]) -> list[dict[str, str]]:
+  seen: set[tuple[str, str, str]] = set()
+  result: list[dict[str, str]] = []
+  for rule in rules:
+    key = (
+      text(rule.get("sourceCharacter")),
+      text(rule.get("targetId")),
+      text(rule.get("targetName")),
+    )
+    if not any(key) or key in seen:
+      continue
+    seen.add(key)
+    result.append({
+      "sourceCharacter": key[0],
+      "targetId": key[1],
+      "targetName": key[2],
+    })
+  return result
+
+
 def build_jinxes(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[dict[str, Any]]]:
   grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
   issues: list[dict[str, Any]] = []
@@ -387,10 +442,15 @@ def build_jinxes(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[dict[
   total_occurrences = 0
 
   for name, group_rows in grouped.items():
+    rows_by_ability: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in group_rows:
+      rows_by_ability[text(row.get("ability"))].append(row)
     variants = [
-      jinx_variant(row, index)
-      for index, row in enumerate(group_rows, 1)
+      merged_jinx_variant(ability_rows, index)
+      for index, ability_rows in enumerate(rows_by_ability.values(), 1)
     ]
+    for variant in variants:
+      variant["targetCount"] = len(variant["targets"])
     variants = sort_variants(variants)
     occurrence_count = sum(variant["occurrenceCount"] for variant in variants)
     targets = dedupe([target for variant in variants for target in variant["targets"]])

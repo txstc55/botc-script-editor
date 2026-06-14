@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "如果食人族获得了狂热者的能力，他会得知这一信息。",
       "targets": [
         "狂热者",
@@ -28,6 +31,13 @@
         "targetId": "zealotTRANS",
         "targetName": "狂热者"
       },
+      "rules": [
+        {
+          "sourceCharacter": "食人族",
+          "targetId": "zealotTRANS",
+          "targetName": "狂热者"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

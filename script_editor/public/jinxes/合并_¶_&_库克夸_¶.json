@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "A Captain added by the Kukekua's setup ability can't be removed by the Amalgamate's setup ability.",
       "targets": [
         "库克夸 ¶",
@@ -28,6 +31,13 @@
         "targetId": "kukekua_pandorasbox",
         "targetName": "库克夸 ¶"
       },
+      "rules": [
+        {
+          "sourceCharacter": "合并 ¶",
+          "targetId": "kukekua_pandorasbox",
+          "targetName": "库克夸 ¶"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

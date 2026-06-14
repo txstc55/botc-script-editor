@@ -183,7 +183,7 @@
       "失去能力",
       "限一次"
     ],
-    "remindersGlobal": [ ],
+    "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0
   },
@@ -348,12 +348,12 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/godfather.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。",
     "id": "godfather_c",
-    "firstNightReminder": "对他展示所有在场的外来者标记。",
-    "otherNightReminder": "如果有外来者在今天白天死亡，让教父选择一名玩家。标记那名玩家死亡。",
+    "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
+    "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
     "name": "教父",
     "otherNight": 8700.0,
     "setup": 1,
@@ -437,7 +437,7 @@
     "firstNightReminder": "首个夜晚，无常要选择一名其他玩家：他得知无常在场且在第三天黎明时变成邪恶的无常。",
     "otherNightReminder": "无常可以选择一名玩家：他死亡。第三天黎明时首夜被无常选择的玩家会变成邪恶的无常。",
     "name": "无常",
-    "otherNight":  8411.0,
+    "otherNight": 8411.0,
     "setup": 1,
     "reminders": [
       "勾魂",

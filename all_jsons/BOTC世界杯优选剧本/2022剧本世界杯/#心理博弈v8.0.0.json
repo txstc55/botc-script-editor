@@ -12,7 +12,9 @@
     "name": "传教士",
     "otherNight": 7,
     "setup": 0,
-    "reminders": ["布道"],
+    "reminders": [
+      "布道"
+    ],
     "id": "preacherbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -33,7 +35,9 @@
     "otherNight": 65,
     "firstNightReminder": "指向一名邪恶玩家。随后唤醒那名因赏金猎人而转变为邪恶的镇民，并告知他变成了邪恶阵营。",
     "otherNightReminder": "如果赏金猎人知晓的邪恶玩家死亡，指向另一名邪恶玩家。",
-    "reminders": ["被得知"],
+    "reminders": [
+      "被得知"
+    ],
     "setup": 1
   },
   {
@@ -42,7 +46,10 @@
     "name": "卖花女孩",
     "otherNight": 58,
     "setup": 0,
-    "reminders": ["恶魔未投票", "恶魔已投票"],
+    "reminders": [
+      "恶魔未投票",
+      "恶魔已投票"
+    ],
     "id": "flowergirlbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -72,7 +79,9 @@
     "name": "送葬者",
     "otherNight": 56,
     "setup": 0,
-    "reminders": ["死于今日"],
+    "reminders": [
+      "死于今日"
+    ],
     "id": "undertakerbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -87,7 +96,10 @@
     "name": "旅店老板",
     "otherNight": 9,
     "setup": 0,
-    "reminders": ["不会死亡", "醉酒"],
+    "reminders": [
+      "不会死亡",
+      "醉酒"
+    ],
     "id": "innkeeperbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -102,7 +114,9 @@
     "name": "赌徒",
     "otherNight": 11,
     "setup": 0,
-    "reminders": ["死亡"],
+    "reminders": [
+      "死亡"
+    ],
     "id": "gamblerbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -117,7 +131,9 @@
     "name": "半兽人",
     "otherNight": 23,
     "setup": 0,
-    "reminders": ["死亡"],
+    "reminders": [
+      "死亡"
+    ],
     "id": "lycanthropebutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -132,7 +148,9 @@
     "name": "造谣者",
     "otherNight": 47,
     "setup": 0,
-    "reminders": ["死亡"],
+    "reminders": [
+      "死亡"
+    ],
     "id": "gossipbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -147,7 +165,9 @@
     "name": "守夜人",
     "otherNight": 66,
     "setup": 0,
-    "reminders": ["失去能力"],
+    "reminders": [
+      "失去能力"
+    ],
     "id": "nightwatchmanbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -162,7 +182,12 @@
     "name": "侍臣",
     "otherNight": 10,
     "setup": 0,
-    "reminders": ["醉酒1", "醉酒2", "醉酒3", "失去能力"],
+    "reminders": [
+      "醉酒1",
+      "醉酒2",
+      "醉酒3",
+      "失去能力"
+    ],
     "id": "courtierbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -192,7 +217,10 @@
     "name": "食人族",
     "otherNight": 0,
     "setup": 0,
-    "reminders": ["中毒", "死于处决"],
+    "reminders": [
+      "中毒",
+      "死于处决"
+    ],
     "id": "cannibalbutton",
     "edition": "custom",
     "team": "townsfolk",
@@ -207,7 +235,9 @@
     "name": "莽夫",
     "otherNight": 0,
     "setup": 0,
-    "reminders": ["醉酒"],
+    "reminders": [
+      "醉酒"
+    ],
     "id": "goonbutton",
     "edition": "custom",
     "team": "outsider",
@@ -222,7 +252,9 @@
     "name": "杂技演员",
     "otherNight": 39,
     "setup": 0,
-    "reminders": ["死亡"],
+    "reminders": [
+      "死亡"
+    ],
     "id": "acrobatbutton",
     "edition": "custom",
     "team": "outsider",
@@ -237,7 +269,9 @@
     "name": "修补匠",
     "otherNight": 48,
     "setup": 0,
-    "reminders": ["死亡"],
+    "reminders": [
+      "死亡"
+    ],
     "id": "tinkerbutton",
     "edition": "custom",
     "team": "outsider",
@@ -252,7 +286,9 @@
     "name": "月之子",
     "otherNight": 49,
     "setup": 0,
-    "reminders": ["死亡"],
+    "reminders": [
+      "死亡"
+    ],
     "id": "moonchildbutton",
     "edition": "custom",
     "team": "outsider",
@@ -262,19 +298,24 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/moonchild.png"
   },
   {
-    "firstNightReminder": "对他展示所有在场的外来者标记。",
-    "otherNightReminder": "如果有外来者在今天白天死亡，让教父选择一名玩家。标记那名玩家死亡。",
+    "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
+    "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
     "name": "教父",
     "otherNight": 38,
     "setup": 1,
-    "reminders": ["死于今日", "死亡"],
+    "reminders": [
+      "死于今日",
+      "死亡"
+    ],
     "id": "godfatherbutton",
     "edition": "custom",
     "team": "minion",
     "name_eng": "Godfather",
     "firstNight": 21,
     "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
+    "remindersGlobal": [],
+    "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。"
   },
   {
     "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
@@ -282,10 +323,14 @@
     "name": "寡妇",
     "otherNight": 0,
     "setup": 0,
-    "reminders": ["中毒"],
+    "reminders": [
+      "中毒"
+    ],
     "id": "widowbutton",
     "edition": "custom",
-    "remindersGlobal": ["被知晓"],
+    "remindersGlobal": [
+      "被知晓"
+    ],
     "team": "minion",
     "name_eng": "Widow",
     "firstNight": 18,
@@ -298,7 +343,9 @@
     "name": "投毒者",
     "otherNight": 8,
     "setup": 0,
-    "reminders": ["中毒"],
+    "reminders": [
+      "中毒"
+    ],
     "id": "poisonerbutton",
     "edition": "custom",
     "team": "minion",
@@ -328,7 +375,10 @@
     "name": "刺客",
     "otherNight": 37,
     "setup": 0,
-    "reminders": ["死亡", "失去能力"],
+    "reminders": [
+      "死亡",
+      "失去能力"
+    ],
     "id": "assassinbutton",
     "edition": "custom",
     "team": "minion",
@@ -343,7 +393,10 @@
     "name": "珀",
     "otherNight": 28,
     "setup": 0,
-    "reminders": ["死亡", "攻击三次"],
+    "reminders": [
+      "死亡",
+      "攻击三次"
+    ],
     "id": "pobutton",
     "edition": "custom",
     "team": "demon",
@@ -358,7 +411,11 @@
     "name": "亡骨魔",
     "otherNight": 32,
     "setup": 1,
-    "reminders": ["死亡", "保留能力", "中毒"],
+    "reminders": [
+      "死亡",
+      "保留能力",
+      "中毒"
+    ],
     "id": "vigormortisbutton",
     "edition": "custom",
     "team": "demon",
@@ -400,7 +457,9 @@
     "name": "圣洁之魂",
     "otherNight": 0,
     "setup": 0,
-    "reminders": ["禁止邪恶"],
+    "reminders": [
+      "禁止邪恶"
+    ],
     "remindersGlobal": [],
     "team": "fabled",
     "firstNight": 0

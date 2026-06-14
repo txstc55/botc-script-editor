@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "If the Poppy Grower is in play. Belsnickel does not see the Grimoire until the Poppy Grower dies.",
       "targets": [
         "贝尔森克",
@@ -28,6 +31,13 @@
         "targetId": "poppygrower",
         "targetName": ""
       },
+      "rules": [
+        {
+          "sourceCharacter": "贝尔森克",
+          "targetId": "poppygrower",
+          "targetName": ""
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": [
         "nested_jinx_target_id_unresolved"

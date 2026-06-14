@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "If the Dhampir's setup ability turn a Lunatic evil, the Dhampir must be in their Demon info.",
       "targets": [
         "半吸血鬼 ¶",
@@ -28,6 +31,13 @@
         "targetId": "lunatic",
         "targetName": "疯子"
       },
+      "rules": [
+        {
+          "sourceCharacter": "半吸血鬼 ¶",
+          "targetId": "lunatic",
+          "targetName": "疯子"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

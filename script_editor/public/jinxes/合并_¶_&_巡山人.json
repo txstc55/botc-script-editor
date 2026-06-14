@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "A Damsel added by the Huntsman's setup ability can't be removed by the Amalgamate's setup ability.",
       "targets": [
         "合并 ¶",
@@ -28,6 +31,13 @@
         "targetId": "huntsman",
         "targetName": "巡山人"
       },
+      "rules": [
+        {
+          "sourceCharacter": "合并 ¶",
+          "targetId": "huntsman",
+          "targetName": "巡山人"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

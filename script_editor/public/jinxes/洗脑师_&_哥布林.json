@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "洗脑师可以选择将玩家洗脑成哥布林。",
       "targets": [
         "哥布林",
@@ -28,6 +31,13 @@
         "targetId": "goblinTRANS",
         "targetName": "哥布林"
       },
+      "rules": [
+        {
+          "sourceCharacter": "洗脑师",
+          "targetId": "goblinTRANS",
+          "targetName": "哥布林"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

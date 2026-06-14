@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "卡扎力可以把士兵转变成邪恶的爪牙。",
       "targets": [
         "士兵",
@@ -28,6 +31,13 @@
         "targetId": "kazali_c",
         "targetName": "卡扎力"
       },
+      "rules": [
+        {
+          "sourceCharacter": "士兵",
+          "targetId": "kazali_c",
+          "targetName": "卡扎力"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

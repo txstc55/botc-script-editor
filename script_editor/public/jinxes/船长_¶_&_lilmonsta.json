@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "If the player holding the Lil' Monsta token dies other than to the Captain's immediate execution, they swap characters with a Minion, and that Minion is given the Lil' Monsta token tonight.",
       "targets": [
         "船长 ¶",
@@ -28,6 +31,13 @@
         "targetId": "lilmonsta",
         "targetName": ""
       },
+      "rules": [
+        {
+          "sourceCharacter": "船长 ¶",
+          "targetId": "lilmonsta",
+          "targetName": ""
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": [
         "nested_jinx_target_id_unresolved"

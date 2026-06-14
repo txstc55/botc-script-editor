@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "Assassin's ability still works on a protected player",
       "targets": [
         "圣诞天使",
@@ -28,6 +31,13 @@
         "targetId": "assassin",
         "targetName": "刺客"
       },
+      "rules": [
+        {
+          "sourceCharacter": "圣诞天使",
+          "targetId": "assassin",
+          "targetName": "刺客"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

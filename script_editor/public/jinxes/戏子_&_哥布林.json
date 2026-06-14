@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "戏子无法反转由哥布林的能力产生的胜负结果。",
       "targets": [
         "哥布林",
@@ -28,6 +31,13 @@
         "targetId": "goblinTRANS",
         "targetName": "哥布林"
       },
+      "rules": [
+        {
+          "sourceCharacter": "戏子",
+          "targetId": "goblinTRANS",
+          "targetName": "哥布林"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

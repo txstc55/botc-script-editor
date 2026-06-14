@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "无神论者在剧本中时，处决说书人导致的胜负结果不会被反转。",
       "targets": [
         "无神论者",
@@ -28,6 +31,13 @@
         "targetId": "atheistTRANS",
         "targetName": "无神论者"
       },
+      "rules": [
+        {
+          "sourceCharacter": "戏子",
+          "targetId": "atheistTRANS",
+          "targetName": "无神论者"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "If the Plague Doctor dies, a living Minion gains the Visionary ability in addition to their own ability, and learns this.",
       "targets": [
         "寻谜者 §",
@@ -28,6 +31,13 @@
         "targetId": "plaguedoctor",
         "targetName": "瘟疫医生"
       },
+      "rules": [
+        {
+          "sourceCharacter": "寻谜者 §",
+          "targetId": "plaguedoctor",
+          "targetName": "瘟疫医生"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

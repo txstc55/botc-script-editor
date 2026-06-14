@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "Riot registers as a Minion to the Prankster.",
       "targets": [
         "恶作剧者 §",
@@ -28,6 +31,13 @@
         "targetId": "riot",
         "targetName": ""
       },
+      "rules": [
+        {
+          "sourceCharacter": "恶作剧者 §",
+          "targetId": "riot",
+          "targetName": ""
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": [
         "nested_jinx_target_id_unresolved"

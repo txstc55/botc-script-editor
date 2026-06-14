@@ -1,11 +1,12 @@
-[{
-	"logo": "https://i.postimg.cc/FsTXS2js/image.png",
-	"description": "逆天剧本",
-	"author": "Cam",
-	"id": "_meta",
-	"townsfolkName": "镇民",
-	"name": "红胡子帮"
-},
+[
+  {
+    "logo": "https://i.postimg.cc/FsTXS2js/image.png",
+    "description": "逆天剧本",
+    "author": "Cam",
+    "id": "_meta",
+    "townsfolkName": "镇民",
+    "name": "红胡子帮"
+  },
   {
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
@@ -245,29 +246,33 @@
     "name": "鹰身女妖",
     "otherNight": 18,
     "setup": 0,
-    "reminders": ["疯狂", "第二名"],
+    "reminders": [
+      "疯狂",
+      "第二名"
+    ],
     "remindersGlobal": [],
     "team": "minion",
     "firstNight": 26
-  }, {
-	"ability": "会有额外的外来者在场。[+2 外来者]",
-	"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/baron.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "1_2",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "男爵",
-	"otherNight": 0,
-	"setup": 1,
-	"reminders": [],
-	"remindersGlobal": [],
-	"team": "minion",
-	"firstNight": 0
-},
+  },
   {
-    "firstNightReminder": "对他展示所有在场的外来者标记。",
-    "otherNightReminder": "如果有外来者在今天白天死亡，让教父选择一名玩家。标记那名玩家死亡。",
+    "ability": "会有额外的外来者在场。[+2 外来者]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/baron.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "1_2",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "男爵",
+    "otherNight": 0,
+    "setup": 1,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "minion",
+    "firstNight": 0
+  },
+  {
+    "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
+    "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
     "name": "教父",
     "otherNight": 38,
     "setup": 1,
@@ -281,7 +286,9 @@
     "name_eng": "Godfather",
     "firstNight": 21,
     "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
+    "remindersGlobal": [],
+    "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。"
   },
   {
     "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
@@ -351,20 +358,21 @@
     "firstNight": 0,
     "ability": "每个白天限一次，你可以杀死与你邻近的两名存活的玩家中的一名，但需要另一边那个存活的玩家同意。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gangster.png"
-  }, {
-	"ability": "场上所有外来者都是莽夫，场上可能出现多个重复的莽夫角色",
-	"image": "https://oss.gstonegames.com/data_file/clocktower/upload/1689518692_197011_1078.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "20723_8081",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "私货商人：莽夫落脚点",
-	"otherNight": 0,
-	"setup": 0,
-	"reminders": [],
-	"remindersGlobal": [],
-	"team": "fabled",
-	"firstNight": 0
-}
+  },
+  {
+    "ability": "场上所有外来者都是莽夫，场上可能出现多个重复的莽夫角色",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1689518692_197011_1078.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20723_8081",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "私货商人：莽夫落脚点",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  }
 ]

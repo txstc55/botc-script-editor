@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "An Alchemist-Dhampir's setup ability doesn't trigger.",
       "targets": [
         "半吸血鬼 ¶",
@@ -28,6 +31,13 @@
         "targetId": "alchemist",
         "targetName": ""
       },
+      "rules": [
+        {
+          "sourceCharacter": "半吸血鬼 ¶",
+          "targetId": "alchemist",
+          "targetName": ""
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": [
         "nested_jinx_target_id_unresolved"

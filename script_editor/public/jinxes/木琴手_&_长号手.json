@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "The Xylophonist learns how many times the Trombonist acts tonight even though the Xylophonist wakes first.",
       "targets": [
         "木琴手",
@@ -28,6 +31,13 @@
         "targetId": "trombonist_orchestralsuite",
         "targetName": "长号手"
       },
+      "rules": [
+        {
+          "sourceCharacter": "木琴手",
+          "targetId": "trombonist_orchestralsuite",
+          "targetName": "长号手"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

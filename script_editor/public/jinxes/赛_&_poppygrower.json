@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "On the 1st night Schai makes their choices without seeing the Grimoire. When the Poppy Grower dies, the Schai sees the Grimoire and may choose again.",
       "targets": [
         "赛",
@@ -28,6 +31,13 @@
         "targetId": "poppygrower",
         "targetName": ""
       },
+      "rules": [
+        {
+          "sourceCharacter": "赛",
+          "targetId": "poppygrower",
+          "targetName": ""
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": [
         "nested_jinx_target_id_unresolved"

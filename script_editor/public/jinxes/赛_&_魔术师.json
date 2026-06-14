@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "When the Schai sees the Grimoire, the Minions and Magician's character tokens are removed.",
       "targets": [
         "赛",
@@ -28,6 +31,13 @@
         "targetId": "magician",
         "targetName": "魔术师"
       },
+      "rules": [
+        {
+          "sourceCharacter": "赛",
+          "targetId": "magician",
+          "targetName": "魔术师"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

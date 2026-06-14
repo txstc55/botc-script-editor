@@ -18,6 +18,14 @@ SETUP_RE = re.compile(
 )
 
 
+def json_paths(input_dir: Path) -> list[Path]:
+  return sorted(
+    path
+    for path in input_dir.rglob("*")
+    if path.is_file() and path.suffix.lower() == ".json"
+  )
+
+
 def clean_text(value: object) -> str:
   if value is None:
     return ""
@@ -123,7 +131,7 @@ def main() -> int:
   total_counts: Counter[str] = Counter()
   changed_files = 0
 
-  for path in sorted(input_dir.rglob("*.json")):
+  for path in json_paths(input_dir):
     counts = fix_file(path, args.dry_run)
     if counts:
       changed_files += 1

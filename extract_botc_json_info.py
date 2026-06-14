@@ -183,6 +183,14 @@ def split_joined(value: str) -> set[str]:
   return {part.strip() for part in value.split(JOINER) if part.strip()}
 
 
+def json_paths(input_dir: Path) -> list[Path]:
+  return sorted(
+    path
+    for path in input_dir.rglob("*")
+    if path.is_file() and path.suffix.lower() == ".json"
+  )
+
+
 def merge_joined_values(left: str, right: str) -> str:
   values = split_joined(left) | split_joined(right)
   return JOINER.join(sorted(values))
@@ -290,7 +298,7 @@ def load_scripts(input_dir: Path, fetch_url_files: bool) -> tuple[list[ScriptDat
   scripts: list[ScriptData] = []
   issues: list[dict[str, str]] = []
 
-  for path in sorted(input_dir.rglob("*.json")):
+  for path in json_paths(input_dir):
     rel_path = path.relative_to(input_dir.parent).as_posix()
     try:
       data, issue = read_json_file(path, fetch_url_files)

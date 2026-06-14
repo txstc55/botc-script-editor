@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "If the Schai is (or has been) in play, the Damsel is poisoned.",
       "targets": [
         "赛",
@@ -28,6 +31,13 @@
         "targetId": "damsel",
         "targetName": "落难少女"
       },
+      "rules": [
+        {
+          "sourceCharacter": "赛",
+          "targetId": "damsel",
+          "targetName": "落难少女"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

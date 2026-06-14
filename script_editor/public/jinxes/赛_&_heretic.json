@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "Only 1 jinxed character can be in play.",
       "targets": [
         "赛",
@@ -28,6 +31,13 @@
         "targetId": "heretic",
         "targetName": ""
       },
+      "rules": [
+        {
+          "sourceCharacter": "赛",
+          "targetId": "heretic",
+          "targetName": ""
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": [
         "nested_jinx_target_id_unresolved"

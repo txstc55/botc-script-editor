@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "The Kazali can't choose the Monarch to become a Minion if a Royalist is in play.",
       "targets": [
         "保皇派 ¶",
@@ -28,6 +31,13 @@
         "targetId": "kazali",
         "targetName": "卡扎力"
       },
+      "rules": [
+        {
+          "sourceCharacter": "保皇派 ¶",
+          "targetId": "kazali",
+          "targetName": "卡扎力"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

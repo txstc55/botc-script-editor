@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "If the Exorcist chooses the Schai, the Schai ability does not kill tonight.",
       "targets": [
         "赛",
@@ -28,6 +31,13 @@
         "targetId": "exorcist",
         "targetName": "驱魔人"
       },
+      "rules": [
+        {
+          "sourceCharacter": "赛",
+          "targetId": "exorcist",
+          "targetName": "驱魔人"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

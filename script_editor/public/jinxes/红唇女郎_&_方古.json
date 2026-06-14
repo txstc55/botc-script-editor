@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "如果方古成功转化了外来者并因此死去，红唇女郎不会变成方古。",
       "targets": [
         "方古",
@@ -28,6 +31,13 @@
         "targetId": "fang_gu_c",
         "targetName": "方古"
       },
+      "rules": [
+        {
+          "sourceCharacter": "红唇女郎",
+          "targetId": "fang_gu_c",
+          "targetName": "方古"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     },
@@ -37,6 +47,9 @@
       "variantIndex": 2,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "如果即将出现两名存活的恶魔，其中之一是由红唇女郎转变的，红唇女郎不会变成恶魔。",
       "targets": [
         "红唇女郎",
@@ -49,6 +62,13 @@
         "targetId": "fanggu_b",
         "targetName": "方古"
       },
+      "rules": [
+        {
+          "sourceCharacter": "红唇女郎",
+          "targetId": "fanggu_b",
+          "targetName": "方古"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

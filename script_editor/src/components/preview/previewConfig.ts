@@ -62,6 +62,9 @@ export const PREVIEW_CANVAS_BOTTOM_SAFE_SPACE = 220;
 export const PREVIEW_MIN_ZOOM = 0.45;
 export const PREVIEW_MAX_ZOOM = 3;
 export const PREVIEW_WHEEL_ZOOM_SPEED = 0.0015;
+export const PREVIEW_ZOOM_SMOOTHING = 0.22;
+export const PREVIEW_ZOOM_SETTLE_EPSILON = 0.001;
+export const PREVIEW_PAN_SETTLE_EPSILON = 0.25;
 
 export const teamColors: Record<ScriptColorKey, string> = {
   townsfolk: "rgb(14, 127, 207)",

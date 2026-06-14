@@ -17,6 +17,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "Only 1 jinxed character can be in play.",
       "targets": [
         "秘密圣诞老人",
@@ -30,6 +33,13 @@
         "targetId": "widow",
         "targetName": "寡妇"
       },
+      "rules": [
+        {
+          "sourceCharacter": "秘密圣诞老人",
+          "targetId": "widow",
+          "targetName": "寡妇"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

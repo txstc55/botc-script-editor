@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "The Demon cannot have the Amalgamate ability.",
       "targets": [
         "合并 ¶",
@@ -28,6 +31,13 @@
         "targetId": "boffin",
         "targetName": "科学怪人"
       },
+      "rules": [
+        {
+          "sourceCharacter": "合并 ¶",
+          "targetId": "boffin",
+          "targetName": "科学怪人"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "如果说书人本应获得镜像双子的能力，改为一名玩家会变成镜像双子。",
       "targets": [
         "瘟疫医生",
@@ -28,6 +31,13 @@
         "targetId": "eviltwin_b",
         "targetName": "镜像双子"
       },
+      "rules": [
+        {
+          "sourceCharacter": "瘟疫医生",
+          "targetId": "eviltwin_b",
+          "targetName": "镜像双子"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

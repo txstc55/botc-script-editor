@@ -1,6 +1,7 @@
 # Agent Notes
 
 - Python files in this project use 2-space indentation.
+- Before running general JSON normalization, run `python3 character_fixes.py` to apply targeted canonical character fixes.
 - Before regenerating extraction CSVs, run `python3 fixing_json.py` to normalize known JSON data issues.
 - `fixing_json.py` should make targeted, minimal edits to source JSON files. Do not reserialize whole JSON files unless a broader cleanup is explicitly requested.
 - `extract_botc_json_info.py` emits separate CSVs for character variants and jinx/interaction-rule variants. Raw ids and source locations do not define variants.
@@ -18,5 +19,6 @@
 - Character JSON files are grouped by `name` inside each team folder. Each file has a `variants` array sorted by descending `occurrenceCount`.
 - Generated app database filenames should stay human-readable and should not include hash suffixes. Replace path-hostile reserved characters with fullwidth equivalents instead.
 - App jinx database output lives under `script_editor/public/jinxes`. Nested jinx rows are normalized into ordinary `team: "jinx"` records while preserving their original `sourceTeam`.
+- App jinx database variants are de-duplicated by `name + ability`; targets, source teams, rules, occurrence counts, and notes are merged.
 - Jinx target strings from CSV `||` separators must be converted into arrays. For nested jinxes, both the source character and target character/id should be included in `targets`.
 - The app is intended for Chinese users; prefer Chinese UI labels and user-facing strings unless a source value is intentionally non-Chinese.

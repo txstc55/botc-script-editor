@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "If the Vizier loses their ability, they learn this. If the Vizier is executed while they have their ability, their team wins.",
       "targets": [
         "恶作剧者 §",
@@ -28,6 +31,13 @@
         "targetId": "vizier",
         "targetName": ""
       },
+      "rules": [
+        {
+          "sourceCharacter": "恶作剧者 §",
+          "targetId": "vizier",
+          "targetName": ""
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": [
         "nested_jinx_target_id_unresolved"

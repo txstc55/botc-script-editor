@@ -16,6 +16,9 @@
       "variantIndex": 1,
       "team": "jinx",
       "sourceTeam": "nested jinx",
+      "sourceTeams": [
+        "nested jinx"
+      ],
       "ability": "Only 1 jinxed character can be in play.",
       "targets": [
         "贝尔森克",
@@ -28,6 +31,13 @@
         "targetId": "damsel",
         "targetName": "落难少女"
       },
+      "rules": [
+        {
+          "sourceCharacter": "贝尔森克",
+          "targetId": "damsel",
+          "targetName": "落难少女"
+        }
+      ],
       "targetDetectionNotes": [],
       "issueNotes": []
     }

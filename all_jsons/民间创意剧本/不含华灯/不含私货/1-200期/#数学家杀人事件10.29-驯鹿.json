@@ -116,23 +116,23 @@
     "team": "townsfolk",
     "firstNight": 3090
   },
-   {
-        "id": "zajiyanyuan",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
-        "edition": "custom",
-        "name": "杂技演员",
-        "ability": "每个夜晚*，你要选择一名玩家：如果当晚他醉酒或中毒，你死亡。",
-        "team": "townsfolk",
-        "sch_team": "镇民",
-        "firstNight": 0,
-        "otherNight": 30,
-        "firstNightReminder": "",
-        "otherNightReminder": "唤醒杂技演员，让他选择一名玩家，如果当晚他醉酒或中毒，杂技演员死亡。",
-        "reminders": [
-            "死亡"
-        ],
-        "setup": 0
-    },
+  {
+    "id": "zajiyanyuan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
+    "edition": "custom",
+    "name": "杂技演员",
+    "ability": "每个夜晚*，你要选择一名玩家：如果当晚他醉酒或中毒，你死亡。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 30,
+    "firstNightReminder": "",
+    "otherNightReminder": "唤醒杂技演员，让他选择一名玩家，如果当晚他醉酒或中毒，杂技演员死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "setup": 0
+  },
   {
     "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gambler.png",
@@ -226,10 +226,12 @@
     "edition": "custom",
     "firstNight": 3110,
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
-    "otherNight":160,
+    "otherNight": 160,
     "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [],
-    "remindersGlobal": ["未正常生效"],
+    "remindersGlobal": [
+      "未正常生效"
+    ],
     "setup": 0,
     "name": "数学家",
     "team": "townsfolk",
@@ -294,7 +296,7 @@
     "firstNightReminder": "",
     "otherNightReminder": "如果月之子在白天触发了死亡能力并选择了一名善良玩家，该玩家死亡。标记那名玩家死亡。",
     "name": "月之子",
-    "otherNight":100,
+    "otherNight": 100,
     "setup": 0,
     "reminders": [
       "死亡"
@@ -330,7 +332,7 @@
     "firstNightReminder": "",
     "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
     "name": "红唇女郎",
-    "otherNight":40,
+    "otherNight": 40,
     "setup": 0,
     "reminders": [],
     "remindersGlobal": [
@@ -341,12 +343,12 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/godfather.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。",
     "id": "godfatherbutton",
-    "firstNightReminder": "对他展示所有在场的外来者标记。",
-    "otherNightReminder": "如果有外来者在今天白天死亡，让教父选择一名玩家。标记那名玩家死亡。",
+    "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
+    "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
     "name": "教父",
     "otherNight": 90,
     "setup": 1,
@@ -359,21 +361,23 @@
     "firstNight": 3020
   },
   {
-        "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
-        "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
-        "edition": "custom",
-        "flavor": "",
-        "id": "Boffin_button",
-        "firstNightReminder": "唤醒科学怪人，向他展示恶魔获得的能力的对应的角色标记。",
-        "otherNightReminder": "",
-        "name": "科学怪人",
-        "otherNight": 0,
-        "firstNight": 1900,
-        "setup": 0,
-        "reminders": [ "获得能力"],
-        "remindersGlobal": [],
-        "team": "minion"
-    },
+    "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "Boffin_button",
+    "firstNightReminder": "唤醒科学怪人，向他展示恶魔获得的能力的对应的角色标记。",
+    "otherNightReminder": "",
+    "name": "科学怪人",
+    "otherNight": 0,
+    "firstNight": 1900,
+    "setup": 0,
+    "reminders": [
+      "获得能力"
+    ],
+    "remindersGlobal": [],
+    "team": "minion"
+  },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/imp.png",
