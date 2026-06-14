@@ -1,0 +1,35 @@
+{
+  "id": "狱警",
+  "name": "狱警",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "狱警",
+      "name": "狱警",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你要选择一名存活玩家：如果你上个夜晚也选择了他，他死亡。如果你选中了镇民，他会得知自己被狱警选中，且当晚不会因其自身能力而被唤醒。",
+      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/3_bundagee_inn_massacre_bigyellowfish.png",
+      "firstNight": 16,
+      "firstNightReminder": "狱警指向一名玩家，标记“无法行动”，如果他是镇民，唤醒那名玩家并告知狱警选择了他，且他无法行动。如果他已经有“无法行动”标记，移除“无法行动”并标记“死亡”。",
+      "otherNight": 15,
+      "otherNightReminder": "狱警指向一名玩家，标记“无法行动”，如果他是镇民，唤醒那名玩家并告知狱警选择了他，且他无法行动。如果他已经有“无法行动”标记，移除“无法行动”并标记“死亡”。",
+      "reminders": [
+        "无法行动",
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我只想知道你在2点到4点之间在什么地方。如果你对我撒谎，我会让你好好认识一下这个电话簿（用电话簿疯狂拷打）",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

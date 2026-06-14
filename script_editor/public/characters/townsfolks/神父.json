@@ -1,0 +1,55 @@
+{
+  "id": "神父",
+  "name": "神父",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "神父",
+      "name": "神父",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，选择一名你未选择过的玩家：如果你能猜出他的角色，而恶魔不能，你便可以再选择一名玩家并得知他是不是恶魔。 （如果恶魔是悲剧演员，由爪牙代替恶魔进行猜测）",
+      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/11_xiudao111.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 18,
+      "otherNightReminder": "神父指向一名玩家，并猜测该玩家的角色。如果神父猜测正确，唤醒一个恶魔，并让恶魔猜测该玩家的角色，如果恶魔猜测错误，唤醒神父并让他指向一名玩家，告知他该玩家是不是恶魔。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "神父",
+      "name": "神父",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你可以选择一名玩家：他的所有印记会被净化，且当晚不会获得印记。",
+      "image": "https://i.postimg.cc/Ss7HBn8W/Photo5.png",
+      "firstNight": 11,
+      "firstNightReminder": "让神父选择一名玩家。标记那名玩家“净化”。",
+      "otherNight": 3,
+      "otherNightReminder": "让神父选择一名玩家。标记那名玩家“净化”。",
+      "reminders": [
+        "净化"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

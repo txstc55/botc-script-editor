@@ -1,0 +1,83 @@
+{
+  "id": "异教徒",
+  "name": "异教徒",
+  "team": "outsider",
+  "teamLabelZh": "外来者",
+  "folder": "outsiders",
+  "variantCount": 3,
+  "totalOccurrenceCount": 4,
+  "variants": [
+    {
+      "id": "异教徒",
+      "name": "异教徒",
+      "variantIndex": 1,
+      "team": "outsider",
+      "teams": [
+        "outsider"
+      ],
+      "ability": "一名邪恶玩家知道你是异教徒，如果他死于处决，你加入邪恶阵营。",
+      "image": "https://www.bloodstar.xyz/p/meiosis/clockparadox/23_clockparadox.png",
+      "firstNight": 2500,
+      "firstNightReminder": "唤醒一名邪恶玩家，对他指向异教徒玩家，并展示异教徒角色标记。",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [
+        "教主",
+        "邪恶"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 2,
+      "notes": []
+    },
+    {
+      "id": "异教徒",
+      "name": "异教徒",
+      "variantIndex": 2,
+      "team": "outsider",
+      "teams": [
+        "outsider"
+      ],
+      "ability": "你拥有一个镇民角色的能力，如果这个镇民在场，他醉酒。如果你'疯狂'地证明你是异教徒，部分异教徒可能会死亡。［+0~2异教徒］",
+      "image": "https://www.bloodstar.xyz/p/Dela/REDACTED/cultist_redacted.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [
+        "是异教徒",
+        "醉酒"
+      ],
+      "setup": 1,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "异教徒",
+      "name": "异教徒",
+      "variantIndex": 3,
+      "team": "outsider",
+      "teams": [
+        "outsider"
+      ],
+      "ability": "如果没有外来者存活，当晚除3名玩家以外的其他玩家全部死亡，即使你已死亡。",
+      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/cultist_the_last_cull__.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 14,
+      "otherNightReminder": "If the Cultist has the \"Apocalypse\" reminder, mark 3 players with the \"Survives\" reminder. That night, every player who doesn't have the \"Survives\" reminder dies. If only 3 players live, remove the Cultist's \"Apocalypse\" reminder token. Remember that the Cultist keeps this ability even after dying.",
+      "reminders": [
+        "劫后余生",
+        "启示录"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "The ritual is too far gone to prevent it anymore. All I can do is warn those in it's wake.",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

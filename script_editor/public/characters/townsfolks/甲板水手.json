@@ -1,0 +1,35 @@
+{
+  "id": "甲板水手",
+  "name": "甲板水手",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "甲板水手",
+      "name": "甲板水手",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你会得知一个在场角色。如果你得知的角色死于处决，当晚你会得知一个与之前不同阵营的在场角色。",
+      "image": "[\"https://i.postimg.cc/d3TTdC3d/image.png\"]",
+      "firstNight": 28,
+      "firstNightReminder": "Show an in-play character token. :reminder:",
+      "otherNight": 12,
+      "otherNightReminder": "If the previously known character was executed and died today, show an in-play character token of a differing alignment. :reminder:",
+      "reminders": [
+        "得知",
+        "死于处决"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

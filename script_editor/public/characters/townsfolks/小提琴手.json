@@ -1,0 +1,57 @@
+{
+  "id": "小提琴手",
+  "name": "小提琴手",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "小提琴手",
+      "name": "小提琴手",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个白天，你可以私下回答说书人一个是非问题：如果你答对，一名与你阵营相同的玩家额外行动一次直到下个黄昏。",
+      "image": "https://www.bloodstar.xyz/p/LumiousGaming/OrchestralSuite/violinist_orchestralsuite.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 3,
+      "otherNightReminder": "Text",
+      "reminders": [
+        "额外行动一次"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "小提琴手",
+      "name": "小提琴手",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你会得知一个在场角色，并且你会得知你到那个在场角色最近距离之间有多少名邪恶玩家。（邻座玩家距离为1）",
+      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/violinist1_the_last_cull__.png",
+      "firstNight": 3022,
+      "firstNightReminder": "Show the Violinist the character token of the player marked \"Known\". Count which direction between this character and the Violinist has the least steps. Then count how many evil players are between the Violinist and that character in this direction. Show fingers (1, 2 etc.) equaling the number of evil players you counted.",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [
+        "得知"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "Do you hear that? The higher notes in your deeper notes. No, that's a good thing, lean into it. From the top!",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

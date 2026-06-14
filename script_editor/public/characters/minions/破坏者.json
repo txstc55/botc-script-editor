@@ -1,0 +1,83 @@
+{
+  "id": "破坏者",
+  "name": "破坏者",
+  "team": "minion",
+  "teamLabelZh": "爪牙",
+  "folder": "minions",
+  "variantCount": 3,
+  "totalOccurrenceCount": 3,
+  "variants": [
+    {
+      "id": "破坏者",
+      "name": "破坏者",
+      "variantIndex": 1,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个白天，如果你首次在提名中投票，此次投票无效。如果小于等于4名玩家存活，你失去此能力。",
+      "image": "[\"https://i.postimg.cc/HLjyyKb1/image.png\"]",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [
+        "失去能力",
+        "将要处决",
+        "阻止处决"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "Cheap rope. Low thread-count, easily tampered with. It's a surprise anyone dies by hanging around here.",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "破坏者",
+      "name": "破坏者",
+      "variantIndex": 2,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚*，你要选择一名存活玩家：他随时可能死亡。恶魔会得知你是谁，以及你在夜晚选择了谁。",
+      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/saboteur_beyondgoodandevilv3.png",
+      "firstNight": 47,
+      "firstNightReminder": "向恶魔展示破坏者的角色标记，并指向破坏者玩家。",
+      "otherNight": 10,
+      "otherNightReminder": "让破坏者指向一名存活玩家。标记玩家“倒计时”，该玩家随时可能死亡。向恶魔展示“倒计时”提示标记，然后指向被标记的玩家。",
+      "reminders": [
+        "倒计时",
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "Green wire to red? Or is it green to black? And the clock doesn't seem to ever read the right time... Oh well! Who doesn't love surprises?",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "破坏者",
+      "name": "破坏者",
+      "variantIndex": 3,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择一名玩家和两个角色：如果他明天白天'疯狂'证明你选择的两个角色或破坏者在场，他可能会被处决。",
+      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/saboteur_echoes_of_the_past.png",
+      "firstNight": 3015,
+      "firstNightReminder": "Wake the Saboteur. They will choose a player. Mark that player with the Saboteur's MAD reminder. Then, put the Saboteur to sleep. Wake the Saboteur's target & notify them that they have been selected, and point to the two characters that the Saboteur selected on their character sheet. Then, put that player to sleep.",
+      "otherNight": 5,
+      "otherNightReminder": "Wake the Saboteur. They will choose a player. Mark that player with the Saboteur's MAD reminder. Then, put the Saboteur to sleep. Wake the Saboteur's target & notify them that they have been selected, and point to the two characters that the Saboteur selected on their character sheet. Then, put that player to sleep.",
+      "reminders": [
+        "疯狂"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "Knock out the base, and everything comes crumbling down.",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

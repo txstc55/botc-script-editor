@@ -1,0 +1,57 @@
+{
+  "id": "科学家",
+  "name": "科学家",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "科学家",
+      "name": "科学家",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，如果死亡的玩家大于或等于存活的玩家数量，你可以选择一名死亡玩家：如果他不是外来者，他复活。",
+      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/9_blackout.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 19,
+      "otherNightReminder": "唤醒科学家，如果他决定对死亡玩家使用技能，标记复活。随后唤醒科学家复活的人并告知阵营与不能讲话。",
+      "reminders": [
+        "复活"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "科学家",
+      "name": "科学家",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你会得知一条关于恶魔的信息。每个夜晚*，如果这条信息是正确的，你死亡。",
+      "image": "https://i.postimg.cc/qRChgH7v/image.png",
+      "firstNight": 37,
+      "firstNightReminder": "展示一条关于恶魔的信息。",
+      "otherNight": 17,
+      "otherNightReminder": "如果科学家得知的信息是正确的，标记科学家死亡。",
+      "reminders": [
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

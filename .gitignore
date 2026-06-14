@@ -1,0 +1,18 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Generated CSV exports are reproducible from the scripts.
+*.csv
+
+# Node/Vite outputs.
+script_editor/node_modules/
+script_editor/dist/
+script_editor/.vite/
+
+# Tauri/Rust build outputs.
+script_editor/src-tauri/target/
+
+# Local environment files.
+.env
+.env.*

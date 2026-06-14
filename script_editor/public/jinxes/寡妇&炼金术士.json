@@ -1,0 +1,56 @@
+{
+  "id": "寡妇&炼金术士",
+  "name": "寡妇&炼金术士",
+  "team": "jinx",
+  "targets": [
+    "炼金术士",
+    "寡妇"
+  ],
+  "targetCount": 2,
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "寡妇&炼金术士",
+      "name": "寡妇&炼金术士",
+      "variantIndex": 1,
+      "team": "jinx",
+      "sourceTeam": "jinx",
+      "ability": "如果炼金术士获得了寡妇的能力，他无法查看魔典。(炼金术士仍然需要选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。）",
+      "targets": [
+        "炼金术士",
+        "寡妇"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "",
+        "targetId": "",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": []
+    },
+    {
+      "id": "寡妇&炼金术士",
+      "name": "寡妇&炼金术士",
+      "variantIndex": 2,
+      "team": "jinx",
+      "sourceTeam": "jinx",
+      "ability": "炼金术士无法获得寡妇的能力。",
+      "targets": [
+        "炼金术士",
+        "寡妇"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "",
+        "targetId": "",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": []
+    }
+  ]
+}

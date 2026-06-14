@@ -1,0 +1,37 @@
+{
+  "id": "毒瘴魔 § & alchemist",
+  "name": "毒瘴魔 § & alchemist",
+  "team": "jinx",
+  "targets": [
+    "毒瘴魔 §",
+    "alchemist"
+  ],
+  "targetCount": 2,
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "毒瘴魔 § & alchemist",
+      "name": "毒瘴魔 § & alchemist",
+      "variantIndex": 1,
+      "team": "jinx",
+      "sourceTeam": "nested jinx",
+      "ability": "If the Alchemist has the Miasma ability, they are safe from themselves.",
+      "targets": [
+        "毒瘴魔 §",
+        "alchemist"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "毒瘴魔 §",
+        "targetId": "alchemist",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": [
+        "nested_jinx_target_id_unresolved"
+      ]
+    }
+  ]
+}

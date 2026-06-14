@@ -1,0 +1,59 @@
+{
+  "id": "药师",
+  "name": "药师",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "药师",
+      "name": "药师",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，你要选择一名玩家：移除他受到的醉酒和中毒影响。如果你两次选择同一名清醒健康的玩家：他死亡。你的能力对恶魔无效。",
+      "image": "https://www.helloimg.com/i/2024/10/31/67238896b041c.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 65,
+      "otherNightReminder": "唤醒药师，让药师选择一名玩家，将这名玩家的“醉酒”与“中毒”标记移除。如果是第二次选择这名玩家，他死亡。",
+      "reminders": [
+        "死亡",
+        "选择过"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "药师",
+      "name": "药师",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你要选择两名玩家：一名玩家健康清醒且恶魔的负面能力对他无效，另一名玩家醉酒，直至下个黄昏。",
+      "image": "https://i.postimg.cc/FHkDXzrJ/overdose.png",
+      "firstNight": 11,
+      "firstNightReminder": "唤醒药师，让他指向两名玩家。为其中一名玩家放置保护标记，为另一名玩家放置醉酒标记。",
+      "otherNight": 2,
+      "otherNightReminder": "移除所有标记。唤醒药师，让他指向两名玩家。为其中一名玩家放置保护标记，为另一名玩家放置醉酒标记。",
+      "reminders": [
+        "保护",
+        "醉酒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "召唤师&侍臣",
+  "name": "召唤师&侍臣",
+  "team": "jinx",
+  "targets": [
+    "侍臣",
+    "召唤师"
+  ],
+  "targetCount": 2,
+  "variantCount": 2,
+  "totalOccurrenceCount": 3,
+  "variants": [
+    {
+      "id": "召唤师&侍臣",
+      "name": "召唤师&侍臣",
+      "variantIndex": 1,
+      "team": "jinx",
+      "sourceTeam": "jinx",
+      "ability": "如果召唤师因为侍臣的能力在第三个夜晚醉酒，由召唤师来选择创造哪种恶魔，由说书人来决定哪名玩家发生转变。",
+      "targets": [
+        "侍臣",
+        "召唤师"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 2,
+      "rule": {
+        "sourceCharacter": "",
+        "targetId": "",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": []
+    },
+    {
+      "id": "召唤师&侍臣",
+      "name": "召唤师&侍臣",
+      "variantIndex": 2,
+      "team": "jinx",
+      "sourceTeam": "jinx",
+      "ability": "如果存活的召唤师失去能力，说书人会获得召唤师的能力。",
+      "targets": [
+        "召唤师",
+        "侍臣"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "",
+        "targetId": "",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": []
+    }
+  ]
+}

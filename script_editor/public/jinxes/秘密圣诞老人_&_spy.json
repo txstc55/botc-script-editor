@@ -1,0 +1,39 @@
+{
+  "id": "秘密圣诞老人 & spy",
+  "name": "秘密圣诞老人 & spy",
+  "team": "jinx",
+  "targets": [
+    "秘密圣诞老人",
+    "圣诞老人",
+    "spy"
+  ],
+  "targetCount": 3,
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "秘密圣诞老人 & spy",
+      "name": "秘密圣诞老人 & spy",
+      "variantIndex": 1,
+      "team": "jinx",
+      "sourceTeam": "nested jinx",
+      "ability": "Only 1 jinxed character can be in play.",
+      "targets": [
+        "秘密圣诞老人",
+        "圣诞老人",
+        "spy"
+      ],
+      "targetCount": 3,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "秘密圣诞老人",
+        "targetId": "spy",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": [
+        "nested_jinx_target_id_unresolved"
+      ]
+    }
+  ]
+}

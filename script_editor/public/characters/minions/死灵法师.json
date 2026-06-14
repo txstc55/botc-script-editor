@@ -1,0 +1,106 @@
+{
+  "id": "死灵法师",
+  "name": "死灵法师",
+  "team": "minion",
+  "teamLabelZh": "爪牙",
+  "folder": "minions",
+  "variantCount": 4,
+  "totalOccurrenceCount": 5,
+  "variants": [
+    {
+      "id": "死灵法师",
+      "name": "死灵法师",
+      "variantIndex": 1,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会被当作存活且以为自己拥有能力，但其实没有。",
+      "image": "https://www.bloodstar.xyz/p/jc3635/Satellite/4_satellite.png",
+      "firstNight": 3400,
+      "firstNightReminder": "如果死灵法师没有使用过能力，唤醒他并询问他是否发动能力，如果他选择发动，让他选择一名玩家，在该玩家旁放置以为存活标记。并给在死灵法师旁放置失去能力标记。",
+      "otherNight": 60,
+      "otherNightReminder": "如果死灵法师没有使用过能力，唤醒他并询问他是否发动能力，如果他选择发动，让他选择一名玩家，在该玩家旁放置以为存活标记。并给在死灵法师旁放置失去能力标记。",
+      "reminders": [
+        "以为存活",
+        "失去能力"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 2,
+      "notes": []
+    },
+    {
+      "id": "死灵法师",
+      "name": "死灵法师",
+      "variantIndex": 2,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "如果恶魔死于处决，他保留能力且游戏不会结束。提名恶魔的玩家会在当晚加入邪恶。",
+      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/19_blackout.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 6,
+      "otherNightReminder": "唤醒提名恶魔的玩家，告诉他加入了邪恶。",
+      "reminders": [
+        "保留能力",
+        "提名"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "死灵法师",
+      "name": "死灵法师",
+      "variantIndex": 3,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "如果你的咒语被施放，一名死亡的玩家可能会复活。你降下诅咒时不会消耗投票标记。",
+      "image": "https://www.bloodstar.xyz/p/twf07wfz/TheWizardsMeetRework/necromancer_thewizardsmeetrework.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 16,
+      "otherNightReminder": "If the Necromancer has a \"Cast\" or \"Dud\" token, you can resurrect a dead player and place the \"Resurrected\" token on them. If the Necromancer is dead, place the \"Free Curse\" token on them.",
+      "reminders": [
+        "复活"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "死灵法师",
+      "name": "死灵法师",
+      "variantIndex": 4,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每局游戏限一次，在夜晚时*，你可以选择除恶魔以外的一名死亡的玩家：他复活。如果他是外来者，他转变为邪恶阵营。",
+      "image": "https://i.postimg.cc/dVsK0R07/image.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 16,
+      "otherNightReminder": "死灵法师可以选择除恶魔以外的一名死亡的玩家。如果他这么做了，标记死灵法师失去能力，标记该玩家复活，如果该玩家是外来者，唤醒该玩家，用拇指向下代表他阵营变为邪恶。",
+      "reminders": [
+        "复活",
+        "转变为邪恶阵营"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

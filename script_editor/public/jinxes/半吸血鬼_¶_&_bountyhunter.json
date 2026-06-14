@@ -1,0 +1,37 @@
+{
+  "id": "半吸血鬼 ¶ & bountyhunter",
+  "name": "半吸血鬼 ¶ & bountyhunter",
+  "team": "jinx",
+  "targets": [
+    "半吸血鬼 ¶",
+    "bountyhunter"
+  ],
+  "targetCount": 2,
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "半吸血鬼 ¶ & bountyhunter",
+      "name": "半吸血鬼 ¶ & bountyhunter",
+      "variantIndex": 1,
+      "team": "jinx",
+      "sourceTeam": "nested jinx",
+      "ability": "If both setup abilities would turn a player evil, only the Dhampir's does instead.",
+      "targets": [
+        "半吸血鬼 ¶",
+        "bountyhunter"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "半吸血鬼 ¶",
+        "targetId": "bountyhunter",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": [
+        "nested_jinx_target_id_unresolved"
+      ]
+    }
+  ]
+}

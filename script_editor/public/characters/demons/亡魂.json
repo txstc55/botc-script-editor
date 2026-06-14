@@ -1,0 +1,35 @@
+{
+  "id": "亡魂",
+  "name": "亡魂",
+  "team": "demon",
+  "teamLabelZh": "恶魔",
+  "folder": "demons",
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "亡魂",
+      "name": "亡魂",
+      "variantIndex": 1,
+      "team": "demon",
+      "teams": [
+        "demon"
+      ],
+      "ability": "每个夜晚*，你要选择一名玩家：他死亡。每个夜晚，如果没有玩家将要死亡，你要选择一名玩家：他中毒且上一个中毒的玩家死亡。",
+      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/wraith_echoes_of_the_past.png",
+      "firstNight": 3014,
+      "firstNightReminder": "Wake the Wraith. They will choose a player. Mark that player with the Wraith's POISONED reminder token. Put the Wraith to sleep.",
+      "otherNight": 16,
+      "otherNightReminder": "Wake the Wraith. They will choose a player. That player dies - mark them with the Wraith's DEAD reminder token. Then, put the Wraith to sleep. If nobody has died tonight, even after that, wake the Wraith again & show them the \"This Character Chose You\" card followed by their own token, then prompt them with the \"Make a Choice\" card. They choose a player to poison. The previously poisoned player dies: Mark them with the Wraith's DEAD reminder token. Then, put the Wraith to sleep.",
+      "reminders": [
+        "中毒",
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "*even more ghost noises*",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

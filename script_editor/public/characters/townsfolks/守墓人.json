@@ -1,0 +1,59 @@
+{
+  "id": "守墓人",
+  "name": "守墓人",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 3,
+  "variants": [
+    {
+      "id": "守墓人",
+      "name": "守墓人",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个白天，如果没有玩家被处决，当晚，你得知一个将要死亡的角色且可以代替其死亡。",
+      "image": "https://img.picui.cn/free/2025/06/17/6851436b352bb.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 8,
+      "otherNightReminder": "唤醒守墓人，告知其将要死亡的玩家角色，并询问其是否要代替死亡。",
+      "reminders": [
+        "替死"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 2,
+      "notes": []
+    },
+    {
+      "id": "守墓人",
+      "name": "守墓人",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "你立即转变为上一个死亡玩家的阵营。",
+      "image": "https://i.postimg.cc/HnfSkgr3/image.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 9,
+      "otherNightReminder": "如果有玩家死亡，唤醒守墓人，根据死亡玩家的身份向他展示“你是”和朝上或者朝下的大拇指。",
+      "reminders": [
+        "上一个死亡",
+        "善良",
+        "邪恶"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

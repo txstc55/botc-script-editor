@@ -1,0 +1,58 @@
+{
+  "id": "侦察兵",
+  "name": "侦察兵",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "侦察兵",
+      "name": "侦察兵",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个白天，你可以公开选择一名玩家：如果你首次以这种方式选中了爪牙，当晚一名善良玩家会得知此事。",
+      "image": "https://i.postimg.cc/y82ByC8H/scout-shadowed-intentions.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 16,
+      "otherNightReminder": "If the Scout chose a Minion for the first time today, wake a good player, show them the Scout character token, then put them to sleep.",
+      "reminders": [
+        "失去能力",
+        "得知"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "在那边！！我觉得。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "侦察兵",
+      "name": "侦察兵",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你得知一个在场的爪牙。每个夜晚*，你得知有几名邪恶玩家存活。",
+      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/2_blackout.png",
+      "firstNight": 19,
+      "firstNightReminder": "唤醒侦察兵，告知一个在场爪牙。",
+      "otherNight": 22,
+      "otherNightReminder": "唤醒侦察兵，告知他有几名邪恶玩家存活。",
+      "reminders": [
+        "得知爪牙"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

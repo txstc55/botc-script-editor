@@ -1,0 +1,60 @@
+{
+  "id": "角斗士",
+  "name": "角斗士",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "角斗士",
+      "name": "角斗士",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，首个使用自身能力选择你的玩家会被“锁定”至下个黄昏，即使你已死亡。被锁定的玩家发起提名会立刻被处决。",
+      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fengaojixu/10_fengaojixu.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [
+        "死亡",
+        "锁定"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "角斗士",
+      "name": "角斗士",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每局游戏限一次，你可以在白天时公开选择一名存活玩家。当晚，你与他醒来并秘密进行猜拳：输者死亡（必须决出胜负）。",
+      "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/gladiator_fall_of_rome.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 17,
+      "otherNightReminder": "如果角斗士今天白天使用能力，唤醒角斗士与被角斗士选择的玩家：两名玩家同时向说书人展示猜拳手势。如果有玩家猜拳落败，他死亡，另一名玩家存活。如果两名玩家都选择同样的手势，再次进行猜拳。",
+      "reminders": [
+        "决斗",
+        "失去能力",
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "你不觉得有趣吗！",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

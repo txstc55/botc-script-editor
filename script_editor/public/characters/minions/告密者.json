@@ -1,0 +1,61 @@
+{
+  "id": "告密者",
+  "name": "告密者",
+  "team": "minion",
+  "teamLabelZh": "爪牙",
+  "folder": "minions",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "告密者",
+      "name": "告密者",
+      "variantIndex": 1,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "如果被提名的鹅或中立角色除了提名者外无人或只有你一人投票，则他会中毒直到下个白天。投票给自己或自己提名自己的玩家会醉酒直到下个白天。",
+      "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/42_goosegooseduck.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [
+        "中毒",
+        "醉酒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "告密者",
+      "name": "告密者",
+      "variantIndex": 2,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择一名玩家。当他参与三次提名时，当晚他加入邪恶阵营。[+1外来者]",
+      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/17_blackout.png",
+      "firstNight": 15,
+      "firstNightReminder": "唤醒告密者，让他选择一名玩家，标记提示。",
+      "otherNight": 16,
+      "otherNightReminder": "如果告密者在白天死亡，唤醒一名因告密者能力加入邪恶的玩家告诉他成为了新的告密者。唤醒告密者，让他选择一名玩家，标记提示。如果被标记的玩家提名或被提名，在他身边以此标记一/二/三。当标记了三时，在告密者行动后告知他加入了邪恶，并清除标记“三”。",
+      "reminders": [
+        "一次",
+        "三次",
+        "两次",
+        "标记"
+      ],
+      "remindersGlobal": [],
+      "setup": 1,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

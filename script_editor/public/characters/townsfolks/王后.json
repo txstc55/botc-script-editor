@@ -1,0 +1,35 @@
+{
+  "id": "王后",
+  "name": "王后",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "王后",
+      "name": "王后",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，如果与你邻近的存活玩家中有邪恶玩家，王得知的数字会+1。每局游戏限一次，在夜晚时*，你可以选择使用能力：当晚改为你得知此信息，且王得知的数字不会+1。",
+      "image": "https://i.postimg.cc/fLYhn7tM/image.png",
+      "firstNight": 9200,
+      "firstNightReminder": "如果与王后邻近的存活玩家中有邪恶玩家，标记+1。",
+      "otherNight": 9000,
+      "otherNightReminder": "如果王后点头，向他展示手势表示与他邻近的存活玩家中是否有邪恶玩家，然后不标记+1。如果他摇头，如果与王后邻近的存活玩家中有邪恶玩家，标记+1。",
+      "reminders": [
+        "+1",
+        "限一次"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

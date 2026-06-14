@@ -1,0 +1,81 @@
+{
+  "id": "驯兽师",
+  "name": "驯兽师",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 3,
+  "totalOccurrenceCount": 3,
+  "variants": [
+    {
+      "id": "驯兽师",
+      "name": "驯兽师",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，你会得知昨晚所有被邪恶玩家的能力选择或影响的玩家与你的距离的总和。（邻座的玩家距离为1）",
+      "image": "https://i.postimg.cc/VNm4ZvBf/image.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 148,
+      "otherNightReminder": "在夜晚如果有玩家被邪恶玩家的能力选择或影响，标记他“受到影响”唤醒驯兽师并告诉一个代表玩家与驯兽师自身距离求和的数字。",
+      "reminders": [
+        "受到影响"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "驯兽师",
+      "name": "驯兽师",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你要选择一个动物相关的角色：你得知他是否在场，如果得知否你会变成该角色，即使你已醉酒或中毒。你因此变为邪恶角色后，你中毒。",
+      "image": "https://www.helloimg.com/i/2025/03/08/67cbc7a120c9c.png",
+      "firstNight": 20,
+      "firstNightReminder": "每个夜晚，你要选择一个动物相关的角色：你得知他是否在场，如果得知否你会变成该角色，即使你已醉酒或中毒。你因此变为邪恶角色后，你中毒。",
+      "otherNight": 14,
+      "otherNightReminder": "每个夜晚，你要选择一个动物相关的角色：你得知他是否在场，如果得知否你会变成该角色，即使你已醉酒或中毒。你因此变为邪恶角色后，你中毒。",
+      "reminders": [
+        "中毒",
+        "是驯兽师"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "驯兽师",
+      "name": "驯兽师",
+      "variantIndex": 3,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你可以选择一名玩家，如果他的角色类型与你上个夜晚所选玩家不同，你死亡。",
+      "image": "https://www.bloodstar.xyz/p/morax/999/2_999.png",
+      "firstNight": 43,
+      "firstNightReminder": "唤醒训兽师，让他选择一名玩家。",
+      "otherNight": 66,
+      "otherNightReminder": "唉醒驯兽师，让他选择一名玩家。如果驯兽师选择的玩家的角色类型与上个夜晚所选玩家不同，你死亡",
+      "reminders": [
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

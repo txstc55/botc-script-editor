@@ -1,0 +1,22 @@
+# Agent Notes
+
+- Python files in this project use 2-space indentation.
+- Before regenerating extraction CSVs, run `python3 fixing_json.py` to normalize known JSON data issues.
+- `fixing_json.py` should make targeted, minimal edits to source JSON files. Do not reserialize whole JSON files unless a broader cleanup is explicitly requested.
+- `extract_botc_json_info.py` emits separate CSVs for character variants and jinx/interaction-rule variants. Raw ids and source locations do not define variants.
+- If the same variant appears multiple times, keep one row and update `occurrence_count`, `source_files`, `source_scripts`, and `source_ids`.
+- `team` values of `traveller` and `traveller2` should be normalized in source JSON to `traveler`.
+- Direct jinx team values such as `a jinxed`, `A jinxed`, `a jinxes`, and `jinxes` should be normalized in source JSON to `jinx`.
+- `setup` values should be numeric: `1` for true or any nonzero numeric value, and `0` for false, empty, null, or missing values.
+- If a character has nonzero `firstNight` or `otherNight` and the matching reminder is missing or blank, `fixing_json.py` backfills that reminder with the character ability text.
+- `edition`, `name_id`, `name_eng`/English name, and raw character `id` are intentionally excluded from extraction output and variant identity.
+- Jinx or interaction rules are entries whose team contains `jinx`, plus nested `jinxes` arrays on character entries. Always include every parsed jinx row; if target detection fails, preserve the row and record notes.
+- Jinx targets are detected by searching the jinx name and ability/rule text for character names from the same JSON script/play.
+- Extracted jinx rows should have `team` as only `jinx` or `nested jinx`. Jinx variant identity is only `name + team + ability`.
+- `generate_app_database.py` converts extracted CSVs into app-readable static JSON under `script_editor/public`.
+- App character database output uses exactly six folders under `script_editor/public/characters`: `townsfolks`, `outsiders`, `minions`, `demons`, `travelers`, and `fabled`.
+- Character JSON files are grouped by `name` inside each team folder. Each file has a `variants` array sorted by descending `occurrenceCount`.
+- Generated app database filenames should stay human-readable and should not include hash suffixes. Replace path-hostile reserved characters with fullwidth equivalents instead.
+- App jinx database output lives under `script_editor/public/jinxes`. Nested jinx rows are normalized into ordinary `team: "jinx"` records while preserving their original `sourceTeam`.
+- Jinx target strings from CSV `||` separators must be converted into arrays. For nested jinxes, both the source character and target character/id should be included in `targets`.
+- The app is intended for Chinese users; prefer Chinese UI labels and user-facing strings unless a source value is intentionally non-Chinese.

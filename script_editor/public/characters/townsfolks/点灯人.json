@@ -1,0 +1,81 @@
+{
+  "id": "点灯人",
+  "name": "点灯人",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 3,
+  "totalOccurrenceCount": 3,
+  "variants": [
+    {
+      "id": "点灯人",
+      "name": "点灯人",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，你要选择除你以外的一名玩家：他以及今晚使用其自身能力选择他的除你以外的玩家，他们今晚不会死亡。",
+      "image": "https://i.postimg.cc/26DjGWnm/lamplighter.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 10,
+      "otherNightReminder": "唤醒点灯人，让他指向除他以外的一名玩家。为那名玩家放置“光源”标记。为今天黎明开始曾经使用其自身能力选择他的玩家（不包括点灯人）放置“保护”标记。",
+      "reminders": [
+        "保护",
+        "光源"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "点灯人",
+      "name": "点灯人",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你要选择除你以外的三名存活的玩家，你会得知他们之中是否有爪牙，或场上没有存活爪牙。",
+      "image": "https://www.bloodstar.xyz/p/poi4399/7759/6_7759.png",
+      "firstNight": 8,
+      "firstNightReminder": "每个夜晚，选择三名其他存活玩家，你会得知：其中是否存在爪牙。当场上没有存活爪牙时，你会得知。",
+      "otherNight": 16,
+      "otherNightReminder": "每个夜晚，选择三名其他存活玩家，你会得知：其中是否存在爪牙。当场上没有存活爪牙时，你会得知。",
+      "reminders": [
+        "全场无爪牙",
+        "发现爪牙",
+        "没有爪牙"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "点灯人",
+      "name": "点灯人",
+      "variantIndex": 3,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你会得知当晚因其自身能力而被唤醒的邪恶角色的数量。",
+      "image": "https://img.picui.cn/free/2025/04/15/67fe3f3fd82a1.jpg",
+      "firstNight": 99,
+      "firstNightReminder": "每个夜晚，你会得知当晚因其自身能力而被唤醒的邪恶角色的数量。",
+      "otherNight": 99,
+      "otherNightReminder": "每个夜晚，你会得知当晚因其自身能力而被唤醒的邪恶角色的数量。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

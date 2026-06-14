@@ -1,0 +1,37 @@
+{
+  "id": "赛 & heretic",
+  "name": "赛 & heretic",
+  "team": "jinx",
+  "targets": [
+    "赛",
+    "heretic"
+  ],
+  "targetCount": 2,
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "赛 & heretic",
+      "name": "赛 & heretic",
+      "variantIndex": 1,
+      "team": "jinx",
+      "sourceTeam": "nested jinx",
+      "ability": "Only 1 jinxed character can be in play.",
+      "targets": [
+        "赛",
+        "heretic"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "赛",
+        "targetId": "heretic",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": [
+        "nested_jinx_target_id_unresolved"
+      ]
+    }
+  ]
+}

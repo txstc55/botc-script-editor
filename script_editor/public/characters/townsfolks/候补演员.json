@@ -1,0 +1,35 @@
+{
+  "id": "候补演员",
+  "name": "候补演员",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "候补演员",
+      "name": "候补演员",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，你要选择一名玩家：如果他在今晚死亡，你代替他死亡且他会得知自己被保护。",
+      "image": "https://i.postimg.cc/QtCDMQCF/understudy.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 11,
+      "otherNightReminder": "唤醒候补演员，让他指向一名玩家。为那名玩家放置“候补”标记。如果他死亡，改为候补演员死亡。唤醒那名玩家，向他展示“该角色能力对你生效”，并展示候补演员的角色标记。",
+      "reminders": [
+        "候补",
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

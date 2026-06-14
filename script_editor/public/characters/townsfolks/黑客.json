@@ -1,0 +1,58 @@
+{
+  "id": "黑客",
+  "name": "黑客",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "黑客",
+      "name": "黑客",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，你要选择一个善良角色，你得知他是谁。如果你选择的角色不在场，你得知错误信息并死亡。",
+      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/6_blackout.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 9,
+      "otherNightReminder": "唤醒黑客，让他选择一名善良角色，告知信息。如果选择的不在场，告诉他一个错误的信息并给黑客标记“故障”。",
+      "reminders": [
+        "故障"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "黑客",
+      "name": "黑客",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，如果与你邻近的两名存活玩家均向说书人私下做出了声明。你会得知他们的声明正确数。",
+      "image": "https://www.bloodstar.xyz/p/marhepto/RavenswoodHigh/hacker_ravenswoodhigh.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 15,
+      "otherNightReminder": "向黑客展示一个数字。",
+      "reminders": [
+        "正确",
+        "错误"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

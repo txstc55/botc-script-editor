@@ -1,0 +1,36 @@
+{
+  "id": "杂草",
+  "name": "杂草",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "杂草",
+      "name": "杂草",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡玩家：如果他是镇民，他复活并变成杂草；否则你会腐蚀+2。",
+      "image": "https://www.bloodstar.xyz/p/Yez/nature/4_nature.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 15,
+      "otherNightReminder": "唤醒杂草。杂草要么摇头表示不使用能力，要么指向一名已死亡的玩家。如果该玩家是镇民，将该玩家的角色标记替换成杂草，且在角色标记旁放置“复活”提示标记。如果该玩家不是镇民，在杂草的角色标记旁放置“+2”提示标记。",
+      "reminders": [
+        "+2",
+        "复活",
+        "失去能力"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

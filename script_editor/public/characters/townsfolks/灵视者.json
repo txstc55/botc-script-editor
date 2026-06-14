@@ -1,0 +1,58 @@
+{
+  "id": "灵视者",
+  "name": "灵视者",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "灵视者",
+      "name": "灵视者",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚*，你要选择两名玩家：他们被当作正确的阵营和角色类型，即使因为任何原因无法被当作正确的阵营和角色类型。",
+      "image": "https://i.postimg.cc/1z6CwtbZ/crystal-ball-1.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 8,
+      "otherNightReminder": "移除被选择标记。唤醒灵视者，让他指向两名玩家。为他们放置回归本质标记。",
+      "reminders": [
+        "回归本质",
+        "被选择"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "灵视者",
+      "name": "灵视者",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你要选择一名玩家：你会得知两个名称，其中一个是该玩家提交的咒语的名称。",
+      "image": "https://www.bloodstar.xyz/p/twf07wfz/TheWizardsMeetRework/clairvoyant_thewizardsmeetrework.png",
+      "firstNight": 23,
+      "firstNightReminder": "Ask the Clairvoyant to choose a player. Tell the Clairvoyant the name of the Spell that player submitted tonight along with another fake Spell name (1-3 words).",
+      "otherNight": 27,
+      "otherNightReminder": "Ask the Clairvoyant to choose a player. Tell the Clairvoyant the name of the Spell that player submitted tonight along with another fake Spell name (1-3 words).",
+      "reminders": [
+        "得知"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "恶作剧者 § & legion",
+  "name": "恶作剧者 § & legion",
+  "team": "jinx",
+  "targets": [
+    "恶作剧者 §",
+    "legion"
+  ],
+  "targetCount": 2,
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "恶作剧者 § & legion",
+      "name": "恶作剧者 § & legion",
+      "variantIndex": 1,
+      "team": "jinx",
+      "sourceTeam": "nested jinx",
+      "ability": "Only 1 jinxed character can be in play.",
+      "targets": [
+        "恶作剧者 §",
+        "legion"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "恶作剧者 §",
+        "targetId": "legion",
+        "targetName": ""
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": [
+        "nested_jinx_target_id_unresolved"
+      ]
+    }
+  ]
+}

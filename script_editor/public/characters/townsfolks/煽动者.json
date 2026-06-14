@@ -1,0 +1,57 @@
+{
+  "id": "煽动者",
+  "name": "煽动者",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "煽动者",
+      "name": "煽动者",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "如果你提名并处决了第一名玩家，当晚，你要选择一名玩家：你得知他的角色，即使你已死亡。",
+      "image": "https://www.helloimg.com/i/2025/01/10/6780ce545c571.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 86,
+      "otherNightReminder": "如果煽动者提名并处决了第一名玩家，当晚唤醒煽动者，让他选择一名玩家：告诉煽动者他的角色。",
+      "reminders": [
+        "煽动成功"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "煽动者",
+      "name": "煽动者",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每个夜晚，你要选择一名玩家：你会在下个夜晚得知在白天时有多少名邪恶玩家曾投票给他。",
+      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/demagogue_beyondgoodandevilv3.png",
+      "firstNight": 36,
+      "firstNightReminder": "让煽动者指向一名玩家。标记该玩家“监视”。",
+      "otherNight": 21,
+      "otherNightReminder": "如果带有“监视”标记的玩家被提名，向煽动者展示对该玩家投票的邪恶玩家数量的手势（1，2，3等）。移除“监视”标记。让煽动者指向一名玩家。标记该玩家“监视”。",
+      "reminders": [
+        "监视"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "Keep a watchful eye of your neighbors! Those who seek to undermine your very existence lie amongst you!",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

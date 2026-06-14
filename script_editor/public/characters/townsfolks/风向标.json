@@ -1,0 +1,55 @@
+{
+  "id": "风向标",
+  "name": "风向标",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 3,
+  "variants": [
+    {
+      "id": "风向标",
+      "name": "风向标",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你会知晓是否奇数位邪恶玩家较多。如果相同，你会知晓错误信息作为替代。",
+      "image": "https://www.bloodstar.xyz/p/BeiFeng/YYLM/1_yylm.png",
+      "firstNight": 111,
+      "firstNightReminder": "在首个夜晚，校准风向标。用大拇指向上，告诉他奇数位邪恶玩家较多；或者用大拇指向下，告诉他偶数位邪恶玩家较多。如果奇数位邪恶玩家等于偶数位邪恶玩家，那么你需要向风向标提供错误信息。让风向标重新入睡。",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 2,
+      "notes": []
+    },
+    {
+      "id": "风向标",
+      "name": "风向标",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你要选择两名玩家：当其中一名玩家死亡时，你会得知距离最近的恶魔玩家位于他的（顺时针/逆时针)方向，若恶魔的位置与他距离相等，你得知的信息由说书人决定，随后你要再选择一名玩家。",
+      "image": "https://i.postimg.cc/wMWYtSGn/windvane-shadowed-intentions.png",
+      "firstNight": 18,
+      "firstNightReminder": "Wake the Wind Vane & show them any 3 players.",
+      "otherNight": 14,
+      "otherNightReminder": "If the 2nd player the Wind Vane knows died today or tonight, wake the Wind Vane and indicate clockwise, counter-clockwise, or neither.",
+      "reminders": [
+        "得知"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "呼——————————————————",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}

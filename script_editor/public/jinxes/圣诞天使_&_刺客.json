@@ -1,0 +1,35 @@
+{
+  "id": "圣诞天使 & 刺客",
+  "name": "圣诞天使 & 刺客",
+  "team": "jinx",
+  "targets": [
+    "圣诞天使",
+    "刺客"
+  ],
+  "targetCount": 2,
+  "variantCount": 1,
+  "totalOccurrenceCount": 1,
+  "variants": [
+    {
+      "id": "圣诞天使 & 刺客",
+      "name": "圣诞天使 & 刺客",
+      "variantIndex": 1,
+      "team": "jinx",
+      "sourceTeam": "nested jinx",
+      "ability": "Assassin's ability still works on a protected player",
+      "targets": [
+        "圣诞天使",
+        "刺客"
+      ],
+      "targetCount": 2,
+      "occurrenceCount": 1,
+      "rule": {
+        "sourceCharacter": "圣诞天使",
+        "targetId": "assassin",
+        "targetName": "刺客"
+      },
+      "targetDetectionNotes": [],
+      "issueNotes": []
+    }
+  ]
+}

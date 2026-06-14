@@ -1,0 +1,59 @@
+{
+  "id": "祭司",
+  "name": "祭司",
+  "team": "townsfolk",
+  "teamLabelZh": "镇民",
+  "folder": "townsfolks",
+  "variantCount": 2,
+  "totalOccurrenceCount": 2,
+  "variants": [
+    {
+      "id": "祭司",
+      "name": "祭司",
+      "variantIndex": 1,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每局游戏限一次，你可以在白天私下拜访说书人并决定明晚将会降临的神迹，如果神迹无法降临，当晚你会死亡。。",
+      "image": "https://free.picui.cn/free/2025/10/19/68f42a643c7b5.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 1,
+      "otherNightReminder": "祭司可以选择神迹并降下，如果他这么做了，将当晚的神迹修改为祭司指定的神迹",
+      "reminders": [
+        "失去能力",
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "祭司",
+      "name": "祭司",
+      "variantIndex": 2,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你首次即将因为邪恶阵营玩家的能力死亡时，你不会死亡，你会被唤醒得知你邻近玩家的角色。",
+      "image": "https://i.postimg.cc/Y9HpkBKv/image.png",
+      "firstNight": 0,
+      "firstNightReminder": "",
+      "otherNight": 58,
+      "otherNightReminder": "唤醒祭司，告诉他邻近玩家的角色。",
+      "reminders": [
+        "已触发",
+        "得知"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    }
+  ]
+}
