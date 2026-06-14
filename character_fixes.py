@@ -153,7 +153,7 @@ CHARACTER_FIXES = [
       "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
       "firstNightReminder": "",
-      "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
+      "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
       "reminders": [
         "中毒",
         "死亡",
@@ -189,7 +189,6 @@ CHARACTER_FIXES = [
       "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
       "reminders": [
         "死亡",
-        "限一次",
       ],
       "remindersGlobal": [
         "限一次",
@@ -204,7 +203,7 @@ CHARACTER_FIXES = [
       "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
       "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-      "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
+      "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡并恢复健康。",
       "reminders": [
         "中毒",
         "死亡",
