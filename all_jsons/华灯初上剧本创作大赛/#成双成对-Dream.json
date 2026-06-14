@@ -363,7 +363,7 @@
   },
   {
     "id": "taotie",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/85/Taotie.png/200px-Taotie.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5897997694761_fbe1f00c.jpg",
     "edition": "custom",
     "name": "饕餮",
     "ability": "每个夜晚*，你要选择任意数量的非旅行者玩家或一名旅行者玩家：如果他们的角色类型均不相同，他们死亡。[+1外来者]",
@@ -375,11 +375,14 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "shaba",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/5c/Shabaloth.png/300px-Shabaloth.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shabaloth.png",
     "edition": "custom",
     "name": "沙巴洛斯",
     "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你上个夜晚选择过且当前死亡的玩家之一可能会被你反刍。",
@@ -390,14 +393,16 @@
     "firstNightReminder": "",
     "otherNightReminder": "上一夜被沙巴洛斯选择且当前已死亡的玩家之一可能被反刍，如果被反刍，标记那名玩家被复活。让沙巴洛斯选择两名玩家。标记这两名玩家死亡。",
     "reminders": [
-      "死亡",
-      "复活"
+      "复活",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "aohe",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/96/Ojo.png/300px-Ojo.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ojo.png",
     "edition": "custom",
     "name": "奥赫",
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
@@ -409,11 +414,14 @@
       "死亡"
     ],
     "setup": 0,
-    "otherNightReminder": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。"
+    "otherNightReminder": "唤醒奥赫，让他选择角色列表上的一个角色。该角色对应的玩家死亡，如果该角色不在场，替奥赫决定今晚谁会因为奥赫能力死亡。",
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "nuo",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/16/Nodashii.png/300px-Nodashii.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "edition": "custom",
     "name": "诺-达鲺",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
@@ -422,12 +430,14 @@
     "firstNight": 0,
     "otherNight": 30,
     "firstNightReminder": "",
-    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "ability": "B站 是苏璃嘛",

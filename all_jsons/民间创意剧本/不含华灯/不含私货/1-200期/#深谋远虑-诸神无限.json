@@ -366,13 +366,13 @@
   },
   {
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "name": "普卡",
     "otherNight": 26,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "pukkabutton",
     "edition": "custom",
@@ -380,7 +380,9 @@
     "name_eng": "Pukka",
     "firstNight": 28,
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "firstNightReminder": "",
@@ -397,17 +399,19 @@
     "name_eng": "Imp",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
+    "remindersGlobal": [],
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 30,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "no_dashiibutton",
     "edition": "custom",
@@ -415,16 +419,19 @@
     "name_eng": "No Dashii",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "remindersGlobal": [],
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“首次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "name": "方古",
     "otherNight": 29,
     "setup": 1,
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "id": "fang_gubutton",
     "edition": "custom",
@@ -435,7 +442,8 @@
     "name_eng": "Fang Gu",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",

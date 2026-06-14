@@ -396,7 +396,7 @@
   },
   {
     "id": "abab",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/50/Yaggababble.png/300px-Yaggababble.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yaggababble.png",
     "edition": "custom",
     "name": "牙噶巴卜",
     "ability": "在你的首个夜晚，你会得知一段秘密短语。每次你在白天公开说出这段短语，当天便可能会有一名玩家在这之后死亡。",
@@ -408,15 +408,17 @@
       "死亡"
     ],
     "setup": 0,
-    "firstNightReminder": "在你的首个夜晚，你会得知一段秘密短语。每次你在白天公开说出这段短语，当天便可能会有一名玩家在这之后死亡。",
-    "otherNightReminder": "在你的首个夜晚，你会得知一段秘密短语。每次你在白天公开说出这段短语，当天便可能会有一名玩家在这之后死亡。"
+    "firstNightReminder": "唤醒牙噶巴卜，对他展示他的秘密短语。",
+    "otherNightReminder": "根据已放置的提示标记数量，选择最多等同于该数量的玩家死亡。该夜晚行动只是一个提示，死亡的造成时机可以是白天，也可以是夜晚的任何时候。",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "8a6a4808-aaf9-4c64-8da5-235aee6fd5a8",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Fanggu.png/300px-Fanggu.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "name": "方古",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 0,
@@ -426,7 +428,12 @@
       "死亡",
       "限一次"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。所有的外来者都可能会被当作邪恶阵营、爪牙角色或恶魔角色。",

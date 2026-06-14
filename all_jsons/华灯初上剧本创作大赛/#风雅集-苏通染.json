@@ -1,28 +1,29 @@
-[{
-		"id": "_meta",
-		"name": "风雅集",
-		"author": "苏通染",
-		"logo": "https://i.postimg.cc/kMk6sHd0/image.png",
-		"description": "第一届华灯初上剧本创作大赛·二十五强",
-		"townsfolkName": "镇民",
-		"outsidersName": "外来者",
-		"minionsName": "爪牙",
-		"demonsName": "恶魔",
-		"townsfolk": "镇民",
-		"outsider": "外来者",
-		"minion": "爪牙",
-		"demon": "恶魔",
-		"state": [
-			{
-				"stateName": "醉酒与中毒",
-				"stateDescription": "醉酒或中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果醉酒或中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息。醉酒或中毒的玩家不会得知自己醉酒或中毒。"
-			},
-			{
-				"stateName": "疯狂",
-				"stateDescription": "当一名玩家需要“疯狂”地证明某件事情时，意味着他应该去努力说服其他玩家那件事情是真的。有的角色要求玩家需要“疯狂”地证明某件事情，也有的角色会要求玩家不能“疯狂”地证明某件事情（也就意味着他应该去努力说服其他玩家那件事情是假的）。"
-			}
-		]
-	},
+[
+  {
+    "id": "_meta",
+    "name": "风雅集",
+    "author": "苏通染",
+    "logo": "https://i.postimg.cc/kMk6sHd0/image.png",
+    "description": "第一届华灯初上剧本创作大赛·二十五强",
+    "townsfolkName": "镇民",
+    "outsidersName": "外来者",
+    "minionsName": "爪牙",
+    "demonsName": "恶魔",
+    "townsfolk": "镇民",
+    "outsider": "外来者",
+    "minion": "爪牙",
+    "demon": "恶魔",
+    "state": [
+      {
+        "stateName": "醉酒与中毒",
+        "stateDescription": "醉酒或中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果醉酒或中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息。醉酒或中毒的玩家不会得知自己醉酒或中毒。"
+      },
+      {
+        "stateName": "疯狂",
+        "stateDescription": "当一名玩家需要“疯狂”地证明某件事情时，意味着他应该去努力说服其他玩家那件事情是真的。有的角色要求玩家需要“疯狂”地证明某件事情，也有的角色会要求玩家不能“疯狂”地证明某件事情（也就意味着他应该去努力说服其他玩家那件事情是假的）。"
+      }
+    ]
+  },
   {
     "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
     "otherNightReminder": "",
@@ -243,23 +244,23 @@
     "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png"
   },
-	{
-		"firstNightReminder": "",
-		"otherNightReminder": "当帽匠死亡时，在其角色标记旁放置“今晚茶会”提示标记。一同（或分别地）唤醒所有爪牙和恶魔。对他们展示“该角色的能力对你生效”信息标记，然后展示帽匠角色标记。每名以此被唤醒的玩家可以选择摇头或指向角色列表上与自己当前角色类型相同的一个角色。",
-		"name": "帽匠",
-		"otherNight": 3,
-		"setup": 0,
-		"reminders": [
-			"今晚茶会"
-		],
-		"id": "hatterbutton",
-		"edition": "custom",
-		"team": "outsider",
-		"name_eng": "Hatter",
-		"firstNight": 0,
-		"ability": "如果你死亡，当晚爪牙和恶魔玩家可以选择变成新的爪牙和恶魔角色。",
-		"image": "https://clocktower-wiki.gstonegames.com/images/e/ee/Hatter.png"
-	},
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "当帽匠死亡时，在其角色标记旁放置“今晚茶会”提示标记。一同（或分别地）唤醒所有爪牙和恶魔。对他们展示“该角色的能力对你生效”信息标记，然后展示帽匠角色标记。每名以此被唤醒的玩家可以选择摇头或指向角色列表上与自己当前角色类型相同的一个角色。",
+    "name": "帽匠",
+    "otherNight": 3,
+    "setup": 0,
+    "reminders": [
+      "今晚茶会"
+    ],
+    "id": "hatterbutton",
+    "edition": "custom",
+    "team": "outsider",
+    "name_eng": "Hatter",
+    "firstNight": 0,
+    "ability": "如果你死亡，当晚爪牙和恶魔玩家可以选择变成新的爪牙和恶魔角色。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/e/ee/Hatter.png"
+  },
   {
     "firstNightReminder": "",
     "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
@@ -403,13 +404,13 @@
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 30,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "no_dashiibutton",
     "edition": "custom",
@@ -417,7 +418,9 @@
     "name_eng": "No Dashii",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "remindersGlobal": [],
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "firstNightReminder": "",
@@ -434,7 +437,9 @@
     "name_eng": "Imp",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
+    "remindersGlobal": [],
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
     "firstNightReminder": "",
@@ -450,8 +455,10 @@
     "team": "demon",
     "name_eng": "Vortox",
     "firstNight": 0,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没⼈被处决，邪恶阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
+    "remindersGlobal": [],
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "firstNightReminder": "",

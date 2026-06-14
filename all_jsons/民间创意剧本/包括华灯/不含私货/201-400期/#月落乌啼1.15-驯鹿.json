@@ -404,12 +404,12 @@
   },
   {
     "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_6000301943171_d2f257a6.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baojun.png",
     "edition": "custom",
     "flavor": "",
     "id": "baojun_button",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒暴君，让其选择至多两名玩家。在这些玩家角色标记旁放置“死亡”提示标记。如果暴君选择的玩家数量与上个夜晚死亡的玩家数量相同，摇头示意其重新选择",
+    "otherNightReminder": "唤醒暴君，让他攻击至多两名玩家。但是暴君选择的玩家数量不能与上个夜晚死亡的玩家数量相同。",
     "name": "暴君",
     "otherNight": 95,
     "setup": 0,
@@ -417,7 +417,8 @@
       "死亡"
     ],
     "team": "demon",
-    "firstNight": 0
+    "firstNight": 0,
+    "remindersGlobal": []
   },
   {
     "ability": "每个夜晚*，你要选择任意数量的非旅行者玩家或一名旅行者玩家：如果他们的角色类型均不相同，他们死亡。[+1外来者]",
@@ -460,7 +461,7 @@
   },
   {
     "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
-    "image": "https://clocktower-wiki.gstonegames.com/images/d/db/Dianyuzhang.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png",
     "edition": "custom",
     "flavor": "",
     "id": "dianyuzhang_button",

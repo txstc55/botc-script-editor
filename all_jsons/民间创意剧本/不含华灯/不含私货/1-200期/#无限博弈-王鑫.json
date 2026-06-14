@@ -630,22 +630,25 @@
     "firstNight": 0,
     "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。如果你被处决，提名你的玩家需要和你猜拳，只有你输了你才会死亡。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/psychopath.png"
-  }, {
-	"ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
-	"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cerenovus.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "cerenovusbutton",
-	"firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
-	"otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
-	"name": "洗脑师",
-	"otherNight": 16,
-	"setup": 0,
-	"reminders": ["疯狂"],
-	"remindersGlobal": [],
-	"team": "minion",
-	"firstNight": 25
-},
+  },
+  {
+    "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cerenovus.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "cerenovusbutton",
+    "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "name": "洗脑师",
+    "otherNight": 16,
+    "setup": 0,
+    "reminders": [
+      "疯狂"
+    ],
+    "remindersGlobal": [],
+    "team": "minion",
+    "firstNight": 25
+  },
   {
     "firstNightReminder": "",
     "isbutton": true,
@@ -673,16 +676,18 @@
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
     "id": "al-hadikhia_button",
     "edition": "exp",
     "team": "demon",
     "name_eng": "Al-Hadikhia",
     "firstNight": 0,
-    "ability": "每个夜晚*，你要选择三名玩家（所有玩家都会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png"
+    "ability": "每个夜晚*，你可以选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -699,19 +704,21 @@
     "team": "demon",
     "name_eng": "Vortox",
     "firstNight": 0,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没⼈被处决，邪恶阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
+    "remindersGlobal": [],
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "firstNightReminder": "",
     "isbutton": true,
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 30,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "no_dashii_button",
     "edition": "snv",
@@ -719,7 +726,9 @@
     "name_eng": "No Dashii",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "remindersGlobal": [],
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "firstNightReminder": "",
@@ -737,20 +746,22 @@
     "name_eng": "Imp",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
+    "remindersGlobal": [],
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
-	{
-		"firstNightReminder": "",
-		"otherNightReminder": "",
-		"name": "灯神",
-		"firstNight": 0,
-		"reminders": [],
-		"id": "djinnbutton",
-		"team": "fabled",
-		"name_eng": "Djinn",
-		"setup": 0,
-		"ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
-		"edition": "custom",
-		"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
-	}
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "灯神",
+    "firstNight": 0,
+    "reminders": [],
+    "id": "djinnbutton",
+    "team": "fabled",
+    "name_eng": "Djinn",
+    "setup": 0,
+    "ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
+    "edition": "custom",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
+  }
 ]

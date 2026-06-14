@@ -345,20 +345,25 @@
   },
   {
     "id": "fanggu",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Fanggu.png/300px-Fanggu.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "name": "方古",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 0,
     "otherNight": 29,
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“首次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "reminders": [
       "死亡",
       "限一次"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "taowu",
@@ -378,21 +383,23 @@
   },
   {
     "id": "lizhi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/7/70/Lleech.png/300px-Lleech.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
     "name": "痢蛭",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 15,
     "otherNight": 35,
-    "firstNightReminder": "痢蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "id": "qiongqi",

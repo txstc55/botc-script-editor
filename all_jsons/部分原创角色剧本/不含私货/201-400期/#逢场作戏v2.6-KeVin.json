@@ -428,9 +428,9 @@
     "edition": "custom",
     "team": "demon",
     "firstNight": 4500,
-    "firstNightReminder": "让痢蛭选择一名玩家。标记那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNight": 7200,
-    "otherNightReminder": "让痢蛭选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
@@ -438,7 +438,8 @@
     "remindersGlobal": [],
     "setup": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "id": "hundunTRANS",
@@ -474,18 +475,19 @@
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 7000,
-    "otherNightReminder": "让哈迪寂亚依次选择三名玩家。依次标记这些玩家。让所有人安静下来然后宣告第一位玩家，然后唤醒他并让他秘密选择活着还是死去。依次对第二名第三名玩家如此做。如果三名玩家最终都活着，那么他们都死去。然后允许大家说话。",
+    "otherNightReminder": "哈迪寂亚选择三名玩家。对所有人宣告第一位玩家，然后唤醒他并让他秘密选择活着还是死去。依次对第二第三位玩家如此做。如果三名玩家都选择活着，他们都死去。",
     "reminders": [
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "ability": "每个夜晚*，你要选择三名玩家（所有玩家都会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
-    "script": "实验性角色"
+    "ability": "每个夜晚*，你可以选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
+    "script": "实验性角色",
+    "flavor": ""
   },
   {
     "id": "ouxiangTRANS",
@@ -515,14 +517,12 @@
     "firstNightReminder": "",
     "otherNight": 0,
     "otherNightReminder": "",
-    "reminders": [
-    ],
+    "reminders": [],
     "remindersGlobal": [],
     "setup": 0,
     "ability": "这个剧本包含有自制角色或自制规则。混沌&戏子：如果混沌杀死了与自己邻近的戏子，所有戏子会立即中毒直到混沌下一次被唤醒。",
     "script": "传奇角色"
   },
-
   {
     "id": "cannibal+zealot",
     "image": "https://i.postimg.cc/43zsDRtV/cannibal-zealot.png",

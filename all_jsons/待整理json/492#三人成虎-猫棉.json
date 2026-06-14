@@ -275,8 +275,8 @@
   },
   {
     "id": "21_sanrenchenghu",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/75/p5adfu7aib17qfuaoos044qbk24xacd.png",
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
@@ -286,12 +286,15 @@
     "team": "demon",
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "firstNight": 3500,
-    "otherNight": 7
+    "otherNight": 7,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "22_sanrenchenghu",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/2d/szavurnelmxq6158tzoowtw5oteonll.png",
-    "otherNightReminder": "决定今晚谁会因为军团能力死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
+    "otherNightReminder": "由说书人决定，让哪一名玩家死亡。",
     "reminders": [
       "即将被处决",
       "死亡"
@@ -299,12 +302,15 @@
     "setup": 1,
     "name": "军团",
     "team": "demon",
-    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[多数玩家为军团]",
-    "otherNight": 10
+    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "23_sanrenchenghu",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/2f/fifuf6ffk1g5oq59jupegk662fainf6.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ojo.png",
     "otherNightReminder": "唤醒奥赫，让他选择角色列表上的一个角色。该角色对应的玩家死亡，如果该角色不在场，替奥赫决定今晚谁会因为奥赫能力死亡。",
     "reminders": [
       "死亡"
@@ -312,11 +318,15 @@
     "name": "奥赫",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
-    "otherNight": 8
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "24_sanrenchenghu",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/8f/req6dcdp78ch68rx1jhamwl1v39wvjz.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
     "firstNightReminder": "唤醒卡扎力，让他选择玩家变成邪恶爪牙。",
     "otherNightReminder": "唤醒卡扎力，让他攻击一名玩家。",
     "reminders": [
@@ -327,7 +337,9 @@
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
     "firstNight": 12,
-    "otherNight": 9
+    "otherNight": 9,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "25_sanrenchenghu",

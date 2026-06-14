@@ -3,24 +3,25 @@
     "id": "_meta",
     "logo": "https://oss.gstonegames.com/data_file/clocktower/upload/1689598760_197011_8687.png",
     "name": "横行霸道",
-	"townsfolkName":"镇民",
+    "townsfolkName": "镇民",
     "author": "Manny"
-  }, {
-	"ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
-	"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/djinn.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "djinnbutton",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "灯神",
-	"otherNight": 0,
-	"setup": 0,
-	"reminders": [],
-	"remindersGlobal": [],
-	"team": "fabled",
-	"firstNight": 0
-},
+  },
+  {
+    "ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/djinn.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "djinnbutton",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "灯神",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  },
   {
     "firstNightReminder": "展示给炼金术士一个不在场的角色标记。",
     "otherNightReminder": "",
@@ -350,7 +351,7 @@
     "id": "devils_advocatebutton",
     "edition": "custom",
     "team": "minion",
-    "name_eng": "Devil\u0027s Advocate",
+    "name_eng": "Devil's Advocate",
     "firstNight": 22,
     "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png"
@@ -419,39 +420,44 @@
     "name_eng": "Imp",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
+    "remindersGlobal": [],
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
-    "firstNightReminder": "寄生蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 35,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "lleechbutton",
     "edition": "custom",
     "team": "demon",
     "name_eng": "Lleech",
     "firstNight": 15,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png"
-  }, {
-	"ability": "在初始设置时，可能会额外增加或减少一个外来者。",
-	"image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sentinel.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "20003_105",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "哨兵",
-	"otherNight": 0,
-	"setup": 0,
-	"reminders": [],
-	"remindersGlobal": [],
-	"team": "fabled",
-	"firstNight": 0
-}
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+    "remindersGlobal": [],
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
+  },
+  {
+    "ability": "在初始设置时，可能会额外增加或减少一个外来者。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sentinel.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20003_105",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "哨兵",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  }
 ]

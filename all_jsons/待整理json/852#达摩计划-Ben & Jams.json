@@ -298,21 +298,25 @@
   },
   {
     "id": "27_damojihua",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/b9/t7v2h6t5bwxmjp8qkkhlf1mm32v51pw.png",
-    "otherNightReminder": "决定上一夜被沙巴洛斯选择的玩家是否被反刍。然后唤醒沙巴洛斯，让他攻击两名玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shabaloth.png",
+    "otherNightReminder": "上一夜被沙巴洛斯选择且当前已死亡的玩家之一可能被反刍，如果被反刍，标记那名玩家被复活。让沙巴洛斯选择两名玩家。标记这两名玩家死亡。",
     "reminders": [
-      "死亡",
-      "复活"
+      "复活",
+      "死亡"
     ],
     "name": "沙巴洛斯",
     "team": "demon",
     "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你上个夜晚选择过且当前死亡的玩家之一可能会被你反刍。",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "28_damojihua",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/6/67/rvx8mxa2s5jb9qiqzoubch8vfjr87hz.png",
-    "otherNightReminder": "唤醒珀，他可以攻击一名玩家或不进行攻击，如果他上一次选择了不进行攻击，则此次必须攻击三名玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
       "攻击三次",
       "死亡"
@@ -320,12 +324,16 @@
     "name": "珀",
     "team": "demon",
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "otherNight": 8
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "29_damojihua",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/2d/szavurnelmxq6158tzoowtw5oteonll.png",
-    "otherNightReminder": "决定今晚谁会因为军团能力死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
+    "otherNightReminder": "由说书人决定，让哪一名玩家死亡。",
     "reminders": [
       "即将被处决",
       "死亡"
@@ -333,12 +341,15 @@
     "setup": 1,
     "name": "军团",
     "team": "demon",
-    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[多数玩家为军团]",
-    "otherNight": 6
+    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "30_damojihua",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/49/863ousn3gady70ilssmdzvzl2kbn1ee.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yaggababble.png",
     "firstNightReminder": "唤醒牙噶巴卜，对他展示他的秘密短语。",
     "otherNightReminder": "根据已放置的提示标记数量，选择最多等同于该数量的玩家死亡。该夜晚行动只是一个提示，死亡的造成时机可以是白天，也可以是夜晚的任何时候。",
     "reminders": [
@@ -348,7 +359,10 @@
     "team": "demon",
     "ability": "在你的首个夜晚，你会得知一段秘密短语。每次你在白天公开说出这段短语，当天便可能会有一名玩家在这之后死亡。",
     "firstNight": 3400,
-    "otherNight": 9
+    "otherNight": 9,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "jinx01",

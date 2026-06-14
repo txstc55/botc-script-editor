@@ -399,7 +399,7 @@
   },
   {
     "id": "guhuoniao",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/38/Guhuoniao.png/75px-Guhuoniao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/guhuoniao.png",
     "edition": "custom",
     "name": "姑获鸟",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
@@ -408,11 +408,13 @@
     "firstNight": 0,
     "otherNight": 23,
     "firstNightReminder": "",
-    "otherNightReminder": "让姑获鸟选择一名玩家。标记那名玩家死亡。如果白天有爪牙死于处决，则标记死于处决。",
+    "otherNightReminder": "唤醒姑获鸟，让他攻击一名玩家。",
     "reminders": [
-      "死于处决",
-      "死亡"
+      "死亡",
+      "获得能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   }
 ]

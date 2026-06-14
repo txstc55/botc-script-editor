@@ -382,12 +382,14 @@
     "firstNight": 0,
     "otherNight": 35,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒珀，他可以攻击一名玩家或不进行攻击，如果他上一次选择了不进行攻击，则此次必须攻击三名玩家。",
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
       "攻击三次",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "woliuliuliu111",
@@ -399,18 +401,20 @@
     "firstNight": 0,
     "otherNight": 38,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒涡流，让他攻击一名玩家。",
+    "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "id": "fangguuuuuuuuuuuuuu111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "name": "方古",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
     "team": "demon",
     "firstNight": 0,
     "otherNight": 36,
@@ -419,7 +423,12 @@
       "死亡",
       "限一次"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "haliluya111",
@@ -431,15 +440,17 @@
     "firstNight": 0,
     "otherNight": 42,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒哈迪寂亚，让他选择三名玩家。执行哈迪寂亚的能力流程（参考哈迪寂亚的百科页面）。",
+    "otherNightReminder": "哈迪寂亚选择三名玩家。对所有人宣告第一位玩家，然后唤醒他并让他秘密选择活着还是死去。依次对第二第三位玩家如此做。如果三名玩家都选择活着，他们都死去。",
     "reminders": [
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "59_meta",

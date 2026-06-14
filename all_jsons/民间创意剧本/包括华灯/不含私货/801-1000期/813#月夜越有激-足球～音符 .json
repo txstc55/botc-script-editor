@@ -393,7 +393,7 @@
   {
     "id": "33_yueyeyueyouji",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
@@ -403,12 +403,15 @@
     "team": "demon",
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "firstNight": 3500,
-    "otherNight": 12
+    "otherNight": 12,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "34_yueyeyueyouji",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
-    "otherNightReminder": "唤醒珀，他可以攻击一名玩家或不进行攻击，如果他上一次选择了不进行攻击，则此次必须攻击三名玩家。",
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
       "攻击三次",
       "死亡"
@@ -416,7 +419,11 @@
     "name": "珀",
     "team": "demon",
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "otherNight": 13
+    "otherNight": 13,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "35_yueyeyueyouji",
@@ -431,13 +438,15 @@
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
     "firstNight": 19,
-    "otherNight": 14
+    "otherNight": 14,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "36_yueyeyueyouji",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/taotie.png",
-    "firstNightReminder": "0",
-    "otherNightReminder": "唤醒饕餮，让他选择任意数量的非旅行者玩家或一名旅行者玩家。如果这些玩家角色类型不同，他们死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5897997694761_fbe1f00c.jpg",
+    "firstNightReminder": "",
+    "otherNightReminder": "唤醒饕餮，让其选择任意数量的玩家。如果这些玩家的角色类型均不相同，标记这些玩家死亡。",
     "reminders": [
       "死亡"
     ],
@@ -446,7 +455,9 @@
     "team": "demon",
     "ability": "每个夜晚*，你要选择任意数量的非旅行者玩家或一名旅行者玩家：如果他们的角色类型均不相同，他们死亡。[+1外来者]",
     "firstNight": 0,
-    "otherNight": 15
+    "otherNight": 15,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "37_yueyeyueyouji",
@@ -458,13 +469,17 @@
     "name": "暴君",
     "team": "demon",
     "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
-    "otherNight": 17
+    "otherNight": 17,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "38_yueyeyueyouji",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yanluo.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
     "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
-    "otherNightReminder": "唤醒阎罗，让他选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁，并将上一个夜晚的“即将死亡”标记替换为“死亡”标记。如果这是游戏的第三个夜晚，将“三更将死”标记的玩家判死，即使因为任何原因让他不会死亡。",
+    "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
     "reminders": [
       "三更将死",
       "即将死亡",
@@ -474,7 +489,10 @@
     "team": "demon",
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
     "firstNight": 4100,
-    "otherNight": 16
+    "otherNight": 16,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "39_yueyeyueyouji",

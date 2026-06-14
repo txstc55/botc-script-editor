@@ -400,35 +400,42 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
     "edition": "custom",
     "name": "普卡",
-    "ability": "每个夜晚，选择一名玩家：他中毒。先前已经中毒的玩家死亡并恢复健康。",
+    "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 28,
     "otherNight": 26,
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "1df176dd-7560-42c3-9a67-1a9ff294c8ca",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "name": "方古",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。首个会被这种能力杀死的外来者改为变成一个邪恶的方古且你代替他死亡。[+1外来者]",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 0,
     "otherNight": 29,
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“首次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "reminders": [
       "死亡",
       "限一次"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "91ed5289-4f44-4cd0-9049-baffba687d31",
@@ -443,29 +450,33 @@
     "firstNightReminder": "",
     "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "id": "3f7b0f6d-f459-4b57-810d-094eca731dd6",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
     "name": "痢蛭",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，如果且只有他死亡你才会死亡。",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 15,
     "otherNight": 35,
-    "firstNightReminder": "痢蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "id": "_rumeng",

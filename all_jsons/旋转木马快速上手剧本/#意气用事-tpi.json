@@ -389,20 +389,22 @@
     "firstNight": 0,
     "otherNight": 40,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "id": "fangguuuuuuuuuuuuuu111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "name": "方古",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
     "team": "demon",
     "firstNight": 0,
     "otherNight": 36,
@@ -411,7 +413,12 @@
       "死亡",
       "限一次"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "tifeng11zhishou11111111",
@@ -427,7 +434,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "cannibal+zealot",

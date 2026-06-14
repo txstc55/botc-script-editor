@@ -1,10 +1,11 @@
-[{
-  "id": "_meta",
-  "logo": "https://i.postimg.cc/9QqMm1Rj/image.png",
-  "name": "凶鸟戏画",
-  	"townsfolkName":"镇民",
-  "author": "edders from Patterseddtv"
-},
+[
+  {
+    "id": "_meta",
+    "logo": "https://i.postimg.cc/9QqMm1Rj/image.png",
+    "name": "凶鸟戏画",
+    "townsfolkName": "镇民",
+    "author": "edders from Patterseddtv"
+  },
   {
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
@@ -296,7 +297,10 @@
     "name": "鹰身女妖",
     "otherNight": 18,
     "setup": 0,
-    "reminders": ["疯狂", "第二名"],
+    "reminders": [
+      "疯狂",
+      "第二名"
+    ],
     "remindersGlobal": [],
     "team": "minion",
     "firstNight": 26
@@ -349,40 +353,44 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/boomdandy.png"
   },
   {
-    "firstNightReminder": "寄生蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 35,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "lleechbutton",
     "edition": "custom",
     "team": "demon",
     "name_eng": "Lleech",
     "firstNight": 15,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+    "remindersGlobal": [],
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "如果今天白天没有人死亡，让僵怖选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "如果白天无人死亡，唤醒僵怖，让他攻击一名玩家。",
     "name": "僵怖",
     "otherNight": 25,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "死于今日"
+      "死于今日",
+      "死亡"
     ],
     "id": "zombuulbutton",
     "edition": "custom",
     "team": "demon",
     "name_eng": "Zombuul",
     "firstNight": 0,
-    "ability": "每个夜晚*，如果今天白天没有⼈死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png"
+    "ability": "每个夜晚*，如果今天白天没有人死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png",
+    "remindersGlobal": [],
+    "flavor": "我不。明白。你的。方式。人类。同类。向我。指引。泥土。那是。圣地。静卧。安睡。我也。必须。长眠。立刻。"
   },
   {
     "firstNightReminder": "",
@@ -391,9 +399,9 @@
     "otherNight": 32,
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "id": "vigormortisbutton",
     "edition": "custom",
@@ -401,7 +409,9 @@
     "name_eng": "Vigormortis",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "firstNightReminder": "",
@@ -419,6 +429,8 @@
     "name_eng": "Legion",
     "firstNight": 0,
     "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
+    "remindersGlobal": [],
+    "flavor": ""
   }
 ]

@@ -408,8 +408,8 @@
     "GstoneID": "assassin"
   },
   {
-    "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你的上个夜晚选择过的且当前死亡的玩家可能会被你反刍。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/shabaloth.png",
+    "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你上个夜晚选择过且当前死亡的玩家之一可能会被你反刍。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shabaloth.png",
     "edition": "custom",
     "flavor": "",
     "id": "shabalothbutton",
@@ -419,8 +419,8 @@
     "otherNight": 52,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "复活"
+      "复活",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -429,9 +429,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vigormortis.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。",
     "id": "vigormortisbutton",
     "firstNightReminder": "",
     "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
@@ -439,9 +439,9 @@
     "otherNight": 61,
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -473,14 +473,15 @@
     "edition": "custom",
     "flavor": "",
     "id": "yanluobutton",
-    "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。让阎罗选择两名玩家，分别放置“即将死亡”和“三更将死”标记在其角色图标旁。",
+    "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
     "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
     "name": "阎罗",
     "otherNight": 84,
     "setup": 0,
     "reminders": [
+      "三更将死",
       "即将死亡",
-      "三更将死"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",

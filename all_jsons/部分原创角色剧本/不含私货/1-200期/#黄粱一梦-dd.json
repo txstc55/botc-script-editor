@@ -382,16 +382,18 @@
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
     "id": "al-hadikhiabutton",
     "edition": "custom",
     "team": "demon",
     "name_eng": "Al-Hadikhia",
     "firstNight": 0,
-    "ability": "每个夜晚*，你要选择三名玩家（所有玩家都会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png"
+    "ability": "每个夜晚*，你可以选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -400,8 +402,8 @@
     "otherNight": 28,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "id": "pobutton",
     "edition": "custom",
@@ -409,16 +411,19 @@
     "name_eng": "Po",
     "firstNight": 0,
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“首次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "name": "方古",
     "otherNight": 29,
     "setup": 1,
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "id": "fang_gubutton",
     "edition": "custom",
@@ -429,7 +434,8 @@
     "name_eng": "Fang Gu",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "flavor": ""
   },
   {
     "id": "_meta",

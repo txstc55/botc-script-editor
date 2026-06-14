@@ -306,14 +306,19 @@
     "setup": 1,
     "name": "方古",
     "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "otherNight": 8
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "24_zhixianrenwu",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
-    "otherNightReminder": "唤醒痢蛭，让他攻击一名玩家。",
+    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
@@ -322,31 +327,38 @@
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
     "firstNight": 3600,
-    "otherNight": 10
+    "otherNight": 10,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "id": "25_zhixianrenwu",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png",
-    "otherNightReminder": "唤醒哈迪寂亚，让他选择三名玩家。执行哈迪寂亚的能力流程（参考哈迪寂亚的百科页面）。",
+    "otherNightReminder": "哈迪寂亚选择三名玩家。对所有人宣告第一位玩家，然后唤醒他并让他秘密选择活着还是死去。依次对第二第三位玩家如此做。如果三名玩家都选择活着，他们都死去。",
     "reminders": [
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
     "name": "哈迪寂亚",
     "team": "demon",
     "ability": "每个夜晚*，你可以选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
-    "otherNight": 9
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
-    {
+  {
     "id": "jinxesserra01",
     "name": "瘟疫医生&镜像双子",
     "team": "jinx",
     "ability": "如果说书人本应获得镜像双子的能力，改为一名玩家会变成镜像双子。"
   },
-    {
+  {
     "id": "jinxesserra02",
     "name": "科学怪人&村夫",
     "team": "jinx",

@@ -409,7 +409,7 @@
   },
   {
     "id": "shenhaijuyao111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/leviathan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
     "edition": "custom",
     "name": "利维坦",
     "ability": "如果多于一名善良玩家被处决，邪恶阵营获胜。所有玩家都知道利维坦在场。在第五个白天结束时，邪恶阵营获胜。",
@@ -417,17 +417,19 @@
     "sch_team": "恶魔",
     "firstNight": 70,
     "otherNight": 42.2,
-    "firstNightReminder": "如果利维坦在场，告知所有人利维坦在场，现在是第一个白天。",
-    "otherNightReminder": "如果利维坦在场，告知所有人利维坦在场，现在是第几个白天。（如果玩家一致同意，则无需在已经知晓利维坦在场的前提下在其他夜晚执行此项操作。）",
+    "firstNightReminder": "放置利维坦的第一天标记，宣告利维坦在场，现在是第一天。",
+    "otherNightReminder": "将利维坦的标记转换到下一天。",
     "reminders": [
+      "善良被处决",
       "第一天",
-      "第二天",
       "第三天",
-      "第四天",
+      "第二天",
       "第五天",
-      "善良被处决"
+      "第四天"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zuixihuandeyiji111",
@@ -459,7 +461,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "58_meta",

@@ -362,28 +362,32 @@
     "firstNightReminder": "",
     "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "1a6692a2-c4e6-4aa9-8d84-f6892325e240",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
     "edition": "custom",
     "name": "普卡",
-    "ability": "每个夜晚，选择一名玩家：他中毒。先前已经中毒的玩家死亡并恢复健康。",
+    "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 28,
     "otherNight": 26,
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "0307c1b4-afb3-4c1d-83e2-b61bb3a36001",
@@ -399,14 +403,17 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "0166ad8f-b78f-4dcb-8de8-23bc0c1ead71",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1550997694761_18049940.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png",
     "edition": "custom",
     "name": "典狱长",
-    "ability": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
+    "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 31,
@@ -416,6 +423,9 @@
     "reminders": [
       "囚禁",
       "死亡"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   }
 ]

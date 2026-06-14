@@ -365,29 +365,33 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "1a6692a2-c4e6-4aa9-8d84-f6892325e240",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
     "edition": "custom",
     "name": "普卡",
-    "ability": "每个夜晚，选择一名玩家：他中毒。先前已经中毒的玩家死亡并恢复健康。",
+    "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 28,
     "otherNight": 26,
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "01dcb-8de8-23bc0c1ea",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/38/Guhuoniao.png/75px-Guhuoniao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/guhuoniao.png",
     "edition": "custom",
     "name": "姑获鸟",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
@@ -396,11 +400,14 @@
     "firstNight": 0,
     "otherNight": 33,
     "firstNightReminder": "",
-    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
+    "otherNightReminder": "唤醒姑获鸟，让他攻击一名玩家。",
     "reminders": [
-      "拥有能力",
-      "死亡"
-    ]
+      "死亡",
+      "获得能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "jinxa1",

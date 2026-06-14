@@ -554,22 +554,18 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/no_dashii.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/no_dashii_b.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。",
     "id": "no_dashii_c",
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 5500,
     "setup": 0,
     "reminders": [
-      "死亡",
       "中毒",
-      "中毒"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -590,11 +586,8 @@
     ]
   },
   {
-    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[多数玩家为军团]",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/legion.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_legion_b.png"
-    ],
+    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
     "edition": "custom",
     "flavor": "",
     "id": "legion_c",

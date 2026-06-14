@@ -83,23 +83,23 @@
     "team": "townsfolk",
     "firstNight": 0
   },
-      {
-        "id": "zhuijidelaoda111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
-        "edition": "custom",
-        "name": "气球驾驶员",
-        "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
-        "team": "townsfolk",
-        "sch_team": "镇民",
-        "firstNight": 8700,
-        "otherNight": 12000,
-        "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
-        "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
-        "reminders": [
-            "得知"
-        ],
-        "setup": 1
-    },
+  {
+    "id": "zhuijidelaoda111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
+    "edition": "custom",
+    "name": "气球驾驶员",
+    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 8700,
+    "otherNight": 12000,
+    "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
+    "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
+    "reminders": [
+      "得知"
+    ],
+    "setup": 1
+  },
   {
     "ability": "每个夜晚*，你要选择一名玩家：如果你选中了恶魔，你死亡，然后他醉酒直到下个黎明。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_0866187694761_98fba0d5.jpg",
@@ -119,24 +119,24 @@
     "team": "townsfolk",
     "firstNight": 0
   },
-      {
-        "id": "xunchashaoihwronaklsndfkasnd",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xuncha.png",
-        "edition": "custom",
-        "name": "巡察",
-        "ability": "每个夜晚*，你要选择两个善良角色（与上个夜晚不同）：如果他们都存活，他们当晚不会死亡。",
-        "team": "townsfolk",
-        "sch_team": "镇民",
-        "firstNight": 0,
-        "otherNight": 30.2,
-        "firstNightReminder": "",
-        "otherNightReminder": "唤醒巡查，让他选择两个善良角色（镇民或外来者）（和上个夜晚不同），如果他们都在场并存活（华白注：应该是需要在场的），他们两个今晚不会死亡。",
-        "reminders": [
-            "不会死亡"
-        ],
-        "remindersGlobal": [],
-        "setup": 0
-    },
+  {
+    "id": "xunchashaoihwronaklsndfkasnd",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xuncha.png",
+    "edition": "custom",
+    "name": "巡察",
+    "ability": "每个夜晚*，你要选择两个善良角色（与上个夜晚不同）：如果他们都存活，他们当晚不会死亡。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 30.2,
+    "firstNightReminder": "",
+    "otherNightReminder": "唤醒巡查，让他选择两个善良角色（镇民或外来者）（和上个夜晚不同），如果他们都在场并存活（华白注：应该是需要在场的），他们两个今晚不会死亡。",
+    "reminders": [
+      "不会死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0
+  },
   {
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/seamstress.png",
@@ -414,9 +414,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vigormortis.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。",
     "id": "vigormortis_c",
     "firstNightReminder": "",
     "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
@@ -424,21 +424,21 @@
     "otherNight": 6100.0,
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家:他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lleech.png",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。",
     "id": "lleech_c",
-    "firstNightReminder": "让痢蛭指向一名玩家。标记那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 7200.0,
@@ -473,12 +473,12 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_3002932943171_72f4def0.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/guhuoniao.png",
     "edition": "custom",
     "flavor": "",
     "id": "guhuoniao_c",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒姑获鸟，让其选择一名玩家，在玩家角色标记旁放置“死亡”提示标记。",
+    "otherNightReminder": "唤醒姑获鸟，让他攻击一名玩家。",
     "name": "姑获鸟",
     "otherNight": 8430.0,
     "setup": 0,
@@ -490,7 +490,7 @@
     "team": "demon",
     "firstNight": 0
   },
-    {
+  {
     "id": "jinxesserra01",
     "name": "气球驾驶员&提线木偶",
     "team": "jinx",

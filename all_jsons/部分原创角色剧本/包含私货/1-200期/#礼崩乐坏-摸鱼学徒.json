@@ -442,10 +442,10 @@
   },
   {
     "id": "aff7ba36-0f24-4cac-9c3a-030807e02fcb",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1550997694761_18049940.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png",
     "edition": "custom",
     "name": "典狱长",
-    "ability": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
+    "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
     "team": "demon",
     "firstNight": 31,
     "otherNight": 33,
@@ -456,11 +456,12 @@
       "死亡"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "edition": "custom",
     "flavor": "",
     "id": "20236_23",
@@ -471,8 +472,8 @@
     "otherNight": 28,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",

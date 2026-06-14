@@ -17,10 +17,8 @@
     "otherNight": 0,
     "firstNightReminder": "唤醒钦天监，对其用拇指指向其左侧或右侧示意。如果两侧邪恶玩家与他距离相同，拇指朝下示意。",
     "otherNightReminder": "",
-    "reminders": [
-    ],
-    "remindersGlobal": [
-    ],
+    "reminders": [],
+    "remindersGlobal": [],
     "setup": 0
   },
   {
@@ -89,21 +87,23 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png"
   },
   {
-		"id": "cf4c96c5-30fa-452d-8bc0-b8a16457d6b0",
-		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202303/c_8623445389761_b303f326.jpg",
-		"edition": "custom",
-		"name": "宠妃",
-		"ability": "每局游戏限一次，说书人会在关于你的事情上打破规则。随后，你会秘密得知说书人为此做了什么。",
-		"team": "townsfolk",
-		"sch_team": "镇民",
-		"firstNight": 0,
-		"otherNight": 0,
-		"firstNightReminder": "",
-		"otherNightReminder": "",
-		"reminders": ["失去能力"],
-		"remindersGlobal": [],
-		"setup": 0
-	},
+    "id": "cf4c96c5-30fa-452d-8bc0-b8a16457d6b0",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202303/c_8623445389761_b303f326.jpg",
+    "edition": "custom",
+    "name": "宠妃",
+    "ability": "每局游戏限一次，说书人会在关于你的事情上打破规则。随后，你会秘密得知说书人为此做了什么。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0
+  },
   {
     "firstNightReminder": "唤醒恶魔，并告诉他国王是谁。",
     "otherNightReminder": "如果死亡玩家人数大于存活玩家，唤醒国王并对其展示一个存活的角色标记。",
@@ -362,12 +362,13 @@
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“首次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "name": "方古",
     "otherNight": 29,
     "setup": 1,
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "id": "fang_gubutton",
     "edition": "custom",
@@ -378,10 +379,11 @@
     "name_eng": "Fang Gu",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "flavor": ""
   },
   {
-    "ability": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
+    "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
     "edition": "custom",
     "flavor": "",
     "id": "dianyuzhangbutton",
@@ -397,7 +399,7 @@
     "remindersGlobal": [],
     "team": "demon",
     "firstNight": 31,
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1550997694761_18049940.jpg"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png"
   },
   {
     "firstNightReminder": "",
@@ -406,8 +408,8 @@
     "otherNight": 28,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "id": "pobutton",
     "edition": "custom",
@@ -415,7 +417,9 @@
     "name_eng": "Po",
     "firstNight": 0,
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。每个夜晚限一次，如果你以这种方式杀死了一名外来者，当晚你可以再次行动。[+1外来者]",
@@ -481,33 +485,34 @@
     "edition": "custom",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spirit_of_ivory.png"
   },
-	{
-		"firstNightReminder": "",
-		"otherNightReminder": "",
-		"name": "古董收藏家",
-		"firstNight": 0,
-		"reminders": [],
-		"id": "antiquerbutton",
-		"team": "fabled",
-		"name_eng": "Antiquer",
-		"setup": 0,
-		"ability": "这个剧本的部分角色能力来自过去。",
-		"edition": "custom",
-		"image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/antique_assets_of_lei_gallery.png"
-	}, {
-	"ability": "这个剧本包含有自制角色或自制规则。",
-	"image": "https://oss.gstonegames.com/data_file/clocktower/upload/1689518692_197011_1078.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "20723_8081",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "私货商人",
-	"otherNight": 0,
-	"setup": 0,
-	"reminders": [],
-	"remindersGlobal": [],
-	"team": "fabled",
-	"firstNight": 0
-}
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "古董收藏家",
+    "firstNight": 0,
+    "reminders": [],
+    "id": "antiquerbutton",
+    "team": "fabled",
+    "name_eng": "Antiquer",
+    "setup": 0,
+    "ability": "这个剧本的部分角色能力来自过去。",
+    "edition": "custom",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/antique_assets_of_lei_gallery.png"
+  },
+  {
+    "ability": "这个剧本包含有自制角色或自制规则。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1689518692_197011_1078.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20723_8081",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "私货商人",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  }
 ]

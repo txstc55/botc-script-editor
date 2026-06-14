@@ -396,10 +396,10 @@
   },
   {
     "id": "1082f459-dd93-453d-8ed9-2db7b1fa51ad",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1550997694761_18049940.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png",
     "edition": "custom",
     "name": "典狱长",
-    "ability": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
+    "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 31,
@@ -411,11 +411,12 @@
       "死亡"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "51761769-9aac-414d-a20e-c992d81b9abc",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "edition": "custom",
     "name": "珀",
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
@@ -426,11 +427,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "46e1831b-4f3c-485c-8f6f-2076919d3200",
@@ -442,7 +444,14 @@
     "sch_team": "恶魔",
     "firstNight": 0,
     "otherNight": 34,
-    "otherNightReminder": "每个夜晚*，你要选择任意数量的非旅行者玩家或一名旅行者玩家：如果他们的角色类型均不相同，他们死亡。[+1外来者]"
+    "otherNightReminder": "唤醒饕餮，让其选择任意数量的玩家。如果这些玩家的角色类型均不相同，标记这些玩家死亡。",
+    "firstNightReminder": "",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
   },
   {
     "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。",

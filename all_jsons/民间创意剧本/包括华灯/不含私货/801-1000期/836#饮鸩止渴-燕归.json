@@ -273,7 +273,7 @@
   {
     "id": "22_yinjiuzhike",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
@@ -283,7 +283,10 @@
     "team": "demon",
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "firstNight": 3400,
-    "otherNight": 6
+    "otherNight": 6,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "23_yinjiuzhike",
@@ -295,7 +298,11 @@
     "name": "奥赫",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "24_yinjiuzhike",
@@ -308,6 +315,10 @@
     "name": "姑获鸟",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
-    "otherNight": 8
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   }
 ]

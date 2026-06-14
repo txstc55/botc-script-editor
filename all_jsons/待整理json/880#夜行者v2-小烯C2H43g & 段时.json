@@ -97,22 +97,26 @@
   },
   {
     "id": "9_yexingzhe",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/8c/tuqiff39a278vl7zgiu1z9hki1b5gni.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "name": "诺-达鲺",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "otherNight": 3
+    "otherNight": 3,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "id": "10_yexingzhe",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e7/i3bse7nern4raiqwjpmzrpzjfa0vrq4.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
-    "otherNightReminder": "唤醒痢蛭，让他攻击一名玩家。",
+    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
@@ -121,7 +125,10 @@
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
     "firstNight": 3300,
-    "otherNight": 4
+    "otherNight": 4,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "id": "11_yexingzhe",
@@ -137,7 +144,7 @@
   },
   {
     "id": "61ecfdb0-2225-465c-9a7c-5d0b4c46d5ed",
-    "image":"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/23/9fmohn9ldebl3ntosy95ho1wt1vmrng.png",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/23/9fmohn9ldebl3ntosy95ho1wt1vmrng.png",
     "name": "私货商人",
     "team": "fabled",
     "ability": "有私货的相克规则。"
@@ -148,17 +155,18 @@
     "name": "教皇",
     "team": "fabled",
     "ability": "会有重复的善良角色在场。他们也可能是恶魔的伪装。"
-  },{
-		"id": "ydjjt",
-		"name": "印度教教徒",
-		"team": "fabled",
-		"ability": "最先死亡的四名玩家会立刻以相同阵营的旅行者转世重生。如果恶魔死亡变成了旅行者，一名爪牙玩家变成这个恶魔。",
-		"image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/ef/kqlms0w8wp372gvh76lov0c08e6z8m3.png",
-		"firstNight": 0.0,
-		"otherNight": 0,
-		"reminders": [],
-		"firstNightReminder": "",
-		"otherNightReminder": "",
-		"remindersGlobal": []
-	}
+  },
+  {
+    "id": "ydjjt",
+    "name": "印度教教徒",
+    "team": "fabled",
+    "ability": "最先死亡的四名玩家会立刻以相同阵营的旅行者转世重生。如果恶魔死亡变成了旅行者，一名爪牙玩家变成这个恶魔。",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/ef/kqlms0w8wp372gvh76lov0c08e6z8m3.png",
+    "firstNight": 0.0,
+    "otherNight": 0,
+    "reminders": [],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": []
+  }
 ]

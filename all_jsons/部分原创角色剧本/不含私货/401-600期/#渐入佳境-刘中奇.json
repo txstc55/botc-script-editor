@@ -435,18 +435,18 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/no_dashii.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。",
     "id": "no_dashii_button",
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 55,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -455,17 +455,18 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fang_gu.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "flavor": "",
     "id": "fang_gu_button",
     "firstNightReminder": "",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“限一次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "name": "方古",
     "otherNight": 54,
     "setup": 1,
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "remindersGlobal": [
       "限一次"
@@ -500,14 +501,15 @@
     "edition": "custom",
     "flavor": "",
     "id": "yanluo_button",
-    "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。让阎罗选择两名玩家，放置“即将死亡”标记在其角色图标旁。",
+    "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
     "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
     "name": "阎罗",
     "otherNight": 84,
     "setup": 0,
     "reminders": [
+      "三更将死",
       "即将死亡",
-      "三更将死"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",

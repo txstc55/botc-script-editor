@@ -450,7 +450,7 @@
   },
   {
     "id": "fanggu_b",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/56/5jaw5tcw1cctwr699faa2irvpeh0tqi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "name": "方古",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
@@ -460,7 +460,8 @@
     "firstNightReminder": "",
     "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "remindersGlobal": [
       "限一次"
@@ -470,7 +471,7 @@
   },
   {
     "id": "vigormortis_b",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/3a/3bzh51psxnf95lld35qn6wywp4aduor.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
     "edition": "custom",
     "name": "亡骨魔",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
@@ -478,19 +479,19 @@
     "firstNight": 0,
     "otherNight": 40,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "remindersGlobal": [],
-    "flavor": "",
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。",
     "setup": 1
   },
   {
     "id": "nodashii_b",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/8c/tuqiff39a278vl7zgiu1z9hki1b5gni.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "edition": "custom",
     "name": "诺-达鲺",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
@@ -500,16 +501,16 @@
     "firstNightReminder": "",
     "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "flavor": ""
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "id": "vortox_b",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e7/5weznbb3b9dr7j9bep7syuyfqyl5t6h.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
     "edition": "custom",
     "name": "涡流",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
@@ -517,13 +518,13 @@
     "firstNight": 0,
     "otherNight": 40,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒涡流，让他攻击一名玩家。",
+    "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "flavor": ""
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "id": "bootlegger",

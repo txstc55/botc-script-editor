@@ -2,8 +2,8 @@
   {
     "id": "_meta",
     "author": "Hiti",
-	"logo": "https://i.postimg.cc/ZRTYcsTg/image.png",
-		"townsfolkName":"镇民",
+    "logo": "https://i.postimg.cc/ZRTYcsTg/image.png",
+    "townsfolkName": "镇民",
     "name": "群星之夜"
   },
   {
@@ -22,22 +22,24 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/clockmaker.png"
   },
   {
-	"ability": "如果你死亡，说书人获得一个不在场的爪牙能力。",
-	"image": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_plaguedoctor.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "plaguedoctor",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "瘟疫医生",
-	"name_id": "plaguedoctor",
-	"otherNight": 0,
-	"setup": 0,
-	"reminders": [],
-	"remindersGlobal": ["说书人能力"],
-	"team": "outsider",
-	"firstNight": 0
-	},
+    "ability": "如果你死亡，说书人获得一个不在场的爪牙能力。",
+    "image": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_plaguedoctor.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "plaguedoctor",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "瘟疫医生",
+    "name_id": "plaguedoctor",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [
+      "说书人能力"
+    ],
+    "team": "outsider",
+    "firstNight": 0
+  },
   {
     "firstNightReminder": "唤醒骑士，然后指向标记了“得知”的两名玩家。",
     "otherNightReminder": "",
@@ -364,9 +366,9 @@
     "otherNight": 32,
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "id": "vigormortisbutton",
     "edition": "custom",
@@ -374,17 +376,19 @@
     "name_eng": "Vigormortis",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 30,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "no_dashiibutton",
     "edition": "custom",
@@ -392,7 +396,9 @@
     "name_eng": "No Dashii",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "remindersGlobal": [],
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "firstNightReminder": "",
@@ -401,8 +407,8 @@
     "otherNight": 27,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "复活"
+      "复活",
+      "死亡"
     ],
     "id": "shabalothbutton",
     "edition": "custom",
@@ -410,7 +416,9 @@
     "name_eng": "Shabaloth",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你上个夜晚选择过且当前死亡的玩家之一可能会被你反刍。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shabaloth.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shabaloth.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -419,8 +427,8 @@
     "otherNight": 28,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "id": "pobutton",
     "edition": "custom",
@@ -428,7 +436,9 @@
     "name_eng": "Po",
     "firstNight": 0,
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",

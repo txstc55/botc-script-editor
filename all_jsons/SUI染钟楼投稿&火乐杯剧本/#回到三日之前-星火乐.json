@@ -370,7 +370,7 @@
   },
   {
     "id": "df0e4318-dbd9-4585-ab1e-78f68f5e0c19",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/b/bf/Po.png/300px-Po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "edition": "custom",
     "name": "珀",
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
@@ -379,16 +379,18 @@
     "firstNight": 0,
     "otherNight": 35,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒珀，他可以攻击一名玩家或不进行攻击，如果他上一次选择了不进行攻击，则此次必须攻击三名玩家。",
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
       "攻击三次",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "cab39e97-f125-40e3-b3fc-0cb66d332988",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/f/fc/Vigormortis.png/300px-Vigormortis.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
     "edition": "custom",
     "name": "亡骨魔",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
@@ -397,34 +399,38 @@
     "firstNight": 0,
     "otherNight": 40,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "id": "cea8c77b-33d1-41bd-a0eb-d32303ee2496",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/0/09/Alhadikhia.png/300px-Alhadikhia.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png",
     "edition": "custom",
     "name": "哈迪寂亚",
-    "ability": "每个夜晚*，你要选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
+    "ability": "每个夜晚*，你可以选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 0,
     "otherNight": 42,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒哈迪寂亚，让他选择三名玩家。执行哈迪寂亚的能力流程（参考哈迪寂亚的百科页面）。",
+    "otherNightReminder": "哈迪寂亚选择三名玩家。对所有人宣告第一位玩家，然后唤醒他并让他秘密选择活着还是死去。依次对第二第三位玩家如此做。如果三名玩家都选择活着，他们都死去。",
     "reminders": [
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "5049c07f-0dda-449e-b31b-1ad59e6ed204",

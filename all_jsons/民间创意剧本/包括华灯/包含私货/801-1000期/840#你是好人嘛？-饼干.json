@@ -59,7 +59,7 @@
     "otherNight": 11400,
     "reminders": [
       "已提名",
-	  "失去能力"
+      "失去能力"
     ],
     "remindersGlobal": [],
     "setup": 0,
@@ -166,7 +166,7 @@
     "reminders": [
       "死亡",
       "中毒",
-	  "失去能力"
+      "失去能力"
     ],
     "remindersGlobal": [],
     "setup": 0,
@@ -337,13 +337,15 @@
     "remindersGlobal": [],
     "setup": 0,
     "otherNightReminder": "让小恶魔选择一名玩家。标记那名玩家死亡。如果小恶魔选择了自己：用一个备用的小恶魔标记替换一个存活的爪牙角色标记。让原来的小恶魔重新入睡。唤醒新的小恶魔。对他展示“你是”信息标记，和小恶魔角色标记。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/imp.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
+    "firstNightReminder": "",
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
     "id": "lord_of_typhon",
     "name": "堤丰之首",
     "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你靠近正中，+1爪牙，-或+任意数量外来者]",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你位于正中，+1爪牙，-或+任意数量外来者]",
     "firstNight": 90,
     "otherNight": 7800,
     "reminders": [
@@ -352,8 +354,9 @@
     "remindersGlobal": [],
     "setup": 1,
     "firstNightReminder": "将位于堤丰之首两侧的对应数量的玩家变成邪恶的爪牙，并分别唤醒他们通知他们的角色和阵营变化。",
-    "otherNightReminder": "在除首个夜晚以外的每个夜晚，唤醒堤丰之首。让他指向任意一名玩家。那名玩家死亡——用“死亡”提示标记标记那名玩家。让堤丰之首重新入睡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_3707150105271_e57fc482.jpg"
+    "otherNightReminder": "唤醒堤丰之首，让他攻击一名玩家。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/18/Lordoftyphon.png",
+    "flavor": ""
   },
   {
     "id": "no_dashii",
@@ -363,13 +366,15 @@
     "firstNight": 0,
     "otherNight": 5500,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/no_dashii.png"
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "firstNightReminder": "",
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "id": "qiongqi",

@@ -452,7 +452,7 @@
   },
   {
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "edition": "custom",
     "flavor": "",
     "id": "po_c",
@@ -463,8 +463,6 @@
     "setup": 0,
     "reminders": [
       "攻击三次",
-      "死亡",
-      "死亡",
       "死亡"
     ],
     "remindersGlobal": [],
@@ -473,12 +471,12 @@
   },
   {
     "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_6000301943171_d2f257a6.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baojun.png",
     "edition": "custom",
     "flavor": "",
     "id": "baojun_c",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒典狱长，让其选择至多两名玩家。在这些玩家角色标记旁放置“死亡”提示标记。如果暴君选择的玩家数量与上个夜晚死亡的玩家数量相同，摇头示意其重新选择",
+    "otherNightReminder": "唤醒暴君，让他攻击至多两名玩家。但是暴君选择的玩家数量不能与上个夜晚死亡的玩家数量相同。",
     "name": "暴君",
     "otherNight": 8401.0,
     "setup": 0,
@@ -495,7 +493,7 @@
     "edition": "custom",
     "flavor": "",
     "id": "yanluo_c",
-    "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。\n让阎罗选择一名玩家，放置“选择”标记在其角色图标旁，其在覅三个夜晚必定会死亡。\n让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
+    "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
     "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
     "name": "阎罗",
     "otherNight": 8410.0,

@@ -318,7 +318,7 @@
   },
   {
     "id": "25_kakalikeyeweimian",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/kakalikeyeweimian/25_kakalikeyeweimian.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
     "otherNightReminder": "让小恶魔选择一名玩家。标记那名玩家死亡。如果小恶魔选择了自己：用一个备用的小恶魔标记替换一个存活的爪牙角色标记。让原来的小恶魔重新入睡。唤醒新的小恶魔。对他展示“你是”信息标记，和小恶魔角色标记。",
     "reminders": [
       "死亡"
@@ -326,12 +326,16 @@
     "name": "小恶魔",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
-    "otherNight": 6
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
     "id": "26_kakalikeyeweimian",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/kakalikeyeweimian/26_kakalikeyeweimian.png",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“限一次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "reminders": [
       "死亡",
       "限一次"
@@ -343,7 +347,9 @@
     "name": "方古",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "flavor": ""
   },
   {
     "id": "27_kakalikeyeweimian",

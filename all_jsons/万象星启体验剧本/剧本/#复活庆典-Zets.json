@@ -1,10 +1,11 @@
-[{
-		"id": "_meta",
-		"logo": "https://i.postimg.cc/Vs30P8F4/image.png",
-		"name": "复活庆典v3.0",
-		"townsfolkName": "镇民",
-		"author": "Zets"
-	},
+[
+  {
+    "id": "_meta",
+    "logo": "https://i.postimg.cc/Vs30P8F4/image.png",
+    "name": "复活庆典v3.0",
+    "townsfolkName": "镇民",
+    "author": "Zets"
+  },
   {
     "firstNightReminder": "决定失忆者的能力。如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
     "otherNightReminder": "如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
@@ -382,13 +383,13 @@
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 30,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "no_dashiibutton",
     "edition": "custom",
@@ -396,7 +397,9 @@
     "name_eng": "No Dashii",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "remindersGlobal": [],
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "firstNightReminder": "",
@@ -405,9 +408,9 @@
     "otherNight": 32,
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "id": "vigormortisbutton",
     "edition": "custom",
@@ -415,7 +418,9 @@
     "name_eng": "Vigormortis",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",
@@ -431,10 +436,11 @@
       "死亡"
     ],
     "team": "demon",
-    "name_eng": "Lil\u0027 Monsta",
+    "name_eng": "Lil' Monsta",
     "firstNight": 16,
-    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png"
+    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",

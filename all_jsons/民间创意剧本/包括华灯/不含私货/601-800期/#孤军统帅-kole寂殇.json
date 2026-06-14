@@ -390,8 +390,8 @@
     "firstNight": 5700.0
   },
   {
-    "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你的上个夜晚选择过的且当前死亡的玩家可能会被你反刍。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/shabaloth.png",
+    "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你上个夜晚选择过且当前死亡的玩家之一可能会被你反刍。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shabaloth.png",
     "edition": "custom",
     "flavor": "",
     "id": "shabaloth_c",
@@ -401,9 +401,8 @@
     "otherNight": 5200.0,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "死亡",
-      "复活"
+      "复活",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -411,9 +410,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vortox.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。",
     "id": "vortox_c",
     "firstNightReminder": "",
     "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
@@ -429,12 +428,12 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一段秘密短语。每次你在白天公开说出这段短语，当天便可能会有一名玩家在这之后死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202402/c_9719440568071_03aa8062.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yaggababble.png",
     "edition": "custom",
     "flavor": "",
     "id": "yaggababble_c",
-    "firstNightReminder": "在为首个夜晚做准备时，用纸条或手机便签或其他便捷的设备写下一段短语。\n在首个夜晚，唤醒牙噶巴卜，对他展示这段短语，然后让他重新入睡。\n",
-    "otherNightReminder": "每当牙噶巴卜在白天公开说出这段短语时，将一枚“死亡”提示标记放入魔典左侧的中央位置，用以提示你需要在今晚放置这个标记。\n每个夜晚，你需要选择是否将放入魔典中央的“死亡”提示标记放置在一名玩家的角色标记旁。如果你这么做，那么同时为放置了提示标记的角色标记上再放置帷幕标记。这些玩家死亡。",
+    "firstNightReminder": "唤醒牙噶巴卜，对他展示他的秘密短语。",
+    "otherNightReminder": "根据已放置的提示标记数量，选择最多等同于该数量的玩家死亡。该夜晚行动只是一个提示，死亡的造成时机可以是白天，也可以是夜晚的任何时候。",
     "name": "牙噶巴卜",
     "otherNight": 7750.0,
     "setup": 0,

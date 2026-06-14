@@ -363,13 +363,13 @@
   },
   {
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "name": "普卡",
     "otherNight": 26,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "pukkabutton",
     "edition": "custom",
@@ -377,25 +377,29 @@
     "name_eng": "Pukka",
     "firstNight": 28,
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
-    "firstNightReminder": "寄生蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 35,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "lleechbutton",
     "edition": "custom",
     "team": "demon",
     "name_eng": "Lleech",
     "firstNight": 15,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+    "remindersGlobal": [],
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "firstNightReminder": "",
@@ -407,26 +411,28 @@
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
     "id": "al-hadikhiabutton",
     "edition": "custom",
     "team": "demon",
     "name_eng": "Al-Hadikhia",
     "firstNight": 0,
-    "ability": "每个夜晚*，你要选择三名玩家（所有玩家都会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png"
+    "ability": "每个夜晚*，你可以选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 30,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "no_dashiibutton",
     "edition": "custom",
@@ -434,6 +440,8 @@
     "name_eng": "No Dashii",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "remindersGlobal": [],
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   }
 ]

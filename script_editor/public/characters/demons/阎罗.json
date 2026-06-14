@@ -4,7 +4,7 @@
   "team": "demon",
   "teamLabelZh": "恶魔",
   "folder": "demons",
-  "variantCount": 13,
+  "variantCount": 10,
   "totalOccurrenceCount": 23,
   "variants": [
     {
@@ -18,17 +18,18 @@
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
       "firstNight": 117,
-      "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。让阎罗选择两名玩家，分别放置“即将死亡”和“三更将死”标记在其角色图标旁。",
+      "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
       "otherNight": 84,
       "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
         "三更将死",
-        "即将死亡"
+        "即将死亡",
+        "死亡"
       ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 7,
+      "occurrenceCount": 8,
       "notes": []
     },
     {
@@ -40,11 +41,36 @@
         "demon"
       ],
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yanluo.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
+      "firstNight": 11710,
+      "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
+      "otherNight": 8410,
+      "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
+      "reminders": [
+        "三更将死",
+        "即将死亡",
+        "死亡"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 4,
+      "notes": []
+    },
+    {
+      "id": "阎罗",
+      "name": "阎罗",
+      "variantIndex": 3,
+      "team": "demon",
+      "teams": [
+        "demon"
+      ],
+      "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
       "firstNight": 58,
       "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
       "otherNight": 50,
-      "otherNightReminder": "唤醒阎罗，让他选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁，并将上一个夜晚的“即将死亡”标记替换为“死亡”标记。如果这是游戏的第三个夜晚，将“三更将死”标记的玩家判死，即使因为任何原因让他不会死亡。",
+      "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
         "三更将死",
         "即将死亡",
@@ -59,31 +85,6 @@
     {
       "id": "阎罗",
       "name": "阎罗",
-      "variantIndex": 3,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
-      "firstNight": 27,
-      "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。 让阎罗选择一名玩家，放置“选择”标记在其角色图标旁，其在覅三个夜晚必定会死亡。 让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
-      "otherNight": 8410,
-      "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
-      "reminders": [
-        "三更将死",
-        "即将死亡",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "阎罗",
-      "name": "阎罗",
       "variantIndex": 4,
       "team": "demon",
       "teams": [
@@ -91,8 +92,8 @@
       ],
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
-      "firstNight": 11710,
-      "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。 让阎罗选择一名玩家，放置“选择”标记在其角色图标旁，其在覅三个夜晚必定会死亡。 让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
+      "firstNight": 27,
+      "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
       "otherNight": 8410,
       "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
@@ -115,14 +116,15 @@
         "demon"
       ],
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/c/c8/Yanluo.png/100px-Yanluo.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
       "firstNight": 0,
-      "firstNightReminder": "",
+      "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
       "otherNight": 78,
-      "otherNightReminder": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
+      "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
         "三更将死",
-        "即将死亡"
+        "即将死亡",
+        "死亡"
       ],
       "remindersGlobal": [],
       "setup": 0,
@@ -139,11 +141,11 @@
         "demon"
       ],
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yanluo.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
       "firstNight": 32,
       "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
       "otherNight": 50,
-      "otherNightReminder": "唤醒阎罗，让他选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁，并将上一个夜晚的“即将死亡”标记替换为“死亡”标记。如果这是游戏的第三个夜晚，将“三更将死”标记的玩家判死，即使因为任何原因让他不会死亡。",
+      "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
         "三更将死",
         "即将死亡",
@@ -165,13 +167,14 @@
       ],
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
-      "firstNight": 117,
-      "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。让阎罗选择两名玩家，放置“即将死亡”标记在其角色图标旁。",
-      "otherNight": 84,
+      "firstNight": 4000,
+      "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
+      "otherNight": 11,
       "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
         "三更将死",
-        "即将死亡"
+        "即将死亡",
+        "死亡"
       ],
       "remindersGlobal": [],
       "setup": 0,
@@ -188,11 +191,11 @@
         "demon"
       ],
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yanluo.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
       "firstNight": 4000,
       "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
-      "otherNight": 11,
-      "otherNightReminder": "唤醒阎罗，让他选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁，并将上一个夜晚的“即将死亡”标记替换为“死亡”标记。如果这是游戏的第三个夜晚，将“三更将死”标记的玩家判死，即使因为任何原因让他不会死亡。",
+      "otherNight": 14,
+      "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
         "三更将死",
         "即将死亡",
@@ -213,11 +216,11 @@
         "demon"
       ],
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e3/1u42djep870u33mo55soipjghgx5s8a.png",
-      "firstNight": 4000,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
+      "firstNight": 4100,
       "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
-      "otherNight": 14,
-      "otherNightReminder": "唤醒阎罗，让他选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁，并将上一个夜晚的“即将死亡”标记替换为“死亡”标记。如果这是游戏的第三个夜晚，将“三更将死”标记的玩家判死，即使因为任何原因让他不会死亡。",
+      "otherNight": 5,
+      "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
         "三更将死",
         "即将死亡",
@@ -238,83 +241,10 @@
         "demon"
       ],
       "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yanluo.png",
-      "firstNight": 4100,
-      "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
-      "otherNight": 5,
-      "otherNightReminder": "唤醒阎罗，让他选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁，并将上一个夜晚的“即将死亡”标记替换为“死亡”标记。如果这是游戏的第三个夜晚，将“三更将死”标记的玩家判死，即使因为任何原因让他不会死亡。",
-      "reminders": [
-        "三更将死",
-        "即将死亡",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "阎罗",
-      "name": "阎罗",
-      "variantIndex": 11,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yanluo.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
       "firstNight": 4100,
       "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
       "otherNight": 16,
-      "otherNightReminder": "唤醒阎罗，让他选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁，并将上一个夜晚的“即将死亡”标记替换为“死亡”标记。如果这是游戏的第三个夜晚，将“三更将死”标记的玩家判死，即使因为任何原因让他不会死亡。",
-      "reminders": [
-        "三更将死",
-        "即将死亡",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "阎罗",
-      "name": "阎罗",
-      "variantIndex": 12,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
-      "firstNight": 11710,
-      "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
-      "otherNight": 8410,
-      "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
-      "reminders": [
-        "即将死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "阎罗",
-      "name": "阎罗",
-      "variantIndex": 13,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e3/1u42djep870u33mo55soipjghgx5s8a.png",
-      "firstNight": 11710,
-      "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。 让阎罗选择一名玩家，放置“选择”标记在其角色图标旁，其在覅三个夜晚必定会死亡。 让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
-      "otherNight": 8410,
       "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
       "reminders": [
         "三更将死",

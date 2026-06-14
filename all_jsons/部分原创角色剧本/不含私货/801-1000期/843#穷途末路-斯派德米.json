@@ -250,7 +250,7 @@
   {
     "id": "21_qiongtumolu",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
-    "otherNightReminder": "唤醒珀，他可以攻击一名玩家或不进行攻击，如果他上一次选择了不进行攻击，则此次必须攻击三名玩家。",
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
       "攻击三次",
       "死亡"
@@ -258,7 +258,11 @@
     "name": "珀",
     "team": "demon",
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "otherNight": 6
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "22_qiongtumolu",
@@ -271,21 +275,30 @@
     "setup": 1,
     "name": "方古",
     "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "otherNight": 7
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "23_qiongtumolu",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "name": "诺-达鲺",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "otherNight": 8
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "id": "24_qiongtumolu",
@@ -304,7 +317,7 @@
   },
   {
     "id": "25_qiongtumolu",
-    "image":"https://free.picui.cn/free/2025/11/29/6929d0021ba80.png",
+    "image": "https://free.picui.cn/free/2025/11/29/6929d0021ba80.png",
     "name": "斯派德米",
     "team": "fabled",
     "ability": "当有玩家“疯狂”证明错误的角色运作或游戏规则时，说书人可能会公开解释正确的。"

@@ -220,10 +220,11 @@
   },
   {
     "id": "16_fengaojixu",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fengaojixu/16_fengaojixu.png",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“限一次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "remindersGlobal": [
       "限一次"
@@ -232,18 +233,24 @@
     "name": "方古",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "otherNight": 6
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "flavor": ""
   },
   {
     "id": "17_fengaojixu",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fengaojixu/17_fengaojixu.png",
-    "otherNightReminder": "唤醒奥赫。让奥赫指向角色列表上的一个角色标记。如果被选择的角色在场，对应的玩家死亡——使用“死亡”提示标记标记那名玩家。如果被选择的角色不在场，那么改为你来选择任意一名玩家，那名玩家死亡——使用“死亡”提示标记标记那名玩家。让奥赫重新入睡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ojo.png",
+    "otherNightReminder": "唤醒奥赫，让他选择角色列表上的一个角色。该角色对应的玩家死亡，如果该角色不在场，替奥赫决定今晚谁会因为奥赫能力死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "奥赫",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   }
 ]

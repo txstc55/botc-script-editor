@@ -362,11 +362,13 @@
     "firstNight": 0,
     "otherNight": 31,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒小恶魔，让他攻击一名玩家。如果他成功自杀，则在他入睡后通知一名爪牙角色变化。",
+    "otherNightReminder": "让小恶魔选择一名玩家。标记那名玩家死亡。如果小恶魔选择了自己：用一个备用的小恶魔标记替换一个存活的爪牙角色标记。让原来的小恶魔重新入睡。唤醒新的小恶魔。对他展示“你是”信息标记，和小恶魔角色标记。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
     "id": "xiaoweibaxiliuxiliu111",
@@ -378,13 +380,15 @@
     "sch_team": "恶魔",
     "firstNight": 3030,
     "otherNight": 33,
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "xiaoshabi111111",
@@ -396,14 +400,15 @@
     "sch_team": "恶魔",
     "firstNight": 3016,
     "otherNight": 44,
-    "firstNightReminder": "唤醒所有爪牙选择由谁照看小怪宝。",
-    "otherNightReminder": "唤醒所有爪牙选择由谁照看小怪宝。随后，决定今晚谁会因为小怪宝能力死亡。",
+    "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",
+    "otherNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。说书人选择一名玩家，那名玩家死亡。",
     "reminders": [],
     "remindersGlobal": [
       "是恶魔",
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "Skorn",

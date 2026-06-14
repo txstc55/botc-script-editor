@@ -1,47 +1,49 @@
-[{
-	"logo": "https://i.postimg.cc/02MDD041/image.png",
-	"description": "",
-	"author": "Ben Burns",
-	"id": "_meta",
-	"name": "疫病仆从",
-	"state": [{
-				"stateName": "醉酒与中毒",
-				"stateDescription": "醉酒或中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果醉酒或中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息。醉酒或中毒的玩家不会得知自己醉酒或中毒。"
-			},
-			{
-				"stateName": "疯狂",
-				"stateDescription": "当一名玩家需要“疯狂”地证明某件事情时，意味着他应该去努力说服其他玩家那件事情是真的。有的角色要求玩家需要“疯狂”地证明某件事情，也有的角色会要求玩家不能“疯狂”地证明某件事情（也就意味着他应该去努力说服其他玩家那件事情是假的）。"
-			},
-			{
-				"stateName": "相克规则：瘟疫医生&红唇女郎",
-				"stateDescription": "如果瘟疫医生死亡且说书人会因此获得红唇女郎的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
-			},
-			{
-				"stateName": "相克规则：瘟疫医生&哥布林",
-				"stateDescription": "如果瘟疫医生死亡且说书人会因此获得哥布林的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
-			},
-			{
-				"stateName": "相克规则：瘟疫医生&提线木偶",
-				"stateDescription": "如果在瘟疫医生死亡时说书人获得了提线木偶的能力，且与恶魔邻座的存活玩家中有镇民或外来者，其中一名玩家会变成邪恶的提线木偶。如果此时场上的邪恶玩家数量比初始设置时的数量超出一名或更多，改为无事发生。"
-			}
-		],"townsfolkName":"镇民"
-  },
-	
+[
   {
-	"ability": "使用灯神的相克规则。",
-	"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "20003_107",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "灯神",
-	"otherNight": 0,
-	"setup": 0,
-	"reminders": [],
-	"remindersGlobal": [],
-	"team": "fabled",
-	"firstNight": 0
+    "logo": "https://i.postimg.cc/02MDD041/image.png",
+    "description": "",
+    "author": "Ben Burns",
+    "id": "_meta",
+    "name": "疫病仆从",
+    "state": [
+      {
+        "stateName": "醉酒与中毒",
+        "stateDescription": "醉酒或中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果醉酒或中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息。醉酒或中毒的玩家不会得知自己醉酒或中毒。"
+      },
+      {
+        "stateName": "疯狂",
+        "stateDescription": "当一名玩家需要“疯狂”地证明某件事情时，意味着他应该去努力说服其他玩家那件事情是真的。有的角色要求玩家需要“疯狂”地证明某件事情，也有的角色会要求玩家不能“疯狂”地证明某件事情（也就意味着他应该去努力说服其他玩家那件事情是假的）。"
+      },
+      {
+        "stateName": "相克规则：瘟疫医生&红唇女郎",
+        "stateDescription": "如果瘟疫医生死亡且说书人会因此获得红唇女郎的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
+      },
+      {
+        "stateName": "相克规则：瘟疫医生&哥布林",
+        "stateDescription": "如果瘟疫医生死亡且说书人会因此获得哥布林的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
+      },
+      {
+        "stateName": "相克规则：瘟疫医生&提线木偶",
+        "stateDescription": "如果在瘟疫医生死亡时说书人获得了提线木偶的能力，且与恶魔邻座的存活玩家中有镇民或外来者，其中一名玩家会变成邪恶的提线木偶。如果此时场上的邪恶玩家数量比初始设置时的数量超出一名或更多，改为无事发生。"
+      }
+    ],
+    "townsfolkName": "镇民"
+  },
+  {
+    "ability": "使用灯神的相克规则。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20003_107",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "灯神",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
   },
   {
     "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
@@ -244,22 +246,24 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/soldier.png"
   },
   {
-	"ability": "如果你死亡，说书人获得一个不在场的爪牙能力。",
-	"image": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_plaguedoctor.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "plaguedoctor",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "瘟疫医生",
-	"name_id": "plaguedoctor",
-	"otherNight": 0,
-	"setup": 0,
-	"reminders": [],
-	"remindersGlobal": ["说书人能力"],
-	"team": "outsider",
-	"firstNight": 0
-	},
+    "ability": "如果你死亡，说书人获得一个不在场的爪牙能力。",
+    "image": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_plaguedoctor.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "plaguedoctor",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "瘟疫医生",
+    "name_id": "plaguedoctor",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [
+      "说书人能力"
+    ],
+    "team": "outsider",
+    "firstNight": 0
+  },
   {
     "firstNightReminder": "分别给爪牙们展示三个不在场角色，这些信息之间，包括与展示给恶魔的不在场角色之间可能会有重叠。",
     "otherNightReminder": "",
@@ -417,9 +421,9 @@
     "otherNight": 32,
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "id": "vigormortisbutton",
     "edition": "custom",
@@ -427,7 +431,9 @@
     "name_eng": "Vigormortis",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",
@@ -443,9 +449,10 @@
       "死亡"
     ],
     "team": "demon",
-    "name_eng": "Lil\u0027 Monsta",
+    "name_eng": "Lil' Monsta",
     "firstNight": 16,
-    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png"
+    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
+    "flavor": ""
   }
 ]

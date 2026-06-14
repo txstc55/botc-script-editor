@@ -378,14 +378,15 @@
     "sch_team": "恶魔",
     "firstNight": 16,
     "otherNight": 44,
-    "firstNightReminder": "唤醒所有爪牙选择由谁照看小怪宝。",
-    "otherNightReminder": "唤醒所有爪牙选择由谁照看小怪宝。随后，决定今晚谁会因为小怪宝能力死亡。",
+    "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",
+    "otherNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。说书人选择一名玩家，那名玩家死亡。",
     "reminders": [],
     "remindersGlobal": [
       "是恶魔",
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "xiaoweibaxiliuxiliu111",
@@ -397,13 +398,15 @@
     "sch_team": "恶魔",
     "firstNight": 30,
     "otherNight": 33,
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "yigeshaba111",
@@ -416,12 +419,14 @@
     "firstNight": 0,
     "otherNight": 34,
     "firstNightReminder": "",
-    "otherNightReminder": "决定上一夜被沙巴洛斯选择的玩家是否被反刍。然后唤醒沙巴洛斯，让他攻击两名玩家。",
+    "otherNightReminder": "上一夜被沙巴洛斯选择且当前已死亡的玩家之一可能被反刍，如果被反刍，标记那名玩家被复活。让沙巴洛斯选择两名玩家。标记这两名玩家死亡。",
     "reminders": [
-      "死亡",
-      "复活"
+      "复活",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "opppppppppp1111",
@@ -434,11 +439,13 @@
     "firstNight": 0,
     "otherNight": 35,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒珀，他可以攻击一名玩家或不进行攻击，如果他上一次选择了不进行攻击，则此次必须攻击三名玩家。",
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
       "攻击三次",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   }
 ]

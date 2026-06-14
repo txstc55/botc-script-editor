@@ -1,13 +1,12 @@
 [
   {
-    "id": "_meta", 
+    "id": "_meta",
     "name": "杯弓蛇影",
     "author": "Aaron",
-    "logo":"https://i.postimg.cc/FFk05vNw/20230428193644.png",
+    "logo": "https://i.postimg.cc/FFk05vNw/20230428193644.png",
     "townsfolk": "镇民",
     "townsfolkName": "镇民",
-    "state":
-    [
+    "state": [
       {
         "stateName": "醉酒与中毒",
         "stateDescription": "醉酒或中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果醉酒或中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息。醉酒或中毒的玩家不会得知自己醉酒或中毒。"
@@ -21,7 +20,7 @@
     "name": "厨师",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [ ],
+    "reminders": [],
     "id": "chef_button",
     "edition": "tb",
     "team": "townsfolk",
@@ -56,7 +55,7 @@
     "name": "筑梦师",
     "otherNight": 57,
     "setup": 0,
-    "reminders": [ ],
+    "reminders": [],
     "id": "dreamer_button",
     "edition": "snv",
     "team": "townsfolk",
@@ -94,7 +93,9 @@
     "name": "舞狮人",
     "otherNight": 64,
     "setup": 0,
-    "reminders": ["限一次"],
+    "reminders": [
+      "限一次"
+    ],
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 43
@@ -142,7 +143,7 @@
     "name": "博学者",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [ ],
+    "reminders": [],
     "id": "savant_button",
     "edition": "snv",
     "team": "townsfolk",
@@ -177,13 +178,11 @@
     "otherNight": 65,
     "setup": 0,
     "reminders": [
-           "被首次提名"
+      "被首次提名"
     ],
     "id": "hdcstf16",
     "edition": "snv",
-    "remindersGlobal": [
-
-    ],
+    "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0,
     "ability": "在你首次提名玩家后，你会在当晚得知他的角色。外来者会被你的能力当作爪牙或恶魔角色。",
@@ -250,7 +249,7 @@
     "name": "酒鬼",
     "otherNight": 0,
     "setup": 1,
-    "reminders": [ ],
+    "reminders": [],
     "id": "drunk_button",
     "edition": "tb",
     "remindersGlobal": [
@@ -287,13 +286,10 @@
     "name": "异端分子",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [
-
-    ],
+    "reminders": [],
     "id": "heretic_button",
     "edition": "snv",
-    "remindersGlobal": [
-    ],
+    "remindersGlobal": [],
     "team": "outsider",
     "firstNight": 0,
     "ability": "所有本来获胜的玩家，改为落败；所有本来落败的玩家，改为获胜，即使你已死亡。",
@@ -311,8 +307,7 @@
     ],
     "id": "politician_button",
     "edition": "snv",
-    "remindersGlobal": [
-    ],
+    "remindersGlobal": [],
     "team": "outsider",
     "firstNight": 0,
     "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
@@ -366,8 +361,7 @@
     ],
     "id": "goblin_button",
     "edition": "snv",
-    "remindersGlobal": [
-    ],
+    "remindersGlobal": [],
     "team": "minion",
     "firstNight": 0,
     "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
@@ -380,7 +374,7 @@
     "name": "主谋",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [ ],
+    "reminders": [],
     "id": "mastermind_button",
     "edition": "bmr",
     "team": "minion",
@@ -392,7 +386,7 @@
   {
     "firstNightReminder": "",
     "isOfficial": true,
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“首次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "name": "方古",
     "otherNight": 29,
     "setup": 1,
@@ -403,13 +397,14 @@
     "id": "fang_gu_button",
     "edition": "snv",
     "remindersGlobal": [
-
+      "限一次"
     ],
     "team": "demon",
     "name_eng": "Fang Gu",
     "firstNight": 0,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。首个会被这种能力杀死的外来者改为变成一个邪恶的方古且你代替他死亡。[+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -423,15 +418,14 @@
     ],
     "id": "hdcsd6",
     "edition": "snv",
-    "remindersGlobal": [
-    ],
+    "remindersGlobal": [],
     "team": "demon",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。所有的外来者都可能会被当作邪恶阵营、爪牙角色或恶魔角色。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_3749208694761_610b7c97.jpg"
   },
   {
-    "ability": "每个夜晚*，你要选择任意数量的玩家：如果他们的角色类型均不相同，他们死亡。[+1外来者]",
+    "ability": "每个夜晚*，你要选择任意数量的非旅行者玩家或一名旅行者玩家：如果他们的角色类型均不相同，他们死亡。[+1外来者]",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5897997694761_fbe1f00c.jpg",
     "edition": "custom",
     "flavor": "",
@@ -449,8 +443,8 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚，你要选择1至3名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1550997694761_18049940.jpg",
+    "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png",
     "edition": "custom",
     "flavor": "",
     "id": "dianyuzhangbutton",
@@ -484,21 +478,18 @@
     "ability": "每个白天限一次，你可以公开选择一名其他玩家，让他选择一个非恶魔角色：你可能会获得这个角色的能力，直到下个黎明。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/jiaohuazi.png"
   },
-	{
-		"firstNightReminder": "",
-		"otherNightReminder": "",
-		"name": "古董收藏家",
-		"firstNight": 0,
-		"reminders": [],
-		"id": "antiquerbutton",
-		"team": "fabled",
-		"name_eng": "Antiquer",
-		"setup": 0,
-		"ability": "这个剧本的部分角色能力来自过去。",
-		"edition": "custom",
-		"image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/antique_assets_of_lei_gallery.png"
-	}
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "古董收藏家",
+    "firstNight": 0,
+    "reminders": [],
+    "id": "antiquerbutton",
+    "team": "fabled",
+    "name_eng": "Antiquer",
+    "setup": 0,
+    "ability": "这个剧本的部分角色能力来自过去。",
+    "edition": "custom",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/antique_assets_of_lei_gallery.png"
+  }
 ]
-
-
-

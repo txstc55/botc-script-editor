@@ -325,17 +325,21 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png",
     "team": "demon",
     "edition": "custom",
-    "ability": "每个夜晚*，你可以选择三名玩家：按照他们提前决定好的生死状态进行判定，然后如果他们都存活则都死亡。",
+    "ability": "每个夜晚*，你可以选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
     "firstNight": 0,
     "otherNight": 42,
-    "otherNightReminder": "唤醒哈迪寂亚，让他选择三名玩家。执行哈迪寂亚的能力流程。",
+    "otherNightReminder": "哈迪寂亚选择三名玩家。对所有人宣告第一位玩家，然后唤醒他并让他秘密选择活着还是死去。依次对第二第三位玩家如此做。如果三名玩家都选择活着，他们都死去。",
     "reminders": [
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
-    ]
+      "选择死",
+      "选择生"
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "yigeshaba111",
@@ -346,11 +350,15 @@
     "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你上个夜晚选择过且当前死亡的玩家之一可能会被你反刍。",
     "firstNight": 0,
     "otherNight": 34,
-    "otherNightReminder": "决定上一夜被沙巴洛斯选择的玩家是否被反刍。然后唤醒沙巴洛斯，让他攻击两名玩家。",
+    "otherNightReminder": "上一夜被沙巴洛斯选择且当前已死亡的玩家之一可能被反刍，如果被反刍，标记那名玩家被复活。让沙巴洛斯选择两名玩家。标记这两名玩家死亡。",
     "reminders": [
-      "死亡",
-      "复活"
-    ]
+      "复活",
+      "死亡"
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   "bootlegger",
   {

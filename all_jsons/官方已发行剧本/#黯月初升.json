@@ -482,18 +482,18 @@
   },
   {
     "ability": "每个夜晚*，如果今天白天没有人死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/zombuul.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我不。明白。你的。方式。人类。同类。向我。指引。泥土。那是。圣地。静卧。安睡。我也。必须。长眠。立刻。",
     "id": "2_26",
     "firstNightReminder": "",
-    "otherNightReminder": "如果今天白天没有人死亡，让僵怖选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "如果白天无人死亡，唤醒僵怖，让他攻击一名玩家。",
     "name": "僵怖",
     "otherNight": 25,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "死于今日"
+      "死于今日",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -501,26 +501,26 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/pukka.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。",
     "id": "2_25",
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "name": "普卡",
     "otherNight": 26,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
     "firstNight": 28
   },
   {
-    "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你的上个夜晚选择过的且当前死亡的玩家可能会被你反刍。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/shabaloth.png",
+    "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你上个夜晚选择过且当前死亡的玩家之一可能会被你反刍。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shabaloth.png",
     "edition": "custom",
     "flavor": "",
     "id": "2_24",
@@ -530,8 +530,8 @@
     "otherNight": 27,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "复活"
+      "复活",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -539,7 +539,7 @@
   },
   {
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "edition": "custom",
     "flavor": "",
     "id": "2_23",
@@ -549,8 +549,8 @@
     "otherNight": 28,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",

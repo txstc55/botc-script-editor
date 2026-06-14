@@ -2270,9 +2270,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/imp.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。",
     "id": "imp_button",
     "firstNightReminder": "",
     "otherNightReminder": "让小恶魔选择一名玩家。标记那名玩家死亡。如果小恶魔选择了自己：用一个备用的小恶魔标记替换一个存活的爪牙角色标记。让原来的小恶魔重新入睡。唤醒新的小恶魔。对他展示“你是”信息标记，和小恶魔角色标记。",
@@ -2289,18 +2289,18 @@
   },
   {
     "ability": "每个夜晚*，如果今天白天没有人死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/zombuul.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我不。明白。你的。方式。人类。同类。向我。指引。泥土。那是。圣地。静卧。安睡。我也。必须。长眠。立刻。",
     "id": "zombuul_button",
     "firstNightReminder": "",
-    "otherNightReminder": "如果今天白天没有人死亡，让僵怖选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "如果白天无人死亡，唤醒僵怖，让他攻击一名玩家。",
     "name": "僵怖",
     "otherNight": 50,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "死于今日"
+      "死于今日",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2309,18 +2309,18 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/pukka.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。",
     "id": "pukka_button",
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "name": "普卡",
     "otherNight": 51,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2328,8 +2328,8 @@
     "GstoneID": "pukka"
   },
   {
-    "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你的上个夜晚选择过的且当前死亡的玩家可能会被你反刍。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/shabaloth.png",
+    "ability": "每个夜晚*，你要选择两名玩家：他们死亡。你上个夜晚选择过且当前死亡的玩家之一可能会被你反刍。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shabaloth.png",
     "edition": "custom",
     "flavor": "",
     "id": "shabaloth_button",
@@ -2339,8 +2339,8 @@
     "otherNight": 52,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "复活"
+      "复活",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2349,7 +2349,7 @@
   },
   {
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "edition": "custom",
     "flavor": "",
     "id": "po_button",
@@ -2359,8 +2359,8 @@
     "otherNight": 53,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2369,17 +2369,18 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fang_gu.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "flavor": "",
     "id": "fang_gu_button",
     "firstNightReminder": "",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“限一次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "name": "方古",
     "otherNight": 54,
     "setup": 1,
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "remindersGlobal": [
       "限一次"
@@ -2390,9 +2391,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vigormortis.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。",
     "id": "vigormortis_button",
     "firstNightReminder": "",
     "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
@@ -2400,9 +2401,9 @@
     "otherNight": 61,
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2411,18 +2412,18 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/no_dashii.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。",
     "id": "no_dashii_button",
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 55,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2431,9 +2432,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vortox.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。",
     "id": "vortox_button",
     "firstNightReminder": "",
     "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
@@ -2450,12 +2451,12 @@
   },
   {
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_6886084308961_f221dd48.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ojo.png",
     "edition": "custom",
     "flavor": "",
     "id": "ojo_button",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒奥赫。让奥赫指向角色列表上的一个角色标记。如果被选择的角色在场，对应的玩家死亡——使用“死亡”提示标记标记那名玩家。如果被选择的角色不在场，那么改为你来选择任意一名玩家，那名玩家死亡——使用“死亡”提示标记标记那名玩家。让奥赫重新入睡。",
+    "otherNightReminder": "唤醒奥赫，让他选择角色列表上的一个角色。该角色对应的玩家死亡，如果该角色不在场，替奥赫决定今晚谁会因为奥赫能力死亡。",
     "name": "奥赫",
     "otherNight": 62,
     "setup": 0,
@@ -2485,13 +2486,13 @@
     "GstoneID": "riot"
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你靠近正中，+1爪牙，-或+任意数量外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_3707150105271_e57fc482.jpg",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你位于正中，+1爪牙，-或+任意数量外来者]",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/18/Lordoftyphon.png",
     "edition": "custom",
     "flavor": "",
     "id": "lord_of_typhon_button",
-    "firstNightReminder": "在进行游戏设置时，将角色标记放入盲抽袋前，移除所有的爪牙角色标记，并加入等量的镇民或外来者角色标记作为补充。\n\n在首个夜晚，分别依次唤醒位于堤丰之首两侧的，等同于常规游戏爪牙数量加一的玩家。分别对这些玩家展示一个不同的爪牙角色标记和朝下的大拇指，再让他们重新入睡。再用展示给他们的爪牙角色标记替换魔典中这些玩家的善良角色标记。然后再如常进行爪牙信息和恶魔信息步骤。",
-    "otherNightReminder": "在除首个夜晚以外的每个夜晚，唤醒堤丰之首。让他指向任意一名玩家。那名玩家死亡——用“死亡”提示标记标记那名玩家。让堤丰之首重新入睡。",
+    "firstNightReminder": "将位于堤丰之首两侧的对应数量的玩家变成邪恶的爪牙，并分别唤醒他们通知他们的角色和阵营变化。",
+    "otherNightReminder": "唤醒堤丰之首，让他攻击一名玩家。",
     "name": "堤丰之首",
     "otherNight": 78,
     "setup": 1,
@@ -2504,8 +2505,8 @@
     "GstoneID": "lord_of_typhon"
   },
   {
-    "ability": "每个夜晚*，你要选择三名玩家（所有玩家都会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/al-hadikhia.png",
+    "ability": "每个夜晚*，你可以选择三名玩家（所有玩家会得知你选了谁）：他们分别秘密决定自己的生死，然后如果他们都存活则都死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/al-hadikhia.png",
     "edition": "custom",
     "flavor": "",
     "id": "al-hadikhia_button",
@@ -2518,8 +2519,8 @@
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2528,7 +2529,7 @@
   },
   {
     "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/legion.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
     "edition": "custom",
     "flavor": "",
     "id": "legion_button",
@@ -2548,12 +2549,12 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202312/c_7795403383071_0f9107d8.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
     "edition": "custom",
     "flavor": "",
     "id": "kazali_button",
-    "firstNightReminder": "在首个夜晚，唤醒卡扎力。让他指向一名玩家，和角色列表上的一个爪牙角色。用这个爪牙的角色标记替换该玩家原本的角色标记，然后唤醒该玩家，对他展示“你是”信息标记和这个爪牙角色标记，然后展示向下的大拇指。重复这个流程，直到场上有与初始设置时同等数量的爪牙。让卡扎力重新入睡。",
-    "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒卡扎力。让他指向任意一名玩家。那名玩家死亡——在他角色标记旁放置“死亡”提示标记。让卡扎力重新入睡。",
+    "firstNightReminder": "唤醒卡扎力，让他选择玩家变成邪恶爪牙。",
+    "otherNightReminder": "唤醒卡扎力，让他攻击一名玩家。",
     "name": "卡扎力",
     "otherNight": 77,
     "setup": 1,
@@ -2577,12 +2578,12 @@
     "otherNight": 151,
     "setup": 0,
     "reminders": [
+      "善良被处决",
       "第一天",
-      "第二天",
       "第三天",
-      "第四天",
+      "第二天",
       "第五天",
-      "善良被处决"
+      "第四天"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2591,18 +2592,18 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lleech.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。",
     "id": "lleech_button",
-    "firstNightReminder": "寄生蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 72,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -2611,7 +2612,7 @@
   },
   {
     "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lil_monsta.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
     "edition": "custom",
     "flavor": "",
     "id": "lil_monsta_button",
@@ -2631,12 +2632,12 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一段秘密短语。每次你在白天公开说出这段短语，当天便可能会有一名玩家在这之后死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202402/c_9719440568071_03aa8062.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yaggababble.png",
     "edition": "custom",
     "flavor": "",
     "id": "yaggababble_button",
-    "firstNightReminder": "在为首个夜晚做准备时，用纸条或手机便签或其他便捷的设备写下一段短语。\n在首个夜晚，唤醒牙噶巴卜，对他展示这段短语，然后让他重新入睡。\n",
-    "otherNightReminder": "每当牙噶巴卜在白天公开说出这段短语时，将一枚“死亡”提示标记放入魔典左侧的中央位置，用以提示你需要在今晚放置这个标记。\n每个夜晚，你需要选择是否将放入魔典中央的“死亡”提示标记放置在一名玩家的角色标记旁。如果你这么做，那么同时为放置了提示标记的角色标记上再放置帷幕标记。这些玩家死亡。",
+    "firstNightReminder": "唤醒牙噶巴卜，对他展示他的秘密短语。",
+    "otherNightReminder": "根据已放置的提示标记数量，选择最多等同于该数量的玩家死亡。该夜晚行动只是一个提示，死亡的造成时机可以是白天，也可以是夜晚的任何时候。",
     "name": "牙噶巴卜",
     "otherNight": 77,
     "setup": 0,
@@ -3842,12 +3843,12 @@
   },
   {
     "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_6000301943171_d2f257a6.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baojun.png",
     "edition": "custom",
     "flavor": "",
     "id": "baojun_button",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒暴君，让其选择至多两名玩家。在这些玩家角色标记旁放置“死亡”提示标记。如果暴君选择的玩家数量与上个夜晚死亡的玩家数量相同，摇头示意其重新选择",
+    "otherNightReminder": "唤醒暴君，让他攻击至多两名玩家。但是暴君选择的玩家数量不能与上个夜晚死亡的玩家数量相同。",
     "name": "暴君",
     "otherNight": 84,
     "setup": 0,
@@ -3856,11 +3857,12 @@
     ],
     "team": "demon",
     "firstNight": 0,
-    "GstoneID": "baojun"
+    "GstoneID": "baojun",
+    "remindersGlobal": []
   },
   {
-    "ability": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
-    "image": "https://clocktower-wiki.gstonegames.com/images/d/db/Dianyuzhang.png",
+    "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png",
     "edition": "custom",
     "flavor": "",
     "id": "dianyuzhang_button",
@@ -3880,21 +3882,23 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_3002932943171_72f4def0.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/guhuoniao.png",
     "edition": "custom",
     "flavor": "",
     "id": "guhuoniao_button",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒姑获鸟，让其选择一名玩家，在玩家角色标记旁放置“死亡”提示标记。",
+    "otherNightReminder": "唤醒姑获鸟，让他攻击一名玩家。",
     "name": "姑获鸟",
     "otherNight": 84,
     "setup": 0,
     "reminders": [
-      "死于处决"
+      "死亡",
+      "获得能力"
     ],
     "team": "demon",
     "firstNight": 0,
-    "GstoneID": "guhuoniao"
+    "GstoneID": "guhuoniao",
+    "remindersGlobal": []
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你今天白天没有投票，今晚你可以行动两次。",
@@ -3923,14 +3927,15 @@
     "edition": "custom",
     "flavor": "",
     "id": "yanluo_button",
-    "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。让阎罗选择两名玩家，分别放置“即将死亡”和“三更将死”标记在其角色图标旁。",
+    "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
     "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
     "name": "阎罗",
     "otherNight": 84,
     "setup": 0,
     "reminders": [
+      "三更将死",
       "即将死亡",
-      "三更将死"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",

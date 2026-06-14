@@ -391,13 +391,15 @@
     "sch_team": "恶魔",
     "firstNight": 30,
     "otherNight": 33,
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "taowuuuuuuuuuuuu11111111",
@@ -427,13 +429,15 @@
     "sch_team": "恶魔",
     "firstNight": 31.5,
     "otherNight": 50.1,
-    "firstNightReminder": "唤醒典狱长，让他选择至多三名玩家。",
-    "otherNightReminder": "唤醒典狱长，让他选择至多三名玩家。如果上个夜晚选择的玩家之中有人死于处决，上个夜晚选择的其余玩家均死亡，否则其中之一死亡。",
+    "firstNightReminder": "唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
+    "otherNightReminder": "如果今天白天被处决的玩家标记有“囚禁”，则其他标记有囚禁的玩家死亡。否则，将其中一人标记为死亡。移除所有“囚禁”提示标记。唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
     "reminders": [
       "囚禁",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "baojunuiuaowjoedijapwu4e90e2aj4rpia",
@@ -450,7 +454,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "0_meta",

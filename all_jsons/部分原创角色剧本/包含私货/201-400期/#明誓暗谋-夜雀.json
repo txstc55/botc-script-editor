@@ -286,19 +286,21 @@
   },
   {
     "id": "lilmonsta0",
-    "image": "https://i.postimg.cc/2SZNYH1L/Lilmonsta.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
     "name": "小怪宝",
     "team": "demon",
     "firstNight": 3,
     "otherNight": 8,
-    "reminders": [
-      "死亡",
-      "是恶魔"
-    ],
+    "reminders": [],
     "setup": 1,
-    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]",
-    "firstNightReminder": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]",
-    "otherNightReminder": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]"
+    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
+    "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",
+    "otherNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。说书人选择一名玩家，那名玩家死亡。",
+    "remindersGlobal": [
+      "是恶魔",
+      "死亡"
+    ],
+    "flavor": ""
   },
   {
     "id": "lilith0",
@@ -318,7 +320,7 @@
   },
   {
     "id": "fanggu0",
-    "image": "https://i.postimg.cc/c4cQ8mtK/Fanggu.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "name": "方古",
     "team": "demon",
     "firstNight": 0,
@@ -329,11 +331,16 @@
     ],
     "setup": 1,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]"
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "lleech0",
-    "image": "https://i.postimg.cc/SN5bw0xp/Lleech.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "name": "痢蛭",
     "team": "demon",
     "firstNight": 1,
@@ -343,9 +350,11 @@
       "死亡"
     ],
     "setup": 0,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
-    "firstNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
-    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
+    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
+    "remindersGlobal": [],
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "id": "mojing0",

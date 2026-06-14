@@ -1,24 +1,25 @@
-[{
-		"id": "_meta",
-		"name": "魔鬼党",
-		"author": "Zets",
-		"logo": "https://i.postimg.cc/K8YwZpdq/image.png",
-		"description": "",
-		"townsfolkName": "镇民",
-		"outsidersName": "外来者",
-		"minionsName": "爪牙",
-		"demonsName": "恶魔",
-		"townsfolk": "镇民",
-		"outsider": "外来者",
-		"minion": "爪牙",
-		"demon": "恶魔",
-		"state": [
-			{
-				"stateName": "醉酒与中毒",
-				"stateDescription": "醉酒或中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果醉酒或中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息。醉酒或中毒的玩家不会得知自己醉酒或中毒。"
-			}
-		]
-	},
+[
+  {
+    "id": "_meta",
+    "name": "魔鬼党",
+    "author": "Zets",
+    "logo": "https://i.postimg.cc/K8YwZpdq/image.png",
+    "description": "",
+    "townsfolkName": "镇民",
+    "outsidersName": "外来者",
+    "minionsName": "爪牙",
+    "demonsName": "恶魔",
+    "townsfolk": "镇民",
+    "outsider": "外来者",
+    "minion": "爪牙",
+    "demon": "恶魔",
+    "state": [
+      {
+        "stateName": "醉酒与中毒",
+        "stateDescription": "醉酒或中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果醉酒或中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息。醉酒或中毒的玩家不会得知自己醉酒或中毒。"
+      }
+    ]
+  },
   {
     "firstNightReminder": "展示那个爪牙角色标记。指向被你标记“爪牙”和“错误”的两名玩家。",
     "otherNightReminder": "",
@@ -218,20 +219,21 @@
       "死亡"
     ],
     "team": "demon",
-    "name_eng": "Lil\u0027 Monsta",
+    "name_eng": "Lil' Monsta",
     "firstNight": 16,
-    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png"
+    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "name": "普卡",
     "otherNight": 26,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "pukkabutton",
     "edition": "custom",
@@ -239,7 +241,9 @@
     "name_eng": "Pukka",
     "firstNight": 28,
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "firstNightReminder": "",

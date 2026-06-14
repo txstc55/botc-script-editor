@@ -40,23 +40,25 @@
     ],
     "logo": "https://oss.gstonegames.com/data_file/clocktower/edition_icon/custom/d_7970305633861_fcf1471c.jpg",
     "id": "_meta",
-    "description": "歌舞生平，佳节已至。\u003cbr\u003e欢乐的气氛笼罩着整个鸦木布拉夫镇子。热闹的音乐和欢笑声，四处飘来的酒香，舞狮人热闹的表演，飘扬在空中的红灯笼和彩旗。\u003cbr\u003e可是，在这个喜庆的日子里，染红衣裳的可不只是灯笼的红光。在庆祝活动的高潮时刻，一名年轻男子在人群中倒下，鲜血从他的胸口喷涌而出。恐慌和混乱瞬间席卷整个镇子，镇民四处奔逃。\u003cbr\u003e据目击者称，嫌疑人是一名黑衣男子，在人群中悄悄离开但是黑衣男子仍然在逃。\u003cbr\u003e尽管如此，镇子的居民们还是决定继续庆祝春节，坚定地相信镇民会尽快绳之以法。\u003cbr\u003e然而，这件可怕的事件让整个镇子笼罩在不安和不祥的气氛之中……"
-  }, {
-	"ability": "使用灯神的相克规则，所有玩家都会知道其内容。",
-	"image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
-	"edition": "custom",
-	"flavor": "",
-	"id": "20003_107",
-	"firstNightReminder": "",
-	"otherNightReminder": "",
-	"name": "灯神",
-	"otherNight": 0,
-	"setup": 0,
-	"reminders": [],
-	"remindersGlobal": [],
-	"team": "fabled",
-	"firstNight": 0
-  },{
+    "description": "歌舞生平，佳节已至。<br>欢乐的气氛笼罩着整个鸦木布拉夫镇子。热闹的音乐和欢笑声，四处飘来的酒香，舞狮人热闹的表演，飘扬在空中的红灯笼和彩旗。<br>可是，在这个喜庆的日子里，染红衣裳的可不只是灯笼的红光。在庆祝活动的高潮时刻，一名年轻男子在人群中倒下，鲜血从他的胸口喷涌而出。恐慌和混乱瞬间席卷整个镇子，镇民四处奔逃。<br>据目击者称，嫌疑人是一名黑衣男子，在人群中悄悄离开但是黑衣男子仍然在逃。<br>尽管如此，镇子的居民们还是决定继续庆祝春节，坚定地相信镇民会尽快绳之以法。<br>然而，这件可怕的事件让整个镇子笼罩在不安和不祥的气氛之中……"
+  },
+  {
+    "ability": "使用灯神的相克规则，所有玩家都会知道其内容。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20003_107",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "灯神",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  },
+  {
     "ability": "在你的首个夜晚，你会得知两个善良角色和两个邪恶角色，其中有且只有两个角色在场。",
     "edition": "custom",
     "flavor": "",
@@ -277,13 +279,13 @@
   },
   {
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。上一个因普卡中毒的玩家死亡，随后恢复健康。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "name": "普卡",
     "otherNight": 26,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "pukkabutton",
     "edition": "custom",
@@ -291,7 +293,9 @@
     "name_eng": "Pukka",
     "firstNight": 28,
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+    "remindersGlobal": [],
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "firstNightReminder": "",
@@ -371,17 +375,20 @@
     "team": "demon",
     "name_eng": "Vortox",
     "firstNight": 0,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没⼈被处决，邪恶阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
+    "remindersGlobal": [],
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“首次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "name": "方古",
     "otherNight": 29,
     "setup": 1,
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "id": "fang_gubutton",
     "edition": "custom",
@@ -392,7 +399,8 @@
     "name_eng": "Fang Gu",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -480,21 +488,23 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/farmer.png"
   },
   {
-    "firstNightReminder": "寄生蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 35,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "id": "lleechbutton",
     "edition": "custom",
     "team": "demon",
     "name_eng": "Lleech",
     "firstNight": 15,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+    "remindersGlobal": [],
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   }
 ]

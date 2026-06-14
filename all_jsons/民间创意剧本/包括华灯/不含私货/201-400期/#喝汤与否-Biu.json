@@ -402,12 +402,12 @@
   },
   {
     "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_6000301943171_d2f257a6.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baojun.png",
     "edition": "custom",
     "flavor": "",
     "id": "baojun_button",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒暴君，让其选择至多两名玩家。在这些玩家角色标记旁放置“死亡”提示标记。如果暴君选择的玩家数量与上个夜晚死亡的玩家数量相同，摇头示意其重新选择",
+    "otherNightReminder": "唤醒暴君，让他攻击至多两名玩家。但是暴君选择的玩家数量不能与上个夜晚死亡的玩家数量相同。",
     "name": "暴君",
     "otherNight": 84,
     "setup": 0,
@@ -416,39 +416,43 @@
     ],
     "team": "demon",
     "firstNight": 0,
-    "GstoneID": "baojun"
+    "GstoneID": "baojun",
+    "remindersGlobal": []
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_3002932943171_72f4def0.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/guhuoniao.png",
     "edition": "custom",
     "flavor": "",
     "id": "guhuoniao_button",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒姑获鸟，让其选择一名玩家，在玩家角色标记旁放置“死亡”提示标记。",
+    "otherNightReminder": "唤醒姑获鸟，让他攻击一名玩家。",
     "name": "姑获鸟",
     "otherNight": 84,
     "setup": 0,
     "reminders": [
-      "死于处决"
+      "死亡",
+      "获得能力"
     ],
     "team": "demon",
     "firstNight": 0,
-    "GstoneID": "guhuoniao"
+    "GstoneID": "guhuoniao",
+    "remindersGlobal": []
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fang_gu.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "edition": "custom",
     "flavor": "",
     "id": "fang_gu_button",
     "firstNightReminder": "",
-    "otherNightReminder": "让方古选择一名玩家。标记那名玩家死亡。如果他选择了外来者，且“限一次”标记未放置在魔典中：用备用的方古角色标记替换那名外来者的角色标记。让方古重新入睡。唤醒方古的目标玩家。对该玩家展示“你是”信息标记和方古角色标记，并用拇指向下代表他阵营变为邪恶。将“首次”标记放置在魔典中。标记原本的方古玩家死亡，且他选择的玩家不会被标记为死亡。",
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "name": "方古",
     "otherNight": 54,
     "setup": 1,
     "reminders": [
-      "死亡"
+      "死亡",
+      "限一次"
     ],
     "remindersGlobal": [
       "限一次"
@@ -458,19 +462,19 @@
     "GstoneID": "fang_gu"
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lleech.png",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。",
     "id": "lleech_button",
-    "firstNightReminder": "寄生蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 72,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",

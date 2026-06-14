@@ -368,7 +368,7 @@
   },
   {
     "id": "e4548ce4-aed2-41d3-b928-55bb8b15e31f",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/b/b3/Imp.png/300px-Imp.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
     "edition": "custom",
     "name": "小恶魔",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
@@ -381,11 +381,13 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
     "id": "oeereooeere",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/96/Ojo.png/300px-Ojo.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ojo.png",
     "edition": "custom",
     "name": "奥赫",
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
@@ -397,11 +399,14 @@
       "死亡"
     ],
     "setup": 0,
-    "otherNightReminder": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。"
+    "otherNightReminder": "唤醒奥赫，让他选择角色列表上的一个角色。该角色对应的玩家死亡，如果该角色不在场，替奥赫决定今晚谁会因为奥赫能力死亡。",
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "kakakakkakaka",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/46/Kazali.png/300px-Kazali.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
     "edition": "custom",
     "name": "卡扎力",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
@@ -413,6 +418,9 @@
       "死亡"
     ],
     "setup": 1,
-    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]"
+    "otherNightReminder": "唤醒卡扎力，让他攻击一名玩家。",
+    "firstNightReminder": "唤醒卡扎力，让他选择玩家变成邪恶爪牙。",
+    "remindersGlobal": [],
+    "flavor": ""
   }
 ]

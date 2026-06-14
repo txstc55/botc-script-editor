@@ -1,11 +1,11 @@
 [
-	{
-		"id": "_meta",
-		"name": "货比三家",
-		"author": "摸鱼学徒；特别鸣谢：刘中奇",
-		"logo": "https://i.postimg.cc/76Tgn2nf/image.png",
-		"townsfolkName":"镇民"
-	},
+  {
+    "id": "_meta",
+    "name": "货比三家",
+    "author": "摸鱼学徒；特别鸣谢：刘中奇",
+    "logo": "https://i.postimg.cc/76Tgn2nf/image.png",
+    "townsfolkName": "镇民"
+  },
   {
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9255777694761_7594675d.jpg",
     "name": "郎中",
@@ -138,23 +138,23 @@
     "firstNight": 0,
     "otherNight": 0
   },
-	{
-		"ability": "每个夜晚限一次，所有玩家在使用自身能力选择邪恶玩家时会改为选中你，即使你已死亡。",
-		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_8334197694761_80377ad9.jpg",
-		"edition": "custom",
-		"flavor": "",
-		"id": "20454_6861",
-		"firstNightReminder": "",
-		"otherNightReminder": "",
-		"name": "使节",
-		"name_id": "shijie",
-		"otherNight": 0,
-		"setup": 0,
-		"reminders": [],
-		"remindersGlobal": [],
-		"team": "outsider",
-		"firstNight": 0
-	},
+  {
+    "ability": "每个夜晚限一次，所有玩家在使用自身能力选择邪恶玩家时会改为选中你，即使你已死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_8334197694761_80377ad9.jpg",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20454_6861",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "使节",
+    "name_id": "shijie",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "outsider",
+    "firstNight": 0
+  },
   {
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
@@ -209,60 +209,63 @@
     "otherNight": 0
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/pukka.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
     "name": "普卡",
     "team": "demon",
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "id": "pukkabutton",
     "edition": "custom",
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "firstNight": 12,
-    "otherNight": 6
+    "otherNight": 6,
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vigormortis.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
     "name": "亡骨魔",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
     "id": "vigormortisbutton",
     "edition": "custom",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 7
+    "otherNight": 7,
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
-	{
-		"image": "https://oss.gstonegames.com/data_file/clocktower/upload/202307/c_0224423169861_0c06b908.jpg",
-		"name": "小镇做题家",
-		"team": "fabled",
-		"ability": "每个白天，所有玩家表决一名玩家（与之前不同），他可以拜访说书人，得知昨天夜晚有多少名玩家的能力因其他玩家的能力未正常生效。",
-		"id": "xiaozhenzuotijia",
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202307/c_0224423169861_0c06b908.jpg",
+    "name": "小镇做题家",
+    "team": "fabled",
+    "ability": "每个白天，所有玩家表决一名玩家（与之前不同），他可以拜访说书人，得知昨天夜晚有多少名玩家的能力因其他玩家的能力未正常生效。",
+    "id": "xiaozhenzuotijia",
     "edition": "custom",
     "firstNightReminder": "",
     "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
     "setup": 0,
-		"reminders": [
-			"未正常生效","已赴考"
-		],
+    "reminders": [
+      "未正常生效",
+      "已赴考"
+    ],
     "remindersGlobal": [],
     "firstNight": 0,
     "otherNight": 0
-	},
-	{
+  },
+  {
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sentinel.png",
     "name": "哨兵",
     "team": "fabled",

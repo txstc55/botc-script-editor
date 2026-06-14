@@ -1,8 +1,9 @@
-[{
+[
+  {
     "id": "_meta",
     "logo": "https://i.postimg.cc/9QTWVNGL/copy.png",
     "name": "说书人之怒",
-	"townsfolkName":"镇民",
+    "townsfolkName": "镇民",
     "author": "Richard Black"
   },
   {
@@ -381,28 +382,31 @@
       "死亡"
     ],
     "team": "demon",
-    "name_eng": "Lil\u0027 Monsta",
+    "name_eng": "Lil' Monsta",
     "firstNight": 16,
-    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png"
+    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "如果今天白天没有人死亡，让僵怖选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "如果白天无人死亡，唤醒僵怖，让他攻击一名玩家。",
     "name": "僵怖",
     "otherNight": 25,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "死于今日"
+      "死于今日",
+      "死亡"
     ],
     "id": "zombuulbutton",
     "edition": "custom",
     "team": "demon",
     "name_eng": "Zombuul",
     "firstNight": 0,
-    "ability": "每个夜晚*，如果今天白天没有⼈死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png"
+    "ability": "每个夜晚*，如果今天白天没有人死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png",
+    "remindersGlobal": [],
+    "flavor": "我不。明白。你的。方式。人类。同类。向我。指引。泥土。那是。圣地。静卧。安睡。我也。必须。长眠。立刻。"
   },
   {
     "firstNightReminder": "",
@@ -420,7 +424,9 @@
     "name_eng": "Legion",
     "firstNight": 0,
     "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -436,8 +442,10 @@
     "team": "demon",
     "name_eng": "Vortox",
     "firstNight": 0,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没⼈被处决，邪恶阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png"
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
+    "remindersGlobal": [],
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "id": "Apocalypse",

@@ -422,13 +422,15 @@
     "sch_team": "恶魔",
     "firstNight": 31.5,
     "otherNight": 50.1,
-    "firstNightReminder": "唤醒典狱长，让他选择至多三名玩家。",
-    "otherNightReminder": "唤醒典狱长，让他选择至多三名玩家。如果上个夜晚选择的玩家之中有人死于处决，上个夜晚选择的其余玩家均死亡，否则其中之一死亡。",
+    "firstNightReminder": "唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
+    "otherNightReminder": "如果今天白天被处决的玩家标记有“囚禁”，则其他标记有囚禁的玩家死亡。否则，将其中一人标记为死亡。移除所有“囚禁”提示标记。唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
     "reminders": [
       "囚禁",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "kakakakkakakakakakakakaakakak111",
@@ -445,7 +447,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "rushigong",

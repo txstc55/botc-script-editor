@@ -38,7 +38,7 @@
     "team": "townsfolk",
     "firstNight": 24.0
   },
- {
+  {
     "id": "1_yylm",
     "image": "https://www.bloodstar.xyz/p/BeiFeng/YYLM/1_yylm.png",
     "firstNightReminder": "在首个夜晚，校准风向标。用大拇指向上，告诉他奇数位邪恶玩家较多；或者用大拇指向下，告诉他偶数位邪恶玩家较多。如果奇数位邪恶玩家等于偶数位邪恶玩家，那么你需要向风向标提供错误信息。让风向标重新入睡。",
@@ -234,10 +234,12 @@
     "team": "townsfolk",
     "firstNight": 0
   },
-   {
+  {
     "id": "_yylm",
     "image": "https://www.bloodstar.xyz/p/BeiFeng/YYLM/_yylm.png",
-    "reminders": ["不会死亡"],
+    "reminders": [
+      "不会死亡"
+    ],
     "name": "复仇者",
     "team": "townsfolk",
     "ability": "如果与你邻近的两名邪恶玩家均存活，你不会死亡。（运作：这个邻近持续检测左右两边最近的邪恶玩家是否存活）"
@@ -390,7 +392,7 @@
     "edition": "custom",
     "flavor": "",
     "id": "yanluo_c",
-    "firstNightReminder": "首个夜晚，唤醒阎罗并让他按自己意愿的时长来查看魔典。\n让阎罗选择一名玩家，放置“选择”标记在其角色图标旁，其在覅三个夜晚必定会死亡。\n让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
+    "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
     "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
     "name": "阎罗",
     "otherNight": 8410,
@@ -413,7 +415,7 @@
   },
   {
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "edition": "custom",
     "flavor": "",
     "id": "po_c",
@@ -450,12 +452,12 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家:他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lleech.png",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。",
     "id": "lleech_c",
-    "firstNightReminder": "让痢蛭指向一名玩家。标记那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 7200,
@@ -470,7 +472,7 @@
   },
   {
     "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lil_monsta.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
     "edition": "custom",
     "flavor": "",
     "id": "lil_monsta_c",

@@ -390,25 +390,29 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "id": "bcf6fbe4-0b05-4376-b90c-bf1cd92cb350",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "edition": "custom",
     "name": "诺-达鲺",
-    "ability": "每个夜晚*，选择一名玩家，将他杀害。与你相邻的镇民中毒。",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 0,
     "otherNight": 80,
     "firstNightReminder": "",
-    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "ability": "每个夜晚*，会有一名玩家死亡。在最后一晚，你要选择一名玩家。他需要“疯狂”地证明你不是恶魔，否则他的阵营落败。",
@@ -431,7 +435,7 @@
   },
   {
     "id": "d6c04739-6c0b-4c95-8bc2-1180349ea0aa",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202312/c_7795403383071_0f9107d8.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
     "edition": "custom",
     "name": "卡扎力",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
@@ -439,13 +443,14 @@
     "sch_team": "恶魔",
     "firstNight": 2020,
     "otherNight": 100,
-    "firstNightReminder": "在首个夜晚，唤醒卡扎力。让他指向一名玩家，和角色列表上的一个爪牙角色。用这个爪牙的角色标记替换该玩家原本的角色标记，然后唤醒该玩家，对他展示“你是”信息标记和这个爪牙角色标记，然后展示向下的大拇指。重复这个流程，直到场上有与初始设置时同等数量的爪牙。让卡扎力重新入睡。",
-    "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒卡扎力。让他指向任意一名玩家。那名玩家死亡——在他角色标记旁放置“死亡”提示标记。让卡扎力重新入睡。",
+    "firstNightReminder": "唤醒卡扎力，让他选择玩家变成邪恶爪牙。",
+    "otherNightReminder": "唤醒卡扎力，让他攻击一名玩家。",
     "reminders": [
       "死亡"
     ],
     "remindersGlobal": [],
-    "setup": 1
+    "setup": 1,
+    "flavor": ""
   },
   {
     "ability": "如果瘟疫医生死亡且说书人会因此获得间谍的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",

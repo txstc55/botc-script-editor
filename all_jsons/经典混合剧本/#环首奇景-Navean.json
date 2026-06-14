@@ -469,18 +469,18 @@
   },
   {
     "ability": "每个夜晚*，如果今天白天没有人死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/zombuul.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我不。明白。你的。方式。人类。同类。向我。指引。泥土。那是。圣地。静卧。安睡。我也。必须。长眠。立刻。",
     "id": "2_26",
     "firstNightReminder": "",
-    "otherNightReminder": "如果今天白天没有人死亡，让僵怖选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "如果白天无人死亡，唤醒僵怖，让他攻击一名玩家。",
     "name": "僵怖",
     "otherNight": 25,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "死于今日"
+      "死于今日",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -488,9 +488,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vigormortis.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。",
     "id": "3_50",
     "firstNightReminder": "",
     "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
@@ -498,28 +498,28 @@
     "otherNight": 32,
     "setup": 1,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lleech.png",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。",
     "id": "20073_141",
-    "firstNightReminder": "寄生蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 35,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -527,9 +527,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vortox.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。",
     "id": "3_48",
     "firstNightReminder": "",
     "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",

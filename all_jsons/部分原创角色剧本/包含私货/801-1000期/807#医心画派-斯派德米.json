@@ -272,9 +272,14 @@
     ],
     "name": "方古",
     "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
     "otherNight": 36,
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "wangguuuuuuuu111111",
@@ -310,14 +315,18 @@
   {
     "id": "woliuliuliu111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
-    "otherNightReminder": "唤醒涡流，让他攻击一名玩家。",
+    "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "涡流",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
-    "otherNight": 38
+    "otherNight": 38,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "id": "kaka",

@@ -390,19 +390,21 @@
   },
   {
     "id": "taotieeeeeeeeeeee",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/taotie.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5897997694761_fbe1f00c.jpg",
     "edition": "custom",
     "name": "饕餮",
     "ability": "每个夜晚*，你要选择任意数量的非旅行者玩家或一名旅行者玩家：如果他们的角色类型均不相同，他们死亡。[+1外来者]",
     "team": "demon",
     "firstNight": 0,
     "otherNight": 49,
-    "firstNightReminder": "0",
-    "otherNightReminder": "唤醒饕餮，让他选择任意数量的非旅行者玩家或一名旅行者玩家。如果这些玩家角色类型不同，他们死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "唤醒饕餮，让其选择任意数量的玩家。如果这些玩家的角色类型均不相同，标记这些玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wangguuuuuuuu111111",
@@ -414,34 +416,38 @@
     "firstNight": 0,
     "otherNight": 40,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "id": "shenhaijuyao111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/leviathan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
     "edition": "custom",
     "name": "利维坦",
     "ability": "如果多于一名善良玩家被处决，邪恶阵营获胜。所有玩家都知道利维坦在场。在第五个白天结束时，邪恶阵营获胜。",
     "team": "demon",
     "firstNight": 30000,
     "otherNight": 42.2,
-    "firstNightReminder": "如果利维坦在场，告知所有人利维坦在场，现在是第一个白天。",
-    "otherNightReminder": "如果利维坦在场，告知所有人利维坦在场，现在是第几个白天。（如果玩家一致同意，则无需在已经知晓利维坦在场的前提下在其他夜晚执行此项操作。）",
+    "firstNightReminder": "放置利维坦的第一天标记，宣告利维坦在场，现在是第一天。",
+    "otherNightReminder": "将利维坦的标记转换到下一天。",
     "reminders": [
+      "善良被处决",
       "第一天",
-      "第二天",
       "第三天",
-      "第四天",
+      "第二天",
       "第五天",
-      "善良被处决"
+      "第四天"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "56_meta",

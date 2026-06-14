@@ -263,7 +263,7 @@
   },
   {
     "id": "22_xinzhoabuxuan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/xinzhoabuxuan/22_xinzhoabuxuan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/imp.png",
     "otherNightReminder": "让小恶魔选择一名玩家。标记那名玩家死亡。如果小恶魔选择了自己：用一个备用的小恶魔标记替换一个存活的爪牙角色标记。让原来的小恶魔重新入睡。唤醒新的小恶魔。对他展示“你是”信息标记，和小恶魔角色标记。",
     "reminders": [
       "死亡"
@@ -271,13 +271,17 @@
     "name": "小恶魔",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
     "id": "23_xinzhoabuxuan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/xinzhoabuxuan/23_xinzhoabuxuan.png",
-    "firstNightReminder": "在首个夜晚，唤醒卡扎力。让他指向一名玩家，和角色列表上的一个爪牙角色。用这个爪牙的角色标记替换该玩家原本的角色标记，然后唤醒该玩家，对他展示“你是”信息标记和这个爪牙角色标记，然后展示向下的大拇指。重复这个流程，直到场上有与初始设置时同等数量的爪牙。让卡扎力重新入睡。",
-    "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒卡扎力。让他指向任意一名玩家。那名玩家死亡——在他角色标记旁放置“死亡”提示标记。让卡扎力重新入睡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
+    "firstNightReminder": "唤醒卡扎力，让他选择玩家变成邪恶爪牙。",
+    "otherNightReminder": "唤醒卡扎力，让他攻击一名玩家。",
     "reminders": [
       "死亡"
     ],
@@ -286,21 +290,26 @@
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
     "firstNight": 11,
-    "otherNight": 12
+    "otherNight": 12,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "24_xinzhoabuxuan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/xinzhoabuxuan/24_xinzhoabuxuan.png",
-    "firstNightReminder": "寄生蛭指向一名玩家。放置寄生标记，那名玩家中毒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "name": "痢蛭",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
     "firstNight": 5600,
-    "otherNight": 11
+    "otherNight": 11,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   }
 ]

@@ -281,7 +281,7 @@
   {
     "id": "22_luoshengmen",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
@@ -291,22 +291,28 @@
     "team": "demon",
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "firstNight": 3800,
-    "otherNight": 8
+    "otherNight": 8,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "23_luoshengmen",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
-    "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "setup": 1,
     "name": "亡骨魔",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "otherNight": 9
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "id": "24_luoshengmen",
@@ -318,7 +324,11 @@
     "name": "奥赫",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "25_luoshengmen",
@@ -333,7 +343,9 @@
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你位于正中，+1爪牙，-或+任意数量外来者]",
     "firstNight": 1100,
-    "otherNight": 11
+    "otherNight": 11,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "26_luoshengmen",

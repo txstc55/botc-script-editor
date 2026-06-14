@@ -350,14 +350,15 @@
     "team": "demon",
     "firstNight": 16,
     "otherNight": 44,
-    "firstNightReminder": "唤醒所有爪牙选择由谁照看小怪宝。",
-    "otherNightReminder": "唤醒所有爪牙选择由谁照看小怪宝。随后，决定今晚谁会因为小怪宝能力死亡。",
+    "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",
+    "otherNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。说书人选择一名玩家，那名玩家死亡。",
     "reminders": [],
     "remindersGlobal": [
       "是恶魔",
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "kakakakkakakakakakakakaakakak111",
@@ -373,7 +374,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "haliluya111",
@@ -385,22 +388,24 @@
     "firstNight": 0,
     "otherNight": 42,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒哈迪寂亚，让他选择三名玩家。执行哈迪寂亚的能力流程（参考哈迪寂亚的百科页面）。",
+    "otherNightReminder": "哈迪寂亚选择三名玩家。对所有人宣告第一位玩家，然后唤醒他并让他秘密选择活着还是死去。依次对第二第三位玩家如此做。如果三名玩家都选择活着，他们都死去。",
     "reminders": [
       "1",
       "2",
       "3",
-      "选择生",
-      "选择死"
+      "选择死",
+      "选择生"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "legion22",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
     "edition": "custom",
     "name": "军团",
-    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[多数玩家为军团]",
+    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
     "special": [
       {
         "name": "bag-duplicate",
@@ -411,12 +416,14 @@
     "firstNight": 0,
     "otherNight": 39,
     "firstNightReminder": "",
-    "otherNightReminder": "决定今晚谁会因为军团能力死亡。",
+    "otherNightReminder": "由说书人决定，让哪一名玩家死亡。",
     "reminders": [
       "即将被处决",
       "死亡"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "22_xixixi",

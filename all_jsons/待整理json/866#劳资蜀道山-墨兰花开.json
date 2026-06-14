@@ -245,8 +245,8 @@
   },
   {
     "id": "21_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/75/p5adfu7aib17qfuaoos044qbk24xacd.png",
-    "firstNightReminder": "唤醒普卡，让他选择一名玩家，那名玩家中毒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡。",
     "reminders": [
       "中毒",
@@ -256,11 +256,14 @@
     "team": "demon",
     "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "firstNight": 3500,
-    "otherNight": 5
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "22_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/56/5jaw5tcw1cctwr699faa2irvpeh0tqi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
     "reminders": [
       "死亡",
@@ -269,26 +272,35 @@
     "setup": 1,
     "name": "方古",
     "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "otherNight": 6
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
   },
   {
     "id": "23_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e7/5weznbb3b9dr7j9bep7syuyfqyl5t6h.png",
-    "otherNightReminder": "唤醒涡流，让他攻击一名玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
+    "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "涡流",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "id": "24_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/8f/8hdy40avvq6iiq66v8dnhf4hpl3ad3b.png",
-    "firstNightReminder": "唤醒所有爪牙选择由谁照看小怪宝。",
-    "otherNightReminder": "唤醒所有爪牙选择由谁照看小怪宝。随后，决定今晚谁会因为小怪宝能力死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
+    "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",
+    "otherNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。说书人选择一名玩家，那名玩家死亡。",
     "remindersGlobal": [
       "是恶魔",
       "死亡"
@@ -298,6 +310,8 @@
     "team": "demon",
     "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
     "firstNight": 3100,
-    "otherNight": 8
+    "otherNight": 8,
+    "reminders": [],
+    "flavor": ""
   }
 ]

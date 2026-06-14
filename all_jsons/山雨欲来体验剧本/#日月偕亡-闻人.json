@@ -372,12 +372,12 @@
   },
   {
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_6886084308961_f221dd48.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ojo.png",
     "edition": "custom",
     "flavor": "",
     "id": "ojo",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒奥赫。让奥赫指向角色列表上的一个角色标记。如果被选择的角色在场，对应的玩家死亡——使用“死亡”提示标记标记那名玩家。如果被选择的角色不在场，那么改为你来选择任意一名玩家，那名玩家死亡——使用“死亡”提示标记标记那名玩家。让奥赫重新入睡。",
+    "otherNightReminder": "唤醒奥赫，让他选择角色列表上的一个角色。该角色对应的玩家死亡，如果该角色不在场，替奥赫决定今晚谁会因为奥赫能力死亡。",
     "name": "奥赫",
     "otherNight": 6200,
     "setup": 0,
@@ -390,12 +390,12 @@
   },
   {
     "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_6000301943171_d2f257a6.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baojun.png",
     "edition": "custom",
     "flavor": "",
     "id": "baojun",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒暴君，让其选择至多两名玩家。在这些玩家角色标记旁放置“死亡”提示标记。如果暴君选择的玩家数量与上个夜晚死亡的玩家数量相同，摇头示意其重新选择",
+    "otherNightReminder": "唤醒暴君，让他攻击至多两名玩家。但是暴君选择的玩家数量不能与上个夜晚死亡的玩家数量相同。",
     "name": "暴君",
     "otherNight": 8420,
     "setup": 0,
@@ -403,22 +403,23 @@
       "死亡"
     ],
     "team": "demon",
-    "firstNight": 0
+    "firstNight": 0,
+    "remindersGlobal": []
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/no_dashii.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。",
     "id": "no_dashii",
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "name": "诺-达鲺",
     "otherNight": 5500,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
@@ -426,9 +427,9 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/vortox.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。",
     "id": "vortox",
     "firstNightReminder": "",
     "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",

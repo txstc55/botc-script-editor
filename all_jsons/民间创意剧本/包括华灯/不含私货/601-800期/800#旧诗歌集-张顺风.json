@@ -256,29 +256,36 @@
   {
     "id": "21_jiushigeji",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
-    "otherNightReminder": "唤醒亡骨魔，让他攻击一名玩家。",
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "setup": 1,
     "name": "亡骨魔",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "otherNight": 8
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "id": "22_jiushigeji",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
-    "otherNightReminder": "唤醒涡流，让他攻击一名玩家。",
+    "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "涡流",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
   },
   {
     "id": "23_jiushigeji",
@@ -306,7 +313,11 @@
     "name": "姑获鸟",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "26_jiushigeji",

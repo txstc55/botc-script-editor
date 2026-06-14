@@ -308,7 +308,7 @@
   },
   {
     "id": "24_shanyuyulai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/7e/rgiu2e99kjt4usnvbpd7gk06w2px6qe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baojun.png",
     "otherNightReminder": "唤醒暴君，让他攻击至多两名玩家。但是暴君选择的玩家数量不能与上个夜晚死亡的玩家数量相同。",
     "reminders": [
       "死亡"
@@ -316,13 +316,17 @@
     "name": "暴君",
     "team": "demon",
     "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "25_shanyuyulai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/thumb/a/a6/23rdh3m2jjs96jd4u3x1oy2ccox9w22.png/240px-%E5%85%B8%E7%8B%B1%E9%95%BF.png",
-    "firstNightReminder": "唤醒典狱长，让他选择至多三名玩家。",
-    "otherNightReminder": "唤醒典狱长，让他选择至多三名玩家。如果上个夜晚选择的玩家之中有人死于处决，上个夜晚选择的其余玩家均死亡，否则其中之一死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png",
+    "firstNightReminder": "唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
+    "otherNightReminder": "如果今天白天被处决的玩家标记有“囚禁”，则其他标记有囚禁的玩家死亡。否则，将其中一人标记为死亡。移除所有“囚禁”提示标记。唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
     "reminders": [
       "囚禁",
       "死亡"
@@ -331,11 +335,14 @@
     "team": "demon",
     "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
     "firstNight": 3500,
-    "otherNight": 12
+    "otherNight": 12,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "26_shanyuyulai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/9f/8jwgty35vs7uu11c71x2p9zngayzpzc.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/guhuoniao.png",
     "otherNightReminder": "唤醒姑获鸟，让他攻击一名玩家。",
     "reminders": [
       "死亡",
@@ -344,7 +351,11 @@
     "name": "姑获鸟",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
-    "otherNight": 11
+    "otherNight": 11,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "27_shanyuyulai",
@@ -361,9 +372,9 @@
   },
   {
     "id": "28_shanyuyulai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e3/1u42djep870u33mo55soipjghgx5s8a.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2190498760171_1c483826.jpg",
     "firstNightReminder": "唤醒阎罗，让他查看魔典。让阎罗选择一名玩家，将“三更将死”标记放置该玩家角色标记旁。之后再让阎罗选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁。",
-    "otherNightReminder": "唤醒阎罗，让他选择一名玩家，将“即将死亡”标记放置该玩家角色标记旁，并将上一个夜晚的“即将死亡”标记替换为“死亡”标记。如果这是游戏的第三个夜晚，将“三更将死”标记的玩家判死，即使因为任何原因让他不会死亡。",
+    "otherNightReminder": "让阎罗选择一名玩家，放置“即将死亡”标记在其角色图标旁。",
     "reminders": [
       "三更将死",
       "即将死亡",
@@ -373,7 +384,10 @@
     "team": "demon",
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他在第三个夜晚死亡，即使因为任何原因让他不会死亡。每个夜晚，你要选择一名玩家：上个夜晚被你选择的玩家死亡。",
     "firstNight": 4000,
-    "otherNight": 14
+    "otherNight": 14,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "29_shanyuyulai",

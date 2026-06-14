@@ -343,9 +343,9 @@
     "id": "goblin"
   },
   {
-    "firstNightReminder": "告诉牙噶巴卜他的秘密短语。",
+    "firstNightReminder": "唤醒牙噶巴卜，对他展示他的秘密短语。",
     "firstNight": 3068,
-    "otherNightReminder": "说书人选择一名玩家，那名玩家死亡。",
+    "otherNightReminder": "根据已放置的提示标记数量，选择最多等同于该数量的玩家死亡。该夜晚行动只是一个提示，死亡的造成时机可以是白天，也可以是夜晚的任何时候。",
     "otherNight": 53,
     "name": "牙噶巴卜",
     "team": "demon",
@@ -356,29 +356,31 @@
     "remindersGlobal": [],
     "ability": "在你的首个夜晚，你会得知一段秘密短语。每次你在白天公开说出这段短语，当天便可能会有一名玩家在这之后死亡。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yaggababble.png",
-    "id": "Yaggababble"
+    "id": "Yaggababble",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
     "firstNight": 0,
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "otherNight": 45,
     "name": "诺-达鲺",
     "team": "demon",
     "setup": 0,
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "remindersGlobal": [],
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
-    "id": "No_dashii"
+    "id": "No_dashii",
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "firstNightReminder": "",
     "firstNight": 0,
-    "otherNightReminder": "唤醒奥赫。让奥赫指向角色列表上的一个角色标记。如果被选择的角色在场，对应的玩家死亡。如果被选择的角色不在场，那么改为你来选择任意名玩家，他们死亡。",
+    "otherNightReminder": "唤醒奥赫，让他选择角色列表上的一个角色。该角色对应的玩家死亡，如果该角色不在场，替奥赫决定今晚谁会因为奥赫能力死亡。",
     "otherNight": 47,
     "name": "奥赫",
     "team": "demon",
@@ -389,7 +391,8 @@
     "remindersGlobal": [],
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ojo.png",
-    "id": "ojo"
+    "id": "ojo",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -400,13 +403,14 @@
     "team": "demon",
     "setup": 0,
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "remindersGlobal": [],
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
-    "id": "Po"
+    "id": "Po",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",

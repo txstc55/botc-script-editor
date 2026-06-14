@@ -419,7 +419,7 @@
   },
   {
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "edition": "custom",
     "flavor": "",
     "id": "po_c",
@@ -430,8 +430,6 @@
     "setup": 0,
     "reminders": [
       "攻击三次",
-      "死亡",
-      "死亡",
       "死亡"
     ],
     "remindersGlobal": [],
@@ -440,7 +438,7 @@
   },
   {
     "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lil_monsta.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
     "edition": "custom",
     "flavor": "",
     "id": "lil_monsta_c",
@@ -466,12 +464,12 @@
     ]
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家:他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lleech.png",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。",
     "id": "lleech_c",
-    "firstNightReminder": "让痢蛭指向一名玩家。标记那名玩家中毒。",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
     "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "name": "痢蛭",
     "otherNight": 7200.0,
@@ -485,13 +483,13 @@
     "firstNight": 4500.0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你靠近正中，+1爪牙，-或+任意数量外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_3707150105271_e57fc482.jpg",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你位于正中，+1爪牙，-或+任意数量外来者]",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/18/Lordoftyphon.png",
     "edition": "custom",
     "flavor": "",
     "id": "lord_of_typhon_c",
     "firstNightReminder": "将位于堤丰之首两侧的对应数量的玩家变成邪恶的爪牙，并分别唤醒他们通知他们的角色和阵营变化。",
-    "otherNightReminder": "在除首个夜晚以外的每个夜晚，唤醒堤丰之首。让他指向任意一名玩家。那名玩家死亡——用“死亡”提示标记标记那名玩家。让堤丰之首重新入睡。",
+    "otherNightReminder": "唤醒堤丰之首，让他攻击一名玩家。",
     "name": "堤丰之首",
     "otherNight": 7800.0,
     "setup": 1,

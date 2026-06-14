@@ -292,18 +292,22 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "otherNightReminder": "唤醒诺-达鲺，让他攻击一名玩家。",
     "reminders": [
-      "死亡",
-      "中毒"
+      "中毒",
+      "死亡"
     ],
     "name": "诺-达鲺",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "id": "23_rulindadi",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
-    "otherNightReminder": "决定今晚谁会因为军团能力死亡。",
+    "otherNightReminder": "由说书人决定，让哪一名玩家死亡。",
     "reminders": [
       "即将被处决",
       "死亡"
@@ -311,8 +315,11 @@
     "setup": 1,
     "name": "军团",
     "team": "demon",
-    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[多数玩家为军团]",
-    "otherNight": 8
+    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "24_rulindadi",

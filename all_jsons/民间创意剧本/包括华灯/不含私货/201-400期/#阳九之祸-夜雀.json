@@ -296,23 +296,26 @@
   },
   {
     "id": "vigormortis0",
-    "image": "https://i.postimg.cc/wTx1nd3v/Vigormortis.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
     "name": "亡骨魔",
     "team": "demon",
     "firstNight": 0,
     "otherNight": 43,
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "setup": 1,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]"
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
     "id": "kazali0",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/46/Kazali.png/400px-Kazali.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
     "name": "卡扎力",
     "team": "demon",
     "firstNight": 1,
@@ -322,12 +325,14 @@
     ],
     "setup": 1,
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
-    "firstNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
-    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]"
+    "firstNightReminder": "唤醒卡扎力，让他选择玩家变成邪恶爪牙。",
+    "otherNightReminder": "唤醒卡扎力，让他攻击一名玩家。",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "dianyuzhang0",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/d/db/Dianyuzhang.png/100px-Dianyuzhang.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dianyuzhang.png",
     "name": "典狱长",
     "team": "demon",
     "firstNight": 37,
@@ -337,23 +342,28 @@
       "死亡"
     ],
     "setup": 0,
-    "ability": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
-    "firstNightReminder": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
-    "otherNightReminder": "每个夜晚，你要选择一至三名玩家。如果明天白天其中之一被处决，其余玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。"
+    "ability": "每个夜晚，你要选择至多三名玩家：如果明天白天他们之一死于处决，上次被你选择的其他玩家会在当晚死亡。否则，当晚他们之中会有一名玩家死亡。",
+    "firstNightReminder": "唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
+    "otherNightReminder": "如果今天白天被处决的玩家标记有“囚禁”，则其他标记有囚禁的玩家死亡。否则，将其中一人标记为死亡。移除所有“囚禁”提示标记。唤醒典狱长，让其选择至多三名玩家。在这些玩家角色标记旁放置“囚禁”提示标记。",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "po0",
-    "image": "https://i.postimg.cc/NjrpgyQ0/Po.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
     "name": "珀",
     "team": "demon",
     "firstNight": 0,
     "otherNight": 39,
     "reminders": [
-      "死亡",
-      "攻击三次"
+      "攻击三次",
+      "死亡"
     ],
     "setup": 0,
     "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "otherNightReminder": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。"
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   }
 ]

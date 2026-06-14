@@ -320,29 +320,36 @@
   },
   {
     "id": "21_si",
-    "image": "https://i.postimg.cc/T1QfVyp7/ojo-shadowed-intentions.png",
-    "otherNightReminder": "The Ojo points to a character. That character dies.",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ojo.png",
+    "otherNightReminder": "唤醒奥赫，让他选择角色列表上的一个角色。该角色对应的玩家死亡，如果该角色不在场，替奥赫决定今晚谁会因为奥赫能力死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "奥赫",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一个角色：他死亡。如果该角色不在场，则由说书人来决定谁会被你杀死。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "24_si",
-    "image": "https://i.postimg.cc/RFLBm3QS/vgorm0rtis-shadowed-intentions.png",
-    "otherNightReminder": "The Vigormortis points to a player. That player dies. If a Minion, they keep their ability and one of their Townsfolk neighbors is poisoned.",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vigormortis.png",
+    "otherNightReminder": "让亡骨魔选择一名玩家。标记那名玩家死亡。如果该玩家是爪牙，标记该玩家保留能力，并标记与该玩家邻近的镇民玩家之一中毒。",
     "reminders": [
-      "死亡",
+      "中毒",
       "保留能力",
-      "中毒"
+      "死亡"
     ],
     "setup": 1,
     "name": "亡骨魔",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
-    "otherNight": 9
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   }
 ]
