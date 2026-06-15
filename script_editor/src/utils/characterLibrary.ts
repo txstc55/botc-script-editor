@@ -64,10 +64,11 @@ export async function loadCharacterLibrary(team: TeamKey) {
     loadCharacterRecords(`/custom/${characterTeamFolders[team]}`, "custom", team, true),
     loadCharacterRecords(`/characters/${characterTeamFolders[team]}`, "database", team, false),
   ]);
+  const customNames = new Set(custom.map((entry) => entry.record.name));
 
   return {
     custom,
-    database,
+    database: database.filter((entry) => !customNames.has(entry.record.name)),
   };
 }
 

@@ -82,13 +82,6 @@ fn save_custom_fabled_character(file_name: Option<String>, record_json: String) 
     }
   }
 
-  let existing_record = directories
-    .iter()
-    .find_map(|directory| read_fabled_record(&directory.join(&file_name)));
-  if let Some(existing_record) = existing_record {
-    record = merge_fabled_records(existing_record, record);
-  }
-
   for directory in &directories {
     write_fabled_record(directory, &file_name, &record)?;
     upsert_fabled_index_item(directory, &record, &file_name)?;
@@ -159,13 +152,6 @@ fn save_custom_character(team: String, file_name: Option<String>, record_json: S
     if !map.contains_key("totalOccurrenceCount") {
       map.insert("totalOccurrenceCount".to_string(), Value::Number(1.into()));
     }
-  }
-
-  let existing_record = directories
-    .iter()
-    .find_map(|directory| read_character_record(&directory.join(&file_name)));
-  if let Some(existing_record) = existing_record {
-    record = merge_fabled_records(existing_record, record);
   }
 
   for directory in &directories {
@@ -469,70 +455,6 @@ fn read_character_record(path: &PathBuf) -> Option<Value> {
     .ok()
     .and_then(|text| serde_json::from_str::<Value>(&text).ok())
     .filter(Value::is_object)
-}
-
-fn merge_fabled_records(mut base: Value, addition: Value) -> Value {
-  let base_variants = base.get("variants").cloned().unwrap_or_else(|| json!({}));
-  let addition_variants = addition.get("variants").cloned().unwrap_or_else(|| json!({}));
-
-  if let (Value::Object(base_map), Value::Object(addition_map)) = (&mut base, addition) {
-    for (key, value) in addition_map {
-      if key != "variants" {
-        base_map.insert(key, value);
-      }
-    }
-    base_map.insert(
-      "variants".to_string(),
-      json!({
-        "ability": merge_variant_values(base_variants.get("ability"), addition_variants.get("ability")),
-        "image": merge_variant_values(base_variants.get("image"), addition_variants.get("image")),
-        "firstNight": merge_variant_values(base_variants.get("firstNight"), addition_variants.get("firstNight")),
-        "firstNightReminder": merge_variant_values(
-          base_variants.get("firstNightReminder"),
-          addition_variants.get("firstNightReminder"),
-        ),
-        "otherNight": merge_variant_values(base_variants.get("otherNight"), addition_variants.get("otherNight")),
-        "otherNightReminder": merge_variant_values(
-          base_variants.get("otherNightReminder"),
-          addition_variants.get("otherNightReminder"),
-        ),
-        "reminders": merge_variant_values(base_variants.get("reminders"), addition_variants.get("reminders")),
-        "remindersGlobal": merge_variant_values(
-          base_variants.get("remindersGlobal"),
-          addition_variants.get("remindersGlobal"),
-        ),
-        "setup": merge_variant_values(base_variants.get("setup"), addition_variants.get("setup")),
-        "flavor": merge_variant_values(base_variants.get("flavor"), addition_variants.get("flavor")),
-      }),
-    );
-  }
-
-  base
-}
-
-fn merge_variant_values(base: Option<&Value>, addition: Option<&Value>) -> Vec<Value> {
-  let mut values = Vec::new();
-  values.extend(variant_values(base));
-  values.extend(variant_values(addition));
-
-  let mut merged: Vec<Value> = Vec::new();
-  for value in values {
-    if !merged.iter().any(|existing| existing == &value) {
-      merged.push(value);
-    }
-  }
-  if merged.is_empty() {
-    merged.push(Value::String("".to_string()));
-  }
-  merged
-}
-
-fn variant_values(value: Option<&Value>) -> Vec<Value> {
-  match value {
-    Some(Value::Array(values)) => values.clone(),
-    Some(value) => vec![value.clone()],
-    None => Vec::new(),
-  }
 }
 
 fn read_fabled_index(directory: &Path) -> Value {

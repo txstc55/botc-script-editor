@@ -55,10 +55,11 @@ export async function loadFabledLibrary() {
     loadFabledRecords("/custom/fabled", "custom"),
     loadFabledRecords("/characters/fabled", "database"),
   ]);
+  const customNames = new Set(custom.map((entry) => entry.record.name));
 
   return {
     custom,
-    database,
+    database: database.filter((entry) => !customNames.has(entry.record.name)),
   };
 }
 

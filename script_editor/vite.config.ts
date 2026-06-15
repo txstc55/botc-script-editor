@@ -100,8 +100,7 @@ function customFabledPlugin(): Plugin {
             fileName,
             totalOccurrenceCount: Number(record.totalOccurrenceCount) || 1,
           };
-          const existingRecord = await readFabledRecord(path.join(customFabledDir, fileName));
-          const nextRecord = existingRecord ? mergeFabledRecords(existingRecord, incomingRecord) : incomingRecord;
+          const nextRecord = incomingRecord;
 
           await mkdir(customFabledDir, { recursive: true });
           await writeFile(path.join(customFabledDir, fileName), `${JSON.stringify(nextRecord, null, 2)}\n`);
@@ -208,8 +207,7 @@ function customCharacterPlugin(): Plugin {
             fileName,
             totalOccurrenceCount: Number(record.totalOccurrenceCount) || 1,
           };
-          const existingRecord = await readCharacterRecord(path.join(customDir, fileName));
-          const nextRecord = existingRecord ? mergeFabledRecords(existingRecord, incomingRecord) : incomingRecord;
+          const nextRecord = incomingRecord;
 
           await mkdir(customDir, { recursive: true });
           await writeFile(path.join(customDir, fileName), `${JSON.stringify(nextRecord, null, 2)}\n`);
@@ -290,68 +288,6 @@ function customCharacterPlugin(): Plugin {
       });
     },
   };
-}
-
-async function readFabledRecord(filePath: string) {
-  try {
-    const parsed = JSON.parse(await readFile(filePath, "utf8"));
-    return isRecord(parsed) ? parsed : null;
-  } catch {
-    return null;
-  }
-}
-
-async function readCharacterRecord(filePath: string) {
-  try {
-    const parsed = JSON.parse(await readFile(filePath, "utf8"));
-    return isRecord(parsed) ? parsed : null;
-  } catch {
-    return null;
-  }
-}
-
-function mergeFabledRecords(base: Record<string, unknown>, addition: Record<string, unknown>) {
-  const baseVariants = isRecord(base.variants) ? base.variants : {};
-  const additionVariants = isRecord(addition.variants) ? addition.variants : {};
-
-  return {
-    ...base,
-    ...addition,
-    variants: {
-      ability: mergeVariantValues(baseVariants.ability, additionVariants.ability),
-      image: mergeVariantValues(baseVariants.image, additionVariants.image),
-      firstNight: mergeVariantValues(baseVariants.firstNight, additionVariants.firstNight),
-      firstNightReminder: mergeVariantValues(baseVariants.firstNightReminder, additionVariants.firstNightReminder),
-      otherNight: mergeVariantValues(baseVariants.otherNight, additionVariants.otherNight),
-      otherNightReminder: mergeVariantValues(baseVariants.otherNightReminder, additionVariants.otherNightReminder),
-      reminders: mergeVariantValues(baseVariants.reminders, additionVariants.reminders),
-      remindersGlobal: mergeVariantValues(baseVariants.remindersGlobal, additionVariants.remindersGlobal),
-      setup: mergeVariantValues(baseVariants.setup, additionVariants.setup),
-      flavor: mergeVariantValues(baseVariants.flavor, additionVariants.flavor),
-    },
-  };
-}
-
-function mergeVariantValues(base: unknown, addition: unknown) {
-  const values = [...variantArray(base), ...variantArray(addition)];
-  const seen = new Set<string>();
-  const merged: unknown[] = [];
-  for (const value of values) {
-    const key = JSON.stringify(value);
-    if (seen.has(key)) {
-      continue;
-    }
-    seen.add(key);
-    merged.push(value);
-  }
-  return merged.length ? merged : [""];
-}
-
-function variantArray(value: unknown) {
-  if (value === undefined) {
-    return [];
-  }
-  return Array.isArray(value) ? value : [value];
 }
 
 function fabledDirectory(source: FabledSource) {
