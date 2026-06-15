@@ -135,6 +135,63 @@ function customFabledPlugin(): Plugin {
       });
 
       server.middlewares.use("/__fabled_record", async (request, response) => {
+        if (request.method === "POST") {
+          try {
+            const body = await readRequestJson(request);
+            const source = body.source === "database" ? "database" : "custom";
+            const record = isRecord(body.record) ? body.record : null;
+            const name = cleanText(record?.name);
+            if (!record || !name) {
+              response.statusCode = 400;
+              response.end("Missing fabled character record.");
+              return;
+            }
+
+            const directory = fabledDirectory(source);
+            const fileName = safeCustomFabledFileName(cleanText(body.fileName) || name);
+            const nextRecord = {
+              ...record,
+              id: cleanText(record.id) || name,
+              name,
+              team: "fabled",
+              fileName,
+              totalOccurrenceCount: Number(record.totalOccurrenceCount) || 1,
+            };
+
+            await mkdir(directory, { recursive: true });
+            await writeFile(path.join(directory, fileName), `${JSON.stringify(nextRecord, null, 2)}\n`);
+            const indexPath = fabledIndexPath(source);
+            const index = await readFabledIndex(indexPath);
+            const nextItem = {
+              id: cleanText(nextRecord.id) || name,
+              name,
+              team: "fabled",
+              totalOccurrenceCount: Number(nextRecord.totalOccurrenceCount) || 1,
+              fileName,
+            };
+            const existingIndex = index.characters.findIndex((item) => item.name === name || item.fileName === fileName);
+            if (existingIndex >= 0) {
+              index.characters[existingIndex] = nextItem;
+            } else {
+              index.characters.unshift(nextItem);
+            }
+            index.characterCount = index.characters.length;
+            index.totalOccurrenceCount = index.characters.reduce(
+              (total, item) => total + (Number(item.totalOccurrenceCount) || 0),
+              0,
+            );
+            await writeFile(indexPath, `${JSON.stringify(index, null, 2)}\n`);
+
+            response.statusCode = 200;
+            response.setHeader("content-type", "application/json");
+            response.end(JSON.stringify({ record: nextRecord, index }));
+          } catch (error) {
+            response.statusCode = 500;
+            response.end(error instanceof Error ? error.message : "Failed to save fabled character.");
+          }
+          return;
+        }
+
         if (request.method !== "DELETE") {
           response.statusCode = 405;
           response.end("Method not allowed.");
@@ -243,6 +300,64 @@ function customCharacterPlugin(): Plugin {
       });
 
       server.middlewares.use("/__character_record", async (request, response) => {
+        if (request.method === "POST") {
+          try {
+            const body = await readRequestJson(request);
+            const team = normalizeCharacterTeam(body.team);
+            const source = body.source === "database" ? "database" : "custom";
+            const record = isRecord(body.record) ? body.record : null;
+            const name = cleanText(record?.name);
+            if (!team || !record || !name) {
+              response.statusCode = 400;
+              response.end("Missing character team or record.");
+              return;
+            }
+
+            const directory = characterDirectory(team, source);
+            const fileName = safeCustomCharacterFileName(cleanText(body.fileName) || name);
+            const nextRecord = {
+              ...record,
+              id: cleanText(record.id) || name,
+              name,
+              team,
+              fileName,
+              totalOccurrenceCount: Number(record.totalOccurrenceCount) || 1,
+            };
+
+            await mkdir(directory, { recursive: true });
+            await writeFile(path.join(directory, fileName), `${JSON.stringify(nextRecord, null, 2)}\n`);
+            const indexPath = characterIndexPath(team, source);
+            const index = await readCharacterIndex(team, indexPath);
+            const nextItem = {
+              id: cleanText(nextRecord.id) || name,
+              name,
+              team,
+              totalOccurrenceCount: Number(nextRecord.totalOccurrenceCount) || 1,
+              fileName,
+            };
+            const existingIndex = index.characters.findIndex((item) => item.name === name || item.fileName === fileName);
+            if (existingIndex >= 0) {
+              index.characters[existingIndex] = nextItem;
+            } else {
+              index.characters.unshift(nextItem);
+            }
+            index.characterCount = index.characters.length;
+            index.totalOccurrenceCount = index.characters.reduce(
+              (total, item) => total + (Number(item.totalOccurrenceCount) || 0),
+              0,
+            );
+            await writeFile(indexPath, `${JSON.stringify(index, null, 2)}\n`);
+
+            response.statusCode = 200;
+            response.setHeader("content-type", "application/json");
+            response.end(JSON.stringify({ record: nextRecord, index }));
+          } catch (error) {
+            response.statusCode = 500;
+            response.end(error instanceof Error ? error.message : "Failed to save character.");
+          }
+          return;
+        }
+
         if (request.method !== "DELETE") {
           response.statusCode = 405;
           response.end("Method not allowed.");

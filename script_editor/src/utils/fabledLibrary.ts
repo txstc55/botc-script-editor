@@ -64,34 +64,39 @@ export async function loadFabledLibrary() {
 }
 
 export async function saveCustomFabledRecord(record: FabledRecord) {
+  return saveFabledRecord("custom", record);
+}
+
+export async function saveFabledRecord(source: FabledLibrarySource, record: FabledRecord) {
   const normalized = normalizeFabledRecord({
     ...record,
-    fileName: safeCustomFabledFileName(record.name),
+    fileName: record.fileName || safeCustomFabledFileName(record.name),
     totalOccurrenceCount: Math.max(1, record.totalOccurrenceCount || 1),
   });
   const body = {
+    source,
     fileName: normalized.fileName,
     record: normalized,
   };
 
   if (preferTauriStorage()) {
-    const tauriSaved = await saveCustomFabledRecordWithTauri(body);
+    const tauriSaved = await saveFabledRecordWithTauri(body);
     if (tauriSaved) {
       return tauriSaved;
     }
   }
 
-  const viteSaved = await saveCustomFabledRecordWithVite(body);
+  const viteSaved = await saveFabledRecordWithVite(body);
   if (viteSaved) {
     return viteSaved;
   }
 
-  const tauriSaved = await saveCustomFabledRecordWithTauri(body);
+  const tauriSaved = await saveFabledRecordWithTauri(body);
   if (tauriSaved) {
     return tauriSaved;
   }
 
-  throw new Error("无法保存自定义传奇角色。");
+  throw new Error("无法保存传奇角色。");
 }
 
 export async function deleteFabledRecord(entry: FabledLibraryEntry) {
@@ -285,9 +290,11 @@ async function fetchJson<T>(url: string): Promise<T | null> {
   }
 }
 
-async function saveCustomFabledRecordWithVite(body: { fileName?: string; record: FabledRecord }) {
+async function saveFabledRecordWithVite(
+  body: { source: FabledLibrarySource; fileName?: string; record: FabledRecord },
+) {
   try {
-    const response = await fetch("/__custom_fabled", {
+    const response = await fetch("/__fabled_record", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -304,10 +311,13 @@ async function saveCustomFabledRecordWithVite(body: { fileName?: string; record:
   }
 }
 
-async function saveCustomFabledRecordWithTauri(body: { fileName?: string; record: FabledRecord }) {
+async function saveFabledRecordWithTauri(
+  body: { source: FabledLibrarySource; fileName?: string; record: FabledRecord },
+) {
   try {
     const { invoke } = await import("@tauri-apps/api/core");
-    const saved = await invoke<unknown>("save_custom_fabled_character", {
+    const saved = await invoke<unknown>("save_fabled_character", {
+      source: body.source,
       fileName: body.fileName,
       file_name: body.fileName,
       recordJson: JSON.stringify(body.record, null, 2),

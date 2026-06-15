@@ -11,8 +11,9 @@ import {
   loadFabledLibrary,
   mergeFabledRecordVariants,
   normalizeFabledRecord,
-  saveCustomFabledRecord,
+  saveFabledRecord,
   type FabledLibraryEntry,
+  type FabledLibrarySource,
   type FabledRecord,
   type FabledVariants,
 } from "../utils/fabledLibrary";
@@ -301,21 +302,22 @@ function removeVariant(field: VariantField) {
   variantChoice[field] = String(nextIndex);
   applyVariant(field, nextIndex);
   saveError.value = "";
-  saveStatus.value = "已删除当前字段版本，保存后写入自定义数据库。";
+  saveStatus.value = "已删除当前字段版本，保存后写入当前来源。";
 }
 
 async function saveCurrentFabled() {
   saveStatus.value = "";
   saveError.value = "";
   try {
-    const saved = await saveCustomFabledRecord(recordForSave());
-    upsertCustomEntry(saved);
+    const targetSource = activeEntry.value?.source ?? "custom";
+    const saved = await saveFabledRecord(targetSource, recordForSave(targetSource));
+    upsertEntry(targetSource, saved);
     activeEntry.value = {
-      source: "custom",
+      source: targetSource,
       record: saved,
     };
     resetDeletedVariantKeys();
-    saveStatus.value = "已保存到 custom/fabled。";
+    saveStatus.value = targetSource === "database" ? "已保存到已有传奇角色数据库。" : "已保存到 custom/fabled。";
   } catch (error) {
     saveError.value = error instanceof Error ? error.message : "保存失败。";
   }
@@ -355,11 +357,11 @@ function addCurrentFabled() {
   emit("close");
 }
 
-function recordForSave() {
+function recordForSave(targetSource: FabledLibrarySource) {
   const currentRecord = formToRecord();
   const matchingCustomRecord = customEntries.value.find((entry) => entry.record.name === currentRecord.name)?.record;
   let merged = activeRecord.value ? mergeFabledRecordVariants(activeRecord.value, currentRecord) : currentRecord;
-  if (matchingCustomRecord && matchingCustomRecord !== activeRecord.value) {
+  if (targetSource === "custom" && matchingCustomRecord && matchingCustomRecord !== activeRecord.value) {
     merged = mergeFabledRecordVariants(matchingCustomRecord, merged);
   }
   return removeDeletedVariants(merged);
@@ -387,16 +389,17 @@ function formToRecord() {
   });
 }
 
-function upsertCustomEntry(record: FabledRecord) {
+function upsertEntry(source: FabledLibrarySource, record: FabledRecord) {
   const nextEntry = {
-    source: "custom" as const,
+    source,
     record,
   };
-  const existingIndex = customEntries.value.findIndex((entry) => entry.record.name === record.name);
+  const entries = source === "custom" ? customEntries.value : databaseEntries.value;
+  const existingIndex = entries.findIndex((entry) => entry.record.name === record.name);
   if (existingIndex >= 0) {
-    customEntries.value.splice(existingIndex, 1, nextEntry);
+    entries.splice(existingIndex, 1, nextEntry);
   } else {
-    customEntries.value.unshift(nextEntry);
+    entries.unshift(nextEntry);
   }
 }
 

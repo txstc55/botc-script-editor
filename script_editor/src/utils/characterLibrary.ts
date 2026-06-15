@@ -99,36 +99,41 @@ export async function loadCharacterEntryRecord(entry: CharacterLibraryEntry) {
 }
 
 export async function saveCustomCharacterRecord(team: TeamKey, record: CharacterRecord) {
+  return saveCharacterRecord(team, "custom", record);
+}
+
+export async function saveCharacterRecord(team: TeamKey, source: CharacterLibrarySource, record: CharacterRecord) {
   const normalized = normalizeCharacterRecord({
     ...record,
     team,
-    fileName: safeCustomCharacterFileName(record.name),
+    fileName: record.fileName || safeCustomCharacterFileName(record.name),
     totalOccurrenceCount: Math.max(1, record.totalOccurrenceCount || 1),
   }, team);
   const body = {
     team,
+    source,
     fileName: normalized.fileName,
     record: normalized,
   };
 
   if (preferTauriStorage()) {
-    const tauriSaved = await saveCustomCharacterRecordWithTauri(body);
+    const tauriSaved = await saveCharacterRecordWithTauri(body);
     if (tauriSaved) {
       return tauriSaved;
     }
   }
 
-  const viteSaved = await saveCustomCharacterRecordWithVite(body);
+  const viteSaved = await saveCharacterRecordWithVite(body);
   if (viteSaved) {
     return viteSaved;
   }
 
-  const tauriSaved = await saveCustomCharacterRecordWithTauri(body);
+  const tauriSaved = await saveCharacterRecordWithTauri(body);
   if (tauriSaved) {
     return tauriSaved;
   }
 
-  throw new Error("无法保存自定义角色。");
+  throw new Error("无法保存角色。");
 }
 
 export async function deleteCharacterRecord(entry: CharacterLibraryEntry) {
@@ -363,9 +368,11 @@ async function fetchJson<T>(url: string): Promise<T | null> {
   }
 }
 
-async function saveCustomCharacterRecordWithVite(body: { team: TeamKey; fileName?: string; record: CharacterRecord }) {
+async function saveCharacterRecordWithVite(
+  body: { team: TeamKey; source: CharacterLibrarySource; fileName?: string; record: CharacterRecord },
+) {
   try {
-    const response = await fetch("/__custom_character", {
+    const response = await fetch("/__character_record", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -382,11 +389,14 @@ async function saveCustomCharacterRecordWithVite(body: { team: TeamKey; fileName
   }
 }
 
-async function saveCustomCharacterRecordWithTauri(body: { team: TeamKey; fileName?: string; record: CharacterRecord }) {
+async function saveCharacterRecordWithTauri(
+  body: { team: TeamKey; source: CharacterLibrarySource; fileName?: string; record: CharacterRecord },
+) {
   try {
     const { invoke } = await import("@tauri-apps/api/core");
-    const saved = await invoke<unknown>("save_custom_character", {
+    const saved = await invoke<unknown>("save_character", {
       team: body.team,
+      source: body.source,
       fileName: body.fileName,
       file_name: body.fileName,
       recordJson: JSON.stringify(body.record, null, 2),

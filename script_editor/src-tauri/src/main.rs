@@ -55,6 +55,20 @@ async fn fetch_image_data_url(url: String) -> Result<String, String> {
 
 #[tauri::command]
 fn save_custom_fabled_character(file_name: Option<String>, record_json: String) -> Result<Value, String> {
+  save_fabled_character_to_source("custom", file_name, record_json)
+}
+
+#[tauri::command]
+fn save_fabled_character(source: String, file_name: Option<String>, record_json: String) -> Result<Value, String> {
+  save_fabled_character_to_source(&source, file_name, record_json)
+}
+
+fn save_fabled_character_to_source(
+  source: &str,
+  file_name: Option<String>,
+  record_json: String,
+) -> Result<Value, String> {
+  let source = normalize_source(source)?;
   let mut record: Value = serde_json::from_str(&record_json)
     .map_err(|error| format!("Invalid fabled character JSON: {error}"))?;
   let name = json_text(record.get("name"));
@@ -63,7 +77,7 @@ fn save_custom_fabled_character(file_name: Option<String>, record_json: String) 
   }
 
   let file_name = safe_custom_fabled_file_name(file_name.as_deref().unwrap_or(&name));
-  let directories = fabled_dirs("custom", true)?;
+  let directories = fabled_dirs(&source, true)?;
   let primary_directory = directories
     .first()
     .ok_or_else(|| "Failed to locate custom fabled folder.".to_string())?;
@@ -93,6 +107,7 @@ fn save_custom_fabled_character(file_name: Option<String>, record_json: String) 
 
 #[tauri::command]
 fn delete_fabled_character(source: String, file_name: Option<String>, name: String) -> Result<(), String> {
+  let source = normalize_source(&source)?;
   let file_name = safe_custom_fabled_file_name(file_name.as_deref().unwrap_or(&name));
   let name = if name.trim().is_empty() {
     file_name.trim_end_matches(".json").to_string()
@@ -126,7 +141,27 @@ fn delete_fabled_character(source: String, file_name: Option<String>, name: Stri
 
 #[tauri::command]
 fn save_custom_character(team: String, file_name: Option<String>, record_json: String) -> Result<Value, String> {
+  save_character_to_source(team, "custom", file_name, record_json)
+}
+
+#[tauri::command]
+fn save_character(
+  team: String,
+  source: String,
+  file_name: Option<String>,
+  record_json: String,
+) -> Result<Value, String> {
+  save_character_to_source(team, &source, file_name, record_json)
+}
+
+fn save_character_to_source(
+  team: String,
+  source: &str,
+  file_name: Option<String>,
+  record_json: String,
+) -> Result<Value, String> {
   let team = normalize_character_team(&team)?;
+  let source = normalize_source(source)?;
   let mut record: Value = serde_json::from_str(&record_json)
     .map_err(|error| format!("Invalid character JSON: {error}"))?;
   let name = json_text(record.get("name"));
@@ -135,7 +170,7 @@ fn save_custom_character(team: String, file_name: Option<String>, record_json: S
   }
 
   let file_name = safe_custom_character_file_name(file_name.as_deref().unwrap_or(&name));
-  let directories = character_dirs(&team, "custom", true)?;
+  let directories = character_dirs(&team, &source, true)?;
   let primary_directory = directories
     .first()
     .ok_or_else(|| "Failed to locate custom character folder.".to_string())?;
@@ -166,6 +201,7 @@ fn save_custom_character(team: String, file_name: Option<String>, record_json: S
 #[tauri::command]
 fn delete_character(team: String, source: String, file_name: Option<String>, name: String) -> Result<(), String> {
   let team = normalize_character_team(&team)?;
+  let source = normalize_source(&source)?;
   let file_name = safe_custom_character_file_name(file_name.as_deref().unwrap_or(&name));
   let name = if name.trim().is_empty() {
     file_name.trim_end_matches(".json").to_string()
@@ -229,7 +265,10 @@ fn upsert_fabled_index_item(directory: &Path, record: &Value, file_name: &str) -
       .ok_or_else(|| "Invalid fabled index.".to_string())?;
     if let Some(existing_index) = characters
       .iter()
-      .position(|character| json_text(character.get("name")) == json_text(item.get("name")))
+      .position(|character| {
+        json_text(character.get("name")) == json_text(item.get("name")) ||
+          json_text(character.get("fileName")) == file_name
+      })
     {
       characters[existing_index] = item;
     } else {
@@ -293,7 +332,10 @@ fn upsert_character_index_item(directory: &Path, team: &str, record: &Value, fil
       .ok_or_else(|| "Invalid character index.".to_string())?;
     if let Some(existing_index) = characters
       .iter()
-      .position(|character| json_text(character.get("name")) == json_text(item.get("name")))
+      .position(|character| {
+        json_text(character.get("name")) == json_text(item.get("name")) ||
+          json_text(character.get("fileName")) == file_name
+      })
     {
       characters[existing_index] = item;
     } else {
@@ -530,6 +572,13 @@ fn normalize_character_team(team: &str) -> Result<String, String> {
   }
 }
 
+fn normalize_source(source: &str) -> Result<String, String> {
+  match source {
+    "custom" | "database" => Ok(source.to_string()),
+    _ => Err(format!("Unsupported database source: {source}")),
+  }
+}
+
 fn character_folder(team: &str) -> Result<String, String> {
   match team {
     "townsfolk" => Ok("townsfolks".to_string()),
@@ -562,8 +611,10 @@ fn main() {
     .invoke_handler(tauri::generate_handler![
       fetch_image_data_url,
       save_custom_fabled_character,
+      save_fabled_character,
       delete_fabled_character,
       save_custom_character,
+      save_character,
       delete_character,
     ])
     .run(tauri::generate_context!())

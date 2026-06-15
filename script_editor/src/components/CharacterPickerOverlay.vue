@@ -12,8 +12,9 @@ import {
   loadCharacterLibrary,
   mergeCharacterRecordVariants,
   normalizeCharacterRecord,
-  saveCustomCharacterRecord,
+  saveCharacterRecord,
   type CharacterLibraryEntry,
+  type CharacterLibrarySource,
   type CharacterRecord,
   type CharacterVariants,
 } from "../utils/characterLibrary";
@@ -320,22 +321,23 @@ function removeVariant(field: VariantField) {
   variantChoice[field] = String(nextIndex);
   applyVariant(field, nextIndex);
   saveError.value = "";
-  saveStatus.value = "已删除当前字段版本，保存后写入自定义数据库。";
+  saveStatus.value = "已删除当前字段版本，保存后写入当前来源。";
 }
 
 async function saveCurrentCharacter() {
   saveStatus.value = "";
   saveError.value = "";
   try {
-    const saved = await saveCustomCharacterRecord(props.team, recordForSave());
-    upsertCustomEntry(saved);
+    const targetSource = activeEntry.value?.source ?? "custom";
+    const saved = await saveCharacterRecord(props.team, targetSource, recordForSave(targetSource));
+    upsertEntry(targetSource, saved);
     activeEntry.value = {
-      source: "custom",
+      source: targetSource,
       loaded: true,
       record: saved,
     };
     resetDeletedVariantKeys();
-    saveStatus.value = `已保存到 custom/${props.teamLabel}。`;
+    saveStatus.value = targetSource === "database" ? `已保存到已有${props.teamLabel}数据库。` : `已保存到 custom/${props.teamLabel}。`;
   } catch (error) {
     saveError.value = error instanceof Error ? error.message : "保存失败。";
   }
@@ -375,11 +377,11 @@ function submitCurrentCharacter() {
   emit("close");
 }
 
-function recordForSave() {
+function recordForSave(targetSource: CharacterLibrarySource) {
   const currentRecord = formToRecord();
   const matchingCustomRecord = customEntries.value.find((entry) => entry.record.name === currentRecord.name)?.record;
   let merged = activeRecord.value ? mergeCharacterRecordVariants(activeRecord.value, currentRecord) : currentRecord;
-  if (matchingCustomRecord && matchingCustomRecord !== activeRecord.value) {
+  if (targetSource === "custom" && matchingCustomRecord && matchingCustomRecord !== activeRecord.value) {
     merged = mergeCharacterRecordVariants(matchingCustomRecord, merged);
   }
   return removeDeletedVariants(merged);
@@ -407,17 +409,18 @@ function formToRecord() {
   }, props.team);
 }
 
-function upsertCustomEntry(record: CharacterRecord) {
+function upsertEntry(source: CharacterLibrarySource, record: CharacterRecord) {
   const nextEntry = {
-    source: "custom" as const,
+    source,
     loaded: true,
     record,
   };
-  const existingIndex = customEntries.value.findIndex((entry) => entry.record.name === record.name);
+  const entries = source === "custom" ? customEntries.value : databaseEntries.value;
+  const existingIndex = entries.findIndex((entry) => entry.record.name === record.name);
   if (existingIndex >= 0) {
-    customEntries.value.splice(existingIndex, 1, nextEntry);
+    entries.splice(existingIndex, 1, nextEntry);
   } else {
-    customEntries.value.unshift(nextEntry);
+    entries.unshift(nextEntry);
   }
 }
 
