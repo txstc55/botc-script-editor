@@ -1,6 +1,6 @@
 import { computed, onMounted, reactive, ref } from "vue";
 import { sampleScript, teamOrder } from "../data/sampleScript";
-import type { RoleDraft, TeamKey } from "../types";
+import type { FabledDraft, RoleDraft, TeamKey } from "../types";
 import { loadPlayFromJson } from "../utils/playJson";
 
 export function useScriptEditor() {
@@ -19,16 +19,29 @@ export function useScriptEditor() {
     loadSamplePlay();
   });
 
-  function addFabled() {
+  function addFabled(role?: FabledDraft) {
     script.fabled.push({
       id: crypto.randomUUID(),
       name: "新传奇角色",
       ability: "",
+      ...role,
     });
   }
 
   function removeFabled(id: string) {
     script.fabled = script.fabled.filter((role) => role.id !== id);
+  }
+
+  function updateFabled(id: string, nextRole: FabledDraft) {
+    const index = script.fabled.findIndex((role) => role.id === id);
+    if (index < 0) {
+      return;
+    }
+    script.fabled[index] = {
+      ...script.fabled[index],
+      ...nextRole,
+      id,
+    };
   }
 
   function addJinx() {
@@ -44,7 +57,7 @@ export function useScriptEditor() {
     script.jinxes = script.jinxes.filter((jinx) => jinx.id !== id);
   }
 
-  function addRole(team: TeamKey) {
+  function addRole(team: TeamKey, role?: RoleDraft) {
     script.teams[team].roles.push({
       id: crypto.randomUUID(),
       name: "新角色",
@@ -53,11 +66,25 @@ export function useScriptEditor() {
       setup: 0,
       firstNight: 0,
       otherNight: 0,
+      ...role,
     });
   }
 
   function removeRole(team: TeamKey, id: string) {
     script.teams[team].roles = script.teams[team].roles.filter((role) => role.id !== id);
+  }
+
+  function updateRole(team: TeamKey, id: string, nextRole: RoleDraft) {
+    const index = script.teams[team].roles.findIndex((role) => role.id === id);
+    if (index < 0) {
+      return;
+    }
+    script.teams[team].roles[index] = {
+      ...script.teams[team].roles[index],
+      ...nextRole,
+      id,
+      selected: script.teams[team].roles[index].selected,
+    };
   }
 
   function roleStateLabel(role: RoleDraft) {
@@ -107,10 +134,12 @@ export function useScriptEditor() {
     selectedRoleCount,
     addFabled,
     removeFabled,
+    updateFabled,
     addJinx,
     removeJinx,
     addRole,
     removeRole,
+    updateRole,
     roleStateLabel,
     handleJsonUpload,
   };

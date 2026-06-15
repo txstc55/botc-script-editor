@@ -1102,6 +1102,19 @@ function findRoleById(roleId?: string) {
   return null;
 }
 
+interface ExportTextStyle {
+  color?: string;
+  backgroundColor?: string;
+  bold?: boolean;
+  italic?: boolean;
+  underline?: boolean;
+}
+
+interface ExportTextToken {
+  text: string;
+  style: ExportTextStyle;
+}
+
 async function exportPreviewImage() {
   const svg = previewRoot.value?.querySelector<SVGSVGElement>("svg.script-svg");
   if (!svg) {
@@ -1109,24 +1122,25 @@ async function exportPreviewImage() {
   }
 
   const exportSvg = svg.cloneNode(true) as SVGSVGElement;
-  const exportHeight = previewLayout.value.height;
+  const exportHeight = previewLayout.value.pageHeight;
+  const exportWidth = PAGE_WIDTH;
   exportSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   exportSvg.setAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
-  exportSvg.setAttribute("width", String(SVG_WIDTH));
+  exportSvg.setAttribute("width", String(exportWidth));
   exportSvg.setAttribute("height", String(exportHeight));
-  exportSvg.setAttribute("viewBox", `0 0 ${SVG_WIDTH} ${exportHeight}`);
+  exportSvg.setAttribute("viewBox", `${PAGE_X} ${PAGE_Y} ${exportWidth} ${exportHeight}`);
   addExportStyles(exportSvg);
   await inlineExportImages(exportSvg);
+  replaceExportForeignObjects(exportSvg);
 
   const svgText = new XMLSerializer().serializeToString(exportSvg);
   const fileName = safeExportFileName(props.script.name || "剧本");
 
   try {
-    const pngBlob = await renderSvgToPng(svgText, SVG_WIDTH, exportHeight);
+    const pngBlob = await renderSvgToPng(svgText, exportWidth, exportHeight);
     downloadBlob(pngBlob, `${fileName}.png`);
   } catch (error) {
-    console.error("导出 PNG 失败，已改为导出 SVG。", error);
-    downloadBlob(new Blob([svgText], { type: "image/svg+xml;charset=utf-8" }), `${fileName}.svg`);
+    console.error("导出 PNG 失败。", error);
   }
 }
 
@@ -1201,28 +1215,275 @@ function addExportStyles(svg: SVGSVGElement) {
   svg.insertBefore(style, svg.firstChild);
 }
 
+function replaceExportForeignObjects(svg: SVGSVGElement) {
+  svg.querySelectorAll<SVGForeignObjectElement>("foreignObject.svg-role-ability-object").forEach((foreignObject) => {
+    const editor = foreignObject.querySelector<HTMLElement>(".role-ability-editor");
+    if (!editor || !foreignObject.parentNode) {
+      foreignObject.remove();
+      return;
+    }
+
+    foreignObject.parentNode.replaceChild(createExportAbilityGroup(foreignObject, editor), foreignObject);
+  });
+}
+
+function createExportAbilityGroup(foreignObject: SVGForeignObjectElement, editor: HTMLElement) {
+  const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  const x = svgAttributeNumber(foreignObject, "x");
+  const y = svgAttributeNumber(foreignObject, "y");
+  const width = svgAttributeNumber(foreignObject, "width");
+  const lines = wrapExportTokens(readExportTextTokens(editor), width, ROLE_ABILITY_FONT_SIZE);
+
+  lines.forEach((line, lineIndex) => {
+    const textY = y + ROLE_ABILITY_FONT_SIZE + lineIndex * ROLE_ABILITY_LINE_HEIGHT;
+    let cursorX = x;
+
+    line.forEach((token) => {
+      const tokenWidth = estimateTextWidth(token.text, ROLE_ABILITY_FONT_SIZE);
+      if (token.style.backgroundColor) {
+        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("x", String(cursorX - 1));
+        rect.setAttribute("y", String(textY - ROLE_ABILITY_FONT_SIZE + 2));
+        rect.setAttribute("width", String(tokenWidth + 2));
+        rect.setAttribute("height", String(ROLE_ABILITY_LINE_HEIGHT - 2));
+        rect.setAttribute("rx", "3");
+        rect.setAttribute("fill", token.style.backgroundColor);
+        group.appendChild(rect);
+      }
+      cursorX += tokenWidth;
+    });
+
+    const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    text.setAttribute("x", String(x));
+    text.setAttribute("y", String(textY));
+    text.setAttribute("fill", DEFAULT_TEXT_COLOR);
+    text.setAttribute("font-family", "\"Noto Serif SC\", \"Songti SC\", STSong, serif");
+    text.setAttribute("font-size", String(ROLE_ABILITY_FONT_SIZE));
+    text.setAttribute("font-weight", "650");
+
+    line.forEach((token) => {
+      const tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+      tspan.textContent = token.text;
+      if (token.style.color) {
+        tspan.setAttribute("fill", token.style.color);
+      }
+      if (token.style.bold) {
+        tspan.setAttribute("font-weight", "900");
+      }
+      if (token.style.italic) {
+        tspan.setAttribute("font-style", "italic");
+      }
+      if (token.style.underline) {
+        tspan.setAttribute("text-decoration", "underline");
+      }
+      text.appendChild(tspan);
+    });
+
+    group.appendChild(text);
+  });
+
+  return group;
+}
+
+function svgAttributeNumber(element: Element, attribute: string) {
+  const value = Number(element.getAttribute(attribute));
+  return Number.isFinite(value) ? value : 0;
+}
+
+function readExportTextTokens(editor: HTMLElement) {
+  const tokens: ExportTextToken[] = [];
+  editor.childNodes.forEach((node) => collectExportTextTokens(node, {}, tokens));
+  return tokens.length ? tokens : [{ text: "", style: {} }];
+}
+
+function collectExportTextTokens(node: Node, inheritedStyle: ExportTextStyle, tokens: ExportTextToken[]) {
+  if (node.nodeType === Node.TEXT_NODE) {
+    appendExportTextToken(tokens, node.textContent ?? "", inheritedStyle);
+    return;
+  }
+  if (!(node instanceof HTMLElement)) {
+    return;
+  }
+
+  if (node.tagName.toLowerCase() === "br") {
+    appendExportTextToken(tokens, "\n", inheritedStyle);
+    return;
+  }
+
+  const nextStyle = exportStyleForElement(node, inheritedStyle);
+  node.childNodes.forEach((child) => collectExportTextTokens(child, nextStyle, tokens));
+}
+
+function exportStyleForElement(element: HTMLElement, inheritedStyle: ExportTextStyle) {
+  const style: ExportTextStyle = { ...inheritedStyle };
+  const tagName = element.tagName.toLowerCase();
+
+  if (tagName === "strong" || tagName === "b") {
+    style.bold = true;
+  }
+  if (tagName === "em" || tagName === "i") {
+    style.italic = true;
+  }
+  if (tagName === "u") {
+    style.underline = true;
+  }
+  if (element.classList.contains("ability-bracket-highlight")) {
+    style.backgroundColor = "#e5e7eb";
+    style.bold = true;
+    style.italic = true;
+  }
+
+  if (element.style.color) {
+    style.color = colorsMatch(element.style.color, DEFAULT_TEXT_COLOR) ? undefined : element.style.color;
+  }
+  if (element.style.backgroundColor) {
+    style.backgroundColor = isVisibleExportBackground(element.style.backgroundColor)
+      ? element.style.backgroundColor
+      : undefined;
+  }
+  if (element.style.fontWeight) {
+    const weight = Number.parseInt(element.style.fontWeight, 10);
+    style.bold = element.style.fontWeight === "bold" || (!Number.isNaN(weight) && weight >= 800);
+  }
+  if (element.style.fontStyle) {
+    style.italic = element.style.fontStyle !== "normal";
+  }
+  if (element.style.textDecoration || element.style.textDecorationLine) {
+    const decoration = `${element.style.textDecoration} ${element.style.textDecorationLine}`;
+    if (decoration.includes("underline")) {
+      style.underline = true;
+    } else if (decoration.includes("none")) {
+      style.underline = false;
+    }
+  }
+
+  return style;
+}
+
+function isVisibleExportBackground(color: string) {
+  return color !== "transparent" && !colorsMatch(color, TRANSPARENT_COLOR) && !colorsMatch(color, SCRIPT_PAGE_BACKGROUND);
+}
+
+function wrapExportTokens(tokens: ExportTextToken[], maxWidth: number, fontSize: number) {
+  const maxUnits = Math.max(4, maxWidth / fontSize);
+  const lines: ExportTextToken[][] = [[]];
+  let lineWidth = 0;
+
+  for (const token of tokens) {
+    for (const char of Array.from(token.text)) {
+      if (char === "\n") {
+        lines.push([]);
+        lineWidth = 0;
+        continue;
+      }
+
+      const charWidth = charWidthUnits(char);
+      if (lines[lines.length - 1].length > 0 && lineWidth + charWidth > maxUnits) {
+        lines.push([]);
+        lineWidth = 0;
+      }
+      if (lines[lines.length - 1].length === 0 && !char.trim()) {
+        continue;
+      }
+
+      appendExportTextToken(lines[lines.length - 1], char, token.style);
+      lineWidth += charWidth;
+    }
+  }
+
+  return lines.filter((line) => line.length > 0);
+}
+
+function appendExportTextToken(tokens: ExportTextToken[], text: string, style: ExportTextStyle) {
+  if (!text) {
+    return;
+  }
+
+  const previous = tokens[tokens.length - 1];
+  if (previous && exportTextStylesMatch(previous.style, style)) {
+    previous.text += text;
+    return;
+  }
+  tokens.push({ text, style: { ...style } });
+}
+
+function exportTextStylesMatch(left: ExportTextStyle, right: ExportTextStyle) {
+  return (
+    left.bold === right.bold &&
+    left.italic === right.italic &&
+    left.underline === right.underline &&
+    optionalColorsMatch(left.color, right.color) &&
+    optionalColorsMatch(left.backgroundColor, right.backgroundColor)
+  );
+}
+
+function optionalColorsMatch(left?: string, right?: string) {
+  if (!left && !right) {
+    return true;
+  }
+  return colorsMatch(left, right);
+}
+
 async function inlineExportImages(svg: SVGSVGElement) {
   const images = Array.from(svg.querySelectorAll<SVGImageElement>("image"));
   await Promise.all(
     images.map(async (image) => {
       const href = image.getAttribute("href") || image.getAttribute("xlink:href") || image.href.baseVal;
-      if (!href || href.startsWith("data:") || href.startsWith("blob:")) {
+      if (!href || href.startsWith("data:")) {
         return;
       }
 
-      try {
-        const response = await fetch(href, { mode: "cors" });
-        if (!response.ok) {
-          return;
-        }
-        const dataUrl = await blobToDataUrl(await response.blob());
+      const dataUrl = await fetchExportImageDataUrl(href);
+      if (dataUrl) {
         image.setAttribute("href", dataUrl);
         image.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", dataUrl);
-      } catch {
-        // Some remote icon hosts do not allow canvas-safe reads. The SVG fallback still preserves the image URL.
+        return;
       }
+
+      clearExportImage(image);
     }),
   );
+}
+
+async function fetchExportImageDataUrl(url: string) {
+  return (
+    await fetchImageDataUrl(url) ??
+    await fetchImageDataUrl(`/__image_proxy?url=${encodeURIComponent(url)}`) ??
+    await fetchImageDataUrlWithTauri(url)
+  );
+}
+
+async function fetchImageDataUrl(url: string) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      return null;
+    }
+
+    const blob = await response.blob();
+    const contentType = response.headers.get("content-type") ?? blob.type;
+    if (!contentType.startsWith("image/")) {
+      return null;
+    }
+    return await blobToDataUrl(blob);
+  } catch {
+    return null;
+  }
+}
+
+async function fetchImageDataUrlWithTauri(url: string) {
+  try {
+    const { invoke } = await import("@tauri-apps/api/core");
+    return await invoke<string>("fetch_image_data_url", { url });
+  } catch {
+    return null;
+  }
+}
+
+function clearExportImage(image: SVGImageElement) {
+  image.removeAttribute("href");
+  image.removeAttribute("xlink:href");
+  image.href.baseVal = "";
 }
 
 function blobToDataUrl(blob: Blob) {
@@ -1249,6 +1510,7 @@ async function renderSvgToPng(svgText: string, width: number, height: number) {
       throw new Error("Canvas is not available.");
     }
     context.scale(pixelRatio, pixelRatio);
+    context.clearRect(0, 0, width, height);
     context.drawImage(image, 0, 0, width, height);
 
     return await new Promise<Blob>((resolve, reject) => {
@@ -1317,11 +1579,6 @@ function safeExportFileName(fileName: string) {
           <span>导出 JSON</span>
         </button>
       </div>
-      <div class="preview-stats">
-        <span>{{ selectedRoleCount }} 角色</span>
-        <span>{{ script.fabled.length }} 传奇角色</span>
-        <span>{{ script.jinxes.length }} 相克规则</span>
-      </div>
     </header>
 
     <div
@@ -1363,7 +1620,7 @@ function safeExportFileName(fileName: string) {
           :y="PAGE_Y"
           :width="PAGE_WIDTH"
           :height="previewLayout.pageHeight"
-          rx="18"
+          rx="20"
           fill="#fffdf8"
           stroke="#fffdf8"
           stroke-width="3"
@@ -1639,18 +1896,18 @@ function safeExportFileName(fileName: string) {
   min-width: 0;
   min-height: 0;
   overflow: hidden;
-  border-color: #d9e2ef;
+  border-color: #e5e5e5;
   background: transparent;
 }
 
 .pane-toolbar {
   display: grid;
-  grid-template-columns: minmax(96px, 1fr) auto minmax(96px, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: 12px;
   min-height: 56px;
   padding: 0 16px;
-  border-bottom: 1px solid #d9e2ef;
+  border-bottom: 1px solid #e5e5e5;
   background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(16px);
 }
@@ -1660,7 +1917,7 @@ function safeExportFileName(fileName: string) {
   align-items: center;
   gap: 8px;
   min-height: 28px;
-  color: #26313f;
+  color: #111111;
   font-size: 13px;
   font-weight: 700;
 }
@@ -1668,7 +1925,7 @@ function safeExportFileName(fileName: string) {
 .preview-actions {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 8px;
   min-width: 0;
 }
@@ -1680,10 +1937,10 @@ function safeExportFileName(fileName: string) {
   gap: 6px;
   min-height: 32px;
   padding: 0 11px;
-  border: 1px solid #c7d3e3;
-  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  border-radius: 999px;
   background: #ffffff;
-  color: #26313f;
+  color: #111111;
   cursor: pointer;
   font: inherit;
   font-size: 12px;
@@ -1698,9 +1955,9 @@ function safeExportFileName(fileName: string) {
 }
 
 .preview-action:hover:not(:disabled) {
-  border-color: #2563eb;
-  background: #edf4ff;
-  color: #1d4ed8;
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
 }
 
 .preview-action:active:not(:disabled) {
@@ -1714,24 +1971,6 @@ function safeExportFileName(fileName: string) {
 
 .preview-action input {
   display: none;
-}
-
-.preview-stats {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 8px;
-  min-width: 0;
-  color: #64748b;
-  font-size: 12px;
-}
-
-.preview-stats span {
-  min-height: 24px;
-  padding: 3px 8px;
-  border: 1px solid #d9e2ef;
-  border-radius: 999px;
-  background: #ffffff;
 }
 
 .svg-stage {
@@ -1810,7 +2049,7 @@ function safeExportFileName(fileName: string) {
 }
 
 .role-ability-editor:focus {
-  background: rgba(14, 127, 207, 0.06);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .role-ability-editor :deep(strong) {

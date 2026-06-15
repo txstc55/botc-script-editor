@@ -96,6 +96,14 @@ export function loadPlayFromJson(input: unknown, fileName = "导入剧本.json")
         name,
         ability: cleanText(normalized.ability),
         image: cleanText(normalized.image),
+        firstNight: parseNumber(normalized.firstNight),
+        firstNightReminder: cleanText(normalized.firstNightReminder ?? normalized.firstReminder),
+        otherNight: parseNumber(normalized.otherNight),
+        otherNightReminder: cleanText(normalized.otherNightReminder ?? normalized.ogherNightReminder),
+        reminders: toStringList(normalized.reminders),
+        remindersGlobal: toStringList(normalized.remindersGlobal ?? normalized.reminders_global),
+        setup: normalizeSetup(normalized.setup),
+        flavor: cleanText(normalized.flavor),
       });
       report.fabledCount += 1;
       collectNestedJinxes(script, normalized, name, report);
@@ -196,6 +204,7 @@ function toRole(item: RawRecord, name: string): RoleDraft {
     otherNightReminder: cleanText(item.otherNightReminder ?? item.ogherNightReminder),
     reminders: toStringList(item.reminders),
     remindersGlobal: toStringList(item.remindersGlobal ?? item.reminders_global),
+    flavor: cleanText(item.flavor),
   };
 }
 

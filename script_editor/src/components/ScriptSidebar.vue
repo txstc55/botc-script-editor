@@ -15,6 +15,7 @@ const props = defineProps<{
 
 defineEmits<{
   "add-fabled": [];
+  "edit-fabled": [id: string];
   "remove-fabled": [id: string];
   "add-jinx": [];
   "remove-jinx": [id: string];
@@ -111,13 +112,31 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
           <Plus :size="16" aria-hidden="true" />
         </button>
       </div>
-      <div class="compact-list">
-        <article v-for="role in props.script.fabled" :key="role.id" class="compact-item">
-          <input v-model="role.name" class="inline-input role-name" />
-          <textarea v-model="role.ability" class="compact-textarea" rows="2" />
-          <button class="ghost-icon" title="移除传奇角色" type="button" @click="$emit('remove-fabled', role.id)">
-            <Trash2 :size="15" aria-hidden="true" />
-          </button>
+      <div class="compact-list fabled-list">
+        <article
+          v-for="role in props.script.fabled"
+          :key="role.id"
+          class="fabled-card"
+          role="button"
+          tabindex="0"
+          @click="$emit('edit-fabled', role.id)"
+          @keydown.enter="$emit('edit-fabled', role.id)"
+          @keydown.space.prevent="$emit('edit-fabled', role.id)"
+        >
+          <div class="fabled-card-head">
+            <img v-if="role.image" :alt="role.name" :src="role.image" class="fabled-card-image" />
+            <span v-else class="fabled-card-fallback">{{ role.name.slice(0, 1) || "传" }}</span>
+            <span class="fabled-card-name">{{ role.name }}</span>
+            <button
+              class="ghost-icon"
+              title="移除传奇角色"
+              type="button"
+              @click.stop="$emit('remove-fabled', role.id)"
+            >
+              <Trash2 :size="15" aria-hidden="true" />
+            </button>
+          </div>
+          <p class="fabled-card-ability">{{ role.ability || "没有能力文本。" }}</p>
         </article>
       </div>
     </section>
@@ -152,9 +171,9 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   min-height: 0;
   padding: 14px;
   overflow: hidden;
-  border-right: 1px solid #d9e2ef;
-  border-color: #d9e2ef;
-  background: rgba(255, 255, 255, 0.92);
+  border-right: 1px solid #e5e5e5;
+  border-color: #e5e5e5;
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
 }
 
@@ -165,9 +184,9 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   gap: 10px;
   padding: 12px;
   overflow: hidden;
-  border: 1px solid #dde7f2;
+  border: 1px solid #e5e5e5;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .script-row {
@@ -188,7 +207,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   align-items: center;
   gap: 8px;
   min-height: 28px;
-  color: #26313f;
+  color: #111111;
   font-size: 13px;
   font-weight: 700;
 }
@@ -200,7 +219,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 .field-label {
   display: grid;
   gap: 5px;
-  color: #596579;
+  color: #5f6368;
   font-size: 12px;
   font-weight: 650;
 }
@@ -222,10 +241,10 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 .number-field,
 .compact-textarea {
   width: 100%;
-  border: 1px solid #cfd6df;
+  border: 1px solid #d8d8d8;
   border-radius: 7px;
   background: #ffffff;
-  color: #17202d;
+  color: #111111;
   outline: none;
   transition:
     border-color 120ms ease,
@@ -248,8 +267,8 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 .inline-input:focus,
 .number-field:focus,
 .compact-textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+  border-color: #111111;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
 }
 
 .night-order-row {
@@ -277,7 +296,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   gap: 8px;
   min-height: 36px;
   padding: 5px 8px;
-  border: 1px solid #dce2e8;
+  border: 1px solid #e1e1e1;
   border-radius: 20px;
 }
 
@@ -294,10 +313,10 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 .night-order-fallback {
   display: inline-grid;
   place-items: center;
-  border: 1px solid #bfd0e2;
+  border: 1px solid #dedede;
   border-radius: 999px;
   background: #ffffff;
-  color: #334155;
+  color: #111111;
   font-size: 13px;
   font-weight: 900;
 }
@@ -305,7 +324,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 .night-order-name {
   min-width: 0;
   overflow: hidden;
-  color: #26313f;
+  color: #111111;
   font-size: 12px;
   font-weight: 800;
   text-overflow: ellipsis;
@@ -331,13 +350,13 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 .night-order-editor {
   display: grid;
   gap: 5px;
-  color: #596579;
+  color: #555555;
   font-size: 11px;
   font-weight: 800;
 }
 
 .night-order-editor.disabled {
-  color: #94a3b8;
+  color: #9a9a9a;
 }
 
 .night-order-editor-toggle {
@@ -353,12 +372,12 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   width: 14px;
   height: 14px;
   margin: 0;
-  accent-color: #2563eb;
+  accent-color: #111111;
 }
 
 .number-field:disabled {
-  background: #f1f5f9;
-  color: #94a3b8;
+  background: #f4f4f4;
+  color: #9a9a9a;
   cursor: not-allowed;
 }
 
@@ -377,46 +396,129 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   gap: 8px;
   padding: 10px;
   padding-right: 40px;
-  border: 1px solid #dce2e8;
+  border: 1px solid #e1e1e1;
   border-radius: 8px;
-  background: #f8fafc;
+  background: #ffffff;
 }
 
 .role-name {
   font-weight: 700;
 }
 
-.icon-button,
+.fabled-list {
+  gap: 10px;
+}
+
+.fabled-card {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition:
+    border-color 120ms ease,
+    background 120ms ease;
+}
+
+.fabled-card:hover,
+.fabled-card:focus-visible {
+  border-color: #111111;
+  background: #fafafa;
+}
+
+.fabled-card-head {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) 30px;
+  align-items: center;
+  gap: 8px;
+}
+
+.fabled-card-image,
+.fabled-card-fallback {
+  width: 32px;
+  height: 32px;
+}
+
+.fabled-card-image {
+  object-fit: contain;
+}
+
+.fabled-card-fallback {
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #dedede;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.fabled-card-name {
+  min-width: 0;
+  overflow: hidden;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 850;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fabled-card-ability {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: #333333;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.icon-button {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
 .ghost-icon {
   display: inline-grid;
   place-items: center;
   width: 30px;
   height: 30px;
-  border-radius: 7px;
+  border-radius: 999px;
   cursor: pointer;
 }
 
 .icon-button {
-  border: 1px solid #b8c5d8;
-  background: #edf4ff;
-  color: #1d4ed8;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
 }
 
 .icon-button:hover {
-  border-color: #2563eb;
-  background: #dbeafe;
+  border-color: #000000;
+  background: #000000;
+  color: #ffffff;
 }
 
 .ghost-icon {
   border: 1px solid transparent;
   background: transparent;
-  color: #64748b;
+  color: #555555;
 }
 
 .ghost-icon:hover {
-  border-color: #d9b8ae;
-  background: #fff1ed;
-  color: #b42318;
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
 }
 
 .compact-item > .ghost-icon {

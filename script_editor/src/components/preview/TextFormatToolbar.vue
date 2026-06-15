@@ -95,10 +95,10 @@ const emit = defineEmits<{
   flex-wrap: wrap;
   max-width: calc(100% - 32px);
   padding: 10px 12px;
-  border: 1px solid rgba(148, 163, 184, 0.42);
-  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 999px;
   background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.18);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.14);
   transform: translateX(-50%);
   user-select: none;
   backdrop-filter: blur(14px);
@@ -126,12 +126,12 @@ const emit = defineEmits<{
 
 .toolbar-button-group {
   padding-right: 10px;
-  border-right: 1px solid #d9e2ef;
+  border-right: 1px solid #e1e1e1;
 }
 
 .toolbar-swatch-group.background {
   padding-left: 10px;
-  border-left: 1px solid #d9e2ef;
+  border-left: 1px solid #e1e1e1;
 }
 
 .format-command,
@@ -140,16 +140,16 @@ const emit = defineEmits<{
   display: inline-grid;
   place-items: center;
   padding: 0;
-  border: 1px solid #d9e2ef;
+  border: 1px solid #d8d8d8;
   background: #ffffff;
-  color: #17202d;
+  color: #111111;
   cursor: pointer;
 }
 
 .format-command {
   width: 30px;
   height: 30px;
-  border-radius: 8px;
+  border-radius: 999px;
   font-family: "Noto Serif SC", "Songti SC", STSong, serif;
   font-size: 15px;
   font-weight: 900;
@@ -192,20 +192,20 @@ const emit = defineEmits<{
 
 .format-command:hover,
 .format-swatch:hover {
-  border-color: #0e7fcf;
-  box-shadow: 0 0 0 3px rgba(14, 127, 207, 0.12);
+  border-color: #111111;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
 }
 
 .format-command.active,
 .format-swatch.active {
-  border-color: #0e7fcf;
-  background: #edf7ff;
+  border-color: #111111;
+  background: #f2f2f2;
   box-shadow:
-    0 0 0 3px rgba(14, 127, 207, 0.14),
-    inset 0 0 0 1px rgba(14, 127, 207, 0.1);
+    0 0 0 3px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .format-command.active {
-  color: #0e7fcf;
+  color: #000000;
 }
 </style>

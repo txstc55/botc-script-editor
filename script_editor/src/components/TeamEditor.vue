@@ -12,6 +12,7 @@ defineProps<{
 defineEmits<{
   "update:selectedTeam": [team: TeamKey];
   "add-role": [team: TeamKey];
+  "edit-role": [team: TeamKey, id: string];
   "remove-role": [team: TeamKey, id: string];
 }>();
 
@@ -52,12 +53,24 @@ function roleStateLabel(role: RoleDraft) {
     </nav>
 
     <div class="role-editor-list team-editor">
-      <article v-for="role in activeTeam.roles" :key="role.id" class="role-editor-row">
-        <div class="role-editor-top">
-          <label class="check-label">
+      <article
+        v-for="role in activeTeam.roles"
+        :key="role.id"
+        class="role-editor-card"
+        role="button"
+        tabindex="0"
+        @click="$emit('edit-role', activeTeam.key, role.id)"
+        @keydown.enter="$emit('edit-role', activeTeam.key, role.id)"
+        @keydown.space.prevent="$emit('edit-role', activeTeam.key, role.id)"
+      >
+        <div class="role-card-head">
+          <label class="check-label" @click.stop>
             <input v-model="role.selected" type="checkbox" />
             <span>{{ roleStateLabel(role) }}</span>
           </label>
+          <img v-if="role.image" :alt="role.name" :src="role.image" class="role-card-image" />
+          <span v-else class="role-card-fallback">{{ role.name.slice(0, 1) || "角" }}</span>
+          <span class="role-card-name">{{ role.name }}</span>
           <div v-if="activeTeam.key !== 'traveler'" class="role-order-badges">
             <span v-if="role.firstNight" class="order-badge first-night">首夜</span>
             <span v-if="role.otherNight" class="order-badge other-night">其他</span>
@@ -71,8 +84,7 @@ function roleStateLabel(role: RoleDraft) {
             <Trash2 :size="15" aria-hidden="true" />
           </button>
         </div>
-        <input v-model="role.name" class="inline-input role-name" />
-        <textarea v-model="role.ability" class="ability-editor" rows="4" />
+        <p class="role-card-ability">{{ role.ability || "没有能力文本。" }}</p>
       </article>
     </div>
   </aside>
@@ -83,9 +95,9 @@ function roleStateLabel(role: RoleDraft) {
   display: grid;
   grid-template-rows: auto auto minmax(0, 1fr);
   min-height: 0;
-  border-left: 1px solid #d9e2ef;
-  border-color: #d9e2ef;
-  background: rgba(255, 255, 255, 0.92);
+  border-left: 1px solid #e5e5e5;
+  border-color: #e5e5e5;
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
 }
 
@@ -95,7 +107,7 @@ function roleStateLabel(role: RoleDraft) {
   justify-content: space-between;
   min-height: 56px;
   padding: 0 16px;
-  border-bottom: 1px solid #d9e2ef;
+  border-bottom: 1px solid #e5e5e5;
   background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(16px);
 }
@@ -109,7 +121,7 @@ function roleStateLabel(role: RoleDraft) {
   align-items: center;
   gap: 8px;
   min-height: 28px;
-  color: #26313f;
+  color: #111111;
   font-size: 13px;
   font-weight: 700;
 }
@@ -120,31 +132,32 @@ function roleStateLabel(role: RoleDraft) {
   place-items: center;
   width: 30px;
   height: 30px;
-  border-radius: 7px;
+  border-radius: 999px;
   cursor: pointer;
 }
 
 .icon-button {
-  border: 1px solid #b8c5d8;
-  background: #edf4ff;
-  color: #1d4ed8;
+  border: 1px solid #111111;
+  background: #ffffff;
+  color: #111111;
 }
 
 .icon-button:hover {
-  border-color: #2563eb;
-  background: #dbeafe;
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
 }
 
 .ghost-icon {
   border: 1px solid transparent;
   background: transparent;
-  color: #64748b;
+  color: #555555;
 }
 
 .ghost-icon:hover {
-  border-color: #d9b8ae;
-  background: #fff1ed;
-  color: #b42318;
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
 }
 
 .team-tabs {
@@ -152,7 +165,7 @@ function roleStateLabel(role: RoleDraft) {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 6px;
   padding: 12px;
-  border-bottom: 1px solid #d9e2ef;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .team-tab {
@@ -162,10 +175,10 @@ function roleStateLabel(role: RoleDraft) {
   min-width: 0;
   height: 52px;
   padding: 5px;
-  border: 1px solid #d9e2ef;
-  border-radius: 7px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
   background: #ffffff;
-  color: #475569;
+  color: #555555;
   cursor: pointer;
 }
 
@@ -179,14 +192,18 @@ function roleStateLabel(role: RoleDraft) {
 }
 
 .team-tab-count {
-  color: #0f172a;
+  color: #111111;
   font-size: 16px;
 }
 
 .team-tab.active {
-  border-color: #2563eb;
-  background: #eff6ff;
-  color: #1d4ed8;
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
+}
+
+.team-tab.active .team-tab-count {
+  color: #ffffff;
 }
 
 .role-editor-list {
@@ -199,20 +216,31 @@ function roleStateLabel(role: RoleDraft) {
   padding-right: 2px;
 }
 
-.role-editor-row {
+.role-editor-card {
   position: relative;
   display: grid;
   gap: 8px;
   padding: 10px;
-  border: 1px solid #dce2e8;
+  border: 1px solid #e1e1e1;
   border-radius: 8px;
   background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition:
+    border-color 120ms ease,
+    background 120ms ease;
 }
 
-.role-editor-top {
-  display: flex;
+.role-editor-card:hover,
+.role-editor-card:focus-visible {
+  border-color: #111111;
+  background: #fafafa;
+}
+
+.role-card-head {
+  display: grid;
+  grid-template-columns: auto 32px minmax(0, 1fr) auto 30px;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
   min-height: 30px;
 }
@@ -221,7 +249,7 @@ function roleStateLabel(role: RoleDraft) {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #475569;
+  color: #555555;
   font-size: 12px;
   font-weight: 700;
 }
@@ -229,12 +257,11 @@ function roleStateLabel(role: RoleDraft) {
 .check-label input {
   width: 16px;
   height: 16px;
-  accent-color: #2563eb;
+  accent-color: #111111;
 }
 
 .role-order-badges {
   display: flex;
-  flex: 1;
   justify-content: flex-end;
   gap: 5px;
   min-width: 0;
@@ -254,22 +281,65 @@ function roleStateLabel(role: RoleDraft) {
 }
 
 .order-badge.first-night {
-  background: #e0f2fe;
-  color: #0369a1;
+  background: #eeeeee;
+  color: #111111;
 }
 
 .order-badge.other-night {
-  background: #ede9fe;
-  color: #6d28d9;
+  background: #f6f6f6;
+  color: #333333;
+}
+
+.role-card-image,
+.role-card-fallback {
+  width: 32px;
+  height: 32px;
+}
+
+.role-card-image {
+  object-fit: contain;
+}
+
+.role-card-fallback {
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #dedede;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.role-card-name {
+  min-width: 0;
+  overflow: hidden;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 850;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.role-card-ability {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: #333333;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .inline-input,
 .ability-editor {
   width: 100%;
-  border: 1px solid #cfd6df;
-  border-radius: 7px;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
   background: #ffffff;
-  color: #17202d;
+  color: #111111;
   outline: none;
   transition:
     border-color 120ms ease,
@@ -288,8 +358,8 @@ function roleStateLabel(role: RoleDraft) {
 
 .inline-input:focus,
 .ability-editor:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+  border-color: #111111;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
 }
 
 .role-name {

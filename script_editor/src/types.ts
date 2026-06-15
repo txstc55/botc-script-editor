@@ -23,6 +23,7 @@ export interface RoleDraft {
   otherNightReminder?: string;
   reminders?: string[];
   remindersGlobal?: string[];
+  flavor?: string;
 }
 
 export interface FabledDraft {
@@ -31,6 +32,14 @@ export interface FabledDraft {
   ability: string;
   abilityHtml?: string;
   image?: string;
+  firstNight?: number;
+  firstNightReminder?: string;
+  otherNight?: number;
+  otherNightReminder?: string;
+  reminders?: string[];
+  remindersGlobal?: string[];
+  setup?: 0 | 1;
+  flavor?: string;
 }
 
 export interface JinxDraft {
