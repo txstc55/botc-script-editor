@@ -112,7 +112,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
           <Plus :size="16" aria-hidden="true" />
         </button>
       </div>
-      <div class="compact-list fabled-list">
+      <TransitionGroup name="sidebar-card-list" tag="div" class="compact-list fabled-list">
         <article
           v-for="role in props.script.fabled"
           :key="role.id"
@@ -138,7 +138,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
           </div>
           <p class="fabled-card-ability">{{ role.ability || "没有能力文本。" }}</p>
         </article>
-      </div>
+      </TransitionGroup>
     </section>
 
     <section class="rail-row">
@@ -150,7 +150,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
           <Plus :size="16" aria-hidden="true" />
         </button>
       </div>
-      <div class="compact-list">
+      <TransitionGroup name="sidebar-card-list" tag="div" class="compact-list">
         <article v-for="jinx in props.script.jinxes" :key="jinx.id" class="compact-item">
           <input v-model="jinx.name" class="inline-input role-name" />
           <textarea v-model="jinx.ability" class="compact-textarea" rows="3" />
@@ -158,7 +158,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
             <Trash2 :size="15" aria-hidden="true" />
           </button>
         </article>
-      </div>
+      </TransitionGroup>
     </section>
   </aside>
 </template>
@@ -247,8 +247,8 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   color: #111111;
   outline: none;
   transition:
-    border-color 120ms ease,
-    box-shadow 120ms ease;
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .text-field,
@@ -298,6 +298,16 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   padding: 5px 8px;
   border: 1px solid #e1e1e1;
   border-radius: 20px;
+  transition:
+    background var(--motion-duration-base) var(--motion-ease-standard),
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.night-order-list-item:hover {
+  border-color: #111111;
+  background: #fafafa;
+  transform: translateY(-1px);
 }
 
 .night-order-image,
@@ -399,6 +409,18 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   border: 1px solid #e1e1e1;
   border-radius: 8px;
   background: #ffffff;
+  transition:
+    background var(--motion-duration-base) var(--motion-ease-standard),
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.compact-item:hover {
+  border-color: #111111;
+  background: #fafafa;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-2px);
 }
 
 .role-name {
@@ -419,14 +441,18 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   cursor: pointer;
   outline: none;
   transition:
-    border-color 120ms ease,
-    background 120ms ease;
+    background var(--motion-duration-base) var(--motion-ease-standard),
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-standard);
 }
 
 .fabled-card:hover,
 .fabled-card:focus-visible {
   border-color: #111111;
   background: #fafafa;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-2px);
 }
 
 .fabled-card-head {
@@ -486,6 +512,12 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   height: 30px;
   border-radius: 999px;
   cursor: pointer;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .ghost-icon {
@@ -495,6 +527,11 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   height: 30px;
   border-radius: 999px;
   cursor: pointer;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .icon-button {
@@ -507,6 +544,8 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   border-color: #000000;
   background: #000000;
   color: #ffffff;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-1px);
 }
 
 .ghost-icon {
@@ -519,6 +558,36 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   border-color: #111111;
   background: #111111;
   color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.icon-button:active,
+.ghost-icon:active,
+.fabled-card:active,
+.compact-item:active {
+  transform: scale(var(--motion-press-scale));
+}
+
+.sidebar-card-list-move,
+.sidebar-card-list-enter-active,
+.sidebar-card-list-leave-active {
+  transition:
+    background var(--motion-duration-panel) var(--motion-ease-emphasized),
+    border-color var(--motion-duration-panel) var(--motion-ease-emphasized),
+    box-shadow var(--motion-duration-panel) var(--motion-ease-emphasized),
+    opacity var(--motion-duration-panel) var(--motion-ease-emphasized),
+    transform var(--motion-duration-panel) var(--motion-ease-emphasized);
+}
+
+.sidebar-card-list-enter-from,
+.sidebar-card-list-leave-to {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+}
+
+.sidebar-card-list-leave-active {
+  position: absolute;
+  width: calc(100% - 14px);
 }
 
 .compact-item > .ghost-icon {

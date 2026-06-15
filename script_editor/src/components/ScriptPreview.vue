@@ -1948,20 +1948,23 @@ function safeExportFileName(fileName: string) {
   line-height: 1;
   white-space: nowrap;
   transition:
-    border-color 140ms ease,
-    background 140ms ease,
-    color 140ms ease,
-    transform 140ms ease;
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .preview-action:hover:not(:disabled) {
   border-color: #111111;
   background: #111111;
   color: #ffffff;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-1px);
 }
 
 .preview-action:active:not(:disabled) {
-  transform: translateY(1px);
+  transform: scale(var(--motion-press-scale));
 }
 
 .preview-action:disabled {
@@ -1990,7 +1993,12 @@ function safeExportFileName(fileName: string) {
   top: 0;
   left: 0;
   transform-origin: 0 0;
+  transition: filter var(--motion-duration-base) var(--motion-ease-standard);
   will-change: transform;
+}
+
+.svg-stage.panning .svg-canvas-content {
+  filter: saturate(0.98) contrast(0.98);
 }
 
 .svg-stage svg {
@@ -2046,6 +2054,7 @@ function safeExportFileName(fileName: string) {
   user-select: text;
   white-space: normal;
   word-break: break-all;
+  transition: background var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .role-ability-editor:focus {

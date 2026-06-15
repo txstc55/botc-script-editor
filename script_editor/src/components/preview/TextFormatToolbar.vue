@@ -107,8 +107,8 @@ const emit = defineEmits<{
 .format-toolbar-enter-active,
 .format-toolbar-leave-active {
   transition:
-    opacity 150ms ease,
-    transform 150ms ease;
+    opacity var(--motion-duration-panel) var(--motion-ease-emphasized),
+    transform var(--motion-duration-panel) var(--motion-ease-emphasized);
 }
 
 .format-toolbar-enter-from,
@@ -144,6 +144,12 @@ const emit = defineEmits<{
   background: #ffffff;
   color: #111111;
   cursor: pointer;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .format-command {
@@ -194,6 +200,12 @@ const emit = defineEmits<{
 .format-swatch:hover {
   border-color: #111111;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.format-command:active,
+.format-swatch:active {
+  transform: scale(var(--motion-press-scale));
 }
 
 .format-command.active,

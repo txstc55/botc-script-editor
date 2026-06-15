@@ -134,9 +134,21 @@ function handleRoleSubmit(role: RoleDraft) {
   display: grid;
   grid-template-columns: 320px minmax(430px, 1fr) 400px;
   height: 100vh;
+  animation: app-shell-enter var(--motion-duration-panel) var(--motion-ease-emphasized) both;
   background:
     radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.1) 1px, transparent 0) 0 0 / 22px 22px,
     #ffffff;
+}
+
+@keyframes app-shell-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.995);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @media (max-width: 1180px) {

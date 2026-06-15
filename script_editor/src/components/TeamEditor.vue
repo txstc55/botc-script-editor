@@ -52,7 +52,7 @@ function roleStateLabel(role: RoleDraft) {
       </button>
     </nav>
 
-    <div class="role-editor-list team-editor">
+    <TransitionGroup name="role-card-list" tag="div" class="role-editor-list team-editor">
       <article
         v-for="role in activeTeam.roles"
         :key="role.id"
@@ -86,7 +86,7 @@ function roleStateLabel(role: RoleDraft) {
         </div>
         <p class="role-card-ability">{{ role.ability || "没有能力文本。" }}</p>
       </article>
-    </div>
+    </TransitionGroup>
   </aside>
 </template>
 
@@ -134,6 +134,12 @@ function roleStateLabel(role: RoleDraft) {
   height: 30px;
   border-radius: 999px;
   cursor: pointer;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .icon-button {
@@ -146,6 +152,15 @@ function roleStateLabel(role: RoleDraft) {
   border-color: #111111;
   background: #111111;
   color: #ffffff;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-1px);
+}
+
+.icon-button:active,
+.ghost-icon:active,
+.team-tab:active,
+.role-editor-card:active {
+  transform: scale(var(--motion-press-scale));
 }
 
 .ghost-icon {
@@ -158,6 +173,7 @@ function roleStateLabel(role: RoleDraft) {
   border-color: #111111;
   background: #111111;
   color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .team-tabs {
@@ -180,6 +196,16 @@ function roleStateLabel(role: RoleDraft) {
   background: #ffffff;
   color: #555555;
   cursor: pointer;
+  transition:
+    background var(--motion-duration-base) var(--motion-ease-standard),
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    color var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.team-tab:hover {
+  border-color: #111111;
+  transform: translateY(-1px);
 }
 
 .team-tab-label {
@@ -227,14 +253,18 @@ function roleStateLabel(role: RoleDraft) {
   cursor: pointer;
   outline: none;
   transition:
-    border-color 120ms ease,
-    background 120ms ease;
+    background var(--motion-duration-base) var(--motion-ease-standard),
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-standard);
 }
 
 .role-editor-card:hover,
 .role-editor-card:focus-visible {
   border-color: #111111;
   background: #fafafa;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-2px);
 }
 
 .role-card-head {
@@ -333,6 +363,28 @@ function roleStateLabel(role: RoleDraft) {
   -webkit-line-clamp: 3;
 }
 
+.role-card-list-move,
+.role-card-list-enter-active,
+.role-card-list-leave-active {
+  transition:
+    background var(--motion-duration-panel) var(--motion-ease-emphasized),
+    border-color var(--motion-duration-panel) var(--motion-ease-emphasized),
+    box-shadow var(--motion-duration-panel) var(--motion-ease-emphasized),
+    opacity var(--motion-duration-panel) var(--motion-ease-emphasized),
+    transform var(--motion-duration-panel) var(--motion-ease-emphasized);
+}
+
+.role-card-list-enter-from,
+.role-card-list-leave-to {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+}
+
+.role-card-list-leave-active {
+  position: absolute;
+  width: calc(100% - 14px);
+}
+
 .inline-input,
 .ability-editor {
   width: 100%;
@@ -342,8 +394,8 @@ function roleStateLabel(role: RoleDraft) {
   color: #111111;
   outline: none;
   transition:
-    border-color 120ms ease,
-    box-shadow 120ms ease;
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .inline-input {

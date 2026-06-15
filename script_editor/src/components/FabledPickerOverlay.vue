@@ -721,6 +721,9 @@ function showVariantSelector(field: VariantField) {
   background: rgba(0, 0, 0, 0.24);
   backdrop-filter: blur(10px);
   cursor: default;
+  transition:
+    background var(--motion-duration-panel) var(--motion-ease-emphasized),
+    backdrop-filter var(--motion-duration-panel) var(--motion-ease-emphasized);
 }
 
 .overlay-window {
@@ -732,6 +735,7 @@ function showVariantSelector(field: VariantField) {
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.18);
+  transform-origin: center;
 }
 
 .picker-panel,
@@ -768,6 +772,14 @@ function showVariantSelector(field: VariantField) {
   border-radius: 999px;
   background: #ffffff;
   color: #555555;
+  transition:
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.search-wrap:focus-within {
+  border-color: #111111;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
 }
 
 .search-input {
@@ -790,6 +802,12 @@ function showVariantSelector(field: VariantField) {
   height: 38px;
   border-radius: 999px;
   cursor: pointer;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .primary-icon,
@@ -802,6 +820,8 @@ function showVariantSelector(field: VariantField) {
 .primary-icon:hover,
 .confirm-action:hover {
   background: #000000;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-1px);
 }
 
 .plain-icon {
@@ -813,6 +833,16 @@ function showVariantSelector(field: VariantField) {
 .plain-icon:hover {
   border-color: #111111;
   background: #f5f5f5;
+  transform: translateY(-1px);
+}
+
+.primary-icon:active,
+.plain-icon:active,
+.confirm-action:active,
+.plain-action:active,
+.danger-action:active,
+.character-card:active {
+  transform: scale(var(--motion-press-scale));
 }
 
 .library-scroll,
@@ -861,11 +891,18 @@ function showVariantSelector(field: VariantField) {
   color: #111111;
   cursor: pointer;
   text-align: left;
+  transition:
+    background var(--motion-duration-base) var(--motion-ease-standard),
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-standard);
 }
 
 .character-card:hover {
   border-color: #111111;
   background: #fafafa;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-2px);
 }
 
 .character-card img,
@@ -915,8 +952,8 @@ function showVariantSelector(field: VariantField) {
   opacity: 0;
   transform: translateY(-50%) scale(0.9);
   transition:
-    opacity 140ms ease,
-    transform 140ms ease;
+    opacity var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .character-card:hover .card-add {
@@ -994,6 +1031,11 @@ function showVariantSelector(field: VariantField) {
   color: #111111;
   cursor: pointer;
   font-weight: 850;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .plain-action span {
@@ -1008,6 +1050,7 @@ function showVariantSelector(field: VariantField) {
   border-color: #111111;
   background: #f5f5f5;
   color: #111111;
+  transform: translateY(-1px);
 }
 
 .danger-action {
@@ -1023,11 +1066,17 @@ function showVariantSelector(field: VariantField) {
   color: #111111;
   cursor: pointer;
   font-weight: 850;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .danger-action:hover {
   border-color: #111111;
   background: #f5f5f5;
+  transform: translateY(-1px);
 }
 
 .danger-action.armed {
@@ -1098,6 +1147,10 @@ function showVariantSelector(field: VariantField) {
   background: #ffffff;
   color: #111111;
   outline: none;
+  transition:
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard),
+    background var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
 .text-field,
@@ -1136,6 +1189,9 @@ function showVariantSelector(field: VariantField) {
   border: 1px dashed #d8d8d8;
   border-radius: 10px;
   background: #fafafa;
+  transition:
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    background var(--motion-duration-base) var(--motion-ease-standard);
 }
 
 .image-preview img,
@@ -1166,8 +1222,8 @@ function showVariantSelector(field: VariantField) {
 .fabled-panel-enter-active,
 .fabled-panel-leave-active {
   transition:
-    opacity 160ms ease,
-    transform 160ms ease;
+    opacity var(--motion-duration-panel) var(--motion-ease-emphasized),
+    transform var(--motion-duration-panel) var(--motion-ease-emphasized);
 }
 
 .fabled-overlay-enter-from,
@@ -1177,17 +1233,23 @@ function showVariantSelector(field: VariantField) {
 
 .fabled-overlay-enter-from .overlay-window,
 .fabled-overlay-leave-to .overlay-window {
-  transform: translateY(12px) scale(0.98);
+  transform: translateY(18px) scale(0.975);
+}
+
+.fabled-overlay-enter-from .overlay-scrim,
+.fabled-overlay-leave-to .overlay-scrim {
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0);
 }
 
 .fabled-panel-enter-from {
   opacity: 0;
-  transform: translateX(18px);
+  transform: translateX(22px) scale(0.99);
 }
 
 .fabled-panel-leave-to {
   opacity: 0;
-  transform: translateX(-18px);
+  transform: translateX(-22px) scale(0.99);
 }
 
 @keyframes spin {
