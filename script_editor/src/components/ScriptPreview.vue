@@ -116,7 +116,7 @@ const currentPlayCharacterHighlightRules = computed(() => buildCurrentPlayCharac
 const previewRoot = ref<HTMLElement | null>(null);
 const toolbarVisible = ref(false);
 const activeEditor = ref<HTMLElement | null>(null);
-const savedSelectionRange = ref<Range | null>(null);
+const savedSelectionSnapshot = ref<SelectionSnapshot | null>(null);
 const toolbarFormatState = ref<FormatState>({ ...emptyFormatState });
 const {
   previewStage,
@@ -581,11 +581,14 @@ function updateSelectionState() {
   const selection = document.getSelection();
   const editor = selectedAbilityEditor(selection);
   const range = editor && selection?.rangeCount ? selection.getRangeAt(0) : null;
+  const snapshot = editor && range ? selectionSnapshotFromRange(range, editor) : null;
 
-  toolbarVisible.value = Boolean(editor);
+  toolbarVisible.value = Boolean(editor && snapshot);
   activeEditor.value = editor;
-  savedSelectionRange.value = range ? range.cloneRange() : null;
-  toolbarFormatState.value = editor && range ? readSelectionFormatState(range, editor) : { ...emptyFormatState };
+  savedSelectionSnapshot.value = snapshot;
+  toolbarFormatState.value = editor && range && snapshot
+    ? readSelectionFormatState(range, editor)
+    : { ...emptyFormatState };
 }
 
 function selectedAbilityEditor(selection: Selection | null) {
@@ -621,24 +624,25 @@ function applyBackgroundColor(option: TextColorOption) {
 }
 
 function applyEditorCommand(command: string, value?: string, mode: "apply" | "remove" = "apply") {
-  const editor = activeEditor.value;
-  const range = savedSelectionRange.value;
-  if (!editor || !range || range.collapsed) {
+  const snapshot = savedSelectionSnapshot.value;
+  const editor = editorForSelectionSnapshot(snapshot);
+  if (!editor || !snapshot || snapshot.start === snapshot.end) {
+    return;
+  }
+
+  const commandRange = rangeFromTextOffsets(editor, snapshot.start, snapshot.end);
+  if (!commandRange) {
     return;
   }
 
   restoreSelection();
-  const selectedRange = document.getSelection()?.rangeCount ? document.getSelection()?.getRangeAt(0) : range;
-  const commandRange = normalizeRangeToTextBoundaries(selectedRange ?? range);
-  const textNodes = selectedTextNodes(commandRange, editor);
+  const textNodes = isolateTextNodesInOffsetRange(editor, snapshot.start, snapshot.end);
   if (!textNodes.length) {
     return;
   }
 
-  const formattedElements = textNodes.map((node) => applyFormatToTextNode(node, command, value, mode, editor));
-  const nextRange = document.createRange();
-  nextRange.setStartBefore(formattedElements[0]);
-  nextRange.setEndAfter(formattedElements[formattedElements.length - 1]);
+  textNodes.forEach((node) => applyFormatToTextNode(node, command, value, mode, editor));
+  const nextRange = rangeFromTextOffsets(editor, snapshot.start, snapshot.end) ?? commandRange;
   const selection = document.getSelection();
   selection?.removeAllRanges();
   selection?.addRange(nextRange);
@@ -647,40 +651,8 @@ function applyEditorCommand(command: string, value?: string, mode: "apply" | "re
   if (role) {
     saveAbilityEditor(role, editor);
   }
-  syncToolbarState(editor, nextRange, nextFormatState);
-  requestAnimationFrame(() => syncToolbarState(editor, nextRange, nextFormatState));
-}
-
-function normalizeRangeToTextBoundaries(range: Range) {
-  const nextRange = range.cloneRange();
-  const startText = nextRange.startContainer instanceof Text ? nextRange.startContainer : null;
-  const endText = nextRange.endContainer instanceof Text ? nextRange.endContainer : null;
-  const startOffset = nextRange.startOffset;
-  const endOffset = nextRange.endOffset;
-
-  if (startText && startText === endText) {
-    let selectedText = startText;
-    if (endOffset < selectedText.length) {
-      selectedText.splitText(endOffset);
-    }
-    if (startOffset > 0) {
-      selectedText = selectedText.splitText(startOffset);
-    }
-    nextRange.setStart(selectedText, 0);
-    nextRange.setEnd(selectedText, selectedText.length);
-    return nextRange;
-  }
-
-  if (endText && endOffset > 0 && endOffset < endText.length) {
-    endText.splitText(endOffset);
-    nextRange.setEnd(endText, endOffset);
-  }
-  if (startText && startOffset > 0 && startOffset < startText.length) {
-    const selectedStart = startText.splitText(startOffset);
-    nextRange.setStart(selectedStart, 0);
-  }
-
-  return nextRange;
+  syncToolbarState(editor, nextRange, nextFormatState, snapshot);
+  requestAnimationFrame(() => syncToolbarState(editor, nextRange, nextFormatState, snapshot));
 }
 
 function applyFormatToTextNode(
@@ -757,9 +729,14 @@ function cleanupStyleWrapper(wrapper: HTMLElement) {
   }
 }
 
-function syncToolbarState(editor: HTMLElement, range: Range, formatState: FormatState) {
+function syncToolbarState(
+  editor: HTMLElement,
+  range: Range,
+  formatState: FormatState,
+  snapshot = selectionSnapshotFromRange(range, editor),
+) {
   activeEditor.value = editor;
-  savedSelectionRange.value = range.cloneRange();
+  savedSelectionSnapshot.value = snapshot;
   toolbarVisible.value = true;
   toolbarFormatState.value = formatState;
 }
@@ -966,13 +943,57 @@ function readSelectionFormatState(range: Range, editor: HTMLElement): FormatStat
 }
 
 function selectedTextNodes(range: Range, editor: HTMLElement) {
+  const snapshot = selectionSnapshotFromRange(range, editor);
+  if (!snapshot) {
+    return [];
+  }
+  return textNodesOverlappingOffsets(editor, snapshot.start, snapshot.end).map((segment) => segment.node);
+}
+
+function isolateTextNodesInOffsetRange(editor: HTMLElement, start: number, end: number) {
+  const segments = textNodesOverlappingOffsets(editor, start, end);
+  const nodes: Text[] = [];
+
+  for (const segment of segments) {
+    let selectedNode = segment.node;
+    if (segment.end < selectedNode.length) {
+      selectedNode.splitText(segment.end);
+    }
+    if (segment.start > 0) {
+      selectedNode = selectedNode.splitText(segment.start);
+    }
+    if (selectedNode.textContent) {
+      nodes.push(selectedNode);
+    }
+  }
+
+  return nodes;
+}
+
+function textNodesOverlappingOffsets(editor: HTMLElement, start: number, end: number) {
+  const segments: TextSegment[] = [];
+  let cursor = 0;
+  for (const node of editorTextNodes(editor)) {
+    const nodeStart = cursor;
+    const nodeEnd = nodeStart + node.length;
+    cursor = nodeEnd;
+    if (nodeEnd <= start || nodeStart >= end) {
+      continue;
+    }
+    segments.push({
+      node,
+      start: Math.max(0, start - nodeStart),
+      end: Math.min(node.length, end - nodeStart),
+    });
+  }
+  return segments.filter((segment) => segment.start < segment.end);
+}
+
+function editorTextNodes(editor: HTMLElement) {
   const nodes: Text[] = [];
   const walker = document.createTreeWalker(editor, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
-      if (!node.textContent) {
-        return NodeFilter.FILTER_REJECT;
-      }
-      return rangeOverlapsTextNode(range, node as Text) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      return node.textContent ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
     },
   });
   let current = walker.nextNode();
@@ -983,13 +1004,94 @@ function selectedTextNodes(range: Range, editor: HTMLElement) {
   return nodes;
 }
 
-function rangeOverlapsTextNode(range: Range, node: Text) {
-  const nodeRange = document.createRange();
-  nodeRange.selectNodeContents(node);
-  return (
-    range.compareBoundaryPoints(Range.END_TO_START, nodeRange) > 0 &&
-    range.compareBoundaryPoints(Range.START_TO_END, nodeRange) < 0
-  );
+function selectionSnapshotFromRange(range: Range, editor: HTMLElement): SelectionSnapshot | null {
+  const roleId = editor.dataset.roleId;
+  if (!roleId) {
+    return null;
+  }
+  const start = textOffsetAt(editor, range.startContainer, range.startOffset);
+  const end = textOffsetAt(editor, range.endContainer, range.endOffset);
+  if (start === null || end === null || start === end) {
+    return null;
+  }
+  return {
+    roleId,
+    start: Math.min(start, end),
+    end: Math.max(start, end),
+  };
+}
+
+function textOffsetAt(editor: HTMLElement, container: Node, offset: number) {
+  let textOffset = 0;
+
+  function visit(node: Node): boolean {
+    if (node === container) {
+      if (node instanceof Text) {
+        textOffset += clampOffset(offset, node.length);
+      } else {
+        const children = Array.from(node.childNodes).slice(0, offset);
+        textOffset += children.reduce((total, child) => total + nodeTextLength(child), 0);
+      }
+      return true;
+    }
+
+    if (node instanceof Text) {
+      textOffset += node.length;
+      return false;
+    }
+
+    for (const child of Array.from(node.childNodes)) {
+      if (visit(child)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  return visit(editor) ? textOffset : null;
+}
+
+function nodeTextLength(node: Node): number {
+  if (node instanceof Text) {
+    return node.length;
+  }
+  return Array.from(node.childNodes).reduce((total, child) => total + nodeTextLength(child), 0);
+}
+
+function rangeFromTextOffsets(editor: HTMLElement, start: number, end: number) {
+  const range = document.createRange();
+  const nodes = editorTextNodes(editor);
+  if (!nodes.length) {
+    return null;
+  }
+
+  let cursor = 0;
+  let started = false;
+  for (const node of nodes) {
+    const nodeStart = cursor;
+    const nodeEnd = nodeStart + node.length;
+
+    if (!started && start <= nodeEnd) {
+      range.setStart(node, clampOffset(start - nodeStart, node.length));
+      started = true;
+    }
+    if (started && end <= nodeEnd) {
+      range.setEnd(node, clampOffset(end - nodeStart, node.length));
+      return range;
+    }
+    cursor = nodeEnd;
+  }
+
+  const lastNode = nodes[nodes.length - 1];
+  if (!started) {
+    range.setStart(lastNode, lastNode.length);
+  }
+  range.setEnd(lastNode, lastNode.length);
+  return range;
+}
+
+function clampOffset(value: number, length: number) {
+  return Math.max(0, Math.min(length, value));
 }
 
 function textNodeHasBold(node: Text, editor: HTMLElement) {
@@ -1137,12 +1239,29 @@ function colorsMatch(left?: string | null, right?: string | null) {
 }
 
 function restoreSelection() {
-  if (!savedSelectionRange.value) {
+  const snapshot = savedSelectionSnapshot.value;
+  const editor = editorForSelectionSnapshot(snapshot);
+  if (!snapshot || !editor) {
+    return;
+  }
+  const range = rangeFromTextOffsets(editor, snapshot.start, snapshot.end);
+  if (!range) {
     return;
   }
   const selection = document.getSelection();
   selection?.removeAllRanges();
-  selection?.addRange(savedSelectionRange.value);
+  selection?.addRange(range);
+}
+
+function editorForSelectionSnapshot(snapshot: SelectionSnapshot | null) {
+  if (!snapshot) {
+    return null;
+  }
+  if (activeEditor.value?.dataset.roleId === snapshot.roleId && previewRoot.value?.contains(activeEditor.value)) {
+    return activeEditor.value;
+  }
+  return Array.from(previewRoot.value?.querySelectorAll<HTMLElement>(".role-ability-editor") ?? [])
+    .find((editor) => editor.dataset.roleId === snapshot.roleId) ?? null;
 }
 
 function findRoleById(roleId?: string) {
@@ -1164,6 +1283,18 @@ interface ExportTextStyle {
   bold?: boolean;
   italic?: boolean;
   underline?: boolean;
+}
+
+interface SelectionSnapshot {
+  roleId: string;
+  start: number;
+  end: number;
+}
+
+interface TextSegment {
+  node: Text;
+  start: number;
+  end: number;
 }
 
 interface ExportTextToken {

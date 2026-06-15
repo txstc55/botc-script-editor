@@ -66,6 +66,18 @@ const variantChoice = reactive<Record<VariantField, string>>({
   setup: "0",
   flavor: "0",
 });
+const deletedVariantKeys = reactive<Record<VariantField, Set<string>>>({
+  ability: new Set<string>(),
+  image: new Set<string>(),
+  firstNight: new Set<string>(),
+  firstNightReminder: new Set<string>(),
+  otherNight: new Set<string>(),
+  otherNightReminder: new Set<string>(),
+  reminders: new Set<string>(),
+  remindersGlobal: new Set<string>(),
+  setup: new Set<string>(),
+  flavor: new Set<string>(),
+});
 const form = reactive<FabledForm>({
   name: "",
   image: "",
@@ -147,6 +159,7 @@ function openBlankEditor() {
   activeEntry.value = null;
   pendingDeleteName.value = "";
   resetVariantChoices();
+  resetDeletedVariantKeys();
   Object.assign(form, {
     name: "新传奇角色",
     image: "",
@@ -169,6 +182,7 @@ function openScriptFabledEditor(role: FabledDraft) {
   activeEntry.value = null;
   pendingDeleteName.value = "";
   resetVariantChoices();
+  resetDeletedVariantKeys();
   fillFormFromRecord(draftToRecord(role));
   saveStatus.value = "";
   saveError.value = "";
@@ -179,6 +193,7 @@ function openEntryEditor(entry: FabledLibraryEntry) {
   activeEntry.value = entry;
   pendingDeleteName.value = "";
   resetVariantChoices();
+  resetDeletedVariantKeys();
   fillFormFromRecord(entry.record);
   saveStatus.value = "";
   saveError.value = "";
@@ -229,6 +244,12 @@ function resetVariantChoices() {
   });
 }
 
+function resetDeletedVariantKeys() {
+  (Object.keys(deletedVariantKeys) as VariantField[]).forEach((field) => {
+    deletedVariantKeys[field].clear();
+  });
+}
+
 function variantOptions(field: VariantField) {
   const record = activeRecord.value;
   return record ? record.variants[field] : [];
@@ -274,6 +295,7 @@ function removeVariant(field: VariantField) {
   }
 
   const currentIndex = Math.min(Math.max(Number(variantChoice[field]) || 0, 0), values.length - 1);
+  deletedVariantKeys[field].add(variantKey(values[currentIndex]));
   values.splice(currentIndex, 1);
   const nextIndex = Math.min(currentIndex, values.length - 1);
   variantChoice[field] = String(nextIndex);
@@ -292,6 +314,7 @@ async function saveCurrentFabled() {
       source: "custom",
       record: saved,
     };
+    resetDeletedVariantKeys();
     saveStatus.value = "已保存到 custom/fabled。";
   } catch (error) {
     saveError.value = error instanceof Error ? error.message : "保存失败。";
@@ -339,7 +362,7 @@ function recordForSave() {
   if (matchingCustomRecord && matchingCustomRecord !== activeRecord.value) {
     merged = mergeFabledRecordVariants(matchingCustomRecord, merged);
   }
-  return merged;
+  return removeDeletedVariants(merged);
 }
 
 function formToRecord() {
@@ -382,6 +405,43 @@ function parseTagText(value: string) {
     .split("||")
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function removeDeletedVariants(record: FabledRecord) {
+  const normalized = normalizeFabledRecord(record);
+  normalized.variants.ability = filterDeletedVariantValues("ability", normalized.variants.ability);
+  normalized.variants.image = filterDeletedVariantValues("image", normalized.variants.image);
+  normalized.variants.firstNight = filterDeletedVariantValues("firstNight", normalized.variants.firstNight);
+  normalized.variants.firstNightReminder = filterDeletedVariantValues(
+    "firstNightReminder",
+    normalized.variants.firstNightReminder,
+  );
+  normalized.variants.otherNight = filterDeletedVariantValues("otherNight", normalized.variants.otherNight);
+  normalized.variants.otherNightReminder = filterDeletedVariantValues(
+    "otherNightReminder",
+    normalized.variants.otherNightReminder,
+  );
+  normalized.variants.reminders = filterDeletedVariantValues("reminders", normalized.variants.reminders);
+  normalized.variants.remindersGlobal = filterDeletedVariantValues(
+    "remindersGlobal",
+    normalized.variants.remindersGlobal,
+  );
+  normalized.variants.setup = filterDeletedVariantValues("setup", normalized.variants.setup);
+  normalized.variants.flavor = filterDeletedVariantValues("flavor", normalized.variants.flavor);
+  return normalizeFabledRecord(normalized);
+}
+
+function filterDeletedVariantValues<T>(field: VariantField, values: T[]) {
+  const deletedKeys = deletedVariantKeys[field];
+  if (!deletedKeys.size) {
+    return values;
+  }
+  const remaining = values.filter((value) => !deletedKeys.has(variantKey(value)));
+  return remaining.length ? remaining : values.slice(0, 1);
+}
+
+function variantKey(value: unknown) {
+  return JSON.stringify(value);
 }
 
 function optionLabel(field: string, value: unknown, index: number) {
