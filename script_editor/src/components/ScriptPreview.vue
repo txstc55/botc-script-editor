@@ -629,85 +629,132 @@ function applyEditorCommand(command: string, value?: string, mode: "apply" | "re
 
   restoreSelection();
   const selectedRange = document.getSelection()?.rangeCount ? document.getSelection()?.getRangeAt(0) : range;
-  const commandRange = selectedRange ?? range;
-  if (mode === "remove") {
-    const clearedRange = clearSharedFormatAncestor(editor, commandRange, command);
-    if (clearedRange) {
-      const nextFormatState = commandFormatState(readSelectionFormatState(clearedRange, editor), command, value, mode);
-      const selection = document.getSelection();
-      selection?.removeAllRanges();
-      selection?.addRange(clearedRange);
-      syncToolbarState(editor, clearedRange, nextFormatState);
-      requestAnimationFrame(() => syncToolbarState(editor, clearedRange, nextFormatState));
-      return;
-    }
+  const commandRange = normalizeRangeToTextBoundaries(selectedRange ?? range);
+  const textNodes = selectedTextNodes(commandRange, editor);
+  if (!textNodes.length) {
+    return;
   }
 
-  const fragment = commandRange.extractContents();
-  if (mode === "remove") {
-    removeFormatFromNode(fragment, command);
-  }
-  if (mode === "apply" && (command === "foreColor" || command === "hiliteColor")) {
-    removeFormatFromNode(fragment, command);
-  }
-  const wrapper = mode === "apply" ? createFormatWrapper(command, value) : createRemovalWrapper(command);
-  wrapper.appendChild(fragment);
-  commandRange.insertNode(wrapper);
-
+  const formattedElements = textNodes.map((node) => applyFormatToTextNode(node, command, value, mode, editor));
   const nextRange = document.createRange();
-  nextRange.selectNode(wrapper);
+  nextRange.setStartBefore(formattedElements[0]);
+  nextRange.setEndAfter(formattedElements[formattedElements.length - 1]);
   const selection = document.getSelection();
   selection?.removeAllRanges();
   selection?.addRange(nextRange);
   const nextFormatState = commandFormatState(readSelectionFormatState(nextRange, editor), command, value, mode);
+  const role = findRoleById(editor.dataset.roleId);
+  if (role) {
+    saveAbilityEditor(role, editor);
+  }
   syncToolbarState(editor, nextRange, nextFormatState);
   requestAnimationFrame(() => syncToolbarState(editor, nextRange, nextFormatState));
 }
 
-function createFormatWrapper(command: string, value?: string) {
-  if (command === "bold") {
-    return document.createElement("strong");
+function normalizeRangeToTextBoundaries(range: Range) {
+  const nextRange = range.cloneRange();
+  const startText = nextRange.startContainer instanceof Text ? nextRange.startContainer : null;
+  const endText = nextRange.endContainer instanceof Text ? nextRange.endContainer : null;
+  const startOffset = nextRange.startOffset;
+  const endOffset = nextRange.endOffset;
+
+  if (startText && startText === endText) {
+    let selectedText = startText;
+    if (endOffset < selectedText.length) {
+      selectedText.splitText(endOffset);
+    }
+    if (startOffset > 0) {
+      selectedText = selectedText.splitText(startOffset);
+    }
+    nextRange.setStart(selectedText, 0);
+    nextRange.setEnd(selectedText, selectedText.length);
+    return nextRange;
   }
-  if (command === "italic") {
-    return document.createElement("em");
+
+  if (endText && endOffset > 0 && endOffset < endText.length) {
+    endText.splitText(endOffset);
+    nextRange.setEnd(endText, endOffset);
   }
-  if (command === "underline") {
-    return document.createElement("u");
+  if (startText && startOffset > 0 && startOffset < startText.length) {
+    const selectedStart = startText.splitText(startOffset);
+    nextRange.setStart(selectedStart, 0);
+  }
+
+  return nextRange;
+}
+
+function applyFormatToTextNode(
+  node: Text,
+  command: string,
+  value: string | undefined,
+  mode: "apply" | "remove",
+  editor: HTMLElement,
+) {
+  const wrapper = isolatedStyleWrapperForTextNode(node, editor);
+  if (mode === "apply") {
+    applyStyleCommand(wrapper, command, value);
+  } else {
+    removeStyleCommand(wrapper, command);
+  }
+  cleanupStyleWrapper(wrapper);
+  return wrapper;
+}
+
+function isolatedStyleWrapperForTextNode(node: Text, editor: HTMLElement) {
+  const parent = parentElement(node);
+  if (
+    parent !== editor &&
+    parent.dataset.abilityStyle === "true" &&
+    parent.childNodes.length === 1
+  ) {
+    return parent;
   }
 
   const wrapper = document.createElement("span");
-  if (command === "foreColor" && value) {
+  wrapper.dataset.abilityStyle = "true";
+  parent.insertBefore(wrapper, node);
+  wrapper.appendChild(node);
+  return wrapper;
+}
+
+function applyStyleCommand(wrapper: HTMLElement, command: string, value?: string) {
+  if (command === "bold") {
+    wrapper.style.fontWeight = "900";
+  } else if (command === "italic") {
+    wrapper.style.fontStyle = "italic";
+  } else if (command === "underline") {
+    wrapper.style.textDecoration = "underline";
+  } else if (command === "foreColor" && value) {
     wrapper.style.color = value;
     wrapper.style.fontWeight = "900";
-  }
-  if (command === "hiliteColor" && value) {
+  } else if (command === "hiliteColor" && value) {
     wrapper.style.backgroundColor = value;
     if (value !== "transparent") {
       wrapper.style.fontWeight = "900";
     }
   }
-  return wrapper;
 }
 
-function createRemovalWrapper(command: string) {
-  const wrapper = document.createElement("span");
-  if (command === "bold" || command === "foreColor") {
+function removeStyleCommand(wrapper: HTMLElement, command: string) {
+  if (command === "bold") {
     wrapper.style.fontWeight = "650";
-  }
-  if (command === "italic") {
+  } else if (command === "italic") {
     wrapper.style.fontStyle = "normal";
-  }
-  if (command === "underline") {
+  } else if (command === "underline") {
     wrapper.style.textDecoration = "none";
-  }
-  if (command === "foreColor") {
+  } else if (command === "foreColor") {
     wrapper.style.color = DEFAULT_TEXT_COLOR;
-  }
-  if (command === "hiliteColor") {
+    wrapper.style.fontWeight = "650";
+  } else if (command === "hiliteColor") {
     wrapper.style.backgroundColor = SCRIPT_PAGE_BACKGROUND;
     wrapper.style.fontWeight = "650";
   }
-  return wrapper;
+}
+
+function cleanupStyleWrapper(wrapper: HTMLElement) {
+  if (wrapper.getAttribute("style") === "") {
+    wrapper.removeAttribute("style");
+  }
 }
 
 function syncToolbarState(editor: HTMLElement, range: Range, formatState: FormatState) {
@@ -922,10 +969,10 @@ function selectedTextNodes(range: Range, editor: HTMLElement) {
   const nodes: Text[] = [];
   const walker = document.createTreeWalker(editor, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
-      if (!node.textContent?.trim()) {
+      if (!node.textContent) {
         return NodeFilter.FILTER_REJECT;
       }
-      return range.intersectsNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      return rangeOverlapsTextNode(range, node as Text) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
     },
   });
   let current = walker.nextNode();
@@ -934,6 +981,15 @@ function selectedTextNodes(range: Range, editor: HTMLElement) {
     current = walker.nextNode();
   }
   return nodes;
+}
+
+function rangeOverlapsTextNode(range: Range, node: Text) {
+  const nodeRange = document.createRange();
+  nodeRange.selectNodeContents(node);
+  return (
+    range.compareBoundaryPoints(Range.END_TO_START, nodeRange) > 0 &&
+    range.compareBoundaryPoints(Range.START_TO_END, nodeRange) < 0
+  );
 }
 
 function textNodeHasBold(node: Text, editor: HTMLElement) {
@@ -1099,7 +1155,7 @@ function findRoleById(roleId?: string) {
       return role;
     }
   }
-  return null;
+  return props.script.fabled.find((candidate) => candidate.id === roleId) ?? null;
 }
 
 interface ExportTextStyle {

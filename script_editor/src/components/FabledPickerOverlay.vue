@@ -2,6 +2,7 @@
 import { computed, reactive, ref, watch } from "vue";
 import { Check, ChevronLeft, Loader2, Plus, Save, Search, Trash2, X } from "@lucide/vue";
 import type { FabledDraft } from "../types";
+import VariantSelectControl from "./VariantSelectControl.vue";
 import {
   deleteFabledRecord,
   fabledRecordToDraft,
@@ -233,8 +234,8 @@ function variantOptions(field: VariantField) {
   return record ? record.variants[field] : [];
 }
 
-function applyVariant(field: VariantField, event: Event) {
-  const index = Number((event.target as HTMLSelectElement).value);
+function applyVariant(field: VariantField, selectedIndex: string | number) {
+  const index = Number(selectedIndex);
   const options = variantOptions(field);
   if (!Number.isInteger(index) || index < 0 || index >= options.length) {
     return;
@@ -263,6 +264,22 @@ function applyVariant(field: VariantField, event: Event) {
   } else if (field === "flavor") {
     form.flavor = String(value ?? "");
   }
+}
+
+function removeVariant(field: VariantField) {
+  const record = activeRecord.value;
+  const values = record ? record.variants[field] : null;
+  if (!values || values.length <= 1) {
+    return;
+  }
+
+  const currentIndex = Math.min(Math.max(Number(variantChoice[field]) || 0, 0), values.length - 1);
+  values.splice(currentIndex, 1);
+  const nextIndex = Math.min(currentIndex, values.length - 1);
+  variantChoice[field] = String(nextIndex);
+  applyVariant(field, nextIndex);
+  saveError.value = "";
+  saveStatus.value = "已删除当前字段版本，保存后写入自定义数据库。";
 }
 
 async function saveCurrentFabled() {
@@ -367,7 +384,7 @@ function parseTagText(value: string) {
     .filter(Boolean);
 }
 
-function optionLabel(field: VariantField, value: unknown, index: number) {
+function optionLabel(field: string, value: unknown, index: number) {
   const prefix = `版本 ${index + 1}`;
   if (field === "setup") {
     return `${prefix} · ${Number(value) ? "需要设置" : "无需设置"}`;
@@ -500,20 +517,15 @@ function showVariantSelector(field: VariantField) {
 
                       <label class="field-block">
                         <span>图片来源</span>
-                        <select
+                        <VariantSelectControl
                           v-if="showVariantSelector('image')"
-                          :value="variantChoice.image"
-                          class="variant-select"
+                          field="image"
+                          :values="variantOptions('image')"
+                          :selected="variantChoice.image"
+                          :option-label="optionLabel"
                           @change="applyVariant('image', $event)"
-                        >
-                          <option
-                            v-for="(value, index) in variantOptions('image')"
-                            :key="`image-${index}`"
-                            :value="index"
-                          >
-                            {{ optionLabel("image", value, index) }}
-                          </option>
-                        </select>
+                          @remove="removeVariant('image')"
+                        />
                         <input v-model="form.image" class="text-field" />
                       </label>
                     </div>
@@ -526,55 +538,44 @@ function showVariantSelector(field: VariantField) {
 
                   <label class="field-block">
                     <span>能力</span>
-                    <select
+                    <VariantSelectControl
                       v-if="showVariantSelector('ability')"
-                      :value="variantChoice.ability"
-                      class="variant-select"
+                      field="ability"
+                      :values="variantOptions('ability')"
+                      :selected="variantChoice.ability"
+                      :option-label="optionLabel"
                       @change="applyVariant('ability', $event)"
-                    >
-                      <option v-for="(value, index) in variantOptions('ability')" :key="`ability-${index}`" :value="index">
-                        {{ optionLabel("ability", value, index) }}
-                      </option>
-                    </select>
+                      @remove="removeVariant('ability')"
+                    />
                     <textarea v-model="form.ability" class="textarea-field ability-field" />
                   </label>
 
                   <div class="form-row two-column-row">
                     <label class="field-block">
                       <span>首夜顺序</span>
-                      <select
+                      <VariantSelectControl
                         v-if="showVariantSelector('firstNight')"
-                        :value="variantChoice.firstNight"
-                        class="variant-select"
+                        field="firstNight"
+                        :values="variantOptions('firstNight')"
+                        :selected="variantChoice.firstNight"
+                        :option-label="optionLabel"
                         @change="applyVariant('firstNight', $event)"
-                      >
-                        <option
-                          v-for="(value, index) in variantOptions('firstNight')"
-                          :key="`first-night-${index}`"
-                          :value="index"
-                        >
-                          {{ optionLabel("firstNight", value, index) }}
-                        </option>
-                      </select>
+                        @remove="removeVariant('firstNight')"
+                      />
                       <input v-model.number="form.firstNight" class="text-field" min="0" step="0.01" type="number" />
                     </label>
 
                     <label class="field-block">
                       <span>其他夜晚顺序</span>
-                      <select
+                      <VariantSelectControl
                         v-if="showVariantSelector('otherNight')"
-                        :value="variantChoice.otherNight"
-                        class="variant-select"
+                        field="otherNight"
+                        :values="variantOptions('otherNight')"
+                        :selected="variantChoice.otherNight"
+                        :option-label="optionLabel"
                         @change="applyVariant('otherNight', $event)"
-                      >
-                        <option
-                          v-for="(value, index) in variantOptions('otherNight')"
-                          :key="`other-night-${index}`"
-                          :value="index"
-                        >
-                          {{ optionLabel("otherNight", value, index) }}
-                        </option>
-                      </select>
+                        @remove="removeVariant('otherNight')"
+                      />
                       <input v-model.number="form.otherNight" class="text-field" min="0" step="0.01" type="number" />
                     </label>
                   </div>
@@ -582,39 +583,29 @@ function showVariantSelector(field: VariantField) {
                   <div class="form-row two-column-row">
                     <label class="field-block">
                       <span>首夜提醒</span>
-                      <select
+                      <VariantSelectControl
                         v-if="showVariantSelector('firstNightReminder')"
-                        :value="variantChoice.firstNightReminder"
-                        class="variant-select"
+                        field="firstNightReminder"
+                        :values="variantOptions('firstNightReminder')"
+                        :selected="variantChoice.firstNightReminder"
+                        :option-label="optionLabel"
                         @change="applyVariant('firstNightReminder', $event)"
-                      >
-                        <option
-                          v-for="(value, index) in variantOptions('firstNightReminder')"
-                          :key="`first-reminder-${index}`"
-                          :value="index"
-                        >
-                          {{ optionLabel("firstNightReminder", value, index) }}
-                        </option>
-                      </select>
+                        @remove="removeVariant('firstNightReminder')"
+                      />
                       <textarea v-model="form.firstNightReminder" class="textarea-field small" />
                     </label>
 
                     <label class="field-block">
                       <span>其他夜晚提醒</span>
-                      <select
+                      <VariantSelectControl
                         v-if="showVariantSelector('otherNightReminder')"
-                        :value="variantChoice.otherNightReminder"
-                        class="variant-select"
+                        field="otherNightReminder"
+                        :values="variantOptions('otherNightReminder')"
+                        :selected="variantChoice.otherNightReminder"
+                        :option-label="optionLabel"
                         @change="applyVariant('otherNightReminder', $event)"
-                      >
-                        <option
-                          v-for="(value, index) in variantOptions('otherNightReminder')"
-                          :key="`other-reminder-${index}`"
-                          :value="index"
-                        >
-                          {{ optionLabel("otherNightReminder", value, index) }}
-                        </option>
-                      </select>
+                        @remove="removeVariant('otherNightReminder')"
+                      />
                       <textarea v-model="form.otherNightReminder" class="textarea-field small" />
                     </label>
                   </div>
@@ -623,52 +614,45 @@ function showVariantSelector(field: VariantField) {
                     <label class="field-block">
                       <span>标签</span>
                       <small>提醒标记。多个标签用 || 分隔，会显示在角色相关标记里。</small>
-                      <select
+                      <VariantSelectControl
                         v-if="showVariantSelector('reminders')"
-                        :value="variantChoice.reminders"
-                        class="variant-select"
+                        field="reminders"
+                        :values="variantOptions('reminders')"
+                        :selected="variantChoice.reminders"
+                        :option-label="optionLabel"
                         @change="applyVariant('reminders', $event)"
-                      >
-                        <option v-for="(value, index) in variantOptions('reminders')" :key="`reminders-${index}`" :value="index">
-                          {{ optionLabel("reminders", value, index) }}
-                        </option>
-                      </select>
+                        @remove="removeVariant('reminders')"
+                      />
                       <textarea v-model="form.remindersText" class="textarea-field small" />
                     </label>
 
                     <label class="field-block">
                       <span>全局标签</span>
                       <small>全局提醒标记。即使角色不在本剧本中，也可以作为全局标记出现。</small>
-                      <select
+                      <VariantSelectControl
                         v-if="showVariantSelector('remindersGlobal')"
-                        :value="variantChoice.remindersGlobal"
-                        class="variant-select"
+                        field="remindersGlobal"
+                        :values="variantOptions('remindersGlobal')"
+                        :selected="variantChoice.remindersGlobal"
+                        :option-label="optionLabel"
                         @change="applyVariant('remindersGlobal', $event)"
-                      >
-                        <option
-                          v-for="(value, index) in variantOptions('remindersGlobal')"
-                          :key="`global-reminders-${index}`"
-                          :value="index"
-                        >
-                          {{ optionLabel("remindersGlobal", value, index) }}
-                        </option>
-                      </select>
+                        @remove="removeVariant('remindersGlobal')"
+                      />
                       <textarea v-model="form.remindersGlobalText" class="textarea-field small" />
                     </label>
 
                     <label class="field-block setup-field">
                       <span>设置</span>
                       <small>1 表示开局设置时需要额外检查或调整。</small>
-                      <select
+                      <VariantSelectControl
                         v-if="showVariantSelector('setup')"
-                        :value="variantChoice.setup"
-                        class="variant-select"
+                        field="setup"
+                        :values="variantOptions('setup')"
+                        :selected="variantChoice.setup"
+                        :option-label="optionLabel"
                         @change="applyVariant('setup', $event)"
-                      >
-                        <option v-for="(value, index) in variantOptions('setup')" :key="`setup-${index}`" :value="index">
-                          {{ optionLabel("setup", value, index) }}
-                        </option>
-                      </select>
+                        @remove="removeVariant('setup')"
+                      />
                       <select v-model.number="form.setup" class="text-field">
                         <option :value="0">0 · 无需设置</option>
                         <option :value="1">1 · 需要设置</option>
@@ -679,16 +663,15 @@ function showVariantSelector(field: VariantField) {
                   <label class="field-block">
                     <span>背景故事</span>
                     <small>flavor。只用于记录角色风味文本，不影响剧本规则。</small>
-                    <select
+                    <VariantSelectControl
                       v-if="showVariantSelector('flavor')"
-                      :value="variantChoice.flavor"
-                      class="variant-select"
+                      field="flavor"
+                      :values="variantOptions('flavor')"
+                      :selected="variantChoice.flavor"
+                      :option-label="optionLabel"
                       @change="applyVariant('flavor', $event)"
-                    >
-                      <option v-for="(value, index) in variantOptions('flavor')" :key="`flavor-${index}`" :value="index">
-                        {{ optionLabel("flavor", value, index) }}
-                      </option>
-                    </select>
+                      @remove="removeVariant('flavor')"
+                    />
                     <textarea v-model="form.flavor" class="textarea-field small" />
                   </label>
                 </div>
@@ -1139,8 +1122,7 @@ function showVariantSelector(field: VariantField) {
 }
 
 .text-field,
-.textarea-field,
-.variant-select {
+.textarea-field {
   width: 100%;
   border: 1px solid #d8d8d8;
   border-radius: 9px;
@@ -1153,8 +1135,7 @@ function showVariantSelector(field: VariantField) {
     background var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
-.text-field,
-.variant-select {
+.text-field {
   height: 36px;
   padding: 0 10px;
 }
@@ -1175,8 +1156,7 @@ function showVariantSelector(field: VariantField) {
 }
 
 .text-field:focus,
-.textarea-field:focus,
-.variant-select:focus {
+.textarea-field:focus {
   border-color: #111111;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
 }
