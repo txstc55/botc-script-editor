@@ -2,36 +2,43 @@
   "id": "秘法学徒",
   "name": "秘法学徒",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "秘法学徒",
-      "name": "秘法学徒",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以让自己失踪直到明天黄昏。如果你因邪恶玩家的能力死亡，所有爪牙会在当晚丧失理智。",
-      "image": "https://free.picui.cn/free/2025/11/28/6928977f880e3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "秘法学徒可以让自己失踪。如果他这么做了，标记秘法学徒失踪。如果秘法学徒被邪恶玩家的能力杀死，标记法术施放。夜晚，如果有法术施放标记，移除该标记，所有爪牙丧失理智。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以让自己失踪直到明天黄昏。如果你因邪恶玩家的能力死亡，所有爪牙会在当晚丧失理智。"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/11/28/6928977f880e3.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      16
+    ],
+    "otherNightReminder": [
+      "秘法学徒可以让自己失踪。如果他这么做了，标记秘法学徒失踪。如果秘法学徒被邪恶玩家的能力杀死，标记法术施放。夜晚，如果有法术施放标记，移除该标记，所有爪牙丧失理智。"
+    ],
+    "reminders": [
+      [
         "失踪",
         "法术施放"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "秘法学徒"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

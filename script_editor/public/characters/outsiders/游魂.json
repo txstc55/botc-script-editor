@@ -2,55 +2,49 @@
   "id": "游魂",
   "name": "游魂",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "游魂",
-      "name": "游魂",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "每个夜晚，你会被当作一个除你以外的角色及其相应阵营，即使你已死亡。你会以他的方式被唤醒。",
-      "image": "https://www.bloodstar.xyz/p/meiosis/clockparadox/17_clockparadox.png",
-      "firstNight": 50,
-      "firstNightReminder": "决定游魂在今晚被当作什么角色。按对应角色的行动方式唤醒他。",
-      "otherNight": 50,
-      "otherNightReminder": "决定游魂在今晚被当作什么角色。如果游魂存活，按对应角色的行动方式唤醒他。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "游魂",
-      "name": "游魂",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你不知道你是游魂。你以为你是一个其他善良角色，但其实你不是，即使你已死亡。首个游魂死亡时，会有一名镇民在当晚变为游魂。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/specter_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5,
-      "otherNightReminder": "如果游魂死亡，且场上没有其他游魂，一名其他镇民变为游魂。",
-      "reminders": [],
-      "remindersGlobal": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你会被当作一个除你以外的角色及其相应阵营，即使你已死亡。你会以他的方式被唤醒。",
+      "你不知道你是游魂。你以为你是一个其他善良角色，但其实你不是，即使你已死亡。首个游魂死亡时，会有一名镇民在当晚变为游魂。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/meiosis/clockparadox/17_clockparadox.png",
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/specter_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      50,
+      0
+    ],
+    "firstNightReminder": [
+      "决定游魂在今晚被当作什么角色。按对应角色的行动方式唤醒他。",
+      ""
+    ],
+    "otherNight": [
+      50,
+      5
+    ],
+    "otherNightReminder": [
+      "决定游魂在今晚被当作什么角色。如果游魂存活，按对应角色的行动方式唤醒他。",
+      "如果游魂死亡，且场上没有其他游魂，一名其他镇民变为游魂。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "是游魂",
         "限一次"
-      ],
-      "setup": 0,
-      "flavor": "My past life is no more and yet still remains. I am hollow... and alone.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "My past life is no more and yet still remains. I am hollow... and alone."
+    ]
+  }
 }

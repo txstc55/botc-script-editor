@@ -2,56 +2,41 @@
   "id": "稻草人",
   "name": "稻草人",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 2,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "稻草人",
-      "name": "稻草人",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "你不能被流放。在白天时，如果即将死亡的玩家找你猜拳且你输了，你代替他死亡。当你连续胜利三次时，你独自获胜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_2771962020171_5226abbf.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你不能被流放。在白天时，如果即将死亡的玩家找你猜拳且你输了，你代替他死亡。当你连续胜利三次时，你独自获胜。",
+      "在白天时，如果即将死亡的玩家找你猜拳且你输了，你可能替他死亡。当你连续胜利三次时，你独自获胜。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_2771962020171_5226abbf.jpg"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "赢！"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 3,
-      "notes": []
-    },
-    {
-      "id": "稻草人",
-      "name": "稻草人",
-      "variantIndex": 2,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "在白天时，如果即将死亡的玩家找你猜拳且你输了，你可能替他死亡。当你连续胜利三次时，你独自获胜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_2771962020171_5226abbf.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "赢！"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

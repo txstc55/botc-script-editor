@@ -2,34 +2,41 @@
   "id": "精灵",
   "name": "精灵",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "精灵",
-      "name": "精灵",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "整局游戏限一次，在夜晚时，你可以选择一个角色，该角色会得知精灵在场",
-      "image": "https://www.bloodstar.xyz/p/C2H43g/DarkAge/1_darkage.png",
-      "firstNight": 15,
-      "firstNightReminder": "选择一个角色",
-      "otherNight": 20,
-      "otherNightReminder": "选择一个角色",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "整局游戏限一次，在夜晚时，你可以选择一个角色，该角色会得知精灵在场"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/C2H43g/DarkAge/1_darkage.png"
+    ],
+    "firstNight": [
+      15
+    ],
+    "firstNightReminder": [
+      "选择一个角色"
+    ],
+    "otherNight": [
+      20
+    ],
+    "otherNightReminder": [
+      "选择一个角色"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,55 +2,49 @@
   "id": "偏执狂",
   "name": "偏执狂",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "偏执狂",
-      "name": "偏执狂",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "当恶魔首次将要杀死你时，一名爪牙可能会代替你死亡。",
-      "image": "[\"https://i.postimg.cc/nrCNmn0f/image.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "如果恶魔首次选择了偏执狂 (且至少一名爪牙存活), 可能会有一名爪牙代替你死亡.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "当恶魔首次将要杀死你时，一名爪牙可能会代替你死亡。",
+      "每个夜晚，你会得知与你邻近的存活玩家中是否有吸血鬼。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/nrCNmn0f/image.png\"]",
+      "https://i.postimg.cc/FHY5Ys54/Photo4.png"
+    ],
+    "firstNight": [
+      0,
+      18
+    ],
+    "firstNightReminder": [
+      "",
+      "向偏执狂展示“是”表示与他邻近的存活的玩家中有吸血鬼，否则展示“否”。"
+    ],
+    "otherNight": [
+      13,
+      16
+    ],
+    "otherNightReminder": [
+      "向偏执狂展示“是”表示与他邻近的存活的玩家中有吸血鬼，否则展示“否”。",
+      "如果恶魔首次选择了偏执狂 (且至少一名爪牙存活), 可能会有一名爪牙代替你死亡."
+    ],
+    "reminders": [
+      [
         "失去能力",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "What was that? I swear I heard the door shut! Who's there?! Show yourself!",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "偏执狂",
-      "name": "偏执狂",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知与你邻近的存活玩家中是否有吸血鬼。",
-      "image": "https://i.postimg.cc/FHY5Ys54/Photo4.png",
-      "firstNight": 18,
-      "firstNightReminder": "向偏执狂展示“是”表示与他邻近的存活的玩家中有吸血鬼，否则展示“否”。",
-      "otherNight": 16,
-      "otherNightReminder": "向偏执狂展示“是”表示与他邻近的存活的玩家中有吸血鬼，否则展示“否”。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "What was that? I swear I heard the door shut! Who's there?! Show yourself!"
+    ]
+  }
 }

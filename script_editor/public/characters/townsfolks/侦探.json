@@ -2,167 +2,83 @@
   "id": "侦探",
   "name": "侦探",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 7,
   "totalOccurrenceCount": 7,
-  "variants": [
-    {
-      "id": "侦探",
-      "name": "侦探",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家，并得知以下三种情况中他今晚符合的数量：1. 他直接或间接导致了其他角色的死亡。2. 他破坏了任务。3. 他醉酒或中毒。",
-      "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/12_goosegooseduck.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "唤醒玩家并让玩家选择另一名玩家，告知0-3的数字。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侦探",
-      "name": "侦探",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知是否有玩家因镇民能力而死亡。",
-      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/5_bundagee_inn_massacre_bigyellowfish.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 20,
-      "otherNightReminder": "唤醒侦探，如果有玩家由于镇民的能力而死亡，向他点头，否则摇头。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "弹痕的角度说明子弹不是从窗户外射入，（掀开窗帘），而是从内部射向窗外。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侦探",
-      "name": "侦探",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在白天时，你可以公开选择一名玩家：如果他死于夜晚，你得知他的角色；否则，你得知与他邻座的玩家阵营是否相同。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/3_blackout.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 23,
-      "otherNightReminder": "如果侦探公开选择的玩家没有死亡，告知他标记“调查”玩家身边的存活玩家阵营是否相同；否则，告诉他标记“调查”玩家的身份。",
-      "reminders": [
-        "调查"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侦探",
-      "name": "侦探",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名玩家：下个夜晚你得知他的阵营。",
-      "image": "https://s2.loli.net/2025/09/07/AZljT56JqQhzbf9.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16000,
-      "otherNightReminder": "每个夜晚*，你可以选择一名玩家：下个夜晚你得知他的阵营。",
-      "reminders": [
-        "被选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侦探",
-      "name": "侦探",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家：你会得知他们是否都是邪恶的。会有两名玩家始终被你当作错误阵营；每个白天，你可以拜访说书人并获得关于错误玩家是谁的提示。",
-      "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/8_yz_cn_ggg.png",
-      "firstNight": 20,
-      "firstNightReminder": "侦探选择两名玩家。如果他们都是邪恶的，侦探得知“是”，否则得知“否”。",
-      "otherNight": 20,
-      "otherNightReminder": "侦探选择两名玩家。如果他们都是邪恶的，侦探得知“是”，否则得知“否”。",
-      "reminders": [
-        "错误阵营"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侦探",
-      "name": "侦探",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名其他玩家。如果他们之一的玩家在夜晚死亡，你会得知他的角色，但你只会得知一次。",
-      "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/1_archives_of_insanity.png",
-      "firstNight": 26,
-      "firstNightReminder": "唤醒侦探，向他指出两名玩家。",
-      "otherNight": 23,
-      "otherNightReminder": "如果侦探未被唤醒过且侦探得知的玩家死亡，唤醒侦探，向他展示该玩家的角色标记。",
-      "reminders": [
-        "被得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侦探",
-      "name": "侦探",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个非恶魔角色：你会得知两名玩家，他们之中其中一名玩家是该角色。如果这个角色不在场，你会得知任意两名玩家。",
-      "image": "[\"https://i.postimg.cc/V6Rbt85g/j.png\"]",
-      "firstNight": 36,
-      "firstNightReminder": "侦探可以选择一个非恶魔角色。如果他这么做, 指向两名玩家, 其中一名是他选择的角色。如果侦探选择的角色不在场, 任意指向两名玩家。",
-      "otherNight": 19,
-      "otherNightReminder": "如果侦探在此之前没有使用他的能力, 侦探可以选择一个非恶魔角色。如果他这么做, 指向两名玩家, 其中一名是他选择的角色。如果侦探选择的角色不在场, 任意指向两名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知两名其他玩家。如果他们之一的玩家在夜晚死亡，你会得知他的角色，但你只会得知一次。",
+      "在白天时，你可以公开选择一名玩家：如果他死于夜晚，你得知他的角色；否则，你得知与他邻座的玩家阵营是否相同。",
+      "每个夜晚*，你会得知是否有玩家因镇民能力而死亡。",
+      "每个夜晚*，你可以选择一名玩家：下个夜晚你得知他的阵营。",
+      "每个夜晚*，你要选择一名玩家，并得知以下三种情况中他今晚符合的数量：1. 他直接或间接导致了其他角色的死亡。2. 他破坏了任务。3. 他醉酒或中毒。",
+      "每个夜晚，你要选择两名玩家：你会得知他们是否都是邪恶的。会有两名玩家始终被你当作错误阵营；每个白天，你可以拜访说书人并获得关于错误玩家是谁的提示。",
+      "每局游戏限一次，在夜晚时，你可以选择一个非恶魔角色：你会得知两名玩家，他们之中其中一名玩家是该角色。如果这个角色不在场，你会得知任意两名玩家。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/V6Rbt85g/j.png\"]",
+      "https://s2.loli.net/2025/09/07/AZljT56JqQhzbf9.png",
+      "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/1_archives_of_insanity.png",
+      "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/5_bundagee_inn_massacre_bigyellowfish.png",
+      "https://www.bloodstar.xyz/p/bluebell/blackout/3_blackout.png",
+      "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/8_yz_cn_ggg.png",
+      "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/12_goosegooseduck.png"
+    ],
+    "firstNight": [
+      0,
+      20,
+      26,
+      36
+    ],
+    "firstNightReminder": [
+      "",
+      "侦探可以选择一个非恶魔角色。如果他这么做, 指向两名玩家, 其中一名是他选择的角色。如果侦探选择的角色不在场, 任意指向两名玩家。",
+      "侦探选择两名玩家。如果他们都是邪恶的，侦探得知“是”，否则得知“否”。",
+      "唤醒侦探，向他指出两名玩家。"
+    ],
+    "otherNight": [
+      20,
+      23,
+      16000,
+      18,
+      19
+    ],
+    "otherNightReminder": [
+      "侦探选择两名玩家。如果他们都是邪恶的，侦探得知“是”，否则得知“否”。",
+      "唤醒侦探，如果有玩家由于镇民的能力而死亡，向他点头，否则摇头。",
+      "唤醒玩家并让玩家选择另一名玩家，告知0-3的数字。",
+      "如果侦探公开选择的玩家没有死亡，告知他标记“调查”玩家身边的存活玩家阵营是否相同；否则，告诉他标记“调查”玩家的身份。",
+      "如果侦探在此之前没有使用他的能力, 侦探可以选择一个非恶魔角色。如果他这么做, 指向两名玩家, 其中一名是他选择的角色。如果侦探选择的角色不在场, 任意指向两名玩家。",
+      "如果侦探未被唤醒过且侦探得知的玩家死亡，唤醒侦探，向他展示该玩家的角色标记。",
+      "每个夜晚*，你可以选择一名玩家：下个夜晚你得知他的阵营。"
+    ],
+    "reminders": [
+      [],
+      [
         "失去能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Hmm... This dirt tells me a lot about our killer. Seems like I've finally got some... dirt on him! HA! I'm a genius!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "被得知"
+      ],
+      [
+        "被选择"
+      ],
+      [
+        "调查"
+      ],
+      [
+        "错误阵营"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "Hmm... This dirt tells me a lot about our killer. Seems like I've finally got some... dirt on him! HA! I'm a genius!",
+      "弹痕的角度说明子弹不是从窗户外射入，（掀开窗帘），而是从内部射向窗外。"
+    ]
+  }
 }

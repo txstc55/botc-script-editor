@@ -6,65 +6,13 @@
     "科学怪人",
     "酒鬼"
   ],
-  "targetCount": 2,
-  "variantCount": 2,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "科学怪人 & 酒鬼",
-      "name": "科学怪人 & 酒鬼",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。",
-      "targets": [
-        "科学怪人",
-        "酒鬼"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "科学怪人",
-        "targetId": "drunk_c",
-        "targetName": "酒鬼"
-      },
-      "rules": [
-        {
-          "sourceCharacter": "科学怪人",
-          "targetId": "drunk_c",
-          "targetName": "酒鬼"
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    },
-    {
-      "id": "科学怪人 & 酒鬼",
-      "name": "科学怪人 & 酒鬼",
-      "variantIndex": 2,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "恶魔不能获得酒鬼的能力。",
-      "targets": [
-        "科学怪人",
-        "酒鬼"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。",
+      "恶魔不能获得酒鬼的能力。"
+    ]
+  }
 }

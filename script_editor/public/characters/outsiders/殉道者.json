@@ -2,56 +2,47 @@
   "id": "殉道者",
   "name": "殉道者",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "殉道者",
-      "name": "殉道者",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你死亡且下一个死亡的玩家是恶魔，你的阵营落败.",
-      "image": "[\"https://free.picui.cn/free/2025/09/24/68d2c79dbdd30.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你死亡且下一个死亡的玩家是恶魔，你的阵营落败.",
+      "如果与你邻近的一名存活的玩家将要死亡，你可能代替他死亡。"
+    ],
+    "image": [
+      "[\"https://free.picui.cn/free/2025/09/24/68d2c79dbdd30.png\"]",
+      "https://i.postimg.cc/9XbRMbmT/image.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [],
+      [
+        "代替死亡"
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "MARTYRED"
       ],
-      "setup": 0,
-      "flavor": "我不害怕狮子，也不害怕罗马人，不怕任何来自深渊的怪兽.因为我的无敌的神与我同在",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "殉道者",
-      "name": "殉道者",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果与你邻近的一名存活的玩家将要死亡，你可能代替他死亡。",
-      "image": "https://i.postimg.cc/9XbRMbmT/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "代替死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "我不害怕狮子，也不害怕罗马人，不怕任何来自深渊的怪兽.因为我的无敌的神与我同在",
+      ""
+    ]
+  }
 }

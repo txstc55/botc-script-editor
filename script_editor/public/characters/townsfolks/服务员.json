@@ -2,57 +2,51 @@
   "id": "服务员",
   "name": "服务员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "服务员",
-      "name": "服务员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名不在场的邪恶角色。",
-      "image": "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/25_a_bad_example.png",
-      "firstNight": 16,
-      "firstNightReminder": "展示2个不在场的邪恶角色标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知两名不在场的邪恶角色。",
+      "每个夜晚，你要选择除你以外的一名玩家：你会得知与他邻近的两名玩家是否为同一阵营。如果你选中了邪恶玩家，你醉酒直到下个黄昏。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/25_a_bad_example.png",
+      "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/4_bundagee_inn_massacre_bigyellowfish.png"
+    ],
+    "firstNight": [
+      16,
+      19
+    ],
+    "firstNightReminder": [
+      "展示2个不在场的邪恶角色标记。",
+      "服务员指向除自己的一名玩家，如果他两侧的玩家属于同一阵营，向服务员点头，否则摇头。如果那名玩家属于邪恶阵营，标记服务员“醉酒”。"
+    ],
+    "otherNight": [
+      0,
+      23
+    ],
+    "otherNightReminder": [
+      "",
+      "服务员指向除自己的一名玩家，如果他两侧的玩家属于同一阵营，向服务员点头，否则摇头。如果那名玩家属于邪恶阵营，标记服务员“醉酒”。"
+    ],
+    "reminders": [
+      [
         "在场1",
         "在场2"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "欢迎~光~临~",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "服务员",
-      "name": "服务员",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择除你以外的一名玩家：你会得知与他邻近的两名玩家是否为同一阵营。如果你选中了邪恶玩家，你醉酒直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/4_bundagee_inn_massacre_bigyellowfish.png",
-      "firstNight": 19,
-      "firstNightReminder": "服务员指向除自己的一名玩家，如果他两侧的玩家属于同一阵营，向服务员点头，否则摇头。如果那名玩家属于邪恶阵营，标记服务员“醉酒”。",
-      "otherNight": 23,
-      "otherNightReminder": "服务员指向除自己的一名玩家，如果他两侧的玩家属于同一阵营，向服务员点头，否则摇头。如果那名玩家属于邪恶阵营，标记服务员“醉酒”。",
-      "reminders": [
+      [
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "需要盐和胡椒？好的，先生。夫人您需要吗？我由衷地觉得您们两位今晚看起来都非常动人。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "欢迎~光~临~",
+      "需要盐和胡椒？好的，先生。夫人您需要吗？我由衷地觉得您们两位今晚看起来都非常动人。"
+    ]
+  }
 }

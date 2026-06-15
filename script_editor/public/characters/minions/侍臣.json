@@ -2,36 +2,43 @@
   "id": "侍臣",
   "name": "侍臣",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "侍臣",
-      "name": "侍臣",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/courtier_r.png\"]",
-      "firstNight": 14000,
-      "firstNightReminder": "1",
-      "otherNight": 3,
-      "otherNightReminder": "1",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。"
+    ],
+    "image": [
+      "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/courtier_r.png\"]"
+    ],
+    "firstNight": [
+      14000
+    ],
+    "firstNightReminder": [
+      "1"
+    ],
+    "otherNight": [
+      3
+    ],
+    "otherNightReminder": [
+      "1"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "醉酒1",
         "醉酒2",
         "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

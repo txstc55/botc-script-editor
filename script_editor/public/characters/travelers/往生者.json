@@ -2,196 +2,61 @@
   "id": "往生者",
   "name": "往生者",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 8,
   "totalOccurrenceCount": 36,
-  "variants": [
-    {
-      "id": "往生者",
-      "name": "往生者",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "你没有阵营且不入村。每个白天，你可以向说书人询问n个是非问题（n由说书人决定）。如果你还原初始或当前魔典，你获胜。如果你对你的信息疯狂，你落败。",
-      "image": "https://i.postimg.cc/KvYjy2BH/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "你没有阵营且不入村。每个白天，你可以向说书人询问n个是非问题（n由说书人决定）。如果你还原初始或当前魔典，你获胜。如果你对你的信息疯狂，你落败。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你没有阵营且不入村。每个白天，你可以向说书人询问n个是非问题（n由说书人决定）。如果你还原初始或当前魔典，你获胜。如果你对你的信息疯狂，你落败。",
+      "独立阵营。每个白天限一次，你可以拜访说书人以获得一条信息。如果在游戏结束前你成功复原了魔典，你加入获胜的阵营；如果你对说书人给予的信息疯狂，你无法获胜。",
+      "你死亡。每个白天限一次，你可以私下询问说书人并获得一条正确信息，如果你在游戏结束前复原了魔典，你会转变为获胜的阵营，但如果你将信息公布，你不再会获胜，即使你已死亡。[你没有初始的阵营]",
+      "你没有阵营。每个白天限一次，你可以拜访说书人以获得一条信息。 如果在游戏结束前你成功复原了魔典，你转变为获胜的阵营:如果你\"疯狂\"地证实说书人给予的信息，你无法获胜"
+    ],
+    "image": [
+      "https://i.postimg.cc/KvYjy2BH/image.png",
+      "https://www.bloodstar.xyz//p//comm503//sheshebei//_sheshebei.png",
+      "https://www.bloodstar.xyz/p/Airell_clocktower/taciturnity/newcharacter1_taciturnity.png",
+      "https://www.bloodstar.xyz/p/hatsukisakana/drg/12_drg.png",
+      "https://img.picui.cn/free/2025/04/14/67fc87b645dcd.png",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/7a/5rucngdkf94y0oeivqtw6erytaqeuj5.png",
+      "https://www.bloodstar.xyz/p/C2H43g/chargement-day/43_chargementday.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      1,
+      0
+    ],
+    "otherNightReminder": [
+      "你没有阵营且不入村。每个白天，你可以向说书人询问n个是非问题（n由说书人决定）。如果你还原初始或当前魔典，你获胜。如果你对你的信息疯狂，你落败。",
+      ""
+    ],
+    "reminders": [
+      [
         "获胜",
         "落败"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 19,
-      "notes": []
-    },
-    {
-      "id": "往生者",
-      "name": "往生者",
-      "variantIndex": 2,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "你没有阵营且不入村。每个白天，你可以向说书人询问n个是非问题（n由说书人决定）。如果你还原初始或当前魔典，你获胜。如果你对你的信息疯狂，你落败。",
-      "image": "https://i.postimg.cc/KvYjy2BH/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "获胜",
-        "落败"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 8,
-      "notes": []
-    },
-    {
-      "id": "往生者",
-      "name": "往生者",
-      "variantIndex": 3,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "你死亡。每个白天限一次，你可以私下询问说书人并获得一条正确信息，如果你在游戏结束前复原了魔典，你会转变为获胜的阵营，但如果你将信息公布，你不再会获胜，即使你已死亡。[你没有初始的阵营]",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/taciturnity/newcharacter1_taciturnity.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "往生者",
-      "name": "往生者",
-      "variantIndex": 4,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "独立阵营。每个白天限一次，你可以拜访说书人以获得一条信息。如果在游戏结束前你成功复原了魔典，你加入获胜的阵营；如果你对说书人给予的信息疯狂，你无法获胜。",
-      "image": "https://www.bloodstar.xyz//p//comm503//sheshebei//_sheshebei.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "小机灵鬼",
         "就你多嘴"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "往生者",
-      "name": "往生者",
-      "variantIndex": 5,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "独立阵营。每个白天限一次，你可以拜访说书人以获得一条信息。如果在游戏结束前你成功复原了魔典，你加入获胜的阵营；如果你对说书人给予的信息疯狂，你无法获胜。",
-      "image": "https://www.bloodstar.xyz/p/hatsukisakana/drg/12_drg.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [],
+      [
         "堕入地狱",
         "求得救赎"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "往生者",
-      "name": "往生者",
-      "variantIndex": 6,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "你没有阵营。每个白天限一次，你可以拜访说书人以获得一条信息。 如果在游戏结束前你成功复原了魔典，你转变为获胜的阵营:如果你\"疯狂\"地证实说书人给予的信息，你无法获胜",
-      "image": "https://www.bloodstar.xyz/p/C2H43g/chargement-day/43_chargementday.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "往生者",
-      "name": "往生者",
-      "variantIndex": 7,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "你没有阵营且不入村。每个白天，你可以向说书人询问n个是非问题（n由说书人决定）。如果你还原初始或当前魔典，你获胜。如果你对你的信息疯狂，你落败。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/7a/5rucngdkf94y0oeivqtw6erytaqeuj5.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "获胜",
-        "落败"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "往生者",
-      "name": "往生者",
-      "variantIndex": 8,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "独立阵营。每个白天限一次，你可以拜访说书人以获得一条信息。如果在游戏结束前你成功复原了魔典，你加入获胜的阵营；如果你对说书人给予的信息疯狂，你无法获胜。",
-      "image": "https://img.picui.cn/free/2025/04/14/67fc87b645dcd.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "小机灵鬼",
-        "就你多嘴"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

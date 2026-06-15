@@ -2,56 +2,49 @@
   "id": "狐仙",
   "name": "狐仙",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "狐仙",
-      "name": "狐仙",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个角色：你可能会被当作该角色、该角色类型及该角色的阵营，即使你已死亡。爪牙和恶魔会在夜晚一同被唤醒。",
-      "image": "https://i.postimg.cc/sx1nT34x/kitsune-fairy-tale.png",
-      "firstNight": 13,
-      "firstNightReminder": "在你的首个夜晚，你要选择一个角色：你可能会被当作该角色、该角色类型及该角色的阵营，即使你已死亡。爪牙和恶魔会在夜晚一同被唤醒。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [
-        "是狐仙"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狐仙",
-      "name": "狐仙",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个角色：你可能会被当作该角色以及它的阵营，即使你已死亡。存活的爪牙和恶魔会在夜晚一起被唤醒。",
-      "image": "https://i.postimg.cc/SNqSjy3J/kitsune-fairy-tale.png",
-      "firstNight": 18,
-      "firstNightReminder": "唤醒狐仙，让他指向角色列表上的一个角色，将他的角色标记替换为该角色，并放置“是狐仙”提示标记，本局游戏中，他可能被当作该角色以及该角色所属的阵营。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一个角色：你可能会被当作该角色、该角色类型及该角色的阵营，即使你已死亡。爪牙和恶魔会在夜晚一同被唤醒。",
+      "在你的首个夜晚，你要选择一个角色：你可能会被当作该角色以及它的阵营，即使你已死亡。存活的爪牙和恶魔会在夜晚一起被唤醒。"
+    ],
+    "image": [
+      "https://i.postimg.cc/SNqSjy3J/kitsune-fairy-tale.png",
+      "https://i.postimg.cc/sx1nT34x/kitsune-fairy-tale.png"
+    ],
+    "firstNight": [
+      13,
+      18
+    ],
+    "firstNightReminder": [
+      "唤醒狐仙，让他指向角色列表上的一个角色，将他的角色标记替换为该角色，并放置“是狐仙”提示标记，本局游戏中，他可能被当作该角色以及该角色所属的阵营。",
+      "在你的首个夜晚，你要选择一个角色：你可能会被当作该角色、该角色类型及该角色的阵营，即使你已死亡。爪牙和恶魔会在夜晚一同被唤醒。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "是狐狸精"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我是恋人，不是战士。但这并不意味着我不会咬人。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      [
+        "是狐仙"
+      ],
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "我是恋人，不是战士。但这并不意味着我不会咬人。"
+    ]
+  }
 }

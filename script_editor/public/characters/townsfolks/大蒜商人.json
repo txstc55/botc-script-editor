@@ -2,35 +2,42 @@
   "id": "大蒜商人",
   "name": "大蒜商人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "大蒜商人",
-      "name": "大蒜商人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择除你以外的一名玩家：当晚德古拉的负面能力对他无效。如果他被爪牙选中，该爪牙死亡且德古拉中毒直到下个黎明。",
-      "image": "https://i.postimg.cc/26fP9Qqk/Photo3.png",
-      "firstNight": 10,
-      "firstNightReminder": "让大蒜商人指向一名玩家。标记那名玩家“保护”。",
-      "otherNight": 2,
-      "otherNightReminder": "让大蒜商人指向一名玩家。标记那名玩家“保护”。如果有爪牙选中该玩家，标记爪牙“死亡”，并标记德古拉“中毒”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择除你以外的一名玩家：当晚德古拉的负面能力对他无效。如果他被爪牙选中，该爪牙死亡且德古拉中毒直到下个黎明。"
+    ],
+    "image": [
+      "https://i.postimg.cc/26fP9Qqk/Photo3.png"
+    ],
+    "firstNight": [
+      10
+    ],
+    "firstNightReminder": [
+      "让大蒜商人指向一名玩家。标记那名玩家“保护”。"
+    ],
+    "otherNight": [
+      2
+    ],
+    "otherNightReminder": [
+      "让大蒜商人指向一名玩家。标记那名玩家“保护”。如果有爪牙选中该玩家，标记爪牙“死亡”，并标记德古拉“中毒”。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "保护",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

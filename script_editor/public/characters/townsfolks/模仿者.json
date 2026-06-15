@@ -2,57 +2,48 @@
   "id": "模仿者",
   "name": "模仿者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "模仿者",
-      "name": "模仿者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名玩家：如果他是善良玩家，你变为他的角色。如果他是邪恶玩家，你醉酒。",
-      "image": "https://i.postimg.cc/7PNRK5hH/balaclava-1.png",
-      "firstNight": 10,
-      "firstNightReminder": "唤醒模仿者，让他指向一名玩家。如果那名玩家属于善良阵营，向模仿者展示“你是”提示卡，并展示那名玩家的角色标记。将模仿者的角色标记替换为那名玩家的角色标记，并为他放置是模仿者标记。否则：向模仿者展示“你是”提示卡，并展示任意角色标记，并为他放置是醉酒标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一名不在场的鸭子角色，且其他鸭会误认为你也是一只鸭子（鸭子知道模仿者存在，但模仿者不认识其他鸭子）。你在任务中只能选择破坏。",
+      "在你的首个夜晚，你要选择一名玩家：如果他是善良玩家，你变为他的角色。如果他是邪恶玩家，你醉酒。"
+    ],
+    "image": [
+      "https://i.postimg.cc/7PNRK5hH/balaclava-1.png",
+      "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/4_goosegooseduck.png"
+    ],
+    "firstNight": [
+      10,
+      16
+    ],
+    "firstNightReminder": [
+      "唤醒模仿者，让他指向一名玩家。如果那名玩家属于善良阵营，向模仿者展示“你是”提示卡，并展示那名玩家的角色标记。将模仿者的角色标记替换为那名玩家的角色标记，并为他放置是模仿者标记。否则：向模仿者展示“你是”提示卡，并展示任意角色标记，并为他放置是醉酒标记。",
+      "唤醒玩家并告知玩家一名不在场的鸭角色。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "是模仿者",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "模仿者",
-      "name": "模仿者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一名不在场的鸭子角色，且其他鸭会误认为你也是一只鸭子（鸭子知道模仿者存在，但模仿者不认识其他鸭子）。你在任务中只能选择破坏。",
-      "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/4_goosegooseduck.png",
-      "firstNight": 16,
-      "firstNightReminder": "唤醒玩家并告知玩家一名不在场的鸭角色。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

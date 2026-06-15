@@ -2,408 +2,74 @@
   "id": "狸猫",
   "name": "狸猫",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 17,
   "totalOccurrenceCount": 24,
-  "variants": [
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/limao.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 17,
-      "otherNightReminder": "唤醒狸猫，让他选择一名玩家，将“太子”标记放在对应玩家角色标记旁。如果当晚邪恶角色杀死了“太子”，交换狸猫与“太子”的角色，并依次唤醒告知。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
+      "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色，然后你醉酒。",
+      "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2553047760171_ed091519.jpg",
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/limao.png",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/a/a6/Limao.png/100px-Limao.png",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/94/ifnw94hbxlw3mg6s4qingurlyunphkh.png",
+      "https://www.bloodstar.xyz/p/Tiger/Future-King/11_futureking.png",
+      "[\"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/94/ifnw94hbxlw3mg6s4qingurlyunphkh.png\"]"
+    ],
+    "firstNight": [
+      0,
+      74
+    ],
+    "firstNightReminder": [
+      "",
+      "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色，然后你醉酒。"
+    ],
+    "otherNight": [
+      25,
+      17,
+      3,
+      13,
+      14,
+      16,
+      1960,
+      2510,
+      29,
+      4,
+      40,
+      7,
+      70
+    ],
+    "otherNightReminder": [
+      "唤醒狸猫，让他选择一名玩家，将“太子”标记放在对应玩家角色标记旁。如果当晚邪恶角色杀死了“太子”，交换狸猫与“太子”的角色，并依次唤醒告知。",
+      "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡，在魔典中交换狸猫和太子的角色标记。在新的交换后的角色旁放置“醉酒”提示标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
+      "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡且不是恶魔，在魔典中交换狸猫和太子的角色标记。在新的交换后的角色旁放置“醉酒”提示标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
+      "2",
+      "唤醒狸猫，让他选择一名玩家，将“太子”标记放在对应玩家角色标记旁。如果当晚恶魔杀死了“太子”，交换狸猫与“太子”的角色，并依次唤醒告知。在新的交换后的角色（原狸猫现太子）旁放置“醉酒”标记。",
+      "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。如果狸猫选择了善良角色，将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡，杀死他的是邪恶角色，在魔典中交换狸猫和太子的角色标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
+      "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果被狸猫选择的玩家是善良角色，将“太子”提示标记放置到该玩家的角色标记旁。否则不放置“太子”标记。 当被放置着“太子”提示标记的玩家死于邪恶角色能力时，旧的狸猫变为“太子”的角色，“太子”的角色变为狸猫。在魔典中交换狸猫和“太子”的角色标记。唤醒旧的狸猫并依次向他展示“你是”信息标记、旧的“太子”的角色标记。让他重新入睡。唤醒旧的“太子”并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。",
+      "每个夜晚*，唤醒狸猫。狸猫要么摇头表示不使用能力，要么指向除自己和旅行者外的任意一名玩家。之后让狸猫重新入睡。",
+      "每个夜晚，唤醒狸猫。狸猫要指向除自己和旅行者外的任意一名玩家。之后让狸猫重新入睡。"
+    ],
+    "reminders": [
+      [
         "太子"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 4,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://www.bloodstar.xyz/p/Tiger/Future-King/11_futureking.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "2",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色，然后你醉酒。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/limao.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "唤醒狸猫，让他选择一名玩家，将“太子”标记放在对应玩家角色标记旁。如果当晚恶魔杀死了“太子”，交换狸猫与“太子”的角色，并依次唤醒告知。在新的交换后的角色（原狸猫现太子）旁放置“醉酒”标记。",
-      "reminders": [
+      [
         "太子",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色，然后你醉酒。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2553047760171_ed091519.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 25,
-      "otherNightReminder": "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡，在魔典中交换狸猫和太子的角色标记。在新的交换后的角色旁放置“醉酒”提示标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
-      "reminders": [
-        "太子",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色，然后你醉酒。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2553047760171_ed091519.jpg",
-      "firstNight": 74,
-      "firstNightReminder": "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色，然后你醉酒。",
-      "otherNight": 25,
-      "otherNightReminder": "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡，在魔典中交换狸猫和太子的角色标记。在新的交换后的角色旁放置“醉酒”提示标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
-      "reminders": [
-        "太子",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/limao.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "唤醒狸猫，让他选择一名玩家，将“太子”标记放在对应玩家角色标记旁。如果当晚邪恶角色杀死了“太子”，交换狸猫与“太子”的角色，并依次唤醒告知。",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/94/ifnw94hbxlw3mg6s4qingurlyunphkh.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "唤醒狸猫，让他选择一名玩家，将“太子”标记放在对应玩家角色标记旁。如果当晚邪恶角色杀死了“太子”，交换狸猫与“太子”的角色，并依次唤醒告知。",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/limao.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4,
-      "otherNightReminder": "唤醒狸猫，让他选择一名玩家，将“太子”标记放在对应玩家角色标记旁。如果当晚邪恶角色杀死了“太子”，交换狸猫与“太子”的角色，并依次唤醒告知。",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/94/ifnw94hbxlw3mg6s4qingurlyunphkh.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 7,
-      "otherNightReminder": "唤醒狸猫，让他选择一名玩家，将“太子”标记放在对应玩家角色标记旁。如果当晚邪恶角色杀死了“太子”，交换狸猫与“太子”的角色，并依次唤醒告知。",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 10,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色，然后你醉酒。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2553047760171_ed091519.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡且不是恶魔，在魔典中交换狸猫和太子的角色标记。在新的交换后的角色旁放置“醉酒”提示标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
-      "reminders": [
-        "太子",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 11,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "[\"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/94/ifnw94hbxlw3mg6s4qingurlyunphkh.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡且不是恶魔，在魔典中交换狸猫和太子的角色标记。在新的交换后的角色旁放置“醉酒”提示标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "爪子攥着魔法橡果，要换你口袋里的蜜糖，如何？",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 12,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2553047760171_ed091519.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 25,
-      "otherNightReminder": "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡，在魔典中交换狸猫和太子的角色标记。在新的交换后的角色旁放置“醉酒”提示标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
-      "reminders": [
-        "太子",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 13,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/a/a6/Limao.png/100px-Limao.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 29,
-      "otherNightReminder": "每个夜晚*，唤醒狸猫。狸猫要么摇头表示不使用能力，要么指向除自己和旅行者外的任意一名玩家。之后让狸猫重新入睡。",
-      "reminders": [
-        "太子",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 14,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名除你及旅行者以外的玩家：如果恶魔在今晚杀死了他，你和他交换角色，然后你醉酒。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/a/a6/Limao.png/100px-Limao.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 40,
-      "otherNightReminder": "每个夜晚，唤醒狸猫。狸猫要指向除自己和旅行者外的任意一名玩家。之后让狸猫重新入睡。",
-      "reminders": [
-        "太子",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 15,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2553047760171_ed091519.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 70,
-      "otherNightReminder": "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。如果狸猫选择了善良角色，将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡，杀死他的是邪恶角色，在魔典中交换狸猫和太子的角色标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 16,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2553047760171_ed091519.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1960,
-      "otherNightReminder": "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果被狸猫选择的玩家是善良角色，将“太子”提示标记放置到该玩家的角色标记旁。否则不放置“太子”标记。 当被放置着“太子”提示标记的玩家死于邪恶角色能力时，旧的狸猫变为“太子”的角色，“太子”的角色变为狸猫。在魔典中交换狸猫和“太子”的角色标记。唤醒旧的狸猫并依次向他展示“你是”信息标记、旧的“太子”的角色标记。让他重新入睡。唤醒旧的“太子”并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狸猫",
-      "name": "狸猫",
-      "variantIndex": 17,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他是善良角色且当晚被邪恶角色杀死，你和他交换角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2553047760171_ed091519.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 2510,
-      "otherNightReminder": "唤醒狸猫，让他指向一名玩家。让狸猫重新入睡。将“太子”标记放在对应玩家角色标记旁。 如果标记太子的玩家死亡且不是恶魔，在魔典中交换狸猫和太子的角色标记。在新的交换后的角色旁放置“醉酒”提示标记。唤醒新的狸猫并依次向他展示“你是”信息标记、狸猫的角色标记。让狸猫重新入睡。唤醒原来的狸猫并依次向他展示“你是”信息标记，“太子”的角色标记。",
-      "reminders": [
-        "太子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "爪子攥着魔法橡果，要换你口袋里的蜜糖，如何？"
+    ]
+  }
 }

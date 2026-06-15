@@ -2,33 +2,40 @@
   "id": "冰霜法师",
   "name": "冰霜法师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "冰霜法师",
-      "name": "冰霜法师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果你选中了爪牙，他会得知被冰霜法师选中。所有被你选中的爪牙的咒语不会被抽取。",
-      "image": "https://www.bloodstar.xyz/p/twf07wfz/TheWizardsMeetRework/cryostat_thewizardsmeetrework.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 21,
-      "otherNightReminder": "Ask the Cryostat to choose a player. If a minion is chosen, place the \"Frozen\" token on that player, then immediately wake them up to inform them they've been chosen by the Cryostat. If the Cryostat is dead, remove any \"Frozen\" tokens from the grimoire.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：如果你选中了爪牙，他会得知被冰霜法师选中。所有被你选中的爪牙的咒语不会被抽取。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/twf07wfz/TheWizardsMeetRework/cryostat_thewizardsmeetrework.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      21
+    ],
+    "otherNightReminder": [
+      "Ask the Cryostat to choose a player. If a minion is chosen, place the \"Frozen\" token on that player, then immediately wake them up to inform them they've been chosen by the Cryostat. If the Cryostat is dead, remove any \"Frozen\" tokens from the grimoire."
+    ],
+    "reminders": [
+      [
         "冻结"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

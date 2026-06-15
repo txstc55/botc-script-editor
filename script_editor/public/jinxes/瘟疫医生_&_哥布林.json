@@ -6,40 +6,12 @@
     "瘟疫医生",
     "哥布林"
   ],
-  "targetCount": 2,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "瘟疫医生 & 哥布林",
-      "name": "瘟疫医生 & 哥布林",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "如果瘟疫医生死亡且说书人会因此获得哥布林的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",
-      "targets": [
-        "瘟疫医生",
-        "哥布林"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "瘟疫医生",
-        "targetId": "goblinTRANS",
-        "targetName": "哥布林"
-      },
-      "rules": [
-        {
-          "sourceCharacter": "瘟疫医生",
-          "targetId": "goblinTRANS",
-          "targetName": "哥布林"
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果瘟疫医生死亡且说书人会因此获得哥布林的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
+    ]
+  }
 }

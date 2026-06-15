@@ -2,100 +2,57 @@
   "id": "养蜂人",
   "name": "养蜂人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 4,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "养蜂人",
-      "name": "养蜂人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "一名邪恶玩家会被当作善良阵营、镇民或外来者。每局游戏限一次，如果你公开猜测到这名玩家是谁，你的阵营获胜。",
-      "image": "https://s21.ax1x.com/2025/07/01/pVuJxAI.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "一名邪恶玩家会被当作善良阵营、镇民或外来者。每局游戏限一次，如果你公开猜测到这名玩家是谁，你的阵营获胜。",
+      "一名邪恶玩家会被当作善良阵营、镇民或外来者角色。每局游戏限一次，你可以公开猜测那名邪恶玩家是谁。如果你猜对，你的阵营获胜。",
+      "如果你在夜晚死亡，你会得知一个在场的邪恶角色：他醉酒两天两夜。"
+    ],
+    "image": [
+      "https://img.picui.cn/free/2025/04/17/6801106a8dc48.png",
+      "https://s21.ax1x.com/2025/07/01/pVuJxAI.png",
+      "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/beekeeper1_echoes_of_the_past.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      4421,
+      0,
+      19
+    ],
+    "otherNightReminder": [
+      "",
+      "If the Beekeeper died tonight, wake them & tell them an in-play evil character. Then, put the Beekeeper to sleep & mark the player with that character with the Beekeeper's DRUNK(4) reminder token: They are drunk. If an evil player is already drunk, swap their token for the next, unless there isn't another reminder - at this point, they sober up.",
+      "一名邪恶玩家会被当作善良阵营、镇民或外来者。每局游戏限一次，如果你公开猜测到这名玩家是谁，你的阵营获胜。",
+      "一名邪恶玩家会被当作善良阵营、镇民或外来者角色。每局游戏限一次，你可以公开猜测那名邪恶玩家是谁。如果你猜对，你的阵营获胜。"
+    ],
+    "reminders": [
+      [
         "养蜂"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "养蜂人",
-      "name": "养蜂人",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，你会得知一个在场的邪恶角色：他醉酒两天两夜。",
-      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/beekeeper1_echoes_of_the_past.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "If the Beekeeper died tonight, wake them & tell them an in-play evil character. Then, put the Beekeeper to sleep & mark the player with that character with the Beekeeper's DRUNK(4) reminder token: They are drunk. If an evil player is already drunk, swap their token for the next, unless there isn't another reminder - at this point, they sober up.",
-      "reminders": [
+      [
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Attack the queen bee and be stung by her workers.",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "养蜂人",
-      "name": "养蜂人",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "一名邪恶玩家会被当作善良阵营、镇民或外来者。每局游戏限一次，如果你公开猜测到这名玩家是谁，你的阵营获胜。",
-      "image": "https://img.picui.cn/free/2025/04/17/6801106a8dc48.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4421,
-      "otherNightReminder": "一名邪恶玩家会被当作善良阵营、镇民或外来者。每局游戏限一次，如果你公开猜测到这名玩家是谁，你的阵营获胜。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "养蜂人",
-      "name": "养蜂人",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "一名邪恶玩家会被当作善良阵营、镇民或外来者角色。每局游戏限一次，你可以公开猜测那名邪恶玩家是谁。如果你猜对，你的阵营获胜。",
-      "image": "https://img.picui.cn/free/2025/04/17/6801106a8dc48.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4421,
-      "otherNightReminder": "一名邪恶玩家会被当作善良阵营、镇民或外来者角色。每局游戏限一次，你可以公开猜测那名邪恶玩家是谁。如果你猜对，你的阵营获胜。",
-      "reminders": [
+      [
         "错误"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "Attack the queen bee and be stung by her workers."
+    ]
+  }
 }

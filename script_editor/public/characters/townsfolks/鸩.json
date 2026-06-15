@@ -2,473 +2,95 @@
   "id": "鸩",
   "name": "鸩",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 19,
   "totalOccurrenceCount": 43,
-  "variants": [
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zhen.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 60,
-      "otherNightReminder": "唤醒鸩，如果鸩使用能力，让鸩选择一个镇民角色：如果这个镇民角色在场，这个镇民角色先醉酒，再死亡。",
-      "reminders": [
-        "死亡",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 12,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8899,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
+      "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/zhen.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/4/43/Zhen.png/75px-Zhen.png",
+      "[\"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/42/bo77afv4u0133r1oxn0gi0dkgxomgs8.png\"]",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/42/bo77afv4u0133r1oxn0gi0dkgxomgs8.png",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a2/3g8m8281zxv0i07x6mq2wuteyh8fjoz.png",
+      "https://www.bloodstar.xyz/p/Jungle/TricksOfLight/9_tricksoflight.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      60,
+      8899,
+      100,
+      11,
+      12,
+      14,
+      150,
+      17,
+      18,
+      38,
+      39,
+      52,
+      53,
+      8,
+      97
+    ],
+    "otherNightReminder": [
+      "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
+      "唤醒鸩，如果鸩使用能力，让鸩选择一个镇民角色：如果这个镇民角色在场，这个镇民角色先醉酒，再死亡。",
+      "唤醒鸩，如果鸩使用能力，让鸩选择一个镇民角色：如果这个镇民角色在场，这个镇民角色先中毒，再死亡。",
+      "唤醒风水师。风水师要么摇头不使用能力，要么指向两名玩家。对其点头或摇头示意，随后在其角色标记旁放置“失去能力”提示标记。",
+      "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“中毒”提示标记",
+      "唤醒鸩，询问他是否发动技能。若发动，让鸩选择一个镇民角色。如果该玩家在场，他死亡，在他角色标记旁放置“死亡”和“醉酒”提示标记，在鸩角色标记旁放置“失去技能”提示标记",
+      "如果鸩未曾使用能力，唤醒鸩，他可以摇头不使用能力，或选择一个镇民角色。",
+      "鸩可以选择一名镇民角色。如果他这么做了，标记鸩失去能力，然后如果那名镇民在场，标记那名玩家醉酒并死亡。之后的夜晚无需再唤醒鸩。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "死亡",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 9,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zhen.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 60,
-      "otherNightReminder": "唤醒鸩，如果鸩使用能力，让鸩选择一个镇民角色：如果这个镇民角色在场，这个镇民角色先中毒，再死亡。",
-      "reminders": [
+      [
         "中毒",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 6,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。",
-      "image": "[\"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/42/bo77afv4u0133r1oxn0gi0dkgxomgs8.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "如果鸩未曾使用能力，唤醒鸩，他可以摇头不使用能力，或选择一个镇民角色。",
-      "reminders": [
-        "中毒",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zhen.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "唤醒鸩，如果鸩使用能力，让鸩选择一个镇民角色：如果这个镇民角色在场，这个镇民角色先中毒，再死亡。",
-      "reminders": [
-        "中毒",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/42/bo77afv4u0133r1oxn0gi0dkgxomgs8.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12,
-      "otherNightReminder": "唤醒鸩，如果鸩使用能力，让鸩选择一个镇民角色：如果这个镇民角色在场，这个镇民角色先中毒，再死亡。",
-      "reminders": [
-        "中毒",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
-        "失去能力",
+      [
         "死亡",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://www.bloodstar.xyz/p/Jungle/TricksOfLight/9_tricksoflight.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 17,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
-        "失去能力",
-        "死亡",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a2/3g8m8281zxv0i07x6mq2wuteyh8fjoz.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "唤醒鸩，如果鸩使用能力，让鸩选择一个镇民角色：如果这个镇民角色在场，这个镇民角色先中毒，再死亡。",
-      "reminders": [
+      [
         "中毒",
+        "失去能力",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 10,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/43/Zhen.png/75px-Zhen.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 38,
-      "otherNightReminder": "唤醒风水师。风水师要么摇头不使用能力，要么指向两名玩家。对其点头或摇头示意，随后在其角色标记旁放置“失去能力”提示标记。",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 11,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/43/Zhen.png/75px-Zhen.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 39,
-      "otherNightReminder": "唤醒鸩，询问他是否发动技能。若发动，让鸩选择一个镇民角色。如果该玩家在场，他死亡，在他角色标记旁放置“死亡”和“醉酒”提示标记，在鸩角色标记旁放置“失去技能”提示标记",
-      "reminders": [
+      [
         "失去技能",
         "死亡",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 12,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 52,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
-        "中毒",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 13,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/43/Zhen.png/75px-Zhen.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 53,
-      "otherNightReminder": "鸩可以选择一名镇民角色。如果他这么做了，标记鸩失去能力，然后如果那名镇民在场，标记那名玩家醉酒并死亡。之后的夜晚无需再唤醒鸩。",
-      "reminders": [
+      [
         "失去能力",
         "醉酒并死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 14,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 97,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
-        "失去能力",
-        "死亡",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 15,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 100,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
-        "失去能力",
-        "死亡",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 16,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 150,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
-        "失去能力",
-        "死亡",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 17,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8899,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“中毒”提示标记",
-      "reminders": [
-        "中毒",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 18,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他中毒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8899,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
-        "中毒",
-        "失去能力",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "鸩",
-      "name": "鸩",
-      "variantIndex": 19,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个镇民角色：如果他在场，他醉酒并死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1134823943171_5fc42e52.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8899,
-      "otherNightReminder": "唤醒鸩，让其选择一个镇民角色，如果该角色在场，在其角色标记旁放置“死亡”和“醉酒”提示标记",
-      "reminders": [
-        "中毒",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "失去能力"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

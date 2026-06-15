@@ -2,35 +2,42 @@
   "id": "卫护者",
   "name": "卫护者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "卫护者",
-      "name": "卫护者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家：当晚他们不会获得印记。每局游戏限一次，你可以公开宣布净化所有的咬痕，被移除咬痕的玩家会在当晚得知此事。",
-      "image": "https://i.postimg.cc/qM7WFM73/Photo9.png",
-      "firstNight": 9,
-      "firstNightReminder": "让卫护者指向两名玩家，标记他们“保护”。",
-      "otherNight": 1,
-      "otherNightReminder": "依次唤醒今天被移除咬痕的玩家，告知他们的咬痕已被移除。让卫护者指向两名玩家，标记他们“保护”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名玩家：当晚他们不会获得印记。每局游戏限一次，你可以公开宣布净化所有的咬痕，被移除咬痕的玩家会在当晚得知此事。"
+    ],
+    "image": [
+      "https://i.postimg.cc/qM7WFM73/Photo9.png"
+    ],
+    "firstNight": [
+      9
+    ],
+    "firstNightReminder": [
+      "让卫护者指向两名玩家，标记他们“保护”。"
+    ],
+    "otherNight": [
+      1
+    ],
+    "otherNightReminder": [
+      "依次唤醒今天被移除咬痕的玩家，告知他们的咬痕已被移除。让卫护者指向两名玩家，标记他们“保护”。"
+    ],
+    "reminders": [
+      [
         "保护",
         "已宣布",
         "得知净化"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

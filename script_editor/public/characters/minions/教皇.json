@@ -2,35 +2,42 @@
   "id": "教皇",
   "name": "教皇",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "教皇",
-      "name": "教皇",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "①在你的首个夜晚，得知三个具有“假面”的在场角色。②夜晚*，你可以在你得知的角色中猜测其中一个角色对应的玩家并得知结果。如果你猜测正确，该玩家成为一个邪恶的教皇，然后你和他失去所有能力，你死亡。",
-      "image": "https://www.bloodstar.xyz/p/westwind/BBB/22_bbb.png",
-      "firstNight": 11,
-      "firstNightReminder": "告知教皇三个在场的具有假面的角色。",
-      "otherNight": 3,
-      "otherNightReminder": "教皇不使用技能，或指向一名玩家并猜测角色。如果猜测正确，那名玩家成为没有技能的教皇，老教皇死亡",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "①在你的首个夜晚，得知三个具有“假面”的在场角色。②夜晚*，你可以在你得知的角色中猜测其中一个角色对应的玩家并得知结果。如果你猜测正确，该玩家成为一个邪恶的教皇，然后你和他失去所有能力，你死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/westwind/BBB/22_bbb.png"
+    ],
+    "firstNight": [
+      11
+    ],
+    "firstNightReminder": [
+      "告知教皇三个在场的具有假面的角色。"
+    ],
+    "otherNight": [
+      3
+    ],
+    "otherNightReminder": [
+      "教皇不使用技能，或指向一名玩家并猜测角色。如果猜测正确，那名玩家成为没有技能的教皇，老教皇死亡"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "新皇加冕"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

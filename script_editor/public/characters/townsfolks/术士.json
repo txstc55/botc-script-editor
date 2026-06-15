@@ -2,78 +2,54 @@
   "id": "术士",
   "name": "术士",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "术士",
-      "name": "术士",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你被审判，你会在当晚变成一个不在场的镇民角色。",
-      "image": "https://www.helloimg.com/i/2024/11/27/67460a2dbe25b.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "如果术士今天被审判并且存活下来，当晚他变为一个不在场的镇民角色。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "术士",
-      "name": "术士",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的三名玩家：如果其中有且只有一名邪恶玩家，你死亡。",
-      "image": "https://i.postimg.cc/D0LxrNx2/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5,
-      "otherNightReminder": "让术士选择三名玩家：如果其中有且只有一名邪恶玩家，标记术士死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你被审判，你会在当晚变成一个不在场的镇民角色。",
+      "每个夜晚*，你要选择除你以外的三名玩家：如果其中有且只有一名邪恶玩家，你死亡。",
+      "每当善良/邪恶玩家死于处决，你会在当晚获得一条正确/错误信息。如果处决来自于你发起的提名，这条信息将更有价值。"
+    ],
+    "image": [
+      "https://i.postimg.cc/D0LxrNx2/image.png",
+      "https://www.bloodstar.xyz/p/Rickfelix/WOW/19_wow.png",
+      "https://www.helloimg.com/i/2024/11/27/67460a2dbe25b.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      15,
+      3,
+      5
+    ],
+    "otherNightReminder": [
+      "如果术士今天被审判并且存活下来，当晚他变为一个不在场的镇民角色。",
+      "每当善良/邪恶玩家死于处决，你会在当晚获得一条正确/错误信息。如果处决来自于你发起的提名，这条信息将更有价值。",
+      "让术士选择三名玩家：如果其中有且只有一名邪恶玩家，标记术士死亡。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "选择"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "术士",
-      "name": "术士",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每当善良/邪恶玩家死于处决，你会在当晚获得一条正确/错误信息。如果处决来自于你发起的提名，这条信息将更有价值。",
-      "image": "https://www.bloodstar.xyz/p/Rickfelix/WOW/19_wow.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "每当善良/邪恶玩家死于处决，你会在当晚获得一条正确/错误信息。如果处决来自于你发起的提名，这条信息将更有价值。",
-      "reminders": [
+      [
         "献祭"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我知道我不像一个镇民，但相信我，我和恶魔永远不会成为真正的朋友。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "我知道我不像一个镇民，但相信我，我和恶魔永远不会成为真正的朋友。"
+    ]
+  }
 }

@@ -2,401 +2,55 @@
   "id": "送葬者",
   "name": "送葬者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 17,
   "totalOccurrenceCount": 117,
-  "variants": [
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 83,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你会得知今天白天死于处决的玩家的角色。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      83,
+      56,
+      113,
+      11300,
+      13,
+      14,
+      15,
+      12,
+      17,
+      18,
+      75,
+      10,
+      100,
+      16,
+      72,
+      9
+    ],
+    "otherNightReminder": [
+      "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。"
+    ],
+    "reminders": [
+      [
         "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 34,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 56,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 31,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 113,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 21,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11300,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 8,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 3,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 3,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 3,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 17,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 10,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 11,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 75,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 12,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 9,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 13,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 14,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 15,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 16,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 72,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送葬者",
-      "name": "送葬者",
-      "variantIndex": 17,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 100,
-      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。"
+    ]
+  }
 }

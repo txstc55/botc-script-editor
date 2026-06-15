@@ -2,37 +2,44 @@
   "id": "审判庭庭长",
   "name": "审判庭庭长",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "审判庭庭长",
-      "name": "审判庭庭长",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择两名存活玩家：如果明天白天他们被处决，他们不会死亡。被你选择三次的玩家死亡，然后你醉酒到下个黄昏，如果你选择了上一晚选择的邪恶玩家，你醉酒。",
-      "image": "https://i.postimg.cc/hjG4tWBc/image.png",
-      "firstNight": 5700,
-      "firstNightReminder": "让审判庭庭长选择两名玩家，为那些玩家放置“已选择”标记。",
-      "otherNight": 2400,
-      "otherNightReminder": "让审判庭庭长选择两名玩家，其中邪恶玩家则要与上一晚不同，如果其中有人已有“已选择”标记，依次为他们替换成更多次数多“选择”标记，然后期间有人被放置“选择三次”标记，该玩家死亡，审判庭庭长醉酒并停止行动。最后再为那些玩家放置“已选择”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名存活玩家：如果明天白天他们被处决，他们不会死亡。被你选择三次的玩家死亡，然后你醉酒到下个黄昏，如果你选择了上一晚选择的邪恶玩家，你醉酒。"
+    ],
+    "image": [
+      "https://i.postimg.cc/hjG4tWBc/image.png"
+    ],
+    "firstNight": [
+      5700
+    ],
+    "firstNightReminder": [
+      "让审判庭庭长选择两名玩家，为那些玩家放置“已选择”标记。"
+    ],
+    "otherNight": [
+      2400
+    ],
+    "otherNightReminder": [
+      "让审判庭庭长选择两名玩家，其中邪恶玩家则要与上一晚不同，如果其中有人已有“已选择”标记，依次为他们替换成更多次数多“选择”标记，然后期间有人被放置“选择三次”标记，该玩家死亡，审判庭庭长醉酒并停止行动。最后再为那些玩家放置“已选择”标记。"
+    ],
+    "reminders": [
+      [
         "已选择",
         "死亡",
         "选择三次",
         "选择两次",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Duck_Town",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Duck_Town"
+    ]
+  }
 }

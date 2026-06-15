@@ -6,40 +6,12 @@
     "哥布林",
     "戏子"
   ],
-  "targetCount": 2,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "戏子 & 哥布林",
-      "name": "戏子 & 哥布林",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "戏子无法反转由哥布林的能力产生的胜负结果。",
-      "targets": [
-        "哥布林",
-        "戏子"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "戏子",
-        "targetId": "goblinTRANS",
-        "targetName": "哥布林"
-      },
-      "rules": [
-        {
-          "sourceCharacter": "戏子",
-          "targetId": "goblinTRANS",
-          "targetName": "哥布林"
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "戏子无法反转由哥布林的能力产生的胜负结果。"
+    ]
+  }
 }

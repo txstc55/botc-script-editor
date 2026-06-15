@@ -2,33 +2,40 @@
   "id": "公社辩护人",
   "name": "公社辩护人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "公社辩护人",
-      "name": "公社辩护人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名存活的玩家：如果他是善良的，且他在下个白天被处决，他不会死亡。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/publicdefender_beyondgoodandevilv3.png",
-      "firstNight": 37,
-      "firstNightReminder": "让公社辩护人指向一名存活玩家，标记该玩家“处决不死”。如果该玩家在下个白天被处决时是善良的，他不会死亡。",
-      "otherNight": 22,
-      "otherNightReminder": "让公社辩护人指向一名存活玩家，标记该玩家“处决不死”。如果该玩家在下个白天被处决时是善良的，他不会死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名存活的玩家：如果他是善良的，且他在下个白天被处决，他不会死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/publicdefender_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      37
+    ],
+    "firstNightReminder": [
+      "让公社辩护人指向一名存活玩家，标记该玩家“处决不死”。如果该玩家在下个白天被处决时是善良的，他不会死亡。"
+    ],
+    "otherNight": [
+      22
+    ],
+    "otherNightReminder": [
+      "让公社辩护人指向一名存活玩家，标记该玩家“处决不死”。如果该玩家在下个白天被处决时是善良的，他不会死亡。"
+    ],
+    "reminders": [
+      [
         "处决不死"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Your Honor, my client is completely innocent! They didn't... what was the charge again?",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Your Honor, my client is completely innocent! They didn't... what was the charge again?"
+    ]
+  }
 }

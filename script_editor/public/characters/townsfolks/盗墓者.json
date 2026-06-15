@@ -2,34 +2,41 @@
   "id": "盗墓者",
   "name": "盗墓者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "盗墓者",
-      "name": "盗墓者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "你拥有在上个夜晚死亡的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家在夜晚死亡。",
-      "image": "https://i.postimg.cc/ZYx3NZcW/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你拥有在上个夜晚死亡的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家在夜晚死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/ZYx3NZcW/image.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "中毒",
         "获得能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

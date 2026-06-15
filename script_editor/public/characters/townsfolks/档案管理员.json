@@ -2,56 +2,46 @@
   "id": "档案管理员",
   "name": "档案管理员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "档案管理员",
-      "name": "档案管理员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择除你以外的一名玩家：你会得知一名角色类型与他相同的玩家（或得知无）。 会有一名善良玩家被你的能力当作恶魔（干扰项）。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/jtxx/4_jtxx.png",
-      "firstNight": 20,
-      "firstNightReminder": "1",
-      "otherNight": 13,
-      "otherNightReminder": "1",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择除你以外的一名玩家：你会得知一名角色类型与他相同的玩家（或得知无）。 会有一名善良玩家被你的能力当作恶魔（干扰项）。",
+      "每个夜晚，你要选择除你以外的一名玩家：你会得知另一名与他角色类型相同的玩家（或者你会得知无）。会有一名善良玩家被你的能力当做恶魔。"
+    ],
+    "image": [
+      "https://img.picui.cn/free/2025/04/14/67fc854889743.png",
+      "https://www.bloodstar.xyz/p/bluebell/jtxx/4_jtxx.png"
+    ],
+    "firstNight": [
+      20,
+      35
+    ],
+    "firstNightReminder": [
+      "1",
+      "每个夜晚，你要选择除你以外的一名玩家：你会得知另一名与他角色类型相同的玩家（或者你会得知无）。会有一名善良玩家被你的能力当做恶魔。"
+    ],
+    "otherNight": [
+      13,
+      52
+    ],
+    "otherNightReminder": [
+      "1",
+      "每个夜晚，你要选择除你以外的一名玩家：你会得知另一名与他角色类型相同的玩家（或者你会得知无）。会有一名善良玩家被你的能力当做恶魔。"
+    ],
+    "reminders": [
+      [
         "干扰项"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "档案管理员",
-      "name": "档案管理员",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择除你以外的一名玩家：你会得知另一名与他角色类型相同的玩家（或者你会得知无）。会有一名善良玩家被你的能力当做恶魔。",
-      "image": "https://img.picui.cn/free/2025/04/14/67fc854889743.png",
-      "firstNight": 35,
-      "firstNightReminder": "每个夜晚，你要选择除你以外的一名玩家：你会得知另一名与他角色类型相同的玩家（或者你会得知无）。会有一名善良玩家被你的能力当做恶魔。",
-      "otherNight": 52,
-      "otherNightReminder": "每个夜晚，你要选择除你以外的一名玩家：你会得知另一名与他角色类型相同的玩家（或者你会得知无）。会有一名善良玩家被你的能力当做恶魔。",
-      "reminders": [
-        "干扰项"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

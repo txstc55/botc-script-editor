@@ -2,35 +2,42 @@
   "id": "美国队长",
   "name": "美国队长",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "美国队长",
-      "name": "美国队长",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个方向：每个白天，该方向上的下一名存活的镇民玩家不会死于处决。",
-      "image": "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/captainamerica_avengersv2.png",
-      "firstNight": 2,
-      "firstNightReminder": "The Captain America points clockwise or anti-clockwise. Mark the Captain America with that direction.<br><br>Mark the next living Townsfolk in the chosen direction 'Shielded'.",
-      "otherNight": 27,
-      "otherNightReminder": "Mark the next living Townsfolk in the chosen direction 'Shielded'.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一个方向：每个白天，该方向上的下一名存活的镇民玩家不会死于处决。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/captainamerica_avengersv2.png"
+    ],
+    "firstNight": [
+      2
+    ],
+    "firstNightReminder": [
+      "The Captain America points clockwise or anti-clockwise. Mark the Captain America with that direction.<br><br>Mark the next living Townsfolk in the chosen direction 'Shielded'."
+    ],
+    "otherNight": [
+      27
+    ],
+    "otherNightReminder": [
+      "Mark the next living Townsfolk in the chosen direction 'Shielded'."
+    ],
+    "reminders": [
+      [
         "守护",
         "逆时针",
         "顺时针"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "I can do this all day.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "I can do this all day."
+    ]
+  }
 }

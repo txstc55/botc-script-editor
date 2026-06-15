@@ -2,34 +2,41 @@
   "id": "报死鸟",
   "name": "报死鸟",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "报死鸟",
-      "name": "报死鸟",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家，如果当夜有善良玩家选中了他，他死亡。",
-      "image": "https://www.bloodstar.xyz/p/meiosis/clockparadox/12_clockparadox.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 200,
-      "otherNightReminder": "唤醒报死鸟，让他选择一名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家，如果当夜有善良玩家选中了他，他死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/meiosis/clockparadox/12_clockparadox.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      200
+    ],
+    "otherNightReminder": [
+      "唤醒报死鸟，让他选择一名玩家。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

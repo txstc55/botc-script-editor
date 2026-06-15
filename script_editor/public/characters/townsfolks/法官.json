@@ -2,31 +2,38 @@
   "id": "法官",
   "name": "法官",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "法官",
-      "name": "法官",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名非旅行者玩家：你会得知他的角色。如果你选择了一名存活的善良玩家，你会得知错误信息。",
-      "image": "https://i.ibb.co/nPHbXzd/jurist.png",
-      "firstNight": 50,
-      "firstNightReminder": "法官指向一名玩家。若该角色已死亡或邪恶阵营，则展示其角色标记；若该角色存活且属于善良阵营，则展示另一种标记。",
-      "otherNight": 90,
-      "otherNightReminder": "法官指向一名玩家。若该角色已死亡或邪恶阵营，则展示其角色标记；若该角色存活且属于善良阵营，则展示另一种标记。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名非旅行者玩家：你会得知他的角色。如果你选择了一名存活的善良玩家，你会得知错误信息。"
+    ],
+    "image": [
+      "https://i.ibb.co/nPHbXzd/jurist.png"
+    ],
+    "firstNight": [
+      50
+    ],
+    "firstNightReminder": [
+      "法官指向一名玩家。若该角色已死亡或邪恶阵营，则展示其角色标记；若该角色存活且属于善良阵营，则展示另一种标记。"
+    ],
+    "otherNight": [
+      90
+    ],
+    "otherNightReminder": [
+      "法官指向一名玩家。若该角色已死亡或邪恶阵营，则展示其角色标记；若该角色存活且属于善良阵营，则展示另一种标记。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

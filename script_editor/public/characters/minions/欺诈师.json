@@ -2,80 +2,56 @@
   "id": "欺诈师",
   "name": "欺诈师",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "欺诈师",
-      "name": "欺诈师",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他得知自己被选择并且无法在当夜和下个白天以自身能力获取信息，如果他对此疯狂，他可能被处决。",
-      "image": "https://img.picui.cn/free/2025/04/14/67fc84152ea1b.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "每个夜晚*，你要选择一名玩家：他得知自己被选择并且无法在当夜和下个白天以自身能力获取信息，如果他对此疯狂，他可能被处决。",
-      "reminders": [
-        "恐吓"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "欺诈师",
-      "name": "欺诈师",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他以为自己转变为邪恶阵营直到下个黄昏。每局游戏限一次，他会转变为邪恶阵营。",
-      "image": "https://i.postimg.cc/Kv0PfFGW/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "指向一名玩家，标记那名玩家被欺骗。如果说书人选择让那名玩家转变为邪恶阵营，标记那名玩家转变。唤醒被选择的玩家并告知他已经变成邪恶阵营。",
-      "reminders": [
-        "被欺骗",
-        "转变"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "欺诈师",
-      "name": "欺诈师",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "被恶魔杀死的玩家会被当作仍然存活，且会知道欺诈师在场。如果这些玩家发起提名，他的阵营落败。",
-      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/20_bundagee_inn_massacre_bigyellowfish.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "标记被恶魔杀害的玩家“伪装”，不要宣布他们的死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他以为自己转变为邪恶阵营直到下个黄昏。每局游戏限一次，他会转变为邪恶阵营。",
+      "每个夜晚*，你要选择一名玩家：他得知自己被选择并且无法在当夜和下个白天以自身能力获取信息，如果他对此疯狂，他可能被处决。",
+      "被恶魔杀死的玩家会被当作仍然存活，且会知道欺诈师在场。如果这些玩家发起提名，他的阵营落败。"
+    ],
+    "image": [
+      "https://i.postimg.cc/Kv0PfFGW/image.png",
+      "https://img.picui.cn/free/2025/04/14/67fc84152ea1b.png",
+      "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/20_bundagee_inn_massacre_bigyellowfish.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      18,
+      19,
+      8
+    ],
+    "otherNightReminder": [
+      "指向一名玩家，标记那名玩家被欺骗。如果说书人选择让那名玩家转变为邪恶阵营，标记那名玩家转变。唤醒被选择的玩家并告知他已经变成邪恶阵营。",
+      "标记被恶魔杀害的玩家“伪装”，不要宣布他们的死亡。",
+      "每个夜晚*，你要选择一名玩家：他得知自己被选择并且无法在当夜和下个白天以自身能力获取信息，如果他对此疯狂，他可能被处决。"
+    ],
+    "reminders": [
+      [
         "伪装"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "死了？不，他没死。我刚刚收到他的语音邮件。来，让我给你听听……",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "恐吓"
+      ],
+      [
+        "被欺骗",
+        "转变"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "死了？不，他没死。我刚刚收到他的语音邮件。来，让我给你听听……"
+    ]
+  }
 }

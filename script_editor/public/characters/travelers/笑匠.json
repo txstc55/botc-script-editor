@@ -2,103 +2,49 @@
   "id": "笑匠",
   "name": "笑匠",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 4,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "笑匠",
-      "name": "笑匠",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个白天，你要选择一名玩家：一名其他玩家会在当晚改变角色。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/5f/Cacklejack.png/400px-Cacklejack.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "用一个不同的角色标记替换任意一个玩家的角色标记。唤醒那名玩家，依次向他展示“你是”提示标记和新的角色标记，然后让他们重新入睡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你要选择一名玩家：一名其他玩家会在当晚改变角色。",
+      "每个白天，公开选择一名玩家：一名除他以外的玩家在今晚改变角色。"
+    ],
+    "image": [
+      "https://clocktower-wiki.gstonegames.com/images/thumb/5/5f/Cacklejack.png/400px-Cacklejack.png",
+      "https://s2.loli.net/2025/09/07/w4u1n8v9BCqSAKT.png",
+      "https://www.bloodstar.xyz/p/SerraEvelyn/yueyeyueyouji/4_yueyeyueyouji.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      1,
+      5
+    ],
+    "otherNightReminder": [
+      "用一个不同的角色标记替换任意一个玩家的角色标记。唤醒那名玩家，依次向他展示“你是”提示标记和新的角色标记，然后让他们重新入睡。",
+      "如果笑匠在白天选择了一名玩家，在当晚一名除他以外的玩家改变角色。"
+    ],
+    "reminders": [
+      [
         "不是我"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "笑匠",
-      "name": "笑匠",
-      "variantIndex": 2,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个白天，你要选择一名玩家：一名其他玩家会在当晚改变角色。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/5f/Cacklejack.png/400px-Cacklejack.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "用一个不同的角色标记替换任意一个玩家的角色标记。唤醒那名玩家，依次向他展示“你是”提示标记和新的角色标记，然后让他们重新入睡。",
-      "reminders": [
-        "不是我"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "笑匠",
-      "name": "笑匠",
-      "variantIndex": 3,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个白天，公开选择一名玩家：一名除他以外的玩家在今晚改变角色。",
-      "image": "https://s2.loli.net/2025/09/07/w4u1n8v9BCqSAKT.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "如果笑匠在白天选择了一名玩家，在当晚一名除他以外的玩家改变角色。",
-      "reminders": [
+      [
         "改变角色",
         "被选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "笑匠",
-      "name": "笑匠",
-      "variantIndex": 4,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个白天，你要选择一名玩家：一名其他玩家会在当晚改变角色。",
-      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/yueyeyueyouji/4_yueyeyueyouji.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5,
-      "otherNightReminder": "用一个不同的角色标记替换任意一个玩家的角色标记。唤醒那名玩家，依次向他展示“你是”提示标记和新的角色标记，然后让他们重新入睡。",
-      "reminders": [
-        "不是我"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

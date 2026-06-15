@@ -5,35 +5,14 @@
   "targets": [
     "赏金猎人"
   ],
-  "targetCount": 1,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [
+    "interaction_name_without_ampersand"
+  ],
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "*角色死亡",
-      "name": "*角色死亡",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "死亡触发类技能在确认死亡(可以被宣告、挂帷幕的那种)时才会触发。比如赏金猎人。",
-      "targets": [
-        "赏金猎人"
-      ],
-      "targetCount": 1,
-      "occurrenceCount": 2,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": [
-        "interaction_name_without_ampersand"
-      ]
-    }
-  ]
+  "variants": {
+    "ability": [
+      "死亡触发类技能在确认死亡(可以被宣告、挂帷幕的那种)时才会触发。比如赏金猎人。"
+    ]
+  }
 }

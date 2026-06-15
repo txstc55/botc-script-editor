@@ -2,59 +2,50 @@
   "id": "骑士扈从",
   "name": "骑士扈从",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "骑士扈从",
-      "name": "骑士扈从",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，如果白天有玩家死于处决，你会得知他是否为镇民，如果白天有玩家被处决但依然存活，你会得知他的相邻玩家是否皆为镇民。",
-      "image": "https://www.bloodstar.xyz/p/humlet/JUEDOU/5_juedou.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "如果白天有玩家死于处决或有玩家被处决但没有死亡，唤醒骑士扈从，告知他是或否。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，如果白天有玩家死于处决，你会得知他是否为镇民，如果白天有玩家被处决但依然存活，你会得知他的相邻玩家是否皆为镇民。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/humlet/JUEDOU/5_juedou.png",
+      "https://www.bloodstar.xyz//p//Deodar2//double//12_double.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      15,
+      60
+    ],
+    "otherNightReminder": [
+      "如果白天有玩家死于处决或有玩家被处决但没有死亡，唤醒骑士扈从，告知他是或否。",
+      "每个夜晚*，如果白天有玩家死于处决，你会得知他是否为镇民，如果白天有玩家被处决但依然存活，你会得知他的相邻玩家是否皆为镇民。"
+    ],
+    "reminders": [
+      [
         "得知"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "骑士扈从",
-      "name": "骑士扈从",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，如果白天有玩家死于处决，你会得知他是否为镇民，如果白天有玩家被处决但依然存活，你会得知他的相邻玩家是否皆为镇民。",
-      "image": "https://www.bloodstar.xyz//p//Deodar2//double//12_double.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 60,
-      "otherNightReminder": "每个夜晚*，如果白天有玩家死于处决，你会得知他是否为镇民，如果白天有玩家被处决但依然存活，你会得知他的相邻玩家是否皆为镇民。",
-      "reminders": [
+      [
         "死亡为镇民",
         "死亡非镇民"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "骑士扈从"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

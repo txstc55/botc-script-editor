@@ -2,55 +2,49 @@
   "id": "监视者",
   "name": "监视者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "监视者",
-      "name": "监视者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，你可以公开选择至多3名玩家，如果其中超过1名玩家是邪恶的，你转变为恐慌状态。当晚，你会得知你选择的玩家中有多少名玩家是邪恶的。",
-      "image": "https://www.bloodstar.xyz/p/SeaBound/Halloween/overseer_halloween.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 21,
-      "otherNightReminder": "如果监视者在白天选择使用他的能力, 他会得知你选择的玩家中有多少名玩家是邪恶的。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一个除你以外的善良角色：如果这个角色在场，你会得知与他邻近的玩家中是否有邪恶玩家。如果这个角色不在场，你得知的信息由说书人决定。",
+      "每局游戏限一次，你可以公开选择至多3名玩家，如果其中超过1名玩家是邪恶的，你转变为恐慌状态。当晚，你会得知你选择的玩家中有多少名玩家是邪恶的。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/SeaBound/Halloween/overseer_halloween.png",
+      "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/overseer_echoes_of_the_past.png"
+    ],
+    "firstNight": [
+      0,
+      3026
+    ],
+    "firstNightReminder": [
+      "",
+      "Wake the Overseer. They make a choice. Nod your head \"yes\" or shake your head \"no\" depending on the info they receive. Then, put the Overseer to sleep."
+    ],
+    "otherNight": [
+      21,
+      23
+    ],
+    "otherNightReminder": [
+      "Wake the Overseer. They make a choice. Nod your head \"yes\" or shake your head \"no\" depending on the info they receive. Then, put the Overseer to sleep.",
+      "如果监视者在白天选择使用他的能力, 他会得知你选择的玩家中有多少名玩家是邪恶的。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "选择"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "No jumping from the ledge!",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "监视者",
-      "name": "监视者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一个除你以外的善良角色：如果这个角色在场，你会得知与他邻近的玩家中是否有邪恶玩家。如果这个角色不在场，你得知的信息由说书人决定。",
-      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/overseer_echoes_of_the_past.png",
-      "firstNight": 3026,
-      "firstNightReminder": "Wake the Overseer. They make a choice. Nod your head \"yes\" or shake your head \"no\" depending on the info they receive. Then, put the Overseer to sleep.",
-      "otherNight": 23,
-      "otherNightReminder": "Wake the Overseer. They make a choice. Nod your head \"yes\" or shake your head \"no\" depending on the info they receive. Then, put the Overseer to sleep.",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Hmm, the <span style=\"color:#003FB2\">Crossbowman</span> is acting quite strangely tonight...",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Hmm, the <span style=\"color:#003FB2\">Crossbowman</span> is acting quite strangely tonight...",
+      "No jumping from the ledge!"
+    ]
+  }
 }

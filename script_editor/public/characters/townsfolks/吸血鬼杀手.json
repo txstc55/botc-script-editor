@@ -2,34 +2,41 @@
   "id": "吸血鬼杀手",
   "name": "吸血鬼杀手",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "吸血鬼杀手",
-      "name": "吸血鬼杀手",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名玩家：如果他是爪牙，他死亡并失去投票标记；如果他是善良玩家，你中毒。[+1外来者]",
-      "image": "https://i.postimg.cc/KYT65q8p/Photo2.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "吸血鬼杀手要么摇头，要么指向一名玩家。如果那名玩家是爪牙，标记“死亡”，并在黎明时移除他的投票标记；如果那名玩家是善良玩家，标记吸血鬼杀手“中毒”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以选择一名玩家：如果他是爪牙，他死亡并失去投票标记；如果他是善良玩家，你中毒。[+1外来者]"
+    ],
+    "image": [
+      "https://i.postimg.cc/KYT65q8p/Photo2.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      15
+    ],
+    "otherNightReminder": [
+      "吸血鬼杀手要么摇头，要么指向一名玩家。如果那名玩家是爪牙，标记“死亡”，并在黎明时移除他的投票标记；如果那名玩家是善良玩家，标记吸血鬼杀手“中毒”。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

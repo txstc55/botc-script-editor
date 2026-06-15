@@ -2,102 +2,57 @@
   "id": "野蛮人",
   "name": "野蛮人",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 4,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "野蛮人",
-      "name": "野蛮人",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你得知一个不在场的恶魔角色，你可能被当作邪恶的该角色，当你死亡时，恶魔可以在当晚变成该角色。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/16_equinoxflower.png",
-      "firstNight": 16,
-      "firstNightReminder": "告知他一个不在场的恶魔角色。",
-      "otherNight": 66,
-      "otherNightReminder": "如果野蛮人死亡，给他标记狂野之力，随后唤醒恶魔，让他选择是否变成那个不在场的恶魔角色。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你得知一个不在场的恶魔角色，你可能被当作邪恶的该角色，当你死亡时，恶魔可以在当晚变成该角色。",
+      "在你的首个夜晚，你会得知一个不在场的恶魔角色。你可能被当作邪恶的该角色。如果你死亡，当晚恶魔可以选择变成该角色。",
+      "在你的首个夜晚，你得知一个不在场的恶魔角色，你可能被当作该角色，当你死亡时，恶魔可以在当晚变成该角色。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/16_equinoxflower.png",
+      "https://i.postimg.cc/Gt14KcjS/image.png",
+      "https://postimage.me/images/2024/08/01/eaf1217f29757fbd100ad4c7340cca34.png"
+    ],
+    "firstNight": [
+      20,
+      16,
+      3700
+    ],
+    "firstNightReminder": [
+      "告知他一个不在场的恶魔角色。",
+      "唤醒野蛮人，告知他一个不在场的恶魔角色。",
+      "唤醒野蛮人，并展示一个不在场恶魔角色标记。"
+    ],
+    "otherNight": [
+      3,
+      52,
+      66
+    ],
+    "otherNightReminder": [
+      "如果野蛮人死亡，给他标记狂野之力，随后唤醒恶魔，让他选择是否变成那个不在场的恶魔角色。",
+      "在你的首个夜晚，你会得知一个不在场的恶魔角色。你可能被当作邪恶的该角色。如果你死亡，当晚恶魔可以选择变成该角色。"
+    ],
+    "reminders": [
+      [
         "狂野之力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "野蛮人",
-      "name": "野蛮人",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你得知一个不在场的恶魔角色，你可能被当作该角色，当你死亡时，恶魔可以在当晚变成该角色。",
-      "image": "https://postimage.me/images/2024/08/01/eaf1217f29757fbd100ad4c7340cca34.png",
-      "firstNight": 20,
-      "firstNightReminder": "唤醒野蛮人，告知他一个不在场的恶魔角色。",
-      "otherNight": 3,
-      "otherNightReminder": "如果野蛮人死亡，给他标记狂野之力，随后唤醒恶魔，让他选择是否变成那个不在场的恶魔角色。",
-      "reminders": [
-        "狂野之力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "野蛮人",
-      "name": "野蛮人",
-      "variantIndex": 3,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你得知一个不在场的恶魔角色，你可能被当作邪恶的该角色，当你死亡时，恶魔可以在当晚变成该角色。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/16_equinoxflower.png",
-      "firstNight": 20,
-      "firstNightReminder": "告知他一个不在场的恶魔角色。",
-      "otherNight": 3,
-      "otherNightReminder": "如果野蛮人死亡，给他标记狂野之力，随后唤醒恶魔，让他选择是否变成那个不在场的恶魔角色。",
-      "reminders": [
-        "野蛮盛宴"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "野蛮人",
-      "name": "野蛮人",
-      "variantIndex": 4,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个不在场的恶魔角色。你可能被当作邪恶的该角色。如果你死亡，当晚恶魔可以选择变成该角色。",
-      "image": "https://i.postimg.cc/Gt14KcjS/image.png",
-      "firstNight": 3700,
-      "firstNightReminder": "唤醒野蛮人，并展示一个不在场恶魔角色标记。",
-      "otherNight": 52,
-      "otherNightReminder": "在你的首个夜晚，你会得知一个不在场的恶魔角色。你可能被当作邪恶的该角色。如果你死亡，当晚恶魔可以选择变成该角色。",
-      "reminders": [
+      [
         "变化"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "野蛮盛宴"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

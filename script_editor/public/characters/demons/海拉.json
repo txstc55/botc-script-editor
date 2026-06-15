@@ -2,57 +2,49 @@
   "id": "海拉",
   "name": "海拉",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "海拉",
-      "name": "海拉",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你顺时针方向上距离你最近的镇民玩家中毒。每个黄昏，中毒玩家会变成该方向上的下一名镇民玩家。",
-      "image": "https://www.bloodstar.xyz/p/LemonSneeze/Ragnarok-09/hel_ragnarok09.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5,
-      "otherNightReminder": "唤醒并询问海拉选择一名玩家：他死亡",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。在你顺时针方向上距离你最近的镇民玩家中毒。每个黄昏，中毒玩家会变成该方向上的下一名镇民玩家。",
+      "每个夜晚*，你要选择一名玩家：他死亡。被处决的爪牙可能不会死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/LemonSneeze/Ragnarok-09/hel_ragnarok09.png",
+      "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/hela_avengersv2.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      5,
+      17
+    ],
+    "otherNightReminder": [
+      "唤醒并询问海拉选择一名玩家：他死亡",
+      "The Hela points to a player. That player dies."
+    ],
+    "reminders": [
+      [
         "中毒",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "海拉",
-      "name": "海拉",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。被处决的爪牙可能不会死亡。",
-      "image": "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/hela_avengersv2.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 17,
-      "otherNightReminder": "The Hela points to a player. That player dies.",
-      "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "I'm not a queen or a monster. I'm the Goddess of Death.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "I'm not a queen or a monster. I'm the Goddess of Death."
+    ]
+  }
 }

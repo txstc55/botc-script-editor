@@ -2,34 +2,41 @@
   "id": "造谣者（改）",
   "name": "造谣者（改）",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "造谣者（改）",
-      "name": "造谣者（改）",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以公开发表一个声明。如果该声明错误，当晚你死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 69,
-      "otherNightReminder": "如果造谣者今天白天的声明错误，他死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以公开发表一个声明。如果该声明错误，当晚你死亡。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      69
+    ],
+    "otherNightReminder": [
+      "如果造谣者今天白天的声明错误，他死亡。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "造谣正确"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

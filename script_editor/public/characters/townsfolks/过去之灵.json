@@ -2,35 +2,42 @@
   "id": "过去之灵",
   "name": "过去之灵",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "过去之灵",
-      "name": "过去之灵",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择除你以外的一名玩家：他变回他在上个夜晚开始时的角色、状态和阵营。如果斯克鲁奇死亡，你会知道他是谁。",
-      "image": "[\"https://chillclocktower.com/homebrew/merrryclocktower/ghost-past.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 43,
-      "otherNightReminder": "Wake and check if Ghost Past wants to use their ability. If Scrooge is dead, tell them who that is now.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择除你以外的一名玩家：他变回他在上个夜晚开始时的角色、状态和阵营。如果斯克鲁奇死亡，你会知道他是谁。"
+    ],
+    "image": [
+      "[\"https://chillclocktower.com/homebrew/merrryclocktower/ghost-past.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      43
+    ],
+    "otherNightReminder": [
+      "Wake and check if Ghost Past wants to use their ability. If Scrooge is dead, tell them who that is now."
+    ],
+    "reminders": [
+      [
         "失去能力",
         "恢复",
         "斯克鲁奇死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "In the silent echoes of yesteryears, this spectral guide whispers of old joys and sorrows, illuminating forgotten memories in the candle's glow.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "In the silent echoes of yesteryears, this spectral guide whispers of old joys and sorrows, illuminating forgotten memories in the candle's glow."
+    ]
+  }
 }

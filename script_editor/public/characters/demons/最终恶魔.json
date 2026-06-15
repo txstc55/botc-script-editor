@@ -2,36 +2,43 @@
   "id": "最终恶魔",
   "name": "最终恶魔",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "最终恶魔",
-      "name": "最终恶魔",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "游戏结束前所有爪牙加入善良阵营。你与爪牙互相不认识，爪牙把一名狂信者当作恶魔。在游戏的首个夜晚，查看魔典。每个夜晚*，选择任意数量的玩家（至多为存活非旅行者玩家的一半）：他们死亡。如果你选择了至少三名玩家，下一晚你不会被唤醒。[至少存在一名狂信者]",
-      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/2_xiudao111.png",
-      "firstNight": 11,
-      "firstNightReminder": "最终恶魔查看魔典",
-      "otherNight": 9,
-      "otherNightReminder": "最终恶魔指向任意数量玩家，但不能大于存活玩家数量的一半，标记该玩家“死亡”。如果选择了三名或更多，放置“不会唤醒”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "游戏结束前所有爪牙加入善良阵营。你与爪牙互相不认识，爪牙把一名狂信者当作恶魔。在游戏的首个夜晚，查看魔典。每个夜晚*，选择任意数量的玩家（至多为存活非旅行者玩家的一半）：他们死亡。如果你选择了至少三名玩家，下一晚你不会被唤醒。[至少存在一名狂信者]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/westwind/xiudao111/2_xiudao111.png"
+    ],
+    "firstNight": [
+      11
+    ],
+    "firstNightReminder": [
+      "最终恶魔查看魔典"
+    ],
+    "otherNight": [
+      9
+    ],
+    "otherNightReminder": [
+      "最终恶魔指向任意数量玩家，但不能大于存活玩家数量的一半，标记该玩家“死亡”。如果选择了三名或更多，放置“不会唤醒”。"
+    ],
+    "reminders": [
+      [
         "不会唤醒",
         "死亡"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "狂信者"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,178 +2,87 @@
   "id": "保镖",
   "name": "保镖",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 7,
   "totalOccurrenceCount": 8,
-  "variants": [
-    {
-      "id": "保镖",
-      "name": "保镖",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/safeguard_assets_of_lei_gallery.png",
-      "firstNight": 4201,
-      "firstNightReminder": "每局游戏限一次，在夜晚时*，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
-      "otherNight": 1201,
-      "otherNightReminder": "每局游戏限一次，在夜晚时*，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
+      "每个夜晚*，你要选择一名玩家：当晚与他邻座的玩家的负面能力对他无效。",
+      "每个夜晚*，你要选择除你以外的两名玩家（与上个夜晚不同）：如果他们都是善良的，他们当晚不会死亡，如果此时你被恶魔杀死，他们也会死亡。",
+      "每个夜晚，你要选择一名玩家：如果他是鹅，他下个夜晚参与任务不会受到醉酒或中毒的影响；如果他是鸭，他在做任务时会中毒。",
+      "每局游戏限一次，在夜晚时，你可以选择除你以外的一个角色：邪恶玩家的负面能力对他无效。",
+      "每局游戏限一次，在夜晚时，你可以选择除自己以外的一个角色：邪恶玩家的能力对他无效。",
+      "每局游戏限一次，在夜晚时，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/safeguard_assets_of_lei_gallery.png",
+      "https://i.postimg.cc/pLr2tkf4/bodyguard.png",
+      "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/8_bundagee_inn_massacre_bigyellowfish.png",
+      "https://www.bloodstar.xyz/p/fake/TheOne/bodyguard_theone.png",
+      "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/19_goosegooseduck.png"
+    ],
+    "firstNight": [
+      4201,
+      0,
+      1201,
+      20,
+      3500
+    ],
+    "firstNightReminder": [
+      "",
+      "每局游戏限一次，在夜晚时*，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
+      "可以选择除你以外的一个角色",
+      "唤醒玩家并让玩家选择一名玩家。",
+      "每局游戏限一次，在夜晚时，你可以选择除自己以外的一个角色：邪恶玩家的能力对他无效。",
+      "每局游戏限一次，在夜晚时，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。"
+    ],
+    "otherNight": [
+      1201,
+      8,
+      0,
+      4,
+      450
+    ],
+    "otherNightReminder": [
+      "每局游戏限一次，在夜晚时*，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
+      "",
+      "之前放置安全的玩家不再安全。保镖选择一名玩家. 放置 the \"邻座安全\" 标记在那名玩家上.",
+      "保镖指向两名与上个夜晚不同的玩家，标记他们“选择”。如果他们都是善良的,标记他们“保护”。如果保镖在今晚被恶魔杀死，标记他们“死亡”。",
+      "可以选择除你以外的一个角色",
+      "每局游戏限一次，在夜晚时，你可以选择除自己以外的一个角色：邪恶玩家的能力对他无效。",
+      "每局游戏限一次，在夜晚时，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "守护"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "保镖",
-      "name": "保镖",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
+      [
+        "中毒",
+        "保护"
       ],
-      "ability": "每个夜晚*，你要选择一名玩家：当晚与他邻座的玩家的负面能力对他无效。",
-      "image": "https://i.postimg.cc/pLr2tkf4/bodyguard.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "之前放置安全的玩家不再安全。保镖选择一名玩家. 放置 the \"邻座安全\" 标记在那名玩家上.",
-      "reminders": [
-        "邻座安全"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "保镖",
-      "name": "保镖",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的两名玩家（与上个夜晚不同）：如果他们都是善良的，他们当晚不会死亡，如果此时你被恶魔杀死，他们也会死亡。",
-      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/8_bundagee_inn_massacre_bigyellowfish.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "保镖指向两名与上个夜晚不同的玩家，标记他们“选择”。如果他们都是善良的,标记他们“保护”。如果保镖在今晚被恶魔杀死，标记他们“死亡”。",
-      "reminders": [
+      [
         "保护",
         "死亡",
         "选择"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "不好意思，舞厅那边好像有点状况，你们现在得暂时呆在这里。还有，你们是不是喝得有点多了？",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "保镖",
-      "name": "保镖",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：如果他是鹅，他下个夜晚参与任务不会受到醉酒或中毒的影响；如果他是鸭，他在做任务时会中毒。",
-      "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/19_goosegooseduck.png",
-      "firstNight": 20,
-      "firstNightReminder": "唤醒玩家并让玩家选择一名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "中毒",
-        "保护"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "保镖",
-      "name": "保镖",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/safeguard_assets_of_lei_gallery.png",
-      "firstNight": 1201,
-      "firstNightReminder": "每局游戏限一次，在夜晚时，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
-      "otherNight": 450,
-      "otherNightReminder": "每局游戏限一次，在夜晚时，你要选择一个除自己以外的角色：邪恶玩家的负面能力对他无效。",
-      "reminders": [
-        "失去能力",
-        "守护"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "保镖",
-      "name": "保镖",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的一个角色：邪恶玩家的负面能力对他无效。",
-      "image": "https://www.bloodstar.xyz/p/fake/TheOne/bodyguard_theone.png",
-      "firstNight": 3500,
-      "firstNightReminder": "可以选择除你以外的一个角色",
-      "otherNight": 4,
-      "otherNightReminder": "可以选择除你以外的一个角色",
-      "reminders": [
+      [
         "失去能力",
         "护驾"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "保镖",
-      "name": "保镖",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择除自己以外的一个角色：邪恶玩家的能力对他无效。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/safeguard_assets_of_lei_gallery.png",
-      "firstNight": 4201,
-      "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择除自己以外的一个角色：邪恶玩家的能力对他无效。",
-      "otherNight": 1201,
-      "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择除自己以外的一个角色：邪恶玩家的能力对他无效。",
-      "reminders": [
-        "失去能力",
-        "守护"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "邻座安全"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "不好意思，舞厅那边好像有点状况，你们现在得暂时呆在这里。还有，你们是不是喝得有点多了？"
+    ]
+  }
 }

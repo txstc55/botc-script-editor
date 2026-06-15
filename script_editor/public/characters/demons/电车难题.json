@@ -2,26 +2,29 @@
   "id": "电车难题",
   "name": "电车难题",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "电车难题",
-      "name": "电车难题",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你可以选择三名玩家（所有玩家都会得知前两名玩家是谁）：所有善良玩家分别秘密表决他们的生死，然后如果他们存活则第三名玩家死亡。",
-      "image": "https://s21.ax1x.com/2025/02/05/pEe1g2D.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 35,
-      "otherNightReminder": "电车难题选择三名玩家。对所有人宣告前两名玩家。然后依次唤醒所有善良玩家并让他们秘密表决这两名玩家一同存活或死亡，如果存活小于或等于死亡则前两名玩家死亡，如果存活大于死亡则第三名玩家死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以选择三名玩家（所有玩家都会得知前两名玩家是谁）：所有善良玩家分别秘密表决他们的生死，然后如果他们存活则第三名玩家死亡。"
+    ],
+    "image": [
+      "https://s21.ax1x.com/2025/02/05/pEe1g2D.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      35
+    ],
+    "otherNightReminder": [
+      "电车难题选择三名玩家。对所有人宣告前两名玩家。然后依次唤醒所有善良玩家并让他们秘密表决这两名玩家一同存活或死亡，如果存活小于或等于死亡则前两名玩家死亡，如果存活大于死亡则第三名玩家死亡。"
+    ],
+    "reminders": [
+      [
         "1",
         "2",
         "3",
@@ -29,12 +32,16 @@
         "死",
         "死亡",
         "生"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

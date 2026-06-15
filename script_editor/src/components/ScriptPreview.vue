@@ -2,6 +2,12 @@
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import { Eye } from "@lucide/vue";
 import type { ScriptDraft, TeamKey } from "../types";
+import {
+  buildFirstNightOrderItems,
+  buildOtherNightOrderItems,
+  formatNightOrder,
+  type NightOrderBaseItem,
+} from "../utils/nightOrders";
 import { previewTeamOrder } from "../utils/playJson";
 import TextFormatToolbar from "./preview/TextFormatToolbar.vue";
 import {
@@ -95,16 +101,8 @@ const previewSections = computed<PreviewSection[]>(() => {
   return [...roleSections, fabledSection].filter((section) => section.roles.length > 0);
 });
 
-const allSelectedRoles = computed(() =>
-  Object.values(props.script.teams).filter((team) => team.key !== "traveler").flatMap((team) =>
-    team.roles
-      .filter((role) => role.selected)
-      .map((role) => ({ role, team: team.key })),
-  ),
-);
-
-const firstNightOrder = computed(() => nightOrder("firstNight"));
-const otherNightOrder = computed(() => nightOrder("otherNight"));
+const firstNightOrder = computed(() => withNightOrderColors(buildFirstNightOrderItems(props.script)));
+const otherNightOrder = computed(() => withNightOrderColors(buildOtherNightOrderItems(props.script)));
 const hasScriptAuthor = computed(() => props.script.author.trim().length > 0);
 const firstSectionY = computed(() =>
   hasScriptAuthor.value ? FIRST_SECTION_WITH_AUTHOR_Y : FIRST_SECTION_WITHOUT_AUTHOR_Y,
@@ -134,18 +132,11 @@ onBeforeUnmount(() => {
   document.removeEventListener("selectionchange", updateSelectionState);
 });
 
-function nightOrder(field: "firstNight" | "otherNight"): NightOrderItem[] {
-  return allSelectedRoles.value
-    .map(({ role, team }) => ({
-      id: `${field}-${role.id}`,
-      name: role.name,
-      image: role.image,
-      order: role[field] ?? 0,
-      team,
-      color: teamColors[team],
-    }))
-    .filter((item) => item.order > 0)
-    .sort((left, right) => left.order - right.order || left.name.localeCompare(right.name, "zh-Hans-CN"));
+function withNightOrderColors(items: NightOrderBaseItem[]): NightOrderItem[] {
+  return items.map((item) => ({
+    ...item,
+    color: teamColors[item.team],
+  }));
 }
 
 function buildPreviewLayout(): SvgPreviewLayout {
@@ -1208,7 +1199,7 @@ function findRoleById(roleId?: string) {
             :key="item.id"
             :transform="`translate(${NIGHT_ICON_X} ${NIGHT_ICON_START_Y + index * NIGHT_ICON_STEP})`"
           >
-            <title>{{ item.name }}</title>
+            <title>{{ `${item.name} ${formatNightOrder(item.order)}${item.reminder ? `\n${item.reminder}` : ""}` }}</title>
             <image
               v-if="item.image"
               :href="item.image"
@@ -1264,7 +1255,7 @@ function findRoleById(roleId?: string) {
             :key="item.id"
             :transform="`translate(${NIGHT_ICON_X} ${NIGHT_ICON_START_Y + index * NIGHT_ICON_STEP})`"
           >
-            <title>{{ item.name }}</title>
+            <title>{{ `${item.name} ${formatNightOrder(item.order)}${item.reminder ? `\n${item.reminder}` : ""}` }}</title>
             <image
               v-if="item.image"
               :href="item.image"
@@ -1428,3 +1419,170 @@ function findRoleById(roleId?: string) {
     />
   </section>
 </template>
+
+<style scoped>
+.preview-pane {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-color: #d9e2ef;
+  background: transparent;
+}
+
+.pane-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding: 0 16px;
+  border-bottom: 1px solid #d9e2ef;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(16px);
+}
+
+.toolbar-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+  color: #26313f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.preview-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.preview-stats span {
+  min-height: 24px;
+  padding: 3px 8px;
+  border: 1px solid #d9e2ef;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.svg-stage {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+
+.svg-stage.panning {
+  cursor: grabbing;
+}
+
+.svg-canvas-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+.svg-stage svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 22px 38px rgba(15, 23, 42, 0.13));
+}
+
+.script-svg {
+  font-family: "Noto Serif SC", "Songti SC", STSong, serif;
+  letter-spacing: 0;
+  text-rendering: geometricPrecision;
+  user-select: none;
+}
+
+.svg-script-title {
+  fill: #3f2b20;
+  font-weight: 900;
+}
+
+.svg-script-author {
+  fill: #26313f;
+  font-weight: 750;
+}
+
+.svg-section-heading {
+  font-weight: 900;
+}
+
+.svg-role-name {
+  font-weight: 900;
+}
+
+.svg-role-ability {
+  fill: #141a22;
+  font-weight: 650;
+}
+
+.svg-role-ability-object {
+  overflow: visible;
+}
+
+.role-ability-editor {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  color: #141a22;
+  cursor: text;
+  font-family: "Noto Serif SC", "Songti SC", STSong, serif;
+  font-weight: 650;
+  outline: none;
+  user-select: text;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.role-ability-editor:focus {
+  background: rgba(14, 127, 207, 0.06);
+}
+
+.role-ability-editor :deep(strong) {
+  font-weight: 900;
+}
+
+.role-ability-editor :deep(.ability-bracket-highlight) {
+  padding: 0 2px;
+  border-radius: 3px;
+  background: #e5e7eb;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.role-ability-editor :deep(span),
+.role-ability-editor :deep(strong),
+.role-ability-editor :deep(em),
+.role-ability-editor :deep(u) {
+  user-select: text;
+}
+
+.svg-role-fallback {
+  font-weight: 900;
+}
+
+.svg-night-bar {
+  fill: #201713;
+  stroke: rgba(255, 255, 255, 0.16);
+  stroke-width: 1px;
+}
+
+.svg-night-label {
+  fill: #ffffff;
+  font-weight: 900;
+}
+
+.svg-night-fallback {
+  font-weight: 900;
+}
+</style>

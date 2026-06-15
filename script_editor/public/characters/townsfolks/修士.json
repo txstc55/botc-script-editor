@@ -2,57 +2,50 @@
   "id": "修士",
   "name": "修士",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "修士",
-      "name": "修士",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果你们中有人死亡，另一名玩家会在当晚得知他的角色。",
-      "image": "https://i.postimg.cc/L8hK6FYC/image.png",
-      "firstNight": 7400,
-      "firstNightReminder": "让修士指向一名玩家，标记该玩家已选择。",
-      "otherNight": 7300,
-      "otherNightReminder": "如果修士或标记玩家死亡，向他们之中的另一名玩家展示死亡玩家的角色标记。",
-      "reminders": [
-        "已选择",
-        "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "修士",
-      "name": "修士",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：你与他会得知对方的角色。",
-      "image": "https://s2.loli.net/2025/09/07/dEmrtHoxWJa5cTg.png",
-      "firstNight": 14000,
-      "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名玩家：你与他会得知对方的角色。",
-      "otherNight": 19000,
-      "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名玩家：你与他会得知对方的角色。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择除你以外的一名玩家：如果你们中有人死亡，另一名玩家会在当晚得知他的角色。",
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家：你与他会得知对方的角色。"
+    ],
+    "image": [
+      "https://i.postimg.cc/L8hK6FYC/image.png",
+      "https://s2.loli.net/2025/09/07/dEmrtHoxWJa5cTg.png"
+    ],
+    "firstNight": [
+      14000,
+      7400
+    ],
+    "firstNightReminder": [
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家：你与他会得知对方的角色。",
+      "让修士指向一名玩家，标记该玩家已选择。"
+    ],
+    "otherNight": [
+      19000,
+      7300
+    ],
+    "otherNightReminder": [
+      "如果修士或标记玩家死亡，向他们之中的另一名玩家展示死亡玩家的角色标记。",
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家：你与他会得知对方的角色。"
+    ],
+    "reminders": [
+      [
         "失去能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "已选择",
+        "得知"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

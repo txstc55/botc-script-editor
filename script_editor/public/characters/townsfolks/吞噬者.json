@@ -2,35 +2,42 @@
   "id": "吞噬者",
   "name": "吞噬者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "吞噬者",
-      "name": "吞噬者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果你曾选择过他，他死亡。如果邪恶玩家被你首次选中，他会得知你是谁，且他醉酒直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/octovore_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 7,
-      "otherNightReminder": "让吞噬者指向一名玩家。如果该玩家曾经被吞食者选择过，他死亡。否则标记“选择”。如果该玩家是邪恶的，向该玩家展示吞食者标记并指向吞食者，标记该玩家“醉酒”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：如果你曾选择过他，他死亡。如果邪恶玩家被你首次选中，他会得知你是谁，且他醉酒直到下个黄昏。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/octovore_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      7
+    ],
+    "otherNightReminder": [
+      "让吞噬者指向一名玩家。如果该玩家曾经被吞食者选择过，他死亡。否则标记“选择”。如果该玩家是邪恶的，向该玩家展示吞食者标记并指向吞食者，标记该玩家“醉酒”。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "选择",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "A what? A scratch? Oh, I'm sure that it's nothing. Probably an accident. I'm sure it won't be a bother to anyone.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "A what? A scratch? Oh, I'm sure that it's nothing. Probably an accident. I'm sure it won't be a bother to anyone."
+    ]
+  }
 }

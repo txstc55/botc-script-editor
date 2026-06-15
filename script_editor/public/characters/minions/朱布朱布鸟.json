@@ -2,34 +2,41 @@
   "id": "朱布朱布鸟",
   "name": "朱布朱布鸟",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "朱布朱布鸟",
-      "name": "朱布朱布鸟",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，如果你今天白天投票过，你可以选择一名玩家：他今晚不会被唤醒。[+1外来者]",
-      "image": "[\"https://i.postimg.cc/qvw86s4X/4.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 300,
-      "otherNightReminder": "If they voted today, wake them to select a player and place the *DOES NOT WAKE* reminder next to them. :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，如果你今天白天投票过，你可以选择一名玩家：他今晚不会被唤醒。[+1外来者]"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/qvw86s4X/4.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      300
+    ],
+    "otherNightReminder": [
+      "If they voted today, wake them to select a player and place the *DOES NOT WAKE* reminder next to them. :reminder:"
+    ],
+    "reminders": [
+      [
         "不会被唤醒",
         "已投票"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "OFF WITH THEIR HEADS!!! RELEASE THE JUBJUB BIRD! You're right, Stayne, it is far better to be feared than loved.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "OFF WITH THEIR HEADS!!! RELEASE THE JUBJUB BIRD! You're right, Stayne, it is far better to be feared than loved."
+    ]
+  }
 }

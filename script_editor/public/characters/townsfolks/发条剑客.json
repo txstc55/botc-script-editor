@@ -2,58 +2,47 @@
   "id": "发条剑客",
   "name": "发条剑客",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "发条剑客",
-      "name": "发条剑客",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名玩家：他们其中之一与自身邻近的玩家角色类型不同。",
-      "image": "https://www.bloodstar.xyz//p//Deodar2//double//16_double.png",
-      "firstNight": 43,
-      "firstNightReminder": "在你的首个夜晚，你会得知两名玩家：他们其中之一与自身邻近的玩家角色类型不同。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知两名玩家：与他们各自邻近的玩家之中会有玩家与他的角色类型不同。",
+      "在你的首个夜晚，你会得知两名玩家：他们其中之一与自身邻近的玩家角色类型不同。"
+    ],
+    "image": [
+      "https://i.postimg.cc/J7bh8cQw/14.png",
+      "https://www.bloodstar.xyz//p//Deodar2//double//16_double.png"
+    ],
+    "firstNight": [
+      43,
+      46
+    ],
+    "firstNightReminder": [
+      "在你的首个夜晚，你会得知两名玩家：他们其中之一与自身邻近的玩家角色类型不同。",
+      "指向两名玩家，他们其中之一的角色类型与他们各自邻近玩家的角色类型不同。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "得知"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "发条剑客"
       ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "发条剑客",
-      "name": "发条剑客",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名玩家：与他们各自邻近的玩家之中会有玩家与他的角色类型不同。",
-      "image": "https://i.postimg.cc/J7bh8cQw/14.png",
-      "firstNight": 46,
-      "firstNightReminder": "指向两名玩家，他们其中之一的角色类型与他们各自邻近玩家的角色类型不同。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,36 +2,43 @@
   "id": "主播",
   "name": "主播",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "主播",
-      "name": "主播",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一名除旅行者外的玩家：如果他死于处决，你获得一个能力并得知能力是什么。你越为“疯狂”地证明你是主播，这个能力越弱。",
-      "image": "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/13_a_bad_example.png",
-      "firstNight": 15,
-      "firstNightReminder": "唤醒主播，为他指向一名除旅行者外的玩家。",
-      "otherNight": 11,
-      "otherNightReminder": "如果主播的目标玩家被处决，告知主播获得了什么能力并让他发动。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一名除旅行者外的玩家：如果他死于处决，你获得一个能力并得知能力是什么。你越为“疯狂”地证明你是主播，这个能力越弱。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/13_a_bad_example.png"
+    ],
+    "firstNight": [
+      15
+    ],
+    "firstNightReminder": [
+      "唤醒主播，为他指向一名除旅行者外的玩家。"
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "如果主播的目标玩家被处决，告知主播获得了什么能力并让他发动。"
+    ],
+    "reminders": [
+      [
         "完全疯狂",
         "无人知晓",
         "目标",
         "部分知晓"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "谢谢榜一大哥的礼物捏~",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "谢谢榜一大哥的礼物捏~"
+    ]
+  }
 }

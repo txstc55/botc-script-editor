@@ -2,103 +2,66 @@
   "id": "爱丽丝",
   "name": "爱丽丝",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 4,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "爱丽丝",
-      "name": "爱丽丝",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，你可以在白天公开猜测所有存活玩家的角色：如果猜测正确，你的阵营获胜。如果只有三名存活玩家，你失去此能力。",
-      "image": "[\"https://i.postimg.cc/rFLWhnpN/33333-4.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "I—I hardly know, Sir, just at present—at least I know who I was when I got up this morning, but I think I must have been changed several times since then.",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "爱丽丝",
-      "name": "爱丽丝",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活玩家：他当晚不会死亡且保持清醒健康直到下个黄昏。每隔一晚，改为被你选择的玩家醉酒。",
-      "image": "https://i.postimg.cc/prKL4r7t/alice-fairy-tale.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "每个夜晚*，你要选择一名存活玩家：他当晚不会死亡且保持清醒健康直到下个黄昏。每隔一晚，改为被你选择的玩家醉酒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以选择一名角色，若该角色当晚陷入受伤状态，抵消一次受伤状态。你不会和回忆出现在同一局游戏中",
+      "每个夜晚*，你要选择一名存活玩家：他当晚不会死亡且保持清醒健康直到下个黄昏。每隔一晚，改为被你选择的玩家醉酒。",
+      "每个夜晚，你要选择除你以外的两名玩家：在奇数夜晚，他们不会醉酒或中毒直到下个黄昏；在偶数夜晚，他们不会死亡。",
+      "每局游戏限一次，你可以在白天公开猜测所有存活玩家的角色：如果猜测正确，你的阵营获胜。如果只有三名存活玩家，你失去此能力。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/rFLWhnpN/33333-4.png\"]",
+      "https://i.postimg.cc/1RCgcDY0/5-idv.png",
+      "https://i.postimg.cc/R0rjqJQR/alice-fairy-tale.png",
+      "https://i.postimg.cc/prKL4r7t/alice-fairy-tale.png"
+    ],
+    "firstNight": [
+      0,
+      11
+    ],
+    "firstNightReminder": [
+      "",
+      "每个夜晚，你要选择除你以外的两名玩家：在奇数夜晚，他们不会醉酒或中毒直到下个黄昏；在偶数夜晚，他们不会死亡。"
+    ],
+    "otherNight": [
+      0,
+      10,
+      12,
+      2
+    ],
+    "otherNightReminder": [
+      "",
+      "每个夜晚*，你可以选择一名角色，若该角色当晚陷入受伤状态，抵消一次受伤状态。你不会和回忆出现在同一局游戏中",
+      "每个夜晚*，你要选择一名存活玩家：他当晚不会死亡且保持清醒健康直到下个黄昏。每隔一晚，改为被你选择的玩家醉酒。",
+      "每个夜晚，你要选择除你以外的两名玩家：在奇数夜晚，他们不会醉酒或中毒直到下个黄昏；在偶数夜晚，他们不会死亡。"
+    ],
+    "reminders": [
+      [
         "保护",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "吃我的食物，喝我的酒。这正是现在所有人想从我这里得到的。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "爱丽丝",
-      "name": "爱丽丝",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名角色，若该角色当晚陷入受伤状态，抵消一次受伤状态。你不会和回忆出现在同一局游戏中",
-      "image": "https://i.postimg.cc/1RCgcDY0/5-idv.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12,
-      "otherNightReminder": "每个夜晚*，你可以选择一名角色，若该角色当晚陷入受伤状态，抵消一次受伤状态。你不会和回忆出现在同一局游戏中",
-      "reminders": [
-        "抵消受伤"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "爱丽丝",
-      "name": "爱丽丝",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择除你以外的两名玩家：在奇数夜晚，他们不会醉酒或中毒直到下个黄昏；在偶数夜晚，他们不会死亡。",
-      "image": "https://i.postimg.cc/R0rjqJQR/alice-fairy-tale.png",
-      "firstNight": 11,
-      "firstNightReminder": "每个夜晚，你要选择除你以外的两名玩家：在奇数夜晚，他们不会醉酒或中毒直到下个黄昏；在偶数夜晚，他们不会死亡。",
-      "otherNight": 2,
-      "otherNightReminder": "每个夜晚，你要选择除你以外的两名玩家：在奇数夜晚，他们不会醉酒或中毒直到下个黄昏；在偶数夜晚，他们不会死亡。",
-      "reminders": [
+      [
         "保护"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "失去能力"
+      ],
+      [
+        "抵消受伤"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "I—I hardly know, Sir, just at present—at least I know who I was when I got up this morning, but I think I must have been changed several times since then.",
+      "吃我的食物，喝我的酒。这正是现在所有人想从我这里得到的。"
+    ]
+  }
 }

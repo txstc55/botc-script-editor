@@ -2,34 +2,41 @@
   "id": "女巫",
   "name": "女巫",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "女巫",
-      "name": "女巫",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名除你以外的玩家：如果他明天白天提名了除你以外的玩家，当晚你得知他们的阵营是否相同。",
-      "image": "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/witch_b.png\"]",
-      "firstNight": 18000,
-      "firstNightReminder": "1",
-      "otherNight": 14,
-      "otherNightReminder": "1",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名除你以外的玩家：如果他明天白天提名了除你以外的玩家，当晚你得知他们的阵营是否相同。"
+    ],
+    "image": [
+      "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/witch_b.png\"]"
+    ],
+    "firstNight": [
+      18000
+    ],
+    "firstNightReminder": [
+      "1"
+    ],
+    "otherNight": [
+      14
+    ],
+    "otherNightReminder": [
+      "1"
+    ],
+    "reminders": [
+      [
         "被提名",
         "被诅咒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

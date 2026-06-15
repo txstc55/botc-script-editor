@@ -2,35 +2,42 @@
   "id": "退伍军人",
   "name": "退伍军人",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "退伍军人",
-      "name": "退伍军人",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名除你以外的玩家，如果他在白天发起过提名，当晚，会有一名玩家死亡，即使你已死亡。",
-      "image": "[\"https://i.postimg.cc/rpgr0TDJ/image.png\"]",
-      "firstNight": 37,
-      "firstNightReminder": "退伍军人选择一名玩家",
-      "otherNight": 15,
-      "otherNightReminder": "如果退伍军人选择过的玩家在白天发起过提名, 当晚，会有一名玩家死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一名除你以外的玩家，如果他在白天发起过提名，当晚，会有一名玩家死亡，即使你已死亡。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/rpgr0TDJ/image.png\"]"
+    ],
+    "firstNight": [
+      37
+    ],
+    "firstNightReminder": [
+      "退伍军人选择一名玩家"
+    ],
+    "otherNight": [
+      15
+    ],
+    "otherNightReminder": [
+      "如果退伍军人选择过的玩家在白天发起过提名, 当晚，会有一名玩家死亡。"
+    ],
+    "reminders": [
+      [
         "提名",
         "死亡",
         "观察"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "August 12, 1874. Thirteen hundred hours. We were surrounded on both sides by the Spanish and the French. My men had already given up hope. We would have died then and there, were it not for my ingenious plan!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "August 12, 1874. Thirteen hundred hours. We were surrounded on both sides by the Spanish and the French. My men had already given up hope. We would have died then and there, were it not for my ingenious plan!"
+    ]
+  }
 }

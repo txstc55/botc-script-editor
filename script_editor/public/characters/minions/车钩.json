@@ -2,33 +2,40 @@
   "id": "车钩",
   "name": "车钩",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "车钩",
-      "name": "车钩",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：如果他是外来者且恶魔在明天白天被处决，他转变为邪恶阵营并与恶魔交换角色[+1外来者]",
-      "image": "https://i.postimg.cc/Wb0wmLh6/coupler.png",
-      "firstNight": 5,
-      "firstNightReminder": "车钩选择一名玩家. 如果他是外来者, 放置'耦合连结'标记在他身上。",
-      "otherNight": 14,
-      "otherNightReminder": "移除所有'耦合连结'标记. 车钩选择一名玩家. 如果他是外来者, 放置'耦合连结'标记在他身上。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：如果他是外来者且恶魔在明天白天被处决，他转变为邪恶阵营并与恶魔交换角色[+1外来者]"
+    ],
+    "image": [
+      "https://i.postimg.cc/Wb0wmLh6/coupler.png"
+    ],
+    "firstNight": [
+      5
+    ],
+    "firstNightReminder": [
+      "车钩选择一名玩家. 如果他是外来者, 放置'耦合连结'标记在他身上。"
+    ],
+    "otherNight": [
+      14
+    ],
+    "otherNightReminder": [
+      "移除所有'耦合连结'标记. 车钩选择一名玩家. 如果他是外来者, 放置'耦合连结'标记在他身上。"
+    ],
+    "reminders": [
+      [
         "耦合连结"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

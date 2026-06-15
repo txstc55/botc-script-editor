@@ -3,35 +3,16 @@
   "name": "*角色复活",
   "team": "jinx",
   "targets": [],
-  "targetCount": 0,
-  "variantCount": 1,
+  "targetDetectionNotes": [
+    "no_play_character_names_found"
+  ],
+  "issueNotes": [
+    "interaction_name_without_ampersand"
+  ],
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "*角色复活",
-      "name": "*角色复活",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "复活玩家的假面角色与真实角色均视为重新入场，但已经“暴露”的玩家并不重置暴露状态。",
-      "targets": [],
-      "targetCount": 0,
-      "occurrenceCount": 2,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [
-        "no_play_character_names_found"
-      ],
-      "issueNotes": [
-        "interaction_name_without_ampersand"
-      ]
-    }
-  ]
+  "variants": {
+    "ability": [
+      "复活玩家的假面角色与真实角色均视为重新入场，但已经“暴露”的玩家并不重置暴露状态。"
+    ]
+  }
 }

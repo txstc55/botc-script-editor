@@ -2,33 +2,40 @@
   "id": "白兔先生",
   "name": "白兔先生",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "白兔先生",
-      "name": "白兔先生",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择跳过当晚剩余的夜晚行动。（当晚之后的行动不会被唤醒/进行，直接进入白天）",
-      "image": "[\"https://i.postimg.cc/kXcVT7z7/33333-12.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 400,
-      "otherNightReminder": "Ask if they want to use their ability, if the ability is used place the *NO ABILIY* reminder next to them, skip the rest of the night phase. :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时，你可以选择跳过当晚剩余的夜晚行动。（当晚之后的行动不会被唤醒/进行，直接进入白天）"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/kXcVT7z7/33333-12.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      400
+    ],
+    "otherNightReminder": [
+      "Ask if they want to use their ability, if the ability is used place the *NO ABILIY* reminder next to them, skip the rest of the night phase. :reminder:"
+    ],
+    "reminders": [
+      [
         "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "I'm late, I'm late, for a very important date! No time to say “Hello, Good Bye” I'm late, I'm late, I'm late!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "I'm late, I'm late, for a very important date! No time to say “Hello, Good Bye” I'm late, I'm late, I'm late!"
+    ]
+  }
 }

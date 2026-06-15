@@ -2,36 +2,43 @@
   "id": "巴松手",
   "name": "巴松手",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "巴松手",
-      "name": "巴松手",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限两次，在夜晚时，你可以选择一名玩家和一项能力：1）他不能行动；2）他额外行动一次。直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/LumiousGaming/OrchestralSuite/bassoonist_orchestralsuite.png",
-      "firstNight": 20,
-      "firstNightReminder": "Text",
-      "otherNight": 4,
-      "otherNightReminder": "Text",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限两次，在夜晚时，你可以选择一名玩家和一项能力：1）他不能行动；2）他额外行动一次。直到下个黄昏。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/LumiousGaming/OrchestralSuite/bassoonist_orchestralsuite.png"
+    ],
+    "firstNight": [
+      20
+    ],
+    "firstNightReminder": [
+      "Text"
+    ],
+    "otherNight": [
+      4
+    ],
+    "otherNightReminder": [
+      "Text"
+    ],
+    "reminders": [
+      [
         "不能行动",
         "使用一次",
         "失去能力",
         "额外行动一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

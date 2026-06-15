@@ -2,35 +2,42 @@
   "id": "浮游生物",
   "name": "浮游生物",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "浮游生物",
-      "name": "浮游生物",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你得知所有玩家的腐蚀并要选择一名玩家：他腐蚀+2，上个因你的能力选择的玩家腐蚀-1。",
-      "image": "https://www.bloodstar.xyz/p/Yez/nature/12_nature.png",
-      "firstNight": 21,
-      "firstNightReminder": "唤醒浮游生物，用手指依次对他展示所有玩家的腐蚀（0、1、2、3...）并让他指向一名玩家，在该玩家的角色标记旁放置“+2”和“生长”提示标记。",
-      "otherNight": 17,
-      "otherNightReminder": "将场上的“生长”标记替换成“-1”提示标记，唤醒浮游生物，用手指依次对他展示所有玩家的腐蚀（0、1、2、3...）并让他指向一名玩家，在该玩家的角色标记旁放置“+2”和“生长”提示标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你得知所有玩家的腐蚀并要选择一名玩家：他腐蚀+2，上个因你的能力选择的玩家腐蚀-1。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Yez/nature/12_nature.png"
+    ],
+    "firstNight": [
+      21
+    ],
+    "firstNightReminder": [
+      "唤醒浮游生物，用手指依次对他展示所有玩家的腐蚀（0、1、2、3...）并让他指向一名玩家，在该玩家的角色标记旁放置“+2”和“生长”提示标记。"
+    ],
+    "otherNight": [
+      17
+    ],
+    "otherNightReminder": [
+      "将场上的“生长”标记替换成“-1”提示标记，唤醒浮游生物，用手指依次对他展示所有玩家的腐蚀（0、1、2、3...）并让他指向一名玩家，在该玩家的角色标记旁放置“+2”和“生长”提示标记。"
+    ],
+    "reminders": [
+      [
         "+2",
         "-1",
         "生长"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

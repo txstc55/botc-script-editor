@@ -2,56 +2,46 @@
   "id": "吹笛者",
   "name": "吹笛者",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "吹笛者",
-      "name": "吹笛者",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "每个夜晚*，你要选择两名玩家：他们会听到笛声。 如果除你以外存活的玩家都听到了笛声，你独自获胜。",
-      "image": "https://free.picui.cn/free/2025/12/10/6939094d0f480.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "每个夜晚，你要选择两名玩家：他们会听到笛声。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择两名玩家：他们会听到笛声。 如果除你以外存活的玩家都听到了笛声，你独自获胜。",
+      "每个夜晚*，你要选择两名玩家：他们会听到笛声。如果除你以外存活的玩家都听到了笛声，你独自获胜。"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/12/10/6939094d0f480.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      11,
+      120
+    ],
+    "otherNightReminder": [
+      "唤醒吹笛者，让他指向两名玩家，随后分别唤醒者两名玩家，告诉他们听到了笛声。",
+      "每个夜晚，你要选择两名玩家：他们会听到笛声。"
+    ],
+    "reminders": [
+      [
         "听笛"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "吹笛者",
-      "name": "吹笛者",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "每个夜晚*，你要选择两名玩家：他们会听到笛声。如果除你以外存活的玩家都听到了笛声，你独自获胜。",
-      "image": "https://free.picui.cn/free/2025/12/10/6939094d0f480.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 120,
-      "otherNightReminder": "唤醒吹笛者，让他指向两名玩家，随后分别唤醒者两名玩家，告诉他们听到了笛声。",
-      "reminders": [
+      [
         "笛声"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

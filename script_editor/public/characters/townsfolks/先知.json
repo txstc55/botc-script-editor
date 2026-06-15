@@ -2,127 +2,72 @@
   "id": "先知",
   "name": "先知",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 5,
   "totalOccurrenceCount": 6,
-  "variants": [
-    {
-      "id": "先知",
-      "name": "先知",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下询问说书人以得知一条信息：你得知的信息都是正确的或都是错误的。",
-      "image": "https://i.postimg.cc/9FWfD2rg/diviner-shadowed-intentions.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以私下询问说书人以得知一条信息：你得知的信息都是正确的或都是错误的。",
+      "在你的首个夜晚，你要选择一个天数：如果在那一天死亡的玩家都是善良的，他们变成旅行者并复活。",
+      "在你的首个夜晚，你要选择一个天数：如果那一天所有死亡玩家均为善良，你死亡随后他们以旅行者的形式重新入场。",
+      "每个夜晚*，你要选择一名玩家：你会得知他的角色。如果命运指针正指向你或邪恶玩家时，你醉酒直到命运指针再次移动。",
+      "每局游戏限一次，你可以在第x个白天拜访说书人回答x个问题，随后你得知你答对了几题。"
+    ],
+    "image": [
+      "https://i.postimg.cc/9FWfD2rg/diviner-shadowed-intentions.png",
+      "https://img.picui.cn/free/2025/04/17/68010a2baeec3.png",
+      "https://i.postimg.cc/QM7VD6bJ/先知.png",
+      "https://www.bloodstar.xyz/p/jc3635/TwinCity/18_twincity.png"
+    ],
+    "firstNight": [
+      0,
+      11,
+      6701
+    ],
+    "firstNightReminder": [
+      "",
+      "在你的首个夜晚，你要选择一个天数：如果在那一天死亡的玩家都是善良的，他们变成旅行者并复活。",
+      "在你的首个夜晚，你要选择一个天数：如果那一天所有死亡玩家均为善良，你死亡随后他们以旅行者的形式重新入场。"
+    ],
+    "otherNight": [
+      0,
+      14911,
+      20,
+      85
+    ],
+    "otherNightReminder": [
+      "",
+      "在你的首个夜晚，你要选择一个天数：如果在那一天死亡的玩家都是善良的，他们变成旅行者并复活。",
+      "在你的首个夜晚，你要选择一个天数：如果那一天所有死亡玩家均为善良，你死亡随后他们以旅行者的形式重新入场。",
+      "如果命运指针正指向先知或邪恶玩家，他醉酒。唤醒先知，让他指向一名玩家。向先知展示该玩家的角色标记。如果先知正处于醉酒状态，则展示任意一个角色标记。"
+    ],
+    "reminders": [
+      [
         "正确信息",
         "错误信息"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我当然是对的！每次解读结果都和上一次同样准确。",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "先知",
-      "name": "先知",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，你可以在第x个白天拜访说书人回答x个问题，随后你得知你答对了几题。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/TwinCity/18_twincity.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "先知",
-      "name": "先知",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：你会得知他的角色。如果命运指针正指向你或邪恶玩家时，你醉酒直到命运指针再次移动。",
-      "image": "https://i.postimg.cc/QM7VD6bJ/先知.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 20,
-      "otherNightReminder": "如果命运指针正指向先知或邪恶玩家，他醉酒。唤醒先知，让他指向一名玩家。向先知展示该玩家的角色标记。如果先知正处于醉酒状态，则展示任意一个角色标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "先知",
-      "name": "先知",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个天数：如果那一天所有死亡玩家均为善良，你死亡随后他们以旅行者的形式重新入场。",
-      "image": "https://img.picui.cn/free/2025/04/17/68010a2baeec3.png",
-      "firstNight": 11,
-      "firstNightReminder": "在你的首个夜晚，你要选择一个天数：如果那一天所有死亡玩家均为善良，你死亡随后他们以旅行者的形式重新入场。",
-      "otherNight": 85,
-      "otherNightReminder": "在你的首个夜晚，你要选择一个天数：如果那一天所有死亡玩家均为善良，你死亡随后他们以旅行者的形式重新入场。",
-      "reminders": [
-        "预见"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "先知",
-      "name": "先知",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个天数：如果在那一天死亡的玩家都是善良的，他们变成旅行者并复活。",
-      "image": "https://img.picui.cn/free/2025/04/17/68010a2baeec3.png",
-      "firstNight": 6701,
-      "firstNightReminder": "在你的首个夜晚，你要选择一个天数：如果在那一天死亡的玩家都是善良的，他们变成旅行者并复活。",
-      "otherNight": 14911,
-      "otherNightReminder": "在你的首个夜晚，你要选择一个天数：如果在那一天死亡的玩家都是善良的，他们变成旅行者并复活。",
-      "reminders": [
+      [
         "复活",
         "预见"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "失去能力"
+      ],
+      [
+        "醉酒"
+      ],
+      [
+        "预见"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "我当然是对的！每次解读结果都和上一次同样准确。"
+    ]
+  }
 }

@@ -2,26 +2,29 @@
   "id": "猎鹰者",
   "name": "猎鹰者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "猎鹰者",
-      "name": "猎鹰者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个角色：1~4天后，你会得知他是谁（或者你会得知他不在场），然后你重获能力。",
-      "image": "https://www.helloimg.com/i/2025/01/11/67823017401c4.png",
-      "firstNight": 24,
-      "firstNightReminder": "唤醒猎鹰者，让他选个角色。然后决定几天后给他信息。",
-      "otherNight": 44,
-      "otherNightReminder": "在对应的夜晚，唤醒猎鹰者，告诉他这个角色是谁或不在场。然后让他重新选个角色，然后决定几天后给他信息。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一个角色：1~4天后，你会得知他是谁（或者你会得知他不在场），然后你重获能力。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2025/01/11/67823017401c4.png"
+    ],
+    "firstNight": [
+      24
+    ],
+    "firstNightReminder": [
+      "唤醒猎鹰者，让他选个角色。然后决定几天后给他信息。"
+    ],
+    "otherNight": [
+      44
+    ],
+    "otherNightReminder": [
+      "在对应的夜晚，唤醒猎鹰者，告诉他这个角色是谁或不在场。然后让他重新选个角色，然后决定几天后给他信息。"
+    ],
+    "reminders": [
+      [
         "1天后",
         "2天后",
         "3天后",
@@ -29,12 +32,16 @@
         "不在场",
         "得知",
         "重获能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

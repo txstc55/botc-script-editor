@@ -2,56 +2,41 @@
   "id": "镜像双子（改）",
   "name": "镜像双子（改）",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "镜像双子（改）",
-      "name": "镜像双子（改）",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你始终得知一名距离你最近或最远的对立阵营玩家，他得知镜像双子在场。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。在游戏的第五个黄昏，邪恶阵营获胜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
-      "firstNight": 23,
-      "firstNightReminder": "唤醒镜像双子，告知他对立双子的玩家是谁；唤醒对立双子，告知他镜像双子在场。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你始终得知一名距离你最近或最远的对立阵营玩家，他得知镜像双子在场。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。在游戏的第五个黄昏，邪恶阵营获胜。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png"
+    ],
+    "firstNight": [
+      23,
+      3500
+    ],
+    "firstNightReminder": [
+      "唤醒镜像双子，告知他对立双子的玩家是谁；唤醒对立双子，告知他镜像双子在场。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "对立双子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "镜像双子（改）",
-      "name": "镜像双子（改）",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你始终得知一名距离你最近或最远的对立阵营玩家，他得知镜像双子在场。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。在游戏的第五个黄昏，邪恶阵营获胜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
-      "firstNight": 3500,
-      "firstNightReminder": "唤醒镜像双子，告知他对立双子的玩家是谁；唤醒对立双子，告知他镜像双子在场。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "对立双子"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

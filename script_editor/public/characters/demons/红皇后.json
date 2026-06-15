@@ -2,34 +2,41 @@
   "id": "红皇后",
   "name": "红皇后",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "红皇后",
-      "name": "红皇后",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你今天白天被提名，今晚你可以行动两次。",
-      "image": "[\"https://i.postimg.cc/cJKr1wHJ/33333-15.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 900,
-      "otherNightReminder": "The Queen of Hearts chooses a player to die. :reminder: :reminder: :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。如果你今天白天被提名，今晚你可以行动两次。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/cJKr1wHJ/33333-15.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      900
+    ],
+    "otherNightReminder": [
+      "The Queen of Hearts chooses a player to die. :reminder: :reminder: :reminder:"
+    ],
+    "reminders": [
+      [
         "死亡",
         "被提名"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Off with their heads!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Off with their heads!"
+    ]
+  }
 }

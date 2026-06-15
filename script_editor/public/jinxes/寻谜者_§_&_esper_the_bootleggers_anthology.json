@@ -6,42 +6,14 @@
     "寻谜者 §",
     "esper_the_bootleggers_anthology"
   ],
-  "targetCount": 2,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [
+    "nested_jinx_target_id_unresolved"
+  ],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "寻谜者 § & esper_the_bootleggers_anthology",
-      "name": "寻谜者 § & esper_the_bootleggers_anthology",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "Only 1 jinxed character can be in play.",
-      "targets": [
-        "寻谜者 §",
-        "esper_the_bootleggers_anthology"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "寻谜者 §",
-        "targetId": "esper_the_bootleggers_anthology",
-        "targetName": ""
-      },
-      "rules": [
-        {
-          "sourceCharacter": "寻谜者 §",
-          "targetId": "esper_the_bootleggers_anthology",
-          "targetName": ""
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": [
-        "nested_jinx_target_id_unresolved"
-      ]
-    }
-  ]
+  "variants": {
+    "ability": [
+      "Only 1 jinxed character can be in play."
+    ]
+  }
 }

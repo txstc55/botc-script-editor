@@ -2,36 +2,43 @@
   "id": "邪教教主",
   "name": "邪教教主",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "邪教教主",
-      "name": "邪教教主",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你会得知所有外来者玩家，如果有外来者死亡，当晚你会被唤醒并选择一名玩家，他在下个白天不会死于处决。在所有外来者均已死亡的下个夜晚，你可以选择让所有在当晚因为邪恶角色能力死亡的镇民改为中毒，并在下个夜晚解毒并死亡，当晚你可以选择一名玩家，他死亡。【+1/-1外来者】",
-      "image": "https://www.bloodstar.xyz/p/C2H43g/DarkAge/18_darkage.png",
-      "firstNight": 11,
-      "firstNightReminder": "看外来",
-      "otherNight": 11,
-      "otherNightReminder": "选择一名玩家",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知所有外来者玩家，如果有外来者死亡，当晚你会被唤醒并选择一名玩家，他在下个白天不会死于处决。在所有外来者均已死亡的下个夜晚，你可以选择让所有在当晚因为邪恶角色能力死亡的镇民改为中毒，并在下个夜晚解毒并死亡，当晚你可以选择一名玩家，他死亡。【+1/-1外来者】"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/C2H43g/DarkAge/18_darkage.png"
+    ],
+    "firstNight": [
+      11
+    ],
+    "firstNightReminder": [
+      "看外来"
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "选择一名玩家"
+    ],
+    "reminders": [
+      [
         "中毒",
         "处决不死",
         "外来死绝",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,35 +2,42 @@
   "id": "强盗",
   "name": "强盗",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "强盗",
-      "name": "强盗",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：如果他是善良的，你变成他的角色且他醉酒。否则你醉酒。",
-      "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/5_yz_cn_ggg.png",
-      "firstNight": 14,
-      "firstNightReminder": "唤醒强盗。如果他摇头，让他入睡。如果他选择一名玩家，并且那名玩家是善良的，他变为那名玩家的角色，标记“是强盗”，标记那名玩家“醉酒”。否则，强盗醉酒。",
-      "otherNight": 5,
-      "otherNightReminder": "唤醒强盗。如果他摇头，让他入睡。如果他选择一名玩家，并且那名玩家是善良的，他变为那名玩家的角色，标记“是强盗”，标记那名玩家“醉酒”。否则，强盗醉酒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家：如果他是善良的，你变成他的角色且他醉酒。否则你醉酒。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/5_yz_cn_ggg.png"
+    ],
+    "firstNight": [
+      14
+    ],
+    "firstNightReminder": [
+      "唤醒强盗。如果他摇头，让他入睡。如果他选择一名玩家，并且那名玩家是善良的，他变为那名玩家的角色，标记“是强盗”，标记那名玩家“醉酒”。否则，强盗醉酒。"
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "唤醒强盗。如果他摇头，让他入睡。如果他选择一名玩家，并且那名玩家是善良的，他变为那名玩家的角色，标记“是强盗”，标记那名玩家“醉酒”。否则，强盗醉酒。"
+    ],
+    "reminders": [
+      [
         "醉酒"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "是强盗"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

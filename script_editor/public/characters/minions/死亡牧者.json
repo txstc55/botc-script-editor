@@ -2,34 +2,41 @@
   "id": "死亡牧者",
   "name": "死亡牧者",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "死亡牧者",
-      "name": "死亡牧者",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你可能被当作恶魔角色，如果你首次死于处决，你存活但被当作死亡，且获得能力：如果恶魔死亡，你与该恶魔交换角色（不刷新能力），一名存活善良玩家得知“献祭完成”。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/TwinCity/26_twincity.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 6,
-      "otherNightReminder": "如果有“死于处决标记”，让死亡牧者选择一名玩家，如果他是存活的给他标记“重获能力”，否则给他标记并展示“献祭开始”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你可能被当作恶魔角色，如果你首次死于处决，你存活但被当作死亡，且获得能力：如果恶魔死亡，你与该恶魔交换角色（不刷新能力），一名存活善良玩家得知“献祭完成”。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/TwinCity/26_twincity.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      6
+    ],
+    "otherNightReminder": [
+      "如果有“死于处决标记”，让死亡牧者选择一名玩家，如果他是存活的给他标记“重获能力”，否则给他标记并展示“献祭开始”标记。"
+    ],
+    "reminders": [
+      [
         "死于处决",
         "献祭完成"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

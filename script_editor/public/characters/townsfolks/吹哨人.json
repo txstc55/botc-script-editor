@@ -2,31 +2,38 @@
   "id": "吹哨人",
   "name": "吹哨人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "吹哨人",
-      "name": "吹哨人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择除你以外的三名玩家：你会得知你选中了哪些邪恶角色(或者你会得知没有)。",
-      "image": "https://i.postimg.cc/kGMdgnfx/whistleblower-shadowed-intentions.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12,
-      "otherNightReminder": "If the Whistleblower died tonight, they choose 3 players. Show them the character tokens of any evil characters they chose in any order, or show a 0.",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "民众必须知晓真相。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在夜晚死亡，你会被唤醒，然后你要选择除你以外的三名玩家：你会得知你选中了哪些邪恶角色(或者你会得知没有)。"
+    ],
+    "image": [
+      "https://i.postimg.cc/kGMdgnfx/whistleblower-shadowed-intentions.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      12
+    ],
+    "otherNightReminder": [
+      "If the Whistleblower died tonight, they choose 3 players. Show them the character tokens of any evil characters they chose in any order, or show a 0."
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "民众必须知晓真相。"
+    ]
+  }
 }

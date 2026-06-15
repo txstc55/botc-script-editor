@@ -2,34 +2,41 @@
   "id": "圣诞怪杰",
   "name": "圣诞怪杰",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "圣诞怪杰",
-      "name": "圣诞怪杰",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家:由你决定他们之中的哪一个会在下个夜晚死亡。他们会被当作邪恶阵营或圣诞怪杰，使用其自身能力选择了他们的玩家会改为选中你，直到下个黎明。你在夜晚不会死亡、中毒或醉酒。",
-      "image": "[\"https://chillclocktower.com/homebrew/merrryclocktower/grinch.png\"]",
-      "firstNight": 31,
-      "firstNightReminder": "Choose a player",
-      "otherNight": 31,
-      "otherNightReminder": "Kill the chosen player from the previous night. Choose a new player",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名玩家:由你决定他们之中的哪一个会在下个夜晚死亡。他们会被当作邪恶阵营或圣诞怪杰，使用其自身能力选择了他们的玩家会改为选中你，直到下个黎明。你在夜晚不会死亡、中毒或醉酒。"
+    ],
+    "image": [
+      "[\"https://chillclocktower.com/homebrew/merrryclocktower/grinch.png\"]"
+    ],
+    "firstNight": [
+      31
+    ],
+    "firstNightReminder": [
+      "Choose a player"
+    ],
+    "otherNight": [
+      31
+    ],
+    "otherNightReminder": [
+      "Kill the chosen player from the previous night. Choose a new player"
+    ],
+    "reminders": [
+      [
         "咬牙切齿",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Saving you, is that what you think I was doing? Wrong-o. I merely noticed that youre improperly packaged, my dear.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Saving you, is that what you think I was doing? Wrong-o. I merely noticed that youre improperly packaged, my dear."
+    ]
+  }
 }

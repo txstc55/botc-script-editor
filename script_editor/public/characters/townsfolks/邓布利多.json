@@ -2,35 +2,42 @@
   "id": "邓布利多",
   "name": "邓布利多",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "邓布利多",
-      "name": "邓布利多",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，你要选择一名玩家：他会得知你是邓布利多，如果他是邪恶的，他在下个白天和夜晚醉酒。",
-      "image": "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/dumbledore_hp2_2.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "Wake if killed and ask to pick a player",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在夜晚死亡，你要选择一名玩家：他会得知你是邓布利多，如果他是邪恶的，他在下个白天和夜晚醉酒。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/dumbledore_hp2_2.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      18
+    ],
+    "otherNightReminder": [
+      "Wake if killed and ask to pick a player"
+    ],
+    "reminders": [
+      [
         "死于夜晚"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "醉酒"
-      ],
-      "setup": 0,
-      "flavor": "Curiosity is not a sin. But we should exercise caution with our curiosity... yes, indeed.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Curiosity is not a sin. But we should exercise caution with our curiosity... yes, indeed."
+    ]
+  }
 }

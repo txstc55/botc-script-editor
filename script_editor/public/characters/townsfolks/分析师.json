@@ -2,54 +2,47 @@
   "id": "分析师",
   "name": "分析师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "分析师",
-      "name": "分析师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择三名除你以外的玩家，你得知当夜他们谁最先被唤醒（或即将最先被唤醒）。",
-      "image": "https://www.bloodstar.xyz/p/meiosis/clockparadox/3_clockparadox.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1300,
-      "otherNightReminder": "唤醒分析师，让他选择除自己以外的三名玩家。对他指向其中最先被唤醒（或即将最先被唤醒）的玩家。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "分析师",
-      "name": "分析师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，夜晚，你可以选择得知所有陷入癫狂的玩家。一名玩家可能被你的能力当作错误的精神状态。",
-      "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/11_archives_of_insanity.png",
-      "firstNight": 20,
-      "firstNightReminder": "唤醒分析师，如果他点头，向他指出所有陷入癫狂的玩家。",
-      "otherNight": 18,
-      "otherNightReminder": "唤醒分析师，如果他点头，向他指出所有陷入癫狂的玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择三名除你以外的玩家，你得知当夜他们谁最先被唤醒（或即将最先被唤醒）。",
+      "每局游戏限一次，夜晚，你可以选择得知所有陷入癫狂的玩家。一名玩家可能被你的能力当作错误的精神状态。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/meiosis/clockparadox/3_clockparadox.png",
+      "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/11_archives_of_insanity.png"
+    ],
+    "firstNight": [
+      0,
+      20
+    ],
+    "firstNightReminder": [
+      "",
+      "唤醒分析师，如果他点头，向他指出所有陷入癫狂的玩家。"
+    ],
+    "otherNight": [
+      1300,
+      18
+    ],
+    "otherNightReminder": [
+      "唤醒分析师，让他选择除自己以外的三名玩家。对他指向其中最先被唤醒（或即将最先被唤醒）的玩家。",
+      "唤醒分析师，如果他点头，向他指出所有陷入癫狂的玩家。"
+    ],
+    "reminders": [
+      [],
+      [
         "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

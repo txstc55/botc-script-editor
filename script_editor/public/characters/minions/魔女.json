@@ -2,60 +2,45 @@
   "id": "魔女",
   "name": "魔女",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "魔女",
-      "name": "魔女",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你死亡后，每个夜晚，你会被唤醒并可以选择一名玩家：他死亡；第二名玩家因此能力死亡的夜晚，阻止恶魔因自身能力被唤醒，然后你失去能力。",
-      "image": "https://www.bloodstar.xyz/p/qazwsxedc/TakeTheCupFromMe/21_takethecupfromme.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 30,
-      "otherNightReminder": "如果魔女已死亡，且没有失去能力，唤醒魔女，让他选择一名玩家，那名玩家死亡。如果此时已经有两名玩家因为魔女死亡，放置“失去能力”标记，为恶魔放置“不会唤醒”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你死亡后，每个夜晚，你会被唤醒并可以选择一名玩家：他死亡；第二名玩家因此能力死亡的夜晚，阻止恶魔因自身能力被唤醒，然后你失去能力。",
+      "你死亡后，每个夜晚，你会被唤醒并可以选择一名玩家：他死亡，直到有两名玩家因此能力而死亡，然后恶魔当晚不会被唤醒，即使你已死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/qazwsxedc/TakeTheCupFromMe/21_takethecupfromme.png",
+      "https://i.postimg.cc/9Fmch3MT/16.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      30,
+      19
+    ],
+    "otherNightReminder": [
+      "如果魔女已死亡，且没有失去能力，唤醒魔女，让他选择一名玩家，那名玩家死亡。如果此时已经有两名玩家因为魔女死亡，放置“失去能力”标记，为恶魔放置“不会唤醒”标记。"
+    ],
+    "reminders": [
+      [
         "不会唤醒",
         "失去能力",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "魔女",
-      "name": "魔女",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你死亡后，每个夜晚，你会被唤醒并可以选择一名玩家：他死亡，直到有两名玩家因此能力而死亡，然后恶魔当晚不会被唤醒，即使你已死亡。",
-      "image": "https://i.postimg.cc/9Fmch3MT/16.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "如果魔女已死亡，且没有失去能力，唤醒魔女，让他选择一名玩家，那名玩家死亡。如果此时已经有两名玩家因为魔女死亡，放置“失去能力”标记，为恶魔放置“不会唤醒”标记。",
-      "reminders": [
-        "不会唤醒",
-        "失去能力",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

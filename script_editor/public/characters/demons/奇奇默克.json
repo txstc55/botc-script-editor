@@ -2,82 +2,46 @@
   "id": "奇奇默克",
   "name": "奇奇默克",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "奇奇默克",
-      "name": "奇奇默克",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你最近爪牙之间的镇民玩家能力都会产生错误信息。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/22_equinoxflower.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 31,
-      "otherNightReminder": "让奇奇默克选择一名玩家，标记那名玩家死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。与你最近爪牙之间的镇民玩家能力都会产生错误信息。",
+      "每个夜晚*，你要选择一名玩家：他死亡。你与最近爪牙之间的镇民玩家的能力都会产生错误信息。",
+      "每个夜晚*，你要选择一名玩家：他死亡。距离你最远爪牙与你之间的镇民玩家能力都会产生错误信息。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/22_equinoxflower.png",
+      "https://postimage.me/images/2024/08/01/7b3b5ae6d3a68a98bdbbaaf91109825b.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      31,
+      34
+    ],
+    "otherNightReminder": [
+      "让奇奇默克选择一名玩家，标记那名玩家死亡。",
+      "让奇奇默克选择一名玩家。标记那名玩家死亡。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "奇奇默克",
-      "name": "奇奇默克",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。你与最近爪牙之间的镇民玩家的能力都会产生错误信息。",
-      "image": "https://postimage.me/images/2024/08/01/7b3b5ae6d3a68a98bdbbaaf91109825b.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 31,
-      "otherNightReminder": "让奇奇默克选择一名玩家。标记那名玩家死亡。",
-      "reminders": [
-        "死亡",
-        "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "奇奇默克",
-      "name": "奇奇默克",
-      "variantIndex": 3,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。距离你最远爪牙与你之间的镇民玩家能力都会产生错误信息。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/22_equinoxflower.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 34,
-      "otherNightReminder": "让奇奇默克选择一名玩家，标记那名玩家死亡。",
-      "reminders": [
-        "死亡",
-        "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

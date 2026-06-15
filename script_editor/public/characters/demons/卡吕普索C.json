@@ -2,36 +2,43 @@
   "id": "卡吕普索C",
   "name": "卡吕普索C",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "卡吕普索C",
-      "name": "卡吕普索C",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择三名玩家：上个夜晚被你选择的首位玩家会死亡。如果该玩家今天白天死于处决，上个夜晚被你选择的另外两名玩家会在当晚死亡。",
-      "image": "[\"https://i.postimg.cc/L5ZZfP5Q/image.png\"]",
-      "firstNight": 23,
-      "firstNightReminder": "The Calypso chooses 3 players. :reminder: :reminder: :reminder:",
-      "otherNight": 8,
-      "otherNightReminder": "The 1st player previously chosen dies. :reminder: If that player was executed today, all previously chosen players die. :reminder: :reminder: The Calypso chooses 3 players. :reminder: :reminder: :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择三名玩家：上个夜晚被你选择的首位玩家会死亡。如果该玩家今天白天死于处决，上个夜晚被你选择的另外两名玩家会在当晚死亡。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/L5ZZfP5Q/image.png\"]"
+    ],
+    "firstNight": [
+      23
+    ],
+    "firstNightReminder": [
+      "The Calypso chooses 3 players. :reminder: :reminder: :reminder:"
+    ],
+    "otherNight": [
+      8
+    ],
+    "otherNightReminder": [
+      "The 1st player previously chosen dies. :reminder: If that player was executed today, all previously chosen players die. :reminder: :reminder: The Calypso chooses 3 players. :reminder: :reminder: :reminder:"
+    ],
+    "reminders": [
+      [
         "1",
         "2",
         "3",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

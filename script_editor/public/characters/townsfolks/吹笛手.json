@@ -2,34 +2,41 @@
   "id": "吹笛手",
   "name": "吹笛手",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "吹笛手",
-      "name": "吹笛手",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择除你以外的三名玩家：如果他们的类型都不相同，你失去能力；如果仅有两名玩家角色类型相同，另一名玩家得知吹笛手在场。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/TwinCity/15_twincity.png",
-      "firstNight": 18,
-      "firstNightReminder": "让他选择除他以外的三名玩家，如果他们角色类型都不一样，标记吹笛手失去能力，之后的夜晚无需再唤醒吹笛手。如果他们之中有两个角色类型相同，告诉另一名角色类型不同的玩家吹笛手在场。",
-      "otherNight": 17,
-      "otherNightReminder": "让他选择除他以外的三名玩家，如果他们角色类型都不一样，标记吹笛手失去能力，之后的夜晚无需再唤醒吹笛手。如果他们之中有两个角色类型相同，告诉另一名角色类型不同的玩家吹笛手在场。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你可以选择除你以外的三名玩家：如果他们的类型都不相同，你失去能力；如果仅有两名玩家角色类型相同，另一名玩家得知吹笛手在场。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/TwinCity/15_twincity.png"
+    ],
+    "firstNight": [
+      18
+    ],
+    "firstNightReminder": [
+      "让他选择除他以外的三名玩家，如果他们角色类型都不一样，标记吹笛手失去能力，之后的夜晚无需再唤醒吹笛手。如果他们之中有两个角色类型相同，告诉另一名角色类型不同的玩家吹笛手在场。"
+    ],
+    "otherNight": [
+      17
+    ],
+    "otherNightReminder": [
+      "让他选择除他以外的三名玩家，如果他们角色类型都不一样，标记吹笛手失去能力，之后的夜晚无需再唤醒吹笛手。如果他们之中有两个角色类型相同，告诉另一名角色类型不同的玩家吹笛手在场。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

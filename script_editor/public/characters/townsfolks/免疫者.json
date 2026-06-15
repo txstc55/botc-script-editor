@@ -2,57 +2,48 @@
   "id": "免疫者",
   "name": "免疫者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "免疫者",
-      "name": "免疫者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "你不会被同化。首个使用其自身能力选择了你的爪牙会死亡。德古拉不会因为对你同化而消耗同化次数。",
-      "image": "https://i.postimg.cc/hvDNcKbN/Photo6.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "首次死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "免疫者",
-      "name": "免疫者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在白天死亡，直到下个黎明不会有人加入邪恶阵营。你在夜里死亡时，所有邪恶玩家醉酒直到下个黄昏， 你拥有一枚念珠。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/11_blackout.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "如果免疫者在白天死亡，立刻标记免疫日；如果免疫者在夜晚死亡，立刻标记免疫夜。（提示标记）",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你不会被同化。首个使用其自身能力选择了你的爪牙会死亡。德古拉不会因为对你同化而消耗同化次数。",
+      "如果你在白天死亡，直到下个黎明不会有人加入邪恶阵营。你在夜里死亡时，所有邪恶玩家醉酒直到下个黄昏， 你拥有一枚念珠。"
+    ],
+    "image": [
+      "https://i.postimg.cc/hvDNcKbN/Photo6.png",
+      "https://www.bloodstar.xyz/p/bluebell/blackout/11_blackout.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      15
+    ],
+    "otherNightReminder": [
+      "",
+      "如果免疫者在白天死亡，立刻标记免疫日；如果免疫者在夜晚死亡，立刻标记免疫夜。（提示标记）"
+    ],
+    "reminders": [
+      [
         "免疫夜",
         "免疫日"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "首次死亡"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

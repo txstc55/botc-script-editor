@@ -2,34 +2,41 @@
   "id": "掩日者",
   "name": "掩日者",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "掩日者",
-      "name": "掩日者",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "当你死亡时，在当晚你可以选择是否将命运指针拨动一格。每个夜晚*，选择是或否：如果你选择了是，你死亡。",
-      "image": "https://i.postimg.cc/rwmtBC3f/掩日者.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "唤醒掩日者，如果他已经死亡，询问他是否选择拨动命运指针，点头或摇头。如果掩日者没有死亡并点头，他死亡，然后询问他是否选择拨动命运指针。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "当你死亡时，在当晚你可以选择是否将命运指针拨动一格。每个夜晚*，选择是或否：如果你选择了是，你死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/rwmtBC3f/掩日者.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      3
+    ],
+    "otherNightReminder": [
+      "唤醒掩日者，如果他已经死亡，询问他是否选择拨动命运指针，点头或摇头。如果掩日者没有死亡并点头，他死亡，然后询问他是否选择拨动命运指针。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

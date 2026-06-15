@@ -2,310 +2,95 @@
   "id": "铁匠",
   "name": "铁匠",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 13,
   "totalOccurrenceCount": 15,
-  "variants": [
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有几名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/29_spacebound.png",
-      "firstNight": 18,
-      "firstNightReminder": "在首个夜晚，唤醒铁匠。向铁匠展示所有在场的外来者的总数。让铁匠重新入睡。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知有几名外来者在场。所有外来者醉酒。[+1外来者]",
+      "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
+      "在你的首个夜晚，你得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
+      "在你的首个夜晚，你会得知有多少名外来者在场。 所有外来者醉酒，即使你已死亡。[任意数量外来者]",
+      "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒，即使你已死亡。[任意数量外来者]",
+      "当你首次将要被恶魔杀死时，你存活并获得一个不在场镇民的能力。（你会得知是什么能力）",
+      "每个夜晚*，你要选择一名与之前不同的死亡玩家：你获得他的能力直到下个黄昏，如果他是邪恶的，你中毒直到你选择了善良玩家。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/blacksmith_assets_of_lei_gallery.png",
+      "https://s2.loli.net/2025/07/11/6O7P23yDG8euUI9.png",
+      "https://www.bloodstar.xyz/p/spdm/SpaceBound/29_spacebound.png",
+      "https://free.picui.cn/free/2025/12/11/693aa46430080.png",
+      "https://s2.loli.net/2025/09/16/N2OcVRGsvlaQ1Si.png",
+      "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/blacksmith_fall_of_rome.png",
+      "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/blacksmith_echoes_of_the_past.png",
+      "https://www.bloodstar.xyz/p/fake/TheOne/blacksmith_theone.png",
+      "https://www.helloimg.com/i/2025/01/10/6780e26e596d5.png"
+    ],
+    "firstNight": [
+      7801,
+      0,
+      18,
+      25,
+      3300,
+      3800,
+      3900,
+      44,
+      48,
+      8800,
+      9
+    ],
+    "firstNightReminder": [
+      "在你的首个夜晚，你得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
+      "",
+      "唤醒铁匠，告知他在场外来者数量。",
+      "在你的首个夜晚，你会得知有多少名外来者在场。",
+      "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
+      "在首个夜晚，唤醒铁匠。向铁匠展示所有在场的外来者的总数。让铁匠重新入睡。",
+      "唤醒铁匠，告诉他有多少名外来者在场。",
+      "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒，即使你已死亡。[任意数量外来者]"
+    ],
+    "otherNight": [
+      0,
+      16,
+      7
+    ],
+    "otherNightReminder": [
+      "",
+      "Wake the Blacksmith & use their ability. I'm not writing a reminder for this.",
+      "如果铁匠被恶魔杀死。向铁匠展示一个不在场镇民角色标记。将铁匠角色标记替换为这个不在场角色标记。放置\"是铁匠\"标记在这个不在场角色标记旁。唤醒铁匠并展示'你是'，然后展示他的新的角色能力。"
+    ],
+    "reminders": [
+      [
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/blacksmith_assets_of_lei_gallery.png",
-      "firstNight": 7801,
-      "firstNightReminder": "在你的首个夜晚，你得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名与之前不同的死亡玩家：你获得他的能力直到下个黄昏，如果他是邪恶的，你中毒直到你选择了善良玩家。",
-      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/blacksmith_echoes_of_the_past.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 7,
-      "otherNightReminder": "Wake the Blacksmith & use their ability. I'm not writing a reminder for this.",
-      "reminders": [
+      [],
+      [
         "中毒",
         "选择"
       ],
-      "remindersGlobal": [
-        "是铁匠"
-      ],
-      "setup": 0,
-      "flavor": "I made this for the <span style=\"color:#003FB2\">Ranger</span>, but they died... Perhaps I ought to give it a try myself.",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "当你首次将要被恶魔杀死时，你存活并获得一个不在场镇民的能力。（你会得知是什么能力）",
-      "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/blacksmith_fall_of_rome.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "如果铁匠被恶魔杀死。向铁匠展示一个不在场镇民角色标记。将铁匠角色标记替换为这个不在场角色标记。放置\"是铁匠\"标记在这个不在场角色标记旁。唤醒铁匠并展示'你是'，然后展示他的新的角色能力。",
-      "reminders": [
-        "是铁匠"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "每个新的开始都来自于另一个开始的结束。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/blacksmith_assets_of_lei_gallery.png",
-      "firstNight": 9,
-      "firstNightReminder": "在你的首个夜晚，你得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有几名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://s2.loli.net/2025/07/11/6O7P23yDG8euUI9.png",
-      "firstNight": 25,
-      "firstNightReminder": "唤醒铁匠，告知他在场外来者数量。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [
-        "醉酒"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒，即使你已死亡。[任意数量外来者]",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/blacksmith_assets_of_lei_gallery.png",
-      "firstNight": 44,
-      "firstNightReminder": "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒，即使你已死亡。[任意数量外来者]",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780e26e596d5.png",
-      "firstNight": 48,
-      "firstNightReminder": "唤醒铁匠，告诉他有多少名外来者在场。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "外来醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有几名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://s2.loli.net/2025/07/11/6O7P23yDG8euUI9.png",
-      "firstNight": 3300,
-      "firstNightReminder": "唤醒铁匠，告知他在场外来者数量。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [
+      [
+        "是铁匠"
+      ]
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "醉酒"
       ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 10,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有多少名外来者在场。 所有外来者醉酒，即使你已死亡。[任意数量外来者]",
-      "image": "https://free.picui.cn/free/2025/12/11/693aa46430080.png",
-      "firstNight": 3800,
-      "firstNightReminder": "在你的首个夜晚，你会得知有多少名外来者在场。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 11,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/fake/TheOne/blacksmith_theone.png",
-      "firstNight": 3900,
-      "firstNightReminder": "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 12,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/blacksmith_assets_of_lei_gallery.png",
-      "firstNight": 7801,
-      "firstNightReminder": "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "铁匠",
-      "name": "铁匠",
-      "variantIndex": 13,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有多少名外来者在场。所有外来者醉酒。[+1外来者]",
-      "image": "https://s2.loli.net/2025/09/16/N2OcVRGsvlaQ1Si.png",
-      "firstNight": 8800,
-      "firstNightReminder": "在你的首个夜晚，你会得知有多少名外来者在场。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "是铁匠"
+      ]
+    ],
+    "setup": [
+      1,
+      0
+    ],
+    "flavor": [
+      "",
+      "I made this for the <span style=\"color:#003FB2\">Ranger</span>, but they died... Perhaps I ought to give it a try myself.",
+      "每个新的开始都来自于另一个开始的结束。"
+    ]
+  }
 }

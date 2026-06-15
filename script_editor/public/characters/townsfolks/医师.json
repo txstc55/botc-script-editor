@@ -2,34 +2,41 @@
   "id": "医师",
   "name": "医师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "医师",
-      "name": "医师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择除你以外的两名玩家：他们今晚不会中毒与醉酒且获得正确信息。如果他们之中有玩家首次被恶魔杀死，当晚你会得知恶魔角色。",
-      "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/physician_fall_of_rome.png",
-      "firstNight": 16,
-      "firstNightReminder": "医师指向除自己外的两名玩家。为那两名玩家放置\"患者\"标记。",
-      "otherNight": 10,
-      "otherNightReminder": "移除所有\"患者\"标记。医师指向除自己外的两名玩家。为那两名玩家放置\"患者\"标记。如果带有\"患者\"标记的玩家被恶魔杀死，放置\"首次杀死\"标记在医师旁，并唤醒医师，向他展示恶魔的角色标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择除你以外的两名玩家：他们今晚不会中毒与醉酒且获得正确信息。如果他们之中有玩家首次被恶魔杀死，当晚你会得知恶魔角色。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/physician_fall_of_rome.png"
+    ],
+    "firstNight": [
+      16
+    ],
+    "firstNightReminder": [
+      "医师指向除自己外的两名玩家。为那两名玩家放置\"患者\"标记。"
+    ],
+    "otherNight": [
+      10
+    ],
+    "otherNightReminder": [
+      "移除所有\"患者\"标记。医师指向除自己外的两名玩家。为那两名玩家放置\"患者\"标记。如果带有\"患者\"标记的玩家被恶魔杀死，放置\"首次杀死\"标记在医师旁，并唤醒医师，向他展示恶魔的角色标记。"
+    ],
+    "reminders": [
+      [
         "患者",
         "首次杀死"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "病人能康复，是因为相信医生。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "病人能康复，是因为相信医生。"
+    ]
+  }
 }

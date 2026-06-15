@@ -2,56 +2,47 @@
   "id": "复仇者",
   "name": "复仇者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "复仇者",
-      "name": "复仇者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果与你邻近的两名邪恶玩家均存活，你不会死亡。（运作：这个邻近持续检测左右两边最近的邪恶玩家是否存活）",
-      "image": "https://www.bloodstar.xyz/p/BeiFeng/YYLM/_yylm.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果与你邻近的两名邪恶玩家均存活，你不会死亡。（运作：这个邻近持续检测左右两边最近的邪恶玩家是否存活）",
+      "如果与你相邻的存活玩家在夜晚死亡，杀死他的玩家会中毒直到参与一次任务后，且你会被唤醒，可以选择一名玩家：他死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/BeiFeng/YYLM/_yylm.png",
+      "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/6_goosegooseduck.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      16
+    ],
+    "otherNightReminder": [
+      "",
+      "如果有相邻玩家死亡，唤醒玩家并让玩家选择另一名玩家击杀。"
+    ],
+    "reminders": [
+      [
         "不会死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "复仇者",
-      "name": "复仇者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果与你相邻的存活玩家在夜晚死亡，杀死他的玩家会中毒直到参与一次任务后，且你会被唤醒，可以选择一名玩家：他死亡。",
-      "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/6_goosegooseduck.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "如果有相邻玩家死亡，唤醒玩家并让玩家选择另一名玩家击杀。",
-      "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

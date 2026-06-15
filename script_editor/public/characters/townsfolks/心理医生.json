@@ -2,54 +2,47 @@
   "id": "心理医生",
   "name": "心理医生",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "心理医生",
-      "name": "心理医生",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他同意，你们都会得知他是否是恶魔。你不可能是恶魔。",
-      "image": "https://i.postimg.cc/FHwCYcWZ/brain-1.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "唤醒心理医生并让他指向一名玩家，让心理医生入睡。唤醒那名玩家，向他展示“这名角色选择了你”并展示心理医生角色标记。如果他摇头拒绝，让他入睡。如果他点头同意，如果他是恶魔，向他点头代表“是”，否则摇头代表“否”。唤醒心理医生，给出相同的信息。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "心理医生",
-      "name": "心理医生",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：他恢复理智。如果他是邪恶的，他会得知你是什么角色。你不能丧失理智（如果你真的是心理医生）。",
-      "image": "https://free.picui.cn/free/2025/11/28/692897822aa29.png",
-      "firstNight": 3400,
-      "firstNightReminder": "让心理医生选择一名玩家。那名玩家恢复理智。如果那名玩家是邪恶的，唤醒他。向他展示“这名玩家是”信息标记和心理医生玩家真正的角色标记，然后指向心理医生玩家。",
-      "otherNight": 15,
-      "otherNightReminder": "让心理医生选择一名玩家。那名玩家恢复理智。如果那名玩家是邪恶的，唤醒他。向他展示“这名玩家是”信息标记和心理医生玩家真正的角色标记，然后指向心理医生玩家。",
-      "reminders": [],
-      "remindersGlobal": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：如果他同意，你们都会得知他是否是恶魔。你不可能是恶魔。",
+      "每个夜晚，你要选择一名玩家：他恢复理智。如果他是邪恶的，他会得知你是什么角色。你不能丧失理智（如果你真的是心理医生）。"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/11/28/692897822aa29.png",
+      "https://i.postimg.cc/FHwCYcWZ/brain-1.png"
+    ],
+    "firstNight": [
+      0,
+      3400
+    ],
+    "firstNightReminder": [
+      "",
+      "让心理医生选择一名玩家。那名玩家恢复理智。如果那名玩家是邪恶的，唤醒他。向他展示“这名玩家是”信息标记和心理医生玩家真正的角色标记，然后指向心理医生玩家。"
+    ],
+    "otherNight": [
+      10,
+      15
+    ],
+    "otherNightReminder": [
+      "唤醒心理医生并让他指向一名玩家，让心理医生入睡。唤醒那名玩家，向他展示“这名角色选择了你”并展示心理医生角色标记。如果他摇头拒绝，让他入睡。如果他点头同意，如果他是恶魔，向他点头代表“是”，否则摇头代表“否”。唤醒心理医生，给出相同的信息。",
+      "让心理医生选择一名玩家。那名玩家恢复理智。如果那名玩家是邪恶的，唤醒他。向他展示“这名玩家是”信息标记和心理医生玩家真正的角色标记，然后指向心理医生玩家。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      [
         "心理医生"
       ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

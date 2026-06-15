@@ -2,34 +2,41 @@
   "id": "瘟疫骑士",
   "name": "瘟疫骑士",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "瘟疫骑士",
-      "name": "瘟疫骑士",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你距离最远的一名存活的镇民中毒，你知道他是谁。",
-      "image": "https://i.postimg.cc/B6H3QyCT/pestilence-fairy-tale.png",
-      "firstNight": 16,
-      "firstNightReminder": "与瘟疫骑士疫距离最远的存活的镇民中毒。唤醒天启之瘟疫，指向那名玩家。",
-      "otherNight": 13,
-      "otherNightReminder": "唤醒瘟疫骑士，让他指向一名玩家，那名玩家死亡。如果中毒的玩家死亡，选择其他与他距离最远的镇民中毒，唤醒瘟疫骑士，指向那名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。与你距离最远的一名存活的镇民中毒，你知道他是谁。"
+    ],
+    "image": [
+      "https://i.postimg.cc/B6H3QyCT/pestilence-fairy-tale.png"
+    ],
+    "firstNight": [
+      16
+    ],
+    "firstNightReminder": [
+      "与瘟疫骑士疫距离最远的存活的镇民中毒。唤醒天启之瘟疫，指向那名玩家。"
+    ],
+    "otherNight": [
+      13
+    ],
+    "otherNightReminder": [
+      "唤醒瘟疫骑士，让他指向一名玩家，那名玩家死亡。如果中毒的玩家死亡，选择其他与他距离最远的镇民中毒，唤醒瘟疫骑士，指向那名玩家。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "有权柄赐给他们，可以用刀剑、饥荒、瘟疫、野兽，杀害地上四分之一的人。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "有权柄赐给他们，可以用刀剑、饥荒、瘟疫、野兽，杀害地上四分之一的人。"
+    ]
+  }
 }

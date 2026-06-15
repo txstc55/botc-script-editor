@@ -2,34 +2,41 @@
   "id": "圣诞精灵",
   "name": "圣诞精灵",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "圣诞精灵",
-      "name": "圣诞精灵",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家:每局游戏限一次，如果你选择自己，你会以不定顺序得知所有你曾选择的玩家当前的角色，以及一个不在场角色。在此之后，你不再因自身能力被唤醒。",
-      "image": "[\"https://chillclocktower.com/homebrew/merrryclocktower/elf.png\"]",
-      "firstNight": 41,
-      "firstNightReminder": "选择一名玩家他收到一个礼物. 在那名玩家上标注礼物标记",
-      "otherNight": 45,
-      "otherNightReminder": "选择一名玩家他收到一个礼物. 或选择你自己(限一次)以打开所有礼物.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家:每局游戏限一次，如果你选择自己，你会以不定顺序得知所有你曾选择的玩家当前的角色，以及一个不在场角色。在此之后，你不再因自身能力被唤醒。"
+    ],
+    "image": [
+      "[\"https://chillclocktower.com/homebrew/merrryclocktower/elf.png\"]"
+    ],
+    "firstNight": [
+      41
+    ],
+    "firstNightReminder": [
+      "选择一名玩家他收到一个礼物. 在那名玩家上标注礼物标记"
+    ],
+    "otherNight": [
+      45
+    ],
+    "otherNightReminder": [
+      "选择一名玩家他收到一个礼物. 或选择你自己(限一次)以打开所有礼物."
+    ],
+    "reminders": [
+      [
         "打开礼物",
         "礼物"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "We elves try to stick to the four main food groups: candy, candy canes, candy corns and syrup.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "We elves try to stick to the four main food groups: candy, candy canes, candy corns and syrup."
+    ]
+  }
 }

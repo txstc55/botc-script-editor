@@ -6,59 +6,13 @@
     "主谋",
     "痢蛭"
   ],
-  "targetCount": 2,
-  "variantCount": 2,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "痢蛭&主谋",
-      "name": "痢蛭&主谋",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果主谋存活且痢蛭的宿主死于处决，痢蛭存活但失去能力。",
-      "targets": [
-        "主谋",
-        "痢蛭"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    },
-    {
-      "id": "痢蛭&主谋",
-      "name": "痢蛭&主谋",
-      "variantIndex": 2,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果主谋存活且痢蛭的宿主被处决，痢蛭存活但失去能力，并会在下一天的黄昏时死亡。",
-      "targets": [
-        "主谋",
-        "痢蛭"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果主谋存活且痢蛭的宿主死于处决，痢蛭存活但失去能力。",
+      "如果主谋存活且痢蛭的宿主被处决，痢蛭存活但失去能力，并会在下一天的黄昏时死亡。"
+    ]
+  }
 }

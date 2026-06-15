@@ -2,226 +2,70 @@
   "id": "孟婆",
   "name": "孟婆",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 9,
   "totalOccurrenceCount": 19,
-  "variants": [
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mengpo.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 54,
-      "otherNightReminder": "唤醒孟婆，让孟婆选择一名玩家。让被孟婆选择的玩家做出生或死的选择。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
+      "每个夜晚*，你要选择一名玩家，如果明天白天他投票的玩家被处决，他在夜晚死亡。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/mengpo.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1302942943171_588f083d.jpg",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/e/e4/Mengpo.png/75px-Mengpo.png",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3222803928661_cbf1d583.jpg",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a9/m7vjihpka34ofxv439h9ctzz974cbnw.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      54,
+      88,
+      10,
+      11,
+      15,
+      19,
+      39,
+      40,
+      9
+    ],
+    "otherNightReminder": [
+      "唤醒孟婆，让孟婆选择一名玩家。让被孟婆选择的玩家做出生或死的选择。",
+      "唤醒孟婆，让其选择一名玩家，随后让孟婆闭眼。唤醒孟婆选择的玩家，依次向他展示“该角色的能力对你生效”信息标记、孟婆的角色标记，随后让其用点头或者摇头来表示想要生死。如果其点头，放置“失去能力”标记，如果其摇头，放置“保留能力”标记。",
+      "唤醒孟婆，让其选择一名玩家。然后唤醒那名玩家，让他选择失去能力，或者死亡并暴乱能力直到下个黄昏如。",
+      "让孟婆选择一名玩家，标记对象，明天白天他投票的玩家被处决，标记死亡。"
+    ],
+    "reminders": [
+      [
         "存活并失去能力",
         "死亡并保留能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 7,
-      "notes": []
-    },
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1302942943171_588f083d.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 88,
-      "otherNightReminder": "唤醒孟婆，让其选择一名玩家，随后让孟婆闭眼。唤醒孟婆选择的玩家，依次向他展示“该角色的能力对你生效”信息标记、孟婆的角色标记，随后让其用点头或者摇头来表示想要生死。如果其点头，放置“失去能力”标记，如果其摇头，放置“保留能力”标记。",
-      "reminders": [
+      [
         "保留能力",
         "失去能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 5,
-      "notes": []
-    },
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mengpo.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 9,
-      "otherNightReminder": "唤醒孟婆，让孟婆选择一名玩家。让被孟婆选择的玩家做出生或死的选择。",
-      "reminders": [
-        "存活并失去能力",
-        "死亡并保留能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 4,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mengpo.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "唤醒孟婆，让孟婆选择一名玩家。让被孟婆选择的玩家做出生或死的选择。",
-      "reminders": [
-        "存活并失去能力",
-        "死亡并保留能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 5,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mengpo.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "唤醒孟婆，让孟婆选择一名玩家。让被孟婆选择的玩家做出生或死的选择。",
-      "reminders": [
-        "存活并失去能力",
-        "死亡并保留能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 6,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a9/m7vjihpka34ofxv439h9ctzz974cbnw.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "唤醒孟婆，让孟婆选择一名玩家。让被孟婆选择的玩家做出生或死的选择。",
-      "reminders": [
-        "存活并失去能力",
-        "死亡并保留能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 7,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mengpo.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "唤醒孟婆，让孟婆选择一名玩家。让被孟婆选择的玩家做出生或死的选择。",
-      "reminders": [
-        "存活并失去能力",
-        "死亡并保留能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 8,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他存活，那么他要选择让自己失去能力，或死亡并保留能力直到下个黄昏。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/e4/Mengpo.png/75px-Mengpo.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 39,
-      "otherNightReminder": "唤醒孟婆，让其选择一名玩家。然后唤醒那名玩家，让他选择失去能力，或者死亡并暴乱能力直到下个黄昏如。",
-      "reminders": [
+      [
         "失去能力",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "孟婆",
-      "name": "孟婆",
-      "variantIndex": 9,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家，如果明天白天他投票的玩家被处决，他在夜晚死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3222803928661_cbf1d583.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 40,
-      "otherNightReminder": "让孟婆选择一名玩家，标记对象，明天白天他投票的玩家被处决，标记死亡。",
-      "reminders": [
+      [
         "对象",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "何须长生泥作骨，此生还君一缕魂。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "何须长生泥作骨，此生还君一缕魂。"
+    ]
+  }
 }

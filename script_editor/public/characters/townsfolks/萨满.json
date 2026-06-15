@@ -2,120 +2,62 @@
   "id": "萨满",
   "name": "萨满",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 5,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "萨满",
-      "name": "萨满",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "邪恶玩家会以为自己是其他的邪恶角色。",
-      "image": "https://www.bloodstar.xyz/p/fake/TheOne/shaman_theone.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "萨满",
-      "name": "萨满",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名死亡玩家并猜测他的角色：如果猜对，你获得他的角色能力直到下个黄昏。否则你醉酒直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/4_yz_cn_ggg.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "萨满选择一名死亡的玩家，并猜测他的角色。如果猜对，为那名玩家标记“获得能力”，萨满可以使用那个角色能力，如果猜错，为萨满标记“醉酒”，让他以为自己使用某个角色能力。",
-      "reminders": [
-        "获得能力",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "萨满",
-      "name": "萨满",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，你会得知在场的恶魔角色。 如果存活玩家中仅存在一名善良玩家或邪恶玩家，你会得知此事，即使你已死亡。",
-      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/jubushiyi/13_jubushiyi.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 17,
-      "otherNightReminder": "如果你在夜晚死亡，你会得知在场的恶魔角色。 如果存活玩家中仅存在一名善良玩家或邪恶玩家，你会得知此事，即使你已死亡。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "萨满",
-      "name": "萨满",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，你会得知在场的恶魔角色。如果存活玩家中仅存在一名善良或邪恶玩家，你会得知此事，即使你已死亡。",
-      "image": "https://postimage.me/images/2024/08/01/eeeac096dab50e44cd3ff29f14333616.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 50,
-      "otherNightReminder": "如果萨满在夜晚死亡，唤醒萨满并告诉他在场的一个恶魔角色。即使他死亡了，如果场上仅存活一名善良玩家，告诉他仅存活一名善良玩家；如果场上仅存活一名邪恶玩家，告诉他仅存活一名邪恶玩家。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "萨满",
-      "name": "萨满",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "邪恶玩家会以为自己是其它邪恶角色",
-      "image": "https://www.bloodstar.xyz/p/fake/mill/shaman_mill.png",
-      "firstNight": 1,
-      "firstNightReminder": "邪恶玩家会以为自己是其它邪恶角色",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在夜晚死亡，你会得知在场的恶魔角色。 如果存活玩家中仅存在一名善良玩家或邪恶玩家，你会得知此事，即使你已死亡。",
+      "如果你在夜晚死亡，你会得知在场的恶魔角色。如果存活玩家中仅存在一名善良或邪恶玩家，你会得知此事，即使你已死亡。",
+      "每个夜晚*，你要选择一名死亡玩家并猜测他的角色：如果猜对，你获得他的角色能力直到下个黄昏。否则你醉酒直到下个黄昏。",
+      "邪恶玩家会以为自己是其他的邪恶角色。",
+      "邪恶玩家会以为自己是其它邪恶角色"
+    ],
+    "image": [
+      "https://postimage.me/images/2024/08/01/eeeac096dab50e44cd3ff29f14333616.png",
+      "https://www.bloodstar.xyz/p/SerraEvelyn/jubushiyi/13_jubushiyi.png",
+      "https://www.bloodstar.xyz/p/fake/TheOne/shaman_theone.png",
+      "https://www.bloodstar.xyz/p/fake/mill/shaman_mill.png",
+      "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/4_yz_cn_ggg.png"
+    ],
+    "firstNight": [
+      0,
+      1
+    ],
+    "firstNightReminder": [
+      "",
+      "邪恶玩家会以为自己是其它邪恶角色"
+    ],
+    "otherNight": [
+      0,
+      17,
+      50,
+      8
+    ],
+    "otherNightReminder": [
+      "",
+      "如果你在夜晚死亡，你会得知在场的恶魔角色。 如果存活玩家中仅存在一名善良玩家或邪恶玩家，你会得知此事，即使你已死亡。",
+      "如果萨满在夜晚死亡，唤醒萨满并告诉他在场的一个恶魔角色。即使他死亡了，如果场上仅存活一名善良玩家，告诉他仅存活一名善良玩家；如果场上仅存活一名邪恶玩家，告诉他仅存活一名邪恶玩家。",
+      "萨满选择一名死亡的玩家，并猜测他的角色。如果猜对，为那名玩家标记“获得能力”，萨满可以使用那个角色能力，如果猜错，为萨满标记“醉酒”，让他以为自己使用某个角色能力。"
+    ],
+    "reminders": [
+      [],
+      [
         "并非"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "获得能力",
+        "醉酒"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

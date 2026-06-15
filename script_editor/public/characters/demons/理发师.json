@@ -2,34 +2,41 @@
   "id": "理发师",
   "name": "理发师",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "理发师",
-      "name": "理发师",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。在夜晚时*，你可以选择交换两名玩家的角色，但每局游戏仅能交换一次。",
-      "image": "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/barber_r.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4,
-      "otherNightReminder": "1",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。在夜晚时*，你可以选择交换两名玩家的角色，但每局游戏仅能交换一次。"
+    ],
+    "image": [
+      "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/barber_r.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      4
+    ],
+    "otherNightReminder": [
+      "1"
+    ],
+    "reminders": [
+      [
         "死亡",
         "理发"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

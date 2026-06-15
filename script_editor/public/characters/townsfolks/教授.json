@@ -2,346 +2,54 @@
   "id": "教授",
   "name": "教授",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 14,
   "totalOccurrenceCount": 66,
-  "variants": [
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 76,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      76,
+      45,
+      10500,
+      105,
+      15,
+      1000,
+      106,
+      13,
+      16,
+      17,
+      18,
+      63,
+      9,
+      99
+    ],
+    "otherNightReminder": [
+      "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。"
+    ],
+    "reminders": [
+      [
         "复活",
         "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 23,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 45,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 15,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10500,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 8,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 105,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 7,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 4,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 9,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 17,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 10,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 11,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 63,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 12,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 99,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 13,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 106,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "教授",
-      "name": "教授",
-      "variantIndex": 14,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1000,
-      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
-      "reminders": [
-        "复活",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。"
+    ]
+  }
 }

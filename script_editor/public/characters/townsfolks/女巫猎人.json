@@ -2,34 +2,41 @@
   "id": "女巫猎人",
   "name": "女巫猎人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "女巫猎人",
-      "name": "女巫猎人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你得知一名邪恶玩家。[会有一名与你邻近的善良玩家或者你自己转变为邪恶阵营]",
-      "image": "https://i.postimg.cc/NFLV0DpG/image.png",
-      "firstNight": 45,
-      "firstNightReminder": "指向一名邪恶玩家。随后唤醒那名因女巫猎人而转变为邪恶的玩家，并告知他变成了邪恶阵营。",
-      "otherNight": 65,
-      "otherNightReminder": "指向一名邪恶玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你得知一名邪恶玩家。[会有一名与你邻近的善良玩家或者你自己转变为邪恶阵营]"
+    ],
+    "image": [
+      "https://i.postimg.cc/NFLV0DpG/image.png"
+    ],
+    "firstNight": [
+      45
+    ],
+    "firstNightReminder": [
+      "指向一名邪恶玩家。随后唤醒那名因女巫猎人而转变为邪恶的玩家，并告知他变成了邪恶阵营。"
+    ],
+    "otherNight": [
+      65
+    ],
+    "otherNightReminder": [
+      "指向一名邪恶玩家。"
+    ],
+    "reminders": [
+      [
         "被得知",
         "邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

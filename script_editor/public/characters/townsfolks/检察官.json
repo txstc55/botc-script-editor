@@ -2,33 +2,40 @@
   "id": "检察官",
   "name": "检察官",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "检察官",
-      "name": "检察官",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在白天发起过提名，当晚，你会得知一名与被提名者相同阵营的玩家。",
-      "image": "[\"https://i.postimg.cc/fTFSm5WG/image.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 20,
-      "otherNightReminder": "如果检察官在白天发起过提名,向他展示一名与被他提名的玩家相同阵营的玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在白天发起过提名，当晚，你会得知一名与被提名者相同阵营的玩家。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/fTFSm5WG/image.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      20
+    ],
+    "otherNightReminder": [
+      "如果检察官在白天发起过提名,向他展示一名与被他提名的玩家相同阵营的玩家。"
+    ],
+    "reminders": [
+      [
         "提名"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Your Honor! It is a gross indignity to have this witness brought before my stand! Look at them - they're dead!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Your Honor! It is a gross indignity to have this witness brought before my stand! Look at them - they're dead!"
+    ]
+  }
 }

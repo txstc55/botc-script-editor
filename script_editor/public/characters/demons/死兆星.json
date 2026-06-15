@@ -2,26 +2,29 @@
   "id": "死兆星",
   "name": "死兆星",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "死兆星",
-      "name": "死兆星",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名未选择过的玩家并猜测该玩家是哪个善良角色：如果你猜对了，所有玩家都会得知终焉将提前一天到来。第七个白天结束时，除你以外的其他所有玩家均会死亡，即使因为任何原因让他们不会死亡。",
-      "image": "https://www.helloimg.com/i/2025/01/10/6781218b9e717.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "唤醒死兆星，让他选择一名玩家和一个角色列表上的善良角色。如果那名玩家就是这个善良角色，点头示意死兆星。让死兆星重新入睡。接下来宣布终焉将提前一天到来。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名未选择过的玩家并猜测该玩家是哪个善良角色：如果你猜对了，所有玩家都会得知终焉将提前一天到来。第七个白天结束时，除你以外的其他所有玩家均会死亡，即使因为任何原因让他们不会死亡。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2025/01/10/6781218b9e717.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      16
+    ],
+    "otherNightReminder": [
+      "唤醒死兆星，让他选择一名玩家和一个角色列表上的善良角色。如果那名玩家就是这个善良角色，点头示意死兆星。让死兆星重新入睡。接下来宣布终焉将提前一天到来。"
+    ],
+    "reminders": [
+      [
         "猜测正确",
         "第一天",
         "第七天",
@@ -31,12 +34,16 @@
         "第六天",
         "第四天",
         "选择过"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

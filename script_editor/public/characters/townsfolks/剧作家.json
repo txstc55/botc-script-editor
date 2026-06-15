@@ -2,75 +2,54 @@
   "id": "剧作家",
   "name": "剧作家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "剧作家",
-      "name": "剧作家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "①当你在夜间死亡时，你可以写一段话，并委托说书人私下交给你指定的玩家。②整局游戏限一次，你可以公开猜测所有邪恶玩家及其当前角色，如果你猜测正确，善良阵营获胜。",
-      "image": "https://www.bloodstar.xyz/p/westwind/BBB/15_bbb.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "剧作家",
-      "name": "剧作家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的前两个夜晚，你可以查看四分之一的魔典（左上/左下/右上/右下），每看一秒顿悟两次。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5846887832071_829d0a96.jpg",
-      "firstNight": 55,
-      "firstNightReminder": "前两个夜晚剧作家可以查看魔典，若他这么做了，他顿悟，并告知他获得的顿悟能力。",
-      "otherNight": 55,
-      "otherNightReminder": "前两个夜晚剧作家可以查看魔典，若他这么做了，他顿悟，并告知他获得的顿悟能力。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "剧作家",
-      "name": "剧作家",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家。当你死亡时，你会得知你选择过的玩家中有多少名邪恶玩家。",
-      "image": "https://www.bloodstar.xyz/p/Pip/Revolution_of_a_Lifetime/playwright_revolution_of_a_lifetime.png",
-      "firstNight": 3036,
-      "firstNightReminder": "1",
-      "otherNight": 12,
-      "otherNightReminder": "1",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "①当你在夜间死亡时，你可以写一段话，并委托说书人私下交给你指定的玩家。②整局游戏限一次，你可以公开猜测所有邪恶玩家及其当前角色，如果你猜测正确，善良阵营获胜。",
+      "在你的前两个夜晚，你可以查看四分之一的魔典（左上/左下/右上/右下），每看一秒顿悟两次。",
+      "每个夜晚，你要选择一名玩家。当你死亡时，你会得知你选择过的玩家中有多少名邪恶玩家。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5846887832071_829d0a96.jpg",
+      "https://www.bloodstar.xyz/p/Pip/Revolution_of_a_Lifetime/playwright_revolution_of_a_lifetime.png",
+      "https://www.bloodstar.xyz/p/westwind/BBB/15_bbb.png"
+    ],
+    "firstNight": [
+      0,
+      3036,
+      55
+    ],
+    "firstNightReminder": [
+      "",
+      "1",
+      "前两个夜晚剧作家可以查看魔典，若他这么做了，他顿悟，并告知他获得的顿悟能力。"
+    ],
+    "otherNight": [
+      0,
+      12,
+      55
+    ],
+    "otherNightReminder": [
+      "",
+      "1",
+      "前两个夜晚剧作家可以查看魔典，若他这么做了，他顿悟，并告知他获得的顿悟能力。"
+    ],
+    "reminders": [
+      [],
+      [
         "选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "A production of a lifetime. The drama! The ambiance... The messaging. All, perfect.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "A production of a lifetime. The drama! The ambiance... The messaging. All, perfect."
+    ]
+  }
 }

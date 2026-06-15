@@ -2,33 +2,40 @@
   "id": "▲传教士",
   "name": "▲传教士",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "▲传教士",
-      "name": "▲传教士",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：如果你选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/preacher.png",
-      "firstNight": 4200,
-      "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
-      "otherNight": 1200,
-      "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：如果你选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/preacher.png"
+    ],
+    "firstNight": [
+      4200
+    ],
+    "firstNightReminder": [
+      "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。"
+    ],
+    "otherNight": [
+      1200
+    ],
+    "otherNightReminder": [
+      "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。"
+    ],
+    "reminders": [
+      [
         "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

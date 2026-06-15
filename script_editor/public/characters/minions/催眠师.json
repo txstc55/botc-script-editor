@@ -2,58 +2,51 @@
   "id": "催眠师",
   "name": "催眠师",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "催眠师",
-      "name": "催眠师",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家敲门。每局游戏限一次，如果你选择了要糖小孩，他会转变为你的阵营，然后你中毒。[+1外来者]",
-      "image": "https://i.postimg.cc/d0psB91Y/cui-mian-shi.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "每个夜晚*，你要选择一名玩家敲门。每局游戏限一次，如果你选择了要糖小孩，他会转变为你的阵营，然后你中毒。[+1外来者]",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在游戏首个夜晚，你得知所有狂信者是谁，以及他们眼中的队友是谁。每局游戏限一次，夜晚*，选择一名玩家和一个角色：他以为他变成这个角色，但其实他变成狂信者。[所有外来者都是狂信者]",
+      "每个夜晚*，你要选择一名玩家敲门。每局游戏限一次，如果你选择了要糖小孩，他会转变为你的阵营，然后你中毒。[+1外来者]"
+    ],
+    "image": [
+      "https://i.postimg.cc/d0psB91Y/cui-mian-shi.png",
+      "https://www.bloodstar.xyz/p/westwind/xiudao111/4_xiudao111.png"
+    ],
+    "firstNight": [
+      0,
+      13
+    ],
+    "firstNightReminder": [
+      "",
+      "唤醒催眠师，告知他所有的狂信者是谁，以及他们眼中的队友是谁。"
+    ],
+    "otherNight": [
+      13,
+      5
+    ],
+    "otherNightReminder": [
+      "如果催眠师指向一名玩家并选择一个角色，放置“失去能力”然后让催眠师入睡。然后唤醒那名玩家并展示“你是”和一个新的角色卡，并标记他为狂信者。",
+      "每个夜晚*，你要选择一名玩家敲门。每局游戏限一次，如果你选择了要糖小孩，他会转变为你的阵营，然后你中毒。[+1外来者]"
+    ],
+    "reminders": [
+      [
         "中毒",
         "敲门",
         "邪恶"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "催眠师",
-      "name": "催眠师",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在游戏首个夜晚，你得知所有狂信者是谁，以及他们眼中的队友是谁。每局游戏限一次，夜晚*，选择一名玩家和一个角色：他以为他变成这个角色，但其实他变成狂信者。[所有外来者都是狂信者]",
-      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/4_xiudao111.png",
-      "firstNight": 13,
-      "firstNightReminder": "唤醒催眠师，告知他所有的狂信者是谁，以及他们眼中的队友是谁。",
-      "otherNight": 5,
-      "otherNightReminder": "如果催眠师指向一名玩家并选择一个角色，放置“失去能力”然后让催眠师入睡。然后唤醒那名玩家并展示“你是”和一个新的角色卡，并标记他为狂信者。",
-      "reminders": [
+      [
         "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

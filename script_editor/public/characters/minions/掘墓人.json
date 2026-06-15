@@ -2,36 +2,43 @@
   "id": "掘墓人",
   "name": "掘墓人",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "掘墓人",
-      "name": "掘墓人",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。如果你在这项提名中投过票，你可以选择复活白天死于处决的玩家(每局游戏限一次)，或选择让在这项提名中投过票的存活镇民中毒直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/gravedigger_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "如果有玩家今天白天死于处决，向掘墓人展示该玩家的角色标记。如果掘墓人曾在该次处决中投票：如果他点头，那名玩家复活。否则，所有曾给那名玩家投票的存活镇民中毒直到下个黄昏。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你会得知今天白天死于处决的玩家的角色。如果你在这项提名中投过票，你可以选择复活白天死于处决的玩家(每局游戏限一次)，或选择让在这项提名中投过票的存活镇民中毒直到下个黄昏。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/gravedigger_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      8
+    ],
+    "otherNightReminder": [
+      "如果有玩家今天白天死于处决，向掘墓人展示该玩家的角色标记。如果掘墓人曾在该次处决中投票：如果他点头，那名玩家复活。否则，所有曾给那名玩家投票的存活镇民中毒直到下个黄昏。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "复活",
         "投票",
         "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "After all the flowery words are said and pretty tears are shed, they all leave the real work to me... but at the end of it all, I get the final say... Now let's see if this one is useful.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "After all the flowery words are said and pretty tears are shed, they all leave the real work to me... but at the end of it all, I get the final say... Now let's see if this one is useful."
+    ]
+  }
 }

@@ -2,31 +2,38 @@
   "id": "仪式·Ritual",
   "name": "仪式·Ritual",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "仪式·Ritual",
-      "name": "仪式·Ritual",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择获得2点罪。若如此做，与你邻近的两名存活玩家各失去1点罪。",
-      "image": "https://www.bloodstar.xyz/p/Svendetta/Purgatory/ritual_purgatory.png",
-      "firstNight": 9,
-      "firstNightReminder": "唤醒仪式，询问他是否发动能力。如果他选择发动，记录他的罪+2，然后记录与他邻近的两名存活玩家各自的罪-1。",
-      "otherNight": 4,
-      "otherNightReminder": "唤醒仪式，询问他是否发动能力。如果他选择发动，记录他的罪+2，然后记录与他邻近的两名存活玩家各自的罪-1。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你可以选择获得2点罪。若如此做，与你邻近的两名存活玩家各失去1点罪。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Svendetta/Purgatory/ritual_purgatory.png"
+    ],
+    "firstNight": [
+      9
+    ],
+    "firstNightReminder": [
+      "唤醒仪式，询问他是否发动能力。如果他选择发动，记录他的罪+2，然后记录与他邻近的两名存活玩家各自的罪-1。"
+    ],
+    "otherNight": [
+      4
+    ],
+    "otherNightReminder": [
+      "唤醒仪式，询问他是否发动能力。如果他选择发动，记录他的罪+2，然后记录与他邻近的两名存活玩家各自的罪-1。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

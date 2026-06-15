@@ -2,34 +2,41 @@
   "id": "女附魔师",
   "name": "女附魔师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "女附魔师",
-      "name": "女附魔师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：首个被你的能力选中的外来者会变成一个不在场的镇民。[+0-1外来者]",
-      "image": "https://www.bloodstar.xyz/p/twf07wfz/TheWizardsMeetRework/enchantress_thewizardsmeetrework.png",
-      "firstNight": 19,
-      "firstNightReminder": "Ask the Enchantress if they'd like to choose a player. If yes, place the \"No Ability\" token on the Enchantress. If an outsider is chosen, place the \"Enchanted\" token on that player, replace their character with a not-in-play Townsfolk, and immediately wake said player to inform them of their new character.",
-      "otherNight": 20,
-      "otherNightReminder": "Ask the Enchantress if they'd like to choose a player. If yes, place the \"No Ability\" token on the Enchantress. If an outsider is chosen, place the \"Enchanted\" token on that player, replace their character with a not-in-play Townsfolk, and immediately wake said player to inform them of their new character.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：首个被你的能力选中的外来者会变成一个不在场的镇民。[+0-1外来者]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/twf07wfz/TheWizardsMeetRework/enchantress_thewizardsmeetrework.png"
+    ],
+    "firstNight": [
+      19
+    ],
+    "firstNightReminder": [
+      "Ask the Enchantress if they'd like to choose a player. If yes, place the \"No Ability\" token on the Enchantress. If an outsider is chosen, place the \"Enchanted\" token on that player, replace their character with a not-in-play Townsfolk, and immediately wake said player to inform them of their new character."
+    ],
+    "otherNight": [
+      20
+    ],
+    "otherNightReminder": [
+      "Ask the Enchantress if they'd like to choose a player. If yes, place the \"No Ability\" token on the Enchantress. If an outsider is chosen, place the \"Enchanted\" token on that player, replace their character with a not-in-play Townsfolk, and immediately wake said player to inform them of their new character."
+    ],
+    "reminders": [
+      [
         "失去能力",
         "附魔"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,33 +2,40 @@
   "id": "掘墓人",
   "name": "掘墓人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "掘墓人",
-      "name": "掘墓人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知在上个白天和上个夜晚死亡的所有玩家的角色。",
-      "image": "https://i.postimg.cc/4xDMn6Q6/Photo12.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "向掘墓人展示所有带有得知标记的玩家的角色。移除所有“得知”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你会得知在上个白天和上个夜晚死亡的所有玩家的角色。"
+    ],
+    "image": [
+      "https://i.postimg.cc/4xDMn6Q6/Photo12.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      18
+    ],
+    "otherNightReminder": [
+      "向掘墓人展示所有带有得知标记的玩家的角色。移除所有“得知”标记。"
+    ],
+    "reminders": [
+      [
         "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

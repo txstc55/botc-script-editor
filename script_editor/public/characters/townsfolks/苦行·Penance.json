@@ -2,35 +2,42 @@
   "id": "苦行·Penance",
   "name": "苦行·Penance",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "苦行·Penance",
-      "name": "苦行·Penance",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知三名玩家：他们中的一名玩家拥有的罪最多，另一名玩家拥有的罪最少。",
-      "image": "https://www.bloodstar.xyz/p/Svendetta/Purgatory/penance_purgatory.png",
-      "firstNight": 8,
-      "firstNightReminder": "唤醒苦行，以任意顺序指向拥有的罪值最多的玩家、拥有的罪值最少的玩家和这两名玩家之外的任意一名玩家。",
-      "otherNight": 7,
-      "otherNightReminder": "在你的首个夜晚，你会得知三名玩家：他们中的一名玩家拥有的罪最多，另一名玩家拥有的罪最少。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知三名玩家：他们中的一名玩家拥有的罪最多，另一名玩家拥有的罪最少。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Svendetta/Purgatory/penance_purgatory.png"
+    ],
+    "firstNight": [
+      8
+    ],
+    "firstNightReminder": [
+      "唤醒苦行，以任意顺序指向拥有的罪值最多的玩家、拥有的罪值最少的玩家和这两名玩家之外的任意一名玩家。"
+    ],
+    "otherNight": [
+      7
+    ],
+    "otherNightReminder": [
+      "在你的首个夜晚，你会得知三名玩家：他们中的一名玩家拥有的罪最多，另一名玩家拥有的罪最少。"
+    ],
+    "reminders": [
+      [
         "最多",
         "最少",
         "第三名"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

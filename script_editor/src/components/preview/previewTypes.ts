@@ -14,9 +14,11 @@ export interface NightOrderItem {
   id: string;
   name: string;
   image?: string;
+  reminder?: string;
   order: number;
   team: TeamKey;
   color: string;
+  builtIn?: boolean;
 }
 
 export interface SvgRoleLayout {

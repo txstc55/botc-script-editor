@@ -2,35 +2,42 @@
   "id": "火枪手",
   "name": "火枪手",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "火枪手",
-      "name": "火枪手",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择除你以外的两名玩家：如果恶魔选择了首个被你选择的玩家，你会得知谁是恶魔。恶魔会以任意顺序得知你的选择。",
-      "image": "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/muskeeter_day_by_day.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "火枪手可以选择除火枪手以外的两名玩家：如果他这么做了，为第一名玩家放置“驻守”提示标记，标记第二名玩家错误。唤醒恶魔，以任意次序指向那两名玩家。如果恶魔杀死了标有“驻守”标记的玩家，再次唤醒火枪手，指向恶魔。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择除你以外的两名玩家：如果恶魔选择了首个被你选择的玩家，你会得知谁是恶魔。恶魔会以任意顺序得知你的选择。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/muskeeter_day_by_day.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      10
+    ],
+    "otherNightReminder": [
+      "火枪手可以选择除火枪手以外的两名玩家：如果他这么做了，为第一名玩家放置“驻守”提示标记，标记第二名玩家错误。唤醒恶魔，以任意次序指向那两名玩家。如果恶魔杀死了标有“驻守”标记的玩家，再次唤醒火枪手，指向恶魔。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "错误",
         "驻守"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "黑火药从小袋子里掉下来，流沙的声音伴随着精确的运动：“一无所有，一无所有……我们的世界真是个笑话。” 霎时间，我感觉步枪变得更轻了，而肩上的担子也更重了。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "黑火药从小袋子里掉下来，流沙的声音伴随着精确的运动：“一无所有，一无所有……我们的世界真是个笑话。” 霎时间，我感觉步枪变得更轻了，而肩上的担子也更重了。"
+    ]
+  }
 }

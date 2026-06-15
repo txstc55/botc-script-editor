@@ -2,82 +2,49 @@
   "id": "多罗迈特",
   "name": "多罗迈特",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "多罗迈特",
-      "name": "多罗迈特",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
-      "image": "https://i.postimg.cc/9085cVb6/image-8.webp",
-      "firstNight": 8,
-      "firstNightReminder": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
-      "otherNight": 34,
-      "otherNightReminder": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
+      "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你的选择无效。[无爪牙在场]"
+    ],
+    "image": [
+      "https://i.postimg.cc/9085cVb6/image-8.webp",
+      "https://i.postimg.cc/V6csWMdP/image.png"
+    ],
+    "firstNight": [
+      5200,
+      6601,
+      8
+    ],
+    "firstNightReminder": [
+      "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
+      "唤醒多罗迈特并让他指向一名玩家，唤醒被多罗迈特选择的玩家，提示他加入邪恶。"
+    ],
+    "otherNight": [
+      3201,
+      34,
+      8441
+    ],
+    "otherNightReminder": [
+      "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
+      "唤醒多罗迈特并让他指向一名玩家，唤醒被多罗迈特选择的玩家，提示他加入邪恶。"
+    ],
+    "reminders": [
+      [
         "邪恶",
         "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "多罗迈特",
-      "name": "多罗迈特",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
-      "image": "https://i.postimg.cc/9085cVb6/image-8.webp",
-      "firstNight": 5200,
-      "firstNightReminder": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
-      "otherNight": 3201,
-      "otherNightReminder": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你在进行选择时失效。第五个白天结束后，邪恶阵营获胜。[无爪牙在场]",
-      "reminders": [
-        "邪恶",
-        "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "多罗迈特",
-      "name": "多罗迈特",
-      "variantIndex": 3,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营。每局游戏限一次，你的选择无效。[无爪牙在场]",
-      "image": "https://i.postimg.cc/V6csWMdP/image.png",
-      "firstNight": 6601,
-      "firstNightReminder": "唤醒多罗迈特并让他指向一名玩家，唤醒被多罗迈特选择的玩家，提示他加入邪恶。",
-      "otherNight": 8441,
-      "otherNightReminder": "唤醒多罗迈特并让他指向一名玩家，唤醒被多罗迈特选择的玩家，提示他加入邪恶。",
-      "reminders": [
-        "邪恶",
-        "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

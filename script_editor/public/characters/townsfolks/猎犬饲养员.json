@@ -2,121 +2,62 @@
   "id": "猎犬饲养员",
   "name": "猎犬饲养员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 5,
   "totalOccurrenceCount": 6,
-  "variants": [
-    {
-      "id": "猎犬饲养员",
-      "name": "猎犬饲养员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你得知当晚被邪恶玩家能力选择的存活玩家与你的最近距离。",
-      "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/11_spacebound.png",
-      "firstNight": 25,
-      "firstNightReminder": "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离。",
-      "otherNight": 19,
-      "otherNightReminder": "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你得知当晚被邪恶玩家能力选择的存活玩家与你的最近距离。",
+      "每个夜晚，你会得知当晚被邪恶玩家的能力选择或影响的存活玩家与你的最近距离是多少。",
+      "每个夜晚，你会得知当晚被邪恶玩家的能力选择的存活的玩家与你的最近距离是多少。",
+      "每个夜晚，你会得知被邪恶玩家的能力选择的存活玩家与你的最近距离。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter21_assets_of_lei_gallery.png",
+      "https://www.bloodstar.xyz/p/spdm/SpaceBound/11_spacebound.png",
+      "https://i.postimg.cc/jddVKbwr/image.png",
+      "https://www.bloodstar.xyz/p/fake/CatFishing/1_catfishing.png"
+    ],
+    "firstNight": [
+      12401,
+      25,
+      3045,
+      3900
+    ],
+    "firstNightReminder": [
+      "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离",
+      "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离。",
+      "你会得知当晚被邪恶玩家的能力影响的存活玩家与你的最近距离是多少。",
+      "每个夜晚，你得知当晚被邪恶玩家能力选择的存活玩家与你的最近距离。"
+    ],
+    "otherNight": [
+      14811,
+      19,
+      165,
+      18
+    ],
+    "otherNightReminder": [
+      "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离",
+      "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离。",
+      "你会得知当晚被邪恶玩家的能力影响的存活玩家与你的最近距离是多少。",
+      "唤醒猎犬饲养员"
+    ],
+    "reminders": [
+      [
         "浊气"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "猎犬饲养员",
-      "name": "猎犬饲养员",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你得知当晚被邪恶玩家能力选择的存活玩家与你的最近距离。",
-      "image": "https://i.postimg.cc/jddVKbwr/image.png",
-      "firstNight": 3045,
-      "firstNightReminder": "每个夜晚，你得知当晚被邪恶玩家能力选择的存活玩家与你的最近距离。",
-      "otherNight": 165,
-      "otherNightReminder": "唤醒猎犬饲养员",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "猎犬饲养员",
-      "name": "猎犬饲养员",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知当晚被邪恶玩家的能力选择或影响的存活玩家与你的最近距离是多少。",
-      "image": "https://www.bloodstar.xyz/p/fake/CatFishing/1_catfishing.png",
-      "firstNight": 3900,
-      "firstNightReminder": "你会得知当晚被邪恶玩家的能力影响的存活玩家与你的最近距离是多少。",
-      "otherNight": 18,
-      "otherNightReminder": "你会得知当晚被邪恶玩家的能力影响的存活玩家与你的最近距离是多少。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "猎犬饲养员",
-      "name": "猎犬饲养员",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知当晚被邪恶玩家的能力选择的存活的玩家与你的最近距离是多少。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter21_assets_of_lei_gallery.png",
-      "firstNight": 12401,
-      "firstNightReminder": "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离",
-      "otherNight": 14811,
-      "otherNightReminder": "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离",
-      "reminders": [
+      [],
+      [
         "气味"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "猎犬饲养员",
-      "name": "猎犬饲养员",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知被邪恶玩家的能力选择的存活玩家与你的最近距离。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter21_assets_of_lei_gallery.png",
-      "firstNight": 12401,
-      "firstNightReminder": "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离",
-      "otherNight": 14811,
-      "otherNightReminder": "唤醒猎犬饲养员，展示被邪恶玩家的能力选择的存活玩家与他的最近距离",
-      "reminders": [
-        "浊气"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

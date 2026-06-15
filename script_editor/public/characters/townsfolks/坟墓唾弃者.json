@@ -2,35 +2,42 @@
   "id": "坟墓唾弃者",
   "name": "坟墓唾弃者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "坟墓唾弃者",
-      "name": "坟墓唾弃者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的一名存活玩家：如果他当晚被恶魔杀死，另一名死亡镇民可能会复活并中毒到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/tombspitter_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 6,
-      "otherNightReminder": "让坟墓唾弃者指向一名除他以外的存活玩家。标记该玩家“看护”。如果该玩家今晚被恶魔杀死，可能会有一名其他的死亡镇民复活并中毒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择除你以外的一名存活玩家：如果他当晚被恶魔杀死，另一名死亡镇民可能会复活并中毒到下个黄昏。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/tombspitter_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      6
+    ],
+    "otherNightReminder": [
+      "让坟墓唾弃者指向一名除他以外的存活玩家。标记该玩家“看护”。如果该玩家今晚被恶魔杀死，可能会有一名其他的死亡镇民复活并中毒。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "复活",
         "看护"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Such vast misfortunes for such a small town... Far too many bodies... No one will mind if I make a little room.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Such vast misfortunes for such a small town... Far too many bodies... No one will mind if I make a little room."
+    ]
+  }
 }

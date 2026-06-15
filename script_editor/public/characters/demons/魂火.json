@@ -2,34 +2,41 @@
   "id": "魂火",
   "name": "魂火",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "魂火",
-      "name": "魂火",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "两名善良玩家是恶魔、中毒且必定产生错误信息，爪牙代替恶魔获取初始恶魔信息，并得知这两名玩家的角色。每个夜晚*，爪牙们商议决定让一名玩家死亡。所有玩家都知道魂火在场。【-1恶魔，+1镇民】",
-      "image": "https://www.bloodstar.xyz/p/jc3635/TwinCity/2_twincity.png",
-      "firstNight": 7,
-      "firstNightReminder": "给两名镇民玩家标记“魂火碎片”",
-      "otherNight": 12,
-      "otherNightReminder": "唤醒所有爪牙，让他们选择一名玩家，给他标记“死亡”",
-      "reminders": [],
-      "remindersGlobal": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "两名善良玩家是恶魔、中毒且必定产生错误信息，爪牙代替恶魔获取初始恶魔信息，并得知这两名玩家的角色。每个夜晚*，爪牙们商议决定让一名玩家死亡。所有玩家都知道魂火在场。【-1恶魔，+1镇民】"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/TwinCity/2_twincity.png"
+    ],
+    "firstNight": [
+      7
+    ],
+    "firstNightReminder": [
+      "给两名镇民玩家标记“魂火碎片”"
+    ],
+    "otherNight": [
+      12
+    ],
+    "otherNightReminder": [
+      "唤醒所有爪牙，让他们选择一名玩家，给他标记“死亡”"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      [
         "死亡",
         "魂火碎片"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,58 +2,42 @@
   "id": "舞蛇人（改）",
   "name": "舞蛇人（改）",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "舞蛇人（改）",
-      "name": "舞蛇人（改）",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了爪牙，你和他交换角色，然后他中毒。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
-      "firstNight": 21,
-      "firstNightReminder": "唤醒舞蛇人，他可以摇头不使用能力，或选择一名玩家，如果他选中了爪牙，执行角色交互，并在舞蛇人入睡后通知旧爪牙角色变化。",
-      "otherNight": 15,
-      "otherNightReminder": "如果舞蛇人未曾使用能力，唤醒舞蛇人，他可以摇头不使用能力，或选择一名玩家，如果他选中了爪牙，执行角色交互，并在舞蛇人入睡后通知旧爪牙角色变化。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了爪牙，你和他交换角色，然后他中毒。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png"
+    ],
+    "firstNight": [
+      21,
+      3400
+    ],
+    "firstNightReminder": [
+      "唤醒舞蛇人，他可以摇头不使用能力，或选择一名玩家，如果他选中了爪牙，执行角色交互，并在舞蛇人入睡后通知旧爪牙角色变化。"
+    ],
+    "otherNight": [
+      15
+    ],
+    "otherNightReminder": [
+      "如果舞蛇人未曾使用能力，唤醒舞蛇人，他可以摇头不使用能力，或选择一名玩家，如果他选中了爪牙，执行角色交互，并在舞蛇人入睡后通知旧爪牙角色变化。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "舞蛇人（改）",
-      "name": "舞蛇人（改）",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了爪牙，你和他交换角色，然后他中毒。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
-      "firstNight": 3400,
-      "firstNightReminder": "唤醒舞蛇人，他可以摇头不使用能力，或选择一名玩家，如果他选中了爪牙，执行角色交互，并在舞蛇人入睡后通知旧爪牙角色变化。",
-      "otherNight": 15,
-      "otherNightReminder": "如果舞蛇人未曾使用能力，唤醒舞蛇人，他可以摇头不使用能力，或选择一名玩家，如果他选中了爪牙，执行角色交互，并在舞蛇人入睡后通知旧爪牙角色变化。",
-      "reminders": [
-        "中毒",
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

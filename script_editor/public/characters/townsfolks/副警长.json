@@ -2,33 +2,40 @@
   "id": "副警长",
   "name": "副警长",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "副警长",
-      "name": "副警长",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他当晚将要选择玩家，他的首个选择会改为选中你。",
-      "image": "https://i.postimg.cc/JzNLbg5f/deputy.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 6,
-      "otherNightReminder": "副警长选择一名玩家. 放置'必选副警长'标记在那名玩家上.如果那名玩家被唤醒要选择一名玩家, 如果他当晚将要选择玩家，他的首个选择会改为选中副警长。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：如果他当晚将要选择玩家，他的首个选择会改为选中你。"
+    ],
+    "image": [
+      "https://i.postimg.cc/JzNLbg5f/deputy.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      6
+    ],
+    "otherNightReminder": [
+      "副警长选择一名玩家. 放置'必选副警长'标记在那名玩家上.如果那名玩家被唤醒要选择一名玩家, 如果他当晚将要选择玩家，他的首个选择会改为选中副警长。"
+    ],
+    "reminders": [
+      [
         "必选副警长"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

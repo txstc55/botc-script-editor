@@ -7,41 +7,12 @@
     "戏子",
     "混沌"
   ],
-  "targetCount": 3,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "混沌 & 戏子",
-      "name": "混沌 & 戏子",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "(私货商人相克规则)如果混沌杀死了与自己邻近的戏子，所有戏子会立即中毒直到混沌下一次被唤醒。",
-      "targets": [
-        "私货商人",
-        "戏子",
-        "混沌"
-      ],
-      "targetCount": 3,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "混沌",
-        "targetId": "xiziTRANS",
-        "targetName": "戏子"
-      },
-      "rules": [
-        {
-          "sourceCharacter": "混沌",
-          "targetId": "xiziTRANS",
-          "targetName": "戏子"
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "(私货商人相克规则)如果混沌杀死了与自己邻近的戏子，所有戏子会立即中毒直到混沌下一次被唤醒。"
+    ]
+  }
 }

@@ -2,73 +2,46 @@
   "id": "舞龙头",
   "name": "舞龙头",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "舞龙头",
-      "name": "舞龙头",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5464670695861_6d8fec4c.jpg",
-      "firstNight": 3080,
-      "firstNightReminder": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
-      "otherNight": 140,
-      "otherNightReminder": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "舞龙头",
-      "name": "舞龙头",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5464670695861_6d8fec4c.jpg",
-      "firstNight": 5500,
-      "firstNightReminder": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
-      "otherNight": 8800,
-      "otherNightReminder": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "舞龙头",
-      "name": "舞龙头",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民玩家是舞龙尾]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_1628895766861_adadb077.jpg",
-      "firstNight": 88000,
-      "firstNightReminder": "给距离舞龙头最远的一名镇民玩家放置舞龙尾标记。告诉他，他和舞龙尾最近距离间存活的善良玩家数量。",
-      "otherNight": 88,
-      "otherNightReminder": "告诉他，他和舞龙尾最近距离间存活的善良玩家数量。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
+      "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民玩家是舞龙尾]"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5464670695861_6d8fec4c.jpg",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_1628895766861_adadb077.jpg"
+    ],
+    "firstNight": [
+      3080,
+      5500,
+      88000
+    ],
+    "firstNightReminder": [
+      "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
+      "给距离舞龙头最远的一名镇民玩家放置舞龙尾标记。告诉他，他和舞龙尾最近距离间存活的善良玩家数量。"
+    ],
+    "otherNight": [
+      140,
+      88,
+      8800
+    ],
+    "otherNightReminder": [
+      "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
+      "告诉他，他和舞龙尾最近距离间存活的善良玩家数量。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

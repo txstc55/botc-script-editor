@@ -2,54 +2,47 @@
   "id": "勇士",
   "name": "勇士",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "勇士",
-      "name": "勇士",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知你是否负伤。你在夜晚时被庇佑。",
-      "image": "https://i.postimg.cc/2yk54Cf0/勇士.png",
-      "firstNight": 1,
-      "firstNightReminder": "为勇士放置庇佑标记。",
-      "otherNight": 24,
-      "otherNightReminder": "唤醒勇士，如果勇士处于负伤状态，点头，否则摇头。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚， 你会得知与恶魔邻近的两名玩家的角色类型。",
+      "每个夜晚*，你会得知你是否负伤。你在夜晚时被庇佑。"
+    ],
+    "image": [
+      "https://i.postimg.cc/2yk54Cf0/勇士.png",
+      "https://www.helloimg.com/i/2024/11/27/674609f87b4b6.png"
+    ],
+    "firstNight": [
+      1,
+      19
+    ],
+    "firstNightReminder": [
+      "为勇士放置庇佑标记。",
+      "勇士得知与恶魔相邻的两名玩家的角色类型。"
+    ],
+    "otherNight": [
+      0,
+      24
+    ],
+    "otherNightReminder": [
+      "",
+      "唤醒勇士，如果勇士处于负伤状态，点头，否则摇头。"
+    ],
+    "reminders": [
+      [
         "庇佑"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "勇士",
-      "name": "勇士",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚， 你会得知与恶魔邻近的两名玩家的角色类型。",
-      "image": "https://www.helloimg.com/i/2024/11/27/674609f87b4b6.png",
-      "firstNight": 19,
-      "firstNightReminder": "勇士得知与恶魔相邻的两名玩家的角色类型。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

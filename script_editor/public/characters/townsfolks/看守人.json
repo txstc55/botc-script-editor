@@ -2,33 +2,40 @@
   "id": "看守人",
   "name": "看守人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "看守人",
-      "name": "看守人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知在场的恶魔角色。在夜晚时，被命运指针指向的玩家被你庇佑。",
-      "image": "https://i.postimg.cc/BbpXyXgW/看守人.png",
-      "firstNight": 18,
-      "firstNightReminder": "唤醒看守人，并向他展示在场的恶魔角色标记。跟随命运指针放置庇佑标记。",
-      "otherNight": 1,
-      "otherNightReminder": "跟随命运指针放置庇佑标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知在场的恶魔角色。在夜晚时，被命运指针指向的玩家被你庇佑。"
+    ],
+    "image": [
+      "https://i.postimg.cc/BbpXyXgW/看守人.png"
+    ],
+    "firstNight": [
+      18
+    ],
+    "firstNightReminder": [
+      "唤醒看守人，并向他展示在场的恶魔角色标记。跟随命运指针放置庇佑标记。"
+    ],
+    "otherNight": [
+      1
+    ],
+    "otherNightReminder": [
+      "跟随命运指针放置庇佑标记。"
+    ],
+    "reminders": [
+      [
         "庇佑"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

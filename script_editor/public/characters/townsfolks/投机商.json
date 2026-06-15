@@ -2,34 +2,41 @@
   "id": "投机商",
   "name": "投机商",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "投机商",
-      "name": "投机商",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你提名并处决了一名玩家，当晚，你与一名离你最近的存活邪恶玩家醉酒直到下个黄昏。",
-      "image": "https://i.postimg.cc/t4wX5PK6/speculator.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5,
-      "otherNightReminder": "如果你提名的玩家被处决, 将醉酒标记放置于你与一名离你最近的存活邪恶玩家上，直到下个黄昏。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你提名并处决了一名玩家，当晚，你与一名离你最近的存活邪恶玩家醉酒直到下个黄昏。"
+    ],
+    "image": [
+      "https://i.postimg.cc/t4wX5PK6/speculator.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "如果你提名的玩家被处决, 将醉酒标记放置于你与一名离你最近的存活邪恶玩家上，直到下个黄昏。"
+    ],
+    "reminders": [
+      [
         "提名",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

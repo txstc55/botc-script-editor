@@ -2,34 +2,41 @@
   "id": "冰恋者",
   "name": "冰恋者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "冰恋者",
-      "name": "冰恋者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家：如果他们之中有人在下个黄昏前死亡，你会在当晚得知他的角色。",
-      "image": "https://i.postimg.cc/zfmpzNv2/half-dead.png",
-      "firstNight": 16,
-      "firstNightReminder": "唤醒冰恋者，让他指向两名玩家。为他们放置迷恋标记。",
-      "otherNight": 15,
-      "otherNightReminder": "唤醒冰恋者，如果有死亡玩家带有得知标记，向冰恋者展示他的角色标记。移除所有标记。然后让冰恋者指向两名玩家。为他们放置迷恋标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名玩家：如果他们之中有人在下个黄昏前死亡，你会在当晚得知他的角色。"
+    ],
+    "image": [
+      "https://i.postimg.cc/zfmpzNv2/half-dead.png"
+    ],
+    "firstNight": [
+      16
+    ],
+    "firstNightReminder": [
+      "唤醒冰恋者，让他指向两名玩家。为他们放置迷恋标记。"
+    ],
+    "otherNight": [
+      15
+    ],
+    "otherNightReminder": [
+      "唤醒冰恋者，如果有死亡玩家带有得知标记，向冰恋者展示他的角色标记。移除所有标记。然后让冰恋者指向两名玩家。为他们放置迷恋标记。"
+    ],
+    "reminders": [
+      [
         "得知",
         "迷恋"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

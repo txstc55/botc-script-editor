@@ -2,38 +2,45 @@
   "id": "索命",
   "name": "索命",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "索命",
-      "name": "索命",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "首个夜晚，你为之后的每个夜晚选择两名不同且不重复的玩家。每个夜晚*，你可以选择：1.击杀当夜对应的玩家；2.全场游戏限一次，杀死自己使当夜对应的玩家之一变成新的邪恶索命，若你如此做，当夜对应的另一名玩家会得知有新的邪恶索命。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_4018687718661_4ddc539d.jpg",
-      "firstNight": 53,
-      "firstNightReminder": "唤醒该玩家，让他依次为后续夜晚选择目标玩家",
-      "otherNight": 30,
-      "otherNightReminder": "唤醒该玩家，让他选择击杀或者自杀。如果他选择自杀，让他闭眼，说书人选择让谁变为新的邪恶索命，并唤醒目标玩家，告知身份阵营发生改变。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "首个夜晚，你为之后的每个夜晚选择两名不同且不重复的玩家。每个夜晚*，你可以选择：1.击杀当夜对应的玩家；2.全场游戏限一次，杀死自己使当夜对应的玩家之一变成新的邪恶索命，若你如此做，当夜对应的另一名玩家会得知有新的邪恶索命。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_4018687718661_4ddc539d.jpg"
+    ],
+    "firstNight": [
+      53
+    ],
+    "firstNightReminder": [
+      "唤醒该玩家，让他依次为后续夜晚选择目标玩家"
+    ],
+    "otherNight": [
+      30
+    ],
+    "otherNightReminder": [
+      "唤醒该玩家，让他选择击杀或者自杀。如果他选择自杀，让他闭眼，说书人选择让谁变为新的邪恶索命，并唤醒目标玩家，告知身份阵营发生改变。"
+    ],
+    "reminders": [
+      [
         "第七夜",
         "第三夜",
         "第二夜",
         "第五夜",
         "第六夜",
         "第四夜"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

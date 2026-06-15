@@ -2,33 +2,40 @@
   "id": "钢铁侠",
   "name": "钢铁侠",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "钢铁侠",
-      "name": "钢铁侠",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在被提名后公开声明自己是钢铁侠且在那个白天被处决，提名你的玩家会在当晚死亡。",
-      "image": "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/ironman_avengersv2.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "If the Iron Man claimed their role when they were nominated & executed today, the player who nominated them dies.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在被提名后公开声明自己是钢铁侠且在那个白天被处决，提名你的玩家会在当晚死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/ironman_avengersv2.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      10
+    ],
+    "otherNightReminder": [
+      "If the Iron Man claimed their role when they were nominated & executed today, the player who nominated them dies."
+    ],
+    "reminders": [
+      [
         "我是钢铁侠"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "I'm sorry, Earth is closed today. You better pack it up and get outta here.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "I'm sorry, Earth is closed today. You better pack it up and get outta here."
+    ]
+  }
 }

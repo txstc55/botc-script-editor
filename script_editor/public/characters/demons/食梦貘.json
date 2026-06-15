@@ -2,56 +2,44 @@
   "id": "食梦貘",
   "name": "食梦貘",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "食梦貘",
-      "name": "食梦貘",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。 使用自身能力选择你的玩家，可能会改为选中他自己。[-1外来者]",
-      "image": "https://www.bloodstar.xyz/p/bluebell/jtxx/25_jtxx.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 6,
-      "otherNightReminder": "1",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。 使用自身能力选择你的玩家，可能会改为选中他自己。[-1外来者]",
+      "每个夜晚*，你要选择一名玩家：他死亡。选择你的玩家会改为选中自己。[-1 外来者]"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1941208694761_71bc0c2b.jpg",
+      "https://www.bloodstar.xyz/p/bluebell/jtxx/25_jtxx.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      30,
+      6
+    ],
+    "otherNightReminder": [
+      "1",
+      "唤醒食梦貘，让其选择一名玩家。标记那名玩家死亡。"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "食梦貘",
-      "name": "食梦貘",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。选择你的玩家会改为选中自己。[-1 外来者]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1941208694761_71bc0c2b.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 30,
-      "otherNightReminder": "唤醒食梦貘，让其选择一名玩家。标记那名玩家死亡。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

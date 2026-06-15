@@ -2,57 +2,50 @@
   "id": "精灵",
   "name": "精灵",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "精灵",
-      "name": "精灵",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你“疯狂”地证明你是精灵，你可能会被处决。你会转变为除你以外首位公开猜对你是精灵的玩家阵营。",
-      "image": "https://www.bloodstar.xyz/p/LemonSneeze/Ragnarok-09/lfar_ragnarok09.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你“疯狂”地证明你是精灵，你可能会被处决。你会转变为除你以外首位公开猜对你是精灵的玩家阵营。",
+      "你以为你是一个镇民角色，但其实你不是。在你的首个夜晚，你会跃离。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/LemonSneeze/Ragnarok-09/lfar_ragnarok09.png",
+      "https://www.bloodstar.xyz/p/bluebell/111/14_111.png"
+    ],
+    "firstNight": [
+      0,
+      19
+    ],
+    "firstNightReminder": [
+      "",
+      "1"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "善良",
         "邪恶"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "精灵",
-      "name": "精灵",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你以为你是一个镇民角色，但其实你不是。在你的首个夜晚，你会跃离。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/111/14_111.png",
-      "firstNight": 19,
-      "firstNightReminder": "1",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [
+      []
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "是精灵"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

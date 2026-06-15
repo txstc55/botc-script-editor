@@ -6,42 +6,14 @@
     "贝尔森克",
     "heretic"
   ],
-  "targetCount": 2,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [
+    "nested_jinx_target_id_unresolved"
+  ],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "贝尔森克 & heretic",
-      "name": "贝尔森克 & heretic",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "Only 1 jinxed character can be in play.",
-      "targets": [
-        "贝尔森克",
-        "heretic"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "贝尔森克",
-        "targetId": "heretic",
-        "targetName": ""
-      },
-      "rules": [
-        {
-          "sourceCharacter": "贝尔森克",
-          "targetId": "heretic",
-          "targetName": ""
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": [
-        "nested_jinx_target_id_unresolved"
-      ]
-    }
-  ]
+  "variants": {
+    "ability": [
+      "Only 1 jinxed character can be in play."
+    ]
+  }
 }

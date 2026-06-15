@@ -2,78 +2,56 @@
   "id": "胆小鬼",
   "name": "胆小鬼",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "胆小鬼",
-      "name": "胆小鬼",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你所投票的玩家被处决，你可能会代替他被处决。",
-      "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/15_yz_cn_ggg.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "胆小鬼",
-      "name": "胆小鬼",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "每个夜晚*，如果与你邻近的两名存活的玩家都已丧失理智，你失踪直到明天黄昏，然后死亡。",
-      "image": "https://free.picui.cn/free/2025/11/28/6928978167287.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 21,
-      "otherNightReminder": "如果胆小鬼邻近的两名存活的玩家都已丧失理智，标记胆小鬼失踪。移除失踪标记后，标记胆小鬼死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你所投票的玩家被处决，你可能会代替他被处决。",
+      "当你转变为恐慌状态的时候，你转变为邪恶。",
+      "每个夜晚*，如果与你邻近的两名存活的玩家都已丧失理智，你失踪直到明天黄昏，然后死亡。"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/11/28/6928978167287.png",
+      "https://www.bloodstar.xyz/p/SeaBound/Halloween/coward_halloween.png",
+      "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/15_yz_cn_ggg.png"
+    ],
+    "firstNight": [
+      0,
+      3800
+    ],
+    "firstNightReminder": [
+      "",
+      "如果胆小鬼转变为恐慌状态，他转变为邪恶。如果胆小鬼解除恐慌状态，他再次转变为善良。"
+    ],
+    "otherNight": [
+      0,
+      13,
+      21
+    ],
+    "otherNightReminder": [
+      "",
+      "如果胆小鬼转变为恐慌状态，他转变为邪恶。如果胆小鬼解除恐慌状态，他再次转变为善良。",
+      "如果胆小鬼邻近的两名存活的玩家都已丧失理智，标记胆小鬼失踪。移除失踪标记后，标记胆小鬼死亡。"
+    ],
+    "reminders": [
+      [],
+      [
         "失踪",
         "死亡"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "胆小鬼"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "胆小鬼",
-      "name": "胆小鬼",
-      "variantIndex": 3,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "当你转变为恐慌状态的时候，你转变为邪恶。",
-      "image": "https://www.bloodstar.xyz/p/SeaBound/Halloween/coward_halloween.png",
-      "firstNight": 3800,
-      "firstNightReminder": "如果胆小鬼转变为恐慌状态，他转变为邪恶。如果胆小鬼解除恐慌状态，他再次转变为善良。",
-      "otherNight": 13,
-      "otherNightReminder": "如果胆小鬼转变为恐慌状态，他转变为邪恶。如果胆小鬼解除恐慌状态，他再次转变为善良。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "I'm scared to close my eyes, I'm scared to open them!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "I'm scared to close my eyes, I'm scared to open them!"
+    ]
+  }
 }

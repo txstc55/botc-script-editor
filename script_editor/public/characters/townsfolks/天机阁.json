@@ -2,79 +2,52 @@
   "id": "天机阁",
   "name": "天机阁",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "天机阁",
-      "name": "天机阁",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名除你以外的邻座玩家，你会得知相较于上一个夜晚，你是否选择了更多的邪恶玩家。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264608_197011_430.png",
-      "firstNight": 46,
-      "firstNightReminder": "在首个夜晚，唤醒天机阁，让其选择两名连坐的玩家，并在其角色标记旁放置“探查”标记。",
-      "otherNight": 85,
-      "otherNightReminder": "唤醒天机阁，让其选择两名连坐的玩家，用点头或者摇头来告知是否选择了更多的邪恶玩家，移除之前的“探查”标记，并在新选择的玩家角色标记旁放置“探查”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名除你以外的邻座玩家，你会得知相较于上一个夜晚，你是否选择了更多的邪恶玩家。",
+      "每个夜晚，你要选择两名除你以外的邻座玩家：你会得知相较于上一个夜晚，你是否选择了更多的邪恶玩家。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1722264608_197011_430.png",
+      "https://www.bloodstar.xyz/p/bluebell/jtxx/5_jtxx.png"
+    ],
+    "firstNight": [
+      46,
+      21,
+      87
+    ],
+    "firstNightReminder": [
+      "在首个夜晚，唤醒天机阁，让其选择两名连坐的玩家，并在其角色标记旁放置“探查”标记。",
+      "1"
+    ],
+    "otherNight": [
+      85,
+      128,
+      14
+    ],
+    "otherNightReminder": [
+      "唤醒天机阁，让其选择两名连坐的玩家，用点头或者摇头来告知是否选择了更多的邪恶玩家，移除之前的“探查”标记，并在新选择的玩家角色标记旁放置“探查”标记。",
+      "1"
+    ],
+    "reminders": [
+      [
         "探查"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "稚子问翁新悟处，欲言直恐泄天机。",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "天机阁",
-      "name": "天机阁",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名除你以外的邻座玩家：你会得知相较于上一个夜晚，你是否选择了更多的邪恶玩家。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/jtxx/5_jtxx.png",
-      "firstNight": 21,
-      "firstNightReminder": "1",
-      "otherNight": 14,
-      "otherNightReminder": "1",
-      "reminders": [
+      [
         "天机"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "天机阁",
-      "name": "天机阁",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名除你以外的邻座玩家，你会得知相较于上一个夜晚，你是否选择了更多的邪恶玩家。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1722264608_197011_430.png",
-      "firstNight": 87,
-      "firstNightReminder": "在首个夜晚，唤醒天机阁，让其选择两名连坐的玩家，并在其角色标记旁放置“探查”标记。",
-      "otherNight": 128,
-      "otherNightReminder": "唤醒天机阁，让其选择两名连坐的玩家，用点头或者摇头来告知是否选择了更多的邪恶玩家，移除之前的“探查”标记，并在新选择的玩家角色标记旁放置“探查”标记。",
-      "reminders": [
-        "探查"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "稚子问翁新悟处，欲言直恐泄天机。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "稚子问翁新悟处，欲言直恐泄天机。",
+      ""
+    ]
+  }
 }

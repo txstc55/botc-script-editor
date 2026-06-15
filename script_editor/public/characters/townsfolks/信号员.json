@@ -2,33 +2,40 @@
   "id": "信号员",
   "name": "信号员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "信号员",
-      "name": "信号员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择两名玩家：如果他们都属于善良阵营，他们会得知自己被信号员选择。",
-      "image": "https://i.postimg.cc/5NkDWdHk/Photo10.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "让信号员指向两名玩家，如果他们都是善良的，依次唤醒他们，告知他们被信号员选择。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择两名玩家：如果他们都属于善良阵营，他们会得知自己被信号员选择。"
+    ],
+    "image": [
+      "https://i.postimg.cc/5NkDWdHk/Photo10.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      19
+    ],
+    "otherNightReminder": [
+      "让信号员指向两名玩家，如果他们都是善良的，依次唤醒他们，告知他们被信号员选择。"
+    ],
+    "reminders": [
+      [
         "得知选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,107 +2,61 @@
   "id": "忏悔者",
   "name": "忏悔者",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 4,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "忏悔者",
-      "name": "忏悔者",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你死亡，当晚恶魔可以将能力变为“每个夜晚*，你要选择两名玩家：他们死亡。”",
+      "如果你死亡，当晚恶魔可以永久将能力变为：“每个夜晚*，你要选择两名玩家：他们死亡。”",
+      "如果你死亡，当晚恶魔可以把他的能力变为“每个夜晚*，你要选择两名玩家：他们死亡。”"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/qazwsxedc/aCup/30_acup.png",
+      "https://www.helloimg.com/i/2025/01/10/6780e26c20f26.png",
+      "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/penitent_h302_involuntarychoice.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      31,
+      14,
+      41
+    ],
+    "otherNightReminder": [
+      "如果忏悔者在今日死亡，唤醒恶魔询问是否更改自己的能力",
+      "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
+      "If the Pentient died today or tonight, wake the Demon. Show them the \"This character affected you\" token, and then the Penitent token. They shake their head or nod. If they nod, place the \"Doubled End\" reminder: they kill two players every night from now on."
+    ],
+    "reminders": [
+      [
+        "我忏悔"
       ],
-      "ability": "如果你死亡，当晚恶魔可以永久将能力变为：“每个夜晚*，你要选择两名玩家：他们死亡。”",
-      "image": "https://www.bloodstar.xyz/p/qazwsxedc/aCup/30_acup.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 31,
-      "otherNightReminder": "如果忏悔者在今日死亡，唤醒恶魔询问是否更改自己的能力",
-      "reminders": [],
-      "remindersGlobal": [
+      [],
+      [
+        "Judgement Tonight"
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "忏悔",
         "死亡",
         "能力改变"
       ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "忏悔者",
-      "name": "忏悔者",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你死亡，当晚恶魔可以把他的能力变为“每个夜晚*，你要选择两名玩家：他们死亡。”",
-      "image": "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/penitent_h302_involuntarychoice.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "If the Pentient died today or tonight, wake the Demon. Show them the \"This character affected you\" token, and then the Penitent token. They shake their head or nod. If they nod, place the \"Doubled End\" reminder: they kill two players every night from now on.",
-      "reminders": [
-        "Judgement Tonight"
-      ],
-      "remindersGlobal": [
+      [],
+      [
         "双倍终结",
         "死亡"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "忏悔者",
-      "name": "忏悔者",
-      "variantIndex": 3,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你死亡，当晚恶魔可以将能力变为“每个夜晚*，你要选择两名玩家：他们死亡。”",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780e26c20f26.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 31,
-      "otherNightReminder": "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
-      "reminders": [
-        "我忏悔"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "忏悔者",
-      "name": "忏悔者",
-      "variantIndex": 4,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你死亡，当晚恶魔可以将能力变为“每个夜晚*，你要选择两名玩家：他们死亡。”",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780e26c20f26.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 41,
-      "otherNightReminder": "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
-      "reminders": [
-        "我忏悔"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

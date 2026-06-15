@@ -2,34 +2,41 @@
   "id": "观察员",
   "name": "观察员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "观察员",
-      "name": "观察员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择爪牙初始设置数量加一的数量的玩家。他们之中有人被同化的当晚，你会得知这一消息。",
-      "image": "https://i.postimg.cc/9fyk9DLv/Photo13.png",
-      "firstNight": 19,
-      "firstNightReminder": "让观察者指向爪牙初始设置数量加一的数量的玩家，标记他们“选择”。如果他们之中有玩家被同化，告知观察者此事。",
-      "otherNight": 20,
-      "otherNightReminder": "如果带有选择标记的玩家被同化，告知观察者此事。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择爪牙初始设置数量加一的数量的玩家。他们之中有人被同化的当晚，你会得知这一消息。"
+    ],
+    "image": [
+      "https://i.postimg.cc/9fyk9DLv/Photo13.png"
+    ],
+    "firstNight": [
+      19
+    ],
+    "firstNightReminder": [
+      "让观察者指向爪牙初始设置数量加一的数量的玩家，标记他们“选择”。如果他们之中有玩家被同化，告知观察者此事。"
+    ],
+    "otherNight": [
+      20
+    ],
+    "otherNightReminder": [
+      "如果带有选择标记的玩家被同化，告知观察者此事。"
+    ],
+    "reminders": [
+      [
         "得知同化",
         "选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

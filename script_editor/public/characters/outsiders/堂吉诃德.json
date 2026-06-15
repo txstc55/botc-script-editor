@@ -2,79 +2,49 @@
   "id": "堂吉诃德",
   "name": "堂吉诃德",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "堂吉诃德",
-      "name": "堂吉诃德",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "一名玩家会被镇民的能力当作恶魔，即使你已死亡。你可以私下询问说书人以得知“他”是谁，随后“他”会改为另一名玩家。",
-      "image": "https://www.bloodstar.xyz/p/humlet/ROSE/58_rose.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "一名玩家会被镇民的能力当作恶魔，即使你已死亡。你可以私下询问说书人以得知“他”是谁，随后“他”会改为另一名玩家。",
+      "如果镇民在夜间选择你，他当晚获取错误信息。当你死亡后，当晚恶魔可以指定一个剧幕，必定在下一个白天被宣布。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/humlet/ROSE/58_rose.png",
+      "https://www.bloodstar.xyz/p/westwind/BBB/16_bbb.png",
+      "https://www.bloodstar.xyz/p/worryhours/yitai/9_yitai.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      16
+    ],
+    "otherNightReminder": [
+      "",
+      "如果堂吉诃德死于白天或者今夜，恶魔可以指定任意一个剧幕，必定在下一个白天被宣布。"
+    ],
+    "reminders": [
+      [
         "“他”"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嘘...小声点！什么风车？这是巨人，什么山羊？这是恶魔！...桑丘！随我冲锋！",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "堂吉诃德",
-      "name": "堂吉诃德",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "一名玩家会被镇民的能力当作恶魔，即使你已死亡。你可以私下询问说书人以得知“他”是谁，随后“他”会改为另一名玩家。",
-      "image": "https://www.bloodstar.xyz/p/worryhours/yitai/9_yitai.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "“他”"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "堂吉诃德",
-      "name": "堂吉诃德",
-      "variantIndex": 3,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果镇民在夜间选择你，他当晚获取错误信息。当你死亡后，当晚恶魔可以指定一个剧幕，必定在下一个白天被宣布。",
-      "image": "https://www.bloodstar.xyz/p/westwind/BBB/16_bbb.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "如果堂吉诃德死于白天或者今夜，恶魔可以指定任意一个剧幕，必定在下一个白天被宣布。",
-      "reminders": [
+      [
         "虚假剧幕"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "嘘...小声点！什么风车？这是巨人，什么山羊？这是恶魔！...桑丘！随我冲锋！"
+    ]
+  }
 }

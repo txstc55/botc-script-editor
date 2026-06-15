@@ -2,54 +2,44 @@
   "id": "扎纸匠",
   "name": "扎纸匠",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "扎纸匠",
-      "name": "扎纸匠",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在夜晚时，如果你即将死亡：你不会死亡且变成纸人。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6184031838171_86cd5c0e.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 52,
-      "otherNightReminder": "如果扎纸匠即将死亡，他不会死亡且需要将他的角色换成纸人。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在夜晚时，如果你即将死亡：你不会死亡且变成纸人。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_6184031838171_86cd5c0e.jpg",
+      "https://www.helloimg.com/i/2025/04/04/67ef5337b9dad.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      52,
+      80
+    ],
+    "otherNightReminder": [
+      "如果扎纸匠即将死亡，他不会死亡且需要将他的角色换成纸人。",
+      "在夜晚时，如果你即将死亡：你不会死亡且变成纸人。"
+    ],
+    "reminders": [
+      [
         "扎纸"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "扎纸匠",
-      "name": "扎纸匠",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在夜晚时，如果你即将死亡：你不会死亡且变成纸人。",
-      "image": "https://www.helloimg.com/i/2025/04/04/67ef5337b9dad.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 80,
-      "otherNightReminder": "在夜晚时，如果你即将死亡：你不会死亡且变成纸人。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

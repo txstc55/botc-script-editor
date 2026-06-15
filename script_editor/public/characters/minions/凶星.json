@@ -2,35 +2,42 @@
   "id": "凶星",
   "name": "凶星",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "凶星",
-      "name": "凶星",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你以为你是一个善良角色。 你会在死亡的当晚得知恶魔。每个夜晚*，所有死亡的凶星共同被唤醒，选择一名玩家：他死亡。[邪恶玩家均不邻座]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202506/c_3372343740571_56a0ec81.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "在初始设置时，移除所有邪恶角色的标记，改为放入等量的善良角色标记。说书人指定若干不邻座的角色标记旁放置“是凶星”提示标记。",
-      "otherNight": 5,
-      "otherNightReminder": "唤醒所有死亡的凶星，让他们共同选择一名玩家，在其角色标记旁放置“死亡”提示标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你以为你是一个善良角色。 你会在死亡的当晚得知恶魔。每个夜晚*，所有死亡的凶星共同被唤醒，选择一名玩家：他死亡。[邪恶玩家均不邻座]"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202506/c_3372343740571_56a0ec81.jpg"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      "在初始设置时，移除所有邪恶角色的标记，改为放入等量的善良角色标记。说书人指定若干不邻座的角色标记旁放置“是凶星”提示标记。"
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "唤醒所有死亡的凶星，让他们共同选择一名玩家，在其角色标记旁放置“死亡”提示标记。"
+    ],
+    "reminders": [
+      [
         "“死亡”"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "“是凶星”"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

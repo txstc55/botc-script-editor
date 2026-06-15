@@ -2,57 +2,47 @@
   "id": "命运终点站",
   "name": "命运终点站",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "命运终点站",
-      "name": "命运终点站",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家，他死亡。最后一个白天，改为得票最少的被提名玩家被处决。",
-      "image": "https://img.picui.cn/free/2025/06/17/6851434664d5c.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4,
-      "otherNightReminder": "唤醒莉莉丝，让他攻击一名玩家。如果他杀死了一名与其特征不同的玩家，通知那名玩家加入邪恶阵营。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家，他死亡。最后一个白天，改为得票最少的被提名玩家被处决。"
+    ],
+    "image": [
+      "https://img.picui.cn/free/2025/06/17/6851434664d5c.png",
+      "https://www.helloimg.com/i/2025/01/11/6782619f257c8.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      4,
+      40
+    ],
+    "otherNightReminder": [
+      "唤醒莉莉丝，让他攻击一名玩家。如果他杀死了一名与其特征不同的玩家，通知那名玩家加入邪恶阵营。",
+      "唤醒命运终点站，让他攻击一名玩家。"
+    ],
+    "reminders": [
+      [
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "命运终点站",
-      "name": "命运终点站",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家，他死亡。最后一个白天，改为得票最少的被提名玩家被处决。",
-      "image": "https://www.helloimg.com/i/2025/01/11/6782619f257c8.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 40,
-      "otherNightReminder": "唤醒命运终点站，让他攻击一名玩家。",
-      "reminders": [
+      [
         "抵达终点",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

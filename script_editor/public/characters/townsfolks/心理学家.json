@@ -2,54 +2,46 @@
   "id": "心理学家",
   "name": "心理学家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "心理学家",
-      "name": "心理学家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家，如果他们都属于善良阵营，他们恢复理智。",
-      "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/9_archives_of_insanity.png",
-      "firstNight": 18,
-      "firstNightReminder": "唤醒心理学家，让他选择两名玩家。",
-      "otherNight": 16,
-      "otherNightReminder": "唤醒心理学家，让他选择两名玩家。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "心理学家",
-      "name": "心理学家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择四个除你以外的角色（每个角色类型各一个）。每个夜晚，你要选择一名玩家：破晓时，你会得知他是否为你选择的角色之一。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596244_197011_4222.png",
-      "firstNight": 18,
-      "firstNightReminder": "心理学家选择4个不同角色类型的角色，然后指向一名玩家，用“催眠”标记那名玩家。破晓时再次唤醒心理学家，告诉他那名玩家是否为4个角色其中之一。",
-      "otherNight": 20,
-      "otherNightReminder": "让心理学家指向一名玩家，用“催眠”标记那名玩家。破晓时再次唤醒心理学家，告诉他那名玩家是否为4个角色其中之一。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择四个除你以外的角色（每个角色类型各一个）。每个夜晚，你要选择一名玩家：破晓时，你会得知他是否为你选择的角色之一。",
+      "每个夜晚，你要选择两名玩家，如果他们都属于善良阵营，他们恢复理智。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1691596244_197011_4222.png",
+      "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/9_archives_of_insanity.png"
+    ],
+    "firstNight": [
+      18
+    ],
+    "firstNightReminder": [
+      "唤醒心理学家，让他选择两名玩家。",
+      "心理学家选择4个不同角色类型的角色，然后指向一名玩家，用“催眠”标记那名玩家。破晓时再次唤醒心理学家，告诉他那名玩家是否为4个角色其中之一。"
+    ],
+    "otherNight": [
+      16,
+      20
+    ],
+    "otherNightReminder": [
+      "唤醒心理学家，让他选择两名玩家。",
+      "让心理学家指向一名玩家，用“催眠”标记那名玩家。破晓时再次唤醒心理学家，告诉他那名玩家是否为4个角色其中之一。"
+    ],
+    "reminders": [
+      [
         "催眠"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

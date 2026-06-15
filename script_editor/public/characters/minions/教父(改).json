@@ -2,36 +2,43 @@
   "id": "教父（改）",
   "name": "教父（改）",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "教父（改）",
-      "name": "教父（改）",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果白天没有玩家死亡或者有外来者死亡（各限一次），当晚你可以选择一名玩家：他死亡。[-1或+1外来者]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
-      "firstNight": 3400,
-      "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
-      "otherNight": 53,
-      "otherNightReminder": "如果今天白天有外来者死亡或者没有玩家死亡，唤醒教父，让他攻击一名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知有哪些外来者角色在场。如果白天没有玩家死亡或者有外来者死亡（各限一次），当晚你可以选择一名玩家：他死亡。[-1或+1外来者]"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png"
+    ],
+    "firstNight": [
+      3400
+    ],
+    "firstNightReminder": [
+      "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。"
+    ],
+    "otherNight": [
+      53
+    ],
+    "otherNightReminder": [
+      "如果今天白天有外来者死亡或者没有玩家死亡，唤醒教父，让他攻击一名玩家。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "无人死亡",
         "死于今日",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

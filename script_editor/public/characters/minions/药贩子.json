@@ -2,33 +2,40 @@
   "id": "药贩子",
   "name": "药贩子",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "药贩子",
-      "name": "药贩子",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名玩家：他中毒。如果他被处决，与他邻近的两名存活镇民玩家中毒。[-1外来者]",
-      "image": "https://www.bloodstar.xyz/p/marhepto/RavenswoodHigh/pusher_ravenswoodhigh.png",
-      "firstNight": 12,
-      "firstNightReminder": "药贩子选择一名玩家. 给他标记中毒标志。",
-      "otherNight": 2,
-      "otherNightReminder": "如果被药贩子选择过的玩家被处决，给他邻近的两名存活镇民玩家标记中毒标志。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一名玩家：他中毒。如果他被处决，与他邻近的两名存活镇民玩家中毒。[-1外来者]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/marhepto/RavenswoodHigh/pusher_ravenswoodhigh.png"
+    ],
+    "firstNight": [
+      12
+    ],
+    "firstNightReminder": [
+      "药贩子选择一名玩家. 给他标记中毒标志。"
+    ],
+    "otherNight": [
+      2
+    ],
+    "otherNightReminder": [
+      "如果被药贩子选择过的玩家被处决，给他邻近的两名存活镇民玩家标记中毒标志。"
+    ],
+    "reminders": [
+      [
         "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

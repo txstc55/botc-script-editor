@@ -2,57 +2,50 @@
   "id": "调酒师",
   "name": "调酒师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "调酒师",
-      "name": "调酒师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你得知除你以外至多三名玩家，他们得知你是调酒师。每个夜晚*，你要选择让他们获得由说书人决定的正面/负面效果直到下个黄昏，他们会得知自己获得了什么效果。[如果没有调酒师在场，一名爪牙拥有调酒师的能力]",
-      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/1_blackout.png",
-      "firstNight": 12,
-      "firstNightReminder": "唤醒调酒师，让他选择3名玩家。",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒调酒师，询问他是否在首夜选择的三名玩家中选择一个玩家与效果，如果他选择了，为该玩家标记对应token。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你得知除你以外至多三名玩家，他们得知你是调酒师。每个夜晚*，你要选择让他们获得由说书人决定的正面/负面效果直到下个黄昏，他们会得知自己获得了什么效果。[如果没有调酒师在场，一名爪牙拥有调酒师的能力]",
+      "每个夜晚，你会得知一个在当晚能力正常生效的角色。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/2_bundagee_inn_massacre_bigyellowfish.png",
+      "https://www.bloodstar.xyz/p/bluebell/blackout/1_blackout.png"
+    ],
+    "firstNight": [
+      12,
+      64
+    ],
+    "firstNightReminder": [
+      "唤醒调酒师，并向他展示一个能力在当晚正常生效的角色标记。",
+      "唤醒调酒师，让他选择3名玩家。"
+    ],
+    "otherNight": [
+      100,
+      8
+    ],
+    "otherNightReminder": [
+      "唤醒调酒师，并向他展示一个能力在当晚正常生效的角色标记。",
+      "唤醒调酒师，询问他是否在首夜选择的三名玩家中选择一个玩家与效果，如果他选择了，为该玩家标记对应token。"
+    ],
+    "reminders": [
+      [
         "不死",
         "定酒",
         "念珠",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "调酒师",
-      "name": "调酒师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一个在当晚能力正常生效的角色。",
-      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/2_bundagee_inn_massacre_bigyellowfish.png",
-      "firstNight": 64,
-      "firstNightReminder": "唤醒调酒师，并向他展示一个能力在当晚正常生效的角色标记。",
-      "otherNight": 100,
-      "otherNightReminder": "唤醒调酒师，并向他展示一个能力在当晚正常生效的角色标记。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,26 +2,29 @@
   "id": "末日预言官",
   "name": "末日预言官",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "末日预言官",
-      "name": "末日预言官",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你得知你将在第几夜死亡，且当晚不会有其他玩家死亡。每个夜晚，你要选择一名玩家：如果他是邪恶的，你提前一天死亡。如果你死于自身能力，一名善良玩家得知“末日降临”。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/TwinCity/13_twincity.png",
-      "firstNight": 13,
-      "firstNightReminder": "展示对应天数的标记给末日预言官看，并让他选择一名玩家，如果他是邪恶的，将标记替换为少一天的标记。",
-      "otherNight": 10,
-      "otherNightReminder": "如果到了标记剩余一天，给末日预言官标记“死亡”，并向一名善良玩家得知“末日降临”标记；否则让末日预言官选择一名玩家，如果他是邪恶的，将标记替换为少一天的标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你得知你将在第几夜死亡，且当晚不会有其他玩家死亡。每个夜晚，你要选择一名玩家：如果他是邪恶的，你提前一天死亡。如果你死于自身能力，一名善良玩家得知“末日降临”。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/TwinCity/13_twincity.png"
+    ],
+    "firstNight": [
+      13
+    ],
+    "firstNightReminder": [
+      "展示对应天数的标记给末日预言官看，并让他选择一名玩家，如果他是邪恶的，将标记替换为少一天的标记。"
+    ],
+    "otherNight": [
+      10
+    ],
+    "otherNightReminder": [
+      "如果到了标记剩余一天，给末日预言官标记“死亡”，并向一名善良玩家得知“末日降临”标记；否则让末日预言官选择一名玩家，如果他是邪恶的，将标记替换为少一天的标记。"
+    ],
+    "reminders": [
+      [
         "剩余一天",
         "剩余三天",
         "剩余二天",
@@ -29,12 +32,16 @@
         "剩余四天",
         "末日降临",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

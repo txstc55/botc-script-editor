@@ -2,34 +2,41 @@
   "id": "驱魔姐妹",
   "name": "驱魔姐妹",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "驱魔姐妹",
-      "name": "驱魔姐妹",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，每个夜晚，你可以选择一个邪恶角色：如果他在场，他醉酒。如果你选中了恶魔，每晚的死亡由说书人决定。",
-      "image": "https://www.bloodstar.xyz/p/Tiger/DARK-DUEL/21_darkduel.png",
-      "firstNight": 13,
-      "firstNightReminder": "3",
-      "otherNight": 3,
-      "otherNightReminder": "2",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，每个夜晚，你可以选择一个邪恶角色：如果他在场，他醉酒。如果你选中了恶魔，每晚的死亡由说书人决定。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Tiger/DARK-DUEL/21_darkduel.png"
+    ],
+    "firstNight": [
+      13
+    ],
+    "firstNightReminder": [
+      "3"
+    ],
+    "otherNight": [
+      3
+    ],
+    "otherNightReminder": [
+      "2"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "被选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

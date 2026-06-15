@@ -6,59 +6,13 @@
     "狂热者",
     "食人族"
   ],
-  "targetCount": 2,
-  "variantCount": 2,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "食人族&狂热者",
-      "name": "食人族&狂热者",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果食人族获得了狂热者的能力，他会得知这一信息。",
-      "targets": [
-        "狂热者",
-        "食人族"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 4,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    },
-    {
-      "id": "食人族&狂热者",
-      "name": "食人族&狂热者",
-      "variantIndex": 2,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果食人族获得了狂热者的能力，他会得知之一信息。",
-      "targets": [
-        "狂热者",
-        "食人族"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果食人族获得了狂热者的能力，他会得知这一信息。",
+      "如果食人族获得了狂热者的能力，他会得知之一信息。"
+    ]
+  }
 }

@@ -2,160 +2,64 @@
   "id": "学者",
   "name": "学者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 7,
   "totalOccurrenceCount": 7,
-  "variants": [
-    {
-      "id": "学者",
-      "name": "学者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "首个被你提名的存活外来者立刻变为一个不在场镇民角色。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/scholar_fall_of_rome.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 2,
-      "otherNightReminder": "如果学者今天白天提名了外来者，放置“失去能力”标记。唤醒被提名的玩家。展示\"失去能力\"标记。唤醒被提名的玩家。展示'你是'，然后展示他的新的角色标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知哪些邪恶角色在场。",
+      "在你的首个夜晚，你会得知有哪些邪恶角色在场。",
+      "在你的首个夜晚，你得知哪些邪恶角色在场。",
+      "每个夜晚*，你会得知一个角色并猜测谁是这个角色(或者这个角色不在场)：如果猜测正确，你会得知一名邪恶玩家，但如果猜测错误，你得知的信息由说书人决定。",
+      "首个被你提名的存活外来者立刻变为一个不在场镇民角色。[+1外来者]"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2025/03/06/67c9b78b8e599.png",
+      "https://free.picui.cn/free/2025/12/17/6941adcc2f82b.png",
+      "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/scholar_fall_of_rome.png",
+      "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/scholar_echoes_of_the_past.png",
+      "https://www.bloodstar.xyz/p/fake/CatFishing/_catfishing.png",
+      "https://www.bloodstar.xyz/p/smallbear/jinhulun/_jinhulun.png"
+    ],
+    "firstNight": [
+      0,
+      3500,
+      16,
+      7901,
+      9201
+    ],
+    "firstNightReminder": [
+      "在你的首个夜晚，你会得知哪些邪恶角色在场。",
+      "",
+      "给他展示在场的邪恶角色。"
+    ],
+    "otherNight": [
+      0,
+      2,
+      26
+    ],
+    "otherNightReminder": [
+      "",
+      "Wake the Scholar & show them a character token. They will choose a player (or shake their head \"no\" to signal that they think no-one is). Point at a player corresponding to their info. Then, put the Scholar to sleep.",
+      "如果学者今天白天提名了外来者，放置“失去能力”标记。唤醒被提名的玩家。展示\"失去能力\"标记。唤醒被提名的玩家。展示'你是'，然后展示他的新的角色标记。"
+    ],
+    "reminders": [
+      [],
+      [
         "失去能力",
         "已讲授"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "当你在早晨醒来，想想活着是多么珍贵吧——能够呼吸，思考，享受和爱。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "学者",
-      "name": "学者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知一个角色并猜测谁是这个角色(或者这个角色不在场)：如果猜测正确，你会得知一名邪恶玩家，但如果猜测错误，你得知的信息由说书人决定。",
-      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/scholar_echoes_of_the_past.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 26,
-      "otherNightReminder": "Wake the Scholar & show them a character token. They will choose a player (or shake their head \"no\" to signal that they think no-one is). Point at a player corresponding to their info. Then, put the Scholar to sleep.",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "The society that separates its scholars from its warriors will have its thinking done by cowards and its fighting done by fools.",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "学者",
-      "name": "学者",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知哪些邪恶角色在场。",
-      "image": "https://www.bloodstar.xyz/p/smallbear/jinhulun/_jinhulun.png",
-      "firstNight": 16,
-      "firstNightReminder": "在你的首个夜晚，你会得知哪些邪恶角色在场。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "学者",
-      "name": "学者",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知哪些邪恶角色在场。",
-      "image": "https://free.picui.cn/free/2025/12/17/6941adcc2f82b.png",
-      "firstNight": 3500,
-      "firstNightReminder": "在你的首个夜晚，你会得知哪些邪恶角色在场。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "学者",
-      "name": "学者",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知哪些邪恶角色在场。",
-      "image": "https://www.bloodstar.xyz/p/fake/CatFishing/_catfishing.png",
-      "firstNight": 3500,
-      "firstNightReminder": "在你的首个夜晚，你会得知哪些邪恶角色在场。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "学者",
-      "name": "学者",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你得知哪些邪恶角色在场。",
-      "image": "https://www.helloimg.com/i/2025/03/06/67c9b78b8e599.png",
-      "firstNight": 7901,
-      "firstNightReminder": "给他展示在场的邪恶角色。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "学者",
-      "name": "学者",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有哪些邪恶角色在场。",
-      "image": "https://www.helloimg.com/i/2025/03/06/67c9b78b8e599.png",
-      "firstNight": 9201,
-      "firstNightReminder": "给他展示在场的邪恶角色。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      "",
+      "The society that separates its scholars from its warriors will have its thinking done by cowards and its fighting done by fools.",
+      "当你在早晨醒来，想想活着是多么珍贵吧——能够呼吸，思考，享受和爱。"
+    ]
+  }
 }

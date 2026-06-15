@@ -2,36 +2,43 @@
   "id": "资深调查员",
   "name": "资深调查员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "资深调查员",
-      "name": "资深调查员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以让自己失踪直到明天黄昏：当晚，如果你的理智状态没有改变，你会得知一名邪恶玩家（或者你会得知没有邪恶玩家在场）。",
-      "image": "https://free.picui.cn/free/2025/11/28/6928978233bb1.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 20,
-      "otherNightReminder": "如果有调查标记，移除该标记，然后如果资深调查员的理智状态未改变，指向一名邪恶玩家。资深调查员可以让自己失踪。如果他这么做了，标记资深调查员失踪。移除失踪标记后，放置调查标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以让自己失踪直到明天黄昏：当晚，如果你的理智状态没有改变，你会得知一名邪恶玩家（或者你会得知没有邪恶玩家在场）。"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/11/28/6928978233bb1.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      20
+    ],
+    "otherNightReminder": [
+      "如果有调查标记，移除该标记，然后如果资深调查员的理智状态未改变，指向一名邪恶玩家。资深调查员可以让自己失踪。如果他这么做了，标记资深调查员失踪。移除失踪标记后，放置调查标记。"
+    ],
+    "reminders": [
+      [
         "失踪",
         "调查"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "资深调查员"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

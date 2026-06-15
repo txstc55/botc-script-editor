@@ -2,58 +2,42 @@
   "id": "心上人（改）",
   "name": "心上人（改）",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "心上人（改）",
-      "name": "心上人（改）",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "当你存活时或死亡后，会有一名与你邻近的镇民玩家醉酒。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
-      "firstNight": 15,
-      "firstNightReminder": "如果说书人决定让心上人在存活时使一名玩家醉酒，将存活时醉酒标记放置在与心上人邻近的一名善良玩家旁",
-      "otherNight": 68,
-      "otherNightReminder": "如果心上人死亡且说书人决定让心上人死亡后使一名玩家醉酒，一名玩家醉酒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "当你存活时或死亡后，会有一名与你邻近的镇民玩家醉酒。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png"
+    ],
+    "firstNight": [
+      15,
+      3300
+    ],
+    "firstNightReminder": [
+      "如果说书人决定让心上人在存活时使一名玩家醉酒，将存活时醉酒标记放置在与心上人邻近的一名善良玩家旁"
+    ],
+    "otherNight": [
+      68
+    ],
+    "otherNightReminder": [
+      "如果心上人死亡且说书人决定让心上人死亡后使一名玩家醉酒，一名玩家醉酒。"
+    ],
+    "reminders": [
+      [
         "存活时醉酒",
         "死亡后醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "心上人（改）",
-      "name": "心上人（改）",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "当你存活时或死亡后，会有一名与你邻近的镇民玩家醉酒。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
-      "firstNight": 3300,
-      "firstNightReminder": "如果说书人决定让心上人在存活时使一名玩家醉酒，将存活时醉酒标记放置在与心上人邻近的一名善良玩家旁",
-      "otherNight": 68,
-      "otherNightReminder": "如果心上人死亡且说书人决定让心上人死亡后使一名玩家醉酒，一名玩家醉酒。",
-      "reminders": [
-        "存活时醉酒",
-        "死亡后醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

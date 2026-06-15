@@ -2,54 +2,47 @@
   "id": "幽灵",
   "name": "幽灵",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "幽灵",
-      "name": "幽灵",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你可以选择在夜晚睁眼。其他邪恶玩家被唤醒时，你也会被一同唤醒。",
-      "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/19_spacebound.png",
-      "firstNight": 12,
-      "firstNightReminder": "你可以选择在夜晚睁眼。其他邪恶玩家被唤醒时，你也会被一同唤醒。",
-      "otherNight": 3,
-      "otherNightReminder": "你可以选择在夜晚睁眼。其他邪恶玩家被唤醒时，你也会被一同唤醒。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "幽灵",
-      "name": "幽灵",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他当晚不会因其自身能力而被唤醒。",
-      "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/16_yz_cn_ggg.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12,
-      "otherNightReminder": "幽灵选择一名玩家，标记“鬼上身”。那名玩家不会因其自身能力而被唤醒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你可以选择在夜晚睁眼。其他邪恶玩家被唤醒时，你也会被一同唤醒。",
+      "每个夜晚*，你要选择一名玩家：他当晚不会因其自身能力而被唤醒。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/spdm/SpaceBound/19_spacebound.png",
+      "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/16_yz_cn_ggg.png"
+    ],
+    "firstNight": [
+      12,
+      0
+    ],
+    "firstNightReminder": [
+      "你可以选择在夜晚睁眼。其他邪恶玩家被唤醒时，你也会被一同唤醒。",
+      ""
+    ],
+    "otherNight": [
+      3,
+      12
+    ],
+    "otherNightReminder": [
+      "你可以选择在夜晚睁眼。其他邪恶玩家被唤醒时，你也会被一同唤醒。",
+      "幽灵选择一名玩家，标记“鬼上身”。那名玩家不会因其自身能力而被唤醒。"
+    ],
+    "reminders": [
+      [],
+      [
         "鬼上身"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

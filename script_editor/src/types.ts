@@ -5,6 +5,10 @@ export type TeamKey =
   | "demon"
   | "traveler";
 
+export type BuiltInFirstNightOrderKey = "minionInfo" | "demonInfo";
+export type BuiltInFirstNightOrders = Record<BuiltInFirstNightOrderKey, number>;
+export type BuiltInFirstNightEnabled = Record<BuiltInFirstNightOrderKey, boolean>;
+
 export interface RoleDraft {
   id: string;
   name: string;
@@ -45,6 +49,8 @@ export interface TeamConfig {
 export interface ScriptDraft {
   name: string;
   author: string;
+  builtInFirstNightOrders: BuiltInFirstNightOrders;
+  builtInFirstNightEnabled: BuiltInFirstNightEnabled;
   fabled: FabledDraft[];
   jinxes: JinxDraft[];
   teams: Record<TeamKey, TeamConfig>;

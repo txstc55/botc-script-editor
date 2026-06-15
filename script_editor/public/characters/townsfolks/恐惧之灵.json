@@ -2,33 +2,40 @@
   "id": "恐惧之灵",
   "name": "恐惧之灵",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "恐惧之灵",
-      "name": "恐惧之灵",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：你会得知一条对他的阵营落败有帮助的建议。",
-      "image": "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_fearmonger_b.png\"]",
-      "firstNight": 23000,
-      "firstNightReminder": "1",
-      "otherNight": 23,
-      "otherNightReminder": "1",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：你会得知一条对他的阵营落败有帮助的建议。"
+    ],
+    "image": [
+      "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_fearmonger_b.png\"]"
+    ],
+    "firstNight": [
+      23000
+    ],
+    "firstNightReminder": [
+      "1"
+    ],
+    "otherNight": [
+      23
+    ],
+    "otherNightReminder": [
+      "1"
+    ],
+    "reminders": [
+      [
         "恐惧"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

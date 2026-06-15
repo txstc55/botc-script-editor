@@ -2,62 +2,44 @@
   "id": "潜伏者",
   "name": "潜伏者",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "潜伏者",
-      "name": "潜伏者",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你在你的第四个夜晚转变为邪恶阵营。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596263_197011_9032.png",
-      "firstNight": 11,
-      "firstNightReminder": "在潜伏者旁边标记第一夜。",
-      "otherNight": 5,
-      "otherNightReminder": "在潜伏者旁边标记第二夜，第三夜，如果是第四夜标记加入邪恶。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你在你的第四个夜晚转变为邪恶阵营。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1691596263_197011_9032.png"
+    ],
+    "firstNight": [
+      11,
+      90
+    ],
+    "firstNightReminder": [
+      "在潜伏者旁边标记第一夜。"
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "在潜伏者旁边标记第二夜，第三夜，如果是第四夜标记加入邪恶。"
+    ],
+    "reminders": [
+      [
         "加入邪恶",
         "第一夜",
         "第三夜",
         "第二夜"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "潜伏者",
-      "name": "潜伏者",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你在你的第四个夜晚转变为邪恶阵营。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596263_197011_9032.png",
-      "firstNight": 90,
-      "firstNightReminder": "在潜伏者旁边标记第一夜。",
-      "otherNight": 5,
-      "otherNightReminder": "在潜伏者旁边标记第二夜，第三夜，如果是第四夜标记加入邪恶。",
-      "reminders": [
-        "加入邪恶",
-        "第一夜",
-        "第三夜",
-        "第二夜"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

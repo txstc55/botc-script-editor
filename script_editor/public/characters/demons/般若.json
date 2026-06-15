@@ -2,34 +2,41 @@
   "id": "般若",
   "name": "般若",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "般若",
-      "name": "般若",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场，然后你要选择是否让所有外来者互相认识，你可以与外来者一同互认。每个夜晚*，你要选择一名玩家：他死亡。若白天有外来者死亡，你要额外选择一名玩家：他死亡。[+1或+2外来者]",
-      "image": "https://www.helloimg.com/i/2024/10/31/672389c50965b.png",
-      "firstNight": 30,
-      "firstNightReminder": "唤醒般若，告诉他所有在场外来者角色，然后他要选择是否让所有外来者互认。并且询问般若是否与所有外来者一同互认。",
-      "otherNight": 80,
-      "otherNightReminder": "唤醒般若，让他选择一名玩家，被选择的玩家死亡。如果白天有外来者死亡，般若额外选择一名玩家，被选择的玩家死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知有哪些外来者角色在场，然后你要选择是否让所有外来者互相认识，你可以与外来者一同互认。每个夜晚*，你要选择一名玩家：他死亡。若白天有外来者死亡，你要额外选择一名玩家：他死亡。[+1或+2外来者]"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2024/10/31/672389c50965b.png"
+    ],
+    "firstNight": [
+      30
+    ],
+    "firstNightReminder": [
+      "唤醒般若，告诉他所有在场外来者角色，然后他要选择是否让所有外来者互认。并且询问般若是否与所有外来者一同互认。"
+    ],
+    "otherNight": [
+      80
+    ],
+    "otherNightReminder": [
+      "唤醒般若，让他选择一名玩家，被选择的玩家死亡。如果白天有外来者死亡，般若额外选择一名玩家，被选择的玩家死亡。"
+    ],
+    "reminders": [
+      [
         "死于今日",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

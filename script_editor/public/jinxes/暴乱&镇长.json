@@ -6,59 +6,13 @@
     "暴乱",
     "镇长"
   ],
-  "targetCount": 2,
-  "variantCount": 2,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "暴乱&镇长",
-      "name": "暴乱&镇长",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "镇长可以停止提名。如果他这样做了，并且场上只有一名暴乱存活，善良阵营获胜；否则，邪恶阵营获胜。",
-      "targets": [
-        "暴乱",
-        "镇长"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 2,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    },
-    {
-      "id": "暴乱&镇长",
-      "name": "暴乱&镇长",
-      "variantIndex": 2,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果在第三天开始时只有三名玩家存活，所有玩家可以针对今天不发起提名进行表决。如果表决通过且镇长存活，镇长的阵营获胜。",
-      "targets": [
-        "暴乱",
-        "镇长"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "镇长可以停止提名。如果他这样做了，并且场上只有一名暴乱存活，善良阵营获胜；否则，邪恶阵营获胜。",
+      "如果在第三天开始时只有三名玩家存活，所有玩家可以针对今天不发起提名进行表决。如果表决通过且镇长存活，镇长的阵营获胜。"
+    ]
+  }
 }

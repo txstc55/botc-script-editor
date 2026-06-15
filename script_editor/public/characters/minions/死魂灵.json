@@ -2,58 +2,45 @@
   "id": "死魂灵",
   "name": "死魂灵",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "死魂灵",
-      "name": "死魂灵",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你死亡，但依然被当做存活。如果你再次死亡，与你邻近的存活镇民之一获得你的能力。",
-      "image": "https://i.postimg.cc/RC1Xbpkv/4-dnd.png",
-      "firstNight": 11,
-      "firstNightReminder": "给死魂灵当作存活标记。",
-      "otherNight": 0,
-      "otherNightReminder": "如果白天有玩家获得死魂灵标记，给该玩家标记当作存活。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你死亡，但依然被当做存活。如果你再次死亡，与你邻近的存活镇民之一获得你的能力。"
+    ],
+    "image": [
+      "https://i.postimg.cc/RC1Xbpkv/4-dnd.png",
+      "https://www.bloodstar.xyz/p/Guiltier/XING/18_xing.png"
+    ],
+    "firstNight": [
+      11,
+      16
+    ],
+    "firstNightReminder": [
+      "在死魂灵的角色标记旁放置死魂灵的“当作存活”提示标记。",
+      "给死魂灵当作存活标记。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      "",
+      "如果白天有玩家获得死魂灵标记，给该玩家标记当作存活。"
+    ],
+    "reminders": [
+      [
         "当作存活",
         "死魂灵"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "死魂灵",
-      "name": "死魂灵",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你死亡，但依然被当做存活。如果你再次死亡，与你邻近的存活镇民之一获得你的能力。",
-      "image": "https://www.bloodstar.xyz/p/Guiltier/XING/18_xing.png",
-      "firstNight": 16,
-      "firstNightReminder": "在死魂灵的角色标记旁放置死魂灵的“当作存活”提示标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "当作存活",
-        "死魂灵"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

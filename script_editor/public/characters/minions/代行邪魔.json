@@ -2,35 +2,42 @@
   "id": "代行邪魔",
   "name": "代行邪魔",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "代行邪魔",
-      "name": "代行邪魔",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他今晚选择的玩家之一会死亡。始终会有一名善良玩家知道你在场。恶魔无法制造死亡。",
-      "image": "https://i.postimg.cc/BQ6mNNRp/gargoyle.png",
-      "firstNight": 18,
-      "firstNightReminder": "唤醒一名善良玩家，展示“该角色在场”提示卡，并展示代行邪魔的角色标记。为他放置被知晓标记。",
-      "otherNight": 16,
-      "otherNightReminder": "移除被选择标记。唤醒代行邪魔，让他指向一名玩家。为那名玩家放置被选择标记。那名玩家选择的玩家之一会死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他今晚选择的玩家之一会死亡。始终会有一名善良玩家知道你在场。恶魔无法制造死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/BQ6mNNRp/gargoyle.png"
+    ],
+    "firstNight": [
+      18
+    ],
+    "firstNightReminder": [
+      "唤醒一名善良玩家，展示“该角色在场”提示卡，并展示代行邪魔的角色标记。为他放置被知晓标记。"
+    ],
+    "otherNight": [
+      16
+    ],
+    "otherNightReminder": [
+      "移除被选择标记。唤醒代行邪魔，让他指向一名玩家。为那名玩家放置被选择标记。那名玩家选择的玩家之一会死亡。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "被知晓",
         "被选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

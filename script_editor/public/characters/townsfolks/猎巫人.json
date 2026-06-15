@@ -2,58 +2,45 @@
   "id": "猎巫人",
   "name": "猎巫人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "猎巫人",
-      "name": "猎巫人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择一名玩家：你会得知他的阵营。如果他明天白天没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
-      "image": "https://i.postimg.cc/W32pPCy0/image.png",
-      "firstNight": 10101,
-      "firstNightReminder": "每个夜晚，你可以选择一名玩家：你会得知他的阵营。如果他明天白天没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
-      "otherNight": 12801,
-      "otherNightReminder": "每个夜晚，你可以选择一名玩家：你会得知他的阵营。如果他明天白天没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你可以选择一名玩家：你会得知他的阵营。如果他明天白天没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
+      "每个夜晚，你可以选择一名玩家：你会得知他的阵营是什么。如果明天白天他没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。"
+    ],
+    "image": [
+      "https://i.postimg.cc/W32pPCy0/image.png"
+    ],
+    "firstNight": [
+      10101
+    ],
+    "firstNightReminder": [
+      "每个夜晚，你可以选择一名玩家：你会得知他的阵营。如果他明天白天没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
+      "每个夜晚，你可以选择一名玩家：你会得知他的阵营是什么。如果明天白天他没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。"
+    ],
+    "otherNight": [
+      12801,
+      12802
+    ],
+    "otherNightReminder": [
+      "每个夜晚，你可以选择一名玩家：你会得知他的阵营。如果他明天白天没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
+      "每个夜晚，你可以选择一名玩家：你会得知他的阵营是什么。如果明天白天他没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。"
+    ],
+    "reminders": [
+      [
         "选择",
         "邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "猎巫人",
-      "name": "猎巫人",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择一名玩家：你会得知他的阵营是什么。如果明天白天他没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
-      "image": "https://i.postimg.cc/W32pPCy0/image.png",
-      "firstNight": 10101,
-      "firstNightReminder": "每个夜晚，你可以选择一名玩家：你会得知他的阵营是什么。如果明天白天他没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
-      "otherNight": 12802,
-      "otherNightReminder": "每个夜晚，你可以选择一名玩家：你会得知他的阵营是什么。如果明天白天他没有被处决，当晚他转变为邪恶阵营。你不会转变为邪恶阵营。",
-      "reminders": [
-        "选择",
-        "邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

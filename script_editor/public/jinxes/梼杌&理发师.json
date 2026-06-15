@@ -6,59 +6,13 @@
     "理发师",
     "梼杌"
   ],
-  "targetCount": 2,
-  "variantCount": 2,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "梼杌&理发师",
-      "name": "梼杌&理发师",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果梼杌变成了其他角色，因为梼杌而失去能力的爪牙会立即死亡。",
-      "targets": [
-        "理发师",
-        "梼杌"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    },
-    {
-      "id": "梼杌&理发师",
-      "name": "梼杌&理发师",
-      "variantIndex": 2,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果梼杌的角色发生了交换，不会因此移除原本梼杌的“失去能力”提示标记。",
-      "targets": [
-        "理发师",
-        "梼杌"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果梼杌变成了其他角色，因为梼杌而失去能力的爪牙会立即死亡。",
+      "如果梼杌的角色发生了交换，不会因此移除原本梼杌的“失去能力”提示标记。"
+    ]
+  }
 }

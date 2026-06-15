@@ -2,81 +2,57 @@
   "id": "司机",
   "name": "司机",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "司机",
-      "name": "司机",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的一名存活玩家（与上个夜晚不同）：如果他是镇民，今晚你不会死亡。",
-      "image": "https://i.postimg.cc/50XcwNR1/chauffeur.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12,
-      "otherNightReminder": "唤醒司机，让他指向除他以外的一名玩家，与上个夜晚不同。为那名玩家放置“被选择”标记，如果他是镇民，为司机放置“保护”标记。",
-      "reminders": [
-        "保护",
-        "被选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "司机",
-      "name": "司机",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的一名存活玩家（与上个夜晚不同）：如果他是镇民，今晚你不会死亡。",
-      "image": "https://i.postimg.cc/cJ4SzrDr/chauffeur.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "唤醒司机，让他指向除他以外的一名玩家，与上个夜晚不同。如果他是镇民，为司机放置“不会死亡”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择除你以外的一名存活玩家（与上个夜晚不同）：如果他是镇民，今晚你不会死亡。",
+      "每个夜晚，你可以选择一名除你以外的玩家：破晓时你会得知他是否为镇民。如果你得知了“否”，你失去能力。"
+    ],
+    "image": [
+      "https://i.postimg.cc/50XcwNR1/chauffeur.png",
+      "https://i.postimg.cc/cJ4SzrDr/chauffeur.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1691596234_197011_3054.png"
+    ],
+    "firstNight": [
+      0,
+      16
+    ],
+    "firstNightReminder": [
+      "",
+      "司机不使用能力，或指向一名玩家，用“乘客”标记那名玩家。破晓时再次唤醒司机，告诉他那名玩家是否为镇民。"
+    ],
+    "otherNight": [
+      12,
+      13,
+      16
+    ],
+    "otherNightReminder": [
+      "司机不使用能力，或指向一名玩家，用“乘客”标记那名玩家。破晓时再次唤醒司机，告诉他那名玩家是否为镇民。",
+      "唤醒司机，让他指向除他以外的一名玩家，与上个夜晚不同。为那名玩家放置“被选择”标记，如果他是镇民，为司机放置“保护”标记。",
+      "唤醒司机，让他指向除他以外的一名玩家，与上个夜晚不同。如果他是镇民，为司机放置“不会死亡”标记。"
+    ],
+    "reminders": [
+      [
         "不会死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "司机",
-      "name": "司机",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择一名除你以外的玩家：破晓时你会得知他是否为镇民。如果你得知了“否”，你失去能力。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596234_197011_3054.png",
-      "firstNight": 16,
-      "firstNightReminder": "司机不使用能力，或指向一名玩家，用“乘客”标记那名玩家。破晓时再次唤醒司机，告诉他那名玩家是否为镇民。",
-      "otherNight": 16,
-      "otherNightReminder": "司机不使用能力，或指向一名玩家，用“乘客”标记那名玩家。破晓时再次唤醒司机，告诉他那名玩家是否为镇民。",
-      "reminders": [
+      [
         "乘客",
         "失去能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "保护",
+        "被选择"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

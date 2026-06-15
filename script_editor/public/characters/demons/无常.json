@@ -2,61 +2,54 @@
   "id": "无常",
   "name": "无常",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "无常",
-      "name": "无常",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。首个夜晚，你要选择一名其他玩家：他得知无常在场且在第三天黎明时变成邪恶的无常。[-1爪牙]",
-      "image": "https://free.picui.cn/free/2025/09/29/68da99ece1c7a.png",
-      "firstNight": 3200,
-      "firstNightReminder": "首个夜晚，无常要选择一名其他玩家：他得知无常在场且在第三天黎明时变成邪恶的无常。",
-      "otherNight": 8411,
-      "otherNightReminder": "无常可以选择一名玩家：他死亡。第三天黎明时首夜被无常选择的玩家会变成邪恶的无常。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。在首个夜晚，你要选择一名其他玩家：他得知无常在场且在第三个黎明变成邪恶的无常。[-1爪牙]",
+      "每个夜晚*，你要选择一名玩家：他死亡。首个夜晚，你要选择一名其他玩家：他得知无常在场且在第三天黎明时变成邪恶的无常。[-1爪牙]"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/09/29/68da99ece1c7a.png",
+      "https://www.bloodstar.xyz/p/fake/TheOne/wuchang_theone.png"
+    ],
+    "firstNight": [
+      3200,
+      3700
+    ],
+    "firstNightReminder": [
+      "唤醒无常，让他选择一名玩家以侵扰。",
+      "首个夜晚，无常要选择一名其他玩家：他得知无常在场且在第三天黎明时变成邪恶的无常。"
+    ],
+    "otherNight": [
+      8,
+      8411
+    ],
+    "otherNightReminder": [
+      "唤醒无常，让他攻击一名玩家。",
+      "无常可以选择一名玩家：他死亡。第三天黎明时首夜被无常选择的玩家会变成邪恶的无常。"
+    ],
+    "reminders": [
+      [
         "勾魂",
         "死亡",
         "第一天",
         "第三天",
         "第二天"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "无常",
-      "name": "无常",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。在首个夜晚，你要选择一名其他玩家：他得知无常在场且在第三个黎明变成邪恶的无常。[-1爪牙]",
-      "image": "https://www.bloodstar.xyz/p/fake/TheOne/wuchang_theone.png",
-      "firstNight": 3700,
-      "firstNightReminder": "唤醒无常，让他选择一名玩家以侵扰。",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒无常，让他攻击一名玩家。",
-      "reminders": [
+      [
         "得知",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -6,59 +6,13 @@
     "小怪宝",
     "魔术师"
   ],
-  "targetCount": 2,
-  "variantCount": 2,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "小怪宝&魔术师",
-      "name": "小怪宝&魔术师",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "每个夜晚，由魔术师来选择一个爪牙角色：如果他和小怪宝均存活，由他来照看小怪宝。",
-      "targets": [
-        "小怪宝",
-        "魔术师"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 3,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    },
-    {
-      "id": "小怪宝&魔术师",
-      "name": "小怪宝&魔术师",
-      "variantIndex": 2,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "每个夜晚，由魔术师来选择一个爪牙角色：如果他和小怪宝均存活，由他来照看小怪宝。[进阶可选规则：否则，由魔术师来照看小怪宝，但如果魔术师在照看小怪宝时死亡，邪恶阵营获胜。]",
-      "targets": [
-        "小怪宝",
-        "魔术师"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "每个夜晚，由魔术师来选择一个爪牙角色：如果他和小怪宝均存活，由他来照看小怪宝。",
+      "每个夜晚，由魔术师来选择一个爪牙角色：如果他和小怪宝均存活，由他来照看小怪宝。[进阶可选规则：否则，由魔术师来照看小怪宝，但如果魔术师在照看小怪宝时死亡，邪恶阵营获胜。]"
+    ]
+  }
 }

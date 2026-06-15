@@ -2,35 +2,42 @@
   "id": "忏悔师",
   "name": "忏悔师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "忏悔师",
-      "name": "忏悔师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天限一次，你可以和一名玩家私下拜访说书人：当晚，如果你的理智状态没有改变且两名玩家都存活，其中一名会得知另一名的角色。",
-      "image": "https://free.picui.cn/free/2025/11/28/69289783bccf6.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 23,
-      "otherNightReminder": "白天，在忏悔师和一名玩家拜访你后，标记那名玩家已忏悔。夜晚，如果忏悔师和已忏悔的玩家都存活，且忏悔师的理智状态未改变，唤醒其中一人，向他展示“这名玩家是”信息标记和另一人真正的角色标记，然后指向该玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天限一次，你可以和一名玩家私下拜访说书人：当晚，如果你的理智状态没有改变且两名玩家都存活，其中一名会得知另一名的角色。"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/11/28/69289783bccf6.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      23
+    ],
+    "otherNightReminder": [
+      "白天，在忏悔师和一名玩家拜访你后，标记那名玩家已忏悔。夜晚，如果忏悔师和已忏悔的玩家都存活，且忏悔师的理智状态未改变，唤醒其中一人，向他展示“这名玩家是”信息标记和另一人真正的角色标记，然后指向该玩家。"
+    ],
+    "reminders": [
+      [
         "已忏悔"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "忏悔师"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

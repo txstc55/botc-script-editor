@@ -2,33 +2,40 @@
   "id": "墓园守卫",
   "name": "墓园守卫",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "墓园守卫",
-      "name": "墓园守卫",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家(与上个夜晚不同)：他当晚无法被角色能力选择，且不会因其自身能力而被唤醒。",
-      "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/1_yz_cn_ggg.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "墓园守卫选择一名玩家，标记“保护”。那名玩家不会醒来，不能被选择。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家(与上个夜晚不同)：他当晚无法被角色能力选择，且不会因其自身能力而被唤醒。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/1_yz_cn_ggg.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      13
+    ],
+    "otherNightReminder": [
+      "墓园守卫选择一名玩家，标记“保护”。那名玩家不会醒来，不能被选择。"
+    ],
+    "reminders": [
+      [
         "保护"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

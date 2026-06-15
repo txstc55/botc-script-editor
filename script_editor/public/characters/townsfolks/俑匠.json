@@ -2,165 +2,59 @@
   "id": "俑匠",
   "name": "俑匠",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 7,
   "totalOccurrenceCount": 18,
-  "variants": [
-    {
-      "id": "俑匠",
-      "name": "俑匠",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果已死亡玩家中没有邪恶玩家，你只会死于处决。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_3275680943171_caaa933e.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 9,
-      "notes": []
-    },
-    {
-      "id": "俑匠",
-      "name": "俑匠",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果已死亡玩家中没有邪恶玩家，你只会死于处决。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yongjiang.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果已死亡玩家中没有邪恶玩家，你只会死于处决。",
+      "在你的首个夜晚，你要选择一名非旅行者玩家：如果他是善良的且已死亡的玩家中没有邪恶玩家，你和他只会死于处决。",
+      "如果死亡玩家中没有邪恶玩家，你只会死于处决。",
+      "如果死亡玩家中没有邪恶玩家，你在夜晚时不会死亡。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_3275680943171_caaa933e.jpg",
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/yongjiang.png",
+      "https://clocktower-wiki.gstonegames.com/images/4/47/Yongjiang.png",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/4/47/Yongjiang.png/100px-Yongjiang.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_4006418760171_f01e0621.jpg",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/25/e0nmqosbalrdxbezf1i6kjnhxlgd88o.png",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/bb/6pzrvkb3y83olab1dfyzcm1ql0jtg59.png"
+    ],
+    "firstNight": [
+      0,
+      3400,
+      3600
+    ],
+    "firstNightReminder": [
+      "",
+      "在俑匠的首个夜晚，唤醒俑匠，让其指向任意一名非旅行者的玩家。让俑匠重新入睡。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [],
+      [
         "只会死于处决"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 4,
-      "notes": []
-    },
-    {
-      "id": "俑匠",
-      "name": "俑匠",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
+      [
+        "泥塑"
       ],
-      "ability": "如果已死亡玩家中没有邪恶玩家，你只会死于处决。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/47/Yongjiang.png/100px-Yongjiang.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "俑匠",
-      "name": "俑匠",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果死亡玩家中没有邪恶玩家，你只会死于处决。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/4/47/Yongjiang.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "不死"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "俑匠",
-      "name": "俑匠",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果死亡玩家中没有邪恶玩家，你在夜晚时不会死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_4006418760171_f01e0621.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "俑匠",
-      "name": "俑匠",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名非旅行者玩家：如果他是善良的且已死亡的玩家中没有邪恶玩家，你和他只会死于处决。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/bb/6pzrvkb3y83olab1dfyzcm1ql0jtg59.png",
-      "firstNight": 3400,
-      "firstNightReminder": "在俑匠的首个夜晚，唤醒俑匠，让其指向任意一名非旅行者的玩家。让俑匠重新入睡。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "泥塑"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "俑匠",
-      "name": "俑匠",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名非旅行者玩家：如果他是善良的且已死亡的玩家中没有邪恶玩家，你和他只会死于处决。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/25/e0nmqosbalrdxbezf1i6kjnhxlgd88o.png",
-      "firstNight": 3600,
-      "firstNightReminder": "在俑匠的首个夜晚，唤醒俑匠，让其指向任意一名非旅行者的玩家。让俑匠重新入睡。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "泥塑"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

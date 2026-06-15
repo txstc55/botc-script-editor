@@ -2,54 +2,48 @@
   "id": "手相师",
   "name": "手相师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "手相师",
-      "name": "手相师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你得知谁受到攻击。",
-      "image": "https://www.bloodstar.xyz/p/Lee/Recovery/5_recovery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你得知谁受到攻击。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "手相师",
-      "name": "手相师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你会得知谁受到攻击。",
-      "image": "https://youke1.picui.cn/s1/2025/07/29/68889c82df9fe.png",
-      "firstNight": 31,
-      "firstNightReminder": "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你会得知谁受到攻击。",
-      "otherNight": 31,
-      "otherNightReminder": "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你会得知谁受到攻击。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你会得知谁受到攻击。",
+      "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你得知谁受到攻击。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Lee/Recovery/5_recovery.png",
+      "https://youke1.picui.cn/s1/2025/07/29/68889c82df9fe.png"
+    ],
+    "firstNight": [
+      0,
+      31
+    ],
+    "firstNightReminder": [
+      "",
+      "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你会得知谁受到攻击。"
+    ],
+    "otherNight": [
+      11,
+      31
+    ],
+    "otherNightReminder": [
+      "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你会得知谁受到攻击。",
+      "恶魔在攻击生效之前一晚发动攻击，即使你已死亡。每个夜晚，你得知谁受到攻击。"
+    ],
+    "reminders": [
+      [
         "血光"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

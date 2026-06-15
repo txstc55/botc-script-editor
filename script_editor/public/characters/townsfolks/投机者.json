@@ -2,150 +2,64 @@
   "id": "投机者",
   "name": "投机者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 6,
   "totalOccurrenceCount": 7,
-  "variants": [
-    {
-      "id": "投机者",
-      "name": "投机者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你得知错误信息。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5141009874371_9c1a0480.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 76,
-      "otherNightReminder": "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你得知错误信息。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你得知错误信息。",
+      "每个夜晚*，你会得知今天白天提名你的玩家的角色。如果你“疯狂”地证明你是投机者，你得知的信息是错误的。",
+      "每个夜晚*，你可以选择一名玩家：如果他是镇民，他会变成一个不在场的外来者。[+0或+1外来者]",
+      "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你失去此能力。",
+      "每个夜晚*，你得知今天提名你的角色。如果你疯狂地证明你是投机者，你会得知错误信息。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5141009874371_9c1a0480.jpg",
+      "https://i.postimg.cc/Njf7KSsX/image.png",
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter27_assets_of_lei_gallery.png",
+      "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/cherrypicker_day_by_day.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      11401,
+      76,
+      110,
+      7
+    ],
+    "otherNightReminder": [
+      "在夜晚时，唤醒投机者，给他展示放置“投资”提示标记旁的玩家的角色标记。如果投机者的角色标记旁放置有“疯狂”角色标记，改为展示另一个角色标记。",
+      "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你得知错误信息。",
+      "唤醒投机者并展示今天白天提名的玩家的角色。",
+      "投机者可以选择一名玩家：如果该玩家是镇民，用一个不在场的外来者角色标记替换该玩家的角色标记，唤醒该玩家，向该玩家展示“你是”信息标记和新的角色标记。",
+      "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你失去此能力。"
+    ],
+    "reminders": [
+      [
         "投资",
         "疯狂"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "投机者",
-      "name": "投机者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名玩家：如果他是镇民，他会变成一个不在场的外来者。[+0或+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/cherrypicker_day_by_day.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 7,
-      "otherNightReminder": "投机者可以选择一名玩家：如果该玩家是镇民，用一个不在场的外来者角色标记替换该玩家的角色标记，唤醒该玩家，向该玩家展示“你是”信息标记和新的角色标记。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "投机者",
-      "name": "投机者",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你失去此能力。",
-      "image": "https://i.postimg.cc/Njf7KSsX/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 110,
-      "otherNightReminder": "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你失去此能力。",
-      "reminders": [
+      [
         "失去能力",
         "投资"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "投机者",
-      "name": "投机者",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天提名你的玩家的角色。如果你“疯狂”地证明你是投机者，你得知的信息是错误的。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5141009874371_9c1a0480.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11401,
-      "otherNightReminder": "在夜晚时，唤醒投机者，给他展示放置“投资”提示标记旁的玩家的角色标记。如果投机者的角色标记旁放置有“疯狂”角色标记，改为展示另一个角色标记。",
-      "reminders": [
+      [
         "提名"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "投机者",
-      "name": "投机者",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你得知错误信息。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5141009874371_9c1a0480.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11401,
-      "otherNightReminder": "在夜晚时，唤醒投机者，给他展示放置“投资”提示标记旁的玩家的角色标记。如果投机者的角色标记旁放置有“疯狂”角色标记，改为展示另一个角色标记。",
-      "reminders": [
-        "投资",
-        "疯狂"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "投机者",
-      "name": "投机者",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天提名你的角色。如果你疯狂地证明你是投机者，你会得知错误信息。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter27_assets_of_lei_gallery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11401,
-      "otherNightReminder": "唤醒投机者并展示今天白天提名的玩家的角色。",
-      "reminders": [
-        "投资",
-        "疯狂"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

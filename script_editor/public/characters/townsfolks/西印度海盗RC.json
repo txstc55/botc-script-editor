@@ -2,34 +2,41 @@
   "id": "西印度海盗RC",
   "name": "西印度海盗RC",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "西印度海盗RC",
-      "name": "西印度海盗RC",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的两名玩家：如果他们阵营不同，你死亡。",
-      "image": "[\"https://i.postimg.cc/WpQ5y6MB/image.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5,
-      "otherNightReminder": "The Buccaneer chooses 2 players: if they are different alignments, the Buccaneer dies. :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择除你以外的两名玩家：如果他们阵营不同，你死亡。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/WpQ5y6MB/image.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "The Buccaneer chooses 2 players: if they are different alignments, the Buccaneer dies. :reminder:"
+    ],
+    "reminders": [
+      [
         "死亡",
         "重启"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

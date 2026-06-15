@@ -6,40 +6,12 @@
     "哥布林",
     "洗脑师"
   ],
-  "targetCount": 2,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "洗脑师 & 哥布林",
-      "name": "洗脑师 & 哥布林",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "洗脑师可以选择将玩家洗脑成哥布林。",
-      "targets": [
-        "哥布林",
-        "洗脑师"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "洗脑师",
-        "targetId": "goblinTRANS",
-        "targetName": "哥布林"
-      },
-      "rules": [
-        {
-          "sourceCharacter": "洗脑师",
-          "targetId": "goblinTRANS",
-          "targetName": "哥布林"
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "洗脑师可以选择将玩家洗脑成哥布林。"
+    ]
+  }
 }

@@ -2,33 +2,40 @@
   "id": "米勒娃·麦格",
   "name": "米勒娃·麦格",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "米勒娃·麦格",
-      "name": "米勒娃·麦格",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择一个未选择过的镇民角色：你获得该角色的能力直到下个黎明。如果该角色在场，他醉酒。",
-      "image": "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/mcgonagall_hp2_2.png\"]",
-      "firstNight": 3200,
-      "firstNightReminder": "Wake and ask if they would like to use ability. If so ask them to choose a character. Mark any chosen in play character as 'Detention'.",
-      "otherNight": 2,
-      "otherNightReminder": "Wake and ask if they would like to use ability. If so ask them to choose a character. Mark any chosen in play character as 'Detention'.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你可以选择一个未选择过的镇民角色：你获得该角色的能力直到下个黎明。如果该角色在场，他醉酒。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/mcgonagall_hp2_2.png\"]"
+    ],
+    "firstNight": [
+      3200
+    ],
+    "firstNightReminder": [
+      "Wake and ask if they would like to use ability. If so ask them to choose a character. Mark any chosen in play character as 'Detention'."
+    ],
+    "otherNight": [
+      2
+    ],
+    "otherNightReminder": [
+      "Wake and ask if they would like to use ability. If so ask them to choose a character. Mark any chosen in play character as 'Detention'."
+    ],
+    "reminders": [
+      [
         "拘禁"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "No, you heard me correctly, Mr. Malfoy. You see, honourable as your intentions were, you too were out of bed after hours. You will join your classmates in detention.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "No, you heard me correctly, Mr. Malfoy. You see, honourable as your intentions were, you too were out of bed after hours. You will join your classmates in detention."
+    ]
+  }
 }

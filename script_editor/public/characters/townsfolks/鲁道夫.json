@@ -2,34 +2,41 @@
   "id": "鲁道夫",
   "name": "鲁道夫",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "鲁道夫",
-      "name": "鲁道夫",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你之外的等于爪牙初始设置数量的玩家:你会得知他们之中有多少名爪牙。如果你选中爪牙，他会得知你是鲁道夫。",
-      "image": "[\"https://chillclocktower.com/homebrew/merrryclocktower/rudolph.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 46,
-      "otherNightReminder": "鲁道夫选择等同于爪牙初始设置数量的玩家(最多3名)，标记驯鹿，告诉鲁道夫里面有多少名爪牙然后使其入睡. Any minions chosen, wake and show them YOU WERE CHOSEN BY and the Rudolph token. Point to Rudolph.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择除你之外的等于爪牙初始设置数量的玩家:你会得知他们之中有多少名爪牙。如果你选中爪牙，他会得知你是鲁道夫。"
+    ],
+    "image": [
+      "[\"https://chillclocktower.com/homebrew/merrryclocktower/rudolph.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      46
+    ],
+    "otherNightReminder": [
+      "鲁道夫选择等同于爪牙初始设置数量的玩家(最多3名)，标记驯鹿，告诉鲁道夫里面有多少名爪牙然后使其入睡. Any minions chosen, wake and show them YOU WERE CHOSEN BY and the Rudolph token. Point to Rudolph."
+    ],
+    "reminders": [
+      [
         "唤醒",
         "驯鹿"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Amidst the snowy eve's quiet hush, young Rudolph, with his nose so bright, guides our sleigh through the wintry night, a beacon of hope in the frosty air.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Amidst the snowy eve's quiet hush, young Rudolph, with his nose so bright, guides our sleigh through the wintry night, a beacon of hope in the frosty air."
+    ]
+  }
 }

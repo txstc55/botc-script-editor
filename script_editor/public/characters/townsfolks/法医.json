@@ -2,54 +2,48 @@
   "id": "法医",
   "name": "法医",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "法医",
-      "name": "法医",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名死亡玩家：破晓时，你会得知他是否曾经“中毒”、“醉酒”或“能力目标或结果被改变”。你的能力目标一定不会改变。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596241_197011_5441.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "让法医指向一名已死亡玩家，标记那些玩家。破晓时再次唤醒法医。告诉他那名玩家曾经是否“中毒”，“醉酒”，“能力目标和结果出现更改”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知两名非镇民玩家之间最远的距离。（旅行者不计算在内，邻座的玩家距离为1）",
+      "每个夜晚*，你要选择一名死亡玩家：破晓时，你会得知他是否曾经“中毒”、“醉酒”或“能力目标或结果被改变”。你的能力目标一定不会改变。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1691596241_197011_5441.png",
+      "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/coroner_day_by_day.png"
+    ],
+    "firstNight": [
+      0,
+      22
+    ],
+    "firstNightReminder": [
+      "",
+      "用数字手势来告诉法医两名非镇民且非旅行者的玩家之间最远的距离。"
+    ],
+    "otherNight": [
+      0,
+      18
+    ],
+    "otherNightReminder": [
+      "",
+      "让法医指向一名已死亡玩家，标记那些玩家。破晓时再次唤醒法医。告诉他那名玩家曾经是否“中毒”，“醉酒”，“能力目标和结果出现更改”。"
+    ],
+    "reminders": [
+      [
         "查验"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "法医",
-      "name": "法医",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名非镇民玩家之间最远的距离。（旅行者不计算在内，邻座的玩家距离为1）",
-      "image": "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/coroner_day_by_day.png",
-      "firstNight": 22,
-      "firstNightReminder": "用数字手势来告诉法医两名非镇民且非旅行者的玩家之间最远的距离。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "多起突发溺水事件……那些反对者们……您或许好奇这两者之间有什么关联，而我……也一样。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "多起突发溺水事件……那些反对者们……您或许好奇这两者之间有什么关联，而我……也一样。"
+    ]
+  }
 }

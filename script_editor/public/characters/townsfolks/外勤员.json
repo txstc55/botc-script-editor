@@ -2,34 +2,41 @@
   "id": "外勤员",
   "name": "外勤员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "外勤员",
-      "name": "外勤员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名已死亡玩家：你会得知他的阵营。在夜晚时*，与你顺时针邻近的玩家被你庇佑。",
-      "image": "https://i.postimg.cc/Kv91D3jB/外勤员.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 23,
-      "otherNightReminder": "为与外勤员顺时针邻近的玩家放置庇佑标记。唤醒外勤员，他摇头不使用能力，或指向一名已死亡的玩家，如果他指向了一名善良玩家，给出向上的大拇指，否则给出向下的大拇指。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择一名已死亡玩家：你会得知他的阵营。在夜晚时*，与你顺时针邻近的玩家被你庇佑。"
+    ],
+    "image": [
+      "https://i.postimg.cc/Kv91D3jB/外勤员.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      23
+    ],
+    "otherNightReminder": [
+      "为与外勤员顺时针邻近的玩家放置庇佑标记。唤醒外勤员，他摇头不使用能力，或指向一名已死亡的玩家，如果他指向了一名善良玩家，给出向上的大拇指，否则给出向下的大拇指。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "庇佑"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

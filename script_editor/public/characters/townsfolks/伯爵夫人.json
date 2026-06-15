@@ -2,36 +2,43 @@
   "id": "伯爵夫人",
   "name": "伯爵夫人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "伯爵夫人",
-      "name": "伯爵夫人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择杀死你在今天白天提名过的玩家。如果他是恶魔，改为他醉酒直到下个黄昏。",
-      "image": "[\"https://i.postimg.cc/zDxgX8sX/image.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "如果伯爵夫人在今天白天发起过提名, 她可以选择使用她的能力。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择杀死你在今天白天提名过的玩家。如果他是恶魔，改为他醉酒直到下个黄昏。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/zDxgX8sX/image.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      8
+    ],
+    "otherNightReminder": [
+      "如果伯爵夫人在今天白天发起过提名, 她可以选择使用她的能力。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "提名",
         "死亡",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "My husband? Oh, a lovely fellow he was, I miss him every day. It is most unfortunate that he wound up dead so suddenly!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "My husband? Oh, a lovely fellow he was, I miss him every day. It is most unfortunate that he wound up dead so suddenly!"
+    ]
+  }
 }

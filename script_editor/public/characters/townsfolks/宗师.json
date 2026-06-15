@@ -2,58 +2,42 @@
   "id": "宗师",
   "name": "宗师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "宗师",
-      "name": "宗师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：你会获得他的能力直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_1857246937271_f5da0012.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "询问宗师是否使用能力，如果他点头，让他选择一名死亡的玩家。让宗师重新入睡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：你会获得他的能力直到下个黄昏。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_1857246937271_f5da0012.jpg"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      20,
+      3
+    ],
+    "otherNightReminder": [
+      "询问宗师是否使用能力，如果他点头，让他选择一名死亡的玩家。让宗师重新入睡。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "学习"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "宗师",
-      "name": "宗师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：你会获得他的能力直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_1857246937271_f5da0012.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 20,
-      "otherNightReminder": "询问宗师是否使用能力，如果他点头，让他选择一名死亡的玩家。让宗师重新入睡。",
-      "reminders": [
-        "失去能力",
-        "学习"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

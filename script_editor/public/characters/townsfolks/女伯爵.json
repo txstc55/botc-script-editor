@@ -2,34 +2,41 @@
   "id": "女伯爵",
   "name": "女伯爵",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "女伯爵",
-      "name": "女伯爵",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知至少一个在场的外来者角色（或者你会得知没有外来者在场）。如果有外来者死亡，你会在当晚得知还有多少名外来者存活。[+1或-1外来者]",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/contessa_beyondgoodandevilv3.png",
-      "firstNight": 35,
-      "firstNightReminder": "向女伯爵展示至少一个在场的外来者角色标记，或表示没有外来者。",
-      "otherNight": 16,
-      "otherNightReminder": "如果有外来者死亡，向女伯爵展示存活的外来者玩家的数量的手势（1，2，3等）。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知至少一个在场的外来者角色（或者你会得知没有外来者在场）。如果有外来者死亡，你会在当晚得知还有多少名外来者存活。[+1或-1外来者]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/contessa_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      35
+    ],
+    "firstNightReminder": [
+      "向女伯爵展示至少一个在场的外来者角色标记，或表示没有外来者。"
+    ],
+    "otherNight": [
+      16
+    ],
+    "otherNightReminder": [
+      "如果有外来者死亡，向女伯爵展示存活的外来者玩家的数量的手势（1，2，3等）。"
+    ],
+    "reminders": [
+      [
         "外来者死亡",
         "得知外来者"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "There are some very peculiar guests at this party... Are they on the invite list?",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "There are some very peculiar guests at this party... Are they on the invite list?"
+    ]
+  }
 }

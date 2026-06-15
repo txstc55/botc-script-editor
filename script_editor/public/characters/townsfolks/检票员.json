@@ -2,57 +2,51 @@
   "id": "检票员",
   "name": "检票员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "检票员",
-      "name": "检票员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家，你会得知他是否持有车票。半数善良玩家持有车票，但他们不知道。",
-      "image": "https://i.postimg.cc/MpXkNNWf/ticket-taker.png",
-      "firstNight": 8,
-      "firstNightReminder": "检票员指向一名玩家，检查他是否持有车票标记. 如果他有, 点头证明有. 如果他没有，摇头证明没有.",
-      "otherNight": 15,
-      "otherNightReminder": "检票员指向一名玩家，检查他是否持有车票标记. 如果他有, 点头证明有. 如果他没有，摇头证明没有.",
-      "reminders": [
-        "车票"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "检票员",
-      "name": "检票员",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择至多两名玩家：如果你选择的玩家是邪恶的，他们会得知你是谁。如果你已选择了所有的镇民和外来者，你的阵营获胜。",
-      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/conductor_the_last_cull__.png",
-      "firstNight": 3025,
-      "firstNightReminder": "Each night, wake the Conductor. They choose up to 2 players -- Mark chosen evil players with the \"Alerted\" reminder. For each Townsfolk or Outsider player chosen, which isn't the Conductor (or a player already chosen), move the \"Train\" reminder one step clockwise. Put the Conductor to sleep. Wake all players with the \"Alerted\" reminder (separately). Show them the \"This player is\" info token and show them the Conductor character token, and point to the Conductor. Remove the \"Alerted\" reminder and put them to sleep.",
-      "otherNight": 22,
-      "otherNightReminder": "Each night, wake the Conductor. They choose up to 2 players -- Mark chosen evil players with the \"Alerted\" reminder. For each Townsfolk or Outsider player chosen, which isn't the Conductor (or a player already chosen), move the \"Train\" reminder one step clockwise. Put the Conductor to sleep. Wake all players with the \"Alerted\" reminder (separately). Show them the \"This player is\" info token and show them the Conductor character token, and point to the Conductor. Remove the \"Alerted\" reminder and put them to sleep.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家，你会得知他是否持有车票。半数善良玩家持有车票，但他们不知道。",
+      "每个夜晚，你要选择至多两名玩家：如果你选择的玩家是邪恶的，他们会得知你是谁。如果你已选择了所有的镇民和外来者，你的阵营获胜。"
+    ],
+    "image": [
+      "https://i.postimg.cc/MpXkNNWf/ticket-taker.png",
+      "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/conductor_the_last_cull__.png"
+    ],
+    "firstNight": [
+      3025,
+      8
+    ],
+    "firstNightReminder": [
+      "Each night, wake the Conductor. They choose up to 2 players -- Mark chosen evil players with the \"Alerted\" reminder. For each Townsfolk or Outsider player chosen, which isn't the Conductor (or a player already chosen), move the \"Train\" reminder one step clockwise. Put the Conductor to sleep. Wake all players with the \"Alerted\" reminder (separately). Show them the \"This player is\" info token and show them the Conductor character token, and point to the Conductor. Remove the \"Alerted\" reminder and put them to sleep.",
+      "检票员指向一名玩家，检查他是否持有车票标记. 如果他有, 点头证明有. 如果他没有，摇头证明没有."
+    ],
+    "otherNight": [
+      15,
+      22
+    ],
+    "otherNightReminder": [
+      "Each night, wake the Conductor. They choose up to 2 players -- Mark chosen evil players with the \"Alerted\" reminder. For each Townsfolk or Outsider player chosen, which isn't the Conductor (or a player already chosen), move the \"Train\" reminder one step clockwise. Put the Conductor to sleep. Wake all players with the \"Alerted\" reminder (separately). Show them the \"This player is\" info token and show them the Conductor character token, and point to the Conductor. Remove the \"Alerted\" reminder and put them to sleep.",
+      "检票员指向一名玩家，检查他是否持有车票标记. 如果他有, 点头证明有. 如果他没有，摇头证明没有."
+    ],
+    "reminders": [
+      [
         "开车啦",
         "警报"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "This is the last call, all passengers on board immediately!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "车票"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "This is the last call, all passengers on board immediately!"
+    ]
+  }
 }

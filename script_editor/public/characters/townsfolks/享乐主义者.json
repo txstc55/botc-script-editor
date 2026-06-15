@@ -2,100 +2,49 @@
   "id": "享乐主义者",
   "name": "享乐主义者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 4,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "享乐主义者",
-      "name": "享乐主义者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "与你相邻的存活玩家（不计算旅行者）醉酒。",
-      "image": "https://www.bloodstar.xyz/p/qazwsxedc/aCup/6_acup.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "与你相邻的存活玩家（不计算旅行者）醉酒。",
+      "与你邻近的两名存活玩家醉酒（旅行者除外）。",
+      "与你邻近的存活的玩家醉酒（旅行者除外）。",
+      "你的存活相邻玩家醉酒（不含旅行者）"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_2345205105371_ac8fe4dd.jpg",
+      "https://www.bloodstar.xyz/p/qazwsxedc/aCup/6_acup.png",
+      "https://i.postimg.cc/ZK9rzFwg/xiang-le-zhu-yi-zhe.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "享乐主义者",
-      "name": "享乐主义者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "与你邻近的两名存活玩家醉酒（旅行者除外）。",
-      "image": "https://i.postimg.cc/ZK9rzFwg/xiang-le-zhu-yi-zhe.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "享乐主义者",
-      "name": "享乐主义者",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "与你邻近的存活的玩家醉酒（旅行者除外）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_2345205105371_ac8fe4dd.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "享乐"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "享乐主义者",
-      "name": "享乐主义者",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "你的存活相邻玩家醉酒（不含旅行者）",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_2345205105371_ac8fe4dd.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

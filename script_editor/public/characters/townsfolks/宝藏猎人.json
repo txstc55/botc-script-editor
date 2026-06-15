@@ -2,34 +2,41 @@
   "id": "宝藏猎人",
   "name": "宝藏猎人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "宝藏猎人",
-      "name": "宝藏猎人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，选择两名其他玩家，如果他们角色类型彼此不同，得知“成功”，否则得知“失败”。你每得知一次成功，你行动选择的目标数量+1，即使你中毒或醉酒。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/8_xiudao111.png",
-      "firstNight": 15,
-      "firstNightReminder": "宝藏猎人指向2名玩家，如果他们角色类型彼此不同，告知“成功”否则告知“失败”。每成功一次，X加一。",
-      "otherNight": 19,
-      "otherNightReminder": "宝藏猎人指向2名玩家，如果他们角色类型彼此不同，告知“成功”否则告知“失败”。每成功一次，X加一。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，选择两名其他玩家，如果他们角色类型彼此不同，得知“成功”，否则得知“失败”。你每得知一次成功，你行动选择的目标数量+1，即使你中毒或醉酒。[+1外来者]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/westwind/xiudao111/8_xiudao111.png"
+    ],
+    "firstNight": [
+      15
+    ],
+    "firstNightReminder": [
+      "宝藏猎人指向2名玩家，如果他们角色类型彼此不同，告知“成功”否则告知“失败”。每成功一次，X加一。"
+    ],
+    "otherNight": [
+      19
+    ],
+    "otherNightReminder": [
+      "宝藏猎人指向2名玩家，如果他们角色类型彼此不同，告知“成功”否则告知“失败”。每成功一次，X加一。"
+    ],
+    "reminders": [
+      [
         "目标3",
         "目标4"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

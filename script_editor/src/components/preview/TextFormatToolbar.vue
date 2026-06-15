@@ -81,3 +81,131 @@ const emit = defineEmits<{
     </div>
   </Transition>
 </template>
+
+<style scoped>
+.text-format-toolbar {
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: calc(100% - 32px);
+  padding: 10px 12px;
+  border: 1px solid rgba(148, 163, 184, 0.42);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.18);
+  transform: translateX(-50%);
+  user-select: none;
+  backdrop-filter: blur(14px);
+}
+
+.format-toolbar-enter-active,
+.format-toolbar-leave-active {
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease;
+}
+
+.format-toolbar-enter-from,
+.format-toolbar-leave-to {
+  opacity: 0;
+  transform: translateX(-50%) translateY(16px);
+}
+
+.toolbar-button-group,
+.toolbar-swatch-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.toolbar-button-group {
+  padding-right: 10px;
+  border-right: 1px solid #d9e2ef;
+}
+
+.toolbar-swatch-group.background {
+  padding-left: 10px;
+  border-left: 1px solid #d9e2ef;
+}
+
+.format-command,
+.format-swatch {
+  appearance: none;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #d9e2ef;
+  background: #ffffff;
+  color: #17202d;
+  cursor: pointer;
+}
+
+.format-command {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  font-family: "Noto Serif SC", "Songti SC", STSong, serif;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.format-command.italic {
+  font-style: italic;
+}
+
+.format-command.underline {
+  text-decoration: underline;
+}
+
+.format-swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+}
+
+.format-swatch::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(15, 23, 42, 0.16);
+  border-radius: 999px;
+  background: var(--swatch-color);
+}
+
+.format-swatch.clear::before {
+  background:
+    linear-gradient(
+      135deg,
+      transparent 46%,
+      rgba(15, 23, 42, 0.42) 47%,
+      rgba(15, 23, 42, 0.42) 53%,
+      transparent 54%
+    ),
+    #ffffff;
+}
+
+.format-command:hover,
+.format-swatch:hover {
+  border-color: #0e7fcf;
+  box-shadow: 0 0 0 3px rgba(14, 127, 207, 0.12);
+}
+
+.format-command.active,
+.format-swatch.active {
+  border-color: #0e7fcf;
+  background: #edf7ff;
+  box-shadow:
+    0 0 0 3px rgba(14, 127, 207, 0.14),
+    inset 0 0 0 1px rgba(14, 127, 207, 0.1);
+}
+
+.format-command.active {
+  color: #0e7fcf;
+}
+</style>

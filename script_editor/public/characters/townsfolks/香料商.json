@@ -2,130 +2,54 @@
   "id": "香料商",
   "name": "香料商",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 5,
   "totalOccurrenceCount": 6,
-  "variants": [
-    {
-      "id": "香料商",
-      "name": "香料商",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天白天有多少邪恶玩家投票，如果你将要得知0，你醉酒。",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780ce5a078bc.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 82,
-      "otherNightReminder": "唤醒香料商，告诉他有今天白天有多少邪恶玩家投票。如果没有邪恶玩家投票导致香料商即将得知0，香料商醉酒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你得知今天白天有多少邪恶玩家投票，如果你将要得知0，你醉酒。",
+      "每个夜晚*，你得知今天白天有多少邪恶玩家投票，如果整个白天都没有邪恶玩家投票，你醉酒。",
+      "每个夜晚*，你得知今天白天有多少邪恶玩家投票，如果整个白天都没有邪恶玩家投票，你醉酒，"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2025/01/10/6780ce5a078bc.png",
+      "https://free.picui.cn/free/2025/12/16/69414a7d6295f.png",
+      "https://www.bloodstar.xyz/p/Pakchoi/Bullfighter/1_bullfighter.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      82,
+      11500,
+      15,
+      85,
+      90
+    ],
+    "otherNightReminder": [
+      "唤醒香料商，告诉他有今天白天有多少邪恶玩家投票。如果没有邪恶玩家投票导致香料商即将得知0，香料商醉酒。",
+      "如果整个白天都没有邪恶玩家投票，放置“醉酒”标记到香料商。唤醒香料商并告知今天白天有多少邪恶玩家在投票过程中举手。"
+    ],
+    "reminders": [
+      [
         "投过票",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "香料商",
-      "name": "香料商",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天白天有多少邪恶玩家投票，如果整个白天都没有邪恶玩家投票，你醉酒。",
-      "image": "https://free.picui.cn/free/2025/12/16/69414a7d6295f.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "如果整个白天都没有邪恶玩家投票，放置“醉酒”标记到香料商。唤醒香料商并告知今天白天有多少邪恶玩家在投票过程中举手。",
-      "reminders": [
+      [
         "已投票",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "香料商",
-      "name": "香料商",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天白天有多少邪恶玩家投票，如果你将要得知0，你醉酒。",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780ce5a078bc.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 85,
-      "otherNightReminder": "唤醒香料商，告诉他有今天白天有多少邪恶玩家投票。如果没有邪恶玩家投票导致香料商即将得知0，香料商醉酒。",
-      "reminders": [
-        "投过票",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "香料商",
-      "name": "香料商",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天白天有多少邪恶玩家投票，如果你将要得知0，你醉酒。",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780ce5a078bc.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 90,
-      "otherNightReminder": "唤醒香料商，告诉他有今天白天有多少邪恶玩家投票。如果没有邪恶玩家投票导致香料商即将得知0，香料商醉酒。",
-      "reminders": [
-        "投过票",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "香料商",
-      "name": "香料商",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你得知今天白天有多少邪恶玩家投票，如果整个白天都没有邪恶玩家投票，你醉酒，",
-      "image": "https://www.bloodstar.xyz/p/Pakchoi/Bullfighter/1_bullfighter.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11500,
-      "otherNightReminder": "唤醒香料商，告诉他有今天白天有多少邪恶玩家投票。如果没有邪恶玩家投票导致香料商即将得知0，香料商醉酒。",
-      "reminders": [
-        "投过票",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

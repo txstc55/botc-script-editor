@@ -6,59 +6,13 @@
     "异端分子",
     "痢蛭"
   ],
-  "targetCount": 2,
-  "variantCount": 2,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "痢蛭&异端分子",
-      "name": "痢蛭&异端分子",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果痢蛭选择异端分子作为宿主，痢蛭死亡时异端分子仍会中毒。",
-      "targets": [
-        "异端分子",
-        "痢蛭"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 3,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    },
-    {
-      "id": "痢蛭&异端分子",
-      "name": "痢蛭&异端分子",
-      "variantIndex": 2,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果痢蛭选择的宿主玩家拥有异端分子能力，痢蛭死亡时那名玩家仍会中毒。",
-      "targets": [
-        "异端分子",
-        "痢蛭"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果痢蛭选择异端分子作为宿主，痢蛭死亡时异端分子仍会中毒。",
+      "如果痢蛭选择的宿主玩家拥有异端分子能力，痢蛭死亡时那名玩家仍会中毒。"
+    ]
+  }
 }

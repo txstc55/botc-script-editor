@@ -2,34 +2,41 @@
   "id": "变相怪杰",
   "name": "变相怪杰",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "变相怪杰",
-      "name": "变相怪杰",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家：他们转变为恐慌状态，随后一名恐慌的玩家可能解除恐慌状态。只有所有爪牙都死亡时，你才会死亡。当你首次被处决时，一名爪牙会在当晚死亡，但其他玩家当晚不会因处于恐慌状态而死亡。[-1外来者]",
-      "image": "https://www.bloodstar.xyz/p/SeaBound/Halloween/mask_halloween.png",
-      "firstNight": 3500,
-      "firstNightReminder": "The Mask chooses 2 players, both become scared. Then, a scared player might become calm.",
-      "otherNight": 9,
-      "otherNightReminder": "变相怪杰要选择两名玩家：他们转变为恐慌状态，随后一名恐慌的玩家可能解除恐慌状态。当变相怪杰首次被处决时，一名爪牙会在当晚死亡，但其他玩家当晚不会因处于恐慌状态而死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名玩家：他们转变为恐慌状态，随后一名恐慌的玩家可能解除恐慌状态。只有所有爪牙都死亡时，你才会死亡。当你首次被处决时，一名爪牙会在当晚死亡，但其他玩家当晚不会因处于恐慌状态而死亡。[-1外来者]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/SeaBound/Halloween/mask_halloween.png"
+    ],
+    "firstNight": [
+      3500
+    ],
+    "firstNightReminder": [
+      "The Mask chooses 2 players, both become scared. Then, a scared player might become calm."
+    ],
+    "otherNight": [
+      9
+    ],
+    "otherNightReminder": [
+      "变相怪杰要选择两名玩家：他们转变为恐慌状态，随后一名恐慌的玩家可能解除恐慌状态。当变相怪杰首次被处决时，一名爪牙会在当晚死亡，但其他玩家当晚不会因处于恐慌状态而死亡。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "Kill for Mother.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "Kill for Mother."
+    ]
+  }
 }

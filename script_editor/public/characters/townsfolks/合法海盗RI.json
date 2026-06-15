@@ -2,33 +2,40 @@
   "id": "合法海盗RI",
   "name": "合法海盗RI",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "合法海盗RI",
-      "name": "合法海盗RI",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下拜访说书人以得知一个任务。每个夜晚*，如果你完成了上一个得知的任务，你会得知一个在场的角色。",
-      "image": "[\"https://i.postimg.cc/nVsdTwQg/image.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "If the previous task was completed, show an in-play character token.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以私下拜访说书人以得知一个任务。每个夜晚*，如果你完成了上一个得知的任务，你会得知一个在场的角色。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/nVsdTwQg/image.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      14
+    ],
+    "otherNightReminder": [
+      "If the previous task was completed, show an in-play character token."
+    ],
+    "reminders": [
+      [
         "任务完成"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

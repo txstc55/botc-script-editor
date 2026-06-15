@@ -2,56 +2,44 @@
   "id": "护火贞女",
   "name": "护火贞女",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "护火贞女",
-      "name": "护火贞女",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个善良角色和一个邪恶角色，其中一个角色在场。当在场角色的玩家死亡时，你在当晚得知一个善良角色和一个邪恶角色，其中一个角色在场。",
-      "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/vestalvirgin_fall_of_rome.png",
-      "firstNight": 19,
-      "firstNightReminder": "展示1个善良角色标记和1个邪恶角色标记：其中一个在场。放置\"已得知\"在那个在场角色标记旁。",
-      "otherNight": 19,
-      "otherNightReminder": "如果带有\"已得知\"标记的玩家今天死亡，移除标记。展示1个善良角色标记和1个邪恶角色标记：其中一个在场。放置\"已得知\"在那个在场角色标记旁。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一个善良角色和一个邪恶角色，其中一个角色在场。当在场角色的玩家死亡时，你在当晚得知一个善良角色和一个邪恶角色，其中一个角色在场。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/vestalvirgin_fall_of_rome.png",
+      "https://www.bloodstar.xyz/p/westwind/Goldapple/11_goldapple.png"
+    ],
+    "firstNight": [
+      19,
+      21
+    ],
+    "firstNightReminder": [
+      "展示1个善良角色标记和1个邪恶角色标记：其中一个在场。放置\"已得知\"在那个在场角色标记旁。"
+    ],
+    "otherNight": [
+      13,
+      19
+    ],
+    "otherNightReminder": [
+      "如果带有\"已得知\"标记的玩家今天死亡，移除标记。展示1个善良角色标记和1个邪恶角色标记：其中一个在场。放置\"已得知\"在那个在场角色标记旁。"
+    ],
+    "reminders": [
+      [
         "已得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "维斯塔女神，我已经在维斯太圣焰中收到你的信息，现在我如受天启。我很快就会回来……感激神明……",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "护火贞女",
-      "name": "护火贞女",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个善良角色和一个邪恶角色，其中一个角色在场。当在场角色的玩家死亡时，你在当晚得知一个善良角色和一个邪恶角色，其中一个角色在场。",
-      "image": "https://www.bloodstar.xyz/p/westwind/Goldapple/11_goldapple.png",
-      "firstNight": 21,
-      "firstNightReminder": "展示1个善良角色标记和1个邪恶角色标记：其中一个在场。放置\"已得知\"在那个在场角色标记旁。",
-      "otherNight": 13,
-      "otherNightReminder": "如果带有\"已得知\"标记的玩家今天死亡，移除标记。展示1个善良角色标记和1个邪恶角色标记：其中一个在场。放置\"已得知\"在那个在场角色标记旁。",
-      "reminders": [
-        "已得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "维斯塔女神，我已经在维斯太圣焰中收到你的信息，现在我如受天启。我很快就会回来……感激神明……"
+    ]
+  }
 }

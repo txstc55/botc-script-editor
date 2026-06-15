@@ -2,35 +2,42 @@
   "id": "时间旅人",
   "name": "时间旅人",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "时间旅人",
-      "name": "时间旅人",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你死亡且因此导致游戏结束时，所有玩家的状态回到上个黄昏，然后你可以与一名玩家交换角色，所有镇民中毒直到下个黄昏，下个白天直接开始提名阶段。每局游戏仅能成功时空回溯一次。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596273_197011_7331.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "时间旅人指向一名玩家，标记那名玩家死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。如果你死亡且因此导致游戏结束时，所有玩家的状态回到上个黄昏，然后你可以与一名玩家交换角色，所有镇民中毒直到下个黄昏，下个白天直接开始提名阶段。每局游戏仅能成功时空回溯一次。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1691596273_197011_7331.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "时间旅人指向一名玩家，标记那名玩家死亡。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "仅一次",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

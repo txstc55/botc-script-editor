@@ -2,36 +2,43 @@
   "id": "一枕黄粱",
   "name": "一枕黄粱",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "一枕黄粱",
-      "name": "一枕黄粱",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你可以选择两名玩家。当你选择了一名你选择过的玩家时，他死亡，如果你以这种方式自杀，你要选择一名你在白天提名过的玩家，他变为邪恶的一枕黄粱，但每局游戏仅能成功转化一次。",
-      "image": "https://i.postimg.cc/SsxwXt0n/25.png",
-      "firstNight": 16,
-      "firstNightReminder": "唤醒一枕黄粱，他可以摇头不使用能力，或选择两名玩家。为这些玩家放置“选择”标记。",
-      "otherNight": 11,
-      "otherNightReminder": "唤醒一枕黄粱，他可以摇头不使用能力，或选择两名玩家。为这些玩家放置“选择”标记。如果这些玩家中有人带有“选择”标记，则为该玩家放置“死亡”标记。如果你以这种方式自杀，让一枕黄粱选择一名符合条件的玩家且让他入睡，然后通知那名玩家角色变化。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你可以选择两名玩家。当你选择了一名你选择过的玩家时，他死亡，如果你以这种方式自杀，你要选择一名你在白天提名过的玩家，他变为邪恶的一枕黄粱，但每局游戏仅能成功转化一次。"
+    ],
+    "image": [
+      "https://i.postimg.cc/SsxwXt0n/25.png"
+    ],
+    "firstNight": [
+      16
+    ],
+    "firstNightReminder": [
+      "唤醒一枕黄粱，他可以摇头不使用能力，或选择两名玩家。为这些玩家放置“选择”标记。"
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "唤醒一枕黄粱，他可以摇头不使用能力，或选择两名玩家。为这些玩家放置“选择”标记。如果这些玩家中有人带有“选择”标记，则为该玩家放置“死亡”标记。如果你以这种方式自杀，让一枕黄粱选择一名符合条件的玩家且让他入睡，然后通知那名玩家角色变化。"
+    ],
+    "reminders": [
+      [
         "提名过",
         "死亡",
         "选择",
         "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

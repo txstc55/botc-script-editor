@@ -2,82 +2,52 @@
   "id": "大巫妖",
   "name": "大巫妖",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "大巫妖",
-      "name": "大巫妖",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。一名死亡玩家首次被大巫妖的能力选择时，他要选择两名玩家：其中不是恶魔的玩家死亡。",
-      "image": "https://www.bloodstar.xyz/p/humlet/ROSE/7_rose.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒大巫妖",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。一名死亡玩家首次被大巫妖的能力选择时，他要选择两名玩家：其中不是恶魔的玩家死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/MKfWHkbR/image.png",
+      "https://www.bloodstar.xyz/p/humlet/ROSE/7_rose.png",
+      "https://www.bloodstar.xyz/p/worryhours/yitai/14_yitai.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      11,
+      32,
+      8
+    ],
+    "otherNightReminder": [
+      "唤醒大巫妖",
+      "唤醒穷奇，让他选择攻击一名玩家，或唤醒死亡玩家进行攻击。"
+    ],
+    "reminders": [
+      [
         "已触发",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我听见了。你灵魂中对死亡的不甘，对力量的饥渴。世人畏惧你，而我，欣赏你。接受这份恩赐。你的尸骸将成为我的第一件杰作，你的意志将化为裁决众生的律法。呼吸吧，这甜美的恐惧…它将是你新生的第一口食粮。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "大巫妖",
-      "name": "大巫妖",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。一名死亡玩家首次被大巫妖的能力选择时，他要选择两名玩家：其中不是恶魔的玩家死亡。",
-      "image": "https://www.bloodstar.xyz/p/worryhours/yitai/14_yitai.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "唤醒大巫妖",
-      "reminders": [
-        "已触发",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "大巫妖",
-      "name": "大巫妖",
-      "variantIndex": 3,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。一名死亡玩家首次被大巫妖的能力选择时，他要选择两名玩家：其中不是恶魔的玩家死亡。",
-      "image": "https://i.postimg.cc/MKfWHkbR/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 32,
-      "otherNightReminder": "唤醒穷奇，让他选择攻击一名玩家，或唤醒死亡玩家进行攻击。",
-      "reminders": [],
-      "remindersGlobal": [
+      []
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "已被选择",
         "死亡"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "我听见了。你灵魂中对死亡的不甘，对力量的饥渴。世人畏惧你，而我，欣赏你。接受这份恩赐。你的尸骸将成为我的第一件杰作，你的意志将化为裁决众生的律法。呼吸吧，这甜美的恐惧…它将是你新生的第一口食粮。"
+    ]
+  }
 }

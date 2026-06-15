@@ -2,203 +2,57 @@
   "id": "戏子",
   "name": "戏子",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 9,
   "totalOccurrenceCount": 16,
-  "variants": [
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_8392176308961_c524bafb.jpg",
-      "firstNight": 34,
-      "firstNightReminder": "唤醒所有戏子，让他们互相确认。如有必要，对他们展示“你是”提示标记和戏子角色标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 6,
-      "notes": []
-    },
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
-      "image": "https://clocktower-wiki.gstonegames.com/images/1/13/Xizi.png",
-      "firstNight": 12,
-      "firstNightReminder": "唤醒所有戏子，让他们互相确认。如有必要，对他们展示“你是”提示标记和戏子角色标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "其他善良玩家醉酒（旅行者除外），你们互相认识且无法转变阵营，对调胜负结果，即使你失去能力。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xizi.png",
-      "firstNight": 17,
-      "firstNightReminder": "唤醒所有善良角色并让他们互认。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
+      "其他善良玩家醉酒（旅行者除外），你们互相认识且无法转变阵营，对调胜负结果，即使你失去能力。",
+      "所有戏子互相认识，不论在场的戏子数量有多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_8392176308961_c524bafb.jpg",
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/xizi.png",
+      "https://clocktower-wiki.gstonegames.com/images/1/13/Xizi.png",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/1/13/Xizi.png/180px-Xizi.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_7962177694761_cf9d050a.jpg"
+    ],
+    "firstNight": [
+      34,
+      12,
+      17,
+      3400
+    ],
+    "firstNightReminder": [
+      "唤醒所有戏子，让他们互相确认。如有必要，对他们展示“你是”提示标记和戏子角色标记。",
+      "唤醒所有善良角色并让他们互认。",
+      "唤醒所有戏子并让他们互认。",
+      "唤醒所有戏子，让他们互相确认。对他们展示“你现在是”提示标记和戏子角色标记。让所有戏子重新入睡。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [],
+      [
         "善良醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/13/Xizi.png/180px-Xizi.png",
-      "firstNight": 12,
-      "firstNightReminder": "唤醒所有戏子，让他们互相确认。如有必要，对他们展示“你是”提示标记和戏子角色标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_7962177694761_cf9d050a.jpg",
-      "firstNight": 12,
-      "firstNightReminder": "唤醒所有戏子，让他们互相确认。如有必要，对他们展示“你是”提示标记和戏子角色标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xizi.png",
-      "firstNight": 12,
-      "firstNightReminder": "唤醒所有戏子并让他们互认。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "所有戏子互相认识，不论在场的戏子数量有多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xizi.png",
-      "firstNight": 17,
-      "firstNightReminder": "唤醒所有戏子并让他们互认。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_8392176308961_c524bafb.jpg",
-      "firstNight": 3400,
-      "firstNightReminder": "唤醒所有戏子，让他们互相确认。如有必要，对他们展示“你是”提示标记和戏子角色标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "戏子",
-      "name": "戏子",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "所有戏子互相认识。不论在场的戏子数量多少或存活与否，胜负结果会被对调。[所有善良玩家都是戏子]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xizi.png",
-      "firstNight": 3400,
-      "firstNightReminder": "唤醒所有戏子，让他们互相确认。对他们展示“你现在是”提示标记和戏子角色标记。让所有戏子重新入睡。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "逢场作戏"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      1,
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

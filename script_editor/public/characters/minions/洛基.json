@@ -2,57 +2,51 @@
   "id": "洛基",
   "name": "洛基",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "洛基",
-      "name": "洛基",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "如果你死于处决，从此之后恶魔可以行动两次且爪牙重新获得他的能力。",
-      "image": "https://www.bloodstar.xyz/p/LemonSneeze/Ragnarok-09/loki_ragnarok09.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你死于处决，从此之后恶魔可以行动两次且爪牙重新获得他的能力。",
+      "每个夜晚，你可以选择一名善良玩家：与他邻近的两名存活的镇民中毒直到下个黄昏，随后他会得知被洛基选择。如果他明天“疯狂”地证明自己被洛基选择，他可能被处决。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/LemonSneeze/Ragnarok-09/loki_ragnarok09.png",
+      "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/loki_avengersv2.png"
+    ],
+    "firstNight": [
+      0,
+      4
+    ],
+    "firstNightReminder": [
+      "",
+      "The Loki shows 'No' or points to a good player. Mark that player 'Mad', then wake that player. Show the <b>THIS CHARACTER SELECTED YOU</b> card, then the Loki token. Mark both of that player's living Townsfolk neighbors '中毒'. If the player is 'mad' about being chosen by Loki tomorrow, they can be executed."
+    ],
+    "otherNight": [
+      0,
+      12
+    ],
+    "otherNightReminder": [
+      "",
+      "Clear the '中毒' and 'Mad' tokens.<br><br>The Loki shows 'No' or points to a good player. Mark that player 'Mad', then wake that player.<br><br>Show the <b>THIS CHARACTER SELECTED YOU</b> card, then the Loki token.<br><br>Mark both of that player's living Townsfolk neighbors '中毒'.<br><br>If the player is 'mad' about being chosen by Loki tomorrow, they can be executed."
+    ],
+    "reminders": [
+      [
         "处决死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "洛基",
-      "name": "洛基",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你可以选择一名善良玩家：与他邻近的两名存活的镇民中毒直到下个黄昏，随后他会得知被洛基选择。如果他明天“疯狂”地证明自己被洛基选择，他可能被处决。",
-      "image": "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/loki_avengersv2.png",
-      "firstNight": 4,
-      "firstNightReminder": "The Loki shows 'No' or points to a good player. Mark that player 'Mad', then wake that player. Show the <b>THIS CHARACTER SELECTED YOU</b> card, then the Loki token. Mark both of that player's living Townsfolk neighbors '中毒'. If the player is 'mad' about being chosen by Loki tomorrow, they can be executed.",
-      "otherNight": 12,
-      "otherNightReminder": "Clear the '中毒' and 'Mad' tokens.<br><br>The Loki shows 'No' or points to a good player. Mark that player 'Mad', then wake that player.<br><br>Show the <b>THIS CHARACTER SELECTED YOU</b> card, then the Loki token.<br><br>Mark both of that player's living Townsfolk neighbors '中毒'.<br><br>If the player is 'mad' about being chosen by Loki tomorrow, they can be executed.",
-      "reminders": [
+      [
         "中毒",
         "疯狂"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Freedom is life's great lie. Once you accept that, in your heart...you will 得知 peace.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "Freedom is life's great lie. Once you accept that, in your heart...you will 得知 peace."
+    ]
+  }
 }

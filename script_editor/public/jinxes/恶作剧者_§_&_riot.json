@@ -6,42 +6,14 @@
     "恶作剧者 §",
     "riot"
   ],
-  "targetCount": 2,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [
+    "nested_jinx_target_id_unresolved"
+  ],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "恶作剧者 § & riot",
-      "name": "恶作剧者 § & riot",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "Riot registers as a Minion to the Prankster.",
-      "targets": [
-        "恶作剧者 §",
-        "riot"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "恶作剧者 §",
-        "targetId": "riot",
-        "targetName": ""
-      },
-      "rules": [
-        {
-          "sourceCharacter": "恶作剧者 §",
-          "targetId": "riot",
-          "targetName": ""
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": [
-        "nested_jinx_target_id_unresolved"
-      ]
-    }
-  ]
+  "variants": {
+    "ability": [
+      "Riot registers as a Minion to the Prankster."
+    ]
+  }
 }

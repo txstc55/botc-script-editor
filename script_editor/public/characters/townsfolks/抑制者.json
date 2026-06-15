@@ -2,35 +2,42 @@
   "id": "抑制者",
   "name": "抑制者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "抑制者",
-      "name": "抑制者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名死亡的玩家：当你选择第二名镇民玩家时，恶魔当晚的攻击会失效。",
-      "image": "https://i.postimg.cc/9QDC9QVb/restrainer-shadowed-intentions.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5,
-      "otherNightReminder": "The Restrainer chooses a dead player.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名死亡的玩家：当你选择第二名镇民玩家时，恶魔当晚的攻击会失效。"
+    ],
+    "image": [
+      "https://i.postimg.cc/9QDC9QVb/restrainer-shadowed-intentions.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "The Restrainer chooses a dead player."
+    ],
+    "reminders": [
+      [
         "失去能力",
         "第一名",
         "第二名"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "戴上这些镣铐，与我光明正大地对决！",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "戴上这些镣铐，与我光明正大地对决！"
+    ]
+  }
 }

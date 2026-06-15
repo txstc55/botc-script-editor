@@ -2,34 +2,41 @@
   "id": "和平主义者（改）",
   "name": "和平主义者（改）",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "和平主义者（改）",
-      "name": "和平主义者（改）",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你拥有能力时首个被处决的善良玩家不会死亡，随后你失去能力。每个夜晚，你可以选择让你失去能力，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pacifist.png",
-      "firstNight": 3800,
-      "firstNightReminder": "在你拥有能力时首个被处决的善良玩家不会死亡，随后你失去能力。每个夜晚，你可以选择让你失去能力，直到下个黄昏。",
-      "otherNight": 78,
-      "otherNightReminder": "如果和平主义者具备能力，唤醒他，并让他选择是否在下个白天失去能力。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你拥有能力时首个被处决的善良玩家不会死亡，随后你失去能力。每个夜晚，你可以选择让你失去能力，直到下个黄昏。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/pacifist.png"
+    ],
+    "firstNight": [
+      3800
+    ],
+    "firstNightReminder": [
+      "在你拥有能力时首个被处决的善良玩家不会死亡，随后你失去能力。每个夜晚，你可以选择让你失去能力，直到下个黄昏。"
+    ],
+    "otherNight": [
+      78
+    ],
+    "otherNightReminder": [
+      "如果和平主义者具备能力，唤醒他，并让他选择是否在下个白天失去能力。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "已触发"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,79 +2,48 @@
   "id": "玩具匠",
   "name": "玩具匠",
   "team": "fabled",
-  "teamLabelZh": "传奇角色",
-  "folder": "fabled",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "玩具匠",
-      "name": "玩具匠",
-      "variantIndex": 1,
-      "team": "fabled",
-      "teams": [
-        "fabled"
+  "notes": [],
+  "variants": {
+    "ability": [
+      "恶魔可以在夜晚选择放弃攻击（每局游戏至少一次）。邪恶玩家照常获取初始信息。",
+      "恶魔可以放弃攻击(需至少一次)。邪恶玩家照常获取初始信息"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/toymaker.png",
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/toymaker.png",
+      "https://www.bloodstar.xyz/p/Jungle/Taowu_Mad/11_taowu_mad.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      1,
+      0
+    ],
+    "otherNightReminder": [
+      "如果这是最后一个夜晚恶魔的攻击即将获胜，而恶魔旁边仍有未选择标记，则恶魔今晚不会醒来。",
+      ""
+    ],
+    "reminders": [
+      [
+        "无法攻击"
       ],
-      "ability": "恶魔可以放弃攻击(需至少一次)。邪恶玩家照常获取初始信息",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/toymaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "如果这是最后一个夜晚恶魔的攻击即将获胜，而恶魔旁边仍有未选择标记，则恶魔今晚不会醒来。",
-      "reminders": [
+      [
         "最后一晚：无法攻击"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "玩具匠",
-      "name": "玩具匠",
-      "variantIndex": 2,
-      "team": "fabled",
-      "teams": [
-        "fabled"
-      ],
-      "ability": "恶魔可以在夜晚选择放弃攻击（每局游戏至少一次）。邪恶玩家照常获取初始信息。",
-      "image": "https://www.bloodstar.xyz/p/Jungle/Taowu_Mad/11_taowu_mad.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "无法攻击"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "玩具匠",
-      "name": "玩具匠",
-      "variantIndex": 3,
-      "team": "fabled",
-      "teams": [
-        "fabled"
-      ],
-      "ability": "恶魔可以在夜晚选择放弃攻击（每局游戏至少一次）。邪恶玩家照常获取初始信息。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/toymaker.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "如果这是最后一个夜晚恶魔的攻击即将获胜，而恶魔旁边仍有未选择标记，则恶魔今晚不会醒来。",
-      "reminders": [
-        "无法攻击"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

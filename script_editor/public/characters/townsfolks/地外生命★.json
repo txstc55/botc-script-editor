@@ -2,62 +2,44 @@
   "id": "地外生命★",
   "name": "地外生命★",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "地外生命★",
-      "name": "地外生命★",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色和一个爪牙角色：如果他们都在场，他们醉酒，那名爪牙得知你在游戏中。",
-      "image": "https://free.picui.cn/free/2025/09/24/68d2c71ab3238.png",
-      "firstNight": 21,
-      "firstNightReminder": "唤醒地外生命，他可以摇头不使用能力，或选择善良角色列表上和爪牙角色列表上各一个任意角色，如果他们都在场，他们醉酒。",
-      "otherNight": 12,
-      "otherNightReminder": "唤醒地外生命，他可以摇头不使用能力，或选择善良角色列表上和爪牙角色列表上各一个任意角色，如果他们都在场，他们醉酒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时，你可以选择一个善良角色和一个爪牙角色：如果他们都在场，他们醉酒，那名爪牙得知你在游戏中。"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/09/24/68d2c71ab3238.png"
+    ],
+    "firstNight": [
+      21,
+      3100
+    ],
+    "firstNightReminder": [
+      "唤醒地外生命，他可以摇头不使用能力，或选择善良角色列表上和爪牙角色列表上各一个任意角色，如果他们都在场，他们醉酒。"
+    ],
+    "otherNight": [
+      12
+    ],
+    "otherNightReminder": [
+      "唤醒地外生命，他可以摇头不使用能力，或选择善良角色列表上和爪牙角色列表上各一个任意角色，如果他们都在场，他们醉酒。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "醉酒1",
         "醉酒2",
         "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "地外生命★",
-      "name": "地外生命★",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色和一个爪牙角色：如果他们都在场，他们醉酒，那名爪牙得知你在游戏中。",
-      "image": "https://free.picui.cn/free/2025/09/24/68d2c71ab3238.png",
-      "firstNight": 3100,
-      "firstNightReminder": "唤醒地外生命，他可以摇头不使用能力，或选择善良角色列表上和爪牙角色列表上各一个任意角色，如果他们都在场，他们醉酒。",
-      "otherNight": 12,
-      "otherNightReminder": "唤醒地外生命，他可以摇头不使用能力，或选择善良角色列表上和爪牙角色列表上各一个任意角色，如果他们都在场，他们醉酒。",
-      "reminders": [
-        "失去能力",
-        "醉酒1",
-        "醉酒2",
-        "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

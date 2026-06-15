@@ -2,35 +2,42 @@
   "id": "织夜者",
   "name": "织夜者",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "织夜者",
-      "name": "织夜者",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，选择一名玩家，他中毒并在下个夜晚死亡。每局游戏限一次*：从现在开始，所有爪牙中毒，所有镇民获取错误信息，你的能力变为： 每个夜晚*选择两名玩家：他们死亡。",
-      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/_xiudao111.png",
-      "firstNight": 12,
-      "firstNightReminder": "织夜者指向一名玩家，放置他“中毒”标记。",
-      "otherNight": 6,
-      "otherNightReminder": "将前一个“中毒”标记改为“死亡”标记。织夜者指向一名玩家，放置他们“中毒”标记。 如果织夜者选择开启大招，那么放置“恐怖梦境”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，选择一名玩家，他中毒并在下个夜晚死亡。每局游戏限一次*：从现在开始，所有爪牙中毒，所有镇民获取错误信息，你的能力变为： 每个夜晚*选择两名玩家：他们死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/westwind/xiudao111/_xiudao111.png"
+    ],
+    "firstNight": [
+      12
+    ],
+    "firstNightReminder": [
+      "织夜者指向一名玩家，放置他“中毒”标记。"
+    ],
+    "otherNight": [
+      6
+    ],
+    "otherNightReminder": [
+      "将前一个“中毒”标记改为“死亡”标记。织夜者指向一名玩家，放置他们“中毒”标记。 如果织夜者选择开启大招，那么放置“恐怖梦境”标记。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "恐怖梦境",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,82 +2,47 @@
   "id": "憎恶",
   "name": "憎恶",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "憎恶",
-      "name": "憎恶",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你可以选择一名玩家：他死亡，在此之前，与他阵营相同的另一名玩家复活。恶魔死亡不会导致游戏结束。",
-      "image": "https://www.bloodstar.xyz/p/Guiltier/XING/19_xing.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "唤醒憎恶。如果他攻击了一名玩家，在一名与那名玩家阵营相同的玩家的角色标记旁放置憎恶的“复活”提示标记，然后再在那名玩家的角色标记旁放置憎恶的“死亡”提示标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以选择一名玩家：他死亡，在此之前，与他阵营相同的另一名玩家复活。恶魔死亡不会导致游戏结束。",
+      "每个夜晚*，你可以选择一名玩家：他死亡，与他阵营相同的另一名死亡的玩家复活。在你存活时善良阵营无法获胜。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Pakchoi/Pakchoi/patchwerk_pakchoi.png",
+      "https://www.bloodstar.xyz/p/Guiltier/XING/19_xing.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      8501,
+      13
+    ],
+    "otherNightReminder": [
+      "唤醒憎恶。如果他攻击了一名玩家，在一名与那名玩家阵营相同的玩家的角色标记旁放置憎恶的“复活”提示标记，然后再在那名玩家的角色标记旁放置憎恶的“死亡”提示标记。",
+      "每个夜晚*，你可以选择一名玩家：他死亡，与他阵营相同的另一名死亡的玩家复活。在你存活时善良阵营无法获胜。",
+      "每个夜晚*，你可以选择一名玩家：他死亡，在此之前，与他阵营相同的另一名玩家复活。恶魔死亡不会导致游戏结束。"
+    ],
+    "reminders": [
+      [
         "复活",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "每当鲜血洒落，新的灵魂便从深渊归来，直到世界被仇恨吞噬殆尽。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "憎恶",
-      "name": "憎恶",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你可以选择一名玩家：他死亡，与他阵营相同的另一名死亡的玩家复活。在你存活时善良阵营无法获胜。",
-      "image": "https://www.bloodstar.xyz/p/Pakchoi/Pakchoi/patchwerk_pakchoi.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8501,
-      "otherNightReminder": "每个夜晚*，你可以选择一名玩家：他死亡，与他阵营相同的另一名死亡的玩家复活。在你存活时善良阵营无法获胜。",
-      "reminders": [
-        "复活",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "憎恶",
-      "name": "憎恶",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你可以选择一名玩家：他死亡，在此之前，与他阵营相同的另一名玩家复活。恶魔死亡不会导致游戏结束。",
-      "image": "https://www.bloodstar.xyz/p/Pakchoi/Pakchoi/patchwerk_pakchoi.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8501,
-      "otherNightReminder": "每个夜晚*，你可以选择一名玩家：他死亡，在此之前，与他阵营相同的另一名玩家复活。恶魔死亡不会导致游戏结束。",
-      "reminders": [
-        "复活",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "每当鲜血洒落，新的灵魂便从深渊归来，直到世界被仇恨吞噬殆尽。"
+    ]
+  }
 }

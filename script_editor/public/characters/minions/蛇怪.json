@@ -2,34 +2,41 @@
   "id": "蛇怪",
   "name": "蛇怪",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "蛇怪",
-      "name": "蛇怪",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他当晚曾因为自身能力被唤醒，他死亡；否则，如果你存活，他不会在夜晚被唤醒，且会在本该被唤醒时得知此事。如果你选择了哈利波特，改为你死亡。",
-      "image": "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/basilisk_hp2_2.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 7,
-      "otherNightReminder": "Wake and ask to pick a player",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：如果他当晚曾因为自身能力被唤醒，他死亡；否则，如果你存活，他不会在夜晚被唤醒，且会在本该被唤醒时得知此事。如果你选择了哈利波特，改为你死亡。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/basilisk_hp2_2.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      7
+    ],
+    "otherNightReminder": [
+      "Wake and ask to pick a player"
+    ],
+    "reminders": [
+      [
         "死亡",
         "石化"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "The Basilisk has a murderous stare, and all who are fixed with the beam of its eye shall suffer instant death.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "The Basilisk has a murderous stare, and all who are fixed with the beam of its eye shall suffer instant death."
+    ]
+  }
 }

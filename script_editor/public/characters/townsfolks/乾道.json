@@ -2,34 +2,41 @@
   "id": "乾道",
   "name": "乾道",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "乾道",
-      "name": "乾道",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "当邪恶玩家的能力在夜晚选择你时（首个夜晚除外），你死亡，然后你得知在场的恶魔角色。[恶魔获得并得知初始爪牙配置数加一的爪牙能力，无爪牙在场]",
-      "image": "https://i.postimg.cc/ydfCvChh/13.png",
-      "firstNight": 4,
-      "firstNightReminder": "如果乾道在场，唤醒恶魔，对他展示乾道角色标记，然后展示相应数量的爪牙角色标记，然后让他重新入睡，为他放置“朗朗乾坤”标记。",
-      "otherNight": 14,
-      "otherNightReminder": "如果此前有邪恶玩家的能力选择过乾道，唤醒乾道，对他展示在场的恶魔角色标记。然后让他重新入睡，为他放置“道殒命消”标记",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "当邪恶玩家的能力在夜晚选择你时（首个夜晚除外），你死亡，然后你得知在场的恶魔角色。[恶魔获得并得知初始爪牙配置数加一的爪牙能力，无爪牙在场]"
+    ],
+    "image": [
+      "https://i.postimg.cc/ydfCvChh/13.png"
+    ],
+    "firstNight": [
+      4
+    ],
+    "firstNightReminder": [
+      "如果乾道在场，唤醒恶魔，对他展示乾道角色标记，然后展示相应数量的爪牙角色标记，然后让他重新入睡，为他放置“朗朗乾坤”标记。"
+    ],
+    "otherNight": [
+      14
+    ],
+    "otherNightReminder": [
+      "如果此前有邪恶玩家的能力选择过乾道，唤醒乾道，对他展示在场的恶魔角色标记。然后让他重新入睡，为他放置“道殒命消”标记"
+    ],
+    "reminders": [
+      [
         "朗朗乾坤",
         "道殒命消"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

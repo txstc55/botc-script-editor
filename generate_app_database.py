@@ -176,44 +176,43 @@ def character_notes(row: dict[str, str]) -> list[str]:
   return dedupe(notes)
 
 
-def character_variant(row: dict[str, str], team: str, variant_index: int) -> dict[str, Any]:
-  name = text(row.get("name"))
-  source_teams = dedupe([text(row.get("team")), text(row.get("normalized_team"))])
-  return {
-    "id": name,
-    "name": name,
-    "variantIndex": variant_index,
-    "team": team,
-    "teams": source_teams or [team],
-    "ability": text(row.get("ability")),
-    "image": text(row.get("image")),
-    "firstNight": parse_int(row.get("first_night_order")),
-    "firstNightReminder": text(row.get("first_night_reminder")),
-    "otherNight": parse_int(row.get("other_night_order")),
-    "otherNightReminder": text(row.get("other_night_reminder")),
-    "reminders": split_list(row.get("reminders", "")),
-    "remindersGlobal": split_list(row.get("reminders_global", "")),
-    "setup": parse_setup(row.get("setup")),
-    "flavor": text(row.get("flavor")),
-    "occurrenceCount": parse_int(row.get("occurrence_count"), 1),
-    "notes": character_notes(row),
-  }
+def canonical_variant_key(value: Any) -> str:
+  return json.dumps(value, ensure_ascii=False, sort_keys=True)
 
 
-def sort_variants(variants: list[dict[str, Any]]) -> list[dict[str, Any]]:
-  variants.sort(
-    key=lambda variant: (
-      -variant["occurrenceCount"],
-      variant.get("team", ""),
-      variant.get("firstNight", 0),
-      variant.get("otherNight", 0),
-      variant.get("ability", ""),
-      variant.get("image", ""),
-    )
-  )
-  for index, variant in enumerate(variants, 1):
-    variant["variantIndex"] = index
+def build_trait_variants(
+  rows: list[dict[str, str]],
+  readers: dict[str, Any],
+) -> dict[str, list[Any]]:
+  variants: dict[str, list[Any]] = {}
+
+  for trait, reader in readers.items():
+    counter: Counter[str] = Counter()
+    values: dict[str, Any] = {}
+    for row in rows:
+      value = reader(row)
+      key = canonical_variant_key(value)
+      values[key] = value
+      counter[key] += parse_int(row.get("occurrence_count"), 1)
+
+    ordered_keys = sorted(counter, key=lambda key: (-counter[key], key))
+    variants[trait] = [values[key] for key in ordered_keys]
+
   return variants
+
+
+CHARACTER_TRAIT_READERS = {
+  "ability": lambda row: text(row.get("ability")),
+  "image": lambda row: text(row.get("image")),
+  "firstNight": lambda row: parse_int(row.get("first_night_order")),
+  "firstNightReminder": lambda row: text(row.get("first_night_reminder")),
+  "otherNight": lambda row: parse_int(row.get("other_night_order")),
+  "otherNightReminder": lambda row: text(row.get("other_night_reminder")),
+  "reminders": lambda row: split_list(row.get("reminders", "")),
+  "remindersGlobal": lambda row: split_list(row.get("reminders_global", "")),
+  "setup": lambda row: parse_setup(row.get("setup")),
+  "flavor": lambda row: text(row.get("flavor")),
+}
 
 
 def build_characters(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[dict[str, Any]]]:
@@ -245,35 +244,31 @@ def build_characters(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[d
     folder: {}
     for folder in TEAM_FOLDERS.values()
   }
-  total_variants = 0
   total_occurrences = 0
 
   for team in TEAM_FOLDERS:
     (CHARACTER_ROOT / TEAM_FOLDERS[team]).mkdir(parents=True, exist_ok=True)
 
   for (team, name), group_rows in grouped.items():
-    variants = [
-      character_variant(row, team, index)
-      for index, row in enumerate(group_rows, 1)
-    ]
-    variants = sort_variants(variants)
-    occurrence_count = sum(variant["occurrenceCount"] for variant in variants)
-    total_variants += len(variants)
+    variants = build_trait_variants(group_rows, CHARACTER_TRAIT_READERS)
+    occurrence_count = sum(parse_int(row.get("occurrence_count"), 1) for row in group_rows)
+    notes = dedupe([
+      note
+      for row in group_rows
+      for note in character_notes(row)
+    ])
     total_occurrences += occurrence_count
 
     folder = TEAM_FOLDERS[team]
     filename, filename_issue = unique_filename(name, "character", used_filenames[folder])
     if filename_issue:
       issues.append({"folder": folder, **filename_issue})
-    relative_path = f"/characters/{folder}/{filename}"
     payload = {
       "id": name,
       "name": name,
       "team": team,
-      "teamLabelZh": TEAM_LABELS_ZH[team],
-      "folder": folder,
-      "variantCount": len(variants),
       "totalOccurrenceCount": occurrence_count,
+      "notes": notes,
       "variants": variants,
     }
     write_json(CHARACTER_ROOT / folder / filename, payload)
@@ -282,9 +277,6 @@ def build_characters(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[d
         "id": name,
         "name": name,
         "team": team,
-        "teamLabelZh": TEAM_LABELS_ZH[team],
-        "path": relative_path,
-        "variantCount": len(variants),
         "totalOccurrenceCount": occurrence_count,
       }
     )
@@ -294,10 +286,8 @@ def build_characters(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[d
     entries.sort(key=lambda item: (-item["totalOccurrenceCount"], item["name"]))
     payload = {
       "team": team,
-      "teamLabelZh": TEAM_LABELS_ZH[team],
       "folder": TEAM_FOLDERS[team],
       "characterCount": len(entries),
-      "variantCount": sum(item["variantCount"] for item in entries),
       "totalOccurrenceCount": sum(item["totalOccurrenceCount"] for item in entries),
       "characters": entries,
     }
@@ -307,16 +297,13 @@ def build_characters(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[d
   index_payload = {
     "source": str(CHARACTER_CSV.relative_to(ROOT)),
     "characterCount": sum(len(entries) for entries in team_entries.values()),
-    "variantCount": total_variants,
     "totalOccurrenceCount": total_occurrences,
     "teams": [
       {
         "team": payload["team"],
-        "teamLabelZh": payload["teamLabelZh"],
         "folder": payload["folder"],
         "indexPath": f"/characters/{payload['folder']}/index.json",
         "characterCount": payload["characterCount"],
-        "variantCount": payload["variantCount"],
         "totalOccurrenceCount": payload["totalOccurrenceCount"],
       }
       for payload in team_index_payloads
@@ -347,82 +334,9 @@ def jinx_targets(row: dict[str, str]) -> list[str]:
   return dedupe(targets)
 
 
-def jinx_variant(row: dict[str, str], variant_index: int) -> dict[str, Any]:
-  name = text(row.get("name"))
-  targets = jinx_targets(row)
-  return {
-    "id": name,
-    "name": name,
-    "variantIndex": variant_index,
-    "team": "jinx",
-    "sourceTeam": text(row.get("team")) or "jinx",
-    "ability": text(row.get("ability")),
-    "targets": targets,
-    "targetCount": len(targets),
-    "occurrenceCount": parse_int(row.get("occurrence_count"), 1),
-    "rule": {
-      "sourceCharacter": text(row.get("rule_source_character")),
-      "targetId": text(row.get("rule_target_id")),
-      "targetName": text(row.get("rule_target_name")),
-    },
-    "targetDetectionNotes": split_notes(row.get("target_detection_notes", "")),
-    "issueNotes": split_notes(row.get("issue_notes", "")),
-  }
-
-
-def merged_jinx_variant(rows: list[dict[str, str]], variant_index: int) -> dict[str, Any]:
-  variants = [jinx_variant(row, variant_index) for row in rows]
-  first = variants[0]
-  rules = dedupe_rules([variant["rule"] for variant in variants])
-  source_teams = dedupe([variant["sourceTeam"] for variant in variants])
-  return {
-    "id": first["name"],
-    "name": first["name"],
-    "variantIndex": variant_index,
-    "team": "jinx",
-    "sourceTeam": source_teams[0] if source_teams else "jinx",
-    "sourceTeams": source_teams,
-    "ability": first["ability"],
-    "targets": dedupe([target for variant in variants for target in variant["targets"]]),
-    "targetCount": 0,
-    "occurrenceCount": sum(variant["occurrenceCount"] for variant in variants),
-    "rule": rules[0] if rules else {
-      "sourceCharacter": "",
-      "targetId": "",
-      "targetName": "",
-    },
-    "rules": rules,
-    "targetDetectionNotes": dedupe([
-      note
-      for variant in variants
-      for note in variant["targetDetectionNotes"]
-    ]),
-    "issueNotes": dedupe([
-      note
-      for variant in variants
-      for note in variant["issueNotes"]
-    ]),
-  }
-
-
-def dedupe_rules(rules: list[dict[str, str]]) -> list[dict[str, str]]:
-  seen: set[tuple[str, str, str]] = set()
-  result: list[dict[str, str]] = []
-  for rule in rules:
-    key = (
-      text(rule.get("sourceCharacter")),
-      text(rule.get("targetId")),
-      text(rule.get("targetName")),
-    )
-    if not any(key) or key in seen:
-      continue
-    seen.add(key)
-    result.append({
-      "sourceCharacter": key[0],
-      "targetId": key[1],
-      "targetName": key[2],
-    })
-  return result
+JINX_TRAIT_READERS = {
+  "ability": lambda row: text(row.get("ability")),
+}
 
 
 def build_jinxes(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[dict[str, Any]]]:
@@ -438,36 +352,38 @@ def build_jinxes(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[dict[
 
   entries: list[dict[str, Any]] = []
   used_filenames: dict[str, str] = {}
-  total_variants = 0
   total_occurrences = 0
 
   for name, group_rows in grouped.items():
-    rows_by_ability: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for row in group_rows:
-      rows_by_ability[text(row.get("ability"))].append(row)
-    variants = [
-      merged_jinx_variant(ability_rows, index)
-      for index, ability_rows in enumerate(rows_by_ability.values(), 1)
-    ]
-    for variant in variants:
-      variant["targetCount"] = len(variant["targets"])
-    variants = sort_variants(variants)
-    occurrence_count = sum(variant["occurrenceCount"] for variant in variants)
-    targets = dedupe([target for variant in variants for target in variant["targets"]])
-    total_variants += len(variants)
+    variants = build_trait_variants(group_rows, JINX_TRAIT_READERS)
+    occurrence_count = sum(parse_int(row.get("occurrence_count"), 1) for row in group_rows)
+    targets = dedupe([
+      target
+      for row in group_rows
+      for target in jinx_targets(row)
+    ])
+    target_detection_notes = dedupe([
+      note
+      for row in group_rows
+      for note in split_notes(row.get("target_detection_notes", ""))
+    ])
+    issue_notes = dedupe([
+      note
+      for row in group_rows
+      for note in split_notes(row.get("issue_notes", ""))
+    ])
     total_occurrences += occurrence_count
 
     filename, filename_issue = unique_filename(name, "jinx", used_filenames)
     if filename_issue:
       issues.append({"folder": "jinxes", **filename_issue})
-    relative_path = f"/jinxes/{filename}"
     payload = {
       "id": name,
       "name": name,
       "team": "jinx",
       "targets": targets,
-      "targetCount": len(targets),
-      "variantCount": len(variants),
+      "targetDetectionNotes": target_detection_notes,
+      "issueNotes": issue_notes,
       "totalOccurrenceCount": occurrence_count,
       "variants": variants,
     }
@@ -477,10 +393,6 @@ def build_jinxes(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[dict[
         "id": name,
         "name": name,
         "team": "jinx",
-        "path": relative_path,
-        "targets": targets,
-        "targetCount": len(targets),
-        "variantCount": len(variants),
         "totalOccurrenceCount": occurrence_count,
       }
     )
@@ -489,7 +401,6 @@ def build_jinxes(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[dict[
   index_payload = {
     "source": str(JINX_CSV.relative_to(ROOT)),
     "jinxCount": len(entries),
-    "variantCount": total_variants,
     "totalOccurrenceCount": total_occurrences,
     "jinxes": entries,
   }
@@ -526,13 +437,11 @@ def main() -> None:
     "characters": {
       "indexPath": "/characters/index.json",
       "characterCount": character_index["characterCount"],
-      "variantCount": character_index["variantCount"],
       "totalOccurrenceCount": character_index["totalOccurrenceCount"],
     },
     "jinxes": {
       "indexPath": "/jinxes/index.json",
       "jinxCount": jinx_index["jinxCount"],
-      "variantCount": jinx_index["variantCount"],
       "totalOccurrenceCount": jinx_index["totalOccurrenceCount"],
     },
     "issuesPath": "/database_generation_issues.json",
@@ -550,9 +459,7 @@ def main() -> None:
   print(
     "Generated "
     f"{character_index['characterCount']} character files, "
-    f"{character_index['variantCount']} character variants, "
-    f"{jinx_index['jinxCount']} jinx files, "
-    f"{jinx_index['variantCount']} jinx variants."
+    f"{jinx_index['jinxCount']} jinx files."
   )
   if issues:
     print(f"Recorded {len(issues)} generation issues in {ISSUE_OUTPUT.relative_to(ROOT)}.")

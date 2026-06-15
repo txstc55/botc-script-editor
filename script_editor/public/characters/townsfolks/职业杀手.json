@@ -2,34 +2,41 @@
   "id": "职业杀手",
   "name": "职业杀手",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "职业杀手",
-      "name": "职业杀手",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以公开猜测一名玩家的角色：如果猜对，他在当晚和明天白天醉酒。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/hitman_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "移除“醉酒”标记。如果职业杀手今天白天猜测正确：被猜对的玩家醉酒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以公开猜测一名玩家的角色：如果猜对，他在当晚和明天白天醉酒。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/hitman_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      3
+    ],
+    "otherNightReminder": [
+      "移除“醉酒”标记。如果职业杀手今天白天猜测正确：被猜对的玩家醉酒。"
+    ],
+    "reminders": [
+      [
         "猜测正确",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "A list of names. A simple set of rules. A simple mission to protect the innocent. Nothing personal.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "A list of names. A simple set of rules. A simple mission to protect the innocent. Nothing personal."
+    ]
+  }
 }

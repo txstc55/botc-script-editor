@@ -2,73 +2,45 @@
   "id": "巡林客",
   "name": "巡林客",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "巡林客",
-      "name": "巡林客",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知距离最远的一对存活恶魔与存活爪牙间有几名存活玩家（不含端点），如果没有存活爪牙，你得知任意的信息。",
-      "image": "https://www.bloodstar.xyz/p/meiosis/clockparadox/15_clockparadox.png",
-      "firstNight": 4000,
-      "firstNightReminder": "唤醒巡林客，对他用手势比划数字来告知他距离最远的存活恶魔与爪牙间有几名存活玩家。",
-      "otherNight": 1500,
-      "otherNightReminder": "唤醒巡林客，对他用手势比划数字来告知他距离最远的存活恶魔与爪牙间有几名存活玩家。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "巡林客",
-      "name": "巡林客",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知与爪牙相邻的善良角色数量。",
-      "image": "https://postimage.me/images/2024/08/01/71b7c902bd8af1b51679408b9ca922a5.png",
-      "firstNight": 17,
-      "firstNightReminder": "给他展示数字手势告诉他与爪牙相邻的善良角色总数量",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "巡林客",
-      "name": "巡林客",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知与爪牙相邻的善良角色数量。",
-      "image": "https://postimage.me/images/2024/08/01/71b7c902bd8af1b51679408b9ca922a5.png",
-      "firstNight": 37,
-      "firstNightReminder": "给他展示数字手势告诉他与爪牙相邻的善良角色总数量",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知与爪牙相邻的善良角色数量。",
+      "每个夜晚，你会得知距离最远的一对存活恶魔与存活爪牙间有几名存活玩家（不含端点），如果没有存活爪牙，你得知任意的信息。"
+    ],
+    "image": [
+      "https://postimage.me/images/2024/08/01/71b7c902bd8af1b51679408b9ca922a5.png",
+      "https://www.bloodstar.xyz/p/meiosis/clockparadox/15_clockparadox.png"
+    ],
+    "firstNight": [
+      4000,
+      17,
+      37
+    ],
+    "firstNightReminder": [
+      "唤醒巡林客，对他用手势比划数字来告知他距离最远的存活恶魔与爪牙间有几名存活玩家。",
+      "给他展示数字手势告诉他与爪牙相邻的善良角色总数量"
+    ],
+    "otherNight": [
+      0,
+      1500
+    ],
+    "otherNightReminder": [
+      "",
+      "唤醒巡林客，对他用手势比划数字来告知他距离最远的存活恶魔与爪牙间有几名存活玩家。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

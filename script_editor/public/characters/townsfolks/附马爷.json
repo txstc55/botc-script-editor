@@ -2,37 +2,44 @@
   "id": "附马爷",
   "name": "附马爷",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "附马爷",
-      "name": "附马爷",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一种角色类型（生旦净丑）有多少名玩家，直到场上所有的角色类型你都得知过一次。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3853629077861_a3cfed17.jpg",
-      "firstNight": 27,
-      "firstNightReminder": "选择一种角色类型，并向驸马爷展示该角色类型玩家数量的手势，标记得知该角色数量。",
-      "otherNight": 17,
-      "otherNightReminder": "选择一种尚未向驸马爷展示数量的角色类型，并向其展示该角色类型玩家数量的手势，标记得知该角色数量。如果所有角色类型的玩家数量均已得知，驸马爷不会醒来。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你会得知一种角色类型（生旦净丑）有多少名玩家，直到场上所有的角色类型你都得知过一次。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3853629077861_a3cfed17.jpg"
+    ],
+    "firstNight": [
+      27
+    ],
+    "firstNightReminder": [
+      "选择一种角色类型，并向驸马爷展示该角色类型玩家数量的手势，标记得知该角色数量。"
+    ],
+    "otherNight": [
+      17
+    ],
+    "otherNightReminder": [
+      "选择一种尚未向驸马爷展示数量的角色类型，并向其展示该角色类型玩家数量的手势，标记得知该角色数量。如果所有角色类型的玩家数量均已得知，驸马爷不会醒来。"
+    ],
+    "reminders": [
+      [
         "得知丑角数量",
         "得知净角数量",
         "得知旅行者数量",
         "得知旦角数量",
         "得知生角数量"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

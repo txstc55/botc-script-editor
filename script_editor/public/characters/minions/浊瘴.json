@@ -2,100 +2,51 @@
   "id": "浊瘴",
   "name": "浊瘴",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 4,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "浊瘴",
-      "name": "浊瘴",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "如果邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果善良玩家公开声称驱散浊瘴，你和镇民玩家中毒。",
-      "image": "https://cdn.nlark.com/yuque/0/2025/png/50711558/1737536653162-c0dd719a-371f-4e92-afa1-d145faf7228e.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5,
-      "otherNightReminder": "如果邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果善良玩家公开声称驱散浊瘴，你和镇民玩家中毒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果善良玩家公开声称驱散浊瘴，你和镇民玩家中毒。",
+      "如果有邪恶玩家提名了存活的邪恶玩家，他们交换角色。 如果有善良玩家公开声称驱散浊瘴，你和镇民玩家中毒直到下个黄昏。",
+      "如果有邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果有善良玩家公开声称驱散浊瘴，你和镇民玩家中毒直到下个黄昏。"
+    ],
+    "image": [
+      "https://cdn.nlark.com/yuque/0/2025/png/50711558/1737536653162-c0dd719a-371f-4e92-afa1-d145faf7228e.png",
+      "https://img.picui.cn/free/2025/04/17/6801139b38591.png",
+      "https://free.picui.cn/free/2025/12/21/6947b5d7f37ce.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      5,
+      8701
+    ],
+    "otherNightReminder": [
+      "如果邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果善良玩家公开声称驱散浊瘴，你和镇民玩家中毒。",
+      ""
+    ],
+    "reminders": [
+      [
         "中毒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "浊瘴",
-      "name": "浊瘴",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "如果有邪恶玩家提名了存活的邪恶玩家，他们交换角色。 如果有善良玩家公开声称驱散浊瘴，你和镇民玩家中毒直到下个黄昏。",
-      "image": "https://free.picui.cn/free/2025/12/21/6947b5d7f37ce.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "浊瘴",
-      "name": "浊瘴",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "如果有邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果有善良玩家公开声称驱散浊瘴，你和镇民玩家中毒直到下个黄昏。",
-      "image": "https://img.picui.cn/free/2025/04/17/6801139b38591.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "驱散"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "浊瘴",
-      "name": "浊瘴",
-      "variantIndex": 4,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "如果邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果善良玩家公开声称驱散浊瘴，你和镇民玩家中毒。",
-      "image": "https://img.picui.cn/free/2025/04/17/6801139b38591.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8701,
-      "otherNightReminder": "如果邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果善良玩家公开声称驱散浊瘴，你和镇民玩家中毒。",
-      "reminders": [
-        "驱散"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

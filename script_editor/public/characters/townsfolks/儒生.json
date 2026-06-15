@@ -2,79 +2,45 @@
   "id": "儒生",
   "name": "儒生",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "儒生",
-      "name": "儒生",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在白天时，你可以私下向说书人做出一个预言，之后该预言首次成真的当晚说书人会唤醒你。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_9448665766861_0d918c10.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 43,
-      "otherNightReminder": "如果儒生的预言成真，唤醒他。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在白天时，你可以私下向说书人做出一个预言，之后该预言首次成真的当晚说书人会唤醒你。",
+      "每局游戏限一次，在白天时，你可以私下向说书人描绘一段情景，如果该情景出现，当晚说书人会唤醒你。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_9448665766861_0d918c10.jpg",
+      "https://www.bloodstar.xyz/p/chiyu/SBJK8/3_sbjk8.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      43,
+      10,
+      69
+    ],
+    "otherNightReminder": [
+      "如果儒生的预言成真，唤醒他。",
+      "如果儒生描绘的情景出现，唤醒他。"
+    ],
+    "reminders": [
+      [
         "言出法随"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "儒生",
-      "name": "儒生",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在白天时，你可以私下向说书人做出一个预言，之后该预言首次成真的当晚说书人会唤醒你。",
-      "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/3_sbjk8.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "如果儒生的预言成真，唤醒他。",
-      "reminders": [
-        "言出法随"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "儒生",
-      "name": "儒生",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在白天时，你可以私下向说书人描绘一段情景，如果该情景出现，当晚说书人会唤醒你。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_9448665766861_0d918c10.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 69,
-      "otherNightReminder": "如果儒生描绘的情景出现，唤醒他。",
-      "reminders": [
-        "言出法随"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

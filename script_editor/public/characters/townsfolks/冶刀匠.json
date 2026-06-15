@@ -2,56 +2,41 @@
   "id": "冶刀匠",
   "name": "冶刀匠",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "冶刀匠",
-      "name": "冶刀匠",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你提名并处决了一名玩家后，你会在当晚得知他的角色。你不会中毒或醉酒。",
-      "image": "https://www.helloimg.com/i/2024/10/31/672388ca06d3b.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 84,
-      "otherNightReminder": "如果白天冶刀匠提名并处决了一名玩家，在当晚唤醒冶刀匠并告诉他被处决的玩家的角色。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你提名并处决了一名玩家后，你会在当晚得知他的角色。你不会中毒或醉酒。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2024/10/31/672388ca06d3b.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      110,
+      84
+    ],
+    "otherNightReminder": [
+      "如果白天冶刀匠提名并处决了一名玩家，在当晚唤醒冶刀匠并告诉他被处决的玩家的角色。"
+    ],
+    "reminders": [
+      [
         "处决于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "冶刀匠",
-      "name": "冶刀匠",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你提名并处决了一名玩家后，你会在当晚得知他的角色。你不会中毒或醉酒。",
-      "image": "https://www.helloimg.com/i/2024/10/31/672388ca06d3b.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 110,
-      "otherNightReminder": "如果白天冶刀匠提名并处决了一名玩家，在当晚唤醒冶刀匠并告诉他被处决的玩家的角色。",
-      "reminders": [
-        "处决于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

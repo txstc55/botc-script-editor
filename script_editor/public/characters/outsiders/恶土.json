@@ -2,37 +2,44 @@
   "id": "恶土",
   "name": "恶土",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "恶土",
-      "name": "恶土",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个不在场的爪牙角色且你腐蚀+2。在第四个夜晚，你会获得该角色能力并加入邪恶阵营。",
-      "image": "https://www.bloodstar.xyz/p/Yez/nature/15_nature.png",
-      "firstNight": 13,
-      "firstNightReminder": "在恶土的角色标记旁放置“+2”和\"第一天\"提示标记。唤醒恶土，向他展示角色列表中的一名不在场爪牙角色。",
-      "otherNight": 4,
-      "otherNightReminder": "将恶土的标记替换到下一天，如果恶土的角色标记替换掉“第三天”标记后，则在恶土的角色标记旁放置“是恶土”标记，将恶土的角色标记替换为一个不在场的爪牙提示标记，然后唤醒他，给他展示该爪牙角色标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一个不在场的爪牙角色且你腐蚀+2。在第四个夜晚，你会获得该角色能力并加入邪恶阵营。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Yez/nature/15_nature.png"
+    ],
+    "firstNight": [
+      13
+    ],
+    "firstNightReminder": [
+      "在恶土的角色标记旁放置“+2”和\"第一天\"提示标记。唤醒恶土，向他展示角色列表中的一名不在场爪牙角色。"
+    ],
+    "otherNight": [
+      4
+    ],
+    "otherNightReminder": [
+      "将恶土的标记替换到下一天，如果恶土的角色标记替换掉“第三天”标记后，则在恶土的角色标记旁放置“是恶土”标记，将恶土的角色标记替换为一个不在场的爪牙提示标记，然后唤醒他，给他展示该爪牙角色标记。"
+    ],
+    "reminders": [
+      [
         "+2",
         "是恶土",
         "第一天",
         "第三天",
         "第二天"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,96 +2,58 @@
   "id": "伪证天才",
   "name": "伪证天才",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 4,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "伪证天才",
-      "name": "伪证天才",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择一个角色：有玩家可能被欺骗得知该角色的能力触发了。",
-      "image": "https://www.helloimg.com/i/2024/12/24/676993d602ed7.png",
-      "firstNight": 8,
-      "firstNightReminder": "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗善良玩家。",
-      "otherNight": 1,
-      "otherNightReminder": "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗善良玩家。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "伪证天才",
-      "name": "伪证天才",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择一个角色：可能会有玩家被欺骗得知该角色的能力触发了。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1703695541_197011_6389.png",
-      "firstNight": 13,
-      "firstNightReminder": "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗玩家。",
-      "otherNight": 2,
-      "otherNightReminder": "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗玩家。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "伪证天才",
-      "name": "伪证天才",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择一个角色：可能会有玩家被欺骗得知该角色的能力触发了。",
-      "image": "https://i.postimg.cc/Ghyd7Yh7/image.png",
-      "firstNight": 30,
-      "firstNightReminder": "让伪证天才选择一个角色，然后让他闭眼。",
-      "otherNight": 7,
-      "otherNightReminder": "让伪证天才选择一个角色，然后让他闭眼。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "伪证天才",
-      "name": "伪证天才",
-      "variantIndex": 4,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择一个角色：可能有玩家被欺骗得知该角色的能力触发了。",
-      "image": "https://i.postimg.cc/85QJBcyn/wei-zheng-tian-cai.webp",
-      "firstNight": 3300,
-      "firstNightReminder": "每个夜晚，你要选择一个角色：可能有玩家被欺骗得知该角色的能力触发了。",
-      "otherNight": 9,
-      "otherNightReminder": "唤醒伪证天才，让他选择一个角色，可能有玩家被欺骗得知该角色的能力触发了。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一个角色：可能会有玩家被欺骗得知该角色的能力触发了。",
+      "每个夜晚，你要选择一个角色：可能有玩家被欺骗得知该角色的能力触发了。",
+      "每个夜晚，你要选择一个角色：有玩家可能被欺骗得知该角色的能力触发了。"
+    ],
+    "image": [
+      "https://i.postimg.cc/85QJBcyn/wei-zheng-tian-cai.webp",
+      "https://i.postimg.cc/Ghyd7Yh7/image.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1703695541_197011_6389.png",
+      "https://www.helloimg.com/i/2024/12/24/676993d602ed7.png"
+    ],
+    "firstNight": [
+      13,
+      30,
+      3300,
+      8
+    ],
+    "firstNightReminder": [
+      "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗善良玩家。",
+      "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗玩家。",
+      "每个夜晚，你要选择一个角色：可能有玩家被欺骗得知该角色的能力触发了。",
+      "让伪证天才选择一个角色，然后让他闭眼。"
+    ],
+    "otherNight": [
+      1,
+      2,
+      7,
+      9
+    ],
+    "otherNightReminder": [
+      "唤醒伪证天才，让他选择一个角色，可能有玩家被欺骗得知该角色的能力触发了。",
+      "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗善良玩家。",
+      "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗玩家。",
+      "让伪证天才选择一个角色，然后让他闭眼。"
+    ],
+    "reminders": [
+      [],
+      [
         "伪证"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

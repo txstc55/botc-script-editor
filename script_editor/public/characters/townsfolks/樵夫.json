@@ -2,52 +2,41 @@
   "id": "樵夫",
   "name": "樵夫",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "樵夫",
-      "name": "樵夫",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一个角色，并且会得知该角色是否在场。",
-      "image": "https://i.postimg.cc/vB8drZnH/3.png",
-      "firstNight": 25,
-      "firstNightReminder": "唤醒樵夫，对他展示一个角色标记，用大拇指向上以表示该角色在场，或用大拇指向下以表示该角色不在场。",
-      "otherNight": 20,
-      "otherNightReminder": "唤醒樵夫，对他展示一个角色标记，用大拇指向上以表示该角色在场，或用大拇指向下以表示该角色不在场。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "樵夫",
-      "name": "樵夫",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一个角色，并且会得知该角色是否在场。",
-      "image": "https://www.bloodstar.xyz/p/sodbs/bu/qiaofu_bu.png",
-      "firstNight": 250,
-      "firstNightReminder": "唤醒樵夫，对他展示一个角色标记，用大拇指向上以表示该角色在场，或用大拇指向下以表示该角色不在场。",
-      "otherNight": 30,
-      "otherNightReminder": "唤醒樵夫，对他展示一个角色标记，用大拇指向上以表示该角色在场，或用大拇指向下以表示该角色不在场。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你会得知一个角色，并且会得知该角色是否在场。"
+    ],
+    "image": [
+      "https://i.postimg.cc/vB8drZnH/3.png",
+      "https://www.bloodstar.xyz/p/sodbs/bu/qiaofu_bu.png"
+    ],
+    "firstNight": [
+      25,
+      250
+    ],
+    "firstNightReminder": [
+      "唤醒樵夫，对他展示一个角色标记，用大拇指向上以表示该角色在场，或用大拇指向下以表示该角色不在场。"
+    ],
+    "otherNight": [
+      20,
+      30
+    ],
+    "otherNightReminder": [
+      "唤醒樵夫，对他展示一个角色标记，用大拇指向上以表示该角色在场，或用大拇指向下以表示该角色不在场。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

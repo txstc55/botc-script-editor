@@ -2,35 +2,42 @@
   "id": "马",
   "name": "马",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "马",
-      "name": "马",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：如果他是镇民，王得知的数字会+1。每局游戏限一次，在夜晚时*，你可以选择使用能力：如果你当晚选择的玩家不是恶魔，他醉酒直到下个黄昏。",
-      "image": "https://i.postimg.cc/xdwS4pds/image.png",
-      "firstNight": 9400,
-      "firstNightReminder": "让马指向一名玩家，如果该玩家是镇民，标记+1。",
-      "otherNight": 9200,
-      "otherNightReminder": "让马指向一名玩家，如果马点头，且该玩家不是恶魔，标记醉酒；如果该玩家是镇民，标记+1。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：如果他是镇民，王得知的数字会+1。每局游戏限一次，在夜晚时*，你可以选择使用能力：如果你当晚选择的玩家不是恶魔，他醉酒直到下个黄昏。"
+    ],
+    "image": [
+      "https://i.postimg.cc/xdwS4pds/image.png"
+    ],
+    "firstNight": [
+      9400
+    ],
+    "firstNightReminder": [
+      "让马指向一名玩家，如果该玩家是镇民，标记+1。"
+    ],
+    "otherNight": [
+      9200
+    ],
+    "otherNightReminder": [
+      "让马指向一名玩家，如果马点头，且该玩家不是恶魔，标记醉酒；如果该玩家是镇民，标记+1。"
+    ],
+    "reminders": [
+      [
         "+1",
         "醉酒",
         "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

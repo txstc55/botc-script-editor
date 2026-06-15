@@ -2,61 +2,53 @@
   "id": "莴苣姑娘",
   "name": "莴苣姑娘",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "莴苣姑娘",
-      "name": "莴苣姑娘",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果除你以外离你最远的存活镇民即将在夜晚死亡，他不会死亡，你得知他是谁。",
-      "image": "https://i.postimg.cc/Y9DRGJBH/rapunzel-fairy-tale.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果除你以外离你最远的存活镇民即将在夜晚死亡，他不会死亡，你得知他是谁。",
+      "每个夜晚*，你要选择除你以外的一名玩家和一个角色类型：他免受该角色类型玩家的侵害，直至下个黄昏。如果他就是该角色类型，你可能会死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/TYRxft5b/rapunzel-fairy-tale.png",
+      "https://i.postimg.cc/Y9DRGJBH/rapunzel-fairy-tale.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      8
+    ],
+    "otherNightReminder": [
+      "",
+      "唤醒莴苣姑娘，让他指向除他以外的一名玩家，并选择一个角色类型，为该玩家放置对应的免疫标记。如果该玩家属于该角色类型，莴苣姑娘可能死亡。"
+    ],
+    "reminders": [
+      [
         "不会死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "莴苣姑娘",
-      "name": "莴苣姑娘",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的一名玩家和一个角色类型：他免受该角色类型玩家的侵害，直至下个黄昏。如果他就是该角色类型，你可能会死亡。",
-      "image": "https://i.postimg.cc/TYRxft5b/rapunzel-fairy-tale.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒莴苣姑娘，让他指向除他以外的一名玩家，并选择一个角色类型，为该玩家放置对应的免疫标记。如果该玩家属于该角色类型，莴苣姑娘可能死亡。",
-      "reminders": [
+      [
         "免疫外来者",
         "免疫恶魔",
         "免疫旅行者",
         "免疫爪牙",
         "免疫镇民",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "然后他试图爬上我的头发……我的头发！像绳索一样！",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "然后他试图爬上我的头发……我的头发！像绳索一样！"
+    ]
+  }
 }

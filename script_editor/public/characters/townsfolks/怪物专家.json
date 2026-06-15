@@ -2,77 +2,50 @@
   "id": "怪物专家",
   "name": "怪物专家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "怪物专家",
-      "name": "怪物专家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个邪恶角色写入图鉴。 每个夜晚*，你要选择任意名玩家：如果他们中没有图鉴上的角色，你要选择新的邪恶角色写入图鉴。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/jtxx/12_jtxx.png",
-      "firstNight": 25,
-      "firstNightReminder": "1",
-      "otherNight": 18,
-      "otherNightReminder": "1",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "怪物专家",
-      "name": "怪物专家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个邪恶角色写入图鉴。每个夜晚*，你要选择任意名玩家，如果他们中没有图鉴上的角色，你要选择新的邪恶角色写入图鉴。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/3_equinoxflower.png",
-      "firstNight": 50,
-      "firstNightReminder": "让他选择一个邪恶角色，如果该角色在场，给该角色的玩家标记怪物图鉴。",
-      "otherNight": 70,
-      "otherNightReminder": "让他选择任意名玩家，检查这些玩家中是否有怪物图鉴标记，如果没有，让怪物专家选择一个邪恶角色：如果该角色在场，给该角色的玩家标记怪物图鉴。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一个邪恶角色写入图鉴。 每个夜晚*，你要选择任意名玩家：如果他们中没有图鉴上的角色，你要选择新的邪恶角色写入图鉴。",
+      "在你的首个夜晚，你要选择一个邪恶角色写入图鉴。每个夜晚*，你要选择任意名玩家，如果他们中没有图鉴上的角色，你要选择新的邪恶角色写入图鉴。",
+      "在你的首个夜晚，你要选择一个邪恶角色写入图鉴。每个夜晚*，你要选择任意名玩家：如果他们中没有图鉴上的角色，你要选择新的邪恶角色写入图鉴。"
+    ],
+    "image": [
+      "https://postimage.me/images/2024/08/01/06579c7e3694cf8a058a07ee6fd1b520.png",
+      "https://www.bloodstar.xyz/p/bluebell/jtxx/12_jtxx.png",
+      "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/3_equinoxflower.png"
+    ],
+    "firstNight": [
+      50,
+      25
+    ],
+    "firstNightReminder": [
+      "1",
+      "让他选择一个邪恶角色，如果该角色在场，给该角色的玩家标记怪物图鉴",
+      "让他选择一个邪恶角色，如果该角色在场，给该角色的玩家标记怪物图鉴。"
+    ],
+    "otherNight": [
+      70,
+      18
+    ],
+    "otherNightReminder": [
+      "让他选择任意名玩家，检查这些玩家中是否有怪物图鉴标记，如果没有，让怪物专家选择一个邪恶角色：如果该角色在场，给该角色的玩家标记怪物图鉴。",
+      "1"
+    ],
+    "reminders": [
+      [
         "怪物图鉴"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "怪物专家",
-      "name": "怪物专家",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个邪恶角色写入图鉴。每个夜晚*，你要选择任意名玩家：如果他们中没有图鉴上的角色，你要选择新的邪恶角色写入图鉴。",
-      "image": "https://postimage.me/images/2024/08/01/06579c7e3694cf8a058a07ee6fd1b520.png",
-      "firstNight": 50,
-      "firstNightReminder": "让他选择一个邪恶角色，如果该角色在场，给该角色的玩家标记怪物图鉴",
-      "otherNight": 70,
-      "otherNightReminder": "让他选择任意名玩家，检查这些玩家中是否有怪物图鉴标记，如果没有，让怪物专家选择一个邪恶角色：如果该角色在场，给该角色的玩家标记怪物图鉴。",
-      "reminders": [
-        "怪物图鉴"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

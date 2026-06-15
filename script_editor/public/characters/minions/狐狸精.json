@@ -2,76 +2,48 @@
   "id": "狐狸精",
   "name": "狐狸精",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "狐狸精",
-      "name": "狐狸精",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你得知五个不在场的角色。每个夜晚，你要选择其中一个角色：你获得其能力且可能被当做该角色与其对应的类型和阵营，直到下个黄昏。",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780d99fb7ea5.png",
-      "firstNight": 11,
-      "firstNightReminder": "唤醒狐狸精，告诉她五个不在场的角色。然后让她选择一个角色来获得能力。",
-      "otherNight": 2,
-      "otherNightReminder": "唤醒狐狸精，让她选择一个首夜得知的角色之一来获得能力。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狐狸精",
-      "name": "狐狸精",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你得知五个不在场的角色。每个夜晚，你要选择其中一个角色：你获得其能力且可能被当做该角色与其对应的类型和阵营，直到下个黄昏。",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780d99fb7ea5.png",
-      "firstNight": 18,
-      "firstNightReminder": "唤醒狐狸精，告诉她五个不在场的角色。然后让她选择一个角色来获得能力。",
-      "otherNight": 10,
-      "otherNightReminder": "唤醒狐狸精，让她选择一个首夜得知的角色之一来获得能力。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "狐狸精",
-      "name": "狐狸精",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你得知五个不在场的角色。每个夜晚，你要选择其中一个角色：你获得其能力且可能被当做该角色与其对应的类型和阵营，直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/hulijing_h302_involuntarychoice.png",
-      "firstNight": 3300,
-      "firstNightReminder": "Show the Huli Jing 5 out-of-play characters: note which ones using a notes app. Then, the Huli Jing chooses one of them: mark that as their \"Current Form\". Until dusk, run the Huli Jing as though they were that character, and you may have them register as though they were that character & alignment.",
-      "otherNight": 2,
-      "otherNightReminder": "The Huli Jing chooses one of the 5 characters they were shown at the start of the game: mark that as their \"Current Form\". Until dusk, run the Huli Jing as though they were that character, and you may have them register as though they were that character & alignment.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你得知五个不在场的角色。每个夜晚，你要选择其中一个角色：你获得其能力且可能被当做该角色与其对应的类型和阵营，直到下个黄昏。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2025/01/10/6780d99fb7ea5.png",
+      "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/hulijing_h302_involuntarychoice.png"
+    ],
+    "firstNight": [
+      11,
+      18,
+      3300
+    ],
+    "firstNightReminder": [
+      "唤醒狐狸精，告诉她五个不在场的角色。然后让她选择一个角色来获得能力。",
+      "Show the Huli Jing 5 out-of-play characters: note which ones using a notes app. Then, the Huli Jing chooses one of them: mark that as their \"Current Form\". Until dusk, run the Huli Jing as though they were that character, and you may have them register as though they were that character & alignment."
+    ],
+    "otherNight": [
+      2,
+      10
+    ],
+    "otherNightReminder": [
+      "唤醒狐狸精，让她选择一个首夜得知的角色之一来获得能力。",
+      "The Huli Jing chooses one of the 5 characters they were shown at the start of the game: mark that as their \"Current Form\". Until dusk, run the Huli Jing as though they were that character, and you may have them register as though they were that character & alignment."
+    ],
+    "reminders": [
+      [],
+      [
         "得知",
         "现形态"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

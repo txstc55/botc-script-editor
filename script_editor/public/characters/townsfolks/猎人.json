@@ -2,106 +2,69 @@
   "id": "猎人",
   "name": "猎人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 4,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "猎人",
-      "name": "猎人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个偶数夜晚，你要选择一名玩家，你得知他的角色与阵营，你免疫爪牙的负面能力。",
+      "每个夜晚，你可以选择一个非镇民角色：你会得知除他以外与他最近的邪恶玩家和他的距离；如果该角色不在场，你会得知此事，然后你失去能力。［+1外来者］",
+      "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。",
+      "每局游戏限一次，在夜晚时，你可以选择一个其他角色：由你选择他获得锁定或逃脱。"
+    ],
+    "image": [
+      "https://s2.loli.net/2025/09/07/bL7yhdvVcsY1BG3.png",
+      "https://www.bloodstar.xyz/p/Rickfelix/WOW/21_wow.png",
+      "https://www.bloodstar.xyz/p/bluebell/blackout/10_blackout.png",
+      "https://www.helloimg.com/i/2024/11/27/67460a645ed6d.png"
+    ],
+    "firstNight": [
+      0,
+      16,
+      4000
+    ],
+    "firstNightReminder": [
+      "",
+      "每个夜晚，你可以选择一个非镇民角色：你会得知除他以外与他最近的邪恶玩家和他的距离；如果该角色不在场，你会得知此事，然后你失去能力。",
+      "猎人可以选择一个其他角色，并指定锁定或逃脱。放置该标记到该角色旁。此后不要再唤醒猎人。"
+    ],
+    "otherNight": [
+      13,
+      14000,
+      21,
+      8
+    ],
+    "otherNightReminder": [
+      "在偶数夜晚唤醒猎人（首夜为1），让他选择一名玩家，随后告知他所查验目标的角色和阵营。",
+      "每个夜晚，你可以选择一个非镇民角色：你会得知除他以外与他最近的邪恶玩家和他的距离；如果该角色不在场，你会得知此事，然后你失去能力。",
+      "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。",
+      "猎人可以选择一个其他角色，并指定锁定或逃脱。放置该标记到该角色旁。此后不要再唤醒猎人。"
+    ],
+    "reminders": [
+      [
+        "失去能力"
       ],
-      "ability": "每个偶数夜晚，你要选择一名玩家，你得知他的角色与阵营，你免疫爪牙的负面能力。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/10_blackout.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 21,
-      "otherNightReminder": "在偶数夜晚唤醒猎人（首夜为1），让他选择一名玩家，随后告知他所查验目标的角色和阵营。",
-      "reminders": [
-        "查验"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "猎人",
-      "name": "猎人",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。",
-      "image": "https://s2.loli.net/2025/09/07/bL7yhdvVcsY1BG3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14000,
-      "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。",
-      "reminders": [
+      [
         "失去能力",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "猎人",
-      "name": "猎人",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个其他角色：由你选择他获得锁定或逃脱。",
-      "image": "https://www.helloimg.com/i/2024/11/27/67460a645ed6d.png",
-      "firstNight": 16,
-      "firstNightReminder": "猎人可以选择一个其他角色，并指定锁定或逃脱。放置该标记到该角色旁。此后不要再唤醒猎人。",
-      "otherNight": 8,
-      "otherNightReminder": "猎人可以选择一个其他角色，并指定锁定或逃脱。放置该标记到该角色旁。此后不要再唤醒猎人。",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [
+      [
+        "查验"
+      ]
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "逃脱",
         "锁定"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "猎人",
-      "name": "猎人",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择一个非镇民角色：你会得知除他以外与他最近的邪恶玩家和他的距离；如果该角色不在场，你会得知此事，然后你失去能力。［+1外来者］",
-      "image": "https://www.bloodstar.xyz/p/Rickfelix/WOW/21_wow.png",
-      "firstNight": 4000,
-      "firstNightReminder": "每个夜晚，你可以选择一个非镇民角色：你会得知除他以外与他最近的邪恶玩家和他的距离；如果该角色不在场，你会得知此事，然后你失去能力。",
-      "otherNight": 13,
-      "otherNightReminder": "每个夜晚，你可以选择一个非镇民角色：你会得知除他以外与他最近的邪恶玩家和他的距离；如果该角色不在场，你会得知此事，然后你失去能力。",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "为了那些不知道该把什么外来者放入游戏的说书人准备的！",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      "",
+      "为了那些不知道该把什么外来者放入游戏的说书人准备的！"
+    ]
+  }
 }

@@ -2,34 +2,41 @@
   "id": "阴险酒侍",
   "name": "阴险酒侍",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "阴险酒侍",
-      "name": "阴险酒侍",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个白天，你可以公开为一名玩家侍酒。如果他同意且与你为对立阵营，他立刻被处决。如果酒侍在场且你的侍酒被拒绝，当晚你要选择一名玩家：他死亡。你可能会被当作善良的酒侍。",
-      "image": "https://i.postimg.cc/cCN0rkyK/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 6200,
-      "otherNightReminder": "如果今天阴险酒侍的侍酒被拒绝，且酒侍在场，唤醒阴险酒侍并让他指向一名玩家，该玩家死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以公开为一名玩家侍酒。如果他同意且与你为对立阵营，他立刻被处决。如果酒侍在场且你的侍酒被拒绝，当晚你要选择一名玩家：他死亡。你可能会被当作善良的酒侍。"
+    ],
+    "image": [
+      "https://i.postimg.cc/cCN0rkyK/image.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      6200
+    ],
+    "otherNightReminder": [
+      "如果今天阴险酒侍的侍酒被拒绝，且酒侍在场，唤醒阴险酒侍并让他指向一名玩家，该玩家死亡。"
+    ],
+    "reminders": [
+      [
         "今夜暗杀",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,33 +2,40 @@
   "id": "流动商贩",
   "name": "流动商贩",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "流动商贩",
-      "name": "流动商贩",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚，你要和一名除你以外的存活玩家交换座位，然后如果与你邻近的两名存活玩家的阵营不同，你转变阵营。",
-      "image": "https://i.postimg.cc/V6hrxshG/image.png",
-      "firstNight": 1,
-      "firstNightReminder": "让流动商贩选择一名存活的玩家，交换他们的位置。然后如果与流动商贩邻近的存活玩家阵营不同，标记流动商贩转变阵营。",
-      "otherNight": 1,
-      "otherNightReminder": "让流动商贩选择一名存活的玩家，交换他们的位置。然后如果与流动商贩邻近的存活玩家阵营不同，标记流动商贩转变阵营。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要和一名除你以外的存活玩家交换座位，然后如果与你邻近的两名存活玩家的阵营不同，你转变阵营。"
+    ],
+    "image": [
+      "https://i.postimg.cc/V6hrxshG/image.png"
+    ],
+    "firstNight": [
+      1
+    ],
+    "firstNightReminder": [
+      "让流动商贩选择一名存活的玩家，交换他们的位置。然后如果与流动商贩邻近的存活玩家阵营不同，标记流动商贩转变阵营。"
+    ],
+    "otherNight": [
+      1
+    ],
+    "otherNightReminder": [
+      "让流动商贩选择一名存活的玩家，交换他们的位置。然后如果与流动商贩邻近的存活玩家阵营不同，标记流动商贩转变阵营。"
+    ],
+    "reminders": [
+      [
         "转变阵营"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

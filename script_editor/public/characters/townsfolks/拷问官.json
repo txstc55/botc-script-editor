@@ -2,59 +2,52 @@
   "id": "拷问官",
   "name": "拷问官",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "拷问官",
-      "name": "拷问官",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以公开询问一名玩家或说书人一个问题(正面回答/我不知道)：当晚你会得知他有没有撒谎(被询问对象视角)。如果选择的玩家为恶魔，你当晚醉酒。",
-      "image": "https://www.bloodstar.xyz/p/ligohigh1991/NewHero/10_newhero.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 20,
-      "otherNightReminder": "如果他白天发动过技能，则告知他询问的那名玩家或说书人有没有撒谎(被询问对象视角)。如果他选择的玩家为恶魔，则给他标记上“醉酒”。",
-      "reminders": [
-        "撒谎",
-        "没有撒谎",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "你以为你能骗得了我？比你更狡猾的家伙我都碰到过，你的那点小把戏就像透明一样。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "拷问官",
-      "name": "拷问官",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以公开选择一名玩家或说书人:询问他一个是与否的问题(是/否/我不知道)，当晚你会得知他有没有撒谎;如果选择的玩家为恶魔或外来者，之后你开始醉酒。【+1外来者】",
-      "image": "https://s21.ax1x.com/2025/06/25/pVe7Vds.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12001,
-      "otherNightReminder": "每个白天，你可以公开选择一名玩家或说书人:询问他一个是与否的问题(是/否/我不知道)，当晚你会得知他有没有撒谎;如果选择的玩家为恶魔或外来者，之后你开始醉酒。【+1外来者】",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以公开询问一名玩家或说书人一个问题(正面回答/我不知道)：当晚你会得知他有没有撒谎(被询问对象视角)。如果选择的玩家为恶魔，你当晚醉酒。",
+      "每个白天，你可以公开选择一名玩家或说书人:询问他一个是与否的问题(是/否/我不知道)，当晚你会得知他有没有撒谎;如果选择的玩家为恶魔或外来者，之后你开始醉酒。【+1外来者】"
+    ],
+    "image": [
+      "https://s21.ax1x.com/2025/06/25/pVe7Vds.png",
+      "https://www.bloodstar.xyz/p/ligohigh1991/NewHero/10_newhero.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      12001,
+      20
+    ],
+    "otherNightReminder": [
+      "如果他白天发动过技能，则告知他询问的那名玩家或说书人有没有撒谎(被询问对象视角)。如果他选择的玩家为恶魔，则给他标记上“醉酒”。",
+      "每个白天，你可以公开选择一名玩家或说书人:询问他一个是与否的问题(是/否/我不知道)，当晚你会得知他有没有撒谎;如果选择的玩家为恶魔或外来者，之后你开始醉酒。【+1外来者】"
+    ],
+    "reminders": [
+      [
         "撒谎",
         "未撒谎"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "撒谎",
+        "没有撒谎",
+        "醉酒"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      "",
+      "你以为你能骗得了我？比你更狡猾的家伙我都碰到过，你的那点小把戏就像透明一样。"
+    ]
+  }
 }

@@ -2,35 +2,42 @@
   "id": "雇佣杀手",
   "name": "雇佣杀手",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "雇佣杀手",
-      "name": "雇佣杀手",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "在你的首个夜晚，你会得知一名在场的鹅角色。每个夜晚*，你要选择一名玩家：如果他是该角色，他死亡，且你会立刻得知一名新的鹅角色。",
-      "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/50_goosegooseduck.png",
-      "firstNight": 14,
-      "firstNightReminder": "唤醒玩家并告知玩家一名鹅角色。",
-      "otherNight": 9,
-      "otherNightReminder": "唤醒玩家并让玩家选择一名玩家击杀。如果杀死了目标角色，告知玩家一个新的鹅角色。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一名在场的鹅角色。每个夜晚*，你要选择一名玩家：如果他是该角色，他死亡，且你会立刻得知一名新的鹅角色。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/50_goosegooseduck.png"
+    ],
+    "firstNight": [
+      14
+    ],
+    "firstNightReminder": [
+      "唤醒玩家并告知玩家一名鹅角色。"
+    ],
+    "otherNight": [
+      9
+    ],
+    "otherNightReminder": [
+      "唤醒玩家并让玩家选择一名玩家击杀。如果杀死了目标角色，告知玩家一个新的鹅角色。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "得知",
         "邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

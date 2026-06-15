@@ -2,33 +2,40 @@
   "id": "旅店老板（改）",
   "name": "旅店老板（改）",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "旅店老板（改）",
-      "name": "旅店老板（改）",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的两名玩家：如果他们阵营不同，他们当晚不会死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "唤醒旅店老板，让他选择两名玩家。如果他们的阵营不同，这两名玩家今晚不死。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择除你以外的两名玩家：如果他们阵营不同，他们当晚不会死亡。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      10
+    ],
+    "otherNightReminder": [
+      "唤醒旅店老板，让他选择两名玩家。如果他们的阵营不同，这两名玩家今晚不死。"
+    ],
+    "reminders": [
+      [
         "不会死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

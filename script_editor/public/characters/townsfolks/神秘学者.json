@@ -2,33 +2,40 @@
   "id": "神秘学者",
   "name": "神秘学者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "神秘学者",
-      "name": "神秘学者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：当你死亡时，你会得知你选择过的玩家中是否有恶魔。",
-      "image": "[\"https://i.postimg.cc/02HDZPnH/image.png\"]",
-      "firstNight": 35,
-      "firstNightReminder": "神秘学者指向一名玩家。如果他选中了恶魔，给神秘学者标上“恶魔被选中”标记。",
-      "otherNight": 18,
-      "otherNightReminder": "如果神秘学者死亡且神秘学者被标上了“恶魔被选中”标记, 点头示意有恶魔.如果神秘学者没有死亡, 则他需要指向一名玩家。如果他选中了恶魔，给神秘学者标上“恶魔被选中”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：当你死亡时，你会得知你选择过的玩家中是否有恶魔。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/02HDZPnH/image.png\"]"
+    ],
+    "firstNight": [
+      35
+    ],
+    "firstNightReminder": [
+      "神秘学者指向一名玩家。如果他选中了恶魔，给神秘学者标上“恶魔被选中”标记。"
+    ],
+    "otherNight": [
+      18
+    ],
+    "otherNightReminder": [
+      "如果神秘学者死亡且神秘学者被标上了“恶魔被选中”标记, 点头示意有恶魔.如果神秘学者没有死亡, 则他需要指向一名玩家。如果他选中了恶魔，给神秘学者标上“恶魔被选中”标记。"
+    ],
+    "reminders": [
+      [
         "恶魔被选中"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Oh yes, I can see it... I can see it... the number 7... a cyclone... a doll with no head... you will soar to great heights...",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Oh yes, I can see it... I can see it... the number 7... a cyclone... a doll with no head... you will soar to great heights..."
+    ]
+  }
 }

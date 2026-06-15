@@ -2,34 +2,41 @@
   "id": "红心骑士",
   "name": "红心骑士",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "红心骑士",
-      "name": "红心骑士",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果有外来者在今天白天被处决，今晚你可以行动两次。 [+1外来者]",
-      "image": "[\"https://i.postimg.cc/gkqh1VXF/33333-5.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 800,
-      "otherNightReminder": "The Knave of Hearts chooses a player to die.:reminder: :reminder: :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。如果有外来者在今天白天被处决，今晚你可以行动两次。 [+1外来者]"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/gkqh1VXF/33333-5.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      800
+    ],
+    "otherNightReminder": [
+      "The Knave of Hearts chooses a player to die.:reminder: :reminder: :reminder:"
+    ],
+    "reminders": [
+      [
         "死亡",
         "白天被处决"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "We're looking for the girl called Alice...If you're hiding her you'll lose your heads.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "We're looking for the girl called Alice...If you're hiding her you'll lose your heads."
+    ]
+  }
 }

@@ -2,34 +2,41 @@
   "id": "审讯官",
   "name": "审讯官",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "审讯官",
-      "name": "审讯官",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有邪恶玩家。会有一名玩家始终被你的能力当作邪恶玩家。你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
-      "image": "https://i.postimg.cc/hvM3v56z/baton-1.png",
-      "firstNight": 15,
-      "firstNightReminder": "为一名玩家放置干扰项标记。唤醒审讯官，让他指向两名玩家。如果他们之中有邪恶玩家，点头代表“是”，否则，摇头表示“否”。",
-      "otherNight": 14,
-      "otherNightReminder": "移除被选择标记。唤醒审讯官，让他指向两名玩家。如果他们之中有邪恶玩家，点头代表“是”，否则，摇头表示“否”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名玩家：你会得知他们之中是否有邪恶玩家。会有一名玩家始终被你的能力当作邪恶玩家。你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/hvM3v56z/baton-1.png"
+    ],
+    "firstNight": [
+      15
+    ],
+    "firstNightReminder": [
+      "为一名玩家放置干扰项标记。唤醒审讯官，让他指向两名玩家。如果他们之中有邪恶玩家，点头代表“是”，否则，摇头表示“否”。"
+    ],
+    "otherNight": [
+      14
+    ],
+    "otherNightReminder": [
+      "移除被选择标记。唤醒审讯官，让他指向两名玩家。如果他们之中有邪恶玩家，点头代表“是”，否则，摇头表示“否”。"
+    ],
+    "reminders": [
+      [
         "干扰项",
         "被选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

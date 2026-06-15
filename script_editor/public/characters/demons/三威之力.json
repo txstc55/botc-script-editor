@@ -2,79 +2,43 @@
   "id": "三威之力",
   "name": "三威之力",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "三威之力",
-      "name": "三威之力",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀且没有存活的外来者时，邪恶阵营获胜。[场上固定3名外来者]",
-      "image": "https://www.helloimg.com/i/2025/02/14/67ae21c2e68bf.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "唤醒三威之力，让他指向一名玩家：他死亡。如果他指向自己，且没有存活的外来者，邪恶阵营获胜。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀且没有存活的外来者时，邪恶阵营获胜。[场上固定3名外来者]"
+    ],
+    "image": [
+      "https://i.postimg.cc/QMqDhdFJ/veni-vidi-vici.png",
+      "https://www.helloimg.com/i/2025/02/14/67ae21c2e68bf.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      14,
+      21,
+      31
+    ],
+    "otherNightReminder": [
+      "唤醒三威之力，让他指向一名玩家：他死亡。如果他指向自己，且没有存活的外来者，邪恶阵营获胜。"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "三威之力",
-      "name": "三威之力",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀且没有存活的外来者时，邪恶阵营获胜。[场上固定3名外来者]",
-      "image": "https://i.postimg.cc/QMqDhdFJ/veni-vidi-vici.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 21,
-      "otherNightReminder": "唤醒三威之力，让他指向一名玩家：他死亡。如果他指向自己，且没有存活的外来者，邪恶阵营获胜。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "三威之力",
-      "name": "三威之力",
-      "variantIndex": 3,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀且没有存活的外来者时，邪恶阵营获胜。[场上固定3名外来者]",
-      "image": "https://i.postimg.cc/QMqDhdFJ/veni-vidi-vici.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 31,
-      "otherNightReminder": "唤醒三威之力，让他指向一名玩家：他死亡。如果他指向自己，且没有存活的外来者，邪恶阵营获胜。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

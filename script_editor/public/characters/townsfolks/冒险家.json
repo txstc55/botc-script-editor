@@ -2,57 +2,50 @@
   "id": "冒险家",
   "name": "冒险家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "冒险家",
-      "name": "冒险家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的任意名玩家，如果他们都是善良的，他们中当晚首个死亡的玩家首次不会死亡。",
-      "image": "https://www.bloodstar.xyz/p/meiosis/clockparadox/2_clockparadox.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 280,
-      "otherNightReminder": "唤醒冒险家，让他选择任意名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择除你以外的任意名玩家，如果他们都是善良的，他们中当晚首个死亡的玩家首次不会死亡。",
+      "在你的首个夜晚，你会得知有几只带刀的鸭子在场。如果你参与了任务且任务成功，你当晚不会死亡；如果任务失败，一名一同参与任务的玩家会从任务结束后开始醉酒。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/meiosis/clockparadox/2_clockparadox.png",
+      "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/7_goosegooseduck.png"
+    ],
+    "firstNight": [
+      0,
+      18
+    ],
+    "firstNightReminder": [
+      "",
+      "唤醒玩家并告知玩家一个数字。"
+    ],
+    "otherNight": [
+      280,
+      0
+    ],
+    "otherNightReminder": [
+      "唤醒冒险家，让他选择任意名玩家。",
+      ""
+    ],
+    "reminders": [
+      [
         "保护"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "冒险家",
-      "name": "冒险家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知有几只带刀的鸭子在场。如果你参与了任务且任务成功，你当晚不会死亡；如果任务失败，一名一同参与任务的玩家会从任务结束后开始醉酒。",
-      "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/7_goosegooseduck.png",
-      "firstNight": 18,
-      "firstNightReminder": "唤醒玩家并告知玩家一个数字。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "免死",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

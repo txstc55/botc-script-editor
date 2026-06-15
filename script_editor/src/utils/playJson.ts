@@ -1,4 +1,8 @@
 import type { JinxDraft, PlayCleanupReport, RoleDraft, ScriptDraft, TeamKey } from "../types";
+import {
+  createDefaultBuiltInFirstNightEnabled,
+  createDefaultBuiltInFirstNightOrders,
+} from "./nightOrders";
 
 type RawRecord = Record<string, unknown>;
 
@@ -30,6 +34,8 @@ export function createEmptyScript(): ScriptDraft {
   return {
     name: "未命名剧本",
     author: "",
+    builtInFirstNightOrders: createDefaultBuiltInFirstNightOrders(),
+    builtInFirstNightEnabled: createDefaultBuiltInFirstNightEnabled(),
     fabled: [],
     jinxes: [],
     teams: {

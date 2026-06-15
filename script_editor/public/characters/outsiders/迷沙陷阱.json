@@ -2,79 +2,46 @@
   "id": "迷沙陷阱",
   "name": "迷沙陷阱",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "迷沙陷阱",
-      "name": "迷沙陷阱",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "一名镇民踏入迷沙陷阱。每个夜晚*，他顺时针的下一名存活玩家代替他踏入迷沙陷阱。在迷沙陷阱中的镇民醉酒，会产生错误信息并且被其他角色能力当做外来者。[+1镇民]",
-      "image": "https://postimage.me/images/2024/08/01/152830d6106b6c6c0f18d80a527bdc03.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "将迷沙陷阱的标记移动到顺时针的下一名存活玩家上。",
-      "reminders": [],
-      "remindersGlobal": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "一名镇民踏入迷沙陷阱。每个夜晚*，他顺时针的下一名存活玩家代替他踏入迷沙陷阱。在迷沙陷阱中的镇民醉酒，会产生错误信息并且被其他角色能力当做外来者。[+1镇民]",
+      "一名镇民踏入迷沙陷阱。每个夜晚*，他顺时针的下一名存活玩家代替他踏入迷沙陷阱。在迷沙陷阱中的镇民醉酒，会产生错误信息并且被其他角色能力当作外来者。[+1镇民]"
+    ],
+    "image": [
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/c/c3/46619m9u30ro0u84s8s92zswan47vkf.png",
+      "https://postimage.me/images/2024/08/01/152830d6106b6c6c0f18d80a527bdc03.png",
+      "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/13_equinoxflower.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      1,
+      100,
+      3
+    ],
+    "otherNightReminder": [
+      "将迷沙陷阱的标记移动到顺时针的下一名存活玩家上。",
+      "将迷沙陷阱的标记移动至顺时针的下一名存活玩家。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      [
         "迷沙陷阱"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "迷沙陷阱",
-      "name": "迷沙陷阱",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "一名镇民踏入迷沙陷阱。每个夜晚*，他顺时针的下一名存活玩家代替他踏入迷沙陷阱。在迷沙陷阱中的镇民醉酒，会产生错误信息并且被其他角色能力当作外来者。[+1镇民]",
-      "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/13_equinoxflower.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "将迷沙陷阱的标记移动至顺时针的下一名存活玩家。",
-      "reminders": [],
-      "remindersGlobal": [
-        "迷沙陷阱"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "迷沙陷阱",
-      "name": "迷沙陷阱",
-      "variantIndex": 3,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "一名镇民踏入迷沙陷阱。每个夜晚*，他顺时针的下一名存活玩家代替他踏入迷沙陷阱。在迷沙陷阱中的镇民醉酒，会产生错误信息并且被其他角色能力当做外来者。[+1镇民]",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/c/c3/46619m9u30ro0u84s8s92zswan47vkf.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 100,
-      "otherNightReminder": "将迷沙陷阱的标记移动到顺时针的下一名存活玩家上。",
-      "reminders": [],
-      "remindersGlobal": [
-        "迷沙陷阱"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

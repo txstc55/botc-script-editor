@@ -2,34 +2,41 @@
   "id": "神秘人",
   "name": "神秘人",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "神秘人",
-      "name": "神秘人",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙转变为'黑魔王‘。在你的首个夜晚，你会得知一个秘密短语，说出该短语的善良玩家可能死亡。",
-      "image": "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/youknowwho_hp2_2.png\"]",
-      "firstNight": 3300,
-      "firstNightReminder": "Wake and tell Secret word",
-      "otherNight": 11,
-      "otherNightReminder": "Wake to make them kill someone",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙转变为'黑魔王‘。在你的首个夜晚，你会得知一个秘密短语，说出该短语的善良玩家可能死亡。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/youknowwho_hp2_2.png\"]"
+    ],
+    "firstNight": [
+      3300
+    ],
+    "firstNightReminder": [
+      "Wake and tell Secret word"
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "Wake to make them kill someone"
+    ],
+    "reminders": [
+      [
         "死亡",
         "说出秘密短语"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "Yes. You see what I've become? See what I must do to survive? Live off another, a mere parasite!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "Yes. You see what I've become? See what I must do to survive? Live off another, a mere parasite!"
+    ]
+  }
 }

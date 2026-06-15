@@ -2,56 +2,46 @@
   "id": "建筑师",
   "name": "建筑师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "建筑师",
-      "name": "建筑师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果一名爪牙死于处决，今晚镇民不会死亡。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/architect_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "镇民不会死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "I've checked my measurements and calculations several times now. With careful reinforcement here, everyone should be safe even in the worst case scenario.",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "建筑师",
-      "name": "建筑师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在一次处决中投票，提名者在今晚死亡时，你会代替他死亡。你免疫一次夜间的死亡。",
-      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/17_xiudao111.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果一名爪牙死于处决，今晚镇民不会死亡。",
+      "如果你在一次处决中投票，提名者在今晚死亡时，你会代替他死亡。你免疫一次夜间的死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/architect_beyondgoodandevilv3.png",
+      "https://www.bloodstar.xyz/p/westwind/xiudao111/17_xiudao111.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "投票"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "镇民不会死亡"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "I've checked my measurements and calculations several times now. With careful reinforcement here, everyone should be safe even in the worst case scenario."
+    ]
+  }
 }

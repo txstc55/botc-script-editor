@@ -2,34 +2,41 @@
   "id": "主谋（改）",
   "name": "主谋（改）",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "主谋（改）",
-      "name": "主谋（改）",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "如果恶魔死于处决，游戏不会结束：当晚你要选择至多等同于游戏天数的玩家（必须包含自己）：所有玩家得知主谋在你们之中，下个白天如果你们之中没有玩家被处决，你的阵营获胜，否则被处决玩家的阵营落败。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 69,
-      "otherNightReminder": "如果白天恶魔死于处决，唤醒主谋，让他选择等同于游戏天数的玩家（必须包括自己），然后在黎明时告诉所有玩家主谋在他选择的玩家之中。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果恶魔死于处决，游戏不会结束：当晚你要选择至多等同于游戏天数的玩家（必须包含自己）：所有玩家得知主谋在你们之中，下个白天如果你们之中没有玩家被处决，你的阵营获胜，否则被处决玩家的阵营落败。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      69
+    ],
+    "otherNightReminder": [
+      "如果白天恶魔死于处决，唤醒主谋，让他选择等同于游戏天数的玩家（必须包括自己），然后在黎明时告诉所有玩家主谋在他选择的玩家之中。"
+    ],
+    "reminders": [
+      [
         "死于处决",
         "选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

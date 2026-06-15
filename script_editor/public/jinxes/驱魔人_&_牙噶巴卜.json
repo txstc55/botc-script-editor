@@ -6,40 +6,12 @@
     "牙噶巴卜",
     "驱魔人"
   ],
-  "targetCount": 2,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "驱魔人 & 牙噶巴卜",
-      "name": "驱魔人 & 牙噶巴卜",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "如果驱魔人选中了牙噶巴卜，那么牙噶巴卜的能力在当晚无法造成死亡。",
-      "targets": [
-        "牙噶巴卜",
-        "驱魔人"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "驱魔人",
-        "targetId": "yaggababble_c",
-        "targetName": "牙噶巴卜"
-      },
-      "rules": [
-        {
-          "sourceCharacter": "驱魔人",
-          "targetId": "yaggababble_c",
-          "targetName": "牙噶巴卜"
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果驱魔人选中了牙噶巴卜，那么牙噶巴卜的能力在当晚无法造成死亡。"
+    ]
+  }
 }

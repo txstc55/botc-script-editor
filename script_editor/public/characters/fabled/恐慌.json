@@ -2,35 +2,42 @@
   "id": "恐慌",
   "name": "恐慌",
   "team": "fabled",
-  "teamLabelZh": "传奇角色",
-  "folder": "fabled",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "恐慌",
-      "name": "恐慌",
-      "variantIndex": 1,
-      "team": "fabled",
-      "teams": [
-        "fabled"
-      ],
-      "ability": "每个夜晚*，会有一名恐慌的玩家死亡，随后，如果上个白天没有玩家被处决，可能会有另一名玩家死亡。恐慌的玩家在被提名时可能死亡。当存活玩家小于等于3名时，恐慌的玩家不会因被提名而死亡。",
-      "image": "https://www.bloodstar.xyz/p/SeaBound/Halloween/scared_halloween.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 17,
-      "otherNightReminder": "A scared player dies, then if no one was executed yesterday, another player might die.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，会有一名恐慌的玩家死亡，随后，如果上个白天没有玩家被处决，可能会有另一名玩家死亡。恐慌的玩家在被提名时可能死亡。当存活玩家小于等于3名时，恐慌的玩家不会因被提名而死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/SeaBound/Halloween/scared_halloween.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      17
+    ],
+    "otherNightReminder": [
+      "A scared player dies, then if no one was executed yesterday, another player might die."
+    ],
+    "reminders": [
+      [
         "处决",
         "恐慌",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "It’s Halloween. I guess everyone’s entitled to one good scare.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "It’s Halloween. I guess everyone’s entitled to one good scare."
+    ]
+  }
 }

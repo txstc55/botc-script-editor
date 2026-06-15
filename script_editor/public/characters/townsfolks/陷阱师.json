@@ -2,58 +2,52 @@
   "id": "陷阱师",
   "name": "陷阱师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "陷阱师",
-      "name": "陷阱师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名除你以外的玩家。每个夜晚*，你会得知命运指针是否正指向你或他其中之一。",
-      "image": "https://i.postimg.cc/pTYThp39/陷阱师.png",
-      "firstNight": 15,
-      "firstNightReminder": "唤醒陷阱师，让他指向一名玩家，在该玩家的角色标记旁放置绊索标记。",
-      "otherNight": 17,
-      "otherNightReminder": "唤醒陷阱师，如果命运指针正指向陷阱师或标记有绊索标记的玩家，点头，否则摇头。",
-      "reminders": [
-        "绊索"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "陷阱师",
-      "name": "陷阱师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个爪牙角色。在第3个夜晚，你会得知他正“疯狂”地证明他是的那个角色。",
-      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/trapper_the_last_cull__.png",
-      "firstNight": 3023,
-      "firstNightReminder": "Wake the Trapper. Show them the character token of the Minion marked \"Known\". Put the Beastmaster to sleep.",
-      "otherNight": 19,
-      "otherNightReminder": "If the Trapper has the Night 3 reminder token, wake the Trapper. Think about what character the Minion marked \"Known\" has been mad that they are. Show the Trapper the character token of this character, and then put them to sleep.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一个爪牙角色。在第3个夜晚，你会得知他正“疯狂”地证明他是的那个角色。",
+      "在你的首个夜晚，你要选择一名除你以外的玩家。每个夜晚*，你会得知命运指针是否正指向你或他其中之一。"
+    ],
+    "image": [
+      "https://i.postimg.cc/pTYThp39/陷阱师.png",
+      "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/trapper_the_last_cull__.png"
+    ],
+    "firstNight": [
+      15,
+      3023
+    ],
+    "firstNightReminder": [
+      "Wake the Trapper. Show them the character token of the Minion marked \"Known\". Put the Beastmaster to sleep.",
+      "唤醒陷阱师，让他指向一名玩家，在该玩家的角色标记旁放置绊索标记。"
+    ],
+    "otherNight": [
+      17,
+      19
+    ],
+    "otherNightReminder": [
+      "If the Trapper has the Night 3 reminder token, wake the Trapper. Think about what character the Minion marked \"Known\" has been mad that they are. Show the Trapper the character token of this character, and then put them to sleep.",
+      "唤醒陷阱师，如果命运指针正指向陷阱师或标记有绊索标记的玩家，点头，否则摇头。"
+    ],
+    "reminders": [
+      [
         "得知",
         "第2夜",
         "第3夜"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Did you just implicate that there's only 1 way to skin a cat? Allow me to give a quick presentation on how impossibly incorrect you are.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "绊索"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "Did you just implicate that there's only 1 way to skin a cat? Allow me to give a quick presentation on how impossibly incorrect you are."
+    ]
+  }
 }

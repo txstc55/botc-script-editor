@@ -2,63 +2,53 @@
   "id": "奇迹商人",
   "name": "奇迹商人",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "奇迹商人",
-      "name": "奇迹商人",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你拥有三个货物分别为：刺客的刀，村夫的糖，士兵的盾（每个只能被使用一次）。在你的首个夜晚，你要将三个货物分别赠予三名除你以外的玩家。如果他们各自满足\"死亡\"或“对奇迹商人在场疯狂”的条件，则你独自获胜。",
-      "image": "https://free.picui.cn/free/2025/12/08/6936337b77787.png",
-      "firstNight": 11,
-      "firstNightReminder": "唤醒，给技能",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "刺客的刀",
-        "士兵的盾",
-        "已使用",
-        "村夫的糖"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "奇迹商人",
-      "name": "奇迹商人",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你拥有三个货物（每个只能被使用一次）分别为：刺客的刀，村夫的糖，士兵的盾。在你的首个夜晚，你要分别赠予三名除你以外的玩家不同的货物。如果他们各自满足“死亡”或“对奇迹商人在场疯狂”的条件，则你单独获胜。",
-      "image": "https://free.picui.cn/free/2025/12/08/6936337b77787.png",
-      "firstNight": 1200,
-      "firstNightReminder": "唤醒奇迹商人，让他分别选择三名不同的其他玩家，并给每个玩家一个货物（刀、糖、盾），分别在这些玩家上放置对应货物的标记",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你拥有三个货物分别为：刺客的刀，村夫的糖，士兵的盾（每个只能被使用一次）。在你的首个夜晚，你要将三个货物分别赠予三名除你以外的玩家。如果他们各自满足\"死亡\"或“对奇迹商人在场疯狂”的条件，则你独自获胜。",
+      "你拥有三个货物（每个只能被使用一次）分别为：刺客的刀，村夫的糖，士兵的盾。在你的首个夜晚，你要分别赠予三名除你以外的玩家不同的货物。如果他们各自满足“死亡”或“对奇迹商人在场疯狂”的条件，则你单独获胜。"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/12/08/6936337b77787.png"
+    ],
+    "firstNight": [
+      11,
+      1200
+    ],
+    "firstNightReminder": [
+      "唤醒奇迹商人，让他分别选择三名不同的其他玩家，并给每个玩家一个货物（刀、糖、盾），分别在这些玩家上放置对应货物的标记",
+      "唤醒，给技能"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "刀",
         "已疯狂",
         "死亡",
         "盾",
         "糖"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "刺客的刀",
+        "士兵的盾",
+        "已使用",
+        "村夫的糖"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,73 +2,45 @@
   "id": "高空工人",
   "name": "高空工人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "高空工人",
-      "name": "高空工人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，在当晚你会被唤醒并要选择两个能力具有“你的首个夜晚”的角色，你得知这些角色会得知的信息。",
-      "image": "https://img.picui.cn/free/2025/06/15/684e3835f08fa.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "如果高空工人在夜晚死亡，唤醒他。让他选择两个具有“你的首个夜晚”的角色，他得知这些信息。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "高空工人",
-      "name": "高空工人",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，在当晚你会被唤醒并要选择两个能力具有“在你的首个夜晚，你会得知…”的角色，你得知这些角色会得知的信息。",
-      "image": "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/steeplejack_h302_involuntarychoice.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "If the Steeplejack died tonight: the Steeplejack points to two characters with \"You start knowing\" in their ability's text: show the Steeplejack information those characters could learn.",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "高空工人",
-      "name": "高空工人",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，在当晚你会被唤醒并要选择两个能力具有“你的首个夜晚”的角色，你得知这些角色会得知的信息。",
-      "image": "https://www.helloimg.com/i/2025/01/11/678260407bb3f.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 43,
-      "otherNightReminder": "如果高空工人在夜晚死亡了，唤醒高空工人，让他选两个能力具有“你的首个夜晚”的角色，告诉他对应信息。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在夜晚死亡，在当晚你会被唤醒并要选择两个能力具有“你的首个夜晚”的角色，你得知这些角色会得知的信息。",
+      "如果你在夜晚死亡，在当晚你会被唤醒并要选择两个能力具有“在你的首个夜晚，你会得知…”的角色，你得知这些角色会得知的信息。"
+    ],
+    "image": [
+      "https://img.picui.cn/free/2025/06/15/684e3835f08fa.png",
+      "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/steeplejack_h302_involuntarychoice.png",
+      "https://www.helloimg.com/i/2025/01/11/678260407bb3f.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      13,
+      16,
+      43
+    ],
+    "otherNightReminder": [
+      "如果高空工人在夜晚死亡，唤醒他。让他选择两个具有“你的首个夜晚”的角色，他得知这些信息。",
+      "If the Steeplejack died tonight: the Steeplejack points to two characters with \"You start knowing\" in their ability's text: show the Steeplejack information those characters could learn.",
+      "如果高空工人在夜晚死亡了，唤醒高空工人，让他选两个能力具有“你的首个夜晚”的角色，告诉他对应信息。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

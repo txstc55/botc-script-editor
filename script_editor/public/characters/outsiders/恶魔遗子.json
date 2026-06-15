@@ -2,58 +2,46 @@
   "id": "恶魔遗子",
   "name": "恶魔遗子",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "恶魔遗子",
-      "name": "恶魔遗子",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你死亡，一名存活的恶魔遗子会变成邪恶的不在场恶魔，当晚的死亡由说书人决定。[可能会有2名外来者是恶魔遗子]",
-      "image": "https://www.bloodstar.xyz/p/humlet/JUEDOU/31_juedou.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 2,
-      "otherNightReminder": "如果今天有恶魔遗子死亡，且场上还有一名存活的恶魔遗子，唤醒他告知他他变成了一个不在场的恶魔，然后由你来决定今晚谁死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你死亡，一名存活的恶魔遗子会变成邪恶的不在场恶魔，当晚的死亡由说书人决定。[可能会有2名外来者是恶魔遗子]",
+      "如果你死亡，存活的恶魔遗子会变成邪恶的不在场恶魔，当晚的死亡由说书人决定。[可能有2名外来者是恶魔遗子]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/humlet/JUEDOU/31_juedou.png",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/38/8intocjem4vex5p58p20mtmlkik6bbo.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      2,
+      6
+    ],
+    "otherNightReminder": [
+      "如果今天有恶魔遗子死亡，且场上还有一名存活的恶魔遗子，唤醒他告知他他变成了一个不在场的恶魔，然后由你来决定今晚谁死亡。",
+      "如果场上存在2名恶魔遗子，再其中一名死亡后，立即将另一名存活的恶魔遗子的标记更换为一个不在场恶魔。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "蜕变"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "恶魔遗子",
-      "name": "恶魔遗子",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你死亡，存活的恶魔遗子会变成邪恶的不在场恶魔，当晚的死亡由说书人决定。[可能有2名外来者是恶魔遗子]",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/38/8intocjem4vex5p58p20mtmlkik6bbo.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 6,
-      "otherNightReminder": "如果场上存在2名恶魔遗子，再其中一名死亡后，立即将另一名存活的恶魔遗子的标记更换为一个不在场恶魔。",
-      "reminders": [
-        "死亡",
-        "蜕变"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

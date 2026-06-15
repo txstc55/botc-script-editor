@@ -2,55 +2,49 @@
   "id": "画像师",
   "name": "画像师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "画像师",
-      "name": "画像师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以公开选择选择一名玩家：当晚你会得知他今天白天是否“疯狂”地证明自己的角色和获得的信息。",
-      "image": "https://i.postimg.cc/Lstf7Q5V/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 163,
-      "otherNightReminder": "唤醒画像师，对他点头或摇头示意是否说的是真话",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择除你以外的一名玩家，你会得知与他阵营相同的另一名玩家。",
+      "每个白天，你可以公开选择选择一名玩家：当晚你会得知他今天白天是否“疯狂”地证明自己的角色和获得的信息。"
+    ],
+    "image": [
+      "https://i.postimg.cc/Lstf7Q5V/image.png",
+      "https://www.bloodstar.xyz/p/ligohigh1991/NewHero/25_newhero.png"
+    ],
+    "firstNight": [
+      0,
+      20
+    ],
+    "firstNightReminder": [
+      "",
+      "让他选择除他以外的一名玩家，告知他选择的那名玩家阵营相同的另一名玩家。"
+    ],
+    "otherNight": [
+      163,
+      18
+    ],
+    "otherNightReminder": [
+      "唤醒画像师，对他点头或摇头示意是否说的是真话",
+      "让他选择除他以外的一名玩家，告知他选择的那名玩家阵营相同的另一名玩家。"
+    ],
+    "reminders": [
+      [
         "否",
         "是"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "画像师",
-      "name": "画像师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择除你以外的一名玩家，你会得知与他阵营相同的另一名玩家。",
-      "image": "https://www.bloodstar.xyz/p/ligohigh1991/NewHero/25_newhero.png",
-      "firstNight": 20,
-      "firstNightReminder": "让他选择除他以外的一名玩家，告知他选择的那名玩家阵营相同的另一名玩家。",
-      "otherNight": 18,
-      "otherNightReminder": "让他选择除他以外的一名玩家，告知他选择的那名玩家阵营相同的另一名玩家。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "色彩是我情感的载体，线条是我思想的轨迹，手中的画笔，是我与世界对话的方式。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "色彩是我情感的载体，线条是我思想的轨迹，手中的画笔，是我与世界对话的方式。"
+    ]
+  }
 }

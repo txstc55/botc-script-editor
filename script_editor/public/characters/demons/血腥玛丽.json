@@ -2,60 +2,54 @@
   "id": "血腥玛丽",
   "name": "血腥玛丽",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "血腥玛丽",
-      "name": "血腥玛丽",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家:他死亡。如果白天说书人认为有玩家提及任何关于你的存在，你可以在晚上对一名玩家敲门，若他开门，他死亡。每局游戏限一次，在大于五名玩家存活时，如果你在提名阶段发言时高喊：血腥玛丽!，你可能会死亡，随后会有一名存活爪牙成为血腥玛丽。[+1外来者]",
-      "image": "https://i.postimg.cc/hG6Dr0jJ/xue-xing-ma-li.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "每个夜晚*，你要选择一名玩家:他死亡。如果白天说书人认为有玩家提及任何关于你的存在，你可以在晚上对一名玩家敲门，若他开门，他死亡。每局游戏限一次，在大于五名玩家存活时，如果你在提名阶段发言时高喊：血腥玛丽!，你可能会死亡，随后会有一名存活爪牙成为血腥玛丽。[+1外来者]",
-      "reminders": [
-        "敲门",
-        "死亡",
-        "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "血腥玛丽",
-      "name": "血腥玛丽",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：他转变为恐慌状态。随后，如果你上个白天没有被提名或一名善良玩家说过“血腥玛丽”，你要额外选择一名玩家：他死亡，但其他玩家当晚不会因处于恐慌状态而死亡。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/SeaBound/Halloween/bloodymary_halloween.png",
-      "firstNight": 3400,
-      "firstNightReminder": "Bloody Mary chooses a player, they become scared.",
-      "otherNight": 8,
-      "otherNightReminder": "血腥玛丽 要选择一名玩家：他转变为恐慌状态。随后，如果你上个白天没有被提名或一名善良玩家说过“血腥玛丽”，她要额外选择一名玩家：他死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家:他死亡。如果白天说书人认为有玩家提及任何关于你的存在，你可以在晚上对一名玩家敲门，若他开门，他死亡。每局游戏限一次，在大于五名玩家存活时，如果你在提名阶段发言时高喊：血腥玛丽!，你可能会死亡，随后会有一名存活爪牙成为血腥玛丽。[+1外来者]",
+      "每个夜晚，你要选择一名玩家：他转变为恐慌状态。随后，如果你上个白天没有被提名或一名善良玩家说过“血腥玛丽”，你要额外选择一名玩家：他死亡，但其他玩家当晚不会因处于恐慌状态而死亡。[+1外来者]"
+    ],
+    "image": [
+      "https://i.postimg.cc/hG6Dr0jJ/xue-xing-ma-li.png",
+      "https://www.bloodstar.xyz/p/SeaBound/Halloween/bloodymary_halloween.png"
+    ],
+    "firstNight": [
+      0,
+      3400
+    ],
+    "firstNightReminder": [
+      "",
+      "Bloody Mary chooses a player, they become scared."
+    ],
+    "otherNight": [
+      14,
+      8
+    ],
+    "otherNightReminder": [
+      "每个夜晚*，你要选择一名玩家:他死亡。如果白天说书人认为有玩家提及任何关于你的存在，你可以在晚上对一名玩家敲门，若他开门，他死亡。每局游戏限一次，在大于五名玩家存活时，如果你在提名阶段发言时高喊：血腥玛丽!，你可能会死亡，随后会有一名存活爪牙成为血腥玛丽。[+1外来者]",
+      "血腥玛丽 要选择一名玩家：他转变为恐慌状态。随后，如果你上个白天没有被提名或一名善良玩家说过“血腥玛丽”，她要额外选择一名玩家：他死亡。"
+    ],
+    "reminders": [
+      [
         "Call",
         "死亡",
         "被提名"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "Bloody Mary, Bloody Mary, Bloody Mary.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "敲门",
+        "死亡",
+        "限一次"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "",
+      "Bloody Mary, Bloody Mary, Bloody Mary."
+    ]
+  }
 }

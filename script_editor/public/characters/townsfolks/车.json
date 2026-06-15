@@ -2,35 +2,42 @@
   "id": "车",
   "name": "车",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "车",
-      "name": "车",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：如果他是爪牙，王得知的数字会+1。",
-      "image": "https://i.postimg.cc/c1QdVWwf/image.png",
-      "firstNight": 9500,
-      "firstNightReminder": "让车指向一名玩家，如果该玩家是爪牙，标记+1。",
-      "otherNight": 9300,
-      "otherNightReminder": "如果车点头，标记王车易位。让车指向一名玩家，如果该玩家是爪牙，标记+1。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：如果他是爪牙，王得知的数字会+1。"
+    ],
+    "image": [
+      "https://i.postimg.cc/c1QdVWwf/image.png"
+    ],
+    "firstNight": [
+      9500
+    ],
+    "firstNightReminder": [
+      "让车指向一名玩家，如果该玩家是爪牙，标记+1。"
+    ],
+    "otherNight": [
+      9300
+    ],
+    "otherNightReminder": [
+      "如果车点头，标记王车易位。让车指向一名玩家，如果该玩家是爪牙，标记+1。"
+    ],
+    "reminders": [
+      [
         "+1",
         "王车易位",
         "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,57 +2,49 @@
   "id": "山鲁佐德",
   "name": "山鲁佐德",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "山鲁佐德",
-      "name": "山鲁佐德",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以公开发表一个声明。每个夜晚*，如果你发表过的声明中有（至少1个）正确的，你死亡。",
-      "image": "https://i.postimg.cc/wMSkFLB4/scheherazade-fairy-tale.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "每个白天，你可以公开发表一个声明。每个夜晚*，如果你发表过的声明中有（至少1个）正确的，你死亡。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "山鲁佐德",
-      "name": "山鲁佐德",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以做出一个公开声明。如果你做出的声明之中有两个是正确的，你在当晚死亡。",
-      "image": "https://i.postimg.cc/RZhznqRV/scheherazade-fairy-tale.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 24,
-      "otherNightReminder": "如果山鲁佐德已经做出两个正确声明，他死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以做出一个公开声明。如果你做出的声明之中有两个是正确的，你在当晚死亡。",
+      "每个白天，你可以公开发表一个声明。每个夜晚*，如果你发表过的声明中有（至少1个）正确的，你死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/RZhznqRV/scheherazade-fairy-tale.png",
+      "https://i.postimg.cc/wMSkFLB4/scheherazade-fairy-tale.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      13,
+      24
+    ],
+    "otherNightReminder": [
+      "如果山鲁佐德已经做出两个正确声明，他死亡。",
+      "每个白天，你可以公开发表一个声明。每个夜晚*，如果你发表过的声明中有（至少1个）正确的，你死亡。"
+    ],
+    "reminders": [
+      [
         "正确",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "你是在说我还必须再忍受一千个夜晚吗？",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "死亡"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "你是在说我还必须再忍受一千个夜晚吗？"
+    ]
+  }
 }

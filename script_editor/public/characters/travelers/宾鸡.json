@@ -2,35 +2,42 @@
   "id": "宾鸡",
   "name": "宾鸡",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "宾鸡",
-      "name": "宾鸡",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：他当晚不会因其自身能力而被唤醒。如果他在下个白天没有投票，再下个白天他的投票算作三票。",
-      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/25_bundagee_inn_massacre_bigyellowfish.png",
-      "firstNight": 13,
-      "firstNightReminder": "宾鸡选择一名玩家，他在当晚不会被唤醒，标记“不被唤醒”。",
-      "otherNight": 5,
-      "otherNightReminder": "宾鸡选择一名玩家，当晚不会因其自身能力而被唤醒。如果有玩家带有“没有投票”标记，标记“三票”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：他当晚不会因其自身能力而被唤醒。如果他在下个白天没有投票，再下个白天他的投票算作三票。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/25_bundagee_inn_massacre_bigyellowfish.png"
+    ],
+    "firstNight": [
+      13
+    ],
+    "firstNightReminder": [
+      "宾鸡选择一名玩家，他在当晚不会被唤醒，标记“不被唤醒”。"
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "宾鸡选择一名玩家，当晚不会因其自身能力而被唤醒。如果有玩家带有“没有投票”标记，标记“三票”。"
+    ],
+    "reminders": [
+      [
         "三票",
         "不被唤醒",
         "没有投票"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "喂，给我个筹码，一个就够了。你手上这么多筹码，我只要一个。不要占着筹码不用。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "喂，给我个筹码，一个就够了。你手上这么多筹码，我只要一个。不要占着筹码不用。"
+    ]
+  }
 }

@@ -2,79 +2,43 @@
   "id": "窥私者",
   "name": "窥私者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "窥私者",
-      "name": "窥私者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，选择除你以外的一名玩家：如果他今晚死亡，所有玩家会知道你是窥私者。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9651170205371_4d4c299e.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 75,
-      "otherNightReminder": "每个夜晚*，选择除你以外的一名玩家：如果他今晚死亡，所有玩家会知道你是窥私者。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，选择除你以外的一名玩家：如果他今晚死亡，所有玩家会知道你是窥私者。",
+      "每个夜晚*，你要选择除你以外的一名玩家：如果他当晚死亡，所有玩家会知道你是窥私者。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9651170205371_4d4c299e.jpg"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      4401,
+      75
+    ],
+    "otherNightReminder": [
+      "每个夜晚*，选择除你以外的一名玩家：如果他今晚死亡，所有玩家会知道你是窥私者。",
+      "让窥私者指向除自己外的任意一名玩家，让窥私者重新入睡。将窥私者的“偷窥”提示标记放置在他选择的玩家角色标记旁。如果放置有“偷窥”提示标记的玩家在当晚死亡，说书人需要立即宣布窥私者玩家是窥私者。"
+    ],
+    "reminders": [
+      [
         "偷窥"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "窥私者",
-      "name": "窥私者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的一名玩家：如果他当晚死亡，所有玩家会知道你是窥私者。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9651170205371_4d4c299e.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4401,
-      "otherNightReminder": "让窥私者指向除自己外的任意一名玩家，让窥私者重新入睡。将窥私者的“偷窥”提示标记放置在他选择的玩家角色标记旁。如果放置有“偷窥”提示标记的玩家在当晚死亡，说书人需要立即宣布窥私者玩家是窥私者。",
-      "reminders": [
-        "偷窥"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "窥私者",
-      "name": "窥私者",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，选择除你以外的一名玩家：如果他今晚死亡，所有玩家会知道你是窥私者。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9651170205371_4d4c299e.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4401,
-      "otherNightReminder": "让窥私者指向除自己外的任意一名玩家，让窥私者重新入睡。将窥私者的“偷窥”提示标记放置在他选择的玩家角色标记旁。如果放置有“偷窥”提示标记的玩家在当晚死亡，说书人需要立即宣布窥私者玩家是窥私者。",
-      "reminders": [
-        "偷窥"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

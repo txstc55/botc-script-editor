@@ -2,33 +2,40 @@
   "id": "走私犯",
   "name": "走私犯",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "走私犯",
-      "name": "走私犯",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择任意名玩家：如果他们之中有多于一名邪恶玩家，你死亡。",
-      "image": "https://i.postimg.cc/tgJLjXYb/smuggler.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "唤醒走私犯，让他指向任意数量的玩家。如果他选择的玩家里多于一名属于邪恶阵营，走私犯死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择任意名玩家：如果他们之中有多于一名邪恶玩家，你死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/tgJLjXYb/smuggler.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      15
+    ],
+    "otherNightReminder": [
+      "唤醒走私犯，让他指向任意数量的玩家。如果他选择的玩家里多于一名属于邪恶阵营，走私犯死亡。"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

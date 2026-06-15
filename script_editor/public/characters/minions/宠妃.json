@@ -2,40 +2,47 @@
   "id": "宠妃",
   "name": "宠妃",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "宠妃",
-      "name": "宠妃",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家（与上个夜晚不同）：当晚他不会因自身能力被唤醒。在宠妃的第三个夜晚，存活的恶魔会获得一个炸弹宝宝或狸猫宝宝。当晚，获得宝宝的恶魔要选择一名玩家携带这个宝宝：如果是炸弹宝宝，他死亡；如果是狸猫宝宝：宠妃死亡。[初始不在游戏中]",
-      "image": "https://www.helloimg.com/i/2024/12/31/67740eefdad85.png",
-      "firstNight": 30,
-      "firstNightReminder": "唤醒宠妃，让她选择一名玩家：当晚他不会因自身能力被唤醒。",
-      "otherNight": 10,
-      "otherNightReminder": "唤醒宠妃，让她选择一名玩家：当晚他不会因自身能力被唤醒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家（与上个夜晚不同）：当晚他不会因自身能力被唤醒。在宠妃的第三个夜晚，存活的恶魔会获得一个炸弹宝宝或狸猫宝宝。当晚，获得宝宝的恶魔要选择一名玩家携带这个宝宝：如果是炸弹宝宝，他死亡；如果是狸猫宝宝：宠妃死亡。[初始不在游戏中]"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2024/12/31/67740eefdad85.png"
+    ],
+    "firstNight": [
+      30
+    ],
+    "firstNightReminder": [
+      "唤醒宠妃，让她选择一名玩家：当晚他不会因自身能力被唤醒。"
+    ],
+    "otherNight": [
+      10
+    ],
+    "otherNightReminder": [
+      "唤醒宠妃，让她选择一名玩家：当晚他不会因自身能力被唤醒。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "第一晚",
         "第三晚",
         "第二晚",
         "被选择"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "恶魔宝宝",
         "狸猫宝宝"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

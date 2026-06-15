@@ -2,33 +2,40 @@
   "id": "军团",
   "name": "军团",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "军团",
-      "name": "军团",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天有多少邪恶玩家与你一同投票。",
-      "image": "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_legion_b.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "1",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你会得知今天白天有多少邪恶玩家与你一同投票。"
+    ],
+    "image": [
+      "[\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_legion_b.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      13
+    ],
+    "otherNightReminder": [
+      "1"
+    ],
+    "reminders": [
+      [
         "投票"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

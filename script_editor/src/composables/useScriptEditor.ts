@@ -1,12 +1,11 @@
 import { computed, onMounted, reactive, ref } from "vue";
 import { sampleScript, teamOrder } from "../data/sampleScript";
-import type { PlayCleanupReport, RoleDraft, TeamKey } from "../types";
+import type { RoleDraft, TeamKey } from "../types";
 import { loadPlayFromJson } from "../utils/playJson";
 
 export function useScriptEditor() {
   const script = reactive(structuredClone(sampleScript));
   const selectedTeam = ref<TeamKey>("townsfolk");
-  const importStatus = ref<PlayCleanupReport | null>(null);
   const importError = ref("");
 
   const activeTeam = computed(() => script.teams[selectedTeam.value] ?? script.teams.townsfolk);
@@ -16,20 +15,6 @@ export function useScriptEditor() {
       0,
     ),
   );
-  const cleanupSummary = computed(() => {
-    if (!importStatus.value) {
-      return "等待导入";
-    }
-
-    const report = importStatus.value;
-    const cleanupCount =
-      report.normalizedTeamCount +
-      report.normalizedJinxTeamCount +
-      report.normalizedSetupCount +
-      report.backfilledReminderCount;
-    return `已载入 ${report.roleCount} 角色，清洗 ${cleanupCount} 项`;
-  });
-
   onMounted(() => {
     loadSamplePlay();
   });
@@ -110,7 +95,6 @@ export function useScriptEditor() {
     const parsed = JSON.parse(rawText);
     const loaded = loadPlayFromJson(parsed, fileName);
     Object.assign(script, loaded.script);
-    importStatus.value = loaded.report;
     importError.value = "";
   }
 
@@ -121,7 +105,6 @@ export function useScriptEditor() {
     teamOrder,
     activeTeam,
     selectedRoleCount,
-    cleanupSummary,
     addFabled,
     removeFabled,
     addJinx,

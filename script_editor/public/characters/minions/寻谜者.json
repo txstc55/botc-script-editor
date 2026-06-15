@@ -2,58 +2,42 @@
   "id": "寻谜者",
   "name": "寻谜者",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "寻谜者",
-      "name": "寻谜者",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你与一名善良玩家在首个夜晚得知一个问题。每局游戏限一次，你可以公开回答它，如果答对：你的阵营获胜。",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780ce55a7de8.png",
-      "firstNight": 14,
-      "firstNightReminder": "分别唤醒寻谜者与一个善良玩家，告诉他们一个相同的谜题。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你与一名善良玩家在首个夜晚得知一个问题。每局游戏限一次，你可以公开回答它，如果答对：你的阵营获胜。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2025/01/10/6780ce55a7de8.png"
+    ],
+    "firstNight": [
+      14,
+      35
+    ],
+    "firstNightReminder": [
+      "分别唤醒寻谜者与一个善良玩家，告诉他们一个相同的谜题。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "得知谜题",
         "答错了"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "寻谜者",
-      "name": "寻谜者",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你与一名善良玩家在首个夜晚得知一个问题。每局游戏限一次，你可以公开回答它，如果答对：你的阵营获胜。",
-      "image": "https://www.helloimg.com/i/2025/01/10/6780ce55a7de8.png",
-      "firstNight": 35,
-      "firstNightReminder": "分别唤醒寻谜者与一个善良玩家，告诉他们一个相同的谜题。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "得知谜题",
-        "答错了"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

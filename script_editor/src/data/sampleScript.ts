@@ -1,4 +1,8 @@
 import type { ScriptDraft, TeamKey } from "../types";
+import {
+  createDefaultBuiltInFirstNightEnabled,
+  createDefaultBuiltInFirstNightOrders,
+} from "../utils/nightOrders";
 
 export const teamOrder: TeamKey[] = [
   "townsfolk",
@@ -11,6 +15,8 @@ export const teamOrder: TeamKey[] = [
 export const sampleScript: ScriptDraft = {
   name: "Custom Clocktower Script",
   author: "Script Author",
+  builtInFirstNightOrders: createDefaultBuiltInFirstNightOrders(),
+  builtInFirstNightEnabled: createDefaultBuiltInFirstNightEnabled(),
   fabled: [
     {
       id: "djinn",

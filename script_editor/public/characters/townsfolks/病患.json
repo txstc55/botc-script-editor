@@ -2,54 +2,47 @@
   "id": "病患",
   "name": "病患",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "病患",
-      "name": "病患",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你会被唤醒：你每度过一个夜晚，就会获得一个在场角色的能力。",
-      "image": "https://youke1.picui.cn/s1/2025/07/29/68889591457b7.png",
-      "firstNight": 3,
-      "firstNightReminder": "每局游戏限一次，在夜晚时，你会被唤醒：你每度过一个夜晚，就会获得一个在场角色的能力。",
-      "otherNight": 2,
-      "otherNightReminder": "每局游戏限一次，在夜晚时，你会被唤醒：你每度过一个夜晚，就会获得一个在场角色的能力。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，你会被唤醒：你每有一个夜晚未被唤醒，就会获得一个在场角色的能力。",
+      "每局游戏限一次，在夜晚时，你会被唤醒：你每度过一个夜晚，就会获得一个在场角色的能力。"
+    ],
+    "image": [
+      "https://img.picui.cn/free/2025/04/17/6801101270dd9.png",
+      "https://youke1.picui.cn/s1/2025/07/29/68889591457b7.png"
+    ],
+    "firstNight": [
+      3,
+      5
+    ],
+    "firstNightReminder": [
+      "每局游戏限一次，你会被唤醒：你每有一个夜晚未被唤醒，就会获得一个在场角色的能力。",
+      "每局游戏限一次，在夜晚时，你会被唤醒：你每度过一个夜晚，就会获得一个在场角色的能力。"
+    ],
+    "otherNight": [
+      1,
+      2
+    ],
+    "otherNightReminder": [
+      "每局游戏限一次，你会被唤醒：你每有一个夜晚未被唤醒，就会获得一个在场角色的能力。",
+      "每局游戏限一次，在夜晚时，你会被唤醒：你每度过一个夜晚，就会获得一个在场角色的能力。"
+    ],
+    "reminders": [
+      [
         "模仿"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "病患",
-      "name": "病患",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，你会被唤醒：你每有一个夜晚未被唤醒，就会获得一个在场角色的能力。",
-      "image": "https://img.picui.cn/free/2025/04/17/6801101270dd9.png",
-      "firstNight": 5,
-      "firstNightReminder": "每局游戏限一次，你会被唤醒：你每有一个夜晚未被唤醒，就会获得一个在场角色的能力。",
-      "otherNight": 1,
-      "otherNightReminder": "每局游戏限一次，你会被唤醒：你每有一个夜晚未被唤醒，就会获得一个在场角色的能力。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

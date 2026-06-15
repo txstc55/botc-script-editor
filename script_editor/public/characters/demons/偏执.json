@@ -2,34 +2,41 @@
   "id": "偏执",
   "name": "偏执",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "偏执",
-      "name": "偏执",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果自信存活，与他邻近的两名存活的镇民中毒。[+自信]",
-      "image": "[\"https://www.bloodstar.xyz/p/Rowlf/Reddwarf/para_reddwarf.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "Wake Paranoia and have them select a player. Place the 'dead' token next to that player. :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。如果自信存活，与他邻近的两名存活的镇民中毒。[+自信]"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/Rowlf/Reddwarf/para_reddwarf.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "Wake Paranoia and have them select a player. Place the 'dead' token next to that player. :reminder:"
+    ],
+    "reminders": [
+      [
         "中毒",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

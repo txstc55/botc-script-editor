@@ -2,58 +2,52 @@
   "id": "学生",
   "name": "学生",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "学生",
-      "name": "学生",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下询问说书人一个问题。如果说书人回答了你，你可能会在当晚死亡。",
-      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/10_bundagee_inn_massacre_bigyellowfish.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "如果你回答了学生的问题，标记学生“好奇害死猫”。如果学生拥有此标记，他可以死亡。",
-      "reminders": [
-        "好奇害死猫",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "老师，打扰一下，关于您上次的心理学课程我有个问题！您说到大多数自恋者会让别人不舒服并以此为乐，而莎莉美丽的双眼让我不舒服，这是否意味着她是自恋者？",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "学生",
-      "name": "学生",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限两次，在夜晚时，你可以选择一个角色：你会得知这个角色是否在场。",
-      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/student1_echoes_of_the_past.png",
-      "firstNight": 3023,
-      "firstNightReminder": "If the Student isn't marked with the NO ABILITY reminder token, wake the Student. They might choose a character. Nod your head \"Yes\" if they're in-play. Otherwise, shake your head \"No\". Then, if the Student used their ability, mark the Student with their NO ABILITY reminder token. Then, put the Student to sleep.",
-      "otherNight": 24,
-      "otherNightReminder": "If the Student isn't marked with the NO ABILITY reminder token, wake the Student. They might choose a character. Nod your head \"Yes\" if they're in-play. Otherwise, shake your head \"No\". Then, if the Student used their ability, mark the Student with their NO ABILITY reminder token. Then, put the Student to sleep.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以私下询问说书人一个问题。如果说书人回答了你，你可能会在当晚死亡。",
+      "每局游戏限两次，在夜晚时，你可以选择一个角色：你会得知这个角色是否在场。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/student1_echoes_of_the_past.png",
+      "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/10_bundagee_inn_massacre_bigyellowfish.png"
+    ],
+    "firstNight": [
+      0,
+      3023
+    ],
+    "firstNightReminder": [
+      "",
+      "If the Student isn't marked with the NO ABILITY reminder token, wake the Student. They might choose a character. Nod your head \"Yes\" if they're in-play. Otherwise, shake your head \"No\". Then, if the Student used their ability, mark the Student with their NO ABILITY reminder token. Then, put the Student to sleep."
+    ],
+    "otherNight": [
+      16,
+      24
+    ],
+    "otherNightReminder": [
+      "If the Student isn't marked with the NO ABILITY reminder token, wake the Student. They might choose a character. Nod your head \"Yes\" if they're in-play. Otherwise, shake your head \"No\". Then, if the Student used their ability, mark the Student with their NO ABILITY reminder token. Then, put the Student to sleep.",
+      "如果你回答了学生的问题，标记学生“好奇害死猫”。如果学生拥有此标记，他可以死亡。"
+    ],
+    "reminders": [
+      [
         "一次已用",
         "两次已用"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "We don't have a <span style=\"color:#003FB2\">Squire</span> in this town!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "好奇害死猫",
+        "死亡"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "We don't have a <span style=\"color:#003FB2\">Squire</span> in this town!",
+      "老师，打扰一下，关于您上次的心理学课程我有个问题！您说到大多数自恋者会让别人不舒服并以此为乐，而莎莉美丽的双眼让我不舒服，这是否意味着她是自恋者？"
+    ]
+  }
 }

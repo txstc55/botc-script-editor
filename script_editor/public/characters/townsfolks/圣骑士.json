@@ -2,125 +2,69 @@
   "id": "圣骑士",
   "name": "圣骑士",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 5,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "圣骑士",
-      "name": "圣骑士",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名除你以外的玩家：他产生正确信息，即使因为任何原因他无法产生正确信息，直到下个黄昏。如果他在当夜死于恶魔的能力，他会得知你是圣骑士。",
+      "在你的首个夜晚，你会得知两名非恶魔玩家。如果你在夜晚死亡，你会得知他们中是否有邪恶玩家。",
+      "每个夜晚，你会得知是否有邪恶玩家的咒语被抽中。",
+      "每个白天你至多投2票，且不可以投给自己，即使你失去能力。如果你投票的两名玩家都是善良的，他们今晚不会死亡。如果你投票的两名玩家都是邪恶的，其中之一会在今晚死亡，然后你失去能力。"
+    ],
+    "image": [
+      "https://postimage.me/images/2024/08/01/d094915b8c8b9fabaf15649b5ef52cdd.png",
+      "https://www.bloodstar.xyz/p/Rickfelix/WOW/25_wow.png",
+      "https://www.bloodstar.xyz/p/twf07wfz/TheWizardsMeetRework/paladin_thewizardsmeetrework.png",
+      "https://www.bloodstar.xyz/p/westwind/xiudao111/18_xiudao111.png"
+    ],
+    "firstNight": [
+      15,
+      0,
+      24,
+      3900
+    ],
+    "firstNightReminder": [
+      "让他选择一名其他玩家，在那名玩家面前放置圣光标记，当晚那名玩家必定产生正确信息。",
+      "",
+      "If any evil players (or players who register as evil) have a \"Cast\" token, give the Paladin a \"YES\". Otherwise, give them a \"NO\".",
+      "得知两名非恶魔玩家。"
+    ],
+    "otherNight": [
+      12,
+      14,
+      25,
+      26,
+      48
+    ],
+    "otherNightReminder": [
+      "让他选择一名其他玩家，在那名玩家面前放置圣光标记，当晚那名玩家必定产生正确信息。如果那名玩家在夜晚死亡，告诉那名玩家他是圣骑士",
+      "If any evil players (or players who register as evil) have a \"Cast\" token, give the Paladin a \"YES\". Otherwise, give them a \"NO\".",
+      "如果圣骑士投票了两名都是邪恶的，其中之一死亡。然后圣骑士失去能力",
+      "得知标记”圣光道标“的玩家中是否有邪恶玩家。"
+    ],
+    "reminders": [
+      [
+        "圣光"
       ],
-      "ability": "每个白天你至多投2票，且不可以投给自己，即使你失去能力。如果你投票的两名玩家都是善良的，他们今晚不会死亡。如果你投票的两名玩家都是邪恶的，其中之一会在今晚死亡，然后你失去能力。",
-      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/18_xiudao111.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "如果圣骑士投票了两名都是邪恶的，其中之一死亡。然后圣骑士失去能力",
-      "reminders": [
+      [
         "不会死亡",
         "失去能力",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "圣骑士",
-      "name": "圣骑士",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名除你以外的玩家：他产生正确信息，即使因为任何原因他无法产生正确信息，直到下个黄昏。如果他在当夜死于恶魔的能力，他会得知你是圣骑士。",
-      "image": "https://postimage.me/images/2024/08/01/d094915b8c8b9fabaf15649b5ef52cdd.png",
-      "firstNight": 15,
-      "firstNightReminder": "让他选择一名其他玩家，在那名玩家面前放置圣光标记，当晚那名玩家必定产生正确信息。",
-      "otherNight": 25,
-      "otherNightReminder": "让他选择一名其他玩家，在那名玩家面前放置圣光标记，当晚那名玩家必定产生正确信息。如果那名玩家在夜晚死亡，告诉那名玩家他是圣骑士",
-      "reminders": [
-        "圣光"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "圣骑士",
-      "name": "圣骑士",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名除你以外的玩家：他产生正确信息，即使因为任何原因他无法产生正确信息，直到下个黄昏。如果他在当夜死于恶魔的能力，他会得知你是圣骑士。",
-      "image": "https://postimage.me/images/2024/08/01/d094915b8c8b9fabaf15649b5ef52cdd.png",
-      "firstNight": 15,
-      "firstNightReminder": "让他选择一名其他玩家，在那名玩家面前放置圣光标记，当晚那名玩家必定产生正确信息。",
-      "otherNight": 48,
-      "otherNightReminder": "让他选择一名其他玩家，在那名玩家面前放置圣光标记，当晚那名玩家必定产生正确信息。如果那名玩家在夜晚死亡，告诉那名玩家他是圣骑士",
-      "reminders": [
-        "圣光"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "圣骑士",
-      "name": "圣骑士",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知是否有邪恶玩家的咒语被抽中。",
-      "image": "https://www.bloodstar.xyz/p/twf07wfz/TheWizardsMeetRework/paladin_thewizardsmeetrework.png",
-      "firstNight": 24,
-      "firstNightReminder": "If any evil players (or players who register as evil) have a \"Cast\" token, give the Paladin a \"YES\". Otherwise, give them a \"NO\".",
-      "otherNight": 26,
-      "otherNightReminder": "If any evil players (or players who register as evil) have a \"Cast\" token, give the Paladin a \"YES\". Otherwise, give them a \"NO\".",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "圣骑士",
-      "name": "圣骑士",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。如果你在夜晚死亡，你会得知他们中是否有邪恶玩家。",
-      "image": "https://www.bloodstar.xyz/p/Rickfelix/WOW/25_wow.png",
-      "firstNight": 3900,
-      "firstNightReminder": "得知两名非恶魔玩家。",
-      "otherNight": 12,
-      "otherNightReminder": "得知标记”圣光道标“的玩家中是否有邪恶玩家。",
-      "reminders": [
+      [
         "圣光道标"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "奉献即获庇佑，牺牲方得明识。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "奉献即获庇佑，牺牲方得明识。"
+    ]
+  }
 }

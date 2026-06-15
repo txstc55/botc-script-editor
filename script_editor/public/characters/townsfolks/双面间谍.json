@@ -2,57 +2,51 @@
   "id": "双面间谍",
   "name": "双面间谍",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "双面间谍",
-      "name": "双面间谍",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "你代替一名爪牙被恶魔得知，且被代替的爪牙不会得知爪牙信息。",
-      "image": "https://i.ibb.co/CWdrfSr/doubleagent.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [
-        "代替"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "双面间谍",
-      "name": "双面间谍",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：你得知他的角色类型。一名邪恶玩家得知一条有关你的信息，每局游戏限一次，他可以猜测谁是双面间谍，如果正确，当晚你变成一个不在场的外来者角色。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/TwinCity/19_twincity.png",
-      "firstNight": 19,
-      "firstNightReminder": "让双面间谍决定是否选择一名玩家，如果他选择了，告诉他该玩家的身份类型，同时让一名邪恶玩家得知一条关于双面间谍位置的信息。",
-      "otherNight": 18,
-      "otherNightReminder": "让双面间谍决定是否选择一名玩家，如果他选择了，告诉他该玩家的身份类型，同时让一名邪恶玩家得知一条关于双面间谍位置的信息。如果那名邪恶玩家猜测正确了，将双面间谍变成一名不在场的外来者角色并告知他",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你代替一名爪牙被恶魔得知，且被代替的爪牙不会得知爪牙信息。",
+      "每个夜晚，你要选择一名玩家：你得知他的角色类型。一名邪恶玩家得知一条有关你的信息，每局游戏限一次，他可以猜测谁是双面间谍，如果正确，当晚你变成一个不在场的外来者角色。"
+    ],
+    "image": [
+      "https://i.ibb.co/CWdrfSr/doubleagent.png",
+      "https://www.bloodstar.xyz/p/jc3635/TwinCity/19_twincity.png"
+    ],
+    "firstNight": [
+      0,
+      19
+    ],
+    "firstNightReminder": [
+      "",
+      "让双面间谍决定是否选择一名玩家，如果他选择了，告诉他该玩家的身份类型，同时让一名邪恶玩家得知一条关于双面间谍位置的信息。"
+    ],
+    "otherNight": [
+      0,
+      18
+    ],
+    "otherNightReminder": [
+      "",
+      "让双面间谍决定是否选择一名玩家，如果他选择了，告诉他该玩家的身份类型，同时让一名邪恶玩家得知一条关于双面间谍位置的信息。如果那名邪恶玩家猜测正确了，将双面间谍变成一名不在场的外来者角色并告知他"
+    ],
+    "reminders": [
+      [
         "已猜测",
         "得知"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      [
+        "代替"
+      ],
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

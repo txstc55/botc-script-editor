@@ -2,148 +2,56 @@
   "id": "染坊坊主",
   "name": "染坊坊主",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 6,
   "totalOccurrenceCount": 10,
-  "variants": [
-    {
-      "id": "染坊坊主",
-      "name": "染坊坊主",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_0616062943171_bbdbbb4c.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 107,
-      "otherNightReminder": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_0616062943171_bbdbbb4c.jpg",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/0/05/Ranfangfangzhu.png/75px-Ranfangfangzhu.png",
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/ranfangfangzhu.png",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/42/t0zfvhg8k9jgpgaj248u1fdp9250u1j.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      107,
+      10700,
+      150,
+      19,
+      62,
+      75
+    ],
+    "otherNightReminder": [
+      "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
+      "如果染坊坊主死于夜晚，唤醒恶魔并告知他能力发生转变。（华白注：此处运行方式存疑，不知道是否需要唤醒，期待山雨规则落实。）",
+      "如果染坊坊主今晚死亡，标记恶魔侵染。"
+    ],
+    "reminders": [
+      [
         "沉默"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 5,
-      "notes": []
-    },
-    {
-      "id": "染坊坊主",
-      "name": "染坊坊主",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/42/t0zfvhg8k9jgpgaj248u1fdp9250u1j.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "如果染坊坊主死于夜晚，唤醒恶魔并告知他能力发生转变。（华白注：此处运行方式存疑，不知道是否需要唤醒，期待山雨规则落实。）",
-      "reminders": [
+      [
         "改变能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "染坊坊主",
-      "name": "染坊坊主",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/0/05/Ranfangfangzhu.png/75px-Ranfangfangzhu.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 62,
-      "otherNightReminder": "如果染坊坊主今晚死亡，标记恶魔侵染。",
-      "reminders": [
+      [
         "侵染"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "染坊坊主",
-      "name": "染坊坊主",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ranfangfangzhu.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 75,
-      "otherNightReminder": "如果染坊坊主死于夜晚，唤醒恶魔并告知他能力发生转变。（华白注：此处运行方式存疑，不知道是否需要唤醒，期待山雨规则落实。）",
-      "reminders": [
-        "改变能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "染坊坊主",
-      "name": "染坊坊主",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_0616062943171_bbdbbb4c.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 150,
-      "otherNightReminder": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "reminders": [
-        "沉默"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "染坊坊主",
-      "name": "染坊坊主",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_0616062943171_bbdbbb4c.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10700,
-      "otherNightReminder": "如果你在夜晚死亡，恶魔的能力变成“每个夜晚*，可能会有一名玩家死亡。”",
-      "reminders": [
-        "沉默"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

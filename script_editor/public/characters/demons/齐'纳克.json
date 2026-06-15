@@ -2,34 +2,41 @@
   "id": "齐'纳克",
   "name": "齐'纳克",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "齐'纳克",
-      "name": "齐'纳克",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。始终会有一名善良玩家知道两名玩家之一是齐'纳克。如果你被处决时有爪牙存活，你的阵营获胜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_4590907105371_3078053f.jpg",
-      "firstNight": 4701,
-      "firstNightReminder": "在首个夜晚，唤醒一名善良玩家。对他展示齐纳克的角色标记，并指向包含齐纳克在内的两名玩家，然后让这名玩家入睡。",
-      "otherNight": 8432,
-      "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒齐纳克。让齐纳克指向任意一名玩家。让齐纳克重新入睡。被选择的玩家死亡——在那名玩家的角色标记旁放置齐纳克的“死亡”提示标记并放置帷幕标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。始终会有一名善良玩家知道两名玩家之一是齐'纳克。如果你被处决时有爪牙存活，你的阵营获胜。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_4590907105371_3078053f.jpg"
+    ],
+    "firstNight": [
+      4701
+    ],
+    "firstNightReminder": [
+      "在首个夜晚，唤醒一名善良玩家。对他展示齐纳克的角色标记，并指向包含齐纳克在内的两名玩家，然后让这名玩家入睡。"
+    ],
+    "otherNight": [
+      8432
+    ],
+    "otherNightReminder": [
+      "除首个夜晚以外的每个夜晚，唤醒齐纳克。让齐纳克指向任意一名玩家。让齐纳克重新入睡。被选择的玩家死亡——在那名玩家的角色标记旁放置齐纳克的“死亡”提示标记并放置帷幕标记。"
+    ],
+    "reminders": [
+      [
         "得知",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

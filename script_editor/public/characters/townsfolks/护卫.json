@@ -2,34 +2,41 @@
   "id": "护卫",
   "name": "护卫",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "护卫",
-      "name": "护卫",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择一个其他角色，当首次被你选择过的角色死亡时，他免受本次死亡，然后你得知此事并不再因为护卫的能力被唤醒",
-      "image": "https://www.bloodstar.xyz/p/C2H43g/DarkAge/_darkage.png",
-      "firstNight": 14,
-      "firstNightReminder": "选择一个角色",
-      "otherNight": 8,
-      "otherNightReminder": "选择一个角色",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你可以选择一个其他角色，当首次被你选择过的角色死亡时，他免受本次死亡，然后你得知此事并不再因为护卫的能力被唤醒"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/C2H43g/DarkAge/_darkage.png"
+    ],
+    "firstNight": [
+      14
+    ],
+    "firstNightReminder": [
+      "选择一个角色"
+    ],
+    "otherNight": [
+      8
+    ],
+    "otherNightReminder": [
+      "选择一个角色"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "守护"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

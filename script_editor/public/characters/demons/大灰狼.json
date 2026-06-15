@@ -2,84 +2,64 @@
   "id": "大灰狼",
   "name": "大灰狼",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "大灰狼",
-      "name": "大灰狼",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名存活玩家成为猎物。每个夜晚*，你要选择一名玩家：他死亡。如果猎物在今天白天死亡，改为选择两名玩家，随后，你要选择新的猎物。",
-      "image": "https://i.postimg.cc/90fksdCW/bigbadwolfr-fairy-tale.png",
-      "firstNight": 16,
-      "firstNightReminder": "在你的首个夜晚，你要选择一名存活玩家成为猎物。每个夜晚*，你要选择一名玩家：他死亡。如果猎物在今天白天死亡，改为选择两名玩家，随后，你要选择新的猎物。",
-      "otherNight": 6,
-      "otherNightReminder": "在你的首个夜晚，你要选择一名存活玩家成为猎物。每个夜晚*，你要选择一名玩家：他死亡。如果猎物在今天白天死亡，改为选择两名玩家，随后，你要选择新的猎物。",
-      "reminders": [
-        "死亡",
-        "猎物"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "大灰狼",
-      "name": "大灰狼",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家成为猎杀目标：如果他下个白天死亡，当晚你额外行动一次。每个夜晚*，你要选择一名玩家：他死亡。",
-      "image": "https://i.postimg.cc/TYqPcygV/bigbadwolf-fairy-tale.png",
-      "firstNight": 19,
-      "firstNightReminder": "唤醒大灰狼，让他指向一名玩家，为那名玩家放置“猎杀”提示标记。",
-      "otherNight": 14,
-      "otherNightReminder": "如果带有“猎杀”标记的玩家在今天白天死亡，为大灰狼放置“额外行动”标记。移除所有“猎杀”标记。唤醒大灰狼，让他指向一名玩家，为那名玩家放置“猎杀”提示标记。然后让他指向一名玩家：该玩家死亡。如果大灰狼带有“额外行动”标记，重复一次夜晚行动。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一名存活玩家成为猎物。每个夜晚*，你要选择一名玩家：他死亡。如果猎物在今天白天死亡，改为选择两名玩家，随后，你要选择新的猎物。",
+      "每个夜晚*，你要选择一名玩家：他死亡。每个夜晚，你要选择一名玩家：他被标记直到下个黄昏。如果被标记的玩家被处决，当晚你可以额外行动一次。",
+      "每个夜晚，你要选择一名玩家成为猎杀目标：如果他下个白天死亡，当晚你额外行动一次。每个夜晚*，你要选择一名玩家：他死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/90fksdCW/bigbadwolfr-fairy-tale.png",
+      "https://i.postimg.cc/TYqPcygV/bigbadwolf-fairy-tale.png",
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter_assets_of_lei_gallery.png"
+    ],
+    "firstNight": [
+      16,
+      19,
+      28
+    ],
+    "firstNightReminder": [
+      "唤醒大灰狼，让他指向一名玩家，为那名玩家放置“猎杀”提示标记。",
+      "在你的首个夜晚，你要选择一名存活玩家成为猎物。每个夜晚*，你要选择一名玩家：他死亡。如果猎物在今天白天死亡，改为选择两名玩家，随后，你要选择新的猎物。",
+      "选择一名玩家标记为猎物"
+    ],
+    "otherNight": [
+      14,
+      33,
+      6
+    ],
+    "otherNightReminder": [
+      "在你的首个夜晚，你要选择一名存活玩家成为猎物。每个夜晚*，你要选择一名玩家：他死亡。如果猎物在今天白天死亡，改为选择两名玩家，随后，你要选择新的猎物。",
+      "如果带有“猎杀”标记的玩家在今天白天死亡，为大灰狼放置“额外行动”标记。移除所有“猎杀”标记。唤醒大灰狼，让他指向一名玩家，为那名玩家放置“猎杀”提示标记。然后让他指向一名玩家：该玩家死亡。如果大灰狼带有“额外行动”标记，重复一次夜晚行动。",
+      "选择一名玩家他死亡。选择一名玩家标记为猎物。如果昨天猎物被处决，让大灰狼再行动一次。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "猎杀",
         "额外行动"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "嗷呜呜呜呜呜呜呜呜",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "大灰狼",
-      "name": "大灰狼",
-      "variantIndex": 3,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。每个夜晚，你要选择一名玩家：他被标记直到下个黄昏。如果被标记的玩家被处决，当晚你可以额外行动一次。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter_assets_of_lei_gallery.png",
-      "firstNight": 28,
-      "firstNightReminder": "选择一名玩家标记为猎物",
-      "otherNight": 33,
-      "otherNightReminder": "选择一名玩家他死亡。选择一名玩家标记为猎物。如果昨天猎物被处决，让大灰狼再行动一次。",
-      "reminders": [
+      [
         "死亡",
         "猎物",
         "额外行动"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "死亡",
+        "猎物"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "嗷呜呜呜呜呜呜呜呜"
+    ]
+  }
 }

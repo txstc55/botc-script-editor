@@ -2,34 +2,41 @@
   "id": "标记者",
   "name": "标记者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "标记者",
-      "name": "标记者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你得知与你上次选择最有关联性的玩家，随后你要选择一名玩家。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/4_blackout.png",
-      "firstNight": 20,
-      "firstNightReminder": "唤醒标记者，让他选择一名玩家。如果选择了邪恶，给标记者标记“中毒”。",
-      "otherNight": 24,
-      "otherNightReminder": "唤醒标记者，告知他上次标记的玩家行动顺位，随后让他选择一名玩家。如果选择了邪恶，给标记者标记“中毒”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你得知与你上次选择最有关联性的玩家，随后你要选择一名玩家。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/bluebell/blackout/4_blackout.png"
+    ],
+    "firstNight": [
+      20
+    ],
+    "firstNightReminder": [
+      "唤醒标记者，让他选择一名玩家。如果选择了邪恶，给标记者标记“中毒”。"
+    ],
+    "otherNight": [
+      24
+    ],
+    "otherNightReminder": [
+      "唤醒标记者，告知他上次标记的玩家行动顺位，随后让他选择一名玩家。如果选择了邪恶，给标记者标记“中毒”。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "标记"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

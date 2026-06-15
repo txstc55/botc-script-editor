@@ -2,33 +2,40 @@
   "id": "黑帮成员",
   "name": "黑帮成员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "黑帮成员",
-      "name": "黑帮成员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以公开选择一名存活玩家：如果他是外来者，他失去能力并死亡。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/mobster_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以公开选择一名存活玩家：如果他是外来者，他失去能力并死亡。[+1外来者]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/mobster_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "失去能力并死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "You listen here because I'm only gonna tell ya once: Don't make any trouble in my town. People who cause trouble find ways to... disappear around here.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "You listen here because I'm only gonna tell ya once: Don't make any trouble in my town. People who cause trouble find ways to... disappear around here."
+    ]
+  }
 }

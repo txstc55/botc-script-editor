@@ -2,79 +2,51 @@
   "id": "仵作",
   "name": "仵作",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 6,
-  "variants": [
-    {
-      "id": "仵作",
-      "name": "仵作",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下拜访说书人以得知一条信息，并在下次拜访说书人时回答一个相关问题，如果回答正确，你当天获得正确信息。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_4265741838171_c32421e1.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 4,
-      "notes": []
-    },
-    {
-      "id": "仵作",
-      "name": "仵作",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下拜访说书人以得知一条信息，并在下次拜访说书人时回答一个相关问题，如果回答正确，你当天获得正确信息。",
-      "image": "https://www.helloimg.com/i/2025/04/04/67ef533864121.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以私下拜访说书人以得知一条信息，并在下次拜访说书人时回答一个相关问题，如果回答正确，你当天获得正确信息。",
+      "每个夜晚*，你会得知当晚被恶魔杀死的玩家于上个白天是否中毒或醉酒。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_4265741838171_c32421e1.jpg",
+      "https://i.postimg.cc/hPN5M6qX/image.png",
+      "https://www.helloimg.com/i/2025/04/04/67ef533864121.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      112
+    ],
+    "otherNightReminder": [
+      "",
+      "如果有被恶魔杀死的玩家，唤醒仵作，如果那名玩家的角色标记边有“白天异常”则点头，否则摇头。"
+    ],
+    "reminders": [
+      [],
+      [
         "答对",
         "答错"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "仵作",
-      "name": "仵作",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知当晚被恶魔杀死的玩家于上个白天是否中毒或醉酒。",
-      "image": "https://i.postimg.cc/hPN5M6qX/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 112,
-      "otherNightReminder": "如果有被恶魔杀死的玩家，唤醒仵作，如果那名玩家的角色标记边有“白天异常”则点头，否则摇头。",
-      "reminders": [],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "死于恶魔",
         "白天异常"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

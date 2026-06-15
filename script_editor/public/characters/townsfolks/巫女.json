@@ -2,33 +2,40 @@
   "id": "巫女",
   "name": "巫女",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "巫女",
-      "name": "巫女",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两个在场角色。每个夜晚*，你要选择除你以外的两名玩家：你会得知他们之中是否有你得知的角色。",
-      "image": "https://www.helloimg.com/i/2024/10/31/6723805f83be7.png",
-      "firstNight": 45,
-      "firstNightReminder": "唤醒巫女，给巫女展示两个在场角色。",
-      "otherNight": 95,
-      "otherNightReminder": "唤醒巫女，让巫女选择除自己以外的两名玩家，根据结果告诉巫女对应信息。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知两个在场角色。每个夜晚*，你要选择除你以外的两名玩家：你会得知他们之中是否有你得知的角色。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2024/10/31/6723805f83be7.png"
+    ],
+    "firstNight": [
+      45
+    ],
+    "firstNightReminder": [
+      "唤醒巫女，给巫女展示两个在场角色。"
+    ],
+    "otherNight": [
+      95
+    ],
+    "otherNightReminder": [
+      "唤醒巫女，让巫女选择除自己以外的两名玩家，根据结果告诉巫女对应信息。"
+    ],
+    "reminders": [
+      [
         "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

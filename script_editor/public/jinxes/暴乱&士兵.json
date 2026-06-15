@@ -6,59 +6,13 @@
     "士兵",
     "暴乱"
   ],
-  "targetCount": 2,
-  "variantCount": 2,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "暴乱&士兵",
-      "name": "暴乱&士兵",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果暴乱在场，士兵免疫所有邪恶阵营的负面效果。",
-      "targets": [
-        "士兵",
-        "暴乱"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    },
-    {
-      "id": "暴乱&士兵",
-      "name": "暴乱&士兵",
-      "variantIndex": 2,
-      "team": "jinx",
-      "sourceTeam": "jinx",
-      "sourceTeams": [
-        "jinx"
-      ],
-      "ability": "如果暴乱提名了士兵，士兵不会死亡",
-      "targets": [
-        "士兵",
-        "暴乱"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "",
-        "targetId": "",
-        "targetName": ""
-      },
-      "rules": [],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果暴乱在场，士兵免疫所有邪恶阵营的负面效果。",
+      "如果暴乱提名了士兵，士兵不会死亡"
+    ]
+  }
 }

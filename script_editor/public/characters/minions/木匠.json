@@ -2,56 +2,46 @@
   "id": "木匠",
   "name": "木匠",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "木匠",
-      "name": "木匠",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "如果你死于处决，提名者当晚变为一个不在游戏中的邪恶爪牙。",
-      "image": "https://img.picui.cn/free/2025/06/15/684dacdf3170a.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 2,
-      "otherNightReminder": "如果木匠在上个白天死于处决，唤醒提名者，告知其变为了一个不在游戏中的爪牙。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你死于处决，提名者当晚变为一个不在游戏中的邪恶爪牙。"
+    ],
+    "image": [
+      "https://img.picui.cn/free/2025/06/15/684dacdf3170a.png",
+      "https://www.bloodstar.xyz/p/jc3635/MatchOfLei/8_matchoflei.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      2,
+      0
+    ],
+    "otherNightReminder": [
+      "如果木匠在上个白天死于处决，唤醒提名者，告知其变为了一个不在游戏中的爪牙。",
+      ""
+    ],
+    "reminders": [
+      [
         "邪恶"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "木匠",
-      "name": "木匠",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "如果你死于处决，提名者当晚变为一个不在游戏中的邪恶爪牙。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/MatchOfLei/8_matchoflei.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "提名"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,34 +2,41 @@
   "id": "魔丸",
   "name": "魔丸",
   "team": "fabled",
-  "teamLabelZh": "传奇角色",
-  "folder": "fabled",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "魔丸",
-      "name": "魔丸",
-      "variantIndex": 1,
-      "team": "fabled",
-      "teams": [
-        "fabled"
-      ],
-      "ability": "持有魔丸的镇民中毒。每晚首次使用自身能力选择持有魔丸的玩家在下个黎明获得魔丸。善良角色的能力无法直接选择自己。[一名镇民持有魔丸]",
-      "image": "https://www.bloodstar.xyz/p/jc3635/NeZhaNaoHai/1_nezhanaohai.png",
-      "firstNight": 1,
-      "firstNightReminder": "在游戏准备时，给一名镇民标记魔丸。给夜晚第一个选择持有的玩家标记“即将获得”。在黎明时将魔丸标记替换即将获得标记。",
-      "otherNight": 101,
-      "otherNightReminder": "给当晚第一个选择持有的玩家标记“即将获得”。在黎明时将魔丸标记替换即将获得标记。如果持有魔丸的玩家已死亡，将魔丸标记转移到顺时针最近的存活玩家上。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "持有魔丸的镇民中毒。每晚首次使用自身能力选择持有魔丸的玩家在下个黎明获得魔丸。善良角色的能力无法直接选择自己。[一名镇民持有魔丸]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/NeZhaNaoHai/1_nezhanaohai.png"
+    ],
+    "firstNight": [
+      1
+    ],
+    "firstNightReminder": [
+      "在游戏准备时，给一名镇民标记魔丸。给夜晚第一个选择持有的玩家标记“即将获得”。在黎明时将魔丸标记替换即将获得标记。"
+    ],
+    "otherNight": [
+      101
+    ],
+    "otherNightReminder": [
+      "给当晚第一个选择持有的玩家标记“即将获得”。在黎明时将魔丸标记替换即将获得标记。如果持有魔丸的玩家已死亡，将魔丸标记转移到顺时针最近的存活玩家上。"
+    ],
+    "reminders": [
+      [
         "即将获得",
         "魔丸"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

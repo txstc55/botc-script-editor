@@ -2,189 +2,70 @@
   "id": "囚犯",
   "name": "囚犯",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 8,
   "totalOccurrenceCount": 10,
-  "variants": [
-    {
-      "id": "囚犯",
-      "name": "囚犯",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "image": "https://i.postimg.cc/fbDF4cbp/image-1.png",
-      "firstNight": 9203,
-      "firstNightReminder": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "otherNight": 3400,
-      "otherNightReminder": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 3,
-      "notes": []
-    },
-    {
-      "id": "囚犯",
-      "name": "囚犯",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个不在场角色。如果超过半数玩家同意释放你，你会变成这个角色和对应的阵营。你不能投票。",
-      "image": "https://www.bloodstar.xyz/p/humlet/che/64_che.png",
-      "firstNight": 13,
-      "firstNightReminder": "唤醒囚犯并向他出示一个不在场的角色标记。诚然，并不推荐向其出示恶魔标记。",
-      "otherNight": 2,
-      "otherNightReminder": "如果“释放”标记被放置在场上，且他没有被告知过自己的角色转变，告知他现在的阵营与角色。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
+      "在你的首个夜晚，你会得知一个不在场角色。如果超过半数玩家同意释放你，你会变成这个角色和对应的阵营。在你被释放前你不能投票。",
+      "你不能投票。在你的首个夜晚，你会得知一个不在场角色。如果多数玩家同意释放你，你会变成该角色和对应的阵营。",
+      "在你的首个夜晚，你会得知一个不在场角色。如果超过半数玩家同意释放你，你会变成这个角色和对应的阵营。你不能投票。"
+    ],
+    "image": [
+      "https://i.postimg.cc/fbDF4cbp/image-1.png",
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter20_assets_of_lei_gallery.png",
+      "https://www.bloodstar.xyz/p/humlet/che/64_che.png"
+    ],
+    "firstNight": [
+      9203,
+      13,
+      3040,
+      46
+    ],
+    "firstNightReminder": [
+      "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
+      "唤醒囚犯并向他出示一个不在场的角色标记。诚然，并不推荐向其出示恶魔标记。",
+      "唤醒囚犯并向他出示一个不在场的角色标记。"
+    ],
+    "otherNight": [
+      2,
+      3400,
+      10,
+      3701,
+      9
+    ],
+    "otherNightReminder": [
+      "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
+      "如果在白天时多数玩家表决同意将你释放，在夜晚唤醒囚犯提示角色的转变。如有必要，提示其阵营得转变。",
+      "如果“释放”标记被放置在场上，且他没有被告知过自己的角色转变，告知他现在的阵营与角色。",
+      "如果在白天时多数玩家表决同意将你释放，在夜晚唤醒囚犯提示角色的转变。如有必要，提示其阵营得转变。并在变化后的角色旁放置标记。",
+      "如果在白天时多数玩家表决同意将你释放，提示其阵营与角色的转变"
+    ],
+    "reminders": [
+      [],
+      [
         "得知",
         "释放"
       ],
-      "remindersGlobal": [
-        "是囚犯"
-      ],
-      "setup": 0,
-      "flavor": "喂，放我出去，我与上任典狱长结有私怨，他公报私仇把我关押在这里。对就这样，解开镣铐，你人真好。哈哈哈哈哈，让我想想该怎么感谢你，用我这把消防斧送你去天堂怎么样？",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "囚犯",
-      "name": "囚犯",
-      "variantIndex": 3,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "image": "https://i.postimg.cc/fbDF4cbp/image-1.png",
-      "firstNight": 46,
-      "firstNightReminder": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "otherNight": 2,
-      "otherNightReminder": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "囚犯",
-      "name": "囚犯",
-      "variantIndex": 4,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个不在场角色。如果超过半数玩家同意释放你，你会变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter20_assets_of_lei_gallery.png",
-      "firstNight": 3040,
-      "firstNightReminder": "唤醒囚犯并向他出示一个不在场的角色标记。诚然，并不推荐向其出示恶魔标记。",
-      "otherNight": 10,
-      "otherNightReminder": "如果在白天时多数玩家表决同意将你释放，提示其阵营与角色的转变",
-      "reminders": [],
-      "remindersGlobal": [
-        "是囚犯"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "囚犯",
-      "name": "囚犯",
-      "variantIndex": 5,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter20_assets_of_lei_gallery.png",
-      "firstNight": 9203,
-      "firstNightReminder": "唤醒囚犯并向他出示一个不在场的角色标记。诚然，并不推荐向其出示恶魔标记。",
-      "otherNight": 2,
-      "otherNightReminder": "如果在白天时多数玩家表决同意将你释放，在夜晚唤醒囚犯提示角色的转变。如有必要，提示其阵营得转变。",
-      "reminders": [
+      [
         "得知"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "囚犯",
-      "name": "囚犯",
-      "variantIndex": 6,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个不在场角色。如果超过半数玩家同意释放你，你会变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter20_assets_of_lei_gallery.png",
-      "firstNight": 9203,
-      "firstNightReminder": "唤醒囚犯并向他出示一个不在场的角色标记。",
-      "otherNight": 2,
-      "otherNightReminder": "如果在白天时多数玩家表决同意将你释放，在夜晚唤醒囚犯提示角色的转变。如有必要，提示其阵营得转变。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "囚犯",
-      "name": "囚犯",
-      "variantIndex": 7,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "image": "https://i.postimg.cc/fbDF4cbp/image-1.png",
-      "firstNight": 9203,
-      "firstNightReminder": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "otherNight": 9,
-      "otherNightReminder": "你知道一个不在场角色。如果超过半数玩家同意释放你，你会在当晚变成这个角色和对应的阵营。在你被释放前你不能投票。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "囚犯",
-      "name": "囚犯",
-      "variantIndex": 8,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你不能投票。在你的首个夜晚，你会得知一个不在场角色。如果多数玩家同意释放你，你会变成该角色和对应的阵营。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter20_assets_of_lei_gallery.png",
-      "firstNight": 9203,
-      "firstNightReminder": "唤醒囚犯并向他出示一个不在场的角色标记。",
-      "otherNight": 3701,
-      "otherNightReminder": "如果在白天时多数玩家表决同意将你释放，在夜晚唤醒囚犯提示角色的转变。如有必要，提示其阵营得转变。并在变化后的角色旁放置标记。",
-      "reminders": [
+      [
         "是囚犯"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      [],
+      [
+        "是囚犯"
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "喂，放我出去，我与上任典狱长结有私怨，他公报私仇把我关押在这里。对就这样，解开镣铐，你人真好。哈哈哈哈哈，让我想想该怎么感谢你，用我这把消防斧送你去天堂怎么样？"
+    ]
+  }
 }

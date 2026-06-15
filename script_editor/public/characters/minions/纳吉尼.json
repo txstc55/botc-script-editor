@@ -2,31 +2,38 @@
   "id": "纳吉尼",
   "name": "纳吉尼",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "纳吉尼",
-      "name": "纳吉尼",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "你是魂器。每个夜晚，你要选择一名玩家：他中毒直到下个黄昏。如果你选择了纳威，他会得知此事。",
-      "image": "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/nagini_hp2_2.png\"]",
-      "firstNight": 3600,
-      "firstNightReminder": "Choose who to poison first.",
-      "otherNight": 6,
-      "otherNightReminder": "Choose who to poison. Potentially inform Neville he was chosen by Nagini (He is still poisoned)",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "You know Voldemort's snake, Neville? He's got a huge snake... Calls it Nagini... It's got to be killed.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你是魂器。每个夜晚，你要选择一名玩家：他中毒直到下个黄昏。如果你选择了纳威，他会得知此事。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/nagini_hp2_2.png\"]"
+    ],
+    "firstNight": [
+      3600
+    ],
+    "firstNightReminder": [
+      "Choose who to poison first."
+    ],
+    "otherNight": [
+      6
+    ],
+    "otherNightReminder": [
+      "Choose who to poison. Potentially inform Neville he was chosen by Nagini (He is still poisoned)"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "You know Voldemort's snake, Neville? He's got a huge snake... Calls it Nagini... It's got to be killed."
+    ]
+  }
 }

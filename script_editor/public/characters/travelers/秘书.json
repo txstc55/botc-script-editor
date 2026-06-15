@@ -2,33 +2,40 @@
   "id": "秘书",
   "name": "秘书",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "秘书",
-      "name": "秘书",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他的能力会转变为相同角色类型的一个其他角色，直到你死亡或离开游戏。",
-      "image": "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/secretary_day_by_day.png",
-      "firstNight": 13,
-      "firstNightReminder": "秘书可以选择一个角色。如果他这么做了，标记秘书已使用，记录该玩家新的能力，之后的夜晚无需再唤醒秘书。",
-      "otherNight": 3,
-      "otherNightReminder": "秘书可以选择一个角色。如果他这么做了，标记秘书已使用，记录该玩家新的能力，之后的夜晚无需再唤醒秘书。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家：他的能力会转变为相同角色类型的一个其他角色，直到你死亡或离开游戏。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/secretary_day_by_day.png"
+    ],
+    "firstNight": [
+      13
+    ],
+    "firstNightReminder": [
+      "秘书可以选择一个角色。如果他这么做了，标记秘书已使用，记录该玩家新的能力，之后的夜晚无需再唤醒秘书。"
+    ],
+    "otherNight": [
+      3
+    ],
+    "otherNightReminder": [
+      "秘书可以选择一个角色。如果他这么做了，标记秘书已使用，记录该玩家新的能力，之后的夜晚无需再唤醒秘书。"
+    ],
+    "reminders": [
+      [
         "已使用"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

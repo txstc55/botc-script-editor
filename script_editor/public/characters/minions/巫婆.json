@@ -2,60 +2,53 @@
   "id": "巫婆",
   "name": "巫婆",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "巫婆",
-      "name": "巫婆",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家并向他提出一项请求：如果请求没有被满足，你们可能会在白天死亡并转变为邪恶。",
-      "image": "https://www.bloodstar.xyz/p/westwind/Goldapple/17_goldapple.png",
-      "firstNight": 15,
-      "firstNightReminder": "巫婆使用能力",
-      "otherNight": 7,
-      "otherNightReminder": "巫婆使用能力",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家并向他提出一项请求：如果请求没有被满足，你们可能会在白天死亡并转变为邪恶。"
+    ],
+    "image": [
+      "https://img.picui.cn/free/2025/04/15/67fe650464050.jpg",
+      "https://www.bloodstar.xyz/p/westwind/Goldapple/17_goldapple.png"
+    ],
+    "firstNight": [
+      15,
+      20
+    ],
+    "firstNightReminder": [
+      "巫婆使用能力",
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家并向他提出一项请求：如果请求没有被满足，你们可能会在白天死亡并转变为邪恶。"
+    ],
+    "otherNight": [
+      15,
+      7
+    ],
+    "otherNightReminder": [
+      "巫婆使用能力",
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家并向他提出一项请求：如果请求没有被满足，你们可能会在白天死亡并转变为邪恶。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "提出请求"
       ],
-      "remindersGlobal": [
-        "邪恶"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "巫婆",
-      "name": "巫婆",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家并向他提出一项请求：如果请求没有被满足，你们可能会在白天死亡并转变为邪恶。",
-      "image": "https://img.picui.cn/free/2025/04/15/67fe650464050.jpg",
-      "firstNight": 20,
-      "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名玩家并向他提出一项请求：如果请求没有被满足，你们可能会在白天死亡并转变为邪恶。",
-      "otherNight": 15,
-      "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名玩家并向他提出一项请求：如果请求没有被满足，你们可能会在白天死亡并转变为邪恶。",
-      "reminders": [
+      [
         "满足",
         "致命毒药"
+      ]
+    ],
+    "remindersGlobal": [
+      [
+        "邪恶"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

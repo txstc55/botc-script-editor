@@ -2,104 +2,60 @@
   "id": "石像鬼",
   "name": "石像鬼",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 4,
   "totalOccurrenceCount": 7,
-  "variants": [
-    {
-      "id": "石像鬼",
-      "name": "石像鬼",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你以为你是一个在场的镇民角色，但其实你不是。如果该镇民死亡，你转变为对立阵营。",
+      "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+      "你以为你是一个在场的镇民角色，但其实你不是。如果该镇民死亡，你在当晚转变为对立阵营。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+      "https://www.bloodstar.xyz/p/hatsukisakana/drg/6_drg.png",
+      "https://www.bloodstar.xyz/p/spdm/SpaceBound/_spacebound.png",
+      "https://i.postimg.cc/R06MDc0D/13.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      13,
+      3,
+      43
+    ],
+    "otherNightReminder": [
+      "",
+      "如果目标死亡，唤醒石像鬼以告知他转为邪恶阵营。",
+      "如果该镇民死亡，你转变为对立阵营。",
+      "石像鬼以为的镇民角色死亡，唤醒石像鬼，告知他变成了与自己当前阵营对立的阵营。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      [
         "是石像鬼"
       ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "石像鬼",
-      "name": "石像鬼",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你以为你是一个在场的镇民角色，但其实你不是。如果该镇民死亡，你在当晚转变为对立阵营。",
-      "image": "https://www.bloodstar.xyz/p/hatsukisakana/drg/6_drg.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "如果目标死亡，唤醒石像鬼以告知他转为邪恶阵营。",
-      "reminders": [],
-      "remindersGlobal": [
+      [
         "是石像鬼",
         "邪恶"
       ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "石像鬼",
-      "name": "石像鬼",
-      "variantIndex": 3,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你以为你是一个在场的镇民角色，但其实你不是。如果该镇民死亡，你转变为对立阵营。",
-      "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/_spacebound.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "如果该镇民死亡，你转变为对立阵营。",
-      "reminders": [],
-      "remindersGlobal": [
-        "是石像鬼"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "石像鬼",
-      "name": "石像鬼",
-      "variantIndex": 4,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你以为你是一个在场的镇民角色，但其实你不是。如果该镇民死亡，你转变为对立阵营。",
-      "image": "https://i.postimg.cc/R06MDc0D/13.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 43,
-      "otherNightReminder": "石像鬼以为的镇民角色死亡，唤醒石像鬼，告知他变成了与自己当前阵营对立的阵营。",
-      "reminders": [],
-      "remindersGlobal": [
+      [
         "变换阵营",
         "是石像鬼"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      1,
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

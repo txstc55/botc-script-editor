@@ -2,58 +2,51 @@
   "id": "害虫",
   "name": "害虫",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "害虫",
-      "name": "害虫",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他跃离且被当作邪恶的害虫。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/111/21_111.png",
-      "firstNight": 14,
-      "firstNightReminder": "1",
-      "otherNight": 2,
-      "otherNightReminder": "1",
-      "reminders": [
-        "失去能力",
-        "虫害"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "害虫",
-      "name": "害虫",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：他腐蚀+1；如果你选择了邻近的存活玩家，改为他腐蚀+2。",
-      "image": "https://www.bloodstar.xyz/p/Yez/nature/11_nature.png",
-      "firstNight": 20,
-      "firstNightReminder": "唤醒害虫，让他指向一名玩家，在他的角色标记旁放置“+1”提示标记，如果他与害虫邻近，“+1”标记替换成“+2”标记。",
-      "otherNight": 16,
-      "otherNightReminder": "唤醒害虫，让他指向一名玩家，在他的角色标记旁放置“+1”提示标记，如果他与害虫邻近，“+1”标记替换成“+2”标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：他腐蚀+1；如果你选择了邻近的存活玩家，改为他腐蚀+2。",
+      "每局游戏限一次，在夜晚时，你可以选择一名玩家：他跃离且被当作邪恶的害虫。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Yez/nature/11_nature.png",
+      "https://www.bloodstar.xyz/p/bluebell/111/21_111.png"
+    ],
+    "firstNight": [
+      14,
+      20
+    ],
+    "firstNightReminder": [
+      "1",
+      "唤醒害虫，让他指向一名玩家，在他的角色标记旁放置“+1”提示标记，如果他与害虫邻近，“+1”标记替换成“+2”标记。"
+    ],
+    "otherNight": [
+      16,
+      2
+    ],
+    "otherNightReminder": [
+      "1",
+      "唤醒害虫，让他指向一名玩家，在他的角色标记旁放置“+1”提示标记，如果他与害虫邻近，“+1”标记替换成“+2”标记。"
+    ],
+    "reminders": [
+      [
         "+1",
         "+2"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "失去能力",
+        "虫害"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

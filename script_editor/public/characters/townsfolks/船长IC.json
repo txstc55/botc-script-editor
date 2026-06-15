@@ -2,35 +2,42 @@
   "id": "船长IC",
   "name": "船长IC",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "船长IC",
-      "name": "船长IC",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择除你以外的两名玩家：如果第一名玩家在今晚死亡，第二名玩家代替他死亡。如果恶魔因为你的能力将要死亡，当晚的死亡由说书人决定。",
-      "image": "[\"https://i.postimg.cc/wvMNqZd4/image.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4,
-      "otherNightReminder": "The Captain chooses 2 players. Mark the 1st as 'Protected' and the 2nd as 'Marked'. :reminder: :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择除你以外的两名玩家：如果第一名玩家在今晚死亡，第二名玩家代替他死亡。如果恶魔因为你的能力将要死亡，当晚的死亡由说书人决定。"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/wvMNqZd4/image.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      4
+    ],
+    "otherNightReminder": [
+      "The Captain chooses 2 players. Mark the 1st as 'Protected' and the 2nd as 'Marked'. :reminder: :reminder:"
+    ],
+    "reminders": [
+      [
         "保护",
         "标记",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

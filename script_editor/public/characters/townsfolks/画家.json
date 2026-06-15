@@ -2,80 +2,54 @@
   "id": "画家",
   "name": "画家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "画家",
-      "name": "画家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个在场角色。每个白天你可以进行一次猜测，每当你猜对谁是你最近得知的角色，当晚你会得知另一个在场角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bounty_hunter.png",
-      "firstNight": 56,
-      "firstNightReminder": "（在进入首个夜晚时立即通知赏金猎人转变的那个镇民他的阵营发生了变化）唤醒赏金猎人，对他指向一名邪恶玩家。",
-      "otherNight": 95,
-      "otherNightReminder": "如果赏金猎人之前得知的玩家死亡，唤醒赏金猎人，对他指向一名新的邪恶玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一个在场角色。每个白天你可以进行一次猜测，每当你猜对谁是你最近得知的角色，当晚你会得知另一个在场角色。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/bounty_hunter.png",
+      "https://www.bloodstar.xyz/p/humlet/Dafenqi/8_dafenqi.png",
+      "https://www.bloodstar.xyz/p/worryhours/yitai/18_yitai.png"
+    ],
+    "firstNight": [
+      56,
+      16,
+      3600
+    ],
+    "firstNightReminder": [
+      "得知一个在场角色，并在该玩家角色旁放置“得知”标记",
+      "（在进入首个夜晚时立即通知赏金猎人转变的那个镇民他的阵营发生了变化）唤醒赏金猎人，对他指向一名邪恶玩家。"
+    ],
+    "otherNight": [
+      95,
+      16,
+      17
+    ],
+    "otherNightReminder": [
+      "如果赏金猎人之前得知的玩家死亡，唤醒赏金猎人，对他指向一名新的邪恶玩家。",
+      "若白天她猜对，得知另一个在场角色，并在该玩家角色旁放置“得知”标记"
+    ],
+    "reminders": [
+      [
         "得知",
         "猜测正确"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "画家",
-      "name": "画家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个在场角色。每个白天你可以进行一次猜测，每当你猜对谁是你最近得知的角色，当晚你会得知另一个在场角色。",
-      "image": "https://www.bloodstar.xyz/p/humlet/Dafenqi/8_dafenqi.png",
-      "firstNight": 16,
-      "firstNightReminder": "得知一个在场角色，并在该玩家角色旁放置“得知”标记",
-      "otherNight": 16,
-      "otherNightReminder": "若白天她猜对，得知另一个在场角色，并在该玩家角色旁放置“得知”标记",
-      "reminders": [
+      [
         "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我的瞳孔能看到血肉下的构图线，当你们争吵时，我会用夜色勾勒出罪恶的轮廓，夜晚的混沌越浓烈，我的画卷就越接近《维特鲁威人》的完美比例。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "画家",
-      "name": "画家",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个在场角色。每个白天你可以进行一次猜测，每当你猜对谁是你最近得知的角色，当晚你会得知另一个在场角色。",
-      "image": "https://www.bloodstar.xyz/p/worryhours/yitai/18_yitai.png",
-      "firstNight": 3600,
-      "firstNightReminder": "得知一个在场角色，并在该玩家角色旁放置“得知”标记",
-      "otherNight": 17,
-      "otherNightReminder": "若白天她猜对，得知另一个在场角色，并在该玩家角色旁放置“得知”标记",
-      "reminders": [
-        "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      "",
+      "我的瞳孔能看到血肉下的构图线，当你们争吵时，我会用夜色勾勒出罪恶的轮廓，夜晚的混沌越浓烈，我的画卷就越接近《维特鲁威人》的完美比例。"
+    ]
+  }
 }

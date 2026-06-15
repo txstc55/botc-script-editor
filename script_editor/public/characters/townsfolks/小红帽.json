@@ -2,59 +2,53 @@
   "id": "小红帽",
   "name": "小红帽",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "小红帽",
-      "name": "小红帽",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一个与上个夜晚不同的角色类型：与你临近的存活玩家均不是这个类型的角色。",
-      "image": "https://i.postimg.cc/sxBcpw3Z/ridinghood-fairy-tale.png",
-      "firstNight": 18,
-      "firstNightReminder": "每个夜晚，你会得知一个与上个夜晚不同的角色类型：与你临近的存活玩家均不是这个类型的角色。",
-      "otherNight": 16,
-      "otherNightReminder": "每个夜晚，你会得知一个与上个夜晚不同的角色类型：与你临近的存活玩家均不是这个类型的角色。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你会得知一个与上个夜晚不同的角色类型：与你临近的存活玩家均不是这个类型的角色。",
+      "每局游戏限一次，在夜晚时，你可以选择一个角色类型：你会得知与你邻近的存活玩家中是否存在该类型的角色。"
+    ],
+    "image": [
+      "https://i.postimg.cc/WbXv300H/ridinghood-fairy-tale.png",
+      "https://i.postimg.cc/sxBcpw3Z/ridinghood-fairy-tale.png"
+    ],
+    "firstNight": [
+      18,
+      24
+    ],
+    "firstNightReminder": [
+      "唤醒小红帽，他要么摇头，要么选择一个角色类型：如果与他邻近的存活的玩家属于该角色类型，点头，否则摇头。然后为他放置“失去能力”标记。",
+      "每个夜晚，你会得知一个与上个夜晚不同的角色类型：与你临近的存活玩家均不是这个类型的角色。"
+    ],
+    "otherNight": [
+      16,
+      23
+    ],
+    "otherNightReminder": [
+      "唤醒小红帽，他要么摇头，要么选择一个角色类型：如果与他邻近的存活的玩家属于该角色类型，点头，否则摇头。然后为他放置“失去能力”标记。",
+      "每个夜晚，你会得知一个与上个夜晚不同的角色类型：与你临近的存活玩家均不是这个类型的角色。"
+    ],
+    "reminders": [
+      [
         "外来者",
         "恶魔",
         "爪牙",
         "镇民"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "小红帽",
-      "name": "小红帽",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色类型：你会得知与你邻近的存活玩家中是否存在该类型的角色。",
-      "image": "https://i.postimg.cc/WbXv300H/ridinghood-fairy-tale.png",
-      "firstNight": 24,
-      "firstNightReminder": "唤醒小红帽，他要么摇头，要么选择一个角色类型：如果与他邻近的存活的玩家属于该角色类型，点头，否则摇头。然后为他放置“失去能力”标记。",
-      "otherNight": 23,
-      "otherNightReminder": "唤醒小红帽，他要么摇头，要么选择一个角色类型：如果与他邻近的存活的玩家属于该角色类型，点头，否则摇头。然后为他放置“失去能力”标记。",
-      "reminders": [
+      [
         "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我的天啊，奶奶你的眼睛真大……",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "我的天啊，奶奶你的眼睛真大……"
+    ]
+  }
 }

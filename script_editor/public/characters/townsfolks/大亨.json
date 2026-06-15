@@ -2,154 +2,57 @@
   "id": "大亨",
   "name": "大亨",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 6,
   "totalOccurrenceCount": 7,
-  "variants": [
-    {
-      "id": "大亨",
-      "name": "大亨",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter10_assets_of_lei_gallery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14403,
-      "otherNightReminder": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
+      "与你握手的玩家之一可能会醉酒。每个夜晚*，你会得知在今天白天时你是否与邪恶玩家握过手。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_3293113105371_3bc86fce.jpg",
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter10_assets_of_lei_gallery.png",
+      "https://i.postimg.cc/9fR9jGRk/image.png",
+      "https://www.helloimg.com/i/2025/03/08/67cbc7b5b4b66.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      "",
+      "告知大亨今天白天同其握手的玩家中是否有邪恶的。"
+    ],
+    "otherNight": [
+      14403,
+      150
+    ],
+    "otherNightReminder": [
+      "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
+      "告知大亨今天白天同其握手的玩家中有几名邪恶的。",
+      "告知大亨今天白天同其握手的玩家中是否有邪恶的。"
+    ],
+    "reminders": [
+      [
         "握手",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "大亨",
-      "name": "大亨",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
-      "image": "https://i.postimg.cc/9fR9jGRk/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "告知大亨今天白天同其握手的玩家中是否有邪恶的。",
-      "otherNight": 150,
-      "otherNightReminder": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
-      "reminders": [
+      [
         "否",
         "是",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "大亨",
-      "name": "大亨",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
-      "image": "https://www.helloimg.com/i/2025/03/08/67cbc7b5b4b66.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 150,
-      "otherNightReminder": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
-      "reminders": [
+      [
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "大亨",
-      "name": "大亨",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_3293113105371_3bc86fce.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14403,
-      "otherNightReminder": "告知大亨今天白天同其握手的玩家中是否有邪恶的。",
-      "reminders": [
-        "握手",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "大亨",
-      "name": "大亨",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "一名与你握手的玩家可能会醉酒直到明天黄昏。每个夜晚*，你会得知你是否在今天白天与邪恶玩家握手。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_3293113105371_3bc86fce.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14403,
-      "otherNightReminder": "告知大亨今天白天同其握手的玩家中有几名邪恶的。",
-      "reminders": [
-        "握手",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "大亨",
-      "name": "大亨",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "与你握手的玩家之一可能会醉酒。每个夜晚*，你会得知在今天白天时你是否与邪恶玩家握过手。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_3293113105371_3bc86fce.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14403,
-      "otherNightReminder": "告知大亨今天白天同其握手的玩家中有几名邪恶的。",
-      "reminders": [
-        "握手",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

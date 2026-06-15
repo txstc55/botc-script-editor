@@ -2,34 +2,41 @@
   "id": "安保人员",
   "name": "安保人员",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "安保人员",
-      "name": "安保人员",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家：如果你选中了爪牙，他当晚不会因其自身能力而被唤醒。",
-      "image": "https://i.postimg.cc/RFdTLnR2/police-officer-head-1.png",
-      "firstNight": 12,
-      "firstNightReminder": "唤醒安保人员，让他指向两名玩家。如果他们之中有爪牙，为他放置不被唤醒标记。",
-      "otherNight": 3,
-      "otherNightReminder": "移除所有标记。唤醒安保人员，让他指向两名玩家。如果他们之中有爪牙，为他放置不被唤醒标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名玩家：如果你选中了爪牙，他当晚不会因其自身能力而被唤醒。"
+    ],
+    "image": [
+      "https://i.postimg.cc/RFdTLnR2/police-officer-head-1.png"
+    ],
+    "firstNight": [
+      12
+    ],
+    "firstNightReminder": [
+      "唤醒安保人员，让他指向两名玩家。如果他们之中有爪牙，为他放置不被唤醒标记。"
+    ],
+    "otherNight": [
+      3
+    ],
+    "otherNightReminder": [
+      "移除所有标记。唤醒安保人员，让他指向两名玩家。如果他们之中有爪牙，为他放置不被唤醒标记。"
+    ],
+    "reminders": [
+      [
         "不被唤醒",
         "被选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

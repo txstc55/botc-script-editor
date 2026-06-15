@@ -2,34 +2,41 @@
   "id": "恐惧",
   "name": "恐惧",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "恐惧",
-      "name": "恐惧",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "与你邻近的存活的玩家（旅行者除外）醉酒且获得错误信息。每个夜晚*，如果当晚没人死亡，你死亡。",
-      "image": "https://i.postimg.cc/NMRVqwtF/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 64,
-      "otherNightReminder": "如果夜晚没人死亡，标记恐惧死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "与你邻近的存活的玩家（旅行者除外）醉酒且获得错误信息。每个夜晚*，如果当晚没人死亡，你死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/NMRVqwtF/image.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      64
+    ],
+    "otherNightReminder": [
+      "如果夜晚没人死亡，标记恐惧死亡。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

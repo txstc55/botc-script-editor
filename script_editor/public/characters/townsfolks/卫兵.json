@@ -2,31 +2,38 @@
   "id": "卫兵",
   "name": "卫兵",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "卫兵",
-      "name": "卫兵",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家和一个非恶魔角色类型：你会得知他们之间顺时针方向上有多少个该角色类型的玩家。如果他们之间顺时针方向上都是相同角色类型玩家，你得知的信息会+1或-1。",
-      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/guardsman_echoes_of_the_past.png",
-      "firstNight": 3025,
-      "firstNightReminder": "The Guardsman uses their ability.",
-      "otherNight": 22,
-      "otherNightReminder": "The Guardsman uses their ability.",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "You're not the <span style=\"color:#006893\">Apothecary</span>. Try again.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择两名玩家和一个非恶魔角色类型：你会得知他们之间顺时针方向上有多少个该角色类型的玩家。如果他们之间顺时针方向上都是相同角色类型玩家，你得知的信息会+1或-1。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/guardsman_echoes_of_the_past.png"
+    ],
+    "firstNight": [
+      3025
+    ],
+    "firstNightReminder": [
+      "The Guardsman uses their ability."
+    ],
+    "otherNight": [
+      22
+    ],
+    "otherNightReminder": [
+      "The Guardsman uses their ability."
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "You're not the <span style=\"color:#006893\">Apothecary</span>. Try again."
+    ]
+  }
 }

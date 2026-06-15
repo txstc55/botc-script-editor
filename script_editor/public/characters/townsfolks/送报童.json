@@ -2,151 +2,58 @@
   "id": "送报童",
   "name": "送报童",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 6,
   "totalOccurrenceCount": 7,
-  "variants": [
-    {
-      "id": "送报童",
-      "name": "送报童",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下询问说书人以得知一条“新闻”，如果你公开宣读了该“新闻”，当天晚上你会得知它是否正确。",
-      "image": "https://www.bloodstar.xyz/p/humlet/baobao/24_baobao.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 95,
-      "otherNightReminder": "得知正确与否",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以私下询问说书人以得知一条“新闻”，如果你公开宣读了该“新闻”，当天晚上你会得知它是否正确。",
+      "在你的首个夜晚，你会得知三个不在场的角色。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/humlet/baobao/24_baobao.png",
+      "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/paperboy1_the_last_cull__.png",
+      "https://www.bloodstar.xyz/p/humlet/FRY7-9/58_fry79.png",
+      "https://www.bloodstar.xyz/p/humlet/ROSE/19_rose.png",
+      "https://www.bloodstar.xyz/p/worryhours/yitai/3_yitai.png"
+    ],
+    "firstNight": [
+      0,
+      3021
+    ],
+    "firstNightReminder": [
+      "",
+      "Show the Paperboy the character token of 3 characters, none of which are in play."
+    ],
+    "otherNight": [
+      95,
+      0,
+      13,
+      14,
+      19,
+      7
+    ],
+    "otherNightReminder": [
+      "得知正确与否",
+      "如果他在白天公开宣读了，唤醒他并告知他“是”或“否”。",
+      ""
+    ],
+    "reminders": [
+      [
         "假新闻",
         "真新闻"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "铛铛！今日头条！今日头条！",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "送报童",
-      "name": "送报童",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下询问说书人以得知一条“新闻”，如果你公开宣读了该“新闻”，当天晚上你会得知它是否正确。",
-      "image": "https://www.bloodstar.xyz/p/humlet/baobao/24_baobao.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 7,
-      "otherNightReminder": "得知正确与否",
-      "reminders": [
-        "假新闻",
-        "真新闻"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "铛铛！今日头条！今日头条！",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送报童",
-      "name": "送报童",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下询问说书人以得知一条“新闻”，如果你公开宣读了该“新闻”，当天晚上你会得知它是否正确。",
-      "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/58_fry79.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "得知正确与否",
-      "reminders": [
-        "假新闻",
-        "真新闻"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "铛铛！今日头条！今日头条！",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送报童",
-      "name": "送报童",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下询问说书人以得知一条“新闻”，如果你公开宣读了该“新闻”，当天晚上你会得知它是否正确。",
-      "image": "https://www.bloodstar.xyz/p/humlet/ROSE/19_rose.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "如果他在白天公开宣读了，唤醒他并告知他“是”或“否”。",
-      "reminders": [
-        "假新闻",
-        "真新闻"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "铛铛！今日头条！今日头条！",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送报童",
-      "name": "送报童",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下询问说书人以得知一条“新闻”，如果你公开宣读了该“新闻”，当天晚上你会得知它是否正确。",
-      "image": "https://www.bloodstar.xyz/p/worryhours/yitai/3_yitai.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "如果他在白天公开宣读了，唤醒他并告知他“是”或“否”。",
-      "reminders": [
-        "假新闻",
-        "真新闻"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "送报童",
-      "name": "送报童",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知三个不在场的角色。",
-      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/paperboy1_the_last_cull__.png",
-      "firstNight": 3021,
-      "firstNightReminder": "Show the Paperboy the character token of 3 characters, none of which are in play.",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Extra, extra! Read all about it! A pestilence spreads in the north! Sadness spreads in the south! Lies spread from your mouth!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "铛铛！今日头条！今日头条！",
+      "",
+      "Extra, extra! Read all about it! A pestilence spreads in the north! Sadness spreads in the south! Lies spread from your mouth!"
+    ]
+  }
 }

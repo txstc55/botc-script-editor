@@ -2,56 +2,50 @@
   "id": "恶作剧者",
   "name": "恶作剧者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "恶作剧者",
-      "name": "恶作剧者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家，如果他是爪牙：他的能力变为“每个夜晚，选择一名玩家：恶魔得知他的角色。”",
-      "image": "https://www.helloimg.com/i/2025/01/11/67823014e8d67.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "唤醒恶作剧者，让他选择一名玩家，如果选中了爪牙，告诉爪牙能力变了。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家，如果他是爪牙：他的能力变为“每个夜晚，选择一名玩家：恶魔得知他的角色。”",
+      "每个夜晚，你要选择一名玩家：如果他是邪恶的，你醉酒直到下个黄昏。如果你未恐慌，你不会死亡。你可能不会死于处决。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/SeaBound/Halloween/trickrtreater_halloween.png",
+      "https://www.helloimg.com/i/2025/01/11/67823014e8d67.png"
+    ],
+    "firstNight": [
+      0,
+      3200
+    ],
+    "firstNightReminder": [
+      "",
+      "恶作剧者选择一名玩家，如果他是邪恶的，恶作剧者会醉酒。"
+    ],
+    "otherNight": [
+      10,
+      4
+    ],
+    "otherNightReminder": [
+      "唤醒恶作剧者，让他选择一名玩家，如果选中了爪牙，告诉爪牙能力变了。",
+      "恶作剧者选择一名玩家，如果他是邪恶的，恶作剧者会醉酒。"
+    ],
+    "reminders": [
+      [
         "恶作剧"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "恶作剧者",
-      "name": "恶作剧者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：如果他是邪恶的，你醉酒直到下个黄昏。如果你未恐慌，你不会死亡。你可能不会死于处决。",
-      "image": "https://www.bloodstar.xyz/p/SeaBound/Halloween/trickrtreater_halloween.png",
-      "firstNight": 3200,
-      "firstNightReminder": "恶作剧者选择一名玩家，如果他是邪恶的，恶作剧者会醉酒。",
-      "otherNight": 4,
-      "otherNightReminder": "恶作剧者选择一名玩家，如果他是邪恶的，恶作剧者会醉酒。",
-      "reminders": [
+      [
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Trick or Treat.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "Trick or Treat."
+    ]
+  }
 }

@@ -2,59 +2,51 @@
   "id": "异能者",
   "name": "异能者",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "异能者",
-      "name": "异能者",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚（即使你死亡的当晚），你查看魔典并选择一个角色，一个提示标记，一名玩家：恶魔得知你的三个选择。",
-      "image": "https://www.helloimg.com/i/2025/01/11/678260413f7f3.png",
-      "firstNight": 45,
-      "firstNightReminder": "唤醒异能者，让他看魔典，然后让他做出选择，然后告诉恶魔。",
-      "otherNight": 12,
-      "otherNightReminder": "唤醒异能者，让他看魔典，然后让他做出选择，然后告诉恶魔。",
-      "reminders": [
-        "选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "异能者",
-      "name": "异能者",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚（即使你死亡的当晚），你查看魔典并选择一个角色，一个提示标记，一名玩家：恶魔得知你的三个选择。",
-      "image": "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/esper_h302_involuntarychoice.png",
-      "firstNight": 3600,
-      "firstNightReminder": "Show the Esper the Grimoire. They select a character, a reminder, and a player by placing their Character, Reminder, and Player reminders by them. Wake the Demon; show them the marked character, reminder token, and point to the marked player.",
-      "otherNight": 8,
-      "otherNightReminder": "Show the Esper the Grimoire. They select a character, a reminder, and a player by placing their Character, Reminder, and Player reminders by them. Wake the Demon; show them the marked character, reminder token, and point to the marked player.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚（即使你死亡的当晚），你查看魔典并选择一个角色，一个提示标记，一名玩家：恶魔得知你的三个选择。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/esper_h302_involuntarychoice.png",
+      "https://www.helloimg.com/i/2025/01/11/678260413f7f3.png"
+    ],
+    "firstNight": [
+      3600,
+      45
+    ],
+    "firstNightReminder": [
+      "Show the Esper the Grimoire. They select a character, a reminder, and a player by placing their Character, Reminder, and Player reminders by them. Wake the Demon; show them the marked character, reminder token, and point to the marked player.",
+      "唤醒异能者，让他看魔典，然后让他做出选择，然后告诉恶魔。"
+    ],
+    "otherNight": [
+      12,
+      8
+    ],
+    "otherNightReminder": [
+      "Show the Esper the Grimoire. They select a character, a reminder, and a player by placing their Character, Reminder, and Player reminders by them. Wake the Demon; show them the marked character, reminder token, and point to the marked player.",
+      "唤醒异能者，让他看魔典，然后让他做出选择，然后告诉恶魔。"
+    ],
+    "reminders": [
+      [
         "提示标记",
         "是",
         "玩家",
         "角色"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "选择"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

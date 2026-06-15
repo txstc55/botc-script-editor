@@ -2,33 +2,40 @@
   "id": "腐蚀",
   "name": "腐蚀",
   "team": "fabled",
-  "teamLabelZh": "传奇角色",
-  "folder": "fabled",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "腐蚀",
-      "name": "腐蚀",
-      "variantIndex": 1,
-      "team": "fabled",
-      "teams": [
-        "fabled"
-      ],
-      "ability": "所有玩家的腐蚀初始为0，最低为0。腐蚀大于3的玩家会在夜晚变成不在场的邪恶恶魔，没能成功变成恶魔的玩家会枯萎。死亡玩家、恶魔和旅行者腐蚀始终为0",
-      "image": "https://www.bloodstar.xyz/p/Yez/nature/_nature.png",
-      "firstNight": 23,
-      "firstNightReminder": "检查所有玩家的腐蚀标记替换成对应的腐蚀程度。如果有人的腐蚀程度大于3，将他的角色标记替换成一个不在场的恶魔角色标记，唤醒该玩家，为他展示“你是”信息标记和该恶魔角色标记，并放置邪恶标记。如果没有可以替换的恶魔角色标记，标记该玩家死亡。说书人整理腐蚀标记。",
-      "otherNight": 19,
-      "otherNightReminder": "检查所有玩家的腐蚀标记替换成对应的腐蚀程度。如果有人的腐蚀程度大于3，将他的角色标记替换成一个不在场的恶魔角色标记，唤醒该玩家，为他展示“你是”信息标记和该恶魔角色标记，并放置邪恶标记。如果没有可以替换的恶魔角色标记，标记该玩家死亡。说书人整理腐蚀标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "所有玩家的腐蚀初始为0，最低为0。腐蚀大于3的玩家会在夜晚变成不在场的邪恶恶魔，没能成功变成恶魔的玩家会枯萎。死亡玩家、恶魔和旅行者腐蚀始终为0"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Yez/nature/_nature.png"
+    ],
+    "firstNight": [
+      23
+    ],
+    "firstNightReminder": [
+      "检查所有玩家的腐蚀标记替换成对应的腐蚀程度。如果有人的腐蚀程度大于3，将他的角色标记替换成一个不在场的恶魔角色标记，唤醒该玩家，为他展示“你是”信息标记和该恶魔角色标记，并放置邪恶标记。如果没有可以替换的恶魔角色标记，标记该玩家死亡。说书人整理腐蚀标记。"
+    ],
+    "otherNight": [
+      19
+    ],
+    "otherNightReminder": [
+      "检查所有玩家的腐蚀标记替换成对应的腐蚀程度。如果有人的腐蚀程度大于3，将他的角色标记替换成一个不在场的恶魔角色标记，唤醒该玩家，为他展示“你是”信息标记和该恶魔角色标记，并放置邪恶标记。如果没有可以替换的恶魔角色标记，标记该玩家死亡。说书人整理腐蚀标记。"
+    ],
+    "reminders": [
+      [
         "枯萎"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,35 +2,42 @@
   "id": "机长",
   "name": "机长",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "机长",
-      "name": "机长",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个在场的外来者角色（或者你会得知没有外来者在场）。每局游戏限一次，在夜晚时*，你可以选择一名存活玩家：如果你选中了外来者，他失去能力。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596239_197011_3062.png",
-      "firstNight": 15,
-      "firstNightReminder": "向机长展示一个在场的外来者角色标记，或者告知他没有外来者。",
-      "otherNight": 14,
-      "otherNightReminder": "机长选择不使用能力，或者指向一名玩家，如果指向了外来者，则其失去能力。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一个在场的外来者角色（或者你会得知没有外来者在场）。每局游戏限一次，在夜晚时*，你可以选择一名存活玩家：如果你选中了外来者，他失去能力。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1691596239_197011_3062.png"
+    ],
+    "firstNight": [
+      15
+    ],
+    "firstNightReminder": [
+      "向机长展示一个在场的外来者角色标记，或者告知他没有外来者。"
+    ],
+    "otherNight": [
+      14
+    ],
+    "otherNightReminder": [
+      "机长选择不使用能力，或者指向一名玩家，如果指向了外来者，则其失去能力。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "对应外来者",
         "签证护照"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,33 +2,40 @@
   "id": "祭品",
   "name": "祭品",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "祭品",
-      "name": "祭品",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择杀死自己，随后所有玩家解除恐慌状态。",
-      "image": "https://www.bloodstar.xyz/p/SeaBound/Halloween/sacrifice_halloween.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "如果祭品选择使用他的能力, 他死亡且所有玩家解除恐慌状态。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择杀死自己，随后所有玩家解除恐慌状态。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/SeaBound/Halloween/sacrifice_halloween.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      14
+    ],
+    "otherNightReminder": [
+      "如果祭品选择使用他的能力, 他死亡且所有玩家解除恐慌状态。"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Run! I'll hold them off!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Run! I'll hold them off!"
+    ]
+  }
 }

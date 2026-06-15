@@ -2,34 +2,41 @@
   "id": "经理",
   "name": "经理",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "经理",
-      "name": "经理",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：当晚他的能力可以生效两次，然后他可能死亡。",
-      "image": "https://www.bloodstar.xyz/p/Essler/The_Delta_Expedition/manager_the_delta_expedition.png",
-      "firstNight": 12,
-      "firstNightReminder": "选择一名玩家：当晚他可以行动两次，然后他可能死亡。",
-      "otherNight": 5,
-      "otherNightReminder": "选择一名玩家：当晚他可以行动两次，然后他可能死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：当晚他的能力可以生效两次，然后他可能死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Essler/The_Delta_Expedition/manager_the_delta_expedition.png"
+    ],
+    "firstNight": [
+      12
+    ],
+    "firstNightReminder": [
+      "选择一名玩家：当晚他可以行动两次，然后他可能死亡。"
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "选择一名玩家：当晚他可以行动两次，然后他可能死亡。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "行动两次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "You haven't been meeting your quota. If you need more time to work, it will have to come from your sleep schedule.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "You haven't been meeting your quota. If you need more time to work, it will have to come from your sleep schedule."
+    ]
+  }
 }

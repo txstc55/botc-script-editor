@@ -2,56 +2,47 @@
   "id": "幸福",
   "name": "幸福",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "幸福",
-      "name": "幸福",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名玩家：他会得知被幸福选中，且他只能与你一同获胜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
-      "firstNight": 19,
-      "firstNightReminder": "在你的首个夜晚，你要选择一名玩家：他会得知被幸福选中，且他只能与你一同获胜。",
-      "otherNight": 0,
-      "otherNightReminder": "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一名玩家：他会得知被幸福选中，且他只能与你一同获胜。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
+      "https://i.postimg.cc/Jzt27X89/image.png"
+    ],
+    "firstNight": [
+      19,
+      48
+    ],
+    "firstNightReminder": [
+      "在你的首个夜晚，你要选择一名玩家：他会得知被幸福选中，且他只能与你一同获胜。",
+      "幸福指向一名玩家，标记快乐。唤醒那名玩家，向他展示该角色能力对你生效提示卡和幸福角色标记。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
+      ""
+    ],
+    "reminders": [
+      [
         "幸福的"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "幸福",
-      "name": "幸福",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名玩家：他会得知被幸福选中，且他只能与你一同获胜。",
-      "image": "https://i.postimg.cc/Jzt27X89/image.png",
-      "firstNight": 48,
-      "firstNightReminder": "幸福指向一名玩家，标记快乐。唤醒那名玩家，向他展示该角色能力对你生效提示卡和幸福角色标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "快乐"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

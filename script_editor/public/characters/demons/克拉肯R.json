@@ -2,33 +2,40 @@
   "id": "克拉肯R",
   "name": "克拉肯R",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "克拉肯R",
-      "name": "克拉肯R",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。当你首次杀死外来者时，与他邻近的存活的善良玩家之一会死亡。[-1或+1外来者]",
-      "image": "[\"https://i.postimg.cc/wMssJNMn/image.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 7,
-      "otherNightReminder": "The Kraken chooses a player. :reminder: If that player is an Outsider (once only): Kill a neighboring living good player. :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。当你首次杀死外来者时，与他邻近的存活的善良玩家之一会死亡。[-1或+1外来者]"
+    ],
+    "image": [
+      "[\"https://i.postimg.cc/wMssJNMn/image.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      7
+    ],
+    "otherNightReminder": [
+      "The Kraken chooses a player. :reminder: If that player is an Outsider (once only): Kill a neighboring living good player. :reminder:"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

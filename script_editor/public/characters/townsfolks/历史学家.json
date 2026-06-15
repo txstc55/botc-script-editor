@@ -2,55 +2,47 @@
   "id": "历史学家",
   "name": "历史学家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "历史学家",
-      "name": "历史学家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在白天时，你可以私下询问说书人以得知说书人将某名玩家评选为最具影响力的玩家的原因。",
-      "image": "https://www.bloodstar.xyz//p//Deodar2//noone//5_noone.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知三个角色，其中有且只有一个角色在场。",
+      "每局游戏限一次，在白天时，你可以私下询问说书人以得知说书人将某名玩家评选为最具影响力的玩家的原因。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz//p//Deodar2//noone//5_noone.png",
+      "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/historian_echoes_of_the_past.png"
+    ],
+    "firstNight": [
+      0,
+      3021
+    ],
+    "firstNightReminder": [
+      "",
+      "Wake the Historian & show them 3 characters in any order. Exactly 1 is in-play, the other 2 are out-of-play. Then, put the Historian to sleep."
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "失去能力",
         "得知"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "历史学家",
-      "name": "历史学家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知三个角色，其中有且只有一个角色在场。",
-      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/historian_echoes_of_the_past.png",
-      "firstNight": 3021,
-      "firstNightReminder": "Wake the Historian & show them 3 characters in any order. Exactly 1 is in-play, the other 2 are out-of-play. Then, put the Historian to sleep.",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Some say that history is unimportant in this scenario. I beg to differ; knowing the town's history helps narrow down what we're dealing with.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "Some say that history is unimportant in this scenario. I beg to differ; knowing the town's history helps narrow down what we're dealing with."
+    ]
+  }
 }

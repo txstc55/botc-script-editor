@@ -2,56 +2,50 @@
   "id": "浪漫主义者",
   "name": "浪漫主义者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "浪漫主义者",
-      "name": "浪漫主义者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一名玩家。当他首次将要死亡时，他不会死亡，然后你会在当晚得知另一名玩家。",
-      "image": "https://i.postimg.cc/SNPBf0Qh/image.png",
-      "firstNight": 35,
-      "firstNightReminder": "标记一名玩家为情人，指向该玩家。",
-      "otherNight": 14,
-      "otherNightReminder": "如果情人本应死亡，但因浪漫主义者的能力没有死亡，标记另一名玩家为情人，唤醒浪漫主义者，指向该玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一名玩家。当他首次将要死亡时，他不会死亡，然后你会在当晚得知另一名玩家。",
+      "在你的首个夜晚，你会得知一名玩家：当他首次即将死亡时，他不会死亡，随后你会得知另一名与之前不同的玩家。"
+    ],
+    "image": [
+      "https://i.postimg.cc/SNPBf0Qh/image.png",
+      "https://www.bloodstar.xyz/p/Pip/Revolution_of_a_Lifetime/romantic_revolution_of_a_lifetime.png"
+    ],
+    "firstNight": [
+      3042,
+      35
+    ],
+    "firstNightReminder": [
+      "2",
+      "标记一名玩家为情人，指向该玩家。"
+    ],
+    "otherNight": [
+      14,
+      18
+    ],
+    "otherNightReminder": [
+      "3",
+      "如果情人本应死亡，但因浪漫主义者的能力没有死亡，标记另一名玩家为情人，唤醒浪漫主义者，指向该玩家。"
+    ],
+    "reminders": [
+      [
         "情人"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "浪漫主义者",
-      "name": "浪漫主义者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一名玩家：当他首次即将死亡时，他不会死亡，随后你会得知另一名与之前不同的玩家。",
-      "image": "https://www.bloodstar.xyz/p/Pip/Revolution_of_a_Lifetime/romantic_revolution_of_a_lifetime.png",
-      "firstNight": 3042,
-      "firstNightReminder": "2",
-      "otherNight": 18,
-      "otherNightReminder": "3",
-      "reminders": [
+      [
         "浪漫化"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "C'est la vie...",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "C'est la vie..."
+    ]
+  }
 }

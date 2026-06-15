@@ -2,33 +2,40 @@
   "id": "传谕者",
   "name": "传谕者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "传谕者",
-      "name": "传谕者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他当晚死亡(即使你选择了你自己)，你会得知一个在场的角色。",
-      "image": "https://i.postimg.cc/fT2Mk94k/prophesier-shadowed-intentions.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4,
-      "otherNightReminder": "The Prophesier points to a player. Put them back to sleep. If that player dies later tonight, wake the Prophesier again and show thema character token.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：如果他当晚死亡(即使你选择了你自己)，你会得知一个在场的角色。"
+    ],
+    "image": [
+      "https://i.postimg.cc/fT2Mk94k/prophesier-shadowed-intentions.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      4
+    ],
+    "otherNightReminder": [
+      "The Prophesier points to a player. Put them back to sleep. If that player dies later tonight, wake the Prophesier again and show thema character token."
+    ],
+    "reminders": [
+      [
         "预知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "过去对未来大有启示。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "过去对未来大有启示。"
+    ]
+  }
 }

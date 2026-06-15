@@ -2,130 +2,60 @@
   "id": "死神",
   "name": "死神",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 5,
   "totalOccurrenceCount": 6,
-  "variants": [
-    {
-      "id": "死神",
-      "name": "死神",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。如果你以此方式杀死了恶魔，你与他交换角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 52,
-      "otherNightReminder": "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时*，你可以选择一名玩家:他死亡。 如果你以此方式杀死了恶魔，你与他交换角色。",
+      "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。如果你以此方式杀死了恶魔，你与他交换角色。",
+      "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。如果你以此方式杀死恶魔，你与恶魔交换角色。",
+      "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。如果你以此法杀死了恶魔，你与其交换角色。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
+      "https://free.picui.cn/free/2025/12/17/6941c9119860f.png",
+      "https://i.postimg.cc/BZyNq9C5/shinigami-fairy-tale.png",
+      "https://i.postimg.cc/RZYx19s1/shinigami-fairy-tale.png",
+      "https://www.bloodstar.xyz/p/smallbear/jinhulun/17_jinhulun.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      52,
+      10,
+      16,
+      6,
+      8
+    ],
+    "otherNightReminder": [
+      "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
+      "每局游戏限一次，在夜晚时*，你可以选择一名玩家:他死亡。 如果你以此方式杀死了恶魔，你与他交换角色。",
+      "唤醒死神，他要么摇头，要么指向一名玩家：他死亡。如果那名玩家是恶魔，交换他们的角色。",
+      "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。如果你以此法杀死了恶魔，你与其交换角色。"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "死神",
-      "name": "死神",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家:他死亡。 如果你以此方式杀死了恶魔，你与他交换角色。",
-      "image": "https://www.bloodstar.xyz/p/smallbear/jinhulun/17_jinhulun.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 6,
-      "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以选择一名玩家:他死亡。 如果你以此方式杀死了恶魔，你与他交换角色。",
-      "reminders": [
+      [
         "死亡",
         "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "死神",
-      "name": "死神",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家:他死亡。 如果你以此方式杀死了恶魔，你与他交换角色。",
-      "image": "https://free.picui.cn/free/2025/12/17/6941c9119860f.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以选择一名玩家:他死亡。 如果你以此方式杀死了恶魔，你与他交换角色。",
-      "reminders": [
-        "死亡",
-        "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "死神",
-      "name": "死神",
-      "variantIndex": 4,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。如果你以此法杀死了恶魔，你与其交换角色。",
-      "image": "https://i.postimg.cc/BZyNq9C5/shinigami-fairy-tale.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 10,
-      "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。如果你以此法杀死了恶魔，你与其交换角色。",
-      "reminders": [
-        "失去能力",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "死神",
-      "name": "死神",
-      "variantIndex": 5,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡。如果你以此方式杀死恶魔，你与恶魔交换角色。",
-      "image": "https://i.postimg.cc/RZYx19s1/shinigami-fairy-tale.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "唤醒死神，他要么摇头，要么指向一名玩家：他死亡。如果那名玩家是恶魔，交换他们的角色。",
-      "reminders": [
-        "失去能力",
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "大限已至，汝命休矣。",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "大限已至，汝命休矣。"
+    ]
+  }
 }

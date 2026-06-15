@@ -6,40 +6,12 @@
     "瘟疫医生",
     "谜题魔"
   ],
-  "targetCount": 2,
-  "variantCount": 1,
+  "targetDetectionNotes": [],
+  "issueNotes": [],
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "瘟疫医生 & 谜题魔",
-      "name": "瘟疫医生 & 谜题魔",
-      "variantIndex": 1,
-      "team": "jinx",
-      "sourceTeam": "nested jinx",
-      "sourceTeams": [
-        "nested jinx"
-      ],
-      "ability": "如果说书人获得了谜题魔的能力，且场上不存在谜题魔，那么猜测谁是谜题魔时必须有至少2名善良玩家猜测说书人是谜题魔，否则邪恶阵营获胜。",
-      "targets": [
-        "瘟疫医生",
-        "谜题魔"
-      ],
-      "targetCount": 2,
-      "occurrenceCount": 1,
-      "rule": {
-        "sourceCharacter": "瘟疫医生",
-        "targetId": "mitimo",
-        "targetName": "谜题魔"
-      },
-      "rules": [
-        {
-          "sourceCharacter": "瘟疫医生",
-          "targetId": "mitimo",
-          "targetName": "谜题魔"
-        }
-      ],
-      "targetDetectionNotes": [],
-      "issueNotes": []
-    }
-  ]
+  "variants": {
+    "ability": [
+      "如果说书人获得了谜题魔的能力，且场上不存在谜题魔，那么猜测谁是谜题魔时必须有至少2名善良玩家猜测说书人是谜题魔，否则邪恶阵营获胜。"
+    ]
+  }
 }

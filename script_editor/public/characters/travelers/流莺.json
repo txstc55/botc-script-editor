@@ -2,332 +2,63 @@
   "id": "流莺",
   "name": "流莺",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 14,
   "totalOccurrenceCount": 40,
-  "variants": [
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
+      "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的身份，但是你们两个可能同时死亡。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/harlot.png",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/harlot.png",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/8/89/Harlot.png/300px-Harlot.png",
+      "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/8_inthegr_58.png",
+      "https://img.picui.cn/free/2025/06/19/6853c34ca7a55.png",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/89/qz7yelil5pvop2evvzmme6i5znmf5cg.png",
+      "https://www.bloodstar.xyz/p/Jungle/The_Radiance_Descends/27_the_radiance_descends.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      1,
+      2,
+      11,
+      3,
+      130
+    ],
+    "otherNightReminder": [
+      "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
+      "唤醒流莺。让流莺指向任意一名玩家。让流莺重新入睡。唤醒被选中的玩家，对该玩家展示“该角色的能力对你生效”提示标记和流莺角色标记。该玩家需要通过点头表示是，摇头表示否。然后让该玩家重新入睡。",
+      "选择一名玩家，你得知他的角色。",
+      "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。"
+    ],
+    "reminders": [
+      [
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 10,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 2,
-      "team": "traveler",
-      "teams": [
-        "traveler"
+      [
+        "Dead"
       ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "唤醒流莺。让流莺指向任意一名玩家。让流莺重新入睡。唤醒被选中的玩家，对该玩家展示“该角色的能力对你生效”提示标记和流莺角色标记。该玩家需要通过点头表示是，摇头表示否。然后让该玩家重新入睡。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 9,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 3,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 5,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 4,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/89/Harlot.png/300px-Harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 4,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 5,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 2,
-      "otherNightReminder": "唤醒流莺。让流莺指向任意一名玩家。让流莺重新入睡。唤醒被选中的玩家，对该玩家展示“该角色的能力对你生效”提示标记和流莺角色标记。该玩家需要通过点头表示是，摇头表示否。然后让该玩家重新入睡。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 6,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/8_inthegr_58.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "选择一名玩家，你得知他的角色。",
-      "reminders": [
+      [
         "被选择"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 7,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/89/Harlot.png/300px-Harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
-        "Dead"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 8,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
+      [
         "致灾"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 9,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的身份，但是你们两个可能同时死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 1,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
-        "Dead"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 10,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 2,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 11,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/89/qz7yelil5pvop2evvzmme6i5znmf5cg.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 2,
-      "otherNightReminder": "唤醒流莺。让流莺指向任意一名玩家。让流莺重新入睡。唤醒被选中的玩家，对该玩家展示“该角色的能力对你生效”提示标记和流莺角色标记。该玩家需要通过点头表示是，摇头表示否。然后让该玩家重新入睡。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 12,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://img.picui.cn/free/2025/06/19/6853c34ca7a55.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 13,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://www.bloodstar.xyz/p/Jungle/The_Radiance_Descends/27_the_radiance_descends.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 3,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "流莺",
-      "name": "流莺",
-      "variantIndex": 14,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/harlot.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 130,
-      "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

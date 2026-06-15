@@ -2,98 +2,58 @@
   "id": "阴谋家",
   "name": "阴谋家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 4,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "阴谋家",
-      "name": "阴谋家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下访问说书人以得知一条能够妨害占据优势的阵营获胜的建议。",
-      "image": "https://www.bloodstar.xyz//p//Deodar2//noone//14_noone.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "阴谋家",
-      "name": "阴谋家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下访问说书人以得知一条能够妨害占据优势的阵营获胜的建议。",
-      "image": "https://www.bloodstar.xyz/p/fake/TheOne/_theone.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "阴谋家",
-      "name": "阴谋家",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一名邪恶玩家或外来者。如果你的邻座存在邪恶玩家，你得知错误信息。",
-      "image": "https://i.postimg.cc/RCcqPDWY/image.webp",
-      "firstNight": 40,
-      "firstNightReminder": "唤醒阴谋家，对他指向一名邪恶玩家或外来者。",
-      "otherNight": 81,
-      "otherNightReminder": "唤醒阴谋家，对他指向一名邪恶玩家或外来者。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你可以私下访问说书人以得知一条能够妨害占据优势的阵营获胜的建议。",
+      "每个夜晚，你会得知一名邪恶玩家或外来者。如果你的邻座存在邪恶玩家，你得知错误信息。",
+      "每个夜晚，你会得知一名邪恶玩家或外来者。如果你的邻座存在非旅行者的邪恶玩家，你得知错误信息。"
+    ],
+    "image": [
+      "https://i.postimg.cc/RCcqPDWY/image.webp",
+      "https://www.bloodstar.xyz//p//Deodar2//noone//14_noone.png",
+      "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/conspiracist_the_last_cull__.png",
+      "https://www.bloodstar.xyz/p/fake/TheOne/_theone.png"
+    ],
+    "firstNight": [
+      0,
+      3020,
+      40
+    ],
+    "firstNightReminder": [
+      "",
+      "Point to an evil player or an Outsider. Recall that if they have the \"false info\" reminder token, that you must show them a player which is neither (most of the time, this is a Townsfolk).",
+      "唤醒阴谋家，对他指向一名邪恶玩家或外来者。"
+    ],
+    "otherNight": [
+      0,
+      18,
+      81
+    ],
+    "otherNightReminder": [
+      "",
+      "Point to an evil player or an Outsider. Recall that if they have the \"false info\" reminder token, that you must show them a player which is neither (most of the time, this is a Townsfolk).",
+      "唤醒阴谋家，对他指向一名邪恶玩家或外来者。"
+    ],
+    "reminders": [
+      [],
+      [
         "错误"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "阴谋家",
-      "name": "阴谋家",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一名邪恶玩家或外来者。如果你的邻座存在非旅行者的邪恶玩家，你得知错误信息。",
-      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/conspiracist_the_last_cull__.png",
-      "firstNight": 3020,
-      "firstNightReminder": "Point to an evil player or an Outsider. Recall that if they have the \"false info\" reminder token, that you must show them a player which is neither (most of the time, this is a Townsfolk).",
-      "otherNight": 18,
-      "otherNightReminder": "Point to an evil player or an Outsider. Recall that if they have the \"false info\" reminder token, that you must show them a player which is neither (most of the time, this is a Townsfolk).",
-      "reminders": [
+      [
         "错误信息"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Don't you see it? Just beyond the edge of our eyes? They're working together...everyone is working together...I'm so glad you believe and trust me.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "Don't you see it? Just beyond the edge of our eyes? They're working together...everyone is working together...I'm so glad you believe and trust me."
+    ]
+  }
 }

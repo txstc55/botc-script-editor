@@ -2,33 +2,40 @@
   "id": "豪赌客",
   "name": "豪赌客",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "豪赌客",
-      "name": "豪赌客",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：他死亡。如果猜测正确，你要额外选择一名玩家：他死亡。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/highroller_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12,
-      "otherNightReminder": "让豪赌客指向一名玩家，并指向角色列表上的一个角色，该玩家死亡。如果猜测正确，再次让豪赌客指向一名其他玩家，该玩家死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家并猜测他的角色：他死亡。如果猜测正确，你要额外选择一名玩家：他死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/highroller_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      12
+    ],
+    "otherNightReminder": [
+      "让豪赌客指向一名玩家，并指向角色列表上的一个角色，该玩家死亡。如果猜测正确，再次让豪赌客指向一名其他玩家，该玩家死亡。"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Double or nothing... all on red.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Double or nothing... all on red."
+    ]
+  }
 }

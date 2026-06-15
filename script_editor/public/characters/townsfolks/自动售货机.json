@@ -2,31 +2,38 @@
   "id": "自动售货机",
   "name": "自动售货机",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "自动售货机",
-      "name": "自动售货机",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一个邪恶角色：你会得知两名存活的玩家，他们均不为该角色。",
-      "image": "[\"https://www.bloodstar.xyz/p/Rowlf/Reddwarf/fridge_reddwarf.png\"]",
-      "firstNight": 3007,
-      "firstNightReminder": "Wake the player and have them point to an evil character on the script. Point to two players and then put them back to sleep",
-      "otherNight": 18,
-      "otherNightReminder": "Wake the player and have them point to an evil character on the script. Point to two players and then put them back to sleep",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一个邪恶角色：你会得知两名存活的玩家，他们均不为该角色。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/Rowlf/Reddwarf/fridge_reddwarf.png\"]"
+    ],
+    "firstNight": [
+      3007
+    ],
+    "firstNightReminder": [
+      "Wake the player and have them point to an evil character on the script. Point to two players and then put them back to sleep"
+    ],
+    "otherNight": [
+      18
+    ],
+    "otherNightReminder": [
+      "Wake the player and have them point to an evil character on the script. Point to two players and then put them back to sleep"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

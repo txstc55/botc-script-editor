@@ -2,188 +2,77 @@
   "id": "通灵师",
   "name": "通灵师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 8,
   "totalOccurrenceCount": 10,
-  "variants": [
-    {
-      "id": "通灵师",
-      "name": "通灵师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择三名存活玩家，如果他们的角色类型都不相同，他们中一名玩家死亡。",
+      "每个白天，你可以拜访说书人并给出一个关键词，你得知一条相关信息。如果你邻座的存活玩家中存在邪恶，你获得错误的信息。",
+      "每个夜晚*，你会得知(从未得知过的)当晚之前死亡玩家的角色。",
+      "每个夜晚*，你可以选择一名死亡的玩家:你会得知他的角色。",
+      "每个白天，你可以私下拜访说书人并给出一个关键词。你会得知一条与之相关的信息。如果与你邻近的存活玩家中有邪恶的，你会获得错误的信息。",
+      "每局游戏限一次，在夜晚时*，你可以得知死亡玩家中哪些是邪恶的。",
+      "每局游戏限一次，在夜晚时*，你可以选择一个角色：如果该角色在场且已死亡，你们一同被唤醒。",
+      "每局游戏限一次，在白天时，你可以私下询问说书人一个问题，你会得知该问题的多个答案，至少有一个答案是正确的。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz//p//comm503//DeathBetween//psychic_deathbetween.png",
+      "https://www.bloodstar.xyz/p/meiosis/clockparadox/5_clockparadox.png",
+      "https://i.postimg.cc/7h4ZM8X6/clairvoyant-shadowed-intentions.png",
+      "https://s21.ax1x.com/2025/07/05/pVK4hjO.png",
+      "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/medium_the_last_cull__.png",
+      "https://www.bloodstar.xyz/p/Lee/Recovery/9_recovery.png",
+      "https://www.bloodstar.xyz/p/ligohigh1991/NewHero/6_newhero.png",
+      "https://youke1.picui.cn/s1/2025/07/29/68889967c7d77.png"
+    ],
+    "firstNight": [
+      0,
+      10
+    ],
+    "firstNightReminder": [
+      "",
+      "每局游戏限一次，在夜晚时*，你可以选择一个角色：如果该角色在场且已死亡，你们一同被唤醒。"
+    ],
+    "otherNight": [
+      0,
+      600,
+      11301,
+      16,
+      19
+    ],
+    "otherNightReminder": [
+      "",
+      "唤醒通灵师，让他选择三名存活玩家。",
+      "The Medium will either nod or shake their head. If they nod, point to every dead player that is evil. If there are no dead evil players, shake your head \"no\" instead. Put the Medium to sleep. If they nod, the Medium loses their ability — mark them with the \"No Ability\" reminder and remove their night token from the night sheet. (The Medium won’t wake again.)",
+      "他会得知(从未得知过的)当晚之前死亡玩家的角色。",
+      "每个夜晚*，你可以选择一名死亡的玩家:你会得知他的角色。"
+    ],
+    "reminders": [
+      [],
+      [
+        "失去能力"
       ],
-      "ability": "每个白天，你可以拜访说书人并给出一个关键词，你得知一条相关信息。如果你邻座的存活玩家中存在邪恶，你获得错误的信息。",
-      "image": "https://www.bloodstar.xyz//p//comm503//DeathBetween//psychic_deathbetween.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "通灵师",
-      "name": "通灵师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择三名存活玩家，如果他们的角色类型都不相同，他们中一名玩家死亡。",
-      "image": "https://www.bloodstar.xyz/p/meiosis/clockparadox/5_clockparadox.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 600,
-      "otherNightReminder": "唤醒通灵师，让他选择三名存活玩家。",
-      "reminders": [
+      [
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "通灵师",
-      "name": "通灵师",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以私下拜访说书人并给出一个关键词。你会得知一条与之相关的信息。如果与你邻近的存活玩家中有邪恶的，你会获得错误的信息。",
-      "image": "https://www.bloodstar.xyz/p/Lee/Recovery/9_recovery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "通灵师",
-      "name": "通灵师",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个问题，你会得知该问题的多个答案，至少有一个答案是正确的。",
-      "image": "https://i.postimg.cc/7h4ZM8X6/clairvoyant-shadowed-intentions.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我怎会知晓？啊，你问得正好！",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "通灵师",
-      "name": "通灵师",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以得知死亡玩家中哪些是邪恶的。",
-      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/medium_the_last_cull__.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "The Medium will either nod or shake their head. If they nod, point to every dead player that is evil. If there are no dead evil players, shake your head \"no\" instead. Put the Medium to sleep. If they nod, the Medium loses their ability — mark them with the \"No Ability\" reminder and remove their night token from the night sheet. (The Medium won’t wake again.)",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "I like to be honest with my clients. Your grandfather is a real حمار.",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "通灵师",
-      "name": "通灵师",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知(从未得知过的)当晚之前死亡玩家的角色。",
-      "image": "https://www.bloodstar.xyz/p/ligohigh1991/NewHero/6_newhero.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "他会得知(从未得知过的)当晚之前死亡玩家的角色。",
-      "reminders": [
+      [
         "已得知"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "无论是生还是死，你的灵魂都会存在。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "通灵师",
-      "name": "通灵师",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名死亡的玩家:你会得知他的角色。",
-      "image": "https://s21.ax1x.com/2025/07/05/pVK4hjO.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11301,
-      "otherNightReminder": "每个夜晚*，你可以选择一名死亡的玩家:你会得知他的角色。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "通灵师",
-      "name": "通灵师",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时*，你可以选择一个角色：如果该角色在场且已死亡，你们一同被唤醒。",
-      "image": "https://youke1.picui.cn/s1/2025/07/29/68889967c7d77.png",
-      "firstNight": 10,
-      "firstNightReminder": "每局游戏限一次，在夜晚时*，你可以选择一个角色：如果该角色在场且已死亡，你们一同被唤醒。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "通灵"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "I like to be honest with my clients. Your grandfather is a real حمار.",
+      "我怎会知晓？啊，你问得正好！",
+      "无论是生还是死，你的灵魂都会存在。"
+    ]
+  }
 }

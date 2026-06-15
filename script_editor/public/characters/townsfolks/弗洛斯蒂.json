@@ -2,35 +2,42 @@
   "id": "弗洛斯蒂",
   "name": "弗洛斯蒂",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "弗洛斯蒂",
-      "name": "弗洛斯蒂",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，首个使用自身能力选择了你的邪恶玩家会醉酒直到下个黄昏，即使你已死亡，然后你会得知该玩家的角色并死亡。",
-      "image": "[\"https://chillclocktower.com/homebrew/merrryclocktower/frosty.png\"]",
-      "firstNight": 50,
-      "firstNightReminder": "If Frosty died tonight, wake them and show them the token of the first evil character that selected them",
-      "otherNight": 50,
-      "otherNightReminder": "If Frosty died tonight, wake them and show them the token of the first evil character that selected them",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，首个使用自身能力选择了你的邪恶玩家会醉酒直到下个黄昏，即使你已死亡，然后你会得知该玩家的角色并死亡。"
+    ],
+    "image": [
+      "[\"https://chillclocktower.com/homebrew/merrryclocktower/frosty.png\"]"
+    ],
+    "firstNight": [
+      50
+    ],
+    "firstNightReminder": [
+      "If Frosty died tonight, wake them and show them the token of the first evil character that selected them"
+    ],
+    "otherNight": [
+      50
+    ],
+    "otherNightReminder": [
+      "If Frosty died tonight, wake them and show them the token of the first evil character that selected them"
+    ],
+    "reminders": [
+      [
         "得知",
         "死亡",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "In a whirl of glistening snow, Frosty dances with joy aglow, bringing laughter wherever he goes, as his magic hat bestows",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "In a whirl of glistening snow, Frosty dances with joy aglow, bringing laughter wherever he goes, as his magic hat bestows"
+    ]
+  }
 }

@@ -2,34 +2,41 @@
   "id": "恶作剧者 §",
   "name": "恶作剧者 §",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "恶作剧者 §",
-      "name": "恶作剧者 §",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家，如果他是爪牙：他的能力变为\"每个夜晚，你要选择一名玩家：恶魔得知他的角色。\"",
-      "image": "[\"https://i.vgy.me/vpkMrv.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "The Prankster points to a player. Put them to sleep. If it's a Minion, mark that player with \"Pranked\", then wake that Minion and show them the \"This character affected you\" token and the Prankster token. All \"Pranked\" Minions choose a player; mark that player with \"Demon Learns Tonight.\" Finally, wake the Demon, and point to each player marked \"Demon learns tonight\" in turn, and show them the corresponding character.",
-      "reminders": [],
-      "remindersGlobal": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家，如果他是爪牙：他的能力变为\"每个夜晚，你要选择一名玩家：恶魔得知他的角色。\""
+    ],
+    "image": [
+      "[\"https://i.vgy.me/vpkMrv.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "The Prankster points to a player. Put them to sleep. If it's a Minion, mark that player with \"Pranked\", then wake that Minion and show them the \"This character affected you\" token and the Prankster token. All \"Pranked\" Minions choose a player; mark that player with \"Demon Learns Tonight.\" Finally, wake the Demon, and point to each player marked \"Demon learns tonight\" in turn, and show them the corresponding character."
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      [
         "恶作剧",
         "恶魔得知"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

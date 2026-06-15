@@ -2,34 +2,41 @@
   "id": "圣诞天使",
   "name": "圣诞天使",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "圣诞天使",
-      "name": "圣诞天使",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择除你之外的一名存活玩家:从此邪恶玩家的负面能力对他无效。如果你或他死亡，你们都会死亡。",
-      "image": "[\"https://chillclocktower.com/homebrew/merrryclocktower/christmasangel.png\"]",
-      "firstNight": 20,
-      "firstNightReminder": "Once per game, at night, choose an alive player (not yourself).",
-      "otherNight": 16,
-      "otherNightReminder": "Once per game, at night, choose an alive player (not yourself).",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，在夜晚时，你可以选择除你之外的一名存活玩家:从此邪恶玩家的负面能力对他无效。如果你或他死亡，你们都会死亡。"
+    ],
+    "image": [
+      "[\"https://chillclocktower.com/homebrew/merrryclocktower/christmasangel.png\"]"
+    ],
+    "firstNight": [
+      20
+    ],
+    "firstNightReminder": [
+      "Once per game, at night, choose an alive player (not yourself)."
+    ],
+    "otherNight": [
+      16
+    ],
+    "otherNightReminder": [
+      "Once per game, at night, choose an alive player (not yourself)."
+    ],
+    "reminders": [
+      [
         "保护",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Glimmering softly in the winter's night, the Christmas Angel descends with a serene grace, bestowing protection and peace upon those who walk in the spirit of the season.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Glimmering softly in the winter's night, the Christmas Angel descends with a serene grace, bestowing protection and peace upon those who walk in the spirit of the season."
+    ]
+  }
 }

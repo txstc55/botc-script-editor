@@ -2,100 +2,58 @@
   "id": "工匠",
   "name": "工匠",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 4,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "工匠",
-      "name": "工匠",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，与邪恶玩家邻近的一名善良玩家得知工匠在场。",
+      "每个夜晚*，你可以向说书人询问一个关键词，你会得知一条与之相关的信息，如果当天有邪恶阵营的玩家死亡，那条信息会是错误的",
+      "每个夜晚，你会得知存活镇民的数量。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/TwinCity/11_twincity.png",
+      "https://www.bloodstar.xyz/p/C2H43g/DarkAge/12_darkage.png",
+      "https://www.bloodstar.xyz/p/Pip/Revolution_of_a_Lifetime/artisan_revolution_of_a_lifetime.png"
+    ],
+    "firstNight": [
+      0,
+      12000,
+      14,
+      3037
+    ],
+    "firstNightReminder": [
+      "向一名与邪恶玩家邻近的善良玩家展示“得知”标记。",
+      "",
+      "1"
+    ],
+    "otherNight": [
+      0,
+      13,
+      21
+    ],
+    "otherNightReminder": [
+      "",
+      "1",
+      "询问说书人一个关键词"
+    ],
+    "reminders": [
+      [
+        "得知"
       ],
-      "ability": "每个夜晚*，你可以向说书人询问一个关键词，你会得知一条与之相关的信息，如果当天有邪恶阵营的玩家死亡，那条信息会是错误的",
-      "image": "https://www.bloodstar.xyz/p/C2H43g/DarkAge/12_darkage.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 21,
-      "otherNightReminder": "询问说书人一个关键词",
-      "reminders": [
+      [
         "错误"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "工匠",
-      "name": "工匠",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，与邪恶玩家邻近的一名善良玩家得知工匠在场。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/TwinCity/11_twincity.png",
-      "firstNight": 14,
-      "firstNightReminder": "向一名与邪恶玩家邻近的善良玩家展示“得知”标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "工匠",
-      "name": "工匠",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知存活镇民的数量。",
-      "image": "https://www.bloodstar.xyz/p/Pip/Revolution_of_a_Lifetime/artisan_revolution_of_a_lifetime.png",
-      "firstNight": 3037,
-      "firstNightReminder": "1",
-      "otherNight": 13,
-      "otherNightReminder": "1",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "A beautiful little chair for you. Nice, practical, the perfect chair",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "工匠",
-      "name": "工匠",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，与邪恶玩家邻近的一名善良玩家得知工匠在场。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/TwinCity/11_twincity.png",
-      "firstNight": 12000,
-      "firstNightReminder": "向一名与邪恶玩家邻近的善良玩家展示“得知”标记。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "A beautiful little chair for you. Nice, practical, the perfect chair"
+    ]
+  }
 }

@@ -2,55 +2,47 @@
   "id": "雪人",
   "name": "雪人",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "雪人",
-      "name": "雪人",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "每局游戏限一次，恶魔可以公开猜测你是雪人，如果猜中，当天他被处决时你会代替他被处决。如果白天没人被处决，你的阵营落败。",
-      "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/_fry79.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你拥有一个伪装。你可能被当作邪恶阵营，爪牙角色。如果你存活，游戏不会结束。当小于等于四名玩家存活时，你单独获胜。你的阵营不会改变。",
+      "每局游戏限一次，恶魔可以公开猜测你是雪人，如果猜中，当天他被处决时你会代替他被处决。如果白天没人被处决，你的阵营落败。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/bluebell/blackout/13_blackout.png",
+      "https://www.bloodstar.xyz/p/humlet/FRY7-9/_fry79.png"
+    ],
+    "firstNight": [
+      0,
+      11
+    ],
+    "firstNightReminder": [
+      "",
+      "唤醒雪人，告诉他一个除恶魔伪装外的不在场身份。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "已被猜测",
         "被猜中"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我本融于人群，如雪落无声。若恶魔识破这雪白身躯，我愿替他承受灼烧般的处决。只是…若白昼不见审判，我们终将在永恒的寒冬中一同消逝。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "雪人",
-      "name": "雪人",
-      "variantIndex": 2,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "你拥有一个伪装。你可能被当作邪恶阵营，爪牙角色。如果你存活，游戏不会结束。当小于等于四名玩家存活时，你单独获胜。你的阵营不会改变。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/13_blackout.png",
-      "firstNight": 11,
-      "firstNightReminder": "唤醒雪人，告诉他一个除恶魔伪装外的不在场身份。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "我本融于人群，如雪落无声。若恶魔识破这雪白身躯，我愿替他承受灼烧般的处决。只是…若白昼不见审判，我们终将在永恒的寒冬中一同消逝。"
+    ]
+  }
 }

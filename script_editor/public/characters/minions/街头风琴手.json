@@ -2,380 +2,80 @@
   "id": "街头风琴手",
   "name": "街头风琴手",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 16,
   "totalOccurrenceCount": 48,
-  "variants": [
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
+  "notes": [],
+  "variants": {
+    "ability": [
+      "所有玩家在投票时闭眼，且票数会秘密统计。对你的提名只在你投票时才会统计票数。",
+      "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
+      "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒，直到你下次选择。"
+    ],
+    "image": [
+      "https://clocktower-wiki.gstonegames.com/images/f/ff/Organgrinder.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202303/c_1527286859761_46867343.jpg",
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/organ_grinder.png",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/f/ff/Organgrinder.png/300px-Organgrinder.png",
+      "https://i.postimg.cc/YqLNR47J/Organgrinder.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202410/c_4549185199271_d0420902.jpg",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/0/08/d07uaz1srg9r92ptr27xr2bbjbqy0ok.png",
+      "https://www.bloodstar.xyz/p/Guiltier/seve/23_seve.png"
+    ],
+    "firstNight": [
+      0,
+      18,
+      11,
+      23,
+      26,
+      3300,
+      3400,
+      3500,
+      3700
+    ],
+    "firstNightReminder": [
+      "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
+      "",
+      "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
+      "街头风琴手点头或摇头。街头风琴手如果点头：放置“醉酒”提示标记；如果摇头：移除“醉酒”提示标记。",
+      "每个夜晚，唤醒街头风琴手点头或摇头。街头风琴手如果点头：放置“醉酒”提示标记；如果摇头：不放置“醉酒”提示标记。让街头风琴手重新入睡。"
+    ],
+    "otherNight": [
+      0,
+      17,
+      5,
+      3,
+      10,
+      13,
+      6,
+      9
+    ],
+    "otherNightReminder": [
+      "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
+      "",
+      "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
+      "街头风琴手点头或摇头。街头风琴手如果点头：放置“醉酒”提示标记；如果摇头：移除“醉酒”提示标记。",
+      "每个夜晚，唤醒街头风琴手点头或摇头。街头风琴手如果点头：放置“醉酒”提示标记；如果摇头：不放置“醉酒”提示标记。让街头风琴手重新入睡。"
+    ],
+    "reminders": [
+      [
+        "醉酒"
       ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。对你的提名只在你投票时才会统计票数。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202303/c_1527286859761_46867343.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "即将被处决"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 13,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/f/ff/Organgrinder.png",
-      "firstNight": 18,
-      "firstNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
-      "otherNight": 17,
-      "otherNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 13,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。对你的提名只在你投票时才会统计票数。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/organ_grinder.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "即将被处决"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 5,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 4,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒，直到你下次选择。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/f/ff/Organgrinder.png",
-      "firstNight": 18,
-      "firstNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
-      "otherNight": 17,
-      "otherNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 3,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 5,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。对你的提名只在你投票时才会统计票数。",
-      "image": "https://i.postimg.cc/YqLNR47J/Organgrinder.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "即将被处决"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 6,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒，直到你下次选择。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202410/c_4549185199271_d0420902.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "街头风琴手点头或摇头。街头风琴手如果点头：放置“醉酒”提示标记；如果摇头：移除“醉酒”提示标记。",
-      "otherNight": 0,
-      "otherNightReminder": "街头风琴手点头或摇头。街头风琴手如果点头：放置“醉酒”提示标记；如果摇头：移除“醉酒”提示标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 7,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。对你的提名只在你投票时才会统计票数。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/f/ff/Organgrinder.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 8,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/organ_grinder.png",
-      "firstNight": 11,
-      "firstNightReminder": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "otherNight": 5,
-      "otherNightReminder": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "reminders": [
+      [
         "即将被处决",
         "醉酒"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 9,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒，直到你下次选择。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/f/ff/Organgrinder.png",
-      "firstNight": 18,
-      "firstNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
-      "otherNight": 9,
-      "otherNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 10,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/Guiltier/seve/23_seve.png",
-      "firstNight": 18,
-      "firstNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
-      "otherNight": 10,
-      "otherNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
-      "reminders": [
-        "即将被处决",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 11,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/f/ff/Organgrinder.png/300px-Organgrinder.png",
-      "firstNight": 23,
-      "firstNightReminder": "每个夜晚，唤醒街头风琴手点头或摇头。街头风琴手如果点头：放置“醉酒”提示标记；如果摇头：不放置“醉酒”提示标记。让街头风琴手重新入睡。",
-      "otherNight": 13,
-      "otherNightReminder": "每个夜晚，唤醒街头风琴手点头或摇头。街头风琴手如果点头：放置“醉酒”提示标记；如果摇头：不放置“醉酒”提示标记。让街头风琴手重新入睡。",
-      "reminders": [
-        "即将被处决",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 12,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/f/ff/Organgrinder.png/300px-Organgrinder.png",
-      "firstNight": 26,
-      "firstNightReminder": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "otherNight": 5,
-      "otherNightReminder": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "reminders": [
-        "即将被处决",
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 13,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/f/ff/Organgrinder.png",
-      "firstNight": 3300,
-      "firstNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
-      "otherNight": 3,
-      "otherNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 14,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/0/08/d07uaz1srg9r92ptr27xr2bbjbqy0ok.png",
-      "firstNight": 3400,
-      "firstNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
-      "otherNight": 6,
-      "otherNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 15,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒直到下个黄昏。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/f/ff/Organgrinder.png",
-      "firstNight": 3500,
-      "firstNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
-      "otherNight": 3,
-      "otherNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "街头风琴手",
-      "name": "街头风琴手",
-      "variantIndex": 16,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "所有玩家在投票时闭眼，且票数会秘密统计。每个夜晚，你要选择自己是否醉酒，直到你下次选择。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/f/ff/Organgrinder.png",
-      "firstNight": 3700,
-      "firstNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。",
-      "otherNight": 5,
-      "otherNightReminder": "让街头风琴手选择自己是否醉酒。如果他点头，标记街头风琴手醉酒。如果他摇头，移除街头风琴手的醉酒标记。",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

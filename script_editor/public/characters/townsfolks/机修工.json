@@ -2,142 +2,52 @@
   "id": "机修工",
   "name": "机修工",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 6,
   "totalOccurrenceCount": 7,
-  "variants": [
-    {
-      "id": "机修工",
-      "name": "机修工",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个白天，你可以拜访说书人获得一个剧本外角色的能力，即使你醉酒或中毒。",
-      "image": "https://i.postimg.cc/4dpBXC7j/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个白天，你可以拜访说书人获得一个剧本外角色的能力，即使你醉酒或中毒。",
+      "在你的首个白天，你可以拜访说书人以变成一个剧本外的角色，即使你醉酒或中毒。[+0~2机修工]",
+      "在你的首个白天，你可以拜访说书人以获得一个剧本外角色的能力，即使你醉酒或中毒。",
+      "每个夜晚*，你会得知今天白天首个死于处决的玩家的角色。"
+    ],
+    "image": [
+      "https://i.postimg.cc/4dpBXC7j/image.png",
+      "https://free.picui.cn/free/2025/11/17/691b057f86a1c.png",
+      "https://www.bloodstar.xyz/p/Pakchoi/Pakchoi/machinist_pakchoi.png",
+      "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/36_a_bad_example.png",
+      "https://www.bloodstar.xyz/p/fake/TheOne/mechanist_theone.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      15
+    ],
+    "otherNightReminder": [
+      "",
+      "如果一名玩家死于处决：出示该玩家的角色标记。"
+    ],
+    "reminders": [
+      [
         "获得能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "机修工",
-      "name": "机修工",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个白天，你可以拜访说书人以变成一个剧本外的角色，即使你醉酒或中毒。[+0~2机修工]",
-      "image": "https://free.picui.cn/free/2025/11/17/691b057f86a1c.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "机修工",
-      "name": "机修工",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个白天，你可以拜访说书人以变成一个剧本外的角色，即使你醉酒或中毒。[+0~2机修工]",
-      "image": "https://www.bloodstar.xyz/p/fake/TheOne/mechanist_theone.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "如果一名玩家死于处决：出示该玩家的角色标记。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "机修工",
-      "name": "机修工",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个白天，你可以拜访说书人以获得一个剧本外角色的能力，即使你醉酒或中毒。",
-      "image": "https://i.postimg.cc/4dpBXC7j/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "获得能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "机修工",
-      "name": "机修工",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个白天，你可以拜访说书人获得一个剧本外角色的能力，即使你醉酒或中毒。",
-      "image": "https://www.bloodstar.xyz/p/Pakchoi/Pakchoi/machinist_pakchoi.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "获得能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "机修工",
-      "name": "机修工",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知今天白天首个死于处决的玩家的角色。",
-      "image": "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/36_a_bad_example.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "如果一名玩家死于处决：出示该玩家的角色标记。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "等下，桌背面备的螺母是几个的来着？",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      "",
+      "等下，桌背面备的螺母是几个的来着？"
+    ]
+  }
 }

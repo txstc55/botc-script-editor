@@ -2,56 +2,41 @@
   "id": "姑苏慕容",
   "name": "姑苏慕容",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "姑苏慕容",
-      "name": "姑苏慕容",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "存活玩家大于六人时（旅行者不计算在内），邪恶阵营不会落败。每个夜晚*，你会得知白天死于处决的玩家的角色类型，然后你要选择一个该角色类型的角色，如果其不在场，你变为这个角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_4704392653271_1ec8a149.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒姑苏慕容，告知其一个角色类型，让他选择一个对应的角色，如果该角色不在场，并且将慕容的角色标记替换为他选择的角色。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "存活玩家大于六人时（旅行者不计算在内），邪恶阵营不会落败。每个夜晚*，你会得知白天死于处决的玩家的角色类型，然后你要选择一个该角色类型的角色，如果其不在场，你变为这个角色。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_4704392653271_1ec8a149.jpg"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      16,
+      8
+    ],
+    "otherNightReminder": [
+      "唤醒姑苏慕容，告知其一个角色类型，让他选择一个对应的角色，如果该角色不在场，并且将慕容的角色标记替换为他选择的角色。"
+    ],
+    "reminders": [
+      [
         "死于处决"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "燕王风气犹若存，血染银盔马踏缰",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "姑苏慕容",
-      "name": "姑苏慕容",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "存活玩家大于六人时（旅行者不计算在内），邪恶阵营不会落败。每个夜晚*，你会得知白天死于处决的玩家的角色类型，然后你要选择一个该角色类型的角色，如果其不在场，你变为这个角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_4704392653271_1ec8a149.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "唤醒姑苏慕容，告知其一个角色类型，让他选择一个对应的角色，如果该角色不在场，并且将慕容的角色标记替换为他选择的角色。",
-      "reminders": [
-        "死于处决"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "燕王风气犹若存，血染银盔马踏缰",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "燕王风气犹若存，血染银盔马踏缰"
+    ]
+  }
 }

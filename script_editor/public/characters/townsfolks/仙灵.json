@@ -2,34 +2,41 @@
   "id": "仙灵",
   "name": "仙灵",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "仙灵",
-      "name": "仙灵",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果恶魔攻击了一名玩家，他会攻击与这名玩家邻近的存活玩家之一作为代替。每个夜晚*，你要选择自己是否醉酒。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/Satellite/_satellite.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "唤醒仙灵询问他是否需要醉酒，如果他选择是，放置醉酒标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果恶魔攻击了一名玩家，他会攻击与这名玩家邻近的存活玩家之一作为代替。每个夜晚*，你要选择自己是否醉酒。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/Satellite/_satellite.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      13
+    ],
+    "otherNightReminder": [
+      "唤醒仙灵询问他是否需要醉酒，如果他选择是，放置醉酒标记。"
+    ],
+    "reminders": [
+      [
         "代替",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,230 +2,62 @@
   "id": "占星师",
   "name": "占星师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 10,
   "totalOccurrenceCount": 12,
-  "variants": [
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你要拜访说书人得知一条错误信息。每局游戏限一次，你得知正确信息。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/astrologer_assets_of_lei_gallery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个白天，你要拜访说书人得知一条错误信息。每局游戏限一次，你得知正确信息。",
+      "每个白天，你可以拜访说书人以得知一条错误信息。",
+      "每个白天，你可以拜访说书人以得知一条错误信息。每局游戏限一次，你得知的信息是正确的。",
+      "每个夜晚*，你会得知正被命运指针指向的玩家的阵营。",
+      "每个夜晚，你会得知三名玩家，他们属于不同阵营。",
+      "每局游戏限一次：在白天，拜访说书人并选择你的学派。两天后，你可以转变学派，如果你这样做，统计胜利条件时你被当作死亡。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/astrologer_assets_of_lei_gallery.png",
+      "https://i.postimg.cc/RhgZd2S4/占星师.png",
+      "https://i.postimg.cc/bJJMh1xV/image.webp",
+      "https://s2.loli.net/2025/09/16/Grco6KkCnM8RHsg.png",
+      "https://www.bloodstar.xyz/p/Lee/Recovery/12_recovery.png",
+      "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/6_archives_of_insanity.png",
+      "https://www.bloodstar.xyz/p/westwind/xiudao111/14_xiudao111.png",
+      "https://www.helloimg.com/i/2025/03/08/67cbc7be37692.png"
+    ],
+    "firstNight": [
+      0,
+      22
+    ],
+    "firstNightReminder": [
+      "",
+      "唤醒占星师，向他指出三名阵营不同的玩家。"
+    ],
+    "otherNight": [
+      0,
+      19,
+      20
+    ],
+    "otherNightReminder": [
+      "",
+      "唤醒占星师，向他指出三名阵营不同的玩家。",
+      "唤醒占星师，如果命运指针指向了善良阵营玩家，给出向上的大拇指，否则给出向下的大拇指。"
+    ],
+    "reminders": [
+      [
         "月明星稀"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 3,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以拜访说书人以得知一条错误信息。",
-      "image": "https://i.postimg.cc/bJJMh1xV/image.webp",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以拜访说书人以得知一条错误信息。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/astrologer_assets_of_lei_gallery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "月明星稀"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以拜访说书人以得知一条错误信息。每局游戏限一次，你得知的信息是正确的。",
-      "image": "https://s2.loli.net/2025/09/16/Grco6KkCnM8RHsg.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [],
+      [
         "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你可以拜访说书人以得知一条错误信息。每局游戏限一次，你得知的信息是正确的。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/astrologer_assets_of_lei_gallery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "月明星稀"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你要拜访说书人得知一条错误信息。每局游戏限一次，你得知正确信息。",
-      "image": "https://www.bloodstar.xyz/p/Lee/Recovery/12_recovery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你要拜访说书人得知一条错误信息。每局游戏限一次，你得知正确信息。",
-      "image": "https://www.helloimg.com/i/2025/03/08/67cbc7be37692.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次：在白天，拜访说书人并选择你的学派。两天后，你可以转变学派，如果你这样做，统计胜利条件时你被当作死亡。",
-      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/14_xiudao111.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知正被命运指针指向的玩家的阵营。",
-      "image": "https://i.postimg.cc/RhgZd2S4/占星师.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "唤醒占星师，如果命运指针指向了善良阵营玩家，给出向上的大拇指，否则给出向下的大拇指。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "占星师",
-      "name": "占星师",
-      "variantIndex": 10,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知三名玩家，他们属于不同阵营。",
-      "image": "https://www.bloodstar.xyz/p/Sans/Archives_of_Insanity/6_archives_of_insanity.png",
-      "firstNight": 22,
-      "firstNightReminder": "唤醒占星师，向他指出三名阵营不同的玩家。",
-      "otherNight": 20,
-      "otherNightReminder": "唤醒占星师，向他指出三名阵营不同的玩家。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,34 +2,41 @@
   "id": "签判",
   "name": "签判",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "签判",
-      "name": "签判",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你可以选择一名存活玩家：他开始得知正确信息。如果与他邻近的玩家中有外来者，你在下个白天不能发起提名且你会得知此信息。",
-      "image": "https://i.postimg.cc/wMZ8Y5G7/10.png",
-      "firstNight": 21,
-      "firstNightReminder": "唤醒签判，让他选择一名玩家，为该玩家放置“轶正气”标记，确认与该玩家邻近的玩家中是否有外来者，如果有外来者，向签判展示“刑徒路”标记，然后为签判放置该标记。",
-      "otherNight": 16,
-      "otherNightReminder": "唤醒签判，让他选择一名玩家，为该玩家放置“轶正气”标记，确认与该玩家邻近的玩家中是否有外来者，如果有外来者，向签判展示“刑徒路”标记，然后为签判放置该标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你可以选择一名存活玩家：他开始得知正确信息。如果与他邻近的玩家中有外来者，你在下个白天不能发起提名且你会得知此信息。"
+    ],
+    "image": [
+      "https://i.postimg.cc/wMZ8Y5G7/10.png"
+    ],
+    "firstNight": [
+      21
+    ],
+    "firstNightReminder": [
+      "唤醒签判，让他选择一名玩家，为该玩家放置“轶正气”标记，确认与该玩家邻近的玩家中是否有外来者，如果有外来者，向签判展示“刑徒路”标记，然后为签判放置该标记。"
+    ],
+    "otherNight": [
+      16
+    ],
+    "otherNightReminder": [
+      "唤醒签判，让他选择一名玩家，为该玩家放置“轶正气”标记，确认与该玩家邻近的玩家中是否有外来者，如果有外来者，向签判展示“刑徒路”标记，然后为签判放置该标记。"
+    ],
+    "reminders": [
+      [
         "刑徒路",
         "轶正气"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

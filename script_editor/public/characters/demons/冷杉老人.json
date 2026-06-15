@@ -2,35 +2,42 @@
   "id": "冷杉老人",
   "name": "冷杉老人",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "冷杉老人",
-      "name": "冷杉老人",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。每有一名爪牙死亡，在夜晚你额外行动一次。［-1善良角色，+1善良爪牙且他与其他邪恶玩家互相不认识］",
-      "image": "https://i.postimg.cc/RhN0XrsX/image.png",
-      "firstNight": 1100,
-      "firstNightReminder": "为善良爪牙放置“善良爪牙”标记，唤醒该玩家，用大拇指向上示意他是善良的，然后让他重新入睡，且跳过他的爪牙信息阶段。",
-      "otherNight": 5500,
-      "otherNightReminder": "让冷杉老人选择一名玩家，他死亡。如果有死亡爪牙，让冷杉老人继续选择玩家，他们死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。每有一名爪牙死亡，在夜晚你额外行动一次。［-1善良角色，+1善良爪牙且他与其他邪恶玩家互相不认识］"
+    ],
+    "image": [
+      "https://i.postimg.cc/RhN0XrsX/image.png"
+    ],
+    "firstNight": [
+      1100
+    ],
+    "firstNightReminder": [
+      "为善良爪牙放置“善良爪牙”标记，唤醒该玩家，用大拇指向上示意他是善良的，然后让他重新入睡，且跳过他的爪牙信息阶段。"
+    ],
+    "otherNight": [
+      5500
+    ],
+    "otherNightReminder": [
+      "让冷杉老人选择一名玩家，他死亡。如果有死亡爪牙，让冷杉老人继续选择玩家，他们死亡。"
+    ],
+    "reminders": [
+      [
         "善良爪牙",
         "死亡",
         "额外行动"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "Duck_Town",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "Duck_Town"
+    ]
+  }
 }

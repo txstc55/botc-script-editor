@@ -2,56 +2,45 @@
   "id": "天魔",
   "name": "天魔",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "天魔",
-      "name": "天魔",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "你拥有一个其他的恶魔能力。该能力会被多数玩家认为在场的恶魔能力覆盖。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3594104124671_1a9c5dc8.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 20,
-      "otherNightReminder": "你拥有一个其他的恶魔能力。该能力会被多数玩家认为在场的恶魔能力覆盖。",
-      "reminders": [],
-      "remindersGlobal": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你拥有一个其他的恶魔能力。该能力会被多数玩家认为在场的恶魔能力覆盖。"
+    ],
+    "image": [
+      "https://i.postimg.cc/RV4RV9zg/image.png",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3594104124671_1a9c5dc8.jpg"
+    ],
+    "firstNight": [
+      0,
+      3300
+    ],
+    "firstNightReminder": [
+      "",
+      "告知天魔它拥有的能力"
+    ],
+    "otherNight": [
+      20,
+      31
+    ],
+    "otherNightReminder": [
+      "你拥有一个其他的恶魔能力。该能力会被多数玩家认为在场的恶魔能力覆盖。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      [
         "是天魔"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "天魔",
-      "name": "天魔",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "你拥有一个其他的恶魔能力。该能力会被多数玩家认为在场的恶魔能力覆盖。",
-      "image": "https://i.postimg.cc/RV4RV9zg/image.png",
-      "firstNight": 3300,
-      "firstNightReminder": "告知天魔它拥有的能力",
-      "otherNight": 31,
-      "otherNightReminder": "你拥有一个其他的恶魔能力。该能力会被多数玩家认为在场的恶魔能力覆盖。",
-      "reminders": [],
-      "remindersGlobal": [
-        "是天魔"
-      ],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

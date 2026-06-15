@@ -2,56 +2,45 @@
   "id": "驯狮人",
   "name": "驯狮人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "驯狮人",
-      "name": "驯狮人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果与你邻近的存活玩家死于处决，当晚恶魔的负面能力对除你以外的玩家无效。",
-      "image": "https://www.helloimg.com/i/2025/03/08/67cbc7b7c751d.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果与你邻近的存活玩家死于处决，当晚恶魔的负面能力对除你以外的玩家无效。",
+      "如果与你邻近的存活的善良玩家死于处决，当晚恶魔的负面能力对所有玩家无效。"
+    ],
+    "image": [
+      "https://i.postimg.cc/QdcBr6QT/image.png",
+      "https://www.helloimg.com/i/2025/03/08/67cbc7b7c751d.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "全无效"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "驯狮人",
-      "name": "驯狮人",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果与你邻近的存活的善良玩家死于处决，当晚恶魔的负面能力对所有玩家无效。",
-      "image": "https://i.postimg.cc/QdcBr6QT/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "震慑"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

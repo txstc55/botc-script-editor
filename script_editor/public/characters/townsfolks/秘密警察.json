@@ -2,31 +2,38 @@
   "id": "秘密警察",
   "name": "秘密警察",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "秘密警察",
-      "name": "秘密警察",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一个邪恶角色：你会得知一个今天白天与该角色私聊过的角色。如果该角色不在场，你会得知任意一个角色。",
-      "image": "https://i.ibb.co/tK2pDF2/blacklister.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 110,
-      "otherNightReminder": "秘密警察指向一名邪恶角色。展示该邪恶角色今日私语对象的角色标记。若该角色不在场，则展示任意标记。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一个邪恶角色：你会得知一个今天白天与该角色私聊过的角色。如果该角色不在场，你会得知任意一个角色。"
+    ],
+    "image": [
+      "https://i.ibb.co/tK2pDF2/blacklister.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      110
+    ],
+    "otherNightReminder": [
+      "秘密警察指向一名邪恶角色。展示该邪恶角色今日私语对象的角色标记。若该角色不在场，则展示任意标记。"
+    ],
+    "reminders": [
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

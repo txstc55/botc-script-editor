@@ -2,38 +2,45 @@
   "id": "酒吞童子",
   "name": "酒吞童子",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "酒吞童子",
-      "name": "酒吞童子",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你获得等于邪恶玩家数量的酒。每个夜晚，你可以选择若干数量的玩家，消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，你失去能力。",
-      "image": "https://www.helloimg.com/i/2024/10/31/672389a2ee17c.png",
-      "firstNight": 20,
-      "firstNightReminder": "给酒吞童子等于邪恶玩家数量的酒。唤醒酒吞童子，询问是否发动能力。如果发动能力，让酒吞童子选择若干数量的玩家并消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，酒吞童子失去能力。",
-      "otherNight": 30,
-      "otherNightReminder": "唤醒酒吞童子，询问是否发动能力。如果发动能力，让酒吞童子选择若干数量的玩家并消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，酒吞童子失去能力。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你获得等于邪恶玩家数量的酒。每个夜晚，你可以选择若干数量的玩家，消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，你失去能力。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2024/10/31/672389a2ee17c.png"
+    ],
+    "firstNight": [
+      20
+    ],
+    "firstNightReminder": [
+      "给酒吞童子等于邪恶玩家数量的酒。唤醒酒吞童子，询问是否发动能力。如果发动能力，让酒吞童子选择若干数量的玩家并消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，酒吞童子失去能力。"
+    ],
+    "otherNight": [
+      30
+    ],
+    "otherNightReminder": [
+      "唤醒酒吞童子，询问是否发动能力。如果发动能力，让酒吞童子选择若干数量的玩家并消耗对应数量的酒，他们醉酒直到下个黄昏。酒用尽时，酒吞童子失去能力。"
+    ],
+    "reminders": [
+      [
         "1点酒气",
         "2点酒气",
         "3点酒气",
         "4点酒气",
         "失去能力",
         "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

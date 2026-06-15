@@ -2,33 +2,40 @@
   "id": "恶种",
   "name": "恶种",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "恶种",
-      "name": "恶种",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚*，你可以选择一名死亡玩家：他复活随后加入邪恶阵营。在你死亡时，所有因你加入邪恶的玩家死亡。[-1外来者]",
-      "image": "https://www.bloodstar.xyz/p/bluebell/blackout/18_blackout.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 18,
-      "otherNightReminder": "唤醒恶种，询问他是否选择一名死亡玩家。如果他选择了，唤醒并告知该玩家加入了邪恶。如果恶种死亡，此时杀死所有因恶种加入邪恶的玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以选择一名死亡玩家：他复活随后加入邪恶阵营。在你死亡时，所有因你加入邪恶的玩家死亡。[-1外来者]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/bluebell/blackout/18_blackout.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      18
+    ],
+    "otherNightReminder": [
+      "唤醒恶种，询问他是否选择一名死亡玩家。如果他选择了，唤醒并告知该玩家加入了邪恶。如果恶种死亡，此时杀死所有因恶种加入邪恶的玩家。"
+    ],
+    "reminders": [
+      [
         "复活"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

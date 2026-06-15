@@ -2,148 +2,48 @@
   "id": "法官",
   "name": "法官",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 6,
   "totalOccurrenceCount": 23,
-  "variants": [
-    {
-      "id": "法官",
-      "name": "法官",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每局游戏限一次，如果其他玩家发起了提名，你可以选择让本次提名直接执行处决或让投票无效。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/judge.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，如果其他玩家发起了提名，你可以选择让本次提名直接执行处决或让投票无效。",
+      "每局游戏限一次，在白天投票时，当其他玩家发起提名后，到下次提名前，你可以直接让投票无效或处决被提名的玩家。",
+      "每局游戏限一次，如果其他玩家发起了提名，你可以在投票结束后选择让本次提名直接执行处决或让投票无效。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/judge.png",
+      "https://clocktower-wiki.gstonegames.com/images/thumb/8/8a/Judge.png/300px-Judge.png",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/judge.png",
+      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/82/1j7ceny8yj09llt1u1842zfwtp90p3p.png",
+      "https://www.bloodstar.xyz/p/Guiltier/XING/27_xing.png",
+      "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/21_a_bad_example.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 10,
-      "notes": []
-    },
-    {
-      "id": "法官",
-      "name": "法官",
-      "variantIndex": 2,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每局游戏限一次，在白天投票时，当其他玩家发起提名后，到下次提名前，你可以直接让投票无效或处决被提名的玩家。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/8a/Judge.png/300px-Judge.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 5,
-      "notes": []
-    },
-    {
-      "id": "法官",
-      "name": "法官",
-      "variantIndex": 3,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每局游戏限一次，如果其他玩家发起了提名，你可以选择让本次提名直接执行处决或让投票无效。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/judge.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 5,
-      "notes": []
-    },
-    {
-      "id": "法官",
-      "name": "法官",
-      "variantIndex": 4,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每局游戏限一次，如果其他玩家发起了提名，你可以在投票结束后选择让本次提名直接执行处决或让投票无效。",
-      "image": "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/21_a_bad_example.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "我认为被告人涉嫌谋杀罪、诈骗罪、放火罪、盗窃罪、招摇撞骗罪、非法行医罪、诽谤罪、弑君罪以及乱丢垃圾罪等罪行。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "法官",
-      "name": "法官",
-      "variantIndex": 5,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每局游戏限一次，如果其他玩家发起了提名，你可以选择让本次提名直接执行处决或让投票无效。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/82/1j7ceny8yj09llt1u1842zfwtp90p3p.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "法官",
-      "name": "法官",
-      "variantIndex": 6,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每局游戏限一次，如果其他玩家发起了提名，你可以选择让本次提名直接执行处决或让投票无效。",
-      "image": "https://www.bloodstar.xyz/p/Guiltier/XING/27_xing.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "我认为被告人涉嫌谋杀罪、诈骗罪、放火罪、盗窃罪、招摇撞骗罪、非法行医罪、诽谤罪、弑君罪以及乱丢垃圾罪等罪行。"
+    ]
+  }
 }

@@ -2,34 +2,41 @@
   "id": "沼泽蜥人",
   "name": "沼泽蜥人",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "沼泽蜥人",
-      "name": "沼泽蜥人",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果命运指针正指向的玩家及与他顺时针邻近的玩家均为镇民，他们会中毒。",
-      "image": "https://i.postimg.cc/RZswhbwr/沼泽蜥人.png",
-      "firstNight": 11,
-      "firstNightReminder": "如果命运指针正指向的玩家及与他顺时针邻近的玩家均为镇民，为他们放置中毒标记。",
-      "otherNight": 9,
-      "otherNightReminder": "唤醒沼泽蜥人，让他指向一名玩家，那名玩家死亡。如果命运指针正指向的玩家及与他顺时针邻近的玩家均为镇民，为他们放置中毒标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。如果命运指针正指向的玩家及与他顺时针邻近的玩家均为镇民，他们会中毒。"
+    ],
+    "image": [
+      "https://i.postimg.cc/RZswhbwr/沼泽蜥人.png"
+    ],
+    "firstNight": [
+      11
+    ],
+    "firstNightReminder": [
+      "如果命运指针正指向的玩家及与他顺时针邻近的玩家均为镇民，为他们放置中毒标记。"
+    ],
+    "otherNight": [
+      9
+    ],
+    "otherNightReminder": [
+      "唤醒沼泽蜥人，让他指向一名玩家，那名玩家死亡。如果命运指针正指向的玩家及与他顺时针邻近的玩家均为镇民，为他们放置中毒标记。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

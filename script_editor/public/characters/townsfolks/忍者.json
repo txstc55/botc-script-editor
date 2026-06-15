@@ -2,35 +2,42 @@
   "id": "忍者",
   "name": "忍者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "忍者",
-      "name": "忍者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名未以此法选择过的玩家：如果他是镇民，你获得他的能力，直到下个黄昏。否则你中毒。",
-      "image": "https://www.helloimg.com/i/2024/10/31/6723882a0712d.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 45,
-      "otherNightReminder": "唤醒忍者，让忍者选择一名之前未选择过的玩家。如果这名玩家是镇民，忍者获得他的能力直到下个黄昏。如果不是镇民，忍者中毒。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以选择一名未以此法选择过的玩家：如果他是镇民，你获得他的能力，直到下个黄昏。否则你中毒。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2024/10/31/6723882a0712d.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      45
+    ],
+    "otherNightReminder": [
+      "唤醒忍者，让忍者选择一名之前未选择过的玩家。如果这名玩家是镇民，忍者获得他的能力直到下个黄昏。如果不是镇民，忍者中毒。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "获得能力",
         "选择过"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 3,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

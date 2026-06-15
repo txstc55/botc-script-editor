@@ -2,56 +2,41 @@
   "id": "花火师",
   "name": "花火师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "花火师",
-      "name": "花火师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名除你以外的玩家：如果他是善良的，今晚任何玩家使用自身能力选择你们之一作为目标时，改为选中另一名玩家。",
-      "image": "https://www.helloimg.com/i/2024/10/31/6723883d89e66.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 21,
-      "otherNightReminder": "唤醒花火师，让花火师选择一名除自己以外的其他玩家。如果该玩家是善良的，放置提示标记，当晚你和他之间会发生目标转移。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以选择一名除你以外的玩家：如果他是善良的，今晚任何玩家使用自身能力选择你们之一作为目标时，改为选中另一名玩家。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2024/10/31/6723883d89e66.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      21,
+      50
+    ],
+    "otherNightReminder": [
+      "唤醒花火师，让花火师选择一名除自己以外的其他玩家。如果该玩家是善良的，放置提示标记，当晚你和他之间会发生目标转移。"
+    ],
+    "reminders": [
+      [
         "花火升空"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "花火师",
-      "name": "花火师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名除你以外的玩家：如果他是善良的，今晚任何玩家使用自身能力选择你们之一作为目标时，改为选中另一名玩家。",
-      "image": "https://www.helloimg.com/i/2024/10/31/6723883d89e66.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 50,
-      "otherNightReminder": "唤醒花火师，让花火师选择一名除自己以外的其他玩家。如果该玩家是善良的，放置提示标记，当晚你和他之间会发生目标转移。",
-      "reminders": [
-        "花火升空"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

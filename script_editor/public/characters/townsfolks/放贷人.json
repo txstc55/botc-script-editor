@@ -2,79 +2,43 @@
   "id": "放贷人",
   "name": "放贷人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "放贷人",
-      "name": "放贷人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择除你以外的一名存活的玩家：你转变为他的阵营。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9505682064371_9e0cdee3.jpg",
-      "firstNight": 11751,
-      "firstNightReminder": "唤醒放贷人，让他选择一名存活玩家，如果选择了邪恶玩家，在放贷人的角色标记旁边放置“邪恶”提示标记；否则移除“邪恶”提示标记。",
-      "otherNight": 14401,
-      "otherNightReminder": "唤醒放贷人，让他选择一名存活玩家，如果选择了邪恶玩家，在放贷人的角色标记旁边放置“邪恶”提示标记；否则移除“邪恶”提示标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，选择一名除你以外的存活玩家：你转变为他的阵营。",
+      "每个夜晚，你要选择除你以外的一名存活的玩家：你转变为他的阵营。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9505682064371_9e0cdee3.jpg"
+    ],
+    "firstNight": [
+      11751
+    ],
+    "firstNightReminder": [
+      "唤醒放贷人，让他选择一名存活玩家，如果选择了邪恶玩家，在放贷人的角色标记旁边放置“邪恶”提示标记；否则移除“邪恶”提示标记。",
+      "每个夜晚，选择一名除你以外的存活玩家：你转变为他的阵营。"
+    ],
+    "otherNight": [
+      14401
+    ],
+    "otherNightReminder": [
+      "唤醒放贷人，让他选择一名存活玩家，如果选择了邪恶玩家，在放贷人的角色标记旁边放置“邪恶”提示标记；否则移除“邪恶”提示标记。",
+      "每个夜晚，选择一名除你以外的存活玩家：你转变为他的阵营。"
+    ],
+    "reminders": [
+      [
         "邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "放贷人",
-      "name": "放贷人",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，选择一名除你以外的存活玩家：你转变为他的阵营。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9505682064371_9e0cdee3.jpg",
-      "firstNight": 11751,
-      "firstNightReminder": "唤醒放贷人，让他选择一名存活玩家，如果选择了邪恶玩家，在放贷人的角色标记旁边放置“邪恶”提示标记；否则移除“邪恶”提示标记。",
-      "otherNight": 14401,
-      "otherNightReminder": "唤醒放贷人，让他选择一名存活玩家，如果选择了邪恶玩家，在放贷人的角色标记旁边放置“邪恶”提示标记；否则移除“邪恶”提示标记。",
-      "reminders": [
-        "邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "放贷人",
-      "name": "放贷人",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，选择一名除你以外的存活玩家：你转变为他的阵营。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9505682064371_9e0cdee3.jpg",
-      "firstNight": 11751,
-      "firstNightReminder": "每个夜晚，选择一名除你以外的存活玩家：你转变为他的阵营。",
-      "otherNight": 14401,
-      "otherNightReminder": "每个夜晚，选择一名除你以外的存活玩家：你转变为他的阵营。",
-      "reminders": [
-        "邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

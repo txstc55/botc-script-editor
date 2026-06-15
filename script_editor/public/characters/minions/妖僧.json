@@ -2,58 +2,44 @@
   "id": "妖僧",
   "name": "妖僧",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "妖僧",
-      "name": "妖僧",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个关键词：当有邪恶玩家首次说出该关键词时，所有善良玩家中毒直至下个黎明，即使你已死亡。[-1外来者]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1697467864_197011_515.png",
-      "firstNight": 11,
-      "firstNightReminder": "告诉妖僧他的关键词。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一个关键词：当有邪恶玩家首次说出该关键词时，所有善良玩家中毒直至下个黎明，即使你已死亡。[-1外来者]"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1697467864_197011_515.png"
+    ],
+    "firstNight": [
+      11,
+      7000
+    ],
+    "firstNightReminder": [
+      "告诉妖僧他的关键词。"
+    ],
+    "otherNight": [
+      0,
+      200
+    ],
+    "otherNightReminder": [
+      "",
+      "在你的首个夜晚，你会得知一个关键词：当有邪恶玩家首次说出该关键词时，所有善良玩家中毒直至下个黎明，即使你已死亡。[-1外来者]"
+    ],
+    "reminders": [
+      [
         "失去能力",
         "妖言惑众"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "妖僧",
-      "name": "妖僧",
-      "variantIndex": 2,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你会得知一个关键词：当有邪恶玩家首次说出该关键词时，所有善良玩家中毒直至下个黎明，即使你已死亡。[-1外来者]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1697467864_197011_515.png",
-      "firstNight": 7000,
-      "firstNightReminder": "告诉妖僧他的关键词。",
-      "otherNight": 200,
-      "otherNightReminder": "在你的首个夜晚，你会得知一个关键词：当有邪恶玩家首次说出该关键词时，所有善良玩家中毒直至下个黎明，即使你已死亡。[-1外来者]",
-      "reminders": [
-        "失去能力",
-        "妖言惑众"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

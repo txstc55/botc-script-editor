@@ -2,26 +2,29 @@
   "id": "斯克鲁奇",
   "name": "斯克鲁奇",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "斯克鲁奇",
-      "name": "斯克鲁奇",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "在你的首个夜晚，你会得知至多三名在场的拥有选择能力的善良角色。如果这些角色都以自身能力选择过你，会有一名邪恶玩家转变为善良阵营。[会有一名善良玩家转变为邪恶阵营]",
-      "image": "[\"https://chillclocktower.com/homebrew/merrryclocktower/scrooge.png\"]",
-      "firstNight": 51,
-      "firstNightReminder": "Wake and inform a good player they are now evil at the start of the night. Wake Scrooge and tell them their Visitors now.",
-      "otherNight": 57,
-      "otherNightReminder": "Check if Scrooge turns 1 evil player good.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知至多三名在场的拥有选择能力的善良角色。如果这些角色都以自身能力选择过你，会有一名邪恶玩家转变为善良阵营。[会有一名善良玩家转变为邪恶阵营]"
+    ],
+    "image": [
+      "[\"https://chillclocktower.com/homebrew/merrryclocktower/scrooge.png\"]"
+    ],
+    "firstNight": [
+      51
+    ],
+    "firstNightReminder": [
+      "Wake and inform a good player they are now evil at the start of the night. Wake Scrooge and tell them their Visitors now."
+    ],
+    "otherNight": [
+      57
+    ],
+    "otherNightReminder": [
+      "Check if Scrooge turns 1 evil player good."
+    ],
+    "reminders": [
+      [
         "未来拜访",
         "未来访客",
         "现在拜访",
@@ -29,12 +32,16 @@
         "过去拜访",
         "过去访客",
         "邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "You may be an undigested bit of beef, a blot of mustard, a crumb of cheese, a fragment of an underdone potato. Theres more of gravy than of grave about you, whatever you are!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "You may be an undigested bit of beef, a blot of mustard, a crumb of cheese, a fragment of an underdone potato. Theres more of gravy than of grave about you, whatever you are!"
+    ]
+  }
 }

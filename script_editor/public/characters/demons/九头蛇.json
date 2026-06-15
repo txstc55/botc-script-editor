@@ -2,84 +2,53 @@
   "id": "九头蛇",
   "name": "九头蛇",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 3,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "九头蛇",
-      "name": "九头蛇",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。如果死亡的爪牙公开声称九头蛇在场，他会变成九头蛇。",
-      "image": "https://www.helloimg.com/i/2025/03/08/67cbc8dfb0065.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 38,
-      "otherNightReminder": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。如果死亡的爪牙公开声称九头蛇在场，他会变成九头蛇。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。如果死亡的爪牙公开声称九头蛇在场，他会变成九头蛇。",
+      "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。死亡的爪牙变成九头蛇。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2025/03/08/67cbc8dfb0065.png",
+      "https://i.postimg.cc/RZY5wYhV/image.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      38,
+      5560,
+      8435
+    ],
+    "otherNightReminder": [
+      "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。如果死亡的爪牙公开声称九头蛇在场，他会变成九头蛇。",
+      "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。死亡的爪牙变成九头蛇。",
+      "让九头蛇选择一名玩家。标记那名玩家死亡。"
+    ],
+    "reminders": [
+      [
         "死亡"
       ],
-      "remindersGlobal": [
-        "是九头蛇"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "九头蛇",
-      "name": "九头蛇",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。如果死亡的爪牙公开声称九头蛇在场，他会变成九头蛇。",
-      "image": "https://i.postimg.cc/RZY5wYhV/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5560,
-      "otherNightReminder": "让九头蛇选择一名玩家。标记那名玩家死亡。",
-      "reminders": [
+      [
         "同化",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "九头蛇",
-      "name": "九头蛇",
-      "variantIndex": 3,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。死亡的爪牙变成九头蛇。",
-      "image": "https://www.helloimg.com/i/2025/03/08/67cbc8dfb0065.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8435,
-      "otherNightReminder": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。死亡的爪牙变成九头蛇。",
-      "reminders": [
-        "死亡"
-      ],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [
         "是九头蛇"
       ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,34 +2,41 @@
   "id": "霍乱之源",
   "name": "霍乱之源",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "霍乱之源",
-      "name": "霍乱之源",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家，他死亡。前两个使用自身能力选择你的善良玩家转变为邪恶。你首次死亡且存活人数不少于五人时，一名邪恶的非爪牙玩家会成为新的霍乱之源。[-1爪牙]",
-      "image": "https://i.postimg.cc/L6XCNgwk/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 56,
-      "otherNightReminder": "唤醒霍乱之源，让他攻击一名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家，他死亡。前两个使用自身能力选择你的善良玩家转变为邪恶。你首次死亡且存活人数不少于五人时，一名邪恶的非爪牙玩家会成为新的霍乱之源。[-1爪牙]"
+    ],
+    "image": [
+      "https://i.postimg.cc/L6XCNgwk/image.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      56
+    ],
+    "otherNightReminder": [
+      "唤醒霍乱之源，让他攻击一名玩家。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "转变"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

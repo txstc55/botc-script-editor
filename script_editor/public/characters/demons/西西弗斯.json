@@ -2,105 +2,53 @@
   "id": "西西弗斯",
   "name": "西西弗斯",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 4,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "西西弗斯",
-      "name": "西西弗斯",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。在夜晚时，如果所有爪牙死亡，你要选择一个除你以外的恶魔角色：你变成那个恶魔，并且每晚行动两次。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/sissaphyth_assets_of_lei_gallery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4899,
-      "otherNightReminder": "如果没有存活的爪牙，让西西斐斯指向角色列表上的一个其他恶魔角色标记，然后通知他角色变化，并将“行动两次”提示标记放在角色标记旁边。否则，唤醒西西斐斯。让他指向任意一名玩家。那名玩家死亡——在他角色标记旁放置“死亡”提示标记。让西西斐斯重新入睡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。在夜晚时，如果所有爪牙死亡，你要选择一个除你以外的恶魔角色：你变成那个恶魔，并且每晚行动两次。",
+      "如果一名善良玩家和一名邪恶玩家死亡，在夜晚时，你要选择一个恶魔角色：你变成那个恶魔，并且每晚行动两次。",
+      "如果所有爪牙都死亡，在当晚你要选择一个恶魔角色：你变成那个恶魔，并且每晚行动两次。",
+      "每个夜晚*，你要选择一名玩家：他死亡。如果所有爪牙都死亡，在当晚你要选择一个恶魔角色：你变成那个恶魔，并且每晚行动两次。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/sissaphyth_assets_of_lei_gallery.png",
+      "https://free.picui.cn/free/2025/08/30/68b2637e64aae.png",
+      "https://i.postimg.cc/tC1hGtB8/xi-xi-fu-si.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      4899,
+      36,
+      5003
+    ],
+    "otherNightReminder": [
+      "如果没有存活的爪牙，让西西斐斯指向角色列表上的一个其他恶魔角色标记，然后通知他角色变化，并将“行动两次”提示标记放在角色标记旁边。否则，唤醒西西斐斯。让他指向任意一名玩家。那名玩家死亡——在他角色标记旁放置“死亡”提示标记。让西西斐斯重新入睡。",
+      "唤醒西西弗斯，并让他攻击一名玩家。如果所有爪牙都死亡，让他选择一个恶魔角色，之后他可以行动两次。",
+      "如果一名善良玩家和一名邪恶玩家死亡，在夜晚时，你要选择一个恶魔角色：你变成那个恶魔，并且每晚行动两次。"
+    ],
+    "reminders": [
+      [
         "死亡",
         "行动两次"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "西西弗斯",
-      "name": "西西弗斯",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "如果一名善良玩家和一名邪恶玩家死亡，在夜晚时，你要选择一个恶魔角色：你变成那个恶魔，并且每晚行动两次。",
-      "image": "https://i.postimg.cc/tC1hGtB8/xi-xi-fu-si.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 36,
-      "otherNightReminder": "如果一名善良玩家和一名邪恶玩家死亡，在夜晚时，你要选择一个恶魔角色：你变成那个恶魔，并且每晚行动两次。",
-      "reminders": [
-        "死亡",
+      [
         "行动两次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "西西弗斯",
-      "name": "西西弗斯",
-      "variantIndex": 3,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "如果所有爪牙都死亡，在当晚你要选择一个恶魔角色：你变成那个恶魔，并且每晚行动两次。",
-      "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/sissaphyth_assets_of_lei_gallery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4899,
-      "otherNightReminder": "如果没有存活的爪牙，让西西斐斯指向角色列表上的一个其他恶魔角色标记，然后通知他角色变化，并将“行动两次”提示标记放在角色标记旁边。否则，唤醒西西斐斯。让他指向任意一名玩家。那名玩家死亡——在他角色标记旁放置“死亡”提示标记。让西西斐斯重新入睡。",
-      "reminders": [
-        "行动两次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "西西弗斯",
-      "name": "西西弗斯",
-      "variantIndex": 4,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果所有爪牙都死亡，在当晚你要选择一个恶魔角色：你变成那个恶魔，并且每晚行动两次。",
-      "image": "https://free.picui.cn/free/2025/08/30/68b2637e64aae.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 5003,
-      "otherNightReminder": "唤醒西西弗斯，并让他攻击一名玩家。如果所有爪牙都死亡，让他选择一个恶魔角色，之后他可以行动两次。",
-      "reminders": [
-        "死亡",
-        "行动两次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

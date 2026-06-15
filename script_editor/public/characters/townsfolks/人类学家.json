@@ -2,54 +2,48 @@
   "id": "人类学家",
   "name": "人类学家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "人类学家",
-      "name": "人类学家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你会得知在今天白天时你是否提名了一名外来者。[+1外来者]",
-      "image": "https://www.bloodstar.xyz/p/Dela/REDACTED/anthropologist_redacted.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 16,
-      "otherNightReminder": "若人类学家昨日提名了外来者，请点头表示是；若未提名，请摇头表示否。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知场上有多少对邻座的镇民玩家。",
+      "每个夜晚*，你会得知在今天白天时你是否提名了一名外来者。[+1外来者]"
+    ],
+    "image": [
+      "https://free.picui.cn/free/2025/09/10/68c09887a2b6c.png",
+      "https://www.bloodstar.xyz/p/Dela/REDACTED/anthropologist_redacted.png"
+    ],
+    "firstNight": [
+      0,
+      12000
+    ],
+    "firstNightReminder": [
+      "",
+      "唤醒人类学家，并用手势告诉他有几对镇民邻座"
+    ],
+    "otherNight": [
+      0,
+      16
+    ],
+    "otherNightReminder": [
+      "",
+      "若人类学家昨日提名了外来者，请点头表示是；若未提名，请摇头表示否。"
+    ],
+    "reminders": [
+      [
         "提名"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "人类学家",
-      "name": "人类学家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知场上有多少对邻座的镇民玩家。",
-      "image": "https://free.picui.cn/free/2025/09/10/68c09887a2b6c.png",
-      "firstNight": 12000,
-      "firstNightReminder": "唤醒人类学家，并用手势告诉他有几对镇民邻座",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0,
+      1
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

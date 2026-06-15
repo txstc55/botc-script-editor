@@ -2,63 +2,54 @@
   "id": "军医",
   "name": "军医",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 3,
-  "variants": [
-    {
-      "id": "军医",
-      "name": "军医",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限两次，在夜晚时，你可以选择一名存活的玩家，如果他将要死亡，他存活，反之亦然。恶魔不会因此死亡。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限两次，在夜晚时，你可以选择一名存活的玩家，如果他将要死亡，他存活，反之亦然。恶魔不会因此死亡。",
+      "每局游戏限两次，在夜晚时*，你可以选择一名存活的玩家，如果他将要死亡，他存活，反之亦然。恶魔不会因此死亡。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
+      "https://www.helloimg.com/i/2025/01/11/678260407c8f6.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      14,
+      11
+    ],
+    "otherNightReminder": [
+      "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
+      "唤醒军医，如果军医使用他的能力，让他选择一名存活的玩家。如果存活的玩家将要死亡他复活，如果存活的玩家不会死亡他就死了。（恶魔除外）"
+    ],
+    "reminders": [
+      [
         "使用一次",
         "失去能力",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "军医",
-      "name": "军医",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限两次，在夜晚时*，你可以选择一名存活的玩家，如果他将要死亡，他存活，反之亦然。恶魔不会因此死亡。",
-      "image": "https://www.helloimg.com/i/2025/01/11/678260407c8f6.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "唤醒军医，如果军医使用他的能力，让他选择一名存活的玩家。如果存活的玩家将要死亡他复活，如果存活的玩家不会死亡他就死了。（恶魔除外）",
-      "reminders": [
+      [
         "复活",
         "失去能力",
         "死亡",
         "诊治",
         "限一次",
         "限两次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

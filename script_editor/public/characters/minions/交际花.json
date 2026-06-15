@@ -2,33 +2,40 @@
   "id": "交际花",
   "name": "交际花",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "交际花",
-      "name": "交际花",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你要选择两名玩家：他们得知自己被交际花选中。如果其中一名玩家被处决，另一名玩家会在当晚转变为邪恶阵营。",
-      "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/temptress_fall_of_rome.png",
-      "firstNight": 12,
-      "firstNightReminder": "交际花指向两名玩家。放置\"诱惑\"标记在这两名玩家旁。分别唤醒这两名玩家。向他展示'这个角色选择了你'提示卡，然后展示交际花角色标记。",
-      "otherNight": 3,
-      "otherNightReminder": "如果带有\"诱惑\"标记的玩家死于处决，移除他的标记。仍然带有\"诱惑\"的玩家转变为邪恶。移除他的标记。唤醒这名邪恶玩家并向他展示'你是'提示卡，做出大拇指向下表示邪恶的手势。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择两名玩家：他们得知自己被交际花选中。如果其中一名玩家被处决，另一名玩家会在当晚转变为邪恶阵营。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/temptress_fall_of_rome.png"
+    ],
+    "firstNight": [
+      12
+    ],
+    "firstNightReminder": [
+      "交际花指向两名玩家。放置\"诱惑\"标记在这两名玩家旁。分别唤醒这两名玩家。向他展示'这个角色选择了你'提示卡，然后展示交际花角色标记。"
+    ],
+    "otherNight": [
+      3
+    ],
+    "otherNightReminder": [
+      "如果带有\"诱惑\"标记的玩家死于处决，移除他的标记。仍然带有\"诱惑\"的玩家转变为邪恶。移除他的标记。唤醒这名邪恶玩家并向他展示'你是'提示卡，做出大拇指向下表示邪恶的手势。"
+    ],
+    "reminders": [
+      [
         "诱惑"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "活着的时候没有什么能将我们分开，但现在面对死亡，我们也许要交换各自埋葬的地方……",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "活着的时候没有什么能将我们分开，但现在面对死亡，我们也许要交换各自埋葬的地方……"
+    ]
+  }
 }

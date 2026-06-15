@@ -2,54 +2,47 @@
   "id": "学究",
   "name": "学究",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "学究",
-      "name": "学究",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "当你被恶魔杀害，或者游戏进行到首夜之后的第三个夜晚时，你可以得知现在恶魔的座位是奇数还是偶数。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_422266718661_0cb7541a.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 43,
-      "otherNightReminder": "如果游戏进行到了第三夜/当晚学究被恶魔杀害了，唤醒学究，并向他展示“1”（代表奇数）或者“2”（代表偶数）",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你永久拥有<外附虫脑>，你会因使用该能力而顿悟，每个夜晚至多使用两次。",
+      "当你被恶魔杀害，或者游戏进行到首夜之后的第三个夜晚时，你可以得知现在恶魔的座位是奇数还是偶数。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_2603187832071_5a12a8c0.jpg",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_422266718661_0cb7541a.jpg"
+    ],
+    "firstNight": [
+      0,
+      26
+    ],
+    "firstNightReminder": [
+      "",
+      "学究每晚至多可以发动四次外附虫脑，但每发动一次，顿悟一次。"
+    ],
+    "otherNight": [
+      26,
+      43
+    ],
+    "otherNightReminder": [
+      "如果游戏进行到了第三夜/当晚学究被恶魔杀害了，唤醒学究，并向他展示“1”（代表奇数）或者“2”（代表偶数）",
+      "学究每晚至多可以发动四次外附虫脑，但每发动一次，顿悟一次。"
+    ],
+    "reminders": [
+      [
         "已知晓"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "学究",
-      "name": "学究",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "你永久拥有<外附虫脑>，你会因使用该能力而顿悟，每个夜晚至多使用两次。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_2603187832071_5a12a8c0.jpg",
-      "firstNight": 26,
-      "firstNightReminder": "学究每晚至多可以发动四次外附虫脑，但每发动一次，顿悟一次。",
-      "otherNight": 26,
-      "otherNightReminder": "学究每晚至多可以发动四次外附虫脑，但每发动一次，顿悟一次。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,34 +2,41 @@
   "id": "雕塑家",
   "name": "雕塑家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "雕塑家",
-      "name": "雕塑家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知一名玩家。每个夜晚*，你会得知他最近提名的玩家的阵营。",
-      "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/sculptor_fall_of_rome.png",
-      "firstNight": 18,
-      "firstNightReminder": "指向一名玩家。放置\"雕塑品\"标记在该玩家旁",
-      "otherNight": 18,
-      "otherNightReminder": "如果带有\"雕塑品\"标记的玩家今天白天发起了提名。如果被提名的玩家是邪恶的，向雕塑家展示表示邪恶的拇指向下手势。否则：向雕塑家展示表示善良的拇指向上手势。移除\"被提名\"标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知一名玩家。每个夜晚*，你会得知他最近提名的玩家的阵营。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/sculptor_fall_of_rome.png"
+    ],
+    "firstNight": [
+      18
+    ],
+    "firstNightReminder": [
+      "指向一名玩家。放置\"雕塑品\"标记在该玩家旁"
+    ],
+    "otherNight": [
+      18
+    ],
+    "otherNightReminder": [
+      "如果带有\"雕塑品\"标记的玩家今天白天发起了提名。如果被提名的玩家是邪恶的，向雕塑家展示表示邪恶的拇指向下手势。否则：向雕塑家展示表示善良的拇指向上手势。移除\"被提名\"标记。"
+    ],
+    "reminders": [
+      [
         "被提名",
         "雕塑品"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "你会发现我关注更精微的细节……",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "你会发现我关注更精微的细节……"
+    ]
+  }
 }

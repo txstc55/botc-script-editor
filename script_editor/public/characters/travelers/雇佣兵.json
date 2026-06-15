@@ -2,59 +2,51 @@
   "id": "雇佣兵",
   "name": "雇佣兵",
   "team": "traveler",
-  "teamLabelZh": "旅行者",
-  "folder": "travelers",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "雇佣兵",
-      "name": "雇佣兵",
-      "variantIndex": 1,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "你可以在提名开始前公开选择一名存活的非旅行者玩家：在黄昏时，他被处决，同时你死亡。如果对方因此死亡，你得知该玩家的阵营。",
-      "image": "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/38_a_bad_example.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "目标"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "没想到在这里也能见血，真是晦气。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "雇佣兵",
-      "name": "雇佣兵",
-      "variantIndex": 2,
-      "team": "traveler",
-      "teams": [
-        "traveler"
-      ],
-      "ability": "每个夜晚*，你拥有今天白天公开声明自己是斯巴达克斯的一名玩家的角色能力。如果有雇佣兵被流放，你也会被流放。[+1对立阵营的雇佣兵]",
-      "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/mercenary_fall_of_rome.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4,
-      "otherNightReminder": "向雇佣兵展示今天白天公开声明自己是斯巴达克斯的一名玩家的角色标记，他在今天晚上和明天白天拥有这个角色能力。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你可以在提名开始前公开选择一名存活的非旅行者玩家：在黄昏时，他被处决，同时你死亡。如果对方因此死亡，你得知该玩家的阵营。",
+      "每个夜晚*，你拥有今天白天公开声明自己是斯巴达克斯的一名玩家的角色能力。如果有雇佣兵被流放，你也会被流放。[+1对立阵营的雇佣兵]"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/mercenary_fall_of_rome.png",
+      "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/38_a_bad_example.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      4
+    ],
+    "otherNightReminder": [
+      "",
+      "向雇佣兵展示今天白天公开声明自己是斯巴达克斯的一名玩家的角色标记，他在今天晚上和明天白天拥有这个角色能力。"
+    ],
+    "reminders": [
+      [
         "善良",
         "善良拥有能力",
         "邪恶",
         "邪恶拥有能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "让雇主当心一些……也要当心我！",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "目标"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "没想到在这里也能见血，真是晦气。",
+      "让雇主当心一些……也要当心我！"
+    ]
+  }
 }

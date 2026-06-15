@@ -2,34 +2,41 @@
   "id": "烟囱",
   "name": "烟囱",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "烟囱",
-      "name": "烟囱",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家：他中毒。如果你选择了你自己，改为所有因你的能力中毒的玩家死亡。",
-      "image": "https://i.postimg.cc/28NKNxWG/smokestack.png",
-      "firstNight": 4,
-      "firstNightReminder": "烟囱选择一名玩家. 如果他选择了一名其他玩家, 放置中毒标记在他上面. 如果你选择了你自己, 所有被放置中毒标记的玩家死亡。 移除所有中毒标记。",
-      "otherNight": 12,
-      "otherNightReminder": "烟囱选择一名玩家. 如果他选择了一名其他玩家, 放置中毒标记在他上面. 如果你选择了你自己, 所有被放置中毒标记的玩家死亡。 移除所有中毒标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家：他中毒。如果你选择了你自己，改为所有因你的能力中毒的玩家死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/28NKNxWG/smokestack.png"
+    ],
+    "firstNight": [
+      4
+    ],
+    "firstNightReminder": [
+      "烟囱选择一名玩家. 如果他选择了一名其他玩家, 放置中毒标记在他上面. 如果你选择了你自己, 所有被放置中毒标记的玩家死亡。 移除所有中毒标记。"
+    ],
+    "otherNight": [
+      12
+    ],
+    "otherNightReminder": [
+      "烟囱选择一名玩家. 如果他选择了一名其他玩家, 放置中毒标记在他上面. 如果你选择了你自己, 所有被放置中毒标记的玩家死亡。 移除所有中毒标记。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "焖烧"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

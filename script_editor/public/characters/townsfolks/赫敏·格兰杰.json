@@ -2,33 +2,40 @@
   "id": "赫敏·格兰杰",
   "name": "赫敏·格兰杰",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "赫敏·格兰杰",
-      "name": "赫敏·格兰杰",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名玩家：你得知他的角色类型（伏地魔会被你当做镇民角色）。如果你在白天公开纠正了一名玩家的错误，当晚你可能会被唤醒以再次使用能力。",
-      "image": "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/hermione_hp2_2.png\"]",
-      "firstNight": 3500,
-      "firstNightReminder": "Wake and ask which player to pick, show character type.",
-      "otherNight": 13,
-      "otherNightReminder": "If they corrected someone: Wake and ask which player to pick, show character type.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一名玩家：你得知他的角色类型（伏地魔会被你当做镇民角色）。如果你在白天公开纠正了一名玩家的错误，当晚你可能会被唤醒以再次使用能力。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/sc911/HP2_2/hermione_hp2_2.png\"]"
+    ],
+    "firstNight": [
+      3500
+    ],
+    "firstNightReminder": [
+      "Wake and ask which player to pick, show character type."
+    ],
+    "otherNight": [
+      13
+    ],
+    "otherNightReminder": [
+      "If they corrected someone: Wake and ask which player to pick, show character type."
+    ],
+    "reminders": [
+      [
         "纠正某人"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Now if you two don’t mind, I’m going to bed before either of you come up with another clever idea to get us killed - or worse, expelled.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Now if you two don’t mind, I’m going to bed before either of you come up with another clever idea to get us killed - or worse, expelled."
+    ]
+  }
 }

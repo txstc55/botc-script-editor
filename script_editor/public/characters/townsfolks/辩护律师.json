@@ -2,79 +2,43 @@
   "id": "辩护律师",
   "name": "辩护律师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 3,
   "totalOccurrenceCount": 4,
-  "variants": [
-    {
-      "id": "辩护律师",
-      "name": "辩护律师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他健康清醒且存活，你可以在白天时私下询问说书人并得知一条正确信息。如果他中毒、醉酒或死亡，你可能会得知错误信息。",
-      "image": "https://vip.helloimg.com/i/2024/07/14/66939d709a5ba.png",
-      "firstNight": 37,
-      "firstNightReminder": "让辩护律师选择一名玩家，用“辩护目标”标记那名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择除你以外的一名玩家：如果他健康清醒且存活，你可以在白天时私下询问说书人并得知一条正确信息。如果他中毒、醉酒或死亡，你可能会得知错误信息。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/1691596248_197011_8658.png",
+      "https://vip.helloimg.com/i/2024/07/14/66939d709a5ba.png"
+    ],
+    "firstNight": [
+      37,
+      20,
+      64
+    ],
+    "firstNightReminder": [
+      "让辩护律师选择一名玩家，用“辩护目标”标记那名玩家。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "辩护目标"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "辩护律师",
-      "name": "辩护律师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他健康清醒且存活，你可以在白天时私下询问说书人并得知一条正确信息。如果他中毒、醉酒或死亡，你可能会得知错误信息。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596248_197011_8658.png",
-      "firstNight": 20,
-      "firstNightReminder": "让辩护律师选择一名玩家，用“辩护目标”标记那名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "辩护目标"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "辩护律师",
-      "name": "辩护律师",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他健康清醒且存活，你可以在白天时私下询问说书人并得知一条正确信息。如果他中毒、醉酒或死亡，你可能会得知错误信息。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1691596248_197011_8658.png",
-      "firstNight": 64,
-      "firstNightReminder": "让辩护律师选择一名玩家，用“辩护目标”标记那名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "辩护目标"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,26 +2,29 @@
   "id": "幻视",
   "name": "幻视",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "幻视",
-      "name": "幻视",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一个不在场的邪恶角色（与之前不同），直到所有不在场的邪恶角色你都得知过一次。",
-      "image": "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/vision_avengersv2.png",
-      "firstNight": 8,
-      "firstNightReminder": "Show the character token of a not-in-play evil character.<br><br>Mark the Vision with the reminder for that character.",
-      "otherNight": 25,
-      "otherNightReminder": "Show the character token of a not-in-play evil character whose reminder hasn't been placed on the Vision yet, if there are any. Mark the Vision with the reminder for that character.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你会得知一个不在场的邪恶角色（与之前不同），直到所有不在场的邪恶角色你都得知过一次。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/omarmotta008/AvengersV2/vision_avengersv2.png"
+    ],
+    "firstNight": [
+      8
+    ],
+    "firstNightReminder": [
+      "Show the character token of a not-in-play evil character.<br><br>Mark the Vision with the reminder for that character."
+    ],
+    "otherNight": [
+      25
+    ],
+    "otherNightReminder": [
+      "Show the character token of a not-in-play evil character whose reminder hasn't been placed on the Vision yet, if there are any. Mark the Vision with the reminder for that character."
+    ],
+    "reminders": [
+      [
         "得知卡西利亚斯",
         "得知多玛姆",
         "得知奥创",
@@ -30,12 +33,16 @@
         "得知灭霸",
         "得知红骷髅",
         "得知阿尼姆·佐拉"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Our very strength invites challenge. Challenge incites conflict. And conflict… breeds catastrophe.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Our very strength invites challenge. Challenge incites conflict. And conflict… breeds catastrophe."
+    ]
+  }
 }

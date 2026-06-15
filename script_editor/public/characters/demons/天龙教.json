@@ -2,60 +2,54 @@
   "id": "天龙教",
   "name": "天龙教",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "天龙教",
-      "name": "天龙教",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "在你的首个夜晚，你得知所有的外来者玩家，并且选择其中之一：他顺时针方向上最近的镇民中毒，当他死于处决时，你会被再次唤醒重新做出选择。每个夜晚*，你要选择一名玩家：他死亡。[至少有两名外来者]",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_4963444872271_1decb38b.jpg",
-      "firstNight": 10,
-      "firstNightReminder": "首个夜晚，唤醒天龙教，指向所有的外来者玩家，并且在他们的角色标记旁放置“傀儡”提示标记，但是不要告知天龙教他们的角色，让天龙教选择其中之一，在他顺时针方向上最近的镇民角色标记旁放置“中毒”标记。",
-      "otherNight": 51,
-      "otherNightReminder": "如果天龙教选择的玩家死于处决，展示“傀儡”提示标记，并且再次让他做出选择。其他夜晚，唤醒天龙教，让其选择一名玩家，在其角色标记旁放置“死亡”，让天龙教重新入睡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你得知所有的外来者玩家，并且选择其中之一：他顺时针方向上最近的镇民中毒，当他死于处决时，你会被再次唤醒重新做出选择。每个夜晚*，你要选择一名玩家：他死亡。[至少有两名外来者]",
+      "每个夜晚*，你要选择一名玩家：他死亡。 在你的首个夜晚，你会得知所有的外来者玩家，然后选择其中一名玩家：他顺时针方向上最近的镇民中毒。 当他死于处决时，你重获能力。[至少有两个外来者在场]"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202408/c_4963444872271_1decb38b.jpg",
+      "https://www.bloodstar.xyz/p/bluebell/jtxx/26_jtxx.png"
+    ],
+    "firstNight": [
+      10,
+      12
+    ],
+    "firstNightReminder": [
+      "1",
+      "首个夜晚，唤醒天龙教，指向所有的外来者玩家，并且在他们的角色标记旁放置“傀儡”提示标记，但是不要告知天龙教他们的角色，让天龙教选择其中之一，在他顺时针方向上最近的镇民角色标记旁放置“中毒”标记。"
+    ],
+    "otherNight": [
+      5,
+      51
+    ],
+    "otherNightReminder": [
+      "1",
+      "如果天龙教选择的玩家死于处决，展示“傀儡”提示标记，并且再次让他做出选择。其他夜晚，唤醒天龙教，让其选择一名玩家，在其角色标记旁放置“死亡”，让天龙教重新入睡。"
+    ],
+    "reminders": [
+      [
         "中毒",
         "傀儡",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "羽翼落尽之日，便是我天龙归来之时。",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "天龙教",
-      "name": "天龙教",
-      "variantIndex": 2,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。 在你的首个夜晚，你会得知所有的外来者玩家，然后选择其中一名玩家：他顺时针方向上最近的镇民中毒。 当他死于处决时，你重获能力。[至少有两个外来者在场]",
-      "image": "https://www.bloodstar.xyz/p/bluebell/jtxx/26_jtxx.png",
-      "firstNight": 12,
-      "firstNightReminder": "1",
-      "otherNight": 5,
-      "otherNightReminder": "1",
-      "reminders": [
+      [
         "中毒",
         "死于今日",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 1,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      1
+    ],
+    "flavor": [
+      "",
+      "羽翼落尽之日，便是我天龙归来之时。"
+    ]
+  }
 }

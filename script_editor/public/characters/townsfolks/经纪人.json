@@ -2,34 +2,41 @@
   "id": "经纪人",
   "name": "经纪人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "经纪人",
-      "name": "经纪人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "恶魔开局会收到四个伪装角色，但其中有两个角色在场。如果你死亡，当晚恶魔会得知哪两个角色在场。",
-      "image": "https://i.postimg.cc/qvXFnNC4/broker.png",
-      "firstNight": 7,
-      "firstNightReminder": "在恶魔信息阶段，改为向恶魔展示四个善良角色，其中两个角色在场。为这两个在场角色放置“在场”标记。",
-      "otherNight": 25,
-      "otherNightReminder": "如果经纪人带有“今晚提示”标记：唤醒恶魔，向他展示带有“在场”标记的角色标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "恶魔开局会收到四个伪装角色，但其中有两个角色在场。如果你死亡，当晚恶魔会得知哪两个角色在场。"
+    ],
+    "image": [
+      "https://i.postimg.cc/qvXFnNC4/broker.png"
+    ],
+    "firstNight": [
+      7
+    ],
+    "firstNightReminder": [
+      "在恶魔信息阶段，改为向恶魔展示四个善良角色，其中两个角色在场。为这两个在场角色放置“在场”标记。"
+    ],
+    "otherNight": [
+      25
+    ],
+    "otherNightReminder": [
+      "如果经纪人带有“今晚提示”标记：唤醒恶魔，向他展示带有“在场”标记的角色标记。"
+    ],
+    "reminders": [
+      [
         "今晚提示",
         "在场"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

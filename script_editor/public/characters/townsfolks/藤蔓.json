@@ -2,35 +2,42 @@
   "id": "藤蔓",
   "name": "藤蔓",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "藤蔓",
-      "name": "藤蔓",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名玩家（除你以外）：如果他是存活的善良玩家，你不会死亡。当你首次选择或更换目标时，你们之一会腐蚀+1。",
-      "image": "https://www.bloodstar.xyz/p/Yez/nature/3_nature.png",
-      "firstNight": 18,
-      "firstNightReminder": "唤醒藤蔓，让他指向一名玩家，在该玩家角色标记旁放置“已选择”提示标记，然后在藤蔓的角色标记旁放置“+1”提示标记。",
-      "otherNight": 11,
-      "otherNightReminder": "唤醒藤蔓，让他指向一名玩家，在该玩家角色标记旁放置“已选择”提示标记。如果此次选择的玩家在选择前没有放置“已选择”提示标记，再为藤蔓或者该玩家角色标记旁放置“+1”提示标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名玩家（除你以外）：如果他是存活的善良玩家，你不会死亡。当你首次选择或更换目标时，你们之一会腐蚀+1。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Yez/nature/3_nature.png"
+    ],
+    "firstNight": [
+      18
+    ],
+    "firstNightReminder": [
+      "唤醒藤蔓，让他指向一名玩家，在该玩家角色标记旁放置“已选择”提示标记，然后在藤蔓的角色标记旁放置“+1”提示标记。"
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "唤醒藤蔓，让他指向一名玩家，在该玩家角色标记旁放置“已选择”提示标记。如果此次选择的玩家在选择前没有放置“已选择”提示标记，再为藤蔓或者该玩家角色标记旁放置“+1”提示标记。"
+    ],
+    "reminders": [
+      [
         "+1",
         "不会死亡",
         "被选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

@@ -2,54 +2,45 @@
   "id": "通灵者",
   "name": "通灵者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "通灵者",
-      "name": "通灵者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：如果他当晚死亡，你会得知与他邻近的两名存活的玩家中邪恶玩家的数量。",
-      "image": "https://i.postimg.cc/SsQ1pVQd/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 4,
-      "otherNightReminder": "让通灵者选择一名玩家，标记该玩家被选择，如果该玩家在当晚死亡，唤醒通灵者，展示数字手势来告诉通灵者与该玩家邻近的两名存活的玩家中邪恶玩家的数量。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以在以下两个信息中选择其一得知：1. 所有死亡的玩家中有几位是鹅。2. 所有死亡玩家中有几位带刀。",
+      "每个夜晚*，你要选择一名玩家：如果他当晚死亡，你会得知与他邻近的两名存活的玩家中邪恶玩家的数量。"
+    ],
+    "image": [
+      "https://i.postimg.cc/SsQ1pVQd/image.png",
+      "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/9_goosegooseduck.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      21,
+      4
+    ],
+    "otherNightReminder": [
+      "唤醒玩家并告知让玩家选择1或2，告知对应的数字。",
+      "让通灵者选择一名玩家，标记该玩家被选择，如果该玩家在当晚死亡，唤醒通灵者，展示数字手势来告诉通灵者与该玩家邻近的两名存活的玩家中邪恶玩家的数量。"
+    ],
+    "reminders": [
+      [
         "被选择"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "通灵者",
-      "name": "通灵者",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以在以下两个信息中选择其一得知：1. 所有死亡的玩家中有几位是鹅。2. 所有死亡玩家中有几位带刀。",
-      "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/9_goosegooseduck.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 21,
-      "otherNightReminder": "唤醒玩家并告知让玩家选择1或2，告知对应的数字。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

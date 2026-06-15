@@ -2,106 +2,56 @@
   "id": "香客",
   "name": "香客",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 4,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "香客",
-      "name": "香客",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要点一根香：你会得知香能否被点燃。如果当天你曾与恶魔一起投票，香无法被点燃。",
-      "image": "https://www.helloimg.com/i/2024/12/27/676da75050d8d.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 120,
-      "otherNightReminder": "唤醒香客，如果当天没有与恶魔一起投票，告知他香被点燃了。如果当天曾与恶魔一起投票，告知他香熄灭了",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要点一根香：你会得知香能否被点燃。如果当天你曾与恶魔一起投票，香无法被点燃。"
+    ],
+    "image": [
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5337365766861_4d0134a5.jpg",
+      "https://www.helloimg.com/i/2024/12/27/676da75050d8d.png",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8308070695861_d98cd8b7.jpg"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      120,
+      160,
+      29,
+      61
+    ],
+    "otherNightReminder": [
+      "唤醒香客，如果当天没有与恶魔一起投票，告知他香被点燃了。如果当天曾与恶魔一起投票，告知他香熄灭了",
+      "如果香客与恶魔没有一起投票，告知他“香燃了起来”；如果他曾与恶魔一起投票，告知他“香就是点不着，似乎有什么不好的事情发生了”。",
+      "每个夜晚*，你要点一根香：你会得知香能否被点燃。如果当天你曾与恶魔一起投票，香无法被点燃。"
+    ],
+    "reminders": [
+      [
         "点燃",
         "熄灭"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "香客",
-      "name": "香客",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要点一根香：你会得知香能否被点燃。如果当天你曾与恶魔一起投票，香无法被点燃。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5337365766861_4d0134a5.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 29,
-      "otherNightReminder": "如果香客与恶魔没有一起投票，告知他“香燃了起来”；如果他曾与恶魔一起投票，告知他“香就是点不着，似乎有什么不好的事情发生了”。",
-      "reminders": [
-        "熄",
-        "燃"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "香客",
-      "name": "香客",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要点一根香：你会得知香能否被点燃。如果当天你曾与恶魔一起投票，香无法被点燃。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5337365766861_4d0134a5.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 61,
-      "otherNightReminder": "如果香客与恶魔没有一起投票，告知他“香燃了起来”；如果他曾与恶魔一起投票，告知他“香就是点不着，似乎有什么不好的事情发生了”。",
-      "reminders": [
-        "点燃",
-        "熄灭"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "香客",
-      "name": "香客",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要点一根香：你会得知香能否被点燃。如果当天你曾与恶魔一起投票，香无法被点燃。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_8308070695861_d98cd8b7.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 160,
-      "otherNightReminder": "每个夜晚*，你要点一根香：你会得知香能否被点燃。如果当天你曾与恶魔一起投票，香无法被点燃。",
-      "reminders": [
+      [
         "无法点燃",
         "点燃"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "熄",
+        "燃"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

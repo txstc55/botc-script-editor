@@ -2,102 +2,51 @@
   "id": "灶王爷",
   "name": "灶王爷",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 4,
   "totalOccurrenceCount": 5,
-  "variants": [
-    {
-      "id": "灶王爷",
-      "name": "灶王爷",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知包括你在内的三名玩家和他们中的角色类型总数。",
-      "image": "https://www.helloimg.com/i/2024/12/27/676e70d7704ee.png",
-      "firstNight": 52,
-      "firstNightReminder": "告诉灶王爷两名其他玩家和一个数字，该数字为灶王爷和他们的角色类型数量。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你会得知二名玩家和一个数字：该数字为你和他们的角色类型数量。",
+      "在你的首个夜晚，你会得知包括你在内的三名玩家和他们中的角色类型总数。"
+    ],
+    "image": [
+      "https://www.helloimg.com/i/2024/12/27/676e70d7704ee.png",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5608162020171_4f93986d.jpg",
+      "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_7886055695671_7e22961e.jpg",
+      "https://www.bloodstar.xyz/p/chiyu/SBJK8/4_sbjk8.png"
+    ],
+    "firstNight": [
+      52,
+      17,
+      40,
+      40000
+    ],
+    "firstNightReminder": [
+      "告诉灶王爷二名玩家和一个数字，该数字为灶王爷和他们的角色类型数量。",
+      "告诉灶王爷两名其他玩家和一个数字，该数字为灶王爷和他们的角色类型数量。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "灶火"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "灶王爷",
-      "name": "灶王爷",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知二名玩家和一个数字：该数字为你和他们的角色类型数量。",
-      "image": "https://www.bloodstar.xyz/p/chiyu/SBJK8/4_sbjk8.png",
-      "firstNight": 17,
-      "firstNightReminder": "告诉灶王爷二名玩家和一个数字，该数字为灶王爷和他们的角色类型数量。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "灶火"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "灶王爷",
-      "name": "灶王爷",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知二名玩家和一个数字：该数字为你和他们的角色类型数量。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5608162020171_4f93986d.jpg",
-      "firstNight": 40,
-      "firstNightReminder": "告诉灶王爷二名玩家和一个数字，该数字为灶王爷和他们的角色类型数量。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "灶火"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "灶王爷",
-      "name": "灶王爷",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知二名玩家和一个数字：该数字为你和他们的角色类型数量。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_7886055695671_7e22961e.jpg",
-      "firstNight": 40000,
-      "firstNightReminder": "告诉灶王爷二名玩家和一个数字，该数字为灶王爷和他们的角色类型数量。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+      [
         "知晓"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

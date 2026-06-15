@@ -2,125 +2,56 @@
   "id": "药剂师",
   "name": "药剂师",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 5,
   "totalOccurrenceCount": 7,
-  "variants": [
-    {
-      "id": "药剂师",
-      "name": "药剂师",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，如果说书人同意，你可以公开改变一条游戏规则。",
-      "image": "https://i.postimg.cc/cCHMHsCW/image-2.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每局游戏限一次，如果说书人同意，你可以公开改变一条游戏规则。",
+      "每个夜晚*，你可以选择一名玩家：他今晚不会死亡。当你下次选择他时：他死亡。",
+      "每局游戏限一次，你可以提议一条新的游戏规则。如果说书人同意，你死亡，但是你的规则会被采纳。"
+    ],
+    "image": [
+      "https://i.postimg.cc/cCHMHsCW/image-2.png",
+      "https://s2.loli.net/2025/09/07/Ef7TFU81xdDvQqV.png",
+      "https://s2.loli.net/2025/09/16/fpKYamTDgerMOhs.png",
+      "https://www.bloodstar.xyz/p/Lee/Recovery/1_recovery.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      0,
+      8000
+    ],
+    "otherNightReminder": [
+      "",
+      "每个夜晚*，你可以选择一名玩家：他今晚不会死亡。当你下次选择他时：他死亡。"
+    ],
+    "reminders": [
+      [
         "失去能力"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 3,
-      "notes": []
-    },
-    {
-      "id": "药剂师",
-      "name": "药剂师",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，你可以提议一条新的游戏规则。如果说书人同意，你死亡，但是你的规则会被采纳。",
-      "image": "https://i.postimg.cc/cCHMHsCW/image-2.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "药剂师",
-      "name": "药剂师",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，如果说书人同意，你可以公开改变一条游戏规则。",
-      "image": "https://s2.loli.net/2025/09/16/fpKYamTDgerMOhs.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "限一次"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "药剂师",
-      "name": "药剂师",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，如果说书人同意，你可以公开改变一条游戏规则。",
-      "image": "https://www.bloodstar.xyz/p/Lee/Recovery/1_recovery.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "药剂师",
-      "name": "药剂师",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择一名玩家：他今晚不会死亡。当你下次选择他时：他死亡。",
-      "image": "https://s2.loli.net/2025/09/07/Ef7TFU81xdDvQqV.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 8000,
-      "otherNightReminder": "每个夜晚*，你可以选择一名玩家：他今晚不会死亡。当你下次选择他时：他死亡。",
-      "reminders": [
+      [
         "不会死亡",
         "死亡",
         "被选择过"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "限一次"
+      ],
+      []
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

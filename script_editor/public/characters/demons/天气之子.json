@@ -2,33 +2,40 @@
   "id": "天气之子",
   "name": "天气之子",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "天气之子",
-      "name": "天气之子",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。每晚，选择三个天气事件（非上次生效的两个天气事件），当天将生效其中两个天气事件。",
-      "image": "https://i.postimg.cc/fWtV5d4k/diy.png",
-      "firstNight": 0,
-      "firstNightReminder": "选择三个天气事件，触发其中两个事件。",
-      "otherNight": 1,
-      "otherNightReminder": "每晚，选择三个的天气事件（非上次生效的两个天气事件），触发其中两个事件。并让他杀一个人",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。每晚，选择三个天气事件（非上次生效的两个天气事件），当天将生效其中两个天气事件。"
+    ],
+    "image": [
+      "https://i.postimg.cc/fWtV5d4k/diy.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      "选择三个天气事件，触发其中两个事件。"
+    ],
+    "otherNight": [
+      1
+    ],
+    "otherNightReminder": [
+      "每晚，选择三个的天气事件（非上次生效的两个天气事件），触发其中两个事件。并让他杀一个人"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

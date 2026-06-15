@@ -2,34 +2,41 @@
   "id": "复生者",
   "name": "复生者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "复生者",
-      "name": "复生者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "当你首次死亡后，你仍存活，但被当作死亡。你被当作死亡的每个夜晚，你会得知一名与之前不同的非恶魔的存活玩家。",
-      "image": "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/revenant_beyondgoodandevilv3.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 19,
-      "otherNightReminder": "如果归来者被当作死亡，唤醒他并指向一名没有“得知”标记的非恶魔的存活玩家。标记该玩家“得知”。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "当你首次死亡后，你仍存活，但被当作死亡。你被当作死亡的每个夜晚，你会得知一名与之前不同的非恶魔的存活玩家。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/WedgeMcCloud/BeyondGoodAndEvil-V3/revenant_beyondgoodandevilv3.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      19
+    ],
+    "otherNightReminder": [
+      "如果归来者被当作死亡，唤醒他并指向一名没有“得知”标记的非恶魔的存活玩家。标记该玩家“得知”。"
+    ],
+    "reminders": [
+      [
         "假死",
         "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Those who walk in the land of living think of themselves as awake, but they are mistaken. They shamble amidst slumber, blind to the truth of the grave. Beyond the reach of this feeble flesh lies sight beyond sight.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Those who walk in the land of living think of themselves as awake, but they are mistaken. They shamble amidst slumber, blind to the truth of the grave. Beyond the reach of this feeble flesh lies sight beyond sight."
+    ]
+  }
 }

@@ -2,33 +2,40 @@
   "id": "玻璃坊主",
   "name": "玻璃坊主",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "玻璃坊主",
-      "name": "玻璃坊主",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你要选择一个角色：如果他在当晚死亡，你会得知他是谁。",
-      "image": "https://i.postimg.cc/LXP8nzK1/9.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 11,
-      "otherNightReminder": "让玻璃坊主选择角色列表上的一个角色标记。如果该角色对应的玩家在当晚死亡，唤醒玻璃坊主，指向那名玩家。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一个角色：如果他在当晚死亡，你会得知他是谁。"
+    ],
+    "image": [
+      "https://i.postimg.cc/LXP8nzK1/9.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      11
+    ],
+    "otherNightReminder": [
+      "让玻璃坊主选择角色列表上的一个角色标记。如果该角色对应的玩家在当晚死亡，唤醒玻璃坊主，指向那名玩家。"
+    ],
+    "reminders": [
+      [
         "晶心幻碎"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

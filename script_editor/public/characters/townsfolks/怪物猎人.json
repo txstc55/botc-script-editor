@@ -2,33 +2,40 @@
   "id": "怪物猎人",
   "name": "怪物猎人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "怪物猎人",
-      "name": "怪物猎人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，你可以选择杀死自己并选择一个爪牙角色：若你因此死亡，你选择的爪牙角色一同死亡。",
-      "image": "https://i.postimg.cc/Qt64N5H3/image.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13,
-      "otherNightReminder": "怪物猎人可以选择一个爪牙角色。如果他这么做了，标记他死亡。如果他以这种方式死亡，标记他选择的爪牙角色死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你可以选择杀死自己并选择一个爪牙角色：若你因此死亡，你选择的爪牙角色一同死亡。"
+    ],
+    "image": [
+      "https://i.postimg.cc/Qt64N5H3/image.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      13
+    ],
+    "otherNightReminder": [
+      "怪物猎人可以选择一个爪牙角色。如果他这么做了，标记他死亡。如果他以这种方式死亡，标记他选择的爪牙角色死亡。"
+    ],
+    "reminders": [
+      [
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

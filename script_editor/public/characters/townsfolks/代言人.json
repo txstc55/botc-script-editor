@@ -2,34 +2,41 @@
   "id": "代言人",
   "name": "代言人",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "代言人",
-      "name": "代言人",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择一名存活玩家：如果他明天白天被处决，你会在当晚得知一名与他阵营相同的玩家。",
-      "image": "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/advocate_echoes_of_the_past.png",
-      "firstNight": 3019,
-      "firstNightReminder": "Wake the Advocate. They will choose a player. Mark that player with the \"Chosen\" reminder token. Then, put the Advocate to sleep.",
-      "otherNight": 25,
-      "otherNightReminder": "Wake the Advocate. If a player has the \"Executed Today\" reminder token on them, point at a player of the same alignment as them. Then, the Advocate will choose a player. Mark that player with the \"Chosen\" reminder token. Then, put the Advocate to sleep.",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择一名存活玩家：如果他明天白天被处决，你会在当晚得知一名与他阵营相同的玩家。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/Wingidon/Echoes_Of_The_Past/advocate_echoes_of_the_past.png"
+    ],
+    "firstNight": [
+      3019
+    ],
+    "firstNightReminder": [
+      "Wake the Advocate. They will choose a player. Mark that player with the \"Chosen\" reminder token. Then, put the Advocate to sleep."
+    ],
+    "otherNight": [
+      25
+    ],
+    "otherNightReminder": [
+      "Wake the Advocate. If a player has the \"Executed Today\" reminder token on them, point at a player of the same alignment as them. Then, the Advocate will choose a player. Mark that player with the \"Chosen\" reminder token. Then, put the Advocate to sleep."
+    ],
+    "reminders": [
+      [
         "当日处决",
         "选择"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "To play Devil's Advocate here though...",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "To play Devil's Advocate here though..."
+    ]
+  }
 }

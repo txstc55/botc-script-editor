@@ -2,57 +2,49 @@
   "id": "花花公子",
   "name": "花花公子",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "花花公子",
-      "name": "花花公子",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个白天，你投票的前3名善良玩家会醉酒且免疫恶魔的负面能力直到下个黎明。",
-      "image": "https://www.bloodstar.xyz/p/marhepto/RavenswoodHigh/playboy_ravenswoodhigh.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒且免疫"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "花花公子",
-      "name": "花花公子",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你要选择一个善良角色：当你死亡时，如果该角色在场，对应的玩家也会死亡。",
-      "image": "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/_bundagee_inn_massacre_bigyellowfish.png",
-      "firstNight": 18,
-      "firstNightReminder": "花花公子指向角色列表上任一善良角色，如果那个角色在场，标记“一同”。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一个善良角色：当你死亡时，如果该角色在场，对应的玩家也会死亡。",
+      "每个白天，你投票的前3名善良玩家会醉酒且免疫恶魔的负面能力直到下个黎明。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/_bundagee_inn_massacre_bigyellowfish.png",
+      "https://www.bloodstar.xyz/p/marhepto/RavenswoodHigh/playboy_ravenswoodhigh.png"
+    ],
+    "firstNight": [
+      0,
+      18
+    ],
+    "firstNightReminder": [
+      "",
+      "花花公子指向角色列表上任一善良角色，如果那个角色在场，标记“一同”。"
+    ],
+    "otherNight": [
+      0
+    ],
+    "otherNightReminder": [
+      ""
+    ],
+    "reminders": [
+      [
         "一同",
         "死亡"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "哇噢！她真是个辣妹！然后看看他的肌肉！今晚有这么多火辣的人！别挡道，让我进去！",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "醉酒且免疫"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "哇噢！她真是个辣妹！然后看看他的肌肉！今晚有这么多火辣的人！别挡道，让我进去！"
+    ]
+  }
 }

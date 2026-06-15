@@ -2,59 +2,53 @@
   "id": "白日梦想家",
   "name": "白日梦想家",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 2,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "白日梦想家",
-      "name": "白日梦想家",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "你的能力是如果…，那么…。在你的首个白天拜访并告知说书人“那么”，说书人会告知你能力的“如果”。",
-      "image": "https://www.bloodstar.xyz/p/Drus/5GMXJ/_5gmxj.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "醉酒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "“我有一个梦想”",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "白日梦想家",
-      "name": "白日梦想家",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择两名玩家。你会得知他们：1)是否同一阵营，或2)是否与恶魔邻近，或3)是否有恶魔。你只会得知是或否。你会在每个偶数夜晚得知自己的信息对应以上哪两项。",
-      "image": "https://i.postimg.cc/t4smRD5J/dream-catcher-1.png",
-      "firstNight": 13,
-      "firstNightReminder": "唤醒白日梦想家，说书人选择一个信息选项。让白日梦想家指向两名玩家，按照信息选项，点头代表“是”，摇头代表“否”。为白日梦想家放置该信息选项的标记。",
-      "otherNight": 11,
-      "otherNightReminder": "移除被选择标记。唤醒白日梦想家，说书人选择一个信息选项。让白日梦想家指向两名玩家，按照信息选项，点头代表“是”，摇头代表“否”。为白日梦想家放置该信息选项的标记。如果今晚是偶数夜晚，向白日梦想家展示他的两个信息选项标记，但不要告诉他哪个选项对应哪个信息，同时移除所有信息选项标记。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "你的能力是如果…，那么…。在你的首个白天拜访并告知说书人“那么”，说书人会告知你能力的“如果”。",
+      "每个夜晚，你要选择两名玩家。你会得知他们：1)是否同一阵营，或2)是否与恶魔邻近，或3)是否有恶魔。你只会得知是或否。你会在每个偶数夜晚得知自己的信息对应以上哪两项。"
+    ],
+    "image": [
+      "https://i.postimg.cc/t4smRD5J/dream-catcher-1.png",
+      "https://www.bloodstar.xyz/p/Drus/5GMXJ/_5gmxj.png"
+    ],
+    "firstNight": [
+      0,
+      13
+    ],
+    "firstNightReminder": [
+      "",
+      "唤醒白日梦想家，说书人选择一个信息选项。让白日梦想家指向两名玩家，按照信息选项，点头代表“是”，摇头代表“否”。为白日梦想家放置该信息选项的标记。"
+    ],
+    "otherNight": [
+      0,
+      11
+    ],
+    "otherNightReminder": [
+      "",
+      "移除被选择标记。唤醒白日梦想家，说书人选择一个信息选项。让白日梦想家指向两名玩家，按照信息选项，点头代表“是”，摇头代表“否”。为白日梦想家放置该信息选项的标记。如果今晚是偶数夜晚，向白日梦想家展示他的两个信息选项标记，但不要告诉他哪个选项对应哪个信息，同时移除所有信息选项标记。"
+    ],
+    "reminders": [
+      [
         "是否与恶魔邻近",
         "是否同一阵营",
         "是否有恶魔",
         "被选择"
       ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      [
+        "醉酒"
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "“我有一个梦想”"
+    ]
+  }
 }

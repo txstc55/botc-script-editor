@@ -2,33 +2,40 @@
   "id": "自信",
   "name": "自信",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "自信",
-      "name": "自信",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你要选择顺时针或逆时针：在该方向上离你最近的存活镇民免受醉酒和中毒影响，且会得知正确信息。",
-      "image": "[\"https://www.bloodstar.xyz/p/Rowlf/Reddwarf/confidence_reddwarf.png\"]",
-      "firstNight": 3005,
-      "firstNightReminder": "Ask the player to select clockwise or anti-clockwise, place the 'confident' token next to them. :reminder:",
-      "otherNight": 5,
-      "otherNightReminder": "Ask the player to select clockwise or anti-clockwise, place the 'confident' token next to them. :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚，你要选择顺时针或逆时针：在该方向上离你最近的存活镇民免受醉酒和中毒影响，且会得知正确信息。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/Rowlf/Reddwarf/confidence_reddwarf.png\"]"
+    ],
+    "firstNight": [
+      3005
+    ],
+    "firstNightReminder": [
+      "Ask the player to select clockwise or anti-clockwise, place the 'confident' token next to them. :reminder:"
+    ],
+    "otherNight": [
+      5
+    ],
+    "otherNightReminder": [
+      "Ask the player to select clockwise or anti-clockwise, place the 'confident' token next to them. :reminder:"
+    ],
+    "reminders": [
+      [
         "自信"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

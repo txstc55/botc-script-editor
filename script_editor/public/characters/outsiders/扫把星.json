@@ -2,33 +2,40 @@
   "id": "扫把星",
   "name": "扫把星",
   "team": "outsider",
-  "teamLabelZh": "外来者",
-  "folder": "outsiders",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "扫把星",
-      "name": "扫把星",
-      "variantIndex": 1,
-      "team": "outsider",
-      "teams": [
-        "outsider"
-      ],
-      "ability": "如果你被处决，在当晚，恶魔可以选择将命运指针拨动一格。你在首个夜晚负伤。",
-      "image": "https://i.postimg.cc/Y26gYSQz/扫把星.png",
-      "firstNight": 3,
-      "firstNightReminder": "为扫把星放置负伤标记。",
-      "otherNight": 4,
-      "otherNightReminder": "如果扫把星放置了被处决标记，唤醒恶魔，询问他今晚是否要移动命运指针",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你被处决，在当晚，恶魔可以选择将命运指针拨动一格。你在首个夜晚负伤。"
+    ],
+    "image": [
+      "https://i.postimg.cc/Y26gYSQz/扫把星.png"
+    ],
+    "firstNight": [
+      3
+    ],
+    "firstNightReminder": [
+      "为扫把星放置负伤标记。"
+    ],
+    "otherNight": [
+      4
+    ],
+    "otherNightReminder": [
+      "如果扫把星放置了被处决标记，唤醒恶魔，询问他今晚是否要移动命运指针"
+    ],
+    "reminders": [
+      [
         "被处决"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

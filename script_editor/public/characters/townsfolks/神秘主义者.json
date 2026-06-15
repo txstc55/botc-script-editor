@@ -2,34 +2,41 @@
   "id": "神秘主义者",
   "name": "神秘主义者",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 2,
-  "variants": [
-    {
-      "id": "神秘主义者",
-      "name": "神秘主义者",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，在最后一个夜晚，你要选择一个善良角色：你变成该角色并复活，即使你已醉酒或中毒。",
-      "image": "https://www.bloodstar.xyz/p/jc3635/Satellite/1_satellite.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 9,
-      "otherNightReminder": "如果神秘主义者在夜晚死亡，放置死在夜晚标记。如果有死在夜晚标记，在最后一个夜晚唤醒神秘主义者并让他选择一个善良角色，将该角色标记替换之。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在夜晚死亡，在最后一个夜晚，你要选择一个善良角色：你变成该角色并复活，即使你已醉酒或中毒。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/jc3635/Satellite/1_satellite.png"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      9
+    ],
+    "otherNightReminder": [
+      "如果神秘主义者在夜晚死亡，放置死在夜晚标记。如果有死在夜晚标记，在最后一个夜晚唤醒神秘主义者并让他选择一个善良角色，将该角色标记替换之。"
+    ],
+    "reminders": [
+      [
         "复活",
         "死在夜晚"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }

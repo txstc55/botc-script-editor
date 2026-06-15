@@ -2,34 +2,41 @@
   "id": "辣手保姆",
   "name": "辣手保姆",
   "team": "minion",
-  "teamLabelZh": "爪牙",
-  "folder": "minions",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "辣手保姆",
-      "name": "辣手保姆",
-      "variantIndex": 1,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "在你的首个夜晚，你要选择一名善良玩家：他中毒但不会死亡。每局游戏限一次，在夜晚时，你可以选择一名与之前不同的善良玩家：他中毒但不会死亡，但你之前选择的玩家恢复健康但会死亡。如果小于等于五名玩家存活，你失去此能力。",
-      "image": "https://www.bloodstar.xyz/p/SeaBound/Halloween/babysitter_halloween.png",
-      "firstNight": 3100,
-      "firstNightReminder": "辣手保姆选择一名玩家。那名玩家中毒但不会死亡。",
-      "otherNight": 2,
-      "otherNightReminder": "辣手保姆可以选择一名玩家。那名玩家中毒但不会死亡。之前选择的玩家恢复健康但会死亡。",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在你的首个夜晚，你要选择一名善良玩家：他中毒但不会死亡。每局游戏限一次，在夜晚时，你可以选择一名与之前不同的善良玩家：他中毒但不会死亡，但你之前选择的玩家恢复健康但会死亡。如果小于等于五名玩家存活，你失去此能力。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/SeaBound/Halloween/babysitter_halloween.png"
+    ],
+    "firstNight": [
+      3100
+    ],
+    "firstNightReminder": [
+      "辣手保姆选择一名玩家。那名玩家中毒但不会死亡。"
+    ],
+    "otherNight": [
+      2
+    ],
+    "otherNightReminder": [
+      "辣手保姆可以选择一名玩家。那名玩家中毒但不会死亡。之前选择的玩家恢复健康但会死亡。"
+    ],
+    "reminders": [
+      [
         "使用能力",
         "保护"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "No TV after eight!",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "No TV after eight!"
+    ]
+  }
 }

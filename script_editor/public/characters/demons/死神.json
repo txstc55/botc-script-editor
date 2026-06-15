@@ -2,35 +2,42 @@
   "id": "死神",
   "name": "死神",
   "team": "demon",
-  "teamLabelZh": "恶魔",
-  "folder": "demons",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "死神",
-      "name": "死神",
-      "variantIndex": 1,
-      "team": "demon",
-      "teams": [
-        "demon"
-      ],
-      "ability": "每个夜晚*，你要选择一名玩家：他死亡。你与一名镇民玩家知道对方在场但不知道是谁。每局游戏限一次，如果你们之一公开猜测对方的角色且猜测正确，其所对应的阵营获胜。",
-      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/grimmreaper_the_last_cull__.png",
-      "firstNight": 3014,
-      "firstNightReminder": "During the first night, before they receive their Demon info, show the Grimm Reaper the character token of the player marked \"Known\". If there are less than 7 players, put the Grimm Reaper to sleep. If there are 7 or more players, provide the Grimm Reaper the rest of their Demon info, and then put them to sleep. After putting the Grimm Reaper to sleep, wake the player marked \"Known\" player, and show them the \"This character selected you\" info token and then the Grimm Reaper token. Put this player to sleep.",
-      "otherNight": 12,
-      "otherNightReminder": "The Grimm Reaper points at any player. The chosen player dies—mark them with the \"Dead\" reminder token. Put the Grimm Reaper to sleep",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "每个夜晚*，你要选择一名玩家：他死亡。你与一名镇民玩家知道对方在场但不知道是谁。每局游戏限一次，如果你们之一公开猜测对方的角色且猜测正确，其所对应的阵营获胜。"
+    ],
+    "image": [
+      "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/grimmreaper_the_last_cull__.png"
+    ],
+    "firstNight": [
+      3014
+    ],
+    "firstNightReminder": [
+      "During the first night, before they receive their Demon info, show the Grimm Reaper the character token of the player marked \"Known\". If there are less than 7 players, put the Grimm Reaper to sleep. If there are 7 or more players, provide the Grimm Reaper the rest of their Demon info, and then put them to sleep. After putting the Grimm Reaper to sleep, wake the player marked \"Known\" player, and show them the \"This character selected you\" info token and then the Grimm Reaper token. Put this player to sleep."
+    ],
+    "otherNight": [
+      12
+    ],
+    "otherNightReminder": [
+      "The Grimm Reaper points at any player. The chosen player dies—mark them with the \"Dead\" reminder token. Put the Grimm Reaper to sleep"
+    ],
+    "reminders": [
+      [
         "已猜测",
         "得知",
         "死亡"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Your time has come, mortal. Do not run, for you shall rip your neck open in the cacophony. Only those who face death directly stand a chance against their end.",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "Your time has come, mortal. Do not run, for you shall rip your neck open in the cacophony. Only those who face death directly stand a chance against their end."
+    ]
+  }
 }

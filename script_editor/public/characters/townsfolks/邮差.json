@@ -2,228 +2,86 @@
   "id": "邮差",
   "name": "邮差",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 10,
   "totalOccurrenceCount": 11,
-  "variants": [
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
+  "notes": [],
+  "variants": {
+    "ability": [
+      "在最后一晚，即使你已死亡，选择一名玩家：他得知某些信息。你可以随时决定他得知什么。",
+      "在最后一晚，即使你已死亡，选择一名玩家：他得知某些信息。你存活时，可以随时要求他得知什么（需说书人同意）。",
+      "在你的首个夜晚，你得知两名玩家：他们的阵营是相同的。",
+      "在你的首个夜晚，你得知最多有多少名镇民玩家连坐在一起。",
+      "在最后一个夜晚，你可以选择一名玩家：他会得知某些信息，即使你已死亡。你可以随时决定他得知什么。",
+      "每个夜晚，你会得知一个不在场的角色。",
+      "每个夜晚，你会得知一个不在场角色。",
+      "每局游戏限一次，你可以公开提出一个问题。在最后一个夜晚，一名存活的玩家会得知这个问题的答案，即使你已死亡。",
+      "每局游戏限一次，在白天时，你可以公开提出一个问题。在最后一个夜晚，一名存活的玩家会得知这个问题的答案，即使你已死亡。"
+    ],
+    "image": [
+      "https://img.picui.cn/free/2025/06/14/684d361d9fd65.png",
+      "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5060784105371_5cb826b9.jpg",
+      "[\"https://i.postimg.cc/y6yTmM2w/image.png\"]",
+      "https://i.postimg.cc/XYQ84dCG/postmaster.png",
+      "https://i.postimg.cc/j559byHF/you-cha.webp",
+      "https://www.bloodstar.xyz//p//Deodar2//double//18_double.png",
+      "https://www.bloodstar.xyz/p/fake/TheOne/messenger_theone.png",
+      "https://www.bloodstar.xyz/p/westwind/Goldapple/6_goldapple.png",
+      "https://www.bloodstar.xyz/p/westwind/xiudao111/16_xiudao111.png"
+    ],
+    "firstNight": [
+      0,
+      12,
+      18,
+      34,
+      41
+    ],
+    "firstNightReminder": [
+      "",
+      "唤醒邮差，向他展示一个不在场的角色。",
+      "唤醒邮差，并指向相同阵营的两名玩家",
+      "每个夜晚，你会得知一个不在场的角色。",
+      "给出最多有多少名镇民玩家连坐在一起的信息"
+    ],
+    "otherNight": [
+      0,
+      14,
+      14761,
+      101,
+      12,
+      27,
+      68,
+      9
+    ],
+    "otherNightReminder": [
+      "",
+      "唤醒邮差。让他选择一名玩家并编辑或者提前写好一段要说的话，并唤醒被他选择的玩家，对其展示“该角色的能力对你生效”提示标记以及那段信息。",
+      "唤醒邮差，令其选择一名玩家，告知其先前要求的信息。",
+      "告诉一名存活玩家问题的答案。",
+      "唤醒邮差，向他展示一个不在场的角色。",
+      "每个夜晚，你会得知一个不在场的角色。",
+      "每局游戏限一次，在白天时，你可以公开提出一个问题。在最后一个夜晚，一名存活的玩家会得知这个问题的答案，即使你已死亡。",
+      "邮差发动能力"
+    ],
+    "reminders": [
+      [],
+      [
+        "得知"
       ],
-      "ability": "在最后一晚，即使你已死亡，选择一名玩家：他得知某些信息。你存活时，可以随时要求他得知什么（需说书人同意）。",
-      "image": "https://img.picui.cn/free/2025/06/14/684d361d9fd65.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "唤醒邮差，令其选择一名玩家，告知其先前要求的信息。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，你可以公开提出一个问题。在最后一个夜晚，一名存活的玩家会得知这个问题的答案，即使你已死亡。",
-      "image": "https://www.bloodstar.xyz/p/fake/TheOne/messenger_theone.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 9,
-      "otherNightReminder": "告诉一名存活玩家问题的答案。",
-      "reminders": [
+      [
         "收件人"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在最后一晚，即使你已死亡，选择一名玩家：他得知某些信息。你可以随时决定他得知什么。",
-      "image": "https://www.bloodstar.xyz/p/westwind/Goldapple/6_goldapple.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 12,
-      "otherNightReminder": "邮差发动能力",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 4,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在白天时，你可以公开提出一个问题。在最后一个夜晚，一名存活的玩家会得知这个问题的答案，即使你已死亡。",
-      "image": "https://i.postimg.cc/j559byHF/you-cha.webp",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 101,
-      "otherNightReminder": "每局游戏限一次，在白天时，你可以公开提出一个问题。在最后一个夜晚，一名存活的玩家会得知这个问题的答案，即使你已死亡。",
-      "reminders": [
-        "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在最后一个夜晚，你可以选择一名玩家：他会得知某些信息，即使你已死亡。你可以随时决定他得知什么。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5060784105371_5cb826b9.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14761,
-      "otherNightReminder": "唤醒邮差。让他选择一名玩家并编辑或者提前写好一段要说的话，并唤醒被他选择的玩家，对其展示“该角色的能力对你生效”提示标记以及那段信息。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在最后一晚，即使你已死亡，选择一名玩家：他得知某些信息。你可以随时决定他得知什么。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5060784105371_5cb826b9.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14761,
-      "otherNightReminder": "唤醒邮差。让他选择一名玩家并编辑或者提前写好一段要说的话，并唤醒被他选择的玩家，对其展示“该角色的能力对你生效”提示标记以及那段信息。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 7,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一个不在场角色。",
-      "image": "https://i.postimg.cc/XYQ84dCG/postmaster.png",
-      "firstNight": 12,
-      "firstNightReminder": "唤醒邮差，向他展示一个不在场的角色。",
-      "otherNight": 27,
-      "otherNightReminder": "唤醒邮差，向他展示一个不在场的角色。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 8,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你得知两名玩家：他们的阵营是相同的。",
-      "image": "https://www.bloodstar.xyz/p/westwind/xiudao111/16_xiudao111.png",
-      "firstNight": 18,
-      "firstNightReminder": "唤醒邮差，并指向相同阵营的两名玩家",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "得知"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你得知最多有多少名镇民玩家连坐在一起。",
-      "image": "[\"https://i.postimg.cc/y6yTmM2w/image.png\"]",
-      "firstNight": 34,
-      "firstNightReminder": "给出最多有多少名镇民玩家连坐在一起的信息",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "Yeah, pretty good neighborhood, that. About damn time the cat people took over.",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "邮差",
-      "name": "邮差",
-      "variantIndex": 10,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚，你会得知一个不在场的角色。",
-      "image": "https://www.bloodstar.xyz//p//Deodar2//double//18_double.png",
-      "firstNight": 41,
-      "firstNightReminder": "每个夜晚，你会得知一个不在场的角色。",
-      "otherNight": 68,
-      "otherNightReminder": "每个夜晚，你会得知一个不在场的角色。",
-      "reminders": [],
-      "remindersGlobal": [
+      ]
+    ],
+    "remindersGlobal": [
+      [],
+      [
         "邮差"
-      ],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      "",
+      "Yeah, pretty good neighborhood, that. About damn time the cat people took over."
+    ]
+  }
 }

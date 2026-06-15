@@ -2,33 +2,40 @@
   "id": "耶稣",
   "name": "耶稣",
   "team": "townsfolk",
-  "teamLabelZh": "镇民",
-  "folder": "townsfolks",
-  "variantCount": 1,
   "totalOccurrenceCount": 1,
-  "variants": [
-    {
-      "id": "耶稣",
-      "name": "耶稣",
-      "variantIndex": 1,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一个善良角色：你会得知他是谁。如果这个角色不在场，你会变成这个角色并复活。",
-      "image": "[\"https://www.bloodstar.xyz/p/Rowlf/Reddwarf/jesus_reddwarf.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 14,
-      "otherNightReminder": "If Jesus died tonight, wake the player and have them select a character. If the character is in play, point to the relevant player. If not, replace the 'Jesus' token with this character and place the 'Resurrected' reminder token next to them. :reminder:",
-      "reminders": [
+  "notes": [],
+  "variants": {
+    "ability": [
+      "如果你在夜晚死亡，你会被唤醒，然后你要选择一个善良角色：你会得知他是谁。如果这个角色不在场，你会变成这个角色并复活。"
+    ],
+    "image": [
+      "[\"https://www.bloodstar.xyz/p/Rowlf/Reddwarf/jesus_reddwarf.png\"]"
+    ],
+    "firstNight": [
+      0
+    ],
+    "firstNightReminder": [
+      ""
+    ],
+    "otherNight": [
+      14
+    ],
+    "otherNightReminder": [
+      "If Jesus died tonight, wake the player and have them select a character. If the character is in play, point to the relevant player. If not, replace the 'Jesus' token with this character and place the 'Resurrected' reminder token next to them. :reminder:"
+    ],
+    "reminders": [
+      [
         "复活"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    }
-  ]
+      ]
+    ],
+    "remindersGlobal": [
+      []
+    ],
+    "setup": [
+      0
+    ],
+    "flavor": [
+      ""
+    ]
+  }
 }
