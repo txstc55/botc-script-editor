@@ -9,13 +9,17 @@
   {
     "id": "_qiannianhong",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
-    "firstNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
-    "otherNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
+    "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+    "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "name": "共情者",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
     "firstNight": 3500,
-    "otherNight": 11
+    "otherNight": 11,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "1_qiannianhong",
@@ -26,40 +30,57 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "firstNight": 3800,
-    "otherNight": 16
+    "otherNight": 16,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "2_qiannianhong",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
-    "firstNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
-    "otherNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
+    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "name": "筑梦师",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
     "firstNight": 3600,
-    "otherNight": 12
+    "otherNight": 12,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……"
   },
   {
     "id": "3_qiannianhong",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
-    "otherNightReminder": "唤醒卖花女孩，以点头或摇头告知她今天白天是否有恶魔参与投票。",
+    "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
     "name": "卖花女孩",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
-    "otherNight": 13
+    "otherNight": 13,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4_qiannianhong",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
-    "otherNightReminder": "唤醒神谕者，对他用手势比划数字来告知他当前死亡玩家中邪恶玩家的数量。",
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "name": "神谕者",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "otherNight": 14
+    "otherNight": 14,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "5_qiannianhong",
@@ -69,21 +90,29 @@
     ],
     "name": "艺术家",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。"
+    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
   },
   {
     "id": "6_qiannianhong",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
-    "firstNightReminder": "唤醒传教士，让他选择一名玩家。如果他选中了爪牙，该爪牙失去能力。在传教士入睡后通知该爪牙被传教士选中。",
-    "otherNightReminder": "唤醒传教士，让他选择一名玩家。如果他选中了爪牙，该爪牙失去能力。在传教士入睡后通知该爪牙被传教士选中。",
+    "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+    "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
     "reminders": [
       "失去能力"
     ],
     "name": "传教士",
     "team": "townsfolk",
-    "ability": "每个夜晚，你要选择一名玩家：如果你选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
+    "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
     "firstNight": 3100,
-    "otherNight": 2
+    "otherNight": 2,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "富有和健康总比贫穷和疾病要好。"
   },
   {
     "id": "7_qiannianhong",
@@ -108,7 +137,12 @@
     ],
     "name": "渔夫",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。"
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "9_qiannianhong",
@@ -120,19 +154,27 @@
     "name": "骑士",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
-    "firstNight": 3650
+    "firstNight": 3650,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "10_qiannianhong",
     "image": "https://clocktower-wiki.gstonegames.com/images/f/f2/Princess.png",
-    "otherNightReminder": "不会死亡",
+    "otherNightReminder": "在你的首个白天，如果你提名并处决了一名玩家，当晚恶魔不会造成死亡。",
     "reminders": [
       "不会死亡"
     ],
     "name": "公主",
     "team": "townsfolk",
     "ability": "在你的首个白天，如果你提名并处决了一名玩家，当晚恶魔不会造成死亡。",
-    "otherNight": 6
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "11_qiannianhong",
@@ -142,7 +184,14 @@
     ],
     "name": "变脸师",
     "team": "townsfolk",
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。"
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "疯狂"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "12_qiannianhong",
@@ -152,7 +201,12 @@
     ],
     "name": "宠妃",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，说书人会在关于你的事情上打破规则。随后，你会秘密得知说书人为此做了什么。"
+    "ability": "每局游戏限一次，说书人会在关于你的事情上打破规则。随后，你会秘密得知说书人为此做了什么。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "13_qiannianhong",
@@ -163,33 +217,53 @@
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "14_qiannianhong",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/saint.png",
     "name": "圣徒",
     "team": "outsider",
-    "ability": "如果你死于处决，你的阵营落败。"
+    "ability": "如果你死于处决，你的阵营落败。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "15_qiannianhong",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "name": "畸形秀演员",
     "team": "outsider",
-    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。"
+    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "16_qiannianhong",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
-    "otherNightReminder": "如果心上人死亡，一名玩家醉酒。",
+    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
     "reminders": [
       "醉酒"
     ],
     "name": "心上人",
     "team": "outsider",
     "ability": "当你死亡时，会有一名玩家开始醉酒。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我永远也忘不掉她……永远……"
   },
   {
     "id": "17_qiannianhong",

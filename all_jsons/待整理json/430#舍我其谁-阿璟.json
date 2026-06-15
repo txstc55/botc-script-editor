@@ -31,28 +31,27 @@
     "reminders": [
       "得知"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/2b/ama9h6ak2lkejho57jirtrquvktlmsu.png"
-    ],
-    "setup": 0
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
+    "setup": 0,
+    "otherNightReminder": "",
+    "remindersGlobal": []
   },
   {
     "id": "3_shewoqishei",
     "name": "水手",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
-    "flavor": "你们随便谁来我都能把他喝到桌子底下说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！",
-    "firstNightReminder": "唤醒水手，让他选择一名玩家。决定他俩其中谁因为水手能力醉酒。",
+    "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！",
+    "firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
     "firstNight": 3001,
-    "otherNightReminder": "唤醒水手，让他选择一名玩家。决定他俩其中谁因为水手能力醉酒。",
+    "otherNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
     "otherNight": 1,
     "reminders": [
       "醉酒"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/90/bt7yvbzi61ftut2iqheqrgznkdohslh.png"
-    ],
-    "setup": 0
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
+    "setup": 0,
+    "remindersGlobal": []
   },
   {
     "id": "4_shewoqishei",
@@ -60,17 +59,16 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
     "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。",
-    "firstNightReminder": "唤醒舞蛇人，让他选择一名存活玩家。如果选中恶魔则执行角色和阵营的交换，并在舞蛇人入睡后通知旧恶魔角色变化。",
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
     "firstNight": 3003,
-    "otherNightReminder": "唤醒舞蛇人，让他选择一名存活玩家。如果选中恶魔则执行角色和阵营的交换，并在舞蛇人入睡后通知旧恶魔角色变化。",
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
     "otherNight": 2,
     "reminders": [
       "中毒"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/f/fe/o9gzozrpeyh7exogeuro90qh0904qu1.png"
-    ],
-    "setup": 0
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
+    "setup": 0,
+    "remindersGlobal": []
   },
   {
     "id": "5_shewoqishei",
@@ -100,10 +98,9 @@
     "reminders": [
       "醉酒"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/72/gyk4euf2w6acfyevvmeke03zvv8r1ln.png"
-    ],
-    "setup": 1
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
+    "setup": 1,
+    "remindersGlobal": []
   },
   {
     "id": "7_shewoqishei",
@@ -130,10 +127,12 @@
     "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
     "firstNight": 0,
     "otherNight": 0,
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/90/chh8x7dptz128a42p7f0g5c0qn8o063.png"
-    ],
-    "setup": 0
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "setup": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": []
   },
   {
     "id": "9_shewoqishei",
@@ -145,10 +144,12 @@
     "reminders": [
       "失去能力"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/thumb/e/e8/qzwtcaasywxktk62fw8rrtgshge1o32.png/240px-%E5%AE%A0%E5%A6%83.png"
-    ],
-    "setup": 0
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chongfei.png",
+    "setup": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "10_shewoqishei",
@@ -178,26 +179,28 @@
     "reminders": [
       "失去能力"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/ac/k0janaxds3dvtnf5hdskzarlbyp79oe.png"
-    ],
-    "setup": 0
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fool.png",
+    "setup": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": []
   },
   {
     "id": "12_shewoqishei",
     "name": "酒鬼",
     "team": "outsider",
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。  但无可否认，我是一个非常~嗝儿~擅长社交的人。",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "firstNight": 0,
     "otherNight": 0,
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/f/f2/1cqow962ds6jp9x5rz84qwgpstkyurs.png"
-    ],
-    "setup": 1
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "setup": 1,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": []
   },
   {
     "id": "13_shewoqishei",
@@ -206,15 +209,15 @@
     "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。如果他是善良的，在当晚他会死亡。",
     "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。",
     "firstNight": 0,
-    "otherNightReminder": "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
+    "otherNightReminder": "如果月之子在白天触发了死亡能力并选择了一名善良玩家，该玩家死亡。标记那名玩家死亡。",
     "otherNight": 9,
     "reminders": [
       "死亡"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/3c/hulwpl4c71z09ixgyg3dlkeega2a3an.png"
-    ],
-    "setup": 0
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/moonchild.png",
+    "setup": 0,
+    "firstNightReminder": "",
+    "remindersGlobal": []
   },
   {
     "id": "14_shewoqishei",
@@ -228,10 +231,10 @@
     "reminders": [
       "说书人能力"
     ],
-    "image": [
-      "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/1/12/ivgcxsn6c4ytbj9q35ekdpqszwiptb6.png"
-    ],
-    "setup": 0
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+    "setup": 0,
+    "firstNightReminder": "",
+    "remindersGlobal": []
   },
   {
     "id": "15_shewoqishei",

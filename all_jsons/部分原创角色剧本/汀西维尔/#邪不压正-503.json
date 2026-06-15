@@ -47,7 +47,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
   },
   {
     "id": "39b8fda7-dced-4743-89b2-46b1df1a6384",
@@ -62,7 +64,9 @@
     "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……"
   },
   {
     "id": "161273f3-0cb7-4fef-b33d-530df2375c6e",
@@ -100,10 +104,10 @@
   },
   {
     "id": "8a3a944c-9fcc-4941-8b0c-46a9dc9835be",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_1638387694761_274bf6af.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
     "edition": "custom",
     "name": "悟道者",
-    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，你会立即变成一个不在场的镇民角色。",
+    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，在该效果生效前你会变成一个不在场的镇民角色。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
@@ -114,7 +118,8 @@
     "remindersGlobal": [
       "是悟道者"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "2ccd6d15-2e7c-42bc-89dd-2f15e98be620",
@@ -129,7 +134,9 @@
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "d4a5cecb-5172-4d2d-8dff-a4bc424049f7",
@@ -152,20 +159,20 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "edition": "custom",
     "name": "疯子",
-    "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你的角色以及你在每个夜晚选择了哪名玩家。",
+    "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 18,
     "otherNight": 21,
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
-    "reminders": [
-      "被选择1",
-      "被选择2",
-      "被选择3",
-      "是疯子"
+    "reminders": [],
+    "setup": 0,
+    "remindersGlobal": [
+      "是疯子",
+      "被选择"
     ],
-    "setup": 0
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "cd94427c-1142-4ccb-850f-7db40d736f9d",

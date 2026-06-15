@@ -8,29 +8,38 @@
   },
   {
     "id": "_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/7d/8ns1pftlkxjbrau1b6v3o7vyq0zpnyt.png",
-    "firstNightReminder": "唤醒厨师，对他用手势比划数字来告知他邻座邪恶玩家有几对。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chef.png",
+    "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
     "name": "厨师",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
-    "firstNight": 3600
+    "firstNight": 3600,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。"
   },
   {
     "id": "1_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a6/duttrwlwawvxiqzttdxk8btqi0ha125.png",
-    "firstNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
-    "otherNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
+    "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+    "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "name": "共情者",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
     "firstNight": 3700,
-    "otherNight": 10
+    "otherNight": 10,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "2_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/91/04je4dg5ituw4nymx4f0x0b80p6gntg.png",
-    "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-    "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
       "干扰项"
     ],
@@ -38,84 +47,120 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
     "firstNight": 3800,
-    "otherNight": 11
+    "otherNight": 11,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "3_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a3/nxckynoy8mshn7pwnsnnraceso4zx2p.png",
-    "otherNightReminder": "唤醒僧侣，让他选择除自己以外的一名玩家，那名玩家今晚免受恶魔负面效果影响。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
     "reminders": [
       "保护"
     ],
     "name": "僧侣",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "otherNight": 3
+    "otherNight": 3,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/d/dc/49ardir6f1osygmvs27t9kbgcmyfgsa.png",
-    "otherNightReminder": "如果守鸦人死于夜晚，唤醒守鸦人，让他选择一名玩家。对他展示这名玩家的角色标记。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
+    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
     "name": "守鸦人",
     "team": "townsfolk",
     "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
-    "otherNight": 9
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
   },
   {
     "id": "5_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/79/8rd5mfvpkzq4i73sctbzjyrvthr082g.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mayor.png",
     "name": "镇长",
     "team": "townsfolk",
-    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。"
+    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "6_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/48/0d9uthaidhlal5rz0zjx2tvzzrviqdo.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
     "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "firstNight": 4200,
-    "otherNight": 15
+    "otherNight": 15,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "7_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/1/1e/gawluny5yghhgymluiec9y9h38lcwii.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/minstrel.png",
     "reminders": [
       "全员醉酒"
     ],
     "name": "吟游诗人",
     "team": "townsfolk",
-    "ability": "当一名爪牙死于处决时，除了你和旅行者以外的所有其他玩家醉酒直到明天黄昏。"
+    "ability": "当一名爪牙死于处决时，除了你和旅行者以外的所有其他玩家醉酒直到明天黄昏。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "8_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/ed/8gb1ezkhqkc865jead15pevypmc72g9.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
     "name": "城镇公告员",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
-    "otherNight": 12
+    "otherNight": 12,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "9_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/c/c7/taxo86woqzpyk15pa9d92kfmw58erqh.png",
-    "otherNightReminder": "唤醒神谕者，对他用手势比划数字来告知他当前死亡玩家中邪恶玩家的数量。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "name": "神谕者",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "otherNight": 13
+    "otherNight": 13,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "10_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/aa/0khyidxxipwitzqjs9iryheur62zkrj.png",
-    "firstNightReminder": "唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
-    "otherNightReminder": "如果女裁缝未曾使用能力，唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "reminders": [
       "失去能力"
     ],
@@ -123,11 +168,14 @@
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
     "firstNight": 3900,
-    "otherNight": 14
+    "otherNight": 14,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "11_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/2b/ama9h6ak2lkejho57jirtrquvktlmsu.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
     "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
     "reminders": [
       "得知"
@@ -135,55 +183,84 @@
     "name": "骑士",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
-    "firstNight": 4100
+    "firstNight": 4100,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "12_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a6/rbwm0tqfgltschv2lwjy7ckybptbolg.png",
-    "firstNightReminder": "唤醒事务官，对他指向一名善良玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/steward.png",
+    "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
     "reminders": [
       "得知"
     ],
     "name": "事务官",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知一名善良玩家。",
-    "firstNight": 4000
+    "firstNight": 4000,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "13_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/f/f2/1cqow962ds6jp9x5rz84qwgpstkyurs.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "remindersGlobal": [
       "是酒鬼"
     ],
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "14_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/5e/dw5z7fnz58ia54bw160d1numjsjay8f.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
     "name": "陌客",
     "team": "outsider",
-    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。"
+    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
     "id": "15_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/59/ns2ifb3z40ukn4xa61a460473sm6lhq.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
     "reminders": [
-      "醉酒",
-      "已猜测"
+      "已猜测",
+      "醉酒"
     ],
     "name": "解谜大师",
     "team": "outsider",
-    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。"
+    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "16_laozishudaoshan",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/be/67ycdvhq93470nc0jsiol8dhazf8ey1.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1a/Zealot.png",
     "name": "狂热者",
     "team": "outsider",
-    "ability": "如果有大于等于五名玩家存活，你必须在所有提名中投票。"
+    "ability": "如果有大于等于五名玩家存活，你必须在所有提名中投票。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "17_laozishudaoshan",

@@ -107,10 +107,12 @@
     "sch_team": "镇民",
     "firstNight": 45,
     "otherNight": 84,
-    "firstNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
-    "otherNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
+    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……"
   },
   {
     "id": "diexue_2",
@@ -162,7 +164,10 @@
       "失足",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "ability": "每个白天，你可以拜访说书人并选择一个话题，说书人会告诉你一个与他有关的事实。如果你的相邻存活玩家阵营不同，你得知错误信息。",
@@ -296,21 +301,22 @@
   },
   {
     "id": "zrulianshihsihsihsihishisihc-9j",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/rulianshi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5757097694761_2de60c7b.jpg",
     "edition": "custom",
     "name": "入殓师",
-    "ability": "如果你提名了恶魔且他死于这次处决，你会变成邪恶的恶魔。当剩余存活玩家小于等于四人时（旅行者除外），你失去能力。",
+    "ability": "如果你提名并处决了恶魔，你会变成邪恶的恶魔。当剩余存活玩家小于等于四人时（旅行者除外），你失去能力。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 0,
     "otherNight": 27.5,
     "firstNightReminder": "",
-    "otherNightReminder": "如果入殓师白天提名了恶魔且恶魔死于这次处决，唤醒入殓师，告知他变成新的邪恶的恶魔。",
+    "otherNightReminder": "如果白天入殓师提名了恶魔且恶魔被处决，唤醒他，并对他展示“你是”提示标记和恶魔角色标记。",
     "reminders": [
       "是恶魔"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "ability": "每个夜晚*，你和恶魔一起被唤醒并选择一名玩家：他死亡。如果你死亡，恶魔会失去能力。",

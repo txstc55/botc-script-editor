@@ -60,11 +60,15 @@
     "ability": "在你的首个夜晚，你会得知两名玩家和一个镇民角色：这两名玩家之一是该角色。",
     "firstNight": 35,
     "otherNight": 0,
-    "firstNightReminder": "唤醒洗衣妇，对她指向两名玩家，并展示一个镇民角色标记。这两名玩家其中之一是这个镇民。",
+    "firstNightReminder": "展示那个镇民角色标记。指向被你标记“镇民”和“错误”的两名玩家。",
     "reminders": [
-      "镇民",
-      "错误"
-    ]
+      "错误",
+      "镇民"
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "daerduotutu111",
@@ -79,7 +83,11 @@
     "reminders": [
       "外来者",
       "错误"
-    ]
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "arknights111",
@@ -93,7 +101,11 @@
     "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
     "reminders": [
       "得知"
-    ]
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "jingcaisanxuanyi111",
@@ -104,10 +116,14 @@
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
     "firstNight": 49,
     "otherNight": 0,
-    "firstNightReminder": "唤醒贵族，对他指向三名玩家。这三名玩家中有且仅有一名是邪恶玩家。",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "reminders": [
       "被得知"
-    ]
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "rangwokangkang111",
@@ -118,9 +134,12 @@
     "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
     "firstNight": 45,
     "otherNight": 84,
-    "firstNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
-    "otherNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
-    "reminders": []
+    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……"
   },
   {
     "id": "yeshimeishengmeyongdejuese111",
@@ -131,9 +150,12 @@
     "ability": "每个夜晚，你会得知一名说书人认为你最应该与其交流的玩家。",
     "firstNight": 60,
     "otherNight": 98,
-    "firstNightReminder": "唤醒女祭司，对她指向一名玩家。",
-    "otherNightReminder": "唤醒女祭司，对她指向一名玩家。",
-    "reminders": []
+    "firstNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
+    "otherNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   "balloonist",
   {
@@ -145,9 +167,12 @@
     "ability": "每个夜晚，你会转变为与你邻近的一名存活的玩家的阵营。每个白天，你可以提议所有玩家加入你的教派，如果所有善良玩家同意加入，你的阵营获胜。",
     "firstNight": 57,
     "otherNight": 96,
-    "firstNightReminder": "如果异教领袖的阵营发生了变化，将他唤醒并通知他最新阵营。",
-    "otherNightReminder": "如果异教领袖的阵营发生了变化，将他唤醒并通知他最新阵营。",
-    "reminders": []
+    "firstNightReminder": "如果异教领袖改变了阵营，告诉他。",
+    "otherNightReminder": "如果异教领袖改变了阵营，告诉他。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   "general",
   {
@@ -159,11 +184,14 @@
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
     "firstNight": 46,
     "otherNight": 88,
-    "firstNightReminder": "唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
-    "otherNightReminder": "如果女裁缝未曾使用能力，唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "reminders": [
       "失去能力"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   "amnesiac",
   "farmer",
@@ -176,11 +204,14 @@
     "ability": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
     "firstNight": 0,
     "otherNight": 75,
-    "firstNightReminder": "如果恶魔杀死了报丧女妖，宣布“报丧女妖觉醒了”，并使用“具有能力”标记报丧女妖。",
+    "firstNightReminder": "",
     "reminders": [
       "具有能力"
     ],
-    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。"
+    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   "hatter",
   "sweetheart",

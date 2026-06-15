@@ -26,13 +26,15 @@
     "sch_team": "镇民",
     "firstNight": 43,
     "otherNight": 66,
-    "firstNightReminder": "唤醒祖母，对她指向一名善良玩家，并展示该玩家的角色标记。",
-    "otherNightReminder": "如果恶魔杀死了孙子，祖母死亡。",
+    "firstNightReminder": "指向她的孙子玩家，并展示该玩家的角色标记。",
+    "otherNightReminder": "如果孙子被恶魔杀死，祖母也会一同死亡。标记祖母死亡。",
     "reminders": [
       "孙子",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "paibusini111",
@@ -44,12 +46,14 @@
     "sch_team": "镇民",
     "firstNight": 15,
     "otherNight": 7,
-    "firstNightReminder": "唤醒传教士，让他选择一名玩家。如果他选中了爪牙，该爪牙失去能力。在传教士入睡后通知该爪牙被传教士选中。",
-    "otherNightReminder": "唤醒传教士，让他选择一名玩家。如果他选中了爪牙，该爪牙失去能力。在传教士入睡后通知该爪牙被传教士选中。",
+    "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+    "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "富有和健康总比贫穷和疾病要好。"
   },
   {
     "id": "mofasaozhou111",
@@ -64,7 +68,9 @@
     "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "gongwenbaozaren111",
@@ -77,11 +83,13 @@
     "firstNight": 0,
     "otherNight": 29,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒驱魔人，让他选择一名与上一晚不同的玩家。如果他选中了恶魔，则在驱魔人入睡后通知该恶魔谁是驱魔人。",
+    "otherNightReminder": "让驱魔人选择一名玩家，不能是上一夜他选择过的玩家。让驱魔人重新入睡。如果驱魔人选中了恶魔：唤醒恶魔。展示“该角色的能力对你生效”信息标记和驱魔人角色标记。指向驱魔人玩家。",
     "reminders": [
       "被选择"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "每一个不洁之灵，每一份撒旦之力，每一次炼狱敌人的猛袭，每一个军团，每一个崇拜恶魔的组织和教派，以我主耶稣基督的名义和力量，将你们驱逐。我命令你们，远离上帝的教堂，远离上帝按祂的形貌所创造并受神圣羔羊的宝血所救赎的灵魂。"
   },
   {
     "id": "lushichuanshuodelaoban111",
@@ -94,12 +102,14 @@
     "firstNight": 0,
     "otherNight": 10,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒旅店老板，让他选择两名玩家。这两名玩家今晚不死，同时需要决定他俩其中谁因为旅店老板能力醉酒。",
+    "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
     "reminders": [
       "不会死亡",
       "醉酒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wojiushitukuai111",
@@ -112,48 +122,54 @@
     "firstNight": 0,
     "otherNight": 12,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "正面，我赢。 反面，你输。"
   },
   {
     "id": "chunzaoyaoa",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
     "edition": "custom",
     "name": "造谣者",
-    "ability": "每个白天，你可以公开发表一个声明。在当晚，如果该声明是正确的，会有一名玩家死亡。",
+    "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
     "otherNight": 62,
     "firstNightReminder": "",
-    "otherNightReminder": "如果造谣者今天白天的声明正确，一名玩家死亡。",
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "wohehehehehehehezuidiaoniladao111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
     "edition": "custom",
     "name": "侍臣",
-    "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 20,
     "otherNight": 11,
-    "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-    "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+    "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+    "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
     "reminders": [
+      "失去能力",
       "醉酒1",
       "醉酒2",
-      "醉酒3",
-      "失去能力"
+      "醉酒3"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。"
   },
   {
     "id": "fulankensitan111",
@@ -166,12 +182,14 @@
     "firstNight": 0,
     "otherNight": 76,
     "firstNightReminder": "",
-    "otherNightReminder": "如果教授未曾使用能力且在城镇广场上有玩家死亡，唤醒教授，他可以摇头不使用能力，或选择一名已死亡的玩家。如果该玩家是镇民，该玩家被起死回生。",
+    "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
     "reminders": [
       "复活",
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。"
   },
   {
     "id": "zhenaosheajwiejp214ui90-japtu90q23j5t",
@@ -207,7 +225,9 @@
     "reminders": [
       "全员醉酒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "buhaohe111",
@@ -224,7 +244,9 @@
     "reminders": [
       "不会死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "hahaxiaochou111",
@@ -241,7 +263,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "……然后国王说道：‘什么？！我甚至从未有过一条橡胶马裤，更别提一门奶油大炮了！’嗬嗬！欢乐一日！"
   },
   {
     "id": "dabanshou111",
@@ -254,11 +278,13 @@
     "firstNight": 0,
     "otherNight": 63,
     "firstNightReminder": "",
-    "otherNightReminder": "在夜晚的任意时机，你都可以决定杀死修补匠。这里只是一个提示以免遗忘修补匠。",
+    "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "chousha111",
@@ -271,11 +297,13 @@
     "firstNight": 0,
     "otherNight": 64,
     "firstNightReminder": "",
-    "otherNightReminder": "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
+    "otherNightReminder": "如果月之子在白天触发了死亡能力并选择了一名善良玩家，该玩家死亡。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。"
   },
   {
     "id": "woshishui111",
@@ -292,7 +320,9 @@
     "reminders": [
       "醉酒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。"
   },
   {
     "id": "wocaishiemo111",
@@ -304,15 +334,15 @@
     "sch_team": "外来者",
     "firstNight": 5.3,
     "otherNight": 28,
-    "firstNightReminder": "唤醒疯子并向他提供恶魔信息。如可能，则让疯子进行相应的恶魔行动。随后在恶魔信息环节对恶魔提供疯子的相关信息。",
-    "otherNightReminder": "如果疯子以为的恶魔会在当晚行动，唤醒疯子，并让他以恶魔的方式行动。",
-    "reminders": [
+    "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
+    "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
+    "reminders": [],
+    "remindersGlobal": [
+      "是疯子",
       "被选择"
     ],
-    "remindersGlobal": [
-      "是疯子"
-    ],
-    "setup": 1
+    "setup": 0,
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "weishenmebushilianjinshushi111",

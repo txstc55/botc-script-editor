@@ -26,12 +26,14 @@
     "sch_team": "镇民",
     "firstNight": 49,
     "otherNight": 0,
-    "firstNightReminder": "唤醒贵族，对他指向三名玩家。这三名玩家中有且仅有一名是邪恶玩家。",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
     "reminders": [
       "被得知"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "daerduotutu111",
@@ -49,7 +51,9 @@
       "外来者",
       "错误"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "qingtianjianbei111",
@@ -64,7 +68,9 @@
     "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
     "id": "meishayongdeshabi111",
@@ -76,13 +82,15 @@
     "sch_team": "镇民",
     "firstNight": 33,
     "otherNight": 0,
-    "firstNightReminder": "唤醒小精灵，对他展示一个在场镇民角色标记。",
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "otherNightReminder": "",
     "reminders": [
       "疯狂",
       "获得能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "wuxingshangjiang111",
@@ -97,7 +105,9 @@
     "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1 外来者]",
@@ -131,10 +141,12 @@
     "sch_team": "镇民",
     "firstNight": 45,
     "otherNight": 84,
-    "firstNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
-    "otherNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
+    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……"
   },
   {
     "id": "qiaozhong111",
@@ -149,27 +161,31 @@
     "firstNightReminder": "",
     "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "chunzaoyaoa",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
     "edition": "custom",
     "name": "造谣者",
-    "ability": "每个白天，你可以公开发表一个声明。在当晚，如果该声明是正确的，会有一名玩家死亡。",
+    "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
     "otherNight": 62,
     "firstNightReminder": "",
-    "otherNightReminder": "如果造谣者今天白天的声明正确，一名玩家死亡。",
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "shiyizhezhezhezhe",
@@ -182,11 +198,13 @@
     "firstNight": 1.5,
     "otherNight": 1.5,
     "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
-    "otherNightReminder": "根据失忆者的具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
+    "otherNightReminder": "如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
     "reminders": [
       "？"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "caibuduide111",
@@ -199,11 +217,13 @@
     "firstNight": 0,
     "otherNight": 89,
     "firstNightReminder": "",
-    "otherNightReminder": "如果杂耍艺人在今天白天使用了能力，唤醒杂耍艺人，对他用手势比划数字来告知他白天猜测正确的次数。",
+    "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
     "reminders": [
       "猜测正确"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。"
   },
   {
     "id": "lingluowawa111",
@@ -215,12 +235,14 @@
     "sch_team": "镇民",
     "firstNight": 46,
     "otherNight": 88,
-    "firstNightReminder": "唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
-    "otherNightReminder": "如果女裁缝未曾使用能力，唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "sb111",
@@ -235,7 +257,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "woshishui111",
@@ -252,7 +276,9 @@
     "reminders": [
       "醉酒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。"
   },
   {
     "id": "shuiganshawo111",
@@ -267,7 +293,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zhadiaole111",
@@ -282,7 +310,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "woheduolema111",
@@ -300,7 +330,8 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "zhijiagedaziji111",

@@ -8,65 +8,86 @@
   },
   {
     "id": "_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/7d/8ns1pftlkxjbrau1b6v3o7vyq0zpnyt.png",
-    "firstNightReminder": "唤醒厨师，对他用手势比划数字来告知他邻座邪恶玩家有几对。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chef.png",
+    "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
     "name": "厨师",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
-    "firstNight": 3500
+    "firstNight": 3500,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。"
   },
   {
     "id": "1_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a6/duttrwlwawvxiqzttdxk8btqi0ha125.png",
-    "firstNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
-    "otherNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
+    "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+    "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "name": "共情者",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
     "firstNight": 3600,
-    "otherNight": 9
+    "otherNight": 9,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "2_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a3/nxckynoy8mshn7pwnsnnraceso4zx2p.png",
-    "otherNightReminder": "唤醒僧侣，让他选择除自己以外的一名玩家，那名玩家今晚免受恶魔负面效果影响。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
     "reminders": [
       "保护"
     ],
     "name": "僧侣",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "otherNight": 2
+    "otherNight": 2,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "3_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/48/0d9uthaidhlal5rz0zjx2tvzzrviqdo.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
     "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "firstNight": 4200,
-    "otherNight": 14
+    "otherNight": 14,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "4_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/ed/8gb1ezkhqkc865jead15pevypmc72g9.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
     "name": "城镇公告员",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "5_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/aa/0khyidxxipwitzqjs9iryheur62zkrj.png",
-    "firstNightReminder": "唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
-    "otherNightReminder": "如果女裁缝未曾使用能力，唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "reminders": [
       "失去能力"
     ],
@@ -74,24 +95,31 @@
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
     "firstNight": 3700,
-    "otherNight": 11
+    "otherNight": 11,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "6_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/56/4cvv6gx6js190zpjqm110ps4j6bl587.png",
-    "firstNightReminder": "唤醒贵族，对他指向三名玩家。这三名玩家中有且仅有一名是邪恶玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "reminders": [
       "被得知"
     ],
     "name": "贵族",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
-    "firstNight": 3800
+    "firstNight": 3800,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "7_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/6/6a/9r3z8m0fen1nqr4u8vfx35rzei7ekp2.png",
-    "firstNightReminder": "唤醒小精灵，对他展示一个在场镇民角色标记。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "reminders": [
       "疯狂",
       "获得能力"
@@ -99,7 +127,11 @@
     "name": "小精灵",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "firstNight": 3200
+    "firstNight": 3200,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "8_kujinganlai",
@@ -118,17 +150,22 @@
   },
   {
     "id": "9_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/44/bio3bf3g3vunctpnldg6lsct4u4jt81.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
     "reminders": [
       "失去能力"
     ],
     "name": "渔夫",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。"
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "10_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/57/qrlls4zem4zblwft8qbp5ribzis1o5p.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/huntsman.png",
     "firstNightReminder": "唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
     "otherNightReminder": "如果巡山人未曾使用能力，唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
     "reminders": [
@@ -139,52 +176,81 @@
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]",
     "firstNight": 3300,
-    "otherNight": 8
+    "otherNight": 8,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "11_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/54/cx6vl3wdv1v51wfuh6z575vh7ef2kcz.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
     "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "name": "修行者",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
-    "firstNight": 4000
+    "firstNight": 4000,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
     "id": "12_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/bf/0wf6zizpzk61n1txjo233fembq7utl3.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
     "name": "戏法师",
     "team": "townsfolk",
-    "ability": "'每个白天，你可以公开进行一次谁是爪牙，谁是恶魔的猜测。如果你猜对，善良阵营获胜。"
+    "ability": "每个白天限一次，你可以公开猜测谁是爪牙，谁是恶魔。如果你猜对，善良阵营获胜。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。"
   },
   {
     "id": "13_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/f/f2/1cqow962ds6jp9x5rz84qwgpstkyurs.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "remindersGlobal": [
       "是酒鬼"
     ],
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "14_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/5e/dw5z7fnz58ia54bw160d1numjsjay8f.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
     "name": "陌客",
     "team": "outsider",
-    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。"
+    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
     "id": "15_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/0/0f/pfhfn5qttyankavkkm373qvk6jkd7de.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "name": "畸形秀演员",
     "team": "outsider",
-    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。"
+    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "16_kujinganlai",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/78/plh5dvc0wcrn429ff19lk6xoenw9bbr.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
     "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
     "reminders": [
       "已被猜测"
@@ -192,7 +258,11 @@
     "name": "落难少女",
     "team": "outsider",
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
-    "firstNight": 3400
+    "firstNight": 3400,
+    "otherNightReminder": "0",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "17_kujinganlai",

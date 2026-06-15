@@ -8,8 +8,8 @@
   },
   {
     "id": "_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/_graduation_examination.png",
-    "firstNightReminder": "唤醒小精灵，对他展示一个在场镇民角色标记。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "reminders": [
       "疯狂",
       "获得能力"
@@ -17,24 +17,32 @@
     "name": "小精灵",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "firstNight": 3500
+    "firstNight": 3500,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "1_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/1_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
     "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "firstNight": 3600,
-    "otherNight": 19
+    "otherNight": 19,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "2_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/2_graduation_examination.png",
-    "firstNightReminder": "唤醒舞蛇人，让他选择一名存活玩家。如果选中恶魔则执行角色和阵营的交换，并在舞蛇人入睡后通知旧恶魔角色变化。",
-    "otherNightReminder": "唤醒舞蛇人，让他选择一名存活玩家。如果选中恶魔则执行角色和阵营的交换，并在舞蛇人入睡后通知旧恶魔角色变化。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
     "reminders": [
       "中毒"
     ],
@@ -42,13 +50,16 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
     "firstNight": 3300,
-    "otherNight": 8
+    "otherNight": 8,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
   },
   {
     "id": "3_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/3_graduation_examination.png",
-    "firstNightReminder": "唤醒数学家，用手势比划数字来告诉他今天有多少玩家的能力未正常生效。",
-    "otherNightReminder": "唤醒数学家，用手势比划数字来告诉他今天有多少玩家的能力未正常生效。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+    "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [
       "未正常生效"
     ],
@@ -56,24 +67,31 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
     "firstNight": 3700,
-    "otherNight": 20
+    "otherNight": 20,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "4_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/4_graduation_examination.png",
-    "otherNightReminder": "唤醒僧侣，让他选择除自己以外的一名玩家，那名玩家今晚免受恶魔负面效果影响。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
     "reminders": [
       "保护"
     ],
     "name": "僧侣",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "otherNight": 9
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "5_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/5_graduation_examination.png",
-    "otherNightReminder": "唤醒旅店老板，让他选择两名玩家。这两名玩家今晚不死，同时需要决定他俩其中谁因为旅店老板能力醉酒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
+    "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
     "reminders": [
       "不会死亡",
       "醉酒"
@@ -81,11 +99,15 @@
     "name": "旅店老板",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "6_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/6_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lycanthrope.png",
     "otherNightReminder": "唤醒半兽人，让他选择一名玩家。如果该玩家是善良玩家，该玩家死亡，且当晚恶魔不会造成死亡。",
     "reminders": [
       "失足",
@@ -93,48 +115,66 @@
     ],
     "name": "半兽人",
     "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择一名存活玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。  会有一名善良玩家始终被当作邪恶阵营。",
-    "otherNight": 11
+    "ability": "每个夜晚*，你要选择一名存活玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。会有一名善良玩家始终被当作邪恶阵营。",
+    "otherNight": 11,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "7_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/7_graduation_examination.png",
-    "firstNightReminder": "唤醒哲学家，他可以摇头不使用能力，或选择获得角色列表上的一个善良角色的能力。",
-    "otherNightReminder": "如果哲学家未曾使用能力，唤醒哲学家，他可以摇头不使用能力，或选择获得角色列表上的一个善良角色的能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
+    "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
+    "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "remindersGlobal": [
-      "是哲学家",
-      "醉酒"
+      "是哲学家"
     ],
     "name": "哲学家",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。  如果这个角色在场，他醉酒。",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
     "firstNight": 12,
-    "otherNight": 3
+    "otherNight": 3,
+    "reminders": [
+      "醉酒"
+    ],
+    "setup": 0,
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。"
   },
   {
     "id": "8_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/8_graduation_examination.png",
-    "otherNightReminder": "如果造谣者今天白天的声明正确，一名玩家死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "造谣者",
     "team": "townsfolk",
     "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
-    "otherNight": 16
+    "otherNight": 16,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "9_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/9_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "name": "博学者",
     "team": "townsfolk",
-    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。"
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "10_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/10_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/amnesiac.png",
     "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
-    "otherNightReminder": "根据失忆者的具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
+    "otherNightReminder": "如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
     "reminders": [
       "？"
     ],
@@ -142,13 +182,16 @@
     "team": "townsfolk",
     "ability": "你不知道你的能力是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。",
     "firstNight": 11,
-    "otherNight": 2
+    "otherNight": 2,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "11_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/11_graduation_examination.png",
-    "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-    "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+    "firstNightReminder": "不要让恶魔和爪牙相认。",
+    "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
     "reminders": [
       "唤醒邪恶"
     ],
@@ -156,33 +199,46 @@
     "team": "townsfolk",
     "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
     "firstNight": 13,
-    "otherNight": 5
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "12_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/12_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "reminders": [
-      "中毒"
+      "中毒",
+      "饱餐"
     ],
     "name": "食人族",
     "team": "townsfolk",
-    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。"
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "13_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/13_graduation_examination.png",
-    "otherNightReminder": "如果理发师死于白天，唤醒恶魔让他决定是否使用理发师的能力。如果理发师死于夜晚，（如果让除攻击理发师以外的恶魔进行选择则需要等当前恶魔入睡后）让一名恶魔决定是否使用理发师的能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
+    "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
     "reminders": [
       "今晚理发"
     ],
     "name": "理发师",
     "team": "outsider",
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-    "otherNight": 17
+    "otherNight": 17,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
     "id": "14_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/14_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/hatter.png",
     "otherNightReminder": "如果帽匠死于白天，（建议分别）唤醒恶魔和爪牙并让他们选择是否改变角色。如果帽匠死于夜晚，则在当前玩家行动结束后立即开始茶会。",
     "reminders": [
       "今晚茶会"
@@ -190,7 +246,11 @@
     "name": "帽匠",
     "team": "outsider",
     "ability": "如果你死亡，当晚爪牙和恶魔玩家可以选择变成新的爪牙和恶魔角色。",
-    "otherNight": 4
+    "otherNight": 4,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "15_graduation_examination",
@@ -205,7 +265,7 @@
   },
   {
     "id": "16_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/16_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
     "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
     "reminders": [
       "说书人能力"
@@ -213,7 +273,11 @@
     "name": "瘟疫医生",
     "team": "outsider",
     "ability": "当你死亡时，说书人会获得一个爪牙能力。",
-    "otherNight": 18
+    "otherNight": 18,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。"
   },
   {
     "id": "17_graduation_examination",

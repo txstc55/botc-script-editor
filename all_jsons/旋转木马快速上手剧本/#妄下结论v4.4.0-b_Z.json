@@ -8,11 +8,11 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
     "edition": "custom",
     "flavor": "",
     "id": "librarian_c",
-    "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
     "otherNightReminder": "",
     "name": "图书管理员",
     "otherNight": 0,
@@ -27,9 +27,9 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/noble.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。",
     "id": "noble_c",
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
@@ -37,8 +37,6 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "被得知",
-      "被得知",
       "被得知"
     ],
     "remindersGlobal": [],
@@ -47,9 +45,9 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/pixie.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。",
     "id": "pixie_c",
     "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "otherNightReminder": "",
@@ -88,12 +86,12 @@
   },
   {
     "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/general.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png",
     "edition": "custom",
     "flavor": "",
     "id": "general_c",
-    "firstNightReminder": "告诉将军你认为的答案。",
-    "otherNightReminder": "告诉将军你认为的答案。",
+    "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+    "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "name": "将军",
     "otherNight": 14700.0,
     "setup": 0,
@@ -104,9 +102,9 @@
   },
   {
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
     "id": "savant_c",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -120,7 +118,7 @@
   },
   {
     "ability": "你不知道你的能力是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/amnesiac.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/amnesiac.png",
     "edition": "custom",
     "flavor": "",
     "id": "amnesiac_c",
@@ -138,9 +136,9 @@
   },
   {
     "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/artist.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！",
     "id": "artist_c",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -156,12 +154,12 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/huntsman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/huntsman.png",
     "edition": "custom",
     "flavor": "",
     "id": "huntsman_c",
-    "firstNightReminder": "巡山人选择不使用能力，或指向一名玩家。如果他指向了落难少女，则为落难少女安排一个新的不在场镇民角色，将其唤醒并告知她新的角色。",
-    "otherNightReminder": "巡山人选择不使用能力，或指向一名玩家。如果他指向了落难少女，则为落难少女安排一个新的不在场镇民角色，将其唤醒并告知她新的角色。",
+    "firstNightReminder": "唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+    "otherNightReminder": "如果巡山人未曾使用能力，唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
     "name": "巡山人",
     "otherNight": 10900.0,
     "setup": 1,
@@ -174,9 +172,9 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/philosopher.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。",
     "id": "philosopher_c",
     "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
@@ -199,8 +197,8 @@
     ]
   },
   {
-    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚即将死亡，可能会有一名其他玩家代替你死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mayor.png",
+    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mayor.png",
     "edition": "custom",
     "flavor": "",
     "id": "mayor_c",
@@ -215,13 +213,13 @@
     "firstNight": 0
   },
   {
-    "ability": "当你在夜晚死亡时，一名存活的善良玩家会变成农夫。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/farmer.png",
+    "ability": "如果你在夜晚死亡，一名存活的善良玩家会变成农夫。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/farmer.png",
     "edition": "custom",
     "flavor": "",
     "id": "farmer_c",
     "firstNightReminder": "",
-    "otherNightReminder": "如果农民在夜晚死去，则选择另一位善良玩家成为农民。唤醒这名玩家，并告知他成为了农民。",
+    "otherNightReminder": "如果农夫死于夜晚，唤醒一名存活的善良玩家告知他角色变化。",
     "name": "农夫",
     "otherNight": 10300.0,
     "setup": 0,
@@ -232,9 +230,9 @@
   },
   {
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。",
     "id": "cannibal_c",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -242,8 +240,8 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "饱餐",
-      "中毒"
+      "中毒",
+      "饱餐"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -251,7 +249,7 @@
   },
   {
     "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/politician.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
     "edition": "custom",
     "flavor": "",
     "id": "politician_c",
@@ -267,7 +265,7 @@
   },
   {
     "ability": "如果你死于处决，你的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/saint.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/saint.png",
     "edition": "custom",
     "flavor": "",
     "id": "saint_c",
@@ -283,7 +281,7 @@
   },
   {
     "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/puzzlemaster.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
     "edition": "custom",
     "flavor": "",
     "id": "puzzlemaster_c",
@@ -293,8 +291,8 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "醉酒",
-      "已猜测"
+      "已猜测",
+      "醉酒"
     ],
     "remindersGlobal": [],
     "team": "outsider",
@@ -302,7 +300,7 @@
   },
   {
     "ability": "对调胜负结果，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/heretic.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/heretic.png",
     "edition": "custom",
     "flavor": "",
     "id": "heretic_c",
@@ -318,12 +316,12 @@
   },
   {
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/damsel.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
     "edition": "custom",
     "flavor": "",
     "id": "damsel_c",
     "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
-    "otherNightReminder": "",
+    "otherNightReminder": "0",
     "name": "落难少女",
     "otherNight": 0,
     "setup": 0,

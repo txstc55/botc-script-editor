@@ -8,11 +8,11 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
-    "image": "https://clocktower-wiki.gstonegames.com/images/3/3e/Shugenja.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。",
     "id": "20454_684",
-    "firstNightReminder": "唤醒修行者，对其用拇指指向其左侧或右侧示意。",
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "otherNightReminder": "",
     "name": "修行者",
     "name_id": "shugenja",
@@ -24,7 +24,7 @@
     "firstNight": 49
   },
   {
-    "firstNightReminder": "唤醒骑士，然后指向标记了“得知”的两名玩家。",
+    "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
     "otherNightReminder": "",
     "id": "knightbutton",
     "name": "骑士",
@@ -39,7 +39,8 @@
     "team": "townsfolk",
     "name_eng": "Knight",
     "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
@@ -57,7 +58,9 @@
     "name_eng": "Pixie",
     "firstNight": 29,
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+    "remindersGlobal": [],
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
@@ -74,7 +77,9 @@
     "name_eng": "Sailor",
     "firstNight": 10,
     "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
+    "remindersGlobal": [],
+    "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！"
   },
   {
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
@@ -90,8 +95,10 @@
     "team": "townsfolk",
     "name_eng": "Mathematician",
     "firstNight": 51,
-    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。(从上个黎明到你被唤醒时）",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png"
+    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+    "remindersGlobal": [],
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "firstNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
@@ -106,7 +113,9 @@
     "name_eng": "High Priestess",
     "firstNight": 48,
     "ability": "每个夜晚，你会得知一名说书人认为你最应该与其交流的玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/high_priestess.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/high_priestess.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
@@ -123,7 +132,9 @@
     "name_eng": "Fortune Teller",
     "firstNight": 37,
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "firstNightReminder": "",
@@ -140,7 +151,9 @@
     "name_eng": "Monk",
     "firstNight": 0,
     "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -155,7 +168,9 @@
     "name_eng": "Savant",
     "firstNight": 0,
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "firstNightReminder": "",
@@ -170,7 +185,9 @@
     "name_eng": "Oracle",
     "firstNight": 0,
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
+    "remindersGlobal": [],
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
@@ -187,7 +204,9 @@
     "name_eng": "Seamstress",
     "firstNight": 42,
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
+    "remindersGlobal": [],
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "firstNightReminder": "工程师选择不使用能力，或在剧本列表中选择恶魔或爪牙角色。如果他选择爪牙角色，则需要选择对应数量的爪牙。然后将这些玩家依次唤醒，并告知他们变成了什么角色。",
@@ -204,7 +223,9 @@
     "name_eng": "Engineer",
     "firstNight": 13,
     "ability": "每局游戏限一次，在夜晚时，你可以选择让恶魔变成你选择的恶魔角色，或让所有爪牙变成你选择的爪牙角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/engineer.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/engineer.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -214,7 +235,7 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于处决"
+      "饱餐"
     ],
     "id": "cannibalbutton",
     "edition": "custom",
@@ -222,7 +243,9 @@
     "name_eng": "Cannibal",
     "firstNight": 0,
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "remindersGlobal": [],
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "firstNightReminder": "",
@@ -237,7 +260,9 @@
     "name_eng": "Mutant",
     "firstNight": 0,
     "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
+    "remindersGlobal": [],
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "firstNightReminder": "",
@@ -254,7 +279,9 @@
     "name_eng": "Barber",
     "firstNight": 0,
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
+    "remindersGlobal": [],
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
     "firstNightReminder": "",
@@ -272,24 +299,25 @@
     "name_eng": "Drunk",
     "firstNight": 0,
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
-    "ability": "如果你死亡，说书人获得一个不在场的爪牙能力。",
-    "image": "https://wiki.bloodontheclocktower.com/images/e/e2/Icon_plaguedoctor.png",
+    "ability": "当你死亡时，说书人会获得一个爪牙能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。",
     "id": "plaguedoctor",
     "firstNightReminder": "",
-    "otherNightReminder": "",
+    "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
     "name": "瘟疫医生",
     "name_id": "plaguedoctor",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [
+    "reminders": [
       "说书人能力"
     ],
+    "remindersGlobal": [],
     "team": "outsider",
     "firstNight": 0
   },

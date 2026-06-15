@@ -38,10 +38,12 @@
     "sch_team": "镇民",
     "firstNight": 44,
     "otherNight": 0,
-    "firstNightReminder": "唤醒钟表匠，对他用手势比划数字来告知他恶魔与爪牙之间的最近距离。",
+    "firstNightReminder": "给他展示数字手势来告诉他恶魔与爪牙之间最近的距离。",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "meishenmeyongdejuese111",
@@ -53,12 +55,14 @@
     "sch_team": "镇民",
     "firstNight": 47,
     "otherNight": 0,
-    "firstNightReminder": "唤醒事务官，对他指向一名善良玩家。",
+    "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
     "otherNightReminder": "",
     "reminders": [
       "得知"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wocaishiemo1223322323232323",
@@ -70,12 +74,14 @@
     "sch_team": "镇民",
     "firstNight": 21,
     "otherNight": 15,
-    "firstNightReminder": "唤醒舞蛇人，让他选择一名存活玩家。如果选中恶魔则执行角色和阵营的交换，并在舞蛇人入睡后通知旧恶魔角色变化。",
-    "otherNightReminder": "唤醒舞蛇人，让他选择一名存活玩家。如果选中恶魔则执行角色和阵营的交换，并在舞蛇人入睡后通知旧恶魔角色变化。",
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
     "reminders": [
       "中毒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
   },
   {
     "id": "woshidingzhenbuhuishuxue111",
@@ -87,12 +93,14 @@
     "sch_team": "镇民",
     "firstNight": 65,
     "otherNight": 101,
-    "firstNightReminder": "唤醒数学家，用手势比划数字来告诉他今天有多少玩家的能力未正常生效。",
-    "otherNightReminder": "唤醒数学家，用手势比划数字来告诉他今天有多少玩家的能力未正常生效。",
+    "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [
       "未正常生效"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "jiushigebaichi111",
@@ -109,7 +117,9 @@
     "reminders": [
       "醉酒"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
     "id": "xiongdinihaoxiang111",
@@ -122,12 +132,14 @@
     "firstNight": 0,
     "otherNight": 85,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒卖花女孩，以点头或摇头告知她今天白天是否有恶魔参与投票。",
+    "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zhengdanideyanjing111",
@@ -140,9 +152,11 @@
     "firstNight": 0,
     "otherNight": 87,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒神谕者，对他用手势比划数字来告知他当前死亡玩家中邪恶玩家的数量。",
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "baziji9865765487le115555551",
@@ -157,10 +171,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "：唤醒杂技演员，让他选择一名玩家。如果当晚这名玩家醉酒或中毒，杂技演员死亡。",
     "reminders": [
-      "被选择",
-      "死亡"
+      "死亡",
+      "被选择"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "列位看官，请扶好帽盔，我将逆天而行，踏空起舞！身如飞燕，胆若雷霆，只为博君一笑一惊！"
   },
   {
     "id": "furryhaoye111",
@@ -177,7 +193,10 @@
       "失足",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "shiyizhezhezhezhe",
@@ -190,11 +209,13 @@
     "firstNight": 1.5,
     "otherNight": 1.5,
     "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
-    "otherNightReminder": "根据失忆者的具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
+    "otherNightReminder": "如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
     "reminders": [
       "？"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "chaojibianbianbian111",
@@ -211,7 +232,11 @@
     "remindersGlobal": [
       "是变脸师"
     ],
-    "setup": 0
+    "setup": 0,
+    "reminders": [
+      "疯狂"
+    ],
+    "flavor": ""
   },
   {
     "id": "zhenaosheajwiejp214ui90-japtu90q23j5t",
@@ -245,7 +270,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "chuangsishuoshuren111",
@@ -260,7 +287,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "tougexiangxian111",
@@ -275,7 +304,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "chousha111",
@@ -288,11 +319,13 @@
     "firstNight": 0,
     "otherNight": 64,
     "firstNightReminder": "",
-    "otherNightReminder": "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
+    "otherNightReminder": "如果月之子在白天触发了死亡能力并选择了一名善良玩家，该玩家死亡。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。"
   },
   {
     "id": "biezaizhelifadian111",
@@ -305,11 +338,13 @@
     "firstNight": 0,
     "otherNight": 67,
     "firstNightReminder": "",
-    "otherNightReminder": "如果理发师死于白天，唤醒恶魔让他决定是否使用理发师的能力。如果理发师死于夜晚，（如果让除攻击理发师以外的恶魔进行选择则需要等当前恶魔入睡后）让一名恶魔决定是否使用理发师的能力。",
+    "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
     "reminders": [
       "今晚理发"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
     "id": "woheduolema111",
@@ -327,7 +362,8 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "touduzheeeeeeee111",

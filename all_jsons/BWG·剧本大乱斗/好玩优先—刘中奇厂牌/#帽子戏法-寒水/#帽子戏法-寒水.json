@@ -42,13 +42,15 @@
     "sch_team": "镇民",
     "firstNight": 43,
     "otherNight": 66,
-    "firstNightReminder": "唤醒祖母，对她指向一名善良玩家，并展示该玩家的角色标记。",
-    "otherNightReminder": "如果恶魔杀死了孙子，祖母死亡。",
+    "firstNightReminder": "指向她的孙子玩家，并展示该玩家的角色标记。",
+    "otherNightReminder": "如果孙子被恶魔杀死，祖母也会一同死亡。标记祖母死亡。",
     "reminders": [
       "孙子",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "lingluowawa111",
@@ -60,12 +62,14 @@
     "sch_team": "镇民",
     "firstNight": 46,
     "otherNight": 88,
-    "firstNightReminder": "唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
-    "otherNightReminder": "如果女裁缝未曾使用能力，唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "rangwokangkang111",
@@ -77,10 +81,12 @@
     "sch_team": "镇民",
     "firstNight": 45,
     "otherNight": 84,
-    "firstNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
-    "otherNightReminder": "唤醒筑梦师，让他选择一名除自己以外的非旅行者玩家。对他展示一善一恶两个角色标记。",
+    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……"
   },
   {
     "id": "mofasaozhou111",
@@ -95,7 +101,9 @@
     "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "wanizufen111",
@@ -108,11 +116,13 @@
     "firstNight": 0,
     "otherNight": 83,
     "firstNightReminder": "",
-    "otherNightReminder": "如果今天白天有玩家死于处决，唤醒送葬者，对他展示那名玩家的角色标记。",
+    "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
     "reminders": [
       "死于今日"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。"
   },
   {
     "id": "bingbibibibibibibibiibibibibibibibibiiiiihbbibibib",
@@ -130,14 +140,15 @@
       "死于今日"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": "是非曲直，自在人心。"
   },
   {
     "id": "wangzherongyao111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/farmer.png",
     "edition": "custom",
     "name": "农夫",
-    "ability": "当你在夜晚死亡时，一名存活的善良玩家会变成农夫。",
+    "ability": "如果你在夜晚死亡，一名存活的善良玩家会变成农夫。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
@@ -145,11 +156,13 @@
     "firstNightReminder": "",
     "otherNightReminder": "如果农夫死于夜晚，唤醒一名存活的善良玩家告知他角色变化。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zhshutongoashoiahokrtoaiwjsjfn8qh13rfbnoihc-9j",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shutong.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_2027903943171_36d374a5.jpg",
     "edition": "custom",
     "name": "书童",
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：除首个夜晚以外，当他被邪恶玩家的能力选择或影响时，你会在当晚死亡。",
@@ -157,14 +170,15 @@
     "sch_team": "外来者",
     "firstNight": 34.5,
     "otherNight": 60.5,
-    "firstNightReminder": "唤醒书童，让他选择一名玩家。",
-    "otherNightReminder": "如果被书童选择的玩家被邪恶玩家的能力选择或影响时，书童会在当晚死亡。",
+    "firstNightReminder": "唤醒书童，让其选择一名玩家，在其选择的玩家标记旁放置“选择”。",
+    "otherNightReminder": "如果标记有“选择”的玩家被邪恶玩家的能力选择或影响时，在书童旁放置“死亡”标记。",
     "reminders": [
-      "选择",
-      "死亡"
+      "死亡",
+      "选择"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "xunzhaonidezhuren111",
@@ -176,12 +190,14 @@
     "sch_team": "外来者",
     "firstNight": 41,
     "otherNight": 82,
-    "firstNightReminder": "唤醒管家，让他选择一名除自己以外的玩家，那名玩家成为他的主人。",
-    "otherNightReminder": "唤醒管家，让他选择一名除自己以外的玩家，那名玩家成为他的主人。",
+    "firstNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+    "otherNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
     "reminders": [
       "主人"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "yangaaaaaaaaaaaa111",

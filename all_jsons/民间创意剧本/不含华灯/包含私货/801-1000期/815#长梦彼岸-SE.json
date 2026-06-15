@@ -9,60 +9,81 @@
   {
     "id": "_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/washerwoman.png",
-    "firstNightReminder": "在首个夜晚里，唤醒洗衣妇，并指向标记有“镇民”和“错误”的玩家。将标记有“镇民”的玩家标记展示给洗衣妇。让洗衣妇重新入睡",
-    "remindersGlobal": [
-      "镇民",
-      "错误"
-    ],
+    "firstNightReminder": "展示那个镇民角色标记。指向被你标记“镇民”和“错误”的两名玩家。",
+    "remindersGlobal": [],
     "name": "洗衣妇",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个镇民角色：这两名玩家之一是该角色。",
-    "firstNight": 4700
+    "firstNight": 4700,
+    "otherNightReminder": "",
+    "reminders": [
+      "错误",
+      "镇民"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "1_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chef.png",
-    "firstNightReminder": "唤醒厨师，对他用手势比划数字来告知他邻座邪恶玩家有几对。",
+    "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
     "name": "厨师",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
-    "firstNight": 4000
+    "firstNight": 4000,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。"
   },
   {
     "id": "2_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
-    "firstNightReminder": "唤醒祖母，对她指向一名善良玩家，并展示该玩家的角色标记。",
-    "otherNightReminder": "如果恶魔杀死了孙子，祖母死亡。",
-    "remindersGlobal": [
+    "firstNightReminder": "指向她的孙子玩家，并展示该玩家的角色标记。",
+    "otherNightReminder": "如果孙子被恶魔杀死，祖母也会一同死亡。标记祖母死亡。",
+    "remindersGlobal": [],
+    "name": "祖母",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
+    "firstNight": 4200,
+    "otherNight": 23,
+    "reminders": [
       "孙子",
       "死亡"
     ],
-    "name": "祖母",
-    "team": "townsfolk",
-    "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。  如果恶魔杀死了他，你也会死亡。",
-    "firstNight": 4200,
-    "otherNight": 23
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "3_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/clockmaker.png",
-    "firstNightReminder": "唤醒钟表匠，对他用手势比划数字来告知他恶魔与爪牙之间的最近距离。",
+    "firstNightReminder": "给他展示数字手势来告诉他恶魔与爪牙之间最近的距离。",
     "name": "钟表匠",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知恶魔与爪牙之间最近的距离。（邻座的玩家距离为1）",
-    "firstNight": 4300
+    "firstNight": 4300,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
     "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
-    "remindersGlobal": [
-      "得知"
-    ],
+    "remindersGlobal": [],
     "name": "骑士",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
-    "firstNight": 4500
+    "firstNight": 4500,
+    "otherNightReminder": "",
+    "reminders": [
+      "得知"
+    ],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "5_elysuim",
@@ -78,30 +99,36 @@
   {
     "id": "6_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
-    "firstNightReminder": "唤醒舞蛇人，让他选择一名存活玩家。如果选中恶魔则执行角色和阵营的交换，并在舞蛇人入睡后通知旧恶魔角色变化。",
-    "otherNightReminder": "唤醒舞蛇人，让他选择一名存活玩家。如果选中恶魔则执行角色和阵营的交换，并在舞蛇人入睡后通知旧恶魔角色变化。",
-    "remindersGlobal": [
-      "中毒"
-    ],
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "remindersGlobal": [],
     "name": "舞蛇人",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
     "firstNight": 3800,
-    "otherNight": 11
+    "otherNight": 11,
+    "reminders": [
+      "中毒"
+    ],
+    "setup": 0,
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
   },
   {
     "id": "7_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
-    "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-    "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-    "remindersGlobal": [
-      "干扰项"
-    ],
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "remindersGlobal": [],
     "name": "占卜师",
     "team": "townsfolk",
-    "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。  会有一名善良玩家始终被你的能力当作恶魔。",
+    "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
     "firstNight": 4100,
-    "otherNight": 29
+    "otherNight": 29,
+    "reminders": [
+      "干扰项"
+    ],
+    "setup": 0,
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "8_elysuim",
@@ -121,24 +148,33 @@
   {
     "id": "9_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
-    "otherNightReminder": "唤醒卖花女孩，以点头或摇头告知她今天白天是否有恶魔参与投票。",
-    "remindersGlobal": [
-      "恶魔未投票",
-      "恶魔已投票"
-    ],
+    "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
+    "remindersGlobal": [],
     "name": "卖花女孩",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
-    "otherNight": 30
+    "otherNight": 30,
+    "firstNightReminder": "",
+    "reminders": [
+      "恶魔已投票",
+      "恶魔未投票"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "10_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
-    "otherNightReminder": "唤醒神谕者，对他用手势比划数字来告知他当前死亡玩家中邪恶玩家的数量。",
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "name": "神谕者",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "otherNight": 31
+    "otherNight": 31,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "11_elysuim",
@@ -149,127 +185,172 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
     "firstNight": 4800,
-    "otherNight": 35
+    "otherNight": 35,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "12_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
-    "otherNightReminder": "如果造谣者今天白天的声明正确，一名玩家死亡。",
-    "remindersGlobal": [
-      "死亡"
-    ],
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
+    "remindersGlobal": [],
     "name": "造谣者",
     "team": "townsfolk",
     "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
-    "otherNight": 22
+    "otherNight": 22,
+    "firstNightReminder": "",
+    "reminders": [
+      "死亡"
+    ],
+    "setup": 0,
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "13_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
-    "otherNightReminder": "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
-    "remindersGlobal": [
-      "死亡"
-    ],
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
+    "remindersGlobal": [],
     "name": "赌徒",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
-    "otherNight": 9
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "reminders": [
+      "死亡"
+    ],
+    "setup": 0,
+    "flavor": "正面，我赢。 反面，你输。"
   },
   {
     "id": "14_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
-    "otherNightReminder": "唤醒杂技演员，让他选择一名玩家。如果当晚这名玩家醉酒或中毒，杂技演员死亡。",
-    "remindersGlobal": [
-      "被选择",
-      "死亡"
-    ],
+    "otherNightReminder": "：唤醒杂技演员，让他选择一名玩家。如果当晚这名玩家醉酒或中毒，杂技演员死亡。",
+    "remindersGlobal": [],
     "name": "杂技演员",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家：如果当晚他醉酒或中毒，你死亡。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "reminders": [
+      "死亡",
+      "被选择"
+    ],
+    "setup": 0,
+    "flavor": "列位看官，请扶好帽盔，我将逆天而行，踏空起舞！身如飞燕，胆若雷霆，只为博君一笑一惊！"
   },
   {
     "id": "15_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
-    "remindersGlobal": [
-      "失去能力"
-    ],
+    "remindersGlobal": [],
     "name": "艺术家",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。"
+    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "失去能力"
+    ],
+    "setup": 0,
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
   },
   {
     "id": "16_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
-    "firstNightReminder": "唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
-    "otherNightReminder": "如果女裁缝未曾使用能力，唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
-    "remindersGlobal": [
-      "失去能力"
-    ],
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "remindersGlobal": [],
     "name": "女裁缝",
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
     "firstNight": 4400,
-    "otherNight": 32
+    "otherNight": 32,
+    "reminders": [
+      "失去能力"
+    ],
+    "setup": 0,
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "17_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/exorcist.png",
-    "otherNightReminder": "唤醒驱魔人，让他选择一名与上一晚不同的玩家。如果他选中了恶魔，则在驱魔人入睡后通知该恶魔谁是驱魔人。",
-    "remindersGlobal": [
-      "别选择"
-    ],
+    "otherNightReminder": "让驱魔人选择一名玩家，不能是上一夜他选择过的玩家。让驱魔人重新入睡。如果驱魔人选中了恶魔：唤醒恶魔。展示“该角色的能力对你生效”信息标记和驱魔人角色标记。指向驱魔人玩家。",
+    "remindersGlobal": [],
     "name": "驱魔人",
     "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你是驱魔人，但他当晚不会因其自身能力而被唤醒。",
-    "otherNight": 14
+    "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你的角色，但他当晚不会因其自身能力而被唤醒。",
+    "otherNight": 14,
+    "firstNightReminder": "",
+    "reminders": [
+      "被选择"
+    ],
+    "setup": 0,
+    "flavor": "每一个不洁之灵，每一份撒旦之力，每一次炼狱敌人的猛袭，每一个军团，每一个崇拜恶魔的组织和教派，以我主耶稣基督的名义和力量，将你们驱逐。我命令你们，远离上帝的教堂，远离上帝按祂的形貌所创造并受神圣羔羊的宝血所救赎的灵魂。"
   },
   {
     "id": "18_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
-    "otherNightReminder": "唤醒僧侣，让他选择除自己以外的一名玩家，那名玩家今晚免受恶魔负面效果影响。",
-    "remindersGlobal": [
-      "保护"
-    ],
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
+    "remindersGlobal": [],
     "name": "僧侣",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "otherNight": 12
+    "otherNight": 12,
+    "firstNightReminder": "",
+    "reminders": [
+      "保护"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "19_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
-    "otherNightReminder": "唤醒旅店老板，让他选择两名玩家。这两名玩家今晚不死，同时需要决定他俩其中谁因为旅店老板能力醉酒。",
-    "remindersGlobal": [
-      "不会死亡",
-      "醉酒"
-    ],
+    "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
+    "remindersGlobal": [],
     "name": "旅店老板",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
-    "otherNight": 8
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "reminders": [
+      "不会死亡",
+      "醉酒"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "20_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/virgin.png",
-    "remindersGlobal": [
-      "失去能力"
-    ],
+    "remindersGlobal": [],
     "name": "贞洁者",
     "team": "townsfolk",
-    "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。"
+    "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "失去能力"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "21_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/banshee.png",
-    "otherNightReminder": "如果恶魔杀死了报丧女妖，宣布“报丧女妖觉醒了”，并使用“具有能力”标记报丧女妖。",
-    "remindersGlobal": [
-      "具有能力"
-    ],
+    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
+    "remindersGlobal": [],
     "name": "报丧女妖",
     "team": "townsfolk",
     "ability": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
-    "otherNight": 28
+    "otherNight": 28,
+    "firstNightReminder": "",
+    "reminders": [
+      "具有能力"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "22_elysuim",
@@ -277,41 +358,61 @@
     "otherNightReminder": "如果农夫死于夜晚，唤醒一名存活的善良玩家告知他角色变化。",
     "name": "农夫",
     "team": "townsfolk",
-    "ability": "当你在夜晚死亡时，一名存活的善良玩家会变成农夫。",
-    "otherNight": 27
+    "ability": "如果你在夜晚死亡，一名存活的善良玩家会变成农夫。",
+    "otherNight": 27,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "23_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
-    "firstNightReminder": "唤醒哲学家，他可以摇头不使用能力，或选择获得角色列表上的一个善良角色的能力。",
-    "otherNightReminder": "如果哲学家未曾使用能力，唤醒哲学家，他可以摇头不使用能力，或选择获得角色列表上的一个善良角色的能力。",
+    "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
+    "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "remindersGlobal": [
-      "醉酒",
-      "是是哲学家"
+      "是哲学家"
     ],
     "name": "哲学家",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。  如果这个角色在场，他醉酒。",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
     "firstNight": 12,
-    "otherNight": 3
+    "otherNight": 3,
+    "reminders": [
+      "醉酒"
+    ],
+    "setup": 0,
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。"
   },
   {
     "id": "24_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
-    "remindersGlobal": [
-      "饱餐",
-      "醉酒"
-    ],
+    "remindersGlobal": [],
     "name": "食人族",
     "team": "townsfolk",
-    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。"
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "中毒",
+      "饱餐"
+    ],
+    "setup": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "25_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/soldier.png",
     "name": "士兵",
     "team": "townsfolk",
-    "ability": "恶魔的负面能力对你无效。"
+    "ability": "恶魔的负面能力对你无效。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "26_elysuim",
@@ -322,30 +423,43 @@
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "27_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
-    "otherNightReminder": "如果理发师死于白天，唤醒恶魔让他决定是否使用理发师的能力。如果理发师死于夜晚，（如果让除攻击理发师以外的恶魔进行选择则需要等当前恶魔入睡后）让一名恶魔决定是否使用理发师的能力。",
-    "remindersGlobal": [
-      "今晚理发"
-    ],
+    "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
+    "remindersGlobal": [],
     "name": "理发师",
     "team": "outsider",
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-    "otherNight": 24
+    "otherNight": 24,
+    "firstNightReminder": "",
+    "reminders": [
+      "今晚理发"
+    ],
+    "setup": 0,
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
     "id": "28_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
-    "remindersGlobal": [
-      "醉酒",
-      "已猜测"
-    ],
+    "remindersGlobal": [],
     "name": "解谜大师",
     "team": "outsider",
-    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。"
+    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "已猜测",
+      "醉酒"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "29_elysuim",
@@ -354,31 +468,44 @@
     "name": "告密者",
     "team": "outsider",
     "ability": "爪牙会在其首个夜晚得知三个伪装。",
-    "firstNight": 2300
+    "firstNight": 2300,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "30_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/hatter.png",
     "otherNightReminder": "如果帽匠死于白天，（建议分别）唤醒恶魔和爪牙并让他们选择是否改变角色。如果帽匠死于夜晚，则在当前玩家行动结束后立即开始茶会。",
-    "remindersGlobal": [
-      "今晚茶会"
-    ],
+    "remindersGlobal": [],
     "name": "帽匠",
     "team": "outsider",
     "ability": "如果你死亡，当晚爪牙和恶魔玩家可以选择变成新的爪牙和恶魔角色。",
-    "otherNight": 4
+    "otherNight": 4,
+    "firstNightReminder": "",
+    "reminders": [
+      "今晚茶会"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "31_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
     "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
-    "remindersGlobal": [
-      "说书人能力"
-    ],
+    "remindersGlobal": [],
     "name": "瘟疫医生",
     "team": "outsider",
     "ability": "当你死亡时，说书人会获得一个爪牙能力。",
-    "otherNight": 26
+    "otherNight": 26,
+    "firstNightReminder": "",
+    "reminders": [
+      "说书人能力"
+    ],
+    "setup": 0,
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。"
   },
   {
     "id": "32_elysuim",
@@ -652,12 +779,17 @@
   },
   {
     "id": "47_elysuim",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sage.png",
-    "otherNightReminder": "如果贤者被恶魔杀死，唤醒贤者，对他指向两名玩家。其中之一是杀死贤者的恶魔。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sage.png",
+    "otherNightReminder": "如果恶魔杀死了贤者，唤醒贤者并指向两名玩家，其中一名玩家是杀死他的恶魔。",
     "name": "贤者",
     "team": "townsfolk",
     "ability": "如果恶魔杀死了你，在当晚你会被唤醒并得知两名玩家，其中一名是杀死你的那个恶魔。",
-    "otherNight": 25
+    "otherNight": 25,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "这书山卷海中一定隐藏着秘密，我非常确信！这些秘密就隐藏在这一字一句之间等待着我们发掘。小子！再帮我多拿点蜡烛！还有墨水！虽然这些笔记有些晦涩，但有关恶魔的谜语很快就会被揭晓。"
   },
   {
     "id": "48_elysuim",

@@ -67,13 +67,15 @@
     "sch_team": "镇民",
     "firstNight": 33,
     "otherNight": 0,
-    "firstNightReminder": "唤醒小精灵，对他展示一个在场镇民角色标记。",
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "otherNightReminder": "",
     "reminders": [
       "疯狂",
       "获得能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "woshixiuxingzhe111",
@@ -92,7 +94,7 @@
   },
   {
     "id": "fangshidfygsgsdg1",
-    "image": "https://www.helloimg.com/i/2024/11/11/67321c5f034e2.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
     "edition": "custom",
     "name": "方士",
     "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
@@ -106,7 +108,8 @@
       "得知"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "ainiii11111",
@@ -118,10 +121,12 @@
     "sch_team": "镇民",
     "firstNight": 39,
     "otherNight": 80,
-    "firstNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
-    "otherNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
+    "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+    "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "zhuijidelaoda111",
@@ -153,10 +158,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "tiandanwuzaoxiaoxinhuozhu111",
@@ -192,7 +199,8 @@
       "死于今日"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "shiyizhezhezhezhe",
@@ -205,18 +213,20 @@
     "firstNight": 1.5,
     "otherNight": 1.5,
     "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
-    "otherNightReminder": "根据失忆者的具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
+    "otherNightReminder": "如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
     "reminders": [
       "？"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "xixifafashishishishishishishi",
     "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
     "edition": "custom",
     "name": "戏法师",
-    "ability": "'每个白天，你可以公开进行一次谁是爪牙，谁是恶魔的猜测。如果你猜对，善良阵营获胜。",
+    "ability": "每个白天限一次，你可以公开猜测谁是爪牙，谁是恶魔。如果你猜对，善良阵营获胜。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
@@ -224,7 +234,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。"
   },
   {
     "id": "hahaxiaochou111",
@@ -241,14 +253,16 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "……然后国王说道：‘什么？！我甚至从未有过一条橡胶马裤，更别提一门奶油大炮了！’嗬嗬！欢乐一日！"
   },
   {
     "id": "wangzherongyao111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/farmer.png",
     "edition": "custom",
     "name": "农夫",
-    "ability": "当你在夜晚死亡时，一名存活的善良玩家会变成农夫。",
+    "ability": "如果你在夜晚死亡，一名存活的善良玩家会变成农夫。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
@@ -256,7 +270,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "如果农夫死于夜晚，唤醒一名存活的善良玩家告知他角色变化。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "yiwu111",
@@ -273,7 +289,9 @@
     "remindersGlobal": [
       "是悟道者"
     ],
-    "setup": 1
+    "setup": 1,
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "chuangsishuoshuren111",
@@ -288,7 +306,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "biezaizhelifadian111",
@@ -301,11 +321,13 @@
     "firstNight": 0,
     "otherNight": 67,
     "firstNightReminder": "",
-    "otherNightReminder": "如果理发师死于白天，唤醒恶魔让他决定是否使用理发师的能力。如果理发师死于夜晚，（如果让除攻击理发师以外的恶魔进行选择则需要等当前恶魔入睡后）让一名恶魔决定是否使用理发师的能力。",
+    "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
     "reminders": [
       "今晚理发"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
     "id": "zhadiaole111",
@@ -320,7 +342,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "woheduolema111",
@@ -338,7 +362,8 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "scp-049049049",
@@ -355,7 +380,9 @@
     "reminders": [
       "说书人能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。"
   },
   {
     "id": "suaibi1111",
@@ -372,7 +399,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "caijiuduolian",

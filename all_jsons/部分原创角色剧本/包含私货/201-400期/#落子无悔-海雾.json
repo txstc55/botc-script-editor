@@ -38,7 +38,9 @@
       "外来者",
       "错误"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "meishenmeyongdejuese111",
@@ -50,16 +52,18 @@
     "sch_team": "镇民",
     "firstNight": 47,
     "otherNight": 0,
-    "firstNightReminder": "唤醒事务官，对他指向一名善良玩家。",
+    "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
     "otherNightReminder": "",
     "reminders": [
       "得知"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "fangshidfygsgsdg213123123213123123",
-    "image": "https://www.helloimg.com/i/2024/11/11/67321c5f034e2.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
     "edition": "custom",
     "name": "方士",
     "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
@@ -70,14 +74,11 @@
     "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
     "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
     "reminders": [
-      "第一夜",
-      "第二夜",
-      "第三夜",
-      "第四夜",
-      "第五夜"
+      "得知"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "mofashuijingqiu111",
@@ -89,12 +90,14 @@
     "sch_team": "镇民",
     "firstNight": 40,
     "otherNight": 81,
-    "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-    "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
       "干扰项"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "zhuijidelaoda111",
@@ -126,10 +129,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "tiandanwuzaoxiaoxinhuozhu111",
@@ -181,7 +186,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "diaoshangyizhengtiandeyu111",
@@ -198,7 +205,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "caibuduide111",
@@ -211,11 +220,13 @@
     "firstNight": 0,
     "otherNight": 89,
     "firstNightReminder": "",
-    "otherNightReminder": "如果杂耍艺人在今天白天使用了能力，唤醒杂耍艺人，对他用手势比划数字来告知他白天猜测正确的次数。",
+    "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
     "reminders": [
       "猜测正确"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。"
   },
   {
     "id": "tixingguanuahosnrowan34613",
@@ -250,24 +261,28 @@
     "reminders": [
       "不会死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "kangtuiyige111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
     "edition": "custom",
     "name": "逆臣",
-    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你会在当晚转变为邪恶；如果你先死于处决，他会在当晚转变为邪恶。",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 42,
     "otherNight": 25,
-    "firstNightReminder": "唤醒逆臣，让他选择一名除自己以外的玩家，那名玩家现在与他不共戴天。",
-    "otherNightReminder": "如果逆臣或他的目标玩家，这两人之一死于处决，唤醒另一名玩家并通知他阵营变化。",
+    "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
+    "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
     "reminders": [
       "不共戴天"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
   },
   {
     "id": "moluotuofujiweijiu11111",
@@ -282,7 +297,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "bushiwo111",
@@ -299,7 +316,9 @@
     "reminders": [
       "已被猜测"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wudidejiemidashi111",
@@ -314,10 +333,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [
-      "醉酒",
-      "已猜测"
+      "已猜测",
+      "醉酒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "jiushigelvshi111",

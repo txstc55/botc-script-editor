@@ -7,7 +7,7 @@
     "author": "Milk"
   },
   {
-    "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
     "otherNightReminder": "",
     "name": "图书管理员",
     "otherNight": 0,
@@ -22,7 +22,9 @@
     "name_eng": "Librarian",
     "firstNight": 33,
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
@@ -39,7 +41,9 @@
     "name_eng": "Noble",
     "firstNight": 43,
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
+    "remindersGlobal": [],
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
@@ -57,7 +61,9 @@
     "name_eng": "Pixie",
     "firstNight": 29,
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+    "remindersGlobal": [],
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "firstNightReminder": "选择一种角色类型，并告知其一个符合该类型的玩家。在该玩家旁边标记已被知晓。",
@@ -81,8 +87,8 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png"
   },
   {
-    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
-    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "otherNight": 70,
     "setup": 0,
@@ -93,7 +99,9 @@
     "name_eng": "Chambermaid",
     "firstNight": 50,
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+    "remindersGlobal": [],
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
@@ -110,11 +118,13 @@
     "name_eng": "Fortune Teller",
     "firstNight": 37,
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
-    "firstNightReminder": "告诉将军你认为的答案。",
-    "otherNightReminder": "告诉将军你认为的答案。",
+    "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+    "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "name": "将军",
     "otherNight": 69,
     "setup": 0,
@@ -125,7 +135,9 @@
     "name_eng": "General",
     "firstNight": 49,
     "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
@@ -142,7 +154,9 @@
     "name_eng": "Sailor",
     "firstNight": 10,
     "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
+    "remindersGlobal": [],
+    "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！"
   },
   {
     "firstNightReminder": "",
@@ -157,7 +171,9 @@
     "name_eng": "Savant",
     "firstNight": 0,
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
@@ -174,7 +190,9 @@
     "name_eng": "Seamstress",
     "firstNight": 42,
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
+    "remindersGlobal": [],
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
@@ -194,7 +212,8 @@
     "name_eng": "Philosopher",
     "firstNight": 2,
     "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。"
   },
   {
     "firstNightReminder": "",
@@ -210,8 +229,10 @@
     "team": "townsfolk",
     "name_eng": "Fisherman",
     "firstNight": 0,
-    "ability": "每局游戏限一次，在白天时，你可以让说书⼈给你一些能帮助你的阵营获胜的建议。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png"
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -226,7 +247,9 @@
     "name_eng": "Ravenkeeper",
     "firstNight": 0,
     "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
+    "remindersGlobal": [],
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
   },
   {
     "firstNightReminder": "",
@@ -243,7 +266,9 @@
     "name_eng": "Barber",
     "firstNight": 0,
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
+    "remindersGlobal": [],
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
     "firstNightReminder": "",
@@ -261,7 +286,8 @@
     "name_eng": "Drunk",
     "firstNight": 0,
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "firstNightReminder": "",
@@ -276,7 +302,9 @@
     "name_eng": "Mutant",
     "firstNight": 0,
     "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
+    "remindersGlobal": [],
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "firstNightReminder": "",
@@ -293,7 +321,9 @@
     "name_eng": "Sweetheart",
     "firstNight": 0,
     "ability": "当你死亡时，会有一名玩家开始醉酒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
+    "remindersGlobal": [],
+    "flavor": "我永远也忘不掉她……永远……"
   },
   {
     "firstNightReminder": "唤醒镜像双子和他的对立双子，让他们进行眼神接触。对镜像双子展示对立双子的角色标记，并对对立双子展示镜像双子的角色标记。",

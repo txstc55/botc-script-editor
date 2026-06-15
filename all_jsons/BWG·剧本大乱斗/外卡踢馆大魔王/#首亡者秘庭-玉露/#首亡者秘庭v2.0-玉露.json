@@ -6,122 +6,140 @@
   },
   {
     "id": "gxx",
-    "image": "https://img.picui.cn/free/2025/06/17/6851433c835f6.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
     "edition": "custom",
     "name": "图书管理员",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
     "team": "townsfolk",
     "firstNight": 10004,
-    "firstNightReminder": "唤醒图书管理员，告知其信息。",
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
     "reminders": [
       "外来者",
-      "得知"
+      "错误"
     ],
-    "setup": 0
+    "setup": 0,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "xjl",
-    "image": "https://img.picui.cn/free/2025/06/17/6851433bd59ef.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/investigator.png",
     "edition": "custom",
     "name": "调查员",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
     "team": "townsfolk",
     "firstNight": 10005,
-    "firstNightReminder": "唤醒调查员，告知其信息。",
+    "firstNightReminder": "展示那个爪牙角色标记。指向被你标记“爪牙”和“错误”的两名玩家。",
     "reminders": [
       "爪牙",
-      "得知"
+      "错误"
     ],
-    "setup": 0
+    "setup": 0,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "xz11z",
-    "image": "https://img.picui.cn/free/2025/06/17/6851433c7ed57.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
     "edition": "custom",
     "name": "贵族",
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
     "team": "townsfolk",
     "firstNight": 10006,
-    "firstNightReminder": "唤醒贵族，告知其信息。",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "reminders": [
-      "得知",
-      "得知",
-      "邪恶"
+      "被得知"
     ],
-    "setup": 0
+    "setup": 0,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "sgj",
-    "image": "https://img.picui.cn/free/2025/06/15/684db0032d7a9.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
     "edition": "custom",
     "name": "修行者",
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
     "team": "townsfolk",
     "firstNight": 10007,
-    "firstNightReminder": "唤醒修行者，告知其信息。",
-    "setup": 0
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
+    "setup": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
     "id": "sxj",
-    "image": "https://img.picui.cn/free/2025/06/14/684d3617056fc.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
     "edition": "custom",
     "name": "数学家",
     "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
     "team": "townsfolk",
     "firstNight": 10010,
     "otherNight": 16,
-    "firstNightReminder": "唤醒数学家。告知其有多少名玩家的能力因为其他角色的能力而未正常生效。",
-    "otherNightReminder": "唤醒数学家。告知其有多少名玩家的能力因为其他角色的能力而未正常生效。",
+    "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [
-      "未正常生效",
-      "未正常生效",
-      "未正常生效",
-      "未正常生效",
       "未正常生效"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "zbs",
-    "image": "https://img.picui.cn/free/2025/06/14/684d361eb6cb7.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "edition": "custom",
     "name": "占卜师",
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
     "team": "townsfolk",
     "firstNight": 10007,
     "otherNight": 9,
-    "firstNightReminder": "唤醒占卜师。让占卜师指向任意两名玩家。如果这两名玩家中任意一名是恶魔或“干扰项”，对占卜师点头表示“是”。否则，摇头表示“否”。让占卜师重新入睡。",
-    "otherNightReminder": "唤醒占卜师。让占卜师指向任意两名玩家。如果这两名玩家中任意一名是恶魔或“干扰项”，对占卜师点头表示“是”。否则，摇头表示“否”。让占卜师重新入睡。",
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
       "干扰项"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "syz",
-    "image": "https://img.picui.cn/free/2025/06/14/684d361528ac1.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
     "edition": "custom",
     "name": "神谕者",
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
     "team": "townsfolk",
     "otherNight": 10,
-    "otherNightReminder": "唤醒神谕者，告知他现在死亡玩家中有多少名邪恶玩家。",
-    "setup": 0
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
+    "setup": 0,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "mxj",
-    "image": "https://img.picui.cn/free/2025/06/17/685143414f372.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "edition": "custom",
     "name": "城镇公告员",
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
     "team": "townsfolk",
     "otherNight": 10,
-    "otherNightReminder": "唤醒城镇公告员，告知其信息。",
+    "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
-    "setup": 0
+    "setup": 0,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "cf",
@@ -137,21 +155,20 @@
   },
   {
     "id": "zsyr",
-    "image": "https://img.picui.cn/free/2025/06/15/684dacdf2955c.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
     "edition": "custom",
     "name": "杂耍艺人",
     "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
     "team": "townsfolk",
     "otherNight": 9,
-    "otherNightReminder": "唤醒杂耍艺人。对他用手势比划等同于“猜测正确”提示标记的数量。",
+    "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
     "reminders": [
-      "正确",
-      "正确",
-      "正确",
-      "正确",
-      "正确"
+      "猜测正确"
     ],
-    "setup": 0
+    "setup": 0,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。"
   },
   {
     "id": "gz",
@@ -191,12 +208,17 @@
   },
   {
     "id": "jmds",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/1a/Zealot.png/300px-Zealot.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1a/Zealot.png",
     "edition": "custom",
     "name": "狂热者",
     "ability": "如果有大于等于五名玩家存活，你必须在所有提名中投票。",
     "team": "outsider",
-    "setup": 0
+    "setup": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "jmd2s",

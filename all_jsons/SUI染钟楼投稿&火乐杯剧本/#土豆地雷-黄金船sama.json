@@ -43,12 +43,14 @@
     "sch_team": "镇民",
     "firstNight": 55,
     "otherNight": 94,
-    "firstNightReminder": "（在进入首个夜晚时立即通知赏金猎人转变的那个镇民他的阵营发生了变化）唤醒赏金猎人，对他指向一名邪恶玩家。",
-    "otherNightReminder": "如果赏金猎人之前得知的玩家死亡，唤醒赏金猎人，对他指向一名新的邪恶玩家。",
+    "firstNightReminder": "指向一名邪恶玩家。随后唤醒那名因赏金猎人而转变为邪恶的镇民，并告知他变成了邪恶阵营。",
+    "otherNightReminder": "如果赏金猎人知晓的邪恶玩家死亡，指向另一名邪恶玩家。",
     "reminders": [
       "得知"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wuxingshangjiang111",
@@ -63,7 +65,9 @@
     "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wocaishiguowang111",
@@ -91,26 +95,30 @@
     "firstNight": 0,
     "otherNight": 73,
     "firstNightReminder": "",
-    "otherNightReminder": "如果恶魔杀死了国王，唤醒唱诗男孩，对他指向恶魔。",
+    "otherNightReminder": "如果国王被恶魔杀死，将唱诗男孩唤醒并告诉他谁是那个杀死国王的恶魔。",
     "reminders": [],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "chunzaoyaoa",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
     "edition": "custom",
     "name": "造谣者",
-    "ability": "每个白天，你可以公开发表一个声明。在当晚，如果该声明是正确的，会有一名玩家死亡。",
+    "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
     "otherNight": 62,
     "firstNightReminder": "",
-    "otherNightReminder": "如果造谣者今天白天的声明正确，一名玩家死亡。",
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "fulankensitan111",
@@ -123,12 +131,14 @@
     "firstNight": 0,
     "otherNight": 76,
     "firstNightReminder": "",
-    "otherNightReminder": "如果教授未曾使用能力且在城镇广场上有玩家死亡，唤醒教授，他可以摇头不使用能力，或选择一名已死亡的玩家。如果该玩家是镇民，该玩家被起死回生。",
+    "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
     "reminders": [
       "复活",
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。"
   },
   {
     "id": "xinde_xinjide111",
@@ -159,7 +169,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "shanliangdeniaoer111",
@@ -172,16 +184,18 @@
     "firstNight": 0,
     "otherNight": 70,
     "firstNightReminder": "",
-    "otherNightReminder": "如果守鸦人死于夜晚，唤醒守鸦人，让他选择一名玩家。对他展示这名玩家的角色标记。",
+    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
   },
   {
     "id": "wangzherongyao111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/farmer.png",
     "edition": "custom",
     "name": "农夫",
-    "ability": "当你在夜晚死亡时，一名存活的善良玩家会变成农夫。",
+    "ability": "如果你在夜晚死亡，一名存活的善良玩家会变成农夫。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
@@ -189,7 +203,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "如果农夫死于夜晚，唤醒一名存活的善良玩家告知他角色变化。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wofuhuolawoshijiangbu111",
@@ -201,12 +217,14 @@
     "sch_team": "镇民",
     "firstNight": 0,
     "otherNight": 75,
-    "firstNightReminder": "如果恶魔杀死了报丧女妖，宣布“报丧女妖觉醒了”，并使用“具有能力”标记报丧女妖。",
+    "firstNightReminder": "",
     "reminders": [
       "具有能力"
     ],
     "setup": 0,
-    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。"
+    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "bingbibibibibibibibiibibibibibibibibiiiiihbbibibib",
@@ -224,7 +242,8 @@
       "死于今日"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": "是非曲直，自在人心。"
   },
   {
     "id": "yanshisadsadasdasdad",
@@ -257,7 +276,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "biezaizhelifadian111",
@@ -270,11 +291,13 @@
     "firstNight": 0,
     "otherNight": 67,
     "firstNightReminder": "",
-    "otherNightReminder": "如果理发师死于白天，唤醒恶魔让他决定是否使用理发师的能力。如果理发师死于夜晚，（如果让除攻击理发师以外的恶魔进行选择则需要等当前恶魔入睡后）让一名恶魔决定是否使用理发师的能力。",
+    "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
     "reminders": [
       "今晚理发"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
     "id": "chousha111",
@@ -287,11 +310,13 @@
     "firstNight": 0,
     "otherNight": 64,
     "firstNightReminder": "",
-    "otherNightReminder": "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
+    "otherNightReminder": "如果月之子在白天触发了死亡能力并选择了一名善良玩家，该玩家死亡。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。"
   },
   {
     "id": "scp-049049049",
@@ -308,7 +333,9 @@
     "reminders": [
       "说书人能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。"
   },
   {
     "id": "suaibi1111",
@@ -325,7 +352,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "nanjueeeee111",

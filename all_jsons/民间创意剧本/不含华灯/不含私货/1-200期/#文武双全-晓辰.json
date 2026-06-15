@@ -24,7 +24,7 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一名善良玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202305/c_9219342584861_b889322f.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/steward.png",
     "edition": "custom",
     "flavor": "",
     "id": "stewardButton",
@@ -42,11 +42,11 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
     "edition": "custom",
     "flavor": "",
     "id": "librarianButton",
-    "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
     "otherNightReminder": "",
     "name": "图书管理员",
     "otherNight": 0,
@@ -61,9 +61,9 @@
   },
   {
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
     "id": "savantButton",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -77,9 +77,9 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/philosopher.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。",
     "id": "philosopherButton",
     "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
@@ -97,9 +97,9 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/professor.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
     "id": "professorButton",
     "firstNightReminder": "",
     "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
@@ -115,10 +115,10 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。(从上个黎明到你被唤醒时）",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mathematician.png",
+    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。",
     "id": "mathematicianButton",
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
     "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
@@ -156,9 +156,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sailor.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！",
     "id": "sailorButton",
     "firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
     "otherNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
@@ -173,10 +173,10 @@
     "firstNight": 10
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gambler.png",
+    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "正面，我赢。 反面，你输。",
     "id": "gamblerButton",
     "firstNightReminder": "",
     "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
@@ -191,17 +191,18 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名存活的玩家，如果他是善良的，他死亡，并且当晚不会再有其他玩家死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lycanthrope.png",
+    "ability": "每个夜晚*，你要选择一名存活玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。会有一名善良玩家始终被当作邪恶阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lycanthrope.png",
     "edition": "custom",
     "flavor": "",
     "id": "lycanthropeButton",
     "firstNightReminder": "",
-    "otherNightReminder": "半兽人指向一名存活玩家：如果那名玩家善良，则立刻死去且今夜不会再有玩家死亡。",
+    "otherNightReminder": "唤醒半兽人，让他选择一名玩家。如果该玩家是善良玩家，该玩家死亡，且当晚恶魔不会造成死亡。",
     "name": "半兽人",
     "otherNight": 23,
     "setup": 0,
     "reminders": [
+      "失足",
       "死亡"
     ],
     "remindersGlobal": [],
@@ -210,7 +211,7 @@
   },
   {
     "ability": "恶魔的负面能力对你无效。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/soldier.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/soldier.png",
     "edition": "custom",
     "flavor": "",
     "id": "soldierButton",
@@ -226,9 +227,9 @@
   },
   {
     "ability": "当你首次将要死亡时，你不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fool.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fool.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "……然后国王说道：‘什么？！我甚至从未有过一条橡胶马裤，更别提一门奶油大炮了！’嗬嗬！欢乐一日！",
     "id": "foolButton",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -244,9 +245,9 @@
   },
   {
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。",
     "id": "cannibalButton",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -255,7 +256,7 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于今日"
+      "饱餐"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -263,9 +264,9 @@
   },
   {
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "id": "drunkButton",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -281,9 +282,9 @@
   },
   {
     "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lunatic.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "吾即是暗夜……没错吧？",
     "id": "lunaticButton",
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
@@ -292,17 +293,17 @@
     "setup": 0,
     "reminders": [],
     "remindersGlobal": [
-      "被选择",
-      "是疯子"
+      "是疯子",
+      "被选择"
     ],
     "team": "outsider",
     "firstNight": 7
   },
   {
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/barber.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。",
     "id": "barberButton",
     "firstNightReminder": "",
     "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
@@ -318,7 +319,7 @@
   },
   {
     "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/acrobat.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
     "edition": "custom",
     "flavor": "",
     "id": "acrobatButton",

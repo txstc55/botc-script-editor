@@ -15,12 +15,14 @@
     "sch_team": "镇民",
     "firstNight": 3047,
     "otherNight": 0,
-    "firstNightReminder": "唤醒事务官，对他指向一名善良玩家。",
+    "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
     "otherNightReminder": "",
     "reminders": [
       "得知"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "jingcaisanxuanyi111",
@@ -32,12 +34,14 @@
     "sch_team": "镇民",
     "firstNight": 3049,
     "otherNight": 0,
-    "firstNightReminder": "唤醒贵族，对他指向三名玩家。这三名玩家中有且仅有一名是邪恶玩家。",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
     "reminders": [
       "被得知"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "zhuijidelaoda111",
@@ -69,7 +73,9 @@
     "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "mofashuijingqiu111",
@@ -81,12 +87,14 @@
     "sch_team": "镇民",
     "firstNight": 3040,
     "otherNight": 81,
-    "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-    "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
       "干扰项"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "huojin111",
@@ -101,7 +109,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "haogaodeshan111",
@@ -118,7 +128,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "diaoshangyizhengtiandeyu111",
@@ -135,7 +147,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "chichichichichichichi111",
@@ -150,10 +164,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [
-      "饱餐",
-      "中毒"
+      "中毒",
+      "饱餐"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "Valkyrie",
@@ -182,9 +198,11 @@
     "firstNight": 0,
     "otherNight": 70,
     "firstNightReminder": "",
-    "otherNightReminder": "如果守鸦人死于夜晚，唤醒守鸦人，让他选择一名玩家。对他展示这名玩家的角色标记。",
+    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
   },
   {
     "id": "wofuhuolawoshijiangbu111",
@@ -196,12 +214,14 @@
     "sch_team": "镇民",
     "firstNight": 0,
     "otherNight": 75,
-    "firstNightReminder": "如果恶魔杀死了报丧女妖，宣布“报丧女妖觉醒了”，并使用“具有能力”标记报丧女妖。",
+    "firstNightReminder": "",
     "reminders": [
       "具有能力"
     ],
     "setup": 0,
-    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。"
+    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "Sheriff",
@@ -230,12 +250,14 @@
     "sch_team": "外来者",
     "firstNight": 3041,
     "otherNight": 82,
-    "firstNightReminder": "唤醒管家，让他选择一名除自己以外的玩家，那名玩家成为他的主人。",
-    "otherNightReminder": "唤醒管家，让他选择一名除自己以外的玩家，那名玩家成为他的主人。",
+    "firstNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+    "otherNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
     "reminders": [
       "主人"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "haochiaichi111",
@@ -252,7 +274,9 @@
     "reminders": [
       "挚友"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "<咽口水><咧嘴笑><咽口水>"
   },
   {
     "id": "bushiwo111",
@@ -269,7 +293,9 @@
     "reminders": [
       "已被猜测"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "abaaba111",
@@ -284,7 +310,9 @@
     "firstNightReminder": "如果告密者在场，对爪牙展示三个不在场的善良角色标记。",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "pharaoh",

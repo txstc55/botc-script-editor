@@ -9,19 +9,23 @@
   {
     "id": "_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
-    "firstNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
-    "otherNightReminder": "唤醒共情者，对他用手势比划数字来告知他与他邻近的存活玩家中有几人是邪恶玩家。",
+    "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+    "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "name": "共情者",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
     "firstNight": 3400,
-    "otherNight": 16
+    "otherNight": 16,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "1_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
-    "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-    "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
       "干扰项"
     ],
@@ -29,41 +33,59 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
     "firstNight": 3500,
-    "otherNight": 17
+    "otherNight": 17,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "2_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-    "otherNightReminder": "如果今天白天有玩家死于处决，唤醒送葬者，对他展示那名玩家的角色标记。",
+    "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
     "reminders": [
       "死于今日"
     ],
     "name": "送葬者",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-    "otherNight": 18
+    "otherNight": 18,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。"
   },
   {
     "id": "3_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
-    "otherNightReminder": "如果守鸦人死于夜晚，唤醒守鸦人，让他选择一名玩家。对他展示这名玩家的角色标记。",
+    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
     "name": "守鸦人",
     "team": "townsfolk",
     "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
-    "otherNight": 15
+    "otherNight": 15,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
   },
   {
     "id": "4_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mayor.png",
     "name": "镇长",
     "team": "townsfolk",
-    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。"
+    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "5_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
-    "firstNightReminder": "唤醒祖母，对她指向一名善良玩家，并展示该玩家的角色标记。",
-    "otherNightReminder": "如果恶魔杀死了孙子，祖母死亡。",
+    "firstNightReminder": "指向她的孙子玩家，并展示该玩家的角色标记。",
+    "otherNightReminder": "如果孙子被恶魔杀死，祖母也会一同死亡。标记祖母死亡。",
     "reminders": [
       "孙子",
       "死亡"
@@ -72,7 +94,10 @@
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
     "firstNight": 3700,
-    "otherNight": 14
+    "otherNight": 14,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "6_shizhanyachao",
@@ -83,19 +108,27 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "firstNight": 4000,
-    "otherNight": 20
+    "otherNight": 20,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "7_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
-    "otherNightReminder": "如果造谣者今天白天的声明正确，一名玩家死亡。",
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "造谣者",
     "team": "townsfolk",
-    "ability": "每个白天，你可以公开发表一个声明。在当晚，如果该声明是正确的，会有一名玩家死亡。",
-    "otherNight": 11
+    "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
+    "otherNight": 11,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "8_shizhanyachao",
@@ -105,28 +138,42 @@
     ],
     "name": "茶艺师",
     "team": "townsfolk",
-    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。"
+    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "9_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
-    "otherNightReminder": "唤醒神谕者，对他用手势比划数字来告知他当前死亡玩家中邪恶玩家的数量。",
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "name": "神谕者",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "otherNight": 19
+    "otherNight": 19,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "10_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
-    "firstNightReminder": "唤醒贵族，对他指向三名玩家。这三名玩家中有且仅有一名是邪恶玩家。",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "reminders": [
       "被得知"
     ],
     "name": "贵族",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
-    "firstNight": 3900
+    "firstNight": 3900,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "11_shizhanyachao",
@@ -138,7 +185,11 @@
     "name": "骑士",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
-    "firstNight": 3800
+    "firstNight": 3800,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "12_shizhanyachao",
@@ -156,40 +207,51 @@
   {
     "id": "13_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
-    "otherNightReminder": "在夜晚的任意时机，你都可以决定杀死修补匠。这里只是一个提示以免遗忘修补匠。",
+    "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
     "reminders": [
       "死亡"
     ],
     "name": "修补匠",
     "team": "outsider",
     "ability": "你随时可能死亡。",
-    "otherNight": 12
+    "otherNight": 12,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "14_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/moonchild.png",
-    "otherNightReminder": "如果月之子在今天白天的时候使用自己的能力选择了一名善良玩家，那名玩家死亡。",
+    "otherNightReminder": "如果月之子在白天触发了死亡能力并选择了一名善良玩家，该玩家死亡。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "月之子",
     "team": "outsider",
     "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。如果他是善良的，在当晚他会死亡。",
-    "otherNight": 13
+    "otherNight": 13,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。"
   },
   {
     "id": "15_shizhanyachao",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
-    "firstNightReminder": "唤醒逆臣，让他选择一名除自己以外的玩家，那名玩家现在与他不共戴天。",
-    "otherNightReminder": "如果逆臣或他的目标玩家，这两人之一死于处决，唤醒另一名玩家并通知他阵营变化。",
+    "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
+    "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
     "reminders": [
       "不共戴天"
     ],
     "name": "逆臣",
     "team": "outsider",
-    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你会在当晚转变为邪恶；如果你先死于处决，他会在当晚转变为邪恶。",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
     "firstNight": 3600,
-    "otherNight": 3
+    "otherNight": 3,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
   },
   {
     "id": "16_shizhanyachao",
@@ -199,7 +261,12 @@
     ],
     "name": "酒保",
     "team": "outsider",
-    "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。"
+    "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "17_shizhanyachao",

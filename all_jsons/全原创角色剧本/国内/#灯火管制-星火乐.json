@@ -7,19 +7,18 @@
   },
   {
     "id": "_blackout",
-    "image": "https://www.bloodstar.xyz/p/bluebell/blackout/_blackout.png",
-    "firstNightReminder": "告知士兵四个角色，随后在在场角色上标记“得知”",
-    "otherNightReminder": "如果标记的“得知”的玩家死亡，唤醒并让士兵选择一名玩家，标记“不受影响”。如果士兵加入邪恶，将“不受影响”替换为死亡。",
-    "reminders": [
-      "得知",
-      "不受影响",
-      "死亡"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/soldier.png",
+    "firstNightReminder": "恶魔的负面能力对你无效。",
+    "otherNightReminder": "恶魔的负面能力对你无效。",
+    "reminders": [],
     "name": "士兵",
     "team": "townsfolk",
-    "ability": "在你的首个夜晚，你得知九个角色。如果你得知的角色死亡，你会在当晚被唤醒，并选择除你以外的一名玩家：邪恶玩家的负面能力对他无效。如果你加入邪恶，改为他们中的非恶魔玩家死亡。",
+    "ability": "恶魔的负面能力对你无效。",
     "firstNight": 18,
-    "otherNight": 5
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "1_blackout",

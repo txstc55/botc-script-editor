@@ -31,7 +31,9 @@
       "外来者",
       "错误"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "qingtianjianbei111",
@@ -45,7 +47,9 @@
     "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
     "id": "jingcaisanxuanyi111",
@@ -56,14 +60,14 @@
     "team": "townsfolk",
     "firstNight": 49,
     "otherNight": 0,
-    "firstNightReminder": "唤醒贵族，对他指向三名玩家。这三名玩家中有且仅有一名是邪恶玩家。",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
     "reminders": [
-      "被得知",
-      "被得知",
       "被得知"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "yeshimeishengmeyongdejuese111",
@@ -74,10 +78,12 @@
     "team": "townsfolk",
     "firstNight": 60,
     "otherNight": 98,
-    "firstNightReminder": "唤醒女祭司，对她指向一名玩家。",
-    "otherNightReminder": "唤醒女祭司，对她指向一名玩家。",
+    "firstNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
+    "otherNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "mofashuijingqiu111",
@@ -88,12 +94,14 @@
     "team": "townsfolk",
     "firstNight": 40,
     "otherNight": 81,
-    "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-    "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
       "干扰项"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "zhuijidelaoda111",
@@ -126,12 +134,14 @@
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 75,
-    "firstNightReminder": "如果恶魔杀死了报丧女妖，宣布“报丧女妖觉醒了”，并使用“具有能力”标记报丧女妖。",
+    "firstNightReminder": "",
     "reminders": [
       "具有能力"
     ],
     "setup": 0,
-    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。"
+    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "weishenmesenglvjiaomoke111",
@@ -143,11 +153,13 @@
     "firstNight": 0,
     "otherNight": 16,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒僧侣，让他选择除自己以外的一名玩家，那名玩家今晚免受恶魔负面效果影响。",
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
     "reminders": [
       "保护"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zhengdanideyanjing111",
@@ -159,23 +171,27 @@
     "firstNight": 0,
     "otherNight": 87,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒神谕者，对他用手势比划数字来告知他当前死亡玩家中邪恶玩家的数量。",
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "xixifafashishishishishishishi",
     "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
     "edition": "custom",
     "name": "戏法师",
-    "ability": "每个白天，你可以公开进行一次谁是爪牙，谁是恶魔的猜测。如果你猜对，善良阵营获胜。",
+    "ability": "每个白天限一次，你可以公开猜测谁是爪牙，谁是恶魔。如果你猜对，善良阵营获胜。",
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 0,
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。"
   },
   {
     "id": "village_idiot22",
@@ -197,7 +213,9 @@
     "reminders": [
       "醉酒"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
     "id": "lingluowawa111",
@@ -208,12 +226,14 @@
     "team": "townsfolk",
     "firstNight": 46,
     "otherNight": 88,
-    "firstNightReminder": "唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
-    "otherNightReminder": "如果女裁缝未曾使用能力，唤醒女裁缝，她可以摇头不使用能力，或选择除自己以外的两名玩家。以点头或摇头告知她选择的玩家是否为同一阵营。",
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "chichichichichichichi111",
@@ -227,10 +247,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [
-      "饱餐",
-      "中毒"
+      "中毒",
+      "饱餐"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "zhadiaole111",
@@ -244,7 +266,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "yinshishihsihsihsihsihsissssssss",
@@ -261,7 +285,8 @@
     "remindersGlobal": [
       "是隐士"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。"
   },
   {
     "id": "moluotuofujiweijiu11111",
@@ -275,7 +300,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wudidejiemidashi111",
@@ -289,10 +316,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [
-      "醉酒",
-      "已猜测"
+      "已猜测",
+      "醉酒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "xixi111111111111",

@@ -8,7 +8,7 @@
   },
   {
     "id": "1ebaeb1d-3165-4c19-a2f5-6d6061b5398f",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_7251125151861_73cfd5f9.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
     "edition": "custom",
     "name": "骑士",
     "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
@@ -16,10 +16,14 @@
     "sch_team": "村民",
     "firstNight": 42,
     "otherNight": 0,
-    "firstNightReminder": "唤醒骑士，然后指向标记了“得知”的两名玩家。",
+    "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
     "reminders": [
       "得知"
-    ]
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "0d76ee95-5790-420d-b6a3-019037bcd334",
@@ -37,14 +41,16 @@
       "孙子",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "c5987949-f88c-430b-88d1-9bf4c4fa90a7",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
     "edition": "custom",
     "name": "神谕者",
-    "ability": "每个夜晚*，你得知死去的玩家中有多少名属于邪恶阵营。",
+    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 0,
@@ -52,7 +58,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "9a19a406-aabe-460b-9eec-428f16cb7bbc",
@@ -69,7 +77,9 @@
     "reminders": [
       "干扰项"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "01e35ba5-717f-47e7-8c78-165871d0a38b",
@@ -81,17 +91,19 @@
     "sch_team": "村民",
     "firstNight": 50,
     "otherNight": 70,
-    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
-    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "fcde9572-6d0b-4ae9-8326-34b3af9d0f69",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
     "edition": "custom",
     "name": "哲学家",
-    "ability": "整局游戏限一次，夜晚，选择一个善良身份，获取他的技能，如果有玩家为该身份，他醉酒。",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 2,
@@ -99,10 +111,13 @@
     "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "reminders": [
-      "醉酒",
+      "醉酒"
+    ],
+    "setup": 0,
+    "remindersGlobal": [
       "是哲学家"
     ],
-    "setup": 0
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。"
   },
   {
     "id": "b7d6938a-1650-4bd8-bffe-527630bdbfc0",
@@ -121,22 +136,26 @@
   },
   {
     "id": "a7ce0b6c-0153-422e-956b-3c7a3cdb86a1",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4627577694761_77873be9.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fengshuishi.png",
     "edition": "custom",
     "name": "风水师",
-    "ability": "每局游戏限一次，在夜晚时*，你可以选择除你以外的两名玩家：根据他们的阵营（相同/相反）得知他们之间距离（较近/较远）的那一侧玩家中是否有恶魔。",
+    "ability": "在你的首个夜晚，你会得知一名玩家的角色类型。每个夜晚*，你会从他的顺时针方向得知下一名非旅行者玩家的角色类型。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 0,
     "otherNight": 54,
-    "otherNightReminder": "唤醒风水师。风水师要么摇头不使用能力，要么指向两名玩家。对其点头或摇头示意，随后在其角色标记旁放置“失去能力”提示标记。",
+    "otherNightReminder": "唤醒风水师，告知他“得知”标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
     "reminders": [
-      "失去能力"
-    ]
+      "得知"
+    ],
+    "firstNightReminder": "唤醒风水师，告知他“得知”标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "geling",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/54/Geling.png/120px-Geling.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/geling.png",
     "edition": "custom",
     "name": "歌伶",
     "ability": "每局游戏限一次，在白天时，你可以提议所有玩家观看你的演出，并从同意参加的玩家中选择你的观众。如果恶魔成为了观众，你会在当晚死亡。",
@@ -149,7 +168,11 @@
       "失去能力",
       "死亡",
       "观众"
-    ]
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4fc71048-0f1c-45e8-833d-3ad1603945e5",
@@ -166,7 +189,9 @@
     "reminders": [
       "被选择"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "每一个不洁之灵，每一份撒旦之力，每一次炼狱敌人的猛袭，每一个军团，每一个崇拜恶魔的组织和教派，以我主耶稣基督的名义和力量，将你们驱逐。我命令你们，远离上帝的教堂，远离上帝按祂的形貌所创造并受神圣羔羊的宝血所救赎的灵魂。"
   },
   {
     "id": "39adae8d-1cd4-4959-8cf5-3175b41d2395",
@@ -183,14 +208,16 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "正面，我赢。 反面，你输。"
   },
   {
     "id": "227f32c5-e9fd-40ab-8835-4d474e9b292b",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
     "edition": "custom",
     "name": "造谣者",
-    "ability": "每个白天，你可以公开发表一个声明。在当晚，如果该声明是正确的，会有一名玩家死亡。",
+    "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 0,
@@ -200,7 +227,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "602c4cda-849b-4f22-a530-5632989432e0",
@@ -213,9 +242,11 @@
     "firstNight": 0,
     "otherNight": 46,
     "firstNightReminder": "",
-    "otherNightReminder": "如果农民在夜晚死去，则选择另一位善良玩家成为农民。唤醒这名玩家，并告知他成为了农民。",
+    "otherNightReminder": "如果农夫死于夜晚，唤醒一名存活的善良玩家告知他角色变化。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "3587ab0d-618a-40b2-818e-28e068db3c8f",
@@ -232,14 +263,16 @@
     "reminders": [
       "醉酒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。"
   },
   {
     "id": "1ba45ded-a0cd-4e75-89e6-a4d956a9b8da",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/moonchild.png",
     "edition": "custom",
     "name": "月之子",
-    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。在当晚，如果该玩家是善良的，该玩家会死亡。",
+    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。如果他是善良的，在当晚他会死亡。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 0,
@@ -249,11 +282,13 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。"
   },
   {
     "id": "jiubao",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4591987694761_11d3a855.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/jiubao.png",
     "edition": "custom",
     "name": "酒保",
     "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。",
@@ -263,11 +298,16 @@
     "otherNight": 0,
     "reminders": [
       "醉酒"
-    ]
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "shaxing",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/b/b9/Shaxing.png/120px-Shaxing.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shaxing.png",
     "edition": "custom",
     "name": "煞星",
     "ability": "如果你死亡，当晚与你邻近的存活玩家之一可能会死亡。",
@@ -275,10 +315,14 @@
     "sch_team": "外来者",
     "firstNight": 0,
     "otherNight": 39,
-    "otherNightReminder": "如果煞星死亡，将与其邻近的存活善良玩家之一标记为死亡。",
+    "otherNightReminder": "如果煞星死亡，决定是否让一名与他邻近的存活玩家死亡。",
     "reminders": [
       "死亡"
-    ]
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "7fb3f41a-66f3-43b1-8ad9-0cfd8960096c",

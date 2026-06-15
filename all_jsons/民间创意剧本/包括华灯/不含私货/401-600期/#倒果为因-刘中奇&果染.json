@@ -16,7 +16,7 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/grandmother.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
     "edition": "custom",
     "flavor": "",
     "id": "grandmother_button",
@@ -47,17 +47,18 @@
     "firstNightReminder": "在首个夜晚，唤醒刀客，对他展示标记了“得知”的爪牙角色标记。",
     "otherNightReminder": "",
     "reminders": [
-      "得知",
-      "失去能力"
+      "失去能力",
+      "得知"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/empath.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。",
     "id": "empath_button",
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
@@ -85,13 +86,15 @@
     "reminders": [
       "醉酒"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/pixie.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。",
     "id": "pixie_button",
     "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "otherNightReminder": "",
@@ -109,9 +112,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/snake_charmer.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。",
     "id": "snake_charmer_button",
     "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
     "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
@@ -128,9 +131,9 @@
   },
   {
     "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/dreamer.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……",
     "id": "dreamer_button",
     "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
@@ -145,7 +148,7 @@
   },
   {
     "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/monk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
     "edition": "custom",
     "flavor": "",
     "id": "monk_button",
@@ -163,10 +166,10 @@
     "GstoneID": "monk"
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gambler.png",
+    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "正面，我赢。 反面，你输。",
     "id": "gambler_button",
     "firstNightReminder": "",
     "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
@@ -183,9 +186,9 @@
   },
   {
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
     "id": "savant_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -200,9 +203,9 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/philosopher.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。",
     "id": "philosopher_button",
     "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
@@ -221,9 +224,9 @@
   },
   {
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。",
     "id": "cannibal_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -232,7 +235,7 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于今日"
+      "饱餐"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -241,9 +244,9 @@
   },
   {
     "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/ravenkeeper.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！",
     "id": "ravenkeeper_button",
     "firstNightReminder": "",
     "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
@@ -258,9 +261,9 @@
   },
   {
     "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/goon.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goon.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。",
     "id": "goon_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -277,9 +280,9 @@
   },
   {
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "id": "drunk_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -295,10 +298,10 @@
     "GstoneID": "drunk"
   },
   {
-    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你会在当晚转变为邪恶；如果你先死于处决，他会在当晚转变为邪恶。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_6302887694761_9ba8a0f3.jpg",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。",
     "id": "nichen_button",
     "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
     "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
@@ -315,7 +318,7 @@
   },
   {
     "ability": "每局游戏你只能发起提名一次。当你发起提名时，如果被你提名的玩家不是恶魔，他死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/golem.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/golem.png",
     "edition": "custom",
     "flavor": "",
     "id": "golem_button",

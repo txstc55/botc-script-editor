@@ -113,10 +113,12 @@
     "team": "townsfolk",
     "firstNight": 44,
     "otherNight": 0,
-    "firstNightReminder": "唤醒钟表匠，对他用手势比划数字来告知他恶魔与爪牙之间的最近距离。",
+    "firstNightReminder": "给他展示数字手势来告诉他恶魔与爪牙之间最近的距离。",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "meishayongdeshabi111",
@@ -127,13 +129,15 @@
     "team": "townsfolk",
     "firstNight": 33,
     "otherNight": 0,
-    "firstNightReminder": "唤醒小精灵，对他展示一个在场镇民角色标记。",
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "otherNightReminder": "",
     "reminders": [
       "疯狂",
       "获得能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "eyunxiaojie111",
@@ -144,12 +148,14 @@
     "team": "townsfolk",
     "firstNight": 55,
     "otherNight": 94,
-    "firstNightReminder": "（在进入首个夜晚时立即通知赏金猎人转变的那个镇民他的阵营发生了变化）唤醒赏金猎人，对他指向一名邪恶玩家。",
-    "otherNightReminder": "如果赏金猎人之前得知的玩家死亡，唤醒赏金猎人，对他指向一名新的邪恶玩家。",
+    "firstNightReminder": "指向一名邪恶玩家。随后唤醒那名因赏金猎人而转变为邪恶的镇民，并告知他变成了邪恶阵营。",
+    "otherNightReminder": "如果赏金猎人知晓的邪恶玩家死亡，指向另一名邪恶玩家。",
     "reminders": [
       "得知"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zhuijidelaoda111",
@@ -193,25 +199,27 @@
     "reminders": [
       "醉酒"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
     "id": "qqqqqqqqqqasfasfhfhhrteqarq35q35qaa",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/qianke.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/5/5b/Qianke.png",
     "edition": "custom",
     "name": "掮客",
     "ability": "每个夜晚，你要选择两名存活玩家：如果他们阵营相同，今晚任何玩家使用自身能力选择他们之一作为目标时，改为选中另一名玩家。",
     "team": "townsfolk",
     "firstNight": 13.5,
     "otherNight": 5.5,
-    "firstNightReminder": "每个夜晚，你要选择两名存活玩家：如果他们阵营相同，今晚任何玩家使用自身能力选择他们之一作为目标时，改为选中另一名玩家。",
-    "otherNightReminder": "唤醒掮客，让他选择两名存活玩家。如果这两个玩家阵营相同，在他俩的角色标记旁放置“交换目标”提示标记。",
+    "firstNightReminder": "唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
+    "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒车夫，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
     "reminders": [
-      "交换目标",
-      "交换目标"
+      "熟客"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": "三教九流皆相识，稀有货、密讯、人脉不缺，报需求，价妥就成交。"
   },
   {
     "id": "qiaozhong111",
@@ -225,10 +233,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "xitele111",
@@ -244,7 +254,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
   },
   {
     "id": "diaoshangyizhengtiandeyu111",
@@ -260,7 +272,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "chaojibianbianbian111",
@@ -273,8 +287,14 @@
     "otherNight": 0,
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0
+    "remindersGlobal": [
+      "是变脸师"
+    ],
+    "setup": 0,
+    "reminders": [
+      "疯狂"
+    ],
+    "flavor": ""
   },
   {
     "id": "xinde_xinjide111",
@@ -305,7 +325,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "……然后国王说道：‘什么？！我甚至从未有过一条橡胶马裤，更别提一门奶油大炮了！’嗬嗬！欢乐一日！"
   },
   {
     "id": "buhaohe111",
@@ -321,7 +343,9 @@
     "reminders": [
       "不会死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "bushiwo111",
@@ -337,23 +361,27 @@
     "reminders": [
       "已被猜测"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "kangtuiyige111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
     "edition": "custom",
     "name": "逆臣",
-    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你会在当晚转变为邪恶；如果你先死于处决，他会在当晚转变为邪恶。",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
     "team": "outsider",
     "firstNight": 42,
     "otherNight": 25,
-    "firstNightReminder": "唤醒逆臣，让他选择一名除自己以外的玩家，那名玩家现在与他不共戴天。",
-    "otherNightReminder": "如果逆臣或他的目标玩家，这两人之一死于处决，唤醒另一名玩家并通知他阵营变化。",
+    "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
+    "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
     "reminders": [
       "不共戴天"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
   },
   {
     "id": "woheduolema111",
@@ -370,7 +398,8 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "zhadiaole111",
@@ -384,7 +413,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "jiushigelvshi111",

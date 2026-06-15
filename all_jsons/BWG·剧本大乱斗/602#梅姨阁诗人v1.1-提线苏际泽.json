@@ -116,21 +116,21 @@
     "reminders": []
   },
   {
-    "firstNightReminder": "唤醒女祭司，指向一名玩家。",
-    "otherNightReminder": "唤醒女祭司，指向一名玩家",
+    "firstNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
+    "otherNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
     "name": "女祭司",
     "otherNight": 8,
     "setup": 0,
-    "reminders": [
-      "交流"
-    ],
+    "reminders": [],
     "id": "highpriestessbutton",
     "edition": "custom",
     "team": "townsfolk",
     "name_eng": "High Priestess",
     "firstNight": 3800,
     "ability": "每个夜晚，你会得知一名说书人认为你最应该与其交流的玩家。",
-    "image": "https://i.postimg.cc/j5qcQ5Fn/400px-Highpriestess.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/high_priestess.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "lishixuejia",
@@ -158,10 +158,12 @@
     "sch_team": "村民",
     "firstNight": 3900,
     "otherNight": 9,
-    "firstNightReminder": "告诉将军你认为的答案。",
-    "otherNightReminder": "告诉将军你认为的答案。",
+    "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+    "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "jianduisiling",
@@ -190,11 +192,13 @@
     "firstNight": 4000,
     "otherNight": 10,
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
-    "otherNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [
       "未正常生效"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "jiangshi",
@@ -280,7 +284,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "5ee81472-ab25-4cd2-8144-2098291fdef3",
@@ -295,21 +301,28 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "shenmijiabing",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/1e/Hermit.png/300px-Hermit.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1e/Hermit.png",
     "edition": "custom",
     "name": "隐士",
-    "ability": "你拥有所有外来者能力[-0-1外来者]",
+    "ability": "你拥有所有外来者能力。[-0~1外来者]",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 0,
     "otherNight": 0,
     "firstNightReminder": "",
     "reminders": [],
-    "setup": 1
+    "setup": 1,
+    "otherNightReminder": "",
+    "remindersGlobal": [
+      "是隐士"
+    ],
+    "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。"
   },
   {
     "id": "d0fc421d-6f44-4eec-99fc-90505973763e1",

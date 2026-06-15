@@ -35,9 +35,9 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/chef.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chef.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。",
     "id": "chef_button",
     "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
     "otherNightReminder": "",
@@ -52,11 +52,11 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
     "edition": "custom",
     "flavor": "",
     "id": "librarian_button",
-    "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
     "otherNightReminder": "",
     "name": "图书管理员",
     "otherNight": 0,
@@ -72,9 +72,9 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/pixie.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。",
     "id": "pixie_button",
     "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "otherNightReminder": "",
@@ -92,9 +92,9 @@
   },
   {
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/empath.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。",
     "id": "empath_button",
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
@@ -109,7 +109,7 @@
   },
   {
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/flowergirl.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "edition": "custom",
     "flavor": "",
     "id": "flowergirl_button",
@@ -119,8 +119,8 @@
     "otherNight": 116,
     "setup": 0,
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -129,18 +129,18 @@
   },
   {
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/town_crier.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "edition": "custom",
     "flavor": "",
     "id": "town_crier_button",
     "firstNightReminder": "",
-    "otherNightReminder": "对他点头或摇头示意今天白天是否有爪牙发起过提名。",
+    "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "name": "城镇公告员",
     "otherNight": 117,
     "setup": 0,
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -149,7 +149,7 @@
   },
   {
     "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/monk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
     "edition": "custom",
     "flavor": "",
     "id": "monk_button",
@@ -168,9 +168,9 @@
   },
   {
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
     "id": "savant_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -185,9 +185,9 @@
   },
   {
     "ability": "每个白天限一次，你可以公开猜测谁是爪牙，谁是恶魔。如果你猜对，善良阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202406/c_0969358269171_d18a1072.jpg",
+    "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。",
     "id": "alsaahir_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -202,7 +202,7 @@
   },
   {
     "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fisherman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
     "edition": "custom",
     "flavor": "",
     "id": "fisherman_button",
@@ -221,7 +221,7 @@
   },
   {
     "ability": "恶魔的负面能力对你无效。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/soldier.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/soldier.png",
     "edition": "custom",
     "flavor": "",
     "id": "soldier_button",
@@ -238,9 +238,9 @@
   },
   {
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。",
     "id": "cannibal_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -249,7 +249,7 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于今日"
+      "饱餐"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -257,8 +257,8 @@
     "GstoneID": "cannibal"
   },
   {
-    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚即将死亡，可能会有一名其他玩家代替你死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mayor.png",
+    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mayor.png",
     "edition": "custom",
     "flavor": "",
     "id": "mayor_button",
@@ -275,9 +275,9 @@
   },
   {
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "id": "drunk_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -294,9 +294,9 @@
   },
   {
     "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/recluse.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！",
     "id": "recluse_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -311,9 +311,9 @@
   },
   {
     "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mutant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我不是怪物！我是人！求你了！",
     "id": "mutant_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -327,13 +327,13 @@
     "GstoneID": "mutant"
   },
   {
-    "ability": "如果你死亡，说书人获得一个不在场的爪牙能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_9614144308961_fe5074b8.jpg",
+    "ability": "当你死亡时，说书人会获得一个爪牙能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。",
     "id": "plague_doctor_button",
     "firstNightReminder": "",
-    "otherNightReminder": "当瘟疫医生死亡时，将一个不在场的爪牙角色标记放置在魔典左侧的正中位置，并用瘟疫医生的“说书人能力”标记标记该爪牙角色。如可能，在夜晚顺序表旁添加相应的夜晚标记用以提示。",
+    "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
     "name": "瘟疫医生",
     "otherNight": 100,
     "setup": 0,

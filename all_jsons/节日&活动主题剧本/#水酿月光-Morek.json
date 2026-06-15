@@ -20,9 +20,9 @@
   {
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。",
     "id": "shugenjabutton",
-    "firstNightReminder": "唤醒修行者，对其用手指水平指向其左侧或右侧示意。如果两侧邪恶玩家与他距离相同，指向任意方向。",
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "otherNightReminder": "",
     "name": "修行者",
     "otherNight": 0,
@@ -31,7 +31,7 @@
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 49,
-    "image": "https://i.postimg.cc/k5NQpnVK/Icon-shugenja.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png"
   },
   {
     "id": "que",
@@ -61,7 +61,9 @@
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "9a19a406-aabe-460b-9eec-428f16cb7bbc",
@@ -77,7 +79,9 @@
     "reminders": [
       "干扰项"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "https://s3.bmp.ovh/imgs/2023/09/29/6b616e5084135093.png",
@@ -106,46 +110,52 @@
     "firstNight": 51,
     "otherNight": 71,
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
-    "otherNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [
       "未正常生效"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "c5987949-f88c-430b-88d1-9bf4c4fa90a7",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
     "edition": "custom",
     "name": "神谕者",
-    "ability": "每个夜晚*，你得知死去的玩家中有多少名属于邪恶阵营。",
+    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 60,
     "firstNightReminder": "",
     "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "449c8b9c-c143-44eb-bde9-83c0d1d6d5e7",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
     "name": "博学者",
-    "ability": "每个白天，拜访说书人并获取两条信息，其中一条是正确的，一条是错误的。",
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 0,
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "61fe39e3-a246-4354-ab1e-bd36ffbb49ac",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
     "edition": "custom",
     "name": "女裁缝",
-    "ability": "整局游戏限一次，夜晚，选择两名其他玩家，得知他们是否属于同阵营。",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
     "team": "townsfolk",
     "firstNight": 42,
     "otherNight": 61,
@@ -154,24 +164,29 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "fcde9572-6d0b-4ae9-8326-34b3af9d0f69",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
     "edition": "custom",
     "name": "哲学家",
-    "ability": "整局游戏限一次，夜晚，选择一个善良身份，获取他的技能，如果有玩家为该身份，他醉酒。",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
     "team": "townsfolk",
     "firstNight": 2,
     "otherNight": 2,
     "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "reminders": [
-      "醉酒",
+      "醉酒"
+    ],
+    "setup": 0,
+    "remindersGlobal": [
       "是哲学家"
     ],
-    "setup": 0
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。"
   },
   {
     "id": "7f5093f9-3bc7-4e75-8c31-229e426fc91b",
@@ -186,7 +201,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "1…2…唵嘛呢…3…4…叭咪吽…（嗖！）是的，正如你们所见，女士们先生们，梵斯沃船长的那袋金子不见了！没了！无迹可循！感谢诸位，晚安啦！"
   },
   {
     "id": "9cde5b54-135e-4e58-9c30-0f9b38d77b42",
@@ -220,14 +237,16 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "0ff85b95-d5ee-448a-bee4-2470360fec48",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
     "name": "酒鬼",
-    "ability": "你不知道你是醉鬼。你以为你是一个镇民角色，但其实你不是。",
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
     "team": "outsider",
     "firstNight": 0,
     "otherNight": 0,
@@ -237,14 +256,15 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "739605b1-7ff9-49e4-854d-024767d6c789",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
     "edition": "custom",
     "name": "杂技演员",
-    "ability": "每个夜晚*，如果与你邻近的一名存活的善良玩家醉酒或中毒，你死亡。",
+    "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 0,
@@ -254,7 +274,9 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "919e4fee-01fc-4cc7-9ec5-e4dd3a3918cb",
@@ -289,7 +311,9 @@
     "reminders": [
       "今晚理发"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
     "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",

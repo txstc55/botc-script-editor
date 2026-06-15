@@ -109,7 +109,7 @@
   },
   {
     "id": "yinlureanrlfasrfiaojwrn2k31j95u09uasj",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yinluren.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_2147287694761_01761fcb.jpg",
     "edition": "custom",
     "name": "引路人",
     "ability": "每个夜晚，你要选择至多三名玩家：你会得知今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
@@ -117,13 +117,12 @@
     "sch_team": "镇民",
     "firstNight": 62.5,
     "otherNight": 98.5,
-    "firstNightReminder": "唤醒引路人，让他选择至多三名玩家，告诉引路人今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
-    "otherNightReminder": "唤醒引路人，让他选择至多三名玩家，告诉引路人今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
-    "reminders": [
-      ""
-    ],
+    "firstNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
+    "otherNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
+    "reminders": [],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。"
   },
   {
     "id": "zhiyilu_3",
@@ -198,7 +197,8 @@
       "死于今日"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "bifangagfagfiaf",
@@ -267,9 +267,11 @@
     "firstNight": 0,
     "otherNight": 70,
     "firstNightReminder": "",
-    "otherNightReminder": "如果守鸦人死于夜晚，唤醒守鸦人，让他选择一名玩家。对他展示这名玩家的角色标记。",
+    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
   },
   {
     "id": "woheduolema111",
@@ -287,11 +289,12 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "zhshutongoashoiahokrtoaiwjsjfn8qh13rfbnoihc-9j",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shutong.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_2027903943171_36d374a5.jpg",
     "edition": "custom",
     "name": "书童",
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：除首个夜晚以外，当他被邪恶玩家的能力选择或影响时，你会在当晚死亡。",
@@ -299,14 +302,15 @@
     "sch_team": "外来者",
     "firstNight": 34.5,
     "otherNight": 60.5,
-    "firstNightReminder": "唤醒书童，让他选择一名玩家。",
-    "otherNightReminder": "如果被书童选择的玩家被邪恶玩家的能力选择或影响时，书童会在当晚死亡。",
+    "firstNightReminder": "唤醒书童，让其选择一名玩家，在其选择的玩家标记旁放置“选择”。",
+    "otherNightReminder": "如果标记有“选择”的玩家被邪恶玩家的能力选择或影响时，在书童旁放置“死亡”标记。",
     "reminders": [
-      "选择",
-      "死亡"
+      "死亡",
+      "选择"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "zhiyilu_11",

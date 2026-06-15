@@ -4,7 +4,7 @@
   "team": "townsfolk",
   "teamLabelZh": "镇民",
   "folder": "townsfolks",
-  "variantCount": 21,
+  "variantCount": 18,
   "totalOccurrenceCount": 53,
   "variants": [
     {
@@ -15,12 +15,12 @@
       "teams": [
         "townsfolk"
       ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
       "firstNight": 20,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 11,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
         "醉酒1",
@@ -29,7 +29,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 16,
       "notes": []
     },
@@ -55,8 +55,8 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 8,
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
+      "occurrenceCount": 12,
       "notes": []
     },
     {
@@ -68,7 +68,7 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/courtier.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
       "firstNight": 51,
       "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 19,
@@ -81,7 +81,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 8,
       "notes": []
     },
@@ -93,11 +93,11 @@
       "teams": [
         "townsfolk"
       ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/d/d9/Courtier.png/300px-Courtier.png",
-      "firstNight": 19,
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNight": 3400,
       "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
-      "otherNight": 10,
+      "otherNight": 4,
       "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
@@ -107,7 +107,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 2,
       "notes": []
     },
@@ -120,33 +120,7 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/courtier.png",
-      "firstNight": 19,
-      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
-      "otherNight": 10,
-      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
-      "reminders": [
-        "失去能力",
-        "醉酒1",
-        "醉酒2",
-        "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
-      "notes": []
-    },
-    {
-      "id": "侍臣",
-      "name": "侍臣",
-      "variantIndex": 6,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/courtier.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
       "firstNight": 5100,
       "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 1900,
@@ -159,8 +133,34 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 2,
+      "notes": []
+    },
+    {
+      "id": "侍臣",
+      "name": "侍臣",
+      "variantIndex": 6,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNight": 13,
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "otherNight": 4,
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "reminders": [
+        "失去能力",
+        "醉酒1",
+        "醉酒2",
+        "醉酒3"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
+      "occurrenceCount": 1,
       "notes": []
     },
     {
@@ -172,11 +172,11 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://www.bloodstar.xyz/p/bluebell/wsf/11_wsf.png",
-      "firstNight": 13,
-      "firstNightReminder": "1",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNight": 14,
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 4,
-      "otherNightReminder": "1",
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
         "醉酒1",
@@ -185,7 +185,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -198,33 +198,7 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/courtier.png",
-      "firstNight": 14,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "otherNight": 4,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "reminders": [
-        "失去能力",
-        "醉酒1",
-        "醉酒2",
-        "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侍臣",
-      "name": "侍臣",
-      "variantIndex": 9,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1703695148_197011_6450.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
       "firstNight": 15,
       "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 3,
@@ -237,7 +211,33 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "侍臣",
+      "name": "侍臣",
+      "variantIndex": 9,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNight": 15,
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "otherNight": 4,
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "reminders": [
+        "失去能力",
+        "醉酒1",
+        "醉酒2",
+        "醉酒3"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -250,11 +250,11 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://www.bloodstar.xyz/p/Guiltier/XING/8_xing.png",
-      "firstNight": 15,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "otherNight": 4,
-      "otherNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNight": 16,
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "otherNight": 8,
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
         "醉酒1",
@@ -276,10 +276,10 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://www.bloodstar.xyz/p/Guiltier/seve/13_seve.png",
-      "firstNight": 16,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNight": 26,
       "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
-      "otherNight": 8,
+      "otherNight": 15,
       "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
@@ -289,7 +289,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -302,33 +302,7 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://i.postimg.cc/W1KC8L1d/Courtier.png",
-      "firstNight": 26,
-      "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "otherNight": 15,
-      "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "reminders": [
-        "失去能力",
-        "醉酒1",
-        "醉酒2",
-        "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侍臣",
-      "name": "侍臣",
-      "variantIndex": 13,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/courtier.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
       "firstNight": 29,
       "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 13,
@@ -341,7 +315,33 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "侍臣",
+      "name": "侍臣",
+      "variantIndex": 13,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNight": 3000,
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "otherNight": 11,
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "reminders": [
+        "失去能力",
+        "醉酒1",
+        "醉酒2",
+        "醉酒3"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -353,12 +353,12 @@
       "teams": [
         "townsfolk"
       ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
-      "firstNight": 3000,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "firstNight": 3200,
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 11,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
         "醉酒1",
@@ -367,7 +367,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -379,12 +379,12 @@
       "teams": [
         "townsfolk"
       ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
-      "firstNight": 3200,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "otherNight": 11,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "firstNight": 3300,
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "otherNight": 3,
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
         "醉酒1",
@@ -393,7 +393,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -405,87 +405,9 @@
       "teams": [
         "townsfolk"
       ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
-      "firstNight": 3300,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "otherNight": 3,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "reminders": [
-        "失去能力",
-        "醉酒1",
-        "醉酒2",
-        "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侍臣",
-      "name": "侍臣",
-      "variantIndex": 17,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
-      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/anyuechushengyishushi/7_anyuechushengyishushi.png",
-      "firstNight": 3300,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "otherNight": 4,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "reminders": [
-        "失去能力",
-        "醉酒1",
-        "醉酒2",
-        "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侍臣",
-      "name": "侍臣",
-      "variantIndex": 18,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
-      "firstNight": 3400,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "otherNight": 4,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
-      "reminders": [
-        "失去能力",
-        "醉酒1",
-        "醉酒2",
-        "醉酒3"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "侍臣",
-      "name": "侍臣",
-      "variantIndex": 19,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/jiangzhoupipayin/6_jiangzhoupipayin.png",
-      "firstNight": 3400,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNight": 3300,
       "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 4,
       "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
@@ -497,24 +419,24 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "侍臣",
       "name": "侍臣",
-      "variantIndex": 20,
+      "variantIndex": 17,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
       ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/2f/h2aq1e8pxb0vq6g3n5s79isqjbrmara.png",
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
       "firstNight": 3500,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 11,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
         "醉酒1",
@@ -523,24 +445,24 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "侍臣",
       "name": "侍臣",
-      "variantIndex": 21,
+      "variantIndex": 18,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
       ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
       "firstNight": 3600,
-      "firstNightReminder": "唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "otherNight": 2,
-      "otherNightReminder": "如果侍臣未曾使用能力，唤醒侍臣，他可以摇头不使用能力，或选择角色列表上的一个任意角色，该角色对应的玩家之一醉酒。",
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
       "reminders": [
         "失去能力",
         "醉酒1",
@@ -549,7 +471,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
       "occurrenceCount": 1,
       "notes": []
     }

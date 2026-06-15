@@ -24,15 +24,19 @@
   {
     "id": "1_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/washerwoman.png",
-    "firstNightReminder": "唤醒洗衣妇，对她指向两名玩家，并展示一个镇民角色标记。这两名玩家其中之一是这个镇民。",
+    "firstNightReminder": "展示那个镇民角色标记。指向被你标记“镇民”和“错误”的两名玩家。",
     "reminders": [
-      "镇民",
-      "错误"
+      "错误",
+      "镇民"
     ],
     "name": "洗衣妇",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个镇民角色：这两名玩家之一是该角色。",
-    "firstNight": 3600
+    "firstNight": 3600,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "2_woyaowanwailai",
@@ -45,24 +49,32 @@
     "name": "图书管理员",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-    "firstNight": 3700
+    "firstNight": 3700,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "3_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
-    "otherNightReminder": "如果今天白天有玩家死于处决，唤醒送葬者，对他展示那名玩家的角色标记。",
+    "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
     "reminders": [
       "死于今日"
     ],
     "name": "送葬者",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-    "otherNight": 16
+    "otherNight": 16,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。"
   },
   {
     "id": "4_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
-    "otherNightReminder": "唤醒旅店老板，让他选择两名玩家。这两名玩家今晚不死，同时需要决定他俩其中谁因为旅店老板能力醉酒。",
+    "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
     "reminders": [
       "不会死亡",
       "醉酒"
@@ -70,19 +82,27 @@
     "name": "旅店老板",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
-    "otherNight": 5
+    "otherNight": 5,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "5_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
-    "otherNightReminder": "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "赌徒",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
-    "otherNight": 6
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "正面，我赢。 反面，你输。"
   },
   {
     "id": "6_woyaowanwailai",
@@ -92,26 +112,35 @@
     ],
     "name": "茶艺师",
     "team": "townsfolk",
-    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。"
+    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "7_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
-    "otherNightReminder": "唤醒卖花女孩，以点头或摇头告知她今天白天是否有恶魔参与投票。",
+    "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
     "name": "卖花女孩",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
-    "otherNight": 17
+    "otherNight": 17,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "8_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/amnesiac.png",
     "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
-    "otherNightReminder": "根据失忆者的具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
+    "otherNightReminder": "如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
     "reminders": [
       "？"
     ],
@@ -119,7 +148,10 @@
     "team": "townsfolk",
     "ability": "你不知道你的能力是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。",
     "firstNight": 11,
-    "otherNight": 2
+    "otherNight": 2,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "9_woyaowanwailai",
@@ -139,8 +171,8 @@
   {
     "id": "10_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-    "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-    "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+    "firstNightReminder": "不要让恶魔和爪牙相认。",
+    "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
     "reminders": [
       "唤醒邪恶"
     ],
@@ -148,7 +180,10 @@
     "team": "townsfolk",
     "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
     "firstNight": 12,
-    "otherNight": 3
+    "otherNight": 3,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "11_woyaowanwailai",
@@ -163,7 +198,9 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
     "firstNight": 4000,
-    "otherNight": 19
+    "otherNight": 19,
+    "remindersGlobal": [],
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
     "id": "12_woyaowanwailai",
@@ -173,7 +210,12 @@
     ],
     "name": "公主",
     "team": "townsfolk",
-    "ability": "在你的首个白天，如果你提名并处决了一名玩家，当晚恶魔不会造成死亡。"
+    "ability": "在你的首个白天，如果你提名并处决了一名玩家，当晚恶魔不会造成死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "13_woyaowanwailai",
@@ -187,58 +229,65 @@
   {
     "id": "14_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/butler.png",
-    "firstNightReminder": "唤醒管家，让他选择一名除自己以外的玩家，那名玩家成为他的主人。",
-    "otherNightReminder": "唤醒管家，让他选择一名除自己以外的玩家，那名玩家成为他的主人。",
+    "firstNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+    "otherNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
     "reminders": [
-      "主人",
-      "公开选择"
+      "主人"
     ],
     "name": "管家",
     "team": "outsider",
-    "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。每局游戏限一次，你可以在白天公开要求一名玩家必须跟你投票且当天管家不用跟随前一晚选择的玩家。",
+    "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。",
     "firstNight": 3800,
-    "otherNight": 15
+    "otherNight": 15,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "15_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "remindersGlobal": [
-      "是酒鬼",
-      "得知信息"
+      "是酒鬼"
     ],
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。酒鬼认知的角色可以是在场角色，且酒鬼获得的信息必错，如果酒鬼认知的那名角色不在场，那名在场会有一名邪恶的爪牙得知酒鬼得知的信息。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "16_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
-    "remindersGlobal": [
-      "是陌客",
-      "已疯狂"
-    ],
+    "remindersGlobal": [],
     "name": "陌客",
     "team": "outsider",
-    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。陌客可能会获得当天他“疯狂”证明自己是的爪牙（与上一天不同）的能力。"
+    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": 0,
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
     "id": "17_woyaowanwailai",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
-    "firstNightReminder": "唤醒疯子并向他提供恶魔信息。如可能，则让疯子进行相应的恶魔行动。随后在恶魔信息环节对恶魔提供疯子的相关信息。",
-    "otherNightReminder": "如果疯子以为的恶魔会在当晚行动，唤醒疯子，并让他以恶魔的方式行动。",
-    "reminders": [
+    "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
+    "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
+    "reminders": [],
+    "remindersGlobal": [
+      "是疯子",
       "被选择"
     ],
-    "remindersGlobal": [
-      "是疯子"
-    ],
-    "setup": 1,
+    "setup": 0,
     "name": "疯子",
     "team": "outsider",
-    "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。恶魔每晚必须选择疯子选择的玩家。（珀可以选择放弃）",
+    "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
     "firstNight": 2300,
-    "otherNight": 9
+    "otherNight": 9,
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "18_woyaowanwailai",

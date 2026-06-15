@@ -4,7 +4,7 @@
   "team": "townsfolk",
   "teamLabelZh": "镇民",
   "folder": "townsfolks",
-  "variantCount": 24,
+  "variantCount": 18,
   "totalOccurrenceCount": 49,
   "variants": [
     {
@@ -27,7 +27,7 @@
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 15,
+      "occurrenceCount": 18,
       "notes": []
     },
     {
@@ -39,16 +39,18 @@
         "townsfolk"
       ],
       "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_7627472943171_a65c3206.jpg",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
       "otherNight": 131,
-      "otherNightReminder": "如果死亡玩家人数大于存活玩家，唤醒史官并展示数字手势来告诉他存活镇民数量。",
-      "reminders": [],
+      "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
+      "reminders": [
+        "死于今日"
+      ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 4,
+      "occurrenceCount": 5,
       "notes": []
     },
     {
@@ -59,19 +61,19 @@
       "teams": [
         "townsfolk"
       ],
-      "ability": "每个夜晚*，如果白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_7627472943171_a65c3206.jpg",
+      "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
       "otherNight": 13110,
-      "otherNightReminder": "如果白天有玩家死于处决，唤醒史官。对他用手势比划存活的镇民玩家的数量。",
+      "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
       "reminders": [
         "死于今日"
       ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 4,
+      "occurrenceCount": 5,
       "notes": []
     },
     {
@@ -86,15 +88,15 @@
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
-      "otherNight": 93,
+      "otherNight": 15,
       "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
       "reminders": [
-        "死于处决"
+        "死于今日"
       ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 3,
+      "occurrenceCount": 2,
       "notes": []
     },
     {
@@ -155,10 +157,10 @@
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
-      "otherNight": 193,
+      "otherNight": 81,
       "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
       "reminders": [
-        "死于处决"
+        "死于今日"
       ],
       "remindersGlobal": [],
       "setup": 0,
@@ -178,7 +180,7 @@
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
-      "otherNight": 14,
+      "otherNight": 81,
       "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
       "reminders": [
         "死于今日"
@@ -186,7 +188,7 @@
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 1,
+      "occurrenceCount": 2,
       "notes": []
     },
     {
@@ -201,7 +203,7 @@
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
-      "otherNight": 15,
+      "otherNight": 193,
       "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
       "reminders": [
         "死于今日"
@@ -209,7 +211,7 @@
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 1,
+      "occurrenceCount": 2,
       "notes": []
     },
     {
@@ -221,12 +223,14 @@
         "townsfolk"
       ],
       "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://www.bloodstar.xyz/p/Jungle/TricksOfLight/4_tricksoflight.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
-      "otherNight": 15,
-      "otherNightReminder": "如果死亡玩家人数大于存活玩家，唤醒史官并展示数字手势来告诉他存活镇民数量。",
-      "reminders": [],
+      "otherNight": 14,
+      "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
+      "reminders": [
+        "死于今日"
+      ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
@@ -288,7 +292,7 @@
         "townsfolk"
       ],
       "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/90/sjvf3t4a2see24rfoq8x10c3b9q6suu.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
       "otherNight": 24,
@@ -311,12 +315,14 @@
         "townsfolk"
       ],
       "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/b/b7/Simin.png/75px-Simin.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
       "otherNight": 57,
-      "otherNightReminder": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "reminders": [],
+      "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
+      "reminders": [
+        "死于今日"
+      ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
@@ -332,12 +338,14 @@
         "townsfolk"
       ],
       "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/b/b7/Simin.png/75px-Simin.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
-      "firstNightReminder": "唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
+      "firstNightReminder": "",
       "otherNight": 58,
-      "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
-      "reminders": [],
+      "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
+      "reminders": [
+        "死于今日"
+      ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
@@ -353,7 +361,7 @@
         "townsfolk"
       ],
       "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/90/sjvf3t4a2see24rfoq8x10c3b9q6suu.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
       "otherNight": 77,
@@ -376,96 +384,6 @@
         "townsfolk"
       ],
       "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/8a/Shiguan.png/75px-Shiguan.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 81,
-      "otherNightReminder": "如果死亡玩家人数大于存活玩家，唤醒史官并告知存活镇民数量。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "史官",
-      "name": "史官",
-      "variantIndex": 18,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/8a/Shiguan.png/75px-Shiguan.png",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 81,
-      "otherNightReminder": "如果白天有玩家死于处决，唤醒史官并告知存活镇民数量。",
-      "reminders": [
-        "死于处决"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "史官",
-      "name": "史官",
-      "variantIndex": 19,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，如果白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "[\"https://clocktower-wiki.gstonegames.com/images/thumb/8/8a/Shiguan.png/400px-Shiguan.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 81,
-      "otherNightReminder": "如果白天有玩家死于处决，唤醒史官。对他用手势比划存活的镇民玩家的数量。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "史官",
-      "name": "史官",
-      "variantIndex": 20,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，如果白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_7627472943171_a65c3206.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 81,
-      "otherNightReminder": "如果白天有玩家死于处决，唤醒史官。对他用手势比划存活的镇民玩家的数量。",
-      "reminders": [
-        "死于今日"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "史官",
-      "name": "史官",
-      "variantIndex": 21,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
@@ -483,59 +401,17 @@
     {
       "id": "史官",
       "name": "史官",
-      "variantIndex": 22,
+      "variantIndex": 18,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
       ],
       "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_7627472943171_a65c3206.jpg",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 131,
-      "otherNightReminder": "如果白天有玩家死于处决，唤醒史官并展示数字手势来告诉他存活镇民数量。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "史官",
-      "name": "史官",
-      "variantIndex": 23,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_7627472943171_a65c3206.jpg",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
       "firstNight": 0,
       "firstNightReminder": "",
       "otherNight": 190,
-      "otherNightReminder": "如果死亡玩家人数大于存活玩家，唤醒史官并展示数字手势来告诉他存活镇民数量。",
-      "reminders": [],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "史官",
-      "name": "史官",
-      "variantIndex": 24,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每个夜晚*，如果白天有玩家死于处决，你会得知存活镇民的数量。",
-      "image": "[\"https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_7627472943171_a65c3206.jpg\",\"https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/shiguan_r.png\"]",
-      "firstNight": 0,
-      "firstNightReminder": "",
-      "otherNight": 13110,
-      "otherNightReminder": "如果白天有玩家死于处决，唤醒史官。对他用手势比划存活的镇民玩家的数量。",
+      "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
       "reminders": [
         "死于今日"
       ],

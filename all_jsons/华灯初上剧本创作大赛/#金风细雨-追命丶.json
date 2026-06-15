@@ -27,9 +27,9 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/noble.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。",
     "id": "noble_button",
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
@@ -37,7 +37,7 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "得知"
+      "被得知"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -49,17 +49,17 @@
   },
   {
     "ability": "每个白天，你可以公开声明一个角色。在当晚，你会得知该角色是否在场。如果你因此得知了否，你失去此能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_9168557760171_8ae6a36c.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yishi.png",
     "edition": "custom",
     "flavor": "",
     "id": "yishi_button",
     "firstNightReminder": "",
-    "otherNightReminder": "在每个白天，如果驿使声明使用他的能力，如果驿使声明的角色在场，放置“猜测正确”提示标记在驿使角色标记旁。\n当晚，唤醒驿使艺人。如果他猜测正确，对他点头表示“是”，对他摇头表示“否”，如果你对他摇头，放置一枚“失去能力”的标记在其角色旁",
+    "otherNightReminder": "如果驿使白天公开声明了一个角色，唤醒驿使：1.如果该角色在场，得知是；2.如果该角色不在场，得知否，并且驿使失去能力。",
     "name": "驿使",
     "otherNight": 122,
     "setup": 0,
     "reminders": [
-      "猜测正确",
+      "在场",
       "失去能力"
     ],
     "remindersGlobal": [],
@@ -69,16 +69,18 @@
   },
   {
     "ability": "如果你在白天死亡，当晚你会得知一名善良玩家。如果你在夜晚死亡，当晚你会得知一名邪恶玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_5918227760171_7f310c1b.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bingbi.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "是非曲直，自在人心。",
     "id": "bingbi_button",
     "firstNightReminder": "",
-    "otherNightReminder": "如果秉笔人在夜晚死去，唤醒他并指向一名邪恶玩家；如果秉笔在白天死去，唤醒他并指向一名善良玩家。随后让他重新入睡。",
+    "otherNightReminder": "在夜晚时，如果秉笔旁放置了“死于今日”提示标记，唤醒秉笔。对他指向一名善良玩家。让秉笔重新入睡。移除“死于今日”提示标记。如果秉笔在夜晚死亡，唤醒秉笔。对他指向一名邪恶玩家。让秉笔重新入睡。",
     "name": "秉笔",
     "otherNight": 103,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "死于今日"
+    ],
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0,
@@ -86,9 +88,9 @@
   },
   {
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fortune_teller.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。",
     "id": "fortune_teller_button",
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
@@ -105,12 +107,12 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202401/c_2996546816071_b144d82c.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！",
     "id": "village_idiot_button",
-    "firstNightReminder": "在为首个夜晚做准备时，（如果有超过一名村夫在场，）将村夫的“醉酒”提示标记放置到其中一个村夫角色标记旁。",
-    "otherNightReminder": "每个夜晚，唤醒任意一名村夫。让他指向一名玩家。对他给出拇指向上或向下的手势。让他重新入睡。重复这个操作，直到所有村夫玩家都进行了夜晚行动。",
+    "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+    "otherNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
     "name": "村夫",
     "otherNight": 128,
     "setup": 1,
@@ -124,7 +126,7 @@
   },
   {
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/flowergirl.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "edition": "custom",
     "flavor": "",
     "id": "flowergirl_button",
@@ -134,8 +136,8 @@
     "otherNight": 116,
     "setup": 0,
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -144,9 +146,9 @@
   },
   {
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
     "id": "savant_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -180,9 +182,9 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/seamstress.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。",
     "id": "seamstress_button",
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
@@ -199,9 +201,9 @@
   },
   {
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。",
     "id": "cannibal_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -210,7 +212,7 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于今日"
+      "饱餐"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -236,7 +238,7 @@
   },
   {
     "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/politician.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
     "edition": "custom",
     "flavor": "",
     "id": "politician_button",
@@ -253,9 +255,9 @@
   },
   {
     "ability": "当你死亡时，会有一名玩家开始醉酒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sweetheart.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我永远也忘不掉她……永远……",
     "id": "sweetheart_button",
     "firstNightReminder": "",
     "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
@@ -291,9 +293,9 @@
   },
   {
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "id": "drunk_button",
     "firstNightReminder": "",
     "otherNightReminder": "",

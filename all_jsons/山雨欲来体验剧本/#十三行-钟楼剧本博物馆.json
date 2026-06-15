@@ -30,7 +30,9 @@
     "name_eng": "Grandmother",
     "firstNight": 39,
     "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
@@ -47,7 +49,9 @@
     "name_eng": "Sailor",
     "firstNight": 10,
     "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
+    "remindersGlobal": [],
+    "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！"
   },
   {
     "firstNightReminder": "",
@@ -57,7 +61,7 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于处决"
+      "饱餐"
     ],
     "id": "cannibalbutton",
     "edition": "custom",
@@ -65,11 +69,13 @@
     "name_eng": "Cannibal",
     "firstNight": 0,
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "remindersGlobal": [],
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
-    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
-    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "otherNight": 70,
     "setup": 0,
@@ -80,12 +86,14 @@
     "name_eng": "Chambermaid",
     "firstNight": 50,
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+    "remindersGlobal": [],
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
-    "ability": "每个夜晚，你要选择至多三名玩家：你会得知今晚是否有邪恶玩家的能力选择了他们之中的玩家或是对其产生了影响。",
+    "ability": "每个夜晚，你要选择至多三名玩家：你会得知今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。",
     "id": "yinlurenbutton",
     "firstNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
     "otherNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
@@ -96,7 +104,7 @@
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 49,
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yinluren.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_2147287694761_01761fcb.jpg"
   },
   {
     "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
@@ -105,7 +113,7 @@
     "otherNight": 7,
     "setup": 0,
     "reminders": [
-      "布道"
+      "失去能力"
     ],
     "id": "preacherbutton",
     "edition": "custom",
@@ -113,7 +121,9 @@
     "name_eng": "Preacher",
     "firstNight": 14,
     "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
+    "remindersGlobal": [],
+    "flavor": "富有和健康总比贫穷和疾病要好。"
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：如果他是恶魔，你死亡，并且当晚不会再有其他玩家死亡。",
@@ -167,7 +177,9 @@
     "name_eng": "Gossip",
     "firstNight": 0,
     "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
+    "remindersGlobal": [],
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "firstNightReminder": "",
@@ -183,12 +195,14 @@
     "team": "townsfolk",
     "name_eng": "Fisherman",
     "firstNight": 0,
-    "ability": "每局游戏限一次，在白天时，你可以让说书⼈给你一些能帮助你的阵营获胜的建议。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png"
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "每个白天，你可以公开声明一个角色。在当晚，你会得知该角色是否在场。如果你因此得知了否，你失去能力。",
+    "otherNightReminder": "如果驿使白天公开声明了一个角色，唤醒驿使：1.如果该角色在场，得知是；2.如果该角色不在场，得知否，并且驿使失去能力。",
     "id": "messager",
     "name": "驿使",
     "firstNight": 0,
@@ -202,12 +216,13 @@
     "edition": "custom",
     "team": "townsfolk",
     "name_eng": "messager",
-    "ability": "每个白天，你可以公开声明一个角色。在当晚，你会得知该角色是否在场。如果你因此得知了否，你失去能力。",
-    "image": "https://clocktower-wiki.gstonegames.com/images/6/64/Yishi.png"
+    "ability": "每个白天，你可以公开声明一个角色。在当晚，你会得知该角色是否在场。如果你因此得知了否，你失去此能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yishi.png",
+    "flavor": ""
   },
   {
     "ability": "任何在夜晚使用自身能力选择你的其他玩家，会改为选中另一名邪恶玩家作为替代。",
-    "image": "https://clocktower-wiki.gstonegames.com/images/b/b7/Banxian.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/banxian.png",
     "edition": "custom",
     "flavor": "",
     "id": "20236_6856",
@@ -223,7 +238,7 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚，当有邪恶玩家的能力首次对与你邻近的存活玩家产生影响时，改为此次能力不生效，你会得知这一信息。",
+    "ability": "每个夜晚，当有邪恶玩家的能力首次选择或影响与你邻近的存活玩家时，改为此次能力不生效并持续至下个黎明，且你会得知你的能力被触发。",
     "edition": "custom",
     "flavor": "",
     "id": "heshangbutton",
@@ -255,7 +270,9 @@
     "name_eng": "Acrobat",
     "firstNight": 0,
     "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -272,7 +289,9 @@
     "name_eng": "Goon",
     "firstNight": 0,
     "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goon.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goon.png",
+    "remindersGlobal": [],
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。"
   },
   {
     "firstNightReminder": "",
@@ -289,11 +308,13 @@
     "name_eng": "Tinker",
     "firstNight": 0,
     "ability": "你随时可能死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
-    "firstNightReminder": "唤醒所有爪牙，并告知他们场中有落难少女。",
-    "otherNightReminder": "",
+    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
+    "otherNightReminder": "0",
     "name": "落难少女",
     "otherNight": 0,
     "setup": 0,
@@ -306,7 +327,9 @@
     "name_eng": "Damsel",
     "firstNight": 6,
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",

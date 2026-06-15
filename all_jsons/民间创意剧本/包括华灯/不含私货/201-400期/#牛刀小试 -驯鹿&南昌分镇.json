@@ -16,7 +16,7 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知恶魔与爪牙之间最近的距离。（邻座的玩家距离为1）",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/clockmaker.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/clockmaker.png",
     "edition": "custom",
     "flavor": "",
     "id": "clockmaker_button",
@@ -33,7 +33,7 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知两名玩家和一个镇民角色：这两名玩家之一是该角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/washerwoman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/washerwoman.png",
     "edition": "custom",
     "flavor": "",
     "id": "washerwoman_button",
@@ -43,8 +43,8 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "镇民",
-      "错误"
+      "错误",
+      "镇民"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -53,11 +53,11 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_9833664308961_ad73c43b.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。",
     "id": "shugenja_button",
-    "firstNightReminder": "在首个夜晚，唤醒修行者。用手指水平指向修行者的某一侧，告诉他与他距离最近的邪恶玩家位于这一侧。如果修行者两侧最近的邪恶玩家与他的距离相等，由你来决定告诉他什么样的信息，并用手指指向对应的一侧。让修行者重新入睡。",
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "otherNightReminder": "",
     "name": "修行者",
     "otherNight": 0,
@@ -69,19 +69,19 @@
     "GstoneID": "shugenja"
   },
   {
-    "ability": "在你的首个夜晚，你得知一个在场的爪牙角色。每局游戏限一次，你可以在白天公开选择一名玩家：如果他是你得知的角色，他死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_5751437760171_79dd1401.jpg",
+    "ability": "在你的首个夜晚，你会得知一个在场的爪牙角色。每局游戏限一次，你可以在白天公开选择一名玩家：如果他是你得知的角色，他死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/daoke.png",
     "edition": "custom",
     "flavor": "",
     "id": "daoke_button",
-    "firstNightReminder": "在为首个夜晚做准备时，将刀客的“追杀”标记放置在一个爪牙角色标记旁。\n在首个夜晚，唤醒刀客。对他展示标记了“追杀”的爪牙角色标记。让刀客重新入睡。",
+    "firstNightReminder": "在首个夜晚，唤醒刀客，对他展示标记了“得知”的爪牙角色标记。",
     "otherNightReminder": "",
     "name": "刀客",
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "追杀",
-      "失去能力"
+      "失去能力",
+      "得知"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -90,7 +90,7 @@
   },
   {
     "ability": "每局游戏限一次，你可以在白天时公开选择一名玩家：如果他是恶魔，他死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/slayer.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/slayer.png",
     "edition": "custom",
     "flavor": "",
     "id": "slayer_button",
@@ -109,7 +109,7 @@
   },
   {
     "ability": "每个夜晚，你会得知一名说书人认为你最应该与其交流的玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202306/c_9934958657861_5ff1282a.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/high_priestess.png",
     "edition": "custom",
     "flavor": "",
     "id": "high_priestess_button",
@@ -145,9 +145,9 @@
   },
   {
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/empath.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。",
     "id": "empath_button",
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
@@ -179,9 +179,9 @@
   },
   {
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fortune_teller.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。",
     "id": "fortune_teller_button",
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
@@ -198,9 +198,9 @@
   },
   {
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/oracle.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。",
     "id": "oracle_button",
     "firstNightReminder": "",
     "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
@@ -219,18 +219,13 @@
     "edition": "custom",
     "flavor": "",
     "id": "fangshi_button",
-    "firstNightReminder": "唤醒方士，让其选择一个数字，将对应数字的标记放置在方士角色标记旁边。如果他选择了1，向他展示一个在场角色的标记。",
-    "otherNightReminder": "在游戏的对应天数唤醒方士，向他展示对应数量的在场角色的标记。",
+    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
+    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
     "name": "方士",
     "otherNight": 124,
     "setup": 0,
     "reminders": [
-      "第一天",
-      "第二天",
-      "第三天",
-      "第四天",
-      "第五天",
-      "第六天"
+      "得知"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -257,9 +252,9 @@
   },
   {
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "id": "drunk_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -276,9 +271,9 @@
   },
   {
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/barber.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。",
     "id": "barber_button",
     "firstNightReminder": "",
     "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
@@ -295,7 +290,7 @@
   },
   {
     "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/klutz.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
     "edition": "custom",
     "flavor": "",
     "id": "klutz_button",
@@ -312,7 +307,7 @@
   },
   {
     "ability": "每局游戏你只能发起提名一次。当你发起提名时，如果被你提名的玩家不是恶魔，他死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/golem.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/golem.png",
     "edition": "custom",
     "flavor": "",
     "id": "golem_button",

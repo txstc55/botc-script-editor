@@ -10,19 +10,19 @@
     "demonsName": "恶魔"
   },
   {
-    "ability": "在你的首个夜晚，你得知一个在场的爪牙角色。每局游戏限一次，你可以在白天公开选择一名玩家：如果他是你得知的角色，他死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_5751437760171_79dd1401.jpg",
+    "ability": "在你的首个夜晚，你会得知一个在场的爪牙角色。每局游戏限一次，你可以在白天公开选择一名玩家：如果他是你得知的角色，他死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/daoke.png",
     "edition": "custom",
     "flavor": "",
     "id": "e07d8e14-a7e8-4378-9786-f1668f3ebf73",
-    "firstNightReminder": "在为首个夜晚做准备时，将刀客的“追杀”标记放置在一个爪牙角色标记旁。\n在首个夜晚，唤醒刀客。对他展示标记了“追杀”的爪牙角色标记。让刀客重新入睡。",
+    "firstNightReminder": "在首个夜晚，唤醒刀客，对他展示标记了“得知”的爪牙角色标记。",
     "otherNightReminder": "",
     "name": "刀客",
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "追杀",
-      "失去能力"
+      "失去能力",
+      "得知"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -30,9 +30,9 @@
   },
   {
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/empath.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。",
     "id": "1_18",
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
@@ -62,9 +62,9 @@
   },
   {
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fortune_teller.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。",
     "id": "1_17",
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
@@ -82,7 +82,7 @@
     "ability": "每个夜晚，你要选择至多三名玩家：你会得知今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_2147287694761_01761fcb.jpg",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。",
     "id": "yinluren",
     "firstNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
     "otherNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
@@ -116,7 +116,7 @@
   },
   {
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/flowergirl.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "edition": "custom",
     "flavor": "",
     "id": "3_68",
@@ -126,18 +126,18 @@
     "otherNight": 20,
     "setup": 0,
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gambler.png",
+    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "正面，我赢。 反面，你输。",
     "id": "2_40",
     "firstNightReminder": "",
     "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
@@ -208,9 +208,9 @@
   },
   {
     "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gossip.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。",
     "id": "2_39",
     "firstNightReminder": "",
     "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
@@ -235,16 +235,20 @@
     "name": "变脸师",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
+    "reminders": [
+      "疯狂"
+    ],
+    "remindersGlobal": [
+      "是变脸师"
+    ],
     "team": "townsfolk",
     "firstNight": 0
   },
   {
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。",
     "id": "20236_76",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -254,7 +258,7 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于处决"
+      "饱餐"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -262,9 +266,9 @@
   },
   {
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "id": "1_8",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -279,10 +283,10 @@
     "firstNight": 0
   },
   {
-    "ability": "如果你死亡，说书人会获得一个爪牙能力。",
+    "ability": "当你死亡时，说书人会获得一个爪牙能力。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。",
     "id": "scp-049049049",
     "firstNightReminder": "",
     "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
@@ -298,7 +302,7 @@
   },
   {
     "ability": "你随时可能死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/tinker.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
     "edition": "custom",
     "flavor": "",
     "id": "2_34",

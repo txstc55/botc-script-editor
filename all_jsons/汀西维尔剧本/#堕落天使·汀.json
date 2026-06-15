@@ -8,10 +8,16 @@
   },
   {
     "id": "_duoluotianshi",
-    "image": "https://www.bloodstar.xyz/p/ronchi/duoluotianshi/_duoluotianshi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "name": "博学者",
     "team": "townsfolk",
-    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一条是正确的，一条是错误的。"
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "empathButton",
@@ -22,51 +28,66 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
     "firstNight": 16,
-    "otherNight": 11
+    "otherNight": 11,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "chambermaidButton",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
-    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
-    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "firstNight": 17,
-    "otherNight": 13
+    "otherNight": 13,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "mathematicianButton",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
     "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
-    "remindersGlobal": [
-      "未正常生效"
-    ],
+    "remindersGlobal": [],
     "name": "数学家",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
     "firstNight": 18,
-    "otherNight": 14
+    "otherNight": 14,
+    "reminders": [
+      "未正常生效"
+    ],
+    "setup": 0,
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "4_duoluotianshi",
-    "image": "https://www.bloodstar.xyz/p/ronchi/duoluotianshi/4_duoluotianshi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
     "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "remindersGlobal": [
-      "是哲学家",
-      "醉酒"
+      "是哲学家"
     ],
     "name": "哲学家",
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
     "firstNight": 11,
-    "otherNight": 2
+    "otherNight": 2,
+    "reminders": [
+      "醉酒"
+    ],
+    "setup": 0,
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。"
   },
   {
     "id": "engineerButton",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/engineer.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/engineer.png",
     "firstNightReminder": "工程师选择不使用能力，或在剧本列表中选择恶魔或爪牙角色。如果他选择爪牙角色，则需要选择对应数量的爪牙。然后将这些玩家依次唤醒，并告知他们变成了什么角色。",
     "otherNightReminder": "工程师选择不使用能力，或在剧本列表中选择恶魔或爪牙角色。如果他选择爪牙角色，则需要选择对应数量的爪牙。然后将这些玩家依次唤醒，并告知他们变成了什么角色。",
     "reminders": [
@@ -76,26 +97,39 @@
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择让恶魔变成你选择的恶魔角色，或让所有爪牙变成你选择的爪牙角色。",
     "firstNight": 13,
-    "otherNight": 3
+    "otherNight": 3,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "6_duoluotianshi",
-    "image": "https://www.bloodstar.xyz/p/ronchi/duoluotianshi/6_duoluotianshi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
     "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
-    "remindersGlobal": [
-      "猜测正确"
-    ],
+    "remindersGlobal": [],
     "name": "杂耍艺人",
     "team": "townsfolk",
-    "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的次数。",
-    "otherNight": 12
+    "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
+    "otherNight": 12,
+    "firstNightReminder": "",
+    "reminders": [
+      "猜测正确"
+    ],
+    "setup": 0,
+    "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。"
   },
   {
     "id": "mutantbutton",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "name": "畸形秀演员",
     "team": "outsider",
-    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。"
+    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "lunaticbutton",
@@ -106,12 +140,14 @@
       "是疯子",
       "被选择"
     ],
-    "setup": 1,
+    "setup": 0,
     "name": "疯子",
     "team": "outsider",
     "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
     "firstNight": 12,
-    "otherNight": 6
+    "otherNight": 6,
+    "reminders": [],
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "9_duoluotianshi",

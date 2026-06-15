@@ -26,13 +26,15 @@
     "name_eng": "Ravenkeeper",
     "firstNight": 0,
     "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
+    "remindersGlobal": [],
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
   },
   {
     "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sailor.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！",
     "id": "sailorbutton",
     "firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
     "otherNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
@@ -60,7 +62,9 @@
     "name_eng": "Pacifist",
     "firstNight": 0,
     "ability": "被处决的善良玩家可能不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pacifist.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pacifist.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
@@ -77,7 +81,9 @@
     "name_eng": "Seamstress",
     "firstNight": 42,
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
+    "remindersGlobal": [],
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "firstNightReminder": "",
@@ -93,8 +99,10 @@
     "team": "townsfolk",
     "name_eng": "Fisherman",
     "firstNight": 0,
-    "ability": "每局游戏限一次，在白天时，你可以让说书⼈给你一些能帮助你的阵营获胜的建议。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png"
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "ability": "每个夜晚*，你可以猜测今晚第一个死亡的玩家与你的距离。如果你猜测正确，改为除你以外的所有玩家今晚不会死亡，但你可能会死亡。",
@@ -132,12 +140,12 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/langzhong.png"
   },
   {
-    "ability": "每个夜晚，当有邪恶玩家的能力首次对与你邻近的存活玩家产生影响时，改为此次能力不生效，你会得知这一信息。",
+    "ability": "每个夜晚，当有邪恶玩家的能力首次选择或影响与你邻近的存活玩家时，改为此次能力不生效并持续至下个黎明，且你会得知你的能力被触发。",
     "edition": "custom",
     "flavor": "",
     "id": "heshangbutton",
-    "firstNightReminder": "每个夜晚，当有邪恶玩家的能力首次对与你邻近的存活玩家产生影响时，改为此次能力不生效，你会得知这一信息。",
-    "otherNightReminder": "每个夜晚，当有邪恶玩家的能力首次对与你邻近的存活玩家产生影响时，改为此次能力不生效，你会得知这一信息。",
+    "firstNightReminder": "每个夜晚，当有邪恶玩家的能力首次选择或影响与你邻近的存活玩家时，改为此次能力不生效并持续至下个黎明，且你会得知你的能力被触发。",
+    "otherNightReminder": "每个夜晚，当有邪恶玩家的能力首次选择或影响与你邻近的存活玩家时，改为此次能力不生效并持续至下个黎明，且你会得知你的能力被触发。",
     "name": "和尚",
     "otherNight": 3,
     "setup": 0,
@@ -201,10 +209,10 @@
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0,
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/jinyiwei.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5878087694761_691045fa.jpg"
   },
   {
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你会在当晚获得那个角色的能力，直到下个黄昏。",
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
     "edition": "custom",
     "flavor": "",
     "id": "bianlianshibutton",
@@ -255,7 +263,8 @@
     "name_eng": "Drunk",
     "firstNight": 0,
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "firstNightReminder": "",
@@ -270,7 +279,9 @@
     "name_eng": "Klutz",
     "firstNight": 0,
     "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "ability": "恶魔知道你在场。每局游戏限一次，恶魔可以拜访说书人并猜测谁是书生。如果恶魔猜测正确，即使你已死亡，当晚该恶魔可以选择一名玩家：他死亡。",
@@ -298,7 +309,7 @@
     "flavor": "",
     "id": "shaxingbutton",
     "firstNightReminder": "",
-    "otherNightReminder": "如果天花病人死亡，将与其邻近的存活善良玩家之一标记为死亡。",
+    "otherNightReminder": "如果煞星死亡，决定是否让一名与他邻近的存活玩家死亡。",
     "name": "煞星",
     "otherNight": 39,
     "setup": 0,

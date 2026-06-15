@@ -33,7 +33,7 @@
   {
     "id": "_jinglingpixie",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/investigator.png",
-    "firstNightReminder": "唤醒调查员，对他指向两名玩家，并展示一个爪牙角色标记。这两名玩家其中之一是这个爪牙。",
+    "firstNightReminder": "展示那个爪牙角色标记。指向被你标记“爪牙”和“错误”的两名玩家。",
     "reminders": [
       "爪牙",
       "错误"
@@ -41,13 +41,17 @@
     "name": "调查员",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
-    "firstNight": 3500
+    "firstNight": 3500,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "1_jinglingpixie",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
-    "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-    "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
       "干扰项"
     ],
@@ -55,19 +59,26 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
     "firstNight": 3600,
-    "otherNight": 10
+    "otherNight": 10,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "2_jinglingpixie",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
-    "otherNightReminder": "唤醒僧侣，让他选择除自己以外的一名玩家，那名玩家今晚免受恶魔负面效果影响。",
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
     "reminders": [
       "保护"
     ],
     "name": "僧侣",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "otherNight": 4
+    "otherNight": 4,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "3_jinglingpixie",
@@ -77,7 +88,12 @@
     ],
     "name": "贞洁者",
     "team": "townsfolk",
-    "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。"
+    "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4_jinglingpixie",
@@ -88,19 +104,27 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "firstNight": 3900,
-    "otherNight": 12
+    "otherNight": 12,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "5_jinglingpixie",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
-    "otherNightReminder": "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "赌徒",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
-    "otherNight": 2
+    "otherNight": 2,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "正面，我赢。 反面，你输。"
   },
   {
     "id": "6_jinglingpixie",
@@ -110,19 +134,30 @@
     ],
     "name": "茶艺师",
     "team": "townsfolk",
-    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。"
+    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "7_jinglingpixie",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pacifist.png",
     "name": "和平主义者",
     "team": "townsfolk",
-    "ability": "被处决的善良玩家可能不会死亡。"
+    "ability": "被处决的善良玩家可能不会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "8_jinglingpixie",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
-    "firstNightReminder": "唤醒小精灵，对他展示一个在场镇民角色标记。",
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "reminders": [
       "疯狂",
       "获得能力"
@@ -130,7 +165,11 @@
     "name": "小精灵",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "firstNight": 3400
+    "firstNight": 3400,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "9_jinglingpixie",
@@ -154,20 +193,29 @@
     "name": "修行者",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
-    "firstNight": 3800
+    "firstNight": 3800,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
     "id": "11_jinglingpixie",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
     "otherNightReminder": "：唤醒杂技演员，让他选择一名玩家。如果当晚这名玩家醉酒或中毒，杂技演员死亡。",
     "reminders": [
-      "被选择",
-      "死亡"
+      "死亡",
+      "被选择"
     ],
     "name": "杂技演员",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家：如果当晚他醉酒或中毒，你死亡。",
-    "otherNight": 3
+    "otherNight": 3,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "列位看官，请扶好帽盔，我将逆天而行，踏空起舞！身如飞燕，胆若雷霆，只为博君一笑一惊！"
   },
   {
     "id": "12_jinglingpixie",
@@ -177,7 +225,14 @@
     ],
     "name": "变脸师",
     "team": "townsfolk",
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。"
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "疯狂"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "13_jinglingpixie",
@@ -195,7 +250,11 @@
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "15_jinglingpixie",
@@ -205,14 +264,25 @@
     ],
     "name": "莽夫",
     "team": "outsider",
-    "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。"
+    "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。"
   },
   {
     "id": "16_jinglingpixie",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "name": "畸形秀演员",
     "team": "outsider",
-    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。"
+    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "17_jinglingpixie",
@@ -223,7 +293,11 @@
     "setup": 1,
     "name": "隐士",
     "team": "outsider",
-    "ability": "你拥有所有外来者能力。[-0~1外来者]"
+    "ability": "你拥有所有外来者能力。[-0~1外来者]",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。"
   },
   {
     "id": "18_jinglingpixie",

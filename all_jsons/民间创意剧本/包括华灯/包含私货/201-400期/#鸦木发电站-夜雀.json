@@ -15,7 +15,7 @@
   },
   {
     "id": "librarian0",
-    "image": "https://i.postimg.cc/D83bYpDk/Librarian.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
     "name": "图书管理员",
     "team": "townsfolk",
     "firstNight": 42,
@@ -26,11 +26,14 @@
     ],
     "setup": 0,
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-    "firstNightReminder": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。"
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "dreamer0",
-    "image": "https://i.postimg.cc/MH7150sF/Dreamer.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
     "name": "筑梦师",
     "team": "townsfolk",
     "firstNight": 50,
@@ -38,12 +41,14 @@
     "reminders": [],
     "setup": 0,
     "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
-    "firstNightReminder": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
-    "otherNightReminder": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。"
+    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "remindersGlobal": [],
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……"
   },
   {
     "id": "fortuneteller0",
-    "image": "https://i.postimg.cc/McpBmcLn/Fortuneteller.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "name": "占卜师",
     "team": "townsfolk",
     "firstNight": 46,
@@ -53,8 +58,10 @@
     ],
     "setup": 0,
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "firstNightReminder": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "otherNightReminder": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。"
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "remindersGlobal": [],
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "king0",
@@ -71,80 +78,94 @@
   },
   {
     "id": "choirboy0",
-    "image": "https://i.postimg.cc/PfKRmfQX/Choirboy.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/choirboy.png",
     "name": "唱诗男孩",
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 62,
-    "reminders": [
-      ""
-    ],
+    "reminders": [],
     "setup": 1,
     "ability": "如果恶魔杀死了国王，你会得知哪名玩家是恶魔。[+国王]",
-    "otherNightReminder": "如果恶魔杀死了国王，你会得知哪名玩家是恶魔。[+国王]"
+    "otherNightReminder": "如果国王被恶魔杀死，将唱诗男孩唤醒并告诉他谁是那个杀死国王的恶魔。",
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "cannibal0",
-    "image": "https://i.postimg.cc/XJkD1nMg/Cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "name": "食人族",
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [
-      "死于处决",
-      "中毒"
+      "中毒",
+      "饱餐"
     ],
     "setup": 0,
-    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。"
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "savant0",
-    "image": "https://i.postimg.cc/FKkdGgzV/Savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "name": "博学者",
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [],
     "setup": 0,
-    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。"
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "philosopher0",
-    "image": "https://i.postimg.cc/Bn61PGGy/Philosopher.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
     "name": "哲学家",
     "team": "townsfolk",
     "firstNight": 2,
     "otherNight": 3,
     "reminders": [
-      "醉酒",
-      "是哲学家"
+      "醉酒"
     ],
     "setup": 0,
     "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
-    "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
-    "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。"
+    "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
+    "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
+    "remindersGlobal": [
+      "是哲学家"
+    ],
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。"
   },
   {
     "id": "courtier0",
-    "image": "https://i.postimg.cc/W1KC8L1d/Courtier.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
     "name": "侍臣",
     "team": "townsfolk",
     "firstNight": 26,
     "otherNight": 15,
     "reminders": [
+      "失去能力",
       "醉酒1",
       "醉酒2",
-      "醉酒3",
-      "失去能力"
+      "醉酒3"
     ],
     "setup": 0,
     "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-    "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-    "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。"
+    "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+    "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+    "remindersGlobal": [],
+    "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。"
   },
   {
     "id": "fisherman0",
-    "image": "https://i.postimg.cc/mrQdhTrG/Fisherman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
     "name": "渔夫",
     "team": "townsfolk",
     "firstNight": 0,
@@ -153,11 +174,15 @@
       "失去能力"
     ],
     "setup": 0,
-    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。"
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "huntsman0",
-    "image": "https://i.postimg.cc/D0Y6RZx1/Huntsman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/huntsman.png",
     "name": "巡山人",
     "team": "townsfolk",
     "firstNight": 39,
@@ -167,54 +192,66 @@
     ],
     "setup": 1,
     "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]",
-    "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]",
-    "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]"
+    "firstNightReminder": "唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+    "otherNightReminder": "如果巡山人未曾使用能力，唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "amnesiac0",
-    "image": "https://i.postimg.cc/cLPjrDMf/Amnesiac.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/amnesiac.png",
     "name": "失忆者",
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [
-      "?"
+      "？"
     ],
     "setup": 0,
-    "ability": "你不知道你的能力是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。"
+    "ability": "你不知道你的能力是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。",
+    "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
+    "otherNightReminder": "如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "drunk0",
-    "image": "https://i.postimg.cc/680RZVMs/Drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "name": "酒鬼",
     "team": "outsider",
     "firstNight": 0,
     "otherNight": 0,
-    "reminders": [
+    "reminders": [],
+    "setup": 1,
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1,
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "lunatic0",
-    "image": "https://i.postimg.cc/Kz50ddxr/Lunatic.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "name": "疯子",
     "team": "outsider",
     "firstNight": 11,
     "otherNight": 29,
-    "reminders": [
-      "被选择",
-      "是疯子"
-    ],
-    "setup": 1,
+    "reminders": [],
+    "setup": 0,
     "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
-    "firstNightReminder": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
-    "otherNightReminder": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。"
+    "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
+    "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
+    "remindersGlobal": [
+      "是疯子",
+      "被选择"
+    ],
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "damsel0",
-    "image": "https://i.postimg.cc/Y0FdJFsY/Damsel.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
     "name": "落难少女",
     "team": "outsider",
     "firstNight": 40,
@@ -224,19 +261,25 @@
     ],
     "setup": 0,
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
-    "firstNightReminder": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
-    "otherNightReminder": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。"
+    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
+    "otherNightReminder": "0",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "politician0",
-    "image": "https://i.postimg.cc/FsjPpjcQ/Politician.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
     "name": "政客",
     "team": "outsider",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [],
     "setup": 0,
-    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。"
+    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "cerenovus0",

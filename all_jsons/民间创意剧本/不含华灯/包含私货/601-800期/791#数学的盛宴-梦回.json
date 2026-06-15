@@ -7,20 +7,24 @@
   },
   {
     "id": "_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/_shuxuedeshengyan.png",
-    "otherNightReminder": "唤醒杂技演员，让他选择一名玩家。如果当晚这名玩家醉酒或中毒，杂技演员死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
+    "otherNightReminder": "：唤醒杂技演员，让他选择一名玩家。如果当晚这名玩家醉酒或中毒，杂技演员死亡。",
     "reminders": [
-      "被选择",
-      "死亡"
+      "死亡",
+      "被选择"
     ],
     "name": "杂技演员",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家：如果当晚他醉酒或中毒，你死亡。",
-    "otherNight": 6
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "列位看官，请扶好帽盔，我将逆天而行，踏空起舞！身如飞燕，胆若雷霆，只为博君一笑一惊！"
   },
   {
     "id": "1_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/1_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/investigator.png",
     "firstNightReminder": "展示那个爪牙角色标记。指向被你标记“爪牙”和“错误”的两名玩家。",
     "reminders": [
       "爪牙",
@@ -29,11 +33,15 @@
     "name": "调查员",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
-    "firstNight": 5900
+    "firstNight": 5900,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "2_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/2_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
@@ -43,11 +51,14 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
     "firstNight": 6000,
-    "otherNight": 13
+    "otherNight": 13,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "3_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/3_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
     "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
     "reminders": [
       "死于今日"
@@ -55,22 +66,30 @@
     "name": "送葬者",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-    "otherNight": 14
+    "otherNight": 14,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。"
   },
   {
     "id": "4_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/4_shuxuedeshengyan.png",
-    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
-    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "firstNight": 6200,
-    "otherNight": 15
+    "otherNight": 15,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "5_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/5_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
     "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
     "reminders": [
       "不会死亡",
@@ -79,21 +98,30 @@
     "name": "旅店老板",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
-    "otherNight": 4
+    "otherNight": 4,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "6_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/6_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/minstrel.png",
     "reminders": [
       "全员醉酒"
     ],
     "name": "吟游诗人",
     "team": "townsfolk",
-    "ability": "当一名爪牙死于处决时，除了你和旅行者以外的所有其他玩家醉酒直到明天黄昏。"
+    "ability": "当一名爪牙死于处决时，除了你和旅行者以外的所有其他玩家醉酒直到明天黄昏。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "7_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/7_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
     "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [
@@ -101,20 +129,29 @@
     ],
     "name": "数学家",
     "team": "townsfolk",
-    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。(从上个黎明到你被唤醒时）",
+    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
     "firstNight": 6300,
-    "otherNight": 16
+    "otherNight": 16,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "8_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/8_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "name": "博学者",
     "team": "townsfolk",
-    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。"
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "9_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/9_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
     "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
     "reminders": [
@@ -127,80 +164,116 @@
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
     "firstNight": 12,
-    "otherNight": 2
+    "otherNight": 2,
+    "setup": 0,
+    "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。"
   },
   {
     "id": "10_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/10_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
     "reminders": [
       "失去能力"
     ],
     "name": "艺术家",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。"
+    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
   },
   {
     "id": "11_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/11_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "reminders": [
       "中毒",
-      "死于今日"
+      "饱餐"
     ],
     "name": "食人族",
     "team": "townsfolk",
-    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。"
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "12_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/12_shuxuedeshengyan.png",
-    "firstNightReminder": "在首个夜晚，唤醒修行者。用手指水平指向修行者的某一侧，告诉他与他距离最近的邪恶玩家位于这一侧。如果修行者两侧最近的邪恶玩家与他的距离相等，由你来决定告诉他什么样的信息，并用手指指向对应的一侧。让修行者重新入睡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "name": "修行者",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
-    "firstNight": 6100
+    "firstNight": 6100,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
     "id": "13_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/13_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
     "name": "陌客",
     "team": "outsider",
-    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。"
+    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
     "id": "14_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/14_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goon.png",
     "reminders": [
       "醉酒"
     ],
     "name": "莽夫",
     "team": "outsider",
-    "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。"
+    "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。"
   },
   {
     "id": "15_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/15_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
     "remindersGlobal": [
-      "被选择",
-      "是疯子"
+      "是疯子",
+      "被选择"
     ],
     "name": "疯子",
     "team": "outsider",
     "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
     "firstNight": 4200,
-    "otherNight": 8
+    "otherNight": 8,
+    "reminders": [],
+    "setup": 0,
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "16_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/16_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
     "reminders": [
-      "醉酒",
-      "已猜测"
+      "已猜测",
+      "醉酒"
     ],
     "name": "解谜大师",
     "team": "outsider",
-    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。"
+    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "17_shuxuedeshengyan",

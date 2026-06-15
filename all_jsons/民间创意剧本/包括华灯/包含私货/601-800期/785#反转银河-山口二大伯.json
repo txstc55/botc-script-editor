@@ -8,7 +8,7 @@
   },
   {
     "id": "_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
     "reminders": [
       "疯狂"
     ],
@@ -17,7 +17,11 @@
     ],
     "name": "变脸师",
     "team": "townsfolk",
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。"
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "1_fanzhuanyinhe",
@@ -30,14 +34,18 @@
   },
   {
     "id": "2_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/2_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
     "remindersGlobal": [
       "是悟道者"
     ],
     "setup": 1,
     "name": "悟道者",
     "team": "townsfolk",
-    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，你会立即变成一个不在场的镇民角色。"
+    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，在该效果生效前你会变成一个不在场的镇民角色。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "3_fanzhuanyinhe",
@@ -64,7 +72,7 @@
   },
   {
     "id": "5_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/5_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
     "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
     "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
     "reminders": [
@@ -72,39 +80,58 @@
     ],
     "name": "逆臣",
     "team": "outsider",
-    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你会在当晚转变为邪恶；如果你先死于处决，他会在当晚转变为邪恶。",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
     "firstNight": 3900,
-    "otherNight": 6
+    "otherNight": 6,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
   },
   {
     "id": "6_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/6_fanzhuanyinhe.png",
-    "otherNightReminder": "如果秉笔人在夜晚死去，唤醒他并指向一名邪恶玩家；如果秉笔在白天死去，唤醒他并指向一名善良玩家。随后让他重新入睡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bingbi.png",
+    "otherNightReminder": "在夜晚时，如果秉笔旁放置了“死于今日”提示标记，唤醒秉笔。对他指向一名善良玩家。让秉笔重新入睡。移除“死于今日”提示标记。如果秉笔在夜晚死亡，唤醒秉笔。对他指向一名邪恶玩家。让秉笔重新入睡。",
     "name": "秉笔",
     "team": "townsfolk",
     "ability": "如果你在白天死亡，当晚你会得知一名善良玩家。如果你在夜晚死亡，当晚你会得知一名邪恶玩家。",
-    "otherNight": 11
+    "otherNight": 11,
+    "firstNightReminder": "",
+    "reminders": [
+      "死于今日"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "是非曲直，自在人心。"
   },
   {
     "id": "7_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/7_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_2147287694761_01761fcb.jpg",
     "firstNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
     "otherNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
     "name": "引路人",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择至多三名玩家：你会得知今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
     "firstNight": 5000,
-    "otherNight": 16
+    "otherNight": 16,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。"
   },
   {
     "id": "8_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/8_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/jiubao.png",
     "reminders": [
       "醉酒"
     ],
     "name": "酒保",
     "team": "outsider",
-    "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。"
+    "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "9_fanzhuanyinhe",
@@ -147,38 +174,51 @@
   },
   {
     "id": "12_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/12_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chef.png",
     "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
     "name": "厨师",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
-    "firstNight": 3700
+    "firstNight": 3700,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。"
   },
   {
     "id": "13_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/13_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "name": "共情者",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
     "firstNight": 3800,
-    "otherNight": 12
+    "otherNight": 12,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "14_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/14_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
     "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
     "name": "筑梦师",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
     "firstNight": 4000,
-    "otherNight": 13
+    "otherNight": 13,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……"
   },
   {
     "id": "15_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/15_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "reminders": [
@@ -188,7 +228,10 @@
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
     "firstNight": 4100,
-    "otherNight": 14
+    "otherNight": 14,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "16_fanzhuanyinhe",
@@ -207,30 +250,48 @@
   },
   {
     "id": "17_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/17_fanzhuanyinhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "reminders": [
       "中毒",
-      "死于今日"
+      "饱餐"
     ],
     "name": "食人族",
     "team": "townsfolk",
-    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。"
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "18_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/18_fanzhuanyinhe.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1a/Zealot.png",
     "name": "狂热者",
     "team": "outsider",
-    "ability": "如果有大于等于五名玩家存活，你必须在所有提名中投票。"
+    "ability": "如果有大于等于五名玩家存活，你必须在所有提名中投票。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "19_fanzhuanyinhe",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/19_fanzhuanyinhe.png",
-    "firstNightReminder": "在首个夜晚，唤醒食人魔。让食人魔指向一名玩家。让食人魔重新入睡。如果食人魔指向了一名邪恶玩家，将食人魔的角色标记倒转放置，代表食人魔现在属于邪恶阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
+    "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
     "name": "食人魔",
     "team": "outsider",
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
-    "firstNight": 4400
+    "firstNight": 4400,
+    "otherNightReminder": "",
+    "reminders": [
+      "挚友"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "<咽口水><咧嘴笑><咽口水>"
   },
   {
     "id": "20_fanzhuanyinhe",

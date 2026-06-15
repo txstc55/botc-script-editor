@@ -151,22 +151,26 @@
   },
   {
     "id": "32_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/32_inthegr_58.png",
-    "firstNightReminder": "得知两名玩家一个爪牙。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/investigator.png",
+    "firstNightReminder": "展示那个爪牙角色标记。指向被你标记“爪牙”和“错误”的两名玩家。",
     "reminders": [
-      "know",
-      "wrong"
+      "爪牙",
+      "错误"
     ],
     "name": "调查员",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
-    "firstNight": 21
+    "firstNight": 21,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/4_inthegr_58.png",
-    "firstNightReminder": "选择玩家，得知他的阵营。",
-    "otherNightReminder": "选择玩家，得知他的阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
+    "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+    "otherNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
     "reminders": [
       "醉酒"
     ],
@@ -175,7 +179,9 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
     "firstNight": 22,
-    "otherNight": 10
+    "otherNight": 10,
+    "remindersGlobal": [],
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
     "id": "3_inthegr_58",
@@ -191,96 +197,140 @@
   },
   {
     "id": "34_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/34_inthegr_58.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
     "reminders": [
       "失去能力"
     ],
     "name": "渔夫",
     "team": "townsfolk",
-    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。"
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "2_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/2_inthegr_58.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tea_lady.png",
     "reminders": [
-      "免于死亡"
+      "不会死亡"
     ],
-    "setup": 1,
+    "setup": 0,
     "name": "茶艺师",
     "team": "townsfolk",
-    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。"
+    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "13_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/13_inthegr_58.png",
-    "firstNightReminder": "告知其邪恶方的接头暗号。如果醉酒，改为告知错误的暗号。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/magician.png",
+    "firstNightReminder": "恶魔会以为你是爪牙。爪牙会以为你是恶魔。",
     "name": "魔术师",
     "team": "townsfolk",
     "ability": "恶魔会以为你是爪牙。爪牙会以为你是恶魔。",
-    "firstNight": 13
+    "firstNight": 13,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "1…2…唵嘛呢…3…4…叭咪吽…（嗖！）是的，正如你们所见，女士们先生们，梵斯沃船长的那袋金子不见了！没了！无迹可循！感谢诸位，晚安啦！"
   },
   {
     "id": "17_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/17_inthegr_58.png",
-    "otherNightReminder": "如果造谣成功，使一名玩家死亡",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
     "reminders": [
-      "造谣正确",
       "死亡"
     ],
     "name": "造谣者",
     "team": "townsfolk",
     "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
-    "otherNight": 5
+    "otherNight": 5,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "15_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/15_inthegr_58.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/virgin.png",
     "reminders": [
       "失去能力"
     ],
     "name": "贞洁者",
     "team": "townsfolk",
-    "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。"
+    "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "31_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/31_inthegr_58.png",
-    "otherNightReminder": "它可能死亡",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/geling.png",
+    "otherNightReminder": "如果歌伶在白天使用了能力，且恶魔成为了观众，标记歌伶死亡。",
     "reminders": [
       "失去能力",
-      "死亡"
+      "死亡",
+      "观众"
     ],
     "name": "歌伶",
     "team": "townsfolk",
     "ability": "每局游戏限一次，在白天时，你可以提议所有玩家观看你的演出，并从同意参加的玩家中选择你的观众。如果恶魔成为了观众，你会在当晚死亡。",
-    "otherNight": 4
+    "otherNight": 4,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "18_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/18_inthegr_58.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "remindersGlobal": [
       "是酒鬼"
     ],
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "20_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/20_inthegr_58.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "name": "畸形秀演员",
     "team": "outsider",
-    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。"
+    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "19_inthegr_58",
-    "image": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/19_inthegr_58.png",
-    "firstNightReminder": "告知所有爪牙：落难少女在场。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
+    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
     "name": "落难少女",
     "team": "outsider",
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
-    "firstNight": 14
+    "firstNight": 14,
+    "otherNightReminder": "0",
+    "reminders": [
+      "已被猜测"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "22_inthegr_58",

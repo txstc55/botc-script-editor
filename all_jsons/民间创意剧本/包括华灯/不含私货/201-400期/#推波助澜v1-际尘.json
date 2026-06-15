@@ -22,7 +22,9 @@
     "reminders": [
       "被得知"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "3a7adef4-4e29-40e7-8cd0-3030fc9a32b7",
@@ -46,10 +48,12 @@
     "sch_team": "村民",
     "firstNight": 100,
     "otherNight": 100,
-    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
-    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
     "id": "zhuijidelaoda111",
@@ -78,15 +82,19 @@
     "sch_team": "村民",
     "firstNight": 52,
     "otherNight": 72,
-    "firstNightReminder": "唤醒引路人，让其选择两名玩家。以点头或摇头作为信息给出。",
-    "otherNightReminder": "唤醒引路人，让其选择两名玩家。以点头或摇头作为信息给出。"
+    "firstNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
+    "otherNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。"
   },
   {
     "id": "c5987949-f88c-430b-88d1-9bf4c4fa90a7",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
     "edition": "custom",
     "name": "神谕者",
-    "ability": "每个夜晚*，你得知死去的玩家中有多少名属于邪恶阵营。",
+    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 0,
@@ -94,14 +102,16 @@
     "firstNightReminder": "",
     "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "449c8b9c-c143-44eb-bde9-83c0d1d6d5e7",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
     "name": "博学者",
-    "ability": "每个白天，拜访说书人并获取两条信息，其中一条是正确的，一条是错误的。",
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 0,
@@ -109,11 +119,13 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "FortunetellerButton",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/6/67/Fortuneteller.png/300px-Fortuneteller.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "edition": "custom",
     "name": "占卜师",
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
@@ -125,24 +137,30 @@
     "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
       "干扰项"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "08531df3-d377-479f-ac7a-9a6041be0205",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lycanthrope.png",
     "edition": "custom",
     "name": "半兽人",
-    "ability": "每个夜晚*，你要选择一名存活的玩家，如果他是善良的，他死亡，并且当晚不会再有其他玩家死亡。",
+    "ability": "每个夜晚*，你要选择一名存活玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。会有一名善良玩家始终被当作邪恶阵营。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 0,
     "otherNight": 23,
     "firstNightReminder": "",
-    "otherNightReminder": "半兽人指向一名存活玩家：如果那名玩家善良，则立刻死去且今夜不会再有玩家死亡。",
+    "otherNightReminder": "唤醒半兽人，让他选择一名玩家。如果该玩家是善良玩家，该玩家死亡，且当晚恶魔不会造成死亡。",
     "reminders": [
+      "失足",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "4d7b2444-ebad-4a40-9c4d-322a59ca5e7b",
@@ -159,7 +177,9 @@
     "reminders": [
       "不会死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "a7ce0b6c-0153e-956b-3c7a3cdb86a1",
@@ -191,11 +211,13 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "……然后国王说道：‘什么？！我甚至从未有过一条橡胶马裤，更别提一门奶油大炮了！’嗬嗬！欢乐一日！"
   },
   {
     "id": "202f0292-7bda-422b-9706-9b758a895bac",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/a/a7/Wudaozhe.png/180px-Wudaozhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
     "edition": "custom",
     "name": "悟道者",
     "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，在该效果生效前你会变成一个不在场的镇民角色。",
@@ -206,11 +228,15 @@
     "remindersGlobal": [
       "是悟道者"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "690d917c-9c39-4ef1-85e3-4046734767d0",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4591987694761_11d3a855.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/jiubao.png",
     "edition": "custom",
     "name": "酒保",
     "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。",
@@ -220,14 +246,19 @@
     "otherNight": 0,
     "reminders": [
       "醉酒"
-    ]
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "1ba45ded-a0cd-4e75-89e6-a4d956a9b8da",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/moonchild.png",
     "edition": "custom",
     "name": "月之子",
-    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。在当晚，如果该玩家是善良的，该玩家会死亡。",
+    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。如果他是善良的，在当晚他会死亡。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 0,
@@ -237,11 +268,13 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。"
   },
   {
     "id": "AcrobatButton",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/8f/Acrobat.png/300px-Acrobat.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
     "edition": "custom",
     "name": "杂技演员",
     "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
@@ -252,23 +285,31 @@
     "otherNightReminder": "如果杂技演员左右两侧最近的存活善良玩家之一中毒或醉酒，杂技演员死亡。",
     "reminders": [
       "死亡"
-    ]
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "948f0f0c3e-4080-8d37-ebe567701484",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/f/f6/Shutong.png/75px-Shutong.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_2027903943171_36d374a5.jpg",
     "edition": "custom",
     "name": "书童",
-    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：除首个夜晚以外，当他被邪恶玩家的能力选择或影响时，你死亡。",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：除首个夜晚以外，当他被邪恶玩家的能力选择或影响时，你会在当晚死亡。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 19,
     "otherNight": 48,
-    "firstNightReminder": "唤醒书童，让其选择一名玩家。在该玩家的角色标记旁放置“榜样”提示标记。",
-    "otherNightReminder": "在你的首个夜晚，你要选择除你以外的一名玩家：除首个夜晚以外，当他被邪恶玩家的能力选择或影响时，你死亡。",
+    "firstNightReminder": "唤醒书童，让其选择一名玩家，在其选择的玩家标记旁放置“选择”。",
+    "otherNightReminder": "如果标记有“选择”的玩家被邪恶玩家的能力选择或影响时，在书童旁放置“死亡”标记。",
     "reminders": [
-      "榜样"
-    ]
+      "死亡",
+      "选择"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "a0bb55bd-5c85-4965-85f4-3fc76193f895",

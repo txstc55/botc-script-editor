@@ -39,7 +39,7 @@
   },
   {
     "id": "13_spacebound",
-    "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/13_spacebound.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
     "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [
@@ -47,9 +47,12 @@
     ],
     "name": "数学家",
     "team": "townsfolk",
-    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。(从上个黎明到你被唤醒时）",
+    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
     "firstNight": 26,
-    "otherNight": 20
+    "otherNight": 20,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "28_spacebound",
@@ -90,17 +93,20 @@
   },
   {
     "id": "5_spacebound",
-    "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/5_spacebound.png",
-    "firstNightReminder": "在首个夜晚，唤醒风水师，告知他“标记”提示标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
-    "otherNightReminder": "唤醒风水师，告知他“标记”提示标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fengshuishi.png",
+    "firstNightReminder": "唤醒风水师，告知他“得知”标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
+    "otherNightReminder": "唤醒风水师，告知他“得知”标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
     "reminders": [
-      "标记"
+      "得知"
     ],
     "name": "风水师",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知一名玩家的角色类型。每个夜晚*，你会从他的顺时针方向得知下一名非旅行者玩家的角色类型。",
     "firstNight": 20,
-    "otherNight": 15
+    "otherNight": 15,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "11_spacebound",
@@ -167,16 +173,21 @@
   },
   {
     "id": "12_spacebound",
-    "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/12_spacebound.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sage.png",
     "otherNightReminder": "如果恶魔杀死了贤者，唤醒贤者并指向两名玩家，其中一名玩家是杀死他的恶魔。",
     "name": "贤者",
     "team": "townsfolk",
     "ability": "如果恶魔杀死了你，在当晚你会被唤醒并得知两名玩家，其中一名是杀死你的那个恶魔。",
-    "otherNight": 14
+    "otherNight": 14,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "这书山卷海中一定隐藏着秘密，我非常确信！这些秘密就隐藏在这一字一句之间等待着我们发掘。小子！再帮我多拿点蜡烛！还有墨水！虽然这些笔记有些晦涩，但有关恶魔的谜语很快就会被揭晓。"
   },
   {
     "id": "15_spacebound",
-    "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/15_spacebound.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
     "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
     "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
     "reminders": [
@@ -186,7 +197,10 @@
     "team": "outsider",
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
     "firstNight": 21,
-    "otherNight": 7
+    "otherNight": 7,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
   },
   {
     "id": "14_spacebound",

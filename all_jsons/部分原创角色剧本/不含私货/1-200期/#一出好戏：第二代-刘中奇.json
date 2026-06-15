@@ -34,8 +34,8 @@
     "firstNight": 5
   },
   {
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你会在当晚获得那个角色的能力，直到下个黄昏。",
-    "image": "https://clocktower-wiki.gstonegames.com/images/4/49/Bianlianshi.png",
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
     "edition": "custom",
     "flavor": "",
     "id": "20454_7444",
@@ -149,8 +149,8 @@
     "firstNight": 43
   },
   {
-    "firstNightReminder": "让村夫指向一名玩家，根据对方的阵营，对他给出拇指向上或向下的手势。",
-    "otherNightReminder": "让村夫指向一名玩家，根据对方的阵营，对他给出拇指向上或向下的手势。",
+    "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+    "otherNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
     "id": "village_idiotbutton",
     "name": "村夫",
     "firstNight": 45,
@@ -164,13 +164,14 @@
     "team": "townsfolk",
     "name_eng": "Village Idiot",
     "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
-    "image": "https://clocktower-wiki.gstonegames.com/images/7/78/Villageidiot.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
     "id": "20236_65",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -204,9 +205,9 @@
   },
   {
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。",
     "id": "20236_76",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -216,26 +217,26 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于处决"
+      "饱餐"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0
   },
   {
-    "ability": "每局游戏限一次，在夜晚时*，你可以选择查看魔典的部分内容。死亡的玩家数量越多，你能看到的内容也就越多，最多能查看魔典的一半。",
+    "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
     "edition": "custom",
     "flavor": "",
     "id": "20454_6848",
-    "firstNightReminder": "",
-    "otherNightReminder": "唤醒方士，如果他点头，让他查看魔典，但只展示部分内容。随后标记他“失去能力”。",
+    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
+    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
     "name": "方士",
     "name_id": "fangshi",
     "otherNight": 69,
     "setup": 0,
     "reminders": [
-      "失去能力"
+      "得知"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -243,7 +244,7 @@
   },
   {
     "ability": "说书人可以打破游戏规则。如果说书人被处决，善良阵营获胜，即使你已死亡。[无邪恶角色在场]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/atheist.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/atheist.png",
     "edition": "custom",
     "flavor": "",
     "id": "atheistbutton",
@@ -277,7 +278,7 @@
   },
   {
     "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/politician.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
     "edition": "custom",
     "flavor": "",
     "id": "20236_130",
@@ -294,9 +295,9 @@
   },
   {
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "id": "20236_8",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -313,9 +314,9 @@
   },
   {
     "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/lunatic.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "吾即是暗夜……没错吧？",
     "id": "lunaticbuttion",
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
@@ -325,15 +326,15 @@
     "setup": 0,
     "reminders": [],
     "remindersGlobal": [
-      "被选择",
-      "是疯子"
+      "是疯子",
+      "被选择"
     ],
     "team": "outsider",
     "firstNight": 7
   },
   {
     "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/puzzlemaster.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
     "edition": "custom",
     "flavor": "",
     "id": "20236_131",
@@ -344,8 +345,8 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "醉酒",
-      "已猜测"
+      "已猜测",
+      "醉酒"
     ],
     "remindersGlobal": [],
     "team": "outsider",

@@ -13,7 +13,7 @@
   },
   {
     "id": "zhongbiaojiang",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/7/74/Clockmaker.png/300px-Clockmaker.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/clockmaker.png",
     "edition": "custom",
     "name": "钟表匠",
     "ability": "在你的首个夜晚，你会得知恶魔与爪牙之间最近的距离。（邻座的玩家距离为1）",
@@ -24,11 +24,13 @@
     "firstNightReminder": "给他展示数字手势来告诉他恶魔与爪牙之间最近的距离。",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "qishif",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/6/6b/Knight.png/300px-Knight.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
     "edition": "custom",
     "name": "骑士",
     "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
@@ -36,14 +38,18 @@
     "sch_team": "镇民",
     "firstNight": 42,
     "otherNight": 0,
-    "firstNightReminder": "唤醒骑士，然后指向标记了“得知”的两名玩家。",
+    "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
     "reminders": [
       "得知"
-    ]
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "diaocha",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/c/cb/Investigator.png/300px-Investigator.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/investigator.png",
     "edition": "custom",
     "name": "调查员",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
@@ -57,11 +63,13 @@
       "爪牙",
       "错误"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "事务官",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/ee/Steward.png/300px-Steward.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/steward.png",
     "edition": "custom",
     "name": "事务官",
     "ability": "在你的首个夜晚，你会得知一名善良玩家。",
@@ -72,11 +80,15 @@
     "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
     "reminders": [
       "得知"
-    ]
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "tuguan",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/55/Librarian.png/300px-Librarian.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
     "edition": "custom",
     "name": "图书管理员",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
@@ -84,13 +96,15 @@
     "sch_team": "镇民",
     "firstNight": 33,
     "otherNight": 0,
-    "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
     "otherNightReminder": "",
     "reminders": [
       "外来者",
       "错误"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "dianxiaoer",
@@ -106,11 +120,15 @@
     "reminders": [
       "熟客",
       "醉酒"
-    ]
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "xiyifu",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/45/Washerwoman.png/300px-Washerwoman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/washerwoman.png",
     "edition": "custom",
     "name": "洗衣妇",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个镇民角色：这两名玩家之一是该角色。",
@@ -121,10 +139,12 @@
     "firstNightReminder": "展示那个镇民角色标记。指向被你标记“镇民”和“错误”的两名玩家。",
     "otherNightReminder": "",
     "reminders": [
-      "镇民",
-      "错误"
+      "错误",
+      "镇民"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "qintianjian",
@@ -140,7 +160,7 @@
   },
   {
     "id": "chushi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/e5/Chef.png/300px-Chef.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chef.png",
     "edition": "custom",
     "name": "厨师",
     "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
@@ -150,18 +170,14 @@
     "otherNight": 0,
     "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
     "otherNightReminder": "",
-    "reminders": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "setup": 0
+    "reminders": [],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。"
   },
   {
     "id": "xiuxingzhe",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/3e/Shugenja.png/300px-Shugenja.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
     "edition": "custom",
     "name": "修行者",
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
@@ -169,14 +185,16 @@
     "sch_team": "村民",
     "firstNight": 42,
     "otherNight": 0,
-    "firstNightReminder": "唤醒修行者，告诉他方向。让修行者重新入睡。",
-    "reminders": [
-      "邻近"
-    ]
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
+    "reminders": [],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
     "id": "nainai",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/6/66/Grandmother.png/300px-Grandmother.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
     "edition": "custom",
     "name": "祖母",
     "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
@@ -190,7 +208,9 @@
       "孙子",
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "yingyangshi",
@@ -206,7 +226,7 @@
   },
   {
     "id": "guizu",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/59/Noble.png/300px-Noble.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
     "edition": "custom",
     "name": "贵族",
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
@@ -217,11 +237,15 @@
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "reminders": [
       "被得知"
-    ]
+    ],
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "wushenlunzhe",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/d/d7/Atheist.png/300px-Atheist.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/atheist.png",
     "edition": "custom",
     "name": "无神论者",
     "ability": "说书人可以打破游戏规则。如果说书人被处决，善良阵营获胜，即使你已死亡。[无邪恶角色在场]",
@@ -229,11 +253,16 @@
     "sch_team": "镇民",
     "firstNight": 0,
     "otherNight": 0,
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "moke",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/0/02/Recluse.png/300px-Recluse.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
     "edition": "custom",
     "name": "陌客",
     "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
@@ -244,11 +273,13 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
     "id": "nichen",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_6302887694761_9ba8a0f3.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
     "edition": "custom",
     "name": "逆臣",
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
@@ -260,11 +291,14 @@
     "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
     "reminders": [
       "不共戴天"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
   },
   {
     "id": "jiugui",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/14/Drunk.png/300px-Drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
     "name": "酒鬼",
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
@@ -278,11 +312,12 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "daigua",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/f/f6/Klutz.png/300px-Klutz.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
     "edition": "custom",
     "name": "呆瓜",
     "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
@@ -293,11 +328,13 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zhengke",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/91/Politician.png/300px-Politician.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
     "edition": "custom",
     "name": "政客",
     "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
@@ -308,7 +345,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "tixianmuou",

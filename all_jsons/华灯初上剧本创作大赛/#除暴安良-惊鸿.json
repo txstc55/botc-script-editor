@@ -13,7 +13,7 @@
   },
   {
     "id": "shangjinlieren",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/ee/Bountyhunter.png/300px-Bountyhunter.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bounty_hunter.png",
     "edition": "custom",
     "name": "赏金猎人",
     "ability": "在你的首个夜晚，你会得知一名邪恶玩家。每当你得知的玩家死亡，你会在当晚得知另一名邪恶玩家。[会有一名镇民转变为邪恶阵营]",
@@ -24,14 +24,15 @@
     "firstNightReminder": "指向一名邪恶玩家。随后唤醒那名因赏金猎人而转变为邪恶的镇民，并告知他变成了邪恶阵营。",
     "otherNightReminder": "如果赏金猎人知晓的邪恶玩家死亡，指向另一名邪恶玩家。",
     "reminders": [
-      "邪恶",
-      "被得知"
+      "得知"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "huahua",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/5b/Flowergirl.png/300px-Flowergirl.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "edition": "custom",
     "name": "卖花女孩",
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
@@ -42,14 +43,16 @@
     "firstNightReminder": "",
     "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "xiaojingling",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/2/22/Pixie.png/300px-Pixie.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
     "edition": "custom",
     "name": "小精灵",
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
@@ -63,14 +66,16 @@
       "疯狂",
       "获得能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "zaoyaozhe",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/a/a4/Gossip.png/300px-Gossip.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
     "edition": "custom",
     "name": "造谣者",
-    "ability": "每个白天，你可以公开发表一个声明。在当晚，如果该声明是正确的，会有一名玩家死亡。",
+    "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
@@ -80,11 +85,13 @@
     "reminders": [
       "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
     "id": "shuishou",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/c/ce/Sailor.png/300px-Sailor.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
     "edition": "custom",
     "name": "水手",
     "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
@@ -97,11 +104,13 @@
     "reminders": [
       "醉酒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！"
   },
   {
     "id": "shengnv",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/43/Virgin.png/300px-Virgin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/virgin.png",
     "edition": "custom",
     "name": "贞洁者",
     "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。",
@@ -114,7 +123,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "langzhong",
@@ -131,7 +142,7 @@
   },
   {
     "id": "gongchengshi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/d/d8/Engineer.png/300px-Engineer.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/engineer.png",
     "edition": "custom",
     "name": "工程师",
     "ability": "每局游戏限一次，在夜晚时，你可以选择让恶魔变成你选择的恶魔角色，或让所有爪牙变成你选择的爪牙角色。",
@@ -143,11 +154,14 @@
     "otherNightReminder": "工程师选择不使用能力，或在剧本列表中选择恶魔或爪牙角色。如果他选择爪牙角色，则需要选择对应数量的爪牙。然后将这些玩家依次唤醒，并告知他们变成了什么角色。",
     "reminders": [
       "失去能力"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "chuanjiaoshi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/44/Preacher.png/300px-Preacher.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
     "edition": "custom",
     "name": "传教士",
     "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
@@ -158,15 +172,18 @@
     "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
     "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
     "reminders": [
-      "布道"
-    ]
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "富有和健康总比贫穷和疾病要好。"
   },
   {
     "id": "shichen",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/d/d9/Courtier.png/300px-Courtier.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
     "edition": "custom",
     "name": "侍臣",
-    "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，一个该角色从当晚开始醉酒三天三夜。",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 19,
@@ -174,12 +191,14 @@
     "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
     "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
     "reminders": [
+      "失去能力",
       "醉酒1",
       "醉酒2",
-      "醉酒3",
-      "失去能力"
+      "醉酒3"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。"
   },
   {
     "id": "jinyiwei",
@@ -194,11 +213,15 @@
     "otherNightReminder": "移除上个夜晚放置的“保护”标记。唤醒锦衣卫，让其选择一名玩家。在该玩家角色标记旁放置“保护”提示标记。",
     "reminders": [
       "保护"
-    ]
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "yingsu",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/42/Poppygrower.png/300px-Poppygrower.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
     "edition": "custom",
     "name": "罂粟种植者",
     "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
@@ -209,13 +232,15 @@
     "firstNightReminder": "不要让恶魔和爪牙相认。",
     "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
     "reminders": [
-      "邪恶角色互认"
+      "唤醒邪恶"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "fengzi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/89/Lunatic.png/300px-Lunatic.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "edition": "custom",
     "name": "疯子",
     "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
@@ -225,19 +250,17 @@
     "otherNight": 21,
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
-    "reminders": [
-      "被选择1",
-      "被选择2",
-      "被选择3"
-    ],
+    "reminders": [],
     "remindersGlobal": [
-      "是疯子"
+      "是疯子",
+      "被选择"
     ],
-    "setup": 1
+    "setup": 0,
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "shaxinga",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/b/b9/Shaxing.png/180px-Shaxing.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shaxing.png",
     "edition": "custom",
     "name": "煞星",
     "ability": "如果你死亡，当晚与你邻近的存活玩家之一可能会死亡。",
@@ -245,14 +268,18 @@
     "sch_team": "外来者",
     "firstNight": 0,
     "otherNight": 39,
-    "otherNightReminder": "如果煞星死亡，将与其邻近的存活善良玩家之一标记为死亡。",
+    "otherNightReminder": "如果煞星死亡，决定是否让一名与他邻近的存活玩家死亡。",
     "reminders": [
       "死亡"
-    ]
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "moxiang",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/c/ce/Golem.png/300px-Golem.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/golem.png",
     "edition": "custom",
     "name": "魔像",
     "ability": "每局游戏你只能发起提名一次。当你发起提名时，如果被你提名的玩家不是恶魔，他死亡。",
@@ -265,24 +292,28 @@
     "reminders": [
       "无法提名"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "wenyi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/2/2d/Plaguedoctor.png/300px-Plaguedoctor.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
     "edition": "custom",
     "name": "瘟疫医生",
-    "ability": "当你死亡时，说书人会获得一个不在场爪牙的能力。",
+    "ability": "当你死亡时，说书人会获得一个爪牙能力。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 0,
     "otherNight": 0,
-    "firstNightReminder": "0",
-    "otherNightReminder": "0",
+    "firstNightReminder": "",
+    "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
     "reminders": [
-      "能力影响"
+      "说书人能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。"
   },
   {
     "id": "zhadanren",

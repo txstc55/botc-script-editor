@@ -17,7 +17,16 @@ TEAM_ALIASES = {
   "demons": "demon",
   "minion": "minion",
   "minions": "minion",
+  "outsider": "outsider",
+  "outsiders": "outsider",
+  "townfolk": "townsfolk",
+  "townsfolk": "townsfolk",
+  "townsfolks": "townsfolk",
   "恶魔": "demon",
+  "外来者": "outsider",
+  "外来角色": "outsider",
+  "镇民": "townsfolk",
+  "镇民角色": "townsfolk",
   "爪牙": "minion",
 }
 NIGHT_ORDER_KEYS = ("firstNight", "otherNight")
@@ -116,6 +125,14 @@ def demon_fix(name: str, updates: dict[str, Any]) -> CharacterFix:
 
 def minion_fix(name: str, updates: dict[str, Any]) -> CharacterFix:
   return CharacterFix(name=name, teams={"minion"}, updates=updates)
+
+
+def outsider_fix(name: str, updates: dict[str, Any]) -> CharacterFix:
+  return CharacterFix(name=name, teams={"outsider"}, updates=updates)
+
+
+def townsfolk_fix(name: str, updates: dict[str, Any]) -> CharacterFix:
+  return CharacterFix(name=name, teams={"townsfolk"}, updates=updates)
 
 
 CHARACTER_FIXES = [
@@ -509,7 +526,7 @@ CHARACTER_FIXES = [
 ]
 
 
-# Pending minion fixes from 投毒者 through 维齐尔. These are not applied until this script is run again.
+# Minion fixes from 投毒者 through 维齐尔.
 # Skipped for now due material ability splits: 炸弹人, 街头风琴手, 酿酒师.
 CHARACTER_FIXES.extend([
   minion_fix(
@@ -930,6 +947,1648 @@ CHARACTER_FIXES.extend([
       "firstNightReminder": "如果维齐尔在场，告知所有人谁是维齐尔。",
       "otherNightReminder": "",
       "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+])
+
+
+# Outsider fixes from 酒鬼 through 使节.
+# Skipped for now due material ability splits: 书生, 使节.
+CHARACTER_FIXES.extend([
+  outsider_fix(
+    name="酒鬼",
+    updates={
+      "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [
+        "是酒鬼",
+      ],
+      "setup": 1,
+      "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
+    },
+  ),
+  outsider_fix(
+    name="陌客",
+    updates={
+      "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！",
+    },
+  ),
+  outsider_fix(
+    name="畸形秀演员",
+    updates={
+      "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我不是怪物！我是人！求你了！",
+    },
+  ),
+  outsider_fix(
+    name="理发师",
+    updates={
+      "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
+      "reminders": [
+        "今晚理发",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。",
+    },
+  ),
+  outsider_fix(
+    name="疯子",
+    updates={
+      "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
+      "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
+      "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
+      "reminders": [],
+      "remindersGlobal": [
+        "是疯子",
+        "被选择",
+      ],
+      "setup": 0,
+      "flavor": "吾即是暗夜……没错吧？",
+    },
+  ),
+  outsider_fix(
+    name="落难少女",
+    updates={
+      "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
+      "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
+      "otherNightReminder": "0",
+      "reminders": [
+        "已被猜测",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="月之子",
+    updates={
+      "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。如果他是善良的，在当晚他会死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/moonchild.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果月之子在白天触发了死亡能力并选择了一名善良玩家，该玩家死亡。标记那名玩家死亡。",
+      "reminders": [
+        "死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。",
+    },
+  ),
+  outsider_fix(
+    name="呆瓜",
+    updates={
+      "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="解谜大师",
+    updates={
+      "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "已猜测",
+        "醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="魔像",
+    updates={
+      "ability": "每局游戏你只能发起提名一次。当你发起提名时，如果被你提名的玩家不是恶魔，他死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/golem.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "无法提名",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="心上人",
+    updates={
+      "ability": "当你死亡时，会有一名玩家开始醉酒。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
+      "reminders": [
+        "醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我永远也忘不掉她……永远……",
+    },
+  ),
+  outsider_fix(
+    name="修补匠",
+    updates={
+      "ability": "你随时可能死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
+      "reminders": [
+        "死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="莽夫",
+    updates={
+      "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goon.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。",
+    },
+  ),
+  outsider_fix(
+    name="政客",
+    updates={
+      "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="瘟疫医生",
+    updates={
+      "ability": "当你死亡时，说书人会获得一个爪牙能力。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
+      "reminders": [
+        "说书人能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。",
+    },
+  ),
+  outsider_fix(
+    name="帽匠",
+    updates={
+      "ability": "如果你死亡，当晚爪牙和恶魔玩家可以选择变成新的爪牙和恶魔角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/hatter.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果帽匠死于白天，（建议分别）唤醒恶魔和爪牙并让他们选择是否改变角色。如果帽匠死于夜晚，则在当前玩家行动结束后立即开始茶会。",
+      "reminders": [
+        "今晚茶会",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="圣徒",
+    updates={
+      "ability": "如果你死于处决，你的阵营落败。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/saint.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="逆臣",
+    updates={
+      "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
+      "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
+      "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
+      "reminders": [
+        "不共戴天",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。",
+    },
+  ),
+  outsider_fix(
+    name="告密者",
+    updates={
+      "ability": "爪牙会在其首个夜晚得知三个伪装。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
+      "firstNightReminder": "如果告密者在场，对爪牙展示三个不在场的善良角色标记。",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="狂热者",
+    updates={
+      "ability": "如果有大于等于五名玩家存活，你必须在所有提名中投票。",
+      "image": "https://clocktower-wiki.gstonegames.com/images/1/1a/Zealot.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="食人魔",
+    updates={
+      "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
+      "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
+      "otherNightReminder": "",
+      "reminders": [
+        "挚友",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "<咽口水><咧嘴笑><咽口水>",
+    },
+  ),
+  outsider_fix(
+    name="入殓师",
+    updates={
+      "ability": "如果你提名并处决了恶魔，你会变成邪恶的恶魔。当剩余存活玩家小于等于四人时（旅行者除外），你失去能力。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5757097694761_2de60c7b.jpg",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果白天入殓师提名了恶魔且恶魔被处决，唤醒他，并对他展示“你是”提示标记和恶魔角色标记。",
+      "reminders": [
+        "是恶魔",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="异端分子",
+    updates={
+      "ability": "对调胜负结果，即使你已死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/heretic.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="杂技演员",
+    updates={
+      "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果杂技演员左右两侧最近的存活善良玩家之一中毒或醉酒，杂技演员死亡。",
+      "reminders": [
+        "死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="煞星",
+    updates={
+      "ability": "如果你死亡，当晚与你邻近的存活玩家之一可能会死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shaxing.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果煞星死亡，决定是否让一名与他邻近的存活玩家死亡。",
+      "reminders": [
+        "死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="管家",
+    updates={
+      "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/butler.png",
+      "firstNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+      "otherNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+      "reminders": [
+        "主人",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="酒保",
+    updates={
+      "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/jiubao.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  outsider_fix(
+    name="隐士",
+    updates={
+      "ability": "你拥有所有外来者能力。[-0~1外来者]",
+      "image": "https://clocktower-wiki.gstonegames.com/images/1/1e/Hermit.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [
+        "是隐士",
+      ],
+      "setup": 1,
+      "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。",
+    },
+  ),
+  outsider_fix(
+    name="书童",
+    updates={
+      "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：除首个夜晚以外，当他被邪恶玩家的能力选择或影响时，你会在当晚死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_2027903943171_36d374a5.jpg",
+      "firstNightReminder": "唤醒书童，让其选择一名玩家，在其选择的玩家标记旁放置“选择”。",
+      "otherNightReminder": "如果标记有“选择”的玩家被邪恶玩家的能力选择或影响时，在书童旁放置“死亡”标记。",
+      "reminders": [
+        "死亡",
+        "选择",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+])
+
+# Townsfolk fixes from 博学者 through 戏子.
+# Skipped for now due material ability splits: 气球驾驶员, 炼金术士, 阴阳师, 钦天监, 半兽人, 郎中, 提刑官, 鸩, 国王, 道士, 巡察, 知府, 打更人, 熊孩子, 狸猫, 俑匠, 戏子.
+CHARACTER_FIXES.extend([
+  townsfolk_fix(
+    name="博学者",
+    updates={
+      "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
+    },
+  ),
+  townsfolk_fix(
+    name="占卜师",
+    updates={
+      "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
+      "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+      "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+      "reminders": [
+        "干扰项",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。",
+    },
+  ),
+  townsfolk_fix(
+    name="食人族",
+    updates={
+      "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "中毒",
+        "饱餐",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我讨厌小丑的味道。吃起来会让我想笑。",
+    },
+  ),
+  townsfolk_fix(
+    name="女裁缝",
+    updates={
+      "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
+      "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+      "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。",
+    },
+  ),
+  townsfolk_fix(
+    name="共情者",
+    updates={
+      "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
+      "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+      "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。",
+    },
+  ),
+  townsfolk_fix(
+    name="贵族",
+    updates={
+      "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
+      "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
+      "otherNightReminder": "",
+      "reminders": [
+        "被得知",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。",
+    },
+  ),
+  townsfolk_fix(
+    name="赌徒",
+    updates={
+      "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
+      "reminders": [
+        "死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "正面，我赢。 反面，你输。",
+    },
+  ),
+  townsfolk_fix(
+    name="哲学家",
+    updates={
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个善良角色：你获得该角色的能力。如果这个角色在场，他醉酒。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/philosopher.png",
+      "firstNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
+      "otherNightReminder": "哲学家可以选择一个角色。如果选择的角色不在场，将哲学家的角色标题替换成对应角色，并标记“是哲学家”，否则标记该角色对应的玩家醉酒。从现在开始，你需要以哲学家获得能力的那种角色的行动方式来唤醒哲学家。",
+      "reminders": [
+        "醉酒",
+      ],
+      "remindersGlobal": [
+        "是哲学家",
+      ],
+      "setup": 0,
+      "flavor": "如果你要说什么事情是最真实的？我想是啤酒。痛快喝吧，说不定我们明天就要死了。",
+    },
+  ),
+  townsfolk_fix(
+    name="造谣者",
+    updates={
+      "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
+      "reminders": [
+        "死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。",
+    },
+  ),
+  townsfolk_fix(
+    name="侍女",
+    updates={
+      "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+      "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+      "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。",
+    },
+  ),
+  townsfolk_fix(
+    name="城镇公告员",
+    updates={
+      "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
+      "reminders": [
+        "爪牙已提名",
+        "爪牙未提名",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="僧侣",
+    updates={
+      "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
+      "reminders": [
+        "保护",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="神谕者",
+    updates={
+      "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。",
+    },
+  ),
+  townsfolk_fix(
+    name="小精灵",
+    updates={
+      "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+      "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
+      "otherNightReminder": "",
+      "reminders": [
+        "疯狂",
+        "获得能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。",
+    },
+  ),
+  townsfolk_fix(
+    name="筑梦师",
+    updates={
+      "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
+      "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+      "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……",
+    },
+  ),
+  townsfolk_fix(
+    name="渔夫",
+    updates={
+      "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="舞蛇人",
+    updates={
+      "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
+      "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+      "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+      "reminders": [
+        "中毒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。",
+    },
+  ),
+  townsfolk_fix(
+    name="祖母",
+    updates={
+      "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
+      "firstNightReminder": "指向她的孙子玩家，并展示该玩家的角色标记。",
+      "otherNightReminder": "如果孙子被恶魔杀死，祖母也会一同死亡。标记祖母死亡。",
+      "reminders": [
+        "孙子",
+        "死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="厨师",
+    updates={
+      "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chef.png",
+      "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。",
+    },
+  ),
+  townsfolk_fix(
+    name="守鸦人",
+    updates={
+      "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！",
+    },
+  ),
+  townsfolk_fix(
+    name="旅店老板",
+    updates={
+      "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
+      "reminders": [
+        "不会死亡",
+        "醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="艺术家",
+    updates={
+      "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！",
+    },
+  ),
+  townsfolk_fix(
+    name="图书管理员",
+    updates={
+      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
+      "otherNightReminder": "",
+      "reminders": [
+        "外来者",
+        "错误",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="卖花女孩",
+    updates={
+      "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
+      "reminders": [
+        "恶魔已投票",
+        "恶魔未投票",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="失忆者",
+    updates={
+      "ability": "你不知道你的能力是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/amnesiac.png",
+      "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
+      "otherNightReminder": "如果失忆者的能力会让他在今晚醒来：唤醒他并执行其能力。",
+      "reminders": [
+        "？",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="修行者",
+    updates={
+      "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
+      "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。",
+    },
+  ),
+  townsfolk_fix(
+    name="村夫",
+    updates={
+      "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
+      "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+      "otherNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+      "reminders": [
+        "醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 1,
+      "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！",
+    },
+  ),
+  townsfolk_fix(
+    name="数学家",
+    updates={
+      "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+      "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+      "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
+      "reminders": [
+        "未正常生效",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。",
+    },
+  ),
+  townsfolk_fix(
+    name="送葬者",
+    updates={
+      "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
+      "reminders": [
+        "死于今日",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
+    },
+  ),
+  townsfolk_fix(
+    name="调查员",
+    updates={
+      "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/investigator.png",
+      "firstNightReminder": "展示那个爪牙角色标记。指向被你标记“爪牙”和“错误”的两名玩家。",
+      "otherNightReminder": "",
+      "reminders": [
+        "爪牙",
+        "错误",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="守夜人",
+    updates={
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
+    },
+  ),
+  townsfolk_fix(
+    name="农夫",
+    updates={
+      "ability": "如果你在夜晚死亡，一名存活的善良玩家会变成农夫。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/farmer.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果农夫死于夜晚，唤醒一名存活的善良玩家告知他角色变化。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="猎手",
+    updates={
+      "ability": "每局游戏限一次，你可以在白天时公开选择一名玩家：如果他是恶魔，他死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/slayer.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="驱魔人",
+    updates={
+      "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你的角色，但他当晚不会因其自身能力而被唤醒。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/exorcist.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "让驱魔人选择一名玩家，不能是上一夜他选择过的玩家。让驱魔人重新入睡。如果驱魔人选中了恶魔：唤醒恶魔。展示“该角色的能力对你生效”信息标记和驱魔人角色标记。指向驱魔人玩家。",
+      "reminders": [
+        "被选择",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "每一个不洁之灵，每一份撒旦之力，每一次炼狱敌人的猛袭，每一个军团，每一个崇拜恶魔的组织和教派，以我主耶稣基督的名义和力量，将你们驱逐。我命令你们，远离上帝的教堂，远离上帝按祂的形貌所创造并受神圣羔羊的宝血所救赎的灵魂。",
+    },
+  ),
+  townsfolk_fix(
+    name="茶艺师",
+    updates={
+      "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tea_lady.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "不会死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。",
+    },
+  ),
+  townsfolk_fix(
+    name="女祭司",
+    updates={
+      "ability": "每个夜晚，你会得知一名说书人认为你最应该与其交流的玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/high_priestess.png",
+      "firstNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
+      "otherNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="镇长",
+    updates={
+      "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mayor.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="将军",
+    updates={
+      "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png",
+      "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+      "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="贞洁者",
+    updates={
+      "ability": "当你首次被提名时，如果提名你的玩家是镇民，他立刻被处决。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/virgin.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="水手",
+    updates={
+      "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
+      "firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
+      "otherNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
+      "reminders": [
+        "醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！",
+    },
+  ),
+  townsfolk_fix(
+    name="杂耍艺人",
+    updates={
+      "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
+      "reminders": [
+        "猜测正确",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。",
+    },
+  ),
+  townsfolk_fix(
+    name="罂粟种植者",
+    updates={
+      "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
+      "reminders": [
+        "唤醒邪恶",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="钟表匠",
+    updates={
+      "ability": "在你的首个夜晚，你会得知恶魔与爪牙之间最近的距离。（邻座的玩家距离为1）",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/clockmaker.png",
+      "firstNightReminder": "给他展示数字手势来告诉他恶魔与爪牙之间最近的距离。",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="秉笔",
+    updates={
+      "ability": "如果你在白天死亡，当晚你会得知一名善良玩家。如果你在夜晚死亡，当晚你会得知一名邪恶玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bingbi.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "在夜晚时，如果秉笔旁放置了“死于今日”提示标记，唤醒秉笔。对他指向一名善良玩家。让秉笔重新入睡。移除“死于今日”提示标记。如果秉笔在夜晚死亡，唤醒秉笔。对他指向一名邪恶玩家。让秉笔重新入睡。",
+      "reminders": [
+        "死于今日",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "是非曲直，自在人心。",
+    },
+  ),
+  townsfolk_fix(
+    name="报丧女妖",
+    updates={
+      "ability": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/banshee.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
+      "reminders": [
+        "具有能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="巡山人",
+    updates={
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/huntsman.png",
+      "firstNightReminder": "唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+      "otherNightReminder": "如果巡山人未曾使用能力，唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 1,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="变脸师",
+    updates={
+      "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "疯狂",
+      ],
+      "remindersGlobal": [
+        "是变脸师",
+      ],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="赏金猎人",
+    updates={
+      "ability": "在你的首个夜晚，你会得知一名邪恶玩家。每当你得知的玩家死亡，你会在当晚得知另一名邪恶玩家。[会有一名镇民转变为邪恶阵营]",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bounty_hunter.png",
+      "firstNightReminder": "指向一名邪恶玩家。随后唤醒那名因赏金猎人而转变为邪恶的镇民，并告知他变成了邪恶阵营。",
+      "otherNightReminder": "如果赏金猎人知晓的邪恶玩家死亡，指向另一名邪恶玩家。",
+      "reminders": [
+        "得知",
+      ],
+      "remindersGlobal": [],
+      "setup": 1,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="戏法师",
+    updates={
+      "ability": "每个白天限一次，你可以公开猜测谁是爪牙，谁是恶魔。如果你猜对，善良阵营获胜。",
+      "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。",
+    },
+  ),
+  townsfolk_fix(
+    name="传教士",
+    updates={
+      "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
+      "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+      "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "富有和健康总比贫穷和疾病要好。",
+    },
+  ),
+  townsfolk_fix(
+    name="刀客",
+    updates={
+      "ability": "在你的首个夜晚，你会得知一个在场的爪牙角色。每局游戏限一次，你可以在白天公开选择一名玩家：如果他是你得知的角色，他死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/daoke.png",
+      "firstNightReminder": "在首个夜晚，唤醒刀客，对他展示标记了“得知”的爪牙角色标记。",
+      "otherNightReminder": "",
+      "reminders": [
+        "失去能力",
+        "得知",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="骑士",
+    updates={
+      "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
+      "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
+      "otherNightReminder": "",
+      "reminders": [
+        "得知",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。",
+    },
+  ),
+  townsfolk_fix(
+    name="教授",
+    updates={
+      "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
+      "reminders": [
+        "复活",
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
+    },
+  ),
+  townsfolk_fix(
+    name="魔术师",
+    updates={
+      "ability": "恶魔会以为你是爪牙。爪牙会以为你是恶魔。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/magician.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "1…2…唵嘛呢…3…4…叭咪吽…（嗖！）是的，正如你们所见，女士们先生们，梵斯沃船长的那袋金子不见了！没了！无迹可循！感谢诸位，晚安啦！",
+    },
+  ),
+  townsfolk_fix(
+    name="洗衣妇",
+    updates={
+      "ability": "在你的首个夜晚，你会得知两名玩家和一个镇民角色：这两名玩家之一是该角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/washerwoman.png",
+      "firstNightReminder": "展示那个镇民角色标记。指向被你标记“镇民”和“错误”的两名玩家。",
+      "otherNightReminder": "",
+      "reminders": [
+        "错误",
+        "镇民",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="士兵",
+    updates={
+      "ability": "恶魔的负面能力对你无效。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/soldier.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="弄臣",
+    updates={
+      "ability": "当你首次将要死亡时，你不会死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fool.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "……然后国王说道：‘什么？！我甚至从未有过一条橡胶马裤，更别提一门奶油大炮了！’嗬嗬！欢乐一日！",
+    },
+  ),
+  townsfolk_fix(
+    name="悟道者",
+    updates={
+      "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，在该效果生效前你会变成一个不在场的镇民角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [
+        "是悟道者",
+      ],
+      "setup": 1,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="事务官",
+    updates={
+      "ability": "在你的首个夜晚，你会得知一名善良玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/steward.png",
+      "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
+      "otherNightReminder": "",
+      "reminders": [
+        "得知",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="店小二",
+    updates={
+      "ability": "在你的首个夜晚，你会得知两名善良玩家。他们之中会有一人醉酒，即使你已死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_8586487694761_0ecde168.jpg",
+      "firstNightReminder": "唤醒店小二，对他指向标记有店小二的“熟客”和“醉酒”提示标记的这两名玩家。",
+      "otherNightReminder": "",
+      "reminders": [
+        "熟客",
+        "醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="引路人",
+    updates={
+      "ability": "每个夜晚，你要选择至多三名玩家：你会得知今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_2147287694761_01761fcb.jpg",
+      "firstNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
+      "otherNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。",
+    },
+  ),
+  townsfolk_fix(
+    name="无神论者",
+    updates={
+      "ability": "说书人可以打破游戏规则。如果说书人被处决，善良阵营获胜，即使你已死亡。[无邪恶角色在场]",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/atheist.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 1,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="侍臣",
+    updates={
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+      "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+      "reminders": [
+        "失去能力",
+        "醉酒1",
+        "醉酒2",
+        "醉酒3",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
+    },
+  ),
+  townsfolk_fix(
+    name="史官",
+    updates={
+      "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
+      "reminders": [
+        "死于今日",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="和平主义者",
+    updates={
+      "ability": "被处决的善良玩家可能不会死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pacifist.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="贤者",
+    updates={
+      "ability": "如果恶魔杀死了你，在当晚你会被唤醒并得知两名玩家，其中一名是杀死你的那个恶魔。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sage.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果恶魔杀死了贤者，唤醒贤者并指向两名玩家，其中一名玩家是杀死他的恶魔。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "这书山卷海中一定隐藏着秘密，我非常确信！这些秘密就隐藏在这一字一句之间等待着我们发掘。小子！再帮我多拿点蜡烛！还有墨水！虽然这些笔记有些晦涩，但有关恶魔的谜语很快就会被揭晓。",
+    },
+  ),
+  townsfolk_fix(
+    name="和尚",
+    updates={
+      "ability": "每个夜晚，当有邪恶玩家的能力首次选择或影响与你邻近的存活玩家时，改为此次能力不生效并持续至下个黎明，且你会得知你的能力被触发。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/heshang.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "已生效",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="吟游诗人",
+    updates={
+      "ability": "当一名爪牙死于处决时，除了你和旅行者以外的所有其他玩家醉酒直到明天黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/minstrel.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "全员醉酒",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="歌伶",
+    updates={
+      "ability": "每局游戏限一次，在白天时，你可以提议所有玩家观看你的演出，并从同意参加的玩家中选择你的观众。如果恶魔成为了观众，你会在当晚死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/geling.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果歌伶在白天使用了能力，且恶魔成为了观众，标记歌伶死亡。",
+      "reminders": [
+        "失去能力",
+        "死亡",
+        "观众",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="异教领袖",
+    updates={
+      "ability": "每个夜晚，你会转变为与你邻近的一名存活的玩家的阵营。每个白天，你可以提议所有玩家加入你的教派，如果所有善良玩家同意加入，你的阵营获胜。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cult_leader.png",
+      "firstNightReminder": "如果异教领袖改变了阵营，告诉他。",
+      "otherNightReminder": "如果异教领袖改变了阵营，告诉他。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="杂技演员",
+    updates={
+      "ability": "每个夜晚*，你要选择一名玩家：如果当晚他醉酒或中毒，你死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "：唤醒杂技演员，让他选择一名玩家。如果当晚这名玩家醉酒或中毒，杂技演员死亡。",
+      "reminders": [
+        "死亡",
+        "被选择",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "列位看官，请扶好帽盔，我将逆天而行，踏空起舞！身如飞燕，胆若雷霆，只为博君一笑一惊！",
+    },
+  ),
+  townsfolk_fix(
+    name="唱诗男孩",
+    updates={
+      "ability": "如果恶魔杀死了国王，你会得知哪名玩家是恶魔。[+国王]",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/choirboy.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果国王被恶魔杀死，将唱诗男孩唤醒并告诉他谁是那个杀死国王的恶魔。",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 1,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="方士",
+    updates={
+      "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
+      "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
+      "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
+      "reminders": [
+        "得知",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="风水师",
+    updates={
+      "ability": "在你的首个夜晚，你会得知一名玩家的角色类型。每个夜晚*，你会从他的顺时针方向得知下一名非旅行者玩家的角色类型。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fengshuishi.png",
+      "firstNightReminder": "唤醒风水师，告知他“得知”标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
+      "otherNightReminder": "唤醒风水师，告知他“得知”标记旁的玩家角色类型，并将标记顺时针移动一名玩家。",
+      "reminders": [
+        "得知",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="驿使",
+    updates={
+      "ability": "每个白天，你可以公开声明一个角色。在当晚，你会得知该角色是否在场。如果你因此得知了否，你失去此能力。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yishi.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "如果驿使白天公开声明了一个角色，唤醒驿使：1.如果该角色在场，得知是；2.如果该角色不在场，得知否，并且驿使失去能力。",
+      "reminders": [
+        "在场",
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="锦衣卫",
+    updates={
+      "ability": "每个夜晚*，你要选择一名玩家：如果他在下个黄昏前死亡，你代替他死亡。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5878087694761_691045fa.jpg",
+      "firstNightReminder": "",
+      "otherNightReminder": "移除上个夜晚放置的“保护”标记。唤醒锦衣卫，让其选择一名玩家。在该玩家角色标记旁放置“保护”提示标记。",
+      "reminders": [
+        "保护",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="工程师",
+    updates={
+      "ability": "每局游戏限一次，在夜晚时，你可以选择让恶魔变成你选择的恶魔角色，或让所有爪牙变成你选择的爪牙角色。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/engineer.png",
+      "firstNightReminder": "工程师选择不使用能力，或在剧本列表中选择恶魔或爪牙角色。如果他选择爪牙角色，则需要选择对应数量的爪牙。然后将这些玩家依次唤醒，并告知他们变成了什么角色。",
+      "otherNightReminder": "工程师选择不使用能力，或在剧本列表中选择恶魔或爪牙角色。如果他选择爪牙角色，则需要选择对应数量的爪牙。然后将这些玩家依次唤醒，并告知他们变成了什么角色。",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="半仙",
+    updates={
+      "ability": "任何在夜晚使用自身能力选择你的其他玩家，会改为选中另一名邪恶玩家作为替代。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/banxian.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="公主",
+    updates={
+      "ability": "在你的首个白天，如果你提名并处决了一名玩家，当晚恶魔不会造成死亡。",
+      "image": "https://clocktower-wiki.gstonegames.com/images/f/f2/Princess.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "不会死亡",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="宠妃",
+    updates={
+      "ability": "每局游戏限一次，说书人会在关于你的事情上打破规则。随后，你会秘密得知说书人为此做了什么。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chongfei.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [
+        "失去能力",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+    },
+  ),
+  townsfolk_fix(
+    name="掮客",
+    updates={
+      "ability": "每个夜晚，你要选择两名存活玩家：如果他们阵营相同，今晚任何玩家使用自身能力选择他们之一作为目标时，改为选中另一名玩家。",
+      "image": "https://clocktower-wiki.gstonegames.com/images/5/5b/Qianke.png",
+      "firstNightReminder": "唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
+      "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒车夫，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
+      "reminders": [
+        "熟客",
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "三教九流皆相识，稀有货、密讯、人脉不缺，报需求，价妥就成交。",
+    },
+  ),
+
+  townsfolk_fix(
+    name="半兽人",
+    updates={
+      "ability": "每个夜晚*，你要选择一名存活玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。会有一名善良玩家始终被当作邪恶阵营。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lycanthrope.png",
+      "firstNightReminder": "",
+      "otherNightReminder": "唤醒半兽人，让他选择一名玩家。如果该玩家是善良玩家，该玩家死亡，且当晚恶魔不会造成死亡。",
+      "reminders": [
+        "失足",
+        "死亡"
+      ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",

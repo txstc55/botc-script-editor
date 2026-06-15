@@ -20,14 +20,18 @@
   },
   {
     "id": "1_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/1_baobao.png",
-    "firstNightReminder": "在首个夜晚，唤醒修行者。用手指水平指向修行者的某一侧，告诉他与他距离最近的邪恶玩家位于这一侧。如果修行者两侧最近的邪恶玩家与他的距离相等，由你来决定告诉他什么样的信息，并用手指指向对应的一侧。让修行者重新入睡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "name": "修行者",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
     "attribution": "官方角色",
     "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。",
-    "firstNight": 13
+    "firstNight": 13,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "23_baobao",
@@ -57,7 +61,7 @@
   },
   {
     "id": "8_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/8_baobao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "reminders": [
@@ -69,11 +73,13 @@
     "attribution": "官方角色",
     "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。",
     "firstNight": 14,
-    "otherNight": 6
+    "otherNight": 6,
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "30_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/30_baobao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "name": "共情者",
@@ -82,31 +88,43 @@
     "attribution": "官方角色",
     "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。",
     "firstNight": 15,
-    "otherNight": 8
+    "otherNight": 8,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "40_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/40_baobao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
     "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
     "name": "神谕者",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
     "attribution": "官方角色",
     "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。",
-    "otherNight": 9
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "17_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/17_baobao.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
     "name": "戏法师",
     "team": "townsfolk",
     "ability": "每个白天限一次，你可以公开猜测谁是爪牙，谁是恶魔。如果你猜对，善良阵营获胜。",
     "attribution": "官方角色",
-    "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。"
+    "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "38_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/38_baobao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
     "reminders": [
       "失去能力"
     ],
@@ -114,7 +132,11 @@
     "team": "townsfolk",
     "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
     "attribution": "官方角色",
-    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "10_baobao",
@@ -150,14 +172,18 @@
   },
   {
     "id": "39_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/39_baobao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sage.png",
     "otherNightReminder": "如果恶魔杀死了贤者，唤醒贤者并指向两名玩家，其中一名玩家是杀死他的恶魔。",
     "name": "贤者",
     "team": "townsfolk",
     "ability": "如果恶魔杀死了你，在当晚你会被唤醒并得知两名玩家，其中一名是杀死你的那个恶魔。",
     "attribution": "官方角色",
     "flavor": "这书山卷海中一定隐藏着秘密，我非常确信！这些秘密就隐藏在这一字一句之间等待着我们发掘。小子！再帮我多拿点蜡烛！还有墨水！虽然这些笔记有些晦涩，但有关恶魔的谜语很快就会被揭晓。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "27_baobao",
@@ -185,7 +211,7 @@
   },
   {
     "id": "21_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/21_baobao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "remindersGlobal": [
       "是酒鬼"
     ],
@@ -194,12 +220,15 @@
     "team": "outsider",
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
     "attribution": "官方角色",
-    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。但无可否认，我是一个非常~嗝儿~擅长社交的人。"
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": []
   },
   {
     "id": "19_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/19_baobao.png",
-    "firstNightReminder": "在首个夜晚，唤醒食人魔。让食人魔指向一名玩家。让食人魔重新入睡。如果食人魔指向了一名邪恶玩家，将食人魔的角色标记倒转放置，代表食人魔现在属于邪恶阵营。\n",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
+    "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
     "reminders": [
       "挚友"
     ],
@@ -208,27 +237,39 @@
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
     "attribution": "官方角色",
     "flavor": "<咽口水><咧嘴笑><咽口水>",
-    "firstNight": 11
+    "firstNight": 11,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "36_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/36_baobao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
     "name": "呆瓜",
     "team": "outsider",
     "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
     "attribution": "官方角色",
-    "flavor": "哎哟！"
+    "flavor": "",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "28_baobao",
-    "image": "https://www.bloodstar.xyz/p/humlet/baobao/28_baobao.png",
-    "firstNightReminder": "在首个夜晚，唤醒一名爪牙。对他展示“这些角色不在场”信息标记，然后对他展示三个不在场的善良角色标记。让这名爪牙重新入睡。重复此流程，直到所有爪牙都得知了三个不在场角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
+    "firstNightReminder": "如果告密者在场，对爪牙展示三个不在场的善良角色标记。",
     "name": "告密者",
     "team": "outsider",
     "ability": "爪牙会在其首个夜晚得知三个伪装。",
     "attribution": "官方角色",
-    "flavor": "是他干的。",
-    "firstNight": 12
+    "flavor": "",
+    "firstNight": 12,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "29_baobao",

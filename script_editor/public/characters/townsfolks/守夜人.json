@@ -4,7 +4,7 @@
   "team": "townsfolk",
   "teamLabelZh": "镇民",
   "folder": "townsfolks",
-  "variantCount": 22,
+  "variantCount": 20,
   "totalOccurrenceCount": 110,
   "variants": [
     {
@@ -18,15 +18,15 @@
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
       "firstNight": 56,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "otherNight": 95,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 37,
       "notes": []
     },
@@ -34,29 +34,6 @@
       "id": "守夜人",
       "name": "守夜人",
       "variantIndex": 2,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/nightwatchman.png",
-      "firstNight": 107,
-      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
-      "otherNight": 134,
-      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 19,
-      "notes": []
-    },
-    {
-      "id": "守夜人",
-      "name": "守夜人",
-      "variantIndex": 3,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
@@ -72,8 +49,31 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 18,
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
+      "occurrenceCount": 25,
+      "notes": []
+    },
+    {
+      "id": "守夜人",
+      "name": "守夜人",
+      "variantIndex": 3,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 107,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 134,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "reminders": [
+        "失去能力"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
+      "occurrenceCount": 19,
       "notes": []
     },
     {
@@ -85,7 +85,7 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/nightwatchman.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
       "firstNight": 10700,
       "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "otherNight": 13400,
@@ -95,7 +95,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 11,
       "notes": []
     },
@@ -108,18 +108,18 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/nightwatchman.png",
-      "firstNight": 46,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 59,
       "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
-      "otherNight": 66,
+      "otherNight": 83,
       "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 5,
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
+      "occurrenceCount": 3,
       "notes": []
     },
     {
@@ -131,18 +131,18 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/3f/Nightwatchman.png/300px-Nightwatchman.png",
-      "firstNight": 59,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 20,
       "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
-      "otherNight": 83,
+      "otherNight": 17,
       "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 3,
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
+      "occurrenceCount": 1,
       "notes": []
     },
     {
@@ -154,18 +154,18 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/3f/Nightwatchman.png/300px-Nightwatchman.png",
-      "firstNight": 46,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 55,
       "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
-      "otherNight": 66,
+      "otherNight": 85,
       "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 2,
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
+      "occurrenceCount": 1,
       "notes": []
     },
     {
@@ -177,17 +177,17 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/nightwatchman.png",
-      "firstNight": 20,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 17,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 66,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 95,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -200,17 +200,17 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://i.postimg.cc/5tq3bpP4/Nightwatchman.png",
-      "firstNight": 55,
-      "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "otherNight": 85,
-      "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 3019,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 15,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -223,17 +223,17 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/nightwatchman.png",
-      "firstNight": 66,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 3400,
       "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
-      "otherNight": 95,
+      "otherNight": 5,
       "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -246,11 +246,11 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/nightwatchman_the_last_cull__.png",
-      "firstNight": 3019,
-      "firstNightReminder": "The Nightwatchman may point to a player. Wake that player, show the 'This character selected you' card and the Nightwatchman token, then point to the Nightwatchman player.",
-      "otherNight": 15,
-      "otherNightReminder": "The Nightwatchman may point to a player. Wake that player, show the 'This character selected you' card and the Nightwatchman token, then point to the Nightwatchman player.",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 3700,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 95,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
@@ -269,17 +269,17 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/c/cb/73bu8y1ghivk16k7frn80upymp06h2t.png",
-      "firstNight": 3400,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 5,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 3800,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 18,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -293,16 +293,16 @@
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
-      "firstNight": 3700,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 95,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "firstNight": 3800,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 20,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -316,16 +316,16 @@
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
-      "firstNight": 3800,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 18,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "firstNight": 3900,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 22,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -339,16 +339,16 @@
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
-      "firstNight": 3800,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 20,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "firstNight": 4100,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 13,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -362,16 +362,16 @@
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
-      "firstNight": 3900,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 22,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "firstNight": 4200,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 15,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -385,16 +385,16 @@
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
-      "firstNight": 4100,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 13,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "firstNight": 4200,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 18,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -408,16 +408,16 @@
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
-      "firstNight": 4200,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 15,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "firstNight": 4300,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 18,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -430,17 +430,17 @@
         "townsfolk"
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/c/cb/73bu8y1ghivk16k7frn80upymp06h2t.png",
-      "firstNight": 4200,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 18,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+      "firstNight": 5600,
+      "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+      "otherNight": 95,
+      "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "reminders": [
         "失去能力"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -454,52 +454,6 @@
       ],
       "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
-      "firstNight": 4300,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 18,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "守夜人",
-      "name": "守夜人",
-      "variantIndex": 21,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
-      "firstNight": 5600,
-      "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "otherNight": 95,
-      "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-      "reminders": [
-        "失去能力"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "守夜人",
-      "name": "守夜人",
-      "variantIndex": 22,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/3f/Nightwatchman.png/300px-Nightwatchman.png",
       "firstNight": 5900,
       "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
       "otherNight": 83,
@@ -509,7 +463,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window...",
       "occurrenceCount": 1,
       "notes": []
     }

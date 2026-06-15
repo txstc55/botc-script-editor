@@ -41,7 +41,7 @@
     "otherNight": 98
   },
   {
-    "image": "https://clocktower-wiki.gstonegames.com/images/3/30/Chongfei.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chongfei.png",
     "name": "宠妃",
     "team": "townsfolk",
     "ability": "每局游戏限一次，说书人会在关于你的事情上打破规则。随后，你会秘密得知说书人为此做了什么。",
@@ -51,13 +51,16 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "失去能力"
+    ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": ""
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/flowergirl.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "name": "卖花女孩",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
@@ -65,18 +68,19 @@
     "official_id": "flowergirl",
     "edition": "custom",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒卖花女孩，以点头或摇头告知她今天白天是否有恶魔参与投票。",
+    "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
     "setup": 0,
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 116
+    "otherNight": 116,
+    "flavor": ""
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/town_crier.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "name": "城镇公告员",
     "team": "townsfolk",
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
@@ -87,15 +91,16 @@
     "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "setup": 0,
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 117
+    "otherNight": 117,
+    "flavor": ""
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "name": "博学者",
     "team": "townsfolk",
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
@@ -108,10 +113,11 @@
     "reminders": [],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cannibal.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "name": "食人族",
     "team": "townsfolk",
     "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
@@ -123,14 +129,15 @@
     "setup": 0,
     "reminders": [
       "中毒",
-      "死于今日"
+      "饱餐"
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gossip.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
     "name": "造谣者",
     "team": "townsfolk",
     "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
@@ -138,35 +145,37 @@
     "official_id": "gossip",
     "edition": "custom",
     "firstNightReminder": "",
-    "otherNightReminder": "如果造谣者今天白天的声明正确，一名玩家死亡。",
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
     "setup": 0,
     "reminders": [
       "死亡"
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 91
+    "otherNight": 91,
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/noble.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
     "name": "贵族",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
     "id": "noblebutton",
     "official_id": "noble",
     "edition": "custom",
-    "firstNightReminder": "唤醒贵族，对他指向三名玩家。这三名玩家中有且仅有一名是邪恶玩家。",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
     "setup": 0,
     "reminders": [
-      "得知"
+      "被得知"
     ],
     "remindersGlobal": [],
     "firstNight": 89,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/slayer.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/slayer.png",
     "name": "猎手",
     "team": "townsfolk",
     "ability": "每局游戏限一次，你可以在白天时公开选择一名玩家：如果他是恶魔，他死亡。",
@@ -181,10 +190,11 @@
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": ""
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gambler.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
     "name": "赌徒",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
@@ -192,17 +202,18 @@
     "official_id": "gambler",
     "edition": "custom",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
     "setup": 0,
     "reminders": [
       "死亡"
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 20
+    "otherNight": 20,
+    "flavor": "正面，我赢。 反面，你输。"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fisherman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
     "name": "渔夫",
     "team": "townsfolk",
     "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
@@ -217,23 +228,25 @@
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": ""
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/chef.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chef.png",
     "name": "厨师",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知场上邻座的邪恶玩家有多少对。",
     "id": "chefbutton",
     "official_id": "chef",
     "edition": "custom",
-    "firstNightReminder": "唤醒厨师，对他用手势比划数字来告知他邻座邪恶玩家有几对。",
+    "firstNightReminder": "给他展示数字手势来告诉他场上邻座邪恶玩家有多少对。",
     "otherNightReminder": "",
     "setup": 0,
     "reminders": [],
     "remindersGlobal": [],
     "firstNight": 78,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。"
   },
   {
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5757097694761_2de60c7b.jpg",
@@ -251,10 +264,11 @@
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 38
+    "otherNight": 38,
+    "flavor": ""
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/recluse.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
     "name": "陌客",
     "team": "outsider",
     "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
@@ -267,10 +281,11 @@
     "reminders": [],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "name": "酒鬼",
     "team": "outsider",
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
@@ -285,10 +300,11 @@
       "是酒鬼"
     ],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mutant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "name": "畸形秀演员",
     "team": "outsider",
     "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
@@ -301,7 +317,8 @@
     "reminders": [],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_3356597694761_0a4b67e6.jpg",

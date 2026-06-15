@@ -80,18 +80,18 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，选择一名玩家：当晚任何以他为目标进行的选择，改为选中你。",
-    "image": "https://oss.gstonegames.com/static/image/gstone_clocktower_mini_program/town/icon_person_default.png",
+    "ability": "每个夜晚，当有邪恶玩家的能力首次选择或影响与你邻近的存活玩家时，改为此次能力不生效并持续至下个黎明，且你会得知你的能力被触发。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/heshang.png",
     "edition": "custom",
     "flavor": "",
     "id": "10398_810",
     "firstNightReminder": "",
-    "otherNightReminder": "每个夜晚*，选择一名玩家：当晚任何以他为目标进行的选择，改为选中你。",
+    "otherNightReminder": "每个夜晚，当有邪恶玩家的能力首次选择或影响与你邻近的存活玩家时，改为此次能力不生效并持续至下个黎明，且你会得知你的能力被触发。",
     "name": "和尚",
     "otherNight": 7,
     "setup": 0,
     "reminders": [
-      "庇护"
+      "已生效"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -116,24 +116,27 @@
     "firstNight": 0
   },
   {
-    "ability": "在你的首个夜晚，你会得知场上外来者之间的最近距离。[+1外来者]",
-    "image": "https://oss.gstonegames.com/static/image/gstone_clocktower_mini_program/town/icon_person_default.png",
+    "ability": "在你的首个夜晚，你会得知两名善良玩家。他们之中会有一人醉酒，即使你已死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_8586487694761_0ecde168.jpg",
     "edition": "custom",
     "flavor": "",
     "id": "10398_807",
-    "firstNightReminder": "在你的首个夜晚，你会得知场上外来者之间的最近距离。[+1外来者]",
+    "firstNightReminder": "唤醒店小二，对他指向标记有店小二的“熟客”和“醉酒”提示标记的这两名玩家。",
     "otherNightReminder": "",
     "name": "店小二",
     "otherNight": 0,
-    "setup": 1,
-    "reminders": [],
+    "setup": 0,
+    "reminders": [
+      "熟客",
+      "醉酒"
+    ],
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 40
   },
   {
     "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/butler.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/butler.png",
     "edition": "custom",
     "flavor": "",
     "id": "10398_9",
@@ -151,7 +154,7 @@
   },
   {
     "ability": "恶魔的负面能力对你无效。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/soldier.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/soldier.png",
     "edition": "custom",
     "flavor": "",
     "id": "10398_11",
@@ -167,9 +170,9 @@
   },
   {
     "ability": "每个夜晚*，你会得知今天白天死于处决的玩家的角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/undertaker.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。",
     "id": "10398_16",
     "firstNightReminder": "",
     "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
@@ -257,7 +260,7 @@
   },
   {
     "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/klutz.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
     "edition": "custom",
     "flavor": "",
     "id": "10398_56",
@@ -273,9 +276,9 @@
   },
   {
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/barber.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。",
     "id": "10398_57",
     "firstNightReminder": "",
     "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
@@ -291,9 +294,9 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/seamstress.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。",
     "id": "10398_64",
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
@@ -309,9 +312,9 @@
   },
   {
     "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/oracle.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。",
     "id": "10398_66",
     "firstNightReminder": "",
     "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
@@ -325,18 +328,18 @@
   },
   {
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/town_crier.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "edition": "custom",
     "flavor": "",
     "id": "10398_67",
     "firstNightReminder": "",
-    "otherNightReminder": "对他点头或摇头示意今天白天是否有爪牙发起过提名。",
+    "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "name": "城镇公告员",
     "otherNight": 59,
     "setup": 0,
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -344,7 +347,7 @@
   },
   {
     "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/flowergirl.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "edition": "custom",
     "flavor": "",
     "id": "10398_68",
@@ -354,8 +357,8 @@
     "otherNight": 58,
     "setup": 0,
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -381,9 +384,9 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/noble.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。",
     "id": "10398_122",
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
@@ -399,9 +402,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/preacher.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "富有和健康总比贫穷和疾病要好。",
     "id": "10398_125",
     "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
     "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
@@ -409,7 +412,7 @@
     "otherNight": 7,
     "setup": 0,
     "reminders": [
-      "布道"
+      "失去能力"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",

@@ -8,9 +8,9 @@
   },
   {
     "id": "_yexingzhe",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/c/cb/73bu8y1ghivk16k7frn80upymp06h2t.png",
-    "firstNightReminder": "唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
-    "otherNightReminder": "如果守夜人未曾使用能力，唤醒守夜人，他可以摇头不使用能力，或选择一名玩家。如果守夜人选择了玩家，则在守夜人入睡后通知那名玩家谁是守夜人。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+    "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+    "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
     "reminders": [
       "失去能力"
     ],
@@ -18,22 +18,29 @@
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
     "firstNight": 3400,
-    "otherNight": 5
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window..."
   },
   {
     "id": "1_yexingzhe",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/f/f2/1cqow962ds6jp9x5rz84qwgpstkyurs.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "remindersGlobal": [
       "是酒鬼"
     ],
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "2_yexingzhe",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/78/plh5dvc0wcrn429ff19lk6xoenw9bbr.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
     "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
     "otherNightReminder": "0",
     "reminders": [
@@ -43,25 +50,38 @@
     "team": "outsider",
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "3_yexingzhe",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/1/1a/m6s8wbkeie9d2pyx1qb5agosonjypaq.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
     "name": "政客",
     "team": "outsider",
-    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。"
+    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4_yexingzhe",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/31/rkm8eze1twocl47kxggrnladba8v02i.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1e/Hermit.png",
     "remindersGlobal": [
       "是隐士"
     ],
     "setup": 1,
     "name": "隐士",
     "team": "outsider",
-    "ability": "你拥有所有外来者能力。[-0~1外来者]"
+    "ability": "你拥有所有外来者能力。[-0~1外来者]",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。"
   },
   {
     "id": "5_yexingzhe",

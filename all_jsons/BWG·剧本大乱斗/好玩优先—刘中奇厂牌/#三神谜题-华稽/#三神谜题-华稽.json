@@ -37,10 +37,7 @@
   },
   {
     "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/fisherman.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_fisherman_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
     "edition": "custom",
     "flavor": "",
     "id": "fisherman_c",
@@ -57,16 +54,13 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚，你要选择一名除你以外的玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202401/c_2996546816071_b144d82c.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_villageidiot_r.png"
-    ],
+    "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！",
     "id": "village_idiot_c",
-    "firstNightReminder": "唤醒任意一名村夫。让村夫指向一名玩家，对他给出拇指向上或向下的手势代表那名玩家的阵营。重复这个操作，直到所有村夫玩家都进行了夜晚行动。",
-    "otherNightReminder": "唤醒任意一名村夫。让村夫指向一名玩家，对他给出拇指向上或向下的手势代表那名玩家的阵营。重复这个操作，直到所有村夫玩家都进行了夜晚行动。",
+    "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+    "otherNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
     "name": "村夫",
     "otherNight": 12800,
     "setup": 1,
@@ -85,21 +79,18 @@
   },
   {
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/town_crier.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/town_crier_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "edition": "custom",
     "flavor": "",
     "id": "town_crier_c",
     "firstNightReminder": "",
-    "otherNightReminder": "对他点头或摇头示意今天白天是否有爪牙发起过提名。",
+    "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "name": "城镇公告员",
     "otherNight": 11700,
     "setup": 0,
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -107,12 +98,9 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/seamstress.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/seamstress_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。",
     "id": "seamstress_c",
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
@@ -127,16 +115,13 @@
     "firstNight": 24.0
   },
   {
-    "ability": "每个夜晚*，如果白天有玩家死于处决，你会得知存活镇民的数量。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_7627472943171_a65c3206.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/shiguan_r.png"
-    ],
+    "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
     "edition": "custom",
     "flavor": "",
     "id": "shiguan_c",
     "firstNightReminder": "",
-    "otherNightReminder": "如果白天有玩家死于处决，唤醒史官。对他用手势比划存活的镇民玩家的数量。",
+    "otherNightReminder": "如果今天白天有玩家死于处决，唤醒史官，告知其在场存活镇民数量。",
     "name": "史官",
     "otherNight": 13110,
     "setup": 0,
@@ -162,15 +147,12 @@
   },
   {
     "ability": "如果你在白天死亡，当晚你会得知一名善良玩家。如果你在夜晚死亡，当晚你会得知一名邪恶玩家。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_5918227760171_7f310c1b.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/bingbi_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bingbi.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "是非曲直，自在人心。",
     "id": "bingbi_c",
     "firstNightReminder": "",
-    "otherNightReminder": "如果秉笔人在夜晚死去，唤醒他并指向一名邪恶玩家；如果秉笔在白天死去，唤醒他并指向一名善良玩家。随后让他重新入睡。",
+    "otherNightReminder": "在夜晚时，如果秉笔旁放置了“死于今日”提示标记，唤醒秉笔。对他指向一名善良玩家。让秉笔重新入睡。移除“死于今日”提示标记。如果秉笔在夜晚死亡，唤醒秉笔。对他指向一名邪恶玩家。让秉笔重新入睡。",
     "name": "秉笔",
     "otherNight": 10310,
     "setup": 0,
@@ -213,12 +195,9 @@
   },
   {
     "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/fortune_teller.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/fortune_teller_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。",
     "id": "fortune_teller_c",
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
@@ -234,12 +213,9 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/noble.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_noble_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。",
     "id": "noble_c",
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNightReminder": "",
@@ -247,8 +223,6 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "被得知",
-      "被得知",
       "被得知"
     ],
     "remindersGlobal": [],
@@ -274,11 +248,8 @@
     "team": "townsfolk"
   },
   {
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你会在当晚获得那个角色的能力，直到下个黄昏。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_2669745308961_3cd6048e.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/bianlianshi_r.png"
-    ],
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
     "edition": "custom",
     "flavor": "",
     "id": "bianlianshi_c",
@@ -298,15 +269,12 @@
   },
   {
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/chambermaid.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/chambermaid_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。",
     "id": "chambermaid_c",
-    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
-    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "otherNight": 14800,
     "setup": 0,
@@ -324,15 +292,12 @@
   },
   {
     "ability": "当你死亡时，说书人会获得一个爪牙能力。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_9614144308961_fe5074b8.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/Icon_plaguedoctor_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。",
     "id": "plague_doctor_c",
     "firstNightReminder": "",
-    "otherNightReminder": "当瘟疫医生死亡时，将一个不在场的爪牙角色标记放置在魔典左侧的正中位置，并用瘟疫医生的“说书人能力”标记标记该爪牙角色。如可能，在夜晚顺序表旁添加相应的夜晚标记用以提示。",
+    "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
     "name": "瘟疫医生",
     "otherNight": 10000,
     "setup": 0,
@@ -355,12 +320,9 @@
   },
   {
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/barber.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/barber_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。",
     "id": "barber_c",
     "firstNightReminder": "",
     "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
@@ -382,12 +344,9 @@
   },
   {
     "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/mutant.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/mutant_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我不是怪物！我是人！求你了！",
     "id": "mutant_c",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -401,12 +360,9 @@
   },
   {
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/drunk_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。",
     "id": "drunk_c",
     "firstNightReminder": "",
     "otherNightReminder": "",

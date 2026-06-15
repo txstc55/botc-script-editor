@@ -4,7 +4,7 @@
   "team": "townsfolk",
   "teamLabelZh": "镇民",
   "folder": "townsfolks",
-  "variantCount": 21,
+  "variantCount": 16,
   "totalOccurrenceCount": 83,
   "variants": [
     {
@@ -18,9 +18,9 @@
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
       "firstNight": 3,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
       "otherNight": 4,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
       ],
@@ -39,7 +39,30 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/poppy_grower.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+      "firstNight": 4,
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
+      "otherNight": 3,
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
+      "reminders": [
+        "唤醒邪恶"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 19,
+      "notes": []
+    },
+    {
+      "id": "罂粟种植者",
+      "name": "罂粟种植者",
+      "variantIndex": 3,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
       "firstNight": 4,
       "firstNightReminder": "不要让恶魔和爪牙相认。",
       "otherNight": 9,
@@ -56,36 +79,13 @@
     {
       "id": "罂粟种植者",
       "name": "罂粟种植者",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-      "firstNight": 4,
-      "firstNightReminder": "不要让恶魔和爪牙相认。",
-      "otherNight": 3,
-      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
-      "reminders": [
-        "邪恶角色互认"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 10,
-      "notes": []
-    },
-    {
-      "id": "罂粟种植者",
-      "name": "罂粟种植者",
       "variantIndex": 4,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/poppy_grower.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
       "firstNight": 700,
       "firstNightReminder": "不要让恶魔和爪牙相认。",
       "otherNight": 900,
@@ -108,13 +108,13 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/poppy_grower.png",
-      "firstNight": 4,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+      "firstNight": 11,
       "firstNightReminder": "不要让恶魔和爪牙相认。",
-      "otherNight": 3,
+      "otherNight": 2,
       "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
-        "邪恶角色互认"
+        "唤醒邪恶"
       ],
       "remindersGlobal": [],
       "setup": 0,
@@ -131,18 +131,18 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/4/42/Poppygrower.png/300px-Poppygrower.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
       "firstNight": 4,
       "firstNightReminder": "不要让恶魔和爪牙相认。",
-      "otherNight": 3,
+      "otherNight": 5,
       "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
-        "邪恶角色互认"
+        "唤醒邪恶"
       ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 3,
+      "occurrenceCount": 2,
       "notes": []
     },
     {
@@ -155,17 +155,17 @@
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-      "firstNight": 11,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
+      "firstNight": 1,
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
       "otherNight": 2,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
       ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 3,
+      "occurrenceCount": 1,
       "notes": []
     },
     {
@@ -177,18 +177,18 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://i.postimg.cc/XJskyqSt/Poppygrower.png",
-      "firstNight": 4,
-      "firstNightReminder": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "otherNight": 5,
-      "otherNightReminder": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+      "firstNight": 3,
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
+      "otherNight": 2,
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
-        "邪恶角色互认"
+        "唤醒邪恶"
       ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 2,
+      "occurrenceCount": 1,
       "notes": []
     },
     {
@@ -201,10 +201,10 @@
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-      "firstNight": 1,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
+      "firstNight": 12,
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
       "otherNight": 2,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
       ],
@@ -223,10 +223,10 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/6/6e/f49ozgdcvrsmvd6x7cuz7xui4yafy8n.png",
-      "firstNight": 3,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+      "firstNight": 12,
       "firstNightReminder": "不要让恶魔和爪牙相认。",
-      "otherNight": 2,
+      "otherNight": 3,
       "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
@@ -246,11 +246,11 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/poppy_grower.png",
-      "firstNight": 4,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-      "otherNight": 3,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+      "firstNight": 12,
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
+      "otherNight": 5,
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
       ],
@@ -269,11 +269,11 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/6/6e/f49ozgdcvrsmvd6x7cuz7xui4yafy8n.png",
-      "firstNight": 11,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-      "otherNight": 2,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+      "firstNight": 13,
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
+      "otherNight": 4,
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
       ],
@@ -292,10 +292,10 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fengaojixu/9_fengaojixu.png",
-      "firstNight": 11,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+      "firstNight": 13,
       "firstNightReminder": "不要让恶魔和爪牙相认。",
-      "otherNight": 2,
+      "otherNight": 5,
       "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
@@ -316,10 +316,10 @@
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-      "firstNight": 12,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-      "otherNight": 2,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+      "firstNight": 16,
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
+      "otherNight": 4,
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
       ],
@@ -339,10 +339,10 @@
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-      "firstNight": 12,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-      "otherNight": 3,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+      "firstNight": 903,
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
+      "otherNight": 4,
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
       ],
@@ -361,126 +361,11 @@
         "townsfolk"
       ],
       "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://www.bloodstar.xyz/p/Jungle/The_Radiance_Descends/10_the_radiance_descends.png",
-      "firstNight": 12,
-      "firstNightReminder": "不要让恶魔和爪牙相认。",
-      "otherNight": 5,
-      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
-      "reminders": [
-        "唤醒邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "罂粟种植者",
-      "name": "罂粟种植者",
-      "variantIndex": 17,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-      "firstNight": 13,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-      "otherNight": 4,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
-      "reminders": [
-        "唤醒邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "罂粟种植者",
-      "name": "罂粟种植者",
-      "variantIndex": 18,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/11_graduation_examination.png",
-      "firstNight": 13,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-      "otherNight": 5,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
-      "reminders": [
-        "唤醒邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "罂粟种植者",
-      "name": "罂粟种植者",
-      "variantIndex": 19,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-      "firstNight": 16,
-      "firstNightReminder": "不要让恶魔和爪牙相认。",
-      "otherNight": 4,
-      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
-      "reminders": [
-        "邪恶角色互认"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "罂粟种植者",
-      "name": "罂粟种植者",
-      "variantIndex": 20,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
-      "firstNight": 903,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
-      "otherNight": 4,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
-      "reminders": [
-        "唤醒邪恶"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "罂粟种植者",
-      "name": "罂粟种植者",
-      "variantIndex": 21,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
       "firstNight": 1500,
-      "firstNightReminder": "如果罂粟种植者在场，跳过今晚的爪牙信息和恶魔信息环节。",
+      "firstNightReminder": "不要让恶魔和爪牙相认。",
       "otherNight": 3,
-      "otherNightReminder": "如果罂粟种植者死于白天，插入执行爪牙信息和恶魔信息（不包含恶魔伪装）流程。如果罂粟种植者死于夜晚，则在当前玩家行动结束后立即执行相关流程。",
+      "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
       "reminders": [
         "唤醒邪恶"
       ],

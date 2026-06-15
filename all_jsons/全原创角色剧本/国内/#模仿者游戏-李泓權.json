@@ -92,20 +92,21 @@
   },
   {
     "id": "mofangzheyouxi_5",
-    "image": "https://s2.loli.net/2025/09/07/CNqVA9zXGUFYKla.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/5/5b/Qianke.png",
     "edition": "custom",
     "name": "掮客",
-    "ability": "每局游戏限一次，在夜晚时*，你可以得知今晚即将死亡的玩家并选择其中一名：你会得知是哪名玩家导致他即将死亡，随后他在今晚不会死亡。",
+    "ability": "每个夜晚，你要选择两名存活玩家：如果他们阵营相同，今晚任何玩家使用自身能力选择他们之一作为目标时，改为选中另一名玩家。",
     "team": "townsfolk",
     "firstNight": 0,
     "otherNight": 20000,
-    "firstNightReminder": "",
-    "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以得知今晚即将死亡的玩家并选择其中一名：你会得知是哪名玩家导致他即将死亡，随后他在今晚不会死亡。",
+    "firstNightReminder": "唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
+    "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒车夫，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
     "reminders": [
-      "不会死亡",
-      "失去能力"
+      "熟客"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "三教九流皆相识，稀有货、密讯、人脉不缺，报需求，价妥就成交。"
   },
   {
     "id": "mofangzheyouxi_6",

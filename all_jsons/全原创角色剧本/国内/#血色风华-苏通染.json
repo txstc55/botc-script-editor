@@ -131,7 +131,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "edition": "custom",
     "name": "卖花女孩",
-    "ability": "每个夜晚*，你得知恶魔在白天是否进行了投票。",
+    "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 0,
@@ -139,10 +139,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "060c4487-a8c3-48cb-8e3e-636d4ca71bf9",
@@ -157,7 +159,9 @@
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
     "id": "3074eaab-15b3-4328-8ccd-b4d336ef42f3",
@@ -174,7 +178,9 @@
     "reminders": [
       "保护"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "51d7a26b-4f42-48ae-bf2d-7c8c012fc35c",
@@ -191,7 +197,9 @@
     "reminders": [
       "失去能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
   },
   {
     "id": "3a4c5540-3476-4837-9610-c4b916deb7bb",
@@ -206,7 +214,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "ddaa8abb-93ed-428a-8a08-988fb63be060",
@@ -269,29 +279,28 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "5ad60f09-d31b-46b7-90dc-24d3f81928a5",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "edition": "custom",
     "name": "疯子",
-    "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你的角色以及你在每个夜晚选择了哪名玩家。",
+    "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 7,
     "otherNight": 21,
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
-    "reminders": [
-      "被选择1",
-      "被选择2",
-      "被选择3"
-    ],
+    "reminders": [],
     "remindersGlobal": [
-      "是疯子"
+      "是疯子",
+      "被选择"
     ],
-    "setup": 1
+    "setup": 0,
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "c7ae2fd3-9dcd-4744-a786-037d0a530d87",

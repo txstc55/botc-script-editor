@@ -30,7 +30,7 @@
     "edition": "custom",
     "team": "townsfolk",
     "firstNight": 8900,
-    "firstNightReminder": "以任意顺序指向三名玩家，，其中一名是邪恶的。",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "otherNight": 0,
     "otherNightReminder": "",
     "reminders": [
@@ -39,7 +39,8 @@
     "remindersGlobal": [],
     "setup": 0,
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
   },
   {
     "id": "balloonistTRANS",
@@ -93,7 +94,8 @@
     "remindersGlobal": [],
     "setup": 0,
     "ability": "每个夜晚，你会得知一名说书人认为你最应该与其交流的玩家。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": ""
   },
   {
     "id": "village_idiotTRANS",
@@ -102,16 +104,17 @@
     "edition": "custom",
     "team": "townsfolk",
     "firstNight": 9500,
-    "firstNightReminder": "唤醒任意一名村夫。让他指向一名玩家。对他给出拇指向上或向下的手势。让他重新入睡。重复这个操作，直到所有村夫玩家都进行了夜晚行动。",
+    "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
     "otherNight": 12300,
-    "otherNightReminder": "唤醒任意一名村夫。让他指向一名玩家。对他给出拇指向上或向下的手势。让他重新入睡。重复这个操作，直到所有村夫玩家都进行了夜晚行动。",
+    "otherNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
     "reminders": [
       "醉酒"
     ],
     "remindersGlobal": [],
     "setup": 1,
     "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
     "id": "generalTRANS",
@@ -120,14 +123,15 @@
     "edition": "custom",
     "team": "townsfolk",
     "firstNight": 12300,
-    "firstNightReminder": "对将军展示：用拇指向上代表善良优势、向下代表邪恶优势、两边代表双方均势。",
+    "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "otherNight": 14700,
-    "otherNightReminder": "对将军展示：用拇指向上代表善良优势、向下代表邪恶优势、两边代表双方均势。",
+    "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "reminders": [],
     "remindersGlobal": [],
     "setup": 0,
     "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": ""
   },
   {
     "id": "savantTRANS",
@@ -143,7 +147,8 @@
     "remindersGlobal": [],
     "setup": 0,
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "script": "梦殒春宵"
+    "script": "梦殒春宵",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "fishermanTRANS",
@@ -161,7 +166,8 @@
     "remindersGlobal": [],
     "setup": 0,
     "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": ""
   },
   {
     "id": "pixieTRANS",
@@ -170,22 +176,22 @@
     "edition": "custom",
     "team": "townsfolk",
     "firstNight": 7300,
-    "firstNightReminder": "对小精灵展示“这些角色在场”和被标记了疯狂的角色标记。",
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "otherNight": 0,
     "otherNightReminder": "",
     "reminders": [
-      "疯狂"
-    ],
-    "remindersGlobal": [
+      "疯狂",
       "获得能力"
     ],
+    "remindersGlobal": [],
     "setup": 0,
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "alsaahirTRANS",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/alsaahir.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
     "name": "戏法师",
     "edition": "custom",
     "team": "townsfolk",
@@ -197,7 +203,8 @@
     "remindersGlobal": [],
     "setup": 0,
     "ability": "每个白天限一次，你可以公开猜测谁是爪牙，谁是恶魔。如果你猜对，善良阵营获胜。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。"
   },
   {
     "id": "cannibalTRANS",
@@ -210,8 +217,8 @@
     "otherNight": 0,
     "otherNightReminder": "",
     "reminders": [
-      "死于处决",
-      "中毒"
+      "中毒",
+      "饱餐"
     ],
     "remindersGlobal": [],
     "setup": 0,
@@ -222,7 +229,8 @@
         "id": "zealotTRANS",
         "reason": "如果食人族获得了狂热者的能力，他会得知这一信息。"
       }
-    ]
+    ],
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "xiziTRANS",
@@ -266,7 +274,8 @@
     "remindersGlobal": [],
     "setup": 1,
     "ability": "说书人可以打破游戏规则。如果说书人被处决，善良阵营获胜，即使你已死亡。[无邪恶角色在场]",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": ""
   },
   {
     "id": "drunkTRANS",
@@ -284,7 +293,8 @@
     ],
     "setup": 1,
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "script": "暗流涌动"
+    "script": "暗流涌动",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "plague_doctorTRANS",
@@ -295,20 +305,21 @@
     "firstNight": 0,
     "firstNightReminder": "",
     "otherNight": 10000,
-    "otherNightReminder": "当瘟疫医生死亡时，将一个爪牙角色标记放置在魔典左侧的正中位置，并用瘟疫医生的“说书人能力”标记标记该爪牙角色。如可能，在夜晚顺序表旁添加相应的夜晚标记用以提示。",
+    "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
     "reminders": [
       "说书人能力"
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "ability": "如果你死亡，说书人获得一个爪牙能力。",
+    "ability": "当你死亡时，说书人会获得一个爪牙能力。",
     "script": "实验性角色",
     "jinxes": [
       {
         "id": "goblinTRANS",
         "reason": "如果瘟疫医生死亡且说书人会因此获得哥布林的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
       }
-    ]
+    ],
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。"
   },
   {
     "id": "ogreTRANS",
@@ -317,18 +328,21 @@
     "edition": "custom",
     "team": "outsider",
     "firstNight": 11800,
-    "firstNightReminder": "唤醒食人魔。让食人魔指向一名玩家。让食人魔重新入睡。如果食人魔指向了一名邪恶玩家，将食人魔的角色标记倒转放置，代表食人魔现在属于邪恶阵营。",
+    "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
     "otherNight": 0,
     "otherNightReminder": "",
-    "reminders": [],
+    "reminders": [
+      "挚友"
+    ],
     "remindersGlobal": [],
     "setup": 0,
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": "<咽口水><咧嘴笑><咽口水>"
   },
   {
     "id": "zealotTRANS",
-    "image": "https://wiki.bloodontheclocktower.com/images/1/16/Icon_zealot.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1a/Zealot.png",
     "name": "狂热者",
     "edition": "custom",
     "team": "outsider",
@@ -340,7 +354,8 @@
     "remindersGlobal": [],
     "setup": 0,
     "ability": "如果有大于等于五名玩家存活，你必须在所有提名中投票。",
-    "script": "实验性角色"
+    "script": "实验性角色",
+    "flavor": ""
   },
   {
     "id": "poisonerTRANS",

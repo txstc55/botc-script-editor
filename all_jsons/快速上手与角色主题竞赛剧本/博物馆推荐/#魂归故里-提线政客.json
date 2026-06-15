@@ -23,10 +23,7 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/grandmother.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/grandmother_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
     "edition": "custom",
     "flavor": "",
     "id": "grandmother_c",
@@ -45,12 +42,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名存活的玩家：你或他之一会醉酒直到下个黄昏。你不会死亡。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/sailor.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/sailor_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sailor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！",
     "id": "sailor_c",
     "firstNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
     "otherNightReminder": "让水手选择一名存活玩家。标记那名玩家或水手醉酒。",
@@ -66,15 +60,12 @@
   },
   {
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/chambermaid.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/chambermaid_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。",
     "id": "chambermaid_c",
-    "firstNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
-    "otherNightReminder": "让侍女选择除自己外的两名存活玩家。给她展示数字手势来告诉她这些玩家中有几人因自身能力被唤醒。",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
     "name": "侍女",
     "otherNight": 14800,
     "setup": 0,
@@ -111,21 +102,17 @@
   },
   {
     "ability": "每个夜晚，你要选择两名存活玩家：如果他们阵营相同，今晚任何玩家使用自身能力选择他们之一作为目标时，改为选中另一名玩家。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202401/c_2978127816071_ab841bc9.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/qianke_r.png"
-    ],
+    "image": "https://clocktower-wiki.gstonegames.com/images/5/5b/Qianke.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "三教九流皆相识，稀有货、密讯、人脉不缺，报需求，价妥就成交。",
     "id": "qianke_c",
-    "firstNightReminder": "让掮客指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
-    "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
+    "firstNightReminder": "唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
+    "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒车夫，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
     "name": "掮客",
     "otherNight": 1010,
     "setup": 0,
     "reminders": [
-      "交换目标",
-      "交换目标"
+      "熟客"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -133,10 +120,7 @@
   },
   {
     "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/innkeeper.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/innkeeper_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
     "edition": "custom",
     "flavor": "",
     "id": "innkeeper_c",
@@ -154,13 +138,10 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你是驱魔人，但他当晚不会因其自身能力而被唤醒。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/exorcist.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/exorcist_r.png"
-    ],
+    "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你的角色，但他当晚不会因其自身能力而被唤醒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/exorcist.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "每一个不洁之灵，每一份撒旦之力，每一次炼狱敌人的猛袭，每一个军团，每一个崇拜恶魔的组织和教派，以我主耶稣基督的名义和力量，将你们驱逐。我命令你们，远离上帝的教堂，远离上帝按祂的形貌所创造并受神圣羔羊的宝血所救赎的灵魂。",
     "id": "exorcist_c",
     "firstNightReminder": "",
     "otherNightReminder": "让驱魔人选择一名玩家，不能是上一夜他选择过的玩家。让驱魔人重新入睡。如果驱魔人选中了恶魔：唤醒恶魔。展示“该角色的能力对你生效”信息标记和驱魔人角色标记。指向驱魔人玩家。",
@@ -175,13 +156,10 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/gambler.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/gambler_r.png"
-    ],
+    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "正面，我赢。 反面，你输。",
     "id": "gambler_c",
     "firstNightReminder": "",
     "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
@@ -197,12 +175,9 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/professor.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/professor_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/professor.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。",
     "id": "professor_c",
     "firstNightReminder": "",
     "otherNightReminder": "教授可以选择一名死亡玩家。如果他这么做了，标记教授失去能力，然后如果那名玩家是镇民，标记那名玩家被复活。之后的夜晚无需再唤醒教授。",
@@ -218,31 +193,26 @@
     "firstNight": 0
   },
   {
-    "ability": "首个白天结束时，所有玩家要公开表示自己是否愿意守护公主：一名愿意的玩家会得知你是公主。如果你将要死亡，当晚他会死亡，并且当晚不会再有其他玩家死亡。",
-    "image": "https://i.postimg.cc/mZYqQyrr/image.png",
+    "ability": "在你的首个白天，如果你提名并处决了一名玩家，当晚恶魔不会造成死亡。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f2/Princess.png",
     "edition": "custom",
     "flavor": "",
     "id": "gongzhu",
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒一名愿意守护公主的玩家，向他展示“公主”的图标并指向“公主”玩家。",
+    "otherNightReminder": "",
     "name": "公主",
     "otherNight": 0,
     "firstNight": 0,
     "setup": 0,
     "reminders": [
-      "效忠",
-      "侍卫",
-      "死亡"
+      "不会死亡"
     ],
     "remindersGlobal": [],
     "team": "townsfolk"
   },
   {
     "ability": "每局游戏限一次，在白天时，你可以提议所有玩家观看你的演出，并从同意参加的玩家中选择你的观众。如果恶魔成为了观众，你会在当晚死亡。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_3570909608961_efc2d989.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/geling_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/geling.png",
     "edition": "custom",
     "flavor": "",
     "id": "geling_c",
@@ -253,7 +223,8 @@
     "setup": 0,
     "reminders": [
       "失去能力",
-      "死亡"
+      "死亡",
+      "观众"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -261,12 +232,9 @@
   },
   {
     "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/tea_lady.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/tea_lady_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tea_lady.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。",
     "id": "tea_lady_c",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -274,7 +242,6 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "不会死亡",
       "不会死亡"
     ],
     "remindersGlobal": [],
@@ -282,11 +249,8 @@
     "firstNight": 0
   },
   {
-    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，你会立即变成一个不在场的镇民角色。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_9233465308961_9aa67828.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/wudaozhe_r.png"
-    ],
+    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，在该效果生效前你会变成一个不在场的镇民角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
     "edition": "custom",
     "flavor": "",
     "id": "wudaozhe_c",
@@ -314,12 +278,9 @@
   },
   {
     "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/goon.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/goon_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goon.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。",
     "id": "goon_c",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -335,10 +296,7 @@
   },
   {
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：除首个夜晚以外，当他被邪恶玩家的能力选择或影响时，你会在当晚死亡。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_2027903943171_36d374a5.jpg",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/shutong_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_2027903943171_36d374a5.jpg",
     "edition": "custom",
     "flavor": "",
     "id": "shutong_c",
@@ -348,8 +306,8 @@
     "otherNight": 8910,
     "setup": 0,
     "reminders": [
-      "选择",
-      "死亡"
+      "死亡",
+      "选择"
     ],
     "remindersGlobal": [],
     "team": "outsider",
@@ -357,10 +315,7 @@
   },
   {
     "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/butler.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/butler_r.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/butler.png",
     "edition": "custom",
     "flavor": "",
     "id": "butler_c",
@@ -378,18 +333,19 @@
   },
   {
     "id": "4_babieta",
-    "image": "https://i.postimg.cc/brg8qYf0/180px-Hermit.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1e/Hermit.png",
     "otherNightReminder": "",
     "name": "隐士",
     "team": "outsider",
-    "reminders": [
-      "1",
-      "2",
-      "3"
-    ],
+    "reminders": [],
     "ability": "你拥有所有外来者能力。[-0~1外来者]",
     "otherNight": 0,
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "是隐士"
+    ],
+    "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。"
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",

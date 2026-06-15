@@ -74,10 +74,9 @@
     "reminders": [
       "不会死亡"
     ],
-    "remindersGlobal": [
-      "茶艺师"
-    ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "kuijingren",
@@ -134,10 +133,9 @@
     "reminders": [
       "中毒"
     ],
-    "remindersGlobal": [
-      "舞蛇人"
-    ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
   },
   {
     "id": "08531df3-d377-479f-ac7a-9a6041be0205",
@@ -175,10 +173,9 @@
     "reminders": [
       "保护"
     ],
-    "remindersGlobal": [
-      "僧侣"
-    ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4fc71048-0f1c-45e8-833d-3ad1603945e5",
@@ -195,38 +192,36 @@
     "reminders": [
       "被选择"
     ],
-    "remindersGlobal": [
-      "驱魔人"
-    ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "每一个不洁之灵，每一份撒旦之力，每一次炼狱敌人的猛袭，每一个军团，每一个崇拜恶魔的组织和教派，以我主耶稣基督的名义和力量，将你们驱逐。我命令你们，远离上帝的教堂，远离上帝按祂的形貌所创造并受神圣羔羊的宝血所救赎的灵魂。"
   },
   {
     "id": "b1aae425-d8bd-4ae1-9a41-36be1810ed3b",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "edition": "custom",
     "name": "城镇公告员",
-    "ability": "每个夜晚*，你得知爪牙在白天是否发起了提名。",
+    "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 0,
     "otherNight": 59,
     "firstNightReminder": "",
-    "otherNightReminder": "对他点头或摇头示意今天白天是否有爪牙发起过提名。",
+    "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
-    "remindersGlobal": [
-      "城镇公告员"
-    ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "fb2d7ae0-8208-4f46-8bc6-08416d8b4695",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "edition": "custom",
     "name": "卖花女孩",
-    "ability": "每个夜晚*，你得知恶魔在白天是否进行了投票。",
+    "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
     "team": "townsfolk",
     "sch_team": "村民",
     "firstNight": 0,
@@ -234,13 +229,12 @@
     "firstNightReminder": "",
     "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
     "reminders": [
-      "恶魔未投票",
-      "恶魔已投票"
+      "恶魔已投票",
+      "恶魔未投票"
     ],
-    "remindersGlobal": [
-      "卖花女孩"
-    ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "qishigucong",
@@ -286,7 +280,7 @@
   },
   {
     "id": "1ebaeb1d-3165-4c19-a2f5-6d6061b5398f",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_7251125151861_73cfd5f9.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
     "edition": "custom",
     "name": "骑士",
     "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
@@ -294,13 +288,14 @@
     "sch_team": "村民",
     "firstNight": 42,
     "otherNight": 0,
-    "firstNightReminder": "唤醒骑士，然后指向标记了“得知”的两名玩家。",
+    "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
     "reminders": [
       "得知"
     ],
-    "remindersGlobal": [
-      "骑士"
-    ]
+    "remindersGlobal": [],
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "187ca3e3-847b-4350-960f-3be983dee5fe",
@@ -317,9 +312,10 @@
       "熟客",
       "醉酒"
     ],
-    "remindersGlobal": [
-      "店小二"
-    ]
+    "remindersGlobal": [],
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "fatiaojianke",
@@ -381,7 +377,7 @@
   },
   {
     "id": "690d917c-9c39-4ef1-85e3-4046734767d0",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4591987694761_11d3a855.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/jiubao.png",
     "edition": "custom",
     "name": "酒保",
     "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。",
@@ -392,9 +388,11 @@
     "reminders": [
       "醉酒"
     ],
-    "remindersGlobal": [
-      "酒保"
-    ]
+    "remindersGlobal": [],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "aa93704d-e322-4b7c-990a-7d9906d86b8c",
@@ -411,10 +409,9 @@
     "reminders": [
       "主人"
     ],
-    "remindersGlobal": [
-      "管家"
-    ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "dc0250a7-5d8c-4394-9291-21f1676dc6fW",

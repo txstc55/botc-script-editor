@@ -85,8 +85,8 @@
   },
   {
     "id": "7_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/0/05/a5613uupc0bffr0sg9egfotdaofup1e.png",
-    "firstNightReminder": "唤醒调查员，对他指向两名玩家，并展示一个爪牙角色标记。这两名玩家其中之一是这个爪牙。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/investigator.png",
+    "firstNightReminder": "展示那个爪牙角色标记。指向被你标记“爪牙”和“错误”的两名玩家。",
     "reminders": [
       "爪牙",
       "错误"
@@ -94,25 +94,33 @@
     "name": "调查员",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
-    "firstNight": 3800
+    "firstNight": 3800,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "8_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/0/0a/55q4nfyb9gftn9jiujtt49ti2qa33h6.png",
-    "otherNightReminder": "唤醒赌徒，让他进行猜测。如果猜测错误，他死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
     "reminders": [
       "死亡"
     ],
     "name": "赌徒",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
-    "otherNight": 9
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "正面，我赢。 反面，你输。"
   },
   {
     "id": "9_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/80/bl0qahd0ll0end1sidclt6374yrtflf.png",
-    "firstNightReminder": "唤醒数学家，用手势比划数字来告诉他今天有多少玩家的能力未正常生效。",
-    "otherNightReminder": "唤醒数学家，用手势比划数字来告诉他今天有多少玩家的能力未正常生效。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+    "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "reminders": [
       "未正常生效"
     ],
@@ -120,37 +128,47 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
     "firstNight": 4300,
-    "otherNight": 24
+    "otherNight": 24,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "id": "10_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/48/0gv4l35ovskh83z84qce8mikbmnpkfw.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png",
     "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "name": "将军",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
     "firstNight": 4100,
-    "otherNight": 22
+    "otherNight": 22,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "11_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/6/6f/oi460mqpnxwd7zgyboe78patdo8amc5.png",
-    "firstNightReminder": "唤醒传教士，让他选择一名玩家。如果他选中了爪牙，该爪牙失去能力。在传教士入睡后通知该爪牙被传教士选中。",
-    "otherNightReminder": "唤醒传教士，让他选择一名玩家。如果他选中了爪牙，该爪牙失去能力。在传教士入睡后通知该爪牙被传教士选中。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
+    "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+    "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
     "reminders": [
       "失去能力"
     ],
     "name": "传教士",
     "team": "townsfolk",
-    "ability": "每个夜晚，你要选择一名玩家：如果你选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
+    "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
     "firstNight": 3300,
-    "otherNight": 5
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "富有和健康总比贫穷和疾病要好。"
   },
   {
     "id": "12_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/30/oj9m95xe218zispv6mg1jkf02esfdb6.png",
-    "firstNightReminder": "唤醒店小二，对他指向两名善良玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_8586487694761_0ecde168.jpg",
+    "firstNightReminder": "唤醒店小二，对他指向标记有店小二的“熟客”和“醉酒”提示标记的这两名玩家。",
     "reminders": [
       "熟客",
       "醉酒"
@@ -158,7 +176,11 @@
     "name": "店小二",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名善良玩家。他们之中会有一人醉酒，即使你已死亡。",
-    "firstNight": 3900
+    "firstNight": 3900,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "13_menghuidatang",
@@ -175,42 +197,58 @@
   },
   {
     "id": "14_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/96/3sb44fk2c2n1yi3gb9ise7m24f00z4i.png",
-    "otherNightReminder": "唤醒锦衣卫，让他选择一名玩家。他现在开始保护那名玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5878087694761_691045fa.jpg",
+    "otherNightReminder": "移除上个夜晚放置的“保护”标记。唤醒锦衣卫，让其选择一名玩家。在该玩家角色标记旁放置“保护”提示标记。",
     "reminders": [
       "保护"
     ],
     "name": "锦衣卫",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家：如果他在下个黄昏前死亡，你代替他死亡。",
-    "otherNight": 8
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "15_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/6/68/ncpl5fnsurms6vy3q7epxl3anju6tu5.png",
-    "otherNightReminder": "如果歌伶今天白天使用了自己的能力且恶魔成为了观众，歌伶死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/geling.png",
+    "otherNightReminder": "如果歌伶在白天使用了能力，且恶魔成为了观众，标记歌伶死亡。",
     "reminders": [
       "失去能力",
-      "死亡"
+      "死亡",
+      "观众"
     ],
     "name": "歌伶",
     "team": "townsfolk",
     "ability": "每局游戏限一次，在白天时，你可以提议所有玩家观看你的演出，并从同意参加的玩家中选择你的观众。如果恶魔成为了观众，你会在当晚死亡。",
-    "otherNight": 18
+    "otherNight": 18,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "16_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/48/j2y1kd2m9mb3wdu0qa5i9r9vkn2f1jb.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
     "remindersGlobal": [
       "是变脸师"
     ],
     "name": "变脸师",
     "team": "townsfolk",
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。"
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "疯狂"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "17_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/thumb/3/31/tcg771ftm2cuabspvfw27k46f4sdehp.png/240px-%E6%96%B9%E5%A3%AB.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
     "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
     "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
     "reminders": [
@@ -220,7 +258,10 @@
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
     "firstNight": 4200,
-    "otherNight": 23
+    "otherNight": 23,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "18_menghuidatang",
@@ -236,7 +277,7 @@
   },
   {
     "id": "19_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/d/d1/8uzlv9tio5234cbyrg9yyjwngxa5xx6.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yishi.png",
     "otherNightReminder": "如果驿使白天公开声明了一个角色，唤醒驿使：1.如果该角色在场，得知是；2.如果该角色不在场，得知否，并且驿使失去能力。",
     "reminders": [
       "在场",
@@ -245,34 +286,46 @@
     "name": "驿使",
     "team": "townsfolk",
     "ability": "每个白天，你可以公开声明一个角色。在当晚，你会得知该角色是否在场。如果你因此得知了否，你失去此能力。",
-    "otherNight": 21
+    "otherNight": 21,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "20_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/f/f2/1cqow962ds6jp9x5rz84qwgpstkyurs.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "remindersGlobal": [
       "是酒鬼"
     ],
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "21_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/b2/dlocdcihmucmb9pxl3evrumx37q38ly.png",
-    "otherNightReminder": "在夜晚的任意时机，你都可以决定杀死修补匠。这里只是一个提示以免遗忘修补匠。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
+    "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
     "reminders": [
       "死亡"
     ],
     "name": "修补匠",
     "team": "outsider",
     "ability": "你随时可能死亡。",
-    "otherNight": 19
+    "otherNight": 19,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "22_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/73/pgakqxxr1gostnluw2xkp4cnudn3z7a.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
     "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
     "reminders": [
       "挚友"
@@ -280,18 +333,26 @@
     "name": "食人魔",
     "team": "outsider",
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
-    "firstNight": 4000
+    "firstNight": 4000,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "<咽口水><咧嘴笑><咽口水>"
   },
   {
     "id": "23_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/31/rkm8eze1twocl47kxggrnladba8v02i.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1e/Hermit.png",
     "remindersGlobal": [
       "是隐士"
     ],
     "setup": 1,
     "name": "隐士",
     "team": "outsider",
-    "ability": "你拥有所有外来者能力。[-0~1外来者]"
+    "ability": "你拥有所有外来者能力。[-0~1外来者]",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。"
   },
   {
     "id": "24_menghuidatang",

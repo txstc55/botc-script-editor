@@ -17,7 +17,11 @@
     "name": "调查员",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
-    "firstNight": 20
+    "firstNight": 20,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "1_binggongbanshi",
@@ -32,28 +36,33 @@
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
     "firstNight": 21,
-    "otherNight": 17
+    "otherNight": 17,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "2_binggongbanshi",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
-    "firstNightReminder": "对小精灵展示“这些角色在场”和被标记了疯狂的角色标记。",
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "reminders": [
-      "疯狂"
-    ],
-    "remindersGlobal": [
+      "疯狂",
       "获得能力"
     ],
+    "remindersGlobal": [],
     "name": "小精灵",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "firstNight": 19
+    "firstNight": 19,
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
   },
   {
     "id": "3_binggongbanshi",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_7952077694761_e7ab28d7.jpg",
+    "image": "https://clocktower-wiki.gstonegames.com/images/5/5b/Qianke.png",
     "firstNightReminder": "唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
-    "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
+    "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒车夫，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
     "reminders": [
       "熟客"
     ],
@@ -61,18 +70,25 @@
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择两名存活玩家：如果他们阵营相同，今晚任何玩家使用自身能力选择他们之一作为目标时，改为选中另一名玩家。",
     "firstNight": 14,
-    "otherNight": 3
+    "otherNight": 3,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "三教九流皆相识，稀有货、密讯、人脉不缺，报需求，价妥就成交。"
   },
   {
     "id": "4_binggongbanshi",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png",
-    "firstNightReminder": "对将军展示：用拇指向上代表善良优势、向下代表邪恶优势、两边代表双方均势。",
-    "otherNightReminder": "对将军展示：用拇指向上代表善良优势、向下代表邪恶优势、两边代表双方均势。",
+    "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+    "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
     "name": "将军",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
     "firstNight": 23,
-    "otherNight": 19
+    "otherNight": 19,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "5_binggongbanshi",
@@ -83,12 +99,16 @@
     ],
     "name": "赌徒",
     "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
-    "otherNight": 5
+    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+    "otherNight": 5,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "正面，我赢。 反面，你输。"
   },
   {
     "id": "6_binggongbanshi",
-    "image": "https://www.bloodstar.xyz/p/ronchi/binggongbanshi/6_binggongbanshi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5878087694761_691045fa.jpg",
     "otherNightReminder": "移除上个夜晚放置的“保护”标记。唤醒锦衣卫，让其选择一名玩家。在该玩家角色标记旁放置“保护”提示标记。",
     "reminders": [
       "保护"
@@ -96,7 +116,11 @@
     "name": "锦衣卫",
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择一名玩家：如果他在下个黄昏前死亡，你代替他死亡。",
-    "otherNight": 6
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "7_binggongbanshi",
@@ -109,19 +133,27 @@
     "name": "教授",
     "team": "townsfolk",
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生。",
-    "otherNight": 15
+    "otherNight": 15,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "过程很简单。将液压植入器连接到改良型气矩阵放大器上，加入20CC的伪多拉芬，让他的参数Z保持在20%以上，你丈夫就会重新活蹦乱跳。 现在，我们需要的仅仅是一次雷击。"
   },
   {
     "id": "8_binggongbanshi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/a/a7/Wudaozhe.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
     "remindersGlobal": [
       "是悟道者"
     ],
     "setup": 1,
     "name": "悟道者",
     "team": "townsfolk",
-    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择了你或对你产生了影响，在该效果生效前你会变成一个不在场的镇民角色。",
-    "otherNight": 0
+    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，在该效果生效前你会变成一个不在场的镇民角色。",
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "9_binggongbanshi",
@@ -131,14 +163,25 @@
     ],
     "name": "茶艺师",
     "team": "townsfolk",
-    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。"
+    "ability": "如果与你邻近的两名存活的玩家是善良的，他们不会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "若你感到寒冷，茶能使你温暖。若你感到愤怒，茶能使你冷静。若你感到沮丧，茶能使你振奋。若你感到激动，茶能使你镇定。"
   },
   {
     "id": "10_binggongbanshi",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pacifist.png",
     "name": "和平主义者",
     "team": "townsfolk",
-    "ability": "被处决的善良玩家可能不会死亡。"
+    "ability": "被处决的善良玩家可能不会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "11_binggongbanshi",
@@ -158,13 +201,16 @@
     "firstNightReminder": "不要让恶魔和爪牙相认。",
     "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
     "reminders": [
-      "邪恶角色互认"
+      "唤醒邪恶"
     ],
     "name": "罂粟种植者",
     "team": "townsfolk",
     "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
     "firstNight": 16,
-    "otherNight": 4
+    "otherNight": 4,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "13_binggongbanshi",
@@ -172,18 +218,28 @@
     "setup": 1,
     "name": "无神论者",
     "team": "townsfolk",
-    "ability": "说书人可以打破游戏规则。如果说书人被处决，善良阵营获胜，即使你已死亡。[无邪恶角色在场]"
+    "ability": "说书人可以打破游戏规则。如果说书人被处决，善良阵营获胜，即使你已死亡。[无邪恶角色在场]",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "14_binggongbanshi",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "reminders": [
       "中毒",
-      "死于处决"
+      "饱餐"
     ],
     "name": "食人族",
     "team": "townsfolk",
-    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。"
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
   },
   {
     "id": "15_binggongbanshi",
@@ -194,24 +250,29 @@
     "setup": 1,
     "name": "酒鬼",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。"
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "lunaticbutton",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
-    "reminders": [
-      "被选择"
-    ],
+    "reminders": [],
     "remindersGlobal": [
-      "是疯子"
+      "是疯子",
+      "被选择"
     ],
     "name": "疯子",
     "team": "outsider",
     "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
     "firstNight": 15,
-    "otherNight": 9
+    "otherNight": 9,
+    "setup": 0,
+    "flavor": "吾即是暗夜……没错吧？"
   },
   {
     "id": "17_binggongbanshi",
@@ -223,28 +284,34 @@
     "name": "月之子",
     "team": "outsider",
     "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。如果他是善良的，在当晚他会死亡。",
-    "otherNight": 16
+    "otherNight": 16,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。"
   },
   {
     "id": "18_binggongbanshi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/5/51/Nichen.png",
-    "firstNightReminder": "让逆臣选择一名玩家，在那名玩家上放置“不共戴天”标记。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
+    "firstNightReminder": "唤醒逆臣，让其选择一名玩家。在该玩家的角色标记旁放置“不共戴天”提示标记。",
     "otherNightReminder": "如果逆臣或标记了“不共戴天”的玩家死于处决，唤醒两者之中的另一名玩家，告诉他变为邪恶阵营。",
     "reminders": [
-      "不共戴天",
-      "邪恶"
+      "不共戴天"
     ],
     "name": "逆臣",
     "team": "outsider",
     "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
     "firstNight": 22,
-    "otherNight": 7
+    "otherNight": 7,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
   },
   {
     "id": "damselbutton",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
-    "firstNightReminder": "如果落难少女被巡山人选中，唤醒落难少女，展示“你是”信息标记和一个不在场的镇民角色标记，将落难少女的角色标记替换成新的镇民角色标记。",
-    "otherNightReminder": "如果落难少女被巡山人选中，唤醒落难少女，展示“你是”信息标记和一个不在场的镇民角色标记，将落难少女的角色标记替换成新的镇民角色标记。",
+    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
+    "otherNightReminder": "0",
     "reminders": [
       "已被猜测"
     ],
@@ -252,7 +319,10 @@
     "team": "outsider",
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
     "firstNight": 20,
-    "otherNight": 18
+    "otherNight": 18,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "pit-hagbutton",

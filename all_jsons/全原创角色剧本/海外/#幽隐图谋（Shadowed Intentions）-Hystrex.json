@@ -52,17 +52,18 @@
   },
   {
     "id": "3_si",
-    "image": "https://i.postimg.cc/Dzbv9yM0/highpriestess-shadowed-intentions.png",
-    "firstNightReminder": "Wake and show which player you think they should talk to the most.",
-    "otherNightReminder": "Wake and show which player you think they should talk to the most.",
-    "reminders": [
-      "得知"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/high_priestess.png",
+    "firstNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
+    "otherNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
+    "reminders": [],
     "name": "女祭司",
     "team": "townsfolk",
     "ability": "每个夜晚，你会得知一名说书人认为你最应该与其交流的玩家。",
     "firstNight": 21,
-    "otherNight": 20
+    "otherNight": 20,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4_si",
@@ -219,10 +220,16 @@
   },
   {
     "id": "15_si",
-    "image": "https://i.postimg.cc/sXdjsdkc/klutz-shadowed-intentions.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
     "name": "呆瓜",
     "team": "outsider",
-    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。"
+    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "17_si",

@@ -91,14 +91,21 @@
   {
     "id": "3_buzhengjingjioayi",
     "name": "变脸师",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/buzhengjingjioayi/3_buzhengjingjioayi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
     "team": "townsfolk",
     "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
     "firstNight": 0,
     "otherNight": 0,
     "remindersGlobal": [
       "是变脸师"
-    ]
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "疯狂"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "1_buzhengjingjioayi",
@@ -131,15 +138,19 @@
   {
     "id": "20_buzhengjingjioayi",
     "name": "悟道者",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/buzhengjingjioayi/20_buzhengjingjioayi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
     "team": "townsfolk",
-    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，你会立即变成一个不在场的镇民角色。",
+    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，在该效果生效前你会变成一个不在场的镇民角色。",
     "firstNight": 0,
     "otherNight": 0,
     "remindersGlobal": [
       "是悟道者"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   "drunk",
   "lunatic",

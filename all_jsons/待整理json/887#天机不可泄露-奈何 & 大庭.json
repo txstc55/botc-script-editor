@@ -46,13 +46,13 @@
   {
     "id": "shugenja_c",
     "name": "修行者",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202411/c_9825126871371_4fbea129.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
     "team": "townsfolk",
     "edition": "custom",
     "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
     "firstNight": 12000,
     "otherNight": 0,
-    "firstNightReminder": "在首个夜晚，唤醒修行者。用手指水平指向修行者的某一侧，告诉他与他距离最近的邪恶玩家位于这一侧。如果修行者两侧最近的邪恶玩家与他的距离相等，由你来决定告诉他什么样的信息，并用手指指向对应的一侧。让修行者重新入睡。",
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
     "reminders": [],
     "remindersGlobal": [],
     "special": [
@@ -66,7 +66,10 @@
         "type": "signal",
         "value": "逆时针"
       }
-    ]
+    ],
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
     "id": "fangshi_c",
@@ -77,34 +80,38 @@
     "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
     "firstNight": 7420,
     "otherNight": 14300,
-    "firstNightReminder": "让方士选择一个数字。如果他选择了当晚对应的数字，向他展示对应数量在场的角色标记。",
-    "otherNightReminder": "在对应数字的夜晚，唤醒方士，向他展示对应数量在场的角色标记。",
+    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
+    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
     "reminders": [
       "得知"
     ],
-    "remindersGlobal": []
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "daoke_c",
     "name": "刀客",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_5751437760171_79dd1401.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/daoke.png",
     "team": "townsfolk",
     "edition": "custom",
-    "ability": "在你的首个夜晚，你会得知一个在场的爪牙角色。每局游戏限一次，你可以在白天时公开选择一名玩家：如果他是你得知的角色，在当晚他会死亡。",
+    "ability": "在你的首个夜晚，你会得知一个在场的爪牙角色。每局游戏限一次，你可以在白天公开选择一名玩家：如果他是你得知的角色，他死亡。",
     "firstNight": 9410,
     "otherNight": 9300,
-    "firstNightReminder": "在为首个夜晚做准备时，将刀客的“追杀”标记放置在一个爪牙角色标记旁。\n在首个夜晚，唤醒刀客。对他展示标记了“追杀”的爪牙角色标记。让刀客重新入睡。",
-    "otherNightReminder": "如果刀客在今天白天的时候使用自己的能力选择了一名他得知的爪牙玩家，或者，他得知的爪牙不在场但那名玩家是爪牙，那名玩家死亡。",
+    "firstNightReminder": "在首个夜晚，唤醒刀客，对他展示标记了“得知”的爪牙角色标记。",
+    "otherNightReminder": "在你的首个夜晚，你会得知一个在场的爪牙角色。每局游戏限一次，你可以在白天公开选择一名玩家：如果他是你得知的角色，他死亡。",
     "reminders": [
-      "得知",
-      "失去能力"
+      "失去能力",
+      "得知"
     ],
-    "remindersGlobal": []
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "seamstress_c",
     "name": "女裁缝",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/seamstress.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
     "team": "townsfolk",
     "edition": "custom",
     "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
@@ -115,19 +122,25 @@
     "reminders": [
       "失去能力"
     ],
-    "remindersGlobal": []
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
     "id": "savant_c",
     "name": "博学者",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "team": "townsfolk",
     "edition": "custom",
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [],
-    "remindersGlobal": []
+    "remindersGlobal": [],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "langzhong_c",
@@ -146,10 +159,10 @@
   {
     "id": "bianlianshi_c",
     "name": "变脸师",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_2669745308961_3cd6048e.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
     "team": "townsfolk",
     "edition": "custom",
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你在当晚可能会获得那个角色的能力，直到下个黄昏。",
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [
@@ -157,7 +170,11 @@
     ],
     "remindersGlobal": [
       "是变脸师"
-    ]
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "jinyiwei_c",
@@ -172,15 +189,18 @@
     "reminders": [
       "保护"
     ],
-    "remindersGlobal": []
+    "remindersGlobal": [],
+    "firstNightReminder": "",
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "wudaozhe_c",
     "name": "悟道者",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_9233465308961_9aa67828.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
     "team": "townsfolk",
     "edition": "custom",
-    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，你会立即变成一个不在场的镇民角色。",
+    "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，在该效果生效前你会变成一个不在场的镇民角色。",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [],
@@ -197,7 +217,10 @@
         "name": "replace-character",
         "type": "reveal"
       }
-    ]
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "flavor": ""
   },
   {
     "id": "tianjigezhu111",
@@ -267,29 +290,37 @@
   {
     "id": "puzzlemaster_c",
     "name": "解谜大师",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/puzzlemaster.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
     "team": "outsider",
     "edition": "custom",
     "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [
-      "醉酒",
-      "已猜测"
+      "已猜测",
+      "醉酒"
     ],
-    "remindersGlobal": []
+    "remindersGlobal": [],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "mutant_c",
     "name": "畸形秀演员",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mutant.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "team": "outsider",
     "edition": "custom",
     "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
     "firstNight": 0,
     "otherNight": 0,
     "reminders": [],
-    "remindersGlobal": []
+    "remindersGlobal": [],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
   },
   {
     "id": "duodongzhenghuanzhe111",

@@ -8,7 +8,7 @@
   },
   {
     "id": "2_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/2_fry79.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
     "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
     "reminders": [
       "猜测正确"
@@ -18,11 +18,14 @@
     "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
     "attribution": "官方角色",
     "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。",
-    "otherNight": 12
+    "otherNight": 12,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "1_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/1_fry79.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
     "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
     "reminders": [
       "疯狂",
@@ -33,21 +36,27 @@
     "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
     "attribution": "官方角色",
     "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。",
-    "firstNight": 14
+    "firstNight": 14,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "52_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/52_fry79.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
     "reminders": [
-      "得知"
+      "被得知"
     ],
     "name": "贵族",
     "team": "townsfolk",
     "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
     "attribution": "官方角色",
     "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。",
-    "firstNight": 15
+    "firstNight": 15,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "58_fry79",
@@ -97,21 +106,24 @@
   },
   {
     "id": "47_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/47_fry79.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/exorcist.png",
     "otherNightReminder": "让驱魔人选择一名玩家，不能是上一夜他选择过的玩家。让驱魔人重新入睡。如果驱魔人选中了恶魔：唤醒恶魔。展示“该角色的能力对你生效”信息标记和驱魔人角色标记。指向驱魔人玩家。",
     "reminders": [
       "被选择"
     ],
     "name": "驱魔人",
     "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你是驱魔人，但他当晚不会因其自身能力而被唤醒。",
+    "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）：如果你选中了恶魔，他会得知你的角色，但他当晚不会因其自身能力而被唤醒。",
     "attribution": "官方角色",
     "flavor": "每一个不洁之灵，每一份撒旦之力，每一次炼狱敌人的猛袭，每一个军团，每一个崇拜恶魔的组织和教派，以我主耶稣基督的名义和力量，将你们驱逐。我命令你们，远离上帝的教堂，远离上帝按祂的形貌所创造并受神圣羔羊的宝血所救赎的灵魂。",
-    "otherNight": 5
+    "otherNight": 5,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "3_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/3_fry79.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
     "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
     "reminders": [
       "不会死亡",
@@ -121,18 +133,26 @@
     "team": "townsfolk",
     "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
     "attribution": "官方角色",
-    "otherNight": 4
+    "otherNight": 4,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "73_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/73_fry79.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
     "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
     "name": "守鸦人",
     "team": "townsfolk",
     "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
     "attribution": "官方角色",
     "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "78_fry79",
@@ -151,21 +171,26 @@
   },
   {
     "id": "53_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/53_fry79.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/magician.png",
     "name": "魔术师",
     "team": "townsfolk",
     "ability": "恶魔会以为你是爪牙。爪牙会以为你是恶魔。",
     "attribution": "官方角色",
-    "flavor": "1…2…唵嘛呢…3…4…叭咪吽…（嗖！）是的，正如你们所见，女士们先生们，梵斯沃船长的那袋金子不见了！没了！无迹可循！感谢诸位，晚安啦！"
+    "flavor": "1…2…唵嘛呢…3…4…叭咪吽…（嗖！）是的，正如你们所见，女士们先生们，梵斯沃船长的那袋金子不见了！没了！无迹可循！感谢诸位，晚安啦！",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0
   },
   {
     "id": "21_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/21_fry79.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
     "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
     "remindersGlobal": [
-      "被选择",
-      "是疯子"
+      "是疯子",
+      "被选择"
     ],
     "name": "疯子",
     "team": "outsider",
@@ -173,7 +198,9 @@
     "attribution": "官方角色",
     "flavor": "吾即是暗夜……没错吧？",
     "firstNight": 11,
-    "otherNight": 6
+    "otherNight": 6,
+    "reminders": [],
+    "setup": 0
   },
   {
     "id": "_fry79",
@@ -190,12 +217,8 @@
   },
   {
     "id": "77_fry79",
-    "image": "https://www.bloodstar.xyz/p/humlet/FRY7-9/77_fry79.png",
-    "reminders": [
-      "1",
-      "2",
-      "3"
-    ],
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/1e/Hermit.png",
+    "reminders": [],
     "remindersGlobal": [
       "是隐士"
     ],
@@ -203,7 +226,10 @@
     "team": "outsider",
     "ability": "你拥有所有外来者能力。[-0~1外来者]",
     "attribution": "官方角色",
-    "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。"
+    "flavor": "于尘寰遗忘之境，有光静静亮着，不问归期。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 1
   },
   {
     "id": "65_fry79",

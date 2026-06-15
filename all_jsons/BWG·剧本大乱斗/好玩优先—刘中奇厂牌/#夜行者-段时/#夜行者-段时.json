@@ -57,10 +57,16 @@
   },
   {
     "id": "5_night",
-    "image": "https://www.bloodstar.xyz/p/C2H43g/night/5_night.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
     "name": "政客",
     "team": "outsider",
-    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。"
+    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "7_night",
@@ -74,18 +80,20 @@
   },
   {
     "id": "8_night",
-    "image": "https://www.bloodstar.xyz/p/C2H43g/night/8_night.png",
-    "firstNightReminder": "唤醒所有爪牙，并告知他们场中有落难少女。",
-    "otherNightReminder": "如果被巡山人选中，唤醒并为其展示新角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
+    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
+    "otherNightReminder": "0",
     "reminders": [
-      "已被猜测",
-      "中毒"
+      "已被猜测"
     ],
     "name": "落难少女",
     "team": "outsider",
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
     "firstNight": 13,
-    "otherNight": 6
+    "otherNight": 6,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "9_night",

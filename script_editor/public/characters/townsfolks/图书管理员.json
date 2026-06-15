@@ -4,7 +4,7 @@
   "team": "townsfolk",
   "teamLabelZh": "镇民",
   "folder": "townsfolks",
-  "variantCount": 29,
+  "variantCount": 26,
   "totalOccurrenceCount": 127,
   "variants": [
     {
@@ -28,7 +28,7 @@
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 52,
+      "occurrenceCount": 53,
       "notes": []
     },
     {
@@ -40,9 +40,33 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 33,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [
+        "外来者",
+        "错误"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 20,
+      "notes": []
+    },
+    {
+      "id": "图书管理员",
+      "name": "图书管理员",
+      "variantIndex": 3,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
       "firstNight": 76,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -58,39 +82,15 @@
     {
       "id": "图书管理员",
       "name": "图书管理员",
-      "variantIndex": 3,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
-      "firstNight": 33,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "外来者",
-        "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 13,
-      "notes": []
-    },
-    {
-      "id": "图书管理员",
-      "name": "图书管理员",
       "variantIndex": 4,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
       "firstNight": 7600,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -107,30 +107,6 @@
       "id": "图书管理员",
       "name": "图书管理员",
       "variantIndex": 5,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
-      "firstNight": 33,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "外来者",
-        "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 5,
-      "notes": []
-    },
-    {
-      "id": "图书管理员",
-      "name": "图书管理员",
-      "variantIndex": 6,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
@@ -154,15 +130,39 @@
     {
       "id": "图书管理员",
       "name": "图书管理员",
+      "variantIndex": 6,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 40,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [
+        "外来者",
+        "错误"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 2,
+      "notes": []
+    },
+    {
+      "id": "图书管理员",
+      "name": "图书管理员",
       "variantIndex": 7,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/55/Librarian.png/300px-Librarian.png",
-      "firstNight": 33,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 3050,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -184,9 +184,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/55/Librarian.png/300px-Librarian.png",
-      "firstNight": 40,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 3600,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -208,9 +208,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
-      "firstNight": 3050,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 10004,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -233,7 +233,7 @@
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
-      "firstNight": 3600,
+      "firstNight": 5,
       "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
@@ -244,7 +244,7 @@
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 2,
+      "occurrenceCount": 1,
       "notes": []
     },
     {
@@ -256,19 +256,19 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://img.picui.cn/free/2025/06/17/6851433c835f6.png",
-      "firstNight": 10004,
-      "firstNightReminder": "唤醒图书管理员，告知其信息。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 11,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
         "外来者",
-        "得知"
+        "错误"
       ],
       "remindersGlobal": [],
       "setup": 0,
       "flavor": "",
-      "occurrenceCount": 2,
+      "occurrenceCount": 1,
       "notes": []
     },
     {
@@ -280,9 +280,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
-      "firstNight": 5,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 12,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -305,8 +305,8 @@
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
-      "firstNight": 11,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "firstNight": 14,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -328,9 +328,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://www.bloodstar.xyz/p/ronchi/dagedaowo/1_dagedaowo.png",
-      "firstNight": 12,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 17,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -352,8 +352,8 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
-      "firstNight": 14,
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 18,
       "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
@@ -376,9 +376,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://www.bloodstar.xyz/p/Jungle/TricksOfLight/1_tricksoflight.png",
-      "firstNight": 17,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 18,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -400,9 +400,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1703695127_197011_8353.png",
-      "firstNight": 18,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 19,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -424,9 +424,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://www.bloodstar.xyz/p/Guiltier/yi/_yi.png",
-      "firstNight": 18,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 21,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -448,9 +448,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://www.bloodstar.xyz/p/Guiltier/seve/1_seve.png",
-      "firstNight": 19,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 32,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -472,9 +472,9 @@
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
-      "firstNight": 21,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 42,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
       "reminders": [
@@ -497,31 +497,7 @@
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
-      "firstNight": 32,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "外来者",
-        "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "图书管理员",
-      "name": "图书管理员",
-      "variantIndex": 22,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/55/Librarian.png/300px-Librarian.png",
-      "firstNight": 36,
+      "firstNight": 3055,
       "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
       "otherNightReminder": "",
@@ -538,79 +514,7 @@
     {
       "id": "图书管理员",
       "name": "图书管理员",
-      "variantIndex": 23,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://i.postimg.cc/D83bYpDk/Librarian.png",
-      "firstNight": 42,
-      "firstNightReminder": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "外来者",
-        "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "图书管理员",
-      "name": "图书管理员",
-      "variantIndex": 24,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png",
-      "firstNight": 3055,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "外来者",
-        "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "图书管理员",
-      "name": "图书管理员",
-      "variantIndex": 25,
-      "team": "townsfolk",
-      "teams": [
-        "townsfolk"
-      ],
-      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "[\"https://oss.gstonegames.com/data_file/clocktower/role_icon/librarian.png\"]",
-      "firstNight": 3500,
-      "firstNightReminder": "展示那个外来者角色标记。指向被你标记“外来者”和“错误”的两名玩家。",
-      "otherNight": 0,
-      "otherNightReminder": "",
-      "reminders": [
-        "外来者",
-        "错误"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "图书管理员",
-      "name": "图书管理员",
-      "variantIndex": 26,
+      "variantIndex": 22,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
@@ -634,13 +538,37 @@
     {
       "id": "图书管理员",
       "name": "图书管理员",
-      "variantIndex": 27,
+      "variantIndex": 23,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
       ],
       "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/1/18/s6zgwg9oxao74onxk6f21fz8ain7b87.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+      "firstNight": 3500,
+      "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
+      "otherNight": 0,
+      "otherNightReminder": "",
+      "reminders": [
+        "外来者",
+        "错误"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "图书管理员",
+      "name": "图书管理员",
+      "variantIndex": 24,
+      "team": "townsfolk",
+      "teams": [
+        "townsfolk"
+      ],
+      "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
       "firstNight": 3600,
       "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
       "otherNight": 0,
@@ -658,7 +586,7 @@
     {
       "id": "图书管理员",
       "name": "图书管理员",
-      "variantIndex": 28,
+      "variantIndex": 25,
       "team": "townsfolk",
       "teams": [
         "townsfolk"
@@ -682,7 +610,7 @@
     {
       "id": "图书管理员",
       "name": "图书管理员",
-      "variantIndex": 29,
+      "variantIndex": 26,
       "team": "townsfolk",
       "teams": [
         "townsfolk"

@@ -34,8 +34,10 @@
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "firstNightReminder": "唤醒骑士，然后指向标记了“得知”的两名玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_7251125151861_73cfd5f9.jpg"
+    "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
+    "otherNightReminder": "",
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "qintianjian",
@@ -76,7 +78,10 @@
     "reminders": [],
     "remindersGlobal": [],
     "setup": 0,
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/savant.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "balloonist",
@@ -108,7 +113,8 @@
     "setup": 0,
     "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
     "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fortune_teller.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
     "id": "town_crier",
@@ -118,13 +124,15 @@
     "firstNight": 0,
     "otherNight": 11700,
     "reminders": [
-      "爪牙未提名",
-      "爪牙已提名"
+      "爪牙已提名",
+      "爪牙未提名"
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "otherNightReminder": "对他点头或摇头示意今天白天是否有爪牙发起过提名。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/town_crier.png"
+    "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
+    "firstNightReminder": "",
+    "flavor": ""
   },
   {
     "id": "undertaker",
@@ -139,7 +147,9 @@
     "remindersGlobal": [],
     "setup": 0,
     "otherNightReminder": "如果有玩家今天白天死于处决，唤醒送葬者并对他展示那名玩家的角色标记。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/undertaker.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/undertaker.png",
+    "firstNightReminder": "",
+    "flavor": "嗯……看看我们发现了什么？左靴到足跟都有磨损，靴尖下还有些硝石屑。这是军人才会有的装束。"
   },
   {
     "id": "limao",
@@ -185,7 +195,10 @@
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202404/c_1527923824171_6eff7fda.jpg"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/banshee.png",
+    "firstNightReminder": "",
+    "otherNightReminder": "如果恶魔杀死了你，所有玩家都会得知此事。从现在开始，你每天可以发起两次提名，每次投票时可以投两票。",
+    "flavor": ""
   },
   {
     "id": "xizi_new",
@@ -213,8 +226,11 @@
     "remindersGlobal": [
       "是酒鬼"
     ],
-    "setup": 0,
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/drunk.png"
+    "setup": 1,
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
     "id": "plague_doctor",
@@ -228,8 +244,10 @@
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "otherNightReminder": "当瘟疫医生死亡时，将一个不在场的爪牙角色标记放置在魔典左侧的正中位置，并用瘟疫医生的“说书人能力”标记标记该爪牙角色。如可能，在夜晚顺序表旁添加相应的夜晚标记用以提示。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_9614144308961_fe5074b8.jpg"
+    "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+    "firstNightReminder": "",
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。"
   },
   {
     "id": "sweetheart",
@@ -244,7 +262,9 @@
     "remindersGlobal": [],
     "setup": 0,
     "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sweetheart.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
+    "firstNightReminder": "",
+    "flavor": "我永远也忘不掉她……永远……"
   },
   {
     "id": "golem",
@@ -258,7 +278,10 @@
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/golem.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/golem.png",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "flavor": ""
   },
   {
     "id": "xaan",
