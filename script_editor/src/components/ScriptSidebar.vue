@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { FileText, ListOrdered, Plus, Trash2, Upload } from "@lucide/vue";
+import { FileText, ListOrdered, Plus, Trash2 } from "@lucide/vue";
 import type { BuiltInFirstNightOrderKey, ScriptDraft } from "../types";
 import {
   buildFirstNightOrderItems,
@@ -14,7 +14,6 @@ const props = defineProps<{
 }>();
 
 defineEmits<{
-  "json-upload": [event: Event];
   "add-fabled": [];
   "remove-fabled": [id: string];
   "add-jinx": [];
@@ -45,11 +44,6 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
         <FileText :size="18" aria-hidden="true" />
         <span>剧本</span>
       </div>
-      <label class="file-button">
-        <Upload :size="16" aria-hidden="true" />
-        <span>导入 JSON</span>
-        <input accept=".json,application/json" type="file" @change="$emit('json-upload', $event)" />
-      </label>
       <p v-if="props.importError" class="import-status error">
         {{ props.importError }}
       </p>
@@ -88,12 +82,12 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
           ]"
         >
           <span class="night-order-editor-toggle">
+            <span>{{ definition.name }}</span>
             <input
               :checked="props.script.builtInFirstNightEnabled[definition.id]"
               type="checkbox"
               @change="updateBuiltInFirstNightEnabled(definition.id, $event)"
             />
-            <span>{{ definition.name }}</span>
           </span>
           <input
             :value="props.script.builtInFirstNightOrders[definition.id]"
@@ -177,7 +171,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 }
 
 .script-row {
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
   align-content: start;
   overflow-y: auto;
   overscroll-behavior: contain;
@@ -209,30 +203,6 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   color: #596579;
   font-size: 12px;
   font-weight: 650;
-}
-
-.file-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 36px;
-  border: 1px solid #b8c5d8;
-  border-radius: 7px;
-  background: #edf4ff;
-  color: #1d4ed8;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 750;
-}
-
-.file-button:hover {
-  border-color: #2563eb;
-  background: #dbeafe;
-}
-
-.file-button input {
-  display: none;
 }
 
 .import-status {
@@ -371,9 +341,11 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 }
 
 .night-order-editor-toggle {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 6px;
+  width: 100%;
   min-width: 0;
 }
 

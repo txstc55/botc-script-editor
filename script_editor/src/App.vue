@@ -12,7 +12,6 @@ const editor = useScriptEditor();
     <ScriptSidebar
       :script="editor.script"
       :import-error="editor.importError.value"
-      @json-upload="editor.handleJsonUpload"
       @add-fabled="editor.addFabled"
       @remove-fabled="editor.removeFabled"
       @add-jinx="editor.addJinx"
@@ -22,6 +21,7 @@ const editor = useScriptEditor();
     <ScriptPreview
       :script="editor.script"
       :selected-role-count="editor.selectedRoleCount.value"
+      @json-upload="editor.handleJsonUpload"
     />
 
     <TeamEditor

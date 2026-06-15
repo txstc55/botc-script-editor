@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
-import { Eye } from "@lucide/vue";
+import { Eye, FileJson, ImageDown, Upload } from "@lucide/vue";
 import type { ScriptDraft, TeamKey } from "../types";
 import {
   buildFirstNightOrderItems,
@@ -84,6 +84,10 @@ import { usePreviewPanZoom } from "./preview/usePreviewPanZoom";
 const props = defineProps<{
   script: ScriptDraft;
   selectedRoleCount: number;
+}>();
+
+defineEmits<{
+  "json-upload": [event: Event];
 }>();
 
 const previewSections = computed<PreviewSection[]>(() => {
@@ -1097,6 +1101,198 @@ function findRoleById(roleId?: string) {
   }
   return null;
 }
+
+async function exportPreviewImage() {
+  const svg = previewRoot.value?.querySelector<SVGSVGElement>("svg.script-svg");
+  if (!svg) {
+    return;
+  }
+
+  const exportSvg = svg.cloneNode(true) as SVGSVGElement;
+  const exportHeight = previewLayout.value.height;
+  exportSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  exportSvg.setAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
+  exportSvg.setAttribute("width", String(SVG_WIDTH));
+  exportSvg.setAttribute("height", String(exportHeight));
+  exportSvg.setAttribute("viewBox", `0 0 ${SVG_WIDTH} ${exportHeight}`);
+  addExportStyles(exportSvg);
+  await inlineExportImages(exportSvg);
+
+  const svgText = new XMLSerializer().serializeToString(exportSvg);
+  const fileName = safeExportFileName(props.script.name || "剧本");
+
+  try {
+    const pngBlob = await renderSvgToPng(svgText, SVG_WIDTH, exportHeight);
+    downloadBlob(pngBlob, `${fileName}.png`);
+  } catch (error) {
+    console.error("导出 PNG 失败，已改为导出 SVG。", error);
+    downloadBlob(new Blob([svgText], { type: "image/svg+xml;charset=utf-8" }), `${fileName}.svg`);
+  }
+}
+
+function addExportStyles(svg: SVGSVGElement) {
+  const style = document.createElementNS("http://www.w3.org/2000/svg", "style");
+  style.textContent = `
+    .script-svg {
+      background: transparent;
+      font-family: "Noto Serif SC", "Songti SC", STSong, serif;
+      user-select: none;
+    }
+
+    .svg-script-title {
+      fill: #332018;
+      font-family: "Noto Serif SC", "Songti SC", STSong, serif;
+      font-weight: 900;
+    }
+
+    .svg-script-author,
+    .svg-section-heading,
+    .svg-role-name {
+      font-family: "Noto Serif SC", "Songti SC", STSong, serif;
+      font-weight: 900;
+    }
+
+    .svg-script-author {
+      fill: #26313f;
+    }
+
+    .role-ability-editor {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      color: #141a22;
+      font-family: "Noto Serif SC", "Songti SC", STSong, serif;
+      font-weight: 650;
+      outline: none;
+      user-select: text;
+      white-space: normal;
+      word-break: break-all;
+    }
+
+    .role-ability-editor strong {
+      font-weight: 900;
+    }
+
+    .role-ability-editor .ability-bracket-highlight {
+      padding: 0 2px;
+      border-radius: 3px;
+      background: #e5e7eb;
+      font-style: italic;
+      font-weight: 900;
+    }
+
+    .svg-role-fallback,
+    .svg-night-fallback {
+      font-weight: 900;
+    }
+
+    .svg-night-bar {
+      fill: #201713;
+      stroke: rgba(255, 255, 255, 0.16);
+      stroke-width: 1px;
+    }
+
+    .svg-night-label {
+      fill: #ffffff;
+      font-weight: 900;
+    }
+  `;
+  svg.insertBefore(style, svg.firstChild);
+}
+
+async function inlineExportImages(svg: SVGSVGElement) {
+  const images = Array.from(svg.querySelectorAll<SVGImageElement>("image"));
+  await Promise.all(
+    images.map(async (image) => {
+      const href = image.getAttribute("href") || image.getAttribute("xlink:href") || image.href.baseVal;
+      if (!href || href.startsWith("data:") || href.startsWith("blob:")) {
+        return;
+      }
+
+      try {
+        const response = await fetch(href, { mode: "cors" });
+        if (!response.ok) {
+          return;
+        }
+        const dataUrl = await blobToDataUrl(await response.blob());
+        image.setAttribute("href", dataUrl);
+        image.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", dataUrl);
+      } catch {
+        // Some remote icon hosts do not allow canvas-safe reads. The SVG fallback still preserves the image URL.
+      }
+    }),
+  );
+}
+
+function blobToDataUrl(blob: Blob) {
+  return new Promise<string>((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(String(reader.result));
+    reader.onerror = () => reject(reader.error);
+    reader.readAsDataURL(blob);
+  });
+}
+
+async function renderSvgToPng(svgText: string, width: number, height: number) {
+  const svgBlob = new Blob([svgText], { type: "image/svg+xml;charset=utf-8" });
+  const objectUrl = URL.createObjectURL(svgBlob);
+
+  try {
+    const image = await loadImage(objectUrl);
+    const pixelRatio = 2;
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(width * pixelRatio);
+    canvas.height = Math.round(height * pixelRatio);
+    const context = canvas.getContext("2d");
+    if (!context) {
+      throw new Error("Canvas is not available.");
+    }
+    context.scale(pixelRatio, pixelRatio);
+    context.drawImage(image, 0, 0, width, height);
+
+    return await new Promise<Blob>((resolve, reject) => {
+      try {
+        canvas.toBlob((blob) => {
+          if (blob) {
+            resolve(blob);
+            return;
+          }
+          reject(new Error("Canvas export returned an empty image."));
+        }, "image/png");
+      } catch (error) {
+        reject(error);
+      }
+    });
+  } finally {
+    URL.revokeObjectURL(objectUrl);
+  }
+}
+
+function loadImage(src: string) {
+  return new Promise<HTMLImageElement>((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error("Failed to load exported SVG."));
+    image.src = src;
+  });
+}
+
+function downloadBlob(blob: Blob, fileName: string) {
+  const objectUrl = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = objectUrl;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
+}
+
+function safeExportFileName(fileName: string) {
+  const sanitized = fileName.trim().replace(/[\\/:*?"<>|]+/g, "_");
+  return sanitized || "剧本";
+}
 </script>
 
 <template>
@@ -1105,6 +1301,21 @@ function findRoleById(roleId?: string) {
       <div class="toolbar-title">
         <Eye :size="18" aria-hidden="true" />
         <span>预览</span>
+      </div>
+      <div class="preview-actions" aria-label="预览操作">
+        <label class="preview-action">
+          <Upload :size="15" aria-hidden="true" />
+          <span>导入 JSON</span>
+          <input accept=".json,application/json" type="file" @change="$emit('json-upload', $event)" />
+        </label>
+        <button class="preview-action" type="button" @click="exportPreviewImage">
+          <ImageDown :size="15" aria-hidden="true" />
+          <span>导出图片</span>
+        </button>
+        <button class="preview-action" disabled type="button">
+          <FileJson :size="15" aria-hidden="true" />
+          <span>导出 JSON</span>
+        </button>
       </div>
       <div class="preview-stats">
         <span>{{ selectedRoleCount }} 角色</span>
@@ -1433,9 +1644,10 @@ function findRoleById(roleId?: string) {
 }
 
 .pane-toolbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(96px, 1fr) auto minmax(96px, 1fr);
   align-items: center;
-  justify-content: space-between;
+  gap: 12px;
   min-height: 56px;
   padding: 0 16px;
   border-bottom: 1px solid #d9e2ef;
@@ -1453,10 +1665,63 @@ function findRoleById(roleId?: string) {
   font-weight: 700;
 }
 
+.preview-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.preview-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 11px;
+  border: 1px solid #c7d3e3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #26313f;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  transition:
+    border-color 140ms ease,
+    background 140ms ease,
+    color 140ms ease,
+    transform 140ms ease;
+}
+
+.preview-action:hover:not(:disabled) {
+  border-color: #2563eb;
+  background: #edf4ff;
+  color: #1d4ed8;
+}
+
+.preview-action:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.preview-action:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+
+.preview-action input {
+  display: none;
+}
+
 .preview-stats {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
+  min-width: 0;
   color: #64748b;
   font-size: 12px;
 }
