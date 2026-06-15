@@ -363,18 +363,18 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mezepheles.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
     "edition": "custom",
     "flavor": "",
     "id": "mezepheles_c",
-    "firstNightReminder": "唤醒灵言师，对他展示他的关键词。 ",
+    "firstNightReminder": "唤醒灵言师，对他展示他的关键词。",
     "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
     "name": "灵言师",
     "otherNight": 3200.0,
     "setup": 0,
     "reminders": [
-      "转为邪恶",
-      "失去能力"
+      "失去能力",
+      "转为邪恶"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -382,7 +382,7 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/poisoner.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
     "edition": "custom",
     "flavor": "",
     "id": "poisoner_c",
@@ -400,21 +400,21 @@
   },
   {
     "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202411/c_7860002933371_9c39e151.jpg",
+    "image": "https://clocktower-wiki.gstonegames.com/images/b/b9/Xaan.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。",
     "id": "xaan_c",
-    "firstNightReminder": "如果初始外来者的数量等于1，则标记大限将至。",
-    "otherNightReminder": "如果初始外来者的数量等于当前游戏的夜晚数，则标记大限将至。",
+    "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "name": "限",
     "otherNight": 1300.0,
     "setup": 1,
     "reminders": [
+      "大限将至",
       "第一晚",
-      "第二晚",
       "第三晚",
-      "第四晚",
-      "大限将至"
+      "第二晚",
+      "第四晚"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -422,23 +422,25 @@
   },
   {
     "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mastermind.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。",
     "id": "mastermind_c",
     "firstNightReminder": "",
     "otherNightReminder": "",
     "name": "主谋",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "主谋日"
+    ],
     "remindersGlobal": [],
     "team": "minion",
     "firstNight": 0
   },
   {
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/marionette.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "edition": "custom",
     "flavor": "",
     "id": "marionette_c",

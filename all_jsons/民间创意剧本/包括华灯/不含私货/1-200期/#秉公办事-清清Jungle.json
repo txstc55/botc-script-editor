@@ -261,7 +261,12 @@
     "name": "麻脸巫婆",
     "team": "minion",
     "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "otherNight": 8
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "21_binggongbanshi",
@@ -286,27 +291,42 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/psychopath.png",
     "name": "精神病患者",
     "team": "minion",
-    "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。如果你被处决，提名你的玩家需要和你猜拳，只有你输了你才会死亡。"
+    "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。如果你被处决，提名你的玩家需要和你猜拳，只有你输了你才会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "23_binggongbanshi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/7/7f/Ganshiren.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4215797694761_97f10b13.jpg",
     "reminders": [
       "以为存活"
     ],
     "setup": 1,
     "name": "赶尸人",
     "team": "minion",
-    "ability": "与你邻近的两名镇民玩家会在其首次死亡时被当作仍然存活。[-1外来者]"
+    "ability": "与你邻近的两名镇民玩家会在其首次死亡时被当作仍然存活。[-1外来者]",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "24_binggongbanshi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/0/09/Vizier.png",
-    "firstNightReminder": "告诉所有玩家维齐尔在场，并指向维齐尔玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vizier.png",
+    "firstNightReminder": "如果维齐尔在场，告知所有人谁是维齐尔。",
     "name": "维齐尔",
     "team": "minion",
-    "ability": "所有玩家都知道你是维齐尔。 你在白天时不会死亡。 如果一次提名中有善良玩家投票，你可以让被提名者立即被处决。",
-    "firstNight": 24
+    "ability": "所有玩家都知道你是维齐尔。你在白天时不会死亡。如果一次提名中有善良玩家投票，你可以让被提名者立即被处决。",
+    "firstNight": 24,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "25_binggongbanshi",

@@ -303,7 +303,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "gebulinaaaaaaa111111",
@@ -320,7 +322,9 @@
     "reminders": [
       "已宣称"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？"
   },
   {
     "id": "tousioahsdoasidhas",
@@ -335,13 +339,15 @@
     "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "reminders": [
+      "大限将至",
       "第一晚",
-      "第二晚",
       "第三晚",
-      "第四晚",
-      "大限将至"
+      "第二晚",
+      "第四晚"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
   },
   {
     "id": "huuuuuuuuuuuuu111",
@@ -353,11 +359,14 @@
     "sch_team": "爪牙",
     "firstNight": 29,
     "otherNight": 24,
-    "firstNightReminder": "唤醒狐媚娘，让她选择一名玩家。在狐媚娘入睡后通知那名玩家狐媚娘在场。",
-    "otherNightReminder": "如果狐媚娘死于处决，唤醒她选择的玩家并通知他阵营变化。",
+    "firstNightReminder": "唤醒狐媚娘，让她选择一名玩家。标记那名玩家“被魅惑”。随后唤醒那名玩家，对他展示“该角色的能力对你触发”和狐媚娘角色标记。",
+    "otherNightReminder": "如果今日狐媚娘死于处决，且被魅惑的玩家为善良阵营，唤醒被魅惑的玩家，对他展示“你是”和朝下的大拇指。",
     "reminders": [
       "被魅惑"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "xiaoemo1111111eee111eee111",

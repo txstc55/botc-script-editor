@@ -305,7 +305,7 @@
   },
   {
     "id": "e124340a-52c3-470d-90f0-0ed0103dfbfd",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/7/74/Poisoner.png/300px-Poisoner.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
     "edition": "custom",
     "name": "投毒者",
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
@@ -318,11 +318,13 @@
     "reminders": [
       "中毒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "fe532c34-1ae5-4eef-8a72-6913511e8e47",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/36/Spy.png/300px-Spy.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spy.png",
     "edition": "custom",
     "name": "间谍",
     "ability": "每个夜晚，你能查看魔典。你可能会被当作善良阵营、镇民角色或外来者角色，即使你已死亡。",
@@ -333,11 +335,13 @@
     "firstNightReminder": "将魔典展示给间谍，他想看多久就看多久。",
     "otherNightReminder": "将魔典展示给间谍，他想看多久就看多久。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "afb995e1-caab-40fe-8c89-70320f42388f",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/a/ac/Scarletwoman.png/300px-Scarletwoman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
     "edition": "custom",
     "name": "红唇女郎",
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
@@ -345,23 +349,27 @@
     "sch_team": "爪牙",
     "firstNight": 0,
     "otherNight": 20,
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "reminders": [
       "是恶魔"
-    ]
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
-    "image": "https://i.postimg.cc/L4zsf7s4/1.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。",
     "id": "Boffin_button",
-    "firstNightReminder": "唤醒科学怪人，向他展示恶魔获得的能力的对应的角色标记。",
+    "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。",
     "otherNightReminder": "",
     "name": "科学怪人",
     "otherNight": 0,
     "firstNight": 2,
-    "setup": 0,
+    "setup": 1,
     "reminders": [],
     "remindersGlobal": [],
     "team": "minion"

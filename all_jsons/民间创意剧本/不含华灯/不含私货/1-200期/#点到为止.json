@@ -309,7 +309,7 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/witch.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
     "edition": "custom",
     "flavor": "",
     "id": "witchbutton",
@@ -327,7 +327,7 @@
   },
   {
     "ability": "你与一名对立阵营的玩家互相知道对方是什么角色。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/evil_twin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
     "edition": "custom",
     "flavor": "",
     "id": "evil_twinbutton",
@@ -345,7 +345,7 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/pit-hag.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
     "edition": "custom",
     "flavor": "",
     "id": "pit-hagbutton",
@@ -361,7 +361,7 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "edition": "custom",
     "flavor": "",
     "id": "assassinbutton",
@@ -371,8 +371,8 @@
     "otherNight": 37,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -380,11 +380,11 @@
   },
   {
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/marionette.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "edition": "custom",
     "flavor": "",
     "id": "marionettebutton",
-    "firstNightReminder": "选择一个邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "otherNightReminder": "",
     "name": "提线木偶",
     "otherNight": 0,

@@ -288,46 +288,48 @@
     "name_eng": "Baron",
     "firstNight": 0,
     "ability": "会有额外的外来者在场。[+2 外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baron.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baron.png",
+    "remindersGlobal": [],
+    "flavor": "这个小镇没救了，不是么？廉价的外来劳动力……这就是问题所在。要我说，我会把他们全部调配到矿井里。不过是稍有些困难的工作，这不会伤害到任何人，要是有人提出反对意见就赏他一记耳光。这就是所谓的底线，不是么？"
   },
   {
-    "firstNightReminder": "告诉所有玩家维齐尔在场，并指向维齐尔玩家。",
+    "firstNightReminder": "如果维齐尔在场，告知所有人谁是维齐尔。",
     "otherNightReminder": "",
     "id": "vizierbutton",
     "name": "维齐尔",
     "firstNight": 54,
     "otherNight": 0,
     "setup": 0,
-    "reminders": [
-      "被当作邪恶"
-    ],
+    "reminders": [],
     "remindersGlobal": [],
     "edition": "custom",
     "team": "minion",
     "name_eng": "Vizier",
     "ability": "所有玩家都知道你是维齐尔。你在白天时不会死亡。如果一次提名中有善良玩家投票，你可以让被提名者立即被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_8651385151861_48d3dd5d.jpg"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vizier.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "name": "红唇女郎",
     "otherNight": 20,
     "setup": 0,
-    "reminders": [],
-    "id": "scarlet_womanbutton",
-    "edition": "custom",
-    "remindersGlobal": [
+    "reminders": [
       "是恶魔"
     ],
+    "id": "scarlet_womanbutton",
+    "edition": "custom",
+    "remindersGlobal": [],
     "team": "minion",
     "name_eng": "Scarlet Woman",
     "firstNight": 0,
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
-    "firstNightReminder": "选择一个邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "otherNightReminder": "",
     "name": "提线木偶",
     "otherNight": 0,
@@ -342,7 +344,8 @@
     "name_eng": "Marionette",
     "firstNight": 11,
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",

@@ -337,13 +337,15 @@
     "name_eng": "Poisoner",
     "firstNight": 17,
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
-    "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们可能会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202307/c_4331482099861_0db1bfaf.jpg",
+    "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们之中可能会有人死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harpy.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我从未见过如此光明的一日，阴森利爪不再笼罩着我。",
     "id": "harpy",
     "firstNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
     "otherNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
@@ -359,7 +361,7 @@
     "firstNight": 26
   },
   {
-    "firstNightReminder": "选择一个邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "otherNightReminder": "",
     "name": "提线木偶",
     "otherNight": 0,
@@ -374,17 +376,18 @@
     "name_eng": "Marionette",
     "firstNight": 11,
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "flavor": ""
   },
   {
-    "firstNightReminder": "告诉灵言师他的秘密词语。",
+    "firstNightReminder": "唤醒灵言师，对他展示他的关键词。",
     "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
     "name": "灵言师",
     "otherNight": 19,
     "setup": 0,
     "reminders": [
-      "邪恶",
-      "失去能力"
+      "失去能力",
+      "转为邪恶"
     ],
     "id": "mezephelesbutton",
     "edition": "custom",
@@ -392,7 +395,9 @@
     "name_eng": "Mezepheles",
     "firstNight": 27,
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",

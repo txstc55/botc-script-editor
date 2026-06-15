@@ -329,12 +329,14 @@
     "sch_team": "爪牙",
     "firstNight": 18,
     "otherNight": 9,
-    "firstNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
-    "otherNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
     "reminders": [
       "中毒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "baonijuhua111",
@@ -347,12 +349,14 @@
     "firstNight": 0,
     "otherNight": 52,
     "firstNightReminder": "",
-    "otherNightReminder": "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "hongchunnvlangaaaaaaaa111",
@@ -367,7 +371,11 @@
     "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "reminders": [
       "是恶魔"
-    ]
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "id": "xiaoemo1111111eee111eee111",

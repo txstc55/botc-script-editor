@@ -339,25 +339,27 @@
   },
   {
     "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mastermind.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。",
     "id": "2_27",
     "firstNightReminder": "",
     "otherNightReminder": "",
     "name": "主谋",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "主谋日"
+    ],
     "remindersGlobal": [],
     "team": "minion",
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们可能会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202307/c_4331482099861_0db1bfaf.jpg",
+    "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们之中可能会有人死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harpy.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我从未见过如此光明的一日，阴森利爪不再笼罩着我。",
     "id": "harpyButton",
     "firstNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
     "otherNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
@@ -374,7 +376,7 @@
   },
   {
     "ability": "每个夜晚，你能查看魔典。你可能会被当作善良阵营、镇民角色或外来者角色，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/spy.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spy.png",
     "edition": "custom",
     "flavor": "",
     "id": "20236_4",
@@ -409,14 +411,14 @@
     "firstNight": 21
   },
   {
-    "firstNightReminder": "告诉灵言师他的秘密词语。",
+    "firstNightReminder": "唤醒灵言师，对他展示他的关键词。",
     "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
     "name": "灵言师",
     "otherNight": 19,
     "setup": 0,
     "reminders": [
-      "邪恶",
-      "失去能力"
+      "失去能力",
+      "转为邪恶"
     ],
     "id": "mezephelesbutton",
     "edition": "custom",
@@ -424,7 +426,9 @@
     "name_eng": "Mezepheles",
     "firstNight": 27,
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "22_li_beng_yue_huai",

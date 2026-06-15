@@ -238,7 +238,7 @@
   },
   {
     "id": "19_jiangzhoupipayin",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/jiangzhoupipayin/19_jiangzhoupipayin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
     "firstNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
     "otherNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
     "reminders": [
@@ -248,11 +248,14 @@
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
     "firstNight": 3600,
-    "otherNight": 7
+    "otherNight": 7,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "20_jiangzhoupipayin",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/jiangzhoupipayin/20_jiangzhoupipayin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
     "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
     "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
     "reminders": [
@@ -262,12 +265,15 @@
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
     "firstNight": 3700,
-    "otherNight": 8
+    "otherNight": 8,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
   },
   {
     "id": "21_jiangzhoupipayin",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/jiangzhoupipayin/21_jiangzhoupipayin.png",
-    "firstNightReminder": "选择一个邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "remindersGlobal": [
       "是提线木偶"
     ],
@@ -275,7 +281,10 @@
     "name": "提线木偶",
     "team": "minion",
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "firstNight": 3100
+    "firstNight": 3100,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "22_jiangzhoupipayin",

@@ -361,16 +361,16 @@
   },
   {
     "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
-    "image": "https://i.postimg.cc/L4zsf7s4/1.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。",
     "id": "Boffin_button",
-    "firstNightReminder": "唤醒科学怪人，向他展示恶魔获得的能力的对应的角色标记。",
+    "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。",
     "otherNightReminder": "",
     "name": "科学怪人",
     "otherNight": 0,
     "firstNight": 2,
-    "setup": 0,
+    "setup": 1,
     "reminders": [],
     "remindersGlobal": [],
     "team": "minion"
@@ -397,7 +397,7 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "edition": "custom",
     "flavor": "",
     "id": "assassin_button",
@@ -407,8 +407,8 @@
     "otherNight": 86,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -417,9 +417,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/devils_advocate.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。",
     "id": "devils_advocate_button",
     "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",
     "otherNightReminder": "让魔鬼代言人选择一名存活玩家，不能是上一夜他选择过的玩家。标记那名玩家处决不死。",

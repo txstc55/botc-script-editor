@@ -393,10 +393,7 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/assassin_b.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "edition": "custom",
     "flavor": "",
     "id": "assassin_c",
@@ -406,8 +403,8 @@
     "otherNight": 8600,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -415,12 +412,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
-    "image": [
-      "https://oss.gstonegames.com/data_file/clocktower/role_icon/devils_advocate.png",
-      "https://picbed-1362790562.cos.ap-shanghai.myqcloud.com/devils_advocate_b.png"
-    ],
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。",
     "id": "devils_advocate_c",
     "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",
     "otherNightReminder": "让魔鬼代言人选择一名存活玩家，不能是上一夜他选择过的玩家。标记那名玩家处决不死。",
@@ -436,21 +430,21 @@
   },
   {
     "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202411/c_7860002933371_9c39e151.jpg",
+    "image": "https://clocktower-wiki.gstonegames.com/images/b/b9/Xaan.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。",
     "id": "xaan_c",
-    "firstNightReminder": "如果初始外来者的数量等于1，则标记大限将至。",
-    "otherNightReminder": "如果初始外来者的数量等于当前游戏的夜晚数，则标记大限将至。",
+    "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "name": "限",
     "otherNight": 1300,
     "setup": 1,
     "reminders": [
+      "大限将至",
       "第一晚",
-      "第二晚",
       "第三晚",
-      "第四晚",
-      "大限将至"
+      "第二晚",
+      "第四晚"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -469,19 +463,19 @@
   },
   {
     "ability": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202501/c_5793544485371_bf9d4743.jpg",
+    "image": "https://clocktower-wiki.gstonegames.com/images/archive/c/c7/20250103031516%21Wizard.png",
     "edition": "custom",
     "flavor": "",
     "id": "wizard_c",
-    "firstNightReminder": "根据巫师的许愿决定是否需要唤醒巫师、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
-    "otherNightReminder": "如果有必要，让巫师的能力生效。 ",
+    "firstNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "otherNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
     "name": "巫师",
     "otherNight": 310,
     "setup": 0,
     "reminders": [
-      "失去能力",
-      "兑现",
       "代价",
+      "兑现",
+      "失去能力",
       "线索"
     ],
     "remindersGlobal": [],

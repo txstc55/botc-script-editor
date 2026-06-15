@@ -330,12 +330,14 @@
     "sch_team": "爪牙",
     "firstNight": 22,
     "otherNight": 18,
-    "firstNightReminder": "唤醒魔鬼代言人，让他选择一名玩家，那名玩家处决不死。",
-    "otherNightReminder": "唤醒魔鬼代言人，让他选择一名与上一晚不同的玩家，那名玩家处决不死。",
+    "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",
+    "otherNightReminder": "让魔鬼代言人选择一名存活玩家，不能是上一夜他选择过的玩家。标记那名玩家处决不死。",
     "reminders": [
       "处决不死"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。"
   },
   {
     "id": "zhijiagedaziji111",
@@ -367,12 +369,14 @@
     "sch_team": "爪牙",
     "firstNight": 18,
     "otherNight": 9,
-    "firstNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
-    "otherNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
     "reminders": [
       "中毒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zheyeshigejiugui111",
@@ -388,7 +392,10 @@
     "remindersGlobal": [
       "是提线木偶"
     ],
-    "setup": 1
+    "setup": 1,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "xiaoemo1111111eee111eee111",

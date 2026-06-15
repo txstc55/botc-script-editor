@@ -275,17 +275,23 @@
   },
   {
     "id": "20_blackout",
-    "image": "https://www.bloodstar.xyz/p/bluebell/blackout/20_blackout.png",
-    "firstNightReminder": "唤醒巫师，让他选择一名玩家，为该玩家标记诅咒。如果他在夜晚被善良玩家选择或影响，告诉该玩家加入了邪恶并唤醒巫师，让他再次选择一名玩家。",
-    "otherNightReminder": "如果巫师选择的玩家在夜晚被善良玩家选择或影响，立刻唤醒巫师让他再选择一名玩家。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/archive/c/c7/20250103031516%21Wizard.png",
+    "firstNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "otherNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
     "reminders": [
-      "诅咒"
+      "代价",
+      "兑现",
+      "失去能力",
+      "线索"
     ],
     "name": "巫师",
     "team": "minion",
-    "ability": "在你的首个夜晚，你要选择一名玩家：如果被你选择的玩家是善良的：他中毒。在他死亡或在夜晚被除他以外的善良玩家选择时，他解毒，随后加入邪恶；随后你需要再次选择一名玩家。",
+    "ability": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
     "firstNight": 16,
-    "otherNight": 25
+    "otherNight": 25,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "21_blackout",

@@ -393,13 +393,16 @@
     "sch_team": "爪牙",
     "firstNight": 19,
     "otherNight": 0,
-    "firstNightReminder": "唤醒寡妇，让她查看魔典。在她查看完毕后让她选择一名玩家，那名玩家中毒。随后如果寡妇未醉酒中毒，唤醒一名善良玩家，对他展示寡妇角色标记。",
+    "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
     "reminders": [
       "中毒"
     ],
     "remindersGlobal": [
       "被知晓"
-    ]
+    ],
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "noita111",
@@ -411,12 +414,14 @@
     "sch_team": "爪牙",
     "firstNight": 24,
     "otherNight": 19,
-    "firstNightReminder": "唤醒女巫，让她选择一名玩家，那名玩家被诅咒。",
-    "otherNightReminder": "唤醒女巫，让她选择一名玩家，那名玩家被诅咒。",
+    "firstNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
+    "otherNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
     "reminders": [
       "被诅咒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "yingyingying111",
@@ -428,13 +433,15 @@
     "sch_team": "爪牙",
     "firstNight": 27,
     "otherNight": 22,
-    "firstNightReminder": "唤醒鹰身女妖，让她选择两名玩家，第一名玩家明天需要“疯狂”证明第二名玩家邪恶。在鹰身女妖入睡后通知第一名玩家被鹰身女妖选中。",
-    "otherNightReminder": "唤醒鹰身女妖，让她选择两名玩家，第一名玩家明天需要“疯狂”证明第二名玩家邪恶。在鹰身女妖入睡后通知第一名玩家被鹰身女妖选中。",
+    "firstNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
+    "otherNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
     "reminders": [
       "疯狂",
       "第二名"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我从未见过如此光明的一日，阴森利爪不再笼罩着我。"
   },
   {
     "id": "lllllllllllllllllllllll11111111",
@@ -447,9 +454,11 @@
     "firstNight": 0,
     "otherNight": 8,
     "firstNightReminder": "",
-    "otherNightReminder": "唤醒麻脸巫婆，让她选择一名玩家和角色列表上的一个角色。如果该角色不在场，则在麻脸巫婆入睡后通知该玩家角色变化。根据实际情况，可以将相关通知合并，例如玩家变成了恶魔，则在恶魔行动时一并唤醒，通知角色变化并让他执行相应行动。",
+    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
     "reminders": [],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zmengpiosaoidhaoiwheoi2913o1u3h131",

@@ -306,10 +306,10 @@
     "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。"
   },
   {
-    "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们可能会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202307/c_4331482099861_0db1bfaf.jpg",
+    "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们之中可能会有人死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harpy.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我从未见过如此光明的一日，阴森利爪不再笼罩着我。",
     "id": "harpy",
     "firstNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
     "otherNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
@@ -349,14 +349,18 @@
     "name": "主谋",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "主谋日"
+    ],
     "id": "mastermindbutton",
     "edition": "custom",
     "team": "minion",
     "name_eng": "Mastermind",
     "firstNight": 0,
     "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
+    "remindersGlobal": [],
+    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。"
   },
   {
     "firstNightReminder": "让糖果阴谋家选择两名玩家。",

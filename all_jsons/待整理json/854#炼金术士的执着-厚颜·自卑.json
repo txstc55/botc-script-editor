@@ -5,14 +5,14 @@
     "author": "厚颜·自卑",
     "logo": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/33/hzgl9btsi6y5w77ycor2mprpputkhjo.png",
     "almanac": "有问题联系SE谢谢喵~",
-    "status":[
+    "status": [
       {
-        "name":"瘴疠",
+        "name": "瘴疠",
         "skill": "该玩家会在首个夜晚得知自己转变为邪恶阵营（无论邻座玩家的阵营如何），并在之后的每个夜晚*转变为邻近的一名存活的玩家的阵营。该效果会随角色死亡而失效。"
       },
       {
-        "name":"腐化",
-        "skill":"被腐化之源选择“是恶魔”的玩家将在能力互动（获取信息、互动干扰）和游戏胜负结算两方面被视作恶魔，被选择的玩家会立即得知自己被腐化。被选择的角色会同时被检测为原有类型和恶魔。间谍仍可以通过自身能力被视为善良角色而逃脱其他角色的检测。"
+        "name": "腐化",
+        "skill": "被腐化之源选择“是恶魔”的玩家将在能力互动（获取信息、互动干扰）和游戏胜负结算两方面被视作恶魔，被选择的玩家会立即得知自己被腐化。被选择的角色会同时被检测为原有类型和恶魔。间谍仍可以通过自身能力被视为善良角色而逃脱其他角色的检测。"
       }
     ]
   },
@@ -223,9 +223,9 @@
   },
   {
     "id": "17_lianjinshushidezhizhuo",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/33/6wspdicyxe9hh221v9aodnk8umbdtsq.png",
-    "firstNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
-    "otherNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
     "reminders": [
       "中毒"
     ],
@@ -233,36 +233,47 @@
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
     "firstNight": 3600,
-    "otherNight": 5
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "18_lianjinshushidezhizhuo",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/c/c4/qmcx4rs9w0skrk2gc9zr896al0c0cdo.png",
-    "firstNightReminder": "唤醒间谍，让他查看魔典。",
-    "otherNightReminder": "唤醒间谍，让他查看魔典。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spy.png",
+    "firstNightReminder": "将魔典展示给间谍，他想看多久就看多久。",
+    "otherNightReminder": "将魔典展示给间谍，他想看多久就看多久。",
     "name": "间谍",
     "team": "minion",
     "ability": "每个夜晚，你能查看魔典。你可能会被当作善良阵营、镇民角色或外来者角色，即使你已死亡。",
     "firstNight": 4500,
-    "otherNight": 16
+    "otherNight": 16,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "19_lianjinshushidezhizhuo",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/ed/8qaa5aewt5cibvvxqyzr8ny7ohqyktz.png",
-    "firstNightReminder": "分别独自唤醒镜像双子和对立双子，告知他们由于镜像双子能力而得知的信息。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
+    "firstNightReminder": "唤醒镜像双子和他的对立双子，让他们进行眼神接触。对镜像双子展示对立双子的角色标记，并对对立双子展示镜像双子的角色标记。",
     "reminders": [
       "对立双子"
     ],
     "name": "镜像双子",
     "team": "minion",
     "ability": "你与一名对立阵营的玩家互相知道对方是什么角色。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。",
-    "firstNight": 3700
+    "firstNight": 3700,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "20_lianjinshushidezhizhuo",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/7/73/p0movwsio10pgvn1irzgu47nsbiql3k.png",
-    "firstNightReminder": "唤醒女巫，让她选择一名玩家，那名玩家被诅咒。",
-    "otherNightReminder": "唤醒女巫，让她选择一名玩家，那名玩家被诅咒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
+    "firstNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
+    "otherNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
     "reminders": [
       "被诅咒"
     ],
@@ -270,13 +281,16 @@
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
     "firstNight": 3800,
-    "otherNight": 6
+    "otherNight": 6,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "21_lianjinshushidezhizhuo",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/5/5e/mli7gcqjj99764xroey5tjb9n29h7e5.png",
-    "firstNightReminder": "唤醒恐惧之灵，让他选择一名玩家，随后通知所有玩家恐惧之灵选择了一名玩家。",
-    "otherNightReminder": "唤醒恐惧之灵，让他选择一名玩家，随后如果恐惧之灵的目标发生了变更，通知所有玩家恐惧之灵选择了一名玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
+    "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
+    "otherNightReminder": "恐惧之灵指向一名玩家。如果与之前选择的不同，则更换恐惧标记并宣布恐惧之灵选中或改变了目标。",
     "reminders": [
       "恐惧"
     ],
@@ -284,11 +298,14 @@
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
     "firstNight": 3900,
-    "otherNight": 7
+    "otherNight": 7,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "22_lianjinshushidezhizhuo",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e5/el29kr1dznrpaa089tayj3chd444s6k.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "remindersGlobal": [
       "是提线木偶"
@@ -297,7 +314,10 @@
     "name": "提线木偶",
     "team": "minion",
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "firstNight": 3300
+    "firstNight": 3300,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "23_lianjinshushidezhizhuo",
@@ -339,14 +359,14 @@
   },
   {
     "id": "26_lianjinshushidezhizhuo",
-    "image":"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/82/t18q1v2gz3h7uyyi09kwjjvj1nlr70e.png",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/8/82/t18q1v2gz3h7uyyi09kwjjvj1nlr70e.png",
     "name": "暴风捕手",
     "team": "fabled",
     "ability": "游戏开始时，如果炼金术士在场，他只能死于处决，但所有邪恶玩家会在首个夜晚得知他是哪一名玩家。"
   },
   {
     "id": "27_lianjinshushidezhizhuo",
-    "image":"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/37/gj5fh8glu86gu00tr82kjlrywpne7vp.png",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/37/gj5fh8glu86gu00tr82kjlrywpne7vp.png",
     "name": "骗人精",
     "team": "fabled",
     "ability": "每局游戏限一次，一名善良玩家可能会得知“有问题”的信息。"
@@ -363,11 +383,13 @@
   },
   {
     "id": "28_lianjinshushidezhizhuo",
-    "image":"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/23/9fmohn9ldebl3ntosy95ho1wt1vmrng.png",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/23/9fmohn9ldebl3ntosy95ho1wt1vmrng.png",
     "otherNightReminder": "瘴疠",
     "name": "被感动的神明",
     "team": "fabled",
-    "reminders": ["瘴疠"],
+    "reminders": [
+      "瘴疠"
+    ],
     "otherNight": 10.1,
     "ability": "暴风捕手默认在场，且只会对炼金术士生效，提线木偶不会因暴风捕手的能力得知炼金术士是谁。游戏初始时不会有外来者角色，在8/11/14人局时加入骗人精，9/12/15人局时，会有一名镇民感染“瘴疠”。若说书人宣布恐惧之灵在场，本局游戏玩家不允许发起对自己的提名。"
   },

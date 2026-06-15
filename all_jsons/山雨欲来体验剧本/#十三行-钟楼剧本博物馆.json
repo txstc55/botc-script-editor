@@ -323,16 +323,19 @@
     "name_eng": "Devil's Advocate",
     "firstNight": 22,
     "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
+    "remindersGlobal": [],
+    "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。"
   },
   {
-    "firstNightReminder": "让画皮选择一名玩家，在他的角色标记旁放置“以为存活”提示标记。但不要再城镇广场上作任何变动。",
-    "otherNightReminder": "如果画皮先前选择的玩家死亡，唤醒画皮并让他重新选择一名玩家。",
+    "firstNightReminder": "唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
+    "otherNightReminder": "如果首夜被画皮变成活尸的玩家死亡，他重生，然后画皮重获能力。唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
     "name": "画皮",
     "otherNight": 39,
     "setup": 0,
     "reminders": [
-      "以为存活"
+      "以为存活",
+      "重获能力"
     ],
     "id": "huapi",
     "edition": "custom",
@@ -340,7 +343,9 @@
     "name_eng": "Stained Skin",
     "firstNight": 27,
     "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
-    "image": "https://clocktower-wiki.gstonegames.com/images/5/59/Huapi.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
@@ -357,7 +362,9 @@
     "name_eng": "Poisoner",
     "firstNight": 17,
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",

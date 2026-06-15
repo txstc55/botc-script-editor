@@ -311,7 +311,10 @@
     "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
     "reminders": [
       "中毒"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。"
   },
   {
     "id": "06c1c75e-3de2-432a-9427-aec41b88787e",
@@ -324,11 +327,13 @@
     "firstNight": 0,
     "otherNight": 20,
     "firstNightReminder": "",
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "reminders": [
       "是恶魔"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "id": "7fb3f41a-66f3-43b1-8ad9-0cfd8960096c",
@@ -355,7 +360,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
     "edition": "custom",
     "name": "女巫",
-    "ability": "每个夜晚，选择一名玩家，下个白天，当他发起提名时，他死亡。场上剩下三名玩家存活时，你失去该技能。",
+    "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
     "team": "minion",
     "sch_team": "爪牙",
     "firstNight": 24,
@@ -365,7 +370,9 @@
     "reminders": [
       "被诅咒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "36c6c6e2-4798-4ee9-858f-7f80d24e19f3",

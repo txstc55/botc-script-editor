@@ -291,25 +291,26 @@
     "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。"
   },
   {
-    "firstNightReminder": "向召唤师展示三个不在场的善良角色",
+    "firstNightReminder": "唤醒召唤师，对他展示三个不在场的善良角色标记。",
     "firstNight": 2190,
-    "otherNightReminder": "让召唤师选择一名玩家，并选择角色列表上一个恶魔角色。让召唤师重新入睡。唤醒被选择的玩家，展示“你是”信息标记和恶魔角色标记，并用拇指向下代表他的阵营变为邪恶。",
+    "otherNightReminder": "如果这是游戏中的第三个夜晚，唤醒召唤师，让他选择一名玩家和一个恶魔角色，那名玩家变成由他选择的邪恶恶魔。",
     "otherNight": 1582,
     "name": "召唤师",
     "team": "minion",
     "setup": 1,
     "reminders": [
       "第一晚",
-      "第二晚",
-      "第三晚"
+      "第三晚",
+      "第二晚"
     ],
     "remindersGlobal": [],
     "ability": "在首个夜晚，你会得知三个伪装。在第三个夜晚，你要选择一名玩家：他变成由你选择的邪恶恶魔。[无恶魔在场]",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/summoner.png",
-    "id": "summoner"
+    "id": "summoner",
+    "flavor": ""
   },
   {
-    "firstNightReminder": "告诉灵言师他的秘密词语。",
+    "firstNightReminder": "唤醒灵言师，对他展示他的关键词。",
     "firstNight": 3692,
     "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
     "otherNight": 1269,
@@ -317,13 +318,14 @@
     "team": "minion",
     "setup": 0,
     "reminders": [
-      "邪恶",
-      "失去能力"
+      "失去能力",
+      "转为邪恶"
     ],
     "remindersGlobal": [],
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
-    "id": "mezepheles"
+    "id": "mezepheles",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -334,13 +336,14 @@
     "team": "minion",
     "setup": 0,
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
-    "id": "assassin"
+    "id": "assassin",
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -351,12 +354,13 @@
     "team": "minion",
     "setup": 0,
     "reminders": [
-      "已公开声明"
+      "已宣称"
     ],
     "remindersGlobal": [],
     "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
-    "id": "goblin"
+    "id": "goblin",
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？"
   },
   {
     "firstNightReminder": "",

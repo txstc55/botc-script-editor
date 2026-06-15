@@ -141,21 +141,22 @@
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "name": "红唇女郎",
     "otherNight": 20,
     "setup": 0,
-    "reminders": [],
-    "id": "scarlet_womanbutton",
-    "edition": "custom",
-    "remindersGlobal": [
+    "reminders": [
       "是恶魔"
     ],
+    "id": "scarlet_womanbutton",
+    "edition": "custom",
+    "remindersGlobal": [],
     "team": "minion",
     "name_eng": "Scarlet Woman",
     "firstNight": 0,
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
@@ -164,7 +165,7 @@
     "otherNight": 18,
     "setup": 0,
     "reminders": [
-      "恐惧蔓延"
+      "恐惧"
     ],
     "id": "fearmongerbutton",
     "edition": "custom",
@@ -172,7 +173,9 @@
     "name_eng": "Fearmonger",
     "firstNight": 26,
     "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
@@ -192,7 +195,8 @@
     "name_eng": "Widow",
     "firstNight": 18,
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "唤醒所有爪牙，允许他们以指向的方式决定谁照看小怪宝，但不能产生其他交流，否则会有非常糟糕的事情发生。",

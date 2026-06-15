@@ -308,7 +308,7 @@
   },
   {
     "id": "750ca8ca-f392-464a-8917-19fc96c76bdc",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/7/7f/Ganshiren.png/300px-Ganshiren.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4215797694761_97f10b13.jpg",
     "edition": "custom",
     "name": "赶尸人",
     "ability": "与你邻近的两名镇民玩家会在其首次死亡时被当作仍然存活。[-1外来者]",
@@ -319,11 +319,15 @@
     "reminders": [
       "以为存活"
     ],
-    "setup": 1
+    "setup": 1,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "601a1c31-92d4-48ac-8f9d-5a1996dc0a2b",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/94/Humeiniang.png/300px-Humeiniang.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/humeiniang.png",
     "edition": "custom",
     "name": "狐媚娘",
     "ability": "在你的首个夜晚，你要选择一名玩家：他会知道狐媚娘在场。如果你死于处决，当晚他转变为邪恶阵营。",
@@ -334,15 +338,18 @@
     "reminders": [
       "被魅惑"
     ],
-    "firstNightReminder": "在你的首个夜晚，你要选择一名玩家：他会知道狐媚娘在场。如果你死于处决，当晚他转变为邪恶阵营。",
-    "otherNightReminder": "在你的首个夜晚，你要选择一名玩家：他会知道狐媚娘在场。如果你死于处决，当晚他转变为邪恶阵营。"
+    "firstNightReminder": "唤醒狐媚娘，让她选择一名玩家。标记那名玩家“被魅惑”。随后唤醒那名玩家，对他展示“该角色的能力对你触发”和狐媚娘角色标记。",
+    "otherNightReminder": "如果今日狐媚娘死于处决，且被魅惑的玩家为善良阵营，唤醒被魅惑的玩家，对他展示“你是”和朝下的大拇指。",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "4edffdd3-0004-49c5-b9c3-79e0ba21540c",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
     "edition": "custom",
     "name": "女巫",
-    "ability": "每个夜晚，选择一名玩家，下个白天，当他发起提名时，他死亡。场上剩下三名玩家存活时，你失去该技能。",
+    "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
     "team": "minion",
     "sch_team": "爪牙",
     "firstNight": 8,
@@ -351,7 +358,10 @@
     "otherNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
     "reminders": [
       "被诅咒"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "865e402b-c11d-4c86-8040-d9f922801bf5",
@@ -375,7 +385,7 @@
   },
   {
     "id": "3bf41cba-efb6-4177-82b6-0eae57034b75",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/80/Yangguren.png/300px-Yangguren.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yangguren.png",
     "edition": "custom",
     "name": "养蛊人",
     "ability": "在你存活时提名你的玩家会在当晚死亡，即使你已死亡。",
@@ -387,7 +397,11 @@
       "提名",
       "死亡"
     ],
-    "otherNightReminder": "在你存活时提名你的玩家会在当晚死亡，即使你已死亡。"
+    "otherNightReminder": "如果有玩家被放置了“提名”标记，标记该玩家死亡。",
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "把毒蛇、蝎子、蜈蚣、蟾蜍、蜘蛛放在一起……多！来！点！"
   },
   {
     "id": "fd8ab6e6-c5ce-4238-9f5b-1d9280b1be4d",

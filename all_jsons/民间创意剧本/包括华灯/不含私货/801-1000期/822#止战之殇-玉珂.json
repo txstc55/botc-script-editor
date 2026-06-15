@@ -235,7 +235,11 @@
     "name": "科学怪人",
     "team": "minion",
     "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
-    "firstNight": 11
+    "firstNight": 11,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。"
   },
   {
     "id": "19_zhizhanzhishang",
@@ -243,24 +247,26 @@
     "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "reminders": [
+      "大限将至",
       "第一晚",
-      "第二晚",
       "第三晚",
-      "第四晚",
-      "大限将至"
+      "第二晚",
+      "第四晚"
     ],
     "setup": 1,
     "name": "限",
     "team": "minion",
     "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
     "firstNight": 3300,
-    "otherNight": 3
+    "otherNight": 3,
+    "remindersGlobal": [],
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
   },
   {
     "id": "20_zhizhanzhishang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-    "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-    "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+    "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+    "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
     "reminders": [
       "中毒"
     ],
@@ -268,7 +274,10 @@
     "team": "minion",
     "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
     "firstNight": 3400,
-    "otherNight": 4
+    "otherNight": 4,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。"
   },
   {
     "id": "21_zhizhanzhishang",

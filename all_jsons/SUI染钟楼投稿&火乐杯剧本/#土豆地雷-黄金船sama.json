@@ -340,7 +340,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "这个小镇没救了，不是么？廉价的外来劳动力……这就是问题所在。要我说，我会把他们全部调配到矿井里。不过是稍有些困难的工作，这不会伤害到任何人，要是有人提出反对意见就赏他一记耳光。这就是所谓的底线，不是么？"
   },
   {
     "id": "baonijuhua111",
@@ -353,12 +355,14 @@
     "firstNight": 0,
     "otherNight": 52,
     "firstNightReminder": "",
-    "otherNightReminder": "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zmengpiosaoidhaoiwheoi2913o1u3h131",
@@ -388,10 +392,15 @@
     "sch_team": "爪牙",
     "firstNight": 0,
     "otherNight": 54,
-    "otherNightReminder": "今天白天提名了存活的养蛊人的玩家死亡。",
+    "otherNightReminder": "如果有玩家被放置了“提名”标记，标记该玩家死亡。",
     "reminders": [
-      "蛊"
-    ]
+      "提名",
+      "死亡"
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "把毒蛇、蝎子、蜈蚣、蟾蜍、蜘蛛放在一起……多！来！点！"
   },
   {
     "id": "yigeshaba111",

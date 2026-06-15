@@ -195,9 +195,9 @@
   },
   {
     "id": "17_bileiquxie",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/33/6wspdicyxe9hh221v9aodnk8umbdtsq.png",
-    "firstNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
-    "otherNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
     "reminders": [
       "中毒"
     ],
@@ -205,7 +205,10 @@
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
     "firstNight": 3300,
-    "otherNight": 2
+    "otherNight": 2,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "18_bileiquxie",
@@ -216,25 +219,34 @@
   },
   {
     "id": "19_bileiquxie",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/4/4c/cbp9yi8vzy26hp8lyzpw8tgyb4981cx.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
     "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。",
     "setup": 1,
     "name": "科学怪人",
     "team": "minion",
     "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
-    "firstNight": 11
+    "firstNight": 11,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。"
   },
   {
     "id": "20_bileiquxie",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e1/o9cn5nyqljzb1cch3ldd74f8l1834fv.png",
-    "otherNightReminder": "今天白天提名了存活的养蛊人的玩家死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yangguren.png",
+    "otherNightReminder": "如果有玩家被放置了“提名”标记，标记该玩家死亡。",
     "reminders": [
-      "蛊"
+      "提名",
+      "死亡"
     ],
     "name": "养蛊人",
     "team": "minion",
     "ability": "在你存活时提名你的玩家会在当晚死亡，即使你已死亡。",
-    "otherNight": 7
+    "otherNight": 7,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "把毒蛇、蝎子、蜈蚣、蟾蜍、蜘蛛放在一起……多！来！点！"
   },
   {
     "id": "21_bileiquxie",

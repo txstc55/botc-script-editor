@@ -341,12 +341,14 @@
     "sch_team": "爪牙",
     "firstNight": 23,
     "otherNight": 0,
-    "firstNightReminder": "分别独自唤醒镜像双子和对立双子，告知他们由于镜像双子能力而得知的信息。",
+    "firstNightReminder": "唤醒镜像双子和他的对立双子，让他们进行眼神接触。对镜像双子展示对立双子的角色标记，并对对立双子展示镜像双子的角色标记。",
     "otherNightReminder": "",
     "reminders": [
       "对立双子"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "zheyeshigejiugui111",
@@ -362,7 +364,10 @@
     "remindersGlobal": [
       "是提线木偶"
     ],
-    "setup": 1
+    "setup": 1,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "tousioahsdoasidhas",
@@ -377,13 +382,15 @@
     "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "reminders": [
+      "大限将至",
       "第一晚",
-      "第二晚",
       "第三晚",
-      "第四晚",
-      "大限将至"
+      "第二晚",
+      "第四晚"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
   },
   {
     "id": "zhijiagedaziji111",
@@ -419,10 +426,12 @@
     "otherNightReminder": "如果这是游戏中的第三个夜晚，唤醒召唤师，让他选择一名玩家和一个恶魔角色，那名玩家变成由他选择的邪恶恶魔。",
     "reminders": [
       "第一晚",
-      "第二晚",
-      "第三晚"
+      "第三晚",
+      "第二晚"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "meiyoudashi11111",

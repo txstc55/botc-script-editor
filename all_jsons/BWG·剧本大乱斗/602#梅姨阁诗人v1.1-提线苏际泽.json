@@ -351,16 +351,19 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "edition": "custom",
     "name": "提线木偶",
-    "ability": "你以为你是一个善良角色，但其实你不是。恶魔会得知你是提线木偶。[提线木偶会与恶魔邻座]",
+    "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
     "team": "minion",
     "sch_team": "爪牙",
     "firstNight": 3200,
     "otherNight": 0,
-    "firstNightReminder": "选择一名邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "remindersGlobal": [
       "是提线木偶"
     ],
-    "setup": 1
+    "setup": 1,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "dujinke",

@@ -267,7 +267,7 @@
   },
   {
     "id": "ciekee",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/6/69/Assassin.png/300px-Assassin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "edition": "custom",
     "name": "刺客",
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
@@ -278,14 +278,16 @@
     "firstNightReminder": "",
     "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "gudiaoo",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/56/Gudiao.png/120px-Gudiao.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
     "edition": "custom",
     "name": "蛊雕",
     "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
@@ -297,11 +299,14 @@
     "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
     "reminders": [
       "中毒"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。"
   },
   {
     "id": "jinxiangshuangzi",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/8/8e/Eviltwin.png/300px-Eviltwin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
     "edition": "custom",
     "name": "镜像双子",
     "ability": "你与一名对立阵营的玩家互相知道对方是什么角色。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。",
@@ -314,7 +319,9 @@
     "reminders": [
       "对立双子"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "jiaofuu",

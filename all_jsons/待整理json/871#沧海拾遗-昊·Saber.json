@@ -211,22 +211,31 @@
   },
   {
     "id": "17_canghaishiyi",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/c/c4/qmcx4rs9w0skrk2gc9zr896al0c0cdo.png",
-    "firstNightReminder": "唤醒间谍，让他查看魔典。",
-    "otherNightReminder": "唤醒间谍，让他查看魔典。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spy.png",
+    "firstNightReminder": "将魔典展示给间谍，他想看多久就看多久。",
+    "otherNightReminder": "将魔典展示给间谍，他想看多久就看多久。",
     "name": "间谍",
     "team": "minion",
     "ability": "每个夜晚，你能查看魔典。你可能会被当作善良阵营、镇民角色或外来者角色，即使你已死亡。",
     "firstNight": 4000,
-    "otherNight": 17
+    "otherNight": 17,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "18_canghaishiyi",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/d/d9/jg7k6wd0cy1bk89o3uzhdti6oxund8n.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baron.png",
     "setup": 1,
     "name": "男爵",
     "team": "minion",
-    "ability": "会有额外的外来者在场。[+2 外来者]"
+    "ability": "会有额外的外来者在场。[+2 外来者]",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "flavor": "这个小镇没救了，不是么？廉价的外来劳动力……这就是问题所在。要我说，我会把他们全部调配到矿井里。不过是稍有些困难的工作，这不会伤害到任何人，要是有人提出反对意见就赏他一记耳光。这就是所谓的底线，不是么？"
   },
   {
     "id": "19_canghaishiyi",
@@ -248,7 +257,7 @@
   },
   {
     "id": "20_canghaishiyi",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/e5/el29kr1dznrpaa089tayj3chd444s6k.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "remindersGlobal": [
       "是提线木偶"
@@ -257,7 +266,10 @@
     "name": "提线木偶",
     "team": "minion",
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "firstNight": 3200
+    "firstNight": 3200,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "21_canghaishiyi",

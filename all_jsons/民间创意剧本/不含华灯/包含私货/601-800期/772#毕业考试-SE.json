@@ -217,51 +217,69 @@
   },
   {
     "id": "17_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/17_graduation_examination.png",
-    "otherNightReminder": "唤醒麻脸巫婆，让她选择一名玩家和角色列表上的一个角色。如果该角色不在场，则在麻脸巫婆入睡后通知该玩家角色变化。根据实际情况，可以将相关通知合并，例如玩家变成了恶魔，则在恶魔行动时一并唤醒，通知角色变化并让他执行相应行动。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
     "name": "麻脸巫婆",
     "team": "minion",
     "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "otherNight": 6
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "18_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/18_graduation_examination.png",
-    "firstNightReminder": "唤醒寡妇，让她查看魔典。在她查看完毕后让她选择一名玩家，那名玩家中毒。随后如果寡妇未醉酒中毒，唤醒一名善良玩家，对他展示寡妇角色标记。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
+    "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
     "reminders": [
-      "中毒",
-      "得知"
+      "中毒"
     ],
     "name": "寡妇",
     "team": "minion",
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
-    "firstNight": 3200
+    "firstNight": 3200,
+    "otherNightReminder": "",
+    "remindersGlobal": [
+      "被知晓"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "19_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/19_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/summoner.png",
     "firstNightReminder": "唤醒召唤师，对他展示三个不在场的善良角色标记。",
     "otherNightReminder": "如果这是游戏中的第三个夜晚，唤醒召唤师，让他选择一名玩家和一个恶魔角色，那名玩家变成由他选择的邪恶恶魔。",
     "reminders": [
       "第一晚",
-      "第二晚",
-      "第三晚"
+      "第三晚",
+      "第二晚"
     ],
     "name": "召唤师",
     "team": "minion",
     "ability": "在首个夜晚，你会得知三个伪装。在第三个夜晚，你要选择一名玩家：他变成由你选择的邪恶恶魔。[无恶魔在场]",
     "firstNight": 2500,
-    "otherNight": 10
+    "otherNight": 10,
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "20_graduation_examination",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/Graduation_examination/20_graduation_examination.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
     "reminders": [
       "已宣称"
     ],
     "name": "哥布林",
     "team": "minion",
-    "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。"
+    "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？"
   },
   {
     "id": "21_graduation_examination",

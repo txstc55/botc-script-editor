@@ -325,7 +325,7 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/poisoner.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
     "edition": "custom",
     "flavor": "",
     "id": "poisoner_button",
@@ -363,20 +363,20 @@
     "GstoneID": "godfather"
   },
   {
-    "ability": "在首个夜晚，你会得知三个伪装。在第三个夜晚，你要选择一名玩家：他变成由你选择的邪恶恶魔。[无恶魔在场]\n\n",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2685000701171_6b776d07.jpg",
+    "ability": "在首个夜晚，你会得知三个伪装。在第三个夜晚，你要选择一名玩家：他变成由你选择的邪恶恶魔。[无恶魔在场]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/summoner.png",
     "edition": "custom",
     "flavor": "",
     "id": "summoner_button",
-    "firstNightReminder": "在首个夜晚，对召唤师展示三个不在场的善良角色，作为他的伪装。",
-    "otherNightReminder": "在夜晚时，如果召唤师旁放置了“第三晚”提示标记，唤醒召唤师。让他指向一名玩家，和角色列表上的一个恶魔图标。让召唤师重新入睡。唤醒被召唤师选择的玩家。对他展示“你是”信息标记，和恶魔角色标记。再对他展示“你是”信息标记，和朝下的大拇指。用那个恶魔角色标记替换他的角色标记，并让新恶魔重新入睡。",
+    "firstNightReminder": "唤醒召唤师，对他展示三个不在场的善良角色标记。",
+    "otherNightReminder": "如果这是游戏中的第三个夜晚，唤醒召唤师，让他选择一名玩家和一个恶魔角色，那名玩家变成由他选择的邪恶恶魔。",
     "name": "召唤师",
     "otherNight": 37,
     "setup": 1,
     "reminders": [
       "第一晚",
-      "第二晚",
-      "第三晚"
+      "第三晚",
+      "第二晚"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -385,9 +385,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cerenovus.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。",
     "id": "cerenovus_button",
     "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
     "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",

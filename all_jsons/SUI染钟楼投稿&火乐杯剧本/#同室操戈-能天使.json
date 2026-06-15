@@ -332,8 +332,12 @@
     "otherNight": 0,
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "reminders": [],
-    "setup": 0
+    "reminders": [
+      "主谋日"
+    ],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。"
   },
   {
     "id": "huuuuuuuuuuuuu111",
@@ -344,11 +348,14 @@
     "team": "minion",
     "firstNight": 29,
     "otherNight": 24,
-    "firstNightReminder": "唤醒狐媚娘，让她选择一名玩家。在狐媚娘入睡后通知那名玩家狐媚娘在场。",
-    "otherNightReminder": "如果狐媚娘死于处决，唤醒她选择的玩家并通知他阵营变化。",
+    "firstNightReminder": "唤醒狐媚娘，让她选择一名玩家。标记那名玩家“被魅惑”。随后唤醒那名玩家，对他展示“该角色的能力对你触发”和狐媚娘角色标记。",
+    "otherNightReminder": "如果今日狐媚娘死于处决，且被魅惑的玩家为善良阵营，唤醒被魅惑的玩家，对他展示“你是”和朝下的大拇指。",
     "reminders": [
       "被魅惑"
-    ]
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "weishenmebushilianjinshushi111",
@@ -362,7 +369,9 @@
     "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。"
   },
   {
     "id": "zhaohuandaxiangjiao111",
@@ -377,10 +386,12 @@
     "otherNightReminder": "如果这是游戏中的第三个夜晚，唤醒召唤师，让他选择一名玩家和一个恶魔角色，那名玩家变成由他选择的邪恶恶魔。",
     "reminders": [
       "第一晚",
-      "第二晚",
-      "第三晚"
+      "第三晚",
+      "第二晚"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "legion22",

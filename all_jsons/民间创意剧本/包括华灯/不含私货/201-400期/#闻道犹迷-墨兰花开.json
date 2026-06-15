@@ -353,7 +353,7 @@
     "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
     "id": "gudiao_button",
     "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
     "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
@@ -370,26 +370,26 @@
   },
   {
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/scarlet_woman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。",
     "id": "scarlet_woman_button",
     "firstNightReminder": "",
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "name": "红唇女郎",
     "otherNight": 37,
     "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [
+    "reminders": [
       "是恶魔"
     ],
+    "remindersGlobal": [],
     "team": "minion",
     "firstNight": 0,
     "GstoneID": "scarlet_woman"
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "edition": "custom",
     "flavor": "",
     "id": "assassin_button",
@@ -399,8 +399,8 @@
     "otherNight": 86,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -409,7 +409,7 @@
   },
   {
     "ability": "在你的首个夜晚，你要选择一名玩家：他会知道狐媚娘在场。如果你死于处决，当晚他转变为邪恶阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_4772055308961_7bc92354.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/humeiniang.png",
     "edition": "custom",
     "flavor": "",
     "id": "humeiniang_button",

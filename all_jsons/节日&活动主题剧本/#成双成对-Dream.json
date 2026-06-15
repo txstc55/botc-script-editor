@@ -298,7 +298,7 @@
   },
   {
     "id": "nvwu",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/e6/Witch.png/300px-Witch.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
     "edition": "custom",
     "name": "女巫",
     "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
@@ -311,11 +311,13 @@
     "reminders": [
       "被诅咒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "huli",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/94/Humeiniang.png/180px-Humeiniang.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/humeiniang.png",
     "edition": "custom",
     "name": "狐媚娘",
     "ability": "在你的首个夜晚，你要选择一名玩家：他会知道狐媚娘在场。如果你死于处决，当晚他转变为邪恶阵营。",
@@ -323,16 +325,18 @@
     "sch_team": "爪牙",
     "firstNight": 15,
     "otherNight": 19,
-    "firstNightReminder": "唤醒狐媚娘，让其选择一名玩家。标记那名玩家“被魅惑”。随后唤醒那名玩家，对他展示“该角色的能力对你触发”和狐媚娘角色标记。",
+    "firstNightReminder": "唤醒狐媚娘，让她选择一名玩家。标记那名玩家“被魅惑”。随后唤醒那名玩家，对他展示“该角色的能力对你触发”和狐媚娘角色标记。",
     "otherNightReminder": "如果今日狐媚娘死于处决，且被魅惑的玩家为善良阵营，唤醒被魅惑的玩家，对他展示“你是”和朝下的大拇指。",
     "reminders": [
-      "被魅惑",
-      "邪恶"
-    ]
+      "被魅惑"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "hongchunnvlang",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/a/ac/Scarletwoman.png/300px-Scarletwoman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
     "edition": "custom",
     "name": "红唇女郎",
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
@@ -340,14 +344,18 @@
     "sch_team": "爪牙",
     "firstNight": 0,
     "otherNight": 20,
-    "otherNightReminder": "如果红唇女郎今天变成了恶魔，对她展示“你是”信息标记，和恶魔角色标记。",
-    "remindersGlobal": [
-      "是红唇女郎"
-    ]
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
+    "remindersGlobal": [],
+    "firstNightReminder": "",
+    "reminders": [
+      "是恶魔"
+    ],
+    "setup": 0,
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "id": "tixianmuou",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/3d/Marionette.png/300px-Marionette.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "edition": "custom",
     "name": "提线木偶",
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
@@ -355,11 +363,14 @@
     "sch_team": "爪牙",
     "firstNight": 11,
     "otherNight": 0,
-    "firstNightReminder": "选择一名邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "remindersGlobal": [
       "是提线木偶"
     ],
-    "setup": 1
+    "setup": 1,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "taotie",

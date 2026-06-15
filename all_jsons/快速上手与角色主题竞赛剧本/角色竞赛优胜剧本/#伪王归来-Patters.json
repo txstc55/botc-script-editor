@@ -313,13 +313,16 @@
     "sch_team": "爪牙",
     "firstNight": 19,
     "otherNight": 0,
-    "firstNightReminder": "唤醒寡妇，让她查看魔典。在她查看完毕后让她选择一名玩家，那名玩家中毒。随后如果寡妇未醉酒中毒，唤醒一名善良玩家，对他展示寡妇角色标记。",
+    "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
     "reminders": [
       "中毒"
     ],
     "remindersGlobal": [
-      "得知"
-    ]
+      "被知晓"
+    ],
+    "otherNightReminder": "",
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "touduzheeeeeeee111",
@@ -331,12 +334,14 @@
     "sch_team": "爪牙",
     "firstNight": 18,
     "otherNight": 9,
-    "firstNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
-    "otherNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
     "reminders": [
       "中毒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "baonijuhua111",
@@ -349,12 +354,14 @@
     "firstNight": 0,
     "otherNight": 52,
     "firstNightReminder": "",
-    "otherNightReminder": "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "nanjueeeee111",
@@ -369,7 +376,9 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "这个小镇没救了，不是么？廉价的外来劳动力……这就是问题所在。要我说，我会把他们全部调配到矿井里。不过是稍有些困难的工作，这不会伤害到任何人，要是有人提出反对意见就赏他一记耳光。这就是所谓的底线，不是么？"
   },
   {
     "id": "tiehuaibi11111",
@@ -381,7 +390,12 @@
     "sch_team": "爪牙",
     "firstNight": 75,
     "otherNight": 0,
-    "firstNightReminder": "如果维齐尔在场，告知所有人谁是维齐尔。"
+    "firstNightReminder": "如果维齐尔在场，告知所有人谁是维齐尔。",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "meiyoudashi11111",

@@ -322,10 +322,10 @@
     "firstNight": 2100.0
   },
   {
-    "ability": "每个夜晚，你要选择两名玩家:明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们之中可能会有人死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202307/c_4331482099861_0db1bfaf.jpg",
+    "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们之中可能会有人死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harpy.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我从未见过如此光明的一日，阴森利爪不再笼罩着我。",
     "id": "harpy_c",
     "firstNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
     "otherNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
@@ -342,7 +342,7 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/witch.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
     "edition": "custom",
     "flavor": "",
     "id": "witch_c",
@@ -360,21 +360,21 @@
   },
   {
     "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202411/c_7860002933371_9c39e151.jpg",
+    "image": "https://clocktower-wiki.gstonegames.com/images/b/b9/Xaan.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。",
     "id": "xaan_c",
-    "firstNightReminder": "如果初始外来者的数量等于1，则标记大限将至。",
-    "otherNightReminder": "如果初始外来者的数量等于当前游戏的夜晚数，则标记大限将至。",
+    "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "name": "限",
     "otherNight": 1300.0,
     "setup": 1,
     "reminders": [
+      "大限将至",
       "第一晚",
-      "第二晚",
       "第三晚",
-      "第四晚",
-      "大限将至"
+      "第二晚",
+      "第四晚"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -382,11 +382,11 @@
   },
   {
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/widow.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
     "edition": "custom",
     "flavor": "",
     "id": "widow_c",
-    "firstNightReminder": "向寡妇展示魔典，她想看多久就看多久。在她查看完毕后让她选择一名玩家，标记那名玩家中毒。随后如果寡妇未醉酒中毒，唤醒一名善良玩家，对他展示寡妇角色标记。 ",
+    "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
     "otherNightReminder": "",
     "name": "寡妇",
     "otherNight": 0,
@@ -395,7 +395,7 @@
       "中毒"
     ],
     "remindersGlobal": [
-      "得知"
+      "被知晓"
     ],
     "team": "minion",
     "firstNight": 4700.0,

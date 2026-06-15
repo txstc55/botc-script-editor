@@ -383,74 +383,104 @@
   {
     "id": "32_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
-    "firstNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
-    "otherNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
-    "remindersGlobal": [
-      "中毒"
-    ],
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "remindersGlobal": [],
     "name": "投毒者",
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
     "firstNight": 3700,
-    "otherNight": 7
+    "otherNight": 7,
+    "reminders": [
+      "中毒"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "33_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
-    "otherNightReminder": "唤醒刺客。刺客要么摇头表示不使用能力，要么指向任意一名玩家。",
-    "remindersGlobal": [
-      "死亡",
-      "失去能力"
-    ],
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
+    "remindersGlobal": [],
     "name": "刺客",
     "team": "minion",
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
-    "otherNight": 21
+    "otherNight": 21,
+    "firstNightReminder": "",
+    "reminders": [
+      "失去能力",
+      "死亡"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "34_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
     "name": "主谋",
     "team": "minion",
-    "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。"
+    "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "主谋日"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。"
   },
   {
     "id": "35_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
-    "otherNightReminder": "唤醒麻脸巫婆，让她选择一名玩家和角色列表上的一个角色。如果该角色不在场，则在麻脸巫婆入睡后通知该玩家角色变化。根据实际情况，可以将相关通知合并，例如玩家变成了恶魔，则在恶魔行动时一并唤醒，通知角色变化并让他执行相应行动。",
+    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
     "name": "麻脸巫婆",
     "team": "minion",
     "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "otherNight": 5
+    "otherNight": 5,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "36_elysuim",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
     "firstNightReminder": "唤醒灵言师，对他展示他的关键词。",
-    "otherNightReminder": "如果首次有善良玩家说出了灵言师的关键词，唤醒该玩家并通知他阵营变化。",
-    "remindersGlobal": [
-      "转为邪恶",
-      "失去能力"
-    ],
+    "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
+    "remindersGlobal": [],
     "name": "灵言师",
     "team": "minion",
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
     "firstNight": 3900,
-    "otherNight": 13
+    "otherNight": 13,
+    "reminders": [
+      "失去能力",
+      "转为邪恶"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "37_elysuim",
     "image": "https://clocktower-wiki.gstonegames.com/images/b/b9/Xaan.png",
-    "firstNightReminder": "在等同初始外来者数量的夜晚，所有镇民中毒。",
-    "otherNightReminder": "在等同初始外来者数量的夜晚，所有镇民中毒。",
-    "remindersGlobal": [
-      "大限将至"
-    ],
+    "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "remindersGlobal": [],
     "name": "限",
     "team": "minion",
     "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
     "firstNight": 3500,
-    "otherNight": 6
+    "otherNight": 6,
+    "reminders": [
+      "大限将至",
+      "第一晚",
+      "第三晚",
+      "第二晚",
+      "第四晚"
+    ],
+    "setup": 1,
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
   },
   {
     "id": "38_elysuim",

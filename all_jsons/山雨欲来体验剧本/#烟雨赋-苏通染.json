@@ -310,7 +310,7 @@
   },
   {
     "id": "e098bbbd-8d60-4b29-849d-46294ed11627",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/scarlet_woman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
     "edition": "custom",
     "name": "红唇女郎",
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
@@ -319,12 +319,13 @@
     "firstNight": 0,
     "otherNight": 3700,
     "firstNightReminder": "",
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
-    "reminders": [],
-    "remindersGlobal": [
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
+    "reminders": [
       "是恶魔"
     ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "id": "f39ac8f9-b8bd-4f44-8d33-68b09755a1ea",
@@ -342,7 +343,8 @@
       "中毒"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。"
   },
   {
     "id": "dd6726dd-48a7-413a-b78a-100d43ef4f9b",
@@ -360,7 +362,8 @@
       "以为存活"
     ],
     "remindersGlobal": [],
-    "setup": 1
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "f8fad1a2-c342-4767-8bc9-666e9a466aef",
@@ -372,14 +375,15 @@
     "sch_team": "爪牙",
     "firstNight": 6310,
     "otherNight": 8810,
-    "firstNightReminder": "首个夜晚，唤醒画皮，让其选择一名玩家，该玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记，和“以为存活”标记。但不要宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。",
-    "otherNightReminder": "如果画皮选择的玩家重生，在画皮的角色标记旁放置“重获能力”标记。\n每个夜晚，如果画皮有“重获能力”标记，唤醒画皮，让其选择一名玩家，该玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记，和“以为存活”标记。但不要宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。",
+    "firstNightReminder": "唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
+    "otherNightReminder": "如果首夜被画皮变成活尸的玩家死亡，他重生，然后画皮重获能力。唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
     "reminders": [
       "以为存活",
       "重获能力"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "64495eb9-cbb5-4f55-8ee8-988eca8962fc",

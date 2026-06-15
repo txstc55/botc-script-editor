@@ -204,7 +204,7 @@
   },
   {
     "id": "17_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/17_shuxuedeshengyan.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
     "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
     "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
     "reminders": [
@@ -214,48 +214,65 @@
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
     "firstNight": 5500,
-    "otherNight": 3
+    "otherNight": 3,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "18_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/18_shuxuedeshengyan.png",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
     "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。",
     "name": "科学怪人",
     "team": "minion",
     "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
-    "firstNight": 11
+    "firstNight": 11,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。"
   },
   {
     "id": "19_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/19_shuxuedeshengyan.png",
-    "firstNightReminder": "如果有必要，让巫师的能力生效。",
-    "otherNightReminder": "如果有必要，让巫师的能力生效。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/archive/c/c7/20250103031516%21Wizard.png",
+    "firstNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "otherNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
     "reminders": [
-      "？"
+      "代价",
+      "兑现",
+      "失去能力",
+      "线索"
     ],
     "name": "巫师",
     "team": "minion",
     "ability": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
     "firstNight": 5600,
-    "otherNight": 5
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "20_shuxuedeshengyan",
-    "image": "https://www.bloodstar.xyz/p/SerraEvelyn/shuxuedeshengyan/20_shuxuedeshengyan.png",
-    "firstNightReminder": "在等同初始外来者数量的夜晚，所有镇民中毒。",
-    "otherNightReminder": "在等同初始外来者数量的夜晚，所有镇民中毒。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/b/b9/Xaan.png",
+    "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "reminders": [
-      "第一夜",
-      "第二夜",
-      "第三夜",
-      "大限将至"
+      "大限将至",
+      "第一晚",
+      "第三晚",
+      "第二晚",
+      "第四晚"
     ],
     "setup": 1,
     "name": "限",
     "team": "minion",
     "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
     "firstNight": 5700,
-    "otherNight": 7
+    "otherNight": 7,
+    "remindersGlobal": [],
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
   },
   {
     "id": "21_shuxuedeshengyan",

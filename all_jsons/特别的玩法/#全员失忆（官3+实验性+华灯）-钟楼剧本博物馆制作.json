@@ -1824,7 +1824,7 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/poisoner.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
     "edition": "custom",
     "flavor": "",
     "id": "poisoner_button",
@@ -1843,7 +1843,7 @@
   },
   {
     "ability": "每个夜晚，你能查看魔典。你可能会被当作善良阵营、镇民角色或外来者角色，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/spy.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spy.png",
     "edition": "custom",
     "flavor": "",
     "id": "spy_button",
@@ -1860,28 +1860,28 @@
   },
   {
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/scarlet_woman.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。",
     "id": "scarlet_woman_button",
     "firstNightReminder": "",
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "name": "红唇女郎",
     "otherNight": 37,
     "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [
+    "reminders": [
       "是恶魔"
     ],
+    "remindersGlobal": [],
     "team": "minion",
     "firstNight": 0,
     "GstoneID": "scarlet_woman"
   },
   {
     "ability": "会有额外的外来者在场。[+2 外来者]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/baron.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baron.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "这个小镇没救了，不是么？廉价的外来劳动力……这就是问题所在。要我说，我会把他们全部调配到矿井里。不过是稍有些困难的工作，这不会伤害到任何人，要是有人提出反对意见就赏他一记耳光。这就是所谓的底线，不是么？",
     "id": "baron_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -1916,9 +1916,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/devils_advocate.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。",
     "id": "devils_advocate_button",
     "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",
     "otherNightReminder": "让魔鬼代言人选择一名存活玩家，不能是上一夜他选择过的玩家。标记那名玩家处决不死。",
@@ -1935,7 +1935,7 @@
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "edition": "custom",
     "flavor": "",
     "id": "assassin_button",
@@ -1945,8 +1945,8 @@
     "otherNight": 86,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -1955,16 +1955,18 @@
   },
   {
     "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mastermind.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。",
     "id": "mastermind_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
     "name": "主谋",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "主谋日"
+    ],
     "remindersGlobal": [],
     "team": "minion",
     "firstNight": 0,
@@ -1972,7 +1974,7 @@
   },
   {
     "ability": "你与一名对立阵营的玩家互相知道对方是什么角色。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/evil_twin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
     "edition": "custom",
     "flavor": "",
     "id": "evil_twin_button",
@@ -1991,7 +1993,7 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/witch.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
     "edition": "custom",
     "flavor": "",
     "id": "witch_button",
@@ -2010,9 +2012,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/cerenovus.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。",
     "id": "cerenovus_button",
     "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
     "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
@@ -2029,7 +2031,7 @@
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/pit-hag.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
     "edition": "custom",
     "flavor": "",
     "id": "pit-hag_button",
@@ -2046,9 +2048,9 @@
   },
   {
     "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/goblin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？",
     "id": "goblin_button",
     "firstNightReminder": "",
     "otherNightReminder": "",
@@ -2056,7 +2058,7 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "已公开声明"
+      "已宣称"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -2065,7 +2067,7 @@
   },
   {
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/widow.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
     "edition": "custom",
     "flavor": "",
     "id": "widow_button",
@@ -2105,7 +2107,7 @@
   },
   {
     "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。如果你被处决，提名你的玩家需要和你猜拳，只有你输了你才会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/psychopath.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/psychopath.png",
     "edition": "custom",
     "flavor": "",
     "id": "psychopath_button",
@@ -2122,7 +2124,7 @@
   },
   {
     "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fearmonger.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
     "edition": "custom",
     "flavor": "",
     "id": "fearmonger_button",
@@ -2141,18 +2143,18 @@
   },
   {
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mezepheles.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
     "edition": "custom",
     "flavor": "",
     "id": "mezepheles_button",
-    "firstNightReminder": "告诉灵言师他的秘密词语。",
+    "firstNightReminder": "唤醒灵言师，对他展示他的关键词。",
     "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
     "name": "灵言师",
     "otherNight": 32,
     "setup": 0,
     "reminders": [
-      "邪恶",
-      "失去能力"
+      "失去能力",
+      "转为邪恶"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -2161,11 +2163,11 @@
   },
   {
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/marionette.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "edition": "custom",
     "flavor": "",
     "id": "marionette_button",
-    "firstNightReminder": "选择一个邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "otherNightReminder": "",
     "name": "提线木偶",
     "otherNight": 0,
@@ -2180,11 +2182,11 @@
   },
   {
     "ability": "所有玩家都知道你是维齐尔。你在白天时不会死亡。如果一次提名中有善良玩家投票，你可以让被提名者立即被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_8651385151861_48d3dd5d.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vizier.png",
     "edition": "custom",
     "flavor": "",
     "id": "vizier_button",
-    "firstNightReminder": "告诉所有玩家维齐尔在场，并指向维齐尔玩家。",
+    "firstNightReminder": "如果维齐尔在场，告知所有人谁是维齐尔。",
     "otherNightReminder": "",
     "name": "维齐尔",
     "otherNight": 0,
@@ -2197,9 +2199,9 @@
   },
   {
     "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们之中可能会有人死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202307/c_4331482099861_0db1bfaf.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harpy.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "我从未见过如此光明的一日，阴森利爪不再笼罩着我。",
     "id": "harpy_button",
     "firstNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
     "otherNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
@@ -2233,20 +2235,20 @@
     "GstoneID": "boomdandy"
   },
   {
-    "ability": "在首个夜晚，你会得知三个伪装。在第三个夜晚，你要选择一名玩家：他变成由你选择的邪恶恶魔。[无恶魔在场]\n\n",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_2685000701171_6b776d07.jpg",
+    "ability": "在首个夜晚，你会得知三个伪装。在第三个夜晚，你要选择一名玩家：他变成由你选择的邪恶恶魔。[无恶魔在场]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/summoner.png",
     "edition": "custom",
     "flavor": "",
     "id": "summoner_button",
-    "firstNightReminder": "在首个夜晚，对召唤师展示三个不在场的善良角色，作为他的伪装。",
-    "otherNightReminder": "在夜晚时，如果召唤师旁放置了“第三晚”提示标记，唤醒召唤师。让他指向一名玩家，和角色列表上的一个恶魔图标。让召唤师重新入睡。唤醒被召唤师选择的玩家。对他展示“你是”信息标记，和恶魔角色标记。再对他展示“你是”信息标记，和朝下的大拇指。用那个恶魔角色标记替换他的角色标记，并让新恶魔重新入睡。",
+    "firstNightReminder": "唤醒召唤师，对他展示三个不在场的善良角色标记。",
+    "otherNightReminder": "如果这是游戏中的第三个夜晚，唤醒召唤师，让他选择一名玩家和一个恶魔角色，那名玩家变成由他选择的邪恶恶魔。",
     "name": "召唤师",
     "otherNight": 37,
     "setup": 1,
     "reminders": [
       "第一晚",
-      "第二晚",
-      "第三晚"
+      "第三晚",
+      "第二晚"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -3232,7 +3234,7 @@
   },
   {
     "ability": "在你的首个夜晚，你要选择一名玩家：他会知道狐媚娘在场。如果你死于处决，当晚他转变为邪恶阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_4772055308961_7bc92354.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/humeiniang.png",
     "edition": "custom",
     "flavor": "",
     "id": "humeiniang_button",
@@ -3268,9 +3270,9 @@
   },
   {
     "ability": "在你存活时提名你的玩家会在当晚死亡，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_1981945308961_042e5529.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yangguren.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "把毒蛇、蝎子、蜈蚣、蟾蜍、蜘蛛放在一起……多！来！点！",
     "id": "yangguren_button",
     "firstNightReminder": "",
     "otherNightReminder": "如果有玩家被放置了“提名”标记，标记该玩家死亡。",

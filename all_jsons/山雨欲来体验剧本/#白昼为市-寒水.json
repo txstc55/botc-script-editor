@@ -294,9 +294,9 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/golem.png"
   },
   {
-    "ability": "每个夜晚，你要选择左或右：将你的飞行标记从当前位置移动到这个方向上的下一名存活善良玩家。他中毒且可能被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
+    "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
     "id": "gudiaobutton",
     "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
     "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
@@ -309,17 +309,17 @@
     "remindersGlobal": [],
     "team": "minion",
     "firstNight": 3017,
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg"
   },
   {
-    "firstNightReminder": "告诉灵言师他的秘密词语。",
+    "firstNightReminder": "唤醒灵言师，对他展示他的关键词。",
     "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
     "name": "灵言师",
     "otherNight": 19,
     "setup": 0,
     "reminders": [
-      "邪恶",
-      "失去能力"
+      "失去能力",
+      "转为邪恶"
     ],
     "id": "mezephelesbutton",
     "edition": "custom",
@@ -327,25 +327,28 @@
     "name_eng": "Mezepheles",
     "firstNight": 3027,
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "name": "红唇女郎",
     "otherNight": 20,
     "setup": 0,
-    "reminders": [],
-    "id": "scarlet_womanbutton",
-    "edition": "custom",
-    "remindersGlobal": [
+    "reminders": [
       "是恶魔"
     ],
+    "id": "scarlet_womanbutton",
+    "edition": "custom",
+    "remindersGlobal": [],
     "team": "minion",
     "name_eng": "Scarlet Woman",
     "firstNight": 0,
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "firstNightReminder": "",
@@ -360,7 +363,9 @@
     "name_eng": "Psychopath",
     "firstNight": 0,
     "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。如果你被处决，提名你的玩家需要和你猜拳，只有你输了你才会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/psychopath.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/psychopath.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式杀死了一名与你邻近的镇民玩家，所有善良玩家会中毒直到下个黄昏。",

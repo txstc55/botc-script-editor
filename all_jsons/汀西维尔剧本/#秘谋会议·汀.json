@@ -140,21 +140,22 @@
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "如果红唇女郎今天变成了小恶魔，对她展示“你是”信息标记，和小恶魔角色标记。",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "name": "红唇女郎",
     "otherNight": 20,
     "setup": 0,
-    "reminders": [],
-    "id": "scarlet_womanbutton",
-    "edition": "custom",
-    "remindersGlobal": [
+    "reminders": [
       "是恶魔"
     ],
+    "id": "scarlet_womanbutton",
+    "edition": "custom",
+    "remindersGlobal": [],
     "team": "minion",
     "name_eng": "Scarlet Woman",
     "firstNight": 0,
     "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "firstNightReminder": "",
@@ -162,14 +163,18 @@
     "name": "主谋",
     "otherNight": 0,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "主谋日"
+    ],
     "id": "mastermindbutton",
     "edition": "custom",
     "team": "minion",
     "name_eng": "Mastermind",
     "firstNight": 0,
     "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
+    "remindersGlobal": [],
+    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。"
   },
   {
     "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",

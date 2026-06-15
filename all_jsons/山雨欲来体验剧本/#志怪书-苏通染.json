@@ -341,12 +341,14 @@
     "firstNight": 0,
     "otherNight": 52,
     "firstNightReminder": "",
-    "otherNightReminder": "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "yangaaaaaaaaaaaa111",
@@ -358,14 +360,19 @@
     "sch_team": "爪牙",
     "firstNight": 0,
     "otherNight": 54,
-    "otherNightReminder": "今天白天提名了存活的养蛊人的玩家死亡。",
+    "otherNightReminder": "如果有玩家被放置了“提名”标记，标记该玩家死亡。",
     "reminders": [
-      "蛊"
-    ]
+      "提名",
+      "死亡"
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "把毒蛇、蝎子、蜈蚣、蟾蜍、蜘蛛放在一起……多！来！点！"
   },
   {
     "id": "huasapidpaiwo12341231231231231i123p12ip3p1i23p1",
-    "image": "https://www.helloimg.com/i/2024/11/11/67321c952a8a4.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
     "edition": "custom",
     "name": "画皮",
     "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
@@ -376,10 +383,12 @@
     "firstNightReminder": "唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
     "otherNightReminder": "如果首夜被画皮变成活尸的玩家死亡，他重生，然后画皮重获能力。唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
     "reminders": [
-      "活尸",
-      "失去能力"
+      "以为存活",
+      "重获能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "xiaoweibaxiliuxiliu111",

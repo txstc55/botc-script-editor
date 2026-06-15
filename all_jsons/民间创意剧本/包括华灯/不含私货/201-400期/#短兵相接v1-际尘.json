@@ -312,7 +312,7 @@
   },
   {
     "id": "31c55ca2-8c94-3b952abaed32",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/1/1b/Harpy.png/180px-Harpy.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harpy.png",
     "edition": "custom",
     "name": "鹰身女妖",
     "ability": "每个夜晚，你要选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是邪恶的，否则他们之中可能会有人死亡。",
@@ -320,20 +320,22 @@
     "sch_team": "爪牙",
     "firstNight": 12,
     "otherNight": 6,
-    "firstNightReminder": "每个夜晚，唤醒鹰身女妖。让鹰身女妖指向一名玩家，再指向另一名玩家。用“疯狂”提示标记标记第一名玩家，并用“第二名”提示标记标记第二名玩家。让鹰身女妖重新入睡。唤醒标记了“疯狂”的玩家。对他展示“该角色的能力对你生效”信息标记，以及鹰身女妖的角色标记。然后指向标记了“第二名”的玩家。让这名玩家重新入睡。",
-    "otherNightReminder": "每个夜晚，唤醒鹰身女妖。让鹰身女妖指向一名玩家，再指向另一名玩家。用“疯狂”提示标记标记第一名玩家，并用“第二名”提示标记标记第二名玩家。让鹰身女妖重新入睡。唤醒标记了“疯狂”的玩家。对他展示“该角色的能力对你生效”信息标记，以及鹰身女妖的角色标记。然后指向标记了“第二名”的玩家。让这名玩家重新入睡。",
+    "firstNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
+    "otherNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
     "reminders": [
       "疯狂",
       "第二名"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "我从未见过如此光明的一日，阴森利爪不再笼罩着我。"
   },
   {
     "id": "3e4f7535-7522-40b3-bb5f-bf8d6f2ba5fa",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
     "edition": "custom",
     "name": "寡妇",
-    "ability": "在你的首个夜晚，你要查看魔法书并选择一名玩家：该玩家中毒。随后会有一名善良玩家得知寡妇在场。",
+    "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
     "team": "minion",
     "sch_team": "爪牙",
     "firstNight": 17,
@@ -346,7 +348,8 @@
     "remindersGlobal": [
       "被知晓"
     ],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "scarletscarletscarletscarletscarletscarletscarlet",
@@ -361,23 +364,30 @@
     "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
     "reminders": [
       "是恶魔"
-    ]
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
   },
   {
     "id": "61c6246a-55a5-433c-87c3-3107014f41e9",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "edition": "custom",
     "name": "提线木偶",
-    "ability": "你以为你是一个善良角色，但其实你不是。恶魔会得知你是提线木偶。[提线木偶会与恶魔邻座]",
+    "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
     "team": "minion",
     "sch_team": "爪牙",
     "firstNight": 11,
     "otherNight": 0,
-    "firstNightReminder": "选择一名邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "remindersGlobal": [
       "是提线木偶"
     ],
-    "setup": 1
+    "setup": 1,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "id": "36c6c6e2-4798-4ee9-858f-7f80d24e19f3",

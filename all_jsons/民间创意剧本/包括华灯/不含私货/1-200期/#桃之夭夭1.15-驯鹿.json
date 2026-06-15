@@ -314,7 +314,7 @@
   },
   {
     "id": "38947a45-bea3-4f5d-b36c-7a38a05d7e41",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "edition": "custom",
     "name": "刺客",
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
@@ -325,15 +325,16 @@
     "firstNightReminder": "",
     "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/widow.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
     "edition": "custom",
     "flavor": "",
     "id": "widow_button",
@@ -353,12 +354,12 @@
   },
   {
     "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
-    "image": "https://www.helloimg.com/i/2024/11/11/67321c952a8a4.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
     "edition": "custom",
     "flavor": "",
     "id": "huapi_button",
-    "firstNightReminder": "首个夜晚，唤醒画皮，让其选择一名玩家，该玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记，和“以为存活”标记。但不要宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。",
-    "otherNightReminder": "如果画皮选择的玩家重生，在画皮的角色标记旁放置“重获能力”标记。\n每个夜晚，如果画皮有“重获能力”标记，唤醒画皮，让其选择一名玩家，该玩家进入“活尸”状态。在魔典中该玩家的角色标记上添加帷幕标记，和“以为存活”标记。但不要宣布该玩家已经死亡，也不要在城镇广场上将该玩家的生命标记翻面。",
+    "firstNightReminder": "唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
+    "otherNightReminder": "如果首夜被画皮变成活尸的玩家死亡，他重生，然后画皮重获能力。唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
     "name": "画皮",
     "otherNight": 20,
     "setup": 0,
@@ -373,9 +374,9 @@
   },
   {
     "ability": "在你存活时提名你的玩家会在当晚死亡，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_1981945308961_042e5529.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yangguren.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "把毒蛇、蝎子、蜈蚣、蟾蜍、蜘蛛放在一起……多！来！点！",
     "id": "yangguren_button",
     "firstNightReminder": "",
     "otherNightReminder": "如果有玩家被放置了“提名”标记，标记该玩家死亡。",
@@ -384,8 +385,7 @@
     "setup": 0,
     "reminders": [
       "提名",
-      "死亡",
-      "醉酒"
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "minion",

@@ -310,11 +310,11 @@
   },
   {
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/widow.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
     "edition": "custom",
     "flavor": "",
     "id": "widow",
-    "firstNightReminder": "向寡妇展示魔典，她想看多久就看多久。在她查看完毕后让她选择一名玩家，标记那名玩家中毒。随后如果寡妇未醉酒中毒，唤醒一名善良玩家，对他展示寡妇角色标记。 ",
+    "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
     "otherNightReminder": "",
     "name": "寡妇",
     "otherNight": 0,
@@ -329,8 +329,8 @@
     "firstNight": 4700
   },
   {
-    "ability": "每局游戏限一次，在白天时，你可以拜访说书人进行许愿：如果愿望兑现，会付出相应代价且留下线索。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_8969260205371_593037a4.jpg",
+    "ability": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/archive/c/c7/20250103031516%21Wizard.png",
     "edition": "custom",
     "flavor": "",
     "id": "Wizard",
@@ -340,8 +340,10 @@
     "otherNight": 0,
     "setup": 0,
     "reminders": [
-      "已许愿",
-      "兑现"
+      "代价",
+      "兑现",
+      "失去能力",
+      "线索"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -367,15 +369,15 @@
   },
   {
     "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202410/c_2810398318271_0bc1440b.jpg",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。",
     "id": "boffin",
-    "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。 ",
+    "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。",
     "otherNightReminder": "",
     "name": "科学怪人",
     "otherNight": 0,
-    "setup": 0,
+    "setup": 1,
     "reminders": [],
     "remindersGlobal": [],
     "team": "minion",

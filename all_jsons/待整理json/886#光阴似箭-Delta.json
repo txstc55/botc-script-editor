@@ -216,10 +216,16 @@
   },
   {
     "id": "19_guangyinsujian",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/d/d7/msb759ew0f2hudkvxhsz15jnxsqqpy9.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/psychopath.png",
     "name": "精神病患者",
     "team": "minion",
-    "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。如果你被处决，提名你的玩家需要和你猜拳，只有你输了你才会死亡。"
+    "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。如果你被处决，提名你的玩家需要和你猜拳，只有你输了你才会死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "20_guangyinsujian",
@@ -244,20 +250,23 @@
   },
   {
     "id": "22_guangyinsujian",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/6/6d/m578bdye4jzavd4y1bjxgxwxsrw95za.png",
-    "firstNightReminder": "0",
-    "otherNightReminder": "0",
+    "image": "https://clocktower-wiki.gstonegames.com/images/archive/c/c7/20250103031516%21Wizard.png",
+    "firstNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "otherNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
     "reminders": [
-      "失去能力",
-      "兑现",
       "代价",
+      "兑现",
+      "失去能力",
       "线索"
     ],
     "name": "巫师",
     "team": "minion",
     "ability": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
     "firstNight": 3200,
-    "otherNight": 3
+    "otherNight": 3,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "23_guangyinsujian",

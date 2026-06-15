@@ -303,7 +303,9 @@
     "name_eng": "Psychopath",
     "firstNight": 0,
     "ability": "每个白天，在提名开始前，你可以公开选择一名玩家：他死亡。如果你被处决，提名你的玩家需要和你猜拳，只有你输了你才会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/psychopath.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/psychopath.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
@@ -332,7 +334,7 @@
     "otherNight": 18,
     "setup": 0,
     "reminders": [
-      "恐惧蔓延"
+      "恐惧"
     ],
     "id": "fearmongerbutton",
     "edition": "custom",
@@ -340,10 +342,12 @@
     "name_eng": "Fearmonger",
     "firstNight": 26,
     "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
-    "firstNightReminder": "选择一个邻近恶魔的善良玩家放置提线木偶标记。唤醒恶魔并告知他谁是提线木偶。",
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
     "otherNightReminder": "",
     "name": "提线木偶",
     "otherNight": 0,
@@ -358,7 +362,8 @@
     "name_eng": "Marionette",
     "firstNight": 11,
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png"
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "flavor": ""
   },
   {
     "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",

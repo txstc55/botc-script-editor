@@ -341,7 +341,7 @@
   },
   {
     "id": "huasapidpaiwopippippipp123i123p12ip3p1i23p1",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/huapi.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
     "edition": "custom",
     "name": "画皮",
     "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
@@ -355,7 +355,9 @@
       "以为存活",
       "重获能力"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "noita111",
@@ -367,12 +369,14 @@
     "sch_team": "爪牙",
     "firstNight": 24,
     "otherNight": 19.5,
-    "firstNightReminder": "唤醒女巫，让她选择一名玩家，那名玩家被诅咒。",
-    "otherNightReminder": "唤醒女巫，让她选择一名玩家，那名玩家被诅咒。",
+    "firstNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
+    "otherNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
     "reminders": [
       "被诅咒"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "lajidongxi111",
@@ -384,12 +388,14 @@
     "sch_team": "爪牙",
     "firstNight": 26,
     "otherNight": 21,
-    "firstNightReminder": "唤醒恐惧之灵，让他选择一名玩家，随后通知所有玩家恐惧之灵选择了一名玩家。",
-    "otherNightReminder": "唤醒恐惧之灵，让他选择一名玩家，随后如果恐惧之灵的目标发生了变更，通知所有玩家恐惧之灵选择了一名玩家。",
+    "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
+    "otherNightReminder": "恐惧之灵指向一名玩家。如果与之前选择的不同，则更换恐惧标记并宣布恐惧之灵选中或改变了目标。",
     "reminders": [
       "恐惧"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "tousioahsdoasidhas",
@@ -404,13 +410,15 @@
     "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "reminders": [
+      "大限将至",
       "第一晚",
-      "第二晚",
       "第三晚",
-      "第四晚",
-      "大限将至"
+      "第二晚",
+      "第四晚"
     ],
-    "setup": 1
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
   },
   {
     "id": "wushihsihsihsihsihsihsish",
@@ -421,12 +429,16 @@
     "team": "minion",
     "sch_team": "爪牙",
     "reminders": [
-      "失去能力",
-      "兑现",
       "代价",
+      "兑现",
+      "失去能力",
       "线索"
     ],
-    "setup": 0
+    "setup": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "woliuliuliu111",

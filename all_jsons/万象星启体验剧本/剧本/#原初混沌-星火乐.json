@@ -333,10 +333,10 @@
   },
   {
     "id": "wizard",
-    "image": "https://i.postimg.cc/fWVzy9c1/image-6.webp",
+    "image": "https://clocktower-wiki.gstonegames.com/images/archive/c/c7/20250103031516%21Wizard.png",
     "edition": "custom",
     "name": "巫师",
-    "ability": "每局游戏限一次，在白天时，你可以拜访说书人进行许愿：如果愿望兑现，会付出相应代价或留下线索。",
+    "ability": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
     "team": "minion",
     "sch_team": "爪牙",
     "firstNight": 0,
@@ -344,16 +344,18 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [
-      "失去能力",
       "代价",
+      "兑现",
+      "失去能力",
       "线索"
     ],
     "remindersGlobal": [],
-    "setup": 0
+    "setup": 0,
+    "flavor": ""
   },
   {
     "ability": "在你的首个夜晚，你要选择一名玩家：他会知道狐媚娘在场。如果你死于处决，当晚他转变为邪恶阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_4772055308961_7bc92354.jpg",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/humeiniang.png",
     "edition": "custom",
     "flavor": "",
     "id": "humeiniang_button1",
@@ -384,7 +386,9 @@
     "reminders": [
       "已宣称"
     ],
-    "setup": 0
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？"
   },
   {
     "id": "zeitghast",

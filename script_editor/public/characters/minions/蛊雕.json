@@ -4,7 +4,7 @@
   "team": "minion",
   "teamLabelZh": "爪牙",
   "folder": "minions",
-  "variantCount": 33,
+  "variantCount": 25,
   "totalOccurrenceCount": 60,
   "variants": [
     {
@@ -16,17 +16,17 @@
         "minion"
       ],
       "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-      "firstNight": 19,
-      "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "otherNight": 9,
-      "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 17,
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "otherNight": 8,
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "reminders": [
         "中毒"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 12,
       "notes": []
     },
@@ -34,6 +34,29 @@
       "id": "蛊雕",
       "name": "蛊雕",
       "variantIndex": 2,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 19,
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "otherNight": 9,
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "reminders": [
+        "中毒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
+      "occurrenceCount": 12,
+      "notes": []
+    },
+    {
+      "id": "蛊雕",
+      "name": "蛊雕",
+      "variantIndex": 3,
       "team": "minion",
       "teams": [
         "minion"
@@ -49,31 +72,8 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 11,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 3,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：将你的飞行标记从当前位置移动到这个方向上的下一名存活善良玩家。他中毒且可能被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
-      "firstNight": 17,
-      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 4,
       "notes": []
     },
     {
@@ -95,7 +95,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 3,
       "notes": []
     },
@@ -107,18 +107,18 @@
       "teams": [
         "minion"
       ],
-      "ability": "蛊雕：每个夜晚，你要选择左或右：将你的飞行标记从当前位置移动到这个方向上的下一名存活善良玩家。他中毒且可能被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
-      "firstNight": 17,
+      "firstNight": 3300,
       "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 8,
+      "otherNight": 4,
       "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "reminders": [
         "中毒"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 2,
       "notes": []
     },
@@ -130,8 +130,8 @@
       "teams": [
         "minion"
       ],
-      "ability": "每个夜晚，你要选择左或右：你从当前位置飞行到该方向上的下一名存活善良玩家，你得知他的角色，随后他中毒且可能被当作邪恶阵营和爪牙角色。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/5/56/Gudiao.png",
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
       "firstNight": 2,
       "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "otherNight": 3,
@@ -141,7 +141,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -153,7 +153,7 @@
       "teams": [
         "minion"
       ],
-      "ability": "每个夜晚，你要选择左或右：将你的飞行标记从当前位置移动到这个方向上的下一名存活善良玩家。他中毒且可能被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
       "firstNight": 11,
       "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
@@ -164,7 +164,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -176,18 +176,18 @@
       "teams": [
         "minion"
       ],
-      "ability": "每个夜晚，你要选择左或右：你从当前位置飞行到该方向上的下一名存活善良玩家，你得知他的角色，随后他中毒且可能被当作邪恶阵营和爪牙角色。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/5/56/Gudiao.png",
-      "firstNight": 17,
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 22,
       "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 8,
+      "otherNight": 10,
       "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "reminders": [
         "中毒"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -199,18 +199,18 @@
       "teams": [
         "minion"
       ],
-      "ability": "每个夜晚，你要选择左或右：你从当前位置飞行到该方向上的下一名存活善良玩家，你得知他的角色，随后他中毒且可能被当作邪恶阵营和爪牙角色。",
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
-      "firstNight": 17,
+      "firstNight": 23,
       "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 8,
+      "otherNight": 12,
       "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "reminders": [
         "中毒"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -218,144 +218,6 @@
       "id": "蛊雕",
       "name": "蛊雕",
       "variantIndex": 10,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
-      "firstNight": 17,
-      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 11,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-      "firstNight": 17,
-      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 12,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，选择左或右：你朝这个方向飞行至下一名存活的善良玩家。在你停留位置的玩家中毒且被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
-      "firstNight": 17,
-      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 13,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "蛊雕：每个夜晚，你要选择左或右：将你的飞行标记从当前位置移动到这个方向上的下一名存活善良玩家。他中毒且可能被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-      "firstNight": 17,
-      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 8,
-      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 14,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://clocktower-wiki.gstonegames.com/images/thumb/5/56/Gudiao.png/120px-Gudiao.png",
-      "firstNight": 22,
-      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 10,
-      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 15,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，选择左或右：你朝这个方向飞行至下一名存活的善良玩家。在你停留位置的玩家中毒且被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
-      "image": "https://i.postimg.cc/3RzLN7kj/gudiao.png",
-      "firstNight": 23,
-      "firstNightReminder": "每个夜晚，选择左或右：你朝这个方向飞行至下一名存活的善良玩家。在你停留位置的玩家中毒且被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
-      "otherNight": 12,
-      "otherNightReminder": "每个夜晚，选择左或右：你朝这个方向飞行至下一名存活的善良玩家。在你停留位置的玩家中毒且被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 16,
       "team": "minion",
       "teams": [
         "minion"
@@ -371,66 +233,66 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "蛊雕",
       "name": "蛊雕",
-      "variantIndex": 17,
+      "variantIndex": 11,
       "team": "minion",
       "teams": [
         "minion"
       ],
       "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/thumb/0/07/kuxgbqnu01lv1j00du4hht6qv44zpz2.png/240px-%E8%9B%8A%E9%9B%95.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
       "firstNight": 28,
-      "firstNightReminder": "唤醒蛊雕，让他选择一个方向。将“中毒”提示标记放置在该方向上第一个善良玩家的角色标记旁。随后，对蛊雕展示该玩家的角色标记。",
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "otherNight": 20,
-      "otherNightReminder": "唤醒蛊雕，让他选择一个方向。如果与上次选择的方向相同，将“中毒”提示标记移动至该方向上的下一个善良玩家的角色标记旁。如果选择的方向不同，则将“中毒”提示标记放置在该方向上第一个善良玩家的角色标记旁。随后，对蛊雕展示该玩家的角色标记。",
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "reminders": [
         "中毒"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "蛊雕",
       "name": "蛊雕",
-      "variantIndex": 18,
+      "variantIndex": 12,
       "team": "minion",
       "teams": [
         "minion"
       ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且可能被当作邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/thumb/0/07/kuxgbqnu01lv1j00du4hht6qv44zpz2.png/240px-%E8%9B%8A%E9%9B%95.png",
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
       "firstNight": 3005,
-      "firstNightReminder": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且可能被当作邪恶的蛊雕，直到下个黄昏。",
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "otherNight": 3,
-      "otherNightReminder": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且可能被当作邪恶的蛊雕，直到下个黄昏。",
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "reminders": [
         "中毒"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "蛊雕",
       "name": "蛊雕",
-      "variantIndex": 19,
+      "variantIndex": 13,
       "team": "minion",
       "teams": [
         "minion"
       ],
-      "ability": "每个夜晚，你要选择左或右：将你的飞行标记从当前位置移动到这个方向上的下一名存活善良玩家。他中毒且可能被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
       "firstNight": 3017,
       "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "otherNight": 8,
@@ -440,14 +302,14 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "蛊雕",
       "name": "蛊雕",
-      "variantIndex": 20,
+      "variantIndex": 14,
       "team": "minion",
       "teams": [
         "minion"
@@ -463,14 +325,14 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "蛊雕",
       "name": "蛊雕",
-      "variantIndex": 21,
+      "variantIndex": 15,
       "team": "minion",
       "teams": [
         "minion"
@@ -486,14 +348,14 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "蛊雕",
       "name": "蛊雕",
-      "variantIndex": 22,
+      "variantIndex": 16,
       "team": "minion",
       "teams": [
         "minion"
@@ -509,7 +371,145 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "蛊雕",
+      "name": "蛊雕",
+      "variantIndex": 17,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 3200,
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "otherNight": 2,
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "reminders": [
+        "中毒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "蛊雕",
+      "name": "蛊雕",
+      "variantIndex": 18,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 3200,
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "otherNight": 4,
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "reminders": [
+        "中毒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "蛊雕",
+      "name": "蛊雕",
+      "variantIndex": 19,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 3200,
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "otherNight": 6,
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "reminders": [
+        "中毒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "蛊雕",
+      "name": "蛊雕",
+      "variantIndex": 20,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 3300,
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "otherNight": 2,
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "reminders": [
+        "中毒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "蛊雕",
+      "name": "蛊雕",
+      "variantIndex": 21,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 3400,
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "otherNight": 3,
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "reminders": [
+        "中毒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
+      "occurrenceCount": 1,
+      "notes": []
+    },
+    {
+      "id": "蛊雕",
+      "name": "蛊雕",
+      "variantIndex": 22,
+      "team": "minion",
+      "teams": [
+        "minion"
+      ],
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
+      "firstNight": 3400,
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "otherNight": 4,
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
+      "reminders": [
+        "中毒"
+      ],
+      "remindersGlobal": [],
+      "setup": 0,
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
@@ -522,191 +522,7 @@
         "minion"
       ],
       "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-      "firstNight": 3200,
-      "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "otherNight": 2,
-      "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 24,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/f/f9/01g1rijfutdxho6iq96cee539f6iiy9.png",
-      "firstNight": 3200,
-      "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "otherNight": 4,
-      "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 25,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-      "firstNight": 3200,
-      "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "otherNight": 6,
-      "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 26,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/fanzhuanyinhe/9_fanzhuanyinhe.png",
-      "firstNight": 3300,
-      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "otherNight": 2,
-      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 27,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-      "firstNight": 3300,
-      "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "otherNight": 4,
-      "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 28,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/thumb/0/07/kuxgbqnu01lv1j00du4hht6qv44zpz2.png/240px-%E8%9B%8A%E9%9B%95.png",
-      "firstNight": 3300,
-      "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "otherNight": 4,
-      "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 29,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-      "firstNight": 3400,
-      "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "otherNight": 3,
-      "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 30,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gudiao.png",
-      "firstNight": 3400,
-      "firstNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "otherNight": 4,
-      "otherNightReminder": "唤醒蛊雕，让他选择左或者右，他得知该方向上的下一名存活善良玩家的角色，这个善良玩家中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "reminders": [
-        "中毒"
-      ],
-      "remindersGlobal": [],
-      "setup": 0,
-      "flavor": "",
-      "occurrenceCount": 1,
-      "notes": []
-    },
-    {
-      "id": "蛊雕",
-      "name": "蛊雕",
-      "variantIndex": 31,
-      "team": "minion",
-      "teams": [
-        "minion"
-      ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "[\"https://patchwiki.biligame.com/images/jbzlbwgwjcygf/f/f9/01g1rijfutdxho6iq96cee539f6iiy9.png\"]",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
       "firstNight": 3500,
       "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "otherNight": 12,
@@ -723,35 +539,35 @@
     {
       "id": "蛊雕",
       "name": "蛊雕",
-      "variantIndex": 32,
+      "variantIndex": 24,
       "team": "minion",
       "teams": [
         "minion"
       ],
       "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
-      "image": "https://www.bloodstar.xyz/p/SerraEvelyn/buzhengjingjioayi/6_buzhengjingjioayi.png",
+      "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
       "firstNight": 4401,
-      "firstNightReminder": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "otherNight": 2700,
-      "otherNightReminder": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
+      "otherNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
       "reminders": [
         "中毒"
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     },
     {
       "id": "蛊雕",
       "name": "蛊雕",
-      "variantIndex": 33,
+      "variantIndex": 25,
       "team": "minion",
       "teams": [
         "minion"
       ],
-      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且被其他善良玩家当作邪恶的蛊雕，直到下个黄昏。",
+      "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
       "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
       "firstNight": 4801,
       "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
@@ -762,7 +578,7 @@
       ],
       "remindersGlobal": [],
       "setup": 0,
-      "flavor": "",
+      "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。",
       "occurrenceCount": 1,
       "notes": []
     }

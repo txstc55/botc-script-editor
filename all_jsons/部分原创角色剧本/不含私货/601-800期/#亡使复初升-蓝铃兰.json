@@ -239,29 +239,37 @@
   },
   {
     "id": "19_wsf",
-    "image": "https://www.bloodstar.xyz/p/bluebell/wsf/19_wsf.png",
-    "otherNightReminder": "1",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "name": "刺客",
     "team": "minion",
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
-    "otherNight": 10
+    "otherNight": 10,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "20_wsf",
-    "image": "https://www.bloodstar.xyz/p/bluebell/wsf/20_wsf.png",
-    "firstNightReminder": "1",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
+    "firstNightReminder": "唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
     "reminders": [
       "以为存活",
       "重获能力"
     ],
     "name": "画皮",
     "team": "minion",
-    "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。  当他下一次即将死亡时，他重生，随后你重获能力。",
-    "firstNight": 19
+    "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
+    "firstNight": 19,
+    "otherNightReminder": "如果首夜被画皮变成活尸的玩家死亡，他重生，然后画皮重获能力。唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "21_wsf",

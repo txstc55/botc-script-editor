@@ -131,23 +131,23 @@
     "otherNightReminder": "祭司可以选择神迹并降下，如果他这么做了，将当晚的神迹修改为祭司指定的神迹",
     "remindersGlobal": []
   },
-   {
-        "id": "zhuijidelaoda111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
-        "edition": "custom",
-        "name": "气球驾驶员",
-        "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
-        "team": "townsfolk",
-        "sch_team": "镇民",
-        "firstNight": 10701,
-        "otherNight": 13401,
-        "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
-        "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
-        "reminders": [
-            "得知"
-        ],
-        "setup": 1
-    }, 
+  {
+    "id": "zhuijidelaoda111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
+    "edition": "custom",
+    "name": "气球驾驶员",
+    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 10701,
+    "otherNight": 13401,
+    "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
+    "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
+    "reminders": [
+      "得知"
+    ],
+    "setup": 1
+  },
   {
     "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/chambermaid.png",
@@ -206,23 +206,23 @@
     ],
     "setup": 0
   },
-    {
-        "id": "mofashuijingqiu111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
-        "edition": "custom",
-        "name": "占卜师",
-        "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-        "team": "townsfolk",
-        "sch_team": "镇民",
-        "firstNight": 8000,
-        "otherNight": 11100,
-        "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-        "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
-        "reminders": [
-            "干扰项"
-        ],
-        "setup": 0
-    },
+  {
+    "id": "mofashuijingqiu111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
+    "edition": "custom",
+    "name": "占卜师",
+    "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 8000,
+    "otherNight": 11100,
+    "firstNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
+    "otherNightReminder": "唤醒占卜师，让他选择两名玩家。以点头或摇头告知他是否选中了恶魔。",
+    "reminders": [
+      "干扰项"
+    ],
+    "setup": 0
+  },
   {
     "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/gambler.png",
@@ -311,23 +311,23 @@
     "team": "outsider",
     "firstNight": 0
   },
-    {
-        "id": "biezaizhelifadian111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
-        "edition": "custom",
-        "name": "理发师",
-        "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
-        "team": "outsider",
-        "sch_team": "外来者",
-        "firstNight": 0,
-        "otherNight": 5005,
-        "firstNightReminder": "",
-        "otherNightReminder": "如果理发师死于白天，唤醒恶魔让他决定是否使用理发师的能力。如果理发师死于夜晚，（如果让除攻击理发师以外的恶魔进行选择则需要等当前恶魔入睡后）让一名恶魔决定是否使用理发师的能力。",
-        "reminders": [
-            "今晚理发"
-        ],
-        "setup": 0
-    },
+  {
+    "id": "biezaizhelifadian111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
+    "edition": "custom",
+    "name": "理发师",
+    "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
+    "team": "outsider",
+    "sch_team": "外来者",
+    "firstNight": 0,
+    "otherNight": 5005,
+    "firstNightReminder": "",
+    "otherNightReminder": "如果理发师死于白天，唤醒恶魔让他决定是否使用理发师的能力。如果理发师死于夜晚，（如果让除攻击理发师以外的恶魔进行选择则需要等当前恶魔入睡后）让一名恶魔决定是否使用理发师的能力。",
+    "reminders": [
+      "今晚理发"
+    ],
+    "setup": 0
+  },
   {
     "id": "yibilisi",
     "name": "伊比利斯",
@@ -387,11 +387,14 @@
     "remindersGlobal": [
       "是提线木偶"
     ],
-    "setup": 1
+    "setup": 1,
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": ""
   },
   {
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "edition": "custom",
     "flavor": "",
     "id": "assassin_c",
@@ -401,8 +404,8 @@
     "otherNight": 8600.0,
     "setup": 0,
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
     "team": "minion",
@@ -433,9 +436,9 @@
   },
   {
     "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/devils_advocate.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
     "edition": "custom",
-    "flavor": "",
+    "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。",
     "id": "devils_advocate_c",
     "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",
     "otherNightReminder": "让魔鬼代言人选择一名存活玩家，不能是上一夜他选择过的玩家。标记那名玩家处决不死。",
@@ -449,23 +452,25 @@
     "team": "minion",
     "firstNight": 5500.0
   },
-    {
-        "id": "noita111",
-        "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
-        "edition": "custom",
-        "name": "女巫",
-        "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
-        "team": "minion",
-        "sch_team": "爪牙",
-        "firstNight": 5700,
-        "otherNight": 2700,
-        "firstNightReminder": "唤醒女巫，让她选择一名玩家，那名玩家被诅咒。",
-        "otherNightReminder": "唤醒女巫，让她选择一名玩家，那名玩家被诅咒。",
-        "reminders": [
-            "被诅咒"
-        ],
-        "setup": 0
-    },
+  {
+    "id": "noita111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
+    "edition": "custom",
+    "name": "女巫",
+    "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
+    "team": "minion",
+    "sch_team": "爪牙",
+    "firstNight": 5700,
+    "otherNight": 2700,
+    "firstNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
+    "otherNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
+    "reminders": [
+      "被诅咒"
+    ],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
+  },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡，与他邻近的两名玩家会被当做错误的阵营和角色直到下个黄昏。",
     "image": "https://free.picui.cn/free/2025/10/19/68f419a74dc10.png",

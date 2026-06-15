@@ -383,7 +383,7 @@
     "otherNight": 1
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/assassin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
     "name": "刺客",
     "team": "minion",
     "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
@@ -391,25 +391,26 @@
     "official_id": "assassin",
     "edition": "custom",
     "firstNightReminder": "",
-    "otherNightReminder": "如果刺客未曾使用能力，唤醒刺客，他可以摇头不使用能力，或选择攻击一名玩家。",
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "setup": 0,
     "reminders": [
-      "死亡",
-      "失去能力"
+      "失去能力",
+      "死亡"
     ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 12
+    "otherNight": 12,
+    "flavor": ""
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/widow.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
     "name": "寡妇",
     "team": "minion",
     "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
     "id": "widowbutton",
     "official_id": "widow",
     "edition": "custom",
-    "firstNightReminder": "唤醒寡妇，让她查看魔典。在她查看完毕后让她选择一名玩家，那名玩家中毒。随后如果寡妇未醉酒中毒，唤醒一名善良玩家，对他展示寡妇角色标记。",
+    "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
     "otherNightReminder": "",
     "setup": 0,
     "reminders": [
@@ -419,7 +420,8 @@
       "被知晓"
     ],
     "firstNight": 13,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": ""
   },
   {
     "image": "https://www.helloimg.com/i/2024/12/24/676993d5cae57.png",
@@ -438,22 +440,23 @@
     "otherNight": 1
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fearmonger.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
     "name": "恐惧之灵",
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
     "id": "fearmongerbutton",
     "official_id": "fearmonger",
     "edition": "custom",
-    "firstNightReminder": "唤醒恐惧之灵，让他选择一名玩家，随后通知所有玩家恐惧之灵选择了一名玩家。",
-    "otherNightReminder": "唤醒恐惧之灵，让他选择一名玩家，随后如果恐惧之灵的目标发生了变更，通知所有玩家恐惧之灵选择了一名玩家。",
+    "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
+    "otherNightReminder": "恐惧之灵指向一名玩家。如果与之前选择的不同，则更换恐惧标记并宣布恐惧之灵选中或改变了目标。",
     "setup": 0,
     "reminders": [
       "恐惧"
     ],
     "remindersGlobal": [],
     "firstNight": 16,
-    "otherNight": 6
+    "otherNight": 6,
+    "flavor": ""
   },
   {
     "image": "https://www.helloimg.com/i/2024/12/24/676993d5e0e18.png",

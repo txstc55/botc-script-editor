@@ -314,22 +314,23 @@
     "otherNight": 0
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/poisoner.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
     "name": "投毒者",
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
     "id": "poisonerbutton",
     "official_id": "poisoner",
     "edition": "custom",
-    "firstNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
-    "otherNightReminder": "唤醒投毒者，让他选择一名玩家，那名玩家中毒。",
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
     "setup": 0,
     "reminders": [
       "中毒"
     ],
     "remindersGlobal": [],
     "firstNight": 10,
-    "otherNight": 4
+    "otherNight": 4,
+    "flavor": ""
   },
   {
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
@@ -368,25 +369,26 @@
     "otherNight": 0
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/fearmonger.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
     "name": "恐惧之灵",
     "team": "minion",
     "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
     "id": "fearmongerbutton",
     "official_id": "fearmonger",
     "edition": "custom",
-    "firstNightReminder": "唤醒恐惧之灵，让他选择一名玩家，随后通知所有玩家恐惧之灵选择了一名玩家。",
-    "otherNightReminder": "唤醒恐惧之灵，让他选择一名玩家，随后如果恐惧之灵的目标发生了变更，通知所有玩家恐惧之灵选择了一名玩家。",
+    "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
+    "otherNightReminder": "恐惧之灵指向一名玩家。如果与之前选择的不同，则更换恐惧标记并宣布恐惧之灵选中或改变了目标。",
     "setup": 0,
     "reminders": [
       "恐惧"
     ],
     "remindersGlobal": [],
     "firstNight": 13,
-    "otherNight": 6
+    "otherNight": 6,
+    "flavor": ""
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/goblin.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
     "name": "哥布林",
     "team": "minion",
     "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
@@ -396,10 +398,13 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "已宣称"
+    ],
     "remindersGlobal": [],
     "firstNight": 0,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？"
   },
   {
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",

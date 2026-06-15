@@ -210,31 +210,39 @@
   },
   {
     "id": "17_futureking",
-    "image": "https://www.bloodstar.xyz/p/Tiger/Future-King/17_futureking.png",
-    "firstNightReminder": "3",
-    "otherNightReminder": "4",
+    "image": "https://clocktower-wiki.gstonegames.com/images/b/b9/Xaan.png",
+    "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
     "reminders": [
+      "大限将至",
       "第一晚",
-      "第二晚",
       "第三晚",
-      "大限将至"
+      "第二晚",
+      "第四晚"
     ],
     "name": "限",
     "team": "minion",
     "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
     "firstNight": 13,
-    "otherNight": 5
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
   },
   {
     "id": "18_futureking",
-    "image": "https://www.bloodstar.xyz/p/Tiger/Future-King/18_futureking.png",
-    "firstNightReminder": "14",
-    "otherNightReminder": "18",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spy.png",
+    "firstNightReminder": "将魔典展示给间谍，他想看多久就看多久。",
+    "otherNightReminder": "将魔典展示给间谍，他想看多久就看多久。",
     "name": "间谍",
     "team": "minion",
-    "ability": "每个夜晚，你能查看魔典。  你可能会被当作善良阵营、镇民角色或外来者角色，即使你已死亡。",
+    "ability": "每个夜晚，你能查看魔典。你可能会被当作善良阵营、镇民角色或外来者角色，即使你已死亡。",
     "firstNight": 24,
-    "otherNight": 19
+    "otherNight": 19,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "19_futureking",
@@ -251,12 +259,17 @@
   },
   {
     "id": "20_futureking",
-    "image": "https://www.bloodstar.xyz/p/Tiger/Future-King/20_futureking.png",
-    "otherNightReminder": "3",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
     "name": "麻脸巫婆",
     "team": "minion",
     "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "otherNight": 4
+    "otherNight": 4,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "21_futureking",

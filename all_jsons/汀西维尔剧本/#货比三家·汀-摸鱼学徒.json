@@ -178,7 +178,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_4078497694761_5c6ddcce.jpg",
     "name": "蛊雕",
     "team": "minion",
-    "ability": "每个夜晚，你要选择左或右：将你的飞行标记从当前位置移动到这个方向上的下一名存活善良玩家。他中毒且可能被当作邪恶阵营和爪牙角色，你会知道他原本的角色。",
+    "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",
     "id": "gudiaobutton",
     "edition": "custom",
     "firstNightReminder": "唤醒蛊雕，让其选择一个方向。将他的“中毒”标记移动至那个方向上的下一个存活玩家的角色标记旁。随后对他指向那名玩家，并展示“他是”提示标记和该玩家的角色标记。",
@@ -189,10 +189,11 @@
     ],
     "remindersGlobal": [],
     "firstNight": 11,
-    "otherNight": 4
+    "otherNight": 4,
+    "flavor": "献上你能出的最高筹码，否则蛊毒入体，无力回天。"
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/marionette.png",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
     "name": "提线木偶",
     "team": "minion",
     "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
@@ -206,7 +207,8 @@
       "是提线木偶"
     ],
     "firstNight": 9,
-    "otherNight": 0
+    "otherNight": 0,
+    "flavor": ""
   },
   {
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
