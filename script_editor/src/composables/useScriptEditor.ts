@@ -178,10 +178,11 @@ export function useScriptEditor() {
     Object.assign(script, loaded.script);
     importError.value = "";
     disableJinxesWithUnavailableTargets();
-    void addMatchingDatabaseJinxes();
+    void addMatchingDatabaseJinxes({ includeNew: false });
   }
 
-  async function addMatchingDatabaseJinxes() {
+  async function addMatchingDatabaseJinxes(options: { includeNew?: boolean } = {}) {
+    const includeNew = options.includeNew ?? true;
     const characters = collectPlayCharacters();
     const names = characters.map((character) => character.name);
     const records = await loadMatchingJinxRecords(names);
@@ -189,6 +190,7 @@ export function useScriptEditor() {
     for (const record of records) {
       const normalizedName = normalizeJinxName(record.name);
       const draft = jinxRecordToDraft(record);
+      draft.included = includeNew;
       draft.image = imageForJinxTargets(draft.targets, characters) || draft.image;
       const existing = existingByName.get(normalizedName);
       if (existing) {
@@ -202,7 +204,7 @@ export function useScriptEditor() {
           existing.image = draft.image;
         }
         if (existing.included === undefined) {
-          existing.included = true;
+          existing.included = includeNew;
         }
         continue;
       }
