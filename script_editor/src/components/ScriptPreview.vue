@@ -132,6 +132,7 @@ const firstSectionY = computed(() =>
 const previewLayout = computed<SvgPreviewLayout>(() => buildPreviewLayout());
 const currentPlayCharacterHighlightRules = computed(() => buildCurrentPlayCharacterHighlightRules());
 const previewRoot = ref<HTMLElement | null>(null);
+const exportImageDataUrlCache = new Map<string, Promise<string | null>>();
 const toolbarVisible = ref(false);
 const activeEditor = ref<HTMLElement | null>(null);
 const savedSelectionSnapshot = ref<SelectionSnapshot | null>(null);
@@ -1581,10 +1582,16 @@ interface ExportTextToken {
   style: ExportTextStyle;
 }
 
-async function exportPreviewImage() {
+interface PreviewImageExportOptions {
+  type?: "image/png" | "image/jpeg";
+  quality?: number;
+  backgroundColor?: string;
+}
+
+async function buildExportSvgText() {
   const svg = previewRoot.value?.querySelector<SVGSVGElement>("svg.script-svg");
   if (!svg) {
-    return;
+    return null;
   }
 
   const exportSvg = svg.cloneNode(true) as SVGSVGElement;
@@ -1599,11 +1606,33 @@ async function exportPreviewImage() {
   await inlineExportImages(exportSvg);
   replaceExportForeignObjects(exportSvg);
 
-  const svgText = new XMLSerializer().serializeToString(exportSvg);
+  return {
+    svgText: new XMLSerializer().serializeToString(exportSvg),
+    width: exportWidth,
+    height: exportHeight,
+    fileName: safeExportFileName(props.script.name || "剧本"),
+  };
+}
+
+async function renderPreviewImageBlob(options: PreviewImageExportOptions = {}) {
+  await nextTick();
+  await document.fonts?.ready;
+  const exportData = await buildExportSvgText();
+  if (!exportData) {
+    throw new Error("Preview SVG is not ready.");
+  }
+  return renderSvgToImageBlob(exportData.svgText, exportData.width, exportData.height, options);
+}
+
+async function renderPreviewImageDataUrl(options: PreviewImageExportOptions = {}) {
+  return blobToDataUrl(await renderPreviewImageBlob(options));
+}
+
+async function exportPreviewImage() {
   const fileName = safeExportFileName(props.script.name || "剧本");
 
   try {
-    const pngBlob = await renderSvgToPng(svgText, exportWidth, exportHeight);
+    const pngBlob = await renderPreviewImageBlob({ type: "image/png" });
     downloadBlob(pngBlob, `${fileName}.png`);
   } catch (error) {
     console.error("导出 PNG 失败。", error);
@@ -1929,6 +1958,17 @@ async function inlineExportImages(svg: SVGSVGElement) {
 }
 
 async function fetchExportImageDataUrl(url: string) {
+  const cached = exportImageDataUrlCache.get(url);
+  if (cached) {
+    return await cached;
+  }
+
+  const request = fetchExportImageDataUrlUncached(url);
+  exportImageDataUrlCache.set(url, request);
+  return await request;
+}
+
+async function fetchExportImageDataUrlUncached(url: string) {
   return (
     await fetchImageDataUrl(url) ??
     await fetchImageDataUrl(`/__image_proxy?url=${encodeURIComponent(url)}`) ??
@@ -1978,7 +2018,13 @@ function blobToDataUrl(blob: Blob) {
   });
 }
 
-async function renderSvgToPng(svgText: string, width: number, height: number) {
+async function renderSvgToImageBlob(
+  svgText: string,
+  width: number,
+  height: number,
+  options: PreviewImageExportOptions = {},
+) {
+  const type = options.type ?? "image/png";
   const svgBlob = new Blob([svgText], { type: "image/svg+xml;charset=utf-8" });
   const objectUrl = URL.createObjectURL(svgBlob);
 
@@ -1993,7 +2039,12 @@ async function renderSvgToPng(svgText: string, width: number, height: number) {
       throw new Error("Canvas is not available.");
     }
     context.scale(pixelRatio, pixelRatio);
-    context.clearRect(0, 0, width, height);
+    if (type === "image/jpeg" || options.backgroundColor) {
+      context.fillStyle = options.backgroundColor ?? "#ffffff";
+      context.fillRect(0, 0, width, height);
+    } else {
+      context.clearRect(0, 0, width, height);
+    }
     context.drawImage(image, 0, 0, width, height);
 
     return await new Promise<Blob>((resolve, reject) => {
@@ -2004,7 +2055,7 @@ async function renderSvgToPng(svgText: string, width: number, height: number) {
             return;
           }
           reject(new Error("Canvas export returned an empty image."));
-        }, "image/png");
+        }, type, options.quality ?? 0.94);
       } catch (error) {
         reject(error);
       }
@@ -2038,6 +2089,10 @@ function safeExportFileName(fileName: string) {
   const sanitized = fileName.trim().replace(/[\\/:*?"<>|]+/g, "_");
   return sanitized || "剧本";
 }
+
+defineExpose({
+  renderPreviewImageDataUrl,
+});
 </script>
 
 <template>

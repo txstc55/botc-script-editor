@@ -5,6 +5,7 @@ import {
   jinxRecordToDraft,
   loadMatchingJinxRecords,
 } from "../utils/jinxLibrary";
+import { isBatchExportMode } from "../utils/batchExportClient";
 import { loadPlayFromJson } from "../utils/playJson";
 
 export function useScriptEditor() {
@@ -22,7 +23,9 @@ export function useScriptEditor() {
   const playCharacters = computed(() => collectPlayCharacters());
 
   onMounted(() => {
-    loadSamplePlay();
+    if (!isBatchExportMode()) {
+      loadSamplePlay();
+    }
   });
 
   function addFabled(role?: FabledDraft) {
@@ -178,7 +181,8 @@ export function useScriptEditor() {
     Object.assign(script, loaded.script);
     importError.value = "";
     disableJinxesWithUnavailableTargets();
-    void addMatchingDatabaseJinxes({ includeNew: false });
+    await addMatchingDatabaseJinxes({ includeNew: false });
+    disableJinxesWithUnavailableTargets();
   }
 
   async function addMatchingDatabaseJinxes(options: { includeNew?: boolean } = {}) {
@@ -294,5 +298,6 @@ export function useScriptEditor() {
     setRoleSelected,
     roleStateLabel,
     handleJsonUpload,
+    loadPlayText,
   };
 }

@@ -1,4 +1,4 @@
-import { mkdir, readFile, unlink, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
@@ -6,6 +6,7 @@ import type { Plugin } from "vite";
 import vue from "@vitejs/plugin-vue";
 
 const projectDir = path.dirname(fileURLToPath(import.meta.url));
+const allJsonsDir = path.resolve(projectDir, "..", "all_jsons");
 const customFabledDir = path.join(projectDir, "public", "custom", "fabled");
 const customFabledIndexPath = path.join(customFabledDir, "index.json");
 const databaseFabledDir = path.join(projectDir, "public", "characters", "fabled");
@@ -506,6 +507,95 @@ function customJinxPlugin(): Plugin {
   };
 }
 
+function batchExportPlugin(): Plugin {
+  return {
+    name: "botc-batch-export",
+    configureServer(server) {
+      server.middlewares.use("/__batch_export_manifest", async (request, response) => {
+        if (request.method !== "GET") {
+          response.statusCode = 405;
+          response.end("Method not allowed.");
+          return;
+        }
+
+        try {
+          const requestUrl = new URL(request.url ?? "", "http://127.0.0.1");
+          const limit = Number(requestUrl.searchParams.get("limit") || 0);
+          const filter = cleanText(requestUrl.searchParams.get("filter"));
+          const allFiles = await listAllJsonFiles(allJsonsDir);
+          const filteredFiles = filter
+            ? allFiles.filter((file) => file.relativePath.includes(filter))
+            : allFiles;
+          const files = Number.isFinite(limit) && limit > 0
+            ? filteredFiles.slice(0, Math.floor(limit))
+            : filteredFiles;
+          response.statusCode = 200;
+          response.setHeader("content-type", "application/json");
+          response.end(JSON.stringify({
+            root: allJsonsDir,
+            total: files.length,
+            files,
+          }));
+        } catch (error) {
+          response.statusCode = 500;
+          response.end(error instanceof Error ? error.message : "Failed to list all_jsons.");
+        }
+      });
+
+      server.middlewares.use("/__batch_export_json", async (request, response) => {
+        if (request.method !== "POST") {
+          response.statusCode = 405;
+          response.end("Method not allowed.");
+          return;
+        }
+
+        try {
+          const body = await readRequestJson(request);
+          const sourcePath = resolveAllJsonsPath(cleanText(body.relativePath));
+          const text = await readFile(sourcePath, "utf8");
+          response.statusCode = 200;
+          response.setHeader("content-type", "application/json");
+          response.end(JSON.stringify({ text }));
+        } catch (error) {
+          response.statusCode = 500;
+          response.end(error instanceof Error ? error.message : "Failed to read source JSON.");
+        }
+      });
+
+      server.middlewares.use("/__batch_export_image", async (request, response) => {
+        if (request.method !== "POST") {
+          response.statusCode = 405;
+          response.end("Method not allowed.");
+          return;
+        }
+
+        try {
+          const body = await readRequestJson(request);
+          const sourcePath = resolveAllJsonsPath(cleanText(body.relativePath));
+          const dataUrl = cleanText(body.dataUrl);
+          const match = /^data:image\/jpe?g;base64,(.+)$/u.exec(dataUrl);
+          if (!match) {
+            response.statusCode = 400;
+            response.end("Expected a JPEG data URL.");
+            return;
+          }
+
+          const outputPath = imagePathForSourceJson(sourcePath);
+          await writeFile(outputPath, Buffer.from(match[1], "base64"));
+          response.statusCode = 200;
+          response.setHeader("content-type", "application/json");
+          response.end(JSON.stringify({
+            outputRelativePath: relativeAllJsonsPath(outputPath),
+          }));
+        } catch (error) {
+          response.statusCode = 500;
+          response.end(error instanceof Error ? error.message : "Failed to write exported image.");
+        }
+      });
+    },
+  };
+}
+
 function fabledDirectory(source: FabledSource) {
   return source === "database" ? databaseFabledDir : customFabledDir;
 }
@@ -649,6 +739,61 @@ async function readRequestJson(request: import("node:http").IncomingMessage) {
   return JSON.parse(Buffer.concat(chunks).toString("utf8"));
 }
 
+async function listAllJsonFiles(directory: string) {
+  const result: {
+    relativePath: string;
+    fileName: string;
+    outputRelativePath: string;
+  }[] = [];
+
+  async function visit(currentDirectory: string) {
+    const entries = await readdir(currentDirectory, { withFileTypes: true });
+    entries.sort((left, right) => left.name.localeCompare(right.name, "zh-Hans-CN"));
+
+    for (const entry of entries) {
+      const entryPath = path.join(currentDirectory, entry.name);
+      if (entry.isDirectory()) {
+        await visit(entryPath);
+        continue;
+      }
+      if (!entry.isFile() || path.extname(entry.name).toLowerCase() !== ".json") {
+        continue;
+      }
+      result.push({
+        relativePath: relativeAllJsonsPath(entryPath),
+        fileName: entry.name,
+        outputRelativePath: relativeAllJsonsPath(imagePathForSourceJson(entryPath)),
+      });
+    }
+  }
+
+  await visit(directory);
+  return result;
+}
+
+function resolveAllJsonsPath(relativePath: string) {
+  if (!relativePath) {
+    throw new Error("Missing all_jsons relative path.");
+  }
+  const resolvedPath = path.resolve(allJsonsDir, relativePath);
+  if (resolvedPath !== allJsonsDir && !resolvedPath.startsWith(`${allJsonsDir}${path.sep}`)) {
+    throw new Error("Invalid all_jsons path.");
+  }
+  if (path.extname(resolvedPath).toLowerCase() !== ".json") {
+    throw new Error("Batch export only accepts JSON source files.");
+  }
+  return resolvedPath;
+}
+
+function imagePathForSourceJson(sourcePath: string) {
+  const parsed = path.parse(sourcePath);
+  return path.join(parsed.dir, `${parsed.name}.jpg`);
+}
+
+function relativeAllJsonsPath(filePath: string) {
+  return path.relative(allJsonsDir, filePath).split(path.sep).join("/");
+}
+
 function safeCustomFabledFileName(value: string) {
   const withoutExtension = value.endsWith(".json") ? value.slice(0, -5) : value;
   return `${withoutExtension.trim().replace(/[\\/:*?"<>|]+/g, "_") || "未命名传奇角色"}.json`;
@@ -694,7 +839,14 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 }
 
 export default defineConfig({
-  plugins: [vue(), imageProxyPlugin(), customFabledPlugin(), customCharacterPlugin(), customJinxPlugin()],
+  plugins: [
+    vue(),
+    imageProxyPlugin(),
+    customFabledPlugin(),
+    customCharacterPlugin(),
+    customJinxPlugin(),
+    batchExportPlugin(),
+  ],
   clearScreen: false,
   server: {
     host: "127.0.0.1",

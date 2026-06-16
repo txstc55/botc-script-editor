@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import urllib.request
 from collections import Counter
 from pathlib import Path
 
@@ -16,6 +17,57 @@ JINX_TEAM_RE = re.compile(rb'("team"\s*:\s*")(?P<team>[^"]*jinx[^"]*)(")', re.IG
 SETUP_RE = re.compile(
   rb'("setup"\s*:\s*)(?P<value>true|false|null|""|"true"|"false"|"null"|[2-9]\d*|1\d+)'
 )
+URL_POINTER_RE = re.compile(r"^https?://\S+\.json(?:\?\S*)?$", re.IGNORECASE)
+SCALAR_STRING_KEYS = {
+  "ability",
+  "almanac",
+  "attribution",
+  "flavor",
+  "firstNightReminder",
+  "firstReminder",
+  "icon",
+  "image",
+  "logo",
+  "ogherNightReminder",
+  "otherNightReminder",
+  "reason",
+  "rule",
+  "skill",
+  "targetName",
+}
+QUOTE_WRAPPED_TEXT_KEYS = {
+  "ability",
+  "almanac",
+  "attribution",
+  "flavor",
+  "firstNightReminder",
+  "firstReminder",
+  "icon",
+  "image",
+  "logo",
+  "ogherNightReminder",
+  "otherNightReminder",
+  "reason",
+  "rule",
+  "skill",
+  "targetName",
+}
+BRACKET_WRAPPED_TEXT_KEYS = {
+  "almanac",
+  "attribution",
+  "firstNightReminder",
+  "firstReminder",
+  "flavor",
+  "icon",
+  "image",
+  "logo",
+  "ogherNightReminder",
+  "otherNightReminder",
+  "reason",
+  "rule",
+  "skill",
+  "targetName",
+}
 
 
 def json_paths(input_dir: Path) -> list[Path]:
@@ -81,9 +133,88 @@ def backfill_missing_reminders(data: object) -> Counter[str]:
   return counts
 
 
+def normalize_wrapped_text_values(data: object) -> Counter[str]:
+  counts: Counter[str] = Counter()
+
+  def visit(value: object, key: str) -> object:
+    if isinstance(value, dict):
+      for child_key, child_value in list(value.items()):
+        value[child_key] = visit(child_value, str(child_key))
+      return value
+
+    if isinstance(value, list):
+      if key == "image":
+        image = first_clean_string(value)
+        if image is not None:
+          counts[f"scalar_array:{key}"] += 1
+          return clean_wrapped_text(image, key, counts)
+      if key in SCALAR_STRING_KEYS and len(value) == 1 and isinstance(value[0], str):
+        counts[f"scalar_array:{key}"] += 1
+        return clean_wrapped_text(value[0], key, counts)
+      return [visit(item, key) for item in value]
+
+    if isinstance(value, str):
+      return clean_wrapped_text(value, key, counts)
+
+    return value
+
+  visit(data, "")
+  return counts
+
+
+def clean_wrapped_text(value: str, key: str, counts: Counter[str]) -> str:
+  original = value
+  cleaned = value.strip()
+
+  changed = True
+  while changed and len(cleaned) >= 2:
+    changed = False
+    if key in QUOTE_WRAPPED_TEXT_KEYS and is_wrapped_quote(cleaned):
+      cleaned = cleaned[1:-1].strip()
+      counts[f"wrapped_quote:{key or 'unknown'}"] += 1
+      changed = True
+      continue
+    if key in BRACKET_WRAPPED_TEXT_KEYS and is_single_square_wrapper(cleaned):
+      cleaned = cleaned[1:-1].strip()
+      counts[f"wrapped_bracket:{key}"] += 1
+      changed = True
+
+  return cleaned if cleaned != original else value
+
+
+def first_clean_string(values: list[object]) -> str | None:
+  for value in values:
+    if isinstance(value, str) and value.strip():
+      return value
+  return None
+
+
+def is_wrapped_quote(value: str) -> bool:
+  return (
+    len(value) >= 2
+    and value[0] == value[-1]
+    and value[0] in {'"', "'"}
+  )
+
+
+def is_single_square_wrapper(value: str) -> bool:
+  return (
+    len(value) >= 2
+    and value[0] == "["
+    and value[-1] == "]"
+    and value.find("]", 1) == len(value) - 1
+    and value.rfind("[", 0, -1) == 0
+  )
+
+
 def fix_file(path: Path, dry_run: bool) -> Counter[str]:
   original = path.read_bytes()
   counts: Counter[str] = Counter()
+  url_fixed = fix_url_pointer_file(original, counts)
+  if url_fixed is not None:
+    if url_fixed != original and not dry_run:
+      path.write_bytes(url_fixed)
+    return counts
 
   def replace_team(match: re.Match[bytes]) -> bytes:
     team = match.group("team").decode("ascii")
@@ -115,14 +246,35 @@ def fix_file(path: Path, dry_run: bool) -> Counter[str]:
     parsed = None
 
   if parsed is not None:
+    wrapped_text_counts = normalize_wrapped_text_values(parsed)
     reminder_counts = backfill_missing_reminders(parsed)
-    if reminder_counts:
+    if wrapped_text_counts or reminder_counts:
+      counts.update(wrapped_text_counts)
       counts.update(reminder_counts)
       fixed = (json.dumps(parsed, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
 
   if fixed != original and not dry_run:
     path.write_bytes(fixed)
   return counts
+
+
+def fix_url_pointer_file(original: bytes, counts: Counter[str]) -> bytes | None:
+  try:
+    text = original.decode("utf-8-sig").strip()
+  except UnicodeDecodeError:
+    return None
+  if not URL_POINTER_RE.match(text):
+    return None
+
+  try:
+    with urllib.request.urlopen(text, timeout=20) as response:
+      downloaded = response.read()
+    parsed = json.loads(downloaded.decode("utf-8-sig"))
+  except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+    return original
+
+  counts["url_pointer:downloaded_json"] += 1
+  return (json.dumps(parsed, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
 
 
 def main() -> int:

@@ -5,6 +5,10 @@ __pycache__/
 # Generated CSV exports are reproducible from the scripts.
 *.csv
 
+# Batch-rendered script images are generated beside source JSON files.
+all_jsons/**/*.jpg
+all_jsons/**/*.jpeg
+
 # Node/Vite outputs.
 script_editor/node_modules/
 script_editor/dist/

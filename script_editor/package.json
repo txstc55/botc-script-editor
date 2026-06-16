@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vue-tsc --noEmit && vite build",
+    "batch:export": "node scripts/batch_export_images.mjs",
     "generate:data": "python3 ../generate_app_database.py",
     "preview": "vite preview",
     "tauri": "tauri"
