@@ -38,6 +38,18 @@ export const SECTION_HEADING_LINE_GAP = 16;
 export const SECTION_BOTTOM_GAP = 10;
 export const ROW_GAP = 8;
 
+// Jinx text blocks rendered below the first affected character.
+export const JINX_RULE_FONT_SIZE = 13;
+export const JINX_RULE_LINE_HEIGHT = 17;
+export const JINX_RULE_TOP_GAP = 7;
+export const JINX_RULE_BOX_GAP = 5;
+export const JINX_RULE_PADDING_X = 8;
+export const JINX_RULE_PADDING_Y = 6;
+export const JINX_RULE_BOX_RADIUS = 5;
+export const JINX_RULE_BOX_FILL = "#eceff3";
+export const JINX_RULE_BOX_STROKE = "#d7dbe2";
+export const JINX_RULE_TEXT_COLOR = "#38404a";
+
 // Night order rail tuning.
 export const RAIL_WIDTH = 54;
 export const LEFT_RAIL_X = 54;

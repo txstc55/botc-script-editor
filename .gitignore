@@ -10,6 +10,10 @@ script_editor/node_modules/
 script_editor/dist/
 script_editor/.vite/
 
+# User-created app data should stay local.
+script_editor/public/custom/*.json
+script_editor/public/custom/**/*.json
+
 # Tauri/Rust build outputs.
 script_editor/src-tauri/target/
 

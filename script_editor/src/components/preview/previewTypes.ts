@@ -1,4 +1,4 @@
-import type { FabledDraft, RoleDraft, TeamKey } from "../../types";
+import type { FabledDraft, JinxDraft, RoleDraft, TeamKey } from "../../types";
 
 export type ScriptColorKey = TeamKey | "fabled";
 export type PreviewSectionKey = ScriptColorKey;
@@ -41,7 +41,20 @@ export interface SvgRoleLayout {
   abilityY: number;
   abilityWidth: number;
   abilityHeight: number;
+  jinxRules: SvgJinxRuleLayout[];
   height: number;
+}
+
+export interface SvgJinxRuleLayout {
+  id: string;
+  jinx: JinxDraft;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  textX: number;
+  textStartY: number;
+  lines: string[];
 }
 
 export interface SvgSectionLayout {

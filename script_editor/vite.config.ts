@@ -10,8 +10,13 @@ const customFabledDir = path.join(projectDir, "public", "custom", "fabled");
 const customFabledIndexPath = path.join(customFabledDir, "index.json");
 const databaseFabledDir = path.join(projectDir, "public", "characters", "fabled");
 const databaseFabledIndexPath = path.join(databaseFabledDir, "index.json");
+const customJinxDir = path.join(projectDir, "public", "custom", "jinxes");
+const customJinxIndexPath = path.join(customJinxDir, "index.json");
+const databaseJinxDir = path.join(projectDir, "public", "jinxes");
+const databaseJinxIndexPath = path.join(databaseJinxDir, "index.json");
 type FabledSource = "custom" | "database";
 type CharacterSource = "custom" | "database";
+type JinxSource = "custom" | "database";
 type CharacterTeam = "townsfolk" | "outsider" | "minion" | "demon" | "traveler";
 
 const characterFolders: Record<CharacterTeam, string> = {
@@ -405,6 +410,102 @@ function customCharacterPlugin(): Plugin {
   };
 }
 
+function customJinxPlugin(): Plugin {
+  return {
+    name: "botc-custom-jinx",
+    configureServer(server) {
+      server.middlewares.use("/__jinx_record", async (request, response) => {
+        if (request.method === "DELETE") {
+          try {
+            const body = await readRequestJson(request);
+            const source = body.source === "database" ? "database" : "custom";
+            const directory = jinxDirectory(source);
+            const fileName = safeCustomJinxFileName(cleanText(body.fileName) || cleanText(body.name));
+            const name = cleanText(body.name) || fileName.replace(/\.json$/u, "");
+
+            await unlink(path.join(directory, fileName)).catch((error: NodeJS.ErrnoException) => {
+              if (error.code !== "ENOENT") {
+                throw error;
+              }
+            });
+
+            const indexPath = jinxIndexPath(source);
+            const index = await readJinxIndex(indexPath);
+            index.jinxes = index.jinxes.filter((item) => item.name !== name && item.fileName !== fileName);
+            index.jinxCount = index.jinxes.length;
+            index.totalOccurrenceCount = index.jinxes.reduce(
+              (total, item) => total + (Number(item.totalOccurrenceCount) || 0),
+              0,
+            );
+            await writeFile(indexPath, `${JSON.stringify(index, null, 2)}\n`);
+
+            response.statusCode = 200;
+            response.setHeader("content-type", "application/json");
+            response.end(JSON.stringify({ ok: true, index }));
+          } catch (error) {
+            response.statusCode = 500;
+            response.end(error instanceof Error ? error.message : "Failed to delete jinx.");
+          }
+          return;
+        }
+
+        if (request.method !== "POST") {
+          response.statusCode = 405;
+          response.end("Method not allowed.");
+          return;
+        }
+
+        try {
+          const body = await readRequestJson(request);
+          const source = body.source === "database" ? "database" : "custom";
+          const record = isRecord(body.record) ? body.record : null;
+          const name = cleanText(record?.name);
+          if (!record || !name) {
+            response.statusCode = 400;
+            response.end("Missing jinx record.");
+            return;
+          }
+
+          const directory = jinxDirectory(source);
+          const fileName = safeCustomJinxFileName(cleanText(body.fileName) || name);
+          const nextRecord = sanitizeJinxRecord(record, name);
+
+          await mkdir(directory, { recursive: true });
+          await writeFile(path.join(directory, fileName), `${JSON.stringify(nextRecord, null, 2)}\n`);
+          const indexPath = jinxIndexPath(source);
+          const index = await readJinxIndex(indexPath);
+          const nextItem = {
+            id: cleanText(nextRecord.id) || name,
+            name,
+            team: "jinx",
+            totalOccurrenceCount: Number(nextRecord.totalOccurrenceCount) || 1,
+            fileName,
+          };
+          const existingIndex = index.jinxes.findIndex((item) => item.name === name || item.fileName === fileName);
+          if (existingIndex >= 0) {
+            index.jinxes[existingIndex] = nextItem;
+          } else {
+            index.jinxes.unshift(nextItem);
+          }
+          index.jinxCount = index.jinxes.length;
+          index.totalOccurrenceCount = index.jinxes.reduce(
+            (total, item) => total + (Number(item.totalOccurrenceCount) || 0),
+            0,
+          );
+          await writeFile(indexPath, `${JSON.stringify(index, null, 2)}\n`);
+
+          response.statusCode = 200;
+          response.setHeader("content-type", "application/json");
+          response.end(JSON.stringify({ record: nextRecord, index }));
+        } catch (error) {
+          response.statusCode = 500;
+          response.end(error instanceof Error ? error.message : "Failed to save jinx.");
+        }
+      });
+    },
+  };
+}
+
 function fabledDirectory(source: FabledSource) {
   return source === "database" ? databaseFabledDir : customFabledDir;
 }
@@ -419,6 +520,14 @@ function characterDirectory(team: CharacterTeam, source: CharacterSource) {
 
 function characterIndexPath(team: CharacterTeam, source: CharacterSource) {
   return path.join(characterDirectory(team, source), "index.json");
+}
+
+function jinxDirectory(source: JinxSource) {
+  return source === "database" ? databaseJinxDir : customJinxDir;
+}
+
+function jinxIndexPath(source: JinxSource) {
+  return source === "database" ? databaseJinxIndexPath : customJinxIndexPath;
 }
 
 async function readCustomFabledIndex() {
@@ -487,6 +596,51 @@ async function readCharacterIndex(team: CharacterTeam, indexPath: string) {
   };
 }
 
+async function readJinxIndex(indexPath: string) {
+  try {
+    const parsed = JSON.parse(await readFile(indexPath, "utf8"));
+    if (isRecord(parsed) && Array.isArray(parsed.jinxes)) {
+      return {
+        source: cleanText(parsed.source) || "jinxes",
+        jinxCount: Number(parsed.jinxCount) || parsed.jinxes.length,
+        totalOccurrenceCount: Number(parsed.totalOccurrenceCount) || 0,
+        jinxes: parsed.jinxes.filter(isRecord).map((item) => ({
+          id: cleanText(item.id) || cleanText(item.name),
+          name: cleanText(item.name) || cleanText(item.id),
+          team: "jinx",
+          totalOccurrenceCount: Number(item.totalOccurrenceCount) || 1,
+          fileName: cleanText(item.fileName),
+        })),
+      };
+    }
+  } catch {
+    // Missing custom index means the user has not saved custom jinxes yet.
+  }
+
+  return {
+    source: "custom_jinxes",
+    jinxCount: 0,
+    totalOccurrenceCount: 0,
+    jinxes: [],
+  };
+}
+
+function sanitizeJinxRecord(record: Record<string, unknown>, name: string) {
+  const variants = isRecord(record.variants) ? record.variants : {};
+  return {
+    id: cleanText(record.id) || name,
+    name,
+    team: "jinx",
+    targets: toStringArray(record.targets),
+    targetDetectionNotes: toStringArray(record.targetDetectionNotes),
+    issueNotes: toStringArray(record.issueNotes),
+    totalOccurrenceCount: Number(record.totalOccurrenceCount) || 1,
+    variants: {
+      ability: toStringVariants(variants.ability ?? record.ability),
+    },
+  };
+}
+
 async function readRequestJson(request: import("node:http").IncomingMessage) {
   const chunks: Buffer[] = [];
   for await (const chunk of request) {
@@ -505,6 +659,11 @@ function safeCustomCharacterFileName(value: string) {
   return `${withoutExtension.trim().replace(/[\\/:*?"<>|]+/g, "_") || "未命名角色"}.json`;
 }
 
+function safeCustomJinxFileName(value: string) {
+  const withoutExtension = value.endsWith(".json") ? value.slice(0, -5) : value;
+  return `${withoutExtension.trim().replace(/\s+/gu, "_").replace(/[\\/:*?"<>|]+/g, "_") || "未命名相克规则"}.json`;
+}
+
 function normalizeCharacterTeam(value: unknown): CharacterTeam | null {
   const team = cleanText(value);
   return team in characterFolders ? team as CharacterTeam : null;
@@ -514,12 +673,28 @@ function cleanText(value: unknown) {
   return value === null || value === undefined ? "" : String(value).trim();
 }
 
+function toStringArray(value: unknown) {
+  if (Array.isArray(value)) {
+    return value.map(cleanText).filter(Boolean);
+  }
+  return cleanText(value)
+    .split("||")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function toStringVariants(value: unknown) {
+  const values = Array.isArray(value) ? value.map(cleanText) : [cleanText(value)];
+  const filtered = values.filter((item, index) => item || index === 0);
+  return filtered.length ? filtered : [""];
+}
+
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
 }
 
 export default defineConfig({
-  plugins: [vue(), imageProxyPlugin(), customFabledPlugin(), customCharacterPlugin()],
+  plugins: [vue(), imageProxyPlugin(), customFabledPlugin(), customCharacterPlugin(), customJinxPlugin()],
   clearScreen: false,
   server: {
     host: "127.0.0.1",

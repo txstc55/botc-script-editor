@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
 import { Eye, FileJson, ImageDown, Upload } from "@lucide/vue";
-import type { ScriptDraft, TeamKey } from "../types";
+import type { JinxDraft, ScriptDraft, TeamKey } from "../types";
 import {
   buildFirstNightOrderItems,
   buildOtherNightOrderItems,
   formatNightOrder,
   type NightOrderBaseItem,
 } from "../utils/nightOrders";
+import { buildExportJson } from "../utils/exportJson";
 import { previewTeamOrder } from "../utils/playJson";
 import TextFormatToolbar from "./preview/TextFormatToolbar.vue";
 import {
@@ -23,6 +24,16 @@ import {
   FIRST_SECTION_WITHOUT_AUTHOR_Y,
   HEADER_AUTHOR_Y,
   HEADER_TITLE_Y,
+  JINX_RULE_BOX_FILL,
+  JINX_RULE_BOX_GAP,
+  JINX_RULE_BOX_RADIUS,
+  JINX_RULE_BOX_STROKE,
+  JINX_RULE_FONT_SIZE,
+  JINX_RULE_LINE_HEIGHT,
+  JINX_RULE_PADDING_X,
+  JINX_RULE_PADDING_Y,
+  JINX_RULE_TEXT_COLOR,
+  JINX_RULE_TOP_GAP,
   LEFT_RAIL_X,
   MIN_CHARACTER_HIGHLIGHT_NAME_LENGTH,
   MIN_PREVIEW_HEIGHT,
@@ -75,6 +86,7 @@ import type {
   PreviewSection,
   PreviewSectionKey,
   SvgPreviewLayout,
+  SvgJinxRuleLayout,
   SvgRoleLayout,
   SvgSectionLayout,
   TextColorOption,
@@ -112,6 +124,7 @@ const previewSections = computed<PreviewSection[]>(() => {
 
 const firstNightOrder = computed(() => withNightOrderColors(buildFirstNightOrderItems(props.script)));
 const otherNightOrder = computed(() => withNightOrderColors(buildOtherNightOrderItems(props.script)));
+const enabledJinxRulesByRoleId = computed(() => buildEnabledJinxRulesByRoleId());
 const hasScriptAuthor = computed(() => props.script.author.trim().length > 0);
 const firstSectionY = computed(() =>
   hasScriptAuthor.value ? FIRST_SECTION_WITH_AUTHOR_Y : FIRST_SECTION_WITHOUT_AUTHOR_Y,
@@ -254,8 +267,9 @@ function layoutRole(
   const roleTextWidth = columnWidth - ROLE_ICON_SIZE - ROLE_ICON_GAP;
   const nameLines = wrapText(role.name, roleTextWidth, ROLE_NAME_FONT_SIZE);
   const abilityLines = wrapAbilityLines(role.ability, team, roleTextWidth, ROLE_ABILITY_FONT_SIZE);
+  const jinxesForRole = enabledJinxRulesByRoleId.value.get(role.id) ?? [];
   const actualTextWidth = centerActualContent
-    ? measuredRoleTextWidth(nameLines, abilityLines, roleTextWidth)
+    ? measuredRoleTextWidth(nameLines, abilityLines, jinxesForRole, roleTextWidth)
     : roleTextWidth;
   const actualX = centerActualContent
     ? CONTENT_X + (CONTENT_WIDTH - (ROLE_ICON_SIZE + ROLE_ICON_GAP + actualTextWidth)) / 2
@@ -264,10 +278,17 @@ function layoutRole(
   const nameStartY = y + ROLE_NAME_FONT_SIZE;
   const abilityY = y + nameLines.length * ROLE_NAME_LINE_HEIGHT + ROLE_NAME_TO_ABILITY_GAP;
   const abilityHeight = Math.max(ROLE_ABILITY_LINE_HEIGHT, abilityLines.length * ROLE_ABILITY_LINE_HEIGHT + 4);
-  const textHeight =
-    nameLines.length * ROLE_NAME_LINE_HEIGHT +
-    ROLE_NAME_TO_ABILITY_GAP +
-    abilityLines.length * ROLE_ABILITY_LINE_HEIGHT;
+  const jinxRules = layoutJinxRules(
+    jinxesForRole,
+    textX,
+    abilityY + abilityHeight + JINX_RULE_TOP_GAP,
+    actualTextWidth,
+  );
+  const jinxHeight = jinxRules.length
+    ? JINX_RULE_TOP_GAP + jinxRules.reduce((height, rule) => height + rule.height, 0) +
+      (jinxRules.length - 1) * JINX_RULE_BOX_GAP
+    : 0;
+  const textHeight = abilityY - y + abilityHeight + jinxHeight;
   const height = Math.max(ROLE_ICON_SIZE + 10, textHeight + 8);
 
   return {
@@ -290,8 +311,33 @@ function layoutRole(
     abilityY,
     abilityWidth: actualTextWidth,
     abilityHeight,
+    jinxRules,
     height,
   };
+}
+
+function layoutJinxRules(jinxes: PreviewJinxRule[], x: number, startY: number, width: number): SvgJinxRuleLayout[] {
+  const layouts: SvgJinxRuleLayout[] = [];
+  let y = startY;
+
+  for (const jinx of jinxes) {
+    const lines = jinxRuleDisplayLines(jinx.ability, width - JINX_RULE_PADDING_X * 2);
+    const height = JINX_RULE_PADDING_Y * 2 + lines.length * JINX_RULE_LINE_HEIGHT;
+    layouts.push({
+      id: jinx.id,
+      jinx,
+      x,
+      y,
+      width,
+      height,
+      textX: x + JINX_RULE_PADDING_X,
+      textStartY: y + JINX_RULE_PADDING_Y + JINX_RULE_FONT_SIZE,
+      lines,
+    });
+    y += height + JINX_RULE_BOX_GAP;
+  }
+
+  return layouts;
 }
 
 function layoutColumn(
@@ -345,7 +391,12 @@ function columnHeight(roles: Pick<SvgRoleLayout, "height">[]) {
   return roles.reduce((height, role) => height + role.height, 0) + (roles.length - 1) * ROW_GAP;
 }
 
-function measuredRoleTextWidth(nameLines: string[], abilityLines: string[], maxWidth: number) {
+function measuredRoleTextWidth(
+  nameLines: string[],
+  abilityLines: string[],
+  jinxes: PreviewJinxRule[],
+  maxWidth: number,
+) {
   const nameWidth = Math.max(
     0,
     ...nameLines.map((line) => estimateTextWidth(line, ROLE_NAME_FONT_SIZE)),
@@ -354,7 +405,64 @@ function measuredRoleTextWidth(nameLines: string[], abilityLines: string[], maxW
     0,
     ...abilityLines.map((line) => estimateTextWidth(line, ROLE_ABILITY_FONT_SIZE)),
   );
-  return Math.min(maxWidth, Math.max(nameWidth, abilityWidth) + ROLE_TEXT_WIDTH_PADDING);
+  const jinxWidth = Math.max(
+    0,
+    ...jinxes.flatMap((jinx) =>
+      jinxRuleDisplayLines(jinx.ability, maxWidth - JINX_RULE_PADDING_X * 2)
+        .map((line) => estimateTextWidth(line, JINX_RULE_FONT_SIZE) + JINX_RULE_PADDING_X * 2),
+    ),
+  );
+  return Math.min(maxWidth, Math.max(nameWidth, abilityWidth, jinxWidth) + ROLE_TEXT_WIDTH_PADDING);
+}
+
+function buildEnabledJinxRulesByRoleId() {
+  const firstRoleIdByName = new Map<string, string>();
+  for (const section of previewSections.value) {
+    for (const role of section.roles) {
+      const name = role.name.trim();
+      if (name && !firstRoleIdByName.has(name)) {
+        firstRoleIdByName.set(name, role.id);
+      }
+    }
+  }
+
+  const rulesByRoleId = new Map<string, PreviewJinxRule[]>();
+  for (const jinx of props.script.jinxes) {
+    const firstTarget = jinx.targets[0]?.trim();
+    const ability = jinx.ability.trim();
+    const roleId = firstTarget ? firstRoleIdByName.get(firstTarget) : undefined;
+    if (jinx.included === false || !ability || !roleId) {
+      continue;
+    }
+    const rules = rulesByRoleId.get(roleId) ?? [];
+    rules.push({
+      ...jinx,
+      ability,
+    });
+    rulesByRoleId.set(roleId, rules);
+  }
+  return rulesByRoleId;
+}
+
+function jinxRuleDisplayLines(ability: string, maxWidth: number) {
+  const sentences = splitChinesePeriodSentences(ability.trim());
+  const displaySentences = sentences.length
+    ? sentences.map((sentence, index) => index === 0 ? `相克规则：${sentence}` : sentence)
+    : ["相克规则："];
+  return displaySentences.flatMap((sentence) => wrapText(sentence, maxWidth, JINX_RULE_FONT_SIZE));
+}
+
+function splitChinesePeriodSentences(value: string) {
+  const parts = value.split("。");
+  return parts
+    .map((part, index) => {
+      const trimmed = part.trim();
+      if (!trimmed) {
+        return "";
+      }
+      return `${trimmed}${index < parts.length - 1 ? "。" : ""}`;
+    })
+    .filter(Boolean);
 }
 
 function wrapText(value: string, maxWidth: number, fontSize: number): string[] {
@@ -1452,6 +1560,10 @@ interface ExportTextStyle {
   underline?: boolean;
 }
 
+interface PreviewJinxRule extends JinxDraft {
+  ability: string;
+}
+
 interface SelectionSnapshot {
   roleId: string;
   start: number;
@@ -1498,6 +1610,12 @@ async function exportPreviewImage() {
   }
 }
 
+function exportPreviewJson() {
+  const jsonText = `${JSON.stringify(buildExportJson(props.script), null, 2)}\n`;
+  const jsonBlob = new Blob([jsonText], { type: "application/json;charset=utf-8" });
+  downloadBlob(jsonBlob, `${safeExportFileName(props.script.name || "剧本")}.json`);
+}
+
 function addExportStyles(svg: SVGSVGElement) {
   const style = document.createElementNS("http://www.w3.org/2000/svg", "style");
   style.textContent = `
@@ -1515,9 +1633,20 @@ function addExportStyles(svg: SVGSVGElement) {
 
     .svg-script-author,
     .svg-section-heading,
-    .svg-role-name {
+    .svg-role-name,
+    .svg-role-jinx-rule-text {
       font-family: "Noto Serif SC", "Songti SC", STSong, serif;
       font-weight: 900;
+    }
+
+    .svg-role-jinx-rule,
+    .svg-role-jinx-rule-text {
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .svg-role-jinx-rule-text {
+      font-weight: 750;
     }
 
     .svg-script-author {
@@ -1928,7 +2057,7 @@ function safeExportFileName(fileName: string) {
           <ImageDown :size="15" aria-hidden="true" />
           <span>导出图片</span>
         </button>
-        <button class="preview-action" disabled type="button">
+        <button class="preview-action" type="button" @click="exportPreviewJson">
           <FileJson :size="15" aria-hidden="true" />
           <span>导出 JSON</span>
         </button>
@@ -2221,6 +2350,39 @@ function safeExportFileName(fileName: string) {
                   @paste="preventPreviewTextMutation"
                 />
               </foreignObject>
+              <g
+                v-for="jinxRule in role.jinxRules"
+                :key="`jinx-${jinxRule.id}`"
+                class="svg-role-jinx-rule"
+                aria-hidden="true"
+              >
+                <rect
+                  :x="jinxRule.x"
+                  :y="jinxRule.y"
+                  :width="jinxRule.width"
+                  :height="jinxRule.height"
+                  :rx="JINX_RULE_BOX_RADIUS"
+                  :fill="JINX_RULE_BOX_FILL"
+                  :stroke="JINX_RULE_BOX_STROKE"
+                  stroke-width="1"
+                />
+                <text
+                  class="svg-role-jinx-rule-text"
+                  :x="jinxRule.textX"
+                  :y="jinxRule.textStartY"
+                  :font-size="JINX_RULE_FONT_SIZE"
+                  :fill="JINX_RULE_TEXT_COLOR"
+                >
+                  <tspan
+                    v-for="(line, lineIndex) in jinxRule.lines"
+                    :key="`jinx-line-${lineIndex}`"
+                    :x="jinxRule.textX"
+                    :dy="lineIndex === 0 ? 0 : JINX_RULE_LINE_HEIGHT"
+                  >
+                    {{ line }}
+                  </tspan>
+                </text>
+              </g>
             </g>
           </g>
         </g>
@@ -2401,6 +2563,17 @@ function safeExportFileName(fileName: string) {
 
 .svg-role-ability-object {
   overflow: visible;
+}
+
+.svg-role-jinx-rule,
+.svg-role-jinx-rule-text {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.svg-role-jinx-rule-text {
+  font-weight: 750;
 }
 
 .role-ability-editor {

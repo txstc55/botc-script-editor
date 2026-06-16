@@ -212,7 +212,9 @@ function toJinx(item: RawRecord, name: string): JinxDraft {
   return {
     id: cleanText(item.id) || name,
     name,
-    ability: cleanText(item.ability),
+    ability: cleanText(item.ability ?? item.rule ?? item.reason),
+    image: cleanText(item.image),
+    included: true,
     targets: splitTargets(name),
   };
 }
@@ -238,6 +240,8 @@ function collectNestedJinxes(
       id: `${cleanText(item.id) || sourceName}:${cleanText(rawJinx.id) || target || report.jinxCount}`,
       name,
       ability,
+      image: cleanText(rawJinx.image),
+      included: true,
       targets: target ? [sourceName, target] : [sourceName],
     });
     report.jinxCount += 1;

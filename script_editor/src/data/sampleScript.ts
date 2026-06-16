@@ -30,6 +30,7 @@ export const sampleScript: ScriptDraft = {
       name: "Cannibal & Poppy Grower",
       ability:
         "If the Cannibal gains the Poppy Grower ability, Minions and Demons learn each other when the Cannibal dies or loses the Poppy Grower ability.",
+      included: true,
       targets: ["Cannibal", "Poppy Grower"],
     },
   ],

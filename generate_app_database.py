@@ -319,8 +319,26 @@ def ampersand_targets(name: str) -> list[str]:
   return dedupe([part.strip() for part in re.split(r"\s*&\s*", name) if part.strip()])
 
 
+def normalize_name_target(target: str, detected_targets: list[str]) -> str:
+  cleaned = text(target)
+  if not cleaned or cleaned in detected_targets:
+    return cleaned
+
+  parts = [part.strip() for part in cleaned.split("：") if part.strip()]
+  for index in range(1, len(parts)):
+    suffix = "：".join(parts[index:])
+    if suffix in detected_targets:
+      return suffix
+  return cleaned
+
+
 def jinx_targets(row: dict[str, str]) -> list[str]:
-  targets = split_list(row.get("jinx_targets", ""))
+  detected_targets = split_list(row.get("jinx_targets", ""))
+  name_targets = [
+    normalize_name_target(target, detected_targets)
+    for target in ampersand_targets(text(row.get("name")))
+  ]
+  targets = name_targets + detected_targets
   source_team = text(row.get("team"))
   source_character = text(row.get("rule_source_character"))
   target_name = text(row.get("rule_target_name")) or text(row.get("rule_target_id"))
@@ -328,7 +346,7 @@ def jinx_targets(row: dict[str, str]) -> list[str]:
   if source_team == "nested jinx":
     targets.extend([source_character, target_name])
 
-  if not targets or "&" in text(row.get("name")):
+  if not targets:
     targets.extend(ampersand_targets(text(row.get("name"))))
 
   return dedupe(targets)

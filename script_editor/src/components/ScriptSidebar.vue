@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { FileText, ListOrdered, Plus, Trash2 } from "@lucide/vue";
-import type { BuiltInFirstNightOrderKey, ScriptDraft } from "../types";
+import type { BuiltInFirstNightOrderKey, JinxDraft, PlayCharacterSummary, ScriptDraft } from "../types";
 import {
   buildFirstNightOrderItems,
   builtInFirstNightOrderDefinitions,
@@ -13,15 +13,18 @@ const props = defineProps<{
   importError: string;
 }>();
 
-defineEmits<{
+const emit = defineEmits<{
   "add-fabled": [];
   "edit-fabled": [id: string];
   "remove-fabled": [id: string];
   "add-jinx": [];
+  "edit-jinx": [id: string];
   "remove-jinx": [id: string];
 }>();
 
 const firstNightOrderItems = computed(() => buildFirstNightOrderItems(props.script));
+const playCharacters = computed(() => collectPlayCharacters());
+const availablePlayNameSet = computed(() => new Set(playCharacters.value.map((character) => character.name)));
 
 function updateBuiltInFirstNightOrder(key: BuiltInFirstNightOrderKey, event: Event) {
   const input = event.target as HTMLInputElement;
@@ -35,6 +38,65 @@ function updateBuiltInFirstNightOrder(key: BuiltInFirstNightOrderKey, event: Eve
 function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: Event) {
   const input = event.target as HTMLInputElement;
   props.script.builtInFirstNightEnabled[key] = input.checked;
+}
+
+function updateJinxIncluded(jinx: JinxDraft, event: Event) {
+  const input = event.target as HTMLInputElement;
+  if (jinxHasUnavailableTargets(jinx)) {
+    jinx.included = false;
+    input.checked = false;
+    return;
+  }
+  jinx.included = input.checked;
+}
+
+function editJinx(jinx: JinxDraft) {
+  if (jinxHasUnavailableTargets(jinx)) {
+    return;
+  }
+  emit("edit-jinx", jinx.id);
+}
+
+function jinxHasUnavailableTargets(jinx: JinxDraft) {
+  return jinx.targets.some((target) => !availablePlayNameSet.value.has(target));
+}
+
+function jinxTargetImages(jinx: JinxDraft) {
+  const images = jinx.targets
+    .map((target) => playCharacters.value.find((character) => character.name === target)?.image)
+    .filter((image): image is string => Boolean(image));
+  if (images.length) {
+    return images;
+  }
+  return jinx.image ? [jinx.image] : [];
+}
+
+function collectPlayCharacters(): PlayCharacterSummary[] {
+  const result: PlayCharacterSummary[] = [];
+  const seenNames = new Set<string>();
+  const addCharacter = (character: PlayCharacterSummary) => {
+    const name = character.name.trim();
+    if (!name || seenNames.has(name)) {
+      return;
+    }
+    seenNames.add(name);
+    result.push({
+      ...character,
+      name,
+    });
+  };
+
+  for (const role of props.script.fabled) {
+    addCharacter({ id: role.id, name: role.name, image: role.image });
+  }
+  for (const team of Object.values(props.script.teams)) {
+    for (const role of team.roles) {
+      if (role.selected) {
+        addCharacter({ id: role.id, name: role.name, image: role.image });
+      }
+    }
+  }
+  return result;
 }
 </script>
 
@@ -56,7 +118,6 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 
     <section class="rail-row night-order-row">
       <div class="row-heading">
-        <ListOrdered :size="18" aria-hidden="true" />
         <span>首夜顺序</span>
       </div>
 
@@ -147,12 +208,49 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
         </button>
       </div>
       <TransitionGroup name="sidebar-card-list" tag="div" class="compact-list">
-        <article v-for="jinx in props.script.jinxes" :key="jinx.id" class="compact-item">
-          <input v-model="jinx.name" class="inline-input role-name" />
-          <textarea v-model="jinx.ability" class="compact-textarea" rows="3" />
-          <button class="ghost-icon" title="移除相克规则" type="button" @click="$emit('remove-jinx', jinx.id)">
-            <Trash2 :size="15" aria-hidden="true" />
-          </button>
+        <article
+          v-for="jinx in props.script.jinxes"
+          :key="jinx.id"
+          class="jinx-card"
+          :class="{
+            disabled: jinx.included === false || jinxHasUnavailableTargets(jinx),
+            unavailable: jinxHasUnavailableTargets(jinx),
+          }"
+          role="button"
+          :tabindex="jinxHasUnavailableTargets(jinx) ? -1 : 0"
+          :aria-disabled="jinxHasUnavailableTargets(jinx)"
+          @click="editJinx(jinx)"
+          @keydown.enter="editJinx(jinx)"
+          @keydown.space.prevent="editJinx(jinx)"
+        >
+          <div class="jinx-card-head">
+            <input
+              class="jinx-checkbox"
+              :checked="!jinxHasUnavailableTargets(jinx) && jinx.included !== false"
+              :disabled="jinxHasUnavailableTargets(jinx)"
+              type="checkbox"
+              @change="updateJinxIncluded(jinx, $event)"
+              @click.stop
+            />
+            <span class="jinx-card-name">{{ jinx.name }}</span>
+            <div class="jinx-card-images" aria-hidden="true">
+              <img
+                v-for="(image, imageIndex) in jinxTargetImages(jinx)"
+                :key="`${jinx.id}-${imageIndex}-${image}`"
+                :src="image"
+                alt=""
+              />
+            </div>
+            <button
+              class="ghost-icon"
+              title="移除相克规则"
+              type="button"
+              @click.stop="$emit('remove-jinx', jinx.id)"
+            >
+              <Trash2 :size="15" aria-hidden="true" />
+            </button>
+          </div>
+          <p class="jinx-card-ability">{{ jinx.ability || "没有相克规则描述。" }}</p>
         </article>
       </TransitionGroup>
     </section>
@@ -424,6 +522,106 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   transform: translateY(-2px);
 }
 
+.jinx-card {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    background var(--motion-duration-base) var(--motion-ease-standard),
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-base) var(--motion-ease-standard),
+    opacity var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.jinx-card.disabled {
+  opacity: 0.48;
+}
+
+.jinx-card.unavailable {
+  cursor: default;
+}
+
+.jinx-card:hover,
+.jinx-card:focus-visible {
+  border-color: #111111;
+  background: #fafafa;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-1px);
+}
+
+.jinx-card.unavailable:hover,
+.jinx-card.unavailable:focus-visible {
+  border-color: #e1e1e1;
+  background: #ffffff;
+  box-shadow: none;
+  transform: none;
+}
+
+.jinx-card-head {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) auto 30px;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+}
+
+.jinx-checkbox {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #111111;
+}
+
+.jinx-checkbox:disabled {
+  cursor: not-allowed;
+}
+
+.jinx-card-name {
+  min-width: 0;
+  overflow: hidden;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 850;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.jinx-card-images {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.jinx-card-images img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.jinx-card-images img + img {
+  margin-left: -7px;
+}
+
+.jinx-card-ability {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: #333333;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 .role-name {
   font-weight: 700;
 }
@@ -567,7 +765,8 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 .icon-button:active,
 .ghost-icon:active,
 .fabled-card:active,
-.compact-item:active {
+.compact-item:active,
+.jinx-card:active {
   transform: scale(var(--motion-press-scale));
 }
 

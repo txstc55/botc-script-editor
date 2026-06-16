@@ -46,7 +46,15 @@ export interface JinxDraft {
   id: string;
   name: string;
   ability: string;
+  image?: string;
+  included?: boolean;
   targets: string[];
+}
+
+export interface PlayCharacterSummary {
+  id: string;
+  name: string;
+  image?: string;
 }
 
 export interface TeamConfig {

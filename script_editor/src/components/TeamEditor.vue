@@ -15,6 +15,7 @@ const emit = defineEmits<{
   "add-role": [team: TeamKey];
   "edit-role": [team: TeamKey, id: string];
   "remove-role": [team: TeamKey, id: string];
+  "set-role-selected": [team: TeamKey, id: string, selected: boolean];
 }>();
 
 type DropPlacement = "before" | "after";
@@ -61,6 +62,11 @@ function teamCount(script: ScriptDraft, team: TeamKey) {
 
 function roleStateLabel(role: RoleDraft) {
   return role.selected ? "已加入" : "未加入";
+}
+
+function setRoleSelected(role: RoleDraft, event: Event) {
+  const input = event.target as HTMLInputElement;
+  emit("set-role-selected", props.activeTeam.key, role.id, input.checked);
 }
 
 function selectTeam(team: TeamKey) {
@@ -295,7 +301,7 @@ function isInteractiveDragTarget(target: EventTarget | null) {
         >
           <div class="role-card-head">
             <label class="check-label" @click.stop>
-              <input v-model="role.selected" type="checkbox" />
+              <input :checked="role.selected" type="checkbox" @change="setRoleSelected(role, $event)" />
               <span>{{ roleStateLabel(role) }}</span>
             </label>
             <img v-if="role.image" :alt="role.name" :src="role.image" class="role-card-image" />

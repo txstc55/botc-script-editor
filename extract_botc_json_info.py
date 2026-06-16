@@ -183,6 +183,10 @@ def split_joined(value: str) -> set[str]:
   return {part.strip() for part in value.split(JOINER) if part.strip()}
 
 
+def split_joined_list(value: str) -> list[str]:
+  return [part.strip() for part in value.split(JOINER) if part.strip()]
+
+
 def json_paths(input_dir: Path) -> list[Path]:
   return sorted(
     path
@@ -192,8 +196,14 @@ def json_paths(input_dir: Path) -> list[Path]:
 
 
 def merge_joined_values(left: str, right: str) -> str:
-  values = split_joined(left) | split_joined(right)
-  return JOINER.join(sorted(values))
+  seen: set[str] = set()
+  values: list[str] = []
+  for value in [*split_joined_list(left), *split_joined_list(right)]:
+    if value in seen:
+      continue
+    seen.add(value)
+    values.append(value)
+  return JOINER.join(values)
 
 
 def to_number(value: Any) -> float:
@@ -386,8 +396,13 @@ def detect_play_jinx_targets(script: ScriptData, *texts: str) -> list[str]:
     return []
   return [
     name
-    for name in sorted(script.character_names, key=lambda item: (-len(item), item))
-    if name and name in haystack
+    for _, _, name in sorted(
+      (
+        (haystack.find(name), -len(name), name)
+        for name in script.character_names
+        if name and name in haystack
+      )
+    )
   ]
 
 

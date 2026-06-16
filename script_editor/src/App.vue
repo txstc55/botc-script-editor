@@ -2,11 +2,12 @@
 import { ref } from "vue";
 import CharacterPickerOverlay from "./components/CharacterPickerOverlay.vue";
 import FabledPickerOverlay from "./components/FabledPickerOverlay.vue";
+import JinxPickerOverlay from "./components/JinxPickerOverlay.vue";
 import ScriptPreview from "./components/ScriptPreview.vue";
 import ScriptSidebar from "./components/ScriptSidebar.vue";
 import TeamEditor from "./components/TeamEditor.vue";
 import { useScriptEditor } from "./composables/useScriptEditor";
-import type { FabledDraft, RoleDraft, TeamKey } from "./types";
+import type { FabledDraft, JinxDraft, RoleDraft, TeamKey } from "./types";
 
 const editor = useScriptEditor();
 const fabledPickerOpen = ref(false);
@@ -16,6 +17,9 @@ const rolePickerOpen = ref(false);
 const rolePickerTeam = ref<TeamKey>("townsfolk");
 const editingRoleId = ref<string | null>(null);
 const editingRole = ref<RoleDraft | null>(null);
+const jinxPickerOpen = ref(false);
+const editingJinxId = ref<string | null>(null);
+const editingJinx = ref<JinxDraft | null>(null);
 
 function openFabledPicker() {
   editingFabledId.value = null;
@@ -80,6 +84,37 @@ function handleRoleSubmit(role: RoleDraft) {
   }
   closeRolePicker();
 }
+
+function openJinxPicker() {
+  editingJinxId.value = null;
+  editingJinx.value = null;
+  jinxPickerOpen.value = true;
+}
+
+function openJinxEditor(id: string) {
+  const jinx = editor.script.jinxes.find((item) => item.id === id);
+  if (!jinx) {
+    return;
+  }
+  editingJinxId.value = id;
+  editingJinx.value = { ...jinx, targets: [...jinx.targets] };
+  jinxPickerOpen.value = true;
+}
+
+function closeJinxPicker() {
+  jinxPickerOpen.value = false;
+  editingJinxId.value = null;
+  editingJinx.value = null;
+}
+
+function handleJinxSubmit(jinx: JinxDraft) {
+  if (editingJinxId.value) {
+    editor.updateJinx(editingJinxId.value, jinx);
+  } else {
+    editor.addJinx(jinx);
+  }
+  closeJinxPicker();
+}
 </script>
 
 <template>
@@ -90,7 +125,8 @@ function handleRoleSubmit(role: RoleDraft) {
       @add-fabled="openFabledPicker"
       @edit-fabled="openFabledEditor"
       @remove-fabled="editor.removeFabled"
-      @add-jinx="editor.addJinx"
+      @add-jinx="openJinxPicker"
+      @edit-jinx="openJinxEditor"
       @remove-jinx="editor.removeJinx"
     />
 
@@ -109,6 +145,7 @@ function handleRoleSubmit(role: RoleDraft) {
       @add-role="openRolePicker"
       @edit-role="openRoleEditor"
       @remove-role="editor.removeRole"
+      @set-role-selected="editor.setRoleSelected"
     />
 
     <FabledPickerOverlay
@@ -125,6 +162,14 @@ function handleRoleSubmit(role: RoleDraft) {
       :script-role="editingRole"
       @close="closeRolePicker"
       @submit="handleRoleSubmit"
+    />
+
+    <JinxPickerOverlay
+      :visible="jinxPickerOpen"
+      :script-jinx="editingJinx"
+      :play-characters="editor.playCharacters.value"
+      @close="closeJinxPicker"
+      @submit="handleJinxSubmit"
     />
   </main>
 </template>
