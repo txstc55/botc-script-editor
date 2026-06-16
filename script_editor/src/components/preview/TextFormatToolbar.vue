@@ -30,8 +30,11 @@ const emit = defineEmits<{
           :class="['format-command', 'bold', { active: formatState.bold }]"
           type="button"
           title="加粗"
+          tabindex="-1"
           :aria-pressed="formatState.bold"
-          @mousedown.prevent.stop="emit('inline-command', 'bold')"
+          @pointerdown.prevent.stop="emit('inline-command', 'bold')"
+          @mousedown.prevent.stop
+          @click.prevent.stop
         >
           B
         </button>
@@ -39,8 +42,11 @@ const emit = defineEmits<{
           :class="['format-command', 'italic', { active: formatState.italic }]"
           type="button"
           title="斜体"
+          tabindex="-1"
           :aria-pressed="formatState.italic"
-          @mousedown.prevent.stop="emit('inline-command', 'italic')"
+          @pointerdown.prevent.stop="emit('inline-command', 'italic')"
+          @mousedown.prevent.stop
+          @click.prevent.stop
         >
           I
         </button>
@@ -48,8 +54,11 @@ const emit = defineEmits<{
           :class="['format-command', 'underline', { active: formatState.underline }]"
           type="button"
           title="下划线"
+          tabindex="-1"
           :aria-pressed="formatState.underline"
-          @mousedown.prevent.stop="emit('inline-command', 'underline')"
+          @pointerdown.prevent.stop="emit('inline-command', 'underline')"
+          @mousedown.prevent.stop
+          @click.prevent.stop
         >
           U
         </button>
@@ -61,9 +70,12 @@ const emit = defineEmits<{
           :class="['format-swatch', { active: isTextColorActive(option), clear: option.color === 'transparent' }]"
           type="button"
           :title="`文字颜色：${option.label}`"
+          tabindex="-1"
           :style="{ '--swatch-color': option.color }"
           :aria-pressed="isTextColorActive(option)"
-          @mousedown.prevent.stop="emit('text-color', option)"
+          @pointerdown.prevent.stop="emit('text-color', option)"
+          @mousedown.prevent.stop
+          @click.prevent.stop
         />
       </div>
       <div class="toolbar-swatch-group background" aria-label="背景颜色">
@@ -73,9 +85,12 @@ const emit = defineEmits<{
           :class="['format-swatch', { active: isBackgroundColorActive(option), clear: option.color === 'transparent' }]"
           type="button"
           :title="`背景颜色：${option.label}`"
+          tabindex="-1"
           :style="{ '--swatch-color': option.color }"
           :aria-pressed="isBackgroundColorActive(option)"
-          @mousedown.prevent.stop="emit('background-color', option)"
+          @pointerdown.prevent.stop="emit('background-color', option)"
+          @mousedown.prevent.stop
+          @click.prevent.stop
         />
       </div>
     </div>

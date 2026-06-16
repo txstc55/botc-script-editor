@@ -51,6 +51,8 @@ interface RawRecord {
   [key: string]: unknown;
 }
 
+const databaseEntryCache = new Map<TeamKey, CharacterLibraryEntry[]>();
+
 export const characterTeamFolders: Record<TeamKey, string> = {
   townsfolk: "townsfolks",
   outsider: "outsiders",
@@ -119,17 +121,20 @@ export async function saveCharacterRecord(team: TeamKey, source: CharacterLibrar
   if (preferTauriStorage()) {
     const tauriSaved = await saveCharacterRecordWithTauri(body);
     if (tauriSaved) {
+      invalidateCharacterCache(team, source);
       return tauriSaved;
     }
   }
 
   const viteSaved = await saveCharacterRecordWithVite(body);
   if (viteSaved) {
+    invalidateCharacterCache(team, source);
     return viteSaved;
   }
 
   const tauriSaved = await saveCharacterRecordWithTauri(body);
   if (tauriSaved) {
+    invalidateCharacterCache(team, source);
     return tauriSaved;
   }
 
@@ -148,18 +153,21 @@ export async function deleteCharacterRecord(entry: CharacterLibraryEntry) {
   if (preferTauriStorage()) {
     const tauriDeleted = await deleteCharacterRecordWithTauri(payload, errors);
     if (tauriDeleted) {
+      invalidateCharacterCache(entry.record.team, entry.source);
       return true;
     }
   }
 
   const viteDeleted = await deleteCharacterRecordWithVite(payload, errors);
   if (viteDeleted) {
+    invalidateCharacterCache(entry.record.team, entry.source);
     return true;
   }
 
   if (!preferTauriStorage()) {
     const tauriDeleted = await deleteCharacterRecordWithTauri(payload, errors);
     if (tauriDeleted) {
+      invalidateCharacterCache(entry.record.team, entry.source);
       return true;
     }
   }
@@ -263,19 +271,30 @@ async function loadCharacterRecords(
   team: TeamKey,
   loadRecords: boolean,
 ): Promise<CharacterLibraryEntry[]> {
+  if (source === "database" && !loadRecords) {
+    const cached = databaseEntryCache.get(team);
+    if (cached) {
+      return cached.map(cloneEntry);
+    }
+  }
+
   const index = await fetchCharacterIndex(`${basePath}/index.json`, team);
   if (!index) {
     return [];
   }
 
   if (!loadRecords) {
-    return index.characters
+    const entries = index.characters
       .map((item) => ({
         source,
         loaded: false,
         record: recordFromIndexItem(item, team),
       }))
       .sort(sortEntries);
+    if (source === "database") {
+      databaseEntryCache.set(team, entries.map(cloneEntry));
+    }
+    return entries;
   }
 
   const records = await Promise.all(
@@ -302,6 +321,20 @@ async function loadCharacterRecords(
   return records
     .filter((entry): entry is CharacterLibraryEntry => Boolean(entry))
     .sort(sortEntries);
+}
+
+function invalidateCharacterCache(team: TeamKey, source: CharacterLibrarySource) {
+  if (source === "database") {
+    databaseEntryCache.delete(team);
+  }
+}
+
+function cloneEntry(entry: CharacterLibraryEntry): CharacterLibraryEntry {
+  return {
+    source: entry.source,
+    loaded: entry.loaded,
+    record: normalizeCharacterRecord(entry.record, entry.record.team),
+  };
 }
 
 function recordFromIndexItem(item: CharacterIndexItem, team: TeamKey): CharacterRecord {

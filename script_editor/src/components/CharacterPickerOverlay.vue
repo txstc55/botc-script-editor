@@ -36,6 +36,9 @@ interface CharacterForm {
   flavor: string;
 }
 
+const INITIAL_DATABASE_RENDER_COUNT = 80;
+const DATABASE_RENDER_INCREMENT = 80;
+
 const props = defineProps<{
   visible: boolean;
   team: TeamKey;
@@ -58,6 +61,7 @@ const loadError = ref("");
 const saveError = ref("");
 const saveStatus = ref("");
 const pendingDeleteName = ref("");
+const databaseRenderLimit = ref(INITIAL_DATABASE_RENDER_COUNT);
 const variantChoice = reactive<Record<VariantField, string>>({
   ability: "0",
   image: "0",
@@ -98,6 +102,9 @@ const form = reactive<CharacterForm>({
 
 const filteredCustomEntries = computed(() => filterEntries(customEntries.value));
 const filteredDatabaseEntries = computed(() => filterEntries(databaseEntries.value));
+const visibleDatabaseEntries = computed(() => filteredDatabaseEntries.value.slice(0, databaseRenderLimit.value));
+const hiddenDatabaseCount = computed(() => filteredDatabaseEntries.value.length - visibleDatabaseEntries.value.length);
+const hasMoreDatabaseEntries = computed(() => hiddenDatabaseCount.value > 0);
 const activeRecord = computed(() => activeEntry.value?.record ?? null);
 const editorTitle = computed(() => {
   if (activeRecord.value) {
@@ -127,15 +134,21 @@ watch(
 watch(
   () => props.team,
   () => {
+    resetDatabaseRenderLimit();
     if (props.visible) {
       void openOverlay();
     }
   },
 );
 
+watch(searchText, () => {
+  resetDatabaseRenderLimit();
+});
+
 async function openOverlay() {
   activeEntry.value = null;
   pendingDeleteName.value = "";
+  resetDatabaseRenderLimit();
   saveStatus.value = "";
   saveError.value = "";
   await refreshLibrary();
@@ -166,6 +179,14 @@ function filterEntries(entries: CharacterLibraryEntry[]) {
     return entries;
   }
   return entries.filter((entry) => entry.record.name.toLowerCase().includes(query));
+}
+
+function resetDatabaseRenderLimit() {
+  databaseRenderLimit.value = INITIAL_DATABASE_RENDER_COUNT;
+}
+
+function showMoreDatabaseEntries() {
+  databaseRenderLimit.value += DATABASE_RENDER_INCREMENT;
 }
 
 function openBlankEditor() {
@@ -543,7 +564,7 @@ function showVariantSelector(field: VariantField) {
                   <h2>已有{{ teamLabel }}角色</h2>
                   <div class="character-grid">
                     <button
-                      v-for="entry in filteredDatabaseEntries"
+                      v-for="entry in visibleDatabaseEntries"
                       :key="`database-${entry.record.name}`"
                       class="character-card"
                       type="button"
@@ -558,6 +579,14 @@ function showVariantSelector(field: VariantField) {
                       </span>
                     </button>
                   </div>
+                  <button
+                    v-if="hasMoreDatabaseEntries"
+                    class="load-more-button"
+                    type="button"
+                    @click="showMoreDatabaseEntries"
+                  >
+                    显示更多 {{ Math.min(hiddenDatabaseCount, DATABASE_RENDER_INCREMENT) }} 个
+                  </button>
                 </section>
               </div>
             </div>
@@ -944,6 +973,35 @@ function showVariantSelector(field: VariantField) {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
+}
+
+.load-more-button {
+  justify-self: center;
+  min-height: 38px;
+  padding: 0 18px;
+  border: 1px solid #d8d8d8;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 850;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.load-more-button:hover {
+  border-color: #111111;
+  background: #f5f5f5;
+  box-shadow: var(--motion-lift-shadow);
+  transform: translateY(-1px);
+}
+
+.load-more-button:active {
+  transform: scale(var(--motion-press-scale));
 }
 
 .character-card {

@@ -21,7 +21,7 @@ function teamCount(script: ScriptDraft, team: TeamKey) {
 }
 
 function roleStateLabel(role: RoleDraft) {
-  return role.selected ? "已加入" : "候选";
+  return role.selected ? "已加入" : "未加入";
 }
 </script>
 
@@ -252,6 +252,8 @@ function roleStateLabel(role: RoleDraft) {
   background: #ffffff;
   cursor: pointer;
   outline: none;
+  user-select: none;
+  -webkit-user-select: none;
   transition:
     background var(--motion-duration-base) var(--motion-ease-standard),
     border-color var(--motion-duration-base) var(--motion-ease-standard),

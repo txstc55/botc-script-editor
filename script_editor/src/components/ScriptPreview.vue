@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref } from "vue";
+import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
 import { Eye, FileJson, ImageDown, Upload } from "@lucide/vue";
 import type { ScriptDraft, TeamKey } from "../types";
 import {
@@ -525,7 +525,14 @@ function escapeHtml(value: string) {
 }
 
 function handleAbilityBlur(role: PreviewRole, event: FocusEvent) {
+  if (isTextFormatToolbarTarget(event.relatedTarget)) {
+    return;
+  }
   saveAbilityEditor(role, event.currentTarget as HTMLElement);
+}
+
+function isTextFormatToolbarTarget(target: EventTarget | null) {
+  return target instanceof Element && Boolean(target.closest(".text-format-toolbar"));
 }
 
 function saveAbilityEditor(role: PreviewRole, editor: HTMLElement) {
@@ -652,7 +659,8 @@ function applyEditorCommand(command: string, value?: string, mode: "apply" | "re
     saveAbilityEditor(role, editor);
   }
   syncToolbarState(editor, nextRange, nextFormatState, snapshot);
-  requestAnimationFrame(() => syncToolbarState(editor, nextRange, nextFormatState, snapshot));
+  void nextTick(() => restoreSelectionSnapshot(snapshot, nextFormatState));
+  requestAnimationFrame(() => restoreSelectionSnapshot(snapshot, nextFormatState));
 }
 
 function applyFormatToTextNode(
@@ -1071,7 +1079,7 @@ function rangeFromTextOffsets(editor: HTMLElement, start: number, end: number) {
     const nodeStart = cursor;
     const nodeEnd = nodeStart + node.length;
 
-    if (!started && start <= nodeEnd) {
+    if (!started && (start < nodeEnd || (start === 0 && nodeStart === 0))) {
       range.setStart(node, clampOffset(start - nodeStart, node.length));
       started = true;
     }
@@ -1240,6 +1248,10 @@ function colorsMatch(left?: string | null, right?: string | null) {
 
 function restoreSelection() {
   const snapshot = savedSelectionSnapshot.value;
+  restoreSelectionSnapshot(snapshot);
+}
+
+function restoreSelectionSnapshot(snapshot: SelectionSnapshot | null, formatState?: FormatState) {
   const editor = editorForSelectionSnapshot(snapshot);
   if (!snapshot || !editor) {
     return;
@@ -1251,6 +1263,9 @@ function restoreSelection() {
   const selection = document.getSelection();
   selection?.removeAllRanges();
   selection?.addRange(range);
+  if (formatState) {
+    syncToolbarState(editor, range, formatState, snapshot);
+  }
 }
 
 function editorForSelectionSnapshot(snapshot: SelectionSnapshot | null) {

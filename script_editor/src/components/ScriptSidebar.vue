@@ -41,10 +41,6 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 <template>
   <aside class="left-rail left-panel" aria-label="剧本控制">
     <section class="rail-row script-row">
-      <div class="row-heading">
-        <FileText :size="18" aria-hidden="true" />
-        <span>剧本</span>
-      </div>
       <p v-if="props.importError" class="import-status error">
         {{ props.importError }}
       </p>
@@ -440,6 +436,8 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   background: #ffffff;
   cursor: pointer;
   outline: none;
+  user-select: none;
+  -webkit-user-select: none;
   transition:
     background var(--motion-duration-base) var(--motion-ease-standard),
     border-color var(--motion-duration-base) var(--motion-ease-standard),
