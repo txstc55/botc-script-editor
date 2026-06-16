@@ -15,6 +15,8 @@ jobs:
   build:
     name: Build ${{ matrix.name }}
     runs-on: ${{ matrix.os }}
+    env:
+      HAS_APPLE_NOTARIZATION_SECRETS: ${{ secrets.APPLE_CERTIFICATE != '' && secrets.APPLE_CERTIFICATE_PASSWORD != '' && secrets.APPLE_ID != '' && secrets.APPLE_PASSWORD != '' && secrets.APPLE_TEAM_ID != '' }}
     strategy:
       fail-fast: false
       matrix:
@@ -61,10 +63,25 @@ jobs:
         run: npm ci
         working-directory: script_editor
 
-      - name: Build Tauri app
+      - name: Build unsigned Tauri app
+        if: matrix.os != 'macos-latest' || env.HAS_APPLE_NOTARIZATION_SECRETS != 'true'
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          projectPath: script_editor
+          args: ${{ matrix.tauriArgs }}
+
+      - name: Build signed and notarized Tauri app
+        if: matrix.os == 'macos-latest' && env.HAS_APPLE_NOTARIZATION_SECRETS == 'true'
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
         with:
           projectPath: script_editor
           args: ${{ matrix.tauriArgs }}
