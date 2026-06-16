@@ -185,6 +185,17 @@ export function useScriptEditor() {
     disableJinxesWithUnavailableTargets();
   }
 
+  function clearScript() {
+    script.name = "";
+    script.author = "";
+    script.fabled = [];
+    script.jinxes = [];
+    for (const team of Object.values(script.teams)) {
+      team.roles = [];
+    }
+    importError.value = "";
+  }
+
   async function addMatchingDatabaseJinxes(options: { includeNew?: boolean } = {}) {
     const includeNew = options.includeNew ?? true;
     const characters = collectPlayCharacters();
@@ -299,5 +310,6 @@ export function useScriptEditor() {
     roleStateLabel,
     handleJsonUpload,
     loadPlayText,
+    clearScript,
   };
 }

@@ -39,6 +39,7 @@ const editingRole = ref<RoleDraft | null>(null);
 const jinxPickerOpen = ref(false);
 const editingJinxId = ref<string | null>(null);
 const editingJinx = ref<JinxDraft | null>(null);
+const clearConfirmOpen = ref(false);
 const previewRef = ref<ScriptPreviewExpose | null>(null);
 const batchMode = isBatchExportMode();
 const batchStatus = reactive({
@@ -192,6 +193,19 @@ function handleJinxSubmit(jinx: JinxDraft) {
   closeJinxPicker();
 }
 
+function handleClearScript() {
+  clearConfirmOpen.value = true;
+}
+
+function cancelClearScript() {
+  clearConfirmOpen.value = false;
+}
+
+function confirmClearScript() {
+  editor.clearScript();
+  clearConfirmOpen.value = false;
+}
+
 async function startBatchExport() {
   if (batchStatus.running) {
     return;
@@ -270,6 +284,7 @@ async function waitForPreviewRender() {
       ref="previewRef"
       :script="editor.script"
       :selected-role-count="editor.selectedRoleCount.value"
+      @clear-script="handleClearScript"
       @json-upload="editor.handleJsonUpload"
     />
 
@@ -308,6 +323,29 @@ async function waitForPreviewRender() {
       @close="closeJinxPicker"
       @submit="handleJinxSubmit"
     />
+
+    <Transition name="confirm-overlay">
+      <div
+        v-if="clearConfirmOpen"
+        class="confirm-overlay"
+        role="presentation"
+        @click.self="cancelClearScript"
+      >
+        <section class="confirm-card" role="dialog" aria-modal="true" aria-labelledby="clear-script-title">
+          <div class="confirm-kicker">清空剧本</div>
+          <h2 id="clear-script-title">确定清空当前剧本吗？</h2>
+          <p>这会移除剧本名称、作者、所有角色、传奇角色和相克规则。</p>
+          <div class="confirm-actions">
+            <button class="confirm-button secondary" type="button" @click="cancelClearScript">
+              取消
+            </button>
+            <button class="confirm-button danger" type="button" @click="confirmClearScript">
+              清空
+            </button>
+          </div>
+        </section>
+      </div>
+    </Transition>
 
     <div v-if="batchMode" class="batch-export-overlay" aria-live="polite">
       <section class="batch-export-card">
@@ -433,5 +471,121 @@ async function waitForPreviewRender() {
   margin-top: 12px;
   color: #8f1701;
   word-break: break-all;
+}
+
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 980;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(18px);
+}
+
+.confirm-card {
+  width: min(420px, 100%);
+  padding: 24px;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 24px 80px rgba(17, 17, 17, 0.14);
+  color: #111111;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.confirm-kicker {
+  color: rgba(17, 17, 17, 0.5);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.confirm-card h2 {
+  margin: 8px 0 0;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.confirm-card p {
+  margin: 12px 0 0;
+  color: rgba(17, 17, 17, 0.64);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.7;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.confirm-button {
+  min-height: 38px;
+  padding: 0 18px;
+  border: 1px solid rgba(17, 17, 17, 0.16);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 850;
+  transition:
+    background var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.confirm-button:hover {
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.confirm-button:active {
+  transform: scale(var(--motion-press-scale));
+}
+
+.confirm-button.danger {
+  border-color: #7f1d1d;
+  background: #7f1d1d;
+  color: #ffffff;
+}
+
+.confirm-button.danger:hover {
+  border-color: #4c0d0d;
+  background: #4c0d0d;
+}
+
+.confirm-overlay-enter-active,
+.confirm-overlay-leave-active {
+  transition:
+    opacity var(--motion-duration-panel) var(--motion-ease-standard),
+    backdrop-filter var(--motion-duration-panel) var(--motion-ease-standard);
+}
+
+.confirm-overlay-enter-active .confirm-card,
+.confirm-overlay-leave-active .confirm-card {
+  transition:
+    opacity var(--motion-duration-panel) var(--motion-ease-emphasized),
+    transform var(--motion-duration-panel) var(--motion-ease-emphasized);
+}
+
+.confirm-overlay-enter-from,
+.confirm-overlay-leave-to {
+  opacity: 0;
+  backdrop-filter: blur(0);
+}
+
+.confirm-overlay-enter-from .confirm-card,
+.confirm-overlay-leave-to .confirm-card {
+  opacity: 0;
+  transform: translateY(12px) scale(0.98);
 }
 </style>

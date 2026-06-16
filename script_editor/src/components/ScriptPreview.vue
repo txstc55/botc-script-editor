@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
-import { Eye, FileJson, ImageDown, Upload } from "@lucide/vue";
+import { Eye, FileJson, ImageDown, Trash2, Upload } from "@lucide/vue";
 import type { JinxDraft, ScriptDraft, TeamKey } from "../types";
 import {
   buildFirstNightOrderItems,
@@ -99,6 +99,7 @@ const props = defineProps<{
 }>();
 
 defineEmits<{
+  "clear-script": [];
   "json-upload": [event: Event];
 }>();
 
@@ -137,6 +138,8 @@ const toolbarVisible = ref(false);
 const activeEditor = ref<HTMLElement | null>(null);
 const savedSelectionSnapshot = ref<SelectionSnapshot | null>(null);
 const toolbarFormatState = ref<FormatState>({ ...emptyFormatState });
+const exportSuccessMessage = ref("");
+let exportSuccessTimer: number | undefined;
 const {
   previewStage,
   previewCanvasStyle,
@@ -153,6 +156,9 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   document.removeEventListener("selectionchange", updateSelectionState);
+  if (exportSuccessTimer !== undefined) {
+    window.clearTimeout(exportSuccessTimer);
+  }
 });
 
 function withNightOrderColors(items: NightOrderBaseItem[]): NightOrderItem[] {
@@ -1634,15 +1640,29 @@ async function exportPreviewImage() {
   try {
     const pngBlob = await renderPreviewImageBlob({ type: "image/png" });
     downloadBlob(pngBlob, `${fileName}.png`);
+    showExportSuccess(`图片已导出：${fileName}.png`);
   } catch (error) {
     console.error("导出 PNG 失败。", error);
   }
 }
 
 function exportPreviewJson() {
+  const fileName = safeExportFileName(props.script.name || "剧本");
   const jsonText = `${JSON.stringify(buildExportJson(props.script), null, 2)}\n`;
   const jsonBlob = new Blob([jsonText], { type: "application/json;charset=utf-8" });
-  downloadBlob(jsonBlob, `${safeExportFileName(props.script.name || "剧本")}.json`);
+  downloadBlob(jsonBlob, `${fileName}.json`);
+  showExportSuccess(`JSON 已导出：${fileName}.json`);
+}
+
+function showExportSuccess(message: string) {
+  exportSuccessMessage.value = message;
+  if (exportSuccessTimer !== undefined) {
+    window.clearTimeout(exportSuccessTimer);
+  }
+  exportSuccessTimer = window.setTimeout(() => {
+    exportSuccessMessage.value = "";
+    exportSuccessTimer = undefined;
+  }, 2200);
 }
 
 function addExportStyles(svg: SVGSVGElement) {
@@ -2103,6 +2123,10 @@ defineExpose({
         <span>预览</span>
       </div>
       <div class="preview-actions" aria-label="预览操作">
+        <button class="preview-action preview-action-danger" type="button" @click="$emit('clear-script')">
+          <Trash2 :size="15" aria-hidden="true" />
+          <span>清空</span>
+        </button>
         <label class="preview-action">
           <Upload :size="15" aria-hidden="true" />
           <span>导入 JSON</span>
@@ -2118,6 +2142,12 @@ defineExpose({
         </button>
       </div>
     </header>
+
+    <Transition name="export-toast">
+      <div v-if="exportSuccessMessage" class="export-success-toast" role="status" aria-live="polite">
+        {{ exportSuccessMessage }}
+      </div>
+    </Transition>
 
     <div
       ref="previewStage"
@@ -2499,6 +2529,8 @@ defineExpose({
   justify-content: flex-end;
   gap: 8px;
   min-width: 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .preview-action {
@@ -2518,6 +2550,8 @@ defineExpose({
   font-weight: 800;
   line-height: 1;
   white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
   transition:
     background var(--motion-duration-fast) var(--motion-ease-standard),
     border-color var(--motion-duration-fast) var(--motion-ease-standard),
@@ -2526,12 +2560,22 @@ defineExpose({
     box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
 }
 
+.preview-action span {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .preview-action:hover:not(:disabled) {
   border-color: #111111;
   background: #111111;
   color: #ffffff;
   box-shadow: var(--motion-lift-shadow);
   transform: translateY(-1px);
+}
+
+.preview-action-danger:hover:not(:disabled) {
+  border-color: #7f1d1d;
+  background: #7f1d1d;
 }
 
 .preview-action:active:not(:disabled) {
@@ -2545,6 +2589,41 @@ defineExpose({
 
 .preview-action input {
   display: none;
+}
+
+.export-success-toast {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  z-index: 50;
+  max-width: min(520px, calc(100% - 48px));
+  padding: 12px 18px;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.92);
+  box-shadow: 0 18px 54px rgba(17, 17, 17, 0.18);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.3;
+  text-align: center;
+  transform: translateX(-50%);
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
+
+.export-toast-enter-active,
+.export-toast-leave-active {
+  transition:
+    opacity var(--motion-duration-panel) var(--motion-ease-standard),
+    transform var(--motion-duration-panel) var(--motion-ease-emphasized);
+}
+
+.export-toast-enter-from,
+.export-toast-leave-to {
+  opacity: 0;
+  transform: translateX(-50%) translateY(12px) scale(0.98);
 }
 
 .svg-stage {
