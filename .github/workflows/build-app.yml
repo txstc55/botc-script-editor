@@ -1,0 +1,78 @@
+name: Build app binaries
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: macOS universal
+            os: macos-latest
+            rustTargets: x86_64-apple-darwin aarch64-apple-darwin
+            tauriArgs: --target universal-apple-darwin --bundles app,dmg
+            artifactName: botc-script-editor-macos
+            artifactPath: |
+              script_editor/src-tauri/target/universal-apple-darwin/release/bundle/dmg/*.dmg
+              script_editor/src-tauri/target/universal-apple-darwin/release/bundle/macos/*.app
+          - name: Windows x64
+            os: windows-latest
+            rustTargets: x86_64-pc-windows-msvc
+            tauriArgs: --target x86_64-pc-windows-msvc --bundles nsis,msi
+            artifactName: botc-script-editor-windows-x64
+            artifactPath: |
+              script_editor/src-tauri/target/x86_64-pc-windows-msvc/release/bundle/msi/*.msi
+              script_editor/src-tauri/target/x86_64-pc-windows-msvc/release/bundle/nsis/*.exe
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: script_editor/package-lock.json
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.rustTargets }}
+
+      - name: Cache Rust build
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: script_editor/src-tauri -> target
+
+      - name: Install frontend dependencies
+        run: npm ci
+        working-directory: script_editor
+
+      - name: Build Tauri app
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          projectPath: script_editor
+          args: ${{ matrix.tauriArgs }}
+
+      - name: Upload app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifactName }}
+          path: ${{ matrix.artifactPath }}
+          if-no-files-found: error
+          retention-days: 30
