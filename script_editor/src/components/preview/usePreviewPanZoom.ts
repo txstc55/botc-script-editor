@@ -1,4 +1,4 @@
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch, type ComputedRef } from "vue";
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, type ComputedRef } from "vue";
 import {
   PREVIEW_BASE_WIDTH,
   PREVIEW_CANVAS_BOTTOM_SAFE_SPACE,
@@ -29,22 +29,20 @@ export function usePreviewPanZoom(previewLayout: ComputedRef<SvgPreviewLayout>) 
   }));
   let previewResizeObserver: ResizeObserver | null = null;
   let zoomAnimationFrame: number | null = null;
+  let lastStageWidth = 0;
+  let hasCenteredPreview = false;
 
   onMounted(() => {
-    previewResizeObserver = new ResizeObserver(() => centerPreviewCanvas());
+    previewResizeObserver = new ResizeObserver(() => handlePreviewStageResize());
     if (previewStage.value) {
       previewResizeObserver.observe(previewStage.value);
     }
-    nextTick(centerPreviewCanvas);
+    nextTick(() => centerPreviewCanvas({ force: true }));
   });
 
   onBeforeUnmount(() => {
     previewResizeObserver?.disconnect();
     cancelZoomAnimation();
-  });
-
-  watch(() => previewLayout.value.height, () => {
-    nextTick(centerPreviewCanvas);
   });
 
   function handlePreviewWheel(event: WheelEvent) {
@@ -118,13 +116,40 @@ export function usePreviewPanZoom(previewLayout: ComputedRef<SvgPreviewLayout>) 
     previewPanGesture.value = null;
   }
 
-  function centerPreviewCanvas() {
+  function handlePreviewStageResize() {
     const stage = previewStage.value;
     if (!stage || previewPanGesture.value) {
       return;
     }
+    const rect = stage.getBoundingClientRect();
+    if (!hasCenteredPreview) {
+      lastStageWidth = rect.width;
+      centerPreviewCanvas({ force: true });
+      return;
+    }
+    if (Math.abs(rect.width - lastStageWidth) < 1) {
+      return;
+    }
+
+    const widthDelta = rect.width - lastStageWidth;
+    lastStageWidth = rect.width;
+    const nextPan = {
+      x: previewPan.value.x + widthDelta / 2,
+      y: previewPan.value.y,
+    };
+    previewPan.value = nextPan;
+    targetPreviewPan.value = nextPan;
+    targetPreviewZoom.value = previewZoom.value;
+  }
+
+  function centerPreviewCanvas({ force = false } = {}) {
+    const stage = previewStage.value;
+    if (!stage || previewPanGesture.value || (hasCenteredPreview && !force)) {
+      return;
+    }
     cancelZoomAnimation();
     const rect = stage.getBoundingClientRect();
+    lastStageWidth = rect.width;
     const nextPan = {
       x: (rect.width - PREVIEW_BASE_WIDTH * previewZoom.value) / 2,
       y: PREVIEW_CANVAS_TOP_PADDING,
@@ -132,6 +157,7 @@ export function usePreviewPanZoom(previewLayout: ComputedRef<SvgPreviewLayout>) 
     previewPan.value = nextPan;
     targetPreviewPan.value = nextPan;
     targetPreviewZoom.value = previewZoom.value;
+    hasCenteredPreview = true;
   }
 
   function startSmoothZoom() {

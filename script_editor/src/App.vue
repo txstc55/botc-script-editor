@@ -154,7 +154,6 @@ function handleRoleSubmit(role: RoleDraft) {
 @media (max-width: 1180px) {
   .app-shell {
     grid-template-columns: 300px minmax(420px, 1fr) 360px;
-    min-height: 720px;
   }
 }
 </style>

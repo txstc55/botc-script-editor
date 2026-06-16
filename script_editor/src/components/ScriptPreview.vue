@@ -101,8 +101,13 @@ const previewSections = computed<PreviewSection[]>(() => {
     label: "传奇角色",
     roles: props.script.fabled,
   };
+  const travelerSection: PreviewSection = {
+    key: "traveler",
+    label: "剧本旅行者",
+    roles: props.script.teams.traveler.roles.filter((role) => role.selected),
+  };
 
-  return [...roleSections, fabledSection].filter((section) => section.roles.length > 0);
+  return [...roleSections, fabledSection, travelerSection].filter((section) => section.roles.length > 0);
 });
 
 const firstNightOrder = computed(() => withNightOrderColors(buildFirstNightOrderItems(props.script)));
@@ -148,6 +153,11 @@ function buildPreviewLayout(): SvgPreviewLayout {
   const contentBottom = sections.length
     ? sections[sections.length - 1].y + sections[sections.length - 1].height
     : firstSectionY.value;
+  const nightCenteringSections = sections.filter((section) => section.key !== "fabled" && section.key !== "traveler");
+  const nightCenteringContentBottom = nightCenteringSections.length
+    ? nightCenteringSections[nightCenteringSections.length - 1].y +
+      nightCenteringSections[nightCenteringSections.length - 1].height
+    : firstSectionY.value;
   const firstNightStackHeight = nightRailStackHeight(firstNightOrder.value.length);
   const otherNightStackHeight = nightRailStackHeight(otherNightOrder.value.length);
   const nightHeightForFirstCentered = Math.max(
@@ -155,12 +165,18 @@ function buildPreviewLayout(): SvgPreviewLayout {
     otherNightStackHeight * 2 - firstNightStackHeight + NIGHT_RAIL_VERTICAL_MARGIN * 2,
   );
   const height = Math.max(MIN_PREVIEW_HEIGHT, contentBottom + 72, PAGE_Y * 2 + nightHeightForFirstCentered);
+  const nightCenteringHeight = Math.max(
+    MIN_PREVIEW_HEIGHT,
+    nightCenteringContentBottom + 72,
+    PAGE_Y * 2 + nightHeightForFirstCentered,
+  );
   const pageHeight = height - PAGE_Y * 2;
+  const nightCenteringPageHeight = nightCenteringHeight - PAGE_Y * 2;
 
   return {
     height,
     pageHeight,
-    nightRailContentY: PAGE_Y + (pageHeight - firstNightStackHeight) / 2,
+    nightRailContentY: PAGE_Y + (nightCenteringPageHeight - firstNightStackHeight) / 2,
     sections,
     firstNightItems: firstNightOrder.value,
     otherNightItems: otherNightOrder.value,
@@ -181,7 +197,7 @@ function buildSections(): SvgSectionLayout[] {
 
   for (const section of previewSections.value) {
     const color = teamColors[section.key];
-    const heading = section.key === "fabled" ? section.label : `${teamSideLabel(section.key)} · ${section.label}`;
+    const heading = previewSectionHeading(section);
     const headingWidth = estimateTextWidth(heading, SECTION_HEADING_FONT_SIZE);
     const roleY = y + SECTION_HEADING_FONT_SIZE + SECTION_HEADING_LINE_GAP;
     let roles: SvgRoleLayout[];
@@ -406,6 +422,13 @@ function charWidthUnits(char: string) {
 
 function estimateTextWidth(value: string, fontSize: number) {
   return Array.from(value).reduce((width, char) => width + charWidthUnits(char) * fontSize, 0);
+}
+
+function previewSectionHeading(section: PreviewSection) {
+  if (section.key === "fabled" || section.key === "traveler") {
+    return section.label;
+  }
+  return `${teamSideLabel(section.key)} · ${section.label}`;
 }
 
 function teamSideLabel(team: TeamKey) {
@@ -637,6 +660,7 @@ function applyEditorCommand(command: string, value?: string, mode: "apply" | "re
     return;
   }
 
+  normalizeAbilityEditorStyles(editor);
   const commandRange = rangeFromTextOffsets(editor, snapshot.start, snapshot.end);
   if (!commandRange) {
     return;
@@ -649,6 +673,7 @@ function applyEditorCommand(command: string, value?: string, mode: "apply" | "re
   }
 
   textNodes.forEach((node) => applyFormatToTextNode(node, command, value, mode, editor));
+  mergeAdjacentStyleWrappers(editor);
   const nextRange = rangeFromTextOffsets(editor, snapshot.start, snapshot.end) ?? commandRange;
   const selection = document.getSelection();
   selection?.removeAllRanges();
@@ -682,12 +707,8 @@ function applyFormatToTextNode(
 
 function isolatedStyleWrapperForTextNode(node: Text, editor: HTMLElement) {
   const parent = parentElement(node);
-  if (
-    parent !== editor &&
-    parent.dataset.abilityStyle === "true" &&
-    parent.childNodes.length === 1
-  ) {
-    return parent;
+  if (parent !== editor && parent.dataset.abilityStyle === "true") {
+    return isolateNodeInStyleWrapper(parent, node);
   }
 
   const wrapper = document.createElement("span");
@@ -695,6 +716,43 @@ function isolatedStyleWrapperForTextNode(node: Text, editor: HTMLElement) {
   parent.insertBefore(wrapper, node);
   wrapper.appendChild(node);
   return wrapper;
+}
+
+function isolateNodeInStyleWrapper(wrapper: HTMLElement, node: Text) {
+  if (wrapper.childNodes.length === 1) {
+    return wrapper;
+  }
+
+  const parent = wrapper.parentNode;
+  const children = Array.from(wrapper.childNodes);
+  const nodeIndex = children.indexOf(node);
+  if (!parent || nodeIndex < 0) {
+    return wrapper;
+  }
+
+  const beforeWrapper = cloneStyleWrapper(wrapper);
+  const selectedWrapper = cloneStyleWrapper(wrapper);
+  const afterWrapper = cloneStyleWrapper(wrapper);
+
+  children.slice(0, nodeIndex).forEach((child) => beforeWrapper.appendChild(child));
+  selectedWrapper.appendChild(node);
+  children.slice(nodeIndex + 1).forEach((child) => afterWrapper.appendChild(child));
+
+  if (beforeWrapper.childNodes.length) {
+    parent.insertBefore(beforeWrapper, wrapper);
+  }
+  parent.insertBefore(selectedWrapper, wrapper);
+  if (afterWrapper.childNodes.length) {
+    parent.insertBefore(afterWrapper, wrapper);
+  }
+  parent.removeChild(wrapper);
+  return selectedWrapper;
+}
+
+function cloneStyleWrapper(wrapper: HTMLElement) {
+  const clone = wrapper.cloneNode(false) as HTMLElement;
+  clone.dataset.abilityStyle = "true";
+  return clone;
 }
 
 function applyStyleCommand(wrapper: HTMLElement, command: string, value?: string) {
@@ -735,6 +793,93 @@ function cleanupStyleWrapper(wrapper: HTMLElement) {
   if (wrapper.getAttribute("style") === "") {
     wrapper.removeAttribute("style");
   }
+}
+
+function normalizeAbilityEditorStyles(editor: HTMLElement) {
+  const normalizedNodes: Node[] = [];
+
+  function collect(node: Node) {
+    if (node instanceof Text) {
+      const text = node.textContent ?? "";
+      if (text) {
+        normalizedNodes.push(styleWrapperFromTextNode(node, editor, text));
+      }
+      return;
+    }
+
+    if (node instanceof HTMLBRElement) {
+      normalizedNodes.push(document.createElement("br"));
+      return;
+    }
+
+    Array.from(node.childNodes).forEach(collect);
+  }
+
+  Array.from(editor.childNodes).forEach(collect);
+  editor.replaceChildren(...normalizedNodes);
+  mergeAdjacentStyleWrappers(editor);
+}
+
+function styleWrapperFromTextNode(node: Text, editor: HTMLElement, text: string) {
+  const wrapper = document.createElement("span");
+  wrapper.dataset.abilityStyle = "true";
+  wrapper.textContent = text;
+  applyStyleSnapshot(wrapper, {
+    bold: textNodeHasBold(node, editor),
+    italic: textNodeHasItalic(node, editor),
+    underline: textNodeHasVisibleUnderline(node, editor),
+    color: textNodeTextColor(node) ?? undefined,
+    backgroundColor: textNodeBackgroundColor(node, editor) ?? undefined,
+  });
+  cleanupStyleWrapper(wrapper);
+  return wrapper;
+}
+
+function applyStyleSnapshot(wrapper: HTMLElement, style: ExportTextStyle) {
+  if (style.bold) {
+    wrapper.style.fontWeight = "900";
+  }
+  if (style.italic) {
+    wrapper.style.fontStyle = "italic";
+  }
+  if (style.underline) {
+    wrapper.style.textDecoration = "underline";
+  }
+  if (style.color) {
+    wrapper.style.color = style.color;
+  }
+  if (style.backgroundColor) {
+    wrapper.style.backgroundColor = style.backgroundColor;
+  }
+}
+
+function mergeAdjacentStyleWrappers(editor: HTMLElement) {
+  let previous: HTMLElement | null = null;
+
+  for (const node of Array.from(editor.childNodes)) {
+    if (!isAbilityStyleWrapper(node)) {
+      previous = null;
+      continue;
+    }
+
+    if (previous && styleWrapperKey(previous) === styleWrapperKey(node)) {
+      while (node.firstChild) {
+        previous.appendChild(node.firstChild);
+      }
+      node.remove();
+      continue;
+    }
+
+    previous = node;
+  }
+}
+
+function isAbilityStyleWrapper(node: Node): node is HTMLElement {
+  return node instanceof HTMLElement && node.dataset.abilityStyle === "true";
+}
+
+function styleWrapperKey(wrapper: HTMLElement) {
+  return wrapper.getAttribute("style") ?? "";
 }
 
 function syncToolbarState(
@@ -1143,6 +1288,13 @@ function textNodeHasUnderline(node: Text, editor: HTMLElement) {
   }
 
   return getComputedStyle(parentElement(node)).textDecorationLine.includes("underline");
+}
+
+function textNodeHasVisibleUnderline(node: Text, editor: HTMLElement) {
+  return (
+    ancestorElements(node, editor).some((element) => elementAppliesUnderline(element)) ||
+    getComputedStyle(parentElement(node)).textDecorationLine.includes("underline")
+  );
 }
 
 function elementClearsBold(element: HTMLElement) {
@@ -2215,6 +2367,13 @@ function safeExportFileName(fileName: string) {
   letter-spacing: 0;
   text-rendering: geometricPrecision;
   user-select: none;
+  -webkit-user-select: none;
+}
+
+.script-svg text {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .svg-script-title {
@@ -2254,6 +2413,7 @@ function safeExportFileName(fileName: string) {
   font-weight: 650;
   outline: none;
   user-select: text;
+  -webkit-user-select: text;
   white-space: normal;
   word-break: break-all;
   transition: background var(--motion-duration-fast) var(--motion-ease-standard);
@@ -2280,6 +2440,7 @@ function safeExportFileName(fileName: string) {
 .role-ability-editor :deep(em),
 .role-ability-editor :deep(u) {
   user-select: text;
+  -webkit-user-select: text;
 }
 
 .svg-role-fallback {

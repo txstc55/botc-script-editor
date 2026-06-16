@@ -161,40 +161,52 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 
 <style scoped>
 .left-rail {
-  display: grid;
-  grid-template-rows: auto minmax(210px, 0.95fr) minmax(150px, 0.75fr) minmax(190px, 1fr);
-  gap: 12px;
+  display: block;
+  height: 100vh;
   min-height: 0;
   padding: 14px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   border-right: 1px solid #e5e5e5;
   border-color: #e5e5e5;
   background: rgba(255, 255, 255, 0.94);
+  scrollbar-width: none;
+  user-select: none;
+  -webkit-user-select: none;
   backdrop-filter: blur(16px);
+}
+
+.left-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.left-rail input,
+.left-rail textarea {
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .rail-row {
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
   min-height: 0;
   gap: 10px;
+  margin-bottom: 12px;
   padding: 12px;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
 }
 
+.rail-row:last-child {
+  margin-bottom: 0;
+}
+
 .script-row {
   grid-template-rows: auto auto auto auto;
   align-content: start;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  scrollbar-width: none;
-}
-
-.script-row::-webkit-scrollbar {
-  display: none;
 }
 
 .row-heading,
@@ -268,7 +280,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 }
 
 .night-order-row {
-  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-rows: auto auto auto;
 }
 
 .night-order-list {
@@ -276,13 +288,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   align-content: start;
   gap: 7px;
   min-height: 0;
-  overflow: auto;
-  padding-right: 2px;
-  scrollbar-width: none;
-}
-
-.night-order-list::-webkit-scrollbar {
-  display: none;
+  overflow: visible;
 }
 
 .night-order-list-item {
@@ -300,11 +306,11 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
     transform var(--motion-duration-base) var(--motion-ease-standard);
 }
 
-.night-order-list-item:hover {
+/*.night-order-list-item:hover {
   border-color: #111111;
   background: #fafafa;
   transform: translateY(-1px);
-}
+}*/
 
 .night-order-image,
 .night-order-fallback {
@@ -392,8 +398,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   align-content: start;
   gap: 9px;
   min-height: 0;
-  overflow: auto;
-  padding-right: 2px;
+  overflow: visible;
 }
 
 .compact-item {
@@ -450,7 +455,7 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
   border-color: #111111;
   background: #fafafa;
   box-shadow: var(--motion-lift-shadow);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .fabled-card-head {
