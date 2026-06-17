@@ -69,7 +69,7 @@ export function usePreviewPanZoom(previewLayout: ComputedRef<SvgPreviewLayout>) 
   }
 
   function handlePreviewPointerDown(event: PointerEvent) {
-    if (event.button !== 1) {
+    if (!shouldStartPan(event)) {
       return;
     }
     event.preventDefault();
@@ -207,6 +207,17 @@ export function usePreviewPanZoom(previewLayout: ComputedRef<SvgPreviewLayout>) 
     handlePreviewPointerMove,
     handlePreviewPointerUp,
   };
+}
+
+function shouldStartPan(event: PointerEvent) {
+  if (event.button === 1) {
+    return true;
+  }
+  if (event.button !== 0) {
+    return false;
+  }
+  const target = event.target;
+  return !(target instanceof Element && target.closest(".role-ability-editor"));
 }
 
 function lerp(start: number, end: number, amount: number) {
