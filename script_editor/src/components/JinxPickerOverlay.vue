@@ -14,6 +14,7 @@ import {
   mergeJinxRecordVariants,
   normalizeJinxRecord,
   saveJinxRecord,
+  writableJinxSource,
   type JinxLibraryEntry,
   type JinxLibrarySource,
   type JinxRecord,
@@ -266,7 +267,7 @@ async function saveCurrentJinx() {
   formError.value = "";
   saveStatus.value = "";
   try {
-    const targetSource = activeEntry.value?.source ?? "custom";
+    const targetSource = writableJinxSource(activeEntry.value?.source ?? "custom");
     const record = await recordForSave(targetSource);
     if (!record) {
       return;

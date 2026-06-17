@@ -12,6 +12,7 @@ import {
   mergeFabledRecordVariants,
   normalizeFabledRecord,
   saveFabledRecord,
+  writableFabledSource,
   type FabledLibraryEntry,
   type FabledLibrarySource,
   type FabledRecord,
@@ -309,7 +310,7 @@ async function saveCurrentFabled() {
   saveStatus.value = "";
   saveError.value = "";
   try {
-    const targetSource = activeEntry.value?.source ?? "custom";
+    const targetSource = writableFabledSource(activeEntry.value?.source ?? "custom");
     const saved = await saveFabledRecord(targetSource, recordForSave(targetSource));
     upsertEntry(targetSource, saved);
     activeEntry.value = {

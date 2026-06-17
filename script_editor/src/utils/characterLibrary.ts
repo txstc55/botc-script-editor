@@ -62,8 +62,11 @@ export const characterTeamFolders: Record<TeamKey, string> = {
 };
 
 export async function loadCharacterLibrary(team: TeamKey) {
+  const customPromise = preferTauriStorage()
+    ? loadCustomCharacterRecordsWithTauri(team)
+    : loadCharacterRecords(`/custom/${characterTeamFolders[team]}`, "custom", team, true);
   const [custom, database] = await Promise.all([
-    loadCharacterRecords(`/custom/${characterTeamFolders[team]}`, "custom", team, true),
+    customPromise,
     loadCharacterRecords(`/characters/${characterTeamFolders[team]}`, "database", team, false),
   ]);
   const customNames = new Set(custom.map((entry) => entry.record.name));
@@ -104,7 +107,12 @@ export async function saveCustomCharacterRecord(team: TeamKey, record: Character
   return saveCharacterRecord(team, "custom", record);
 }
 
+export function writableCharacterSource(source: CharacterLibrarySource): CharacterLibrarySource {
+  return preferTauriStorage() ? "custom" : source;
+}
+
 export async function saveCharacterRecord(team: TeamKey, source: CharacterLibrarySource, record: CharacterRecord) {
+  const writableSource = writableCharacterSource(source);
   const normalized = normalizeCharacterRecord({
     ...record,
     team,
@@ -113,7 +121,7 @@ export async function saveCharacterRecord(team: TeamKey, source: CharacterLibrar
   }, team);
   const body = {
     team,
-    source,
+    source: writableSource,
     fileName: normalized.fileName,
     record: normalized,
   };
@@ -121,20 +129,20 @@ export async function saveCharacterRecord(team: TeamKey, source: CharacterLibrar
   if (preferTauriStorage()) {
     const tauriSaved = await saveCharacterRecordWithTauri(body);
     if (tauriSaved) {
-      invalidateCharacterCache(team, source);
+      invalidateCharacterCache(team, writableSource);
       return tauriSaved;
     }
   }
 
   const viteSaved = await saveCharacterRecordWithVite(body);
   if (viteSaved) {
-    invalidateCharacterCache(team, source);
+    invalidateCharacterCache(team, writableSource);
     return viteSaved;
   }
 
   const tauriSaved = await saveCharacterRecordWithTauri(body);
   if (tauriSaved) {
-    invalidateCharacterCache(team, source);
+    invalidateCharacterCache(team, writableSource);
     return tauriSaved;
   }
 
@@ -321,6 +329,23 @@ async function loadCharacterRecords(
   return records
     .filter((entry): entry is CharacterLibraryEntry => Boolean(entry))
     .sort(sortEntries);
+}
+
+async function loadCustomCharacterRecordsWithTauri(team: TeamKey): Promise<CharacterLibraryEntry[]> {
+  try {
+    const { invoke } = await import("@tauri-apps/api/core");
+    const records = await invoke<unknown[]>("list_custom_character_records", { team });
+    return records
+      .map((record) => ({
+        source: "custom" as const,
+        loaded: true,
+        record: normalizeCharacterRecord(record, team),
+      }))
+      .sort(sortEntries);
+  } catch (error) {
+    console.warn("Tauri 读取自定义角色失败。", error);
+    return [];
+  }
 }
 
 function invalidateCharacterCache(team: TeamKey, source: CharacterLibrarySource) {

@@ -46,8 +46,11 @@ interface RawRecord {
 const databaseEntryCache = new Map<string, JinxLibraryEntry[]>();
 
 export async function loadJinxLibrary() {
+  const customPromise = preferTauriStorage()
+    ? loadCustomJinxRecordsWithTauri()
+    : loadJinxRecords("/custom/jinxes", "custom", false);
   const [custom, database] = await Promise.all([
-    loadJinxRecords("/custom/jinxes", "custom", false),
+    customPromise,
     loadJinxRecords("/jinxes", "database", false),
   ]);
   const customNames = new Set(custom.map((entry) => entry.record.name));
@@ -82,13 +85,14 @@ export async function loadJinxEntryRecord(entry: JinxLibraryEntry) {
 }
 
 export async function saveJinxRecord(source: JinxLibrarySource, record: JinxRecord) {
+  const writableSource = writableJinxSource(source);
   const normalized = normalizeJinxRecord({
     ...record,
     fileName: record.fileName || safeJinxFileName(record.name),
     totalOccurrenceCount: Math.max(1, record.totalOccurrenceCount || 1),
   });
   const body = {
-    source,
+    source: writableSource,
     fileName: normalized.fileName,
     record: jinxRecordForStorage(normalized),
   };
@@ -114,6 +118,10 @@ export async function saveJinxRecord(source: JinxLibrarySource, record: JinxReco
   }
 
   throw new Error("无法保存相克规则。");
+}
+
+export function writableJinxSource(source: JinxLibrarySource): JinxLibrarySource {
+  return preferTauriStorage() ? "custom" : source;
 }
 
 export async function deleteJinxRecord(entry: JinxLibraryEntry) {
@@ -447,6 +455,23 @@ async function loadJinxRecords(
   return records
     .filter((entry): entry is JinxLibraryEntry => Boolean(entry))
     .sort(sortEntries);
+}
+
+async function loadCustomJinxRecordsWithTauri(): Promise<JinxLibraryEntry[]> {
+  try {
+    const { invoke } = await import("@tauri-apps/api/core");
+    const records = await invoke<unknown[]>("list_custom_jinx_records");
+    return records
+      .map((record) => ({
+        source: "custom" as const,
+        loaded: true,
+        record: normalizeJinxRecord(record),
+      }))
+      .sort(sortEntries);
+  } catch (error) {
+    console.warn("Tauri 读取自定义相克规则失败。", error);
+    return [];
+  }
 }
 
 function invalidateJinxCache() {

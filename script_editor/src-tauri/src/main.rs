@@ -7,6 +7,7 @@ use std::{
   fs,
   path::{Path, PathBuf},
 };
+use tauri::{AppHandle, Manager};
 
 #[tauri::command]
 async fn fetch_image_data_url(url: String) -> Result<String, String> {
@@ -54,16 +55,38 @@ async fn fetch_image_data_url(url: String) -> Result<String, String> {
 }
 
 #[tauri::command]
-fn save_custom_fabled_character(file_name: Option<String>, record_json: String) -> Result<Value, String> {
-  save_fabled_character_to_source("custom", file_name, record_json)
+fn list_custom_fabled_records(app: AppHandle) -> Result<Value, String> {
+  list_records_in_dir(&app_custom_fabled_dir(&app)?, read_fabled_record)
 }
 
 #[tauri::command]
-fn save_fabled_character(source: String, file_name: Option<String>, record_json: String) -> Result<Value, String> {
-  save_fabled_character_to_source(&source, file_name, record_json)
+fn list_custom_character_records(app: AppHandle, team: String) -> Result<Value, String> {
+  let team = normalize_character_team(&team)?;
+  list_records_in_dir(&app_custom_character_dir(&app, &team)?, read_character_record)
+}
+
+#[tauri::command]
+fn list_custom_jinx_records(app: AppHandle) -> Result<Value, String> {
+  list_records_in_dir(&app_custom_jinx_dir(&app)?, read_jinx_record)
+}
+
+#[tauri::command]
+fn save_custom_fabled_character(app: AppHandle, file_name: Option<String>, record_json: String) -> Result<Value, String> {
+  save_fabled_character_to_source(Some(&app), "custom", file_name, record_json)
+}
+
+#[tauri::command]
+fn save_fabled_character(
+  app: AppHandle,
+  source: String,
+  file_name: Option<String>,
+  record_json: String,
+) -> Result<Value, String> {
+  save_fabled_character_to_source(Some(&app), &source, file_name, record_json)
 }
 
 fn save_fabled_character_to_source(
+  app: Option<&AppHandle>,
   source: &str,
   file_name: Option<String>,
   record_json: String,
@@ -77,7 +100,7 @@ fn save_fabled_character_to_source(
   }
 
   let file_name = safe_custom_fabled_file_name(file_name.as_deref().unwrap_or(&name));
-  let directories = fabled_dirs(&source, true)?;
+  let directories = fabled_dirs(app, &source, true)?;
   let primary_directory = directories
     .first()
     .ok_or_else(|| "Failed to locate custom fabled folder.".to_string())?;
@@ -106,7 +129,12 @@ fn save_fabled_character_to_source(
 }
 
 #[tauri::command]
-fn delete_fabled_character(source: String, file_name: Option<String>, name: String) -> Result<(), String> {
+fn delete_fabled_character(
+  app: AppHandle,
+  source: String,
+  file_name: Option<String>,
+  name: String,
+) -> Result<(), String> {
   let source = normalize_source(&source)?;
   let file_name = safe_custom_fabled_file_name(file_name.as_deref().unwrap_or(&name));
   let name = if name.trim().is_empty() {
@@ -114,7 +142,7 @@ fn delete_fabled_character(source: String, file_name: Option<String>, name: Stri
   } else {
     name
   };
-  let directories = fabled_dirs(&source, false)?;
+  let directories = fabled_dirs(Some(&app), &source, false)?;
   let mut deleted_anywhere = false;
   let mut removed_from_index = false;
 
@@ -140,21 +168,28 @@ fn delete_fabled_character(source: String, file_name: Option<String>, name: Stri
 }
 
 #[tauri::command]
-fn save_custom_character(team: String, file_name: Option<String>, record_json: String) -> Result<Value, String> {
-  save_character_to_source(team, "custom", file_name, record_json)
+fn save_custom_character(
+  app: AppHandle,
+  team: String,
+  file_name: Option<String>,
+  record_json: String,
+) -> Result<Value, String> {
+  save_character_to_source(Some(&app), team, "custom", file_name, record_json)
 }
 
 #[tauri::command]
 fn save_character(
+  app: AppHandle,
   team: String,
   source: String,
   file_name: Option<String>,
   record_json: String,
 ) -> Result<Value, String> {
-  save_character_to_source(team, &source, file_name, record_json)
+  save_character_to_source(Some(&app), team, &source, file_name, record_json)
 }
 
 fn save_character_to_source(
+  app: Option<&AppHandle>,
   team: String,
   source: &str,
   file_name: Option<String>,
@@ -170,7 +205,7 @@ fn save_character_to_source(
   }
 
   let file_name = safe_custom_character_file_name(file_name.as_deref().unwrap_or(&name));
-  let directories = character_dirs(&team, &source, true)?;
+  let directories = character_dirs(app, &team, &source, true)?;
   let primary_directory = directories
     .first()
     .ok_or_else(|| "Failed to locate custom character folder.".to_string())?;
@@ -199,7 +234,13 @@ fn save_character_to_source(
 }
 
 #[tauri::command]
-fn delete_character(team: String, source: String, file_name: Option<String>, name: String) -> Result<(), String> {
+fn delete_character(
+  app: AppHandle,
+  team: String,
+  source: String,
+  file_name: Option<String>,
+  name: String,
+) -> Result<(), String> {
   let team = normalize_character_team(&team)?;
   let source = normalize_source(&source)?;
   let file_name = safe_custom_character_file_name(file_name.as_deref().unwrap_or(&name));
@@ -208,7 +249,7 @@ fn delete_character(team: String, source: String, file_name: Option<String>, nam
   } else {
     name
   };
-  let directories = character_dirs(&team, &source, false)?;
+  let directories = character_dirs(Some(&app), &team, &source, false)?;
   let mut deleted_anywhere = false;
   let mut removed_from_index = false;
 
@@ -234,11 +275,12 @@ fn delete_character(team: String, source: String, file_name: Option<String>, nam
 }
 
 #[tauri::command]
-fn save_jinx(source: String, file_name: Option<String>, record_json: String) -> Result<Value, String> {
-  save_jinx_to_source(&source, file_name, record_json)
+fn save_jinx(app: AppHandle, source: String, file_name: Option<String>, record_json: String) -> Result<Value, String> {
+  save_jinx_to_source(Some(&app), &source, file_name, record_json)
 }
 
 fn save_jinx_to_source(
+  app: Option<&AppHandle>,
   source: &str,
   file_name: Option<String>,
   record_json: String,
@@ -252,7 +294,7 @@ fn save_jinx_to_source(
   }
 
   let file_name = safe_custom_jinx_file_name(file_name.as_deref().unwrap_or(&name));
-  let directories = jinx_dirs(&source, true)?;
+  let directories = jinx_dirs(app, &source, true)?;
   let primary_directory = directories
     .first()
     .ok_or_else(|| "Failed to locate custom jinx folder.".to_string())?;
@@ -272,7 +314,7 @@ fn save_jinx_to_source(
 }
 
 #[tauri::command]
-fn delete_jinx(source: String, file_name: Option<String>, name: String) -> Result<(), String> {
+fn delete_jinx(app: AppHandle, source: String, file_name: Option<String>, name: String) -> Result<(), String> {
   let source = normalize_source(&source)?;
   let file_name = safe_custom_jinx_file_name(file_name.as_deref().unwrap_or(&name));
   let name = if name.trim().is_empty() {
@@ -280,7 +322,7 @@ fn delete_jinx(source: String, file_name: Option<String>, name: String) -> Resul
   } else {
     name
   };
-  let directories = jinx_dirs(&source, false)?;
+  let directories = jinx_dirs(Some(&app), &source, false)?;
   let mut deleted_anywhere = false;
   let mut removed_from_index = false;
 
@@ -385,6 +427,10 @@ fn upsert_fabled_index_item(directory: &Path, record: &Value, file_name: &str) -
 }
 
 fn remove_fabled_index_item(directory: &Path, file_name: &str, name: &str) -> Result<bool, String> {
+  if !directory.exists() {
+    return Ok(false);
+  }
+
   let mut index = read_fabled_index(directory);
   let original_count = index
     .get("characters")
@@ -491,6 +537,10 @@ fn upsert_jinx_index_item(directory: &Path, record: &Value, file_name: &str) -> 
 }
 
 fn remove_character_index_item(directory: &Path, team: &str, file_name: &str, name: &str) -> Result<bool, String> {
+  if !directory.exists() {
+    return Ok(false);
+  }
+
   let mut index = read_character_index(directory, team);
   let original_count = index
     .get("characters")
@@ -519,6 +569,10 @@ fn remove_character_index_item(directory: &Path, team: &str, file_name: &str, na
 }
 
 fn remove_jinx_index_item(directory: &Path, file_name: &str, name: &str) -> Result<bool, String> {
+  if !directory.exists() {
+    return Ok(false);
+  }
+
   let mut index = read_jinx_index(directory);
   let original_count = index
     .get("jinxes")
@@ -567,7 +621,11 @@ fn write_jinx_index(directory: &Path, index: &Value) -> Result<(), String> {
     .map_err(|error| format!("Failed to write jinx index: {error}"))
 }
 
-fn fabled_dirs(source: &str, allow_missing: bool) -> Result<Vec<PathBuf>, String> {
+fn fabled_dirs(app: Option<&AppHandle>, source: &str, allow_missing: bool) -> Result<Vec<PathBuf>, String> {
+  if let Some(app) = app {
+    return Ok(vec![app_custom_fabled_dir(app)?]);
+  }
+
   let path_segment = if source == "database" {
     "characters/fabled"
   } else {
@@ -594,7 +652,16 @@ fn fabled_dirs(source: &str, allow_missing: bool) -> Result<Vec<PathBuf>, String
   }
 }
 
-fn character_dirs(team: &str, source: &str, allow_missing: bool) -> Result<Vec<PathBuf>, String> {
+fn character_dirs(
+  app: Option<&AppHandle>,
+  team: &str,
+  source: &str,
+  allow_missing: bool,
+) -> Result<Vec<PathBuf>, String> {
+  if let Some(app) = app {
+    return Ok(vec![app_custom_character_dir(app, team)?]);
+  }
+
   let folder = character_folder(team)?;
   let path_segment = if source == "database" {
     format!("characters/{folder}")
@@ -622,7 +689,11 @@ fn character_dirs(team: &str, source: &str, allow_missing: bool) -> Result<Vec<P
   }
 }
 
-fn jinx_dirs(source: &str, allow_missing: bool) -> Result<Vec<PathBuf>, String> {
+fn jinx_dirs(app: Option<&AppHandle>, source: &str, allow_missing: bool) -> Result<Vec<PathBuf>, String> {
+  if let Some(app) = app {
+    return Ok(vec![app_custom_jinx_dir(app)?]);
+  }
+
   let path_segment = if source == "database" {
     "jinxes".to_string()
   } else {
@@ -647,6 +718,53 @@ fn jinx_dirs(source: &str, allow_missing: bool) -> Result<Vec<PathBuf>, String> 
   } else {
     Ok(directories)
   }
+}
+
+fn app_custom_root(app: &AppHandle) -> Result<PathBuf, String> {
+  app
+    .path()
+    .app_data_dir()
+    .map(|path| path.join("custom"))
+    .map_err(|error| format!("Failed to locate app data folder: {error}"))
+}
+
+fn app_custom_fabled_dir(app: &AppHandle) -> Result<PathBuf, String> {
+  Ok(app_custom_root(app)?.join("fabled"))
+}
+
+fn app_custom_character_dir(app: &AppHandle, team: &str) -> Result<PathBuf, String> {
+  Ok(app_custom_root(app)?.join(character_folder(team)?))
+}
+
+fn app_custom_jinx_dir(app: &AppHandle) -> Result<PathBuf, String> {
+  Ok(app_custom_root(app)?.join("jinxes"))
+}
+
+fn list_records_in_dir(directory: &Path, reader: fn(&PathBuf) -> Option<Value>) -> Result<Value, String> {
+  if !directory.exists() {
+    return Ok(Value::Array(Vec::new()));
+  }
+
+  let entries = fs::read_dir(directory)
+    .map_err(|error| format!("Failed to read custom database folder: {error}"))?;
+  let mut records = Vec::new();
+
+  for entry in entries {
+    let path = entry
+      .map_err(|error| format!("Failed to read custom database entry: {error}"))?
+      .path();
+    if path.file_name().and_then(|value| value.to_str()) == Some("index.json") {
+      continue;
+    }
+    if path.extension().and_then(|value| value.to_str()) != Some("json") {
+      continue;
+    }
+    if let Some(record) = reader(&path) {
+      records.push(record);
+    }
+  }
+
+  Ok(Value::Array(records))
 }
 
 fn candidate_project_roots() -> Vec<PathBuf> {
@@ -892,6 +1010,9 @@ fn main() {
   tauri::Builder::default()
     .invoke_handler(tauri::generate_handler![
       fetch_image_data_url,
+      list_custom_fabled_records,
+      list_custom_character_records,
+      list_custom_jinx_records,
       save_custom_fabled_character,
       save_fabled_character,
       delete_fabled_character,

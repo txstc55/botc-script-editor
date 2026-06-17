@@ -13,6 +13,7 @@ import {
   mergeCharacterRecordVariants,
   normalizeCharacterRecord,
   saveCharacterRecord,
+  writableCharacterSource,
   type CharacterLibraryEntry,
   type CharacterLibrarySource,
   type CharacterRecord,
@@ -349,7 +350,7 @@ async function saveCurrentCharacter() {
   saveStatus.value = "";
   saveError.value = "";
   try {
-    const targetSource = activeEntry.value?.source ?? "custom";
+    const targetSource = writableCharacterSource(activeEntry.value?.source ?? "custom");
     const saved = await saveCharacterRecord(props.team, targetSource, recordForSave(targetSource));
     upsertEntry(targetSource, saved);
     activeEntry.value = {

@@ -51,8 +51,11 @@ interface RawRecord {
 }
 
 export async function loadFabledLibrary() {
+  const customPromise = preferTauriStorage()
+    ? loadCustomFabledRecordsWithTauri()
+    : loadFabledRecords("/custom/fabled", "custom");
   const [custom, database] = await Promise.all([
-    loadFabledRecords("/custom/fabled", "custom"),
+    customPromise,
     loadFabledRecords("/characters/fabled", "database"),
   ]);
   const customNames = new Set(custom.map((entry) => entry.record.name));
@@ -67,14 +70,19 @@ export async function saveCustomFabledRecord(record: FabledRecord) {
   return saveFabledRecord("custom", record);
 }
 
+export function writableFabledSource(source: FabledLibrarySource): FabledLibrarySource {
+  return preferTauriStorage() ? "custom" : source;
+}
+
 export async function saveFabledRecord(source: FabledLibrarySource, record: FabledRecord) {
+  const writableSource = writableFabledSource(source);
   const normalized = normalizeFabledRecord({
     ...record,
     fileName: record.fileName || safeCustomFabledFileName(record.name),
     totalOccurrenceCount: Math.max(1, record.totalOccurrenceCount || 1),
   });
   const body = {
-    source,
+    source: writableSource,
     fileName: normalized.fileName,
     record: normalized,
   };
@@ -252,6 +260,25 @@ async function loadFabledRecords(basePath: string, source: FabledLibrarySource):
       right.record.totalOccurrenceCount - left.record.totalOccurrenceCount ||
       left.record.name.localeCompare(right.record.name, "zh-Hans-CN"),
     );
+}
+
+async function loadCustomFabledRecordsWithTauri(): Promise<FabledLibraryEntry[]> {
+  try {
+    const { invoke } = await import("@tauri-apps/api/core");
+    const records = await invoke<unknown[]>("list_custom_fabled_records");
+    return records
+      .map((record) => ({
+        source: "custom" as const,
+        record: normalizeFabledRecord(record),
+      }))
+      .sort((left, right) =>
+        right.record.totalOccurrenceCount - left.record.totalOccurrenceCount ||
+        left.record.name.localeCompare(right.record.name, "zh-Hans-CN"),
+      );
+  } catch (error) {
+    console.warn("Tauri 读取自定义传奇角色失败。", error);
+    return [];
+  }
 }
 
 async function fetchFabledIndex(url: string) {
