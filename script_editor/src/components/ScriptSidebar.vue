@@ -20,6 +20,7 @@ const emit = defineEmits<{
   "add-jinx": [];
   "edit-jinx": [id: string];
   "remove-jinx": [id: string];
+  "set-jinx-included": [id: string, included: boolean];
 }>();
 
 const firstNightOrderItems = computed(() => buildFirstNightOrderItems(props.script));
@@ -43,11 +44,11 @@ function updateBuiltInFirstNightEnabled(key: BuiltInFirstNightOrderKey, event: E
 function updateJinxIncluded(jinx: JinxDraft, event: Event) {
   const input = event.target as HTMLInputElement;
   if (jinxHasUnavailableTargets(jinx)) {
-    jinx.included = false;
+    emit("set-jinx-included", jinx.id, false);
     input.checked = false;
     return;
   }
-  jinx.included = input.checked;
+  emit("set-jinx-included", jinx.id, input.checked);
 }
 
 function editJinx(jinx: JinxDraft) {

@@ -278,6 +278,7 @@ async function waitForPreviewRender() {
       @add-jinx="openJinxPicker"
       @edit-jinx="openJinxEditor"
       @remove-jinx="editor.removeJinx"
+      @set-jinx-included="editor.setJinxIncluded"
     />
 
     <ScriptPreview
