@@ -825,6 +825,10 @@ def text_is_explained(text: str, known_texts: list[str]) -> bool:
     return True
   return any(
     normalized in normalized_ocr_text(known)
+    or (
+      len(normalized_ocr_text(known)) >= 3
+      and normalized_ocr_text(known) in normalized
+    )
     or ngram_coverage(text, known) >= 0.6
     or SequenceMatcher(None, normalized, normalized_ocr_text(known)).ratio() >= 0.7
     for known in known_texts
@@ -832,7 +836,11 @@ def text_is_explained(text: str, known_texts: list[str]) -> bool:
   )
 
 
-def review_item(folder: Path, ocr_binary: Path) -> None:
+def review_item(
+  folder: Path,
+  ocr_binary: Path,
+  review_overrides: dict[str, Any] | None = None,
+) -> None:
   metadata_path = folder / "核对状态.json"
   json_path = folder / "整理后.json"
   if not metadata_path.exists():
@@ -992,12 +1000,46 @@ def review_item(folder: Path, ocr_binary: Path) -> None:
   missing_rule_data = bool(rule_markers and not any(
     entry["team"] == "fabled" for entry in required
   ) and not jinxes and not notes)
+  raw_issues = {
+    "ability_mismatches": ability_mismatches,
+    "traveler_mismatches": traveler_mismatches,
+    "jinx_mismatches": jinx_mismatches,
+    "note_mismatches": note_mismatches,
+    "unexplained_bottom_lines": unexplained_bottom_lines,
+  }
+  manual = (review_overrides or {}).get(str(metadata.get("opus_id", "")), {})
+  if not isinstance(manual, dict):
+    raise ValueError("人工核对表条目必须是对象")
+  verified = {
+    "ability_mismatches": set(manual.get("verified_abilities", [])),
+    "traveler_mismatches": set(manual.get("verified_travelers", [])),
+    "jinx_mismatches": set(manual.get("verified_jinxes", [])),
+    "note_mismatches": set(manual.get("verified_notes", [])),
+    "unexplained_bottom_lines": set(manual.get("verified_bottom_lines", [])),
+  }
+  ability_mismatches = [value for value in ability_mismatches if value not in verified["ability_mismatches"]]
+  traveler_mismatches = [value for value in traveler_mismatches if value not in verified["traveler_mismatches"]]
+  jinx_mismatches = [value for value in jinx_mismatches if value not in verified["jinx_mismatches"]]
+  note_mismatches = [value for value in note_mismatches if value not in verified["note_mismatches"]]
+  unexplained_bottom_lines = [
+    value for value in unexplained_bottom_lines
+    if value not in verified["unexplained_bottom_lines"]
+  ]
+  has_manual_verification = any(
+    set(values) & verified[key] for key, values in raw_issues.items()
+  )
   needs_manual_review = bool(
     missing or ability_mismatches or traveler_mismatches or jinx_mismatches or note_mismatches or
     unexplained_bottom_lines or missing_rule_data or unexpected_characters or missing_jinx_rule_count
   )
   metadata.update({
-    "review_status": "needs_manual_review" if needs_manual_review else "ocr_content_match",
+    "review_status": (
+      "needs_manual_review" if needs_manual_review
+      else "manual_content_match" if has_manual_verification
+      else "ocr_content_match"
+    ),
+    "manual_verification": manual if has_manual_verification else {},
+    "ocr_raw_issues": raw_issues,
     "ocr_reference_image": image.name,
     "ocr_character_matches": score,
     "ocr_required_character_count": len(required_names),
@@ -1178,6 +1220,7 @@ def prepare_and_review(
   refresh: bool,
   refresh_sources: bool,
   ocr_binary: Path | None,
+  review_overrides: dict[str, Any],
 ) -> tuple[str, str]:
   try:
     folder = prepare_item(
@@ -1187,17 +1230,21 @@ def prepare_and_review(
       refresh_sources=refresh_sources,
     )
     if ocr_binary:
-      review_item(folder, ocr_binary)
+      review_item(folder, ocr_binary, review_overrides)
     return item.script_name, ""
   except Exception as error:
     return item.script_name, str(error)
 
 
-def review_existing_folder(folder: Path, ocr_binary: Path) -> tuple[str, str]:
+def review_existing_folder(
+  folder: Path,
+  ocr_binary: Path,
+  review_overrides: dict[str, Any],
+) -> tuple[str, str]:
   try:
     metadata = json.loads((folder / "核对状态.json").read_text(encoding="utf-8"))
     sync_local_artifacts(folder, metadata)
-    review_item(folder, ocr_binary)
+    review_item(folder, ocr_binary, review_overrides)
     return folder.name, ""
   except Exception as error:
     return folder.name, str(error)
@@ -1349,11 +1396,22 @@ def parse_args() -> argparse.Namespace:
     type=Path,
     default=Path("bilibili_board_overrides.json"),
   )
+  parser.add_argument(
+    "--review-overrides",
+    type=Path,
+    default=Path("bilibili_review_overrides.json"),
+  )
   return parser.parse_args()
 
 
 def main() -> None:
   args = parse_args()
+  review_overrides = (
+    json.loads(args.review_overrides.read_text(encoding="utf-8"))
+    if args.review_overrides.exists() else {}
+  )
+  if not isinstance(review_overrides, dict):
+    raise ValueError("人工核对表必须是 opus id 到核对记录的对象")
   catalog_path = args.output / "剧本清单.json"
   local_scripts = load_local_scripts(args.json_root)
   if args.reuse_catalog and catalog_path.exists():
@@ -1373,7 +1431,10 @@ def main() -> None:
     ocr_binary = build_ocr_tool(args.output)
     folders = sorted(path.parent for path in (args.output / "剧本").glob("*/核对状态.json"))
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
-      futures = [executor.submit(review_existing_folder, folder, ocr_binary) for folder in folders]
+      futures = [
+        executor.submit(review_existing_folder, folder, ocr_binary, review_overrides)
+        for folder in folders
+      ]
       for index, future in enumerate(concurrent.futures.as_completed(futures), start=1):
         name, error = future.result()
         if error:
@@ -1411,6 +1472,7 @@ def main() -> None:
         args.refresh,
         args.refresh_sources,
         ocr_binary,
+        review_overrides,
       )
       for item in selected
     ]

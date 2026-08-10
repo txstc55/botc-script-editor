@@ -16,6 +16,7 @@ from audit_bilibili_scripts import (
   is_script_link,
   match_known_character_name,
   sync_catalog_local_artifacts,
+  text_is_explained,
 )
 
 
@@ -82,6 +83,9 @@ class CatalogLinkTest(unittest.TestCase):
       _, _, jinxes, _ = expected_script_entries(path)
 
     self.assertEqual(jinxes, [{"name": "甲&乙", "team": "jinx", "ability": "相克原文"}])
+
+  def test_known_chinese_name_explains_bilingual_heading(self) -> None:
+    self.assertTrue(text_is_explained("诡诈杰克 Knaves", ["诡诈杰克"]))
 
 
 if __name__ == "__main__":
