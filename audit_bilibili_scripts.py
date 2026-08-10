@@ -716,6 +716,8 @@ def known_character_names() -> set[str]:
 
 def match_known_character_name(value: Any, known_names: set[str]) -> str:
   text = clean_space(value)
+  if normalized_ocr_text(text) in {"疯狂", "中毒", "醉酒", "中毒醉酒", "可能", "代表非首个夜晚"}:
+    return ""
   if text in known_names:
     return text
   normalized = normalized_ocr_text(text)

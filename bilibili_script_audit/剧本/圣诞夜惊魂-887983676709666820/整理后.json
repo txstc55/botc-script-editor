@@ -1,0 +1,541 @@
+[
+  {
+    "id": "_meta",
+    "name": "圣诞夜惊魂v3.2",
+    "author": "钟楼剧本博物馆",
+    "logo": "https://www.helloimg.com/i/2024/12/24/676993d7028ba.png",
+    "townsfolkName": "镇民",
+    "state": [
+      {
+        "stateName": "利维坦&旅店老板",
+        "stateDescription": "如果利维坦发起的提名中被处决的玩家在前一晚曾被旅店老板成功保护，那么那名玩家不会死亡。"
+      },
+      {
+        "stateName": "利维坦&镇长",
+        "stateDescription": "如果利维坦在场，镇长存活且第五天没有处决发生，则善良阵营获胜。"
+      },
+      {
+        "stateName": "利维坦&帽匠",
+        "stateDescription": "如果帽匠在第五个白天或之后死亡，恶魔不能选择变成利维坦。"
+      },
+      {
+        "stateName": "利维坦&怪盗",
+        "stateDescription": "在第五个白天之后，怪盗无法获得利维坦的能力。"
+      },
+      {
+        "stateName": "人质先生&帽匠",
+        "stateDescription": "如果帽匠死亡后，其他恶魔选择成为人质先生，他会变成恶魔伪装中的一个镇民角色，并且“是恶魔”。"
+      },
+      {
+        "stateName": "人质先生/怪盗&莽夫",
+        "stateDescription": "建议相克规则：初始的邪恶玩家不会因获得的莽夫能力转变为善良阵营。"
+      },
+      {
+        "stateName": "卡扎力&神秘学家",
+        "stateDescription": "相克规则：在卡扎力选择完爪牙后，如果在场外来者数量少于基础配置，则当作因神秘学家的能力而减少了外来者。"
+      },
+      {
+        "stateName": "卡扎力&莽夫",
+        "stateDescription": "相克规则：卡扎力可以把莽夫转变成邪恶的爪牙。"
+      }
+    ],
+    "notes": [
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
+    "ability": "使用灯神的相克规则。所有人都会知道其内容。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20003_107",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "灯神",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
+    "name": "贵族",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
+    "id": "noblebutton",
+    "official_id": "noble",
+    "edition": "custom",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
+    "otherNightReminder": "",
+    "setup": 0,
+    "reminders": [
+      "被得知"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 18,
+    "otherNight": 0,
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
+    "name": "舞蛇人",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+    "id": "snake_charmerbutton",
+    "official_id": "snake_charmer",
+    "edition": "custom",
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "setup": 0,
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 15,
+    "otherNight": 5,
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/balloonist.png",
+    "name": "气球驾驶员",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1 外来者]",
+    "id": "balloonistbutton",
+    "official_id": "balloonist",
+    "edition": "custom",
+    "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
+    "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员得知过的玩家属于不同的角色类型。",
+    "setup": 1,
+    "reminders": [
+      "得知镇民",
+      "得知外来者",
+      "得知爪牙",
+      "得知恶魔"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 19,
+    "otherNight": 16
+  },
+  {
+    "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
+    "edition": "custom",
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……",
+    "id": "dreamerButton",
+    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "name": "筑梦师",
+    "otherNight": 14.5,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "townsfolk",
+    "firstNight": 16.5
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/innkeeper.png",
+    "name": "旅店老板",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择两名玩家：他们当晚不会死亡，但其中一人会醉酒到下个黄昏。",
+    "id": "innkeeperbutton",
+    "official_id": "innkeeper",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "让旅店老板选择两名玩家。标记这两名玩家不会死亡，并标记其中一人醉酒。",
+    "setup": 0,
+    "reminders": [
+      "不会死亡",
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 3,
+    "flavor": ""
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
+    "name": "赌徒",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+    "id": "gamblerbu222tton",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
+    "setup": 0,
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 8,
+    "flavor": "正面，我赢。 反面，你输。"
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lycanthrope.png",
+    "name": "半兽人",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名存活玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。会有一名善良玩家始终被当作邪恶阵营。",
+    "id": "lycanthropebutton",
+    "official_id": "lycanthrope",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "唤醒半兽人，让他选择一名玩家。如果该玩家是善良玩家，该玩家死亡，且当晚恶魔不会造成死亡。",
+    "setup": 0,
+    "reminders": [
+      "失足",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 9,
+    "flavor": ""
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1699696080_197011_8705.png",
+    "name": "神秘学家",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以私下询问说书人并得知一条正确信息，如果因你的能力导致减少了一名外来者，你获得的信息会是错误的。[-1 或 -0 外来者]",
+    "id": "occultistbutton",
+    "official_id": "occultist",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 1,
+    "reminders": [
+      "错误"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 0
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gossip.png",
+    "name": "造谣者",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。",
+    "id": "gossipbutton",
+    "official_id": "gossip",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "如果白天的声明为真，会有一名玩家死亡，并由说书人来选择一名玩家，标记该玩家死亡。",
+    "setup": 0,
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 13,
+    "flavor": "巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。巴拉。"
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+    "name": "守夜人",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
+    "id": "nightwatchmanbutton",
+    "official_id": "nightwatchman",
+    "edition": "custom",
+    "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+    "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+    "setup": 0,
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 20,
+    "otherNight": 17,
+    "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window..."
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+    "name": "侍臣",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+    "id": "courtierbutton",
+    "official_id": "courtier",
+    "edition": "custom",
+    "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+    "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+    "setup": 0,
+    "reminders": [
+      "失去能力",
+      "醉酒1",
+      "醉酒2",
+      "醉酒3"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 14,
+    "otherNight": 4,
+    "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。"
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "name": "食人族",
+    "team": "townsfolk",
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "id": "cannibalbutton",
+    "official_id": "cannibal",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "reminders": [
+      "中毒",
+      "饱餐"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mayor.png",
+    "name": "镇长",
+    "team": "townsfolk",
+    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。",
+    "id": "mayorbutton",
+    "official_id": "mayor",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 0,
+    "flavor": ""
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
+    "name": "修补匠",
+    "team": "outsider",
+    "ability": "你随时可能死亡。",
+    "id": "tinkerbutton",
+    "official_id": "tinker",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
+    "setup": 0,
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 14,
+    "flavor": ""
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/hatter.png",
+    "name": "帽匠",
+    "team": "outsider",
+    "ability": "如果你死亡，当晚爪牙和恶魔玩家可以选择变成新的爪牙和恶魔角色。",
+    "id": "hatterbutton",
+    "official_id": "hatter",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "如果帽匠死于白天，（建议分别）唤醒恶魔和爪牙并让他们选择是否改变角色。如果帽匠死于夜晚，则在当前玩家行动结束后立即开始茶会。",
+    "setup": 0,
+    "reminders": [
+      "今晚茶会"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 2,
+    "flavor": ""
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "name": "酒鬼",
+    "team": "outsider",
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "id": "drunkbutton",
+    "official_id": "drunk",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 1,
+    "reminders": [],
+    "remindersGlobal": [
+      "是酒鬼"
+    ],
+    "firstNight": 0,
+    "otherNight": 0,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goon.png",
+    "name": "莽夫",
+    "team": "outsider",
+    "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。",
+    "id": "goonbutton",
+    "official_id": "goon",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "reminders": [
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 0,
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。"
+  },
+  {
+    "image": "https://www.helloimg.com/i/2024/12/24/676993d602ed7.png",
+    "name": "伪证天才",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一个角色：有玩家可能被欺骗得知该角色的能力触发了。",
+    "id": "perjury_g1eniusbutton",
+    "official_id": "perjury_genius",
+    "edition": "custom",
+    "firstNightReminder": "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗善良玩家。",
+    "otherNightReminder": "唤醒伪证天才，让他选择一个角色，根据角色合理地欺骗善良玩家。",
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "firstNight": 8.1,
+    "otherNight": 1
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
+    "name": "刺客",
+    "team": "minion",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
+    "id": "assassinbutton",
+    "official_id": "assassin",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
+    "setup": 0,
+    "reminders": [
+      "失去能力",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 12,
+    "flavor": ""
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
+    "name": "寡妇",
+    "team": "minion",
+    "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
+    "id": "widowbutton",
+    "official_id": "widow",
+    "edition": "custom",
+    "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
+    "otherNightReminder": "",
+    "setup": 0,
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [
+      "被知晓"
+    ],
+    "firstNight": 13,
+    "otherNight": 0,
+    "flavor": ""
+  },
+  {
+    "image": "https://www.helloimg.com/i/2024/12/24/676993d5cae57.png",
+    "name": "怪盗",
+    "team": "minion",
+    "ability": "每个夜晚，你可以选择一个角色：如果该角色不在场，你获得该角色的能力直到下次选择。如果因此获得了恶魔的能力，所有恶魔玩家不会因其自身能力而被唤醒。当你获得能力时，所有玩家都会得知。",
+    "id": "kaidoubut1ton",
+    "official_id": "kaidou",
+    "edition": "custom",
+    "firstNightReminder": "唤醒怪盗，让他选择一个角色",
+    "otherNightReminder": "唤醒怪盗，让他选择一个角色",
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "firstNight": 11,
+    "otherNight": 1
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
+    "name": "恐惧之灵",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
+    "id": "fearmongerbutton",
+    "official_id": "fearmonger",
+    "edition": "custom",
+    "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
+    "otherNightReminder": "恐惧之灵指向一名玩家。如果与之前选择的不同，则更换恐惧标记并宣布恐惧之灵选中或改变了目标。",
+    "setup": 0,
+    "reminders": [
+      "恐惧"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 16,
+    "otherNight": 6,
+    "flavor": ""
+  },
+  {
+    "image": "https://www.helloimg.com/i/2024/12/24/676993d5e0e18.png",
+    "name": "人质先生",
+    "team": "demon",
+    "ability": "首个夜晚，所有爪牙秘密决定一名善良玩家作为“人质先生”：他转变为邪恶阵营，并且“是恶魔”。每个夜晚*，人质先生要选择一名玩家：他死亡。[+1 镇民]",
+    "id": "hostagebut1ton",
+    "official_id": "hostage",
+    "edition": "custom",
+    "firstNightReminder": "所有爪牙秘密决定一名善良玩家作为“人质先生”",
+    "otherNightReminder": "唤醒人质先生，让他选择一名玩家杀死。",
+    "setup": 1,
+    "reminders": [],
+    "remindersGlobal": [
+      "人质先生"
+    ],
+    "firstNight": 8,
+    "otherNight": 11
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
+    "name": "卡扎力",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[由你决定谁是什么爪牙，-或+任意数量外来者]",
+    "id": "kazalibutton",
+    "official_id": "kazali",
+    "edition": "custom",
+    "firstNightReminder": "唤醒卡扎力，让他选择玩家变成邪恶爪牙。",
+    "otherNightReminder": "唤醒卡扎力，让他攻击一名玩家。",
+    "setup": 1,
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 4,
+    "otherNight": 10,
+    "flavor": ""
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
+    "name": "利维坦",
+    "team": "demon",
+    "ability": "如果多于一名善良玩家被处决，邪恶阵营获胜。所有玩家都知道利维坦在场。在第五个白天结束时，邪恶阵营获胜。",
+    "id": "leviathanb111utton",
+    "edition": "custom",
+    "firstNightReminder": "放置利维坦的第一天标记，宣告利维坦在场，现在是第一天。",
+    "otherNightReminder": "将利维坦的标记转换到下一天。",
+    "setup": 0,
+    "reminders": [
+      "善良被处决",
+      "第一天",
+      "第三天",
+      "第二天",
+      "第五天",
+      "第四天"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 21,
+    "otherNight": 18,
+    "flavor": ""
+  }
+]

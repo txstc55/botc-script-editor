@@ -52,6 +52,25 @@ class FullRosterTest(unittest.TestCase):
     self.assertEqual(changes, ["新增 角色甲"])
     self.assertEqual([item["id"] for item in json.loads(updated)], ["_meta", "a", "b"])
 
+  def test_explicit_addition_updates_existing_entry(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "测试剧本"},
+      {"id": "a&b", "name": "角色甲&角色乙", "team": "jinx", "ability": "旧规则"},
+    ], ensure_ascii=False, indent=2)
+    replacement = {
+      "entry": {
+        "id": "a&b",
+        "name": "角色甲&角色乙",
+        "team": "jinx",
+        "ability": "新规则",
+      },
+    }
+
+    updated, changes = apply_fix(source, {"additions": [replacement]})
+
+    self.assertEqual(changes, ["更新 角色甲&角色乙"])
+    self.assertEqual(json.loads(updated)[1]["ability"], "新规则")
+
 
 if __name__ == "__main__":
   unittest.main()

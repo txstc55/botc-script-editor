@@ -169,6 +169,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
 
   for addition in fix.get("additions", []):
     new_role = addition.get("entry")
+    explicit_entry = isinstance(new_role, dict)
     if not isinstance(new_role, dict):
       if addition.get("source_json"):
         new_role = source_role(
@@ -178,7 +179,20 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
         )
       else:
         new_role = database_role(addition)
-    if any(object_identity(item[2]) == object_identity(new_role) for item in parsed_objects(raw)):
+    matches = [
+      item for item in parsed_objects(raw)
+      if object_identity(item[2]) == object_identity(new_role)
+    ]
+    if matches:
+      if len(matches) != 1:
+        raise ValueError(f"已存在角色不是唯一结果：{new_role['name']}")
+      if matches[0][2] == new_role or not explicit_entry:
+        continue
+      start, end, _ = matches[0]
+      line_start = raw.rfind("\n", 0, start) + 1
+      base_indent = raw[line_start:start]
+      raw = raw[:start] + formatted_object(new_role, base_indent) + raw[end:]
+      changes.append(f"更新 {new_role['name']}")
       continue
     before = addition.get("before")
     if isinstance(before, dict):

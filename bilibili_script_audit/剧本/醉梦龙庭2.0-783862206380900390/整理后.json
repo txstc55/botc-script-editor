@@ -1,0 +1,421 @@
+[
+  {
+    "id": "_meta",
+    "townsfolkName": "镇民",
+    "author": "泽度哥摧毁停车场",
+    "name": "醉梦龙庭v2",
+    "logo": "https://www.bloodstar.xyz/p/westwind/ZMLT/_meta.png",
+    "almanac": "https://www.bloodstar.xyz/p/westwind/ZMLT/almanac.html",
+    "notes": [
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
+    "id": "_zmlt",
+    "image": "https://www.bloodstar.xyz/p/westwind/ZMLT/_zmlt.png",
+    "reminders": [
+      "平衡",
+      "失衡"
+    ],
+    "name": "阴阳鱼",
+    "team": "fabled",
+    "ability": "游戏开始时，说书人会宣布决定玩家“阴阳”属性。属性为“阴”、“阳”的玩家各占一半。（如果玩家数量为奇数，说书人会宣布“阴”或“阳”的数量+1以维持平衡；旅行者没有“阴阳”属性）。场上存活玩家中，“阴”和“阳”数量相等称之为阴阳平衡，否则为失衡。"
+  },
+  {
+    "id": "clockmakerButton",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/clockmaker.png",
+    "name": "钟表匠",
+    "edition": "snv",
+    "team": "townsfolk",
+    "firstNight": 16,
+    "firstNightReminder": "给他展示数字手势来告诉他恶魔与爪牙之间最近的距离。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": 0,
+    "ability": "在你的首个夜晚，你会得知恶魔与爪牙之间最近的距离。（邻座的玩家距离为1）",
+    "remindersGlobal": [],
+    "flavor": ""
+  },
+  {
+    "id": "2_zmlt",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/accounter_assets_of_lei_gallery.png",
+    "firstNightReminder": "告知金算盘四个角色（每种身份类型各一个，其中两个在场）。",
+    "otherNightReminder": "唤醒金算盘，让他选择两名玩家：告知他这些玩家是否包含金算盘得知的四个角色。",
+    "name": "金算盘",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你得知每种角色类型的角色各一个，其中有两个在场。每个夜晚*，选择两名玩家：你会得知他们中是否有你得知的角色。",
+    "firstNight": 14,
+    "otherNight": 16
+  },
+  {
+    "id": "3_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
+    "reminders": [
+      "被得知"
+    ],
+    "name": "贵族",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
+    "firstNight": 15,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
+  },
+  {
+    "id": "4_zmlt",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/caravancaptin_assets_of_lei_gallery.png",
+    "firstNightReminder": "让商队督运官选择一名玩家并猜测该玩家选择几名玩家，告知是否猜测正确。",
+    "otherNightReminder": "让商队督运官选择一名玩家并猜测该玩家选择几名玩家，告知是否猜测正确。",
+    "name": "商队督运官",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名其他存活非旅玩家：你要猜测他当晚会选择几名玩家，并得知是否猜测正确。",
+    "firstNight": 17,
+    "otherNight": 18
+  },
+  {
+    "id": "chambermaidbutton",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "name": "侍女",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
+    "firstNight": 18,
+    "otherNight": 19,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
+  },
+  {
+    "id": "mathematicianbutton",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+    "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
+    "reminders": [
+      "未正常生效"
+    ],
+    "name": "数学家",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
+    "firstNight": 19,
+    "otherNight": 20,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
+  },
+  {
+    "id": "snake_charmerbutton",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "reminders": [
+      "中毒"
+    ],
+    "name": "舞蛇人",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+    "firstNight": 11,
+    "otherNight": 3,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
+  },
+  {
+    "id": "8_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
+    "reminders": [
+      "保护"
+    ],
+    "name": "僧侣",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
+    "otherNight": 4,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "9_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
+    "name": "神谕者",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
+    "otherNight": 17,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
+  },
+  {
+    "id": "10_zmlt",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/longtingguard_assets_of_lei_gallery.png",
+    "firstNightReminder": "龙庭侍卫选择二至四位玩家，得知他们之中的有几种角色类型。",
+    "otherNightReminder": "龙庭侍卫选择二至四位玩家，得知他们之中的有几种角色类型。",
+    "reminders": [
+      "得知镇民",
+      "得知外来者",
+      "得知爪牙",
+      "得知恶魔"
+    ],
+    "setup": 1,
+    "name": "龙庭侍卫",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的二至四名玩家：你会得知他们有几种角色类型。[+1外来者]",
+    "firstNight": 16,
+    "otherNight": 15
+  },
+  {
+    "id": "11_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
+    "reminders": [
+      "失去能力"
+    ],
+    "name": "艺术家",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
+  },
+  {
+    "id": "12_zmlt",
+    "image": "https://www.bloodstar.xyz/p/westwind/ZMLT/12_zmlt.png",
+    "otherNightReminder": "如果在夜里死亡，说书人选择一名存活爪牙与鲁班师进行角色交换。",
+    "reminders": [
+      "今晚交换"
+    ],
+    "name": "鲁班师",
+    "team": "townsfolk",
+    "ability": "如果你在夜晚死亡，你与一名存活的爪牙交换角色。",
+    "otherNight": 14
+  },
+  {
+    "id": "13_zmlt",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/thegoldenbrush_assets_of_lei_gallery.png",
+    "otherNightReminder": "金笔翁选择3个他没有选择过的其他善良角色。一名对立阵营玩家会被唤醒以选择其中一个，金笔翁获得该角色能力直到下个黄昏。",
+    "name": "金笔翁",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，选择3个你没有选择过的其他善良角色。一名对立阵营玩家会被唤醒以选择其中一个角色，你获得该角色的能力，直到下个黄昏。",
+    "otherNight": 2
+  },
+  {
+    "id": "14_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
+    "name": "畸形秀演员",
+    "team": "outsider",
+    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
+  },
+  {
+    "id": "drunkbutton",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "remindersGlobal": [
+      "是酒鬼"
+    ],
+    "setup": 1,
+    "name": "酒鬼",
+    "team": "outsider",
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
+  },
+  {
+    "id": "16_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
+    "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
+    "reminders": [
+      "今晚理发"
+    ],
+    "name": "理发师",
+    "team": "outsider",
+    "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
+    "otherNight": 13,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
+  },
+  {
+    "id": "17_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
+    "name": "呆瓜",
+    "team": "outsider",
+    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "18_zmlt",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/puppeteer_assets_of_lei_gallery.png",
+    "firstNightReminder": "让控偶师选择洗脑师及目标玩家，或者放弃。标记那名玩家中毒并让该玩家以为自己成为了洗脑目标。",
+    "otherNightReminder": "让控偶师选择洗脑师/麻脸巫婆及目标玩家，或者放弃。标记那名玩家中毒并让该玩家以为自己成为了洗脑目标。",
+    "reminders": [
+      "中毒"
+    ],
+    "name": "控偶师",
+    "team": "minion",
+    "ability": "每个夜晚，你可以选择洗脑师/麻脸巫婆并选择一名玩家，该玩家中毒并以为自己成为了该爪牙能力目标，但其实他没有，直到下个黄昏。",
+    "firstNight": 13,
+    "otherNight": 7
+  },
+  {
+    "id": "19_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
+    "name": "麻脸巫婆",
+    "team": "minion",
+    "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "20_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
+    "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "reminders": [
+      "疯狂"
+    ],
+    "name": "洗脑师",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+    "firstNight": 12,
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
+  },
+  {
+    "id": "21_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
+    "remindersGlobal": [],
+    "name": "红唇女郎",
+    "team": "minion",
+    "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "reminders": [
+      "是恶魔"
+    ],
+    "setup": 0,
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
+  },
+  {
+    "id": "22_zmlt",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/youyingzhuzhao_assets_of_lei_gallery.png",
+    "otherNightReminder": "如果阴阳平衡，让幽荧·烛照选择一名玩家。标记那名玩家死亡。如果阴阳失衡，幽荧·烛照将不被唤醒。较多一方的玩家死亡",
+    "reminders": [
+      "死亡",
+      "存活"
+    ],
+    "name": "幽荧·烛照",
+    "team": "demon",
+    "ability": "你既是阴也是阳。每个夜晚*，如果阴阳平衡，选择一名玩家：他死亡。如果阴阳失衡，你不会被唤醒，较多一方的一名玩家在夜晚死亡。若存活非旅玩家不少于5人时，你首次死亡，你仍存活，但会被当作死亡。[-1外来者]",
+    "otherNight": 9
+  },
+  {
+    "id": "23_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "reminders": [
+      "中毒",
+      "死亡"
+    ],
+    "name": "诺-达鲺",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
+    "otherNight": 11,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
+  },
+  {
+    "id": "24_zmlt",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
+    "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "name": "涡流",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",
+    "otherNight": 12,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
+  },
+  {
+    "id": "25_zmlt",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/shadowless_assets_of_lei_gallery.png",
+    "otherNightReminder": "让无影选择一名玩家。标记那名玩家死亡。随后选择“阴”或者“阳”属性的玩家，该属性的对应镇民中毒直到你下次选择。",
+    "reminders": [
+      "死亡",
+      "中毒"
+    ],
+    "name": "无影",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。随后，你要选择让“阴”或“阳”对应的镇民角色中毒直到你下次选择。",
+    "otherNight": 10
+  },
+  {
+    "ability": "使用灯神的相克规则。所有玩家都会知道其内容",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20003_107",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "灯神",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  },
+  {
+    "id": "侍女&数学家",
+    "name": "侍女&数学家",
+    "team": "jinx",
+    "ability": "侍女会得知数学家是否醒来，即使她是在数学家之前醒来。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+    "setup": 0
+  },
+  {
+    "id": "金笔翁&呆瓜",
+    "name": "金笔翁&呆瓜",
+    "team": "jinx",
+    "ability": "如果金笔翁获得了呆瓜的能力，他会得知这一信息。"
+  }
+]
