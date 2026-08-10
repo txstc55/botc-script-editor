@@ -2993,6 +2993,612 @@
           }
         ]
       }
+    },
+    {
+      "source": "Bilibili 1168938206503108647 对照图-03",
+      "targets": ["all_jsons/来源核对补全/#费城枪击案-1168938206503108647.json"],
+      "meta_updates": {"author": "KNitrate"},
+      "additions": [
+        {
+          "name": "筑梦师",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你要选择（除你及旅行者以外的）一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
+            "firstNight": 15,
+            "otherNight": 9
+          }
+        },
+        {
+          "name": "牧师",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你要选择两名玩家：你会得知他们均不属于哪种角色类型。",
+            "firstNight": 16,
+            "otherNight": 12
+          }
+        },
+        {
+          "name": "纵横家",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你会得知当晚有几名邪恶玩家因其自身能力选择或影响了其他玩家。",
+            "firstNight": 17,
+            "otherNight": 13
+          }
+        },
+        {
+          "name": "赌徒",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚*，你要选择一名玩家并猜测他的角色：如果你猜错了，你会死亡。",
+            "firstNight": 0,
+            "otherNight": 2
+          }
+        },
+        {"name": "城镇公告员", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 10}},
+        {"name": "神谕者", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 11}},
+        {
+          "name": "艺术家",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在白天时，你可以私下拜访说书人提问一个是非题，你会得知该问题的答案（是/不是/我不知道）。",
+            "firstNight": 0,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "修女",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "善良的镇民玩家不会醉酒、中毒或得知错误信息。",
+            "firstNight": 0,
+            "otherNight": 0
+          }
+        },
+        {"name": "祖母", "team": "townsfolk", "overrides": {"firstNight": 14, "otherNight": 8}},
+        {
+          "name": "梦游者",
+          "team": "outsider",
+          "overrides": {
+            "ability": "你以为你是一个镇民角色，但在相同情况下，你的能力却与其有所不同。有一名善良玩家知道你在场。",
+            "firstNight": 5,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "史莱姆",
+          "team": "outsider",
+          "overrides": {
+            "ability": "你以为你是史莱姆以外的一个外来者，其实你不是。当你死亡时，与你邻近的两名善良镇民之一醉酒。",
+            "firstNight": 0,
+            "otherNight": 0,
+            "otherNightReminder": ""
+          }
+        },
+        {"name": "修补匠", "team": "outsider", "overrides": {"firstNight": 0, "otherNight": 0, "otherNightReminder": ""}},
+        {"name": "告密者", "team": "outsider", "overrides": {"firstNight": 6, "otherNight": 0}},
+        {"name": "毒瘴魔", "team": "minion", "overrides": {"firstNight": 8, "otherNight": 1}},
+        {
+          "name": "迷雾人",
+          "team": "minion",
+          "overrides": {
+            "ability": "在你的首个夜晚，你要选择一个善良角色：你获得该角色的能力且会被当作是善良的该角色。如果该角色在场，他中毒且会被当作是邪恶的迷雾人，你会得知他是谁。[-1外来者]",
+            "firstNight": 9,
+            "otherNight": 0
+          }
+        },
+        {"name": "教父", "team": "minion", "overrides": {"firstNight": 10, "otherNight": 7}},
+        {"name": "独眼巨人", "team": "minion", "overrides": {"firstNight": 12, "otherNight": 3}},
+        {"name": "小恶魔", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 4}},
+        {
+          "name": "人质先生",
+          "team": "demon",
+          "overrides": {
+            "ability": "首个夜晚，所有爪牙秘密决定一名善良玩家作为“人质先生”：他转变为邪恶阵营，并且“是恶魔”。每个夜晚*，人质先生要选择一名玩家：他死亡。[+1镇民]",
+            "firstNight": 11,
+            "otherNight": 6
+          }
+        },
+        {"name": "厨师", "team": "townsfolk", "overrides": {"firstNight": 13, "otherNight": 0}},
+        {
+          "entry": {
+            "id": "骷咔啪",
+            "name": "骷咔啪",
+            "edition": "custom",
+            "team": "demon",
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡，即使你已经死亡。第一名提名你的其他玩家是恶魔而不是你。",
+            "image": "/audit_icons/傀儡诅咒/骷咔啪.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 5,
+            "otherNightReminder": "唤醒骷咔啪，让他选择一名玩家：他死亡，即使骷咔啪已经死亡。",
+            "reminders": ["死亡", "是恶魔"],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "谁枪击了乔尼？",
+            "name": "谁枪击了乔尼？",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "存活恶魔与其最近的爪牙之间较短侧的玩家（以及恶魔和该爪牙）与较长侧的其他玩家会互相把对方当作错误的角色和阵营。若恶魔与其最近爪牙之间两侧其他玩家数量相同，则取恶魔的顺时针方向为短侧。",
+            "image": "/audit_icons/费城枪击案/谁枪击了乔尼.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "迷雾人&谁枪击了乔尼？",
+            "name": "迷雾人&谁枪击了乔尼？",
+            "team": "jinx",
+            "ability": "迷雾人的能力不会把不同侧的玩家当作错误角色。",
+            "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/20_equinoxflower.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "骷咔啪&祖母",
+            "name": "骷咔啪&祖母",
+            "team": "jinx",
+            "ability": "只有骷咔啪被祖母的能力当作“是恶魔”。",
+            "image": "/audit_icons/傀儡诅咒/骷咔啪.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "骷咔啪&圣徒",
+            "name": "骷咔啪&圣徒",
+            "team": "jinx",
+            "ability": "如果圣徒“是恶魔”，他失去能力。",
+            "image": "/audit_icons/傀儡诅咒/骷咔啪.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "骷咔啪&独眼巨人",
+            "name": "骷咔啪&独眼巨人",
+            "team": "jinx",
+            "ability": "只有骷咔啪被独眼巨人的能力当作“是恶魔”。",
+            "image": "/audit_icons/傀儡诅咒/骷咔啪.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1049069006453997593 对照图-03",
+      "targets": ["all_jsons/来源核对补全/#拯救水晶鞋-1049069006453997593.json"],
+      "meta_updates": {
+        "author": "BBBence1111",
+        "notes": [
+          {
+            "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>决定该事情是否发生。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "additions": [
+        {"name": "科学怪人", "team": "minion", "overrides": {"firstNight": 1, "otherNight": 0}},
+        {"name": "哲学家", "team": "townsfolk", "overrides": {"firstNight": 2, "otherNight": 1}},
+        {
+          "name": "炼金术士",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "你拥有一个不在场的爪牙角色的能力。",
+            "firstNight": 3,
+            "otherNight": 0
+          }
+        },
+        {"name": "罂粟种植者", "team": "townsfolk", "overrides": {"firstNight": 4, "otherNight": 2}},
+        {"name": "落难少女", "team": "outsider", "overrides": {"firstNight": 5, "otherNight": 0}},
+        {"name": "疯子", "team": "outsider", "overrides": {"firstNight": 6, "otherNight": 4}},
+        {"name": "舞蛇人", "team": "townsfolk", "overrides": {"firstNight": 8, "otherNight": 3}},
+        {"name": "教父", "team": "minion", "overrides": {"firstNight": 9, "otherNight": 9}},
+        {"name": "小精灵", "team": "townsfolk", "overrides": {"firstNight": 10, "otherNight": 0}},
+        {"name": "巡山人", "team": "townsfolk", "overrides": {"firstNight": 11, "otherNight": 11}},
+        {"name": "贵族", "team": "townsfolk", "overrides": {"firstNight": 12, "otherNight": 0}},
+        {"name": "气球驾驶员", "team": "townsfolk", "overrides": {"firstNight": 13, "otherNight": 12}},
+        {"name": "修行者", "team": "townsfolk", "overrides": {"firstNight": 14, "otherNight": 0}},
+        {"name": "小恶魔", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 5}},
+        {"name": "方古", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 6}},
+        {"name": "亡骨魔", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 7}},
+        {"name": "刺客", "team": "minion", "overrides": {"firstNight": 0, "otherNight": 8}},
+        {"name": "报丧女妖", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 10}},
+        {
+          "entry": {
+            "id": "炼金术士&科学怪人",
+            "name": "炼金术士&科学怪人",
+            "team": "jinx",
+            "ability": "如果炼金术士拥有科学怪人的能力，炼金术士不会得知恶魔因此获得了哪个角色的能力。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/alchemist.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "食人族&狂热者",
+            "name": "食人族&狂热者",
+            "team": "jinx",
+            "ability": "如果食人族获得了狂热者的能力，他会得知这一信息。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "食人族&罂粟种植者",
+            "name": "食人族&罂粟种植者",
+            "team": "jinx",
+            "ability": "如果食人族获得了罂粟种植者的能力，当他获得下一个能力时，爪牙和恶魔也会互相认识。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "科学怪人&酒鬼",
+            "name": "科学怪人&酒鬼",
+            "team": "jinx",
+            "ability": "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1041259347119702025 对照图-02",
+      "targets": ["all_jsons/来源核对补全/#金樽玉馔-1041259347119702025.json"],
+      "meta_updates": {
+        "author": "杨哥",
+        "notes": [
+          {
+            "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>决定该事情是否发生。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {"text": "*代表非首个夜晚", "html": "<strong>*代表</strong>非首个夜晚"}
+        ]
+      },
+      "additions": [
+        {"name": "传教士", "team": "townsfolk", "overrides": {"firstNight": 8, "otherNight": 1}},
+        {"name": "酿酒师", "team": "minion", "overrides": {"firstNight": 9, "otherNight": 2}},
+        {
+          "name": "朱厌",
+          "team": "minion",
+          "overrides": {
+            "ability": "每局游戏限一次，在夜晚时，你可以选择当晚所有镇民玩家的能力都会产生错误信息。[+1外来者]",
+            "firstNight": 10,
+            "firstNightReminder": "唤醒朱厌，询问他是否发动能力，如果选择发动能力，将“镇民错误”提示标记放置在角色旁，当晚所有镇民玩家的能力都会产生错误信息。然后朱厌失去能力。",
+            "otherNight": 3
+          }
+        },
+        {
+          "name": "巫师",
+          "team": "minion",
+          "overrides": {
+            "firstNight": 11,
+            "firstNightReminder": "巫师可以向说书人许愿。",
+            "otherNight": 4,
+            "otherNightReminder": "如果巫师尚未许愿，他可以向说书人许愿。"
+          }
+        },
+        {"name": "红衣主教", "team": "outsider", "overrides": {"firstNight": 0, "otherNight": 5}},
+        {"name": "巡察", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 6}},
+        {"name": "教父", "team": "minion", "overrides": {"firstNight": 12, "otherNight": 10}},
+        {"name": "牙噶巴卜", "team": "demon", "overrides": {"firstNight": 13, "otherNight": 7}},
+        {"name": "厨师", "team": "townsfolk", "overrides": {"firstNight": 14, "otherNight": 0}},
+        {
+          "name": "司簿",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "在你的首个夜晚，你要选择一名玩家，你会得知（该玩家及其相邻玩家）的角色类型数量。",
+            "firstNight": 15,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "梦游者",
+          "team": "outsider",
+          "overrides": {
+            "ability": "你以为你是一个镇民角色，但在相同情况下，你的能力却与其有所不同。一名善良玩家知道你在游戏中。",
+            "firstNight": 16,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "郎中",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你要选择除你以外的一名玩家：你会得知一个与他能力相关的词语。",
+            "firstNight": 17,
+            "otherNight": 17
+          }
+        },
+        {"name": "方士", "team": "townsfolk", "overrides": {"firstNight": 18, "otherNight": 18}},
+        {
+          "name": "将军",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势。（善良/邪恶/均势）",
+            "firstNight": 19,
+            "otherNight": 19
+          }
+        },
+        {"name": "饕餮", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 8}},
+        {"name": "暴君", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 9}},
+        {"name": "歌伶", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 11}},
+        {"name": "月之子", "team": "outsider", "overrides": {"firstNight": 0, "otherNight": 12}},
+        {"name": "心上人", "team": "outsider", "overrides": {"firstNight": 0, "otherNight": 13}},
+        {
+          "name": "农夫",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "当你在夜晚死亡时，一名存活的善良玩家会变成农夫。",
+            "firstNight": 0,
+            "otherNight": 14
+          }
+        },
+        {"name": "提刑官", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 15}},
+        {"name": "城镇公告员", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 16}}
+      ]
+    },
+    {
+      "source": "Bilibili 1079115210396008486 对照图-03",
+      "targets": ["all_jsons/来源核对补全/#幻梦奇景v2.1-1079115210396008486.json"],
+      "meta_updates": {
+        "author": "Paradox",
+        "notes": [
+          {
+            "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+            "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {"text": "*代表非首个夜晚", "html": "<strong>*代表</strong>非首个夜晚"}
+        ]
+      },
+      "additions": [
+        {"name": "哲学家", "team": "townsfolk", "overrides": {"firstNight": 1, "otherNight": 1}},
+        {"name": "卡扎力", "team": "demon", "overrides": {"firstNight": 2, "otherNight": 9}},
+        {
+          "name": "痢蛭",
+          "team": "demon",
+          "overrides": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+            "firstNight": 8,
+            "otherNight": 8
+          }
+        },
+        {
+          "name": "巫师",
+          "team": "minion",
+          "overrides": {
+            "firstNight": 9,
+            "firstNightReminder": "巫师可以向说书人许愿。",
+            "otherNight": 2,
+            "otherNightReminder": "如果巫师尚未许愿，他可以向说书人许愿。"
+          }
+        },
+        {"name": "洗脑师", "team": "minion", "overrides": {"firstNight": 10, "otherNight": 3}},
+        {
+          "entry": {
+            "id": "恐惧之灵",
+            "name": "恐惧之灵",
+            "edition": "custom",
+            "team": "minion",
+            "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
+            "firstNight": 11,
+            "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
+            "otherNight": 4,
+            "otherNightReminder": "恐惧之灵指向一名玩家。如果与之前选择的不同，则更换恐惧标记并宣布恐惧之灵选中或改变了目标。",
+            "reminders": ["恐惧"],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {"name": "鹰身女妖", "team": "minion", "overrides": {"firstNight": 12, "otherNight": 5}},
+        {
+          "name": "占卜师",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作“恶魔”（干扰项）。",
+            "firstNight": 13,
+            "otherNight": 12
+          }
+        },
+        {
+          "name": "筑梦师",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你要选择（除你及旅行者以外的）一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
+            "firstNight": 14,
+            "otherNight": 13
+          }
+        },
+        {
+          "name": "女裁缝",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在夜晚时，你可以选择（除你以外的）两名玩家：你会得知他们是否为同一阵营。",
+            "firstNight": 15,
+            "otherNight": 15
+          }
+        },
+        {"name": "气球驾驶员", "team": "townsfolk", "overrides": {"firstNight": 16, "otherNight": 17}},
+        {"name": "修行者", "team": "townsfolk", "overrides": {"firstNight": 17, "otherNight": 0}},
+        {"name": "食人魔", "team": "outsider", "overrides": {"firstNight": 18, "otherNight": 0}},
+        {
+          "name": "数学家",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效（从上个黎明到你被唤醒时）。",
+            "firstNight": 19,
+            "otherNight": 18
+          }
+        },
+        {"name": "诺·达鲺", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 6}},
+        {"name": "涡流", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 7}},
+        {"name": "心上人", "team": "outsider", "overrides": {"firstNight": 0, "otherNight": 10}},
+        {"name": "守鸦人", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 11}},
+        {"name": "城镇公告员", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 14}},
+        {
+          "entry": {
+            "id": "杂耍艺人",
+            "name": "杂耍艺人",
+            "edition": "custom",
+            "team": "townsfolk",
+            "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 16,
+            "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
+            "reminders": ["猜测正确"],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          },
+          "before": {"name": "艺术家", "team": "townsfolk"}
+        },
+        {
+          "name": "艺术家",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在白天时私下询问说书人一个是非问题，你会得知该问题的答案（是/不是/我不知道）。",
+            "firstNight": 0,
+            "otherNight": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1050229884580790278 对照图-03",
+      "targets": ["all_jsons/来源核对补全/#狂人日记-1050229884580790278.json"],
+      "meta_updates": {
+        "author": "Natlove",
+        "notes": [
+          {
+            "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>决定该事情是否发生。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {"text": "*代表非首个夜晚", "html": "<strong>*代表</strong>非首个夜晚"}
+        ]
+      },
+      "additions": [
+        {"name": "堤丰之首", "team": "demon", "overrides": {"firstNight": 1, "otherNight": 8, "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你靠近正中，+1爪牙，-或+任意数量外来者]"}},
+        {"name": "科学怪人", "team": "minion", "overrides": {"firstNight": 2, "otherNight": 0}},
+        {"name": "牙噶巴卜", "team": "demon", "overrides": {"firstNight": 3, "otherNight": 9}},
+        {"name": "传教士", "team": "townsfolk", "overrides": {"firstNight": 8, "otherNight": 1}},
+        {"name": "投毒者", "team": "minion", "overrides": {"firstNight": 9, "otherNight": 2}},
+        {"name": "教父", "team": "minion", "overrides": {"firstNight": 10, "otherNight": 10}},
+        {
+          "entry": {
+            "id": "恐惧之灵",
+            "name": "恐惧之灵",
+            "edition": "custom",
+            "team": "minion",
+            "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
+            "firstNight": 11,
+            "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
+            "otherNight": 4,
+            "otherNightReminder": "恐惧之灵指向一名玩家。如果与之前选择的不同，则更换恐惧标记并宣布恐惧之灵选中或改变了目标。",
+            "reminders": ["恐惧"],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {"name": "普卡", "team": "demon", "overrides": {"firstNight": 12, "otherNight": 6}},
+        {"name": "共情者", "team": "townsfolk", "overrides": {"firstNight": 13, "otherNight": 14}},
+        {
+          "name": "占卜师",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作“恶魔”（干扰项）。",
+            "firstNight": 14,
+            "otherNight": 15
+          }
+        },
+        {"name": "祖母", "team": "townsfolk", "overrides": {"firstNight": 15, "otherNight": 13}},
+        {"name": "钟表匠", "team": "townsfolk", "overrides": {"firstNight": 16, "otherNight": 0}},
+        {
+          "name": "女裁缝",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在夜晚时，你可以选择（除你以外的）两名玩家：你会得知他们是否为同一阵营。",
+            "firstNight": 17,
+            "otherNight": 16
+          }
+        },
+        {"name": "异教领袖", "team": "townsfolk", "overrides": {"firstNight": 18, "otherNight": 17}},
+        {"name": "杂技演员", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 3}},
+        {
+          "name": "半兽人",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚*，你要选择一名存活的玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。会有一名善良玩家始终被当作邪恶阵营。",
+            "firstNight": 0,
+            "otherNight": 5
+          }
+        },
+        {"name": "珀", "team": "demon", "overrides": {"firstNight": 0, "otherNight": 7}},
+        {"name": "心上人", "team": "outsider", "overrides": {"firstNight": 0, "otherNight": 11}},
+        {"name": "贤者", "team": "townsfolk", "overrides": {"firstNight": 0, "otherNight": 12}},
+        {
+          "entry": {
+            "id": "异教领袖&科学怪人",
+            "name": "异教领袖&科学怪人",
+            "team": "jinx",
+            "ability": "如果恶魔拥有异教领袖的能力，他无法因为该能力转变为善良阵营。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cult_leader.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "科学怪人&酒鬼",
+            "name": "科学怪人&酒鬼",
+            "team": "jinx",
+            "ability": "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+            "setup": 0
+          }
+        }
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",
