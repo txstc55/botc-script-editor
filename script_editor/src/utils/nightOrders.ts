@@ -2,6 +2,7 @@ import type {
   BuiltInFirstNightEnabled,
   BuiltInFirstNightOrderKey,
   BuiltInFirstNightOrders,
+  FabledDraft,
   RoleDraft,
   ScriptDraft,
   TeamKey,
@@ -13,7 +14,7 @@ export interface NightOrderBaseItem {
   image?: string;
   reminder?: string;
   order: number;
-  team: TeamKey;
+  team: TeamKey | "fabled";
   builtIn?: boolean;
 }
 
@@ -91,20 +92,23 @@ function buildRoleNightOrderItems(
   field: "firstNight" | "otherNight",
 ): NightOrderBaseItem[] {
   return sortNightOrderItems(
-    Object.values(script.teams)
-      .filter((team) => team.key !== "traveler")
-      .flatMap((team) =>
-        team.roles
-          .filter((role) => role.selected)
-          .map((role) => roleNightOrderItem(role, team.key, field)),
-      )
+    [
+      ...Object.values(script.teams)
+        .filter((team) => team.key !== "traveler")
+        .flatMap((team) =>
+          team.roles
+            .filter((role) => role.selected)
+            .map((role) => roleNightOrderItem(role, team.key, field)),
+        ),
+      ...script.fabled.map((role) => roleNightOrderItem(role, "fabled", field)),
+    ]
       .filter((item) => item.order > 0),
   );
 }
 
 function roleNightOrderItem(
-  role: RoleDraft,
-  team: TeamKey,
+  role: RoleDraft | FabledDraft,
+  team: TeamKey | "fabled",
   field: "firstNight" | "otherNight",
 ): NightOrderBaseItem {
   return {

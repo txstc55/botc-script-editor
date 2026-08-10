@@ -16,7 +16,7 @@ export interface NightOrderItem {
   image?: string;
   reminder?: string;
   order: number;
-  team: TeamKey;
+  team: TeamKey | "fabled";
   color: string;
   builtIn?: boolean;
 }

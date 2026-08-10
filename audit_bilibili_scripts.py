@@ -33,7 +33,7 @@ USER_AGENT = (
 )
 INITIAL_STATE_MARKER = "window.__INITIAL_STATE__="
 OPUS_RE = re.compile(r"/opus/(\d+)")
-SCRIPT_NAME_RE = re.compile(r"《([^》]+)》")
+SCRIPT_NAME_RE = re.compile(r"《([^》]+)》|“([^”]+)”")
 VERSION_RE = re.compile(r"(?i)(?:[-_ ]?(?:v(?:er(?:sion)?)?\s*)?\d+(?:\.\d+)*)$")
 LEADING_FILE_NUMBER_RE = re.compile(r"^\s*\d*#\s*")
 PARENTHETICAL_RE = re.compile(r"[（(][^）)]*[）)]")
@@ -186,16 +186,21 @@ def extract_links(html: str) -> list[OpusLink]:
 
 
 def is_collection_link(link: OpusLink) -> bool:
-  return "合集" in link.title and "剧本导航" in link.title
+  return "【BWG剧本导航】" in link.title
 
 
 def is_script_link(link: OpusLink) -> bool:
-  return "剧本社区" in link.title and bool(SCRIPT_NAME_RE.search(link.title))
+  return (
+    any(kind in link.title for kind in ("剧本社区", "创意投稿"))
+    and bool(SCRIPT_NAME_RE.search(link.title))
+  )
 
 
 def extract_script_name(title: str) -> str:
   match = SCRIPT_NAME_RE.search(title)
-  return clean_space(match.group(1) if match else title)
+  if not match:
+    return clean_space(title)
+  return clean_space(next(group for group in match.groups() if group))
 
 
 def normalize_script_name(value: str, strip_version: bool = True) -> str:
@@ -303,7 +308,8 @@ def preferred_duplicate(script_name: str, candidates: list[LocalScript]) -> Loca
 def collect_catalog(root_url: str, local_scripts: list[LocalScript]) -> list[CatalogItem]:
   root_html = fetch_html(root_url)
   pending = [link for link in extract_links(root_html) if is_collection_link(link)]
-  seen_collections: set[str] = set()
+  root_match = OPUS_RE.search(root_url)
+  seen_collections = {root_match.group(1)} if root_match else set()
   scripts_by_id: dict[str, OpusLink] = {
     link.id: link for link in extract_links(root_html) if is_script_link(link)
   }
@@ -397,12 +403,14 @@ def jina_source_image_urls(opus_id: str) -> list[str]:
 
 def source_image_urls_for_item(item: CatalogItem) -> list[str]:
   try:
-    urls = jina_source_image_urls(item.opus_id)
-  except Exception as jina_error:
+    urls = source_image_urls(fetch_opus_state(item.url, retries=2))
+    if not urls:
+      raise RuntimeError("页面状态中没有找到大型 Bilibili 图片")
+  except Exception as bilibili_error:
     try:
-      urls = source_image_urls(fetch_opus_state(item.url, retries=2))
-    except Exception as bilibili_error:
-      raise RuntimeError(f"正文镜像失败：{jina_error}；Bilibili 直连失败：{bilibili_error}") from bilibili_error
+      urls = jina_source_image_urls(item.opus_id)
+    except Exception as jina_error:
+      raise RuntimeError(f"Bilibili 直连失败：{bilibili_error}；正文镜像失败：{jina_error}") from jina_error
   if not item.source_image_ids:
     return urls
   selected_ids = set(item.source_image_ids)
