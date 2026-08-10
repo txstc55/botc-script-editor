@@ -14,6 +14,7 @@ from audit_bilibili_scripts import (
   existing_review_folders,
   expected_script_entries,
   is_collection_link,
+  is_reference_webpage_screenshot,
   is_script_link,
   match_known_character_name,
   sync_catalog_local_artifacts,
@@ -90,6 +91,14 @@ class CatalogLinkTest(unittest.TestCase):
 
   def test_standard_note_label_is_not_a_character_heading(self) -> None:
     self.assertEqual(match_known_character_name("“疯狂”", {"“疯狂”"}), "")
+
+  def test_reference_webpage_navigation_is_not_a_script_board(self) -> None:
+    self.assertTrue(is_reference_webpage_screenshot(
+      "游戏信息 规则概要 角色能力类别总览 相克规则",
+    ))
+    self.assertFalse(is_reference_webpage_screenshot(
+      "相克规则：侍女会得知数学家是否醒来。",
+    ))
 
   def test_existing_review_folders_respect_opus_filter(self) -> None:
     with tempfile.TemporaryDirectory() as directory:

@@ -1976,6 +1976,1023 @@
           }
         }
       ]
+    },
+    {
+      "source": "Bilibili 1168947449249660929 对照图-03",
+      "targets": ["all_jsons/来源核对补全/#诡异人偶-1168947449249660929.json"],
+      "additions": [
+        {
+          "name": "罂粟种植者",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 4, "otherNight": 4}
+        },
+        {
+          "name": "国王",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 9, "otherNight": 90}
+        },
+        {
+          "name": "传教士",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 14, "otherNight": 7}
+        },
+        {
+          "name": "杂技演员",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 11}
+        },
+        {
+          "name": "舞蛇人",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 20, "otherNight": 12}
+        },
+        {
+          "name": "女裁缝",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在夜晚时，你可以选择（除你以外）的两名玩家：你会得知他们是否为同一阵营。",
+            "firstNight": 46,
+            "otherNight": 88
+          }
+        },
+        {
+          "name": "艺术家",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案（是/不是/我不知道）。",
+            "firstNight": 0,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "守夜人",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 56, "otherNight": 95}
+        },
+        {
+          "entry": {
+            "id": "杂耍艺人",
+            "name": "杂耍艺人",
+            "edition": "custom",
+            "team": "townsfolk",
+            "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 89,
+            "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
+            "reminders": ["猜测正确"],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。"
+          },
+          "before": {"name": "失忆者", "team": "townsfolk"}
+        },
+        {
+          "name": "失忆者",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 29, "otherNight": 74}
+        },
+        {
+          "name": "守鸦人",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 75}
+        },
+        {
+          "name": "唱诗男孩",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 73}
+        },
+        {
+          "name": "镇长",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚即将死亡，可能会有一名其他玩家代替你死亡。",
+            "firstNight": 0,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "理发师",
+          "team": "outsider",
+          "overrides": {"firstNight": 0, "otherNight": 67}
+        },
+        {
+          "name": "瘟疫医生",
+          "team": "outsider",
+          "overrides": {"firstNight": 0, "otherNight": 72}
+        },
+        {
+          "name": "投毒者",
+          "team": "minion",
+          "overrides": {"firstNight": 18, "otherNight": 9}
+        },
+        {
+          "name": "教父",
+          "team": "minion",
+          "overrides": {"firstNight": 21, "otherNight": 53}
+        },
+        {
+          "name": "灵言师",
+          "team": "minion",
+          "overrides": {"firstNight": 28, "otherNight": 23}
+        },
+        {
+          "name": "巫师",
+          "team": "minion",
+          "overrides": {
+            "firstNight": 19,
+            "firstNightReminder": "巫师可以向说书人许愿。",
+            "otherNight": 10,
+            "otherNightReminder": "如果巫师尚未许愿，他可以向说书人许愿。"
+          }
+        },
+        {
+          "name": "痢蛭",
+          "team": "demon",
+          "overrides": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他处于死亡状态时你才会立即死亡。",
+            "firstNight": 15,
+            "otherNight": 35
+          }
+        },
+        {
+          "entry": {
+            "id": "腹语师",
+            "name": "腹语师",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "如果一名玩家在被提名时“疯狂”地证明自己是一个新的角色，他可能不会死于当天的处决。",
+            "image": "https://release.botc.app/resources/characters/loric/ventriloquist.webp",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1182315968754352133 对照图-03",
+      "targets": ["all_jsons/来源核对补全/#弥诺陶迷宫-1182315968754352133.json"],
+      "meta_updates": {"author": "Urban Minotaur"},
+      "additions": [
+        {
+          "name": "钟表匠",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 44, "otherNight": 0}
+        },
+        {
+          "name": "调查员",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 37, "otherNight": 0}
+        },
+        {
+          "name": "占卜师",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作“恶魔”（干扰项）。",
+            "firstNight": 40,
+            "otherNight": 81
+          }
+        },
+        {
+          "name": "数学家",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 65, "otherNight": 101}
+        },
+        {
+          "name": "城镇公告员",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 86}
+        },
+        {
+          "name": "僧侣",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 16}
+        },
+        {
+          "name": "女裁缝",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在夜晚时，你可以选择（除你以外）的两名玩家：你会得知他们是否为同一阵营。",
+            "firstNight": 46,
+            "otherNight": 88
+          }
+        },
+        {
+          "name": "教授",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：如果他是镇民，你会将他起死回生（复活）。",
+            "firstNight": 0,
+            "otherNight": 69
+          }
+        },
+        {
+          "name": "守鸦人",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 70}
+        },
+        {
+          "name": "教父",
+          "team": "minion",
+          "overrides": {"firstNight": 21, "otherNight": 53}
+        },
+        {
+          "name": "女巫",
+          "team": "minion",
+          "overrides": {"firstNight": 24, "otherNight": 19}
+        },
+        {
+          "name": "洗脑师",
+          "team": "minion",
+          "overrides": {"firstNight": 25, "otherNight": 20}
+        },
+        {
+          "name": "红唇女郎",
+          "team": "minion",
+          "overrides": {"firstNight": 0, "otherNight": 26}
+        },
+        {
+          "name": "小恶魔",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 31}
+        },
+        {
+          "name": "沙巴洛斯",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 34}
+        },
+        {
+          "name": "珀",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 35}
+        },
+        {
+          "name": "方古",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 36}
+        },
+        {
+          "entry": {
+            "id": "私货商人",
+            "name": "私货商人",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "数学家会得知玩家是否因奇遇角色而产生了错误信息。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "诡诈杰克",
+            "name": "诡诈杰克",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "场上有两位说书人：一人说真话，一人说假话。每局游戏限一次，他们可能会在黄昏互换。",
+            "image": "https://release.botc.app/resources/characters/loric/knaves.webp",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "方古&红唇女郎",
+            "name": "方古&红唇女郎",
+            "team": "jinx",
+            "ability": "如果方古成功转化了外来者并因此死去，红唇女郎不会变成方古。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1060552481987100681 对照图-03",
+      "targets": ["all_jsons/来源核对补全/#曼陀罗盛放-1060552481987100681.json"],
+      "additions": [
+        {
+          "name": "图书管理员",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 36, "otherNight": 0}
+        },
+        {
+          "name": "钟表匠",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 44, "otherNight": 0}
+        },
+        {
+          "name": "小精灵",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 29, "otherNight": 82}
+        },
+        {
+          "name": "共情者",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 39, "otherNight": 80}
+        },
+        {
+          "name": "侍女",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 64, "otherNight": 100}
+        },
+        {
+          "name": "数学家",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 65, "otherNight": 101}
+        },
+        {
+          "name": "僧侣",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 16}
+        },
+        {
+          "name": "卖花女孩",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 85}
+        },
+        {
+          "name": "神谕者",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 87}
+        },
+        {
+          "entry": {
+            "id": "杂耍艺人",
+            "name": "杂耍艺人",
+            "edition": "custom",
+            "team": "townsfolk",
+            "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 89,
+            "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
+            "reminders": ["猜测正确"],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。"
+          },
+          "before": {"name": "博学者", "team": "townsfolk"}
+        },
+        {
+          "name": "女裁缝",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在夜晚时，你可以选择（除你以外）的两名玩家：你会得知他们是否为同一阵营。",
+            "firstNight": 46,
+            "otherNight": 88
+          }
+        },
+        {
+          "name": "间谍",
+          "team": "minion",
+          "overrides": {"firstNight": 58, "otherNight": 97}
+        },
+        {
+          "name": "洗脑师",
+          "team": "minion",
+          "overrides": {"firstNight": 25, "otherNight": 20}
+        },
+        {
+          "name": "投毒者",
+          "team": "minion",
+          "overrides": {"firstNight": 18, "otherNight": 9}
+        },
+        {
+          "name": "提线木偶",
+          "team": "minion",
+          "overrides": {"firstNight": 10, "otherNight": 0}
+        },
+        {
+          "name": "涡流",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 38}
+        },
+        {
+          "name": "方古",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 36}
+        },
+        {
+          "name": "亡骨魔",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 40}
+        },
+        {
+          "name": "小恶魔",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 31}
+        },
+        {
+          "entry": {
+            "id": "侍女&数学家",
+            "name": "侍女&数学家",
+            "team": "jinx",
+            "ability": "侍女会得知数学家是否醒来，即使她是在数学家之前醒来。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1175601362910576642 对照图-03",
+      "targets": ["all_jsons/来源核对补全/#入梦鸩兹-1175601362910576642.json"],
+      "additions": [
+        {
+          "name": "祖母",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 43, "otherNight": 66}
+        },
+        {
+          "name": "侍女",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 64, "otherNight": 100}
+        },
+        {
+          "entry": {
+            "id": "村夫",
+            "name": "村夫",
+            "edition": "custom",
+            "team": "townsfolk",
+            "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
+            "firstNight": 54,
+            "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": ["醉酒"],
+            "remindersGlobal": [],
+            "setup": 1,
+            "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
+          },
+          "before": {"name": "国王", "team": "townsfolk"}
+        },
+        {
+          "name": "国王",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 9, "otherNight": 90}
+        },
+        {
+          "name": "唱诗男孩",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 67}
+        },
+        {
+          "name": "旅店老板",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 10}
+        },
+        {
+          "name": "侍臣",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 20, "otherNight": 11}
+        },
+        {
+          "name": "造谣者",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 0, "otherNight": 62}
+        },
+        {
+          "name": "吟游诗人",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "当一名爪牙死于处决时，（除了你和旅行者以外的）所有其他玩家醉酒直到明天黄昏。",
+            "firstNight": 0,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "月之子",
+          "team": "outsider",
+          "overrides": {"firstNight": 0, "otherNight": 64}
+        },
+        {
+          "name": "修补匠",
+          "team": "outsider",
+          "overrides": {"firstNight": 0, "otherNight": 63}
+        },
+        {
+          "name": "解谜大师",
+          "team": "outsider",
+          "overrides": {"firstNight": 0, "otherNight": 68}
+        },
+        {
+          "name": "魔鬼代言人",
+          "team": "minion",
+          "overrides": {"firstNight": 22, "otherNight": 18}
+        },
+        {
+          "name": "洗脑师",
+          "team": "minion",
+          "overrides": {"firstNight": 25, "otherNight": 20}
+        },
+        {
+          "name": "鹰身女妖",
+          "team": "minion",
+          "overrides": {"firstNight": 27, "otherNight": 22}
+        },
+        {
+          "name": "教父",
+          "team": "minion",
+          "overrides": {"firstNight": 21, "otherNight": 53}
+        },
+        {
+          "name": "亡骨魔",
+          "team": "demon",
+          "overrides": {"firstNight": 0, "otherNight": 34}
+        },
+        {
+          "name": "痢蛭",
+          "team": "demon",
+          "overrides": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他处于死亡状态时你才会立即死亡。",
+            "firstNight": 15,
+            "otherNight": 35
+          }
+        },
+        {
+          "entry": {
+            "id": "梼杌",
+            "name": "梼杌",
+            "edition": "custom",
+            "team": "demon",
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。当你将要死亡时，改为一名存活且具有能力的爪牙失去能力。你不会得知恶魔信息。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202310/c_9082388608961_e3ff7173.jpg",
+            "firstNight": 5,
+            "firstNightReminder": "如果梼杌在场，跳过他的恶魔信息环节。",
+            "otherNight": 36,
+            "otherNightReminder": "唤醒梼杌，让他攻击一名玩家。",
+            "reminders": ["失去能力", "死亡"],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": "有兽焉，其状如虎而大，毛长两尺，人面虎足，口牙，尾长一丈八尺，扰乱荒中，名梼杌。"
+          }
+        },
+        {
+          "entry": {
+            "id": "私货商人",
+            "name": "私货商人",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "游戏开始前，说书人会从三个主题中选择一个作为本局游戏的主题：每局游戏限一次，一名玩家可以公开猜测本局游戏的主题，如果正确，会发生一件对他阵营有利的事，如果错误，会发生一件对他阵营不利的事。说书人会在事件发生后公开这件事是什么。【烟锁蛟矶】：首个因处决将要死亡的玩家不会死亡。【鸠鸟衔音】：每局游戏限一次，积极公聊与私聊的一名玩家首次因处决以外的原因将要死亡时，不会死亡。【对镜成双】：初始设置时，会有一对相同的善良角色，其中一人醉酒。[+0-1外来者]",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 1,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1110972713666609157 对照图-04",
+      "targets": ["all_jsons/来源核对补全/#白夜无疆-1110972713666609157.json"],
+      "additions": [
+        {
+          "name": "调查员",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 37, "otherNight": 0}
+        },
+        {
+          "name": "图书管理员",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 36, "otherNight": 0}
+        },
+        {
+          "name": "事务官",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 47, "otherNight": 0}
+        },
+        {
+          "name": "筑梦师",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你要选择（除你及旅行者以外的）一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
+            "firstNight": 45,
+            "otherNight": 84
+          }
+        },
+        {
+          "name": "舞蛇人",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 20, "otherNight": 12}
+        },
+        {
+          "name": "女祭司",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 60, "otherNight": 98}
+        },
+        {
+          "name": "将军",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 63, "otherNight": 99}
+        },
+        {
+          "name": "哲学家",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 3, "otherNight": 2}
+        },
+        {
+          "name": "女裁缝",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在夜晚时，你可以选择（除你以外）的两名玩家：你会得知他们是否为同一阵营。",
+            "firstNight": 46,
+            "otherNight": 88
+          }
+        },
+        {
+          "name": "艺术家",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案（是/不是/我不知道）。",
+            "firstNight": 0,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "魔术师",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 4, "otherNight": 0}
+        },
+        {
+          "name": "失忆者",
+          "team": "townsfolk",
+          "overrides": {"firstNight": 29, "otherNight": 22}
+        },
+        {
+          "name": "食人魔",
+          "team": "outsider",
+          "overrides": {"firstNight": 59, "otherNight": 0}
+        },
+        {
+          "name": "管家",
+          "team": "outsider",
+          "overrides": {"firstNight": 38, "otherNight": 89}
+        },
+        {
+          "name": "疯子",
+          "team": "outsider",
+          "overrides": {"firstNight": 7, "otherNight": 21}
+        },
+        {
+          "name": "投毒者",
+          "team": "minion",
+          "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
+          "overrides": {"firstNight": 18, "otherNight": 9},
+          "before": {"name": "洗脑师", "team": "minion"}
+        },
+        {
+          "name": "洗脑师",
+          "team": "minion",
+          "overrides": {"firstNight": 25, "otherNight": 20}
+        },
+        {
+          "name": "男爵",
+          "team": "minion",
+          "overrides": {
+            "ability": "会有额外的外来者在场。[+2外来者]",
+            "firstNight": 0,
+            "otherNight": 0
+          }
+        },
+        {
+          "name": "提线木偶",
+          "team": "minion",
+          "overrides": {"firstNight": 10, "otherNight": 0}
+        },
+        {
+          "name": "间谍",
+          "team": "minion",
+          "overrides": {
+            "ability": "每个夜晚，你都能查看魔典。你可能会被当作善良阵营、镇民角色或外来者角色，即使你已死亡。",
+            "firstNight": 58,
+            "otherNight": 97
+          }
+        },
+        {
+          "name": "利维坦",
+          "team": "demon",
+          "overrides": {"firstNight": 64, "otherNight": 100}
+        },
+        {
+          "entry": {
+            "id": "间谍&食人魔",
+            "name": "间谍&食人魔",
+            "team": "jinx",
+            "ability": "间谍必定被食人魔当作邪恶阵营。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spy.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "间谍&魔术师",
+            "name": "间谍&魔术师",
+            "team": "jinx",
+            "ability": "当间谍查看魔典时，魔术师和恶魔的角色标记会被说书人移除。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/spy.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1039371760546349063 对照图-02",
+      "targets": ["all_jsons/来源核对补全/#先发制人-1039371760546349063.json"],
+      "full_roster": {
+        "entries": [
+          {
+            "entry": {
+              "id": "机修工",
+              "name": "机修工",
+              "edition": "custom",
+              "team": "townsfolk",
+              "ability": "在你的首个白天，你可以拜访说书人获得一个剧本外角色的能力，即使你醉酒或中毒。",
+              "image": "https://i.postimg.cc/4dpBXC7j/image.png",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 0,
+              "otherNightReminder": "",
+              "reminders": ["获得能力"],
+              "remindersGlobal": [],
+              "setup": 0,
+              "flavor": ""
+            }
+          },
+          {
+            "name": "阴阳师",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "在你的首个夜晚，你会得知两个善良角色和两个邪恶角色，其中有且只有两个角色在场。",
+              "firstNight": 9,
+              "otherNight": 0,
+              "otherNightReminder": ""
+            }
+          },
+          {
+            "name": "女家教",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "在你的首个夜晚，你得知一个距离你最近的非镇民玩家的角色类型（旅行者除外）。",
+              "firstNight": 13,
+              "otherNight": 0,
+              "otherNightReminder": ""
+            }
+          },
+          {
+            "name": "放贷人",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "每个夜晚，你要选择除你以外的一名存活玩家：你转变为他的阵营。",
+              "firstNight": 12,
+              "otherNight": 15
+            }
+          },
+          {
+            "name": "马厩男孩",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "每个夜晚，你会得知一个在场角色。",
+              "firstNight": 10,
+              "otherNight": 12
+            }
+          },
+          {
+            "name": "侍女",
+            "team": "townsfolk",
+            "overrides": {"firstNight": 14, "otherNight": 16}
+          },
+          {
+            "name": "村夫",
+            "team": "townsfolk",
+            "overrides": {"firstNight": 11, "otherNight": 13}
+          },
+          {
+            "name": "投机者",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你得知错误信息。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 11
+            }
+          },
+          {
+            "name": "勘探者",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "每个夜晚*，你会得知与你今天提名的玩家最近的邪恶玩家位于他的顺时针还是逆时针方向。如果距离相等，你得知的信息由说书人决定。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 14
+            }
+          },
+          {
+            "name": "占星师",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "每个白天，你要拜访说书人得知一条错误信息。每局游戏限一次，你得知正确信息。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 0,
+              "otherNightReminder": ""
+            }
+          },
+          {
+            "name": "女教师",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "即将转变为邪恶但仍保持原角色的玩家，会得知女教师在场，他可以选择保持善良阵营。[至少1名能转变邪恶阵营的角色在场]",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 0,
+              "otherNightReminder": ""
+            }
+          },
+          {
+            "name": "提刑官",
+            "team": "townsfolk",
+            "overrides": {"firstNight": 0, "firstNightReminder": "", "otherNight": 10}
+          },
+          {
+            "name": "清道夫",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "如果与你邻近的玩家都已经死亡，会发生一些好事。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 0,
+              "otherNightReminder": ""
+            }
+          },
+          {
+            "name": "骗子",
+            "team": "outsider",
+            "overrides": {
+              "ability": "你会在夜晚转变为首个死于处决的玩家的阵营。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 3,
+              "otherNightReminder": "你会在夜晚转变为首个死于处决的玩家的阵营。"
+            }
+          },
+          {
+            "name": "逆臣",
+            "team": "outsider",
+            "overrides": {
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 5,
+              "otherNightReminder": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。"
+            }
+          },
+          {
+            "name": "流浪汉",
+            "team": "outsider",
+            "overrides": {
+              "ability": "如果在对你的处决中有人投票，你可能会立即被处决。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 0,
+              "otherNightReminder": ""
+            }
+          },
+          {
+            "name": "幸运儿",
+            "team": "outsider",
+            "overrides": {
+              "ability": "第一个提名你的玩家会在当晚转变为邪恶阵营。如果你第一个提名了自己，你的阵营落败。",
+              "image": "https://youke1.picui.cn/s1/2025/07/27/6885ddc8d3784.png",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 4,
+              "otherNightReminder": "第一个提名你的玩家会在当晚转变为邪恶阵营。如果你第一个提名了自己，你的阵营落败。"
+            }
+          },
+          {
+            "entry": {
+              "id": "铜蛇帮",
+              "name": "铜蛇帮",
+              "edition": "custom",
+              "team": "minion",
+              "ability": "如果你提名了一名玩家，他和与他邻近玩家中的善良玩家中毒，直到你下次提名。[-1或+1外来者]",
+              "image": "https://www.helloimg.com/i/2025/03/08/67cbc8d4e23de.png",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 2,
+              "otherNightReminder": "如果你提名了一名玩家，他和与他邻近玩家中的善良玩家中毒，直到你下次提名。",
+              "reminders": ["中毒"],
+              "remindersGlobal": [],
+              "setup": 1,
+              "flavor": ""
+            }
+          },
+          {
+            "name": "致幻师",
+            "team": "minion",
+            "overrides": {
+              "ability": "与你邻近的玩家（旅行者除外）会被善良玩家的能力当作错误的阵营和角色。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 0,
+              "otherNightReminder": ""
+            }
+          },
+          {
+            "name": "桶栖者",
+            "team": "minion",
+            "overrides": {"firstNight": 1, "otherNight": 0, "otherNightReminder": ""}
+          },
+          {
+            "name": "斗牛士",
+            "team": "minion",
+            "overrides": {
+              "ability": "在你发起提名后，一名除你以外的投票玩家会在当晚死亡，如果没有除你以外的玩家投票，你可能在当晚死亡。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 6,
+              "otherNightReminder": "在你发起提名后，一名除你以外的投票玩家会在当晚死亡，如果没有除你以外的玩家投票，你可能在当晚死亡。"
+            }
+          },
+          {
+            "name": "战车",
+            "team": "minion",
+            "overrides": {
+              "ability": "与你顺时针距离为1的玩家中毒。如果是邪恶的非旅行者玩家，改为和他交换角色。每个夜晚*，或该玩家已死亡，该距离+1。",
+              "firstNight": 8,
+              "otherNight": 1
+            }
+          },
+          {
+            "name": "浪劫",
+            "team": "demon",
+            "overrides": {
+              "ability": "每个夜晚*，你要选择一名玩家：他死亡，随后你可以选择一名玩家：如果他昨天白天被邪恶玩家提名过，他死亡。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 7
+            }
+          },
+          {
+            "name": "伽迪斯",
+            "team": "demon",
+            "overrides": {
+              "ability": "每个夜晚*，你要选择一名玩家：他死亡，然后你会得知一名在昨天白天提及过你的玩家：你可以让他死亡。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 8
+            }
+          },
+          {
+            "name": "九头蛇",
+            "team": "demon",
+            "overrides": {
+              "ability": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。死亡的爪牙可以选择变为九头蛇，但每局游戏仅能成功转化一次。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 9,
+              "otherNightReminder": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。死亡的爪牙可以选择变为九头蛇，但每局游戏仅能成功转化一次。"
+            }
+          },
+          {
+            "name": "圣洁之魂",
+            "team": "fabled",
+            "overrides": {
+              "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。",
+              "firstNight": 0,
+              "firstNightReminder": "",
+              "otherNight": 0,
+              "otherNightReminder": ""
+            }
+          }
+        ]
+      }
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",

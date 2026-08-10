@@ -127,6 +127,16 @@ def is_jinx_marker_line(value: Any) -> bool:
   return bool(re.match(r"^[相指榴都][克完烹][规媒].{0,1}[则影期划]?", normalized))
 
 
+def is_reference_webpage_screenshot(value: Any) -> bool:
+  text = clean_space(value)
+  return (
+    "游戏信息" in text
+    and "规则概要" in text
+    and "角色能力" in text
+    and "总览" in text
+  )
+
+
 def fetch_bytes(url: str, retries: int = 3) -> bytes:
   request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Referer": ROOT_URL})
   for attempt in range(retries):
@@ -907,6 +917,8 @@ def review_item(
   board_candidates = [reference_candidate]
   for candidate in candidates:
     if candidate is reference_candidate:
+      continue
+    if is_reference_webpage_screenshot(candidate[4]):
       continue
     heading_count = len(detected_heading_characters(candidate[3]))
     has_supplemental_content = any(marker in candidate[4] for marker in (

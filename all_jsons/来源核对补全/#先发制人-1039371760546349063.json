@@ -1,0 +1,447 @@
+[
+  {
+    "id": "_meta",
+    "name": "先发制人",
+    "author": "MtyJ",
+    "notes": [
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
+    "id": "机修工",
+    "name": "机修工",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个白天，你可以拜访说书人获得一个剧本外角色的能力，即使你醉酒或中毒。",
+    "image": "https://i.postimg.cc/4dpBXC7j/image.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "获得能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "阴阳师",
+    "name": "阴阳师",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知两个善良角色和两个邪恶角色，其中有且只有两个角色在场。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yinyangshi.png",
+    "firstNight": 9,
+    "firstNightReminder": "唤醒阴阳师，对他展示两个善良角色和两个邪恶角色。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "不在场",
+      "在场"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "女家教",
+    "name": "女家教",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你得知一个距离你最近的非镇民玩家的角色类型（旅行者除外）。",
+    "image": "https://i.postimg.cc/TYgZyjvh/image.png",
+    "firstNight": 13,
+    "firstNightReminder": "在首个夜晚，唤醒女家教，给她展示一个非镇民角色类型。该角色类型需要是距离他最近的非镇民玩家的角色类型。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "放贷人",
+    "name": "放贷人",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外的一名存活玩家：你转变为他的阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9505682064371_9e0cdee3.jpg",
+    "firstNight": 12,
+    "firstNightReminder": "唤醒放贷人，让他选择一名存活玩家，如果选择了邪恶玩家，在放贷人的角色标记旁边放置“邪恶”提示标记；否则移除“邪恶”提示标记。",
+    "otherNight": 15,
+    "otherNightReminder": "唤醒放贷人，让他选择一名存活玩家，如果选择了邪恶玩家，在放贷人的角色标记旁边放置“邪恶”提示标记；否则移除“邪恶”提示标记。",
+    "reminders": [
+      "邪恶"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "马厩男孩",
+    "name": "马厩男孩",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知一个在场角色。",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter22_assets_of_lei_gallery.png",
+    "firstNight": 10,
+    "firstNightReminder": "唤醒马厩男孩展示一个在场角色。",
+    "otherNight": 12,
+    "otherNightReminder": "唤醒马厩男孩展示一个在场角色。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "侍女",
+    "name": "侍女",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+    "firstNight": 14,
+    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "otherNight": 16,
+    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
+  },
+  {
+    "id": "村夫",
+    "name": "村夫",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
+    "firstNight": 11,
+    "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+    "otherNight": 13,
+    "otherNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+    "reminders": [
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
+  },
+  {
+    "id": "投机者",
+    "name": "投机者",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你得知错误信息。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5141009874371_9c1a0480.jpg",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 11,
+    "otherNightReminder": "每个夜晚*，你得知今天提名你的角色。如果你“疯狂”地证明你是投机者，你得知错误信息。",
+    "reminders": [
+      "投资",
+      "疯狂"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "勘探者",
+    "name": "勘探者",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你会得知与你今天提名的玩家最近的邪恶玩家位于他的顺时针还是逆时针方向。如果距离相等，你得知的信息由说书人决定。",
+    "image": "https://www.bloodstar.xyz/p/spdm/SpaceBound/7_spacebound.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 14,
+    "otherNightReminder": "每个夜晚*，你会得知与你今天提名的玩家最近的邪恶玩家位于他的顺时针还是逆时针方向。如果距离相等，你得知的信息由说书人决定。",
+    "reminders": [
+      "被提名"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "占星师",
+    "name": "占星师",
+    "team": "townsfolk",
+    "ability": "每个白天，你要拜访说书人得知一条错误信息。每局游戏限一次，你得知正确信息。",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/astrologer_assets_of_lei_gallery.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "月明星稀"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "女教师",
+    "name": "女教师",
+    "team": "townsfolk",
+    "ability": "即将转变为邪恶但仍保持原角色的玩家，会得知女教师在场，他可以选择保持善良阵营。[至少1名能转变邪恶阵营的角色在场]",
+    "image": "https://i.postimg.cc/BbRpLhw0/image.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "提刑官",
+    "name": "提刑官",
+    "team": "townsfolk",
+    "ability": "在你首次提名玩家后，你会在当晚得知他的角色。外来者会被你的能力当作爪牙或恶魔角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_7402377694761_cd9eb282.jpg",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 10,
+    "otherNightReminder": "如果提刑官在白天进行了整局游戏中他的首次提名，唤醒他并对他展示他提名的玩家的角色标记。",
+    "reminders": [
+      "被首次提名"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "清道夫",
+    "name": "清道夫",
+    "team": "townsfolk",
+    "ability": "如果与你邻近的玩家都已经死亡，会发生一些好事。",
+    "image": "https://s2.loli.net/2025/09/16/5yr896qxaUciFjV.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "好事发生"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "骗子",
+    "name": "骗子",
+    "team": "outsider",
+    "ability": "你会在夜晚转变为首个死于处决的玩家的阵营。",
+    "image": "https://i.postimg.cc/wMn6jymL/image-4.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 3,
+    "otherNightReminder": "你会在夜晚转变为首个死于处决的玩家的阵营。",
+    "reminders": [
+      "同伙"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "逆臣",
+    "name": "逆臣",
+    "team": "outsider",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nichen.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 5,
+    "otherNightReminder": "在你的首个夜晚，你要选择除你以外的一名玩家：如果他先死于处决，你转变为邪恶；如果你先死于处决，他转变为邪恶。",
+    "reminders": [
+      "不共戴天"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
+  },
+  {
+    "id": "流浪汉",
+    "name": "流浪汉",
+    "team": "outsider",
+    "ability": "如果在对你的处决中有人投票，你可能会立即被处决。",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/newcharacter19_assets_of_lei_gallery.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "幸运儿",
+    "name": "幸运儿",
+    "team": "outsider",
+    "ability": "第一个提名你的玩家会在当晚转变为邪恶阵营。如果你第一个提名了自己，你的阵营落败。",
+    "image": "https://youke1.picui.cn/s1/2025/07/27/6885ddc8d3784.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 4,
+    "otherNightReminder": "第一个提名你的玩家会在当晚转变为邪恶阵营。如果你第一个提名了自己，你的阵营落败。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "铜蛇帮",
+    "name": "铜蛇帮",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "如果你提名了一名玩家，他和与他邻近玩家中的善良玩家中毒，直到你下次提名。[-1或+1外来者]",
+    "image": "https://www.helloimg.com/i/2025/03/08/67cbc8d4e23de.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 2,
+    "otherNightReminder": "如果你提名了一名玩家，他和与他邻近玩家中的善良玩家中毒，直到你下次提名。",
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "致幻师",
+    "name": "致幻师",
+    "team": "minion",
+    "ability": "与你邻近的玩家（旅行者除外）会被善良玩家的能力当作错误的阵营和角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_6172975594371_6f1d5e48.jpg",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "致幻"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "桶栖者",
+    "name": "桶栖者",
+    "team": "minion",
+    "ability": "在你的首个夜晚，你要选择一个外来者。所有外来者都会是你选择的外来者。[-或+任意数量外来者]",
+    "image": "https://img.picui.cn/free/2025/04/11/67f89f6a138df.png",
+    "firstNight": 1,
+    "firstNightReminder": "唤醒召唤师，让桶栖者指向角色列表上的一个外来者。让奥赫重新入睡。随后唤醒所有外来者告知他们转变为该角色。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "斗牛士",
+    "name": "斗牛士",
+    "team": "minion",
+    "ability": "在你发起提名后，一名除你以外的投票玩家会在当晚死亡，如果没有除你以外的玩家投票，你可能在当晚死亡。",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/bullfighter_assets_of_lei_gallery.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 6,
+    "otherNightReminder": "在你发起提名后，一名除你以外的投票玩家会在当晚死亡，如果没有除你以外的玩家投票，你可能在当晚死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "战车",
+    "name": "战车",
+    "team": "minion",
+    "ability": "与你顺时针距离为1的玩家中毒。如果是邪恶的非旅行者玩家，改为和他交换角色。每个夜晚*，或该玩家已死亡，该距离+1。",
+    "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/chariot_assets_of_lei_gallery.png",
+    "firstNight": 8,
+    "firstNightReminder": "初始设置时，在战车顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记以表示他是由于战车的能力中毒；如果战车的顺时针距离为1的玩家是邪恶的，则战车将与其交换角色，随后在新战车的顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记。",
+    "otherNight": 1,
+    "otherNightReminder": "将战车的“控制”提示标记以顺时针方向推进到下一名玩家。如果落在邪恶玩家上，则战车将与其交换角色，随后在新战车的顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记。",
+    "reminders": [],
+    "remindersGlobal": [
+      "控制"
+    ],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "浪劫",
+    "name": "浪劫",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡，随后你可以选择一名玩家：如果他昨天白天被邪恶玩家提名过，他死亡。",
+    "image": "https://i.postimg.cc/FzS09N43/image.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 7,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡，随后你可以选择一名玩家：如果他上个白天被邪恶玩家提名过，他死亡。",
+    "reminders": [
+      "死亡",
+      "被提名"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "伽迪斯",
+    "name": "伽迪斯",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡，然后你会得知一名在昨天白天提及过你的玩家：你可以让他死亡。",
+    "image": "https://www.helloimg.com/i/2025/03/08/67cbc8e12f355.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 8,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡，以及可能有一名玩家死亡（你知道他是谁）。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "九头蛇",
+    "name": "九头蛇",
+    "team": "demon",
+    "ability": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。死亡的爪牙可以选择变为九头蛇，但每局游戏仅能成功转化一次。",
+    "image": "https://i.postimg.cc/RZY5wYhV/image.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 9,
+    "otherNightReminder": "每个夜晚*，即使你已死亡，你要选择一名玩家：他死亡。死亡的爪牙可以选择变为九头蛇，但每局游戏仅能成功转化一次。",
+    "reminders": [
+      "同化",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "圣洁之魂",
+    "name": "圣洁之魂",
+    "team": "fabled",
+    "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/spirit_of_ivory.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "禁止邪恶"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  }
+]

@@ -3,49 +3,50 @@
   "title": "5 【染钟楼】剧本社区—第918期《入梦鸩兹》 专栏 钟楼剧本博物馆 1万阅读 6评论 此内容无法展示，请 重新加载",
   "script_name": "入梦鸩兹",
   "url": "https://www.bilibili.com/opus/1175601362910576642",
-  "local_json": "",
+  "local_json": "all_jsons/来源核对补全/#入梦鸩兹-1175601362910576642.json",
   "generated_image": "",
-  "match_score": 0.25,
-  "status": "unmatched",
+  "match_score": 1.0,
+  "status": "matched",
   "source_images": [
     "对照图-01.png",
     "对照图-02.png",
     "对照图-03.png",
     "对照图-04.png"
   ],
-  "review_status": "missing_json",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_heading_characters": [
     "祖母",
-    "侍女",
     "造谣者",
+    "侍女",
     "博学者",
     "变脸师",
     "国王",
-    "唱诗男孩",
     "吟游诗人",
+    "唱诗男孩",
     "旅店老板",
     "和平主义者",
     "侍臣",
-    "月之子",
     "茶艺师",
+    "月之子",
     "畸形秀演员",
+    "解谜大师",
     "修补匠",
+    "教父",
     "魔鬼代言人",
     "洗脑师",
+    "精神病患者",
     "鹰身女妖",
     "亡骨魔",
-    "痢蛭",
-    "解谜大师",
-    "教父",
-    "精神病患者"
+    "痢蛭"
   ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
       "heading_characters": [],
-      "heading_character_details": []
+      "heading_character_details": [],
+      "required_character_matches": 0
     },
     {
       "image": "对照图-02.png",
@@ -101,7 +102,8 @@
           "x": 0.56275,
           "y": 0.13081
         }
-      ]
+      ],
+      "required_character_matches": 0
     },
     {
       "image": "对照图-03.png",
@@ -269,7 +271,8 @@
           "x": 0.14706,
           "y": 0.202
         }
-      ]
+      ],
+      "required_character_matches": 24
     },
     {
       "image": "对照图-04.png",
@@ -283,7 +286,8 @@
           "x": 0.04497,
           "y": 0.53024
         }
-      ]
+      ],
+      "required_character_matches": 0
     }
   ],
   "ocr_source_board_groups": [
@@ -464,5 +468,192 @@
       "x": 0.14706,
       "y": 0.202
     }
-  ]
+  ],
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "• 铁骨墨魂•",
+      "清《芜调县志口找：‘西鹏，假工山，创为钱画，或塑诗舍，兰城叹其经治种工"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "“铁骨墨魂”为已保存到私货商人能力中的主题规则标题；另一行是底部装饰性古籍引文，OCR 将其识别为乱码，不是额外角色、相克或玩法。"
+  },
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "• 铁骨墨魂•",
+      "清《芜调县志口找：‘西鹏，假工山，创为钱画，或塑诗舍，兰城叹其经治种工"
+    ]
+  },
+  "ocr_character_matches": 26,
+  "ocr_required_character_count": 26,
+  "ocr_missing_characters": [],
+  "ocr_name_confirmed_by_ability": [
+    "梼杌",
+    "私货商人"
+  ],
+  "ocr_unexpected_characters": [],
+  "ocr_travelers_seen": [],
+  "ocr_ability_checks": [
+    {
+      "name": "祖母",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "侍女",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "村夫",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "国王",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "唱诗男孩",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "旅店老板",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "侍臣",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "造谣者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "博学者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "变脸师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "吟游诗人",
+      "team": "townsfolk",
+      "ability_coverage": 0.9375
+    },
+    {
+      "name": "和平主义者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "茶艺师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "月之子",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "修补匠",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "畸形秀演员",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "解谜大师",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "魔鬼代言人",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "洗脑师",
+      "team": "minion",
+      "ability_coverage": 0.766
+    },
+    {
+      "name": "鹰身女妖",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "教父",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "精神病患者",
+      "team": "minion",
+      "ability_coverage": 0.98
+    },
+    {
+      "name": "亡骨魔",
+      "team": "demon",
+      "ability_coverage": 0.9545
+    },
+    {
+      "name": "痢蛭",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "梼杌",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "私货商人",
+      "team": "fabled",
+      "ability_coverage": 0.9897
+    }
+  ],
+  "ocr_ability_mismatches": [],
+  "ocr_traveler_checks": [],
+  "ocr_traveler_mismatches": [],
+  "ocr_jinx_checks": [],
+  "ocr_jinx_mismatches": [],
+  "ocr_jinx_marker_count": 0,
+  "ocr_missing_jinx_rule_count": 0,
+  "ocr_note_checks": [
+    {
+      "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    }
+  ],
+  "ocr_note_mismatches": [],
+  "ocr_bottom_text": [
+    "• 铁骨墨魂•",
+    "游戏开始前，说书人会从三个主题中选择一个作为本局游戏的主题：每局游戏限一次，一名玩家可以公开猜测本局游戏的主题，",
+    "如果正确，会发生一件对他阵营有利的事，如果错误，会发生一件对他阵营不利的事。说书人会在事件发生后公开这件事是什么。",
+    "◎【烟锁蛟矶】：首个因处决将要死亡的玩家不会死亡。",
+    "O【鸠鸟衔音】：每局游戏限一次，积极公聊与私聊的一名玩家首次因处决以外的原因将要死亡时，不会死亡。",
+    "◎【对镜成双】：初始设置时，会有一对相同的善良角色，其中一人醉酒。【+0-1外来者",
+    "清《芜调县志口找：‘西鹏，假工山，创为钱画，或塑诗舍，兰城叹其经治种工",
+    "*代表",
+    "非首个夜晚"
+  ],
+  "ocr_unexplained_bottom_lines": [],
+  "ocr_rule_markers": [],
+  "ocr_missing_rule_data": false
 }
