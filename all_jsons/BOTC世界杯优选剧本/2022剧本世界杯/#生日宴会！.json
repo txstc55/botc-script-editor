@@ -4,7 +4,21 @@
     "logo": "https://oss.gstonegames.com/data_file/clocktower/upload/1689598861_197011_7183.png",
     "name": "生日宴会！",
     "townsfolkName": "镇民",
-    "author": ""
+    "author": "",
+    "notes": [
+      {
+        "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
@@ -266,42 +280,21 @@
     "flavor": ""
   },
   {
+    "id": "月之子",
+    "name": "月之子",
+    "team": "outsider",
+    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家。如果他是善良的，在当晚他会死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/moonchild.png",
+    "firstNight": 0,
     "firstNightReminder": "",
-    "otherNightReminder": "如果杂技演员左右两侧最近的存活善良玩家之一中毒或醉酒，杂技演员死亡。",
-    "name": "杂技演员",
-    "otherNight": 39,
-    "setup": 0,
+    "otherNight": 64,
+    "otherNightReminder": "如果月之子在白天触发了死亡能力并选择了一名善良玩家，该玩家死亡。标记那名玩家死亡。",
     "reminders": [
       "死亡"
     ],
-    "id": "acrobatbutton",
-    "edition": "custom",
-    "team": "outsider",
-    "name_eng": "Acrobat",
-    "firstNight": 0,
-    "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
     "remindersGlobal": [],
-    "flavor": ""
-  },
-  {
-    "firstNightReminder": "",
-    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
-    "name": "心上人",
-    "otherNight": 41,
     "setup": 0,
-    "reminders": [
-      "醉酒"
-    ],
-    "id": "sweetheartbutton",
-    "edition": "custom",
-    "team": "outsider",
-    "name_eng": "Sweetheart",
-    "firstNight": 0,
-    "ability": "当你死亡时，会有一名玩家开始醉酒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
-    "remindersGlobal": [],
-    "flavor": "我永远也忘不掉她……永远……"
+    "flavor": "天蝎座侧身遥望恋人，此刻即为抉择进行之时。以白银拂过我的掌心，你的宿命将在此地揭示。以钢铁穿过我的咽喉，群星在上你将追悔莫及。"
   },
   {
     "firstNightReminder": "",
@@ -321,6 +314,25 @@
     "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
     "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
+  },
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
+    "name": "心上人",
+    "otherNight": 41,
+    "setup": 0,
+    "reminders": [
+      "醉酒"
+    ],
+    "id": "sweetheartbutton",
+    "edition": "custom",
+    "team": "outsider",
+    "name_eng": "Sweetheart",
+    "firstNight": 0,
+    "ability": "当你死亡时，会有一名玩家开始醉酒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
+    "remindersGlobal": [],
+    "flavor": "我永远也忘不掉她……永远……"
   },
   {
     "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
@@ -493,5 +505,13 @@
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "flavor": ""
+  },
+  {
+    "id": "食人族&管家",
+    "name": "食人族&管家",
+    "team": "jinx",
+    "ability": "如果食人族获得了管家的能力，他会得知这一信息。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "setup": 0
   }
 ]

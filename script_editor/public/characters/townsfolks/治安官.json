@@ -2,13 +2,13 @@
   "id": "治安官",
   "name": "治安官",
   "team": "townsfolk",
-  "totalOccurrenceCount": 11,
+  "totalOccurrenceCount": 12,
   "notes": [],
   "variants": {
     "ability": [
+      "在你的首个夜晚，你会得知一名外来者或爪牙玩家。如果你在夜晚死亡，你会得知一名外来者或爪牙玩家（角色类型与上次不同）。[+1外来者]",
       "在你的首个夜晚，你会得知一名外来者或爪牙玩家。如果你在夜晚死亡，你会得知一名外来者或爪牙玩家（角色类型与上次不同）。［+1外来者］",
       "每局游戏限一次，在夜晚时*，你可以选择三名存活玩家，他们之外的玩家在下个白天与夜晚不会受到恶魔能力的影响。恶魔得知你选择了哪些玩家。",
-      "在你的首个夜晚，你会得知一名外来者或爪牙玩家。如果你在夜晚死亡，你会得知一名外来者或爪牙玩家（角色类型与上次不同）。[+1外来者]",
       "如果首次被你提名的爪牙没有被处决，当晚你得知在场的恶魔角色。",
       "每个夜晚，你要选择一个邪恶角色：你会得知一名或多名不是该角色的玩家。",
       "每个夜晚，你要选择一个邪恶角色：你会得知一名或多名玩家不是该角色。",
@@ -17,21 +17,21 @@
       "每局游戏限一次，在夜晚时*，你可以选择是否让当晚不会有玩家死亡。"
     ],
     "image": [
+      "https://www.bloodstar.xyz/p/Lee/Recovery/11_recovery.png",
       "https://www.bloodstar.xyz/usersave/static_h/sta/7_sta.png",
       "https://free.picui.cn/free/2025/10/20/68f64be094728.png",
       "https://free.picui.cn/free/2025/12/11/693aa4cb2237b.png",
       "https://i.postimg.cc/8k09B11z/sheriff-brewulationandboilers.webp",
       "https://s2.loli.net/2025/09/07/2CynsTpiMoWuPAR.png",
       "https://www.bloodstar.xyz/p/Imzecorella/Day_By_Day/constable_day_by_day.png",
-      "https://www.bloodstar.xyz/p/Lee/Recovery/11_recovery.png",
       "https://www.bloodstar.xyz/p/bigyellowfish/Bundagee_Inn_Massacre_Bigyellowfish/11_bundagee_inn_massacre_bigyellowfish.png",
       "https://www.bloodstar.xyz/p/humlet/Dafenqi/7_dafenqi.png",
       "https://www.bloodstar.xyz/p/worryhours/yitai/17_yitai.png"
     ],
     "firstNight": [
       0,
-      14,
       16,
+      14,
       21,
       3500,
       3700,
@@ -39,8 +39,8 @@
     ],
     "firstNightReminder": [
       "",
-      "得知外来者或爪牙",
       "在你的首个夜晚，你会得知一名外来者或爪牙玩家。如果你在夜晚死亡，你会得知一名外来者或爪牙玩家（角色类型与上次不同）。[+1外来者]",
+      "得知外来者或爪牙",
       "每个夜晚，你要选择一个邪恶角色：你会得知一名或多名不是该角色的玩家。",
       "每个夜晚，你要选择一个邪恶角色：你会得知一名或多名玩家不是该角色。",
       "让治安官选择除治安官和与治安官邻近的存活的玩家以外的一名玩家：用拇指向上/下表示那名玩家是善良/邪恶的（如果与治安官邻近的一名存活的玩家是邪恶的，展示错误的阵营）。"
@@ -69,6 +69,9 @@
     "reminders": [
       [],
       [
+        "被治安官得知"
+      ],
+      [
         "选择"
       ],
       [
@@ -84,9 +87,6 @@
       ],
       [
         "得知"
-      ],
-      [
-        "被治安官得知"
       ]
     ],
     "remindersGlobal": [

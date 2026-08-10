@@ -3,7 +3,13 @@
     "id": "_meta",
     "name": "坊间异闻",
     "author": "夜雀",
-    "logo": ""
+    "logo": "",
+    "notes": [
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "id": "Auditor0",
@@ -82,19 +88,21 @@
     "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
-    "id": "chambermain0",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
-    "name": "侍女",
+    "id": "数学家",
+    "name": "数学家",
     "team": "townsfolk",
-    "firstNight": 71,
-    "otherNight": 93,
-    "reminders": [],
-    "setup": 0,
-    "ability": "每个夜晚，你要选择除你以外的两名存活的玩家：你会得知他们中有几人在当晚因其自身能力而被唤醒。",
-    "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
-    "otherNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
+    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+    "firstNight": 65,
+    "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNight": 101,
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
+    "reminders": [
+      "未正常生效"
+    ],
     "remindersGlobal": [],
-    "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
+    "setup": 0,
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_9651170205371_4d4c299e.jpg",
@@ -305,18 +313,22 @@
     "firstNight": 0
   },
   {
-    "id": "Miasma0",
-    "image": "https://cdn.nlark.com/yuque/0/2025/png/50711558/1737536653162-c0dd719a-371f-4e92-afa1-d145faf7228e.png",
-    "name": "浊瘴",
+    "id": "毒瘴魔",
+    "name": "毒瘴魔",
     "team": "minion",
-    "firstNight": 0,
-    "otherNight": 5,
+    "ability": "每局游戏限一次，在夜晚时，你可以使所有镇民中毒并产生错误信息，直到下个黄昏。",
+    "image": "https://www.helloimg.com/i/2025/01/10/6780d99398471.png",
+    "firstNight": 13,
+    "firstNightReminder": "唤醒毒瘴魔，如果他决定使用能力，所有镇民中毒并产生错误信息，直到下个黄昏。",
+    "otherNight": 4,
+    "otherNightReminder": "唤醒毒瘴魔，如果他决定使用能力，所有镇民中毒并产生错误信息，直到下个黄昏。",
     "reminders": [
-      "中毒"
+      "失去能力",
+      "毒瘴爆发"
     ],
+    "remindersGlobal": [],
     "setup": 0,
-    "ability": "如果邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果善良玩家公开声称驱散浊瘴，你和镇民玩家中毒。",
-    "otherNightReminder": "如果邪恶玩家提名了存活的邪恶玩家，他们交换角色。如果善良玩家公开声称驱散浊瘴，你和镇民玩家中毒。"
+    "flavor": ""
   },
   {
     "id": "psychopath0",

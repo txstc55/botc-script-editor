@@ -4,7 +4,21 @@
     "logo": "https://i.postimg.cc/Vs30P8F4/image.png",
     "name": "复活庆典v3.0",
     "townsfolkName": "镇民",
-    "author": "Zets"
+    "author": "Zets",
+    "notes": [
+      {
+        "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "firstNightReminder": "决定失忆者的能力，并根据具体能力决定是否需要唤醒失忆者、何时唤醒、唤醒后让他做出什么操作或得知什么信息。",
@@ -490,5 +504,49 @@
     "ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
     "edition": "custom",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
+  },
+  {
+    "id": "提线木偶&气球驾驶员",
+    "name": "提线木偶&气球驾驶员",
+    "team": "jinx",
+    "ability": "如果提线木偶抽到了气球驾驶员，也会+1外来者。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
+    "setup": 0
+  },
+  {
+    "id": "提线木偶&巡山人&落难少女",
+    "name": "提线木偶&巡山人&落难少女",
+    "team": "jinx",
+    "ability": "如果提线木偶抽到了巡山人，也会增加落难少女。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "setup": 0
+  },
+  {
+    "id": "落难少女&提线木偶",
+    "name": "落难少女&提线木偶",
+    "team": "jinx",
+    "ability": "提线木偶不会得知落难少女在场。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "setup": 0
+  },
+  {
+    "id": "小怪宝&红唇女郎",
+    "name": "小怪宝&红唇女郎",
+    "team": "jinx",
+    "ability": "如果在五名及以上的玩家存活时照看小怪宝的玩家死亡，当晚红唇女郎必须要照看小怪宝。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
+    "setup": 0
+  },
+  {
+    "id": "异端分子&男爵",
+    "name": "异端分子&男爵",
+    "team": "jinx",
+    "ability": "如果异端分子在剧本中，男爵的效果可能会只增加一个而非两个外来者。"
+  },
+  {
+    "id": "提线木偶&小怪宝",
+    "name": "提线木偶&小怪宝",
+    "team": "jinx",
+    "ability": "提线木偶会与一名爪牙玩家邻座，而不是恶魔。提线木偶不会被唤醒来决定是否照看小怪宝，也不会在照看小怪宝时得知自己是提线木偶。"
   }
 ]

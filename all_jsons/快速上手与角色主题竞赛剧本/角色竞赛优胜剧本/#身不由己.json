@@ -12,7 +12,21 @@
     "townsfolk": "镇民",
     "outsider": "外来者",
     "minion": "爪牙",
-    "demon": "恶魔"
+    "demon": "恶魔",
+    "notes": [
+      {
+        "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事情“可能”发生，代表由说书人来决定该事情是否发生。"
+      },
+      {
+        "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
@@ -70,23 +84,6 @@
     "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
-    "firstNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
-    "otherNightReminder": "唤醒女祭司，指向一名玩家。让女祭司重新入睡。",
-    "name": "女祭司",
-    "otherNight": 68,
-    "setup": 0,
-    "reminders": [],
-    "id": "high_priestessbutton",
-    "edition": "custom",
-    "team": "townsfolk",
-    "name_eng": "High Priestess",
-    "firstNight": 48,
-    "ability": "每个夜晚，你会得知一名说书人认为你最应该与其交流的玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/high_priestess.png",
-    "remindersGlobal": [],
-    "flavor": ""
-  },
-  {
     "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
     "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
     "name": "数学家",
@@ -125,21 +122,22 @@
     "flavor": ""
   },
   {
-    "firstNightReminder": "",
-    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
-    "name": "神谕者",
-    "otherNight": 60,
-    "setup": 0,
-    "reminders": [],
-    "id": "oraclebutton",
-    "edition": "custom",
+    "id": "城镇公告员",
+    "name": "城镇公告员",
     "team": "townsfolk",
-    "name_eng": "Oracle",
+    "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "firstNight": 0,
-    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
+    "firstNightReminder": "",
+    "otherNight": 86,
+    "otherNightReminder": "唤醒城镇公告员，以点头或摇头告知他今天白天是否有爪牙发起提名。",
+    "reminders": [
+      "爪牙已提名",
+      "爪牙未提名"
+    ],
     "remindersGlobal": [],
-    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
+    "setup": 0,
+    "flavor": ""
   },
   {
     "firstNightReminder": "",
@@ -160,22 +158,20 @@
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "艺术家",
-    "otherNight": 0,
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
+    "name": "神谕者",
+    "otherNight": 60,
     "setup": 0,
-    "reminders": [
-      "失去能力"
-    ],
-    "id": "artistbutton",
+    "reminders": [],
+    "id": "oraclebutton",
     "edition": "custom",
     "team": "townsfolk",
-    "name_eng": "Artist",
+    "name_eng": "Oracle",
     "firstNight": 0,
-    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
+    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
     "remindersGlobal": [],
-    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
@@ -195,6 +191,25 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
     "remindersGlobal": [],
     "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
+  },
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "艺术家",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [
+      "失去能力"
+    ],
+    "id": "artistbutton",
+    "edition": "custom",
+    "team": "townsfolk",
+    "name_eng": "Artist",
+    "firstNight": 0,
+    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人一个是非问题，你会得知该问题的答案。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/artist.png",
+    "remindersGlobal": [],
+    "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
   },
   {
     "firstNightReminder": "",
@@ -445,5 +460,13 @@
     "ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
     "edition": "custom",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
+  },
+  {
+    "id": "红唇女郎&方古",
+    "name": "红唇女郎&方古",
+    "team": "jinx",
+    "ability": "如果方古成功转化了外来者并因此死去，红唇女郎不会变成方古。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "setup": 0
   }
 ]

@@ -50,6 +50,20 @@
       "每个夜晚，当恶魔杀死玩家时，会按照剧本角色顺序攻击下一个存活的角色。（顺序规则：由上至下，从左到右，镇民>外来者>爪牙）",
       "如果有角色在死亡顺序中幸存时，说书人可以决定他们是否再次成为目标。",
       "镇长的能力也需要依据死亡顺序来执行。"
+    ],
+    "notes": [
+      {
+        "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
     ]
   },
   {
@@ -278,17 +292,17 @@
     "flavor": ""
   },
   {
-    "id": "abaaba111",
+    "id": "告密者",
     "name": "告密者",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
     "team": "outsider",
     "edition": "custom",
-    "ability": "爪牙会在其首个夜晚得知三个伪装。",
+    "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
     "firstNight": 5,
+    "firstNightReminder": "如果告密者在场，对每名爪牙分别展示三个不在场的角色标记。",
     "otherNight": 0,
-    "firstNightReminder": "如果告密者在场，对爪牙展示三个不在场的善良角色标记。",
-    "reminders": [],
     "otherNightReminder": "",
+    "reminders": [],
     "remindersGlobal": [],
     "setup": 0,
     "flavor": ""
@@ -327,7 +341,25 @@
     "otherNightReminder": "",
     "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
-  "mutant",
+  {
+    "id": "haochiaichi111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
+    "edition": "custom",
+    "name": "食人魔",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
+    "team": "outsider",
+    "sch_team": "外来者",
+    "firstNight": 59,
+    "otherNight": 0,
+    "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
+    "otherNightReminder": "",
+    "reminders": [
+      "挚友"
+    ],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "<咽口水><咧嘴笑><咽口水>"
+  },
   {
     "id": "touduzheeeeeeee111",
     "name": "投毒者",
@@ -397,8 +429,49 @@
     "remindersGlobal": [],
     "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。"
   },
-  "cerenovus",
-  "godfather",
+  {
+    "id": "tousioahsdoasidhas",
+    "image": "https://clocktower-wiki.gstonegames.com/images/b/b9/Xaan.png",
+    "edition": "custom",
+    "name": "限",
+    "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
+    "team": "minion",
+    "firstNight": 17.9,
+    "otherNight": 8.9,
+    "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "reminders": [
+      "大限将至",
+      "第一晚",
+      "第三晚",
+      "第二晚",
+      "第四晚"
+    ],
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
+  },
+  {
+    "ability": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/archive/c/c7/20250103031516%21Wizard.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "wushi",
+    "firstNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "otherNightReminder": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "name": "巫师",
+    "otherNight": 15,
+    "firstNight": 3010,
+    "setup": 0,
+    "reminders": [
+      "代价",
+      "兑现",
+      "失去能力",
+      "线索"
+    ],
+    "remindersGlobal": [],
+    "team": "minion"
+  },
   {
     "id": "waibibaboabbbb1111",
     "name": "牙噶巴卜",
@@ -436,15 +509,52 @@
     "setup": 1,
     "flavor": ""
   },
-  "bootlegger",
   {
-    "id": "35addde2-e27a-4de2-9a9e-df0e78364717",
+    "id": "私货商人",
     "name": "私货商人",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
     "team": "fabled",
     "edition": "custom",
-    "ability": "这个剧本包含有自制角色或自制规则。",
+    "ability": "每个夜晚，当恶魔杀死玩家时，会按照剧本角色顺序攻击下一个存活的角色。（顺序规则：由上至下，从左到右，镇民>外来者>爪牙）如果有角色在死亡顺序中幸存时，说书人可以决定他们是否再次成为目标。镇长的能力也需要依据死亡顺序来执行。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
     "firstNight": 0,
-    "otherNight": 0
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "科学怪人&村夫",
+    "name": "科学怪人&村夫",
+    "team": "jinx",
+    "ability": "如果村夫在场数量不足3人，科学怪人可以让恶魔拥有村夫的能力。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+    "setup": 0
+  },
+  {
+    "id": "陌客&食人魔",
+    "name": "陌客&食人魔",
+    "team": "jinx",
+    "ability": "如果陌客被食人魔当作邪恶阵营，食人魔会得知自己转变为邪恶。"
+  },
+  {
+    "id": "间谍&食人魔",
+    "name": "间谍&食人魔",
+    "team": "jinx",
+    "ability": "间谍必定被食人魔当作邪恶阵营。"
+  },
+  {
+    "id": "科学怪人&食人魔",
+    "name": "科学怪人&食人魔",
+    "team": "jinx",
+    "ability": "恶魔无法拥有食人魔的能力。"
+  },
+  {
+    "id": "科学怪人&酒鬼",
+    "name": "科学怪人&酒鬼",
+    "team": "jinx",
+    "ability": "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。"
   }
 ]

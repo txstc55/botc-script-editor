@@ -3,7 +3,8 @@
     "id": "_meta",
     "name": "致命华尔兹",
     "author": "不是鱼子酱",
-    "almanac": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/almanac.html"
+    "almanac": "https://www.bloodstar.xyz/p/YanIce/InTheGr_58/almanac.html",
+    "notes": []
   },
   {
     "id": "1_inthegr_58",
@@ -289,19 +290,21 @@
     "flavor": ""
   },
   {
-    "id": "18_inthegr_58",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
-    "remindersGlobal": [
-      "是酒鬼"
-    ],
-    "setup": 1,
-    "name": "酒鬼",
+    "id": "杂技演员",
+    "name": "杂技演员",
     "team": "outsider",
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
+    "firstNight": 0,
     "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [],
-    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
+    "otherNight": 39,
+    "otherNightReminder": "如果杂技演员左右两侧最近的存活善良玩家之一中毒或醉酒，杂技演员死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "20_inthegr_58",
@@ -317,16 +320,17 @@
     "flavor": "我不是怪物！我是人！求你了！"
   },
   {
-    "id": "19_inthegr_58",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
-    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
-    "name": "落难少女",
+    "id": "酒保",
+    "name": "酒保",
     "team": "outsider",
-    "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
-    "firstNight": 14,
-    "otherNightReminder": "0",
+    "ability": "与你邻近的善良玩家之一醉酒，即使你已死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/jiubao.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
     "reminders": [
-      "已被猜测"
+      "醉酒"
     ],
     "remindersGlobal": [],
     "setup": 0,

@@ -40,6 +40,16 @@
     "bootlegger": [
       "哈迪寂亚的选择不会被公布。",
       "每个夜晚*，所有玩家秘密地预先选择自己是生或是死，随后如果他们被哈迪寂亚选择，就依据他们的选择执行。"
+    ],
+    "notes": [
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
     ]
   },
   {
@@ -96,7 +106,23 @@
     "setup": 0,
     "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。"
   },
-  "steward",
+  {
+    "ability": "在你的首个夜晚，你会得知一名善良玩家。",
+    "firstNight": 42,
+    "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
+    "flavor": "",
+    "id": "steward",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/steward.png",
+    "name": "事务官",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "team": "townsfolk"
+  },
   {
     "id": "wanizufen111",
     "name": "送葬者",
@@ -435,7 +461,6 @@
     "setup": 0,
     "flavor": ""
   },
-  "bootlegger",
   {
     "id": "35addde2-e27a-4de2-9a9e-df0e78364717",
     "name": "私货商人",

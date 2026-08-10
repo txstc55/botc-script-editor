@@ -50,6 +50,17 @@ export const JINX_RULE_BOX_FILL = "#eceff3";
 export const JINX_RULE_BOX_STROKE = "#d7dbe2";
 export const JINX_RULE_TEXT_COLOR = "#38404a";
 
+// Bottom explanation tuning.
+export const NOTE_FONT_SIZE = 15;
+export const NOTE_LINE_HEIGHT = 21;
+export const NOTE_SECTION_TOP_GAP = 18;
+export const NOTE_BOX_PADDING_X = 18;
+export const NOTE_BOX_PADDING_Y = 14;
+export const NOTE_ITEM_GAP = 8;
+export const NOTE_BOX_RADIUS = 9;
+export const NOTE_BOX_FILL = "#ece7e2";
+export const NOTE_BOX_STROKE = "#9b9188";
+
 // Night order rail tuning.
 export const RAIL_WIDTH = 54;
 export const LEFT_RAIL_X = 54;
@@ -97,6 +108,7 @@ export const emptyFormatState: FormatState = {
   underline: false,
   textColor: null,
   backgroundColor: null,
+  fontSize: null,
 };
 
 export const textColorOptions: TextColorOption[] = [

@@ -4,7 +4,13 @@
     "author": "钟楼剧本博物馆",
     "name": "旧历华章2023",
     "logo": "https://i.postimg.cc/g25zkHQW/image.png",
-    "townsfolkName": "镇民"
+    "townsfolkName": "镇民",
+    "notes": [
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "firstNightReminder": "指向一名邪恶玩家。随后唤醒那名因赏金猎人而转变为邪恶的镇民，并告知他变成了邪恶阵营。",
@@ -473,20 +479,6 @@
   {
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "name": "灯神",
-    "firstNight": 0,
-    "reminders": [],
-    "id": "djinnbutton",
-    "team": "fabled",
-    "name_eng": "Djinn",
-    "setup": 0,
-    "ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
-    "edition": "custom",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
-  },
-  {
-    "firstNightReminder": "",
-    "otherNightReminder": "",
     "name": "私货商人",
     "setup": 0,
     "reminders": [],
@@ -513,5 +505,19 @@
     "firstNight": 0,
     "ability": "如果你是善良的，在一次提名中有三名玩家投票并包含至少一名善良玩家时，你可以让被提名者立即被处决。如果你是邪恶的，改为只要有善良玩家投票，你就可以让被提名者立即被处决。每个夜晚*，恶魔可以让你们之一死亡。",
     "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/emir_assets_of_lei_gallery.png"
+  },
+  {
+    "id": "卡扎力&赏金猎人",
+    "name": "卡扎力&赏金猎人",
+    "team": "jinx",
+    "ability": "在卡扎力行动完毕后，如果赏金猎人仍然在场，才会创造邪恶镇民。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
+    "setup": 0
+  },
+  {
+    "id": "瘟疫医生&间谍",
+    "name": "瘟疫医生&间谍",
+    "team": "jinx",
+    "ability": "如果瘟疫医生死亡且说书人会因此获得间谍的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
   }
 ]

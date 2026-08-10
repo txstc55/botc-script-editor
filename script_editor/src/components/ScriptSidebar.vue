@@ -2,6 +2,7 @@
 import { computed } from "vue";
 import { FileText, ListOrdered, Plus, Trash2 } from "@lucide/vue";
 import type { BuiltInFirstNightOrderKey, JinxDraft, PlayCharacterSummary, ScriptDraft } from "../types";
+import ScriptNotesEditor from "./ScriptNotesEditor.vue";
 import {
   buildFirstNightOrderItems,
   builtInFirstNightOrderDefinitions,
@@ -21,6 +22,8 @@ const emit = defineEmits<{
   "edit-jinx": [id: string];
   "remove-jinx": [id: string];
   "set-jinx-included": [id: string, included: boolean];
+  "add-note": [];
+  "remove-note": [id: string];
 }>();
 
 const firstNightOrderItems = computed(() => buildFirstNightOrderItems(props.script));
@@ -255,6 +258,12 @@ function collectPlayCharacters(): PlayCharacterSummary[] {
         </article>
       </TransitionGroup>
     </section>
+
+    <ScriptNotesEditor
+      :notes="props.script.notes"
+      @add="$emit('add-note')"
+      @remove="$emit('remove-note', $event)"
+    />
   </aside>
 </template>
 

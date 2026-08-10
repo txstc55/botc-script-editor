@@ -4,7 +4,8 @@
     "logo": "https://oss.gstonegames.com/data_file/clocktower/upload/1689598024_197011_9289.png",
     "name": "大权在握",
     "townsfolkName": "镇民",
-    "author": ""
+    "author": "",
+    "notes": []
   },
   {
     "firstNightReminder": "指向一名邪恶玩家。随后唤醒那名因赏金猎人而转变为邪恶的镇民，并告知他变成了邪恶阵营。",
@@ -291,43 +292,37 @@
     "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
-    "firstNightReminder": "如果有七名或更多玩家，唤醒疯子：展示“他们是你的爪牙”信息标记。指向任意对应数量的玩家。展示“这些角色不在场”信息标记。展示三个善良角色。让疯子重新入睡。唤醒恶魔。展示“你是”信息标记和恶魔角色标记。展示“这名玩家是”信息标记和疯子角色标记，然后指向疯子玩家。",
-    "otherNightReminder": "做任何需要做的事情来模拟一位恶魔的行动。让疯子重新入睡。唤醒恶魔。对恶魔展示疯子角色标记，并指向疯子玩家，随后是疯子的攻击目标。",
-    "name": "疯子",
-    "otherNight": 21,
-    "setup": 0,
-    "reminders": [],
-    "id": "lunaticbutton",
-    "edition": "custom",
-    "remindersGlobal": [
-      "是疯子",
-      "被选择"
-    ],
+    "id": "莽夫",
+    "name": "莽夫",
     "team": "outsider",
-    "name_eng": "Lunatic",
-    "firstNight": 7,
-    "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
-    "flavor": "吾即是暗夜……没错吧？"
-  },
-  {
+    "ability": "每个夜晚，首个使用其自身能力选择了你的玩家会醉酒直到下个黄昏。你会转变为他的阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goon.png",
+    "firstNight": 0,
     "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "解谜大师",
     "otherNight": 0,
-    "setup": 0,
+    "otherNightReminder": "",
     "reminders": [
-      "已猜测",
       "醉酒"
     ],
-    "id": "puzzlemasterbutton",
-    "edition": "custom",
-    "team": "outsider",
-    "name_eng": "Puzzlemaster",
-    "firstNight": 0,
-    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
     "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "是的，老大。我跟那个家伙好好解释过了。他不愿意再听我解释一遍。不不，老大，我不需要医生——只是刀伤而已。明天早上就好了。"
+  },
+  {
+    "id": "落难少女",
+    "name": "落难少女",
+    "team": "outsider",
+    "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
+    "firstNight": 5.1,
+    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
+    "otherNight": 0,
+    "otherNightReminder": "0",
+    "reminders": [
+      "已被猜测"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
     "flavor": ""
   },
   {
@@ -370,42 +365,39 @@
     "flavor": ""
   },
   {
-    "firstNightReminder": "",
-    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
-    "name": "麻脸巫婆",
-    "otherNight": 17,
-    "setup": 0,
-    "reminders": [],
-    "id": "pit-hagbutton",
-    "edition": "custom",
+    "id": "灵言师",
+    "name": "灵言师",
     "team": "minion",
-    "name_eng": "Pit-Hag",
-    "firstNight": 0,
-    "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
+    "firstNight": 28,
+    "firstNightReminder": "唤醒灵言师，对他展示他的关键词。",
+    "otherNight": 23,
+    "otherNightReminder": "唤醒第一个说出灵言师词语的玩家并告知他已经变成邪恶阵营。",
+    "reminders": [
+      "失去能力",
+      "转为邪恶"
+    ],
     "remindersGlobal": [],
+    "setup": 0,
     "flavor": ""
   },
   {
-    "firstNightReminder": "给寡妇展示魔典，她想看多久就看多久。等她看完后，让她指向一个玩家。那个玩家中毒。唤醒一名善良玩家，告诉他场上有寡妇。",
-    "otherNightReminder": "",
-    "name": "寡妇",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [
-      "中毒"
-    ],
-    "id": "widowbutton",
-    "edition": "custom",
-    "remindersGlobal": [
-      "被知晓"
-    ],
+    "id": "洗脑师",
+    "name": "洗脑师",
     "team": "minion",
-    "name_eng": "Widow",
-    "firstNight": 18,
-    "ability": "在你的首个夜晚，你能查看魔典并选择一名玩家：他中毒。随后，始终会有一名善良玩家知道寡妇在场。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
-    "flavor": ""
+    "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
+    "firstNight": 25,
+    "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "otherNight": 20,
+    "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "reminders": [
+      "疯狂"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
   },
   {
     "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",

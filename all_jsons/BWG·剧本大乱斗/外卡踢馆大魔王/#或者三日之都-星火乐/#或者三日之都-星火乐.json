@@ -2,7 +2,17 @@
   {
     "id": "_meta",
     "name": "或者三日之都",
-    "author": "星火乐"
+    "author": "星火乐",
+    "notes": [
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "id": "eyunxiaojie111",
@@ -397,23 +407,6 @@
     "setup": 0
   },
   {
-    "id": "kakakakkakakakakakakakaakakak111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
-    "edition": "custom",
-    "name": "绣刃领袖",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[+0/1外来者，爪牙们决定你是谁]（佞舌&绣刃领袖：如果没有玩家能决定谁是绣刃领袖，则说书人决定谁是绣刃领袖。）",
-    "team": "demon",
-    "sch_team": "恶魔",
-    "firstNight": 3.5,
-    "otherNight": 46,
-    "firstNightReminder": "唤醒卡扎力，让他选择玩家变成邪恶爪牙。",
-    "otherNightReminder": "唤醒卡扎力，让他攻击一名玩家。",
-    "reminders": [
-      "死亡"
-    ],
-    "setup": 1
-  },
-  {
     "id": "kakakakkakakakakakaakakak111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/kazali.png",
     "edition": "custom",
@@ -427,6 +420,24 @@
     "reminders": [
       "死亡"
     ]
+  },
+  {
+    "id": "锈刃领袖",
+    "name": "锈刃领袖",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家，他死亡。[+0/1外来者，爪牙们决定你是谁]",
+    "image": "https://www.bloodstar.xyz/p/DoubleA911/H3-02_InvoluntaryChoice/cawthane_h302_involuntarychoice.png",
+    "firstNight": 11,
+    "firstNightReminder": "During the Minion info step, inform the Minions the Cawthane is in play. They point to players: move the \"Coronation\" reminder besides the player who got the most votes. Replace their token with the Cawthane's, and inform them they are now the evil Cawthane.",
+    "otherNight": 11,
+    "otherNightReminder": "The Cawthane points to a player. That player dies.",
+    "reminders": [
+      "加冕",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "kakakakkakakaakakakaakakak111",
@@ -450,5 +461,17 @@
     "name": "Remake",
     "ability": "在第三个白天结束后，游戏回到为首个夜晚做准备前，但是已经死亡的玩家依旧会在对应的时间死亡。（绣刃领袖 佞舌不会参与邪恶方互认，自杀的半巫妖会被当作杀死自己）",
     "team": "fabled"
+  },
+  {
+    "id": "佞舌&锈刃领袖",
+    "name": "佞舌&锈刃领袖",
+    "team": "jinx",
+    "ability": "如果没有玩家能决定谁是锈刃领袖，则说书人决定谁是锈刃领袖。"
+  },
+  {
+    "id": "幸福&落难少女",
+    "name": "幸福&落难少女",
+    "team": "jinx",
+    "ability": "如果被幸福选择的落难少女被猜测了，则落难少女跟随善良阵营落败。"
   }
 ]

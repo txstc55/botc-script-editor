@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
 import { Eye, FileJson, ImageDown, Trash2, Upload } from "@lucide/vue";
-import type { JinxDraft, ScriptDraft, TeamKey } from "../types";
+import type { JinxDraft, ScriptDraft, ScriptNoteDraft, TeamKey } from "../types";
 import {
   buildFirstNightOrderItems,
   buildOtherNightOrderItems,
@@ -50,6 +50,15 @@ import {
   NIGHT_LABEL_SECOND_Y,
   NIGHT_LABEL_X,
   NIGHT_RAIL_VERTICAL_MARGIN,
+  NOTE_BOX_FILL,
+  NOTE_BOX_PADDING_X,
+  NOTE_BOX_PADDING_Y,
+  NOTE_BOX_RADIUS,
+  NOTE_BOX_STROKE,
+  NOTE_FONT_SIZE,
+  NOTE_ITEM_GAP,
+  NOTE_LINE_HEIGHT,
+  NOTE_SECTION_TOP_GAP,
   PAGE_WIDTH,
   PAGE_X,
   PAGE_Y,
@@ -86,6 +95,7 @@ import type {
   PreviewSection,
   PreviewSectionKey,
   SvgPreviewLayout,
+  SvgNoteLayout,
   SvgJinxRuleLayout,
   SvgRoleLayout,
   SvgSectionLayout,
@@ -170,9 +180,13 @@ function withNightOrderColors(items: NightOrderBaseItem[]): NightOrderItem[] {
 
 function buildPreviewLayout(): SvgPreviewLayout {
   const sections = buildSections();
-  const contentBottom = sections.length
+  const sectionContentBottom = sections.length
     ? sections[sections.length - 1].y + sections[sections.length - 1].height
     : firstSectionY.value;
+  const notesLayout = buildNotesLayout(sectionContentBottom);
+  const contentBottom = notesLayout.notes.length
+    ? notesLayout.boxY + notesLayout.boxHeight
+    : sectionContentBottom;
   const nightCenteringSections = sections.filter((section) => section.key !== "fabled" && section.key !== "traveler");
   const nightCenteringContentBottom = nightCenteringSections.length
     ? nightCenteringSections[nightCenteringSections.length - 1].y +
@@ -198,8 +212,44 @@ function buildPreviewLayout(): SvgPreviewLayout {
     pageHeight,
     nightRailContentY: PAGE_Y + (nightCenteringPageHeight - firstNightStackHeight) / 2,
     sections,
+    notes: notesLayout.notes,
+    notesBoxY: notesLayout.boxY,
+    notesBoxHeight: notesLayout.boxHeight,
     firstNightItems: firstNightOrder.value,
     otherNightItems: otherNightOrder.value,
+  };
+}
+
+function buildNotesLayout(contentBottom: number) {
+  if (!props.script.notes.length) {
+    return { notes: [] as SvgNoteLayout[], boxY: 0, boxHeight: 0 };
+  }
+
+  const boxY = contentBottom + NOTE_SECTION_TOP_GAP;
+  const width = CONTENT_WIDTH - NOTE_BOX_PADDING_X * 2;
+  const notes: SvgNoteLayout[] = [];
+  let y = boxY + NOTE_BOX_PADDING_Y;
+
+  for (const note of props.script.notes) {
+    const fontSize = maxInlineFontSize(note.textHtml, NOTE_FONT_SIZE);
+    const lineHeight = Math.max(NOTE_LINE_HEIGHT, Math.ceil(fontSize * 1.35));
+    const lineCount = Math.max(1, wrapText(note.text, width, fontSize).length);
+    const height = lineCount * lineHeight + 2;
+    notes.push({
+      id: note.id,
+      note,
+      x: CONTENT_X + NOTE_BOX_PADDING_X,
+      y,
+      width,
+      height,
+    });
+    y += height + NOTE_ITEM_GAP;
+  }
+
+  return {
+    notes,
+    boxY,
+    boxHeight: y - boxY - NOTE_ITEM_GAP + NOTE_BOX_PADDING_Y,
   };
 }
 
@@ -273,7 +323,9 @@ function layoutRole(
 ): SvgRoleLayout {
   const roleTextWidth = columnWidth - ROLE_ICON_SIZE - ROLE_ICON_GAP;
   const nameLines = wrapText(role.name, roleTextWidth, ROLE_NAME_FONT_SIZE);
-  const abilityLines = wrapAbilityLines(role.ability, team, roleTextWidth, ROLE_ABILITY_FONT_SIZE);
+  const abilityFontSize = maxInlineFontSize(role.abilityHtml, ROLE_ABILITY_FONT_SIZE);
+  const abilityLineHeight = Math.max(ROLE_ABILITY_LINE_HEIGHT, Math.ceil(abilityFontSize * 1.25));
+  const abilityLines = wrapAbilityLines(role.ability, team, roleTextWidth, abilityFontSize);
   const jinxesForRole = enabledJinxRulesByRoleId.value.get(role.id) ?? [];
   const actualTextWidth = centerActualContent
     ? measuredRoleTextWidth(nameLines, abilityLines, jinxesForRole, roleTextWidth)
@@ -284,7 +336,7 @@ function layoutRole(
   const textX = actualX + ROLE_ICON_SIZE + ROLE_ICON_GAP;
   const nameStartY = y + ROLE_NAME_FONT_SIZE;
   const abilityY = y + nameLines.length * ROLE_NAME_LINE_HEIGHT + ROLE_NAME_TO_ABILITY_GAP;
-  const abilityHeight = Math.max(ROLE_ABILITY_LINE_HEIGHT, abilityLines.length * ROLE_ABILITY_LINE_HEIGHT + 4);
+  const abilityHeight = Math.max(abilityLineHeight, abilityLines.length * abilityLineHeight + 4);
   const jinxRules = layoutJinxRules(
     jinxesForRole,
     textX,
@@ -539,6 +591,16 @@ function estimateTextWidth(value: string, fontSize: number) {
   return Array.from(value).reduce((width, char) => width + charWidthUnits(char) * fontSize, 0);
 }
 
+function maxInlineFontSize(html: string | undefined, fallback: number) {
+  if (!html) {
+    return fallback;
+  }
+  const sizes = Array.from(html.matchAll(/font-size\s*:\s*([\d.]+)px/giu))
+    .map((match) => Number(match[1]))
+    .filter(Number.isFinite);
+  return Math.max(fallback, ...sizes);
+}
+
 function previewSectionHeading(section: PreviewSection) {
   if (section.key === "fabled" || section.key === "traveler") {
     return section.label;
@@ -556,6 +618,13 @@ function roleAbilityHtml(role: PreviewRole, team: PreviewSectionKey) {
     return role.abilityHtml;
   }
   return highlightAbilityText(ability);
+}
+
+function noteTextHtml(note: ScriptNoteDraft) {
+  if (note.textHtml && plainTextFromHtml(note.textHtml) === normalizeAbilityText(note.text)) {
+    return note.textHtml;
+  }
+  return highlightAbilityText(note.text);
 }
 
 function abilityDisplayText(value: string, team: PreviewSectionKey) {
@@ -662,19 +731,23 @@ function escapeHtml(value: string) {
     .replace(/'/g, "&#039;");
 }
 
-function handleAbilityBlur(role: PreviewRole, event: FocusEvent) {
+function handleAbilityBlur(target: PreviewRole | ScriptNoteDraft, event: FocusEvent) {
   if (isTextFormatToolbarTarget(event.relatedTarget)) {
     return;
   }
-  saveAbilityEditor(role, event.currentTarget as HTMLElement);
+  saveRichTextEditor(target, event.currentTarget as HTMLElement);
 }
 
 function isTextFormatToolbarTarget(target: EventTarget | null) {
   return target instanceof Element && Boolean(target.closest(".text-format-toolbar"));
 }
 
-function saveAbilityEditor(role: PreviewRole, editor: HTMLElement) {
-  role.abilityHtml = editor.innerHTML;
+function saveRichTextEditor(target: PreviewRole | ScriptNoteDraft, editor: HTMLElement) {
+  if ("text" in target) {
+    target.textHtml = editor.innerHTML;
+  } else {
+    target.abilityHtml = editor.innerHTML;
+  }
 }
 
 function plainTextFromHtml(html: string) {
@@ -768,6 +841,25 @@ function applyBackgroundColor(option: TextColorOption) {
   applyEditorCommand("hiliteColor", shouldClear ? undefined : option.color, shouldClear ? "remove" : "apply");
 }
 
+function applyFontSizeStep(delta: -1 | 1) {
+  const editor = editorForSelectionSnapshot(savedSelectionSnapshot.value);
+  if (!editor) {
+    return;
+  }
+  const current = toolbarFormatState.value.fontSize ?? editorBaseFontSize(editor);
+  const next = Math.max(10, Math.min(32, current + delta));
+  applyEditorCommand("fontSize", String(next));
+}
+
+function resetFontSize() {
+  applyEditorCommand("fontSize", undefined, "remove");
+}
+
+function editorBaseFontSize(editor: HTMLElement) {
+  const value = Number(editor.dataset.baseFontSize);
+  return Number.isFinite(value) ? value : ROLE_ABILITY_FONT_SIZE;
+}
+
 function applyEditorCommand(command: string, value?: string, mode: "apply" | "remove" = "apply") {
   const snapshot = savedSelectionSnapshot.value;
   const editor = editorForSelectionSnapshot(snapshot);
@@ -794,9 +886,9 @@ function applyEditorCommand(command: string, value?: string, mode: "apply" | "re
   selection?.removeAllRanges();
   selection?.addRange(nextRange);
   const nextFormatState = commandFormatState(readSelectionFormatState(nextRange, editor), command, value, mode);
-  const role = findRoleById(editor.dataset.roleId);
-  if (role) {
-    saveAbilityEditor(role, editor);
+  const target = findRichTextTargetById(editor.dataset.roleId);
+  if (target) {
+    saveRichTextEditor(target, editor);
   }
   syncToolbarState(editor, nextRange, nextFormatState, snapshot);
   void nextTick(() => restoreSelectionSnapshot(snapshot, nextFormatState));
@@ -885,6 +977,8 @@ function applyStyleCommand(wrapper: HTMLElement, command: string, value?: string
     if (value !== "transparent") {
       wrapper.style.fontWeight = "900";
     }
+  } else if (command === "fontSize" && value) {
+    wrapper.style.fontSize = `${value}px`;
   }
 }
 
@@ -899,8 +993,10 @@ function removeStyleCommand(wrapper: HTMLElement, command: string) {
     wrapper.style.color = DEFAULT_TEXT_COLOR;
     wrapper.style.fontWeight = "650";
   } else if (command === "hiliteColor") {
-    wrapper.style.backgroundColor = SCRIPT_PAGE_BACKGROUND;
+    wrapper.style.backgroundColor = "transparent";
     wrapper.style.fontWeight = "650";
+  } else if (command === "fontSize") {
+    wrapper.style.fontSize = "";
   }
 }
 
@@ -945,6 +1041,7 @@ function styleWrapperFromTextNode(node: Text, editor: HTMLElement, text: string)
     underline: textNodeHasVisibleUnderline(node, editor),
     color: textNodeTextColor(node) ?? undefined,
     backgroundColor: textNodeBackgroundColor(node, editor) ?? undefined,
+    fontSize: textNodeFontSize(node, editor) ?? undefined,
   });
   cleanupStyleWrapper(wrapper);
   return wrapper;
@@ -965,6 +1062,9 @@ function applyStyleSnapshot(wrapper: HTMLElement, style: ExportTextStyle) {
   }
   if (style.backgroundColor) {
     wrapper.style.backgroundColor = style.backgroundColor;
+  }
+  if (style.fontSize) {
+    wrapper.style.fontSize = `${style.fontSize}px`;
   }
 }
 
@@ -1032,6 +1132,9 @@ function commandFormatState(formatState: FormatState, command: string, value: st
       nextState.bold = false;
     }
   }
+  if (command === "fontSize") {
+    nextState.fontSize = mode === "apply" && value ? Number(value) : formatState.fontSize;
+  }
   return nextState;
 }
 
@@ -1075,6 +1178,10 @@ function removeFormatFromNode(node: Node, command: string) {
   if (command === "hiliteColor") {
     node.style.backgroundColor = "";
     clearAutomaticWeight(node);
+  }
+
+  if (command === "fontSize") {
+    node.style.fontSize = "";
   }
 
   cleanupElement(node);
@@ -1183,8 +1290,11 @@ function clearFormatOnElement(element: HTMLElement, command: string) {
     element.style.fontWeight = "650";
   }
   if (command === "hiliteColor") {
-    element.style.backgroundColor = SCRIPT_PAGE_BACKGROUND;
+    element.style.backgroundColor = "transparent";
     element.style.fontWeight = "650";
+  }
+  if (command === "fontSize") {
+    element.style.fontSize = "";
   }
 }
 
@@ -1207,6 +1317,7 @@ function readSelectionFormatState(range: Range, editor: HTMLElement): FormatStat
     underline: nodes.every((node) => textNodeHasUnderline(node, editor)),
     textColor: commonSelectionValue(nodes, (node) => textNodeTextColor(node)),
     backgroundColor: commonSelectionValue(nodes, (node) => textNodeBackgroundColor(node, editor)),
+    fontSize: commonSelectionNumber(nodes, (node) => textNodeFontSize(node, editor), editorBaseFontSize(editor)),
   };
 }
 
@@ -1475,6 +1586,14 @@ function textNodeBackgroundColor(node: Text, editor: HTMLElement) {
   return null;
 }
 
+function textNodeFontSize(node: Text, editor: HTMLElement) {
+  const size = Number.parseFloat(getComputedStyle(parentElement(node)).fontSize);
+  if (!Number.isFinite(size) || Math.abs(size - editorBaseFontSize(editor)) < 0.01) {
+    return null;
+  }
+  return size;
+}
+
 function isVisibleHighlightColor(color?: string | null) {
   return Boolean(
     color &&
@@ -1494,6 +1613,14 @@ function commonSelectionValue(nodes: Text[], readValue: (node: Text) => string |
     return null;
   }
   return nodes.every((node) => colorsMatch(readValue(node), firstValue)) ? firstValue : null;
+}
+
+function commonSelectionNumber(nodes: Text[], readValue: (node: Text) => number | null, fallback: number) {
+  const firstValue = readValue(nodes[0]);
+  if (firstValue === null) {
+    return nodes.every((node) => readValue(node) === null) ? fallback : null;
+  }
+  return nodes.every((node) => readValue(node) === firstValue) ? firstValue : null;
 }
 
 function isTextColorActive(option: TextColorOption) {
@@ -1546,9 +1673,13 @@ function editorForSelectionSnapshot(snapshot: SelectionSnapshot | null) {
     .find((editor) => editor.dataset.roleId === snapshot.roleId) ?? null;
 }
 
-function findRoleById(roleId?: string) {
+function findRichTextTargetById(roleId?: string): PreviewRole | ScriptNoteDraft | null {
   if (!roleId) {
     return null;
+  }
+  if (roleId.startsWith("note:")) {
+    const noteId = roleId.slice(5);
+    return props.script.notes.find((note) => note.id === noteId) ?? null;
   }
   for (const team of Object.values(props.script.teams)) {
     const role = team.roles.find((candidate) => candidate.id === roleId);
@@ -1565,6 +1696,7 @@ interface ExportTextStyle {
   bold?: boolean;
   italic?: boolean;
   underline?: boolean;
+  fontSize?: number;
 }
 
 interface PreviewJinxRule extends JinxDraft {
@@ -1748,36 +1880,42 @@ function addExportStyles(svg: SVGSVGElement) {
 }
 
 function replaceExportForeignObjects(svg: SVGSVGElement) {
-  svg.querySelectorAll<SVGForeignObjectElement>("foreignObject.svg-role-ability-object").forEach((foreignObject) => {
+  svg.querySelectorAll<SVGForeignObjectElement>("foreignObject.svg-rich-text-object").forEach((foreignObject) => {
     const editor = foreignObject.querySelector<HTMLElement>(".role-ability-editor");
     if (!editor || !foreignObject.parentNode) {
       foreignObject.remove();
       return;
     }
 
-    foreignObject.parentNode.replaceChild(createExportAbilityGroup(foreignObject, editor), foreignObject);
+    foreignObject.parentNode.replaceChild(createExportRichTextGroup(foreignObject, editor), foreignObject);
   });
 }
 
-function createExportAbilityGroup(foreignObject: SVGForeignObjectElement, editor: HTMLElement) {
+function createExportRichTextGroup(foreignObject: SVGForeignObjectElement, editor: HTMLElement) {
   const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
   const x = svgAttributeNumber(foreignObject, "x");
   const y = svgAttributeNumber(foreignObject, "y");
   const width = svgAttributeNumber(foreignObject, "width");
-  const lines = wrapExportTokens(readExportTextTokens(editor), width, ROLE_ABILITY_FONT_SIZE);
+  const baseFontSize = svgDataNumber(foreignObject, "baseFontSize", ROLE_ABILITY_FONT_SIZE);
+  const baseLineHeight = svgDataNumber(foreignObject, "baseLineHeight", ROLE_ABILITY_LINE_HEIGHT);
+  const lines = wrapExportTokens(readExportTextTokens(editor), width, baseFontSize);
+  let cursorY = y;
 
-  lines.forEach((line, lineIndex) => {
-    const textY = y + ROLE_ABILITY_FONT_SIZE + lineIndex * ROLE_ABILITY_LINE_HEIGHT;
+  lines.forEach((line) => {
+    const maxFontSize = Math.max(baseFontSize, ...line.map((token) => token.style.fontSize ?? baseFontSize));
+    const lineHeight = Math.max(baseLineHeight, Math.ceil(maxFontSize * 1.25));
+    const textY = cursorY + maxFontSize;
     let cursorX = x;
 
     line.forEach((token) => {
-      const tokenWidth = estimateTextWidth(token.text, ROLE_ABILITY_FONT_SIZE);
+      const tokenFontSize = token.style.fontSize ?? baseFontSize;
+      const tokenWidth = estimateTextWidth(token.text, tokenFontSize);
       if (token.style.backgroundColor) {
         const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
         rect.setAttribute("x", String(cursorX - 1));
-        rect.setAttribute("y", String(textY - ROLE_ABILITY_FONT_SIZE + 2));
+        rect.setAttribute("y", String(textY - tokenFontSize + 2));
         rect.setAttribute("width", String(tokenWidth + 2));
-        rect.setAttribute("height", String(ROLE_ABILITY_LINE_HEIGHT - 2));
+        rect.setAttribute("height", String(Math.max(tokenFontSize + 2, lineHeight - 2)));
         rect.setAttribute("rx", "3");
         rect.setAttribute("fill", token.style.backgroundColor);
         group.appendChild(rect);
@@ -1790,7 +1928,7 @@ function createExportAbilityGroup(foreignObject: SVGForeignObjectElement, editor
     text.setAttribute("y", String(textY));
     text.setAttribute("fill", DEFAULT_TEXT_COLOR);
     text.setAttribute("font-family", "\"Noto Serif SC\", \"Songti SC\", STSong, serif");
-    text.setAttribute("font-size", String(ROLE_ABILITY_FONT_SIZE));
+    text.setAttribute("font-size", String(baseFontSize));
     text.setAttribute("font-weight", "650");
 
     line.forEach((token) => {
@@ -1808,13 +1946,22 @@ function createExportAbilityGroup(foreignObject: SVGForeignObjectElement, editor
       if (token.style.underline) {
         tspan.setAttribute("text-decoration", "underline");
       }
+      if (token.style.fontSize) {
+        tspan.setAttribute("font-size", String(token.style.fontSize));
+      }
       text.appendChild(tspan);
     });
 
     group.appendChild(text);
+    cursorY += lineHeight;
   });
 
   return group;
+}
+
+function svgDataNumber(element: SVGElement, key: string, fallback: number) {
+  const value = Number(element.dataset[key]);
+  return Number.isFinite(value) ? value : fallback;
 }
 
 function svgAttributeNumber(element: Element, attribute: string) {
@@ -1888,6 +2035,10 @@ function exportStyleForElement(element: HTMLElement, inheritedStyle: ExportTextS
       style.underline = false;
     }
   }
+  if (element.style.fontSize) {
+    const fontSize = Number.parseFloat(element.style.fontSize);
+    style.fontSize = Number.isFinite(fontSize) ? fontSize : inheritedStyle.fontSize;
+  }
 
   return style;
 }
@@ -1897,7 +2048,6 @@ function isVisibleExportBackground(color: string) {
 }
 
 function wrapExportTokens(tokens: ExportTextToken[], maxWidth: number, fontSize: number) {
-  const maxUnits = Math.max(4, maxWidth / fontSize);
   const lines: ExportTextToken[][] = [[]];
   let lineWidth = 0;
 
@@ -1909,8 +2059,8 @@ function wrapExportTokens(tokens: ExportTextToken[], maxWidth: number, fontSize:
         continue;
       }
 
-      const charWidth = charWidthUnits(char);
-      if (lines[lines.length - 1].length > 0 && lineWidth + charWidth > maxUnits) {
+      const charWidth = charWidthUnits(char) * (token.style.fontSize ?? fontSize);
+      if (lines[lines.length - 1].length > 0 && lineWidth + charWidth > maxWidth) {
         lines.push([]);
         lineWidth = 0;
       }
@@ -1944,6 +2094,7 @@ function exportTextStylesMatch(left: ExportTextStyle, right: ExportTextStyle) {
     left.bold === right.bold &&
     left.italic === right.italic &&
     left.underline === right.underline &&
+    left.fontSize === right.fontSize &&
     optionalColorsMatch(left.color, right.color) &&
     optionalColorsMatch(left.backgroundColor, right.backgroundColor)
   );
@@ -2408,11 +2559,13 @@ defineExpose({
                 {{ line }}
               </text>
               <foreignObject
-                class="svg-role-ability-object"
+                class="svg-role-ability-object svg-rich-text-object"
                 :x="role.abilityX"
                 :y="role.abilityY"
                 :width="role.abilityWidth"
                 :height="role.abilityHeight"
+                :data-base-font-size="ROLE_ABILITY_FONT_SIZE"
+                :data-base-line-height="ROLE_ABILITY_LINE_HEIGHT"
               >
                 <div
                   xmlns="http://www.w3.org/1999/xhtml"
@@ -2420,6 +2573,7 @@ defineExpose({
                   contenteditable="true"
                   spellcheck="false"
                   :data-role-id="role.id"
+                  :data-base-font-size="ROLE_ABILITY_FONT_SIZE"
                   :style="{
                     fontSize: `${ROLE_ABILITY_FONT_SIZE}px`,
                     lineHeight: `${ROLE_ABILITY_LINE_HEIGHT}px`,
@@ -2470,6 +2624,52 @@ defineExpose({
               </g>
             </g>
           </g>
+
+          <g v-if="previewLayout.notes.length" class="svg-script-notes">
+            <rect
+              :x="CONTENT_X"
+              :y="previewLayout.notesBoxY"
+              :width="CONTENT_WIDTH"
+              :height="previewLayout.notesBoxHeight"
+              :rx="NOTE_BOX_RADIUS"
+              :fill="NOTE_BOX_FILL"
+              :stroke="NOTE_BOX_STROKE"
+              stroke-width="2"
+            />
+            <foreignObject
+              v-for="note in previewLayout.notes"
+              :key="`note-${note.id}`"
+              class="svg-note-object svg-rich-text-object"
+              :x="note.x"
+              :y="note.y"
+              :width="note.width"
+              :height="note.height"
+              :data-base-font-size="NOTE_FONT_SIZE"
+              :data-base-line-height="NOTE_LINE_HEIGHT"
+            >
+              <div
+                xmlns="http://www.w3.org/1999/xhtml"
+                class="role-ability-editor note-text-editor"
+                contenteditable="true"
+                spellcheck="false"
+                :data-role-id="`note:${note.id}`"
+                :data-base-font-size="NOTE_FONT_SIZE"
+                :style="{
+                  fontSize: `${NOTE_FONT_SIZE}px`,
+                  lineHeight: `${NOTE_LINE_HEIGHT}px`,
+                }"
+                v-html="noteTextHtml(note.note)"
+                @beforeinput="preventPreviewTextMutation"
+                @blur="handleAbilityBlur(note.note, $event)"
+                @cut="preventPreviewTextMutation"
+                @drop="preventPreviewTextMutation"
+                @keydown="preventPreviewTextKeydown"
+                @keyup="queueSelectionUpdate"
+                @mouseup="queueSelectionUpdate"
+                @paste="preventPreviewTextMutation"
+              />
+            </foreignObject>
+          </g>
         </g>
         </svg>
       </div>
@@ -2485,6 +2685,8 @@ defineExpose({
       @inline-command="applyInlineCommand"
       @text-color="applyTextColor"
       @background-color="applyBackgroundColor"
+      @font-size-step="applyFontSizeStep"
+      @font-size-reset="resetFontSize"
     />
   </section>
 </template>

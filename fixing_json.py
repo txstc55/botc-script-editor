@@ -7,8 +7,9 @@ import argparse
 import json
 import re
 import urllib.request
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
+from typing import Any
 
 
 DEFAULT_INPUT_DIR = "all_jsons"
@@ -68,6 +69,43 @@ BRACKET_WRAPPED_TEXT_KEYS = {
   "skill",
   "targetName",
 }
+CHARACTER_TEAMS = {"townsfolk", "outsider", "minion", "demon", "traveler", "fabled"}
+CHARACTER_FIELDS = (
+  "ability",
+  "image",
+  "firstNight",
+  "firstNightReminder",
+  "otherNight",
+  "otherNightReminder",
+  "reminders",
+  "remindersGlobal",
+  "setup",
+  "flavor",
+)
+CHARACTER_DEFAULTS: dict[str, Any] = {
+  "ability": "",
+  "image": "",
+  "firstNight": 0,
+  "firstNightReminder": "",
+  "otherNight": 0,
+  "otherNightReminder": "",
+  "reminders": [],
+  "remindersGlobal": [],
+  "setup": 0,
+  "flavor": "",
+}
+CHARACTER_ID_OVERRIDES = {
+  "bootlegger": ("私货商人", "fabled"),
+  "gardener": ("园丁", "fabled"),
+  "hermit": ("隐修者", "outsider"),
+  "lilmonsta": ("小怪宝", "demon"),
+  "witch": ("女巫", "minion"),
+  "wraith": ("亡魂", "minion"),
+}
+CHARACTER_REFERENCE_OVERRIDES = {
+  "hermit": Path("all_jsons/BWG·剧本大乱斗/BWG剧本大乱斗收录合集/#言出法随-讷之/#言出法随-讷之.json"),
+  "wraith": Path("all_jsons/万象星启体验剧本/剧本/768#血肉磨坊-qqwawawawa.json"),
+}
 
 
 def json_paths(input_dir: Path) -> list[Path]:
@@ -76,6 +114,130 @@ def json_paths(input_dir: Path) -> list[Path]:
     for path in input_dir.rglob("*")
     if path.is_file() and path.suffix.lower() == ".json"
   )
+
+
+def normalized_character_id(value: object) -> str:
+  return re.sub(r"[^a-z0-9]", "", str(value or "").lower())
+
+
+def normalized_character_team(value: object) -> str:
+  team = clean_text(value).lower()
+  return "traveler" if team in {"traveller", "traveller2"} else team
+
+
+def character_payload(item: dict[str, Any], character_id: str) -> dict[str, Any]:
+  result: dict[str, Any] = {
+    "id": character_id,
+    "name": clean_text(item.get("name")),
+    "team": normalized_character_team(item.get("team")),
+  }
+  for field in CHARACTER_FIELDS:
+    result[field] = item.get(field, CHARACTER_DEFAULTS[field])
+  setup = result["setup"]
+  try:
+    result["setup"] = int(float(setup or 0) != 0)
+  except (TypeError, ValueError):
+    result["setup"] = int(str(setup).strip().lower() == "true")
+  return result
+
+
+def build_character_id_registry(paths: list[Path]) -> tuple[dict[str, dict[str, Any]], set[str]]:
+  needed_ids: set[str] = set()
+  all_characters: list[dict[str, Any]] = []
+  candidates_by_id: dict[str, list[dict[str, Any]]] = defaultdict(list)
+  reference_candidates: dict[str, dict[str, Any]] = {}
+  for path in paths:
+    try:
+      data = json.loads(path.read_text(encoding="utf-8-sig"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+      continue
+    if not isinstance(data, list):
+      continue
+    needed_ids.update(normalized_character_id(item) for item in data if isinstance(item, str))
+    for item in data:
+      if not isinstance(item, dict):
+        continue
+      name = clean_text(item.get("name"))
+      team = normalized_character_team(item.get("team"))
+      if not name or team not in CHARACTER_TEAMS:
+        continue
+      all_characters.append(item)
+      for character_id, reference_path in CHARACTER_REFERENCE_OVERRIDES.items():
+        if path == reference_path and (name, team) == CHARACTER_ID_OVERRIDES[character_id]:
+          reference_candidates[character_id] = item
+      for field in ("id", "name_id", "name_eng"):
+        candidate_id = normalized_character_id(item.get(field))
+        if candidate_id:
+          candidates_by_id[candidate_id].append(item)
+
+  registry: dict[str, dict[str, Any]] = {}
+  unresolved: set[str] = set()
+  for character_id in needed_ids:
+    if character_id in reference_candidates:
+      registry[character_id] = character_payload(reference_candidates[character_id], character_id)
+      continue
+    override = CHARACTER_ID_OVERRIDES.get(character_id)
+    candidates = candidates_by_id.get(character_id, [])
+    if override:
+      candidates = [
+        item for item in all_characters
+        if (clean_text(item.get("name")), normalized_character_team(item.get("team"))) == override
+      ]
+    if not candidates:
+      unresolved.add(character_id)
+      continue
+    identity_counts = Counter(
+      (clean_text(item.get("name")), normalized_character_team(item.get("team")))
+      for item in candidates
+    )
+    identity = override or identity_counts.most_common(1)[0][0]
+    payload_counts: Counter[str] = Counter()
+    for item in candidates:
+      if (clean_text(item.get("name")), normalized_character_team(item.get("team"))) != identity:
+        continue
+      payload = character_payload(item, character_id)
+      payload_counts[json.dumps(payload, ensure_ascii=False, sort_keys=True)] += 1
+    if not payload_counts:
+      unresolved.add(character_id)
+      continue
+    selected = max(
+      payload_counts,
+      key=lambda value: (
+        payload_counts[value],
+        len(clean_text(json.loads(value).get("ability"))),
+      ),
+    )
+    registry[character_id] = json.loads(selected)
+  return registry, unresolved
+
+
+def expand_character_ids(data: object, registry: dict[str, dict[str, Any]]) -> Counter[str]:
+  counts: Counter[str] = Counter()
+  if not isinstance(data, list):
+    return counts
+  existing_identities = {
+    (clean_text(item.get("name")), normalized_character_team(item.get("team")))
+    for item in data if isinstance(item, dict)
+  }
+  expanded: list[object] = []
+  for item in data:
+    if not isinstance(item, str):
+      expanded.append(item)
+      continue
+    character_id = normalized_character_id(item)
+    character = registry.get(character_id)
+    if not character:
+      expanded.append(item)
+      continue
+    identity = (character["name"], character["team"])
+    if identity in existing_identities:
+      counts[f"duplicate_character_id:{item}"] += 1
+      continue
+    expanded.append(dict(character))
+    existing_identities.add(identity)
+    counts[f"character_id:{item}->{character['name']}"] += 1
+  data[:] = expanded
+  return counts
 
 
 def clean_text(value: object) -> str:
@@ -207,7 +369,11 @@ def is_single_square_wrapper(value: str) -> bool:
   )
 
 
-def fix_file(path: Path, dry_run: bool) -> Counter[str]:
+def fix_file(
+  path: Path,
+  dry_run: bool,
+  character_registry: dict[str, dict[str, Any]],
+) -> Counter[str]:
   original = path.read_bytes()
   counts: Counter[str] = Counter()
   url_fixed = fix_url_pointer_file(original, counts)
@@ -246,9 +412,11 @@ def fix_file(path: Path, dry_run: bool) -> Counter[str]:
     parsed = None
 
   if parsed is not None:
+    character_id_counts = expand_character_ids(parsed, character_registry)
     wrapped_text_counts = normalize_wrapped_text_values(parsed)
     reminder_counts = backfill_missing_reminders(parsed)
-    if wrapped_text_counts or reminder_counts:
+    if character_id_counts or wrapped_text_counts or reminder_counts:
+      counts.update(character_id_counts)
       counts.update(wrapped_text_counts)
       counts.update(reminder_counts)
       fixed = (json.dumps(parsed, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
@@ -280,11 +448,13 @@ def fix_url_pointer_file(original: bytes, counts: Counter[str]) -> bytes | None:
 def main() -> int:
   args = parse_args()
   input_dir = Path(args.input_dir)
+  paths = json_paths(input_dir)
+  character_registry, unresolved_ids = build_character_id_registry(paths)
   total_counts: Counter[str] = Counter()
   changed_files = 0
 
-  for path in json_paths(input_dir):
-    counts = fix_file(path, args.dry_run)
+  for path in paths:
+    counts = fix_file(path, args.dry_run, character_registry)
     if counts:
       changed_files += 1
       total_counts.update(counts)
@@ -296,6 +466,8 @@ def main() -> int:
   total_details = ", ".join(f"{team}={count}" for team, count in sorted(total_counts.items()))
   print(f"{action} {changed_files} files")
   print(f"Replacement counts: {total_details or 'none'}")
+  if unresolved_ids:
+    print(f"Unresolved character ids: {', '.join(sorted(unresolved_ids))}")
   return 0
 
 

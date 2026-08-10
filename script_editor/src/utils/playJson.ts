@@ -1,4 +1,4 @@
-import type { JinxDraft, PlayCleanupReport, RoleDraft, ScriptDraft, TeamKey } from "../types";
+import type { JinxDraft, PlayCleanupReport, RoleDraft, ScriptDraft, ScriptNoteDraft, TeamKey } from "../types";
 import {
   createDefaultBuiltInFirstNightEnabled,
   createDefaultBuiltInFirstNightOrders,
@@ -38,6 +38,7 @@ export function createEmptyScript(): ScriptDraft {
     builtInFirstNightEnabled: createDefaultBuiltInFirstNightEnabled(),
     fabled: [],
     jinxes: [],
+    notes: [],
     teams: {
       townsfolk: { key: "townsfolk", label: teamLabels.townsfolk, roles: [] },
       outsider: { key: "outsider", label: teamLabels.outsider, roles: [] },
@@ -66,6 +67,7 @@ export function loadPlayFromJson(input: unknown, fileName = "导入剧本.json")
 
   script.name = cleanText(meta?.name) || cleanText((input as RawRecord)?.name) || "未命名剧本";
   script.author = cleanText(meta?.author) || cleanText((input as RawRecord)?.author);
+  script.notes = parseScriptNotes(meta);
 
   for (const rawItem of items) {
     if (!isRecord(rawItem)) {
@@ -95,6 +97,7 @@ export function loadPlayFromJson(input: unknown, fileName = "导入剧本.json")
         id: cleanText(normalized.id) || name,
         name,
         ability: cleanText(normalized.ability),
+        abilityHtml: cleanText(normalized.abilityHtml) || undefined,
         image: cleanText(normalized.image),
         firstNight: parseNumber(normalized.firstNight),
         firstNightReminder: cleanText(normalized.firstNightReminder ?? normalized.firstReminder),
@@ -195,6 +198,7 @@ function toRole(item: RawRecord, name: string): RoleDraft {
     id: cleanText(item.id) || name,
     name,
     ability: cleanText(item.ability),
+    abilityHtml: cleanText(item.abilityHtml) || undefined,
     selected: true,
     setup: normalizeSetup(item.setup),
     image: cleanText(item.image),
@@ -206,6 +210,35 @@ function toRole(item: RawRecord, name: string): RoleDraft {
     remindersGlobal: toStringList(item.remindersGlobal ?? item.reminders_global),
     flavor: cleanText(item.flavor),
   };
+}
+
+function parseScriptNotes(meta?: RawRecord): ScriptNoteDraft[] {
+  const rawNotes = meta?.notes ?? meta?.explanations ?? meta?.status;
+  if (!Array.isArray(rawNotes)) {
+    return [];
+  }
+
+  return rawNotes.flatMap((value, index) => {
+    if (typeof value === "string") {
+      const text = cleanText(value);
+      return text ? [{ id: `note-${index}`, text }] : [];
+    }
+    if (!isRecord(value)) {
+      return [];
+    }
+
+    const title = cleanText(value.name ?? value.title ?? value.term);
+    const body = cleanText(value.text ?? value.description ?? value.skill ?? value.ability);
+    const text = title && body ? `${title}：${body}` : title || body;
+    if (!text) {
+      return [];
+    }
+    return [{
+      id: cleanText(value.id) || `note-${index}`,
+      text,
+      textHtml: cleanText(value.html ?? value.textHtml) || undefined,
+    }];
+  });
 }
 
 function toJinx(item: RawRecord, name: string): JinxDraft {

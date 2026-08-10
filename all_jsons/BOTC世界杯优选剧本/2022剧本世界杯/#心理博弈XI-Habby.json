@@ -10,6 +10,20 @@
         "name": "不平则鸣",
         "skill": "该剧本拒不采纳麻脸巫婆与利维坦的新增相克规则。在第五个白天之后，麻脸巫婆可以创造利维坦。"
       }
+    ],
+    "notes": [
+      {
+        "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事情“可能”发生，代表由说书人来决定该事情是否发生。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
     ]
   },
   {
@@ -516,11 +530,10 @@
     "firstNight": 12800.0
   },
   {
-    "id": "f28c3679-d438-4cd1-893c-ac6308b94104",
+    "id": "旅店老板&利维坦",
     "name": "旅店老板&利维坦",
     "team": "jinx",
-    "ability": "如果利维坦在场，旅店老板保护的玩家免疫所有邪恶阵营的负面效果。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/innkeeper.png"
+    "ability": "如果利维坦发起的提名中被处决的玩家在前一晚曾被旅店老板成功保护，那么那名玩家不会死亡。"
   },
   {
     "id": "9d542ebe-a015-4a4b-adce-4dc9ee028ad8",
@@ -530,10 +543,9 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/mayor.png"
   },
   {
-    "id": "ec7b6238-5c46-41fc-9679-6168efdf07c0",
+    "id": "帽匠&利维坦",
     "name": "帽匠&利维坦",
     "team": "jinx",
-    "ability": "如果帽匠在第五个白天或之后死亡，恶魔不能选择变成利维坦。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202312/c_9723021341071_86da6df4.jpg"
+    "ability": "如果帽匠在第五个白天或之后死亡，恶魔不能选择变成利维坦。"
   }
 ]

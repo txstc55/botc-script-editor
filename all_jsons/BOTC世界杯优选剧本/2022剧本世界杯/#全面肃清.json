@@ -4,7 +4,13 @@
     "logo": "https://oss.gstonegames.com/data_file/clocktower/upload/1689597974_197011_913.png",
     "name": "全面肃清",
     "townsfolkName": "镇民",
-    "author": "Soup"
+    "author": "Soup",
+    "notes": [
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
@@ -524,5 +530,27 @@
     "ability": "游戏开始时，你要宣布一个善良角色。如果该角色在场，他只能死于处决，但所有邪恶玩家会在首个夜晚得知他是哪一名玩家。",
     "edition": "custom",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/stormcatcher.png"
+  },
+  {
+    "id": "食人族&管家",
+    "name": "食人族&管家",
+    "team": "jinx",
+    "ability": "如果食人族获得了管家的能力，他会得知这一信息。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "setup": 0
+  },
+  {
+    "id": "红唇女郎&方古",
+    "name": "红唇女郎&方古",
+    "team": "jinx",
+    "ability": "如果方古成功转化了外来者并因此死去，红唇女郎不会变成方古。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
+    "setup": 0
+  },
+  {
+    "id": "小怪宝&红唇女郎",
+    "name": "小怪宝&红唇女郎",
+    "team": "jinx",
+    "ability": "如果在五名及以上的玩家存活时照看小怪宝的玩家死亡，当晚红唇女郎必须要照看小怪宝。"
   }
 ]

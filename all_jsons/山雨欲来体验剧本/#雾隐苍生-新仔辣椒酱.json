@@ -4,7 +4,13 @@
     "name": "雾隐苍生",
     "author": "新仔辣椒酱",
     "townsfolkName": "镇民",
-    "logo": "https://i.postimg.cc/63hTMZ5q/image.png"
+    "logo": "https://i.postimg.cc/63hTMZ5q/image.png",
+    "notes": [
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙会变成小恶魔。",
@@ -75,6 +81,24 @@
     "firstNight": 0
   },
   {
+    "ability": "如果你提名并处决了恶魔，你会变成邪恶的恶魔。当剩余存活玩家小于等于四人时（旅行者除外），你失去能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5757097694761_2de60c7b.jpg",
+    "edition": "custom",
+    "flavor": "",
+    "id": "rulianshi",
+    "firstNightReminder": "",
+    "otherNightReminder": "如果白天入殓师提名了恶魔且恶魔被处决，唤醒他，并对他展示“你是”提示标记和恶魔角色标记。",
+    "name": "入殓师",
+    "otherNight": 3800,
+    "setup": 0,
+    "reminders": [
+      "是恶魔"
+    ],
+    "remindersGlobal": [],
+    "team": "outsider",
+    "firstNight": 0
+  },
+  {
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
     "edition": "custom",
@@ -88,22 +112,6 @@
     "reminders": [
       "今晚理发"
     ],
-    "remindersGlobal": [],
-    "team": "outsider",
-    "firstNight": 0
-  },
-  {
-    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
-    "edition": "custom",
-    "flavor": "我不是怪物！我是人！求你了！",
-    "id": "mutant",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "畸形秀演员",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
     "remindersGlobal": [],
     "team": "outsider",
     "firstNight": 0
@@ -251,22 +259,21 @@
     "firstNight": 0
   },
   {
-    "ability": "如果你提名并处决了恶魔，你会变成邪恶的恶魔。当剩余存活玩家小于等于四人时（旅行者除外），你失去能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5757097694761_2de60c7b.jpg",
-    "edition": "custom",
-    "flavor": "",
-    "id": "rulianshi",
-    "firstNightReminder": "",
-    "otherNightReminder": "如果白天入殓师提名了恶魔且恶魔被处决，唤醒他，并对他展示“你是”提示标记和恶魔角色标记。",
-    "name": "入殓师",
-    "otherNight": 3800,
-    "setup": 0,
+    "id": "食人魔",
+    "name": "食人魔",
+    "team": "outsider",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
+    "firstNight": 59,
+    "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
+    "otherNight": 0,
+    "otherNightReminder": "",
     "reminders": [
-      "是恶魔"
+      "挚友"
     ],
     "remindersGlobal": [],
-    "team": "outsider",
-    "firstNight": 0
+    "setup": 0,
+    "flavor": "<咽口水><咧嘴笑><咽口水>"
   },
   {
     "ability": "每个夜晚，你要选择左或右：你得知该方向上的下一名存活善良玩家的角色，他中毒且其他善良玩家以为他是邪恶的蛊雕，直到下个黄昏。",

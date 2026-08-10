@@ -13,7 +13,13 @@
     "minion": "爪牙",
     "demon": "恶魔",
     "a jinxedName": "相克",
-    "a jinxed": "相克"
+    "a jinxed": "相克",
+    "notes": [
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "id": "0460a7e22d-9e58-4ff1-87ww8f-64a6da529447",
@@ -266,35 +272,36 @@
     "setup": 0
   },
   {
-    "id": "2137633980-b14a-4b30-818222d1bf53381",
-    "image": "https://www.helloimg.com/i/2024/12/27/676da8924ba19.png",
-    "edition": "custom",
-    "name": "舞龙（头）",
-    "ability": "每个夜晚，你会得知你和舞龙（尾）最近距离间存活的善良玩家数量（旅行者不计算在内）。[离你最远的一名镇民玩家是舞龙（尾）]",
+    "id": "舞龙头",
+    "name": "舞龙头",
     "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 70,
-    "otherNight": 100,
-    "firstNightReminder": "给距离舞龙（头）最远的一名镇民玩家放置舞龙（尾）标记。告诉他，他和舞龙（尾）最近距离间存活的善良玩家数量。",
-    "otherNightReminder": "告诉他，他和舞龙（尾）最近距离间存活的善良玩家数量。",
+    "ability": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5464670695861_6d8fec4c.jpg",
+    "firstNight": 3080,
+    "firstNightReminder": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
+    "otherNight": 140,
+    "otherNightReminder": "每个夜晚，你会得知你和舞龙尾最近距离间存活的善良玩家数量（不含旅行者）。[离你最远的一名镇民是舞龙尾]",
     "reminders": [],
     "remindersGlobal": [],
-    "setup": 1
+    "setup": 1,
+    "flavor": ""
   },
   {
-    "id": "78ed93e27-b474-46d1-891a0-3a33e76d585d",
-    "image": "https://www.helloimg.com/i/2024/12/27/676da85e2f8ea.png",
-    "edition": "custom",
-    "name": "舞龙（尾）",
-    "ability": "你不知道你是舞龙（尾），你以为你是其他镇民角色，如果你和舞龙（头）之间的其他玩家都已死亡，这些玩家变成舞龙（身）并复活，在此之前你只会死于处决。[+舞龙（头）]",
+    "id": "舞龙尾",
+    "name": "舞龙尾",
     "team": "townsfolk",
-    "sch_team": "镇民",
+    "ability": "你不知道你是舞龙尾，你以为你是其他镇民角色。如果你和舞龙头之间的其他玩家都已死亡，这些玩家变成舞龙身并复活，在此之前你只会死于处决。[+舞龙头]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_3353870695861_ee9adf9e.jpg",
     "firstNight": 0,
+    "firstNightReminder": "",
     "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
     "remindersGlobal": [
-      "是舞龙（尾）"
+      "舞龙尾"
     ],
-    "setup": 1
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "kangtuiy11ige111",

@@ -14,6 +14,7 @@ export function useScriptEditor() {
   const importError = ref("");
   const removedAutoJinxNames = new Set<string>();
   const jinxIncludedPreferenceByName = new Map<string, boolean>();
+  let jinxMatchRevision = 0;
 
   const activeTeam = computed(() => script.teams[selectedTeam.value] ?? script.teams.townsfolk);
   const selectedRoleCount = computed(() =>
@@ -38,6 +39,17 @@ export function useScriptEditor() {
       ...role,
     });
     void addMatchingDatabaseJinxes();
+  }
+
+  function addNote() {
+    script.notes.push({
+      id: crypto.randomUUID(),
+      text: "新说明",
+    });
+  }
+
+  function removeNote(id: string) {
+    script.notes = script.notes.filter((note) => note.id !== id);
   }
 
   function removeFabled(id: string) {
@@ -215,6 +227,7 @@ export function useScriptEditor() {
     script.author = "";
     script.fabled = [];
     script.jinxes = [];
+    script.notes = [];
     resetJinxMemory();
     for (const team of Object.values(script.teams)) {
       team.roles = [];
@@ -223,10 +236,15 @@ export function useScriptEditor() {
   }
 
   async function addMatchingDatabaseJinxes(options: { includeNew?: boolean } = {}) {
+    const revision = ++jinxMatchRevision;
     const includeNew = options.includeNew ?? true;
     const characters = collectPlayCharacters();
     const names = characters.map((character) => character.name);
     const records = await loadMatchingJinxRecords(names);
+    if (revision !== jinxMatchRevision) {
+      return;
+    }
+
     const existingByName = new Map(script.jinxes.map((jinx) => [normalizeJinxName(jinx.name), jinx]));
     for (const record of records) {
       const normalizedName = normalizeJinxName(record.name);
@@ -234,7 +252,8 @@ export function useScriptEditor() {
         continue;
       }
       const draft = jinxRecordToDraft(record);
-      draft.included = jinxIncludedPreferenceByName.get(normalizedName) ?? includeNew;
+      const rememberedIncluded = jinxIncludedPreferenceByName.get(normalizedName);
+      draft.included = rememberedIncluded ?? includeNew;
       draft.image = imageForJinxTargets(draft.targets, characters) || draft.image;
       const existing = existingByName.get(normalizedName);
       if (existing) {
@@ -247,14 +266,14 @@ export function useScriptEditor() {
         if (!existing.image && draft.image) {
           existing.image = draft.image;
         }
-        if (existing.included === undefined) {
-          existing.included = jinxIncludedPreferenceByName.get(normalizedName) ?? includeNew;
+        if (rememberedIncluded !== undefined) {
+          existing.included = rememberedIncluded;
+        } else if (existing.included === undefined) {
+          existing.included = includeNew;
         }
-        rememberJinxIncluded(existing);
         continue;
       }
       script.jinxes.push(draft);
-      rememberJinxIncluded(draft);
       existingByName.set(normalizedName, draft);
     }
   }
@@ -333,14 +352,16 @@ export function useScriptEditor() {
   }
 
   function resetJinxMemory() {
+    jinxMatchRevision += 1;
     removedAutoJinxNames.clear();
     jinxIncludedPreferenceByName.clear();
   }
 
   function normalizeJinxName(name: string) {
     return name
-      .split(/[&＆]/u)
-      .map((item) => item.trim())
+      .normalize("NFKC")
+      .split("&")
+      .map((item) => item.trim().replace(/\s+/gu, " "))
       .filter(Boolean)
       .join("&") || name.trim();
   }
@@ -354,7 +375,9 @@ export function useScriptEditor() {
     selectedRoleCount,
     playCharacters,
     addFabled,
+    addNote,
     removeFabled,
+    removeNote,
     updateFabled,
     addJinx,
     removeJinx,

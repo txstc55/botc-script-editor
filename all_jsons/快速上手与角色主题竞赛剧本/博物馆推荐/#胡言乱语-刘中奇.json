@@ -22,6 +22,12 @@
         "stateName": "疯狂",
         "stateDescription": "当一名玩家需要“疯狂”地证明某件事情时，意味着他应该去努力说服其他玩家那件事情是真的。有的角色要求玩家需要“疯狂”地证明某件事情，也有的角色会要求玩家不能“疯狂”地证明某件事情（也就意味着他应该去努力说服其他玩家那件事情是假的）。"
       }
+    ],
+    "notes": [
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
     ]
   },
   {
@@ -45,24 +51,21 @@
     "flavor": ""
   },
   {
-    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
-    "otherNightReminder": "",
-    "name": "小精灵",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [
-      "疯狂",
-      "获得能力"
-    ],
-    "id": "pixiebutton",
-    "edition": "custom",
+    "id": "罂粟种植者",
+    "name": "罂粟种植者",
     "team": "townsfolk",
-    "name_eng": "Pixie",
-    "firstNight": 29,
-    "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+    "ability": "爪牙和恶魔互相不认识。如果你死亡，当晚他们会互相认识。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poppy_grower.png",
+    "firstNight": 3.4,
+    "firstNightReminder": "不要让恶魔和爪牙相认。",
+    "otherNight": 4,
+    "otherNightReminder": "如果罂粟种植者死亡，安排恶魔和爪牙相认环节。",
+    "reminders": [
+      "唤醒邪恶"
+    ],
     "remindersGlobal": [],
-    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
+    "setup": 0,
+    "flavor": ""
   },
   {
     "ability": "在你的首个夜晚，你会得知两个善良角色和两个邪恶角色，其中有且只有两个角色在场。",
@@ -507,5 +510,21 @@
     "remindersGlobal": [],
     "team": "fabled",
     "firstNight": 0
+  },
+  {
+    "id": "罂粟种植者&提线木偶",
+    "name": "罂粟种植者&提线木偶",
+    "team": "jinx",
+    "ability": "当罂粟种植者死亡后，恶魔会知道谁是提线木偶，但提线木偶什么都不会知道。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "setup": 0
+  },
+  {
+    "id": "方古&红唇女郎",
+    "name": "方古&红唇女郎",
+    "team": "jinx",
+    "ability": "如果方古成功转化了外来者并因此死去，红唇女郎不会变成方古。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
+    "setup": 0
   }
 ]

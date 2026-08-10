@@ -523,9 +523,18 @@ function batchExportPlugin(): Plugin {
           const limit = Number(requestUrl.searchParams.get("limit") || 0);
           const filter = cleanText(requestUrl.searchParams.get("filter"));
           const allFiles = await listAllJsonFiles(allJsonsDir);
-          const filteredFiles = filter
+          let filteredFiles = filter
             ? allFiles.filter((file) => file.relativePath.includes(filter))
             : allFiles;
+          if (process.env.BOTC_BATCH_REQUIRE_NOTES === "1") {
+            const filesWithNotes = await Promise.all(filteredFiles.map(async (file) => ({
+              file,
+              hasNotes: /"notes"\s*:/u.test(await readFile(resolveAllJsonsPath(file.relativePath), "utf8")),
+            })));
+            filteredFiles = filesWithNotes
+              .filter((entry) => entry.hasNotes)
+              .map((entry) => entry.file);
+          }
           const files = Number.isFinite(limit) && limit > 0
             ? filteredFiles.slice(0, Math.floor(limit))
             : filteredFiles;

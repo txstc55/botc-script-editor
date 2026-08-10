@@ -43,9 +43,32 @@
     ],
     "bootlegger": [
       "摆渡人的能力改为：每个夜晚*，恶魔可以选择让所有死亡玩家重获投票标记。"
+    ],
+    "notes": [
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
     ]
   },
-  "librarian",
+  {
+    "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
+    "firstNight": 33,
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
+    "flavor": "",
+    "id": "librarian",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+    "name": "图书管理员",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "外来者",
+      "错误"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "team": "townsfolk"
+  },
   {
     "id": "qingtianjianbei111",
     "name": "修行者",
@@ -115,7 +138,27 @@
     "setup": 0,
     "flavor": ""
   },
-  "balloonist",
+  {
+    "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1 外来者]",
+    "firstNight": 44,
+    "firstNightReminder": "选择一种角色类型，并告知其一个符合该类型的玩家。在该玩家旁边标记已被知晓。",
+    "flavor": "",
+    "id": "balloonist",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
+    "name": "气球驾驶员",
+    "otherNight": 63,
+    "otherNightReminder": "选择一种尚未被气球驾驶员知晓的角色类型，并告知其一个符合该类型的玩家。在该玩家旁边标记已被知晓。如果所有类型均已被知晓或无该种类型，气球驾驶员不会醒来。",
+    "reminders": [
+      "得知镇民",
+      "得知外来者",
+      "得知爪牙",
+      "得知恶魔",
+      "得知旅行者"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "team": "townsfolk"
+  },
   {
     "id": "qiaozhong111",
     "name": "城镇公告员",
@@ -269,8 +312,40 @@
     "otherNightReminder": "",
     "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
-  "butler",
-  "barber",
+  {
+    "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。",
+    "firstNight": 38,
+    "firstNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+    "flavor": "",
+    "id": "butler",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/butler.png",
+    "name": "管家",
+    "otherNight": 55,
+    "otherNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+    "reminders": [
+      "主人"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "team": "outsider"
+  },
+  {
+    "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。",
+    "id": "barber",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
+    "name": "理发师",
+    "otherNight": 40,
+    "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
+    "reminders": [
+      "今晚理发"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "team": "outsider"
+  },
   {
     "id": "nanjueeeee111",
     "name": "男爵",
@@ -416,7 +491,6 @@
     "setup": 0,
     "flavor": ""
   },
-  "bootlegger",
   {
     "id": "35addde2-e27a-4de2-9a9e-df0e78364717",
     "name": "摆渡人",
@@ -426,5 +500,22 @@
     "ability": "每个夜晚*，恶魔可以让所有已死亡玩家重获投票标记。",
     "firstNight": 0,
     "otherNight": 0
+  },
+  {
+    "id": "圣洁之魂",
+    "name": "圣洁之魂",
+    "team": "fabled",
+    "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/spirit_of_ivory.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "禁止邪恶"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   }
 ]

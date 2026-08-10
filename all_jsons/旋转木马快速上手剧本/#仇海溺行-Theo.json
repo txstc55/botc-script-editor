@@ -5,7 +5,21 @@
     "author": "Theo",
     "id": "_meta",
     "townsfolkName": "镇民",
-    "name": "仇海溺行"
+    "name": "仇海溺行",
+    "notes": [
+      {
+        "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
+    ]
   },
   {
     "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
@@ -466,5 +480,51 @@
     "remindersGlobal": [],
     "team": "fabled",
     "firstNight": 0
+  },
+  {
+    "id": "提线木偶&气球驾驶员",
+    "name": "提线木偶&气球驾驶员",
+    "team": "jinx",
+    "ability": "如果提线木偶抽到了气球驾驶员，也可能会+1外来者",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1703695134_197011_652.png",
+    "setup": 0
+  },
+  {
+    "id": "洗脑师&哥布林",
+    "name": "洗脑师&哥布林",
+    "team": "jinx",
+    "ability": "洗脑师可以选择将玩家洗脑成哥布林。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
+    "setup": 0
+  },
+  {
+    "id": "麻脸巫婆&政客",
+    "name": "麻脸巫婆&政客",
+    "team": "jinx",
+    "ability": "被麻脸巫婆创造的邪恶政客无法因为自身能力转变为善良阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "setup": 0
+  },
+  {
+    "id": "麻脸巫婆&落难少女",
+    "name": "麻脸巫婆&落难少女",
+    "team": "jinx",
+    "ability": "如果麻脸巫婆创造了落难少女，改为由说书人来决定哪一名玩家变成落难少女。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "setup": 0
+  },
+  {
+    "id": "利维坦&麻脸巫婆",
+    "name": "利维坦&麻脸巫婆",
+    "team": "jinx",
+    "ability": "在第五个白天之后，麻脸巫婆无法创造利维坦。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
+    "setup": 0
+  },
+  {
+    "id": "提线木偶&落难少女",
+    "name": "提线木偶&落难少女",
+    "team": "jinx",
+    "ability": "提线木偶不会得知落难少女在场。"
   }
 ]

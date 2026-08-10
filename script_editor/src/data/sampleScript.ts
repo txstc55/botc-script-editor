@@ -34,6 +34,7 @@ export const sampleScript: ScriptDraft = {
       targets: ["Cannibal", "Poppy Grower"],
     },
   ],
+  notes: [],
   teams: {
     townsfolk: {
       key: "townsfolk",

@@ -51,6 +51,12 @@ export interface JinxDraft {
   targets: string[];
 }
 
+export interface ScriptNoteDraft {
+  id: string;
+  text: string;
+  textHtml?: string;
+}
+
 export interface PlayCharacterSummary {
   id: string;
   name: string;
@@ -70,6 +76,7 @@ export interface ScriptDraft {
   builtInFirstNightEnabled: BuiltInFirstNightEnabled;
   fabled: FabledDraft[];
   jinxes: JinxDraft[];
+  notes: ScriptNoteDraft[];
   teams: Record<TeamKey, TeamConfig>;
 }
 

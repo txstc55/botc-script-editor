@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Minus, Plus } from "@lucide/vue";
 import type { FormatState, TextColorOption } from "./previewTypes";
 
 defineProps<{
@@ -14,6 +15,8 @@ const emit = defineEmits<{
   "inline-command": [command: "bold" | "italic" | "underline"];
   "text-color": [option: TextColorOption];
   "background-color": [option: TextColorOption];
+  "font-size-step": [delta: -1 | 1];
+  "font-size-reset": [];
 }>();
 </script>
 
@@ -61,6 +64,41 @@ const emit = defineEmits<{
           @click.prevent.stop
         >
           U
+        </button>
+      </div>
+      <div class="toolbar-size-group" aria-label="字号">
+        <button
+          class="format-command"
+          type="button"
+          title="减小字号"
+          tabindex="-1"
+          @pointerdown.prevent.stop="emit('font-size-step', -1)"
+          @mousedown.prevent.stop
+          @click.prevent.stop
+        >
+          <Minus :size="14" aria-hidden="true" />
+        </button>
+        <button
+          class="format-command size-value"
+          type="button"
+          title="恢复默认字号"
+          tabindex="-1"
+          @pointerdown.prevent.stop="emit('font-size-reset')"
+          @mousedown.prevent.stop
+          @click.prevent.stop
+        >
+          {{ formatState.fontSize ?? "—" }}
+        </button>
+        <button
+          class="format-command"
+          type="button"
+          title="增大字号"
+          tabindex="-1"
+          @pointerdown.prevent.stop="emit('font-size-step', 1)"
+          @mousedown.prevent.stop
+          @click.prevent.stop
+        >
+          <Plus :size="14" aria-hidden="true" />
         </button>
       </div>
       <div class="toolbar-swatch-group" aria-label="文字颜色">
@@ -133,6 +171,7 @@ const emit = defineEmits<{
 }
 
 .toolbar-button-group,
+.toolbar-size-group,
 .toolbar-swatch-group {
   display: inline-flex;
   align-items: center;
@@ -140,6 +179,11 @@ const emit = defineEmits<{
 }
 
 .toolbar-button-group {
+  padding-right: 10px;
+  border-right: 1px solid #e1e1e1;
+}
+
+.toolbar-size-group {
   padding-right: 10px;
   border-right: 1px solid #e1e1e1;
 }
@@ -182,6 +226,12 @@ const emit = defineEmits<{
 
 .format-command.underline {
   text-decoration: underline;
+}
+
+.format-command.size-value {
+  font-family: system-ui, sans-serif;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
 }
 
 .format-swatch {

@@ -1,4 +1,9 @@
-import type { FabledDraft, JinxDraft, RoleDraft, ScriptDraft, TeamKey } from "../types";
+import type { FabledDraft, JinxDraft, RoleDraft, ScriptDraft, ScriptNoteDraft, TeamKey } from "../types";
+
+interface ExportNote {
+  text: string;
+  html?: string;
+}
 
 interface ExportMeta {
   id: "_meta";
@@ -6,6 +11,7 @@ interface ExportMeta {
   author: string;
   minionInfo?: number;
   demonInfo?: number;
+  notes?: ExportNote[];
 }
 
 interface ExportFabled {
@@ -14,6 +20,7 @@ interface ExportFabled {
   edition: "custom";
   team: "fabled";
   ability: string;
+  abilityHtml?: string;
   image: string;
   setup: 0 | 1;
 }
@@ -23,6 +30,7 @@ interface ExportCharacter {
   name: string;
   team: TeamKey;
   ability: string;
+  abilityHtml?: string;
   image: string;
   firstNight: number;
   firstNightReminder: string;
@@ -74,12 +82,22 @@ function exportMeta(script: ScriptDraft): ExportMeta {
   if (script.builtInFirstNightEnabled.demonInfo) {
     meta.demonInfo = toNumber(script.builtInFirstNightOrders.demonInfo);
   }
+  const notes = script.notes.map(exportNote).filter((note) => note.text);
+  if (notes.length) {
+    meta.notes = notes;
+  }
   return meta;
+}
+
+function exportNote(note: ScriptNoteDraft): ExportNote {
+  const text = cleanText(note.text);
+  const html = cleanText(note.textHtml);
+  return html ? { text, html } : { text };
 }
 
 function exportFabled(role: FabledDraft): ExportFabled {
   const name = cleanText(role.name);
-  return {
+  const result: ExportFabled = {
     id: name,
     name,
     edition: "custom",
@@ -88,11 +106,16 @@ function exportFabled(role: FabledDraft): ExportFabled {
     image: cleanText(role.image),
     setup: setupValue(role.setup),
   };
+  const abilityHtml = cleanText(role.abilityHtml);
+  if (abilityHtml) {
+    result.abilityHtml = abilityHtml;
+  }
+  return result;
 }
 
 function exportRole(role: RoleDraft, team: TeamKey): ExportCharacter {
   const name = cleanText(role.name);
-  return {
+  const result: ExportCharacter = {
     id: name,
     name,
     team,
@@ -107,6 +130,11 @@ function exportRole(role: RoleDraft, team: TeamKey): ExportCharacter {
     setup: setupValue(role.setup),
     flavor: cleanText(role.flavor),
   };
+  const abilityHtml = cleanText(role.abilityHtml);
+  if (abilityHtml) {
+    result.abilityHtml = abilityHtml;
+  }
+  return result;
 }
 
 function exportJinx(jinx: JinxDraft, playCharacters: ExportPlayCharacter[]): ExportJinx {

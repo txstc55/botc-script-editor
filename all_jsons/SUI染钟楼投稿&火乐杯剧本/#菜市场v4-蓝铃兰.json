@@ -19,6 +19,20 @@
         "name": "传奇批发",
         "skill": "该剧本在游戏开始时，同时加入8个传奇角色：地狱藏书员、摆渡人、园丁、圣洁之魂、哨兵、公爵夫人、麒麟、革命者"
       }
+    ],
+    "notes": [
+      {
+        "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表：非首个夜晚",
+        "html": "<strong>*代表</strong>：非首个夜晚"
+      }
     ]
   },
   {
@@ -204,22 +218,19 @@
     "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
-    "id": "qqqqqqqqqqasfasfhfhhrteqarq35q35qaa",
-    "image": "https://clocktower-wiki.gstonegames.com/images/5/5b/Qianke.png",
-    "edition": "custom",
-    "name": "掮客",
-    "ability": "每个夜晚，你要选择两名存活玩家：如果他们阵营相同，今晚任何玩家使用自身能力选择他们之一作为目标时，改为选中另一名玩家。",
+    "id": "半仙",
+    "name": "半仙",
     "team": "townsfolk",
-    "firstNight": 13.5,
-    "otherNight": 5.5,
-    "firstNightReminder": "唤醒掮客，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
-    "otherNightReminder": "移除上个夜晚放置的“熟客”标记。唤醒车夫，让他指向两名存活玩家。如果这两名玩家阵营相同，在这些玩家的角色标记旁放置“熟客”提示标记。",
-    "reminders": [
-      "熟客"
-    ],
+    "ability": "任何在夜晚使用自身能力选择你的其他玩家，会改为选中另一名邪恶玩家作为替代。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/banxian.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
     "remindersGlobal": [],
     "setup": 0,
-    "flavor": "三教九流皆相识，稀有货、密讯、人脉不缺，报需求，价妥就成交。"
+    "flavor": ""
   },
   {
     "id": "qiaozhong111",
@@ -436,22 +447,23 @@
     "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。"
   },
   {
-    "id": "huasapidpaiwopippippipp123i123p12ip3p1i23p21",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
-    "edition": "custom",
-    "name": "画皮",
-    "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
+    "id": "巫师",
+    "name": "巫师",
     "team": "minion",
-    "firstNight": 29.5,
-    "otherNight": 54.5,
-    "firstNightReminder": "唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
-    "otherNightReminder": "如果首夜被画皮变成活尸的玩家死亡，他重生，然后画皮重获能力。唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
+    "ability": "每局游戏限一次，你可以向说书人许愿。如果愿望被实现，可能会伴随着代价和线索。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/archive/c/c7/20250103031516%21Wizard.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
     "reminders": [
-      "以为存活",
-      "重获能力"
+      "代价",
+      "兑现",
+      "失去能力",
+      "线索"
     ],
-    "setup": 0,
     "remindersGlobal": [],
+    "setup": 0,
     "flavor": ""
   },
   {
@@ -530,23 +542,22 @@
     "flavor": "世间万扉集为一体，世间万匙铸为一身。世间万盅将与我共饮，但凡饮下我所赐圣水者，必将永不干渴，化作万孔泉眼涌作永生。"
   },
   {
-    "id": "guhuoniaoiasod0pap2u490rjqawpf9ru389",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/guhuoniao.png",
-    "edition": "custom",
-    "name": "姑获鸟",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。你可能会拥有上一个死于处决的爪牙的能力。",
+    "id": "痢蛭",
+    "name": "痢蛭",
     "team": "demon",
-    "firstNight": 0,
-    "otherNight": 50.3,
-    "firstNightReminder": "",
-    "otherNightReminder": "唤醒姑获鸟，让他攻击一名玩家。",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+    "firstNight": 15,
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
+    "otherNight": 35,
+    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
     "reminders": [
-      "死亡",
-      "获得能力"
+      "中毒",
+      "死亡"
     ],
-    "setup": 0,
     "remindersGlobal": [],
-    "flavor": ""
+    "setup": 0,
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "id": "xiaoshabi111111",

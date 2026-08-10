@@ -279,6 +279,8 @@ async function waitForPreviewRender() {
       @edit-jinx="openJinxEditor"
       @remove-jinx="editor.removeJinx"
       @set-jinx-included="editor.setJinxIncluded"
+      @add-note="editor.addNote"
+      @remove-note="editor.removeNote"
     />
 
     <ScriptPreview
@@ -335,7 +337,7 @@ async function waitForPreviewRender() {
         <section class="confirm-card" role="dialog" aria-modal="true" aria-labelledby="clear-script-title">
           <div class="confirm-kicker">清空剧本</div>
           <h2 id="clear-script-title">确定清空当前剧本吗？</h2>
-          <p>这会移除剧本名称、作者、所有角色、传奇角色和相克规则。</p>
+          <p>这会移除剧本名称、作者、所有角色、传奇角色、相克规则和底部说明。</p>
           <div class="confirm-actions">
             <button class="confirm-button secondary" type="button" @click="cancelClearScript">
               取消

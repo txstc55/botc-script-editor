@@ -1,4 +1,4 @@
-import type { FabledDraft, JinxDraft, RoleDraft, TeamKey } from "../../types";
+import type { FabledDraft, JinxDraft, RoleDraft, ScriptNoteDraft, TeamKey } from "../../types";
 
 export type ScriptColorKey = TeamKey | "fabled";
 export type PreviewSectionKey = ScriptColorKey;
@@ -74,8 +74,20 @@ export interface SvgPreviewLayout {
   pageHeight: number;
   nightRailContentY: number;
   sections: SvgSectionLayout[];
+  notes: SvgNoteLayout[];
+  notesBoxY: number;
+  notesBoxHeight: number;
   firstNightItems: NightOrderItem[];
   otherNightItems: NightOrderItem[];
+}
+
+export interface SvgNoteLayout {
+  id: string;
+  note: ScriptNoteDraft;
+  x: number;
+  y: number;
+  width: number;
+  height: number;
 }
 
 export interface TextColorOption {
@@ -90,6 +102,7 @@ export interface FormatState {
   underline: boolean;
   textColor: string | null;
   backgroundColor: string | null;
+  fontSize: number | null;
 }
 
 export interface AbilityHighlightRule {

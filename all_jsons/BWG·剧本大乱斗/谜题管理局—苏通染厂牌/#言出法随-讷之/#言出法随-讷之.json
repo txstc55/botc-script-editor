@@ -13,7 +13,8 @@
     "minion": "爪牙",
     "demon": "恶魔",
     "a jinxedName": "相克",
-    "a jinxed": "相克"
+    "a jinxed": "相克",
+    "notes": []
   },
   {
     "id": "ef42503a-d4aa-46cd-9c61-6ce8e424501566",
@@ -290,6 +291,39 @@
     "GstoneID": "bingbi"
   },
   {
+    "id": "560b6d16-83e9-4513-b8cf-6b78d8c247c3",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5730606766861_ed1daf16.jpg",
+    "edition": "custom",
+    "name": "皮影",
+    "ability": "说书人可以欺骗你，邪恶玩家可能会得知关于你的信息，即使你已死亡。",
+    "team": "outsider",
+    "sch_team": "外来者",
+    "firstNight": 1,
+    "otherNight": 1,
+    "firstNightReminder": "说书人可以告诉邪恶玩家一些关于皮影的信息（皮影的角色、夜间行动、红皮影互认对象等等）。",
+    "otherNightReminder": "说书人可以告诉邪恶玩家一些关于皮影的信息（皮影的角色、夜间行动、红皮影互认对象等等）。",
+    "remindersGlobal": [
+      "是皮影"
+    ]
+  },
+  {
+    "id": "云栖客",
+    "name": "云栖客",
+    "team": "outsider",
+    "ability": "你拥有其他所有外来者的能力。其他对外来者的设置调整不会生效。[无其他外来者在场]",
+    "image": "https://www.bloodstar.xyz/p/qazwsxedc/aCup_8/19_acup_8.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "是云栖客"
+    ],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
     "ability": "每局游戏你只能发起提名一次。当你发起提名时，如果被你提名的玩家不是恶魔，他死亡。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/golem.png",
     "edition": "custom",
@@ -309,54 +343,19 @@
     "GstoneID": "golem"
   },
   {
-    "ability": "如果你死亡，恶魔选择并获得第二个恶魔能力。每个夜晚，他选择要作为哪个恶魔行动。",
-    "image": "https://www.bloodstar.xyz/usersave/static_h/sta/1_sta.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "sta11111_button",
-    "firstNightReminder": "",
-    "otherNightReminder": "如果猪倌死亡，当夜给牙噶巴卜一条新的短语寻问恶魔是否更换秘密短语。",
-    "name": "猪倌",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [
-      "更换短语"
-    ],
+    "id": "陌客",
+    "name": "陌客",
     "team": "outsider",
-    "firstNight": 0
-  },
-  {
-    "id": "dabanshou111",
-    "image": "https://www.bloodstar.xyz/usersave/static_h/sta/2_sta.png",
-    "edition": "custom",
-    "name": "隐修者",
-    "ability": "你拥有其他所有外来者的能力。其他对外来者的设置调整不会生效。[无其他外来者在场]",
-    "team": "outsider",
+    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
     "firstNight": 0,
-    "otherNight": 0,
     "firstNightReminder": "",
+    "otherNight": 0,
     "otherNightReminder": "",
-    "reminders": [
-      "是隐修者"
-    ],
-    "setup": 1
-  },
-  {
-    "id": "560b6d16-83e9-4513-b8cf-6b78d8c247c3",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/custom/d_5730606766861_ed1daf16.jpg",
-    "edition": "custom",
-    "name": "皮影",
-    "ability": "说书人可以欺骗你，邪恶玩家可能会得知关于你的信息，即使你已死亡。",
-    "team": "outsider",
-    "sch_team": "外来者",
-    "firstNight": 1,
-    "otherNight": 1,
-    "firstNightReminder": "说书人可以告诉邪恶玩家一些关于皮影的信息（皮影的角色、夜间行动、红皮影互认对象等等）。",
-    "otherNightReminder": "说书人可以告诉邪恶玩家一些关于皮影的信息（皮影的角色、夜间行动、红皮影互认对象等等）。",
-    "remindersGlobal": [
-      "是皮影"
-    ]
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
