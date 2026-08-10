@@ -3,46 +3,47 @@
   "title": "4 【染钟楼】剧本社区—第601期《溯流寻墟》及海雾的个人专栏 专栏 钟楼剧本博物馆 7231阅读 3评论 此内容无法展示，请 重新加载",
   "script_name": "溯流寻墟",
   "url": "https://www.bilibili.com/opus/1072772853628141622",
-  "local_json": "",
+  "local_json": "all_jsons/来源核对补全/#溯流寻墟-1072772853628141622.json",
   "generated_image": "",
-  "match_score": 0.25,
-  "status": "unmatched",
+  "match_score": 1.0,
+  "status": "matched",
   "source_images": [
     "对照图-01.png",
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "missing_json",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_heading_characters": [
+    "旅店老板",
     "图书管理员",
     "厨师",
+    "城镇公告员",
     "气球驾驶员",
     "村夫",
+    "食人族",
     "舞狮人",
+    "偃师",
     "引路人",
     "驱魔人",
+    "悟道者",
     "逆臣",
+    "瘟疫医生",
     "酒鬼",
     "红唇女郎",
-    "养蛊人",
-    "刺客",
-    "旅店老板",
-    "城镇公告员",
-    "食人族",
-    "偃师",
-    "悟道者",
-    "瘟疫医生",
     "街头风琴手",
+    "养蛊人",
     "蛊雕",
+    "刺客",
     "奸佞"
   ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
       "heading_characters": [],
-      "heading_character_details": []
+      "heading_character_details": [],
+      "required_character_matches": 0
     },
     {
       "image": "对照图-02.png",
@@ -70,7 +71,8 @@
           "x": 0.29412,
           "y": 0.14826
         }
-      ]
+      ],
+      "required_character_matches": 0
     },
     {
       "image": "对照图-03.png",
@@ -224,7 +226,8 @@
           "x": 0.56078,
           "y": 0.17442
         }
-      ]
+      ],
+      "required_character_matches": 23
     }
   ],
   "ocr_source_board_groups": [
@@ -390,5 +393,224 @@
       "x": 0.56078,
       "y": 0.17442
     }
-  ]
+  ],
+  "manual_verification": {
+    "verified_jinxes": [
+      "瘟疫医生&红唇女郎&养蛊人"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图瘟疫医生下方的灰色相克规则已放大逐字核对；OCR 未正确拼接该双行小字。"
+  },
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "瘟疫医生&红唇女郎&养蛊人"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  },
+  "ocr_character_matches": 26,
+  "ocr_required_character_count": 26,
+  "ocr_missing_characters": [],
+  "ocr_name_confirmed_by_ability": [
+    "食梦貘",
+    "穷奇",
+    "梼杌"
+  ],
+  "ocr_unexpected_characters": [],
+  "ocr_travelers_seen": [],
+  "ocr_ability_checks": [
+    {
+      "name": "图书管理员",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "厨师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "气球驾驶员",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "村夫",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "舞狮人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "引路人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "驱魔人",
+      "team": "townsfolk",
+      "ability_coverage": 0.9388
+    },
+    {
+      "name": "旅店老板",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "城镇公告员",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "风水师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "食人族",
+      "team": "townsfolk",
+      "ability_coverage": 0.9744
+    },
+    {
+      "name": "偃师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "悟道者",
+      "team": "townsfolk",
+      "ability_coverage": 0.7358
+    },
+    {
+      "name": "逆臣",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "酒鬼",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "杂技演员",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "瘟疫医生",
+      "team": "outsider",
+      "ability_coverage": 0.7333
+    },
+    {
+      "name": "红唇女郎",
+      "team": "minion",
+      "ability_coverage": 0.8333
+    },
+    {
+      "name": "养蛊人",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "刺客",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "街头风琴手",
+      "team": "minion",
+      "ability_coverage": 0.9091
+    },
+    {
+      "name": "蛊雕",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "食梦貘",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "穷奇",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "梼杌",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "奸佞",
+      "team": "demon",
+      "ability_coverage": 1.0
+    }
+  ],
+  "ocr_ability_mismatches": [],
+  "ocr_traveler_checks": [],
+  "ocr_traveler_mismatches": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "瘟疫医生&红唇女郎&养蛊人",
+      "team": "jinx",
+      "ability_coverage": 0.3265
+    },
+    {
+      "name": "蛊雕&杂技演员",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "蛊雕&刺客",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    }
+  ],
+  "ocr_jinx_mismatches": [],
+  "ocr_jinx_marker_count": 2,
+  "ocr_missing_jinx_rule_count": 0,
+  "ocr_note_checks": [
+    {
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "该角色的能力来自过去",
+      "text_coverage": 1.0
+    }
+  ],
+  "ocr_note_mismatches": [],
+  "ocr_bottom_text": [
+    "每个夜晚*，你要选择一名玩家：他死亡。",
+    "每个夜晚*，你要选择一名玩家：他死亡。",
+    "使用自身能力选择你的玩家会改为选中自己。［-1外来者］",
+    "如果你在今天白天没有被提名，改为选择两名玩家。",
+    "可能",
+    "某件事“可能”发生，代表说书人决定该事情是否发生。",
+    "中毒/醉酒",
+    "中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒",
+    "玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+    "*代表",
+    "该角色的能力来自过去",
+    "非首个夜晚"
+  ],
+  "ocr_unexplained_bottom_lines": [],
+  "ocr_rule_markers": [
+    "相克规则"
+  ],
+  "ocr_missing_rule_data": false
 }

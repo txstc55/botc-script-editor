@@ -1,0 +1,491 @@
+[
+  {
+    "id": "_meta",
+    "name": "深海救援v1.2",
+    "author": "Ash",
+    "notes": [
+      {
+        "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+      },
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
+    "id": "贵族",
+    "name": "贵族",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
+    "firstNight": 49,
+    "firstNightReminder": "以任意顺序指向三名玩家，其中一名邪恶。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "被得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "讽刺的确是最不足挂齿的机智。尽管如此，先生，回应你的批评，就是一种机智。"
+  },
+  {
+    "id": "骑士",
+    "name": "骑士",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
+    "firstNight": 48,
+    "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
+  },
+  {
+    "id": "小精灵",
+    "name": "小精灵",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+    "firstNight": 29,
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "疯狂",
+      "获得能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
+  },
+  {
+    "id": "气球驾驶员",
+    "name": "气球驾驶员",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
+    "firstNight": 50,
+    "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
+    "otherNight": 90,
+    "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
+    "reminders": [
+      "得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "国王",
+    "name": "国王",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，如果死亡的玩家数量大于或等于存活的玩家数量，你会得知一个存活的角色。恶魔知道你是国王。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/king.png",
+    "firstNight": 9,
+    "firstNightReminder": "唤醒恶魔，并告诉他国王是谁。",
+    "otherNight": 131,
+    "otherNightReminder": "如果死亡玩家人数大于存活玩家，唤醒国王并对其展示一个存活的角色标记。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "将军",
+    "name": "将军",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势。（善良 / 邪恶 / 均势）",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png",
+    "firstNight": 63,
+    "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+    "otherNight": 99,
+    "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "村夫",
+    "name": "村夫",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家：你会得知他的阵营。[+0~2村夫，复数村夫中有一人醉酒]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
+    "firstNight": 54,
+    "firstNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+    "otherNight": 92,
+    "otherNightReminder": "唤醒村夫，让他指向一名玩家，用手势告诉他那名玩家的阵营。",
+    "reminders": [
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
+  },
+  {
+    "id": "僧侣",
+    "name": "僧侣",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 16,
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
+    "reminders": [
+      "保护"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "巡山人",
+    "name": "巡山人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/huntsman.png",
+    "firstNight": 34,
+    "firstNightReminder": "唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+    "otherNight": 77,
+    "otherNightReminder": "如果巡山人未曾使用能力，唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "戏法师",
+    "name": "戏法师",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以公开进行一次谁是爪牙，谁是恶魔的猜测。如果你猜对，善良阵营获胜。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/d/d6/Alsaahir.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我在这里，因为你在这里；我在这里，所以你在这里。"
+  },
+  {
+    "id": "渔夫",
+    "name": "渔夫",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "公主",
+    "name": "公主",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个白天，如果你提名并处决了一名玩家，当晚恶魔不会造成死亡。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f2/Princess.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "不会死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "食人族",
+    "name": "食人族",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "中毒",
+      "饱餐"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
+  },
+  {
+    "id": "管家",
+    "name": "管家",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/butler.png",
+    "firstNight": 38,
+    "firstNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+    "otherNight": 55,
+    "otherNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+    "reminders": [
+      "主人"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "政客",
+    "name": "政客",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "落难少女",
+    "name": "落难少女",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
+    "firstNight": 5,
+    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
+    "otherNight": 0,
+    "otherNightReminder": "0",
+    "reminders": [
+      "已被猜测"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "畸形秀演员",
+    "name": "畸形秀演员",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我不是怪物！我是人！求你了！"
+  },
+  {
+    "id": "洗脑师",
+    "name": "洗脑师",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
+    "firstNight": 25,
+    "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "otherNight": 20,
+    "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "reminders": [
+      "疯狂"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
+  },
+  {
+    "id": "哥布林",
+    "name": "哥布林",
+    "team": "minion",
+    "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "已宣称"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？"
+  },
+  {
+    "id": "提线木偶",
+    "name": "提线木偶",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "你以为你是一个善良角色，但其实你不是。恶魔会知道你是提线木偶。[提线木偶会与恶魔邻座]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "firstNight": 10,
+    "firstNightReminder": "如果提线木偶在场，对恶魔展示提线木偶角色标记并指向提线木偶玩家。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "是提线木偶"
+    ],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "投毒者",
+    "name": "投毒者",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
+    "firstNight": 18,
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNight": 9,
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "利维坦",
+    "name": "利维坦",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "如果多于一名善良玩家被处决，邪恶阵营获胜。所有玩家都知道利维坦在场。在第五个白天结束时，邪恶阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
+    "firstNight": 53,
+    "firstNightReminder": "放置利维坦的第一天标记，宣告利维坦在场，现在是第一天。",
+    "otherNight": 73,
+    "otherNightReminder": "将利维坦的标记转换到下一天。",
+    "reminders": [
+      "善良被处决",
+      "第一天",
+      "第三天",
+      "第二天",
+      "第五天",
+      "第四天"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "提线木偶&巡山人",
+    "name": "提线木偶&巡山人",
+    "team": "jinx",
+    "ability": "如果提线木偶抽到了巡山人，也会增加落难少女。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "setup": 0
+  },
+  {
+    "id": "提线木偶&气球驾驶员",
+    "name": "提线木偶&气球驾驶员",
+    "team": "jinx",
+    "ability": "如果提线木偶抽到了气球驾驶员，也可能会+1外来者。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "setup": 0
+  },
+  {
+    "id": "公主&利维坦",
+    "name": "公主&利维坦",
+    "team": "jinx",
+    "ability": "在你的首个白天，如果你提名并处决了一名除你以外的玩家，那名玩家会被利维坦的能力当作邪恶阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/princess.png",
+    "setup": 0
+  },
+  {
+    "id": "公主&食人族&利维坦",
+    "name": "公主&食人族&利维坦",
+    "team": "jinx",
+    "ability": "如果食人族提名并处决了公主，公主会被利维坦的能力当作邪恶阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/princess.png",
+    "setup": 0
+  },
+  {
+    "id": "食人族&管家",
+    "name": "食人族&管家",
+    "team": "jinx",
+    "ability": "如果食人族获得了管家的能力，他会得知这一信息。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "setup": 0
+  },
+  {
+    "id": "食人族&村夫",
+    "name": "食人族&村夫",
+    "team": "jinx",
+    "ability": "如果因村夫能力醉酒的村夫死于处决，食人族在获得村夫的能力同时也会醉酒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "setup": 0
+  },
+  {
+    "id": "洗脑师&哥布林",
+    "name": "洗脑师&哥布林",
+    "team": "jinx",
+    "ability": "洗脑师可以选择将玩家洗脑成哥布林。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
+    "setup": 0
+  },
+  {
+    "id": "提线木偶&落难少女",
+    "name": "提线木偶&落难少女",
+    "team": "jinx",
+    "ability": "提线木偶不会得知落难少女在场。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+    "setup": 0
+  },
+  {
+    "id": "利维坦&僧侣",
+    "name": "利维坦&僧侣",
+    "team": "jinx",
+    "ability": "如果利维坦在场，僧侣保护的玩家免疫所有邪恶阵营的负面效果。如果利维坦提名并处决了僧侣保护的玩家，善良阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/leviathan.png",
+    "setup": 0
+  },
+  {
+    "id": "利维坦&国王",
+    "name": "利维坦&国王",
+    "team": "jinx",
+    "ability": "如果利维坦在场，当至少一名玩家死亡时，国王每晚就会得知一个存活的角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/leviathan.png",
+    "setup": 0
+  }
+]
