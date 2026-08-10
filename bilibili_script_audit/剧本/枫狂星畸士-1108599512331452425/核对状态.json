@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 26,
@@ -45,9 +45,12 @@
     "刺客",
     "洗脑师",
     "巫师",
-    "提线木偶"
+    "提线木偶",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -237,8 +240,17 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -255,6 +267,7 @@
         "刺客",
         "巫师",
         "提线木偶",
+        "诺·达鲺",
         "造谣者",
         "博学者",
         "戏法师",
@@ -392,6 +405,12 @@
           "team": "minion",
           "x": 0.14706,
           "y": 0.2935
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.1715
         }
       ],
       "required_character_matches": 22
@@ -419,6 +438,7 @@
         "疯子",
         "筑梦师",
         "罂粟种植者",
+        "诺·达鲺",
         "贵族",
         "送葬者",
         "造谣者",
@@ -561,6 +581,20 @@
       "team": "minion",
       "x": 0.14706,
       "y": 0.2935
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14706,
+      "y": 0.1715
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

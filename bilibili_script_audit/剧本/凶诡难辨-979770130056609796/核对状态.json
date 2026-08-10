@@ -18,7 +18,7 @@
     "9ce96cae3f5222a28c02146cf1ac544f44902471.png",
     "e14b7eea222e89b93b456538175d9ba244902471.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -50,6 +50,7 @@
     "鹰身女妖",
     "洗脑师",
     "牙噶巴卜",
+    "诺·达鲺",
     "沙巴洛斯"
   ],
   "ocr_heading_character_details": [
@@ -186,13 +187,21 @@
       "y": 0.22816
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.22664
+    },
+    {
       "name": "沙巴洛斯",
       "team": "demon",
       "x": 0.14902,
       "y": 0.17587
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -366,8 +375,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.19903
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17142
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -395,6 +427,7 @@
         "女巫",
         "鹰身女妖",
         "牙噶巴卜",
+        "诺·达鲺",
         "沙巴洛斯"
       ],
       "heading_character_details": [
@@ -531,6 +564,12 @@
           "y": 0.22816
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.22664
+        },
+        {
           "name": "沙巴洛斯",
           "team": "demon",
           "x": 0.14902,
@@ -563,6 +602,7 @@
         "牙噶巴卜",
         "猎手",
         "红唇女郎",
+        "诺·达鲺",
         "调查员",
         "造谣者",
         "酒鬼",
@@ -571,5 +611,13 @@
         "鹰身女妖"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

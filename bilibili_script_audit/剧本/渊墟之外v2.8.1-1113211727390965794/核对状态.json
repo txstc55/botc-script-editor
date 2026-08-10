@@ -206,6 +206,10 @@
   ],
   "ocr_note_checks": [
     {
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 1.0
+    },
+    {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
       "text_coverage": 1.0
     },
@@ -229,9 +233,7 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "總凜麥妝無耀爨芫滿蔔腸龍勢昝繡知蘊蔚崩圍\"揸樂奀袋茑讓肅皆雙教的鹽蘿景今",
-    "總壽陽在都暴恐滑命的因理发师能力兩安換角色，不会图此格动",
-    "某件事“可能”发生，代表说书人决定该事情是否发生。"
+    "總凜麥妝無耀爨芫滿蔔腸龍勢昝繡知蘊蔚崩圍\"揸樂奀袋茑讓肅皆雙教的鹽蘿景今"
   ],
   "ocr_rule_markers": [
     "相克规则"
@@ -246,8 +248,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -613,5 +631,17 @@
       "x": 0.56078,
       "y": 0.18895
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "庄小二&符文吞噬者"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "總凜麥妝無耀爨芫滿蔔腸龍勢昝繡知蘊蔚崩圍\"揸樂奀袋茑讓肅皆雙教的鹽蘿景今"
+    ]
+  }
 }

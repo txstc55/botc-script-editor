@@ -41,6 +41,7 @@
     "教授",
     "筑梦师",
     "守鸦人",
+    "气球驾驶员",
     "旅店老板",
     "食人族",
     "要糖小孩",
@@ -50,6 +51,7 @@
     "投毒者",
     "血腥玛丽",
     "小恶魔",
+    "诺·达鲺",
     "圣洁之魂"
   ],
   "ocr_heading_character_details": [
@@ -108,6 +110,12 @@
       "y": 0.6205
     },
     {
+      "name": "气球驾驶员",
+      "team": "townsfolk",
+      "x": 0.14702,
+      "y": 0.61467
+    },
+    {
       "name": "旅店老板",
       "team": "townsfolk",
       "x": 0.14703,
@@ -162,6 +170,12 @@
       "y": 0.228
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.147,
+      "y": 0.17864
+    },
+    {
       "name": "圣洁之魂",
       "team": "fabled",
       "x": 0.37647,
@@ -170,7 +184,8 @@
   ],
   "ocr_unexpected_characters": [
     "旅店老板",
-    "食人族"
+    "食人族",
+    "诺·达鲺"
   ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
@@ -331,8 +346,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -342,6 +380,7 @@
         "钟表匠",
         "共情者",
         "筑梦师",
+        "气球驾驶员",
         "旅店老板",
         "送葬者",
         "神谕者",
@@ -352,6 +391,7 @@
         "无头南瓜骑士",
         "刺客",
         "小恶魔",
+        "诺·达鲺",
         "要糖小孩",
         "催眠师",
         "投毒者",
@@ -414,6 +454,12 @@
           "y": 0.6205
         },
         {
+          "name": "气球驾驶员",
+          "team": "townsfolk",
+          "x": 0.14702,
+          "y": 0.61467
+        },
+        {
           "name": "旅店老板",
           "team": "townsfolk",
           "x": 0.14703,
@@ -468,6 +514,12 @@
           "y": 0.228
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.147,
+          "y": 0.17864
+        },
+        {
           "name": "圣洁之魂",
           "team": "fabled",
           "x": 0.37647,
@@ -495,14 +547,30 @@
         "教授",
         "旅店老板",
         "无头南瓜骑士",
+        "气球驾驶员",
         "神谕者",
         "筑梦师",
         "血腥玛丽",
         "要糖小孩",
+        "诺·达鲺",
         "送葬者",
         "钟表匠",
         "食人族"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "女武神",
+      "炼金术士",
+      "报丧女妖"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "该角色的能力来自过去"
+    ]
+  }
 }

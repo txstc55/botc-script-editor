@@ -243,14 +243,40 @@
     "男爵",
     "女巫",
     "提线木偶",
+    "诺·达鲺",
     "军团"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29806,
+          "y": 0.2
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27214,
+          "y": 0.1728
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -267,6 +293,7 @@
         "理发师",
         "男爵",
         "提线木偶",
+        "诺·达鲺",
         "军团",
         "共情者",
         "神谕者",
@@ -384,6 +411,12 @@
           "team": "minion",
           "x": 0.14683,
           "y": 0.22228
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14903,
+          "y": 0.1488
         },
         {
           "name": "军团",
@@ -408,6 +441,7 @@
         "理发师",
         "男爵",
         "提线木偶",
+        "诺·达鲺",
         "军团",
         "共情者",
         "神谕者",
@@ -525,6 +559,12 @@
           "team": "minion",
           "x": 0.14683,
           "y": 0.22228
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14903,
+          "y": 0.1488
         },
         {
           "name": "军团",
@@ -559,6 +599,7 @@
         "神谕者",
         "筑梦师",
         "舞蛇人",
+        "诺·达鲺",
         "调查员",
         "酒鬼",
         "食人族"
@@ -683,10 +724,30 @@
       "y": 0.22228
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14903,
+      "y": 0.1488
+    },
+    {
       "name": "军团",
       "team": "demon",
       "x": 0.14687,
       "y": 0.1056
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "瘟疫医生&提线木偶",
+      "瘟疫医生&恐惧之灵",
+      "提线木偶&小怪宝"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "非首心夜晚"
+    ]
+  }
 }

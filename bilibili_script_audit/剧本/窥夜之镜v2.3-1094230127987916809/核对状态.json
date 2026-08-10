@@ -242,6 +242,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "法官",
         "流莺",
         "屠夫",
@@ -250,6 +253,24 @@
         "怪咖"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.3125
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.28634
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2585
+        },
         {
           "name": "黑帮",
           "team": "traveler",
@@ -476,6 +497,22 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "屠夫",
+        "怪咖",
+        "法官",
+        "流莺",
+        "集骨者",
+        "黑帮"
+      ]
+    },
+    {
+      "images": [
         "对照图-03.png"
       ],
       "characters": [
@@ -666,5 +703,13 @@
       "x": 0.1451,
       "y": 0.18895
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

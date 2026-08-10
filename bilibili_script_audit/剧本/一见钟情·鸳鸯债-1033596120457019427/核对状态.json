@@ -236,7 +236,6 @@
   ],
   "ocr_unexplained_bottom_lines": [
     "（规则细节：说书人使用的爪牙能力依然可以对窥镜人选择的玩家生效。）",
-    "且如果巡山人选择了鸯，鸯会变成一个",
     "下在场镇民，"
   ],
   "ocr_rule_markers": [
@@ -246,8 +245,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.jpg",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -793,5 +815,16 @@
       "x": 0.14706,
       "y": 0.19767
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "（规则细节：说书人使用的爪牙能力依然可以对窥镜人选择的玩家生效。）",
+      "下在场镇民，"
+    ]
+  }
 }

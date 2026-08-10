@@ -27,6 +27,7 @@
     "私货商人"
   ],
   "ocr_heading_characters": [
+    "\"镇民\"",
     "祖母",
     "贵族",
     "女裁缝",
@@ -36,13 +37,21 @@
     "村夫",
     "茶艺师",
     "神谕者",
+    "\"外来者\"",
     "疯子",
     "政客",
+    "\"爪牙\"",
     "科学怪人",
     "方古",
     "痢蛭"
   ],
   "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.06863,
+      "y": 0.89099
+    },
     {
       "name": "祖母",
       "team": "townsfolk",
@@ -116,6 +125,12 @@
       "y": 0.58121
     },
     {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.06863,
+      "y": 0.53488
+    },
+    {
       "name": "疯子",
       "team": "outsider",
       "x": 0.14706,
@@ -138,6 +153,12 @@
       "team": "",
       "x": 0.14706,
       "y": 0.47238
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.06863,
+      "y": 0.417
     },
     {
       "name": "维齐尔",
@@ -188,7 +209,11 @@
       "y": 0.1845
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -369,6 +394,10 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 1.0
+    },
+    {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
       "text_coverage": 1.0
     },
@@ -389,9 +418,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "某件事“可能”发生，代表说书人决定该事情是否发生。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -406,6 +433,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "祖母",
         "贵族",
         "共情者",
@@ -432,6 +462,12 @@
         "方古"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.06863,
+          "y": 0.89099
+        },
         {
           "name": "祖母",
           "team": "townsfolk",
@@ -505,6 +541,12 @@
           "y": 0.58121
         },
         {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.06863,
+          "y": 0.53488
+        },
+        {
           "name": "疯子",
           "team": "outsider",
           "x": 0.14706,
@@ -527,6 +569,12 @@
           "team": "",
           "x": 0.14706,
           "y": 0.47238
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.06863,
+          "y": 0.417
         },
         {
           "name": "维齐尔",
@@ -586,6 +634,9 @@
         "对照图-02.png"
       ],
       "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
         "侍臣",
         "共情者",
         "半兽人",
@@ -612,5 +663,15 @@
         "食人魔"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "维齐尔&侍臣"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

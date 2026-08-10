@@ -43,10 +43,13 @@
     "提线木偶",
     "红唇女郎",
     "投毒者",
+    "诺·达鲺",
     "亡骨魔",
     "普卡"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -223,9 +226,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "泰风捕手"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -240,12 +241,26 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
         "官员",
         "屠夫",
         "替罪羊",
         "怪咖"
       ],
       "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.295
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.26744
+        },
         {
           "name": "官员",
           "team": "traveler",
@@ -287,6 +302,7 @@
         "疯子",
         "维齐尔",
         "红唇女郎",
+        "诺·达鲺",
         "亡骨魔",
         "驱魔人",
         "半兽人",
@@ -421,6 +437,12 @@
           "y": 0.28619
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.21948
+        },
+        {
           "name": "亡骨魔",
           "team": "demon",
           "x": 0.14706,
@@ -456,6 +478,7 @@
         "红唇女郎",
         "维齐尔",
         "罂粟种植者",
+        "诺·达鲺",
         "贤者",
         "贵族",
         "送葬者",
@@ -597,6 +620,12 @@
       "y": 0.28619
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14706,
+      "y": 0.21948
+    },
+    {
       "name": "亡骨魔",
       "team": "demon",
       "x": 0.14706,
@@ -608,5 +637,13 @@
       "x": 0.55882,
       "y": 0.17
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

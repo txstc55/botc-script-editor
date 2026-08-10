@@ -203,9 +203,7 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "小天鹅 Swan Lake",
-    "你存活时公爵夫人会在游戏中，",
-    "如果三名玩家拜访公爵夫人，你必须是其中之一。"
+    "小天鹅 Swan Lake"
   ],
   "ocr_rule_markers": [
     "相克规则"
@@ -244,8 +242,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.jpg",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.19041
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.164
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.1365
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -815,5 +836,17 @@
       "x": 0.56077,
       "y": 0.17582
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "气球驾驶员"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "小天鹅 Swan Lake"
+    ]
+  }
 }

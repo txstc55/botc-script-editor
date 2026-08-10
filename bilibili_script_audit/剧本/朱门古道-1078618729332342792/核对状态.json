@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -44,10 +44,13 @@
     "教父",
     "蛊雕",
     "小恶魔",
+    "诺·达鲺",
     "混沌",
     "涡流"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -189,11 +192,11 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text": "该角色的能力来自过去",
       "text_coverage": 1.0
     },
     {
-      "text": "该角色的能力来自过去",
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
       "text_coverage": 1.0
     },
     {
@@ -234,8 +237,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -264,6 +290,7 @@
         "理发师",
         "提线木偶",
         "蛊雕",
+        "诺·达鲺",
         "混沌"
       ],
       "heading_character_details": [
@@ -400,6 +427,12 @@
           "y": 0.228
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.228
+        },
+        {
           "name": "混沌",
           "team": "demon",
           "x": 0.56078,
@@ -438,6 +471,7 @@
         "理发师",
         "秉笔",
         "蛊雕",
+        "诺·达鲺",
         "调查员",
         "逆臣",
         "造谣者",
@@ -590,6 +624,12 @@
       "y": 0.228
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.228
+    },
+    {
       "name": "混沌",
       "team": "demon",
       "x": 0.56078,
@@ -601,5 +641,13 @@
       "x": 0.14706,
       "y": 0.1815
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

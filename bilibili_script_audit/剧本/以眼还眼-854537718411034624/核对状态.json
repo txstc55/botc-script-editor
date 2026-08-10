@@ -169,8 +169,8 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
-      "text_coverage": 0.9167
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 0.619
     },
     {
       "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
@@ -194,7 +194,6 @@
     "非首心夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "（相克规關：医力克星的角色在网一創间坚只能有其中一个角色在场.）",
     "非首心夜晚"
   ],
   "ocr_rule_markers": [],
@@ -224,15 +223,41 @@
     "提线木偶",
     "投毒者",
     "间谍",
+    "诺·达鲺",
     "亡骨魔",
     "军团"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.2
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.26903,
+          "y": 0.17057
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -256,6 +281,7 @@
         "陌客",
         "圣徒",
         "提线木偶",
+        "诺·达鲺",
         "军团"
       ],
       "heading_character_details": [
@@ -362,6 +388,12 @@
           "y": 0.3328
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56156,
+          "y": 0.2352
+        },
+        {
           "name": "亡骨魔",
           "team": "demon",
           "x": 0.14687,
@@ -378,8 +410,31 @@
     },
     {
       "image": "对照图-03.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.2
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.26903,
+          "y": 0.17057
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -403,6 +458,7 @@
         "陌客",
         "圣徒",
         "提线木偶",
+        "诺·达鲺",
         "军团"
       ],
       "heading_character_details": [
@@ -507,6 +563,12 @@
           "team": "minion",
           "x": 0.14687,
           "y": 0.3328
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56156,
+          "y": 0.2352
         },
         {
           "name": "亡骨魔",
@@ -546,6 +608,7 @@
         "猎手",
         "祖母",
         "神谕者",
+        "诺·达鲺",
         "酒鬼",
         "镇长",
         "间谍",
@@ -666,6 +729,12 @@
       "y": 0.3328
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56156,
+      "y": 0.2352
+    },
+    {
       "name": "亡骨魔",
       "team": "demon",
       "x": 0.14687,
@@ -677,5 +746,17 @@
       "x": 0.56156,
       "y": 0.1856
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "非首心夜晚"
+    ]
+  }
 }

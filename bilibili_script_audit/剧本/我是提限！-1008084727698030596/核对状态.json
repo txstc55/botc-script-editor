@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -45,9 +45,12 @@
     "提线木偶",
     "亡骨魔",
     "暴君",
-    "典狱长"
+    "典狱长",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -236,8 +239,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.199
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -265,7 +291,8 @@
         "修补匠",
         "寡妇",
         "召唤师",
-        "暴君"
+        "暴君",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -405,6 +432,12 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.17442
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.1715
         }
       ],
       "required_character_matches": 23
@@ -432,6 +465,7 @@
         "暴君",
         "杂技演员",
         "村夫",
+        "诺·达鲺",
         "调查员",
         "造谣者",
         "酒保",
@@ -588,6 +622,20 @@
       "team": "demon",
       "x": 0.14706,
       "y": 0.17442
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.1715
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

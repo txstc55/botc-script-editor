@@ -16,7 +16,7 @@
     "6911b062ca773a389efa5880266fec1344902471.png",
     "a2ff2542dc263eb7d842077ce152549844902471.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 27,
@@ -50,6 +50,7 @@
     "广寒灵",
     "亡骨魔",
     "小恶魔",
+    "诺·达鲺",
     "折桂"
   ],
   "ocr_heading_character_details": [
@@ -192,13 +193,21 @@
       "y": 0.1685
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56257,
+      "y": 0.16814
+    },
+    {
       "name": "折桂",
       "team": "fabled",
       "x": 0.56078,
       "y": 0.106
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [
     "咖啡师",
     "流莺",
@@ -475,6 +484,7 @@
         "麻脸巫婆",
         "提线木偶",
         "亡骨魔",
+        "诺·达鲺",
         "折桂"
       ],
       "heading_character_details": [
@@ -617,6 +627,12 @@
           "y": 0.1685
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56257,
+          "y": 0.16814
+        },
+        {
           "name": "折桂",
           "team": "fabled",
           "x": 0.56078,
@@ -652,11 +668,20 @@
         "理发师",
         "神谕者",
         "糊灯匠",
+        "诺·达鲺",
         "贞洁者",
         "酒鬼",
         "魔术师",
         "麻脸巫婆"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

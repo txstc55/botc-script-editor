@@ -47,9 +47,12 @@
     "洗脑师",
     "刺客",
     "混沌",
-    "饕餮"
+    "饕餮",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -234,8 +237,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17587
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -256,6 +282,7 @@
         "哥布林",
         "刺客",
         "饕餮",
+        "诺·达鲺",
         "渔夫",
         "艺术家",
         "歌伶",
@@ -410,6 +437,12 @@
           "team": "demon",
           "x": 0.14314,
           "y": 0.22238
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14314,
+          "y": 0.17878
         }
       ],
       "required_character_matches": 24
@@ -440,6 +473,7 @@
         "畸形秀演员",
         "艺术家",
         "解谜大师",
+        "诺·达鲺",
         "赶尸人",
         "送葬者",
         "钟表匠",
@@ -600,6 +634,22 @@
       "team": "demon",
       "x": 0.14314,
       "y": 0.22238
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14314,
+      "y": 0.17878
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "Json 制作 By"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

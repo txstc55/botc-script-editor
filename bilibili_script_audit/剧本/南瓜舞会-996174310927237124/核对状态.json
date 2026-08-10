@@ -47,6 +47,7 @@
     "红唇女郎",
     "哥布林",
     "科学怪人",
+    "诺·达鲺",
     "普卡",
     "堤丰之首",
     "方古",
@@ -156,6 +157,12 @@
       "y": 0.29895
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.2265
+    },
+    {
       "name": "普卡",
       "team": "demon",
       "x": 0.14706,
@@ -180,7 +187,9 @@
       "y": 0.1015
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [
     "侏儒"
   ],
@@ -360,8 +369,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -386,6 +418,7 @@
         "解谜大师",
         "恐惧之灵",
         "科学怪人",
+        "诺·达鲺",
         "堤丰之首",
         "侏儒"
       ],
@@ -493,6 +526,12 @@
           "y": 0.29895
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.2265
+        },
+        {
           "name": "普卡",
           "team": "demon",
           "x": 0.14706,
@@ -546,8 +585,19 @@
         "红唇女郎",
         "艺术家",
         "解谜大师",
+        "诺·达鲺",
         "魔像"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "告密者"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

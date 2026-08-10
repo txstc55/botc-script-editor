@@ -47,9 +47,12 @@
     "寡妇",
     "投毒者",
     "饕餮",
+    "诺·达鲺",
     "奥赫"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -237,8 +240,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.20349
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17587
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -260,6 +286,7 @@
         "寡妇",
         "教父",
         "投毒者",
+        "诺·达鲺",
         "饕餮",
         "奥赫",
         "旅店老板",
@@ -409,6 +436,12 @@
           "y": 0.218
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14902,
+          "y": 0.2165
+        },
+        {
           "name": "奥赫",
           "team": "demon",
           "x": 0.14706,
@@ -443,6 +476,7 @@
         "祖母",
         "落难少女",
         "街头风琴手",
+        "诺·达鲺",
         "赏金猎人",
         "酒鬼",
         "阴阳师",
@@ -599,10 +633,26 @@
       "y": 0.218
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14902,
+      "y": 0.2165
+    },
+    {
       "name": "奥赫",
       "team": "demon",
       "x": 0.14706,
       "y": 0.167
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "提线木偶"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

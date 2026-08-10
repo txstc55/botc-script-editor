@@ -44,11 +44,14 @@
     "洗脑师",
     "提线木偶",
     "养蛊人",
+    "诺·达鲺",
     "牙噶巴卜",
     "方古",
     "典狱长"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -253,8 +256,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27231,
+          "y": 0.17392
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -280,6 +306,7 @@
         "酒鬼",
         "畸形秀演员",
         "洗脑师",
+        "诺·达鲺",
         "方古"
       ],
       "heading_character_details": [
@@ -392,6 +419,12 @@
           "y": 0.2965
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.2265
+        },
+        {
           "name": "牙噶巴卜",
           "team": "demon",
           "x": 0.14702,
@@ -434,6 +467,7 @@
         "疯子",
         "祖母",
         "罂粟种植者",
+        "诺·达鲺",
         "赌徒",
         "造谣者",
         "郎中",
@@ -561,6 +595,12 @@
       "y": 0.2965
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.2265
+    },
+    {
       "name": "牙噶巴卜",
       "team": "demon",
       "x": 0.14702,
@@ -578,5 +618,25 @@
       "x": 0.14706,
       "y": 0.17733
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "结巴绅士",
+      "会有一副搞笑眼镜。",
+      "当玩家戴着搞笑眼镜的时候，只能用说书人",
+      "会有一顶讷帽。",
+      "当玩家戴着讷帽的时候，只能说单音节词，",
+      "指定的一种语言说话（外语、方言），但投票算作两票。如果违反",
+      "投票算作两票。",
+      "如果违反规则，讷帽会被转移。",
+      "规则，搞笑眼镜会被转移。"
+    ]
+  }
 }

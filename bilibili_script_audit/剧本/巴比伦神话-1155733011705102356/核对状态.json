@@ -18,10 +18,11 @@
   ],
   "review_status": "missing_json",
   "review_notes": [],
-  "ocr_reference_image": "对照图-03.png",
+  "ocr_reference_image": "对照图-05.png",
   "ocr_heading_characters": [
-    "信使",
-    "圣洁之魂"
+    "投毒者",
+    "窃贼",
+    "街头风琴手"
   ],
   "ocr_source_images": [
     {
@@ -31,8 +32,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": []
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.31686
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.28779
+        }
+      ]
     },
     {
       "image": "对照图-03.png",
@@ -62,8 +79,31 @@
     },
     {
       "image": "对照图-05.png",
-      "heading_characters": [],
-      "heading_character_details": []
+      "heading_characters": [
+        "投毒者",
+        "窃贼",
+        "街头风琴手"
+      ],
+      "heading_character_details": [
+        {
+          "name": "投毒者",
+          "team": "minion",
+          "x": 0.50298,
+          "y": 0.8406
+        },
+        {
+          "name": "窃贼",
+          "team": "traveler",
+          "x": 0.49702,
+          "y": 0.52517
+        },
+        {
+          "name": "街头风琴手",
+          "team": "minion",
+          "x": 0.49995,
+          "y": 0.04349
+        }
+      ]
     },
     {
       "image": "对照图-06.png",
@@ -72,8 +112,31 @@
     },
     {
       "image": "对照图-07.png",
-      "heading_characters": [],
-      "heading_character_details": []
+      "heading_characters": [
+        "帽匠",
+        "集骨者",
+        "瘟疫医生"
+      ],
+      "heading_character_details": [
+        {
+          "name": "帽匠",
+          "team": "",
+          "x": 0.50448,
+          "y": 0.6399
+        },
+        {
+          "name": "集骨者",
+          "team": "traveler",
+          "x": 0.50149,
+          "y": 0.20681
+        },
+        {
+          "name": "瘟疫医生",
+          "team": "outsider",
+          "x": 0.50448,
+          "y": 0.04136
+        }
+      ]
     }
   ],
   "ocr_source_board_groups": [],
@@ -89,16 +152,22 @@
   ],
   "ocr_heading_character_details": [
     {
-      "name": "信使",
-      "team": "townsfolk",
-      "x": 0.14902,
-      "y": 0.61047
+      "name": "投毒者",
+      "team": "minion",
+      "x": 0.50298,
+      "y": 0.8406
     },
     {
-      "name": "圣洁之魂",
-      "team": "fabled",
-      "x": 0.15289,
-      "y": 0.09723
+      "name": "窃贼",
+      "team": "traveler",
+      "x": 0.49702,
+      "y": 0.52517
+    },
+    {
+      "name": "街头风琴手",
+      "team": "minion",
+      "x": 0.49995,
+      "y": 0.04349
     }
   ]
 }

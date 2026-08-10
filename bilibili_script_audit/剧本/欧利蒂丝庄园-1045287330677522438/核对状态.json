@@ -23,6 +23,7 @@
   "ocr_heading_characters": [
     "冒险家",
     "病患",
+    "机械师",
     "小女孩",
     "心理学家",
     "先知",
@@ -31,7 +32,6 @@
     "律师",
     "古董商",
     "哭泣小丑",
-    "机械师",
     "佣兵",
     "调酒师",
     "幸运儿",
@@ -221,8 +221,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.20349
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27451,
+          "y": 0.17587
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -265,6 +288,12 @@
           "team": "townsfolk",
           "x": 0.56078,
           "y": 0.86628
+        },
+        {
+          "name": "机械师",
+          "team": "townsfolk",
+          "x": 0.59804,
+          "y": 0.84593
         },
         {
           "name": "小女孩",
@@ -313,12 +342,6 @@
           "team": "townsfolk",
           "x": 0.14702,
           "y": 0.61908
-        },
-        {
-          "name": "机械师",
-          "team": "townsfolk",
-          "x": 0.14493,
-          "y": 0.56648
         },
         {
           "name": "佣兵",
@@ -456,6 +479,12 @@
       "y": 0.86628
     },
     {
+      "name": "机械师",
+      "team": "townsfolk",
+      "x": 0.59804,
+      "y": 0.84593
+    },
+    {
       "name": "小女孩",
       "team": "townsfolk",
       "x": 0.14706,
@@ -502,12 +531,6 @@
       "team": "townsfolk",
       "x": 0.14702,
       "y": 0.61908
-    },
-    {
-      "name": "机械师",
-      "team": "townsfolk",
-      "x": 0.14493,
-      "y": 0.56648
     },
     {
       "name": "佣兵",
@@ -587,5 +610,13 @@
       "x": 0.56076,
       "y": 0.1758
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

@@ -233,8 +233,17 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -586,5 +595,20 @@
       "x": 0.14314,
       "y": 0.19041
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "梼杌",
+      "Json 制作 By"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "如果今天白天有外来者死亡，当晚改为你要选择一名玩家：他死亡，",
+      "但被当作仍然存活，随后会有一名其他玩家死亡。［+1外来者］",
+      "死亡时你才会一同死亡。"
+    ]
+  }
 }

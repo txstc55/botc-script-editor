@@ -45,6 +45,7 @@
     "洗脑师",
     "狂戮",
     "迷雾",
+    "诺·达鲺",
     "普卡"
   ],
   "ocr_unexpected_characters": [],
@@ -245,8 +246,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2955,
+          "y": 0.20058
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27006,
+          "y": 0.17282
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.2955,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -275,7 +299,8 @@
         "畸形秀演员",
         "冒名客",
         "洗脑师",
-        "迷雾"
+        "迷雾",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -417,6 +442,12 @@
           "y": 0.22965
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56164,
+          "y": 0.17151
+        },
+        {
           "name": "普卡",
           "team": "demon",
           "x": 0.14677,
@@ -451,6 +482,7 @@
         "瘟疫医生",
         "秉笔",
         "致幻师",
+        "诺·达鲺",
         "赌徒",
         "迷雾",
         "送葬者",
@@ -607,10 +639,24 @@
       "y": 0.22965
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56164,
+      "y": 0.17151
+    },
+    {
       "name": "普卡",
       "team": "demon",
       "x": 0.14677,
       "y": 0.17151
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

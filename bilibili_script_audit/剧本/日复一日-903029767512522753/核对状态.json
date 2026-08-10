@@ -222,8 +222,6 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "造物之语 Logos Dei",
-    "正义女神 Lady Justice",
     "一名旅行者醉酒，所有玩冢都会知道他是谁。"
   ],
   "ocr_rule_markers": [],
@@ -237,8 +235,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.31541
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28634
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.26
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -299,5 +320,15 @@
       "x": 0.14706,
       "y": 0.30378
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "一名旅行者醉酒，所有玩冢都会知道他是谁。"
+    ]
+  }
 }

@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -152,8 +152,8 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
-      "text_coverage": 0.875
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 0.7619
     },
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -205,15 +205,41 @@
     "麻脸巫婆",
     "教父",
     "红唇女郎",
+    "诺·达鲺",
     "痢蛭",
     "涡流"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.2016
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.26998,
+          "y": 0.1728
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -237,6 +263,7 @@
         "月之子",
         "麻脸巫婆",
         "红唇女郎",
+        "诺·达鲺",
         "涡流"
       ],
       "heading_character_details": [
@@ -343,6 +370,12 @@
           "y": 0.3328
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56587,
+          "y": 0.248
+        },
+        {
           "name": "痢蛭",
           "team": "demon",
           "x": 0.14471,
@@ -378,6 +411,7 @@
         "渔夫",
         "痢蛭",
         "红唇女郎",
+        "诺·达鲺",
         "贤者",
         "贵族",
         "造谣者",
@@ -497,6 +531,12 @@
       "y": 0.3328
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56587,
+      "y": 0.248
+    },
+    {
       "name": "痢蛭",
       "team": "demon",
       "x": 0.14471,
@@ -508,5 +548,13 @@
       "x": 0.56371,
       "y": 0.2016
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

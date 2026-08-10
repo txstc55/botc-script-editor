@@ -46,9 +46,12 @@
     "提线木偶",
     "红唇女郎",
     "饕餮",
-    "沙巴洛斯"
+    "沙巴洛斯",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -246,8 +249,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.20058
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14667
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -274,7 +300,8 @@
         "落难少女",
         "狐媚娘",
         "提线木偶",
-        "沙巴洛斯"
+        "沙巴洛斯",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -408,6 +435,12 @@
           "team": "demon",
           "x": 0.56054,
           "y": 0.22311
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.17442
         }
       ],
       "required_character_matches": 23
@@ -437,6 +470,7 @@
         "祖母",
         "红唇女郎",
         "落难少女",
+        "诺·达鲺",
         "贵族",
         "造谣者",
         "饕餮",
@@ -584,6 +618,25 @@
       "team": "demon",
       "x": 0.56054,
       "y": 0.22311
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.17442
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "Json 制作 By"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "复活/反刍/起死回生",
+      "已死亡玩家再次变为存活玩家。该玩家视为重新进场，会重新获得能力（包括限一次，首个夜晚⋯）。"
+    ]
+  }
 }

@@ -46,11 +46,14 @@
     "洗脑师",
     "提线木偶",
     "教父",
+    "诺·达鲺",
     "小恶魔",
     "痢蛭",
     "亡骨魔"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [
     "替罪羊",
     "集骨者",
@@ -295,12 +298,33 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "替罪羊",
         "集骨者",
         "流莺",
         "主教"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.311
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28343
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.2585
+        },
         {
           "name": "替罪羊",
           "team": "traveler",
@@ -351,6 +375,7 @@
         "小恶魔",
         "鹰身女妖",
         "提线木偶",
+        "诺·达鲺",
         "痢蛭",
         "亡骨魔"
       ],
@@ -470,6 +495,12 @@
           "y": 0.30233
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56078,
+          "y": 0.228
+        },
+        {
           "name": "小恶魔",
           "team": "demon",
           "x": 0.14706,
@@ -514,6 +545,7 @@
         "罂粟种植者",
         "舞蛇人",
         "解谜大师",
+        "诺·达鲺",
         "贵族",
         "赌徒",
         "食人族",
@@ -645,6 +677,12 @@
       "y": 0.30233
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56078,
+      "y": 0.228
+    },
+    {
       "name": "小恶魔",
       "team": "demon",
       "x": 0.14706,
@@ -662,5 +700,18 @@
       "x": 0.56078,
       "y": 0.18
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "城镇公告员",
+      "渔夫"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "杂耍艺人&食人族"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

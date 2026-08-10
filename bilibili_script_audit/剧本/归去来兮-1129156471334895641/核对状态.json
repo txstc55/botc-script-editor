@@ -271,10 +271,24 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
         "流莺",
         "集骨者"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.31395
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28634
+        },
         {
           "name": "集骨者",
           "team": "traveler",
@@ -749,5 +763,16 @@
       "x": 0.14699,
       "y": 0.17713
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "圣洁之魂",
+      "摆渡人"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

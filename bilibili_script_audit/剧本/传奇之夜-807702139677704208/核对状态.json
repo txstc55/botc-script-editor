@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -206,14 +206,40 @@
     "街头风琴手",
     "珀",
     "亡骨魔",
+    "诺·达鲺",
     "普卡"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -240,7 +266,8 @@
         "畸形秀演员",
         "呆瓜",
         "麻脸巫婆",
-        "珀"
+        "珀",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -370,6 +397,12 @@
           "y": 0.247
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56078,
+          "y": 0.19186
+        },
+        {
           "name": "普卡",
           "team": "demon",
           "x": 0.14902,
@@ -399,6 +432,7 @@
         "珀",
         "畸形秀演员",
         "街头风琴手",
+        "诺·达鲺",
         "调查员",
         "赌徒",
         "赏金猎人",
@@ -545,10 +579,24 @@
       "y": 0.247
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56078,
+      "y": 0.19186
+    },
+    {
       "name": "普卡",
       "team": "demon",
       "x": 0.14902,
       "y": 0.19041
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

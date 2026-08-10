@@ -16,7 +16,7 @@
   "resolved_source_image_ids": [
     "8efbdd1d3a3d40ec653aa408323e85a344902471.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-01.png",
   "ocr_character_matches": 12,
@@ -34,6 +34,7 @@
     "变脸师",
     "畸形秀演员",
     "异端分子",
+    "\"被处决\"",
     "洗脑师",
     "鹰身女妖",
     "玩具匠"
@@ -82,6 +83,12 @@
       "y": 0.47509
     },
     {
+      "name": "\"被处决\"",
+      "team": "townsfolk",
+      "x": 0.14895,
+      "y": 0.45189
+    },
+    {
       "name": "洗脑师",
       "team": "minion",
       "x": 0.14902,
@@ -100,7 +107,9 @@
       "y": 0.09867
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"被处决\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -199,6 +208,7 @@
         "哲学家",
         "变脸师",
         "畸形秀演员",
+        "\"被处决\"",
         "异端分子",
         "洗脑师",
         "鹰身女妖",
@@ -248,6 +258,12 @@
           "y": 0.47509
         },
         {
+          "name": "\"被处决\"",
+          "team": "townsfolk",
+          "x": 0.14895,
+          "y": 0.45189
+        },
+        {
           "name": "洗脑师",
           "team": "minion",
           "x": 0.14902,
@@ -275,6 +291,7 @@
         "对照图-01.png"
       ],
       "characters": [
+        "\"被处决\"",
         "变脸师",
         "哲学家",
         "失忆者",
@@ -287,5 +304,13 @@
         "鹰身女妖"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

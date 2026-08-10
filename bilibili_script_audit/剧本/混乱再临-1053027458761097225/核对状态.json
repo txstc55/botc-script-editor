@@ -28,6 +28,7 @@
     "吟游诗人"
   ],
   "ocr_heading_characters": [
+    "\"镇民\"",
     "事务官",
     "图书管理员",
     "共情者",
@@ -36,9 +37,11 @@
     "旅店老板",
     "食人族",
     "哲学家",
+    "\"外来者\"",
     "政客",
     "酒鬼",
     "疯子",
+    "\"爪牙\"",
     "投毒者",
     "麻脸巫婆",
     "卡扎力",
@@ -46,6 +49,12 @@
     "摆渡人"
   ],
   "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.06863,
+      "y": 0.89099
+    },
     {
       "name": "事务官",
       "team": "townsfolk",
@@ -107,6 +116,12 @@
       "y": 0.606
     },
     {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.07059,
+      "y": 0.561
+    },
+    {
       "name": "政客",
       "team": "outsider",
       "x": 0.56078,
@@ -135,6 +150,12 @@
       "team": "",
       "x": 0.14706,
       "y": 0.45349
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.06863,
+      "y": 0.401
     },
     {
       "name": "维齐尔",
@@ -191,7 +212,11 @@
       "y": 0.0885
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -389,15 +414,18 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
         "事务官",
         "图书管理员",
         "共情者",
         "水手",
         "旅店老板",
         "哲学家",
+        "\"外来者\"",
         "酒鬼",
         "疯子",
         "解谜大师",
+        "\"爪牙\"",
         "洗脑师",
         "投毒者",
         "灵言师",
@@ -415,6 +443,12 @@
         "涡流"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.06863,
+          "y": 0.89099
+        },
         {
           "name": "事务官",
           "team": "townsfolk",
@@ -476,6 +510,12 @@
           "y": 0.606
         },
         {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.07059,
+          "y": 0.561
+        },
+        {
           "name": "政客",
           "team": "outsider",
           "x": 0.56078,
@@ -504,6 +544,12 @@
           "team": "",
           "x": 0.14706,
           "y": 0.45349
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.06863,
+          "y": 0.401
         },
         {
           "name": "维齐尔",
@@ -569,6 +615,9 @@
         "对照图-02.png"
       ],
       "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
         "事务官",
         "共情者",
         "卡扎力",
@@ -595,5 +644,16 @@
         "麻脸巫婆"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "私货商人",
+      "告密者"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

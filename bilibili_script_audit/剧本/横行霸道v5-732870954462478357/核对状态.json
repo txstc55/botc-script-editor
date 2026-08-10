@@ -244,6 +244,9 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "窃贼",
         "学徒",
         "屠夫",
@@ -251,6 +254,24 @@
         "官员"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.3255
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.29797
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.27035
+        },
         {
           "name": "怪咖",
           "team": "traveler",
@@ -463,11 +484,32 @@
     {
       "image": "对照图-03.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "咖啡师",
         "学徒",
         "集骨者"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.3232
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27214,
+          "y": 0.2976
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.2704
+        },
         {
           "name": "咖啡师",
           "team": "traveler",
@@ -993,6 +1035,21 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-01.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "学徒",
+        "官员",
+        "屠夫",
+        "怪咖",
+        "窃贼"
+      ]
+    },
+    {
+      "images": [
         "对照图-02.png",
         "对照图-04.jpg"
       ],
@@ -1211,5 +1268,17 @@
       "x": 0.56275,
       "y": 0.17297
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "死亡时你才会一同死亡。"
+    ]
+  }
 }

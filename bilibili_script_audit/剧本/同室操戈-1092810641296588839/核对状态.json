@@ -48,8 +48,16 @@
     "灯神"
   ],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_heading_characters": [],
-  "ocr_unexpected_characters": [],
+  "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -303,8 +311,31 @@
     },
     {
       "image": "对照图-03.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.199
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     }
   ],
@@ -317,5 +348,69 @@
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_heading_character_details": []
+  "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.199
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27059,
+      "y": 0.17297
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29216,
+      "y": 0.14535
+    }
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "祖母",
+      "阴阳师",
+      "共情者",
+      "筑梦师",
+      "数学家",
+      "旅店老板",
+      "半兽人",
+      "神谕者",
+      "女裁缝",
+      "博学者",
+      "变脸师",
+      "渔夫",
+      "食人族",
+      "戏子（改）",
+      "陌客",
+      "解谜大师",
+      "书生",
+      "心上人",
+      "教父",
+      "主谋",
+      "狐媚娘",
+      "科学怪人",
+      "召唤师",
+      "军团",
+      "小怪宝",
+      "兄弟阋墙",
+      "公爵夫人",
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "戏子（改）&书生",
+      "戏子（改）&科学怪人",
+      "戏子（改）&军团",
+      "戏子（改）&小怪宝",
+      "军团&召唤师"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "SUI染钟楼制作组＆钟楼剧本博物馆"
+    ]
+  }
 }

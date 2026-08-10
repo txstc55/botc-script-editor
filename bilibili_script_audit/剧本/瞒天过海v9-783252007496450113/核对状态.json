@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -229,13 +229,19 @@
     "提线木偶",
     "红唇女郎",
     "方古",
-    "小恶魔"
+    "小恶魔",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "咖啡师",
         "枪手",
         "法官",
@@ -244,6 +250,24 @@
         "怪咖"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.324
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27227,
+          "y": 0.29843
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.2718
+        },
         {
           "name": "咖啡师",
           "team": "traveler",
@@ -306,7 +330,8 @@
         "提线木偶",
         "红唇女郎",
         "小恶魔",
-        "方古"
+        "方古",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -434,12 +459,34 @@
           "team": "demon",
           "x": 0.14902,
           "y": 0.22529
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14902,
+          "y": 0.17
         }
       ],
       "required_character_matches": 22
     }
   ],
   "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-01.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "咖啡师",
+        "怪咖",
+        "枪手",
+        "法官",
+        "集骨者",
+        "黑帮"
+      ]
+    },
     {
       "images": [
         "对照图-02.png"
@@ -461,6 +508,7 @@
         "畸形秀演员",
         "神谕者",
         "红唇女郎",
+        "诺·达鲺",
         "贤者",
         "贵族",
         "酒鬼",
@@ -602,6 +650,20 @@
       "team": "demon",
       "x": 0.14902,
       "y": 0.22529
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14902,
+      "y": 0.17
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

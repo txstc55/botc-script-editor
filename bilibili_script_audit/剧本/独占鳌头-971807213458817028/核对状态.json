@@ -13,7 +13,7 @@
     "对照图-03.png",
     "对照图-04.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -46,9 +46,12 @@
     "提线木偶",
     "哥布林",
     "方古",
-    "堤丰之首"
+    "堤丰之首",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -221,8 +224,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.20058
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -244,6 +270,7 @@
         "教父",
         "哥布林",
         "方古",
+        "诺·达鲺",
         "哲学家",
         "报丧女妖",
         "理发师",
@@ -390,6 +417,12 @@
           "team": "demon",
           "x": 0.5627,
           "y": 0.215
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14902,
+          "y": 0.16563
         }
       ],
       "required_character_matches": 23
@@ -426,6 +459,7 @@
         "祖母",
         "神谕者",
         "筑梦师",
+        "诺·达鲺",
         "酒鬼",
         "镇长",
         "食人族",
@@ -580,6 +614,20 @@
       "team": "demon",
       "x": 0.5627,
       "y": 0.215
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14902,
+      "y": 0.16563
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

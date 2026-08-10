@@ -14,7 +14,11 @@
   "review_status": "missing_json",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_heading_characters": [],
+  "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
@@ -23,8 +27,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": []
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ]
     }
   ],
   "ocr_source_board_groups": [],
@@ -33,5 +60,24 @@
     "bcb4019f397468139d047fd35e34130d44902471.png",
     "e94d22bf0e2566e2fa5a3b58e2ae169144902471.png"
   ],
-  "ocr_heading_character_details": []
+  "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.202
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27059,
+      "y": 0.17297
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.14826
+    }
+  ]
 }

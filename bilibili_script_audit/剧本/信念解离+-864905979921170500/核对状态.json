@@ -213,8 +213,17 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -274,5 +283,21 @@
       "x": 0.14694,
       "y": 0.60869
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "认知错位"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "【只能是镇民1当你首次因自身能力选择镇民时：他中毒，改",
+      "为一名与他邻近的玩家会死亡。",
+      "嗜血祖咒 Blood thirst",
+      "（说书人应回溯恶魔玩家选择过的目标，然后再于对应行动",
+      "顺序时决定谁会死亡）"
+    ]
+  }
 }

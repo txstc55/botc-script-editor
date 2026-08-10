@@ -216,8 +216,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.2
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.26998,
+          "y": 0.1712
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -540,5 +556,19 @@
       "x": 0.14032,
       "y": 0.17746
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "S茶學认提學考五备及以上的既取務源时釋都小性道的既淡死亡，当能红解文能",
+      "当你陷入“纹狂“时，意味着你需要向其他玩次有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+      "中華/醉酒"
+    ]
+  }
 }

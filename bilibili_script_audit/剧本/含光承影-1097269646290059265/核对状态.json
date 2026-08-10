@@ -44,11 +44,13 @@
     "间谍",
     "酿酒师",
     "普卡",
+    "诺·达鲺",
     "堤丰之首",
     "呓语之球"
   ],
   "ocr_unexpected_characters": [
-    "筑梦师"
+    "筑梦师",
+    "诺·达鲺"
   ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
@@ -216,6 +218,10 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 1.0
+    },
+    {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
       "text_coverage": 1.0
     },
@@ -239,9 +245,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "某件事“可能”发生，代表说书人决定该事情是否发生。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -272,6 +276,7 @@
         "小丑",
         "限",
         "酿酒师",
+        "诺·达鲺",
         "堤丰之首"
       ],
       "heading_character_details": [
@@ -378,6 +383,12 @@
           "y": 0.228
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.228
+        },
+        {
           "name": "堤丰之首",
           "team": "demon",
           "x": 0.56064,
@@ -394,8 +405,17 @@
     },
     {
       "image": "对照图-03.jpg",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.33333,
+          "y": 0.42442
+        }
+      ],
       "required_character_matches": 2
     },
     {
@@ -429,6 +449,7 @@
         "普卡",
         "月之子",
         "筑梦师",
+        "诺·达鲺",
         "调查员",
         "酿酒师",
         "锦衣卫",
@@ -556,6 +577,12 @@
       "y": 0.228
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.228
+    },
+    {
       "name": "堤丰之首",
       "team": "demon",
       "x": 0.56064,
@@ -567,5 +594,19 @@
       "x": 0.14706,
       "y": 0.17733
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "世界法则",
+      "世界法则",
+      "世界法则",
+      "世界法则",
+      "世界法则"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

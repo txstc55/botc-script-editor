@@ -47,13 +47,7 @@
     "恩佐斯"
   ],
   "ocr_unexpected_characters": [],
-  "ocr_travelers_seen": [
-    "祖尔金",
-    "加里维克斯",
-    "游学者周卓",
-    "拉格纳罗斯",
-    "克罗米"
-  ],
+  "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
       "name": "圣骑士",
@@ -93,7 +87,7 @@
     {
       "name": "牧师",
       "team": "townsfolk",
-      "ability_coverage": 0.5814
+      "ability_coverage": 0.5581
     },
     {
       "name": "潜行者",
@@ -187,33 +181,7 @@
     }
   ],
   "ocr_ability_mismatches": [],
-  "ocr_traveler_checks": [
-    {
-      "name": "祖尔金",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "加里维克斯",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "游学者周卓",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "拉格纳罗斯",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "克罗米",
-      "team": "traveler",
-      "ability_coverage": 0.9825
-    }
-  ],
+  "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
   "ocr_jinx_mismatches": [],
@@ -259,6 +227,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "祖尔金",
         "加里维克斯",
         "游学者周卓",
@@ -266,6 +237,24 @@
         "克罗米"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.36078,
+          "y": 0.3255
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.33922,
+          "y": 0.30087
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.36275,
+          "y": 0.27326
+        },
         {
           "name": "祖尔金",
           "team": "traveler",
@@ -486,6 +475,21 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "克罗米",
+        "加里维克斯",
+        "拉格纳罗斯",
+        "游学者周卓",
+        "祖尔金"
+      ]
+    },
+    {
+      "images": [
         "对照图-03.png"
       ],
       "characters": [
@@ -676,5 +680,13 @@
       "x": 0.56078,
       "y": 0.17297
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

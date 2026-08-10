@@ -48,16 +48,13 @@
     "涡流",
     "痢蛭",
     "堤丰之首",
+    "诺·达鲺",
     "印度教教徒"
   ],
-  "ocr_unexpected_characters": [],
-  "ocr_travelers_seen": [
-    "学徒",
-    "集骨者",
-    "流莺",
-    "黑帮",
-    "侏儒"
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
   ],
+  "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
       "name": "圣洁之魂",
@@ -206,39 +203,13 @@
     }
   ],
   "ocr_ability_mismatches": [],
-  "ocr_traveler_checks": [
-    {
-      "name": "学徒",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "集骨者",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "流莺",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "黑帮",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "侏儒",
-      "team": "traveler",
-      "ability_coverage": 0.5526
-    }
-  ],
+  "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
       "name": "隐士&食人魔",
       "team": "jinx",
-      "ability_coverage": 0.3182
+      "ability_coverage": 0.2955
     },
     {
       "name": "召唤师&传教士",
@@ -275,8 +246,7 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "［邪恶角色全部邻座，你靠近正中，+1爪牙，-或＋任意数",
-    "圣清之魂"
+    "［邪恶角色全部邻座，你靠近正中，+1爪牙，-或＋任意数"
   ],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
@@ -290,6 +260,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "学徒",
         "流莺",
         "侏儒",
@@ -297,6 +270,24 @@
         "集骨者"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.3,
+          "y": 0.31395
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27451,
+          "y": 0.28779
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.26
+        },
         {
           "name": "黑帮",
           "team": "traveler",
@@ -357,7 +348,8 @@
         "隐士",
         "麻脸巫婆",
         "召唤师",
-        "痢蛭"
+        "痢蛭",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -505,6 +497,12 @@
           "y": 0.16998
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56272,
+          "y": 0.16418
+        },
+        {
           "name": "印度教教徒",
           "team": "fabled",
           "x": 0.14702,
@@ -515,6 +513,21 @@
     }
   ],
   "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "侏儒",
+        "学徒",
+        "流莺",
+        "集骨者",
+        "黑帮"
+      ]
+    },
     {
       "images": [
         "对照图-03.png"
@@ -535,6 +548,7 @@
         "洗脑师",
         "涡流",
         "痢蛭",
+        "诺·达鲺",
         "调查员",
         "赌徒",
         "酒鬼",
@@ -702,10 +716,29 @@
       "y": 0.16998
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56272,
+      "y": 0.16418
+    },
+    {
       "name": "印度教教徒",
       "team": "fabled",
       "x": 0.14702,
       "y": 0.08708
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "隐士&食人魔",
+      "召唤师&传教士"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "［邪恶角色全部邻座，你靠近正中，+1爪牙，-或＋任意数"
+    ]
+  }
 }

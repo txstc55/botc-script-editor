@@ -1,7 +1,8 @@
 import json
 import unittest
+from unittest.mock import patch
 
-from apply_script_audit_fixes import apply_fix, rebuild_full_roster
+from apply_script_audit_fixes import apply_fix, database_role, rebuild_full_roster
 
 
 class FullRosterTest(unittest.TestCase):
@@ -70,6 +71,64 @@ class FullRosterTest(unittest.TestCase):
 
     self.assertEqual(changes, ["更新 角色甲&角色乙"])
     self.assertEqual(json.loads(updated)[1]["ability"], "新规则")
+
+  def test_database_role_applies_script_specific_overrides(self):
+    rows = {
+      ("角色甲", "townsfolk"): [{
+        "name": "角色甲",
+        "team": "townsfolk",
+        "normalized_team": "townsfolk",
+        "ability": "能力",
+        "occurrence_count": "1",
+      }],
+    }
+
+    with patch("apply_script_audit_fixes.database_rows", return_value=rows):
+      role = database_role({
+        "name": "角色甲",
+        "team": "townsfolk",
+        "overrides": {"firstNight": 4},
+      })
+
+    self.assertEqual(role["firstNight"], 4)
+
+  def test_database_override_updates_existing_entry(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "测试剧本"},
+      {"id": "角色甲", "name": "角色甲", "team": "townsfolk", "firstNight": 0},
+    ], ensure_ascii=False, indent=2)
+    rows = {
+      ("角色甲", "townsfolk"): [{
+        "name": "角色甲",
+        "team": "townsfolk",
+        "normalized_team": "townsfolk",
+        "ability": "能力",
+        "occurrence_count": "1",
+      }],
+    }
+
+    with patch("apply_script_audit_fixes.database_rows", return_value=rows):
+      updated, changes = apply_fix(source, {"additions": [{
+        "name": "角色甲",
+        "team": "townsfolk",
+        "overrides": {"firstNight": 4},
+      }]})
+
+    self.assertEqual(changes, ["更新 角色甲"])
+    self.assertEqual(json.loads(updated)[1]["firstNight"], 4)
+
+  def test_meta_updates_replace_selected_fields(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "测试剧本", "author": "旧作者"},
+      {"id": "角色甲", "name": "角色甲", "team": "townsfolk"},
+    ], ensure_ascii=False, indent=2)
+
+    updated, changes = apply_fix(source, {
+      "meta_updates": {"author": "新作者"},
+    })
+
+    self.assertEqual(changes, ["更新剧本信息 author"])
+    self.assertEqual(json.loads(updated)[0]["author"], "新作者")
 
 
 if __name__ == "__main__":

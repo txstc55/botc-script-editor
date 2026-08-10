@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 26,
@@ -48,10 +48,6 @@
   ],
   "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [
-    "黄皮子",
-    "黄大仙",
-    "稻草人",
-    "梦蝶",
     "舞龙身"
   ],
   "ocr_ability_checks": [
@@ -189,32 +185,14 @@
   "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [
     {
-      "name": "黄皮子",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "黄大仙",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "稻草人",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "梦蝶",
-      "team": "traveler",
-      "ability_coverage": 0.9333
-    },
-    {
       "name": "舞龙身",
       "team": "traveler",
-      "ability_coverage": 0.9672
+      "ability_coverage": 0.1803
     }
   ],
-  "ocr_traveler_mismatches": [],
+  "ocr_traveler_mismatches": [
+    "舞龙身"
+  ],
   "ocr_jinx_checks": [],
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
@@ -258,6 +236,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "梦蝶",
         "稻草人",
         "舞龙身",
@@ -265,6 +246,24 @@
         "黄大仙"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.3125
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28488
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.2585
+        },
         {
           "name": "黄皮子",
           "team": "traveler",
@@ -471,6 +470,21 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "梦蝶",
+        "稻草人",
+        "舞龙身",
+        "黄大仙",
+        "黄皮子"
+      ]
+    },
+    {
+      "images": [
         "对照图-03.png"
       ],
       "characters": [
@@ -647,5 +661,15 @@
       "x": 0.56078,
       "y": 0.17878
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [
+      "舞龙身"
+    ],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -20,7 +20,8 @@
   "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
-    "史约翰"
+    "史约翰",
+    "人类演员"
   ],
   "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
@@ -182,12 +183,7 @@
     "能够创造人类演员的角色",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "斯塔特勒 Statler",
-    "猪小姐63 Miss Piggy",
-    "致命叔叔6 Uncle Deadly",
-    "瓦尔多夫 Waldorf"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -199,14 +195,38 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
       "image": "对照图-03.png",
       "heading_characters": [
-        "史约翰"
+        "史约翰",
+        "人类演员"
       ],
       "heading_character_details": [
         {
@@ -214,6 +234,12 @@
           "team": "outsider",
           "x": 0.14706,
           "y": 0.45494
+        },
+        {
+          "name": "人类演员",
+          "team": "outsider",
+          "x": 0.56078,
+          "y": 0.4345
         }
       ],
       "required_character_matches": 25
@@ -234,6 +260,20 @@
       "team": "outsider",
       "x": 0.14706,
       "y": 0.45494
+    },
+    {
+      "name": "人类演员",
+      "team": "outsider",
+      "x": 0.56078,
+      "y": 0.4345
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -238,15 +238,14 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "一枕黄梁"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"外来者\"",
         "水中鹿",
         "武陵君",
         "丰神",
@@ -254,6 +253,12 @@
         "魇"
       ],
       "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2905
+        },
         {
           "name": "丹青手",
           "team": "traveler",
@@ -607,5 +612,13 @@
       "x": 0.56275,
       "y": 0.1525
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

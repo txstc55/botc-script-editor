@@ -53,6 +53,7 @@
     "女巫",
     "鹰身女妖",
     "亡骨魔",
+    "诺·达鲺",
     "普卡",
     "小怪宝"
   ],
@@ -190,6 +191,12 @@
       "y": 0.25
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.55877,
+      "y": 0.24842
+    },
+    {
       "name": "普卡",
       "team": "demon",
       "x": 0.14902,
@@ -202,7 +209,9 @@
       "y": 0.19331
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -389,8 +398,24 @@
     },
     {
       "image": "对照图-03.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.20349
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -419,6 +444,7 @@
         "瘟疫医生",
         "红唇女郎",
         "鹰身女妖",
+        "诺·达鲺",
         "小怪宝"
       ],
       "heading_character_details": [
@@ -555,6 +581,12 @@
           "y": 0.25
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.55877,
+          "y": 0.24842
+        },
+        {
           "name": "普卡",
           "team": "demon",
           "x": 0.14902,
@@ -596,11 +628,20 @@
         "筑梦师",
         "红唇女郎",
         "莽夫",
+        "诺·达鲺",
         "贵族",
         "酒鬼",
         "食人族",
         "鹰身女妖"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

@@ -231,14 +231,40 @@
     "红唇女郎",
     "小恶魔",
     "涡流",
-    "大灰狼"
+    "大灰狼",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.2016
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.26998,
+          "y": 0.1744
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.1488
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -254,6 +280,7 @@
         "教父",
         "洗脑师",
         "涡流",
+        "诺·达鲺",
         "僧侣",
         "赌徒",
         "守鸦人",
@@ -399,6 +426,12 @@
           "team": "demon",
           "x": 0.5594,
           "y": 0.176
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14471,
+          "y": 0.1648
         }
       ],
       "required_character_matches": 22
@@ -440,6 +473,7 @@
         "红唇女郎",
         "舞蛇人",
         "艺术家",
+        "诺·达鲺",
         "贵族",
         "赌徒",
         "送葬者",
@@ -588,6 +622,24 @@
       "team": "demon",
       "x": 0.5594,
       "y": 0.176
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14471,
+      "y": 0.1648
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "圣洁之魂"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "每个夜映*."
+    ]
+  }
 }

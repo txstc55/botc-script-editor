@@ -17,8 +17,10 @@
   "ocr_reference_image": "对照图-02.png",
   "ocr_heading_characters": [
     "记者",
+    "霸凌者*",
     "小贩",
     "证人",
+    "佣兵",
     "乞丐",
     "富豪",
     "杠精"
@@ -26,15 +28,40 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.jpg",
-      "heading_characters": [],
-      "heading_character_details": []
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.2745
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.247
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.22093
+        }
+      ]
     },
     {
       "image": "对照图-02.png",
       "heading_characters": [
         "记者",
+        "霸凌者*",
         "小贩",
         "证人",
+        "佣兵",
         "乞丐",
         "富豪",
         "杠精"
@@ -47,6 +74,12 @@
           "y": 0.827
         },
         {
+          "name": "霸凌者*",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.75145
+        },
+        {
           "name": "小贩",
           "team": "townsfolk",
           "x": 0.14706,
@@ -57,6 +90,12 @@
           "team": "outsider",
           "x": 0.14706,
           "y": 0.635
+        },
+        {
+          "name": "佣兵",
+          "team": "townsfolk",
+          "x": 0.14706,
+          "y": 0.529
         },
         {
           "name": "乞丐",
@@ -82,8 +121,10 @@
       "image": "对照图-03.png",
       "heading_characters": [
         "记者",
+        "霸凌者*",
         "小贩",
         "证人",
+        "佣兵",
         "乞丐",
         "富豪",
         "杠精"
@@ -96,6 +137,12 @@
           "y": 0.827
         },
         {
+          "name": "霸凌者*",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.75145
+        },
+        {
           "name": "小贩",
           "team": "townsfolk",
           "x": 0.14706,
@@ -106,6 +153,12 @@
           "team": "outsider",
           "x": 0.14706,
           "y": 0.635
+        },
+        {
+          "name": "佣兵",
+          "team": "townsfolk",
+          "x": 0.14706,
+          "y": 0.529
         },
         {
           "name": "乞丐",
@@ -128,7 +181,24 @@
       ]
     }
   ],
-  "ocr_source_board_groups": [],
+  "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-02.png",
+        "对照图-03.png"
+      ],
+      "characters": [
+        "乞丐",
+        "佣兵",
+        "富豪",
+        "小贩",
+        "杠精",
+        "记者",
+        "证人",
+        "霸凌者*"
+      ]
+    }
+  ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
     "fee3a7a2bf5ed9fd05eb4049dbb636d744902471.png",
@@ -146,6 +216,12 @@
       "y": 0.827
     },
     {
+      "name": "霸凌者*",
+      "team": "demon",
+      "x": 0.14706,
+      "y": 0.75145
+    },
+    {
       "name": "小贩",
       "team": "townsfolk",
       "x": 0.14706,
@@ -156,6 +232,12 @@
       "team": "outsider",
       "x": 0.14706,
       "y": 0.635
+    },
+    {
+      "name": "佣兵",
+      "team": "townsfolk",
+      "x": 0.14706,
+      "y": 0.529
     },
     {
       "name": "乞丐",

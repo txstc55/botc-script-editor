@@ -218,13 +218,18 @@
     "投毒者",
     "沙巴洛斯",
     "普卡",
-    "痢蛭"
+    "痢蛭",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
         "巫毒师",
         "乞丐",
         "流莺",
@@ -232,6 +237,18 @@
         "集骨者"
       ],
       "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.26998,
+          "y": 0.296
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.2704
+        },
         {
           "name": "巫毒师",
           "team": "",
@@ -288,6 +305,7 @@
         "投毒者",
         "寡妇",
         "普卡",
+        "诺·达鲺",
         "沙巴洛斯",
         "痢蛭"
       ],
@@ -423,6 +441,12 @@
           "team": "demon",
           "x": 0.56275,
           "y": 0.18459
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14902,
+          "y": 0.17267
         }
       ],
       "required_character_matches": 22
@@ -449,6 +473,7 @@
         "舞蛇人",
         "艺术家",
         "解谜大师",
+        "诺·达鲺",
         "贞洁者",
         "赌徒",
         "造谣者",
@@ -598,6 +623,22 @@
       "team": "demon",
       "x": 0.56275,
       "y": 0.18459
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14902,
+      "y": 0.17267
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "死亡时你才会一同死亡。"
+    ]
+  }
 }

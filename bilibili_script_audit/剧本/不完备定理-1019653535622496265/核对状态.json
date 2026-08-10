@@ -12,7 +12,7 @@
     "对照图-02.jpg",
     "对照图-03.jpg"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.jpg",
   "ocr_character_matches": 25,
@@ -45,9 +45,12 @@
     "洗脑师",
     "亡骨魔",
     "普卡",
+    "诺·达鲺",
     "牙噶巴卜"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -227,8 +230,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.jpg",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.199
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -247,6 +266,7 @@
         "限",
         "洗脑师",
         "普卡",
+        "诺·达鲺",
         "女裁缝",
         "渔夫",
         "戏法师",
@@ -397,6 +417,12 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.22093
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.17
         },
         {
           "name": "牙噶巴卜",
@@ -423,6 +449,7 @@
         "限",
         "洗脑师",
         "普卡",
+        "诺·达鲺",
         "女裁缝",
         "渔夫",
         "戏法师",
@@ -573,6 +600,12 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.22093
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.17
         },
         {
           "name": "牙噶巴卜",
@@ -612,6 +645,7 @@
         "狂热者",
         "神谕者",
         "解谜大师",
+        "诺·达鲺",
         "贵族",
         "限",
         "魔像"
@@ -769,10 +803,24 @@
       "y": 0.22093
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14706,
+      "y": 0.17
+    },
+    {
       "name": "牙噶巴卜",
       "team": "demon",
       "x": 0.5588,
       "y": 0.16998
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

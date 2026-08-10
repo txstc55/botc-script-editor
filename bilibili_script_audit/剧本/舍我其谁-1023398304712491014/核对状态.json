@@ -325,8 +325,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.jpg",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.43333,
+          "y": 0.20349
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.4098,
+          "y": 0.17587
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.43333,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -490,5 +513,15 @@
         "鹰身女妖"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "總劳规标貂果拂机的角色发生了交换，不会图吐務除原本韩机的“先去"
+    ]
+  }
 }

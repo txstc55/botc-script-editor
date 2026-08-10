@@ -46,9 +46,12 @@
     "召唤师",
     "混沌",
     "小恶魔",
-    "暴君"
+    "暴君",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -214,9 +217,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "圣清之魂"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -224,8 +225,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27451,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1439
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -246,6 +263,7 @@
         "召唤师",
         "小恶魔",
         "混沌",
+        "诺·达鲺",
         "守夜人",
         "哲学家",
         "女裁缝",
@@ -393,6 +411,12 @@
           "team": "demon",
           "x": 0.56078,
           "y": 0.167
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14701,
+          "y": 0.16269
         }
       ],
       "required_character_matches": 23
@@ -415,6 +439,7 @@
         "召唤师",
         "小恶魔",
         "混沌",
+        "诺·达鲺",
         "守夜人",
         "哲学家",
         "女裁缝",
@@ -562,6 +587,12 @@
           "team": "demon",
           "x": 0.56078,
           "y": 0.167
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14701,
+          "y": 0.16269
         }
       ],
       "required_character_matches": 23
@@ -592,6 +623,7 @@
         "理发师",
         "秉笔",
         "红唇女郎",
+        "诺·达鲺",
         "贵族",
         "赌徒",
         "道士",
@@ -749,6 +781,20 @@
       "team": "demon",
       "x": 0.56078,
       "y": 0.167
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14701,
+      "y": 0.16269
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

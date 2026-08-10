@@ -50,6 +50,7 @@
     "鬼手",
     "洗脑师",
     "珀",
+    "诺·达鲺",
     "小怪宝",
     "圣洁之魂",
     "印度教教徒",
@@ -59,15 +60,10 @@
     "武当",
     "送葬者",
     "风语者",
-    "杂技演员"
+    "杂技演员",
+    "诺·达鲺"
   ],
-  "ocr_travelers_seen": [
-    "苦头陀",
-    "冒险者",
-    "哑剧演员",
-    "摄影师",
-    "谄媚者"
-  ],
+  "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
       "name": "调查员",
@@ -132,7 +128,7 @@
     {
       "name": "驿使",
       "team": "townsfolk",
-      "ability_coverage": 0.5238
+      "ability_coverage": 0.4762
     },
     {
       "name": "食人族",
@@ -240,33 +236,7 @@
     "乾坤宝袋",
     "谢谢惠顾"
   ],
-  "ocr_traveler_checks": [
-    {
-      "name": "苦头陀",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "冒险者",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "哑剧演员",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "摄影师",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "谄媚者",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    }
-  ],
+  "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
@@ -321,6 +291,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "苦头陀",
         "稻草人",
         "谄媚者",
@@ -329,6 +302,24 @@
         "冒险者"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.31765,
+          "y": 0.29942
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.2718
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.31569,
+          "y": 0.244
+        },
         {
           "name": "苦头陀",
           "team": "traveler",
@@ -382,6 +373,7 @@
         "寡妇",
         "教父",
         "洗脑师",
+        "诺·达鲺",
         "小怪宝",
         "印度教教徒",
         "半兽人",
@@ -511,6 +503,12 @@
           "y": 0.2064
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14859,
+          "y": 0.20458
+        },
+        {
           "name": "小怪宝",
           "team": "demon",
           "x": 0.14677,
@@ -541,6 +539,22 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "冒险者",
+        "哑剧演员",
+        "摄影师",
+        "稻草人",
+        "苦头陀",
+        "谄媚者"
+      ]
+    },
+    {
+      "images": [
         "对照图-03.png"
       ],
       "characters": [
@@ -561,6 +575,7 @@
         "洗脑师",
         "独奏家",
         "珀",
+        "诺·达鲺",
         "调查员",
         "赌徒",
         "送葬者",
@@ -694,6 +709,12 @@
       "y": 0.2064
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14859,
+      "y": 0.20458
+    },
+    {
       "name": "小怪宝",
       "team": "demon",
       "x": 0.14677,
@@ -717,5 +738,20 @@
       "x": 0.55969,
       "y": 0.08721
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "古董收藏家",
+      "乾坤宝袋",
+      "谢谢惠顾"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "（特规则：被印度教徒复活的非恶魔玩家会把他原本的角色放入宝袋之中。）",
+      "该角色的能力来自过去"
+    ]
+  }
 }

@@ -50,6 +50,7 @@
     "刺客",
     "痢蛭",
     "亡骨魔",
+    "诺·达鲺",
     "异术士"
   ],
   "ocr_heading_character_details": [
@@ -180,13 +181,21 @@
       "y": 0.2325
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.17297
+    },
+    {
       "name": "异术士",
       "team": "fabled",
       "x": 0.14706,
       "y": 0.09593
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -368,8 +377,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -396,7 +428,8 @@
         "修补匠",
         "洗脑师",
         "教父",
-        "痢蛭"
+        "痢蛭",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -526,6 +559,12 @@
           "y": 0.2325
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.17297
+        },
+        {
           "name": "异术士",
           "team": "fabled",
           "x": 0.14706,
@@ -562,8 +601,19 @@
         "神谕者",
         "秉笔",
         "筑梦师",
+        "诺·达鲺",
         "调查员"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [
+      "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。"
+    ],
+    "unexplained_bottom_lines": []
+  }
 }

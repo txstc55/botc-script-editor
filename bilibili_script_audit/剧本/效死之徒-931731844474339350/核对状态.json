@@ -13,7 +13,7 @@
     "对照图-03.png",
     "对照图-04.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 26,
@@ -44,12 +44,15 @@
     "洗脑师",
     "红唇女郎",
     "间谍",
+    "诺·达鲺",
     "军团",
     "卡扎力",
     "涡流",
     "圣洁之魂"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -232,8 +235,17 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17442
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -254,6 +266,7 @@
         "酒鬼",
         "狐媚娘",
         "红唇女郎",
+        "诺·达鲺",
         "卡扎力",
         "无神论者",
         "落难少女",
@@ -386,6 +399,12 @@
           "y": 0.31395
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14314,
+          "y": 0.22933
+        },
+        {
           "name": "军团",
           "team": "demon",
           "x": 0.56078,
@@ -428,6 +447,7 @@
         "酒鬼",
         "狐媚娘",
         "红唇女郎",
+        "诺·达鲺",
         "方古",
         "博学者",
         "半仙",
@@ -555,6 +575,12 @@
           "y": 0.32267
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14314,
+          "y": 0.22933
+        },
+        {
           "name": "军团",
           "team": "demon",
           "x": 0.56078,
@@ -607,6 +633,7 @@
         "红唇女郎",
         "艺术家",
         "落难少女",
+        "诺·达鲺",
         "调查员",
         "送葬者",
         "酒鬼",
@@ -637,6 +664,7 @@
         "狐媚娘",
         "神谕者",
         "红唇女郎",
+        "诺·达鲺",
         "送葬者",
         "酒鬼",
         "钦天监",
@@ -776,6 +804,12 @@
       "y": 0.31395
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14314,
+      "y": 0.22933
+    },
+    {
       "name": "军团",
       "team": "demon",
       "x": 0.56078,
@@ -799,5 +833,13 @@
       "x": 0.37451,
       "y": 0.09302
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

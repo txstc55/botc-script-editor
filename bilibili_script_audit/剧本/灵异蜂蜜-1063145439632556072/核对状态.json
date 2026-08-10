@@ -38,6 +38,7 @@
     "水手",
     "造谣者",
     "博学者",
+    "无神论者",
     "酒鬼",
     "狂热者",
     "帽匠",
@@ -236,8 +237,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -259,6 +276,7 @@
         "教授",
         "艺术家",
         "炼金术士",
+        "无神论者",
         "酒鬼",
         "帽匠",
         "间谍",
@@ -318,6 +336,12 @@
           "team": "townsfolk",
           "x": 0.14706,
           "y": 0.56831
+        },
+        {
+          "name": "无神论者",
+          "team": "townsfolk",
+          "x": 0.55873,
+          "y": 0.5666
         },
         {
           "name": "酒鬼",
@@ -396,8 +420,24 @@
     },
     {
       "image": "对照图-04.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -419,6 +459,7 @@
         "教授",
         "艺术家",
         "炼金术士",
+        "无神论者",
         "酒鬼",
         "帽匠",
         "间谍",
@@ -478,6 +519,12 @@
           "team": "townsfolk",
           "x": 0.14706,
           "y": 0.56831
+        },
+        {
+          "name": "无神论者",
+          "team": "townsfolk",
+          "x": 0.55873,
+          "y": 0.5666
         },
         {
           "name": "酒鬼",
@@ -565,6 +612,7 @@
         "政客",
         "教授",
         "教父",
+        "无神论者",
         "水手",
         "沙巴洛斯",
         "洗脑师",
@@ -650,6 +698,12 @@
       "y": 0.56831
     },
     {
+      "name": "无神论者",
+      "team": "townsfolk",
+      "x": 0.55873,
+      "y": 0.5666
+    },
+    {
       "name": "酒鬼",
       "team": "outsider",
       "x": 0.56078,
@@ -715,5 +769,15 @@
       "x": 0.14706,
       "y": 0.17587
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "失败的上帝"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

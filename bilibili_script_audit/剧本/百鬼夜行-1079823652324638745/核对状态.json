@@ -47,6 +47,9 @@
   ],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\"",
     "苦僧",
     "阿修罗",
     "滑头鬼",
@@ -54,7 +57,11 @@
     "大喰",
     "裂口女"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "阿修罗",
     "蛆疫虫",
@@ -300,6 +307,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "阿修罗",
         "蛆疫虫",
         "裂口女",
@@ -308,6 +318,24 @@
         "大喰"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.31541
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.289
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.263
+        },
         {
           "name": "苦僧",
           "team": "traveler",
@@ -348,7 +376,24 @@
       "required_character_matches": 0
     }
   ],
-  "ocr_source_board_groups": [],
+  "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "大喰",
+        "滑头鬼",
+        "苦僧",
+        "蛆疫虫",
+        "裂口女",
+        "阿修罗"
+      ]
+    }
+  ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
     "e61179ecdde52aa8fa122e503e2e994144902471.png",
@@ -357,6 +402,24 @@
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
   "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.31541
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.289
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.263
+    },
     {
       "name": "苦僧",
       "team": "traveler",
@@ -393,5 +456,42 @@
       "x": 0.14706,
       "y": 0.07994
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "天照",
+      "山君",
+      "尼庵",
+      "悲喜般若",
+      "手目人",
+      "不落",
+      "飞吕魔",
+      "晴天娃娃",
+      "火婆婆",
+      "百目",
+      "四口蛇",
+      "威天王",
+      "死士",
+      "花魁",
+      "武天王",
+      "黑蟾",
+      "迷雾",
+      "暗影",
+      "毒沼",
+      "骸浪",
+      "八咫乌",
+      "夜阎魔",
+      "三毒鹳",
+      "神龛",
+      "夜叉"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "旅派行者",
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

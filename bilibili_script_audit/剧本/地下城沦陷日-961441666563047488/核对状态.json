@@ -420,7 +420,6 @@
   ],
   "ocr_unexplained_bottom_lines": [
     "距离你最远八牙与你之间的镇民玩家能力都会产生错误信息。",
-    "军团长在某次战争中获得的秘宝。（建议童子军游戏中加入）",
     "旅行者会被非旅行者角色当作不在游戏中，但",
     "恶魔仍然可以选择杀死旅行者。"
   ],
@@ -438,10 +437,24 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
         "冒险者",
         "狗头人盗贼"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.279
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.25145
+        },
         {
           "name": "冒险者",
           "team": "traveler",
@@ -698,5 +711,17 @@
         "鳍裔怪人"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "距离你最远八牙与你之间的镇民玩家能力都会产生错误信息。",
+      "旅行者会被非旅行者角色当作不在游戏中，但",
+      "恶魔仍然可以选择杀死旅行者。"
+    ]
+  }
 }

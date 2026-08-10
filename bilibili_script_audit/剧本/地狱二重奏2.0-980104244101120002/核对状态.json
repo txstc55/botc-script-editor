@@ -60,6 +60,7 @@
     "普卡",
     "奥赫",
     "涡流",
+    "诺·达鲺",
     "牙噶巴卜",
     "方古"
   ],
@@ -191,6 +192,12 @@
       "y": 0.23547
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14902,
+      "y": 0.231
+    },
+    {
       "name": "牙噶巴卜",
       "team": "demon",
       "x": 0.14703,
@@ -203,7 +210,9 @@
       "y": 0.183
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -422,8 +431,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.36275,
+          "y": 0.19331
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.33529,
+          "y": 0.164
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -439,6 +464,7 @@
         "帽匠",
         "酒鬼",
         "普卡",
+        "诺·达鲺",
         "牙噶巴卜",
         "博学者",
         "艺术家",
@@ -581,6 +607,12 @@
           "y": 0.23547
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14902,
+          "y": 0.231
+        },
+        {
           "name": "牙噶巴卜",
           "team": "demon",
           "x": 0.14703,
@@ -620,6 +652,7 @@
         "舞蛇人",
         "艺术家",
         "解谜大师",
+        "诺·达鲺",
         "贤者",
         "酒鬼",
         "驱魔人",
@@ -627,5 +660,23 @@
         "魔像"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "哨兵",
+      "设置调整10人",
+      "设置调整11人",
+      "设置调整12人",
+      "设置调整13人",
+      "设置调整14人",
+      "设置调整15人"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "在初始设置时，可能会额外增加或减少一个外来者。"
+    ]
+  }
 }

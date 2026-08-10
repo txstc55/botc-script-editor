@@ -216,7 +216,6 @@
   "ocr_unexplained_bottom_lines": [
     "你可以选择一名玩竅：他获得痘疫状态。",
     "邪恶玩寥，",
-    "传奇角色•现书人",
     "（只会在邪恶的点票员能力触发时加入游戏作为标志）",
     "圣教峭复",
     "非首心夜"
@@ -260,9 +259,16 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"外来者\"",
         "古物商贩"
       ],
       "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27204,
+          "y": 0.2302
+        },
         {
           "name": "古物商贩",
           "team": "traveler",
@@ -578,5 +584,21 @@
       "x": 0.14255,
       "y": 0.2304
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "瘟疫的诅咒"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "你可以选择一名玩竅：他获得痘疫状态。",
+      "邪恶玩寥，",
+      "（只会在邪恶的点票员能力触发时加入游戏作为标志）",
+      "圣教峭复",
+      "非首心夜"
+    ]
+  }
 }

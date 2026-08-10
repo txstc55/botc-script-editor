@@ -244,8 +244,17 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.199
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -749,5 +758,15 @@
       "x": 0.34118,
       "y": 0.186
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "樂高想點氣處粉麥選素：想能提秀望接后条察 些導良玩家（与之南的每个夜院"
+    ]
+  }
 }

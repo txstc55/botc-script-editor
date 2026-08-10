@@ -45,12 +45,19 @@
   ],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\"",
     "女舍监",
     "侏儒",
     "窃贼",
     "官员"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "侏儒",
     "女舍监",
@@ -281,6 +288,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "侏儒",
         "窃贼",
         "官员",
@@ -288,6 +298,24 @@
         "学徒"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.321
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.2935
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.26599
+        },
         {
           "name": "女舍监",
           "team": "traveler",
@@ -322,7 +350,23 @@
       "required_character_matches": 0
     }
   ],
-  "ocr_source_board_groups": [],
+  "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "侏儒",
+        "女舍监",
+        "学徒",
+        "官员",
+        "窃贼"
+      ]
+    }
+  ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
     "d0026824b4392507591a597e24c3967844902471.png",
@@ -331,6 +375,24 @@
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
   "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29804,
+      "y": 0.321
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.2935
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.26599
+    },
     {
       "name": "女舍监",
       "team": "traveler",
@@ -361,5 +423,42 @@
       "x": 0.14902,
       "y": 0.08285
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "调查员",
+      "图书管理员",
+      "祖母",
+      "小精灵",
+      "共情者",
+      "水手",
+      "气球驾驶员",
+      "异教领袖",
+      "女祭司",
+      "送葬者",
+      "赌徒",
+      "农夫",
+      "茶艺师",
+      "陌客",
+      "疯子",
+      "理发师",
+      "解谜大师",
+      "教父",
+      "魔鬼代言人",
+      "科学怪人",
+      "小恶魔",
+      "亡骨魔",
+      "诺-达鲺",
+      "方古"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "科学怪人&异教领袖"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

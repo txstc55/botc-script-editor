@@ -285,8 +285,31 @@
     },
     {
       "image": "对照图-03.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1685
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.23922,
+          "y": 0.14099
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.26667,
+          "y": 0.11628
+        }
+      ],
       "required_character_matches": 8
     },
     {
@@ -627,5 +650,23 @@
       "x": 0.55877,
       "y": 0.23967
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "暴雨",
+      "报丧女妖",
+      "工程师",
+      "女巫"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "私聊只能与邻座玩家窃窃私语。",
+      "◎高温：所有玩家投票时闭眼，票数将披秘密统计。",
+      "0雷电：首个死亡的玩家的投票标记被视为一次提名权。",
+      "育〇大雾：至多1名镇民能力被错误地生救。"
+    ]
+  }
 }

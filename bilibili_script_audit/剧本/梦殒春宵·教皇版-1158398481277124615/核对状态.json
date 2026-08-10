@@ -46,10 +46,13 @@
     "洗脑师",
     "镜像双子",
     "方古",
+    "诺·达鲺",
     "涡流",
     "亡骨魔"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -227,8 +230,24 @@
     },
     {
       "image": "对照图-03.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -250,6 +269,7 @@
         "洗脑师",
         "镜像双子",
         "方古",
+        "诺·达鲺",
         "亡骨魔",
         "哲学家",
         "艺术家",
@@ -379,6 +399,12 @@
           "y": 0.244
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.23837
+        },
+        {
           "name": "涡流",
           "team": "demon",
           "x": 0.56275,
@@ -424,6 +450,7 @@
         "筑梦师",
         "舞蛇人",
         "艺术家",
+        "诺·达鲺",
         "贤者",
         "钟表匠",
         "镜像双子",
@@ -563,6 +590,12 @@
       "y": 0.244
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.23837
+    },
+    {
       "name": "涡流",
       "team": "demon",
       "x": 0.56275,
@@ -574,5 +607,15 @@
       "x": 0.14902,
       "y": 0.1845
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "教皇Pope"
+    ]
+  }
 }

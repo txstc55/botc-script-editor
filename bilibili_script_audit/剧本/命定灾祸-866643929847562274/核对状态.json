@@ -190,8 +190,6 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "万钧之力 Kilo",
-    "沼泽蜥人 Bogman",
     "他们中毒。"
   ],
   "ocr_rule_markers": [],
@@ -209,10 +207,31 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "夜枭",
         "不老泉"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.28343
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.25581
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.228
+        },
         {
           "name": "夜枭",
           "team": "traveler",
@@ -272,5 +291,15 @@
       "x": 0.28817,
       "y": 0.09573
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "他们中毒。"
+    ]
+  }
 }

@@ -52,12 +52,19 @@
   ],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\"",
     "搭车客",
     "光明祭典",
     "屠夫",
     "伊卡洛斯"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "搭车客",
     "光明祭典",
@@ -321,12 +328,33 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "搭车客",
         "伊卡洛斯",
         "光明祭典",
         "屠夫"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.289
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.2615
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.23547
+        },
         {
           "name": "搭车客",
           "team": "traveler",
@@ -365,6 +393,24 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_heading_character_details": [
     {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.289
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27059,
+      "y": 0.2615
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.23547
+    },
+    {
       "name": "搭车客",
       "team": "traveler",
       "x": 0.14706,
@@ -388,5 +434,50 @@
       "x": 0.14902,
       "y": 0.0814
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "店小二",
+      "赌徒",
+      "追猎者",
+      "驱魔人",
+      "游歌者",
+      "巫师学徒",
+      "盖棺人",
+      "疗养师",
+      "马车邮差",
+      "侍臣",
+      "茶艺师",
+      "吟游诗人",
+      "史莱姆",
+      "忏悔者",
+      "调香师",
+      "杂技演员",
+      "云栖客",
+      "刺客",
+      "尸妖",
+      "魔女",
+      "僵怖",
+      "蚀疫魔",
+      "狄奥尼索斯：酒神",
+      "蛋酒：庆典",
+      "公牛子弹：决斗",
+      "月光蜜酿：烈！",
+      "苦艾酒：调制",
+      "盘尼西林：解脱",
+      "珀",
+      "别西卜"
+    ],
+    "traveler_mismatches": [
+      "伊卡洛斯"
+    ],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "被提名者如果没有收到50%的票数，立刻杀死提名者。",
+      "旅旅行著",
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

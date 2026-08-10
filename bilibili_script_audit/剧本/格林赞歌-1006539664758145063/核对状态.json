@@ -45,12 +45,19 @@
   ],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\"",
     "流莺",
     "替罪羊",
     "乞丐",
     "窃贼"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "窃贼",
     "替罪羊",
@@ -288,6 +295,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "流莺",
         "窃贼",
         "法官",
@@ -295,6 +305,24 @@
         "乞丐"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.31831
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.2905
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.2645
+        },
         {
           "name": "流莺",
           "team": "traveler",
@@ -329,7 +357,23 @@
       "required_character_matches": 0
     }
   ],
-  "ocr_source_board_groups": [],
+  "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "乞丐",
+        "替罪羊",
+        "法官",
+        "流莺",
+        "窃贼"
+      ]
+    }
+  ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
     "6e2cb4db7ac09082fb05cf516e75265e44902471.png",
@@ -338,6 +382,24 @@
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
   "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.31831
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.2905
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.2645
+    },
     {
       "name": "流莺",
       "team": "traveler",
@@ -368,5 +430,43 @@
       "x": 0.14706,
       "y": 0.08285
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "将军",
+      "旅店老板",
+      "赌徒",
+      "城镇公告员",
+      "驱魔人",
+      "渔夫",
+      "猎手",
+      "失忆者",
+      "食人族",
+      "吟游诗人",
+      "士兵",
+      "酒鬼",
+      "落难少女",
+      "魔像",
+      "政客",
+      "红唇女郎",
+      "教父",
+      "刺客",
+      "召唤师",
+      "普卡",
+      "珀",
+      "奥赫",
+      "牙噶巴卜"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "牙噶巴卜&驱魔人",
+      "召唤师&普卡"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "旅旅行者",
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

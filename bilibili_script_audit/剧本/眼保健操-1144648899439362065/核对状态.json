@@ -28,16 +28,23 @@
   ],
   "ocr_heading_characters": [
     "造谣者",
+    "祖母",
     "博学者",
     "戏法师",
+    "占卜师",
+    "神谕者",
+    "食人族",
     "弄臣",
+    "悟道者",
     "茶艺师",
     "解谜大师",
     "月之子",
     "心上人",
     "煞星",
+    "魔鬼代言人",
     "主谋",
-    "赶尸人"
+    "赶尸人",
+    "珀"
   ],
   "ocr_heading_character_details": [
     {
@@ -45,6 +52,12 @@
       "team": "townsfolk",
       "x": 0.56078,
       "y": 0.8705
+    },
+    {
+      "name": "祖母",
+      "team": "townsfolk",
+      "x": 0.14706,
+      "y": 0.81977
     },
     {
       "name": "博学者",
@@ -59,10 +72,34 @@
       "y": 0.7325
     },
     {
+      "name": "占卜师",
+      "team": "townsfolk",
+      "x": 0.14706,
+      "y": 0.702
+    },
+    {
+      "name": "神谕者",
+      "team": "townsfolk",
+      "x": 0.14702,
+      "y": 0.64378
+    },
+    {
+      "name": "食人族",
+      "team": "townsfolk",
+      "x": 0.56261,
+      "y": 0.59701
+    },
+    {
       "name": "弄臣",
       "team": "townsfolk",
       "x": 0.14706,
       "y": 0.587
+    },
+    {
+      "name": "悟道者",
+      "team": "townsfolk",
+      "x": 0.56078,
+      "y": 0.53634
     },
     {
       "name": "茶艺师",
@@ -95,6 +132,12 @@
       "y": 0.4055
     },
     {
+      "name": "魔鬼代言人",
+      "team": "minion",
+      "x": 0.56275,
+      "y": 0.3385
+    },
+    {
       "name": "主谋",
       "team": "minion",
       "x": 0.56078,
@@ -105,6 +148,12 @@
       "team": "minion",
       "x": 0.14706,
       "y": 0.28343
+    },
+    {
+      "name": "珀",
+      "team": "demon",
+      "x": 0.3549,
+      "y": 0.202
     },
     {
       "name": "小女孩",
@@ -286,13 +335,39 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 1
     },
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "祖母",
+        "占卜师",
+        "神谕者",
         "弄臣",
         "茶艺师",
         "月之子",
@@ -301,9 +376,13 @@
         "造谣者",
         "博学者",
         "戏法师",
+        "食人族",
+        "悟道者",
         "解谜大师",
         "煞星",
+        "魔鬼代言人",
         "主谋",
+        "珀",
         "小女孩"
       ],
       "heading_character_details": [
@@ -312,6 +391,12 @@
           "team": "townsfolk",
           "x": 0.56078,
           "y": 0.8705
+        },
+        {
+          "name": "祖母",
+          "team": "townsfolk",
+          "x": 0.14706,
+          "y": 0.81977
         },
         {
           "name": "博学者",
@@ -326,10 +411,34 @@
           "y": 0.7325
         },
         {
+          "name": "占卜师",
+          "team": "townsfolk",
+          "x": 0.14706,
+          "y": 0.702
+        },
+        {
+          "name": "神谕者",
+          "team": "townsfolk",
+          "x": 0.14702,
+          "y": 0.64378
+        },
+        {
+          "name": "食人族",
+          "team": "townsfolk",
+          "x": 0.56261,
+          "y": 0.59701
+        },
+        {
           "name": "弄臣",
           "team": "townsfolk",
           "x": 0.14706,
           "y": 0.587
+        },
+        {
+          "name": "悟道者",
+          "team": "townsfolk",
+          "x": 0.56078,
+          "y": 0.53634
         },
         {
           "name": "茶艺师",
@@ -362,6 +471,12 @@
           "y": 0.4055
         },
         {
+          "name": "魔鬼代言人",
+          "team": "minion",
+          "x": 0.56275,
+          "y": 0.3385
+        },
+        {
           "name": "主谋",
           "team": "minion",
           "x": 0.56078,
@@ -372,6 +487,12 @@
           "team": "minion",
           "x": 0.14706,
           "y": 0.28343
+        },
+        {
+          "name": "珀",
+          "team": "demon",
+          "x": 0.3549,
+          "y": 0.202
         },
         {
           "name": "小女孩",
@@ -391,17 +512,34 @@
       "characters": [
         "主谋",
         "博学者",
+        "占卜师",
         "小女孩",
         "弄臣",
         "心上人",
+        "悟道者",
         "戏法师",
         "月之子",
         "煞星",
+        "珀",
+        "祖母",
+        "神谕者",
         "茶艺师",
         "解谜大师",
         "赶尸人",
-        "造谣者"
+        "造谣者",
+        "食人族",
+        "魔鬼代言人"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "第三方阵营•局外人"
+    ]
+  }
 }

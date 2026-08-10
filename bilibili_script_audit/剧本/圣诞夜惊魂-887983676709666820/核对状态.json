@@ -352,15 +352,8 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "利维坦②",
-    "（相克规则：如果利维坦发起的提名中被处决的玩家在前一晚曾被旅店老板成功保护，那么",
     "那名玩家不会死亡。）",
-    "则善良阵营获胜。）",
-    "（相克规则：如果利维坦在场，镇长存活且第五天没有处决发生，",
-    "（相克规则：如果帽匠在第五个白天或之后死亡，恶魔不能选择变成利维坦。）",
-    "（相克规则：卡扎力可以把莽夫转变成邪恶的爪牙。）",
-    "（相克规则：在第五个白天之后，盗无法获得利维坦的能力。）",
-    "代表该剧本中建议 “伪证天才” 选择的角色"
+    "则善良阵营获胜。）"
   ],
   "ocr_rule_markers": [
     "相克规则"
@@ -375,8 +368,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -598,5 +614,18 @@
         "食人族"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "那名玩家不会死亡。）",
+      "则善良阵营获胜。）"
+    ]
+  }
 }

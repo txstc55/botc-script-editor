@@ -33,6 +33,7 @@
     "弄臣",
     "陌客",
     "酒鬼",
+    "魔鬼代言人",
     "教父",
     "僵怖"
   ],
@@ -78,6 +79,12 @@
       "team": "outsider",
       "x": 0.14902,
       "y": 0.4215
+    },
+    {
+      "name": "魔鬼代言人",
+      "team": "minion",
+      "x": 0.12745,
+      "y": 0.32849
     },
     {
       "name": "教父",
@@ -184,16 +191,38 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "蟹氽客獎元上架暴金吞具秀器有合冬破」含楼",
-    "某件事情“可能”发生，代表由说书人来决定该事情是否发生。"
+    "蟹氽客獎元上架暴金吞具秀器有合冬破」含楼"
   ],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.43529,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.42941,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.45098,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -206,6 +235,7 @@
         "弄臣",
         "陌客",
         "酒鬼",
+        "魔鬼代言人",
         "教父",
         "僵怖"
       ],
@@ -253,6 +283,12 @@
           "y": 0.4215
         },
         {
+          "name": "魔鬼代言人",
+          "team": "minion",
+          "x": 0.12745,
+          "y": 0.32849
+        },
+        {
           "name": "教父",
           "team": "minion",
           "x": 0.14902,
@@ -282,8 +318,19 @@
         "送葬者",
         "酒鬼",
         "陌客",
-        "驱魔人"
+        "驱魔人",
+        "魔鬼代言人"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "蟹氽客獎元上架暴金吞具秀器有合冬破」含楼"
+    ]
+  }
 }

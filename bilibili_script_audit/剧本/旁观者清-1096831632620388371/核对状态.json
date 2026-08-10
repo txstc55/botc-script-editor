@@ -48,6 +48,7 @@
     "刺客",
     "教父",
     "洗脑师",
+    "诺·达鲺",
     "小恶魔",
     "亡骨魔",
     "普卡",
@@ -178,6 +179,12 @@
       "y": 0.37936
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56257,
+      "y": 0.31499
+    },
+    {
       "name": "小恶魔",
       "team": "demon",
       "x": 0.14706,
@@ -226,7 +233,9 @@
       "y": 0.1015
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -436,7 +445,6 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "奇迹裔人",
     "你要将三个货物分别赠予三",
     "可选规则：",
     "可选死亡任务：",
@@ -447,8 +455,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.199
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -478,6 +509,7 @@
         "畸形秀演员",
         "巫师",
         "教父",
+        "诺·达鲺",
         "亡骨魔",
         "小女孩",
         "皮匠",
@@ -605,6 +637,12 @@
           "y": 0.37936
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56257,
+          "y": 0.31499
+        },
+        {
           "name": "小恶魔",
           "team": "demon",
           "x": 0.14706,
@@ -686,11 +724,25 @@
         "祖母",
         "神谕者",
         "管家",
+        "诺·达鲺",
         "调查员",
         "赌徒",
         "酒鬼",
         "驱魔人"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "你要将三个货物分别赠予三",
+      "可选规则：",
+      "可选死亡任务：",
+      "◎在首个夜晚，告知局外人一个不在场角色。"
+    ]
+  }
 }

@@ -221,15 +221,41 @@
     "麻脸巫婆",
     "街头风琴手",
     "珀",
+    "诺·达鲺",
     "亡骨魔",
     "沙巴洛斯"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.2016
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27214,
+          "y": 0.1744
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -255,6 +281,7 @@
         "麻脸巫婆",
         "珀",
         "亡骨魔",
+        "诺·达鲺",
         "沙巴洛斯"
       ],
       "heading_character_details": [
@@ -371,6 +398,12 @@
           "team": "demon",
           "x": 0.14687,
           "y": 0.24
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56361,
+          "y": 0.23335
         },
         {
           "name": "亡骨魔",
@@ -410,6 +443,7 @@
         "麻脸巫婆",
         "珀",
         "亡骨魔",
+        "诺·达鲺",
         "沙巴洛斯"
       ],
       "heading_character_details": [
@@ -528,6 +562,12 @@
           "y": 0.24
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56361,
+          "y": 0.23335
+        },
+        {
           "name": "亡骨魔",
           "team": "demon",
           "x": 0.14687,
@@ -565,6 +605,7 @@
         "瘟疫医生",
         "舞蛇人",
         "街头风琴手",
+        "诺·达鲺",
         "造谣者",
         "酒鬼",
         "钟表匠",
@@ -698,6 +739,12 @@
       "y": 0.24
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56361,
+      "y": 0.23335
+    },
+    {
       "name": "亡骨魔",
       "team": "demon",
       "x": 0.14687,
@@ -709,5 +756,19 @@
       "x": 0.56148,
       "y": 0.1806
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "复活/反刍/起死回生",
+      "已死亡玩象再次变为存活玩家。该玩家视为重新进场，会重新获得能力（包括限一次，首个夜院⋯。",
+      "非首心夜既"
+    ]
+  }
 }

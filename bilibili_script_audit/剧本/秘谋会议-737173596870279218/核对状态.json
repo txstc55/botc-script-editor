@@ -223,8 +223,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.45294,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.42941,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.45294,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -332,5 +355,20 @@
         "贵族"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "茹果员着邪恶玩象投票，处决会失败。你也会被当作是爪牙。［半数以上玩家为恶魔军因］",
+      "醉酒 醉酒会失去能力，但说书人依然会配合你使用能力；如果获得信息，可能是错误的。",
+      "中毒 中毒会失去能力，但说书人依然会配合你使用能力；如果获得信息，可能是错误的。",
+      "Blood染：钟楼剧本社区"
+    ]
+  }
 }

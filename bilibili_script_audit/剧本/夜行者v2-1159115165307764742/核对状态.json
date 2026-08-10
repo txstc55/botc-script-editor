@@ -13,7 +13,7 @@
     "对照图-03.png",
     "对照图-04.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-04.png",
   "ocr_character_matches": 13,
@@ -31,10 +31,13 @@
     "男爵",
     "精神病患者",
     "痢蛭",
+    "诺·达鲺",
     "印度教教徒",
     "教皇"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -156,6 +159,9 @@
     {
       "image": "对照图-03.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "枪手",
         "流莺",
         "黑帮",
@@ -163,6 +169,24 @@
         "屠夫"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.311
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28343
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.25581
+        },
         {
           "name": "黑帮",
           "team": "traveler",
@@ -204,6 +228,7 @@
         "政客",
         "男爵",
         "精神病患者",
+        "诺·达鲺",
         "隐士",
         "炸弹人",
         "教皇",
@@ -260,6 +285,12 @@
           "y": 0.22093
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.215
+        },
+        {
           "name": "印度教教徒",
           "team": "fabled",
           "x": 0.56078,
@@ -278,6 +309,21 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-03.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "屠夫",
+        "枪手",
+        "法官",
+        "流莺",
+        "黑帮"
+      ]
+    },
+    {
+      "images": [
         "对照图-04.png"
       ],
       "characters": [
@@ -289,6 +335,7 @@
         "男爵",
         "痢蛭",
         "精神病患者",
+        "诺·达鲺",
         "酒鬼",
         "隐士"
       ]
@@ -353,6 +400,12 @@
       "y": 0.22093
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14706,
+      "y": 0.215
+    },
+    {
       "name": "印度教教徒",
       "team": "fabled",
       "x": 0.56078,
@@ -364,5 +417,13 @@
       "x": 0.14706,
       "y": 0.109
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

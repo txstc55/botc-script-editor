@@ -31,6 +31,7 @@
     "筑梦师",
     "巡山人",
     "共情者",
+    "落难少女",
     "士兵",
     "数学家",
     "守鸦人",
@@ -40,16 +41,18 @@
     "解谜大师",
     "畸形秀演员",
     "理发师",
-    "落难少女",
     "陌客",
     "投毒者",
     "红唇女郎",
     "炸弹人",
     "提线木偶",
     "间谍",
+    "诺·达鲺",
     "哨兵"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -237,8 +240,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17267
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14667
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -251,6 +277,7 @@
         "艺术家",
         "共情者",
         "巡山人",
+        "落难少女",
         "数学家",
         "士兵",
         "僧侣",
@@ -262,9 +289,9 @@
         "理发师",
         "陌客",
         "投毒者",
-        "落难少女",
         "炸弹人",
         "间谍",
+        "诺·达鲺",
         "红唇女郎",
         "提线木偶",
         "哨兵"
@@ -311,6 +338,12 @@
           "team": "townsfolk",
           "x": 0.14902,
           "y": 0.72384
+        },
+        {
+          "name": "落难少女",
+          "team": "outsider",
+          "x": 0.56063,
+          "y": 0.72051
         },
         {
           "name": "士兵",
@@ -367,12 +400,6 @@
           "y": 0.462
         },
         {
-          "name": "落难少女",
-          "team": "outsider",
-          "x": 0.56271,
-          "y": 0.4534
-        },
-        {
           "name": "陌客",
           "team": "outsider",
           "x": 0.14902,
@@ -407,6 +434,12 @@
           "team": "minion",
           "x": 0.14706,
           "y": 0.25267
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.15083,
+          "y": 0.16528
         },
         {
           "name": "哨兵",
@@ -444,6 +477,7 @@
         "艺术家",
         "落难少女",
         "解谜大师",
+        "诺·达鲺",
         "调查员",
         "间谍",
         "陌客",
@@ -503,6 +537,12 @@
       "y": 0.72384
     },
     {
+      "name": "落难少女",
+      "team": "outsider",
+      "x": 0.56063,
+      "y": 0.72051
+    },
+    {
       "name": "士兵",
       "team": "townsfolk",
       "x": 0.56275,
@@ -557,12 +597,6 @@
       "y": 0.462
     },
     {
-      "name": "落难少女",
-      "team": "outsider",
-      "x": 0.56271,
-      "y": 0.4534
-    },
-    {
       "name": "陌客",
       "team": "outsider",
       "x": 0.14902,
@@ -599,10 +633,26 @@
       "y": 0.25267
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.15083,
+      "y": 0.16528
+    },
+    {
       "name": "哨兵",
       "team": "fabled",
       "x": 0.38627,
       "y": 0.08866
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

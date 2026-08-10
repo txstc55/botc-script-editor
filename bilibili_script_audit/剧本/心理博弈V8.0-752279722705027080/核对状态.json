@@ -224,8 +224,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29806,
+          "y": 0.2016
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27182,
+          "y": 0.17376
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -747,5 +770,18 @@
       "x": 0.38873,
       "y": 0.08951
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "（留克规别：如果利燥坦在场，鎮长称活具幫五买没有处决发生，影要良障會获胜。）",
+      "非首心夜晚"
+    ]
+  }
 }

@@ -416,9 +416,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "（私货商人：小宝能力中的“所有爪牙’调整为“所有初始邪恶玩家。）"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "私货商人",
     "相克规则"
@@ -427,8 +425,17 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "小怪宝"
+      ],
+      "heading_character_details": [
+        {
+          "name": "小怪宝",
+          "team": "demon",
+          "x": 0.28232,
+          "y": 0.14813
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -640,5 +647,15 @@
         "麻脸巫婆"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "私货商人"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

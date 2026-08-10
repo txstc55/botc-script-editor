@@ -18,7 +18,7 @@
     "ceb96bff8edf28789157174c83357dbf44902471.png",
     "2decd44189c28fd649972013fb82386f44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -29,15 +29,23 @@
     "大亨"
   ],
   "ocr_heading_characters": [
+    "舞蛇人",
     "驯兽师",
     "杂技演员",
     "弄臣",
     "空中飞人",
     "畸形秀演员",
     "星探",
-    "浪劫"
+    "浪劫",
+    "堤丰之首"
   ],
   "ocr_heading_character_details": [
+    {
+      "name": "舞蛇人",
+      "team": "townsfolk",
+      "x": 0.14706,
+      "y": 0.824
+    },
     {
       "name": "驯兽师",
       "team": "townsfolk",
@@ -79,6 +87,12 @@
       "team": "demon",
       "x": 0.14706,
       "y": 0.22238
+    },
+    {
+      "name": "堤丰之首",
+      "team": "demon",
+      "x": 0.56078,
+      "y": 0.17587
     }
   ],
   "ocr_unexpected_characters": [],
@@ -251,10 +265,7 @@
     "代表该剧本中建议“驯兽师”选择的角色",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "伽迪斯 Ghades",
-    "代表该剧本中建议“驯兽师”选择的角色"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -266,22 +277,53 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
       "image": "对照图-03.png",
       "heading_characters": [
+        "舞蛇人",
         "驯兽师",
         "杂技演员",
         "畸形秀演员",
         "星探",
         "浪劫",
         "弄臣",
-        "空中飞人"
+        "空中飞人",
+        "堤丰之首"
       ],
       "heading_character_details": [
+        {
+          "name": "舞蛇人",
+          "team": "townsfolk",
+          "x": 0.14706,
+          "y": 0.824
+        },
         {
           "name": "驯兽师",
           "team": "townsfolk",
@@ -323,10 +365,41 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.22238
+        },
+        {
+          "name": "堤丰之首",
+          "team": "demon",
+          "x": 0.56078,
+          "y": 0.17587
         }
       ],
       "required_character_matches": 23
     }
   ],
-  "ocr_source_board_groups": []
+  "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-03.png"
+      ],
+      "characters": [
+        "堤丰之首",
+        "弄臣",
+        "星探",
+        "杂技演员",
+        "浪劫",
+        "畸形秀演员",
+        "空中飞人",
+        "舞蛇人",
+        "驯兽师"
+      ]
+    }
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

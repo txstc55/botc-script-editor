@@ -33,7 +33,8 @@
     "盗贼",
     "白骑士",
     "幽影",
-    "虚空之神"
+    "虚空之神",
+    "《武德》"
   ],
   "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
@@ -146,8 +147,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.43529,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.42353,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.43529,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -163,7 +187,8 @@
         "盗贼",
         "白骑士",
         "幽影",
-        "虚空之神"
+        "虚空之神",
+        "《武德》"
       ],
       "heading_character_details": [
         {
@@ -231,6 +256,12 @@
           "team": "demon",
           "x": 0.18031,
           "y": 0.18292
+        },
+        {
+          "name": "《武德》",
+          "team": "fabled",
+          "x": 0.38627,
+          "y": 0.11047
         }
       ],
       "required_character_matches": 12
@@ -242,6 +273,7 @@
         "对照图-03.png"
       ],
       "characters": [
+        "《武德》",
         "地图师",
         "大黄蜂",
         "寄生者",
@@ -330,6 +362,24 @@
       "team": "demon",
       "x": 0.18031,
       "y": 0.18292
+    },
+    {
+      "name": "《武德》",
+      "team": "fabled",
+      "x": 0.38627,
+      "y": 0.11047
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "虚空之神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "你以为是你一个镇民角色且拥有该角色的能力，当你在决斗中失败时，你反败为胜。"
+    ]
+  }
 }

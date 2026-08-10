@@ -193,8 +193,8 @@
       "text_coverage": 1.0
     },
     {
-      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
-      "text_coverage": 1.0
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 0.7143
     },
     {
       "text": "*代表非首个夜晚",
@@ -229,11 +229,25 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
         "航海家",
         "奴隶主",
         "公使"
       ],
       "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.33725,
+          "y": 0.24128
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.35882,
+          "y": 0.2135
+        },
         {
           "name": "公使",
           "team": "traveler",
@@ -632,5 +646,13 @@
       "x": 0.14706,
       "y": 0.17442
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

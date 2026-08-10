@@ -22,6 +22,7 @@
   "ocr_heading_characters": [
     "巡山人",
     "祖母",
+    "落难少女",
     "水手",
     "教授",
     "侍女",
@@ -249,8 +250,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -258,6 +275,7 @@
       "heading_characters": [
         "祖母",
         "巡山人",
+        "落难少女",
         "水手",
         "侍女",
         "教授",
@@ -294,6 +312,12 @@
           "team": "townsfolk",
           "x": 0.14706,
           "y": 0.872
+        },
+        {
+          "name": "落难少女",
+          "team": "outsider",
+          "x": 0.55872,
+          "y": 0.84117
         },
         {
           "name": "水手",
@@ -463,6 +487,7 @@
         "痢蛭",
         "祖母",
         "莽夫",
+        "落难少女",
         "赌徒",
         "造谣者",
         "食人族",
@@ -491,6 +516,12 @@
       "team": "townsfolk",
       "x": 0.14706,
       "y": 0.872
+    },
+    {
+      "name": "落难少女",
+      "team": "outsider",
+      "x": 0.55872,
+      "y": 0.84117
     },
     {
       "name": "水手",
@@ -630,5 +661,15 @@
       "x": 0.35091,
       "y": 0.11311
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "告密者"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

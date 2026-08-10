@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -45,9 +45,12 @@
     "红唇女郎",
     "提线木偶",
     "涡流",
+    "诺·达鲺",
     "暴君"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -221,8 +224,17 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.148
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -238,6 +250,7 @@
         "陌客",
         "刺客",
         "红唇女郎",
+        "诺·达鲺",
         "暴君",
         "巡察",
         "知府",
@@ -379,6 +392,12 @@
           "y": 0.24128
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.1451,
+          "y": 0.23667
+        },
+        {
           "name": "暴君",
           "team": "demon",
           "x": 0.1451,
@@ -410,6 +429,7 @@
         "涡流",
         "知府",
         "红唇女郎",
+        "诺·达鲺",
         "调查员",
         "造谣者",
         "酒鬼",
@@ -555,10 +575,24 @@
       "y": 0.24128
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.1451,
+      "y": 0.23667
+    },
+    {
       "name": "暴君",
       "team": "demon",
       "x": 0.1451,
       "y": 0.18169
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

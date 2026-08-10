@@ -250,12 +250,26 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
         "咖啡师",
         "替罪羊",
         "窃贼",
         "法官"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.3248
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27214,
+          "y": 0.2976
+        },
         {
           "name": "咖啡师",
           "team": "traveler",
@@ -760,5 +774,18 @@
       "x": 0.14471,
       "y": 0.2096
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "哨兵"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "中莓/醉酒",
+      "非首心夜晚"
+    ]
+  }
 }

@@ -45,9 +45,16 @@
   ],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\"",
     "时空行者"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "时空行者",
     "死灵法师",
@@ -253,7 +260,6 @@
     "'Time Traveler",
     "可T Miner",
     "每个夜晚，你要选择一名玩家：他会发生不好的事情直到下个",
-    "生命之符 Ankh",
     "*建议7人以上加入旅行者"
   ],
   "ocr_rule_markers": [],
@@ -268,10 +274,31 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "时空行者",
         "死灵法师"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.25294,
+          "y": 0.31541
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.22745,
+          "y": 0.28779
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.25098,
+          "y": 0.2615
+        },
         {
           "name": "死灵法师",
           "team": "",
@@ -298,6 +325,24 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_heading_character_details": [
     {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.25294,
+      "y": 0.31541
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.22745,
+      "y": 0.28779
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.25098,
+      "y": 0.2615
+    },
+    {
       "name": "死灵法师",
       "team": "",
       "x": 0.56268,
@@ -309,5 +354,41 @@
       "x": 0.14686,
       "y": 0.13751
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "侦察员",
+      "观星者",
+      "侦探",
+      "旅行家",
+      "女王",
+      "商人",
+      "萨满",
+      "赌场老板",
+      "探矿员",
+      "强盗",
+      "皇家卫士",
+      "变装演员",
+      "掘墓人",
+      "酒馆老板",
+      "乐子人",
+      "胆小鬼",
+      "丧尸",
+      "木乃伊",
+      "骷髅",
+      "吵闹鬼",
+      "阴魂",
+      "白骨军团"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "'Time Traveler",
+      "可T Miner",
+      "每个夜晚，你要选择一名玩家：他会发生不好的事情直到下个",
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

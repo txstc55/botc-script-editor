@@ -16,7 +16,7 @@
     "617bb38bd08a4d76451c6b941514580444902471.png",
     "a4bc596e803d4cabcb07677385223a8244902471.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -49,7 +49,8 @@
     "街头风琴手",
     "恐惧之灵",
     "普卡",
-    "奥赫"
+    "奥赫",
+    "诺·达鲺"
   ],
   "ocr_heading_character_details": [
     {
@@ -189,9 +190,17 @@
       "team": "demon",
       "x": 0.1451,
       "y": 0.2093
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.1451,
+      "y": 0.1655
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -366,8 +375,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.199
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -386,6 +411,7 @@
         "洗脑师",
         "恐惧之灵",
         "奥赫",
+        "诺·达鲺",
         "送葬者",
         "城镇公告员",
         "守夜人",
@@ -535,6 +561,12 @@
           "team": "demon",
           "x": 0.1451,
           "y": 0.2093
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.1451,
+          "y": 0.1655
         }
       ],
       "required_character_matches": 23
@@ -567,9 +599,18 @@
         "筑梦师",
         "精神病患者",
         "街头风琴手",
+        "诺·达鲺",
         "送葬者",
         "骑士"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

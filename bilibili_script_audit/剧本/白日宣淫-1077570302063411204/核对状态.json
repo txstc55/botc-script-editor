@@ -45,8 +45,16 @@
     "灯神"
   ],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_heading_characters": [],
-  "ocr_unexpected_characters": [],
+  "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -276,8 +284,31 @@
     },
     {
       "image": "对照图-02.jpg",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     }
   ],
@@ -289,5 +320,66 @@
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_heading_character_details": []
+  "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.202
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.17442
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.1468
+    }
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "祖母",
+      "筑梦师",
+      "村夫",
+      "异教领袖",
+      "女祭司",
+      "哲学家",
+      "工程师",
+      "博学者",
+      "戏法师",
+      "猎手",
+      "炼金术士",
+      "贞洁者",
+      "报丧女妖",
+      "魔像",
+      "理发师",
+      "落难少女",
+      "解谜大师",
+      "哥布林",
+      "禁卫军",
+      "科学怪人",
+      "精神病患者",
+      "牙噶巴卜",
+      "卡扎力",
+      "军团",
+      "堤丰之首",
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "科学怪人&村夫",
+      "科学怪人&异教领袖",
+      "军团&工程师",
+      "炼金术士&科学怪人"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "SUI染钟楼制作组＆钟楼剧本博物馆"
+    ]
+  }
 }

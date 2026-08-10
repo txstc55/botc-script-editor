@@ -47,6 +47,7 @@
     "修正者",
     "麻脸巫婆",
     "间谍",
+    "亡骨魔",
     "小恶魔",
     "普卡"
   ],
@@ -230,8 +231,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.199
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -257,6 +281,7 @@
         "修补匠",
         "女巫",
         "麻脸巫婆",
+        "亡骨魔",
         "小恶魔"
       ],
       "heading_character_details": [
@@ -373,6 +398,12 @@
           "team": "minion",
           "x": 0.14706,
           "y": 0.30233
+        },
+        {
+          "name": "亡骨魔",
+          "team": "demon",
+          "x": 0.56078,
+          "y": 0.2295
         },
         {
           "name": "小恶魔",
@@ -412,6 +443,7 @@
         "修补匠",
         "女巫",
         "麻脸巫婆",
+        "亡骨魔",
         "小恶魔"
       ],
       "heading_character_details": [
@@ -530,6 +562,12 @@
           "y": 0.30233
         },
         {
+          "name": "亡骨魔",
+          "team": "demon",
+          "x": 0.56078,
+          "y": 0.2295
+        },
+        {
           "name": "小恶魔",
           "team": "demon",
           "x": 0.56078,
@@ -552,6 +590,7 @@
         "对照图-03.png"
       ],
       "characters": [
+        "亡骨魔",
         "侍女",
         "修正者",
         "修行者",
@@ -703,6 +742,12 @@
       "y": 0.30233
     },
     {
+      "name": "亡骨魔",
+      "team": "demon",
+      "x": 0.56078,
+      "y": 0.2295
+    },
+    {
       "name": "小恶魔",
       "team": "demon",
       "x": 0.56078,
@@ -714,5 +759,16 @@
       "x": 0.14706,
       "y": 0.17
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "魔像",
+      "莽夫"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

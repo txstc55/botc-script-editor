@@ -148,8 +148,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -556,5 +572,18 @@
       "x": 0.56078,
       "y": 0.1875
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "当爪牙死于处决时，你可能会获得他的能力，但每局游戏仅能",
+      "在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他",
+      "获得一次。",
+      "处于死亡状态时你才会立即死亡。"
+    ]
+  }
 }

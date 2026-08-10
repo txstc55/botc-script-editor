@@ -154,8 +154,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.30784,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.33137,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -209,5 +225,19 @@
       "required_character_matches": 8
     }
   ],
-  "ocr_source_board_groups": []
+  "ocr_source_board_groups": [],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "教皇"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "教皇 Pope",
+      "会有重复的善良角色在场。",
+      "他们也可能是恶魔的伪装。"
+    ]
+  }
 }

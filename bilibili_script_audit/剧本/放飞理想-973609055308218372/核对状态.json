@@ -35,6 +35,7 @@
   "ocr_heading_characters": [
     "白日梦想家",
     "失去梦想家",
+    "\"说书人\"",
     "扼杀梦想家",
     "冒险者"
   ],
@@ -52,6 +53,12 @@
       "y": 0.70417
     },
     {
+      "name": "\"说书人\"",
+      "team": "townsfolk",
+      "x": 0.67647,
+      "y": 0.667
+    },
+    {
       "name": "扼杀梦想家",
       "team": "demon",
       "x": 0.3176,
@@ -65,6 +72,7 @@
     }
   ],
   "ocr_unexpected_characters": [
+    "\"说书人\"",
     "冒险者"
   ],
   "ocr_travelers_seen": [],
@@ -139,8 +147,31 @@
     },
     {
       "image": "对照图-03.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.43529,
+          "y": 0.1975
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.41373,
+          "y": 0.17
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.43529,
+          "y": 0.14244
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -148,6 +179,7 @@
       "heading_characters": [
         "白日梦想家",
         "失去梦想家",
+        "\"说书人\"",
         "扼杀梦想家",
         "冒险者"
       ],
@@ -163,6 +195,12 @@
           "team": "outsider",
           "x": 0.31744,
           "y": 0.70417
+        },
+        {
+          "name": "\"说书人\"",
+          "team": "townsfolk",
+          "x": 0.67647,
+          "y": 0.667
         },
         {
           "name": "扼杀梦想家",
@@ -186,5 +224,13 @@
       "required_character_matches": 0
     }
   ],
-  "ocr_source_board_groups": []
+  "ocr_source_board_groups": [],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

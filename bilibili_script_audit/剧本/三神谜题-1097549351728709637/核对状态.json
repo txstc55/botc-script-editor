@@ -46,9 +46,15 @@
     "战车",
     "魔笛手",
     "斯芬克斯",
-    "小恶魔"
+    "\"被处决\"",
+    "小恶魔",
+    "变幻之神",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"被处决\"",
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -261,8 +267,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -279,7 +308,9 @@
         "瘟疫医生",
         "战车",
         "斯芬克斯",
+        "\"被处决\"",
         "小恶魔",
+        "诺·达鲺",
         "六扇门",
         "渔夫",
         "女裁缝",
@@ -289,7 +320,8 @@
         "孟菲斯",
         "理发师",
         "谜题魔",
-        "魔笛手"
+        "魔笛手",
+        "变幻之神"
       ],
       "heading_character_details": [
         {
@@ -419,10 +451,28 @@
           "y": 0.28734
         },
         {
+          "name": "\"被处决\"",
+          "team": "townsfolk",
+          "x": 0.14702,
+          "y": 0.25719
+        },
+        {
           "name": "小恶魔",
           "team": "demon",
           "x": 0.14706,
           "y": 0.2165
+        },
+        {
+          "name": "变幻之神",
+          "team": "fabled",
+          "x": 0.80776,
+          "y": 0.20028
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14894,
+          "y": 0.16987
         }
       ],
       "required_character_matches": 25
@@ -434,10 +484,12 @@
         "对照图-03.png"
       ],
       "characters": [
+        "\"被处决\"",
         "侍女",
         "六扇门",
         "勘探者",
         "占卜师",
+        "变幻之神",
         "史官",
         "城镇公告员",
         "女裁缝",
@@ -452,6 +504,7 @@
         "理发师",
         "瘟疫医生",
         "秉笔",
+        "诺·达鲺",
         "谜题魔",
         "贵族",
         "酒鬼",
@@ -595,10 +648,38 @@
       "y": 0.28734
     },
     {
+      "name": "\"被处决\"",
+      "team": "townsfolk",
+      "x": 0.14702,
+      "y": 0.25719
+    },
+    {
       "name": "小恶魔",
       "team": "demon",
       "x": 0.14706,
       "y": 0.2165
+    },
+    {
+      "name": "变幻之神",
+      "team": "fabled",
+      "x": 0.80776,
+      "y": 0.20028
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14894,
+      "y": 0.16987
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "谜题魔&瘟疫医生"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

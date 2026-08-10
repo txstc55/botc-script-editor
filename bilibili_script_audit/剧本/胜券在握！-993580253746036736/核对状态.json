@@ -231,6 +231,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "替罪羊",
         "主教",
         "乞丐",
@@ -238,6 +241,24 @@
         "集骨者"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.30196,
+          "y": 0.31977
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27843,
+          "y": 0.292
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.30196,
+          "y": 0.26599
+        },
         {
           "name": "替罪羊",
           "team": "traveler",
@@ -444,6 +465,21 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "主教",
+        "乞丐",
+        "怪咖",
+        "替罪羊",
+        "集骨者"
+      ]
+    },
+    {
+      "images": [
         "对照图-03.png"
       ],
       "characters": [
@@ -620,5 +656,13 @@
       "x": 0.56275,
       "y": 0.17442
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

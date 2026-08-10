@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -44,10 +44,13 @@
     "炸弹人",
     "投毒者",
     "小恶魔",
+    "诺·达鲺",
     "亡骨魔",
     "方古"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -256,6 +259,7 @@
         "瘟疫医生",
         "洗脑师",
         "炸弹人",
+        "诺·达鲺",
         "方古"
       ],
       "heading_character_details": [
@@ -386,6 +390,12 @@
           "y": 0.2295
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.2295
+        },
+        {
           "name": "亡骨魔",
           "team": "demon",
           "x": 0.14706,
@@ -427,6 +437,7 @@
         "神谕者",
         "罂粟种植者",
         "解谜大师",
+        "诺·达鲺",
         "镇长",
         "骑士",
         "鹰身女妖"
@@ -569,6 +580,12 @@
       "y": 0.2295
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.2295
+    },
+    {
       "name": "亡骨魔",
       "team": "demon",
       "x": 0.14706,
@@ -580,5 +597,13 @@
       "x": 0.56078,
       "y": 0.183
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

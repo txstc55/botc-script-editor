@@ -15,6 +15,9 @@
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\"",
     "乞丐",
     "替罪羊",
     "流莺",
@@ -31,6 +34,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "替罪羊",
         "流莺",
         "咖啡师",
@@ -38,6 +44,24 @@
         "主教"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.31541
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28634
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.26
+        },
         {
           "name": "乞丐",
           "team": "traveler",
@@ -72,13 +96,47 @@
       "required_character_matches": 0
     }
   ],
-  "ocr_source_board_groups": [],
+  "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "主教",
+        "乞丐",
+        "咖啡师",
+        "替罪羊",
+        "流莺"
+      ]
+    }
+  ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
     "f2e980bd9eecc64457639b2292b4aad944902471.png",
     "3912be82594b94c4f755f02168b4228d44902471.png"
   ],
   "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.31541
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27059,
+      "y": 0.28634
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.26
+    },
     {
       "name": "乞丐",
       "team": "traveler",
@@ -140,7 +198,11 @@
     "珀"
   ],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "流莺",
     "咖啡师",
@@ -367,5 +429,43 @@
     "*建议7人以上加入旅行者"
   ],
   "ocr_rule_markers": [],
-  "ocr_missing_rule_data": false
+  "ocr_missing_rule_data": false,
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "事务官",
+      "小精灵",
+      "修行者",
+      "占卜师",
+      "城镇公告员",
+      "僧侣",
+      "驱魔人",
+      "造谣者",
+      "女裁缝",
+      "哲学家",
+      "巡山人",
+      "艺术家",
+      "士兵",
+      "酒鬼",
+      "陌客",
+      "落难少女",
+      "心上人",
+      "教父",
+      "召唤师",
+      "刺客",
+      "哥布林",
+      "牙噶巴卜",
+      "诺-达鲺",
+      "奥赫",
+      "珀"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "牙噶巴卜&驱魔人"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

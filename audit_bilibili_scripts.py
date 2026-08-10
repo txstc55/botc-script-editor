@@ -1252,6 +1252,17 @@ def review_existing_folder(
     return folder.name, str(error)
 
 
+def existing_review_folders(output_root: Path, opus_ids: set[str]) -> list[Path]:
+  folders = sorted(path.parent for path in (output_root / "剧本").glob("*/核对状态.json"))
+  if not opus_ids:
+    return folders
+  return [
+    folder for folder in folders
+    if str(json.loads((folder / "核对状态.json").read_text(encoding="utf-8")).get("opus_id", ""))
+    in opus_ids
+  ]
+
+
 def local_known_roster(path: str) -> set[str]:
   try:
     data = json.loads(Path(path).read_text(encoding="utf-8"))
@@ -1431,7 +1442,7 @@ def main() -> None:
   )
   if args.review_existing:
     ocr_binary = build_ocr_tool(args.output)
-    folders = sorted(path.parent for path in (args.output / "剧本").glob("*/核对状态.json"))
+    folders = existing_review_folders(args.output, set(args.opus_id))
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
       futures = [
         executor.submit(review_existing_folder, folder, ocr_binary, review_overrides)

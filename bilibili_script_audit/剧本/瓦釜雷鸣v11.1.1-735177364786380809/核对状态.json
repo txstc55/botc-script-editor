@@ -18,13 +18,7 @@
   "ocr_character_matches": 25,
   "ocr_required_character_count": 25,
   "ocr_missing_characters": [],
-  "ocr_travelers_seen": [
-    "学徒",
-    "咖啡师",
-    "乞丐",
-    "集骨者",
-    "流莺"
-  ],
+  "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
       "name": "调查员",
@@ -153,33 +147,7 @@
     }
   ],
   "ocr_ability_mismatches": [],
-  "ocr_traveler_checks": [
-    {
-      "name": "学徒",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "咖啡师",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "乞丐",
-      "team": "traveler",
-      "ability_coverage": 0.9574
-    },
-    {
-      "name": "集骨者",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "流莺",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    }
-  ],
+  "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
   "ocr_jinx_mismatches": [],
@@ -246,6 +214,9 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "学徒",
         "乞丐",
         "流莺",
@@ -253,6 +224,24 @@
         "集骨者"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.3225
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.295
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.27035
+        },
         {
           "name": "咖啡师",
           "team": "traveler",
@@ -656,6 +645,21 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-01.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "乞丐",
+        "咖啡师",
+        "学徒",
+        "流莺",
+        "集骨者"
+      ]
+    },
+    {
+      "images": [
         "对照图-02.png",
         "对照图-03.png"
       ],
@@ -847,5 +851,13 @@
       "x": 0.14706,
       "y": 0.1815
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

@@ -21,8 +21,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.31541
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28779
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -284,5 +300,15 @@
     "機影师 Photographer"
   ],
   "ocr_rule_markers": [],
-  "ocr_missing_rule_data": false
+  "ocr_missing_rule_data": false,
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "機影师 Photographer"
+    ]
+  }
 }

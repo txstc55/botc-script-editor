@@ -235,7 +235,6 @@
   ],
   "ocr_unexplained_bottom_lines": [
     "爪牙在其死亡的当晚要选择一名玩家：如果他是善良的，他死亡。",
-    "放令承旨",
     "解除所有角色能力在进行选择时的限制条件。"
   ],
   "ocr_rule_markers": [],
@@ -243,8 +242,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17733
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.151
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -411,8 +426,24 @@
     },
     {
       "image": "对照图-03.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17733
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.151
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -756,5 +787,18 @@
       "x": 0.56471,
       "y": 0.18
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "史官"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "爪牙在其死亡的当晚要选择一名玩家：如果他是善良的，他死亡。",
+      "解除所有角色能力在进行选择时的限制条件。"
+    ]
+  }
 }

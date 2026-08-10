@@ -49,6 +49,7 @@
     "麻脸巫婆",
     "魔鬼代言人",
     "普卡",
+    "诺·达鲺",
     "军团",
     "亡骨魔"
   ],
@@ -132,6 +133,12 @@
       "y": 0.248
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.57235,
+      "y": 0.2464
+    },
+    {
       "name": "军团",
       "team": "demon",
       "x": 0.57019,
@@ -146,7 +153,8 @@
   ],
   "ocr_unexpected_characters": [
     "告密者",
-    "入殓师"
+    "入殓师",
+    "诺·达鲺"
   ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
@@ -298,8 +306,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.42981,
+          "y": 0.1744
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.45356,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -311,11 +335,14 @@
         "数学家",
         "哲学家",
         "工程师",
+        "\"被处决\"",
         "疯子",
         "精神病患者",
         "魔鬼代言人",
+        "普卡",
         "亡骨魔",
         "麻脸巫婆",
+        "诺·达鲺",
         "军团"
       ],
       "heading_character_details": [
@@ -362,6 +389,12 @@
           "y": 0.5008
         },
         {
+          "name": "\"被处决\"",
+          "team": "townsfolk",
+          "x": 0.14903,
+          "y": 0.472
+        },
+        {
           "name": "精神病患者",
           "team": "minion",
           "x": 0.14891,
@@ -380,6 +413,18 @@
           "y": 0.3408
         },
         {
+          "name": "普卡",
+          "team": "demon",
+          "x": 0.13823,
+          "y": 0.2592
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.57019,
+          "y": 0.256
+        },
+        {
           "name": "亡骨魔",
           "team": "demon",
           "x": 0.14903,
@@ -396,8 +441,24 @@
     },
     {
       "image": "对照图-04.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.42981,
+          "y": 0.1744
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.45356,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -417,6 +478,7 @@
         "魔鬼代言人",
         "普卡",
         "亡骨魔",
+        "诺·达鲺",
         "军团"
       ],
       "heading_character_details": [
@@ -499,6 +561,12 @@
           "y": 0.248
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.57235,
+          "y": 0.2464
+        },
+        {
           "name": "军团",
           "team": "demon",
           "x": 0.57019,
@@ -521,6 +589,7 @@
         "对照图-05.png"
       ],
       "characters": [
+        "\"被处决\"",
         "亡骨魔",
         "侍女",
         "入殓师",
@@ -534,9 +603,30 @@
         "普卡",
         "疯子",
         "精神病患者",
+        "诺·达鲺",
         "魔鬼代言人",
         "麻脸巫婆"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "畸形秀演员",
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "天使告诉恶魔"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "雙者縣所清羅黑與長提兩爾處英認勞財製裝養醬，湯裝爾舉盈創造了確的",
+      "堕洛犬使",
+      "在第一个夜晚开始时，所有玩家都会知道堕落天使庇护了一",
+      "名爪牙玩象以及他是谁。如果善良玩家杀死了他，",
+      "会发生很",
+      "不好的事情：但如果是恶魔杀死了他，大概会无事发生。"
+    ]
+  }
 }

@@ -44,9 +44,12 @@
     "红唇女郎",
     "方古",
     "奥赫",
-    "小恶魔"
+    "小恶魔",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -228,8 +231,7 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "与你邻近的两名镇民中毒。",
-    "某件事情“可能”发生，代表由说书人来决定该事情是否发生。"
+    "与你邻近的两名镇民中毒。"
   ],
   "ocr_rule_markers": [
     "相克规则"
@@ -245,9 +247,23 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
         "怪咖"
       ],
       "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28634
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.2585
+        },
         {
           "name": "怪咖",
           "team": "traveler",
@@ -272,6 +288,7 @@
         "科学怪人",
         "红唇女郎",
         "方古",
+        "诺·达鲺",
         "猎手",
         "渔夫",
         "博学者",
@@ -422,6 +439,12 @@
           "team": "demon",
           "x": 0.56275,
           "y": 0.1685
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.167
         }
       ],
       "required_character_matches": 23
@@ -454,6 +477,7 @@
         "红唇女郎",
         "落难少女",
         "解谜大师",
+        "诺·达鲺",
         "贵族",
         "陌客"
       ]
@@ -605,6 +629,22 @@
       "team": "demon",
       "x": 0.56275,
       "y": 0.1685
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14706,
+      "y": 0.167
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "与你邻近的两名镇民中毒。"
+    ]
+  }
 }

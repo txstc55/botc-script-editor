@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 26,
@@ -45,9 +45,12 @@
     "亡骨魔",
     "方古",
     "小恶魔",
+    "诺·达鲺",
     "圣洁之魂"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -266,6 +269,7 @@
         "麻脸巫婆",
         "投毒者",
         "方古",
+        "诺·达鲺",
         "圣洁之魂"
       ],
       "heading_character_details": [
@@ -408,6 +412,12 @@
           "y": 0.164
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.164
+        },
+        {
           "name": "圣洁之魂",
           "team": "fabled",
           "x": 0.38431,
@@ -441,6 +451,7 @@
         "筑梦师",
         "艺术家",
         "莽夫",
+        "诺·达鲺",
         "贵族",
         "酒鬼",
         "钟表匠",
@@ -598,10 +609,24 @@
       "y": 0.164
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.164
+    },
+    {
       "name": "圣洁之魂",
       "team": "fabled",
       "x": 0.38431,
       "y": 0.0915
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

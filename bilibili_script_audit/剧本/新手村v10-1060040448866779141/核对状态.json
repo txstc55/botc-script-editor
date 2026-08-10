@@ -47,11 +47,13 @@
     "提线木偶",
     "红唇女郎",
     "小恶魔",
+    "诺·达鲺",
     "佛教徒",
     "天使"
   ],
   "ocr_unexpected_characters": [
-    "渔夫"
+    "渔夫",
+    "诺·达鲺"
   ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
@@ -228,8 +230,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -256,6 +274,7 @@
         "解谜大师",
         "限",
         "提线木偶",
+        "诺·达鲺",
         "天使"
       ],
       "heading_character_details": [
@@ -380,6 +399,12 @@
           "y": 0.17442
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.17442
+        },
+        {
           "name": "佛教徒",
           "team": "fabled",
           "x": 0.14902,
@@ -418,6 +443,7 @@
         "解谜大师",
         "限",
         "提线木偶",
+        "诺·达鲺",
         "天使"
       ],
       "heading_character_details": [
@@ -539,6 +565,12 @@
           "name": "小恶魔",
           "team": "demon",
           "x": 0.14706,
+          "y": 0.17442
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
           "y": 0.17442
         },
         {
@@ -581,6 +613,7 @@
         "管家",
         "红唇女郎",
         "解谜大师",
+        "诺·达鲺",
         "贵族",
         "间谍",
         "陌客",
@@ -722,6 +755,12 @@
       "y": 0.17442
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.17442
+    },
+    {
       "name": "佛教徒",
       "team": "fabled",
       "x": 0.14902,
@@ -733,5 +772,16 @@
       "x": 0.56078,
       "y": 0.09593
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "异教领袖",
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

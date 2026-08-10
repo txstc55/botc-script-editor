@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -41,9 +41,12 @@
     "鹰身女妖",
     "召唤师",
     "混沌",
+    "诺·达鲺",
     "牙噶巴卜"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -219,8 +222,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17587
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -244,7 +270,8 @@
         "修补匠",
         "教父",
         "召唤师",
-        "混沌"
+        "混沌",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -354,6 +381,12 @@
           "team": "demon",
           "x": 0.56078,
           "y": 0.234
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.17587
         },
         {
           "name": "牙噶巴卜",
@@ -385,7 +418,8 @@
         "修补匠",
         "教父",
         "召唤师",
-        "混沌"
+        "混沌",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -495,6 +529,12 @@
           "team": "demon",
           "x": 0.56078,
           "y": 0.234
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.17587
         },
         {
           "name": "牙噶巴卜",
@@ -528,6 +568,7 @@
         "混沌",
         "牙噶巴卜",
         "羽师",
+        "诺·达鲺",
         "赌徒",
         "阴阳师",
         "魔像",
@@ -656,10 +697,24 @@
       "y": 0.234
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.17587
+    },
+    {
       "name": "牙噶巴卜",
       "team": "demon",
       "x": 0.14706,
       "y": 0.17587
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

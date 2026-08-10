@@ -13,7 +13,7 @@
     "对照图-03.png",
     "对照图-04.jpg"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 23,
@@ -195,14 +195,40 @@
     "提线木偶",
     "刺客",
     "红唇女郎",
-    "普卡"
+    "普卡",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.2959,
+          "y": 0.2016
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.26998,
+          "y": 0.1712
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -229,7 +255,8 @@
         "心上人",
         "畸形秀演员",
         "教父",
-        "红唇女郎"
+        "红唇女郎",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -363,6 +390,12 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.199
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.199
         }
       ],
       "required_character_matches": 22
@@ -391,7 +424,8 @@
         "心上人",
         "畸形秀演员",
         "教父",
-        "红唇女郎"
+        "红唇女郎",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -524,6 +558,12 @@
           "name": "普卡",
           "team": "demon",
           "x": 0.14706,
+          "y": 0.199
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
           "y": 0.199
         }
       ],
@@ -561,6 +601,7 @@
         "神谕者",
         "红唇女郎",
         "艺术家",
+        "诺·达鲺",
         "送葬者",
         "钟表匠",
         "陌客",
@@ -709,6 +750,20 @@
       "team": "demon",
       "x": 0.14706,
       "y": 0.199
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.199
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

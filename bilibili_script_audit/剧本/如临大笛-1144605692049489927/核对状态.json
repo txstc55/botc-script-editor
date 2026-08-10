@@ -49,6 +49,7 @@
     "麻脸巫婆",
     "教父",
     "军团",
+    "诺·达鲺",
     "混沌",
     "吹笛者"
   ],
@@ -186,6 +187,12 @@
       "y": 0.2455
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14902,
+      "y": 0.24128
+    },
+    {
       "name": "混沌",
       "team": "demon",
       "x": 0.14706,
@@ -198,7 +205,9 @@
       "y": 0.11337
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -406,8 +415,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -424,6 +449,7 @@
         "莽夫",
         "红唇女郎",
         "教父",
+        "诺·达鲺",
         "混沌",
         "城镇公告员",
         "半兽人",
@@ -572,6 +598,12 @@
           "y": 0.2455
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14902,
+          "y": 0.24128
+        },
+        {
           "name": "混沌",
           "team": "demon",
           "x": 0.14706,
@@ -612,6 +644,7 @@
         "红唇女郎",
         "艺术家",
         "莽夫",
+        "诺·达鲺",
         "调查员",
         "赌徒",
         "郎中",
@@ -619,5 +652,20 @@
         "麻脸巫婆"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "麻脸巫婆&村夫"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "第三方阵营•局外人",
+      "圣清乙魂",
+      "可选規则：",
+      "O 在首个夜晚，告知局外人一个不在场角色。"
+    ]
+  }
 }

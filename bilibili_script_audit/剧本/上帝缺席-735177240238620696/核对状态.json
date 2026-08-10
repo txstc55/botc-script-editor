@@ -169,8 +169,8 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
-      "text_coverage": 1.0
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 0.7143
     },
     {
       "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
@@ -227,14 +227,40 @@
     "提线木偶",
     "小恶魔",
     "普卡",
-    "亡骨魔"
+    "亡骨魔",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -262,7 +288,8 @@
         "月之子",
         "红唇女郎",
         "提线木偶",
-        "普卡"
+        "普卡",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -402,6 +429,12 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.18
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.17587
         }
       ],
       "required_character_matches": 23
@@ -431,7 +464,8 @@
         "月之子",
         "红唇女郎",
         "提线木偶",
-        "普卡"
+        "普卡",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -571,6 +605,12 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.18
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.17587
         }
       ],
       "required_character_matches": 23
@@ -602,6 +642,7 @@
         "祖母",
         "神谕者",
         "红唇女郎",
+        "诺·达鲺",
         "调查员",
         "赌徒",
         "酒鬼",
@@ -755,6 +796,23 @@
       "team": "demon",
       "x": 0.14706,
       "y": 0.18
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.17587
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "天使",
+      "地狱藏书员"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

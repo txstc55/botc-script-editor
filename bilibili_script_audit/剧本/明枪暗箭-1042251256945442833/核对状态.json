@@ -16,7 +16,7 @@
     "6ef6729d63cd4b241cdad2ef8d002ffb44902471.png",
     "8d5cfec2bc6ec7614bdf7a49661f0d4644902471.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 18,
@@ -42,7 +42,8 @@
     "狂热者",
     "女巫",
     "红唇女郎",
-    "暴君"
+    "暴君",
+    "诺·达鲺"
   ],
   "ocr_heading_character_details": [
     {
@@ -140,9 +141,17 @@
       "team": "demon",
       "x": 0.56078,
       "y": 0.20494
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14706,
+      "y": 0.20349
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -245,8 +254,8 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
-      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
-      "text_coverage": 1.0
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 0.7143
     },
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -273,8 +282,17 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.42941,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -293,6 +311,7 @@
         "修补匠",
         "狂热者",
         "女巫",
+        "诺·达鲺",
         "酒鬼",
         "红唇女郎",
         "暴君"
@@ -393,6 +412,12 @@
           "team": "demon",
           "x": 0.56078,
           "y": 0.20494
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14706,
+          "y": 0.20349
         }
       ],
       "required_character_matches": 16
@@ -417,10 +442,19 @@
         "歌伶",
         "狂热者",
         "红唇女郎",
+        "诺·达鲺",
         "贵族",
         "赌徒",
         "酒鬼"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

@@ -44,8 +44,16 @@
     "王子"
   ],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_heading_characters": [],
-  "ocr_unexpected_characters": [],
+  "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "荷兰人",
     "工贼",
@@ -278,9 +286,30 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "审判官"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.31831
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.2905
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.2645
+        },
         {
           "name": "审判官",
           "team": "",
@@ -301,10 +330,67 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_heading_character_details": [
     {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.31831
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.2905
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.2645
+    },
+    {
       "name": "审判官",
       "team": "",
       "x": 0.14706,
       "y": 0.0843
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "侯爵",
+      "档案官",
+      "锻造师",
+      "催眠师",
+      "王储",
+      "神射手",
+      "中尉",
+      "夜莺",
+      "女侯爵",
+      "织梦者",
+      "女猎手",
+      "变形者",
+      "闺女",
+      "拷问者",
+      "阴谋家",
+      "炎血",
+      "伯爵",
+      "公主殿下",
+      "炽天使",
+      "传令使",
+      "小提琴手",
+      "画家",
+      "霸主",
+      "深渊",
+      "王子"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "工贼 Stcikebreaker",
+      "金匠 Goldsmith",
+      "Inquisitor",
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

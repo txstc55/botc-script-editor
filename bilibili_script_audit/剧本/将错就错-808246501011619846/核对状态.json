@@ -18,7 +18,7 @@
     "439de54c8cd94a8324f9a0c05104dc2c44902471.png",
     "fe0964e46d52ee9a57d5cca0257743e144902471.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 18,
@@ -44,7 +44,8 @@
     "教父",
     "提线木偶",
     "红唇女郎",
-    "涡流"
+    "涡流",
+    "诺·达鲺"
   ],
   "ocr_heading_character_details": [
     {
@@ -148,9 +149,17 @@
       "team": "demon",
       "x": 0.14706,
       "y": 0.22093
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.215
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -253,8 +262,8 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
-      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
-      "text_coverage": 1.0
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 0.7143
     },
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -287,8 +296,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.43413,
+          "y": 0.2016
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.40821,
+          "y": 0.1744
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -310,7 +335,8 @@
         "秉笔",
         "女裁缝",
         "疯子",
-        "提线木偶"
+        "提线木偶",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -414,6 +440,12 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.22093
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.215
         }
       ],
       "required_character_matches": 17
@@ -440,9 +472,18 @@
         "疯子",
         "秉笔",
         "红唇女郎",
+        "诺·达鲺",
         "酒鬼",
         "食人族"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

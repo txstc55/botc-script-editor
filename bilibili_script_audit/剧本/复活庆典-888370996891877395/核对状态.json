@@ -250,14 +250,26 @@
     "男爵",
     "提线木偶",
     "红唇女郎",
+    "诺·达鲺",
     "亡骨魔"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17442
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -284,6 +296,7 @@
         "男爵",
         "红唇女郎",
         "提线木偶",
+        "诺·达鲺",
         "亡骨魔"
       ],
       "heading_character_details": [
@@ -414,6 +427,12 @@
           "y": 0.30802
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14688,
+          "y": 0.21756
+        },
+        {
           "name": "亡骨魔",
           "team": "demon",
           "x": 0.14706,
@@ -424,8 +443,17 @@
     },
     {
       "image": "对照图-03.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17442
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -452,6 +480,7 @@
         "男爵",
         "红唇女郎",
         "提线木偶",
+        "诺·达鲺",
         "亡骨魔"
       ],
       "heading_character_details": [
@@ -580,6 +609,12 @@
           "team": "minion",
           "x": 0.14702,
           "y": 0.30802
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14688,
+          "y": 0.21756
         },
         {
           "name": "亡骨魔",
@@ -616,6 +651,7 @@
         "疯子",
         "红唇女郎",
         "落难少女",
+        "诺·达鲺",
         "贞洁者",
         "赏金猎人",
         "酒鬼",
@@ -764,10 +800,26 @@
       "y": 0.30802
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14688,
+      "y": 0.21756
+    },
+    {
       "name": "亡骨魔",
       "team": "demon",
       "x": 0.14706,
       "y": 0.17587
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

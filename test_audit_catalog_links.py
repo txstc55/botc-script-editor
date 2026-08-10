@@ -11,6 +11,7 @@ from audit_bilibili_scripts import (
   OpusLink,
   bilingual_cjk_title,
   extract_script_name,
+  existing_review_folders,
   expected_script_entries,
   is_collection_link,
   is_script_link,
@@ -89,6 +90,21 @@ class CatalogLinkTest(unittest.TestCase):
 
   def test_standard_note_label_is_not_a_character_heading(self) -> None:
     self.assertEqual(match_known_character_name("“疯狂”", {"“疯狂”"}), "")
+
+  def test_existing_review_folders_respect_opus_filter(self) -> None:
+    with tempfile.TemporaryDirectory() as directory:
+      root = Path(directory)
+      for opus_id in ("1", "2"):
+        folder = root / "剧本" / f"剧本-{opus_id}"
+        folder.mkdir(parents=True)
+        (folder / "核对状态.json").write_text(
+          json.dumps({"opus_id": opus_id}),
+          encoding="utf-8",
+        )
+
+      folders = existing_review_folders(root, {"2"})
+
+    self.assertEqual([folder.name for folder in folders], ["剧本-2"])
 
 
 if __name__ == "__main__":

@@ -46,10 +46,13 @@
     "女巫",
     "超新星",
     "奥赫",
+    "诺·达鲺",
     "普卡",
     "圣洁之魂"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -234,8 +237,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.199
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.1715
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -267,6 +286,7 @@
         "江湖骗子",
         "幽灵",
         "奥赫",
+        "诺·达鲺",
         "圣洁之魂"
       ],
       "heading_character_details": [
@@ -421,6 +441,12 @@
           "y": 0.20349
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56275,
+          "y": 0.154
+        },
+        {
           "name": "普卡",
           "team": "demon",
           "x": 0.14706,
@@ -460,6 +486,7 @@
         "石像鬼",
         "航天员",
         "航线",
+        "诺·达鲺",
         "贤者",
         "超新星",
         "车夫",
@@ -631,6 +658,12 @@
       "y": 0.20349
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56275,
+      "y": 0.154
+    },
+    {
       "name": "普卡",
       "team": "demon",
       "x": 0.14706,
@@ -642,5 +675,15 @@
       "x": 0.38235,
       "y": 0.0814
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "游戏过程中邪恶玩家的总数最多能比初始设置多一名。"
+    ]
+  }
 }

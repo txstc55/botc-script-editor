@@ -45,8 +45,16 @@
     "双声裁定"
   ],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_heading_characters": [],
-  "ocr_unexpected_characters": [],
+  "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -291,8 +299,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     }
   ],
@@ -304,5 +335,70 @@
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_heading_character_details": []
+  "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.2005
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27059,
+      "y": 0.17297
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.1468
+    }
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "贵族",
+      "阴阳师",
+      "女家教",
+      "占星师",
+      "马厩男孩",
+      "共情者",
+      "侍女",
+      "数学家",
+      "卖花女孩",
+      "城镇公告员",
+      "狸猫",
+      "史官",
+      "女裁缝",
+      "寻踪者",
+      "怀疑论者",
+      "双生子",
+      "理发师",
+      "舱底鼠",
+      "提线木偶",
+      "寡妇",
+      "继生王爵",
+      "[未知]",
+      "普卡",
+      "小恶魔",
+      "亡骨魔",
+      "双声裁定"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "命运裁剪：理发师",
+      "未至之兆：侍女&数学家",
+      "混沌方程：数学家",
+      "偏轨启示：占星师",
+      "线中虚实：提线木偶",
+      "幕后真主：提线木偶&寻踪者&寡妇",
+      "傀授王命：提线木偶&寻踪者&继生王爵"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "钟楼剧本博物馆",
+      "美术设计"
+    ]
+  }
 }

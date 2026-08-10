@@ -198,9 +198,7 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "母个夜晚，",
-    "黍风捕手",
-    "游戏开始时，如果异教领袖在场，他只能死于处决，"
+    "母个夜晚，"
   ],
   "ocr_rule_markers": [
     "相克规则"
@@ -233,19 +231,43 @@
     "女巫",
     "洗脑师",
     "方古",
-    "堤丰之首"
+    "堤丰之首",
+    "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "流莺",
         "屠夫",
         "集骨者",
         "主教"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.31686
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.2905
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.2615
+        },
         {
           "name": "流莺",
           "team": "traveler",
@@ -297,7 +319,8 @@
         "解谜大师",
         "狂热者",
         "哥布林",
-        "方古"
+        "方古",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -431,6 +454,12 @@
           "team": "demon",
           "x": 0.14704,
           "y": 0.23396
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56471,
+          "y": 0.17297
         }
       ],
       "required_character_matches": 23
@@ -459,7 +488,8 @@
         "解谜大师",
         "狂热者",
         "哥布林",
-        "方古"
+        "方古",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -593,6 +623,12 @@
           "team": "demon",
           "x": 0.14704,
           "y": 0.23396
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56471,
+          "y": 0.17297
         }
       ],
       "required_character_matches": 23
@@ -624,6 +660,7 @@
         "畸形秀演员",
         "神谕者",
         "解谜大师",
+        "诺·达鲺",
         "贵族",
         "陌客",
         "食人族"
@@ -770,6 +807,24 @@
       "team": "demon",
       "x": 0.14704,
       "y": 0.23396
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56471,
+      "y": 0.17297
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "母个夜晚，"
+    ]
+  }
 }

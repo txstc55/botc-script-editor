@@ -95,7 +95,11 @@ def database_role(spec: dict[str, Any]) -> dict[str, Any]:
   if not rows:
     raise ValueError(f"角色数据库中找不到：{team}/{name}")
   row = max(rows, key=lambda value: int(value.get("occurrence_count", 0) or 0))
-  return row_entry(row)
+  role = row_entry(row)
+  overrides = spec.get("overrides")
+  if isinstance(overrides, dict):
+    role.update(overrides)
+  return role
 
 
 def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
@@ -169,7 +173,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
 
   for addition in fix.get("additions", []):
     new_role = addition.get("entry")
-    explicit_entry = isinstance(new_role, dict)
+    explicit_entry = isinstance(new_role, dict) or isinstance(addition.get("overrides"), dict)
     if not isinstance(new_role, dict):
       if addition.get("source_json"):
         new_role = source_role(
@@ -237,6 +241,26 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
       base_indent = raw[line_start:start]
       raw = raw[:start] + formatted_object(entry, base_indent) + raw[end:]
     changes.append(f"重建 {team} 阵容")
+
+  meta_updates = fix.get("meta_updates")
+  if isinstance(meta_updates, dict):
+    matches = [
+      item for item in parsed_objects(raw)
+      if str(item[2].get("id", "")).strip() == "_meta"
+    ]
+    if len(matches) != 1:
+      raise ValueError("剧本 _meta 不是唯一结果")
+    start, end, meta = matches[0]
+    changed_fields = [
+      key for key, value in meta_updates.items()
+      if meta.get(key) != value
+    ]
+    if changed_fields:
+      meta.update(meta_updates)
+      line_start = raw.rfind("\n", 0, start) + 1
+      base_indent = raw[line_start:start]
+      raw = raw[:start] + formatted_object(meta, base_indent) + raw[end:]
+      changes.append(f"更新剧本信息 {', '.join(changed_fields)}")
 
   notes = fix.get("meta_notes", [])
   if notes:

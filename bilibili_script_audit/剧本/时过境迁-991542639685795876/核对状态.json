@@ -16,7 +16,7 @@
     "beacd49bb8434726ada271a52fa36c6244902471.png",
     "34be41517657a250e3600ad7db7d663444902471.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -49,7 +49,8 @@
     "教父",
     "寡妇",
     "痢蛭",
-    "普卡"
+    "普卡",
+    "诺·达鲺"
   ],
   "ocr_heading_character_details": [
     {
@@ -195,9 +196,17 @@
       "team": "demon",
       "x": 0.14706,
       "y": 0.2135
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14681,
+      "y": 0.16653
     }
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "诺·达鲺"
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -366,8 +375,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -387,6 +412,7 @@
         "刺客",
         "寡妇",
         "普卡",
+        "诺·达鲺",
         "驱魔人",
         "哲学家",
         "猎手",
@@ -542,6 +568,12 @@
           "team": "demon",
           "x": 0.14706,
           "y": 0.2135
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14681,
+          "y": 0.16653
         }
       ],
       "required_character_matches": 24
@@ -569,6 +601,7 @@
         "痢蛭",
         "祖母",
         "红唇女郎",
+        "诺·达鲺",
         "贵族",
         "赌徒",
         "送葬者",
@@ -579,5 +612,13 @@
         "魔像"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }
