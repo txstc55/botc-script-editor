@@ -67,6 +67,11 @@ def formatted_object(value: dict[str, Any], base_indent: str) -> str:
   return lines[0] + "\n" + "\n".join(base_indent + line for line in lines[1:])
 
 
+def object_line_indent(raw: str, start: int) -> str:
+  line_start = raw.rfind("\n", 0, start) + 1
+  return re.match(r"[ \t]*", raw[line_start:start]).group(0)
+
+
 def object_identity(value: dict[str, Any]) -> tuple[str, str]:
   return str(value.get("name", "")), str(value.get("team", ""))
 
@@ -174,8 +179,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     if old_matches[0][2] == new_role:
       continue
     start, end, _ = old_matches[0]
-    line_start = raw.rfind("\n", 0, start) + 1
-    base_indent = raw[line_start:start]
+    base_indent = object_line_indent(raw, start)
     raw = raw[:start] + formatted_object(new_role, base_indent) + raw[end:]
     changes.append(f"{old_identity[0]} -> {new_role['name']}")
 
@@ -207,8 +211,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
       if matches[0][2] == new_role or not explicit_entry:
         continue
       start, end, _ = matches[0]
-      line_start = raw.rfind("\n", 0, start) + 1
-      base_indent = raw[line_start:start]
+      base_indent = object_line_indent(raw, start)
       raw = raw[:start] + formatted_object(new_role, base_indent) + raw[end:]
       changes.append(f"更新 {new_role['name']}")
       continue
@@ -220,7 +223,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
         raise ValueError(f"新增角色定位目标不是唯一结果：{identity[1]}/{identity[0]}")
       start, _, _ = matches[0]
       line_start = raw.rfind("\n", 0, start) + 1
-      base_indent = raw[line_start:start]
+      base_indent = object_line_indent(raw, start)
       role_text = formatted_object(new_role, base_indent)
       raw = raw[:line_start] + f"{base_indent}{role_text},\n" + raw[line_start:]
       changes.append(f"新增 {new_role['name']}")
@@ -251,8 +254,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     if len(matches) != len(entries):
       raise ValueError(f"阵营角色数量不一致：{team}")
     for (_, start, end, _), entry in reversed(list(zip(matches, entries))):
-      line_start = raw.rfind("\n", 0, start) + 1
-      base_indent = raw[line_start:start]
+      base_indent = object_line_indent(raw, start)
       raw = raw[:start] + formatted_object(entry, base_indent) + raw[end:]
     changes.append(f"重建 {team} 阵容")
 
@@ -271,8 +273,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     ]
     if changed_fields:
       meta.update(meta_updates)
-      line_start = raw.rfind("\n", 0, start) + 1
-      base_indent = raw[line_start:start]
+      base_indent = object_line_indent(raw, start)
       raw = raw[:start] + formatted_object(meta, base_indent) + raw[end:]
       changes.append(f"更新剧本信息 {', '.join(changed_fields)}")
 
@@ -293,8 +294,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     new_notes = [note for note in notes if note.get("text", "").strip() not in existing_texts]
     if new_notes:
       existing_notes.extend(new_notes)
-      line_start = raw.rfind("\n", 0, start) + 1
-      base_indent = raw[line_start:start]
+      base_indent = object_line_indent(raw, start)
       raw = raw[:start] + formatted_object(meta, base_indent) + raw[end:]
       changes.append(f"新增说明 {len(new_notes)} 条")
   full_roster = fix.get("full_roster")

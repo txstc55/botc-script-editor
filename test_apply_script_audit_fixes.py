@@ -158,6 +158,27 @@ class FullRosterTest(unittest.TestCase):
     self.assertEqual(role["ability"], "剧本专属能力")
     self.assertEqual(role["firstNight"], 4)
 
+  def test_patch_preserves_inline_object_separator(self):
+    source = """[{
+\t\t\"id\": \"_meta\",
+\t\t\"name\": \"测试剧本\"
+\t}, {
+\t\t\"id\": \"角色甲\",
+\t\t\"name\": \"角色甲\",
+\t\t\"team\": \"townsfolk\",
+\t\t\"ability\": \"旧能力\"
+\t}]
+"""
+
+    updated, changes = apply_fix(source, {"additions": [{
+      "name": "角色甲",
+      "team": "townsfolk",
+      "patch": {"ability": "新能力"},
+    }]})
+
+    self.assertEqual(changes, ["更新 角色甲"])
+    self.assertEqual(json.loads(updated)[1]["ability"], "新能力")
+
   def test_meta_updates_replace_selected_fields(self):
     source = json.dumps([
       {"id": "_meta", "name": "测试剧本", "author": "旧作者"},
