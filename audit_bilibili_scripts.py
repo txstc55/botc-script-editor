@@ -1123,6 +1123,21 @@ def apply_match_overrides(
   return updated
 
 
+def sync_catalog_local_artifacts(
+  catalog: list[CatalogItem],
+  local_scripts: list[LocalScript],
+) -> int:
+  local_by_path = {script.path: script for script in local_scripts}
+  updated = 0
+  for item in catalog:
+    local = local_by_path.get(item.local_json)
+    if not local or item.generated_image == local.generated_image:
+      continue
+    item.generated_image = local.generated_image
+    updated += 1
+  return updated
+
+
 def prepare_and_review(
   item: CatalogItem,
   output_root: Path,
@@ -1312,7 +1327,8 @@ def main() -> None:
     catalog = collect_catalog(ROOT_URL, local_scripts)
   board_override_count = apply_board_overrides(catalog, local_scripts, args.board_overrides)
   override_count = apply_match_overrides(catalog, local_scripts, args.match_overrides)
-  if board_override_count or override_count or not catalog_path.exists() or not args.reuse_catalog:
+  artifact_count = sync_catalog_local_artifacts(catalog, local_scripts)
+  if board_override_count or override_count or artifact_count or not catalog_path.exists() or not args.reuse_catalog:
     write_catalog(catalog, args.output)
   print(
     f"剧本条目 {len(catalog)}，匹配 JSON {sum(item.status == 'matched' for item in catalog)}，"

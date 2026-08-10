@@ -3,11 +3,14 @@
 import unittest
 
 from audit_bilibili_scripts import (
+  CatalogItem,
+  LocalScript,
   OpusLink,
   bilingual_cjk_title,
   extract_script_name,
   is_collection_link,
   is_script_link,
+  sync_catalog_local_artifacts,
 )
 
 
@@ -38,6 +41,20 @@ class CatalogLinkTest(unittest.TestCase):
 
   def test_dash_suffix_is_not_a_title_alias(self) -> None:
     self.assertEqual(bilingual_cjk_title("全员谜语人-华灯初上"), "")
+
+  def test_generated_image_is_refreshed_for_reused_catalog(self) -> None:
+    item = CatalogItem("1", "测试", "测试", "url", "all_jsons/测试.json", "", 1, "matched", [])
+    local = LocalScript(
+      path="all_jsons/测试.json",
+      name="测试",
+      normalized_name="测试",
+      exact_aliases=("测试",),
+      normalized_aliases=("测试",),
+      generated_image="all_jsons/测试.jpg",
+    )
+
+    self.assertEqual(sync_catalog_local_artifacts([item], [local]), 1)
+    self.assertEqual(item.generated_image, "all_jsons/测试.jpg")
 
 
 if __name__ == "__main__":

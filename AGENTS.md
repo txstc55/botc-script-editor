@@ -3,6 +3,7 @@
 - Python files in this project use 2-space indentation.
 - Before running general JSON normalization, run `python3 character_fixes.py` to apply targeted canonical character fixes.
 - Before regenerating extraction CSVs, run `python3 fixing_json.py` to normalize known JSON data issues.
+- After global character fixes and JSON normalization, run `python3 create_missing_audit_scripts.py` to restore source-confirmed, script-specific missing boards before applying audit jinx/note fixes and extracting CSVs.
 - `fixing_json.py` should make targeted, minimal edits to source JSON files. Do not reserialize whole JSON files unless a broader cleanup is explicitly requested.
 - `extract_botc_json_info.py` emits separate CSVs for character variants and jinx/interaction-rule variants. Raw ids and source locations do not define variants.
 - If the same variant appears multiple times, keep one row and update `occurrence_count`, `source_files`, `source_scripts`, and `source_ids`.
