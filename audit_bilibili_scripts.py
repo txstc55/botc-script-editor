@@ -982,12 +982,16 @@ def review_item(
   expected_name_set = {
     entry["name"] for entry in [*required, *travelers]
   }
+  expected_name_keys = {
+    normalized_ocr_text(name) for name in expected_name_set
+  }
   heading_character_details = detected_heading_character_details(lines)
   heading_characters = list(dict.fromkeys(
     item["name"] for item in heading_character_details if item.get("team")
   ))
   unexpected_characters = [
-    name for name in heading_characters if name not in expected_name_set
+    name for name in heading_characters
+    if normalized_ocr_text(name) not in expected_name_keys
   ]
   bottom_lines = [
     clean_space(line.get("text"))
