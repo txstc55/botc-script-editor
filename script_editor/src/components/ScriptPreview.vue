@@ -179,14 +179,32 @@ function withNightOrderColors(items: NightOrderBaseItem[]): NightOrderItem[] {
 }
 
 function buildPreviewLayout(): SvgPreviewLayout {
-  const sections = buildSections();
+  const travelerIndex = previewSections.value.findIndex((section) => section.key === "traveler");
+  const sectionsBeforeTraveler = travelerIndex >= 0
+    ? previewSections.value.slice(0, travelerIndex)
+    : previewSections.value;
+  const travelerSections = travelerIndex >= 0
+    ? previewSections.value.slice(travelerIndex)
+    : [];
+  const leadingSections = buildSections(sectionsBeforeTraveler);
+  const leadingContentBottom = leadingSections.length
+    ? leadingSections[leadingSections.length - 1].y + leadingSections[leadingSections.length - 1].height
+    : firstSectionY.value;
+  const notesLayout = buildNotesLayout(leadingContentBottom);
+  const travelerStartY = notesLayout.notes.length
+    ? notesLayout.boxY + notesLayout.boxHeight + NOTE_SECTION_TOP_GAP
+    : leadingContentBottom;
+  const sections = [
+    ...leadingSections,
+    ...buildSections(travelerSections, travelerStartY),
+  ];
   const sectionContentBottom = sections.length
     ? sections[sections.length - 1].y + sections[sections.length - 1].height
     : firstSectionY.value;
-  const notesLayout = buildNotesLayout(sectionContentBottom);
-  const contentBottom = notesLayout.notes.length
+  const notesContentBottom = notesLayout.notes.length
     ? notesLayout.boxY + notesLayout.boxHeight
-    : sectionContentBottom;
+    : firstSectionY.value;
+  const contentBottom = Math.max(sectionContentBottom, notesContentBottom);
   const nightCenteringSections = sections.filter((section) => section.key !== "fabled" && section.key !== "traveler");
   const nightCenteringContentBottom = nightCenteringSections.length
     ? nightCenteringSections[nightCenteringSections.length - 1].y +
@@ -261,11 +279,14 @@ function nightRailStackHeight(orderCount: number) {
   return NIGHT_ICON_START_Y + iconStackHeight;
 }
 
-function buildSections(): SvgSectionLayout[] {
+function buildSections(
+  sourceSections = previewSections.value,
+  startY = firstSectionY.value,
+): SvgSectionLayout[] {
   const sections: SvgSectionLayout[] = [];
-  let y = firstSectionY.value;
+  let y = startY;
 
-  for (const section of previewSections.value) {
+  for (const section of sourceSections) {
     const color = teamColors[section.key];
     const heading = previewSectionHeading(section);
     const headingWidth = estimateTextWidth(heading, SECTION_HEADING_FONT_SIZE);

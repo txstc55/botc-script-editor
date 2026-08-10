@@ -41,7 +41,7 @@ function updateNote(note: ScriptNoteDraft, event: Event) {
       </article>
     </TransitionGroup>
 
-    <p v-if="!notes.length" class="notes-empty">说明会显示在剧本最底部。</p>
+    <p v-if="!notes.length" class="notes-empty">说明会显示在传奇角色下方、剧本旅行者上方。</p>
   </section>
 </template>
 

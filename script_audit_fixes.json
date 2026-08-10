@@ -463,6 +463,110 @@
           }
         ]
       }
+    },
+    {
+      "source": "Bilibili 1030391310369947649 对照图-03",
+      "targets": ["all_jsons/SUI染钟楼投稿&火乐杯剧本/#塔尔塔罗斯-海雾.json"],
+      "removals": [
+        {"name": "无神论者&异端分子", "team": "jinx"}
+      ]
+    },
+    {
+      "source": "Bilibili 1113211727390965794 对照图-03",
+      "targets": ["all_jsons/万象星启体验剧本/剧本/#渊墟之外V2.8.1 9.17-弦舞.json"],
+      "replacements": [
+        {
+          "old_name": "店小二&符文吞噬者",
+          "old_team": "jinx",
+          "entry": {
+            "id": "112222222299999222222222562222333_meta",
+            "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+            "name": "庄小二&符文吞噬者",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "如果恶魔杀死了庄小二导致符文吞噬者获得了庄小二的能力，庄小二的醉酒标记不会移动。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1145025933095206945 对照图-02",
+      "targets": ["all_jsons/万象星启体验剧本/剧本/831#一人成军-提线政客.json"],
+      "replacements": [
+        {
+          "old_name": "痢蛭&半兽人",
+          "old_team": "jinx",
+          "entry": {
+            "id": "103_meta",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/7/70/Lleech.png/300px-Lleech.png",
+            "name": "痢蛭&半兽人",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "如果痢蛭选择善良玩家作为宿主，半兽人的失足对象可以在此之后改为痢蛭的宿主。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 997357733326880770 对照图-03",
+      "targets": ["all_jsons/SUI染钟楼投稿&火乐杯剧本/#回到三日之前-星火乐.json"],
+      "replacements": [
+        {
+          "old_name": "暴乱&落难少女",
+          "old_team": "jinx",
+          "entry": {
+            "id": "2_meta",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/c/c0/Riot.png/300px-Riot.png",
+            "name": "暴乱&落难少女",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "暴乱被落难少女当作爪牙。所有的暴乱都被告知落难少女在场，任意暴乱都可以声称自己是爪牙并猜测谁是落难少女。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1094321438988435457 对照图-03",
+      "targets": ["all_jsons/旋转木马快速上手剧本/#嗤之以鼻-Milk.json"],
+      "replacements": [
+        {
+          "old_name": "提线木偶&气球驾驶员",
+          "old_team": "jinx",
+          "entry": {
+            "id": "31_meta",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/3d/Marionette.png/300px-Marionette.png",
+            "name": "提线木偶&气球驾驶员",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "如果提线木偶抽到了气球驾驶员，也可能会+1外来者。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1010086607631417377 对照图-03",
+      "targets": ["all_jsons/SUI染钟楼投稿&火乐杯剧本/#土豆地雷-黄金船sama.json"],
+      "replacements": [
+        {
+          "old_name": "瘟疫医生&养蛊人",
+          "old_team": "jinx",
+          "entry": {
+            "id": "138_meta",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/2/2d/Plaguedoctor.png/300px-Plaguedoctor.png",
+            "name": "瘟疫医生&养蛊人",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "如果瘟疫医生死亡且说书人会因此获得这些养蛊人的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1111993056194723857 对照图-02",
+      "targets": ["all_jsons/旋转木马快速上手剧本/#心随境转v1.1.0-Dave B .json"],
+      "removals": [
+        {"name": "落难少女&理发师", "team": "jinx"}
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",
