@@ -599,11 +599,18 @@ def expected_script_entries(
   json_path: Path,
 ) -> tuple[list[dict[str, str]], list[dict[str, str]], list[dict[str, str]], list[str]]:
   data = json.loads(json_path.read_text(encoding="utf-8"))
+  items = json_items(data)
+  names_by_id = {
+    clean_space(item.get("id")): clean_space(item.get("name"))
+    for item in items
+    if clean_space(item.get("id")) and clean_space(item.get("name"))
+  }
   required: list[dict[str, str]] = []
   travelers: list[dict[str, str]] = []
   jinxes: list[dict[str, str]] = []
   notes: list[str] = []
-  for item in json_items(data):
+  nested_reasons: set[str] = set()
+  for item in items:
     if clean_space(item.get("id")) == "_meta":
       for note in item.get("notes", []):
         if isinstance(note, dict):
@@ -629,6 +636,19 @@ def expected_script_entries(
       travelers.append(entry)
     else:
       required.append(entry)
+    for nested in item.get("jinxes", []):
+      if not isinstance(nested, dict):
+        continue
+      reason = clean_space(nested.get("reason") or nested.get("ability"))
+      target = names_by_id.get(clean_space(nested.get("id")), clean_space(nested.get("name")))
+      if not reason or not target or reason in nested_reasons:
+        continue
+      nested_reasons.add(reason)
+      jinxes.append({
+        "name": f"{name}&{target}",
+        "team": "jinx",
+        "ability": reason,
+      })
   return required, travelers, jinxes, notes
 
 
@@ -694,13 +714,25 @@ def known_character_names() -> set[str]:
   return set(known_character_teams())
 
 
+def match_known_character_name(value: Any, known_names: set[str]) -> str:
+  text = clean_space(value)
+  if text in known_names:
+    return text
+  normalized = normalized_ocr_text(text)
+  candidates = [name for name in known_names if normalized_ocr_text(name) == normalized]
+  if not candidates:
+    return ""
+  comparable = text.replace("•", "·").replace("‧", "·")
+  return max(candidates, key=lambda name: (SequenceMatcher(None, comparable, name).ratio(), name))
+
+
 def detected_heading_characters(lines: list[dict[str, Any]]) -> list[str]:
   known_names = known_character_names()
   detected: list[str] = []
   for line in lines:
-    text = clean_space(line.get("text"))
+    text = match_known_character_name(line.get("text"), known_names)
     height = float(line.get("height", 0))
-    if height >= 0.012 and text in known_names and text not in detected:
+    if height >= 0.012 and text and text not in detected:
       detected.append(text)
   return detected
 
@@ -737,9 +769,9 @@ def detected_heading_character_details(lines: list[dict[str, Any]]) -> list[dict
   details: list[dict[str, Any]] = []
   seen: set[tuple[str, str]] = set()
   for line in sorted(lines, key=lambda value: (-float(value.get("y", 0)), float(value.get("x", 0)))):
-    name = clean_space(line.get("text"))
+    name = match_known_character_name(line.get("text"), known_names)
     x = float(line.get("x", 0))
-    if name not in known_names or float(line.get("height", 0)) < 0.012 or x > 0.85:
+    if not name or float(line.get("height", 0)) < 0.012 or x > 0.85:
       continue
     y = float(line.get("y", 0))
     marker = next((item for item in reversed(markers) if item["y"] > y), None)
@@ -792,7 +824,9 @@ def text_is_explained(text: str, known_texts: list[str]) -> bool:
   if len(normalized) < 4:
     return True
   return any(
-    normalized in normalized_ocr_text(known) or ngram_coverage(text, known) >= 0.6
+    normalized in normalized_ocr_text(known)
+    or ngram_coverage(text, known) >= 0.6
+    or SequenceMatcher(None, normalized, normalized_ocr_text(known)).ratio() >= 0.7
     for known in known_texts
     if known
   )
@@ -1296,6 +1330,7 @@ def parse_args() -> argparse.Namespace:
   parser.add_argument("--catalog-only", action="store_true")
   parser.add_argument("--reuse-catalog", action="store_true")
   parser.add_argument("--matched-only", action="store_true")
+  parser.add_argument("--opus-id", action="append", default=[])
   parser.add_argument("--start", type=int, default=0)
   parser.add_argument("--limit", type=int, default=0)
   parser.add_argument("--workers", type=int, default=4)
@@ -1357,7 +1392,12 @@ def main() -> None:
   if args.catalog_only:
     return
 
-  selected = [item for item in catalog if not args.matched_only or item.status == "matched"]
+  selected_ids = set(args.opus_id)
+  selected = [
+    item for item in catalog
+    if (not args.matched_only or item.status == "matched")
+    and (not selected_ids or item.opus_id in selected_ids)
+  ]
   selected = selected[max(0, args.start):]
   selected = selected[:args.limit] if args.limit > 0 else selected
   ocr_binary = build_ocr_tool(args.output) if args.review else None

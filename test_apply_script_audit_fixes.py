@@ -37,6 +37,21 @@ class FullRosterTest(unittest.TestCase):
     self.assertEqual(changes, ["移除 old-rule"])
     self.assertEqual([item["id"] for item in json.loads(updated)], ["_meta", "角色甲"])
 
+  def test_add_entry_before_existing_role(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "测试剧本"},
+      {"id": "b", "name": "角色乙", "team": "townsfolk"},
+    ], ensure_ascii=False, indent=2)
+    addition = {
+      "entry": {"id": "a", "name": "角色甲", "team": "townsfolk"},
+      "before": {"name": "角色乙", "team": "townsfolk"},
+    }
+
+    updated, changes = apply_fix(source, {"additions": [addition]})
+
+    self.assertEqual(changes, ["新增 角色甲"])
+    self.assertEqual([item["id"] for item in json.loads(updated)], ["_meta", "a", "b"])
+
 
 if __name__ == "__main__":
   unittest.main()

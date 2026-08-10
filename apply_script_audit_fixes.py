@@ -170,12 +170,28 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
   for addition in fix.get("additions", []):
     new_role = addition.get("entry")
     if not isinstance(new_role, dict):
-      new_role = source_role(
-        Path(addition["source_json"]),
-        addition["name"],
-        addition["team"],
-      )
+      if addition.get("source_json"):
+        new_role = source_role(
+          Path(addition["source_json"]),
+          addition["name"],
+          addition["team"],
+        )
+      else:
+        new_role = database_role(addition)
     if any(object_identity(item[2]) == object_identity(new_role) for item in parsed_objects(raw)):
+      continue
+    before = addition.get("before")
+    if isinstance(before, dict):
+      identity = (str(before.get("name", "")), str(before.get("team", "")))
+      matches = [item for item in parsed_objects(raw) if object_identity(item[2]) == identity]
+      if len(matches) != 1:
+        raise ValueError(f"新增角色定位目标不是唯一结果：{identity[1]}/{identity[0]}")
+      start, _, _ = matches[0]
+      line_start = raw.rfind("\n", 0, start) + 1
+      base_indent = raw[line_start:start]
+      role_text = formatted_object(new_role, base_indent)
+      raw = raw[:line_start] + f"{base_indent}{role_text},\n" + raw[line_start:]
+      changes.append(f"新增 {new_role['name']}")
       continue
     closing_index = raw.rfind("]")
     if closing_index < 0:
