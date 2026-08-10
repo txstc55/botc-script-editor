@@ -1,0 +1,220 @@
+[
+  {
+    "id": "_meta",
+    "name": "试胆大会",
+    "author": "Lei的剧本钟楼"
+  },
+  {
+    "id": "小精灵",
+    "name": "小精灵",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一个在场的镇民角色。如果你“疯狂”地证明你是该角色，当他死亡时你获得该角色的能力。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
+    "firstNight": 50,
+    "firstNightReminder": "对小精灵展示一个在场的镇民角色。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "疯狂",
+      "获得能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "绕着花园转圈圈，女孩跑得疯癫癫。男孩树上荡秋千，小精灵在谁心间？淑女微笑小镇边，贵族抡斧树长眠。容貌相似难分辨，谜底揭晓圣光现：小精灵呀是神仙。"
+  },
+  {
+    "id": "灵媒",
+    "name": "灵媒",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你可以选择一个善良角色，然后后你会得知两名存活玩家：其中一名玩家是这个角色。如果该角色不在场，这两名玩家中至少有一名是邪恶的。",
+    "image": "https://i.postimg.cc/q7NXcY79/image.png",
+    "firstNight": 40,
+    "firstNightReminder": "让灵媒选择一个善良角色。指向两名存活玩家，其中一名是该角色；如果该角色不在场，其中至少一名是邪恶的。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "善良角色",
+      "存活玩家"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "共情者",
+    "name": "共情者",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
+    "firstNight": 60,
+    "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+    "otherNight": 60,
+    "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
+  },
+  {
+    "id": "捉鬼专家",
+    "name": "捉鬼专家",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，如果与你邻近的存活玩家被选择，你会被唤醒。",
+    "image": "/audit_icons/试胆大会/捉鬼专家.png",
+    "firstNight": 10,
+    "firstNightReminder": "如果与捉鬼专家邻近的存活玩家被选择，唤醒捉鬼专家。",
+    "otherNight": 10,
+    "otherNightReminder": "如果与捉鬼专家邻近的存活玩家被选择，唤醒捉鬼专家。",
+    "reminders": [
+      "被唤醒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "灵能侦探",
+    "name": "灵能侦探",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家：你会得知他不是什么角色。如果他醉酒或中毒，改为得知他是什么角色。",
+    "image": "/audit_icons/试胆大会/灵能侦探.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 50,
+    "otherNightReminder": "让灵能侦探选择一名玩家。如果他清醒且健康，展示一个不是其角色的角色标记；如果他醉酒或中毒，展示他的角色标记。",
+    "reminders": [
+      "选择"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "博学者",
+    "name": "博学者",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
+  },
+  {
+    "id": "摄影记者",
+    "name": "摄影记者",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，你公开选择一名玩家，他当晚不会因其自身能力被唤醒。",
+    "image": "/audit_icons/试胆大会/摄影记者.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "不会被唤醒",
+      "已使用"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "化身幽灵",
+    "name": "化身幽灵",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "你死亡后的每个白天，可以私下询问说书人，说书人会用手指在你的背上写下一个有关恶魔的字符。",
+    "image": "/audit_icons/试胆大会/化身幽灵.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "酒鬼",
+    "name": "酒鬼",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "是酒鬼"
+    ],
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
+  },
+  {
+    "id": "捣蛋鬼",
+    "name": "捣蛋鬼",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "每个黎明，你转变为善良阵营；每个黄昏，你转变为邪恶阵营。",
+    "image": "/audit_icons/试胆大会/捣蛋鬼.png",
+    "firstNight": 90,
+    "firstNightReminder": "在黎明，让捣蛋鬼转变为善良阵营；在黄昏，让他转变为邪恶阵营。",
+    "otherNight": 90,
+    "otherNightReminder": "在黎明，让捣蛋鬼转变为善良阵营；在黄昏，让他转变为邪恶阵营。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "恐惧之灵",
+    "name": "恐惧之灵",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一名玩家：如果你提名他且他被处决，他的阵营落败。当你首次选择或更换目标时，所有玩家都会得知你选择了新的玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fearmonger.png",
+    "firstNight": 20,
+    "firstNightReminder": "恐惧之灵指向一名玩家，放置恐惧标记。宣布恐惧之灵选中或改变了目标。",
+    "otherNight": 20,
+    "otherNightReminder": "恐惧之灵指向一名玩家。如果与之前选择的不同，则更换恐惧标记并宣布恐惧之灵选中或改变了目标。",
+    "reminders": [
+      "恐惧"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "凶宅",
+    "name": "凶宅",
+    "edition": "custom",
+    "team": "fabled",
+    "ability": "每个夜晚，说书人可以选择一名存活玩家：他是邪恶的恶魔，与他邻近的两名存活玩家之一中毒，直到下次选择，上个被该能力选择的玩家会死亡。[-1恶魔，+1善良玩家]",
+    "image": "/audit_icons/试胆大会/凶宅.png",
+    "firstNight": 30,
+    "firstNightReminder": "说书人可以选择一名存活玩家：他成为邪恶的恶魔，与他邻近的两名存活玩家之一中毒。",
+    "otherNight": 30,
+    "otherNightReminder": "说书人可以选择一名存活玩家：他成为邪恶的恶魔，与他邻近的两名存活玩家之一中毒，上个被该能力选择的玩家死亡。",
+    "reminders": [
+      "是恶魔",
+      "中毒",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  }
+]

@@ -67,6 +67,16 @@ export function loadPlayFromJson(input: unknown, fileName = "导入剧本.json")
 
   script.name = cleanText(meta?.name) || cleanText((input as RawRecord)?.name) || "未命名剧本";
   script.author = cleanText(meta?.author) || cleanText((input as RawRecord)?.author);
+  script.builtInFirstNightEnabled = {
+    minionInfo: Object.prototype.hasOwnProperty.call(meta ?? {}, "minionInfo"),
+    demonInfo: Object.prototype.hasOwnProperty.call(meta ?? {}, "demonInfo"),
+  };
+  if (script.builtInFirstNightEnabled.minionInfo) {
+    script.builtInFirstNightOrders.minionInfo = parseNumber(meta?.minionInfo);
+  }
+  if (script.builtInFirstNightEnabled.demonInfo) {
+    script.builtInFirstNightOrders.demonInfo = parseNumber(meta?.demonInfo);
+  }
   script.notes = parseScriptNotes(meta);
 
   for (const rawItem of items) {

@@ -13,6 +13,7 @@ from typing import Any, Callable
 
 MINION_STYLE = "color: rgb(143, 23, 1); font-weight: 900;"
 TRAVELER_STYLE = "color: rgb(103, 14, 171); font-weight: 900;"
+TOWNSFOLK_STYLE = "color: rgb(14, 127, 207); font-weight: 900;"
 
 
 @dataclass(frozen=True)
@@ -41,13 +42,14 @@ NOTE_DEFINITIONS = (
     key="madness",
     label="疯狂",
     text=(
-      "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，"
+      "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，"
       "如不这么做会受到惩罚。"
     ),
     html=(
       f'<span style="{TRAVELER_STYLE}">疯狂</span>：'
-      "当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，"
-      "如不这么做会受到惩罚。"
+      f'当你陷入“<span style="{TRAVELER_STYLE}">疯狂</span>”时，意味着你需要向其他玩家'
+      f'<span style="{TOWNSFOLK_STYLE}">有诚意且努力</span>的证明某件事情，如不这么做会'
+      f'<span style="{MINION_STYLE}">受到惩罚</span>。'
     ),
     matches=lambda text: "当你陷入" in text and "疯狂" in text and "受到惩罚" in text,
     position_marker="当你陷入",
@@ -62,9 +64,13 @@ NOTE_DEFINITIONS = (
     ),
     html=(
       f'<span style="{MINION_STYLE}">中毒/醉酒</span>：'
-      "中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。"
-      "如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。"
-      "醉酒同理。"
+      f'<span style="{MINION_STYLE}">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，'
+      "说书人会做出这些玩家仍然具有能力的行为。如果"
+      f'<span style="{MINION_STYLE}">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出'
+      f'<span style="{MINION_STYLE}">错误信息</span>，'
+      f'<span style="{MINION_STYLE}">中毒</span>的玩家不会得知自己'
+      f'<span style="{MINION_STYLE}">中毒</span>。'
+      f'<span style="{MINION_STYLE}">醉酒</span>同理。'
     ),
     matches=lambda text: (
       "中毒" in text and "醉酒" in text and "失去能力" in text and
@@ -81,8 +87,12 @@ NOTE_DEFINITIONS = (
     ),
     html=(
       f'<span style="{MINION_STYLE}">中毒</span>：'
-      "中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。"
-      "如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。"
+      f'<span style="{MINION_STYLE}">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，'
+      "说书人会做出这些玩家仍然具有能力的行为。如果"
+      f'<span style="{MINION_STYLE}">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出'
+      f'<span style="{MINION_STYLE}">错误信息</span>，'
+      f'<span style="{MINION_STYLE}">中毒</span>的玩家不会得知自己'
+      f'<span style="{MINION_STYLE}">中毒</span>。'
     ),
     matches=lambda text: "中毒" in text and "失去能力" in text and "醉酒" not in text,
     position_marker="失去能力",
@@ -90,12 +100,17 @@ NOTE_DEFINITIONS = (
   NoteDefinition(
     key="not_first_night",
     label="*代表",
-    text="*代表：非首个夜晚",
-    html="<strong>*代表</strong>：非首个夜晚",
+    text="*代表非首个夜晚",
+    html="<strong>*代表</strong>非首个夜晚",
     matches=lambda text: "非首" in text and "夜晚" in text,
     position_marker="非首",
   ),
 )
+
+LEGACY_NOTE_TEXTS = {
+  "*代表：非首个夜晚",
+  "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。",
+}
 
 
 def clean_text(value: Any) -> str:
@@ -253,6 +268,7 @@ def process_metadata(
     canonical_texts = {
       clean_text(definition.text) for definition in NOTE_DEFINITIONS
     }
+    canonical_texts.update(clean_text(text) for text in LEGACY_NOTE_TEXTS)
     preserved = [
       note for note in existing
       if not isinstance(note, dict) or clean_text(note.get("text")) not in canonical_texts

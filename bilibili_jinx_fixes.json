@@ -318,6 +318,85 @@
       "additions": [
         {"entry": {"id": "提线木偶&小怪宝", "name": "提线木偶&小怪宝", "team": "jinx", "ability": "提线木偶会与一名爪牙玩家邻座，而不是恶魔。提线木偶不会被唤醒来决定是否照看小怪宝，也不会在照看小怪宝时得知自己是提线木偶。"}}
       ]
+    },
+    {
+      "targets": ["all_jsons/待整理json/874#梦回大唐-清清Jungle.json"],
+      "replacements": [
+        {
+          "old_name": "隐士&食人魔",
+          "old_team": "jinx",
+          "entry": {
+            "id": "隐士&食人魔",
+            "name": "隐士&食人魔",
+            "team": "jinx",
+            "ability": "1. 隐士不会获得食人魔的能力。2. 如果隐士在他的首个夜晚选择了一名玩家，隐士转变为他的阵营，否则不转变。"
+          }
+        }
+      ]
+    },
+    {
+      "targets": ["all_jsons/快速上手与角色主题竞赛剧本/海外快速上手剧本/#生生不息-Ekin.json"],
+      "removals": [
+        {"name": "暴乱&落难少女", "team": "jinx"},
+        {"name": "暴乱&麻脸巫婆", "team": "jinx"}
+      ]
+    },
+    {
+      "targets": ["all_jsons/万象星启体验剧本/剧本/#破晓之歌-夜雀.json"],
+      "removals": [
+        {"name": "食人族&罂粟种植者", "team": "jinx"}
+      ]
+    },
+    {
+      "targets": ["all_jsons/万象星启体验剧本/剧本/#确有神临-张顺风.json"],
+      "removals": [
+        {"id": "3_meta"},
+        {"id": "4_meta"},
+        {"id": "5_meta"},
+        {"name": "科学怪人&囚犯", "team": "jinx"}
+      ],
+      "replacements": [
+        {
+          "old_name": "科学怪人&酒鬼",
+          "old_team": "jinx",
+          "entry": {
+            "id": "科学怪人&酒鬼",
+            "name": "科学怪人&酒鬼",
+            "team": "jinx",
+            "ability": "恶魔不能获得酒鬼的能力。"
+          }
+        },
+        {
+          "old_name": "炼金术士&科学怪人",
+          "old_team": "jinx",
+          "entry": {
+            "id": "炼金术士&科学怪人",
+            "name": "炼金术士&科学怪人",
+            "team": "jinx",
+            "ability": "如果炼金术士拥有科学怪人的能力，炼金术士不会得知恶魔因此获得了哪个角色能力。"
+          }
+        },
+        {
+          "old_name": "科学怪人&牧驴者",
+          "old_team": "jinx",
+          "entry": {
+            "id": "科学怪人&牧驴者",
+            "name": "科学怪人&牧驴者",
+            "team": "jinx",
+            "ability": "如果在游戏开始前，说书人决定让恶魔获得牧驴者的能力，那么在盲抽袋中移除恶魔的角色标记，加入牧驴者的角色标记，抽到牧驴者角色标记的玩家是恶魔。"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "科学怪人&机械工",
+            "name": "科学怪人&机械工",
+            "team": "jinx",
+            "ability": "如果科学怪人让恶魔拥有机械工的能力，恶魔不会因机械工的能力改变角色，而是将机械工的能力替换为剧本外角色的能力。"
+          }
+        }
+      ]
     }
   ]
 }

@@ -18,11 +18,11 @@
     "notes": [
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
-        "text": "*代表：非首个夜晚",
-        "html": "<strong>*代表</strong>：非首个夜晚"
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
       }
     ]
   },
@@ -448,63 +448,22 @@
     "setup": 0
   },
   {
-    "id": "3_meta",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
-    "name": "",
-    "team": "jinx",
-    "setup": 0,
-    "remindersGlobal": [
-      "被得知"
-    ],
-    "ability": "如果盲抽袋里有邪恶角色，说书人在游戏内只能因为无神论者的能力而打破一次规则，且会有一名玩家得知一些与此相关的线索。此规则不可被打破。"
-  },
-  {
-    "id": "4_meta",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
-    "name": "",
-    "team": "jinx",
-    "setup": 0,
-    "ability": "如果盲抽袋里有邪恶角色，并且场上存在无神论者的能力时说书人被处决，改为持有无神论者能力的玩家的阵营落败。此规则不可被打破。"
-  },
-  {
-    "id": "5_meta",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
-    "name": "",
-    "team": "jinx",
-    "setup": 0,
-    "ability": "失忆者及宠妃都不能拥有无神论者的能力。"
-  },
-  {
-    "id": "1122000000222222222222222333_meta",
-    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+    "id": "科学怪人&酒鬼",
     "name": "科学怪人&酒鬼",
     "team": "jinx",
-    "setup": 0,
-    "ability": "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。"
+    "ability": "恶魔不能获得酒鬼的能力。"
   },
   {
-    "id": "112222222222435325645742222222222222333_meta",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/alchemist.png",
+    "id": "炼金术士&科学怪人",
     "name": "炼金术士&科学怪人",
     "team": "jinx",
-    "setup": 0,
-    "ability": "如果炼金术士拥有科学怪人的能力，炼金术士不会得知恶魔因此获得了哪个角色的能力。"
+    "ability": "如果炼金术士拥有科学怪人的能力，炼金术士不会得知恶魔因此获得了哪个角色能力。"
   },
   {
-    "id": "1122000000222222222222233_meta",
-    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
-    "name": "科学怪人&囚犯",
-    "team": "jinx",
-    "setup": 0,
-    "ability": "如果恶魔被释放，改为恶魔在当晚获得那个角色的能力并且不会转变阵营。"
-  },
-  {
-    "id": "112200000022222222222222233_meta",
-    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+    "id": "科学怪人&牧驴者",
     "name": "科学怪人&牧驴者",
     "team": "jinx",
-    "setup": 0,
-    "ability": "如果在游戏开始前，说书人决定让恶魔获得牧驴者的能力，那么在盲抽袋中移除恶魔的角色标记，加入牧驴者的角色标记，抽到牧驴者的玩家是恶魔。"
+    "ability": "如果在游戏开始前，说书人决定让恶魔获得牧驴者的能力，那么在盲抽袋中移除恶魔的角色标记，加入牧驴者的角色标记，抽到牧驴者角色标记的玩家是恶魔。"
   },
   {
     "firstNightReminder": "",
@@ -547,5 +506,11 @@
     "firstNight": 0,
     "otherNight": 0,
     "isOfficial": false
+  },
+  {
+    "id": "科学怪人&机械工",
+    "name": "科学怪人&机械工",
+    "team": "jinx",
+    "ability": "如果科学怪人让恶魔拥有机械工的能力，恶魔不会因机械工的能力改变角色，而是将机械工的能力替换为剧本外角色的能力。"
   }
 ]

@@ -121,12 +121,18 @@ def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
 def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
   changes: list[str] = []
   for removal in fix.get("removals", []):
-    identity = (removal["name"], removal["team"])
-    matches = [item for item in parsed_objects(raw) if object_identity(item[2]) == identity]
+    removal_id = str(removal.get("id", "")).strip()
+    if removal_id:
+      matches = [item for item in parsed_objects(raw) if str(item[2].get("id", "")).strip() == removal_id]
+      label = removal_id
+    else:
+      identity = (removal["name"], removal["team"])
+      matches = [item for item in parsed_objects(raw) if object_identity(item[2]) == identity]
+      label = identity[0]
     if not matches:
       continue
     if len(matches) != 1:
-      raise ValueError(f"待移除角色不是唯一结果：{identity[1]}/{identity[0]}")
+      raise ValueError(f"待移除角色不是唯一结果：{label}")
     start, end, _ = matches[0]
     line_start = raw.rfind("\n", 0, start) + 1
     trailing = re.match(r",[ \t]*\r?\n", raw[end:])
@@ -135,7 +141,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     else:
       prefix = raw[:line_start].rstrip()
       raw = prefix.removesuffix(",") + raw[end:]
-    changes.append(f"移除 {identity[0]}")
+    changes.append(f"移除 {label}")
 
   for replacement in fix.get("replacements", []):
     old_identity = (replacement["old_name"], replacement["old_team"])

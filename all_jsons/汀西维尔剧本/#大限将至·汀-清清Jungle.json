@@ -1,0 +1,292 @@
+[
+  {
+    "id": "_meta",
+    "name": "大限将至",
+    "author": "清清Jungle"
+  },
+  {
+    "id": "洗衣妇",
+    "name": "洗衣妇",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知两名玩家和一个镇民角色：这两名玩家之一是该角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/washerwoman.png",
+    "firstNight": 35,
+    "firstNightReminder": "展示那个镇民角色标记。指向被你标记“镇民”和“错误”的两名玩家。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "错误",
+      "镇民"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "图书管理员",
+    "name": "图书管理员",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知两名玩家和一个外来者角色：这两名玩家之一是该角色（或者你会得知没有外来者在场）。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/librarian.png",
+    "firstNight": 36,
+    "firstNightReminder": "唤醒图书管理员，对他指向两名玩家，并展示一个外来者角色标记。这两名玩家其中之一是这个外来者。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "外来者",
+      "错误"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "祖母",
+    "name": "祖母",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一名善良玩家和他的角色。如果恶魔杀死了他，你也会死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/grandmother.png",
+    "firstNight": 43,
+    "firstNightReminder": "指向她的孙子玩家，并展示该玩家的角色标记。",
+    "otherNight": 66,
+    "otherNightReminder": "如果孙子被恶魔杀死，祖母也会一同死亡。标记祖母死亡。",
+    "reminders": [
+      "孙子",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "舞蛇人",
+    "name": "舞蛇人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
+    "firstNight": 20,
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "otherNight": 12,
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
+  },
+  {
+    "id": "半兽人",
+    "name": "半兽人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名存活玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。会有一名善良玩家始终被当作邪恶阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lycanthrope.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 30,
+    "otherNightReminder": "唤醒半兽人，让他选择一名玩家。如果该玩家是善良玩家，该玩家死亡，且当晚恶魔不会造成死亡。",
+    "reminders": [
+      "失足",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "博学者",
+    "name": "博学者",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
+  },
+  {
+    "id": "守夜人",
+    "name": "守夜人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知你是守夜人。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
+    "firstNight": 56,
+    "firstNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+    "otherNight": 95,
+    "otherNightReminder": "守夜人可以指向一名玩家。如果他这么做，则唤醒那名玩家，告知其被守夜人选中，且告知他守夜人是谁。",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window..."
+  },
+  {
+    "id": "食人族",
+    "name": "食人族",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "你拥有上个死于处决的玩家的能力。如果该玩家属于邪恶阵营，你中毒直到下个善良玩家死于处决。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "中毒",
+      "饱餐"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我讨厌小丑的味道。吃起来会让我想笑。"
+  },
+  {
+    "id": "酒鬼",
+    "name": "酒鬼",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "是酒鬼"
+    ],
+    "setup": 1,
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
+  },
+  {
+    "id": "解谜大师",
+    "name": "解谜大师",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/puzzlemaster.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "已猜测",
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "限",
+    "name": "限",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "在等同于初始外来者数量的夜晚，所有镇民玩家中毒直到下个黄昏。[外来者数量任意]",
+    "image": "https://clocktower-wiki.gstonegames.com/images/b/b9/Xaan.png",
+    "firstNight": 17,
+    "firstNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "otherNight": 8,
+    "otherNightReminder": "如果夜晚天数等于初始外来者数量，所有镇民玩家中毒到下个黄昏。",
+    "reminders": [
+      "大限将至",
+      "第一晚",
+      "第三晚",
+      "第二晚",
+      "第四晚"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "他们接连倒下。一个，又一个。两个，三个，五个。"
+  },
+  {
+    "id": "科学怪人",
+    "name": "科学怪人",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "恶魔拥有一个不在场的善良角色的能力，即使他醉酒或中毒。你和他都知道他获得了什么能力。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+    "firstNight": 1,
+    "firstNightReminder": "（分别或同时）唤醒科学怪人和恶魔，通知他们恶魔因为科学怪人而获得的善良角色的能力。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。"
+  },
+  {
+    "id": "利维坦",
+    "name": "利维坦",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "如果多于一名善良玩家被处决，邪恶阵营获胜。所有玩家都知道利维坦在场。在第五个白天结束时，邪恶阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
+    "firstNight": 53,
+    "firstNightReminder": "放置利维坦的第一天标记，宣告利维坦在场，现在是第一天。",
+    "otherNight": 73,
+    "otherNightReminder": "将利维坦的标记转换到下一天。",
+    "reminders": [
+      "善良被处决",
+      "第一天",
+      "第三天",
+      "第二天",
+      "第五天",
+      "第四天"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "暴乱",
+    "name": "暴乱",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "被提名的玩家死亡，但他可以立刻再次发起提名（第三天白天他必须这么做）。在第三个白天结束时，邪恶阵营获胜。[所有爪牙都是暴乱]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/riot.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "科学怪人&酒鬼",
+    "name": "科学怪人&酒鬼",
+    "team": "jinx",
+    "ability": "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
+    "setup": 0
+  },
+  {
+    "id": "利维坦&祖母",
+    "name": "利维坦&祖母",
+    "team": "jinx",
+    "ability": "如果利维坦在场，孙子死于处决，祖母会一同死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
+    "setup": 0
+  },
+  {
+    "id": "暴乱&祖母",
+    "name": "暴乱&祖母",
+    "team": "jinx",
+    "ability": "如果暴乱在场，孙子在白天死亡，祖母会一同死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/riot.png",
+    "setup": 0
+  }
+]
