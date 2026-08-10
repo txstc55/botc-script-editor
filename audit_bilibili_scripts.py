@@ -37,6 +37,7 @@ SCRIPT_NAME_RE = re.compile(r"《([^》]+)》|“([^”]+)”")
 VERSION_RE = re.compile(r"(?i)(?:[-_ ]?(?:v(?:er(?:sion)?)?\s*)?\d+(?:\.\d+)*)$")
 LEADING_FILE_NUMBER_RE = re.compile(r"^\s*\d*#\s*")
 PARENTHETICAL_RE = re.compile(r"[（(][^）)]*[）)]")
+CJK_TITLE_RE = re.compile(r"[\u3400-\u9fff\U00020000-\U0003134f]{3,}")
 PAGE_FETCH_LOCK = threading.Lock()
 PAGE_FETCH_INTERVAL = 1.25
 page_fetch_not_before = 0.0
@@ -235,7 +236,26 @@ def local_script_names(path: Path, meta_script_name: str) -> list[str]:
   without_author = stem.rsplit("-", 1)[0].strip() if "-" in stem else stem
   without_parenthetical = PARENTHETICAL_RE.sub("", without_author).strip()
   names = [meta_script_name, stem, without_author, without_parenthetical]
+  for name in list(names):
+    cjk_title = bilingual_cjk_title(name)
+    if cjk_title:
+      names.append(cjk_title)
   return list(dict.fromkeys(name for name in names if clean_space(name)))
+
+
+def bilingual_cjk_title(value: str) -> str:
+  """Return the Chinese title from a bilingual title, not a subtitle after a dash."""
+  text = clean_space(value).lstrip("#《【")
+  leading = CJK_TITLE_RE.match(text)
+  if leading:
+    rest = text[leading.end():].lstrip()
+    return leading.group() if rest and rest[0].isascii() and rest[0].isalpha() else ""
+  if not text or not text[0].isascii() or not text[0].isalpha():
+    return ""
+  matches = list(CJK_TITLE_RE.finditer(text))
+  if len(matches) != 1:
+    return ""
+  return matches[0].group()
 
 
 def load_local_scripts(root: Path) -> list[LocalScript]:

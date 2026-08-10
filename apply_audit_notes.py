@@ -30,12 +30,12 @@ NOTE_DEFINITIONS = (
   NoteDefinition(
     key="possible",
     label="可能",
-    text="可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+    text="可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
     html=(
       f'<span style="{TRAVELER_STYLE}">可能</span>：'
-      "某件事情“可能”发生，代表由说书人来决定该事情是否发生。"
+      "某件事“可能”发生，代表说书人决定该事情是否发生。"
     ),
-    matches=lambda text: bool(re.search(r"某件事情.{0,3}可能.{0,3}发生", text)),
+    matches=lambda text: bool(re.search(r"某件事(?:情)?.{0,3}可能.{0,3}发生", text)),
     position_marker="某件事情",
   ),
   NoteDefinition(
@@ -109,6 +109,7 @@ NOTE_DEFINITIONS = (
 
 LEGACY_NOTE_TEXTS = {
   "*代表：非首个夜晚",
+  "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
   "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。",
 }
 

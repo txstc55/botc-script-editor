@@ -4,6 +4,7 @@ import unittest
 
 from audit_bilibili_scripts import (
   OpusLink,
+  bilingual_cjk_title,
   extract_script_name,
   is_collection_link,
   is_script_link,
@@ -30,6 +31,13 @@ class CatalogLinkTest(unittest.TestCase):
   def test_unrelated_role_post_is_not_a_script(self) -> None:
     link = OpusLink("5", "【染钟楼】角色投稿《测试角色》")
     self.assertFalse(is_script_link(link))
+
+  def test_bilingual_title_exposes_chinese_alias(self) -> None:
+    self.assertEqual(bilingual_cjk_title("天外寒情 It's Cold Outside"), "天外寒情")
+    self.assertEqual(bilingual_cjk_title("The Road Not Taken 未行之路"), "未行之路")
+
+  def test_dash_suffix_is_not_a_title_alias(self) -> None:
+    self.assertEqual(bilingual_cjk_title("全员谜语人-华灯初上"), "")
 
 
 if __name__ == "__main__":
