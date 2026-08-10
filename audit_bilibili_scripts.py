@@ -838,6 +838,11 @@ def text_is_explained(text: str, known_texts: list[str]) -> bool:
   return any(
     normalized in normalized_ocr_text(known)
     or (
+      re.fullmatch(r"[\u3400-\u9fff]{2,}", clean_space(known))
+      and re.search(r"[A-Za-z]", text)
+      and normalized.startswith(normalized_ocr_text(known))
+    )
+    or (
       len(normalized_ocr_text(known)) >= 3
       and normalized_ocr_text(known) in normalized
     )

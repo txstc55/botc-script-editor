@@ -88,6 +88,7 @@ class CatalogLinkTest(unittest.TestCase):
 
   def test_known_chinese_name_explains_bilingual_heading(self) -> None:
     self.assertTrue(text_is_explained("诡诈杰克 Knaves", ["诡诈杰克"]))
+    self.assertTrue(text_is_explained("调神 Godofug", ["调神"]))
 
   def test_standard_note_label_is_not_a_character_heading(self) -> None:
     self.assertEqual(match_known_character_name("“疯狂”", {"“疯狂”"}), "")

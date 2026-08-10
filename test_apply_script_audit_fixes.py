@@ -1,5 +1,7 @@
 import json
+import tempfile
 import unittest
+from pathlib import Path
 from unittest.mock import patch
 
 from apply_script_audit_fixes import apply_fix, database_role, rebuild_full_roster
@@ -92,6 +94,22 @@ class FullRosterTest(unittest.TestCase):
 
     self.assertEqual(role["firstNight"], 4)
 
+  def test_source_json_role_applies_script_specific_overrides(self):
+    with tempfile.TemporaryDirectory() as directory:
+      path = Path(directory) / "source.json"
+      path.write_text(json.dumps([
+        {"name": "角色甲", "team": "townsfolk", "firstNight": 1},
+      ], ensure_ascii=False), encoding="utf-8")
+
+      role = database_role({
+        "source_json": str(path),
+        "name": "角色甲",
+        "team": "townsfolk",
+        "overrides": {"firstNight": 4},
+      })
+
+    self.assertEqual(role["firstNight"], 4)
+
   def test_database_override_updates_existing_entry(self):
     source = json.dumps([
       {"id": "_meta", "name": "测试剧本"},
@@ -116,6 +134,29 @@ class FullRosterTest(unittest.TestCase):
 
     self.assertEqual(changes, ["更新 角色甲"])
     self.assertEqual(json.loads(updated)[1]["firstNight"], 4)
+
+  def test_patch_updates_existing_entry_without_replacing_other_fields(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "测试剧本"},
+      {
+        "id": "角色甲",
+        "name": "角色甲",
+        "team": "townsfolk",
+        "ability": "剧本专属能力",
+        "firstNight": 0,
+      },
+    ], ensure_ascii=False, indent=2)
+
+    updated, changes = apply_fix(source, {"additions": [{
+      "name": "角色甲",
+      "team": "townsfolk",
+      "patch": {"firstNight": 4},
+    }]})
+
+    role = json.loads(updated)[1]
+    self.assertEqual(changes, ["更新 角色甲"])
+    self.assertEqual(role["ability"], "剧本专属能力")
+    self.assertEqual(role["firstNight"], 4)
 
   def test_meta_updates_replace_selected_fields(self):
     source = json.dumps([

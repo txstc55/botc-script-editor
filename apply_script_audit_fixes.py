@@ -83,6 +83,14 @@ def database_role(spec: dict[str, Any]) -> dict[str, Any]:
   if isinstance(entry, dict):
     return entry
 
+  source_json = spec.get("source_json")
+  if source_json:
+    role = source_role(Path(source_json), spec["name"], spec["team"])
+    overrides = spec.get("overrides")
+    if isinstance(overrides, dict):
+      role.update(overrides)
+    return role
+
   from audit_bilibili_scripts import clean_space
   from extract_audit_role_replacements import row_entry
 
@@ -172,16 +180,22 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     changes.append(f"{old_identity[0]} -> {new_role['name']}")
 
   for addition in fix.get("additions", []):
-    new_role = addition.get("entry")
-    explicit_entry = isinstance(new_role, dict) or isinstance(addition.get("overrides"), dict)
-    if not isinstance(new_role, dict):
-      if addition.get("source_json"):
-        new_role = source_role(
-          Path(addition["source_json"]),
-          addition["name"],
-          addition["team"],
-        )
-      else:
+    current_patch = addition.get("patch")
+    if isinstance(current_patch, dict):
+      identity = (addition["name"], addition["team"])
+      current_matches = [
+        item for item in parsed_objects(raw)
+        if object_identity(item[2]) == identity
+      ]
+      if len(current_matches) != 1:
+        raise ValueError(f"待更新角色不是唯一结果：{identity[1]}/{identity[0]}")
+      new_role = dict(current_matches[0][2])
+      new_role.update(current_patch)
+      explicit_entry = True
+    else:
+      new_role = addition.get("entry")
+      explicit_entry = isinstance(new_role, dict) or isinstance(addition.get("overrides"), dict)
+      if not isinstance(new_role, dict):
         new_role = database_role(addition)
     matches = [
       item for item in parsed_objects(raw)
