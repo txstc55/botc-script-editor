@@ -11,13 +11,19 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
   "ocr_required_character_count": 25,
   "ocr_missing_characters": [],
-  "ocr_travelers_seen": [],
+  "ocr_travelers_seen": [
+    "巫毒师",
+    "乞丐",
+    "流莺",
+    "替罪羊",
+    "集骨者"
+  ],
   "ocr_ability_checks": [
     {
       "name": "赏金猎人",
@@ -142,11 +148,37 @@
     {
       "name": "痢蛭",
       "team": "demon",
-      "ability_coverage": 0.7308
+      "ability_coverage": 1.0
     }
   ],
   "ocr_ability_mismatches": [],
-  "ocr_traveler_checks": [],
+  "ocr_traveler_checks": [
+    {
+      "name": "巫毒师",
+      "team": "traveler",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "乞丐",
+      "team": "traveler",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "流莺",
+      "team": "traveler",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "替罪羊",
+      "team": "traveler",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "集骨者",
+      "team": "traveler",
+      "ability_coverage": 1.0
+    }
+  ],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
@@ -184,9 +216,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "死亡时你才会一同死亡。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -631,12 +661,12 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "死亡时你才会一同死亡。"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

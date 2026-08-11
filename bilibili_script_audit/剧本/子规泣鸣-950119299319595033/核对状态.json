@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -224,9 +224,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "相克规则：提续水偶会与一名爪牙玩凉邻座，而不是恶魔，提续木偶不会校映醒来"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -622,8 +620,16 @@
       "y": 0.18169
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "相克规则：提续水偶会与一名爪牙玩凉邻座，而不是恶魔，提续木偶不会校映醒来"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "该行是 OCR 对提线木偶与小怪宝相克规则的误识别。JSON 与软件生成图已包含提线木偶&小怪宝、瘟疫医生&蛊雕、瘟疫医生&提线木偶三条完整相克规则；角色、能力、底部说明及双侧夜序也已逐项核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
