@@ -117,21 +117,32 @@ const previewSections = computed<PreviewSection[]>(() => {
   const roleSections = previewTeamOrder.map((team) => ({
     key: team,
     label: props.script.teams[team].label,
-    roles: props.script.teams[team].roles.filter((role) => role.selected),
+    roles: uniquePreviewRoles(props.script.teams[team].roles.filter((role) => role.selected)),
   }));
   const fabledSection: PreviewSection = {
     key: "fabled",
     label: "传奇角色",
-    roles: props.script.fabled,
+    roles: uniquePreviewRoles(props.script.fabled),
   };
   const travelerSection: PreviewSection = {
     key: "traveler",
     label: "剧本旅行者",
-    roles: props.script.teams.traveler.roles.filter((role) => role.selected),
+    roles: uniquePreviewRoles(props.script.teams.traveler.roles.filter((role) => role.selected)),
   };
 
   return [...roleSections, fabledSection, travelerSection].filter((section) => section.roles.length > 0);
 });
+
+function uniquePreviewRoles<T extends { name: string }>(roles: T[]): T[] {
+  const seen = new Set<string>();
+  return roles.filter((role) => {
+    if (seen.has(role.name)) {
+      return false;
+    }
+    seen.add(role.name);
+    return true;
+  });
+}
 
 const firstNightOrder = computed(() => withNightOrderColors(buildFirstNightOrderItems(props.script)));
 const otherNightOrder = computed(() => withNightOrderColors(buildOtherNightOrderItems(props.script)));
