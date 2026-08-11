@@ -9,16 +9,17 @@
   "status": "matched",
   "source_images": [
     "对照图-01.png",
-    "对照图-02.png",
-    "对照图-03.png"
+    "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 23,
-  "ocr_required_character_count": 23,
+  "ocr_character_matches": 24,
+  "ocr_required_character_count": 24,
   "ocr_missing_characters": [],
-  "ocr_name_confirmed_by_ability": [],
+  "ocr_name_confirmed_by_ability": [
+    "变脸师"
+  ],
   "ocr_heading_characters": [
     "天机阁",
     "钟表匠",
@@ -59,7 +60,7 @@
     {
       "name": "司簿",
       "team": "townsfolk",
-      "ability_coverage": 0.8788
+      "ability_coverage": 1.0
     },
     {
       "name": "钦天监",
@@ -152,6 +153,11 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "变脸师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "食人族",
       "team": "townsfolk",
       "ability_coverage": 1.0
@@ -165,7 +171,13 @@
   "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "迷沙陷阱",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
@@ -193,9 +205,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "如築德提複的界沒有直能購你是近的人會「產發劣：絲月”，但每后"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -382,175 +392,12 @@
         }
       ],
       "required_character_matches": 23
-    },
-    {
-      "image": "对照图-03.png",
-      "heading_characters": [
-        "钟表匠",
-        "店小二",
-        "司簿",
-        "钦天监",
-        "占卜师",
-        "共情者",
-        "熊孩子",
-        "档案管理员",
-        "魔像",
-        "月之子",
-        "食人魔",
-        "天机阁",
-        "卖花女孩",
-        "提夫林",
-        "神谕者",
-        "博学者",
-        "食人族",
-        "悟道者",
-        "昏君",
-        "迷沙陷阱",
-        "凶星",
-        "绮月"
-      ],
-      "heading_character_details": [
-        {
-          "name": "天机阁",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.869
-        },
-        {
-          "name": "钟表匠",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.86628
-        },
-        {
-          "name": "店小二",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.8225
-        },
-        {
-          "name": "卖花女孩",
-          "team": "townsfolk",
-          "x": 0.56068,
-          "y": 0.80784
-        },
-        {
-          "name": "司簿",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.77326
-        },
-        {
-          "name": "提夫林",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.76
-        },
-        {
-          "name": "钦天监",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.72093
-        },
-        {
-          "name": "神谕者",
-          "team": "townsfolk",
-          "x": 0.56078,
-          "y": 0.702
-        },
-        {
-          "name": "占卜师",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.667
-        },
-        {
-          "name": "博学者",
-          "team": "townsfolk",
-          "x": 0.56078,
-          "y": 0.6555
-        },
-        {
-          "name": "共情者",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.619
-        },
-        {
-          "name": "熊孩子",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.571
-        },
-        {
-          "name": "食人族",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.5565
-        },
-        {
-          "name": "档案管理员",
-          "team": "townsfolk",
-          "x": 0.14703,
-          "y": 0.52168
-        },
-        {
-          "name": "悟道者",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.51
-        },
-        {
-          "name": "魔像",
-          "team": "outsider",
-          "x": 0.14706,
-          "y": 0.446
-        },
-        {
-          "name": "昏君",
-          "team": "outsider",
-          "x": 0.56275,
-          "y": 0.4345
-        },
-        {
-          "name": "月之子",
-          "team": "outsider",
-          "x": 0.14706,
-          "y": 0.3968
-        },
-        {
-          "name": "迷沙陷阱",
-          "team": "outsider",
-          "x": 0.56065,
-          "y": 0.39064
-        },
-        {
-          "name": "食人魔",
-          "team": "outsider",
-          "x": 0.14706,
-          "y": 0.35029
-        },
-        {
-          "name": "凶星",
-          "team": "minion",
-          "x": 0.34118,
-          "y": 0.28488
-        },
-        {
-          "name": "绮月",
-          "team": "demon",
-          "x": 0.31961,
-          "y": 0.1975
-        }
-      ],
-      "required_character_matches": 23
     }
   ],
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-02.png",
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "共情者",
@@ -580,12 +427,12 @@
   ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
-    "90a245bb1e06a4ec931d2254aa1b038744902471.png",
     "1204713c221a251589460bc8768c516044902471.png",
     "635834e521c29db559961667abc9144044902471.png"
   ],
   "source_image_added_ids": [
-    "635834e521c29db559961667abc9144044902471.png"
+    "635834e521c29db559961667abc9144044902471.png",
+    "1204713c221a251589460bc8768c516044902471.png"
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
@@ -723,8 +570,16 @@
       "y": 0.1975
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "如築德提複的界沒有直能購你是近的人會「產發劣：絲月”，但每后"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "该乱码来自 OCR 对绮月能力末句的错误拼接；绮月能力、24 个角色、迷沙陷阱规则和底部说明均已逐项核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

@@ -12,16 +12,15 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
-  "ocr_character_matches": 24,
-  "ocr_required_character_count": 26,
-  "ocr_missing_characters": [
-    "梼杌",
-    "Json 制作 By"
+  "ocr_character_matches": 25,
+  "ocr_required_character_count": 25,
+  "ocr_missing_characters": [],
+  "ocr_name_confirmed_by_ability": [
+    "梼杌"
   ],
-  "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "打更人",
     "钟表匠",
@@ -56,17 +55,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "打更人",
-      "team": "townsfolk",
-      "ability_coverage": 0.7885
-    },
-    {
       "name": "炼金术士",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "和尚",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -76,27 +65,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "女裁缝",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "水手",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "博学者",
-      "team": "townsfolk",
-      "ability_coverage": 0.6452
-    },
-    {
       "name": "郎中",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "歌伶",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -111,6 +85,31 @@
       "ability_coverage": 0.9615
     },
     {
+      "name": "打更人",
+      "team": "townsfolk",
+      "ability_coverage": 0.94
+    },
+    {
+      "name": "和尚",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "女裁缝",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "博学者",
+      "team": "townsfolk",
+      "ability_coverage": 0.6452
+    },
+    {
+      "name": "歌伶",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "罂粟种植者",
       "team": "townsfolk",
       "ability_coverage": 1.0
@@ -121,12 +120,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "畸形秀演员",
+      "name": "解谜大师",
       "team": "outsider",
       "ability_coverage": 1.0
     },
     {
-      "name": "解谜大师",
+      "name": "畸形秀演员",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -141,14 +140,14 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "教父",
-      "team": "minion",
-      "ability_coverage": 0.7018
-    },
-    {
       "name": "女巫",
       "team": "minion",
       "ability_coverage": 1.0
+    },
+    {
+      "name": "教父",
+      "team": "minion",
+      "ability_coverage": 0.7018
     },
     {
       "name": "魔鬼代言人",
@@ -161,30 +160,22 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "梼杌",
-      "team": "demon",
-      "ability_coverage": 0.449
-    },
-    {
       "name": "痢蛭",
       "team": "demon",
-      "ability_coverage": 0.7308
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "梼杌",
+      "team": "demon",
+      "ability_coverage": 0.9574
     },
     {
       "name": "穷奇",
       "team": "demon",
-      "ability_coverage": 0.5897
-    },
-    {
-      "name": "Json 制作 By",
-      "team": "fabled",
-      "ability_coverage": 0.0
+      "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "梼杌",
-    "Json 制作 By"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
@@ -217,11 +208,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "如果今天白天有外来者死亡，当晚改为你要选择一名玩家：他死亡，",
-    "但被当作仍然存活，随后会有一名其他玩家死亡。［+1外来者］",
-    "死亡时你才会一同死亡。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -598,17 +585,12 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "梼杌",
-      "Json 制作 By"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "如果今天白天有外来者死亡，当晚改为你要选择一名玩家：他死亡，",
-      "但被当作仍然存活，随后会有一名其他玩家死亡。［+1外来者］",
-      "死亡时你才会一同死亡。"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

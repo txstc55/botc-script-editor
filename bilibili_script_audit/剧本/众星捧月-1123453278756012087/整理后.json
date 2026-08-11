@@ -1,8 +1,8 @@
 [
   {
     "id": "_meta",
-    "name": "众星捧月",
-    "author": "幺丁",
+    "name": "众星捧月V5.1",
+    "author": "“好玩优先”—幺丁",
     "logo": "",
     "notes": [
       {
@@ -60,7 +60,7 @@
     "id": "司簿",
     "name": "司簿",
     "team": "townsfolk",
-    "ability": "在你的首个夜晚，你要选择一名玩家，你会得知该玩家及其相邻玩家的角色种类数量。",
+    "ability": "在你的首个夜晚，你要选择一名玩家，你会得知该玩家及其相邻玩家的角色类型数量。",
     "image": "https://www.bloodstar.xyz//p//comm503//extra-role//14_extrarole.png",
     "firstNight": 37,
     "firstNightReminder": "唤醒司簿，让他选择一名玩家，告诉他该玩家及其相邻玩家的角色种类数量。",
@@ -78,7 +78,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/qintianjian.png",
     "edition": "custom",
     "name": "钦天监",
-    "ability": "在你的首个夜晚，你会得知离你最近的邪恶玩家位于你的哪一侧（左/右/相同）。如果与你邻近的玩家中有邪恶阵营，你会得知错误信息。",
+    "ability": "在你的首个夜晚，你会得知离你最近的邪恶玩家位于你的哪一侧（左/右/相同）。如果与你邻近的玩家中有邪恶阵营，你会得知错误信息作为替代。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 62,
@@ -377,6 +377,26 @@
     "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "bianlianshi_button",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "name": "变脸师",
+    "setup": 0,
+    "reminders": [
+      "疯狂"
+    ],
+    "remindersGlobal": [
+      "是变脸师"
+    ],
+    "team": "townsfolk"
+  },
+  {
     "id": "chichichichichichichi111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
     "edition": "custom",
@@ -412,5 +432,11 @@
     ],
     "setup": 1,
     "flavor": ""
+  },
+  {
+    "id": "迷沙陷阱",
+    "name": "迷沙陷阱",
+    "team": "jinx",
+    "ability": "猎人的障眼法：迷沙陷阱不会必定在场。"
   }
 ]

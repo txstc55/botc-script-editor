@@ -12,17 +12,12 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 22,
-  "ocr_required_character_count": 26,
-  "ocr_missing_characters": [
-    "共情者",
-    "无神论者",
-    "灯神",
-    "私货商人"
-  ],
+  "ocr_character_matches": 23,
+  "ocr_required_character_count": 23,
+  "ocr_missing_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -36,14 +31,14 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "共情者",
+      "name": "修行者",
       "team": "townsfolk",
-      "ability_coverage": 0.5385
+      "ability_coverage": 1.0
     },
     {
-      "name": "气球驾驶员",
+      "name": "舞蛇人",
       "team": "townsfolk",
-      "ability_coverage": 0.4103
+      "ability_coverage": 1.0
     },
     {
       "name": "筑梦师",
@@ -51,7 +46,17 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "舞蛇人",
+      "name": "气球驾驶员",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "女裁缝",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "侍臣",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -66,17 +71,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "女裁缝",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "博学者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "侍臣",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -91,22 +86,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "无神论者",
-      "team": "townsfolk",
-      "ability_coverage": 0.5556
-    },
-    {
       "name": "疯子",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "畸形秀演员",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "政客",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -116,14 +96,19 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "政客",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "畸形秀演员",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "洗脑师",
       "team": "minion",
       "ability_coverage": 0.9574
-    },
-    {
-      "name": "哥布林",
-      "team": "minion",
-      "ability_coverage": 1.0
     },
     {
       "name": "男爵",
@@ -131,7 +116,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "麻脸巫婆",
+      "name": "哥布林",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -141,25 +126,17 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "利维坦",
-      "team": "demon",
+      "name": "麻脸巫婆",
+      "team": "minion",
       "ability_coverage": 1.0
     },
     {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.3333
-    },
-    {
-      "name": "私货商人",
-      "team": "fabled",
-      "ability_coverage": 0.5263
+      "name": "利维坦",
+      "team": "demon",
+      "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "气球驾驶员",
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
@@ -250,9 +227,7 @@
     "哥布林",
     "利维坦"
   ],
-  "ocr_unexpected_characters": [
-    "修行者"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
@@ -436,7 +411,7 @@
           "y": 0.19477
         }
       ],
-      "required_character_matches": 22
+      "required_character_matches": 23
     },
     {
       "image": "对照图-03.png",
@@ -598,7 +573,7 @@
           "y": 0.19477
         }
       ],
-      "required_character_matches": 22
+      "required_character_matches": 23
     }
   ],
   "ocr_source_board_groups": [
@@ -777,10 +752,9 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "气球驾驶员",
-      "灯神"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

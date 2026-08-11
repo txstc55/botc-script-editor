@@ -18,14 +18,12 @@
     "02e9e53e773f71b81dba45f554f343cb44902471.png",
     "c658d1ab12a557fd1fbf8320a96d308844902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
-  "ocr_required_character_count": 26,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 25,
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "副露怪",
     "黑山羊幼仔"
@@ -322,11 +320,6 @@
       "name": "绝望梦魇",
       "team": "demon",
       "ability_coverage": 0.9506
-    },
-    {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.6087
     }
   ],
   "ocr_ability_mismatches": [],
@@ -334,7 +327,7 @@
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
-      "name": "海德拉与噩兆双子",
+      "name": "海德拉&噩兆双子",
       "team": "jinx",
       "ability_coverage": 0.7368
     }
@@ -367,9 +360,7 @@
     "#代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "290 黒山羊幼仔"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -662,8 +653,16 @@
       ]
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "290 黒山羊幼仔"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图角色标题为“黑山羊幼仔”，OCR 将标题和图标噪声误判成底部孤立行“290 黒山羊幼仔”；原图没有额外规则。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

@@ -6259,6 +6259,533 @@
           ]
         }
       ]
+    },
+    {
+      "source": "Bilibili 862721022665687043 对照图-02",
+      "targets": [
+        "all_jsons/旋转木马快速上手剧本/#仇海溺行-Theo.json"
+      ],
+      "removals": [
+        {
+          "name": "无神论者",
+          "team": "townsfolk"
+        },
+        {
+          "name": "灯神",
+          "team": "fabled"
+        },
+        {
+          "name": "私货商人",
+          "team": "fabled"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "共情者",
+          "old_team": "townsfolk",
+          "entry": {
+            "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
+            "firstNight": 20,
+            "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
+            "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。",
+            "id": "shugenja",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
+            "name": "修行者",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "team": "townsfolk"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "name": "气球驾驶员",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]"
+          }
+        },
+        {
+          "name": "男爵",
+          "team": "minion",
+          "patch": {
+            "ability": "会有额外的外来者在场。[+2外来者]"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "图书管理员",
+            "调查员",
+            "修行者",
+            "舞蛇人",
+            "筑梦师",
+            "气球驾驶员",
+            "女裁缝",
+            "侍臣",
+            "城镇公告员",
+            "猎手",
+            "博学者",
+            "失忆者",
+            "魔术师"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "疯子",
+            "落难少女",
+            "政客",
+            "畸形秀演员"
+          ]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "洗脑师",
+            "男爵",
+            "哥布林",
+            "提线木偶",
+            "麻脸巫婆"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 880362291603701795 对照图-03",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/博物馆推荐/#仙境奇踪.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "meta_updates": {
+        "name": "仙境奇踪",
+        "notes": [
+          {
+            "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事情“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表由<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>来决定该事情是否发生。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      }
+    },
+    {
+      "source": "Bilibili 961275476890877961 对照图-03",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#以儆效尤-幽露萨暮.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "海德拉与噩兆双子",
+          "old_team": "jinx",
+          "entry": {
+            "id": "海德拉&噩兆双子",
+            "image": "https://www.bloodstar.xyz/p/ZhaoMarsh/A_Bad_Example/51_a_bad_example.png",
+            "name": "海德拉&噩兆双子",
+            "team": "jinx",
+            "remindersGlobal": [
+              "镇民",
+              "外来者",
+              "噩兆"
+            ],
+            "setup": 0,
+            "ability": "海德拉对噩兆双子生效时，两名双子均是邪恶双子。"
+          }
+        }
+      ],
+      "meta_updates": {
+        "author": "幽露萨暮"
+      }
+    },
+    {
+      "source": "Bilibili 1148473572068425731 对照图-02",
+      "targets": [
+        "all_jsons/待整理json/849#任意东西 Anything 12.18- 弦舞.json"
+      ],
+      "replacements": [
+        {
+          "old_name": "道具[吟游花间酒]",
+          "old_team": "fabled",
+          "entry": {
+            "id": "_211",
+            "image": "https://i.postimg.cc/q7BkvL7X/processed-icon.png",
+            "name": "吟游花间酒",
+            "team": "fabled",
+            "ability": "【当隐士/大象手持装有该“道具”的笨重的大物件后】当晚非恶魔玩家醉酒直到下个黄昏。"
+          }
+        },
+        {
+          "old_name": "道具[卷里书刀]",
+          "old_team": "fabled",
+          "entry": {
+            "id": "_212",
+            "image": "https://i.postimg.cc/6pPXBNDw/Shu-icon.png",
+            "name": "卷里书刀",
+            "team": "fabled",
+            "ability": "当晚恶魔可以额外选择一名玩家：他死亡。"
+          }
+        },
+        {
+          "old_name": "道具[巨龟六爻]",
+          "old_team": "fabled",
+          "entry": {
+            "id": "_213",
+            "image": "https://i.postimg.cc/yWq16CD5/300px-Zenomancer.png",
+            "name": "巨龟六爻",
+            "team": "fabled",
+            "ability": "1-2名玩家会拥有一个目标，当在下个黄昏前达成目标后，下个夜晚他会获得一条正确信息。"
+          }
+        },
+        {
+          "old_name": "道具[何染净垢]",
+          "old_team": "fabled",
+          "entry": {
+            "id": "_214",
+            "image": "https://i.postimg.cc/RhxC4zJ5/HE-icon.png",
+            "name": "何染净垢",
+            "team": "fabled",
+            "ability": "当有邪恶玩家的能力选择或影响与隐士/大象邻近的存活玩家时，改为此次能力不生效并持续至下个黄昏。"
+          }
+        },
+        {
+          "old_name": "不醉研究：科学怪人&酒鬼",
+          "old_team": "jinx",
+          "entry": {
+            "id": "科学怪人&酒鬼",
+            "image": "https://i.postimg.cc/LXwQc8LP/Boffin.png",
+            "name": "科学怪人&酒鬼",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "不醉研究：恶魔不能获得酒鬼的能力。"
+          }
+        },
+        {
+          "old_name": "莴苣姑娘：食人族&公主",
+          "old_team": "jinx",
+          "entry": {
+            "id": "食人族&公主",
+            "image": "https://i.postimg.cc/7Z9sxV0j/Princess.png",
+            "name": "食人族&公主",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "莴苣姑娘：如果食人族提名并处决了公主且公主因此死亡，当晚恶魔不会造成死亡。"
+          }
+        },
+        {
+          "old_name": "鹰象寓言：鹰身女妖&大象",
+          "old_team": "jinx",
+          "entry": {
+            "id": "鹰身女妖&大象",
+            "image": "https://i.postimg.cc/WbRfStsW/Harpy.png",
+            "name": "鹰身女妖&大象",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "鹰象寓言：鹰身女妖可以在夜晚选择两名玩家：明天第一名玩家需要“疯狂”地证明第二名玩家是大象，否则他们之中可能会有人死亡。"
+          }
+        }
+      ],
+      "meta_updates": {
+        "name": "任意东西"
+      },
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "祖母",
+            "小精灵",
+            "骑士",
+            "共情者",
+            "筑梦师",
+            "引路人",
+            "赌徒",
+            "城镇公告员",
+            "打更人",
+            "女裁缝",
+            "公主",
+            "博学者",
+            "食人族"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "大象",
+            "酒鬼",
+            "瘟疫医生",
+            "隐士"
+          ]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "投毒者",
+            "科学怪人",
+            "教父",
+            "鹰身女妖"
+          ]
+        },
+        {
+          "team": "demon",
+          "names": [
+            "姑获鸟",
+            "混沌",
+            "方古",
+            "牙噶巴卜"
+          ]
+        },
+        {
+          "team": "fabled",
+          "names": [
+            "装有道具の大物件",
+            "吟游花间酒",
+            "卷里书刀",
+            "巨龟六爻",
+            "何染净垢"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 925640292125638724 对照图-03",
+      "targets": [
+        "all_jsons/华灯初上剧本创作大赛/#众口铄金-勾陈.json"
+      ],
+      "removals": [
+        {
+          "name": "Json 制作 By",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "打更人",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚*，你要猜测今晚首个死亡的玩家与你的距离。如果你猜测正确，则除你以外的所有玩家今晚不会死亡，但你可能会死亡。"
+          }
+        },
+        {
+          "name": "梼杌",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。当你需要死亡时，改为一名存活且具有能力的爪牙失去能力。你不会得知恶魔信息。",
+            "otherNightReminder": "唤醒梼杌，让他选择一名玩家：他死亡。如果梼杌需要死亡，选择一名存活且具有能力的爪牙，让该爪牙失去能力，梼杌不会死亡。",
+            "reminders": [
+              "死亡",
+              "失去能力"
+            ]
+          }
+        },
+        {
+          "name": "痢蛭",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。"
+          }
+        },
+        {
+          "name": "穷奇",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果今天白天有外来者死亡，当晚改为你要选择一名玩家：他死亡，但被当作仍然存活，随后会有一名其他玩家死亡。[+1外来者]",
+            "otherNightReminder": "唤醒穷奇，让他选择一名玩家。如果今天白天有外来者死亡，他选择的玩家死亡但被当作仍然存活，随后决定另一名因穷奇能力死亡的玩家。",
+            "reminders": [
+              "死于今日",
+              "死亡",
+              "仍然存活"
+            ],
+            "setup": 1
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "钟表匠",
+            "炼金术士",
+            "阴阳师",
+            "水手",
+            "郎中",
+            "传教士",
+            "共情者",
+            "打更人",
+            "和尚",
+            "女裁缝",
+            "博学者",
+            "歌伶",
+            "罂粟种植者"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "逆臣",
+            "解谜大师",
+            "畸形秀演员",
+            "告密者"
+          ]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "赶尸人",
+            "女巫",
+            "教父",
+            "魔鬼代言人"
+          ]
+        },
+        {
+          "team": "demon",
+          "names": [
+            "方古",
+            "痢蛭",
+            "梼杌",
+            "穷奇"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1123453278756012087 对照图-02",
+      "targets": [
+        "all_jsons/BWG·剧本大乱斗/好玩优先—刘中奇厂牌/#众星捧月-幺丁/#众星捧月-幺丁.json"
+      ],
+      "additions": [
+        {
+          "name": "司簿",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "在你的首个夜晚，你要选择一名玩家，你会得知该玩家及其相邻玩家的角色类型数量。"
+          }
+        },
+        {
+          "name": "钦天监",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "在你的首个夜晚，你会得知离你最近的邪恶玩家位于你的哪一侧（左/右/相同）。如果与你邻近的玩家中有邪恶阵营，你会得知错误信息作为替代。"
+          }
+        },
+        {
+          "entry": {
+            "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
+            "edition": "custom",
+            "flavor": "",
+            "id": "bianlianshi_button",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "name": "变脸师",
+            "setup": 0,
+            "reminders": [
+              "疯狂"
+            ],
+            "remindersGlobal": [
+              "是变脸师"
+            ],
+            "team": "townsfolk"
+          },
+          "before": {
+            "name": "食人族",
+            "team": "townsfolk"
+          }
+        },
+        {
+          "entry": {
+            "id": "迷沙陷阱",
+            "name": "迷沙陷阱",
+            "team": "jinx",
+            "ability": "猎人的障眼法：迷沙陷阱不会必定在场。"
+          }
+        }
+      ],
+      "meta_updates": {
+        "name": "众星捧月V5.1",
+        "author": "“好玩优先”—幺丁"
+      },
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "钟表匠",
+            "店小二",
+            "司簿",
+            "钦天监",
+            "占卜师",
+            "共情者",
+            "熊孩子",
+            "档案管理员",
+            "天机阁",
+            "卖花女孩",
+            "提夫林",
+            "神谕者",
+            "博学者",
+            "变脸师",
+            "食人族",
+            "悟道者"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "魔像",
+            "月之子",
+            "食人魔",
+            "昏君",
+            "迷沙陷阱"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1123453278756012087 对照图-02；同名旧阵容副本",
+      "targets": [
+        "all_jsons/BWG·剧本大乱斗/BWG剧本大乱斗收录合集/#众星捧月-幺丁/#众星捧月-幺丁.json"
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "迷沙陷阱",
+            "name": "迷沙陷阱",
+            "team": "jinx",
+            "ability": "猎人的障眼法：迷沙陷阱不会必定在场。"
+          }
+        }
+      ],
+      "meta_updates": {
+        "name": "众星捧月V5.1",
+        "author": "“好玩优先”—幺丁"
+      },
+      "full_roster": {
+        "source_json": "all_jsons/BWG·剧本大乱斗/好玩优先—刘中奇厂牌/#众星捧月-幺丁/#众星捧月-幺丁.json",
+        "meta_fields": [
+          "notes"
+        ]
+      }
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",

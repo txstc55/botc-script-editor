@@ -60,23 +60,56 @@
     "firstNight": 19
   },
   {
-    "ability": "每个夜晚，你会得知与你邻近的两名存活的玩家中邪恶玩家的数量。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
+    "ability": "在你的首个夜晚，你会得知距离最近的邪恶玩家位于你的顺时针还是逆时针方向。如果两侧的邪恶玩家与你距离相等，你得知的信息由说书人决定。",
+    "firstNight": 20,
+    "firstNightReminder": "唤醒修行者，对他指向对应方向来告知他最近的邪恶玩家的方向。",
+    "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。",
+    "id": "shugenja",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shugenja.png",
+    "name": "修行者",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "team": "townsfolk"
+  },
+  {
+    "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
     "edition": "custom",
-    "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。",
-    "id": "21086_9661",
-    "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
-    "otherNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
-    "name": "共情者",
-    "otherNight": 7,
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。",
+    "id": "21086_9664",
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "name": "舞蛇人",
+    "otherNight": 4,
+    "setup": 0,
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "team": "townsfolk",
+    "firstNight": 16
+  },
+  {
+    "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
+    "edition": "custom",
+    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……",
+    "id": "21086_9663",
+    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
+    "name": "筑梦师",
+    "otherNight": 8,
     "setup": 0,
     "reminders": [],
     "remindersGlobal": [],
     "team": "townsfolk",
-    "firstNight": 20
+    "firstNight": 21
   },
   {
-    "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1 外来者]",
+    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1703695134_197011_652.png",
     "edition": "custom",
     "flavor": "",
@@ -98,38 +131,43 @@
     "firstNight": 23
   },
   {
-    "ability": "每个夜晚，你要选择除你及旅行者以外的一名玩家：你会得知一个善良角色和一个邪恶角色，该玩家是其中一个角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/dreamer.png",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
     "edition": "custom",
-    "flavor": "我记得有钟表匠……天空是红色的，有不规则的三角形不断从天上坠落下来。有紫罗兰的气味……还有气泡咕嘟咕嘟的声音。一个眼睛发光、还有着乱糟糟的胡须的女人对着天空发出嘶嘶声。然后，我醒了……",
-    "id": "21086_9663",
-    "firstNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
-    "otherNightReminder": "让筑梦师指向一名玩家。对他展示善良和邪恶的角色标记各一个，其中一个是属于该玩家的角色。",
-    "name": "筑梦师",
-    "otherNight": 8,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "townsfolk",
-    "firstNight": 21
-  },
-  {
-    "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
-    "edition": "custom",
-    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。",
-    "id": "21086_9664",
-    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
-    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
-    "name": "舞蛇人",
-    "otherNight": 4,
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。",
+    "id": "21086_9667",
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "name": "女裁缝",
+    "otherNight": 10,
     "setup": 0,
     "reminders": [
-      "中毒"
+      "失去能力"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
-    "firstNight": 16
+    "firstNight": 22
+  },
+  {
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
+    "edition": "custom",
+    "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
+    "id": "21086_9669",
+    "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+    "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
+    "name": "侍臣",
+    "otherNight": 3,
+    "setup": 0,
+    "reminders": [
+      "失去能力",
+      "醉酒1",
+      "醉酒2",
+      "醉酒3"
+    ],
+    "remindersGlobal": [],
+    "team": "townsfolk",
+    "firstNight": 15
   },
   {
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
@@ -169,24 +207,6 @@
     "firstNight": 0
   },
   {
-    "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
-    "edition": "custom",
-    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。",
-    "id": "21086_9667",
-    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
-    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
-    "name": "女裁缝",
-    "otherNight": 10,
-    "setup": 0,
-    "reminders": [
-      "失去能力"
-    ],
-    "remindersGlobal": [],
-    "team": "townsfolk",
-    "firstNight": 22
-  },
-  {
     "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
@@ -201,27 +221,6 @@
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0
-  },
-  {
-    "ability": "每局游戏限一次，在夜晚时，你可以选择一个角色：如果该角色在场，该角色之一从当晚开始醉酒三天三夜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
-    "edition": "custom",
-    "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。",
-    "id": "21086_9669",
-    "firstNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
-    "otherNightReminder": "侍臣可以选择一个角色。如果他这么做了，标记侍臣失去能力，标记被选择的角色所对应的玩家醉酒。之后的夜晚无需再唤醒侍臣。",
-    "name": "侍臣",
-    "otherNight": 3,
-    "setup": 0,
-    "reminders": [
-      "失去能力",
-      "醉酒1",
-      "醉酒2",
-      "醉酒3"
-    ],
-    "remindersGlobal": [],
-    "team": "townsfolk",
-    "firstNight": 15
   },
   {
     "ability": "你不知道你的能力是什么。每个白天你可以找说书人猜测一次，你会得知你的猜测有多准确。",
@@ -258,22 +257,6 @@
     "firstNight": 0
   },
   {
-    "ability": "说书人可以打破游戏规则。如果说书人被处决，善良阵营获胜，即使你已死亡。[无邪恶角色在场]",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/atheist.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "21086_9672",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "无神论者",
-    "otherNight": 0,
-    "setup": 1,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "townsfolk",
-    "firstNight": 0
-  },
-  {
     "ability": "你以为你是一个恶魔，但其实你不是。恶魔知道你是疯子以及你在每个夜晚选择了哪些玩家。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "edition": "custom",
@@ -291,38 +274,6 @@
     ],
     "team": "outsider",
     "firstNight": 13
-  },
-  {
-    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
-    "edition": "custom",
-    "flavor": "我不是怪物！我是人！求你了！",
-    "id": "21086_9674",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "畸形秀演员",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "outsider",
-    "firstNight": 0
-  },
-  {
-    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "politicianbutton",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "政客",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "outsider",
-    "firstNight": 0
   },
   {
     "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
@@ -343,6 +294,38 @@
     "firstNight": 12
   },
   {
+    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "politicianbutton",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "政客",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "outsider",
+    "firstNight": 0
+  },
+  {
+    "ability": "如果你“疯狂”地证明自己是外来者，你可能被处决。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
+    "edition": "custom",
+    "flavor": "我不是怪物！我是人！求你了！",
+    "id": "21086_9674",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "畸形秀演员",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "outsider",
+    "firstNight": 0
+  },
+  {
     "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
     "edition": "custom",
@@ -361,25 +344,7 @@
     "firstNight": 17
   },
   {
-    "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
-    "edition": "custom",
-    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？",
-    "id": "goblinbutton",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "哥布林",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [
-      "已宣称"
-    ],
-    "remindersGlobal": [],
-    "team": "minion",
-    "firstNight": 0
-  },
-  {
-    "ability": "会有额外的外来者在场。[+2 外来者]",
+    "ability": "会有额外的外来者在场。[+2外来者]",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baron.png",
     "edition": "custom",
     "flavor": "这个小镇没救了，不是么？廉价的外来劳动力……这就是问题所在。要我说，我会把他们全部调配到矿井里。不过是稍有些困难的工作，这不会伤害到任何人，要是有人提出反对意见就赏他一记耳光。这就是所谓的底线，不是么？",
@@ -395,17 +360,19 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
     "edition": "custom",
-    "flavor": "",
-    "id": "pit-hagbutton",
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？",
+    "id": "goblinbutton",
     "firstNightReminder": "",
-    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
-    "name": "麻脸巫婆",
-    "otherNight": 6,
+    "otherNightReminder": "",
+    "name": "哥布林",
+    "otherNight": 0,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "已宣称"
+    ],
     "remindersGlobal": [],
     "team": "minion",
     "firstNight": 0
@@ -429,6 +396,22 @@
     "firstNight": 14
   },
   {
+    "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "pit-hagbutton",
+    "firstNightReminder": "",
+    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
+    "name": "麻脸巫婆",
+    "otherNight": 6,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "minion",
+    "firstNight": 0
+  },
+  {
     "ability": "如果多于一名善良玩家被处决，邪恶阵营获胜。所有玩家都知道利维坦在场。在第五个白天结束时，邪恶阵营获胜。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
     "edition": "custom",
@@ -450,36 +433,6 @@
     "remindersGlobal": [],
     "team": "demon",
     "firstNight": 24
-  },
-  {
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "灯神",
-    "firstNight": 0,
-    "reminders": [],
-    "id": "djinnbutton",
-    "team": "fabled",
-    "name_eng": "Djinn",
-    "setup": 0,
-    "ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
-    "edition": "custom",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
-  },
-  {
-    "ability": "即使利维坦醉酒，所有玩家仍都会知道利维坦在场。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/1689518692_197011_1078.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "20723_8081",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "私货商人",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled",
-    "firstNight": 0
   },
   {
     "id": "提线木偶&气球驾驶员",

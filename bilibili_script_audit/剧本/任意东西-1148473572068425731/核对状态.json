@@ -9,12 +9,11 @@
   "status": "matched",
   "source_images": [
     "对照图-01.png",
-    "对照图-02.png",
-    "对照图-03.png"
+    "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-03.png",
+  "ocr_reference_image": "对照图-02.png",
   "ocr_heading_characters": [
     "装有道具の大物件",
     "祖母",
@@ -45,12 +44,6 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
-      "required_character_matches": 0
-    },
-    {
-      "image": "对照图-02.png",
       "heading_characters": [
         "\"镇民\"",
         "\"外来者\"",
@@ -79,7 +72,7 @@
       "required_character_matches": 0
     },
     {
-      "image": "对照图-03.png",
+      "image": "对照图-02.png",
       "heading_characters": [
         "祖母",
         "装有道具の大物件",
@@ -259,13 +252,13 @@
           "y": 0.17733
         }
       ],
-      "required_character_matches": 26
+      "required_character_matches": 30
     }
   ],
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "公主",
@@ -298,7 +291,6 @@
   ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
-    "204561f00656fe1bd1c1aed87ec5db8644902471.png",
     "4c004aad6620bfcbc6fc7850e9bc87c044902471.png",
     "603c589c103e3ec8cccc2e1d1fafc78144902471.png"
   ],
@@ -457,12 +449,7 @@
   "ocr_character_matches": 30,
   "ocr_required_character_count": 30,
   "ocr_missing_characters": [],
-  "ocr_name_confirmed_by_ability": [
-    "道具[吟游花间酒]",
-    "道具[卷里书刀]",
-    "道具[巨龟六爻]",
-    "道具[何染净垢]"
-  ],
+  "ocr_name_confirmed_by_ability": [],
   "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
@@ -472,32 +459,27 @@
       "ability_coverage": 0.7817
     },
     {
-      "name": "道具[吟游花间酒]",
+      "name": "吟游花间酒",
       "team": "fabled",
       "ability_coverage": 0.9091
     },
     {
-      "name": "道具[卷里书刀]",
+      "name": "卷里书刀",
       "team": "fabled",
-      "ability_coverage": 0.9143
-    },
-    {
-      "name": "道具[巨龟六爻]",
-      "team": "fabled",
-      "ability_coverage": 0.9464
-    },
-    {
-      "name": "道具[何染净垢]",
-      "team": "fabled",
-      "ability_coverage": 0.9516
-    },
-    {
-      "name": "祖母",
-      "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "骑士",
+      "name": "巨龟六爻",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "何染净垢",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "祖母",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -507,12 +489,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "博学者",
-      "team": "townsfolk",
-      "ability_coverage": 0.7419
-    },
-    {
-      "name": "筑梦师",
+      "name": "骑士",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -522,12 +499,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "引路人",
+      "name": "筑梦师",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "城镇公告员",
+      "name": "引路人",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -535,6 +512,11 @@
       "name": "赌徒",
       "team": "townsfolk",
       "ability_coverage": 0.8966
+    },
+    {
+      "name": "城镇公告员",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
     },
     {
       "name": "打更人",
@@ -552,12 +534,17 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "博学者",
+      "team": "townsfolk",
+      "ability_coverage": 0.7419
+    },
+    {
       "name": "食人族",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "隐士",
+      "name": "大象",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -567,17 +554,22 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "大象",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "瘟疫医生",
       "team": "outsider",
       "ability_coverage": 1.0
     },
     {
+      "name": "隐士",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "投毒者",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "科学怪人",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -592,8 +584,13 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "科学怪人",
-      "team": "minion",
+      "name": "姑获鸟",
+      "team": "demon",
+      "ability_coverage": 0.7188
+    },
+    {
+      "name": "混沌",
+      "team": "demon",
       "ability_coverage": 1.0
     },
     {
@@ -602,19 +599,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "混沌",
-      "team": "demon",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "牙噶巴卜",
       "team": "demon",
       "ability_coverage": 1.0
-    },
-    {
-      "name": "姑获鸟",
-      "team": "demon",
-      "ability_coverage": 0.7188
     }
   ],
   "ocr_ability_mismatches": [],
@@ -622,19 +609,19 @@
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
-      "name": "不醉研究：科学怪人&酒鬼",
+      "name": "科学怪人&酒鬼",
       "team": "jinx",
       "ability_coverage": 1.0
     },
     {
-      "name": "莴苣姑娘：食人族&公主",
+      "name": "食人族&公主",
       "team": "jinx",
       "ability_coverage": 1.0
     },
     {
-      "name": "鹰象寓言：鹰身女妖&大象",
+      "name": "鹰身女妖&大象",
       "team": "jinx",
-      "ability_coverage": 0.7222
+      "ability_coverage": 0.75
     }
   ],
   "ocr_jinx_mismatches": [],
@@ -662,13 +649,19 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "• 神奇道具•"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "• 神奇道具•"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "“神奇道具”是四个传奇道具规则的面板标题；四项规则及共同触发前提已完整写入传奇角色，不是额外说明。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
@@ -676,5 +669,9 @@
     "unexplained_bottom_lines": [
       "• 神奇道具•"
     ]
-  }
+  },
+  "source_image_added_ids": [
+    "4c004aad6620bfcbc6fc7850e9bc87c044902471.png",
+    "603c589c103e3ec8cccc2e1d1fafc78144902471.png"
+  ]
 }
