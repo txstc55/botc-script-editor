@@ -12,15 +12,16 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 26,
-  "ocr_required_character_count": 26,
+  "ocr_character_matches": 27,
+  "ocr_required_character_count": 27,
   "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "窥镜者",
-    "贞洁者"
+    "贞洁者",
+    "私货商人"
   ],
   "ocr_heading_characters": [
     "图书管理员",
@@ -48,9 +49,7 @@
     "鸯",
     "鸳"
   ],
-  "ocr_unexpected_characters": [
-    "窥镜人"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -182,6 +181,11 @@
       "name": "鸯",
       "team": "demon",
       "ability_coverage": 1.0
+    },
+    {
+      "name": "私货商人",
+      "team": "fabled",
+      "ability_coverage": 0.7852
     }
   ],
   "ocr_ability_mismatches": [],
@@ -234,10 +238,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "（规则细节：说书人使用的爪牙能力依然可以对窥镜人选择的玩家生效。）",
-    "下在场镇民，"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -816,15 +817,22 @@
       "y": 0.19767
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_unexpected_characters": [
+      "窥镜人"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "原图角色名为“窥镜者”，但四条灰底规则沿用“窥镜人”称呼；已逐条核对并通过私货商人写入生成图，OCR 将规则称呼误判为额外角色。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [
+      "窥镜人"
+    ],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "（规则细节：说书人使用的爪牙能力依然可以对窥镜人选择的玩家生效。）",
-      "下在场镇民，"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

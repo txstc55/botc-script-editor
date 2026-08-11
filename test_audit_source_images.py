@@ -3,7 +3,7 @@
 import unittest
 from unittest.mock import patch
 
-from audit_bilibili_scripts import CatalogItem, source_image_urls_for_item
+from audit_bilibili_scripts import CatalogItem, source_image_urls, source_image_urls_for_item
 
 
 class SourceImageTest(unittest.TestCase):
@@ -21,6 +21,24 @@ class SourceImageTest(unittest.TestCase):
   @patch("audit_bilibili_scripts.fetch_opus_state", side_effect=RuntimeError("blocked"))
   def test_mirror_is_fallback(self, _fetch, _jina) -> None:
     self.assertEqual(source_image_urls_for_item(self.item), ["fallback.png"])
+
+  def test_wide_or_tall_article_images_are_kept(self) -> None:
+    state = {
+      "detail": {
+        "modules": [{
+          "module_content": {
+            "wide": {"url": "https://i0.hdslb.com/bfs/new_dyn/wide.png", "width": 600, "height": 205},
+            "tall": {"url": "https://i0.hdslb.com/bfs/new_dyn/tall.png", "width": 400, "height": 800},
+            "small": {"url": "https://i0.hdslb.com/bfs/new_dyn/small.png", "width": 128, "height": 128},
+          }
+        }]
+      }
+    }
+
+    self.assertEqual(source_image_urls(state), [
+      "https://i0.hdslb.com/bfs/new_dyn/wide.png",
+      "https://i0.hdslb.com/bfs/new_dyn/tall.png",
+    ])
 
 
 if __name__ == "__main__":

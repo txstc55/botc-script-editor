@@ -9,12 +9,11 @@
   "status": "matched",
   "source_images": [
     "对照图-01.png",
-    "对照图-02.png",
-    "对照图-03.png"
+    "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-03.png",
+  "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 29,
   "ocr_required_character_count": 29,
   "ocr_missing_characters": [],
@@ -51,20 +50,18 @@
     "变幻之神",
     "诺·达鲺"
   ],
-  "ocr_unexpected_characters": [
-    "\"被处决\""
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
       "name": "变幻之神",
       "team": "fabled",
-      "ability_coverage": 0.9792
+      "ability_coverage": 1.0
     },
     {
       "name": "神之谜题：酒鬼规则细节",
       "team": "fabled",
-      "ability_coverage": 0.8
+      "ability_coverage": 1.0
     },
     {
       "name": "神之谜题：村夫",
@@ -222,9 +219,7 @@
       "ability_coverage": 0.3659
     }
   ],
-  "ocr_jinx_mismatches": [
-    "谜题魔&瘟疫医生"
-  ],
+  "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
       "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
@@ -260,12 +255,6 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
-      "required_character_matches": 0
-    },
-    {
-      "image": "对照图-02.png",
       "heading_characters": [
         "\"镇民\"",
         "\"外来者\"",
@@ -294,7 +283,7 @@
       "required_character_matches": 0
     },
     {
-      "image": "对照图-03.png",
+      "image": "对照图-02.png",
       "heading_characters": [
         "贵族",
         "占卜师",
@@ -480,7 +469,7 @@
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "\"被处决\"",
@@ -513,7 +502,6 @@
   ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
-    "e509f409f4f7b79b5bef6648dd53f51e44902471.png",
     "f27fe3e69c3b21b112c2d5734b38a21f44902471.png",
     "5372e9e7b463ed45611cb7fce856285d44902471.png"
   ],
@@ -671,8 +659,23 @@
       "y": 0.16987
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_unexpected_characters": [
+      "\"被处决\""
+    ],
+    "verified_jinxes": [
+      "瘟疫医生&战车",
+      "谜题魔&瘟疫医生",
+      "魔笛手&战车"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "原图三条灰底相克已逐字核对，与 JSON 一致；OCR 将斯芬克斯能力中的“被处决”误判为角色标题，并未完整拼接谜题魔与瘟疫医生的长相克文本。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [
+      "\"被处决\""
+    ],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [
@@ -680,5 +683,9 @@
     ],
     "note_mismatches": [],
     "unexplained_bottom_lines": []
-  }
+  },
+  "source_image_added_ids": [
+    "f27fe3e69c3b21b112c2d5734b38a21f44902471.png",
+    "5372e9e7b463ed45611cb7fce856285d44902471.png"
+  ]
 }

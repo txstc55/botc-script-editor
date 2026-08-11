@@ -399,7 +399,7 @@ def source_image_urls(state: dict[str, Any]) -> list[str]:
         continue
       if not isinstance(width, (int, float)) or not isinstance(height, (int, float)):
         continue
-      if width < 600 or height < 600 or url in urls:
+      if max(width, height) < 600 or url in urls:
         continue
       urls.append(url)
   return urls
@@ -433,7 +433,7 @@ def jina_source_image_urls(opus_id: str) -> list[str]:
 
 def source_image_urls_for_item(item: CatalogItem) -> list[str]:
   try:
-    urls = source_image_urls(fetch_opus_state(item.url, retries=2))
+    urls = source_image_urls(fetch_opus_state(item.url, retries=6))
     if not urls:
       raise RuntimeError("页面状态中没有找到大型 Bilibili 图片")
   except Exception as bilibili_error:

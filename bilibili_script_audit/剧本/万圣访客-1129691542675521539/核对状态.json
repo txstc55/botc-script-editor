@@ -16,19 +16,15 @@
     "4164ef37d2fb0699027bc02d9add85bb44902471.png",
     "125fa11a01288b07e2100906ac5cd28f44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 21,
-  "ocr_required_character_count": 24,
-  "ocr_missing_characters": [
-    "女武神",
-    "炼金术士",
-    "报丧女妖"
-  ],
+  "ocr_character_matches": 23,
+  "ocr_required_character_count": 23,
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "洗衣妇",
-    "诺-达鲺",
+    "诺·达鲺",
     "不给糖就捣蛋！"
   ],
   "ocr_heading_characters": [
@@ -182,10 +178,7 @@
       "y": 0.09
     }
   ],
-  "ocr_unexpected_characters": [
-    "旅店老板",
-    "食人族"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -219,9 +212,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "女武神",
+      "name": "旅店老板",
       "team": "townsfolk",
-      "ability_coverage": 0.1429
+      "ability_coverage": 1.0
     },
     {
       "name": "送葬者",
@@ -244,19 +237,14 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "炼金术士",
-      "team": "townsfolk",
-      "ability_coverage": 0.2
-    },
-    {
       "name": "守鸦人",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "报丧女妖",
+      "name": "食人族",
       "team": "townsfolk",
-      "ability_coverage": 0.0476
+      "ability_coverage": 1.0
     },
     {
       "name": "要糖小孩",
@@ -289,7 +277,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "诺-达鲺",
+      "name": "诺·达鲺",
       "team": "demon",
       "ability_coverage": 1.0
     },
@@ -301,19 +289,15 @@
     {
       "name": "圣洁之魂",
       "team": "fabled",
-      "ability_coverage": 0.7586
+      "ability_coverage": 1.0
     },
     {
       "name": "不给糖就捣蛋！",
       "team": "fabled",
-      "ability_coverage": 1.0
+      "ability_coverage": 0.9725
     }
   ],
-  "ocr_ability_mismatches": [
-    "女武神",
-    "炼金术士",
-    "报丧女妖"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
@@ -323,6 +307,14 @@
   "ocr_note_checks": [
     {
       "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "特别鸣谢：南通熊猫桌游",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "该角色的能力来自过去",
       "text_coverage": 1.0
     }
   ],
@@ -337,9 +329,7 @@
     "该角色的能力来自过去",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "该角色的能力来自过去"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -525,7 +515,7 @@
           "y": 0.09
         }
       ],
-      "required_character_matches": 18
+      "required_character_matches": 20
     }
   ],
   "ocr_source_board_groups": [
@@ -560,16 +550,12 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "女武神",
-      "炼金术士",
-      "报丧女妖"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "该角色的能力来自过去"
-    ]
+    "unexplained_bottom_lines": []
   }
 }
