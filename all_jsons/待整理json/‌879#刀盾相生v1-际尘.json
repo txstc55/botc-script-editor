@@ -1,7 +1,7 @@
 [
   {
     "id": "_meta",
-    "name": "‌刀盾相生",
+    "name": "刀盾相生",
     "author": "际尘",
     "logo": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/d/d6/4o21b0cng25i7c0m820z8tpoj4z53eo.png",
     "townsfolkName": "镇民",
@@ -149,34 +149,37 @@
     "setup": 0
   },
   {
-    "id": "qxxl",
-    "name": "教皇",
-    "team": "fabled",
-    "ability": "可以有多个重复角色在场。邪恶玩家互相知道彼此的角色。",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/bc/irnsk5kjolajz8gldu0kbdgmf95z9zp.png",
-    "firstNight": 0.0,
-    "otherNight": 0,
-    "reminders": [],
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "remindersGlobal": []
-  },
-  {
-    "id": "1124",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/23/9fmohn9ldebl3ntosy95ho1wt1vmrng.png",
-    "edition": "custom",
+    "id": "其利断金",
     "name": "其利断金",
-    "ability": "提名前有等同玩家人数一半的分钟数（向下取整）发言和使用刀客能力。在第二个黎明时，游戏回到为首个夜晚做准备前，已死亡的玩家会在对应的时刻死亡。",
     "team": "fabled",
+    "ability": "提名前有等同玩家人数一半的分钟数（向下取整）发言和使用刀客能力。在第二个黎明时，游戏回到为首个夜晚做准备前，已死亡的玩家会在对应的时刻放置睡眠标记。",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/23/9fmohn9ldebl3ntosy95ho1wt1vmrng.png",
     "firstNight": 0,
-    "otherNight": 0,
     "firstNightReminder": "",
+    "otherNight": 0,
     "otherNightReminder": "",
     "reminders": [
+      "夜晚",
       "提名",
-      "黄昏",
-      "夜晚"
+      "黄昏"
     ],
-    "setup": 0
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "教皇",
+    "name": "教皇",
+    "team": "fabled",
+    "ability": "会有重复的善良角色在场。他们也可能是恶魔的伪装。",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/bc/irnsk5kjolajz8gldu0kbdgmf95z9zp.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   }
 ]

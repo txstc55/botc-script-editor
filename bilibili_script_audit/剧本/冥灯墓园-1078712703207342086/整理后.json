@@ -1,11 +1,16 @@
 [
   {
     "id": "_meta",
-    "name": "冥灯望园",
+    "name": "冥灯墓园",
     "author": "Cooldoom5",
     "logo": "https://i.postimg.cc/HnzRNt61/LOGO.png",
     "almanac": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/almanac.html",
-    "notes": []
+    "notes": [
+      {
+        "text": "*建议7人以上加入旅行者",
+        "html": "<em>*建议7人以上加入旅行者</em>"
+      }
+    ]
   },
   {
     "id": "29_yz_cn_ggg",
@@ -306,6 +311,21 @@
     "otherNight": 17
   },
   {
+    "id": "28_yz_cn_ggg",
+    "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/28_yz_cn_ggg.png",
+    "firstNightReminder": "生化人选择两名玩家。在第一名玩家的夜晚行动时告知他被生化人选中，并让他入睡。该玩家不会得知他以自身能力选择了谁。",
+    "otherNightReminder": "生化人选择两名玩家。在第一名玩家的夜晚行动时告知他被生化人选中，并让他入睡。该玩家不会得知他以自身能力选择了谁。",
+    "reminders": [
+      "选择者",
+      "被选择"
+    ],
+    "name": "生化人",
+    "team": "traveler",
+    "ability": "每个夜晚，你要选择两名玩家：今晚第一名玩家其自身能力的选择改为选择第二名玩家。第一名玩家会得知你选择了他。",
+    "firstNight": 13,
+    "otherNight": 4
+  },
+  {
     "id": "24_yz_cn_ggg",
     "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/24_yz_cn_ggg.png",
     "reminders": [
@@ -315,17 +335,6 @@
     "name": "时空行者",
     "team": "traveler",
     "ability": "每局游戏限一次，你随时可以禁止私聊。每局游戏限一次，你可以在一次提名发起后禁止之后的游戏中再发起提名。"
-  },
-  {
-    "id": "25_yz_cn_ggg",
-    "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/25_yz_cn_ggg.png",
-    "reminders": [
-      "失去能力",
-      "复活"
-    ],
-    "name": "死灵法师",
-    "team": "traveler",
-    "ability": "每局游戏限一次，在白天时，你可以公开选择一名死亡玩家：他复活。"
   },
   {
     "id": "26_yz_cn_ggg",
@@ -342,6 +351,17 @@
     "otherNight": 2
   },
   {
+    "id": "25_yz_cn_ggg",
+    "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/25_yz_cn_ggg.png",
+    "reminders": [
+      "失去能力",
+      "复活"
+    ],
+    "name": "死灵法师",
+    "team": "traveler",
+    "ability": "每局游戏限一次，在白天时，你可以公开选择一名死亡玩家：他复活。"
+  },
+  {
     "id": "27_yz_cn_ggg",
     "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/27_yz_cn_ggg.png",
     "firstNightReminder": "唤醒矿工，让他选择一名玩家，标记“不幸”。",
@@ -354,20 +374,5 @@
     "ability": "每个夜晚，你要选择一名玩家：他会发生不好的事情直到下个黄昏。",
     "firstNight": 12,
     "otherNight": 3
-  },
-  {
-    "id": "28_yz_cn_ggg",
-    "image": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/28_yz_cn_ggg.png",
-    "firstNightReminder": "生化人选择两名玩家。在第一名玩家的夜晚行动时告知他被生化人选中，并让他入睡。该玩家不会得知他以自身能力选择了谁。",
-    "otherNightReminder": "生化人选择两名玩家。在第一名玩家的夜晚行动时告知他被生化人选中，并让他入睡。该玩家不会得知他以自身能力选择了谁。",
-    "reminders": [
-      "选择者",
-      "被选择"
-    ],
-    "name": "生化人",
-    "team": "traveler",
-    "ability": "每个夜晚，你要选择两名玩家：今晚第一名玩家其自身能力的选择改为选择第二名玩家。第一名玩家会得知你选择了他。",
-    "firstNight": 13,
-    "otherNight": 4
   }
 ]

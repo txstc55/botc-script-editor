@@ -7938,6 +7938,252 @@
           "names": ["共情者", "卖花女孩", "神谕者", "哲学家", "数学家", "打更人", "悟道者"]
         }
       ]
+    },
+    {
+      "source": "Bilibili 1046490458374537221 对照图-02、03",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2025剧本世界杯/#冥河摆渡v1.2.0-Rhea.json"
+      ],
+      "meta_updates": {
+        "name": "冥河摆渡"
+      },
+      "additions": [
+        {
+          "name": "气球驾驶员",
+          "team": "townsfolk",
+          "overrides": {
+            "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]"
+          }
+        },
+        {
+          "name": "摆渡人",
+          "team": "fabled",
+          "overrides": {
+            "ability": "每个夜晚*，恶魔可以选择让所有已死亡玩家重获投票标记。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": ["图书管理员", "修行者", "小精灵", "占卜师", "将军", "气球驾驶员", "城镇公告员", "渔夫", "博学者", "失忆者", "魔术师", "镇长", "农夫"]
+        },
+        {
+          "team": "outsider",
+          "names": ["陌客", "酒鬼", "管家", "理发师"]
+        },
+        {
+          "team": "minion",
+          "names": ["男爵", "红唇女郎", "投毒者", "恐惧之灵", "灵言师"]
+        },
+        {
+          "team": "demon",
+          "names": ["亡骨魔", "小恶魔", "奥赫"]
+        },
+        {
+          "team": "fabled",
+          "names": ["摆渡人", "圣洁之魂"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1078712703207342086 对照图-01、02；封面二维码中文角色数据",
+      "targets": [
+        "all_jsons/全原创角色剧本/海外/#冥灯墓园（Gaslight Gatekeep Graveyard）-Cooldoom5.json"
+      ],
+      "meta_updates": {
+        "name": "冥灯墓园",
+        "notes": [
+          {
+            "text": "*建议7人以上加入旅行者",
+            "html": "<em>*建议7人以上加入旅行者</em>"
+          }
+        ]
+      },
+      "team_order": [
+        {
+          "team": "traveler",
+          "names": ["生化人", "时空行者", "生命之符", "死灵法师", "矿工"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1045551234945122305 对照图-01、02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2025剧本世界杯/#冲动消费V3-mist(BOTC版).json"
+      ],
+      "meta_updates": {
+        "name": "冲动消费",
+        "notes": [
+          {
+            "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+            "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "removals": [
+        {
+          "name": "私货商人",
+          "team": "fabled"
+        },
+        {
+          "name": "灯神",
+          "team": "fabled"
+        },
+        {
+          "name": "冲动消费",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "小本生意",
+            "name": "小本生意",
+            "team": "fabled",
+            "ability": "游戏开始时，每名玩家拥有7枚金币（玩家之间不能交易金币）。每个白天，说书人会拍卖一项能力（该能力可以不在剧本上），玩家在白天可以秘密出价，唯一且最高出价者获得该能力直到下个黎明，即使他死亡，且不受醉酒/中毒的影响。善良玩家出价消耗的金币不会返还；邪恶玩家在出价中与其他玩家平局时会返还金币。成功拍得能力的玩家会被秘密告知。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "setup": 0
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": ["图书管理员", "贵族", "小精灵", "侍女", "舞蛇人", "气球驾驶员", "女祭司", "送葬者", "城镇公告员", "女裁缝", "渔夫", "魔术师", "守鸦人"]
+        },
+        {
+          "team": "outsider",
+          "names": ["陌客", "政客", "解谜大师", "理发师"]
+        },
+        {
+          "team": "minion",
+          "names": ["限", "恐惧之灵", "间谍", "鹰身女妖"]
+        },
+        {
+          "team": "demon",
+          "names": ["小恶魔", "诺-达鲺", "痢蛭"]
+        },
+        {
+          "team": "fabled",
+          "names": ["小本生意"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1159100042714284070 对照图-01、02",
+      "targets": [
+        "all_jsons/待整理json/‌879#刀盾相生v1-际尘.json"
+      ],
+      "meta_updates": {
+        "name": "刀盾相生"
+      },
+      "additions": [
+        {
+          "name": "教皇",
+          "team": "fabled",
+          "overrides": {
+            "ability": "会有重复的善良角色在场。他们也可能是恶魔的伪装。"
+          }
+        },
+        {
+          "name": "其利断金",
+          "team": "fabled",
+          "overrides": {
+            "ability": "提名前有等同玩家人数一半的分钟数（向下取整）发言和使用刀客能力。在第二个黎明时，游戏回到为首个夜晚做准备前，已死亡的玩家会在对应的时刻放置睡眠标记。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": ["刀客", "老兵"]
+        },
+        {
+          "team": "outsider",
+          "names": ["酒鬼", "魔像"]
+        },
+        {
+          "team": "minion",
+          "names": ["致幻师", "画皮"]
+        },
+        {
+          "team": "demon",
+          "names": ["梼杌"]
+        },
+        {
+          "team": "fabled",
+          "names": ["其利断金", "教皇"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 984915685768429591 对照图-01、02",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/角色竞赛优胜剧本/#刺杀金牛座-Etreides.json"
+      ],
+      "meta_updates": {
+        "notes": [
+          {
+            "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+            "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "瘟疫医生&红唇女郎",
+            "name": "瘟疫医生&红唇女郎",
+            "team": "jinx",
+            "ability": "如果瘟疫医生死亡且说书人会因此获得红唇女郎的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "瘟疫医生&间谍",
+            "name": "瘟疫医生&间谍",
+            "team": "jinx",
+            "ability": "如果瘟疫医生死亡且说书人会因此获得间谍的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "召唤师&堤丰之首",
+            "name": "召唤师&堤丰之首",
+            "team": "jinx",
+            "ability": "如果召唤师创造了堤丰之首，则堤丰之首必须与一名爪牙相邻，且堤丰之首另一侧的玩家变成一个不在场的邪恶爪牙。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/summoner.png",
+            "setup": 0
+          }
+        }
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",

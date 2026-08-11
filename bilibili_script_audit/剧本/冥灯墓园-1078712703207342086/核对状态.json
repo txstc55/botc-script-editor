@@ -11,38 +11,12 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 0,
   "ocr_required_character_count": 25,
-  "ocr_missing_characters": [
-    "侦察员",
-    "观星者",
-    "侦探",
-    "旅行家",
-    "女王",
-    "商人",
-    "墓园守卫",
-    "萨满",
-    "赌场老板",
-    "探矿员",
-    "强盗",
-    "皇家卫士",
-    "变装演员",
-    "掘墓人",
-    "酒馆老板",
-    "乐子人",
-    "胆小鬼",
-    "幽灵",
-    "丧尸",
-    "木乃伊",
-    "骷髅",
-    "巫妖",
-    "吵闹鬼",
-    "阴魂",
-    "白骨军团"
-  ],
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "\"镇民\"",
@@ -50,16 +24,12 @@
     "\"爪牙\"",
     "时空行者"
   ],
-  "ocr_unexpected_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [
+    "生化人",
     "时空行者",
-    "死灵法师",
     "生命之符",
-    "生化人"
+    "死灵法师"
   ],
   "ocr_ability_checks": [
     {
@@ -188,38 +158,15 @@
       "ability_coverage": 0.1842
     }
   ],
-  "ocr_ability_mismatches": [
-    "侦察员",
-    "观星者",
-    "侦探",
-    "旅行家",
-    "女王",
-    "商人",
-    "萨满",
-    "赌场老板",
-    "探矿员",
-    "强盗",
-    "皇家卫士",
-    "变装演员",
-    "掘墓人",
-    "酒馆老板",
-    "乐子人",
-    "胆小鬼",
-    "丧尸",
-    "木乃伊",
-    "骷髅",
-    "吵闹鬼",
-    "阴魂",
-    "白骨军团"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [
     {
-      "name": "时空行者",
+      "name": "生化人",
       "team": "traveler",
       "ability_coverage": 1.0
     },
     {
-      "name": "死灵法师",
+      "name": "时空行者",
       "team": "traveler",
       "ability_coverage": 1.0
     },
@@ -229,7 +176,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "生化人",
+      "name": "死灵法师",
       "team": "traveler",
       "ability_coverage": 1.0
     }
@@ -237,7 +184,12 @@
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
   "ocr_jinx_mismatches": [],
-  "ocr_note_checks": [],
+  "ocr_note_checks": [
+    {
+      "text": "*建议7人以上加入旅行者",
+      "text_coverage": 1.0
+    }
+  ],
   "ocr_note_mismatches": [],
   "ocr_bottom_text": [
     "他复活。",
@@ -256,12 +208,7 @@
     "他在当晚和下个白天不会死亡。",
     "*建议7人以上加入旅行者"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "'Time Traveler",
-    "可T Miner",
-    "每个夜晚，你要选择一名玩家：他会发生不好的事情直到下个",
-    "*建议7人以上加入旅行者"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -355,8 +302,109 @@
       "y": 0.13751
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_missing_characters": [
+      "侦察员",
+      "观星者",
+      "侦探",
+      "旅行家",
+      "女王",
+      "商人",
+      "墓园守卫",
+      "萨满",
+      "赌场老板",
+      "探矿员",
+      "强盗",
+      "皇家卫士",
+      "变装演员",
+      "掘墓人",
+      "酒馆老板",
+      "乐子人",
+      "胆小鬼",
+      "幽灵",
+      "丧尸",
+      "木乃伊",
+      "骷髅",
+      "巫妖",
+      "吵闹鬼",
+      "阴魂",
+      "白骨军团"
+    ],
+    "verified_unexpected_characters": [
+      "\"镇民\"",
+      "\"外来者\"",
+      "\"爪牙\""
+    ],
+    "verified_abilities": [
+      "侦察员",
+      "观星者",
+      "侦探",
+      "旅行家",
+      "女王",
+      "商人",
+      "萨满",
+      "赌场老板",
+      "探矿员",
+      "强盗",
+      "皇家卫士",
+      "变装演员",
+      "掘墓人",
+      "酒馆老板",
+      "乐子人",
+      "胆小鬼",
+      "丧尸",
+      "木乃伊",
+      "骷髅",
+      "吵闹鬼",
+      "阴魂",
+      "白骨军团"
+    ],
+    "verified_travelers": [
+      "矿工"
+    ],
+    "verified_bottom_lines": [
+      "'Time Traveler",
+      "可T Miner",
+      "每个夜晚，你要选择一名玩家：他会发生不好的事情直到下个",
+      "*建议7人以上加入旅行者"
+    ],
+    "source_image": "对照图-02.png",
+    "source_data": "https://www.bloodstar.xyz/p/papel/YZ_CN_GGG/script.json",
+    "reason": "原帖图片只展示标题、玩家数量表和五名旅行者；封面二维码已解析到原作者角色书，中文角色数据中的30个角色、阵营、能力、提醒与夜序均已逐项比对。五名旅行者及脚注与封面逐字一致，三项带引号的阵营词和两项英文名均为OCR误识别。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [
+      "侦察员",
+      "观星者",
+      "侦探",
+      "旅行家",
+      "女王",
+      "商人",
+      "墓园守卫",
+      "萨满",
+      "赌场老板",
+      "探矿员",
+      "强盗",
+      "皇家卫士",
+      "变装演员",
+      "掘墓人",
+      "酒馆老板",
+      "乐子人",
+      "胆小鬼",
+      "幽灵",
+      "丧尸",
+      "木乃伊",
+      "骷髅",
+      "巫妖",
+      "吵闹鬼",
+      "阴魂",
+      "白骨军团"
+    ],
+    "unexpected_characters": [
+      "\"镇民\"",
+      "\"外来者\"",
+      "\"爪牙\""
+    ],
     "ability_mismatches": [
       "侦察员",
       "观星者",
@@ -387,8 +435,7 @@
     "unexplained_bottom_lines": [
       "'Time Traveler",
       "可T Miner",
-      "每个夜晚，你要选择一名玩家：他会发生不好的事情直到下个",
-      "*建议7人以上加入旅行者"
+      "每个夜晚，你要选择一名玩家：他会发生不好的事情直到下个"
     ]
   }
 }

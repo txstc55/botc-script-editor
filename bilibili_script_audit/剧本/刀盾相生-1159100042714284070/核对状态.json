@@ -16,7 +16,7 @@
     "9ca2f636b9eebc5279e14e2f97a0340b44902471.png",
     "dff96f489bbe3d4b0ac712b0d6b393aa44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 9,
@@ -110,19 +110,17 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "教皇",
-      "team": "fabled",
-      "ability_coverage": 0.2273
-    },
-    {
       "name": "其利断金",
       "team": "fabled",
-      "ability_coverage": 0.9677
+      "ability_coverage": 0.9394
+    },
+    {
+      "name": "教皇",
+      "team": "fabled",
+      "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "教皇"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
@@ -144,10 +142,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "会有重复的善良角色在场。",
-    "他们也可能是恶魔的伪装。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -227,15 +222,12 @@
   "ocr_source_board_groups": [],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "教皇"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "会有重复的善良角色在场。",
-      "他们也可能是恶魔的伪装。"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

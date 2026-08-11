@@ -13,7 +13,7 @@
     "对照图-03.png",
     "对照图-04.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 27,
@@ -81,7 +81,7 @@
     {
       "name": "气球驾驶员",
       "team": "townsfolk",
-      "ability_coverage": 0.3846
+      "ability_coverage": 1.0
     },
     {
       "name": "城镇公告员",
@@ -181,7 +181,7 @@
     {
       "name": "摆渡人",
       "team": "fabled",
-      "ability_coverage": 0.95
+      "ability_coverage": 1.0
     },
     {
       "name": "圣洁之魂",
@@ -189,9 +189,7 @@
       "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "气球驾驶员"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
@@ -837,9 +835,9 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "气球驾驶员"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
