@@ -12,8 +12,7 @@ export function useScriptEditor() {
   const script = reactive(structuredClone(sampleScript));
   const selectedTeam = ref<TeamKey>("townsfolk");
   const importError = ref("");
-  const removedAutoJinxNames = new Set<string>();
-  const jinxIncludedPreferenceByName = new Map<string, boolean>();
+  const jinxPreferenceByName = new Map<string, boolean | "removed">();
   let jinxMatchRevision = 0;
 
   const activeTeam = computed(() => script.teams[selectedTeam.value] ?? script.teams.townsfolk);
@@ -95,7 +94,7 @@ export function useScriptEditor() {
   function removeJinx(id: string) {
     const removed = script.jinxes.find((jinx) => jinx.id === id);
     if (removed) {
-      removedAutoJinxNames.add(normalizeJinxName(removed.name));
+      rememberJinxRemoved(removed.name);
     }
     script.jinxes = script.jinxes.filter((jinx) => jinx.id !== id);
   }
@@ -236,6 +235,7 @@ export function useScriptEditor() {
   }
 
   async function addMatchingDatabaseJinxes(options: { includeNew?: boolean } = {}) {
+    rememberCurrentJinxStates();
     const revision = ++jinxMatchRevision;
     const includeNew = options.includeNew ?? true;
     const characters = collectPlayCharacters();
@@ -248,12 +248,12 @@ export function useScriptEditor() {
     const existingByName = new Map(script.jinxes.map((jinx) => [normalizeJinxName(jinx.name), jinx]));
     for (const record of records) {
       const normalizedName = normalizeJinxName(record.name);
-      if (removedAutoJinxNames.has(normalizedName)) {
+      const preference = jinxPreferenceByName.get(normalizedName);
+      if (preference === "removed") {
         continue;
       }
       const draft = jinxRecordToDraft(record);
-      const rememberedIncluded = jinxIncludedPreferenceByName.get(normalizedName);
-      draft.included = rememberedIncluded ?? includeNew;
+      draft.included = preference ?? includeNew;
       draft.image = imageForJinxTargets(draft.targets, characters) || draft.image;
       const existing = existingByName.get(normalizedName);
       if (existing) {
@@ -266,8 +266,8 @@ export function useScriptEditor() {
         if (!existing.image && draft.image) {
           existing.image = draft.image;
         }
-        if (rememberedIncluded !== undefined) {
-          existing.included = rememberedIncluded;
+        if (preference !== undefined) {
+          existing.included = preference;
         } else if (existing.included === undefined) {
           existing.included = includeNew;
         }
@@ -340,21 +340,36 @@ export function useScriptEditor() {
   function rememberJinxIncluded(jinx: JinxDraft) {
     const normalizedName = normalizeJinxName(jinx.name);
     if (normalizedName) {
-      jinxIncludedPreferenceByName.set(normalizedName, jinx.included !== false);
+      jinxPreferenceByName.set(normalizedName, jinx.included !== false);
+    }
+  }
+
+  function rememberCurrentJinxStates() {
+    for (const jinx of script.jinxes) {
+      const normalizedName = normalizeJinxName(jinx.name);
+      if (jinxPreferenceByName.get(normalizedName) !== "removed") {
+        rememberJinxIncluded(jinx);
+      }
+    }
+  }
+
+  function rememberJinxRemoved(name: string) {
+    const normalizedName = normalizeJinxName(name);
+    if (normalizedName) {
+      jinxPreferenceByName.set(normalizedName, "removed");
     }
   }
 
   function clearJinxSuppression(name: string) {
     const normalizedName = normalizeJinxName(name);
-    if (normalizedName) {
-      removedAutoJinxNames.delete(normalizedName);
+    if (jinxPreferenceByName.get(normalizedName) === "removed") {
+      jinxPreferenceByName.delete(normalizedName);
     }
   }
 
   function resetJinxMemory() {
     jinxMatchRevision += 1;
-    removedAutoJinxNames.clear();
-    jinxIncludedPreferenceByName.clear();
+    jinxPreferenceByName.clear();
   }
 
   function normalizeJinxName(name: string) {
