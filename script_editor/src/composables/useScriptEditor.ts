@@ -2,6 +2,7 @@ import { computed, onMounted, reactive, ref } from "vue";
 import { sampleScript, teamOrder } from "../data/sampleScript";
 import type { FabledDraft, JinxDraft, PlayCharacterSummary, RoleDraft, TeamKey } from "../types";
 import {
+  jinxHasUnavailableTargets,
   jinxRecordToDraft,
   loadMatchingJinxRecords,
 } from "../utils/jinxLibrary";
@@ -31,12 +32,14 @@ export function useScriptEditor() {
   });
 
   function addFabled(role?: FabledDraft) {
-    script.fabled.push({
+    const nextRole: FabledDraft = {
       id: crypto.randomUUID(),
       name: "新传奇角色",
       ability: "",
       ...role,
-    });
+    };
+    script.fabled.push(nextRole);
+    markJinxTargetAvailable(nextRole.name);
     void addMatchingDatabaseJinxes();
   }
 
@@ -73,6 +76,7 @@ export function useScriptEditor() {
     if (previousName !== script.fabled[index].name) {
       removeJinxesRelatedToCharacter(previousName);
     }
+    markJinxTargetAvailable(script.fabled[index].name);
     void addMatchingDatabaseJinxes();
   }
 
@@ -109,6 +113,7 @@ export function useScriptEditor() {
       ...script.jinxes[index],
       ...nextJinx,
       id,
+      initiallyMissingTargets: undefined,
     };
     if (previousName !== script.jinxes[index].name) {
       clearJinxSuppression(previousName);
@@ -127,7 +132,7 @@ export function useScriptEditor() {
   }
 
   function addRole(team: TeamKey, role?: RoleDraft) {
-    script.teams[team].roles.push({
+    const nextRole: RoleDraft = {
       id: crypto.randomUUID(),
       name: "新角色",
       ability: "",
@@ -136,7 +141,9 @@ export function useScriptEditor() {
       firstNight: 0,
       otherNight: 0,
       ...role,
-    });
+    };
+    script.teams[team].roles.push(nextRole);
+    markJinxTargetAvailable(nextRole.name);
     void addMatchingDatabaseJinxes();
   }
 
@@ -163,6 +170,7 @@ export function useScriptEditor() {
     if (previousName !== script.teams[team].roles[index].name) {
       removeJinxesRelatedToCharacter(previousName);
     }
+    markJinxTargetAvailable(script.teams[team].roles[index].name);
     void addMatchingDatabaseJinxes();
   }
 
@@ -330,10 +338,24 @@ export function useScriptEditor() {
   function disableJinxesWithUnavailableTargets() {
     const availableNames = new Set(collectPlayCharacters().map((character) => character.name));
     for (const jinx of script.jinxes) {
-      if (jinx.targets.some((target) => !availableNames.has(target))) {
+      if (jinxHasUnavailableTargets(jinx, availableNames)) {
         jinx.included = false;
         rememberJinxIncluded(jinx);
       }
+    }
+  }
+
+  function markJinxTargetAvailable(name: string) {
+    const targetName = name.trim();
+    if (!targetName) {
+      return;
+    }
+    for (const jinx of script.jinxes) {
+      if (!jinx.initiallyMissingTargets?.includes(targetName)) {
+        continue;
+      }
+      const remaining = jinx.initiallyMissingTargets.filter((target) => target !== targetName);
+      jinx.initiallyMissingTargets = remaining.length ? remaining : undefined;
     }
   }
 

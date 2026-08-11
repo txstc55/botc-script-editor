@@ -3,6 +3,7 @@ import { computed } from "vue";
 import { FileText, ListOrdered, Plus, Trash2 } from "@lucide/vue";
 import type { BuiltInFirstNightOrderKey, JinxDraft, PlayCharacterSummary, ScriptDraft } from "../types";
 import ScriptNotesEditor from "./ScriptNotesEditor.vue";
+import { jinxHasUnavailableTargets as hasUnavailableJinxTargets } from "../utils/jinxLibrary";
 import {
   buildFirstNightOrderItems,
   builtInFirstNightOrderDefinitions,
@@ -62,7 +63,7 @@ function editJinx(jinx: JinxDraft) {
 }
 
 function jinxHasUnavailableTargets(jinx: JinxDraft) {
-  return jinx.targets.some((target) => !availablePlayNameSet.value.has(target));
+  return hasUnavailableJinxTargets(jinx, availablePlayNameSet.value);
 }
 
 function jinxTargetImages(jinx: JinxDraft) {

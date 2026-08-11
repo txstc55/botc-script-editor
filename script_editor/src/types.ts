@@ -49,6 +49,7 @@ export interface JinxDraft {
   image?: string;
   included?: boolean;
   targets: string[];
+  initiallyMissingTargets?: string[];
 }
 
 export interface ScriptNoteDraft {

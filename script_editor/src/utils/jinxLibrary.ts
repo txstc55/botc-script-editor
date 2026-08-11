@@ -229,6 +229,11 @@ export function jinxRecordMatchesPlay(record: JinxRecord, characterNames: string
   return targetsMatchPlay(record.targets, playNames) || targetsMatchPlay(targetsFromName(record.name), playNames);
 }
 
+export function jinxHasUnavailableTargets(jinx: JinxDraft, availableNames: Set<string>) {
+  const initiallyMissing = new Set(jinx.initiallyMissingTargets ?? []);
+  return jinx.targets.some((target) => !availableNames.has(target) && !initiallyMissing.has(target));
+}
+
 export function jinxRecordToDraft(record: JinxRecord): JinxDraft {
   return {
     id: crypto.randomUUID(),

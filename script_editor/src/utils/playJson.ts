@@ -128,6 +128,17 @@ export function loadPlayFromJson(input: unknown, fileName = "导入剧本.json")
     collectNestedJinxes(script, normalized, name, report);
   }
 
+  const importedCharacterNames = new Set([
+    ...script.fabled.map((role) => role.name),
+    ...Object.values(script.teams).flatMap((team) => team.roles.map((role) => role.name)),
+  ]);
+  for (const jinx of script.jinxes) {
+    const missingTargets = jinx.targets.filter((target) => !importedCharacterNames.has(target));
+    if (missingTargets.length) {
+      jinx.initiallyMissingTargets = missingTargets;
+    }
+  }
+
   return { script, report };
 }
 
