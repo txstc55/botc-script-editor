@@ -192,6 +192,51 @@ class FullRosterTest(unittest.TestCase):
     self.assertEqual(changes, ["更新剧本信息 author"])
     self.assertEqual(json.loads(updated)[0]["author"], "新作者")
 
+  def test_source_sync_merges_roles_and_normalizes_source_values(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "来源剧本"},
+      {
+        "id": "source-role",
+        "name": "旅行角色",
+        "team": "traveller",
+        "ability": "来源能力",
+        "setup": True,
+      },
+    ], ensure_ascii=False)
+    target = json.dumps([
+      {"id": "_meta", "name": "目标剧本"},
+      {
+        "id": "target-role",
+        "name": "旅行角色",
+        "team": "traveler",
+        "ability": "旧能力",
+        "remindersGlobal": [],
+      },
+    ], ensure_ascii=False, indent=2)
+
+    with tempfile.TemporaryDirectory() as directory:
+      path = Path(directory) / "source.json"
+      path.write_text(source, encoding="utf-8")
+      fix = {
+        "source_sync": str(path),
+        "additions": [{
+          "name": "旅行角色",
+          "team": "traveler",
+          "patch": {"ability": "原图覆盖能力"},
+        }],
+      }
+      updated, changes = apply_fix(target, fix)
+      unchanged, second_changes = apply_fix(updated, fix)
+
+    role = json.loads(updated)[1]
+    self.assertEqual(changes, ["从来源同步 1 个角色", "更新 旅行角色"])
+    self.assertEqual(second_changes, [])
+    self.assertEqual(unchanged, updated)
+    self.assertEqual(role["ability"], "原图覆盖能力")
+    self.assertEqual(role["team"], "traveler")
+    self.assertEqual(role["setup"], 1)
+    self.assertEqual(role["remindersGlobal"], [])
+
 
 if __name__ == "__main__":
   unittest.main()

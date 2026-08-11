@@ -76,6 +76,48 @@ def object_identity(value: dict[str, Any]) -> tuple[str, str]:
   return str(value.get("name", "")), str(value.get("team", ""))
 
 
+def normalized_source_role(value: dict[str, Any]) -> dict[str, Any]:
+  role = dict(value)
+  if clean_team(role.get("team")) in {"traveller", "traveller2"}:
+    role["team"] = "traveler"
+  if "setup" in role:
+    role["setup"] = int(bool(role["setup"]))
+  return role
+
+
+def sync_source_roles(
+  raw: str,
+  source_path: Path,
+  ignored_fields: dict[tuple[str, str], set[str]] | None = None,
+) -> tuple[str, list[str]]:
+  source = json.loads(source_path.read_text(encoding="utf-8"))
+  if not isinstance(source, list):
+    raise ValueError(f"剧本来源不是数组：{source_path}")
+  changed_names: list[str] = []
+  for value in source:
+    if not isinstance(value, dict) or value.get("id") == "_meta" or not value.get("team"):
+      continue
+    source_role_value = normalized_source_role(value)
+    identity = object_identity(source_role_value)
+    for field in (ignored_fields or {}).get(identity, set()):
+      source_role_value.pop(field, None)
+    matches = [
+      item for item in parsed_objects(raw)
+      if object_identity(item[2]) == identity
+    ]
+    if len(matches) != 1:
+      raise ValueError(f"来源同步角色不是唯一结果：{identity[1]}/{identity[0]}")
+    start, end, current = matches[0]
+    merged = dict(current)
+    merged.update(source_role_value)
+    if merged == current:
+      continue
+    base_indent = object_line_indent(raw, start)
+    raw = raw[:start] + formatted_object(merged, base_indent) + raw[end:]
+    changed_names.append(identity[0])
+  return raw, changed_names
+
+
 @lru_cache(maxsize=1)
 def database_rows() -> dict[tuple[str, str], list[dict[str, str]]]:
   from extract_audit_role_replacements import character_rows
@@ -182,6 +224,17 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     base_indent = object_line_indent(raw, start)
     raw = raw[:start] + formatted_object(new_role, base_indent) + raw[end:]
     changes.append(f"{old_identity[0]} -> {new_role['name']}")
+
+  source_sync = fix.get("source_sync")
+  if source_sync:
+    ignored_fields = {
+      (addition["name"], addition["team"]): set(addition["patch"])
+      for addition in fix.get("additions", [])
+      if isinstance(addition.get("patch"), dict)
+    }
+    raw, changed_names = sync_source_roles(raw, Path(source_sync), ignored_fields)
+    if changed_names:
+      changes.append(f"从来源同步 {len(changed_names)} 个角色")
 
   for addition in fix.get("additions", []):
     current_patch = addition.get("patch")

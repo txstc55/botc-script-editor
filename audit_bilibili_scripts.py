@@ -1024,6 +1024,8 @@ def review_item(
     entry["team"] == "fabled" for entry in required
   ) and not jinxes and not notes)
   raw_issues = {
+    "missing_characters": missing,
+    "unexpected_characters": unexpected_characters,
     "ability_mismatches": ability_mismatches,
     "traveler_mismatches": traveler_mismatches,
     "jinx_mismatches": jinx_mismatches,
@@ -1034,12 +1036,19 @@ def review_item(
   if not isinstance(manual, dict):
     raise ValueError("人工核对表条目必须是对象")
   verified = {
+    "missing_characters": set(manual.get("verified_missing_characters", [])),
+    "unexpected_characters": set(manual.get("verified_unexpected_characters", [])),
     "ability_mismatches": set(manual.get("verified_abilities", [])),
     "traveler_mismatches": set(manual.get("verified_travelers", [])),
     "jinx_mismatches": set(manual.get("verified_jinxes", [])),
     "note_mismatches": set(manual.get("verified_notes", [])),
     "unexplained_bottom_lines": set(manual.get("verified_bottom_lines", [])),
   }
+  missing = [value for value in missing if value not in verified["missing_characters"]]
+  unexpected_characters = [
+    value for value in unexpected_characters
+    if value not in verified["unexpected_characters"]
+  ]
   ability_mismatches = [value for value in ability_mismatches if value not in verified["ability_mismatches"]]
   traveler_mismatches = [value for value in traveler_mismatches if value not in verified["traveler_mismatches"]]
   jinx_mismatches = [value for value in jinx_mismatches if value not in verified["jinx_mismatches"]]

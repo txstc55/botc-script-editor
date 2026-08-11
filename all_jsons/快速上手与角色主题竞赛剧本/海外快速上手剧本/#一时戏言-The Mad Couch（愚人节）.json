@@ -4,7 +4,25 @@
     "name": "一时戏言",
     "author": "The Mad Couch",
     "logo": "https://i.postimg.cc/rp5J06hx/image.png",
-    "townsfolkName": "镇民"
+    "townsfolkName": "镇民",
+    "notes": [
+      {
+        "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事情“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>”发生，代表由说书人来决定该事情是否发生。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+      },
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      },
+      {
+        "text": "唇印代表该剧本中建议“正畸医生”选择的角色",
+        "html": "唇印代表该剧本中建议“正畸医生”选择的角色"
+      }
+    ]
   },
   {
     "ability": "在你的首个夜晚，你会得知两名玩家和一个爪牙角色：这两名玩家之一是该角色（或者你会得知没有爪牙在场）。",
@@ -232,7 +250,7 @@
     "GstoneID": "fisherman"
   },
   {
-    "ability": "每局游戏限一次，在夜晚时，你可以选择一个图表中具有嘴巴的角色：你获得该角色的能力。",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一个图标上有嘴巴的角色：你获得该角色的能力。",
     "image": "https://wiki.bloodontheclocktower.com/images/3/31/Icon_orthodontist.png",
     "edition": "custom",
     "flavor": "",
@@ -251,7 +269,7 @@
     "GstoneID": "humorous"
   },
   {
-    "ability": "爪牙会在其首个夜晚得知三个伪装。",
+    "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
     "edition": "custom",
     "flavor": "",
@@ -287,7 +305,7 @@
     "GstoneID": "golem"
   },
   {
-    "ability": "当你死亡时，说书人会获得一个爪牙能力。",
+    "ability": "如果你死亡，说书人获得一个不在场的爪牙能力。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
     "edition": "custom",
     "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。",
@@ -481,17 +499,11 @@
     "GstoneID": "no_dashii"
   },
   {
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "灯神",
-    "firstNight": 0,
-    "reminders": [],
-    "id": "djinnbutton",
-    "team": "fabled",
-    "name_eng": "Djinn",
-    "setup": 0,
-    "ability": "使用灯神的相克规则。所有玩家都会知道其内容。如果瘟疫医生死亡且说书人会因此获得红唇女郎或哥布林的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",
-    "edition": "custom",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
+    "id": "瘟疫医生&红唇女郎&哥布林",
+    "name": "瘟疫医生&红唇女郎&哥布林",
+    "team": "jinx",
+    "ability": "如果瘟疫医生死亡且说书人会因此获得红唇女郎或哥布林的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+    "setup": 0
   }
 ]

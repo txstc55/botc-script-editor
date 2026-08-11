@@ -11,45 +11,12 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 0,
   "ocr_required_character_count": 32,
-  "ocr_missing_characters": [
-    "店小二",
-    "赌徒",
-    "追猎者",
-    "驱魔人",
-    "游歌者",
-    "巫师学徒",
-    "盖棺人",
-    "疗养师",
-    "马车邮差",
-    "侍臣",
-    "茶艺师",
-    "享乐主义者",
-    "吟游诗人",
-    "史莱姆",
-    "忏悔者",
-    "调香师",
-    "杂技演员",
-    "云栖客",
-    "魔鬼代言人",
-    "刺客",
-    "尸妖",
-    "魔女",
-    "僵怖",
-    "蚀疫魔",
-    "狄奥尼索斯：酒神",
-    "蛋酒：庆典",
-    "公牛子弹：决斗",
-    "月光蜜酿：烈！",
-    "苦艾酒：调制",
-    "盘尼西林：解脱",
-    "珀",
-    "别西卜"
-  ],
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "\"镇民\"",
@@ -60,11 +27,7 @@
     "屠夫",
     "伊卡洛斯"
   ],
-  "ocr_unexpected_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [
     "搭车客",
     "光明祭典",
@@ -95,7 +58,7 @@
     {
       "name": "游歌者",
       "team": "townsfolk",
-      "ability_coverage": 0.1556
+      "ability_coverage": 0.14
     },
     {
       "name": "巫师学徒",
@@ -220,7 +183,7 @@
     {
       "name": "盘尼西林：解脱",
       "team": "fabled",
-      "ability_coverage": 0.1
+      "ability_coverage": 0.0962
     },
     {
       "name": "珀",
@@ -233,38 +196,7 @@
       "ability_coverage": 0.2414
     }
   ],
-  "ocr_ability_mismatches": [
-    "店小二",
-    "赌徒",
-    "追猎者",
-    "驱魔人",
-    "游歌者",
-    "巫师学徒",
-    "盖棺人",
-    "疗养师",
-    "马车邮差",
-    "侍臣",
-    "茶艺师",
-    "吟游诗人",
-    "史莱姆",
-    "忏悔者",
-    "调香师",
-    "杂技演员",
-    "云栖客",
-    "刺客",
-    "尸妖",
-    "魔女",
-    "僵怖",
-    "蚀疫魔",
-    "狄奥尼索斯：酒神",
-    "蛋酒：庆典",
-    "公牛子弹：决斗",
-    "月光蜜酿：烈！",
-    "苦艾酒：调制",
-    "盘尼西林：解脱",
-    "珀",
-    "别西卜"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [
     {
       "name": "搭车客",
@@ -279,7 +211,7 @@
     {
       "name": "伊卡洛斯",
       "team": "traveler",
-      "ability_coverage": 0.4
+      "ability_coverage": 1.0
     },
     {
       "name": "屠夫",
@@ -287,12 +219,15 @@
       "ability_coverage": 0.9375
     }
   ],
-  "ocr_traveler_mismatches": [
-    "伊卡洛斯"
-  ],
+  "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
   "ocr_jinx_mismatches": [],
-  "ocr_note_checks": [],
+  "ocr_note_checks": [
+    {
+      "text": "*建议7人以上加入旅行者",
+      "text_coverage": 1.0
+    }
+  ],
   "ocr_note_mismatches": [],
   "ocr_bottom_text": [
     "搭车客",
@@ -311,11 +246,7 @@
     "再次发起提名。",
     "*建议7人以上加入旅行者"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "被提名者如果没有收到50%的票数，立刻杀死提名者。",
-    "旅旅行著",
-    "*建议7人以上加入旅行者"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -435,8 +366,127 @@
       "y": 0.0814
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_missing_characters": [
+      "店小二",
+      "赌徒",
+      "追猎者",
+      "驱魔人",
+      "游歌者",
+      "巫师学徒",
+      "盖棺人",
+      "疗养师",
+      "马车邮差",
+      "侍臣",
+      "茶艺师",
+      "享乐主义者",
+      "吟游诗人",
+      "史莱姆",
+      "忏悔者",
+      "调香师",
+      "杂技演员",
+      "云栖客",
+      "魔鬼代言人",
+      "刺客",
+      "尸妖",
+      "魔女",
+      "僵怖",
+      "蚀疫魔",
+      "狄奥尼索斯：酒神",
+      "蛋酒：庆典",
+      "公牛子弹：决斗",
+      "月光蜜酿：烈！",
+      "苦艾酒：调制",
+      "盘尼西林：解脱",
+      "珀",
+      "别西卜"
+    ],
+    "verified_unexpected_characters": [
+      "\"镇民\"",
+      "\"外来者\"",
+      "\"爪牙\""
+    ],
+    "verified_abilities": [
+      "店小二",
+      "赌徒",
+      "追猎者",
+      "驱魔人",
+      "游歌者",
+      "巫师学徒",
+      "盖棺人",
+      "疗养师",
+      "马车邮差",
+      "侍臣",
+      "茶艺师",
+      "享乐主义者",
+      "吟游诗人",
+      "史莱姆",
+      "忏悔者",
+      "调香师",
+      "杂技演员",
+      "云栖客",
+      "魔鬼代言人",
+      "刺客",
+      "尸妖",
+      "魔女",
+      "僵怖",
+      "珀",
+      "蚀疫魔",
+      "别西卜",
+      "狄奥尼索斯：酒神",
+      "蛋酒：庆典",
+      "公牛子弹：决斗",
+      "月光蜜酿：烈！",
+      "苦艾酒：调制",
+      "盘尼西林：解脱"
+    ],
+    "verified_bottom_lines": [
+      "旅旅行著"
+    ],
+    "source_image": "对照图-02.png",
+    "source_data": "剧本历书.html、原始剧本.json",
+    "reason": "原帖图片仅展示封面与旅行者；封面“剧本历书”二维码链接的 Bloodstar 原始剧本 JSON 已归档，并逐字段核对全部主角色、传奇、图片、夜序、提醒、标签、设置和背景故事。玩家数量表被 OCR 错识为三个带引号的角色名，“旅行者”被错识为“旅旅行著”。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [
+      "店小二",
+      "赌徒",
+      "追猎者",
+      "驱魔人",
+      "游歌者",
+      "巫师学徒",
+      "盖棺人",
+      "疗养师",
+      "马车邮差",
+      "侍臣",
+      "茶艺师",
+      "享乐主义者",
+      "吟游诗人",
+      "史莱姆",
+      "忏悔者",
+      "调香师",
+      "杂技演员",
+      "云栖客",
+      "魔鬼代言人",
+      "刺客",
+      "尸妖",
+      "魔女",
+      "僵怖",
+      "蚀疫魔",
+      "狄奥尼索斯：酒神",
+      "蛋酒：庆典",
+      "公牛子弹：决斗",
+      "月光蜜酿：烈！",
+      "苦艾酒：调制",
+      "盘尼西林：解脱",
+      "珀",
+      "别西卜"
+    ],
+    "unexpected_characters": [
+      "\"镇民\"",
+      "\"外来者\"",
+      "\"爪牙\""
+    ],
     "ability_mismatches": [
       "店小二",
       "赌徒",
@@ -469,15 +519,11 @@
       "珀",
       "别西卜"
     ],
-    "traveler_mismatches": [
-      "伊卡洛斯"
-    ],
+    "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
     "unexplained_bottom_lines": [
-      "被提名者如果没有收到50%的票数，立刻杀死提名者。",
-      "旅旅行著",
-      "*建议7人以上加入旅行者"
+      "旅旅行著"
     ]
   }
 }

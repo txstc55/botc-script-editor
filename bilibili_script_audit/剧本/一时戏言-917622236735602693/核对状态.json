@@ -12,14 +12,12 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
-  "ocr_required_character_count": 26,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 25,
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "“愚者”",
     "牙噶巴卜",
@@ -117,12 +115,12 @@
     {
       "name": "正畸医生",
       "team": "townsfolk",
-      "ability_coverage": 0.8571
+      "ability_coverage": 1.0
     },
     {
       "name": "告密者",
       "team": "outsider",
-      "ability_coverage": 0.3077
+      "ability_coverage": 1.0
     },
     {
       "name": "魔像",
@@ -132,7 +130,7 @@
     {
       "name": "瘟疫医生",
       "team": "outsider",
-      "ability_coverage": 0.6667
+      "ability_coverage": 1.0
     },
     {
       "name": "莽夫",
@@ -178,25 +176,23 @@
       "name": "诺-达鲺",
       "team": "demon",
       "ability_coverage": 1.0
-    },
-    {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.4203
     }
   ],
-  "ocr_ability_mismatches": [
-    "告密者",
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "瘟疫医生&红唇女郎&哥布林",
+      "team": "jinx",
+      "ability_coverage": 0.551
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-      "text_coverage": 0.7143
+      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+      "text_coverage": 1.0
     },
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -205,6 +201,10 @@
     {
       "text": "*代表非首个夜晚",
       "text_coverage": 1.0
+    },
+    {
+      "text": "唇印代表该剧本中建议“正畸医生”选择的角色",
+      "text_coverage": 0.8824
     }
   ],
   "ocr_note_mismatches": [],
@@ -603,10 +603,7 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "告密者",
-      "灯神"
-    ],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
