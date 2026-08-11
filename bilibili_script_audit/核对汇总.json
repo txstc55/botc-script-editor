@@ -1,10 +1,11 @@
 {
   "total": 577,
   "status_counts": {
-    "ocr_content_match": 245,
-    "manual_content_match": 22,
+    "ocr_content_match": 252,
+    "manual_content_match": 30,
     "missing_json": 28,
-    "needs_manual_review": 282
+    "source_unavailable": 1,
+    "needs_manual_review": 266
   },
   "items": [
     {
@@ -746,20 +747,10 @@
       "script_name": "仇海溺行",
       "opus_id": "862721022665687043",
       "folder": "bilibili_script_audit/剧本/仇海溺行-862721022665687043",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "共情者",
-        "无神论者",
-        "灯神",
-        "私货商人"
-      ],
-      "unexpected_characters": [
-        "修行者"
-      ],
-      "ability_mismatches": [
-        "气球驾驶员",
-        "灯神"
-      ],
+      "status": "ocr_content_match",
+      "missing_characters": [],
+      "unexpected_characters": [],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
@@ -771,14 +762,10 @@
       "script_name": "仙境奇踪",
       "opus_id": "880362291603701795",
       "folder": "bilibili_script_audit/剧本/仙境奇踪-880362291603701795",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "灯神"
-      ],
+      "status": "ocr_content_match",
+      "missing_characters": [],
       "unexpected_characters": [],
-      "ability_mismatches": [
-        "灯神"
-      ],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
@@ -790,19 +777,15 @@
       "script_name": "以儆效尤",
       "opus_id": "961275476890877961",
       "folder": "bilibili_script_audit/剧本/以儆效尤-961275476890877961",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "灯神"
-      ],
+      "status": "manual_content_match",
+      "missing_characters": [],
       "unexpected_characters": [],
       "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "290 黒山羊幼仔"
-      ],
+      "unexplained_bottom_lines": [],
       "source_board_group_count": 2
     },
     {
@@ -839,7 +822,7 @@
       "script_name": "任意东西",
       "opus_id": "1148473572068425731",
       "folder": "bilibili_script_audit/剧本/任意东西-1148473572068425731",
-      "status": "needs_manual_review",
+      "status": "manual_content_match",
       "missing_characters": [],
       "unexpected_characters": [],
       "ability_mismatches": [],
@@ -847,9 +830,7 @@
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "• 神奇道具•"
-      ],
+      "unexplained_bottom_lines": [],
       "source_board_group_count": 1
     },
     {
@@ -871,32 +852,7 @@
       "script_name": "众口铄金",
       "opus_id": "925640292125638724",
       "folder": "bilibili_script_audit/剧本/众口铄金-925640292125638724",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "梼杌",
-        "Json 制作 By"
-      ],
-      "unexpected_characters": [],
-      "ability_mismatches": [
-        "梼杌",
-        "Json 制作 By"
-      ],
-      "traveler_mismatches": [],
-      "jinx_mismatches": [],
-      "missing_jinx_rule_count": 0,
-      "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "如果今天白天有外来者死亡，当晚改为你要选择一名玩家：他死亡，",
-        "但被当作仍然存活，随后会有一名其他玩家死亡。［+1外来者］",
-        "死亡时你才会一同死亡。"
-      ],
-      "source_board_group_count": 1
-    },
-    {
-      "script_name": "众星捧月",
-      "opus_id": "1123453278756012087",
-      "folder": "bilibili_script_audit/剧本/众星捧月-1123453278756012087",
-      "status": "needs_manual_review",
+      "status": "ocr_content_match",
       "missing_characters": [],
       "unexpected_characters": [],
       "ability_mismatches": [],
@@ -904,9 +860,22 @@
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "如築德提複的界沒有直能購你是近的人會「產發劣：絲月”，但每后"
-      ],
+      "unexplained_bottom_lines": [],
+      "source_board_group_count": 1
+    },
+    {
+      "script_name": "众星捧月",
+      "opus_id": "1123453278756012087",
+      "folder": "bilibili_script_audit/剧本/众星捧月-1123453278756012087",
+      "status": "manual_content_match",
+      "missing_characters": [],
+      "unexpected_characters": [],
+      "ability_mismatches": [],
+      "traveler_mismatches": [],
+      "jinx_mismatches": [],
+      "missing_jinx_rule_count": 0,
+      "note_mismatches": [],
+      "unexplained_bottom_lines": [],
       "source_board_group_count": 1
     },
     {
@@ -943,34 +912,26 @@
       "script_name": "何方教众",
       "opus_id": "876416483674030081",
       "folder": "bilibili_script_audit/剧本/何方教众-876416483674030081",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "灯神"
-      ],
+      "status": "manual_content_match",
+      "missing_characters": [],
       "unexpected_characters": [],
-      "ability_mismatches": [
-        "灯神"
-      ],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "母个夜晚，"
-      ],
+      "unexplained_bottom_lines": [],
       "source_board_group_count": 1
     },
     {
       "script_name": "侏儒事变",
       "opus_id": "1006174506632347655",
       "folder": "bilibili_script_audit/剧本/侏儒事变-1006174506632347655",
-      "status": "needs_manual_review",
+      "status": "manual_content_match",
       "missing_characters": [],
       "unexpected_characters": [],
       "ability_mismatches": [],
-      "traveler_mismatches": [
-        "侏儒"
-      ],
+      "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
@@ -981,21 +942,15 @@
       "script_name": "侠客风云决",
       "opus_id": "924988861541515314",
       "folder": "bilibili_script_audit/剧本/侠客风云决-924988861541515314",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "Json 制作 By"
-      ],
+      "status": "manual_content_match",
+      "missing_characters": [],
       "unexpected_characters": [],
-      "ability_mismatches": [
-        "Json 制作 By"
-      ],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "中莓/醉酒"
-      ],
+      "unexplained_bottom_lines": [],
       "source_board_group_count": 1
     },
     {
@@ -1017,123 +972,40 @@
       "script_name": "信念解离+",
       "opus_id": "864905979921170500",
       "folder": "bilibili_script_audit/剧本/信念解离+-864905979921170500",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "认知错位",
-        "精神扭曲"
-      ],
+      "status": "manual_content_match",
+      "missing_characters": [],
       "unexpected_characters": [],
-      "ability_mismatches": [
-        "认知错位"
-      ],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "【只能是镇民1当你首次因自身能力选择镇民时：他中毒，改",
-        "为一名与他邻近的玩家会死亡。",
-        "（说书人应回溯恶魔玩家选择过的目标，然后再于对应行动",
-        "顺序时决定谁会死亡）"
-      ],
+      "unexplained_bottom_lines": [],
       "source_board_group_count": 0
     },
     {
       "script_name": "信马由缰",
       "opus_id": "1140275007779241987",
       "folder": "bilibili_script_audit/剧本/信马由缰-1140275007779241987",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "贵族",
-        "阴阳师",
-        "女家教",
-        "占星师",
-        "马厩男孩",
-        "共情者",
-        "侍女",
-        "数学家",
-        "卖花女孩",
-        "城镇公告员",
-        "狸猫",
-        "史官",
-        "女裁缝",
-        "寻踪者",
-        "怀疑论者",
-        "双生子",
-        "理发师",
-        "舱底鼠",
-        "提线木偶",
-        "寡妇",
-        "继生王爵",
-        "[未知]",
-        "普卡",
-        "小恶魔",
-        "亡骨魔",
-        "双声裁定"
-      ],
-      "unexpected_characters": [
-        "\"镇民\"",
-        "\"外来者\"",
-        "\"爪牙\""
-      ],
-      "ability_mismatches": [
-        "贵族",
-        "阴阳师",
-        "女家教",
-        "占星师",
-        "马厩男孩",
-        "共情者",
-        "侍女",
-        "数学家",
-        "卖花女孩",
-        "城镇公告员",
-        "狸猫",
-        "史官",
-        "女裁缝",
-        "寻踪者",
-        "怀疑论者",
-        "双生子",
-        "理发师",
-        "舱底鼠",
-        "提线木偶",
-        "寡妇",
-        "继生王爵",
-        "[未知]",
-        "普卡",
-        "小恶魔",
-        "亡骨魔",
-        "双声裁定"
-      ],
+      "status": "ocr_content_match",
+      "missing_characters": [],
+      "unexpected_characters": [],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
-      "jinx_mismatches": [
-        "命运裁剪：理发师",
-        "未至之兆：侍女&数学家",
-        "混沌方程：数学家",
-        "偏轨启示：占星师",
-        "线中虚实：提线木偶",
-        "幕后真主：提线木偶&寻踪者&寡妇",
-        "傀授王命：提线木偶&寻踪者&继生王爵"
-      ],
+      "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "钟楼剧本博物馆",
-        "美术设计"
-      ],
-      "source_board_group_count": 0
+      "unexplained_bottom_lines": [],
+      "source_board_group_count": 1
     },
     {
       "script_name": "偷天换日v6",
       "opus_id": "783248661741043796",
       "folder": "bilibili_script_audit/剧本/偷天换日v6-783248661741043796",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "灯神"
-      ],
+      "status": "ocr_content_match",
+      "missing_characters": [],
       "unexpected_characters": [],
-      "ability_mismatches": [
-        "灯神"
-      ],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
@@ -1175,7 +1047,7 @@
       "script_name": "先礼后兵",
       "opus_id": "1009223186069323784",
       "folder": "bilibili_script_audit/剧本/先礼后兵-1009223186069323784",
-      "status": "needs_manual_review",
+      "status": "source_unavailable",
       "missing_characters": [
         "厨师",
         "阴阳师",
@@ -1186,7 +1058,7 @@
         "气球驾驶员",
         "道士",
         "杂技演员",
-        "渔夫",
+        "僧侣",
         "鸩",
         "哲学家",
         "秉笔",
@@ -1217,7 +1089,7 @@
         "气球驾驶员",
         "道士",
         "杂技演员",
-        "渔夫",
+        "僧侣",
         "鸩",
         "哲学家",
         "秉笔",
@@ -1278,14 +1150,10 @@
       "script_name": "兔子洞v4",
       "opus_id": "1046121761220853763",
       "folder": "bilibili_script_audit/剧本/兔子洞v4-1046121761220853763",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "私货商人"
-      ],
+      "status": "ocr_content_match",
+      "missing_characters": [],
       "unexpected_characters": [],
-      "ability_mismatches": [
-        "私货商人"
-      ],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
@@ -1312,46 +1180,15 @@
       "script_name": "全员拜访",
       "opus_id": "1197465018500644869",
       "folder": "bilibili_script_audit/剧本/全员拜访-1197465018500644869",
-      "status": "needs_manual_review",
+      "status": "ocr_content_match",
       "missing_characters": [],
-      "unexpected_characters": [
-        "祖母",
-        "哲学家",
-        "贵族",
-        "鸩",
-        "共情者",
-        "造谣者",
-        "占卜师",
-        "博学者",
-        "舞蛇人",
-        "炼金术士",
-        "赌徒",
-        "守鸦人",
-        "半兽人",
-        "酒鬼",
-        "畸形秀演员",
-        "魔像",
-        "食人魔",
-        "精神病患者",
-        "投毒者",
-        "狐媚娘",
-        "魔鬼代言人",
-        "卡扎力",
-        "牙噶巴卜",
-        "痢蛭",
-        "姑获鸟"
-      ],
+      "unexpected_characters": [],
       "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "当爪牙死于处决时，你可能会获得他的能力，但每局游戏仅能",
-        "在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他",
-        "获得一次。",
-        "处于死亡状态时你才会立即死亡。"
-      ],
+      "unexplained_bottom_lines": [],
       "source_board_group_count": 1
     },
     {
@@ -1440,22 +1277,15 @@
       "script_name": "全球惊悚",
       "opus_id": "891861156039229475",
       "folder": "bilibili_script_audit/剧本/全球惊悚-891861156039229475",
-      "status": "needs_manual_review",
-      "missing_characters": [
-        "灯神"
-      ],
+      "status": "manual_content_match",
+      "missing_characters": [],
       "unexpected_characters": [],
-      "ability_mismatches": [
-        "告密者",
-        "灯神"
-      ],
+      "ability_mismatches": [],
       "traveler_mismatches": [],
       "jinx_mismatches": [],
       "missing_jinx_rule_count": 0,
       "note_mismatches": [],
-      "unexplained_bottom_lines": [
-        "（相克规则：易乱被传获士当作爪牙。）"
-      ],
+      "unexplained_bottom_lines": [],
       "source_board_group_count": 1
     },
     {

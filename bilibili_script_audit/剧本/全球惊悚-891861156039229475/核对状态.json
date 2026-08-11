@@ -11,14 +11,12 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-03.png",
+  "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 24,
-  "ocr_required_character_count": 25,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 24,
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "杂耍艺人"
   ],
@@ -51,11 +49,6 @@
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
-      "name": "村夫",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "厨师",
       "team": "townsfolk",
       "ability_coverage": 1.0
@@ -71,7 +64,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "将军",
+      "name": "气球驾驶员",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -81,32 +74,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "气球驾驶员",
+      "name": "村夫",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "哲学家",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "守夜人",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "渔夫",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "博学者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "杂耍艺人",
+      "name": "将军",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -116,14 +89,29 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "政客",
-      "team": "outsider",
+      "name": "博学者",
+      "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "告密者",
-      "team": "outsider",
-      "ability_coverage": 0.3077
+      "name": "哲学家",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "渔夫",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "守夜人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "杂耍艺人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
     },
     {
       "name": "呆瓜",
@@ -136,7 +124,22 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "寡妇",
+      "name": "政客",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "告密者",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "鹰身女妖",
+      "team": "minion",
+      "ability_coverage": 0.8261
+    },
+    {
+      "name": "投毒者",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -146,17 +149,12 @@
       "ability_coverage": 0.9649
     },
     {
-      "name": "鹰身女妖",
-      "team": "minion",
-      "ability_coverage": 0.8261
-    },
-    {
-      "name": "提线木偶",
+      "name": "寡妇",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
-      "name": "投毒者",
+      "name": "提线木偶",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -169,24 +167,16 @@
       "name": "利维坦",
       "team": "demon",
       "ability_coverage": 1.0
-    },
-    {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.3333
     }
   ],
-  "ocr_ability_mismatches": [
-    "告密者",
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
       "name": "告密者&暴乱",
       "team": "jinx",
-      "ability_coverage": 0.9167
+      "ability_coverage": 0.92
     },
     {
       "name": "暴乱&传教士",
@@ -196,7 +186,7 @@
     {
       "name": "提线木偶&告密者",
       "team": "jinx",
-      "ability_coverage": 0.8837
+      "ability_coverage": 0.814
     },
     {
       "name": "提线木偶&炼金术士&气球驾驶员",
@@ -231,9 +221,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "（相克规则：易乱被传获士当作爪牙。）"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -241,12 +229,6 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
-      "required_character_matches": 0
-    },
-    {
-      "image": "对照图-02.png",
       "heading_characters": [
         "\"镇民\"",
         "\"外来者\"",
@@ -275,7 +257,7 @@
       "required_character_matches": 1
     },
     {
-      "image": "对照图-03.png",
+      "image": "对照图-02.png",
       "heading_characters": [
         "厨师",
         "修行者",
@@ -447,7 +429,7 @@
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "传教士",
@@ -623,12 +605,17 @@
       "y": 0.20467
     }
   ],
-  "manual_verification": {},
-  "ocr_raw_issues": {
-    "ability_mismatches": [
-      "告密者",
-      "灯神"
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "（相克规则：易乱被传获士当作爪牙。）"
     ],
+    "source_image": "对照图-02.png",
+    "reason": "该行是 OCR 对暴乱下方“暴乱被传教士当作爪牙”灰底相克规则的误识别；24 个角色、四条相克规则和三条彩色说明均已逐项核对，原图没有传奇角色。"
+  },
+  "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
