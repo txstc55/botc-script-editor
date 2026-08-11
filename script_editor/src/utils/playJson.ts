@@ -329,7 +329,7 @@ function toStringList(value: unknown): string[] {
 }
 
 function splitTargets(name: string): string[] {
-  return name.includes("&") ? name.split("&").map(cleanText).filter(Boolean) : [];
+  return name.split("&").map(cleanText).filter(Boolean);
 }
 
 function cleanText(value: unknown): string {

@@ -171,7 +171,30 @@ def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
     item for item in data
     if isinstance(item, dict) and "jinx" in clean_team(item.get("team"))
   ]
-  rebuilt = [meta[0], *(database_role(spec) for spec in roster.get("entries", [])), *jinxes]
+  target_meta = dict(meta[0])
+  source_path = roster.get("source_json")
+  if source_path:
+    source = json.loads(Path(source_path).read_text(encoding="utf-8"))
+    if not isinstance(source, list):
+      raise ValueError(f"完整阵容来源不是数组：{source_path}")
+    source_meta = next(
+      (item for item in source if isinstance(item, dict) and item.get("id") == "_meta"),
+      {},
+    )
+    for field in roster.get("meta_fields", []):
+      if field in source_meta:
+        target_meta[field] = source_meta[field]
+    entries = [
+      normalized_source_role(item)
+      for item in source
+      if isinstance(item, dict)
+      and item.get("id") != "_meta"
+      and item.get("team")
+      and "jinx" not in clean_team(item.get("team"))
+    ]
+  else:
+    entries = [database_role(spec) for spec in roster.get("entries", [])]
+  rebuilt = [target_meta, *entries, *jinxes]
   if data == rebuilt:
     return raw, False
   return json.dumps(rebuilt, ensure_ascii=False, indent=2) + "\n", True

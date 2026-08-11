@@ -28,6 +28,33 @@ class FullRosterTest(unittest.TestCase):
     self.assertEqual([item.get("name") for item in data], ["测试剧本", "角色甲", "角色甲&角色乙"])
     self.assertFalse(rebuild_full_roster(rebuilt, roster)[1])
 
+  def test_rebuild_can_copy_roles_from_verified_script(self):
+    target = json.dumps([
+      {"id": "_meta", "name": "目标剧本"},
+      {"name": "旧角色", "team": "townsfolk"},
+      {"name": "角色甲&角色乙", "team": "jinx", "ability": "目标相克"},
+    ], ensure_ascii=False)
+    source = [
+      {"id": "_meta", "name": "来源剧本", "notes": ["来源说明"]},
+      {"name": "角色甲", "team": "townsfolk", "setup": True},
+      {"name": "来源相克", "team": "jinx", "ability": "不应复制"},
+    ]
+
+    with tempfile.TemporaryDirectory() as directory:
+      path = Path(directory) / "source.json"
+      path.write_text(json.dumps(source, ensure_ascii=False), encoding="utf-8")
+      rebuilt, changed = rebuild_full_roster(target, {
+        "source_json": str(path),
+        "meta_fields": ["notes"],
+      })
+
+    data = json.loads(rebuilt)
+    self.assertTrue(changed)
+    self.assertEqual(data[0]["name"], "目标剧本")
+    self.assertEqual(data[0]["notes"], ["来源说明"])
+    self.assertEqual(data[1], {"name": "角色甲", "team": "townsfolk", "setup": 1})
+    self.assertEqual(data[2]["ability"], "目标相克")
+
   def test_remove_entry_by_id(self):
     source = json.dumps([
       {"id": "_meta", "name": "测试剧本"},
