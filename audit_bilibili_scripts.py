@@ -1051,17 +1051,19 @@ def review_item(
   has_manual_verification = any(
     set(values) & verified[key] for key, values in raw_issues.items()
   )
+  source_unavailable = manual.get("source_unavailable") is True
   needs_manual_review = bool(
     missing or ability_mismatches or traveler_mismatches or jinx_mismatches or note_mismatches or
     unexplained_bottom_lines or missing_rule_data or unexpected_characters or missing_jinx_rule_count
   )
   metadata.update({
     "review_status": (
-      "needs_manual_review" if needs_manual_review
+      "source_unavailable" if source_unavailable
+      else "needs_manual_review" if needs_manual_review
       else "manual_content_match" if has_manual_verification
       else "ocr_content_match"
     ),
-    "manual_verification": manual if has_manual_verification else {},
+    "manual_verification": manual if source_unavailable or has_manual_verification else {},
     "ocr_raw_issues": raw_issues,
     "ocr_reference_image": image.name,
     "ocr_character_matches": score,
