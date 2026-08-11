@@ -1,0 +1,568 @@
+[
+  {
+    "id": "_meta",
+    "name": "风起大漠",
+    "author": "Rocky&Yan&男主角&寒酒",
+    "notes": [
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
+    "id": "大鸿胪",
+    "name": "大鸿胪",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你要选择除你和旅行者以外的四个不同类型的角色，你会得知其中在场角色的数量。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/29_silkroadrising.png",
+    "firstNight": 23,
+    "firstNightReminder": "首夜唤醒大鸿胪，让他选择四个不同类型的角色，告知其在场的数量，随后闭眼。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "凡来朝通好者，皆以礼相待；凡通商互市者，皆以信相交。使者、商贾、兵卒、异士……尔等各属何籍，人数几何，皆在吾卷宗之内。 "
+  },
+  {
+    "id": "太史令",
+    "name": "太史令",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知距离你最近和最远的邪恶玩家与你的距离之和，如果与你邻近的玩家中有邪恶阵营，你得知的距离之和会±1。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/30_silkroadrising.png",
+    "firstNight": 25,
+    "firstNightReminder": "首夜唤醒太史令，告诉其距离他最近和最远的邪恶玩家与他的距离之和，随后闭眼。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "+1",
+      "-1"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "臣夜观星象，见天象异变陡生，实乃社稷危殆之征，不敢不昧死上陈。"
+  },
+  {
+    "id": "中郎将",
+    "name": "中郎将",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家成为诱饵。当晚诱饵被其他玩家的能力首次选择或影响时，你会被唤醒得知两名玩家，其中一个是那名玩家。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/31_silkroadrising.png",
+    "firstNight": 15,
+    "firstNightReminder": "唤醒中郎将让其选择一名玩家成为诱饵，随后闭眼。当晚如有其他玩家的能力选择或影响诱饵，再次唤醒中郎将，告知其两名玩家（其中一个是那名玩家）。",
+    "otherNight": 4,
+    "otherNightReminder": "每个夜晚，唤醒中郎将让其选择一名玩家成为诱饵，随后闭眼。当晚如有其他玩家的能力选择或影响诱饵，再次唤醒中郎将，告知其两名玩家（其中一个是那名玩家）。",
+    "reminders": [
+      "诱饵"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "元凤四年，楼兰王宴我于宫中，酒至三巡，我言‘天子赐物，请王独前’。王起，近我，壮士从后刺之，贯胸立毙。诸宾惊走，我拔剑呼曰：‘汉兵方至，毋敢动，动则灭国！’——今我设此席，非为邀功，乃为诱豺狼入彀。君若赴宴，必留姓名。\n\n——傅介子，大汉中郎将"
+  },
+  {
+    "id": "译语人",
+    "name": "译语人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一个外来者角色，你会得知他的邻近存活玩家是否有邪恶。如果该角色不在场，你得知的信息由说书人决定。[+1外来者]",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/32_silkroadrising.png",
+    "firstNight": 24,
+    "firstNightReminder": "每个夜晚，唤醒译语人，让其选择一个外来者角色，告知其邻近的存活玩家中是否有邪恶玩家，随后闭眼。",
+    "otherNight": 22,
+    "otherNightReminder": "每个夜晚，唤醒译语人，让其选择一个外来者角色，告知其邻近的存活玩家中是否有邪恶玩家，随后闭眼。",
+    "reminders": [
+      "错误"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "商队、使节、僧侣、逃犯……这玉门关上，人人带着自己的故事和秘密。鄙人不才，略通诸国番语，专擅从三教九流的片言只语里，嗅出那丝不同寻常的‘味道’。是檀香，是羊膻，还是……血锈味？"
+  },
+  {
+    "id": "斥候",
+    "name": "斥候",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外两个玩家，你会得知他们之中是否有非镇民玩家，如果得知“是”则你要与说书人猜拳，你若输了则失去能力，即使你中毒醉酒。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/33_silkroadrising.png",
+    "firstNight": 21,
+    "firstNightReminder": "唤醒斥候让其选择除他以外两个玩家，告知其是否有非镇民。如果得知是，则说书人与玩家猜拳，玩家输了则在其角色旁放置失去能力标记；若否则闭眼。",
+    "otherNight": 20,
+    "otherNightReminder": "每个夜晚，唤醒斥候让其选择除他以外两个玩家，告知其是否有非镇民。如果得知是，则说书人与玩家猜拳，玩家输了则在其角色旁放置失去能力标记；若否则闭眼。",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "马蹄踏破的每道沙痕，风沙掩盖的每处踪迹，都可能藏着决定胜负的杀机。干我们这行，眼要毒，心要静，手要稳——最重要的是，永远要知道何时该进，何时…该赌上自己的性命去‘探’。"
+  },
+  {
+    "id": "绣衣使者",
+    "name": "绣衣使者",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "当你提名并处决了一名存活玩家，当晚你会得知一条关于邪恶的信息，如果处决的是爪牙，信息将更有价值。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/34_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 19,
+    "otherNightReminder": "当白天绣衣使者提名并处决一名玩家后，当天夜晚，唤醒绣衣使者，告知一条关于邪恶的信息，随后闭眼。",
+    "reminders": [
+      "今日提名"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "绣衣直指，持节发兵，捕奸诛暴，不限常法。臣等行于郡国，昼则察问吏民，夜则焚香录名。今夜焚简，所得何辞？愿为陛下明示之。"
+  },
+  {
+    "id": "丝路商人",
+    "name": "丝路商人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一个善良角色和一个邪恶角色（与之前不同）。在白天拜访说书人，你会得知两条关于这些角色的情报；若选择的角色不在场，你会得知该角色的错误情报。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/35_silkroadrising.png",
+    "firstNight": 26,
+    "firstNightReminder": "唤醒丝路商人让其选择一个善良角色和一个邪恶角色，随后闭眼。",
+    "otherNight": 24,
+    "otherNightReminder": "每个夜晚，唤醒丝路商人让其选择一个善良角色和一个邪恶角色，随后闭眼。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "关市有个神秘的商人，在驼铃与胡旋之间静静观望。他口袋里装着的不止是金银，还有这整条丝路上的秘闻。有人说，他的情报价值连城；也有人说，那不过是沙海里的幻影，一戳就破。"
+  },
+  {
+    "id": "西域都护",
+    "name": "西域都护",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名存活玩家（与上一晚不同），如果与他邻近的两名存活玩家是善良的，这两名玩家当晚不会死亡。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/36_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 8,
+    "otherNightReminder": "除首夜外，唤醒西域都护让其选择一名存活玩家，如果与他邻近的两名存活玩家是善良的，在其角色旁放置庇护标记，随后闭眼。",
+    "reminders": [
+      "庇护"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "都护府立于轮台，西望葱岭，东顾阳关。每有烽燧传警，吾必披甲登城，非为杀敌，乃为护佑城下黎庶。瀚海沙暴可掩白骨，却掩不住汉家旌节之光。"
+  },
+  {
+    "id": "玉门都尉",
+    "name": "玉门都尉",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你会得知当天死亡玩家里不同角色类型的数量。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/37_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 23,
+    "otherNightReminder": "除首夜外，唤醒玉门都尉，告知其当天死亡玩家里不同角色类型的数量，随后闭眼。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "玉门关外，黄沙接天。每有烽燧传警，必有戍卒裹革而还。暮色四合时，吾独登雉堞，执简册，录今日归籍者名姓。简册入匮，闭门落锁，日复一日。"
+  },
+  {
+    "id": "悬泉驿长",
+    "name": "悬泉驿长",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个⽩天限⼀次，公开邀请两名除你以外的存活玩家（与前⼀晚不同）留宿驿站，如果玩家同意留宿，当晚他们不会死亡。如果有邪恶玩家留宿，其中留宿的善良玩家立即醉酒，你会在当晚死亡，随后会有⼀名玩家会得知驿站遇袭。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/38_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 25,
+    "otherNightReminder": "如果悬泉驿长在当晚因自身能力死亡，唤醒一名善良玩家，让其得知驿站遇袭。",
+    "reminders": [
+      "保护",
+      "醉酒",
+      "死亡",
+      "得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "悬泉置，西出阳关最后一驿。客来，掌灯迎入；客去，扫沙掩门。三更若有叩门声，不问是汉使是胡骑——既入吾驿，便是客。惟愿今夜留宿之人，明晨仍能见阳关日出。"
+  },
+  {
+    "id": "边关戍卫",
+    "name": "边关戍卫",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "如果你死于恶魔或爪牙的能力，每个夜晚＊，你要选择一名玩家，你会得知他的阵营。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/39_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 17,
+    "otherNightReminder": "如果边关戍卫已死亡，每个夜晚唤醒其选择一名玩家，告知其阵营，随后闭眼。",
+    "reminders": [
+      "死而后已"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "昔我戍玉门，夜闻胡笳声。同袍饮马河畔，旦日唯见马归。烽燧再举时，我已埋骨沙砾。"
+  },
+  {
+    "id": "巫祝",
+    "name": "巫祝",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外两名非旅行者玩家，你得知他们共有的一个能力描述关键词。每局游戏限一次，你会得知错误的关键词。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/40_silkroadrising.png",
+    "firstNight": 22,
+    "firstNightReminder": "每个夜晚，唤醒巫祝，让其选择除自己以外两名玩家，让其得知他们共有的一个能力描述关键词，随后闭眼。",
+    "otherNight": 21,
+    "otherNightReminder": "每个夜晚，唤醒巫祝，让其选择除自己以外两名玩家，让其得知他们共有的一个能力描述关键词，随后闭眼。 ",
+    "reminders": [
+      "错误"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "龟兹旧俗，祭天者曰‘巫’，通神者曰‘祝’。巫祝持龟甲灼火，观其裂纹，以断吉凶。裂纹交错者，二物同源；纹路殊异者，其理不通。然十年一祭，龟言亦有诈。今夕何夕，裂纹可信乎？"
+  },
+  {
+    "id": "说书先生",
+    "name": "说书先生",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你会得知你当天发起提名时的发言有多准确。（无关/有关/接近/完美）",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/41_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 18,
+    "otherNightReminder": "除首夜外，唤醒说书先生，告知其当天他发起提名的发言准确度（无关/有关/接近/完美），随后闭眼。",
+    "reminders": [
+      "今日提名"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "折一把纸扇，着一身青衫，拍案满堂惊叹，说书劝人向善，话不尽这千古流芳，言不止余音绕梁，故事里留下的思量，总让人心生向往。各位看官，今日咱不说那刀光剑影，单讲两段老祖宗的智慧…"
+  },
+  {
+    "id": "巧匠",
+    "name": "巧匠",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "你不知道你的能力是什么。在游戏的首个白天，你可以拜访说书人并提供三个关键词，你的能力将包含这些关键词。在第三个白天，你可以拜访说书人得知你的能力的完整描述。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/42_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 2,
+    "otherNightReminder": "除首夜外，根据说书人为其设计的能力唤醒巧匠行动，随后闭眼。",
+    "reminders": [
+      "奇思",
+      "妙想"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "巧匠造物，三分靠手艺，七分靠天意，至于造出来的是个宝贝，还是只是个唬人的戏法儿……嘿嘿，那就看您的造化了。"
+  },
+  {
+    "id": "胡姬",
+    "name": "胡姬",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "在游戏的首个夜晚，你要选择左/右，你会秘密转变为与你邻近左/右存活玩家的阵营。每个夜晚*，换选至另外一侧。你不会中毒醉酒。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/43_silkroadrising.png",
+    "firstNight": 14,
+    "firstNightReminder": "首个夜晚，唤醒胡姬，让其选择一名邻近的存活玩家，然后闭眼",
+    "otherNight": 3,
+    "otherNightReminder": "每个夜晚*，说书人把依附标记移动放置到胡姬另一侧。",
+    "reminders": [
+      "依附"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "龟兹有女名胡姬，腰若流纨素，足下踏双履，一履绣左旋，一履绣右回。每宴乐，胡姬旋舞如风，左右莫辨其首尾。夜深宴散，无人记得她今夜共谁把盏，亦无人知她明朝为谁而舞。"
+  },
+  {
+    "id": "落魄王子",
+    "name": "落魄王子",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "你以为你是一个镇民，但其实你不是。一名恶魔玩家得知落魄王子以为的镇民角色，并且他可以决定你获得的信息和通知。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/44_silkroadrising.png",
+    "firstNight": 13,
+    "firstNightReminder": "每个夜晚，唤醒恶魔，告知其落魄王子目前以外的镇民角色，询问其是否要修改落魄王子将获得的信息和通知，随后闭眼。",
+    "otherNight": 13,
+    "otherNightReminder": "每个夜晚，唤醒恶魔，告知其落魄王子目前以外的镇民角色，询问其是否要修改落魄王子将获得的信息和通知，随后闭眼。",
+    "reminders": [],
+    "remindersGlobal": [
+      "落魄王子"
+    ],
+    "setup": 0,
+    "flavor": "吾乃堂堂…呃，唔乃…吾究竟是谁？长安来的使臣？玉门关的戍卒？不，他们都唤吾‘王子’…可吾的仪仗、印信何在？吾究竟是棋手，还是他们掌心的一枚棋？"
+  },
+  {
+    "id": "阴阳术士",
+    "name": "阴阳术士",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "如果你死亡，一名恶魔玩家会获得一个不在场的爪牙能力。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/45_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 16,
+    "otherNightReminder": "如果阴阳术士已死亡，在一名恶魔玩家角色旁放置其获得的爪牙能力标记，随后在该爪牙能力的时点唤醒恶魔行动。",
+    "reminders": [
+      "沙魇",
+      "匈奴狼骑",
+      "沙漠怨灵",
+      "玉面罗刹",
+      "黑蛇妖"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "沙海掘得阴阳葫芦，左纳生符，右纳死咒。盗者各取一符，夜半相斫于月下。持生者死于刀，握死者行于沙。天明，二尸俱焚，唯余空葫芦一只，中分两色，阴阳自转。"
+  },
+  {
+    "id": "波斯乐师",
+    "name": "波斯乐师",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "每个夜晚，你要选择一名除你以外的存活玩家（与之前不同），他醉酒直至下个黄昏，即使你已死亡。如果你选择了邪恶玩家，当晚你不会造成醉酒且一名恶魔玩家获得你的能力。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/46_silkroadrising.png",
+    "firstNight": 18,
+    "firstNightReminder": "1. 唤醒波斯乐师让其选择一名除他以外的存活玩家（与之前不同），在其角色旁放置沉醉标记。如果他选择了邪恶玩家，在波斯乐师角色旁放置沉醉标记，随后闭眼。\n2. 唤醒一名恶魔玩家告知其获得波斯乐师的能力，让其选择一名除他以外的存活玩家，在其角色旁放置沉醉标记，随后闭眼。",
+    "otherNight": 7,
+    "otherNightReminder": "1. 唤醒波斯乐师让其选择一名除他以外的存活玩家（与之前不同），在其角色旁放置沉醉标记。如果他选择了邪恶玩家，在波斯乐师角色旁放置沉醉标记，随后闭眼。\n2. 唤醒一名恶魔玩家告知其获得波斯乐师的能力，让其选择一名除他以外的存活玩家，在其角色旁放置沉醉标记，随后闭眼。",
+    "reminders": [
+      "沉醉",
+      "获得能力",
+      "魔音绕梁"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "龟兹夜宴，有波斯客携奇琴而来，弦以天蚕丝，柱以骆驼骨。初奏，烛影摇红，满座沉醉；再奏，月隐星沉，闻者掩面泣下；三奏，忽有一人拔刀斫柱，狂呼‘杀我仇雠’！乐师抚弦而笑：‘此曲名为《迷心》，听者自迷，与我何干。’遂卷琴入囊，策驼西去。后有人于大漠中见其骸骨，十指已枯，然琴弦犹自震颤，如泣如诉。"
+  },
+  {
+    "id": "麻布袋",
+    "name": "麻布袋",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "种子持有者可能会被当作错误的阵营和角色，每个白天限一次，玩家可以发起提名获取持有者的种子，游戏结束时，如果你仍持有种子，你独自获胜，即使你已死亡。[游戏初始你拥有种子]",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/47_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "种子",
+      "被夺去"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "咳咳…如果我们有了棉花，孩子们就有棉衣过冬御寒…如果有了棉花，战士们就能在冬日里行军打仗…这袋棉花种子，我一定要带回长安…如果我回不去了…就让秃鹫帮我带回去吧…"
+  },
+  {
+    "id": "玉面罗刹",
+    "name": "玉面罗刹",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一名存活的非旅行者玩家（与上一晚不同），你获得他的能力直到下个黄昏，如果他在下一个白天死于处决，你变成他的角色。如果存活人数小于等于四人时恶魔被处决，你无法变成恶魔。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/48_silkroadrising.png",
+    "firstNight": 16,
+    "firstNightReminder": "每个夜晚，唤醒玉面罗刹，让其选择一名与上一晚不同的存活玩家，随后让其闭眼，如果他选择的玩家当晚可以行动，则在其行动后再次唤醒玉面罗刹，让其按照他选择的玩家的能力正常行动。",
+    "otherNight": 5,
+    "otherNightReminder": "每个夜晚，唤醒玉面罗刹，让其选择一名与上一晚不同的存活玩家，随后让其闭眼，如果他选择的玩家当晚可以行动，则在其行动后再次唤醒玉面罗刹，让其按照他选择的玩家的能力正常行动。",
+    "reminders": [
+      "魅影",
+      "玉面罗刹"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你以为你看到了我？不，你看到的只是一张即将被遗弃的皮囊。我的真容，藏在下一次你镜中的惊鸿一瞥里。"
+  },
+  {
+    "id": "匈奴狼骑",
+    "name": "匈奴狼骑",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你可以选择一名玩家，他成为质子且他得知此事，如果质子死于处决，他的阵营落败。如果外来者作为质子被处决，他的阵营不会落败，随后他的胜负反转，即使你已死亡。[+1外来者]",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/49_silkroadrising.png",
+    "firstNight": 20,
+    "firstNightReminder": "每个夜晚，唤醒匈奴狼骑询问其是否要选择一名玩家成为质子，随后让其闭眼。如果其选择了玩家，则唤醒该玩家，告知其“你成为质子”。",
+    "otherNight": 15,
+    "otherNightReminder": "每个夜晚，唤醒匈奴狼骑询问其是否要选择一名玩家成为质子，随后让其闭眼。如果其选择了玩家，则唤醒该玩家，告知其“你成为质子”。",
+    "reminders": [
+      "质子",
+      "倒戈"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "草原的法则很简单：要么带走战利品，要么留下人质。我将带领匈奴儿郎的铁骑，在草原上造就闻风丧胆的传奇。"
+  },
+  {
+    "id": "黑蛇妖",
+    "name": "黑蛇妖",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你选择一名玩家，顺序循环触发以下效果：中毒/发起提名死亡/必定死亡，如果只有三名存活玩家，你失去此能力。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/50_silkroadrising.png",
+    "firstNight": 19,
+    "firstNightReminder": "每个夜晚，唤醒黑蛇妖让其选择一名存活玩家，在该玩家角色旁放置对应的蛇毒/被诅咒/死亡标记，随后闭眼。",
+    "otherNight": 14,
+    "otherNightReminder": "每个夜晚，唤醒黑蛇妖让其选择一名存活玩家，在该玩家角色旁放置对应的蛇毒/被诅咒/死亡标记，随后闭眼。",
+    "reminders": [
+      "被诅咒",
+      "蛇毒",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "龟兹古卷载：黑蛇衔月而坠，血染九沙，其咒三转。一咒迷离——见绿洲者溺于幻；二咒困顿——闻驼铃者困于渊；三咒魂归离恨天——触月光者化于风。今夕何夕，君安在否？"
+  },
+  {
+    "id": "沙魇",
+    "name": "沙魇",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "在你的首个夜晚，你要选择一名玩家：他中毒并获取错误信息，且会被视为邪恶的沙魇，随后每个夜晚，该能力会顺时针移动至下一位存活镇民玩家，直至其死亡。当因你中毒的玩家死亡，你重获能力，随后会有一名善良玩家得知此事。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/51_silkroadrising.png",
+    "firstNight": 17,
+    "firstNightReminder": "首个夜晚，唤醒沙魇让其选择一名玩家，在其角色旁放置狂沙标记，随后闭眼。",
+    "otherNight": 6,
+    "otherNightReminder": "如果被视为沙魇的玩家已死亡，在沙魇的行动时点重新唤醒沙魇，让其重新选择一名玩家，在其角色旁放置狂沙标记，沙魇闭眼。随后告知一名善良玩家“沙魇重获能力”。",
+    "reminders": [
+      "狂沙",
+      "得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "大漠狂沙起时，天地失色，方向尽失。你眼中所见的绿洲，是沙粒幻化的陷阱；你耳中所闻的驼铃，是风蚀骸骨的呜咽。莫问何方是归途——此刻，你便是那迷途者。"
+  },
+  {
+    "id": "沙漠怨灵",
+    "name": "沙漠怨灵",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "提名你或被你提名的非旅行者玩家会立即变为沙漠怨灵，如果恶魔玩家被你提名或他提名了你，你中毒。如果你“疯狂”地证明自己是沙漠怨灵，你可能会被处决。[-1外来者]",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/52_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "中毒",
+      "怨灵缠身"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "沙海之下，埋藏着不甘的亡魂。它们无法安息，便化为低语，随风沙钻入生者的耳中、心中，直到所有人都变得和它们一样……充满怨毒。"
+  },
+  {
+    "id": "楼兰王",
+    "name": "楼兰王",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名存活玩家：与他邻近的存活玩家可能死亡。如果大于等于五名玩家存活时你死于处决，存活的落魄王子与你交换角色并转变为邪恶阵营，随后会有一名善良玩家得知楼兰王在场。[+落魄王子]",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/53_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 9,
+    "otherNightReminder": "除首夜外，每个夜晚，唤醒楼兰王让其选择一名存活玩家，由说书人决定在与他邻近的存活玩家中是否放置死亡标记。",
+    "reminders": [
+      "死亡",
+      "得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "风沙会掩盖一切，包括王座与尸骨。当古老的诅咒被唤醒，新的王朝将在血与背叛中诞生。"
+  },
+  {
+    "id": "龟兹王",
+    "name": "龟兹王",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家，他死亡。如果当天有爪牙角色死亡，夜晚你额外行动一次。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/54_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 11,
+    "otherNightReminder": "除首夜外，每个夜晚唤醒龟兹王让其选择一名玩家，他死亡并放置死亡标记。如果当天有爪牙角色死亡，让其额外行动一次，随后闭眼。",
+    "reminders": [
+      "死亡",
+      "死于今日"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "白龙堆沙，龟兹称王。亲侍之殁，刃锋愈芒。忠骸作阶，直抵天光。一人死，则一人王；众人死，则天下惶。"
+  },
+  {
+    "id": "海市蜃楼",
+    "name": "海市蜃楼",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家，他死亡。每局游戏限一次，你会被善良玩家当作善良角色和善良阵营。始终会有一名存活的善良玩家被当做邪恶的海市蜃楼，你可以决定其获得一条错误的通知。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/55_silkroadrising.png",
+    "firstNight": 12,
+    "firstNightReminder": "每个夜晚，询问海市蜃楼是否需要发布错误的通知。",
+    "otherNight": 10,
+    "otherNightReminder": "每个夜晚，询问海市蜃楼是否需要发布错误的通知。除首夜外，每个夜晚唤醒海市蜃楼让其选择一名玩家，在其角色旁放置死亡标记。",
+    "reminders": [
+      "死亡",
+      "幻象",
+      "蜃景"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "瀚海日炙，沙砾生烟，光折射于苍穹，乃成城郭人马之幻影，谓之‘蜃楼’。吾即此蜃气，能聚光为形。虚实之间，尽是吾之疆域，死生难料，皆在吾一念之间。"
+  },
+  {
+    "id": "沙海响马",
+    "name": "沙海响马",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，所有沙海响马同时醒来一起选择一名与沙海响马邻近的存活玩家：他死亡。你可以要求在夜晚死亡，并选择一名玩家：他死亡。[无爪牙在场，由你决定初始爪牙数量的玩家成为邪恶的沙海响马，±任意外来者]",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/56_silkroadrising.png",
+    "firstNight": 11,
+    "firstNightReminder": "首夜，唤醒沙海响马让其选择等同初始爪牙数量的玩家成为沙海响马，唤醒他们告知身份阵营转变并互认同伴，随后闭眼。",
+    "otherNight": 12,
+    "otherNightReminder": "除首夜外，每个夜晚唤醒所有沙海响马并让其一起选择一名与存活沙海响马邻近的存活玩家，他死亡并放置死亡标记。同时询问是否发动能力，在发动能力的沙海响马角色旁放置死亡标记，并让其选择一名玩家，他死亡并放置死亡标记，随后闭眼。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "黄沙百战，白骨为旗。我们不是一人，我们是一阵风。刀锋过处，没有英雄，只有同样染血的同袍与同样倒下的敌人。同生，共死，皆在一念之间。"
+  },
+  {
+    "id": "商魁",
+    "name": "商魁",
+    "edition": "custom",
+    "team": "traveler",
+    "ability": "每个白天开始时，你要公开选择一名玩家，如果当天该玩家被处决，当晚你会获得一个你相同阵营的角色能力。",
+    "image": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/57_silkroadrising.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "是商魁",
+      "商魁押注"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "丝路万里，驼铃相闻。有商队自长安来，载丝绸、瓷器、茶砖；有商队自波斯来，携香料、宝石、良驹。我行走其间，不贩丝绸，不贸珠玉，唯以眼力相人。我曾见一落魄书生，与之饮三杯，赠银百两，三年后他官至刺史；亦曾见一魁梧武士，与之弈一局，让三子，十日后他血溅驿路。商道如天道，盈亏有数。今日我押注于君，不知君是成是败？"
+  },
+  {
+    "id": "独奏家",
+    "name": "独奏家",
+    "edition": "custom",
+    "team": "fabled",
+    "ability": "旅行者会被非旅行者的能力当作不在游戏中，但恶魔仍然可以选择杀死旅行者。",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/0/02/2fdk8134asbob2fmwjfne6ln2w2cpsm.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  }
+]

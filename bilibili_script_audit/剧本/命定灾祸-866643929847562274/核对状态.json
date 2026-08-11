@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 28,
@@ -190,9 +190,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "他们中毒。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_name_confirmed_by_ability": [
@@ -269,6 +267,12 @@
         }
       ],
       "required_character_matches": 26
+    },
+    {
+      "image": "对照图-03.png",
+      "heading_characters": [],
+      "heading_character_details": [],
+      "required_character_matches": 0
     }
   ],
   "ocr_source_board_groups": [],
@@ -294,8 +298,16 @@
       "y": 0.09573
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "他们中毒。"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "原图底部的“他们中毒。”是沼泽蜥人能力“如果命运指针正指向的玩家及与他顺时针邻近的玩家均为镇民”的续行，不是独立规则或说明。完整角色板、旅行者封面与双侧夜序均已核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

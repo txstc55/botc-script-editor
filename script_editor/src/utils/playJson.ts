@@ -241,7 +241,7 @@ function parseScriptNotes(meta?: RawRecord): ScriptNoteDraft[] {
 
   return rawNotes.flatMap((value, index) => {
     if (typeof value === "string") {
-      const text = cleanText(value);
+      const text = cleanMultilineText(value);
       return text ? [{ id: `note-${index}`, text }] : [];
     }
     if (!isRecord(value)) {
@@ -249,7 +249,7 @@ function parseScriptNotes(meta?: RawRecord): ScriptNoteDraft[] {
     }
 
     const title = cleanText(value.name ?? value.title ?? value.term);
-    const body = cleanText(value.text ?? value.description ?? value.skill ?? value.ability);
+    const body = cleanMultilineText(value.text ?? value.description ?? value.skill ?? value.ability);
     const text = title && body ? `${title}：${body}` : title || body;
     if (!text) {
       return [];
@@ -348,6 +348,17 @@ function cleanText(value: unknown): string {
     return "";
   }
   return String(value).replace(/\s+/g, " ").trim();
+}
+
+function cleanMultilineText(value: unknown): string {
+  if (value === null || value === undefined) {
+    return "";
+  }
+  return String(value)
+    .replace(/\r\n?/g, "\n")
+    .replace(/[^\S\n]+/g, " ")
+    .replace(/ *\n */g, "\n")
+    .trim();
 }
 
 function isRecord(value: unknown): value is RawRecord {

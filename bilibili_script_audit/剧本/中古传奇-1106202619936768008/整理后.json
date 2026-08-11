@@ -1,0 +1,493 @@
+[
+  {
+    "id": "_meta",
+    "name": "中古传奇",
+    "author": "Stellarium",
+    "minionInfo": 4.5,
+    "demonInfo": 7.5,
+    "notes": [
+      {
+        "text": "疯狂\n当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+        "html": "<strong style=\"color: rgb(103, 14, 171);\">疯狂</strong><br>当你陷入“<strong style=\"color: rgb(103, 14, 171);\">疯狂</strong>”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。"
+      },
+      {
+        "text": "中毒 / 醉酒\n中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<strong style=\"color: rgb(143, 23, 1);\">中毒 / 醉酒</strong><br>中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+      },
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
+    "id": "侍童",
+    "name": "侍童",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知三名玩家。如果他们都已被你提名，你可以私下询问说书人并以任意顺序得知他们的角色。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/page_medieval_mythos.png",
+    "firstNight": 14,
+    "firstNightReminder": "在你的首个夜晚，你会得知三名玩家。如果他们都已被你提名，你可以私下询问说书人并以任意顺序得知他们的角色。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "已知晓"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "侍从",
+    "name": "侍从",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一名镇民玩家：如果他被提名，你会在当晚得知另一名镇民玩家。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/squire_medieval_mythos.png",
+    "firstNight": 15,
+    "firstNightReminder": "在你的首个夜晚，你会得知一名镇民玩家：如果他被提名，你会在当晚得知另一名镇民玩家。",
+    "otherNight": 18,
+    "otherNightReminder": "在你的首个夜晚，你会得知一名镇民玩家：如果他被提名，你会在当晚得知另一名镇民玩家。",
+    "reminders": [
+      "效忠"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "魔法师",
+    "name": "魔法师",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知五条信息。每个白天，你可以私下询问说书人并选择其中一条信息：你会得知该信息是否正确。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/mage_medieval_mythos.png",
+    "firstNight": 16,
+    "firstNightReminder": "在你的首个夜晚，你会得知五条信息。每个白天，你可以私下询问说书人并选择其中一条信息：你会得知该信息是否正确。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "缪斯",
+    "name": "缪斯",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家：如果他是善良的，他的能力获得升级直到下个黄昏。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/muse_medieval_mythos.png",
+    "firstNight": 12,
+    "firstNightReminder": "每个夜晚，你要选择一名玩家：如果他是善良的，他的能力获得升级直到下个黄昏。",
+    "otherNight": 3,
+    "otherNightReminder": "每个夜晚，你要选择一名玩家：如果他是善良的，他的能力获得升级直到下个黄昏。",
+    "reminders": [
+      "已升级"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "王子",
+    "name": "王子",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家：如果一名爪牙被选中了两次，他死亡，并且当晚不会再有其他玩家死亡。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/prince_medieval_mythos.png",
+    "firstNight": 13,
+    "firstNightReminder": "每个夜晚，你要选择一名玩家：如果一名爪牙被选中了两次，他死亡，并且当晚不会再有其他玩家死亡。",
+    "otherNight": 16,
+    "otherNightReminder": "每个夜晚，你要选择一名玩家：如果一名爪牙被选中了两次，他死亡，并且当晚不会再有其他玩家死亡。",
+    "reminders": [
+      "已选择一次",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "神偷",
+    "name": "神偷",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你可以选择一名存活玩家：你获得他的能力直到下个黄昏。如果他是善良的，他醉酒直到下个黄昏。否则，你醉酒直到下个黄昏。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/thief_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 14,
+    "otherNightReminder": "每个夜晚*，你可以选择一名存活玩家：你获得他的能力直到下个黄昏。如果他是善良的，他醉酒直到下个黄昏。否则，你醉酒直到下个黄昏。",
+    "reminders": [
+      "能力被盗",
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "盗贼",
+    "name": "盗贼",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家：当晚如果有邪恶角色使用其自身能力选择了他，会改为选中你作为替代，且你会得知是哪一个邪恶角色。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/rogue_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 5,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家：当晚如果有邪恶角色使用其自身能力选择了他，会改为选中你作为替代，且你会得知是哪一个邪恶角色。",
+    "reminders": [
+      "被守护"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "仆人",
+    "name": "仆人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择三名玩家：当晚恶魔的负面能力对其中一名玩家无效；爪牙的负面能力对其中另一名玩家无效，直到下个黄昏。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/servant_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 6,
+    "otherNightReminder": "每个夜晚*，你要选择三名玩家：当晚恶魔的负面能力对其中一名玩家无效；爪牙的负面能力对其中另一名玩家无效，直到下个黄昏。",
+    "reminders": [
+      "免疫恶魔",
+      "免疫爪牙"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "先知",
+    "name": "先知",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个白天限一次，你可以私下拜访说书人以得知一名玩家。如果你在夜晚死亡，你会得知你曾得知了多少名邪恶玩家。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/seer_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 15,
+    "otherNightReminder": "每个白天限一次，你可以私下拜访说书人以得知一名玩家。如果你在夜晚死亡，你会得知你曾得知了多少名邪恶玩家。",
+    "reminders": [
+      "已得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "气仙",
+    "name": "气仙",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个白天限一次，你可以私下拜访说书人并选择一个角色（与上个白天不同）：如果该角色在场，该角色之一醉酒直到下个黎明。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/sylph_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 2,
+    "otherNightReminder": "每个白天限一次，你可以私下拜访说书人并选择一个角色（与上个白天不同）：如果该角色在场，该角色之一醉酒直到下个黎明。",
+    "reminders": [
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "继承者",
+    "name": "继承者",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择在上个白天和夜晚时死亡的一名玩家：你会得知他的角色并获得他的能力。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/heir_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 19,
+    "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以选择在上个白天和夜晚时死亡的一名玩家：你会得知他的角色并获得他的能力。",
+    "reminders": [
+      "是继承者",
+      "已使用能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "巫师",
+    "name": "巫师",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家和一个镇民角色：如果他不是恶魔且该角色不在场，他变成该角色。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/wiccan_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 13,
+    "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以选择一名玩家和一个镇民角色：如果他不是恶魔且该角色不在场，他变成该角色。",
+    "reminders": [
+      "已转变",
+      "已使用能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "乐手",
+    "name": "乐手",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "如果与你邻近的存活玩家死亡，你会在下个夜晚得知他的角色。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/bard_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 17,
+    "otherNightReminder": "如果与你邻近的存活玩家死亡，你会在下个夜晚得知他的角色。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "天选之子",
+    "name": "天选之子",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "每个夜晚，你要选择一名玩家：你在下个白天只能提名他。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/chosenone_medieval_mythos.png",
+    "firstNight": 17,
+    "firstNightReminder": "每个夜晚，你要选择一名玩家：你在下个白天只能提名他。",
+    "otherNight": 20,
+    "otherNightReminder": "每个夜晚，你要选择一名玩家：你在下个白天只能提名他。",
+    "reminders": [
+      "选择"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "被诅咒者",
+    "name": "被诅咒者",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "每个夜晚，即使你已死亡，你要选择一名存活玩家：如果你死亡或他被处决，会有不好的事情发生，直到下次选择。你会得知不好的事情是什么。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/cursed_medieval_mythos.png",
+    "firstNight": 18,
+    "firstNightReminder": "每个夜晚，即使你已死亡，你要选择一名存活玩家：如果你死亡或他被处决，会有不好的事情发生，直到下次选择。你会得知不好的事情是什么。",
+    "otherNight": 21,
+    "otherNightReminder": "每个夜晚，即使你已死亡，你要选择一名存活玩家：如果你死亡或他被处决，会有不好的事情发生，直到下次选择。你会得知不好的事情是什么。",
+    "reminders": [
+      "目标",
+      "？"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "圣像守卫",
+    "name": "圣像守卫",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "如果你死亡，所有邪恶玩家的能力会在下个夜晚都获得永久升级。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/idolkeeper_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 4,
+    "otherNightReminder": "如果你死亡，所有邪恶玩家的能力会在下个夜晚都获得永久升级。",
+    "reminders": [
+      "已升级"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "不散阴魂",
+    "name": "不散阴魂",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "如果你被提名，可能会有一名善良玩家在当晚死亡。如果你“疯狂”地证明自己是不散阴魂，恶魔在当晚行动两次，即使你已死亡。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/haunt_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "被提名",
+      "死亡",
+      "疯狂"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "夜魔",
+    "name": "夜魔",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，随后你会变成他的角色。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/nightcrawler_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 11,
+    "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，随后你会变成他的角色。",
+    "reminders": [
+      "是夜魔",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "卧底",
+    "name": "卧底",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "被你提名的玩家会中毒直到下个黎明。你可能会被当作镇民角色或外来者角色。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/infiltrator_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "火妖",
+    "name": "火妖",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "如果有玩家提名并处决了同一阵营的玩家，与被提名者邻近的玩家可能会死亡。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/pyro_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "术士",
+    "name": "术士",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚*，你要选择一名善良玩家：说书人向他提出两个有利于邪恶阵营的选项，他必须选择让其中一项发生。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/warlock_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 12,
+    "otherNightReminder": "每个夜晚*，你要选择一名善良玩家：说书人向他提出两个有利于邪恶阵营的选项，他必须选择让其中一项发生。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "帝王",
+    "name": "帝王",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式杀死了一名爪牙或外来者，与他邻近的玩家之一可能会中毒直到下个黄昏。[+1 或 +2 外来者]",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/monark_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 7,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式杀死了一名爪牙或外来者，与他邻近的玩家之一可能会中毒直到下个黄昏。[+1 或 +2 外来者]",
+    "reminders": [
+      "死亡",
+      "当晚中毒"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "风笛手",
+    "name": "风笛手",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。首个被你提名的善良玩家会在黄昏时转变为邪恶阵营。[-1 外来者]",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/piper_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 9,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。首个被你提名的善良玩家会在黄昏时转变为邪恶阵营。[-1 外来者]",
+    "reminders": [],
+    "remindersGlobal": [
+      "死亡",
+      "转变为邪恶"
+    ],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "傀儡师",
+    "name": "傀儡师",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择两名玩家：如果他们都存活，他们都会被当作邪恶阵营和爪牙角色，且你会被当作善良阵营和镇民角色。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/poppetmaker_medieval_mythos.png",
+    "firstNight": 11,
+    "firstNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择两名玩家：如果他们都存活，他们都会被当作邪恶阵营和爪牙角色，且你会被当作善良阵营和镇民角色。",
+    "otherNight": 8,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择两名玩家：如果他们都存活，他们都会被当作邪恶阵营和爪牙角色，且你会被当作善良阵营和镇民角色。",
+    "reminders": [
+      "死亡",
+      "傀儡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "邪术师",
+    "name": "邪术师",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家和一个非恶魔角色：他死亡；如果该角色不在场，与他邻近的玩家之一可能变成该角色。",
+    "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/summoner_medieval_mythos.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 10,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家和一个非恶魔角色：他死亡；如果该角色不在场，与他邻近的玩家之一可能变成该角色。",
+    "reminders": [],
+    "remindersGlobal": [
+      "死亡"
+    ],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "古老魔法",
+    "name": "古老魔法",
+    "edition": "custom",
+    "team": "fabled",
+    "ability": "能力获得升级的玩家不知道升级后的能力。当角色的能力被升级时，说书人决定以何种方式增强他的能力。（升级效果：得到额外信息、额外的使用次数、正面效果对更多玩家生效、负面效果削弱或移除……）",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  }
+]

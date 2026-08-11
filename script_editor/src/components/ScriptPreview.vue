@@ -262,7 +262,9 @@ function buildNotesLayout(contentBottom: number) {
   for (const note of props.script.notes) {
     const fontSize = maxInlineFontSize(note.textHtml, NOTE_FONT_SIZE);
     const lineHeight = Math.max(NOTE_LINE_HEIGHT, Math.ceil(fontSize * 1.35));
-    const lineCount = Math.max(1, wrapText(note.text, width, fontSize).length);
+    const lineCount = note.text
+      .split("\n")
+      .reduce((total, line) => total + Math.max(1, wrapText(line, width, fontSize).length), 0);
     const height = lineCount * lineHeight + 2;
     notes.push({
       id: note.id,

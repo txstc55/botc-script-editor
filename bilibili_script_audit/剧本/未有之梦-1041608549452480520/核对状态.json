@@ -3,81 +3,307 @@
   "title": "4 【染钟楼】剧本社区—第503期《未有之梦》 专栏 钟楼剧本博物馆 0阅读 14评论 此内容无法展示，请 重新加载",
   "script_name": "未有之梦",
   "url": "https://www.bilibili.com/opus/1041608549452480520",
-  "local_json": "",
-  "generated_image": "",
-  "match_score": 0.5,
-  "status": "unmatched",
+  "local_json": "all_jsons/来源核对补全/#未有之梦-1041608549452480520.json",
+  "generated_image": "all_jsons/来源核对补全/#未有之梦-1041608549452480520.jpg",
+  "match_score": 1.0,
+  "status": "matched",
   "source_images": [
-    "对照图-01.png",
-    "对照图-02.jpg"
+    "对照图-01.jpg"
   ],
-  "review_status": "missing_json",
+  "review_status": "manual_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-02.jpg",
+  "ocr_reference_image": "对照图-01.jpg",
   "ocr_heading_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
+    "公爵",
+    "猎魔人",
+    "天机子"
   ],
   "ocr_source_images": [
     {
-      "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": []
-    },
-    {
-      "image": "对照图-02.jpg",
+      "image": "对照图-01.jpg",
       "heading_characters": [
-        "\"镇民\"",
-        "\"外来者\"",
-        "\"爪牙\""
+        "公爵",
+        "天机子",
+        "猎魔人"
       ],
       "heading_character_details": [
         {
-          "name": "\"镇民\"",
+          "name": "公爵",
           "team": "townsfolk",
-          "x": 0.29804,
-          "y": 0.31977
+          "x": 0.56275,
+          "y": 0.8705
         },
         {
-          "name": "\"外来者\"",
+          "name": "猎魔人",
           "team": "townsfolk",
-          "x": 0.27255,
-          "y": 0.292
+          "x": 0.56275,
+          "y": 0.6975
         },
         {
-          "name": "\"爪牙\"",
+          "name": "天机子",
           "team": "townsfolk",
-          "x": 0.29608,
-          "y": 0.2645
+          "x": 0.14706,
+          "y": 0.6175
         }
-      ]
+      ],
+      "required_character_matches": 26
     }
   ],
   "ocr_source_board_groups": [],
-  "source_image_ids": [],
+  "source_image_ids": [
+    "f1aaf29927c2f81670234fbb4fb48e5744902471.jpg"
+  ],
   "resolved_source_image_ids": [
-    "a1b01bf0685735c4734761b767d1eb4444902471.jpg",
     "f1aaf29927c2f81670234fbb4fb48e5744902471.jpg"
   ],
   "ocr_heading_character_details": [
     {
-      "name": "\"镇民\"",
+      "name": "公爵",
       "team": "townsfolk",
-      "x": 0.29804,
-      "y": 0.31977
+      "x": 0.56275,
+      "y": 0.8705
     },
     {
-      "name": "\"外来者\"",
+      "name": "猎魔人",
       "team": "townsfolk",
-      "x": 0.27255,
-      "y": 0.292
+      "x": 0.56275,
+      "y": 0.6975
     },
     {
-      "name": "\"爪牙\"",
+      "name": "天机子",
       "team": "townsfolk",
-      "x": 0.29608,
-      "y": 0.2645
+      "x": 0.14706,
+      "y": 0.6175
     }
-  ]
+  ],
+  "source_image_added_ids": [
+    "f1aaf29927c2f81670234fbb4fb48e5744902471.jpg"
+  ],
+  "manual_verification": {
+    "verified_unexpected_characters": [
+      "公爵",
+      "猎魔人",
+      "天机子"
+    ],
+    "verified_bottom_lines": [
+      "每个夜晚*，可能会有一名玩家死亡。［-1外来者］",
+      "明圓吋之歌",
+      "离群喑精灵",
+      "所有旅行者要秘密决定由哪名玩家来佩戴时之歌",
+      "每个夜晚*，",
+      "邪恶玩家互相不认识。如果仅剩一名邪恶玩家存活，会有一名",
+      "恶魔得知此事。然后那个恶魔可以在夜晚额外被唤醒并使用一",
+      "直到下个黄昏。佩戴时之歌的旅行者“是镇民“或“是爪牙”",
+      "次能力，即使他已死亡。",
+      "且他的夜晚行动顺序延后至所有旅行者行动结束后。佩戴时之",
+      "歌的非旅行者”是旅行者”，但游戏不会因恶魔佩戴时之歌而",
+      "耳语咏唱家",
+      "说书人可以打破游戏规则。如果说书人被处决时游戏规则已经",
+      "被打破，提名说书人的玩家所代表的阵营获胜。",
+      "反之，提名说书人的玩家所代表的阵营落败。",
+      "非首个夜晚"
+    ],
+    "source_image": "对照图-01.jpg",
+    "reason": "完整角色板已放大逐项核对：13名镇民、4名外来者、4名爪牙、4名恶魔、3名传奇角色、5名旅行者及双侧夜序均已录入。全原创角色不在基础数据库中，OCR 只把三个同名数据库角色误列为额外角色，并把底部传奇区拆成碎行。"
+  },
+  "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "明圓吋之歌"
+    ]
+  },
+  "ocr_character_matches": 28,
+  "ocr_required_character_count": 28,
+  "ocr_missing_characters": [],
+  "ocr_name_confirmed_by_ability": [
+    "离群暗精灵",
+    "明日时之歌"
+  ],
+  "ocr_unexpected_characters": [],
+  "ocr_travelers_seen": [],
+  "ocr_ability_checks": [
+    {
+      "name": "教堂圣女",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "封爵",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "瑶琴师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "启灵师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "圣魂骑士",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "天机子",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "真心贸易家",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "公爵",
+      "team": "townsfolk",
+      "ability_coverage": 0.9756
+    },
+    {
+      "name": "破译者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "黎明新星",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "猎魔人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "守望者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "诱饵",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "猫偶",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "天空花嫁",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "重临者",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "孤月猎神人",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "执棋者",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "月眠师",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "处刑手",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "潮汐眷属",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "落幕新郎",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "斜月书仙",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "魅灵公主",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "生化幽魂",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "离群暗精灵",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "耳语咏唱家",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "明日时之歌",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    }
+  ],
+  "ocr_ability_mismatches": [],
+  "ocr_traveler_checks": [],
+  "ocr_traveler_mismatches": [],
+  "ocr_jinx_checks": [],
+  "ocr_jinx_mismatches": [],
+  "ocr_jinx_marker_count": 0,
+  "ocr_missing_jinx_rule_count": 0,
+  "ocr_note_checks": [
+    {
+      "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    }
+  ],
+  "ocr_note_mismatches": [],
+  "ocr_bottom_text": [
+    "每个夜晚*，可能会有一名玩家死亡。［-1外来者］",
+    "传奇角色•说书人",
+    "明圓吋之歌",
+    "离群喑精灵",
+    "所有旅行者要秘密决定由哪名玩家来佩戴时之歌",
+    "每个夜晚*，",
+    "邪恶玩家互相不认识。如果仅剩一名邪恶玩家存活，会有一名",
+    "恶魔得知此事。然后那个恶魔可以在夜晚额外被唤醒并使用一",
+    "直到下个黄昏。佩戴时之歌的旅行者“是镇民“或“是爪牙”",
+    "次能力，即使他已死亡。",
+    "且他的夜晚行动顺序延后至所有旅行者行动结束后。佩戴时之",
+    "歌的非旅行者”是旅行者”，但游戏不会因恶魔佩戴时之歌而",
+    "结束。",
+    "耳语咏唱家",
+    "说书人可以打破游戏规则。如果说书人被处决时游戏规则已经",
+    "被打破，提名说书人的玩家所代表的阵营获胜。",
+    "反之，提名说书人的玩家所代表的阵营落败。",
+    "*代表",
+    "非首个夜晚"
+  ],
+  "ocr_unexplained_bottom_lines": [],
+  "ocr_rule_markers": [],
+  "ocr_missing_rule_data": false
 }

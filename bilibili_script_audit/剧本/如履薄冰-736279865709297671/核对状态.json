@@ -16,9 +16,9 @@
     "de9710b0207d1e16b57000e9f69eb5a0d77215a2.png",
     "65e243951ac1ea035e33660a157b5760c86a7f15.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-03.png",
+  "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 11,
   "ocr_required_character_count": 11,
   "ocr_missing_characters": [],
@@ -172,6 +172,14 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
+      "text": "醉酒/中毒 醉酒/中毒会失去能力，但说书人依然会配合你使用能力：如果获得信息，可能是错误的。",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "复活/反刍/起死回生 已死亡玩家再次变为存活玩家。该玩家视为重新进场，会重新获得能力（包括限一次，首个夜晚…）。",
+      "text_coverage": 0.6364
+    },
+    {
       "text": "*代表非首个夜晚",
       "text_coverage": 1.0
     }
@@ -187,22 +195,12 @@
     "Blood染：钟楼剧本社区",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "醉酒/中毒 醉酒/中毒会失去能力，但说书人依然会配合你使用能力：如果获得信息，可能是错误的。",
-    "复活/反当 已死亡玩家再次变为存活玩家。玩家会重新获得能力（包括限一次，首个夜晚.…）",
-    "Blood染：钟楼剧本社区"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
-      "required_character_matches": 0
-    },
-    {
-      "image": "对照图-02.png",
       "heading_characters": [
         "\"镇民\"",
         "\"外来者\"",
@@ -231,7 +229,7 @@
       "required_character_matches": 0
     },
     {
-      "image": "对照图-03.png",
+      "image": "对照图-02.png",
       "heading_characters": [
         "教授",
         "猎手",
@@ -319,7 +317,7 @@
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "主谋",
@@ -336,15 +334,21 @@
       ]
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "Blood染：钟楼剧本社区"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "底部该行是社区水印，不是剧本规则。角色、能力、底部醉酒/中毒与复活说明及双侧夜序均已逐项核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
     "unexplained_bottom_lines": [
-      "醉酒/中毒 醉酒/中毒会失去能力，但说书人依然会配合你使用能力：如果获得信息，可能是错误的。",
-      "复活/反当 已死亡玩家再次变为存活玩家。玩家会重新获得能力（包括限一次，首个夜晚.…）",
       "Blood染：钟楼剧本社区"
     ]
   },

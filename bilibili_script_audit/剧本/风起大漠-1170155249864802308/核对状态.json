@@ -3,21 +3,21 @@
   "title": "4 【染钟楼】剧本社区—第916期《风起大漠》 专栏 钟楼剧本博物馆 0阅读 20评论 此内容无法展示，请 重新加载",
   "script_name": "风起大漠",
   "url": "https://www.bilibili.com/opus/1170155249864802308",
-  "local_json": "",
-  "generated_image": "",
-  "match_score": 0.5,
-  "status": "unmatched",
+  "local_json": "all_jsons/来源核对补全/#风起大漠-1170155249864802308.json",
+  "generated_image": "all_jsons/来源核对补全/#风起大漠-1170155249864802308.jpg",
+  "match_score": 1.0,
+  "status": "matched",
   "source_images": [
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "missing_json",
+  "review_status": "manual_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-01.png",
+  "ocr_reference_image": "对照图-02.png",
   "ocr_heading_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
+    "巫祝",
+    "巧匠",
+    "独奏家"
   ],
   "ocr_source_images": [
     {
@@ -46,7 +46,8 @@
           "x": 0.29804,
           "y": 0.14826
         }
-      ]
+      ],
+      "required_character_matches": 0
     },
     {
       "image": "对照图-02.png",
@@ -74,7 +75,8 @@
           "x": 0.56275,
           "y": 0.07994
         }
-      ]
+      ],
+      "required_character_matches": 26
     }
   ],
   "ocr_source_board_groups": [],
@@ -85,22 +87,245 @@
   ],
   "ocr_heading_character_details": [
     {
-      "name": "\"镇民\"",
+      "name": "巫祝",
       "team": "townsfolk",
-      "x": 0.29937,
-      "y": 0.20233
+      "x": 0.14902,
+      "y": 0.6495
     },
     {
-      "name": "\"外来者\"",
+      "name": "巧匠",
       "team": "townsfolk",
-      "x": 0.27255,
-      "y": 0.17297
+      "x": 0.56275,
+      "y": 0.59884
     },
     {
-      "name": "\"爪牙\"",
-      "team": "townsfolk",
-      "x": 0.29804,
-      "y": 0.14826
+      "name": "独奏家",
+      "team": "fabled",
+      "x": 0.56275,
+      "y": 0.07994
     }
-  ]
+  ],
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "响马，士 任意外来者］"
+    ],
+    "source_image": "对照图-02.png",
+    "source_data": "https://www.bloodstar.xyz/p/Rocky2026/SilkRoadRising/script.json",
+    "reason": "板面二维码指向原作者剧本 JSON；29个角色、阵营、能力、提醒、夜序、商魁、独奏家及星号说明均已逐项交叉核对。OCR 截断行是沙海响马能力末尾的设置括号，并非额外说明。"
+  },
+  "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "响马，士 任意外来者］"
+    ]
+  },
+  "ocr_character_matches": 29,
+  "ocr_required_character_count": 29,
+  "ocr_missing_characters": [],
+  "ocr_name_confirmed_by_ability": [
+    "大鸿胪",
+    "太史令",
+    "龟兹王"
+  ],
+  "ocr_unexpected_characters": [],
+  "ocr_travelers_seen": [
+    "商魁"
+  ],
+  "ocr_ability_checks": [
+    {
+      "name": "大鸿胪",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "太史令",
+      "team": "townsfolk",
+      "ability_coverage": 0.9074
+    },
+    {
+      "name": "中郎将",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "译语人",
+      "team": "townsfolk",
+      "ability_coverage": 0.963
+    },
+    {
+      "name": "斥候",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "绣衣使者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "丝路商人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "西域都护",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "玉门都尉",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "悬泉驿长",
+      "team": "townsfolk",
+      "ability_coverage": 0.9556
+    },
+    {
+      "name": "边关戍卫",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "巫祝",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "说书先生",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "巧匠",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "胡姬",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "落魄王子",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "阴阳术士",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "波斯乐师",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "麻布袋",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "玉面罗刹",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "匈奴狼骑",
+      "team": "minion",
+      "ability_coverage": 0.973
+    },
+    {
+      "name": "黑蛇妖",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "沙魇",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "沙漠怨灵",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "楼兰王",
+      "team": "demon",
+      "ability_coverage": 0.9412
+    },
+    {
+      "name": "龟兹王",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "海市蜃楼",
+      "team": "demon",
+      "ability_coverage": 0.9868
+    },
+    {
+      "name": "沙海响马",
+      "team": "demon",
+      "ability_coverage": 0.9765
+    },
+    {
+      "name": "独奏家",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    }
+  ],
+  "ocr_ability_mismatches": [],
+  "ocr_traveler_checks": [
+    {
+      "name": "商魁",
+      "team": "traveler",
+      "ability_coverage": 1.0
+    }
+  ],
+  "ocr_traveler_mismatches": [],
+  "ocr_jinx_checks": [],
+  "ocr_jinx_mismatches": [],
+  "ocr_jinx_marker_count": 0,
+  "ocr_missing_jinx_rule_count": 0,
+  "ocr_note_checks": [
+    {
+      "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    }
+  ],
+  "ocr_note_mismatches": [],
+  "ocr_bottom_text": [
+    "响马，士 任意外来者］",
+    "海市蜃楼",
+    "每个夜晚*，",
+    "你要选择一名玩家：他死亡。",
+    "龟茲王",
+    "每局游戏限一次，你会被善良玩家当作善良角色和善良阵营。",
+    "每个夜晚*，你要选择一名玩家：他死亡。",
+    "始终会有一名存适的善良玩家被当做邪恶的海市蜃楼，你可以",
+    "如果当天有爪牙角色死亡，夜晚你额外行动一次。",
+    "决定其获得一条错误的通知。",
+    "旅行者",
+    "传备角色•说书人",
+    "独奏家",
+    "商魁",
+    "每个白天开始时，你要公开选择一名玩家，如果当天该玩家",
+    "旅行者会被非旅行者的能力当作不在游戏中，但恶魔仍然可以",
+    "选择杀死旅行者。",
+    "被处决，当晚你会获得一个你相同阵营的角色能力。",
+    "*代表",
+    "非首个夜晚"
+  ],
+  "ocr_unexplained_bottom_lines": [],
+  "ocr_rule_markers": [],
+  "ocr_missing_rule_data": false
 }

@@ -1,0 +1,545 @@
+[
+  {
+    "id": "_meta",
+    "name": "霍格沃茨之战",
+    "author": "JJ & Mas",
+    "notes": [
+      {
+        "text": "魔法部：任何对麻瓜使用侮辱性词语的玩家可能被送往阿兹卡班。",
+        "html": "<strong>魔法部</strong>：任何对麻瓜使用侮辱性词语的玩家可能被送往阿兹卡班。"
+      },
+      {
+        "text": "阿兹卡班：你随时可能被处决，且随时可能失去你的能力。",
+        "html": "<strong>阿兹卡班</strong>：你随时可能被处决，且随时可能失去你的能力。"
+      },
+      {
+        "text": "黑魔王是本游戏中“恶魔”的称谓",
+        "html": "<strong>黑魔王</strong>是本游戏中“<strong>恶魔</strong>”的称谓"
+      },
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      },
+      {
+        "text": "*建议7人以上加入旅行者",
+        "html": "<strong>*建议7人以上加入旅行者</strong>"
+      }
+    ]
+  },
+  {
+    "id": "鲁伯·海格",
+    "name": "鲁伯·海格",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一名玩家：他是罗恩、赫敏、哈利或纳威。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/hagrid_hp2_2.png",
+    "firstNight": 20,
+    "firstNightReminder": "Wake Hagrid and point at a player who is a Gryffindor",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Gryffindor"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "\"There's A Storm Coming Harry, We'd All Best Be Ready When She Does\""
+  },
+  {
+    "id": "罗恩·韦斯莱",
+    "name": "罗恩·韦斯莱",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知一名当晚曾被邪恶阵营选择的玩家（或你得知今晚没有玩家被邪恶阵营选择）。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/ronweasley_hp2_2.png",
+    "firstNight": 22,
+    "firstNightReminder": "Wake and tell them a player who was chosen by the evil team tonight.",
+    "otherNight": 20,
+    "otherNightReminder": "Wake and tell them a player who was chosen by the evil team tonight.",
+    "reminders": [
+      "Check"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "Well, White moves first. And then... We play."
+  },
+  {
+    "id": "米勒娃·麦格",
+    "name": "米勒娃·麦格",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你可以选择一个未选择过的镇民角色：你获得该角色的能力直到下个黎明。如果该角色在场，他醉酒。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/mcgonagall_hp2_2.png",
+    "firstNight": 14,
+    "firstNightReminder": "Wake and ask if they would like to use ability. If so ask them to choose a character. Mark any chosen in play character as 'Detention'.",
+    "otherNight": 2,
+    "otherNightReminder": "Wake and ask if they would like to use ability. If so ask them to choose a character. Mark any chosen in play character as 'Detention'.",
+    "reminders": [
+      "Detention",
+      "Detention",
+      "Detention",
+      "Detention",
+      "Detention"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "No, you heard me correctly, Mr. Malfoy. You see, honourable as your intentions were, you too were out of bed after hours. You will join your classmates in detention."
+  },
+  {
+    "id": "赫敏·格兰杰",
+    "name": "赫敏·格兰杰",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你要选择一名玩家：你得知他的角色类型（“黑魔王”会被你当做镇民角色）。如果你在白天公开纠正了一名玩家的错误，当晚你可能会被唤醒以再次使用能力。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/hermione_hp2_2.png",
+    "firstNight": 21,
+    "firstNightReminder": "Wake and ask which player to pick, show character type.",
+    "otherNight": 14,
+    "otherNightReminder": "If they corrected someone: Wake and ask which player to pick, show character type.",
+    "reminders": [
+      "Corrected someone"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "Now if you two don’t mind, I’m going to bed before either of you come up with another clever idea to get us killed - or worse, expelled."
+  },
+  {
+    "id": "小天狼星·布莱克",
+    "name": "小天狼星·布莱克",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择是否变身为阿尼马格斯形态。如果你处于阿尼马格斯形态，你只能死于处决。如果你在夜晚死亡，你要选择两名玩家：你会得知他们之中的邪恶玩家数量。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/siriusblack_hp2_2.png",
+    "firstNight": 19,
+    "firstNightReminder": "Wake and ask if they would like to switch form. ",
+    "otherNight": 16,
+    "otherNightReminder": "Wake and ask if they would like to switch form. If they died in the night while human, wake to tell them to choose 2 players. Show them a 0, 1 or 2 based on if the players are evil or are horcruxes.",
+    "reminders": [
+      "Animagus form"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "You Don't Understand — There Are Things Worth Dying For!"
+  },
+  {
+    "id": "斯内普",
+    "name": "斯内普",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外的一名玩家：当晚和下个白天，爪牙的负面能力对他无效。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/snape_hp2_2.png",
+    "firstNight": 15,
+    "firstNightReminder": "Wake them to choose a player",
+    "otherNight": 3,
+    "otherNightReminder": "Wake them to choose a player",
+    "reminders": [
+      "Defended"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "The Dark Arts are many, varied, ever-changing and eternal. Fighting them is like fighting a many-headed monster, which, each time a neck is severed, sprouts a head even fiercer and cleverer than before"
+  },
+  {
+    "id": "莱姆斯·卢平",
+    "name": "莱姆斯·卢平",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名存活玩家，如果他是善良的，他死亡，然后当晚不会再有其他玩家死亡；如果他是邪恶的，你醉酒。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/remuslupin_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 6,
+    "otherNightReminder": "Wake to make choose a player, the previously chosen player dies if good. They are the only player that can die tonight.",
+    "reminders": [
+      "Dead",
+      "Drunk"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "People Are Disappearing Daily. If We Start Fighting Amongst Ourselves, We're Doomed."
+  },
+  {
+    "id": "纳威·隆巴顿",
+    "name": "纳威·隆巴顿",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在白天时，你可以公开选择一名玩家：如果他是爪牙，他死亡。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/neville_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Ability used"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "\"People die everyday... but they're still with us... in here\""
+  },
+  {
+    "id": "卢娜·洛夫古德",
+    "name": "卢娜·洛夫古德",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以拜访说书人并得知两名玩家：其中之一是说书人认为上个白天对善良阵营贡献最大的玩家。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/lunalovegood_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 19,
+    "otherNightReminder": "Mark the grimoire with a spirited token ",
+    "reminders": [
+      "Spirited"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "I sleepwalk, you see. That’s why I wear shoes to bed."
+  },
+  {
+    "id": "疯眼·穆迪",
+    "name": "疯眼·穆迪",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个白天，如果你“疯狂”地证明一名（与之前不同的）玩家是邪恶的，当晚你会得知他的阵营。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/madeyemoody_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 13,
+    "otherNightReminder": "Wake if they have satisfied madness and tell the targeted players alignment ",
+    "reminders": [
+      "Mad-Eye's gaze"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "Nothing like a night time stroll to give you... ideas."
+  },
+  {
+    "id": "哈利·波特",
+    "name": "哈利·波特",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "你是魂器，“黑魔王”知道你在场。当你首次被“黑魔王”杀死时，你不会死亡，所有邪恶玩家醉酒直到下个黄昏。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/harrypotter_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Lived",
+      "Dark Lord Weakened"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "The boy who lived."
+  },
+  {
+    "id": "邓布利多",
+    "name": "邓布利多",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "如果你在夜晚死亡，你要选择一名玩家：他会得知你是邓布利多，如果他是邪恶的，他在下个白天和夜晚醉酒。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/dumbledore_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 18,
+    "otherNightReminder": "Wake if killed and ask to pick a player",
+    "reminders": [
+      "Died Today"
+    ],
+    "remindersGlobal": [
+      "Drunk"
+    ],
+    "setup": 0,
+    "flavor": "Curiosity is not a sin. But we should exercise caution with our curiosity... yes, indeed."
+  },
+  {
+    "id": "凤凰·福克斯",
+    "name": "凤凰·福克斯",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "与你邻近的玩家不会中毒。如果你在夜晚死亡，你会得知杀死你的玩家的角色类型，下个黄昏，你复活并失去能力。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/fawkes_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 17,
+    "otherNightReminder": "Wake if killed, show them the character type who killed them. Resurrect them the following night.",
+    "reminders": [
+      "Resurrects tonight",
+      "Risen"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "He's been looking dreadful for days; I've been telling him to get a move on."
+  },
+  {
+    "id": "多比",
+    "name": "多比",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "在你的首个夜晚，你要选择一名玩家成为主人。如果主人即将死亡，改为你死亡。主人可以拜访说书人并放弃成为主人，然后你可以在之后的任意时间主动代替他人死亡。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/dobby_hp2_2.png",
+    "firstNight": 16,
+    "firstNightReminder": "Wake and ask to pick a player as Master",
+    "otherNight": 15,
+    "otherNightReminder": "Wake Dobby if they are free",
+    "reminders": [
+      "Master",
+      "Free"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "Master has given Dobby a sock, Dobby is a free elf!"
+  },
+  {
+    "id": "斑斑",
+    "name": "斑斑",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "每个白天，你要公开选择一名除你以外的存活玩家并猜测该玩家是哪个善良角色。如果猜错，他当晚可能会醉酒，即使你已死亡。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/scabbers_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "Betrayed",
+      "Drunk"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "I solemnly swear that I am up to no good"
+  },
+  {
+    "id": "德拉科·马尔福",
+    "name": "德拉科·马尔福",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "一名善良玩家和一名邪恶玩家（如果卢修斯在场，必是卢修斯）知道你在场。每个夜晚，如果他们存活，他们会分别被唤醒并猜测你是德拉科，即使你已转变阵营。你转变为首个猜对你的玩家的阵营。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/dracomalfoy_hp2_2.png",
+    "firstNight": 18,
+    "firstNightReminder": "Wake the Good Recruiter (If Alive) and show them the Draco Malfoy character token, ask them to choose a player. Wake the Evil Recruiter (If Alive) and show them the Draco Malfoy character token, ask them to choose a player, even if Draco has been successfully guessed.",
+    "otherNight": 5,
+    "otherNightReminder": "Wake the Good Recruiter (If Alive) and show them the Draco Malfoy character token, ask them to choose a player. Wake the Evil Recruiter (If Alive) and show them the Draco Malfoy character token, ask them to choose a player, even if Draco has been successfully guessed.",
+    "reminders": [
+      "Recruited",
+      "Recruiter",
+      "Recruiter"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "Didn't mummy ever tell you it was rude to eavesdrop, Potter?"
+  },
+  {
+    "id": "吉德罗·洛哈特",
+    "name": "吉德罗·洛哈特",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "你以为你是一个镇民角色，但其实你不是。每当你声称使用了或试图使用你没有的能力时，可能会有不好的事情发生。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/lockhart_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "Is Lockhart"
+    ],
+    "setup": 1,
+    "flavor": "Uh, the point is, uh, you can no longer feel any pain. And, very clearly, the bones are not broken."
+  },
+  {
+    "id": "卢修斯·马尔福",
+    "name": "卢修斯·马尔福",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "你可能会被其他玩家的能力当做错误的角色或阵营。[+1外来者，+德拉科·马尔福]",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/luciusmalfoy_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "Now, now Draco. Play nicely"
+  },
+  {
+    "id": "纳吉尼",
+    "name": "纳吉尼",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "你是魂器。每个夜晚，你要选择一名玩家：他中毒直到下个黄昏。如果你选择了纳威，他会得知此事。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/nagini_hp2_2.png",
+    "firstNight": 13,
+    "firstNightReminder": "Choose who to poison first.",
+    "otherNight": 7,
+    "otherNightReminder": "Choose who to poison. Potentially inform Neville he was chosen by Nagini (He is still poisoned) ",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "You know Voldemort's snake, Neville? He's got a huge snake... Calls it Nagini... It's got to be killed."
+  },
+  {
+    "id": "蛇怪",
+    "name": "蛇怪",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚*，你要选择一名玩家：如果他当晚曾因为自身能力被唤醒，他死亡；否则，如果你存活，他不会在夜晚被唤醒，且会在本该被唤醒时得知此事。如果你选择了哈利波特，改为你死亡。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/basilisk_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 8,
+    "otherNightReminder": "Wake and ask to pick a player",
+    "reminders": [
+      "Petrified",
+      "Dies"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "The Basilisk has a murderous stare, and all who are fixed with the beam of its eye shall suffer instant death."
+  },
+  {
+    "id": "盖勒特·格林德沃",
+    "name": "盖勒特·格林德沃",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚*，你要选择一名死亡的玩家：你可能获得他的能力且会被当做该角色。如果“黑魔王”即将死亡，你变成新的“黑魔王”，当晚的死亡由说书人决定。[-1外来者]",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/grindelwald_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 4,
+    "otherNightReminder": "Wake and ask them to choose a dead player",
+    "reminders": [
+      "Ability Taken",
+      "Was Grindelwald"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "Magic blooms... only in rare souls. Still, we must skulk in shadows. But the old ways serve us no longer."
+  },
+  {
+    "id": "贝拉特里克斯",
+    "name": "贝拉特里克斯",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "第二个白天起，在提名阶段开始前，你可以公开声称你是贝拉特里克斯，随后，一名善良玩家死亡，即使因为任何原因让他不会死亡。如果在对你的提名中没有邪恶玩家投票，你不会死于处决。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/bellatrix_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "I killed Sirius Black!"
+  },
+  {
+    "id": "伏地魔",
+    "name": "伏地魔",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。当且仅当所有魂器处于死亡状态时你才会死亡。在你的首个夜晚，你得知哪些玩家是魂器，拥有魂器的玩家会被当作爪牙。[+纳吉尼，3名玩家是魂器]",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/lordvoldemort_hp2_2.png",
+    "firstNight": 11,
+    "firstNightReminder": "Wake and tell them all players who possess a horcrux. ",
+    "otherNight": 10,
+    "otherNightReminder": "Wake to make them kill someone",
+    "reminders": [
+      "Horcrux",
+      "Horcrux",
+      "Horcrux",
+      "Dead"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "I, who have gone further than anybody along the path that leads to immortality...."
+  },
+  {
+    "id": "食死徒",
+    "name": "食死徒",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，存活的爪牙玩家要共同选择一名玩家：他死亡。如果所有爪牙死亡，游戏结束。[-1恶魔，一名镇民转变为邪恶]",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/thedeatheaters_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 9,
+    "otherNightReminder": "Wake all Minions and ask them to vote on a player to kill.",
+    "reminders": [
+      "Dead"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "You know he can control people so that they do terrible things without being able to stop themselves."
+  },
+  {
+    "id": "汤姆·里德尔",
+    "name": "汤姆·里德尔",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你选择了一名外来者，你可以额外行动一次。[+1外来者]",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/tomriddle_hp2_2.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 11,
+    "otherNightReminder": "Wake to make them kill someone",
+    "reminders": [
+      "Dead Outsider",
+      "Dead"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "I can make bad things happen to people who are mean to me. I can make them hurt, if I want."
+  },
+  {
+    "id": "神秘人",
+    "name": "神秘人",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式自杀，一名爪牙转变为“黑魔王”。在你的首个夜晚，你会得知一个秘密短语，说出该短语的善良玩家可能死亡。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/youknowwho_hp2_2.png",
+    "firstNight": 12,
+    "firstNightReminder": "Wake and tell Secret word",
+    "otherNight": 12,
+    "otherNightReminder": "Wake to make them kill someone",
+    "reminders": [
+      "Said The Word",
+      "Dead"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": " Yes. You see what I've become? See what I must do to survive? Live off another, a mere parasite!"
+  },
+  {
+    "id": "纽特·斯卡曼德",
+    "name": "纽特·斯卡曼德",
+    "edition": "custom",
+    "team": "traveler",
+    "ability": "当你入场时，你可以向说书人介绍一种神奇动物，随后，说书人会为你编造一个基于与该神奇动物的能力。",
+    "image": "https://www.bloodstar.xyz/p/sc911/HP2_2/newtscamander_hp2_2.png",
+    "firstNight": 17,
+    "firstNightReminder": "If Newt would wake due to their ability wake them now",
+    "otherNight": 21,
+    "otherNightReminder": "If Newt would wake due to their ability wake them now",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": "The unicorn’s horn, blood and hair all have highly magical properties."
+  },
+  {
+    "id": "斯莱特林挂坠盒",
+    "name": "斯莱特林挂坠盒",
+    "edition": "custom",
+    "team": "fabled",
+    "ability": "如果一名持有魂器的玩家被处决，魂器也随之摧毁。",
+    "image": "/audit_icons/霍格沃茨之战/斯莱特林挂坠盒.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "魂器"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  }
+]

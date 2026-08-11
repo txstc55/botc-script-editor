@@ -1,0 +1,499 @@
+[
+  {
+    "id": "_meta",
+    "name": "希望与绝望间",
+    "author": "Chad Pines",
+    "notes": [
+      {
+        "text": "疯狂\n当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+        "html": "<span style=\"font-size: 1.08em; font-weight: 900; color: rgb(103, 14, 171);\">疯狂</span><br>当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+      },
+      {
+        "text": "中毒 / 醉酒\n中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"font-size: 1.08em; font-weight: 900; color: rgb(143, 23, 1);\">中毒 / 醉酒</span><br><span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+      },
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
+    "id": "黑道",
+    "name": "黑道",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知两名存活且阵营对立的玩家：如果他们之中其中一名玩家被处决，一名与他同阵营的存活玩家醉酒直到下个黄昏。",
+    "image": "/audit_icons/希望与绝望间/黑道.png",
+    "firstNight": 14,
+    "firstNightReminder": "在你的首个夜晚，你会得知两名存活且阵营对立的玩家：如果他们之中其中一名玩家被处决，一名与他同阵营的存活玩家醉酒直到下个黄昏。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "选择",
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "王女",
+    "name": "王女",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知三名玩家的角色：其中有且只有一名玩家的角色是正确的。",
+    "image": "/audit_icons/希望与绝望间/王女.png",
+    "firstNight": 15,
+    "firstNightReminder": "在你的首个夜晚，你会得知三名玩家的角色：其中有且只有一名玩家的角色是正确的。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "被得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "机器人",
+    "name": "机器人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家：当你死亡时，在当晚你会得知你选择的玩家中有多少名邪恶玩家。",
+    "image": "/audit_icons/希望与绝望间/机器人.png",
+    "firstNight": 13,
+    "firstNightReminder": "每个夜晚，你要选择一名玩家：当你死亡时，在当晚你会得知你选择的玩家中有多少名邪恶玩家。",
+    "otherNight": 17,
+    "otherNightReminder": "每个夜晚，你要选择一名玩家：当你死亡时，在当晚你会得知你选择的玩家中有多少名邪恶玩家。",
+    "reminders": [
+      "选择"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "侦探",
+    "name": "侦探",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外的两名玩家：下个白天，你可以拜访说书人并得知一条与他们相关的信息。",
+    "image": "/audit_icons/希望与绝望间/侦探.png",
+    "firstNight": 17,
+    "firstNightReminder": "每个夜晚，你要选择除你以外的两名玩家：下个白天，你可以拜访说书人并得知一条与他们相关的信息。",
+    "otherNight": 15,
+    "otherNightReminder": "每个夜晚，你要选择除你以外的两名玩家：下个白天，你可以拜访说书人并得知一条与他们相关的信息。",
+    "reminders": [
+      "选择"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "摄影师",
+    "name": "摄影师",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名与之前不同的玩家：你会得知一名与他邻近的非旅行者玩家的角色。如果你选择了一名邪恶玩家，你得知的信息由说书人决定。",
+    "image": "/audit_icons/希望与绝望间/摄影师.png",
+    "firstNight": 16,
+    "firstNightReminder": "每个夜晚，你要选择一名与之前不同的玩家：你会得知一名与他邻近的非旅行者玩家的角色。如果你选择了一名邪恶玩家，你得知的信息由说书人决定。",
+    "otherNight": 14,
+    "otherNightReminder": "每个夜晚，你要选择一名与之前不同的玩家：你会得知一名与他邻近的非旅行者玩家的角色。如果你选择了一名邪恶玩家，你得知的信息由说书人决定。",
+    "reminders": [
+      "选择"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "格斗家",
+    "name": "格斗家",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择除你以外的一名玩家。每局游戏限一次，在夜晚时*，你可以选择让恶魔的负面能力对被你选择的所有玩家无效。",
+    "image": "/audit_icons/希望与绝望间/格斗家.png",
+    "firstNight": 12,
+    "firstNightReminder": "每个夜晚，你要选择除你以外的一名玩家。每局游戏限一次，在夜晚时*，你可以选择让恶魔的负面能力对被你选择的所有玩家无效。",
+    "otherNight": 4,
+    "otherNightReminder": "每个夜晚，你要选择除你以外的一名玩家。每局游戏限一次，在夜晚时*，你可以选择让恶魔的负面能力对被你选择的所有玩家无效。",
+    "reminders": [
+      "选择",
+      "保护",
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "机械师",
+    "name": "机械师",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择两名玩家：他们不会因其他角色的能力被当作错误的角色，直到下个黄昏。",
+    "image": "/audit_icons/希望与绝望间/机械师.png",
+    "firstNight": 11,
+    "firstNightReminder": "每个夜晚，你要选择两名玩家：他们不会因其他角色的能力被当作错误的角色，直到下个黄昏。",
+    "otherNight": 3,
+    "otherNightReminder": "每个夜晚，你要选择两名玩家：他们不会因其他角色的能力被当作错误的角色，直到下个黄昏。",
+    "reminders": [
+      "不会误认"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "昆虫博士",
+    "name": "昆虫博士",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你会得知在今天白天时有多少名邪恶玩家被提名。",
+    "image": "/audit_icons/希望与绝望间/昆虫博士.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 16,
+    "otherNightReminder": "每个夜晚*，你会得知在今天白天时有多少名邪恶玩家被提名。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "占卜师",
+    "name": "占卜师",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家：如果他当晚被恶魔选中了，你会得知他和与他邻近的玩家的阵营。",
+    "image": "/audit_icons/希望与绝望间/占卜师.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 18,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家：如果他当晚被恶魔选中了，你会得知他和与他邻近的玩家的阵营。",
+    "reminders": [
+      "选择"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "宇航员",
+    "name": "宇航员",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "所有玩家都知道你是宇航员。如果小于等于五名玩家存活，你死亡。",
+    "image": "/audit_icons/希望与绝望间/宇航员.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 13,
+    "otherNightReminder": "所有玩家都知道你是宇航员。如果小于等于五名玩家存活，你死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "程序员",
+    "name": "程序员",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择一名镇民角色：如果他是在场的且已死亡，你获得他的能力。",
+    "image": "/audit_icons/希望与绝望间/程序员.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 2,
+    "otherNightReminder": "每局游戏限一次，在夜晚时*，你可以选择一名镇民角色：如果他是在场的且已死亡，你获得他的能力。",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "保姆",
+    "name": "保姆",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "当你得知你死亡时，你要公开选择一名玩家。如果他不是恶魔，在当晚他会死亡。",
+    "image": "/audit_icons/希望与绝望间/保姆.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 12,
+    "otherNightReminder": "当你得知你死亡时，你要公开选择一名玩家。如果他不是恶魔，在当晚他会死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "幸运儿",
+    "name": "幸运儿",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在游戏的最后一个白天，你每次投票时可以投两票，且你会在上个夜晚得知此事。当你首次在夜晚死亡时，你不会死亡。",
+    "image": "/audit_icons/希望与绝望间/幸运儿.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 19,
+    "otherNightReminder": "在游戏的最后一个白天，你每次投票时可以投两票，且你会在上个夜晚得知此事。当你首次在夜晚死亡时，你不会死亡。",
+    "reminders": [
+      "不会死亡",
+      "两票"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "仆从",
+    "name": "仆从",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "在你的首个夜晚，你会得知一个不在场的爪牙角色：恶魔会获得这个角色的能力。只有恶魔杀死了你，他才会失去这个能力。",
+    "image": "/audit_icons/希望与绝望间/仆从.png",
+    "firstNight": 2,
+    "firstNightReminder": "在你的首个夜晚，你会得知一个不在场的爪牙角色：恶魔会获得这个角色的能力。只有恶魔杀死了你，他才会失去这个能力。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "获得能力"
+    ],
+    "remindersGlobal": [
+      "恶魔获得能力"
+    ],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "文学作家",
+    "name": "文学作家",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "每个夜晚*，你的阵营会发生转变。在初始设置时，你可能是邪恶的。每局游戏限一次，你会被当作是错误的阵营。",
+    "image": "/audit_icons/希望与绝望间/文学作家.png",
+    "firstNight": 1,
+    "firstNightReminder": "每个夜晚*，你的阵营会发生转变。在初始设置时，你可能是邪恶的。每局游戏限一次，你会被当作是错误的阵营。",
+    "otherNight": 1,
+    "otherNightReminder": "每个夜晚*，你的阵营会发生转变。在初始设置时，你可能是邪恶的。每局游戏限一次，你会被当作是错误的阵营。",
+    "reminders": [
+      "邪恶",
+      "错误阵营"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "首脑",
+    "name": "首脑",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "如果你死亡，当晚会有两名玩家死亡。如果你“疯狂”证明某条信息是错误的，当你死亡时，可能会有更少的玩家因你的能力而死亡。",
+    "image": "/audit_icons/希望与绝望间/首脑.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 11,
+    "otherNightReminder": "如果你死亡，当晚会有两名玩家死亡。如果你“疯狂”证明某条信息是错误的，当你死亡时，可能会有更少的玩家因你的能力而死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "贵公子“继承者”",
+    "name": "贵公子“继承者”",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "一名善良玩家会被当作是邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+    "image": "/audit_icons/希望与绝望间/贵公子.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "错误阵营"
+    ],
+    "remindersGlobal": [
+      "错误阵营"
+    ],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "黑白熊",
+    "name": "黑白熊",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知此事，如果他提名并处决了一名玩家，他立即转变为邪恶。",
+    "image": "/audit_icons/希望与绝望间/黑白熊.png",
+    "firstNight": 10,
+    "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知此事，如果他提名并处决了一名玩家，他立即转变为邪恶。",
+    "otherNight": 7,
+    "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择一名玩家：他会得知此事，如果他提名并处决了一名玩家，他立即转变为邪恶。",
+    "reminders": [
+      "选择",
+      "邪恶"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "民俗学者",
+    "name": "民俗学者",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "在你的首个夜晚，你要选择两名玩家：你会得知他们的角色。如果你提名并处决了他们之中的一名玩家，另一名玩家会在当晚死亡。",
+    "image": "/audit_icons/希望与绝望间/民俗学者.png",
+    "firstNight": 8,
+    "firstNightReminder": "在你的首个夜晚，你要选择两名玩家：你会得知他们的角色。如果你提名并处决了他们之中的一名玩家，另一名玩家会在当晚死亡。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "选择",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "角色扮演家",
+    "name": "角色扮演家",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择与上次不同的一名玩家：你会被当作是他的角色和阵营，反之亦然，直到下个黄昏。",
+    "image": "/audit_icons/希望与绝望间/角色扮演家.png",
+    "firstNight": 9,
+    "firstNightReminder": "每个夜晚，你要选择与上次不同的一名玩家：你会被当作是他的角色和阵营，反之亦然，直到下个黄昏。",
+    "otherNight": 6,
+    "otherNightReminder": "每个夜晚，你要选择与上次不同的一名玩家：你会被当作是他的角色和阵营，反之亦然，直到下个黄昏。",
+    "reminders": [
+      "被当作"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "时尚偶像“辣妹”",
+    "name": "时尚偶像“辣妹”",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚*，你可以选择杀死自己。如果你死亡，所有玩家会被当作与自身阵营对立的阵营，直到下个黄昏。",
+    "image": "/audit_icons/希望与绝望间/时尚偶像.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 5,
+    "otherNightReminder": "每个夜晚*，你可以选择杀死自己。如果你死亡，所有玩家会被当作与自身阵营对立的阵营，直到下个黄昏。",
+    "reminders": [
+      "死亡",
+      "对立阵营"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "动画师",
+    "name": "动画师",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一名玩家：与被选中的外来者邻近的一名镇民中毒直到下个黄昏。[+1外来者]",
+    "image": "/audit_icons/希望与绝望间/动画师.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "绝望",
+    "name": "绝望",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚，你要选择一名玩家：他死亡。如果有一名邪恶玩家在白天被处决，你要额外选择一名玩家：他死亡。",
+    "image": "/audit_icons/希望与绝望间/绝望.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 8,
+    "otherNightReminder": "每个夜晚，你要选择一名玩家：他死亡。如果有一名邪恶玩家在白天被处决，你要额外选择一名玩家：他死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "虚假的希望",
+    "name": "虚假的希望",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。首个被你选择的死亡爪牙获得一个不在场的爪牙能力。",
+    "image": "/audit_icons/希望与绝望间/虚假的希望.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 9,
+    "otherNightReminder": "每个夜晚*，你要选择一名玩家：他死亡。首个被你选择的死亡爪牙获得一个不在场的爪牙能力。",
+    "reminders": [
+      "死亡",
+      "获得能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "观众",
+    "name": "观众",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚，你要查看魔典并选择一名玩家：他死亡。可能会有一名善良玩家的角色被错误地展示在魔典上。",
+    "image": "/audit_icons/希望与绝望间/观众.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 10,
+    "otherNightReminder": "每个夜晚，你要查看魔典并选择一名玩家：他死亡。可能会有一名善良玩家的角色被错误地展示在魔典上。",
+    "reminders": [
+      "死亡",
+      "错误展示"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "仆从&时尚偶像“辣妹”",
+    "name": "仆从&时尚偶像“辣妹”",
+    "team": "jinx",
+    "ability": "如果恶魔获得了时尚偶像的能力，在夜晚时，他可以选择让一名爪牙死亡（不是他自己）以发动时尚偶像的能力。",
+    "image": "/audit_icons/希望与绝望间/仆从.png",
+    "setup": 0
+  },
+  {
+    "id": "时尚偶像“辣妹”",
+    "name": "时尚偶像“辣妹”",
+    "team": "jinx",
+    "ability": "如果一名爪牙获得了时尚偶像的能力，他的能力变为“每局游戏限一次，在夜晚时*，你可以选择让所有玩家被当作与自身阵营对立的阵营，直到下个黄昏。”",
+    "image": "/audit_icons/希望与绝望间/时尚偶像.png",
+    "setup": 0
+  }
+]

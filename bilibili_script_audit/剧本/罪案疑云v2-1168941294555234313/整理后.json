@@ -1,0 +1,544 @@
+[
+  {
+    "id": "_meta",
+    "name": "罪案疑云",
+    "author": "黑猫和他的血染朋友们",
+    "notes": [
+      {
+        "text": "委托复选\n每局游戏限一次，在夜晚时：你可以得知当前场上有多少名邪恶玩家（不论生死）。",
+        "html": "<span style=\"font-size: 1.08em; font-weight: 900;\">委托复选</span><br>每局游戏限一次，在夜晚时：你可以得知当前场上有多少名邪恶玩家（不论生死）。"
+      },
+      {
+        "text": "幕后交易\n善良恶魔不会获得恶魔伪装，一定会有黑手党猜拳获胜。",
+        "html": "<span style=\"font-size: 1.08em; font-weight: 900;\">幕后交易</span><br>善良恶魔不会获得恶魔伪装，一定会有黑手党猜拳获胜。"
+      },
+      {
+        "text": "可选规则\n由说书人决定当晚哪些黑手党被唤醒（或均不唤醒）。",
+        "html": "<span style=\"font-size: 1.08em; font-weight: 900;\">可选规则</span><br>由说书人决定当晚哪些黑手党被唤醒（或均不唤醒）。"
+      },
+      {
+        "text": "推荐线下游戏使用",
+        "html": "<strong>推荐线下游戏使用</strong>"
+      },
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
+    "id": "贵族",
+    "name": "贵族",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
+    "image": "/audit_icons/罪案疑云/贵族.png",
+    "firstNight": 17,
+    "firstNightReminder": "在你的首个夜晚，你会得知三名玩家：其中有且只有一名玩家是邪恶的。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "被得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "占卜师",
+    "name": "占卜师",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作“恶魔”（干扰项）。",
+    "image": "/audit_icons/罪案疑云/占卜师.png",
+    "firstNight": 15,
+    "firstNightReminder": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作“恶魔”（干扰项）。",
+    "otherNight": 11,
+    "otherNightReminder": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作“恶魔”（干扰项）。",
+    "reminders": [
+      "干扰项"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "舞蛇人",
+    "name": "舞蛇人",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+    "image": "/audit_icons/罪案疑云/舞蛇人.png",
+    "firstNight": 8,
+    "firstNightReminder": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+    "otherNight": 1,
+    "otherNightReminder": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "御史",
+    "name": "御史",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家：你会得知该玩家与其邻座的存活玩家之一（与上次不同方向）是否为同一阵营。",
+    "image": "/audit_icons/罪案疑云/御史.png",
+    "firstNight": 18,
+    "firstNightReminder": "每个夜晚，你要选择一名玩家：你会得知该玩家与其邻座的存活玩家之一（与上次不同方向）是否为同一阵营。",
+    "otherNight": 14,
+    "otherNightReminder": "每个夜晚，你要选择一名玩家：你会得知该玩家与其邻座的存活玩家之一（与上次不同方向）是否为同一阵营。",
+    "reminders": [
+      "左邻",
+      "右邻"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "僧侣",
+    "name": "僧侣",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
+    "image": "/audit_icons/罪案疑云/僧侣.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 2,
+    "otherNightReminder": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
+    "reminders": [
+      "保护"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "神谕者",
+    "name": "神谕者",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
+    "image": "/audit_icons/罪案疑云/神谕者.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 13,
+    "otherNightReminder": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "追猎者",
+    "name": "追猎者",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你可以选择一名玩家：如果与他邻近的玩家之中有且仅有一名是邪恶的，他死亡。",
+    "image": "/audit_icons/罪案疑云/追猎者.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 9,
+    "otherNightReminder": "每个夜晚*，你可以选择一名玩家：如果与他邻近的玩家之中有且仅有一名是邪恶的，他死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "女裁缝",
+    "name": "女裁缝",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择（除你以外）的两名玩家：你会得知他们是否为同一阵营。",
+    "image": "/audit_icons/罪案疑云/女裁缝.png",
+    "firstNight": 16,
+    "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择（除你以外）的两名玩家：你会得知他们是否为同一阵营。",
+    "otherNight": 12,
+    "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择（除你以外）的两名玩家：你会得知他们是否为同一阵营。",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "渔夫",
+    "name": "渔夫",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "image": "/audit_icons/罪案疑云/渔夫.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "戏法师",
+    "name": "戏法师",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个白天，你可以公开进行一次谁是爪牙、谁是恶魔的猜测。如果你猜对，善良阵营获胜。",
+    "image": "/audit_icons/罪案疑云/戏法师.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "猫猫探险队",
+    "name": "猫猫探险队",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "每个白天限一次，没有“探险”过的存活玩家可以公开“探险”：在当晚，如果他存活，你会得知一名与他阵营不同的玩家。",
+    "image": "/audit_icons/罪案疑云/猫猫探险队.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 15,
+    "otherNightReminder": "每个白天限一次，没有“探险”过的存活玩家可以公开“探险”：在当晚，如果他存活，你会得知一名与他阵营不同的玩家。",
+    "reminders": [
+      "探险"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "牛仔",
+    "name": "牛仔",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "一名爪牙知道牛仔在场。每当他发起提名，你会在当晚被唤醒。你们中首次被对方提名的玩家立即被处决。",
+    "image": "/audit_icons/罪案疑云/牛仔.png",
+    "firstNight": 14,
+    "firstNightReminder": "一名爪牙知道牛仔在场。每当他发起提名，你会在当晚被唤醒。你们中首次被对方提名的玩家立即被处决。",
+    "otherNight": 10,
+    "otherNightReminder": "一名爪牙知道牛仔在场。每当他发起提名，你会在当晚被唤醒。你们中首次被对方提名的玩家立即被处决。",
+    "reminders": [
+      "宿敌",
+      "发起提名",
+      "了断"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "士兵",
+    "name": "士兵",
+    "edition": "custom",
+    "team": "townsfolk",
+    "ability": "恶魔的负面能力对你无效。",
+    "image": "/audit_icons/罪案疑云/士兵.png",
+    "firstNight": 19,
+    "firstNightReminder": "士兵可以选择是否使用委托复选；如果使用，告知当前场上邪恶玩家的数量（不论生死）。",
+    "otherNight": 16,
+    "otherNightReminder": "士兵可以选择是否使用委托复选；如果使用，告知当前场上邪恶玩家的数量（不论生死）。",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "羽师",
+    "name": "羽师",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "你以为你是一个镇民并且拥有这个镇民的能力。提名你的善良玩家醉酒直到明天黄昏，即使你死亡。",
+    "image": "/audit_icons/罪案疑云/羽师.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "醉酒"
+    ],
+    "remindersGlobal": [
+      "是羽师"
+    ],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "石像鬼",
+    "name": "石像鬼",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "你以为你是一个在场的镇民角色，但其实你不是。如果该镇民死亡，你转变为邪恶阵营。",
+    "image": "/audit_icons/罪案疑云/石像鬼.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "邪恶"
+    ],
+    "remindersGlobal": [
+      "是石像鬼"
+    ],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "解谜大师",
+    "name": "解谜大师",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "一名玩家醉酒，即使你已死亡。每局游戏限一次，你可以猜测谁是那个醉酒的玩家，如果猜对了，你会得知谁是恶魔，但如果猜错了，你会得知错误的“谁是恶魔”信息。",
+    "image": "/audit_icons/罪案疑云/解谜大师.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "已猜测",
+      "醉酒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "大小姐",
+    "name": "大小姐",
+    "edition": "custom",
+    "team": "outsider",
+    "ability": "你首次即将死亡时，可能会有两名存活玩家代替你死亡。",
+    "image": "/audit_icons/罪案疑云/大小姐.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "替死"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "洗脑师",
+    "name": "洗脑师",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+    "image": "/audit_icons/罪案疑云/洗脑师.png",
+    "firstNight": 12,
+    "firstNightReminder": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+    "otherNight": 5,
+    "otherNightReminder": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+    "reminders": [
+      "疯狂"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "教父",
+    "name": "教父",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+    "image": "/audit_icons/罪案疑云/教父.png",
+    "firstNight": 13,
+    "firstNightReminder": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+    "otherNight": 8,
+    "otherNightReminder": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+    "reminders": [
+      "死于今日",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "赝品",
+    "name": "赝品",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "在你的首个夜晚，你变成一个在场的其他爪牙。如果没有其他爪牙在场：你选择并获得一个爪牙的能力。",
+    "image": "/audit_icons/罪案疑云/赝品.png",
+    "firstNight": 10,
+    "firstNightReminder": "在你的首个夜晚，你变成一个在场的其他爪牙。如果没有其他爪牙在场：你选择并获得一个爪牙的能力。",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [
+      "是赝品"
+    ],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "诡面",
+    "name": "诡面",
+    "edition": "custom",
+    "team": "minion",
+    "ability": "每个夜晚，你可以选择一个角色，如果他在场：他中毒且你获得他的能力直到下个黄昏。你在白天需要“疯狂”地证明你是你选择的角色，否则你可能失去能力。",
+    "image": "/audit_icons/罪案疑云/诡面.png",
+    "firstNight": 9,
+    "firstNightReminder": "每个夜晚，你可以选择一个角色，如果他在场：他中毒且你获得他的能力直到下个黄昏。你在白天需要“疯狂”地证明你是你选择的角色，否则你可能失去能力。",
+    "otherNight": 3,
+    "otherNightReminder": "每个夜晚，你可以选择一个角色，如果他在场：他中毒且你获得他的能力直到下个黄昏。你在白天需要“疯狂”地证明你是你选择的角色，否则你可能失去能力。",
+    "reminders": [
+      "中毒",
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "暴乱",
+    "name": "暴乱",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "在第三个白天，所有爪牙会变成暴乱，当天被提名的玩家会立即死亡且必须再次提名一名存活的玩家。",
+    "image": "/audit_icons/罪案疑云/暴乱.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "多罗迈特",
+    "name": "多罗迈特",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营并且得知你是多罗迈特。每局游戏限一次，你的能力可能在当晚失效。第四个白天结束后，邪恶阵营获胜。[无爪牙在场]",
+    "image": "/audit_icons/罪案疑云/多罗迈特.png",
+    "firstNight": 11,
+    "firstNightReminder": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营并且得知你是多罗迈特。每局游戏限一次，你的能力可能在当晚失效。第四个白天结束后，邪恶阵营获胜。[无爪牙在场]",
+    "otherNight": 4,
+    "otherNightReminder": "每个夜晚，你要选择一名玩家：他转变为邪恶阵营并且得知你是多罗迈特。每局游戏限一次，你的能力可能在当晚失效。第四个白天结束后，邪恶阵营获胜。[无爪牙在场]",
+    "reminders": [
+      "邪恶",
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "珀",
+    "name": "珀",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
+    "image": "/audit_icons/罪案疑云/珀.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 6,
+    "otherNightReminder": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
+    "reminders": [
+      "攻击三次",
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "黑手党",
+    "name": "黑手党",
+    "edition": "custom",
+    "team": "demon",
+    "ability": "每个夜晚*，你要和另一名黑手党玩家秘密猜拳，赢的玩家要选择一名存活玩家，他死亡。有黑手党死亡时，有存活黑手党的阵营获胜。[+1善良黑手党，仅会和一名善良镇民互认]",
+    "image": "/audit_icons/罪案疑云/黑手党.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 7,
+    "otherNightReminder": "每个夜晚*，你要和另一名黑手党玩家秘密猜拳，赢的玩家要选择一名存活玩家，他死亡。有黑手党死亡时，有存活黑手党的阵营获胜。[+1善良黑手党，仅会和一名善良镇民互认]",
+    "reminders": [
+      "死亡",
+      "善良黑手党"
+    ],
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
+  },
+  {
+    "id": "骗人精",
+    "name": "骗人精",
+    "edition": "custom",
+    "team": "fabled",
+    "ability": "每局游戏限一次，一名善良玩家可能会得知“有问题”的信息。",
+    "image": "/audit_icons/罪案疑云/骗人精.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "私货商人",
+    "name": "私货商人",
+    "edition": "custom",
+    "team": "fabled",
+    "ability": "本剧本多罗迈特的角色能力有所调整。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/300px-Bootlegger.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "牛仔",
+    "name": "牛仔",
+    "team": "jinx",
+    "ability": "会有一名邪恶玩家知道牛仔在场。",
+    "image": "/audit_icons/罪案疑云/牛仔.png",
+    "setup": 0
+  },
+  {
+    "id": "暴乱&僧侣",
+    "name": "暴乱&僧侣",
+    "team": "jinx",
+    "ability": "如果暴乱提名了僧侣上个夜晚选择的玩家，他不会死亡。",
+    "image": "/audit_icons/罪案疑云/暴乱.png",
+    "setup": 0
+  },
+  {
+    "id": "暴乱&士兵",
+    "name": "暴乱&士兵",
+    "team": "jinx",
+    "ability": "如果暴乱提名了士兵，士兵不会死亡。",
+    "image": "/audit_icons/罪案疑云/暴乱.png",
+    "setup": 0
+  }
+]

@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 26,
@@ -28,7 +28,7 @@
     {
       "name": "气球驾驶员",
       "team": "townsfolk",
-      "ability_coverage": 0.3846
+      "ability_coverage": 1.0
     },
     {
       "name": "舞蛇人",
@@ -151,9 +151,7 @@
       "ability_coverage": 0.875
     }
   ],
-  "ocr_ability_mismatches": [
-    "气球驾驶员"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
@@ -792,9 +790,9 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "气球驾驶员"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

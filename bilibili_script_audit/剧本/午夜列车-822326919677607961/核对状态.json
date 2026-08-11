@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 14,
@@ -90,9 +90,7 @@
       "ability_coverage": 0.7576
     }
   ],
-  "ocr_ability_mismatches": [
-    "精神病患者"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
@@ -383,8 +381,16 @@
       "y": 0.2165
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_abilities": [
+      "精神病患者"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "原图与 JSON 中精神病患者的能力均为白天公开杀人，以及被处决时与提名者猜拳、只有自己输掉才死亡；OCR 因两行换行导致覆盖率偏低。底部可能、中毒/醉酒及星号说明也已核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [
       "精神病患者"
     ],
