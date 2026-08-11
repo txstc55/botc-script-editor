@@ -475,6 +475,10 @@ def sync_local_artifacts(folder: Path, metadata: dict[str, Any]) -> None:
   generated_image = clean_space(metadata.get("generated_image"))
   if local_json:
     copy_if_present(local_json, folder / "整理后.json")
+    current_generated_image = generated_image_for_json(Path(local_json))
+    if current_generated_image != generated_image:
+      generated_image = current_generated_image
+      metadata["generated_image"] = generated_image
   else:
     (folder / "整理后.json").unlink(missing_ok=True)
   if generated_image:
@@ -542,11 +546,11 @@ def prepare_item(
     metadata.update(asdict(item))
     if refresh_sources:
       refresh_source_images(item, folder, metadata)
+    sync_local_artifacts(folder, metadata)
     metadata_path.write_text(
       json.dumps(metadata, ensure_ascii=False, indent=2) + "\n",
       encoding="utf-8",
     )
-    sync_local_artifacts(folder, metadata)
     return folder
 
   images = source_image_urls_for_item(item)
@@ -1274,8 +1278,13 @@ def review_existing_folder(
   review_overrides: dict[str, Any],
 ) -> tuple[str, str]:
   try:
-    metadata = json.loads((folder / "核对状态.json").read_text(encoding="utf-8"))
+    metadata_path = folder / "核对状态.json"
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
     sync_local_artifacts(folder, metadata)
+    metadata_path.write_text(
+      json.dumps(metadata, ensure_ascii=False, indent=2) + "\n",
+      encoding="utf-8",
+    )
     review_item(folder, ocr_binary, review_overrides)
     return folder.name, ""
   except Exception as error:

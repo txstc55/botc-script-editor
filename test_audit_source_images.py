@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
-from audit_bilibili_scripts import CatalogItem, source_image_urls, source_image_urls_for_item
+from audit_bilibili_scripts import (
+  CatalogItem,
+  source_image_urls,
+  source_image_urls_for_item,
+  sync_local_artifacts,
+)
 
 
 class SourceImageTest(unittest.TestCase):
@@ -39,6 +46,22 @@ class SourceImageTest(unittest.TestCase):
       "https://i0.hdslb.com/bfs/new_dyn/wide.png",
       "https://i0.hdslb.com/bfs/new_dyn/tall.png",
     ])
+
+  def test_new_generated_image_is_discovered_during_sync(self) -> None:
+    with TemporaryDirectory() as temporary_directory:
+      root = Path(temporary_directory)
+      local_json = root / "script.json"
+      local_json.write_text("[]\n", encoding="utf-8")
+      local_image = root / "script.jpg"
+      local_image.write_bytes(b"image")
+      audit_folder = root / "audit"
+      audit_folder.mkdir()
+      metadata = {"local_json": str(local_json), "generated_image": ""}
+
+      sync_local_artifacts(audit_folder, metadata)
+
+      self.assertEqual(metadata["generated_image"], str(local_image))
+      self.assertEqual((audit_folder / "软件生成图.jpg").read_bytes(), b"image")
 
 
 if __name__ == "__main__":

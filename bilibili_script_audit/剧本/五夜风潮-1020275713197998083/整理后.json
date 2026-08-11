@@ -18,7 +18,7 @@
     "notes": [
       {
         "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事“可能”发生，代表说书人决定该事情是否发生。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表说书人决定该事情是否发生。"
       },
       {
         "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
@@ -269,7 +269,7 @@
     "image": "https://www.helloimg.com/i/2025/01/10/6780d9a0caa2c.png",
     "edition": "custom",
     "name": "神秘学者",
-    "ability": "每个白天，如果你没有“疯狂”地证明你得知了新信息，你可能被处决。每局游戏限一次，说书人会告知你一条信息，",
+    "ability": "每个白天，如果你没有“疯狂”地证明你得知了新信息，你可能被处决。每局游戏限一次，说书人会告知你一条信息。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 0,
@@ -303,7 +303,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
     "edition": "custom",
     "name": "告密者",
-    "ability": "爪牙会在其首个夜晚得知三个伪装。",
+    "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 5,
@@ -391,6 +391,23 @@
     "setup": 0
   },
   {
+    "id": "nanjueeeee111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baron.png",
+    "edition": "custom",
+    "name": "男爵",
+    "ability": "会有额外的外来者在场。[+2外来者]",
+    "team": "minion",
+    "sch_team": "爪牙",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "这个小镇没救了，不是么？廉价的外来劳动力……这就是问题所在。要我说，我会把他们全部调配到矿井里。不过是稍有些困难的工作，这不会伤害到任何人，要是有人提出反对意见就赏他一记耳光。这就是所谓的底线，不是么？"
+  },
+  {
     "id": "wuye_6",
     "image": "https://www.helloimg.com/i/2025/01/10/6780d99fb7ea5.png",
     "edition": "custom",
@@ -404,23 +421,6 @@
     "otherNightReminder": "唤醒狐狸精，让她选择一个首夜得知的角色之一来获得能力。",
     "reminders": [],
     "setup": 0
-  },
-  {
-    "id": "nanjueeeee111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baron.png",
-    "edition": "custom",
-    "name": "男爵",
-    "ability": "会有额外的外来者在场。[+2 外来者]",
-    "team": "minion",
-    "sch_team": "爪牙",
-    "firstNight": 0,
-    "otherNight": 0,
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [],
-    "setup": 1,
-    "remindersGlobal": [],
-    "flavor": "这个小镇没救了，不是么？廉价的外来劳动力……这就是问题所在。要我说，我会把他们全部调配到矿井里。不过是稍有些困难的工作，这不会伤害到任何人，要是有人提出反对意见就赏他一记耳光。这就是所谓的底线，不是么？"
   },
   {
     "id": "zheshigeyizi111",

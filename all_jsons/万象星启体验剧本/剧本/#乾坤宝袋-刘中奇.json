@@ -17,7 +17,7 @@
     "state": [
       {
         "stateName": "乾坤如意袋",
-        "stateDescription": "[+1镇民，+1外来者，+1爪牙]所有玩家抽取完角色后，再往盲抽袋中加入一枚[谢谢惠顾]，盲抽袋中剩下的角色视为在场，但能力不会生效。每名玩家限一次，在黄昏时拜访说书人交换自己和盲抽袋中的角色，如果抽到邪恶角色则转变为邪恶阵营。如果处决说书人时，盲抽袋中有恶魔，则善良玩家获胜，否则邪恶玩家获胜。如果邪恶玩家数量达到上限，则将盲抽袋中的邪恶角色替换为等量的[谢谢惠顾]，如果因此导致盲抽袋和场上都没有恶魔，说书人要选择一名邪恶玩家照顾小怪宝。"
+        "stateDescription": "[+1镇民，+1外来者，+1爪牙]，所有玩家抽取完角色之后，再往盲抽袋中加入一枚[谢谢惠顾]，盲抽袋中剩下的角色视为在场，但能力不会生效。每名玩家限一次，在黄昏时拜访说书人交换自己和盲抽袋中的角色，如果抽到邪恶角色则转变为邪恶阵营。如果处决说书人时，盲抽袋中有恶魔，则善良阵营获胜，否则邪恶阵营获胜。如果邪恶玩家数量达到上限，则将盲抽袋中的邪恶角色替换为等量的[谢谢惠顾]。如果因此导致盲抽袋和场上都没有恶魔，说书人要选择一名邪恶玩家照顾小怪宝。"
       }
     ]
   },
@@ -385,25 +385,6 @@
     "flavor": "尔遣使遗尔舅祖总兵书，朕已洞悉。将军之心，犹豫未决。朕恐将军失次机会，殊可惜耳。"
   },
   {
-    "id": "noita111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
-    "edition": "custom",
-    "name": "女巫",
-    "ability": "每个夜晚，你要选择一名玩家：如果他明天白天发起提名，他死亡。如果只有三名存活的玩家，你失去此能力。",
-    "team": "minion",
-    "sch_team": "爪牙",
-    "firstNight": 24,
-    "otherNight": 19,
-    "firstNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
-    "otherNightReminder": "让女巫选择一名玩家。标记那名玩家被诅咒。",
-    "reminders": [
-      "被诅咒"
-    ],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": ""
-  },
-  {
     "id": "youzhizhua11111111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",
     "edition": "custom",
@@ -423,6 +404,26 @@
     "otherNightReminder": "",
     "setup": 0,
     "flavor": ""
+  },
+  {
+    "id": "zhijiagedaziji111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
+    "edition": "custom",
+    "name": "教父",
+    "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+    "team": "minion",
+    "sch_team": "爪牙",
+    "firstNight": 21,
+    "otherNight": 53,
+    "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
+    "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
+    "reminders": [
+      "死于今日",
+      "死亡"
+    ],
+    "setup": 1,
+    "remindersGlobal": [],
+    "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。"
   },
   {
     "id": "xixi111111111111",
@@ -447,7 +448,7 @@
     "id": "charoit",
     "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/chariot_assets_of_lei_gallery.png",
     "edition": "custom",
-    "name": "战车 ",
+    "name": "战车",
     "ability": "与你顺时针距离为1的玩家中毒。如果是邪恶的非旅行者玩家，改为和他交换角色。每个夜晚*，或该玩家死亡时，该距离+1。",
     "team": "minion",
     "firstNight": 19.5,
@@ -459,24 +460,22 @@
     ]
   },
   {
-    "id": "zhijiagedaziji111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
+    "id": "noita111",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/3f/tnc5s7dbhb28vxtet7sq8me1pk0p3zh.png",
     "edition": "custom",
-    "name": "教父",
-    "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+    "name": "鬼手",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择得知乾坤袋中的所有角色，随后选择其中之一交换。[你一定在场]",
     "team": "minion",
     "sch_team": "爪牙",
-    "firstNight": 21,
-    "otherNight": 53,
-    "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
-    "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
+    "firstNight": 2100,
+    "otherNight": 0.1,
+    "firstNightReminder": "每局游戏限一次，在夜晚时，你可以选择得知乾坤袋中的所有角色，随后选择其中之一交换。[你一定在场]",
+    "otherNightReminder": "每局游戏限一次，在夜晚时，你可以选择得知乾坤袋中的所有角色，随后选择其中之一交换。[你一定在场]",
     "reminders": [
-      "死于今日",
-      "死亡"
+      "交换",
+      "是鬼手"
     ],
-    "setup": 1,
-    "remindersGlobal": [],
-    "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。"
+    "setup": 1
   },
   {
     "id": "opppppppppp1111",
@@ -522,14 +521,14 @@
     "id": "meiyoudashi11111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
     "edition": "custom",
-    "name": "诺-达鲺",
+    "name": "诺·达鲺",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
     "team": "demon",
     "sch_team": "恶魔",
     "firstNight": 0,
     "otherNight": 37,
     "firstNightReminder": "",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "otherNightReminder": "让诺·达鲺选择一名玩家。标记那名玩家死亡。",
     "reminders": [
       "中毒",
       "死亡"
@@ -548,28 +547,18 @@
       "禁止邪恶"
     ],
     "team": "fabled",
-    "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名（旅行者不计算在内）。"
+    "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。"
   },
   {
     "id": "qiankunbaodai",
     "image": "https://img.picui.cn/free/2025/05/10/681ed5b3ae62b.png",
     "edition": "custom",
-    "name": "乾坤宝袋",
-    "setup": 0,
-    "team": "fabled",
-    "reminders": [],
-    "ability": "乾为天，坤为地。"
-  },
-  {
-    "id": "xiexiehuiugu",
-    "image": "https://img.picui.cn/free/2025/05/10/681ed5b676a51.png",
-    "edition": "custom",
-    "name": "谢谢惠顾",
-    "setup": 0,
+    "name": "乾坤如意袋",
+    "setup": 1,
     "team": "fabled",
     "reminders": [
       "谢谢惠顾"
     ],
-    "ability": "谢谢惠顾~"
+    "ability": "[+1镇民，+1外来者，+1爪牙]，所有玩家抽取完角色之后，再往盲抽袋中加入一枚[谢谢惠顾]，盲抽袋中剩下的角色视为在场，但能力不会生效。每名玩家限一次，在黄昏时拜访说书人交换自己和盲抽袋中的角色，如果抽到邪恶角色则转变为邪恶阵营。如果处决说书人时，盲抽袋中有恶魔，则善良阵营获胜，否则邪恶阵营获胜。如果邪恶玩家数量达到上限，则将盲抽袋中的邪恶角色替换为等量的[谢谢惠顾]。如果因此导致盲抽袋和场上都没有恶魔，说书人要选择一名邪恶玩家照顾小怪宝。"
   }
 ]

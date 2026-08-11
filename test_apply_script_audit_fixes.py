@@ -192,6 +192,26 @@ class FullRosterTest(unittest.TestCase):
     self.assertEqual(changes, ["更新剧本信息 author"])
     self.assertEqual(json.loads(updated)[0]["author"], "新作者")
 
+  def test_team_order_reorders_existing_roles_and_is_idempotent(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "测试剧本"},
+      {"id": "b", "name": "角色乙", "team": "minion", "ability": "乙"},
+      {"id": "a", "name": "角色甲", "team": "minion", "ability": "甲"},
+      {"id": "d", "name": "恶魔", "team": "demon"},
+    ], ensure_ascii=False, indent=2)
+    fix = {"team_order": [{"team": "minion", "names": ["角色甲", "角色乙"]}]}
+
+    updated, changes = apply_fix(source, fix)
+    unchanged, second_changes = apply_fix(updated, fix)
+
+    self.assertEqual(changes, ["重排 minion 阵容"])
+    self.assertEqual(second_changes, [])
+    self.assertEqual(unchanged, updated)
+    self.assertEqual(
+      [item["name"] for item in json.loads(updated) if item.get("team") == "minion"],
+      ["角色甲", "角色乙"],
+    )
+
   def test_source_sync_merges_roles_and_normalizes_source_values(self):
     source = json.dumps([
       {"id": "_meta", "name": "来源剧本"},

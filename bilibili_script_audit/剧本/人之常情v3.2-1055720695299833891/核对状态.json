@@ -9,25 +9,29 @@
   "status": "matched",
   "source_images": [
     "对照图-01.png",
-    "对照图-02.png",
-    "对照图-03.png"
+    "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-03.png",
-  "ocr_character_matches": 13,
+  "ocr_reference_image": "对照图-02.png",
+  "ocr_character_matches": 15,
   "ocr_required_character_count": 15,
-  "ocr_missing_characters": [
+  "ocr_missing_characters": [],
+  "ocr_name_confirmed_by_ability": [
     "焦虑",
     "愤怒"
   ],
-  "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [],
   "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [
     "抑郁"
   ],
   "ocr_ability_checks": [
+    {
+      "name": "恐惧",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
     {
       "name": "内疚",
       "team": "townsfolk",
@@ -36,37 +40,32 @@
     {
       "name": "焦虑",
       "team": "townsfolk",
-      "ability_coverage": 0.5758
+      "ability_coverage": 1.0
     },
     {
       "name": "愤怒",
       "team": "townsfolk",
-      "ability_coverage": 0.625
+      "ability_coverage": 1.0
     },
     {
       "name": "伤心",
       "team": "townsfolk",
-      "ability_coverage": 0.7333
+      "ability_coverage": 1.0
     },
     {
       "name": "悲痛",
       "team": "townsfolk",
-      "ability_coverage": 0.5
-    },
-    {
-      "name": "恐惧",
-      "team": "townsfolk",
-      "ability_coverage": 0.2973
+      "ability_coverage": 0.8298
     },
     {
       "name": "失望",
       "team": "outsider",
-      "ability_coverage": 0.6923
+      "ability_coverage": 0.9333
     },
     {
       "name": "无聊",
       "team": "outsider",
-      "ability_coverage": 0.48
+      "ability_coverage": 1.0
     },
     {
       "name": "幸福",
@@ -76,7 +75,7 @@
     {
       "name": "振奋",
       "team": "minion",
-      "ability_coverage": 0.8824
+      "ability_coverage": 0.9348
     },
     {
       "name": "感恩",
@@ -91,27 +90,25 @@
     {
       "name": "希望",
       "team": "demon",
-      "ability_coverage": 0.7656
+      "ability_coverage": 0.9683
     },
     {
       "name": "信念",
       "team": "demon",
-      "ability_coverage": 0.5854
+      "ability_coverage": 1.0
     },
     {
       "name": "螺旋",
       "team": "fabled",
-      "ability_coverage": 0.8667
+      "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "恐惧"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [
     {
       "name": "抑郁",
       "team": "traveler",
-      "ability_coverage": 0.8511
+      "ability_coverage": 1.0
     }
   ],
   "ocr_traveler_mismatches": [],
@@ -135,20 +132,12 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "如果仅剩三名玩家存活时有信念被处决，善良阵营获胜。［所有爪牙都是信念］"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
-      "required_character_matches": 0
-    },
-    {
-      "image": "对照图-02.png",
       "heading_characters": [
         "\"镇民\"",
         "\"外来者\""
@@ -170,7 +159,7 @@
       "required_character_matches": 0
     },
     {
-      "image": "对照图-03.png",
+      "image": "对照图-02.png",
       "heading_characters": [],
       "heading_character_details": [],
       "required_character_matches": 13
@@ -179,7 +168,6 @@
   "ocr_source_board_groups": [],
   "source_image_ids": [],
   "resolved_source_image_ids": [
-    "7b831b69079dd69830fa072664f0d49944902471.png",
     "48d71a5e98e42e18dbf533dc68d0eb6a44902471.png",
     "68a2c2b65488bc64514844b43ca3ffb744902471.png"
   ],
@@ -188,14 +176,16 @@
   "ocr_heading_character_details": [],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "恐惧"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "如果仅剩三名玩家存活时有信念被处决，善良阵营获胜。［所有爪牙都是信念］"
-    ]
-  }
+    "unexplained_bottom_lines": []
+  },
+  "source_image_added_ids": [
+    "48d71a5e98e42e18dbf533dc68d0eb6a44902471.png",
+    "68a2c2b65488bc64514844b43ca3ffb744902471.png"
+  ]
 }

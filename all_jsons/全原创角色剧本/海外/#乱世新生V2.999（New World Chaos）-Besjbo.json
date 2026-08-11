@@ -1,13 +1,17 @@
 [
   {
     "id": "_meta",
-    "name": "乱世新生New World Chaos",
+    "name": "乱世新生V2.9.9",
     "author": "Besjbo",
     "logo": "https://i.postimg.cc/wMVNNqr3/71.png",
     "notes": [
       {
         "text": "*代表非首个夜晚",
         "html": "<strong>*代表</strong>非首个夜晚"
+      },
+      {
+        "text": "叛逃者：拥有“叛逃者”标记的玩家会以为他是一个善良的镇民且具有他的能力，但他是邪恶的。",
+        "html": "<strong>叛逃者：</strong>拥有“叛逃者”标记的玩家会以为他是一个善良的镇民且具有他的能力，但他是邪恶的。"
       }
     ]
   },
@@ -16,45 +20,19 @@
     "image": "https://i.ibb.co/CwgFw6G/wiretap.png",
     "edition": "custom",
     "firstNight": 40,
-    "firstNightReminder": "指向两名玩家。",
+    "firstNightReminder": "根据窃听者的模式，指向两名相同或不同阵营的玩家。",
     "otherNight": 0,
     "otherNightReminder": "",
     "reminders": [],
-    "remindersGlobal": ["得知", "敌国", "本国"],
+    "remindersGlobal": [
+      "得知",
+      "敌国",
+      "本国"
+    ],
     "setup": 0,
     "name": "窃听者",
     "team": "townsfolk",
-    "ability": "你是以下两个角色之一"
-  },
-  {
-    "id": "domestic",
-    "image": "https://i.ibb.co/CwgFw6G/wiretap.png",
-    "edition": "custom",
-    "firstNight": 0,
-    "firstNightReminder": "",
-    "otherNight": 0,
-    "otherNightReminder": "",
-    "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "name": "本国-窃听者",
-    "team": "townsfolk",
-    "ability": "在你的首个夜晚，你会得知两名相同阵营的玩家。如果他们都死亡，在当晚你会被唤醒并得知他们的角色。"
-  },
-  {
-    "id": "foreign",
-    "image": "https://i.ibb.co/CwgFw6G/wiretap.png",
-    "edition": "custom",
-    "firstNight": 0,
-    "firstNightReminder": "",
-    "otherNight": 0,
-    "otherNightReminder": "",
-    "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "name": "敌国-窃听者",
-    "team": "townsfolk",
-    "ability": "在你的首个夜晚，你会得知两名不同阵营的玩家。如果你死亡，在当晚你会被唤醒并得知他们之中的邪恶角色。"
+    "ability": "[本国] 在你的首个夜晚，你会得知两名相同阵营的玩家。如果他们都死亡，在当晚你会被唤醒并得知他们的角色。[敌国] 在你的首个夜晚，你会得知两名不同阵营的玩家。如果你死亡，在当晚你会被唤醒并得知他们之中的邪恶角色。"
   },
   {
     "id": "double agent",
@@ -324,7 +302,7 @@
     "setup": 0,
     "name": "叛逃者",
     "team": "token",
-    "ability": "你以为你是善良阵营玩家且拥有其能力, 但你是邪恶的。"
+    "ability": "拥有“叛逃者”标记的玩家会以为他是一个善良的镇民且具有他的能力，但他是邪恶的。"
   },
   {
     "id": "agitprop",
@@ -562,7 +540,7 @@
     "reminders": [],
     "remindersGlobal": [],
     "setup": 0,
-    "name": "联邦国际黑袋局F.I.B.B.I.N.",
+    "name": "联邦国际黑货局 F.I.B.B.I.N.",
     "team": "fabled",
     "ability": "每局游戏限一次，恶魔会得到一个恩惠。赤色联盟：说书人可以使用一次爪牙能力。德拉科尼：你拥有一个在场的镇民角色的能力。新世界秩序：一名在今天白天与你私聊过的玩家得知错误信息。卡巴拉：你会得知哪名外来者玩家对邪恶阵营帮助最大。"
   }

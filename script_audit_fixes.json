@@ -5598,6 +5598,667 @@
           }
         }
       ]
+    },
+    {
+      "source": "Bilibili 1049053226713743384 对照图-03",
+      "targets": [
+        "all_jsons/SUI染钟楼投稿&火乐杯剧本/#上帝出席-黑白熊.json"
+      ],
+      "meta_updates": {
+        "name": "上帝出席",
+        "author": "黑白熊"
+      },
+      "additions": [
+        {
+          "name": "私货商人",
+          "team": "fabled",
+          "patch": {
+            "ability": "说书人在游戏开始时获得一个不在场爪牙能力并在首个白天公开。如果瘟疫医生死亡，说书人可以更换能力，但不会告知其他玩家。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 735177240238620696 对照图-02",
+      "targets": [
+        "all_jsons/城市赛专属剧本/#上帝缺席-MtyJ&小黑.json"
+      ],
+      "meta_updates": {
+        "author": "MtyJ & Richard black",
+        "notes": [
+          {
+            "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事情“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表由说书人来决定该事情是否发生。"
+          },
+          {
+            "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "removals": [
+        {
+          "name": "天使",
+          "team": "fabled"
+        },
+        {
+          "name": "地狱藏书员",
+          "team": "fabled"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "诺-达鲺",
+          "old_team": "demon",
+          "entry": {
+            "id": "363a01ca-6270-44e2-8dcc-d73bba1a78b5",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+            "edition": "custom",
+            "name": "诺·达鲺",
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
+            "team": "demon",
+            "firstNight": 0,
+            "otherNight": 30,
+            "firstNightReminder": "",
+            "otherNightReminder": "让诺·达鲺选择一名玩家。标记那名玩家死亡。",
+            "reminders": [
+              "中毒",
+              "死亡"
+            ],
+            "setup": 0,
+            "remindersGlobal": [],
+            "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1014710255923232776 对照图-03",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/#不洁之地-刘中奇.json"
+      ],
+      "meta_notes": [
+        {
+          "text": "角色列表已被佐迪翁打乱",
+          "html": "角色列表已被佐迪翁打乱"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "齐纳克",
+          "old_team": "demon",
+          "entry": {
+            "ability": "每个夜晚*，选择一名玩家：他死亡。一名善良玩家会知道你在两名玩家之中。如果有爪牙存活时你被处决，你的阵营获胜。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_4590907105371_3078053f.jpg",
+            "edition": "custom",
+            "flavor": "",
+            "id": "J'Nak",
+            "firstNightReminder": "在首个夜晚，唤醒一名善良玩家。对他展示齐'纳克的角色标记，并指向包含齐'纳克在内的两名玩家，然后让这名玩家入睡。",
+            "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒齐'纳克。让齐'纳克指向任意一名玩家。让齐'纳克重新入睡。被选择的玩家死亡——在那名玩家的角色标记旁放置齐'纳克的“死亡”提示标记并放置帷幕标记。",
+            "name": "齐'纳克",
+            "otherNight": 8432,
+            "firstNight": 4701,
+            "setup": 0,
+            "reminders": [
+              "得知",
+              "死亡"
+            ],
+            "remindersGlobal": [],
+            "team": "demon"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "name": "女家教",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "在你的首个夜晚，你得知一个距离你最近的非镇民玩家的角色类型（旅行者除外）。",
+            "firstNightReminder": "在首个夜晚，唤醒女家教，给她展示一个非镇民角色类型。该角色类型需要是距离她最近的非镇民玩家的角色类型。"
+          }
+        },
+        {
+          "name": "享乐主义者",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "你的存活相邻玩家醉酒（不含旅行者）。"
+          }
+        },
+        {
+          "name": "牧驴者",
+          "team": "outsider",
+          "patch": {
+            "ability": "如果你被提名且当天恶魔未被处决，你的阵营落败。[你的角色标记是方形的]"
+          }
+        },
+        {
+          "name": "提普-提普",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，会有一名玩家死亡。在最后一晚，你要选择一名玩家。他必须“疯狂”地证明你不是恶魔，否则他的阵营落败。",
+            "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒提普-提普。让提普-提普指向任意一名玩家。让提普-提普重新入睡。被选择的玩家死亡——在那名玩家的角色标记旁放置提普-提普的“死亡”提示标记并放置帷幕标记。最后一晚唤醒提普-提普，让他选择一名玩家，为这名玩家放置“疯狂”提示标记并唤醒这名玩家，依次向他展示“该角色的能力对你生效”信息标记、谁是提普-提普、他要疯狂证明的该玩家不是恶魔。让那名玩家重新入睡。"
+          }
+        },
+        {
+          "name": "圣洁之魂",
+          "team": "fabled",
+          "patch": {
+            "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。"
+          }
+        },
+        {
+          "entry": {
+            "id": "科学怪人&幻形妖",
+            "name": "科学怪人&幻形妖",
+            "team": "jinx",
+            "ability": "恶魔使用幻形妖杀死非爪牙玩家之后，恶魔会获得被他杀死的玩家的角色能力，同时将该玩家的角色转变为幻形妖。"
+          }
+        },
+        {
+          "entry": {
+            "id": "科学怪人&酒鬼",
+            "name": "科学怪人&酒鬼",
+            "team": "jinx",
+            "ability": "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1051827294567399441 对照图-02",
+      "targets": [
+        "all_jsons/节日&活动主题剧本/#九原可作-钟楼剧本博物馆&星火乐.json"
+      ],
+      "meta_updates": {
+        "author": "钟楼剧本博物馆 & 星火乐",
+        "notes": [
+          {
+            "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表说书人决定该事情是否发生。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "removals": [
+        {
+          "name": "召唤师&僵怖",
+          "team": "jinx"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1115505699484336128 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/海外/#乱世新生V2.999（New World Chaos）-Besjbo.json"
+      ],
+      "meta_updates": {
+        "name": "乱世新生V2.9.9"
+      },
+      "meta_notes": [
+        {
+          "text": "叛逃者：拥有“叛逃者”标记的玩家会以为他是一个善良的镇民且具有他的能力，但他是邪恶的。",
+          "html": "<strong>叛逃者：</strong>拥有“叛逃者”标记的玩家会以为他是一个善良的镇民且具有他的能力，但他是邪恶的。"
+        }
+      ],
+      "removals": [
+        {
+          "name": "本国-窃听者",
+          "team": "townsfolk"
+        },
+        {
+          "name": "敌国-窃听者",
+          "team": "townsfolk"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "联邦国际黑袋局F.I.B.B.I.N.",
+          "old_team": "fabled",
+          "entry": {
+            "id": "fibbinfabled",
+            "image": "https://i.ibb.co/sqB665N/FIBBIN.png",
+            "edition": "custom",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "name": "联邦国际黑货局 F.I.B.B.I.N.",
+            "team": "fabled",
+            "ability": "每局游戏限一次，恶魔会得到一个恩惠。赤色联盟：说书人可以使用一次爪牙能力。德拉科尼：你拥有一个在场的镇民角色的能力。新世界秩序：一名在今天白天与你私聊过的玩家得知错误信息。卡巴拉：你会得知哪名外来者玩家对邪恶阵营帮助最大。"
+          }
+        }
+      ],
+      "additions": [
+        {
+          "name": "窃听者",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "[本国] 在你的首个夜晚，你会得知两名相同阵营的玩家。如果他们都死亡，在当晚你会被唤醒并得知他们的角色。[敌国] 在你的首个夜晚，你会得知两名不同阵营的玩家。如果你死亡，在当晚你会被唤醒并得知他们之中的邪恶角色。",
+            "firstNightReminder": "根据窃听者的模式，指向两名相同或不同阵营的玩家。"
+          }
+        },
+        {
+          "name": "叛逃者",
+          "team": "token",
+          "patch": {
+            "ability": "拥有“叛逃者”标记的玩家会以为他是一个善良的镇民且具有他的能力，但他是邪恶的。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1064519678817206277 对照图-02",
+      "targets": [
+        "all_jsons/待整理json/#乾坤宝袋-刘中奇.json",
+        "all_jsons/万象星启体验剧本/剧本/#乾坤宝袋-刘中奇.json"
+      ],
+      "meta_updates": {
+        "state": [
+          {
+            "stateName": "乾坤如意袋",
+            "stateDescription": "[+1镇民，+1外来者，+1爪牙]，所有玩家抽取完角色之后，再往盲抽袋中加入一枚[谢谢惠顾]，盲抽袋中剩下的角色视为在场，但能力不会生效。每名玩家限一次，在黄昏时拜访说书人交换自己和盲抽袋中的角色，如果抽到邪恶角色则转变为邪恶阵营。如果处决说书人时，盲抽袋中有恶魔，则善良阵营获胜，否则邪恶阵营获胜。如果邪恶玩家数量达到上限，则将盲抽袋中的邪恶角色替换为等量的[谢谢惠顾]。如果因此导致盲抽袋和场上都没有恶魔，说书人要选择一名邪恶玩家照顾小怪宝。"
+          }
+        ]
+      },
+      "removals": [
+        {
+          "name": "女巫",
+          "team": "minion"
+        },
+        {
+          "name": "谢谢惠顾",
+          "team": "fabled"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "诺-达鲺",
+          "old_team": "demon",
+          "entry": {
+            "id": "meiyoudashi11111",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+            "edition": "custom",
+            "name": "诺·达鲺",
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
+            "team": "demon",
+            "sch_team": "恶魔",
+            "firstNight": 0,
+            "otherNight": 37,
+            "firstNightReminder": "",
+            "otherNightReminder": "让诺·达鲺选择一名玩家。标记那名玩家死亡。",
+            "reminders": [
+              "中毒",
+              "死亡"
+            ],
+            "setup": 0,
+            "remindersGlobal": [],
+            "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
+          }
+        },
+        {
+          "old_name": "乾坤宝袋",
+          "old_team": "fabled",
+          "entry": {
+            "id": "qiankunbaodai",
+            "image": "https://img.picui.cn/free/2025/05/10/681ed5b3ae62b.png",
+            "edition": "custom",
+            "name": "乾坤如意袋",
+            "setup": 1,
+            "team": "fabled",
+            "reminders": [
+              "谢谢惠顾"
+            ],
+            "ability": "[+1镇民，+1外来者，+1爪牙]，所有玩家抽取完角色之后，再往盲抽袋中加入一枚[谢谢惠顾]，盲抽袋中剩下的角色视为在场，但能力不会生效。每名玩家限一次，在黄昏时拜访说书人交换自己和盲抽袋中的角色，如果抽到邪恶角色则转变为邪恶阵营。如果处决说书人时，盲抽袋中有恶魔，则善良阵营获胜，否则邪恶阵营获胜。如果邪恶玩家数量达到上限，则将盲抽袋中的邪恶角色替换为等量的[谢谢惠顾]。如果因此导致盲抽袋和场上都没有恶魔，说书人要选择一名邪恶玩家照顾小怪宝。"
+          }
+        },
+        {
+          "old_name": "战车 ",
+          "old_team": "minion",
+          "entry": {
+            "id": "charoit",
+            "image": "https://www.bloodstar.xyz/p/Airell_clocktower/Assets_of_Lei_Gallery/chariot_assets_of_lei_gallery.png",
+            "edition": "custom",
+            "name": "战车",
+            "ability": "与你顺时针距离为1的玩家中毒。如果是邪恶的非旅行者玩家，改为和他交换角色。每个夜晚*，或该玩家死亡时，该距离+1。",
+            "team": "minion",
+            "firstNight": 19.5,
+            "otherNight": 1,
+            "firstNightReminder": "初始设置时，在战车顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记以表示他是由于战车的能力中毒；如果战车的顺时针距离为1的玩家是邪恶的，则战车将与其交换角色，随后在新战车的顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记。",
+            "otherNightReminder": "将战车的“控制”提示标记以顺时针方向推进到下一名玩家。如果落在邪恶玩家上，则战车将与其交换角色，随后在新战车的顺时针距离为1的善良玩家的角色标记旁放置“控制”提示标记。",
+            "remindersGlobal": [
+              "控制"
+            ]
+          }
+        }
+      ],
+      "additions": [
+        {
+          "name": "鬼手",
+          "team": "minion",
+          "source_json": "all_jsons/待整理json/853#梵天宝袋-刘中奇.json",
+          "before": {
+            "name": "珀",
+            "team": "demon"
+          }
+        },
+        {
+          "name": "圣洁之魂",
+          "team": "fabled",
+          "patch": {
+            "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "minion",
+          "names": [
+            "寡妇",
+            "教父",
+            "洗脑师",
+            "战车",
+            "鬼手"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1020275713197998083 对照图-02",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/#五夜风潮-Elluna.json"
+      ],
+      "meta_updates": {
+        "notes": [
+          {
+            "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表说书人决定该事情是否发生。"
+          },
+          {
+            "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "additions": [
+        {
+          "name": "告密者",
+          "team": "outsider",
+          "patch": {
+            "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。"
+          }
+        },
+        {
+          "name": "神秘学者",
+          "team": "outsider",
+          "patch": {
+            "ability": "每个白天，如果你没有“疯狂”地证明你得知了新信息，你可能被处决。每局游戏限一次，说书人会告知你一条信息。"
+          }
+        },
+        {
+          "name": "男爵",
+          "team": "minion",
+          "patch": {
+            "ability": "会有额外的外来者在场。[+2外来者]"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "minion",
+          "names": [
+            "神秘生物",
+            "毒瘴魔",
+            "男爵",
+            "狐狸精",
+            "主谋"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1047811886715764768 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2025剧本世界杯/#亡骸密院v1.1.0-Ember.json",
+        "all_jsons/BOTC世界杯优选剧本/2025剧本世界杯/#亡骸密院v1.1.0-Ember copy.json"
+      ],
+      "meta_updates": {
+        "name": "亡骸密院V1.1.0"
+      },
+      "meta_notes": [
+        {
+          "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+          "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+        },
+        {
+          "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+          "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+        },
+        {
+          "text": "*代表非首个夜晚",
+          "html": "<strong>*代表</strong>非首个夜晚"
+        }
+      ],
+      "additions": [
+        {
+          "name": "私货商人",
+          "team": "fabled",
+          "patch": {
+            "ability": "亡灵的恩惠：游戏的第四个夜晚开始时，所有已死亡玩家会被一同唤醒（2分钟），随后他们秘密投票（不消耗投票标记）选择一名存活玩家。获得票数最高的玩家会获得一个恩惠，（如果没有出现唯一最高票，则由说书人决定谁来获得恩惠）。"
+          }
+        },
+        {
+          "name": "男爵",
+          "team": "minion",
+          "patch": {
+            "ability": "会有额外的外来者在场。[+2外来者]"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "minion",
+          "names": [
+            "洗脑师",
+            "男爵",
+            "召唤师",
+            "红唇女郎",
+            "灵言师"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1055720695299833891 对照图-02；作者二维码公开数据 Emotions v3.2",
+      "targets": [
+        "all_jsons/全原创角色剧本/海外/#人之常情（Emotions）-Moll.json"
+      ],
+      "meta_updates": {
+        "name": "人之常情V3.2.0"
+      },
+      "additions": [
+        {
+          "name": "恐惧",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "在你的首个夜晚，你会得知一名玩家：他醉酒并得知错误信息。",
+            "firstNight": 35,
+            "firstNightReminder": "指向被标记为“恐惧”的玩家。",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [
+              "恐惧"
+            ],
+            "setup": 0
+          }
+        },
+        {
+          "name": "内疚",
+          "team": "townsfolk",
+          "patch": {
+            "firstNight": 74,
+            "otherNight": 86
+          }
+        },
+        {
+          "name": "焦虑",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚，你会得知一个角色类型：与恶魔邻座的存活玩家均不是这个角色类型（除旅行者以外）。",
+            "firstNight": 74,
+            "firstNightReminder": "向焦虑展示一个角色类型。",
+            "otherNight": 86,
+            "otherNightReminder": "向焦虑展示一个角色类型。"
+          }
+        },
+        {
+          "name": "愤怒",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚，你会得知一名玩家和他的阵营。直到下个黄昏，他们可能会以为自己被某个角色因其自身能力影响。",
+            "firstNight": 46,
+            "firstNightReminder": "指向一名玩家，并用拇指向上或向下表示他的阵营。你可以像某个能力影响了他一样唤醒该玩家。",
+            "otherNight": 70,
+            "otherNightReminder": "指向一名玩家，并用拇指向上或向下表示他的阵营。你可以像某个能力影响了他一样唤醒该玩家。",
+            "reminders": [
+              "愤怒"
+            ]
+          }
+        },
+        {
+          "name": "伤心",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚*，你会得知有哪些玩家死亡，你要在其中选择一名玩家：你会得知他的角色。",
+            "otherNight": 86,
+            "otherNightReminder": "让伤心选择一名死亡玩家，向他展示该玩家的角色标记。"
+          }
+        },
+        {
+          "name": "悲痛",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚*，你会得知在今天白天时被处决的玩家邻近的玩家（除旅行者外）是否有爪牙或恶魔。1）爪牙；2）恶魔；3）两者都有。",
+            "otherNight": 86,
+            "otherNightReminder": "如果今天有玩家被处决，向悲痛展示手指数：1表示爪牙，2表示恶魔，3表示两者都有。"
+          }
+        },
+        {
+          "name": "失望",
+          "team": "outsider",
+          "patch": {
+            "ability": "与你邻近的玩家可能会被唤醒并以为他们被其他角色因其自身能力选择。如果邻近的玩家将要得知他们被其他角色因其自身能力选择，改为不得知。",
+            "remindersGlobal": [],
+            "setup": 0
+          }
+        },
+        {
+          "name": "无聊",
+          "team": "outsider",
+          "patch": {
+            "ability": "与你邻近的玩家可能会以为他们被其他角色因其自身能力影响或未被影响。"
+          }
+        },
+        {
+          "name": "幸福",
+          "team": "minion",
+          "patch": {
+            "firstNight": 43
+          }
+        },
+        {
+          "name": "振奋",
+          "team": "minion",
+          "patch": {
+            "ability": "每个夜晚，你要选择一名玩家：他会得知被振奋选中，且他中毒直到下个黄昏，如果他在下个白天被处决，他的阵营落败。",
+            "firstNight": 43,
+            "otherNight": 28
+          }
+        },
+        {
+          "name": "爱",
+          "team": "demon",
+          "patch": {
+            "firstNight": 47,
+            "otherNight": 42,
+            "setup": 0
+          }
+        },
+        {
+          "name": "希望",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚，你能查看魔典。每个夜晚*，你要选择一名玩家：他死亡。所有爪牙的负面能力对你无效，且他们转变为善良阵营，但不会得知此事。[+1爪牙，-任意数量外来者]",
+            "firstNight": 47,
+            "firstNightReminder": "向希望展示魔典。",
+            "otherNight": 42,
+            "otherNightReminder": "向希望展示魔典，让他选择一名玩家，标记该玩家死亡。"
+          }
+        },
+        {
+          "name": "信念",
+          "team": "demon",
+          "patch": {
+            "ability": "你以为你是一个相同且不在场的角色，但其实你不是。每个夜晚*，可能会有一名玩家死亡。如果仅剩三名玩家存活时有信念被处决，善良阵营获胜。[所有爪牙都是信念]",
+            "otherNight": 42,
+            "otherNightReminder": "说书人可以选择一名玩家，标记该玩家死亡。",
+            "remindersGlobal": [
+              "是信念",
+              "是信念",
+              "是信念",
+              "是信念",
+              "死亡",
+              "死亡"
+            ]
+          }
+        },
+        {
+          "name": "抑郁",
+          "team": "traveler",
+          "patch": {
+            "ability": "每个夜晚*，你要选择除你以外的一名玩家：他得知你的阵营。如果你被流放，你转变为对立阵营。[无初始信息]",
+            "otherNight": 2,
+            "reminders": []
+          }
+        },
+        {
+          "name": "螺旋",
+          "team": "fabled",
+          "patch": {
+            "ability": "邪恶的旅行者不认识恶魔，不会在夜晚死亡。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "恐惧",
+            "内疚",
+            "焦虑",
+            "愤怒",
+            "伤心",
+            "悲痛"
+          ]
+        }
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",

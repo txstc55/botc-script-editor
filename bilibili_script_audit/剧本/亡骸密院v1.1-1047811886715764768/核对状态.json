@@ -9,19 +9,17 @@
   "status": "matched",
   "source_images": [
     "对照图-01.png",
-    "对照图-02.png",
-    "对照图-03.png",
-    "对照图-04.jpg"
+    "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 25,
+  "ocr_character_matches": 26,
   "ocr_required_character_count": 26,
-  "ocr_missing_characters": [
+  "ocr_missing_characters": [],
+  "ocr_name_confirmed_by_ability": [
     "私货商人"
   ],
-  "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "图书管理员",
     "哲学家",
@@ -143,22 +141,22 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "召唤师",
-      "team": "minion",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "男爵",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
-      "name": "灵言师",
+      "name": "召唤师",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
       "name": "红唇女郎",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "灵言师",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -180,12 +178,10 @@
     {
       "name": "私货商人",
       "team": "fabled",
-      "ability_coverage": 0.0714
+      "ability_coverage": 0.9462
     }
   ],
-  "ocr_ability_mismatches": [
-    "私货商人"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
@@ -433,202 +429,12 @@
         }
       ],
       "required_character_matches": 25
-    },
-    {
-      "image": "对照图-03.png",
-      "heading_characters": [
-        "图书管理员",
-        "修行者",
-        "占卜师",
-        "僧侣",
-        "城镇公告员",
-        "神谕者",
-        "巡山人",
-        "落难少女",
-        "陌客",
-        "畸形秀演员",
-        "洗脑师",
-        "男爵",
-        "召唤师",
-        "小恶魔",
-        "涡流",
-        "哲学家",
-        "博学者",
-        "戏法师",
-        "渔夫",
-        "士兵",
-        "镇长",
-        "酒鬼",
-        "红唇女郎",
-        "灵言师",
-        "亡骨魔"
-      ],
-      "heading_character_details": [
-        {
-          "name": "图书管理员",
-          "team": "townsfolk",
-          "x": 0.14703,
-          "y": 0.86907
-        },
-        {
-          "name": "哲学家",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.869
-        },
-        {
-          "name": "修行者",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.81977
-        },
-        {
-          "name": "博学者",
-          "team": "townsfolk",
-          "x": 0.56078,
-          "y": 0.80233
-        },
-        {
-          "name": "占卜师",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.76
-        },
-        {
-          "name": "戏法师",
-          "team": "townsfolk",
-          "x": 0.56078,
-          "y": 0.73692
-        },
-        {
-          "name": "僧侣",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.70494
-        },
-        {
-          "name": "渔夫",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.6715
-        },
-        {
-          "name": "城镇公告员",
-          "team": "townsfolk",
-          "x": 0.14508,
-          "y": 0.64528
-        },
-        {
-          "name": "士兵",
-          "team": "townsfolk",
-          "x": 0.56078,
-          "y": 0.603
-        },
-        {
-          "name": "神谕者",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.59884
-        },
-        {
-          "name": "巡山人",
-          "team": "townsfolk",
-          "x": 0.14691,
-          "y": 0.55779
-        },
-        {
-          "name": "镇长",
-          "team": "townsfolk",
-          "x": 0.56078,
-          "y": 0.54797
-        },
-        {
-          "name": "落难少女",
-          "team": "outsider",
-          "x": 0.14697,
-          "y": 0.52592
-        },
-        {
-          "name": "陌客",
-          "team": "outsider",
-          "x": 0.14706,
-          "y": 0.4795
-        },
-        {
-          "name": "酒鬼",
-          "team": "outsider",
-          "x": 0.56078,
-          "y": 0.47529
-        },
-        {
-          "name": "畸形秀演员",
-          "team": "outsider",
-          "x": 0.14695,
-          "y": 0.42839
-        },
-        {
-          "name": "洗脑师",
-          "team": "minion",
-          "x": 0.14706,
-          "y": 0.3705
-        },
-        {
-          "name": "红唇女郎",
-          "team": "minion",
-          "x": 0.56275,
-          "y": 0.3705
-        },
-        {
-          "name": "男爵",
-          "team": "minion",
-          "x": 0.1451,
-          "y": 0.3225
-        },
-        {
-          "name": "灵言师",
-          "team": "minion",
-          "x": 0.56275,
-          "y": 0.31541
-        },
-        {
-          "name": "召唤师",
-          "team": "minion",
-          "x": 0.1451,
-          "y": 0.28488
-        },
-        {
-          "name": "亡骨魔",
-          "team": "demon",
-          "x": 0.56078,
-          "y": 0.22384
-        },
-        {
-          "name": "小恶魔",
-          "team": "demon",
-          "x": 0.14706,
-          "y": 0.22093
-        },
-        {
-          "name": "涡流",
-          "team": "demon",
-          "x": 0.14706,
-          "y": 0.17878
-        }
-      ],
-      "required_character_matches": 25
-    },
-    {
-      "image": "对照图-04.jpg",
-      "heading_characters": [],
-      "heading_character_details": [],
-      "required_character_matches": 0
     }
   ],
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-02.png",
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "亡骨魔",
@@ -661,14 +467,13 @@
   ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
-    "f676c9b9a20b6c4436dfbedf0d79b95544902471.png",
     "1bbf5cd493b7f3bc2b7fb85bb87aa79244902471.png",
-    "3e430d6150dc4c20db09b05a7cd8491044902471.png",
-    "2765703680b7f89c114c283bb2f4d1a144902471.jpg"
+    "3e430d6150dc4c20db09b05a7cd8491044902471.png"
   ],
   "source_image_added_ids": [
     "3e430d6150dc4c20db09b05a7cd8491044902471.png",
-    "2765703680b7f89c114c283bb2f4d1a144902471.jpg"
+    "2765703680b7f89c114c283bb2f4d1a144902471.jpg",
+    "1bbf5cd493b7f3bc2b7fb85bb87aa79244902471.png"
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
@@ -826,9 +631,9 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "私货商人"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

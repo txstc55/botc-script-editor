@@ -290,6 +290,24 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     raw = f"{prefix}{separator}\n  {role_text}\n{raw[closing_index:]}"
     changes.append(f"新增 {new_role['name']}")
 
+  for ordering in fix.get("team_order", []):
+    team = ordering["team"]
+    names = ordering["names"]
+    matches = [
+      item for item in parsed_objects(raw)
+      if clean_team(item[2].get("team")) == team
+    ]
+    current_names = [str(item[2].get("name", "")) for item in matches]
+    if current_names == names:
+      continue
+    if len(names) != len(set(names)) or set(current_names) != set(names):
+      raise ValueError(f"阵营角色顺序与现有角色不一致：{team}")
+    by_name = {str(item[2].get("name", "")): item[2] for item in matches}
+    for (start, end, _), name in reversed(list(zip(matches, names))):
+      base_indent = object_line_indent(raw, start)
+      raw = raw[:start] + formatted_object(by_name[name], base_indent) + raw[end:]
+    changes.append(f"重排 {team} 阵容")
+
   for roster in fix.get("team_rosters", []):
     team = roster["team"]
     entries = roster["entries"]

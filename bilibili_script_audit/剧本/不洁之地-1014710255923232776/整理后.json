@@ -8,6 +8,10 @@
       {
         "text": "*代表非首个夜晚",
         "html": "<strong>*代表</strong>非首个夜晚"
+      },
+      {
+        "text": "角色列表已被佐迪翁打乱",
+        "html": "角色列表已被佐迪翁打乱"
       }
     ]
   },
@@ -15,10 +19,10 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_5565252874371_57935718.jpg",
     "name": "女家教",
     "team": "townsfolk",
-    "ability": "在你的首个夜晚，你得知一个距离你最近的非镇民玩家类型（旅行者除外）。",
+    "ability": "在你的首个夜晚，你得知一个距离你最近的非镇民玩家的角色类型（旅行者除外）。",
     "id": "governess",
     "edition": "custom",
-    "firstNightReminder": "在首个夜晚，唤醒女教师，给她展示一个非镇民角色类型。该角色类型需要是距离他最近的非镇民玩家的角色类型。",
+    "firstNightReminder": "在首个夜晚，唤醒女家教，给她展示一个非镇民角色类型。该角色类型需要是距离她最近的非镇民玩家的角色类型。",
     "otherNightReminder": "",
     "setup": 0,
     "reminders": [],
@@ -58,7 +62,7 @@
     "otherNight": 991
   },
   {
-    "ability": "你的存活相邻玩家醉酒（不含旅行者）",
+    "ability": "你的存活相邻玩家醉酒（不含旅行者）。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_2345205105371_ac8fe4dd.jpg",
     "edition": "custom",
     "flavor": "",
@@ -271,7 +275,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_8587034974371_8cf03e42.jpg",
     "name": "牧驴者",
     "team": "outsider",
-    "ability": "如果你被提名的当天恶魔未被处决，你的阵营落败[你的角色标记是方形的]",
+    "ability": "如果你被提名且当天恶魔未被处决，你的阵营落败。[你的角色标记是方形的]",
     "id": "DonkeyWrangler",
     "edition": "custom",
     "firstNightReminder": "",
@@ -452,9 +456,9 @@
     "edition": "custom",
     "flavor": "",
     "id": "J'Nak",
-    "firstNightReminder": "在首个夜晚，唤醒一名善良玩家。对他展示齐纳克的角色标记，并指向包含齐纳克在内的两名玩家，然后让这名玩家入睡。",
-    "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒齐纳克。让齐纳克指向任意一名玩家。让齐纳克重新入睡。被选择的玩家死亡——在那名玩家的角色标记旁放置齐纳克的“死亡”提示标记并放置帷幕标记。",
-    "name": "齐纳克",
+    "firstNightReminder": "在首个夜晚，唤醒一名善良玩家。对他展示齐'纳克的角色标记，并指向包含齐'纳克在内的两名玩家，然后让这名玩家入睡。",
+    "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒齐'纳克。让齐'纳克指向任意一名玩家。让齐'纳克重新入睡。被选择的玩家死亡——在那名玩家的角色标记旁放置齐'纳克的“死亡”提示标记并放置帷幕标记。",
+    "name": "齐'纳克",
     "otherNight": 8432,
     "firstNight": 4701,
     "setup": 0,
@@ -466,13 +470,13 @@
     "team": "demon"
   },
   {
-    "ability": "每个夜晚*，会有一名玩家死亡。在最后一晚，你要选择一名玩家。他必须疯狂地证明你不是恶魔，否则他的阵营落败。",
+    "ability": "每个夜晚*，会有一名玩家死亡。在最后一晚，你要选择一名玩家。他必须“疯狂”地证明你不是恶魔，否则他的阵营落败。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_0633240205371_3531622c.jpg",
     "edition": "custom",
     "flavor": "",
     "id": "tipi_tipi",
     "firstNightReminder": "",
-    "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒提普提普。让提普提普指向任意一名玩家。让提普提普重新入睡。被选择的玩家死亡——在那名玩家的角色标记旁放置提普提普的“死亡”提示标记并放置帷幕标记。最后一晚唤醒提普提普，让他选择一名玩家，为这名玩家放置“疯狂”提示标记并唤醒这名玩家，依次向他展示“该角色的能力对你生效”信息标记、谁是提普提普、他要疯狂证明的该玩家不是恶魔。让那名玩家重新入睡。",
+    "otherNightReminder": "除首个夜晚以外的每个夜晚，唤醒提普-提普。让提普-提普指向任意一名玩家。让提普-提普重新入睡。被选择的玩家死亡——在那名玩家的角色标记旁放置提普-提普的“死亡”提示标记并放置帷幕标记。最后一晚唤醒提普-提普，让他选择一名玩家，为这名玩家放置“疯狂”提示标记并唤醒这名玩家，依次向他展示“该角色的能力对你生效”信息标记、谁是提普-提普、他要疯狂证明的该玩家不是恶魔。让那名玩家重新入睡。",
     "name": "提普-提普",
     "otherNight": 8431,
     "firstNight": 0,
@@ -485,7 +489,7 @@
     "team": "demon"
   },
   {
-    "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名",
+    "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/spirit_of_ivory.png",
     "edition": "custom",
     "flavor": "",
@@ -514,5 +518,17 @@
     "name": "科学怪人&牧驴者",
     "team": "jinx",
     "ability": "如果在游戏开始前，说书人决定让恶魔获得牧驴者的能力，那么在盲抽袋中移除恶魔的角色标记，加入牧驴者的角色标记，抽到牧驴者的玩家是恶魔。"
+  },
+  {
+    "id": "科学怪人&幻形妖",
+    "name": "科学怪人&幻形妖",
+    "team": "jinx",
+    "ability": "恶魔使用幻形妖杀死非爪牙玩家之后，恶魔会获得被他杀死的玩家的角色能力，同时将该玩家的角色转变为幻形妖。"
+  },
+  {
+    "id": "科学怪人&酒鬼",
+    "name": "科学怪人&酒鬼",
+    "team": "jinx",
+    "ability": "如果恶魔拥有酒鬼的能力，改为由科学怪人选择一名玩家：如果他是镇民，他醉酒。"
   }
 ]
