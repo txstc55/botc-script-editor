@@ -41,8 +41,14 @@
     "穷奇"
   ],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_heading_characters": [],
-  "ocr_unexpected_characters": [],
+  "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\""
+  ],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -226,8 +232,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        }
+      ],
       "required_character_matches": 0
     }
   ],
@@ -239,5 +261,54 @@
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_heading_character_details": []
+  "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.2005
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.17442
+    }
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "贵族",
+      "阴阳师",
+      "钦天监",
+      "侍女",
+      "熊孩子",
+      "郎中",
+      "僧侣",
+      "哲学家",
+      "博学者",
+      "造谣者",
+      "食人族",
+      "农夫",
+      "悟道者",
+      "陌客",
+      "畸形秀演员",
+      "落难少女",
+      "书生",
+      "女巫",
+      "洗脑师",
+      "提线木偶",
+      "养蛊人",
+      "穷奇"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "提线木偶&落难少女"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "钟楼剧本博物馆",
+      "美术设计"
+    ]
+  }
 }

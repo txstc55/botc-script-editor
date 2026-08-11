@@ -19,13 +19,7 @@
   "ocr_missing_characters": [
     "灯神"
   ],
-  "ocr_travelers_seen": [
-    "黑帮",
-    "女舍监",
-    "替罪羊",
-    "窃贼",
-    "官员"
-  ],
+  "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
       "name": "调查员",
@@ -45,7 +39,7 @@
     {
       "name": "共情者",
       "team": "townsfolk",
-      "ability_coverage": 0.9615
+      "ability_coverage": 0.9231
     },
     {
       "name": "侍女",
@@ -105,7 +99,7 @@
     {
       "name": "理发师",
       "team": "outsider",
-      "ability_coverage": 1.0
+      "ability_coverage": 0.9643
     },
     {
       "name": "疯子",
@@ -161,40 +155,14 @@
   "ocr_ability_mismatches": [
     "灯神"
   ],
-  "ocr_traveler_checks": [
-    {
-      "name": "黑帮",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "女舍监",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "替罪羊",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "窃贼",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "官员",
-      "team": "traveler",
-      "ability_coverage": 1.0
-    }
-  ],
+  "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
-      "text_coverage": 1.0
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 0.7143
     },
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -249,13 +217,17 @@
     "投毒者",
     "亡骨魔",
     "小恶魔",
-    "涡流"
+    "涡流",
+    "诺·达鲺"
   ],
   "ocr_unexpected_characters": [],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "黑帮",
         "女舍监",
         "窃贼",
@@ -263,6 +235,24 @@
         "官员"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.32267
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.29651
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.26867
+        },
         {
           "name": "黑帮",
           "team": "traveler",
@@ -321,6 +311,7 @@
         "投毒者",
         "提线木偶",
         "小恶魔",
+        "诺·达鲺",
         "亡骨魔",
         "涡流"
       ],
@@ -468,12 +459,33 @@
           "team": "demon",
           "x": 0.56275,
           "y": 0.18459
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14902,
+          "y": 0.18314
         }
       ],
       "required_character_matches": 24
     }
   ],
   "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-01.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "女舍监",
+        "官员",
+        "替罪羊",
+        "窃贼",
+        "黑帮"
+      ]
+    },
     {
       "images": [
         "对照图-02.png"
@@ -496,6 +508,7 @@
         "疯子",
         "祖母",
         "茶艺师",
+        "诺·达鲺",
         "调查员",
         "造谣者",
         "酒鬼",
@@ -657,6 +670,22 @@
       "team": "demon",
       "x": 0.56275,
       "y": 0.18459
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14902,
+      "y": 0.18314
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

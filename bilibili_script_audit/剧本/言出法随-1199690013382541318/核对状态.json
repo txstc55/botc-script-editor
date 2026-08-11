@@ -285,8 +285,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.1715
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -727,5 +750,36 @@
       "x": 0.14706,
       "y": 0.25291
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "明修暗度",
+      "明修栈道",
+      "暗度陈仓",
+      "女家教",
+      "气球驾驶员",
+      "无眠者",
+      "懂王",
+      "罂粟种植者",
+      "俑匠",
+      "继生王爵",
+      "精神病患者"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "魔像&明修栈道",
+      "猪倌&牙噶巴卜",
+      "继生王爵&牙噶巴卜"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "幽洞之耳",
+      "圣清之魂",
+      "你不知道自己的阵营。",
+      "每个夜晚*，你会得知一段短语，来自一名与你阵营相同的玩",
+      "游戏过程中邪恶玩家的总数最多能比初始设置多一名。",
+      "家在上个白天的发言。"
+    ]
+  }
 }

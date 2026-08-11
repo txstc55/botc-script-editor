@@ -16,14 +16,12 @@
     "1abbd24b00c660d757121fa4fe58e7fd44902471.png",
     "ea550c238574b1a0c6eea3e49b294be944902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 26,
-  "ocr_required_character_count": 27,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 26,
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "赌徒",
@@ -220,7 +218,7 @@
     {
       "name": "气球驾驶员",
       "team": "townsfolk",
-      "ability_coverage": 0.4103
+      "ability_coverage": 1.0
     },
     {
       "name": "舞蛇人",
@@ -333,29 +331,50 @@
       "ability_coverage": 0.9545
     },
     {
-      "name": "灯神",
+      "name": "大南瓜",
       "team": "fabled",
-      "ability_coverage": 0.1765
-    },
-    {
-      "name": "大南瓜寓言",
-      "team": "fabled",
-      "ability_coverage": 0.8968
+      "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "气球驾驶员",
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "提线木偶&气球驾驶员",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "提线木偶&召唤师",
+      "team": "jinx",
+      "ability_coverage": 0.6667
+    },
+    {
+      "name": "科学怪人&政客",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "科学怪人&酒鬼",
+      "team": "jinx",
+      "ability_coverage": 0.7097
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 2,
-  "ocr_missing_jinx_rule_count": 2,
+  "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
       "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "大南瓜改变玩家角色时，不需要和其原本的角色类型相同，但不改变玩家的阵营。",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "在游戏开始时，说书人可以询问玩家是否愿意在万圣前夜结束时变装为剧本列表之外的官方角色。",
       "text_coverage": 1.0
     }
   ],
@@ -629,10 +648,7 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "气球驾驶员",
-      "灯神"
-    ],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

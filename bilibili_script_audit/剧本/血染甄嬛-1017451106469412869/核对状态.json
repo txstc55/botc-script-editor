@@ -266,10 +266,6 @@
     "非首个夜晚"
   ],
   "ocr_unexplained_bottom_lines": [
-    "舒太妃果郡王额線",
-    "沈眉庄妞妹情深",
-    "妙音娘子余答应",
-    "曹琴默 双面间谋",
     "莫言男人都会让女人伤心",
     "夏X滴血驻亲",
     "每局游戏限一次，在夜晚时，你要选择两名玩家进行滴血认亲：",
@@ -285,12 +281,33 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "公公",
         "太上老君",
         "方丈",
         "酒仙"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.305
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27451,
+          "y": 0.2775
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.25
+        },
         {
           "name": "公公",
           "team": "fabled",
@@ -396,5 +413,22 @@
       "x": 0.56078,
       "y": 0.212
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "莫言男人都会让女人伤心",
+      "夏X滴血驻亲",
+      "每局游戏限一次，在夜晚时，你要选择两名玩家进行滴血认亲：",
+      "他们获得亲情羁绊。",
+      "（如果父/母死于处决，孩子会一同死亡；",
+      "父/母会醉酒。）",
+      "如果孩子死于处决，",
+      "为女性 未标注 太监"
+    ]
+  }
 }

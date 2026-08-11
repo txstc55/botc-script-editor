@@ -259,8 +259,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17587
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -785,5 +808,23 @@
       "x": 0.14706,
       "y": 0.11483
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "风向标",
+      "复仇者"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [
+      "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。"
+    ],
+    "unexplained_bottom_lines": [
+      "当你将要死亡时，改为一名存活且具有能力的爪牙失去能力。",
+      "你不会得知恶魔信息。",
+      "總烹熱）：如果轉红的角色发生了交換，不会因此務除原本转机的“失去能力一",
+      "盥麥盐的靠竺否衾櫻架鵲跫耀餅查𨫞油茱諦錾携双赞勢杳鬯器专樂杂處為鬱恕"
+    ]
+  }
 }

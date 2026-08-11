@@ -46,8 +46,16 @@
     "灯神"
   ],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_heading_characters": [],
-  "ocr_unexpected_characters": [],
+  "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -288,8 +296,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17587
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     }
   ],
@@ -301,5 +332,68 @@
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_heading_character_details": []
+  "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.202
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.17587
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.14826
+    }
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "厨师",
+      "钦天监",
+      "店小二",
+      "共情者",
+      "占卜师",
+      "水手",
+      "气球驾驶员",
+      "熊孩子",
+      "郎中",
+      "城镇公告员",
+      "哲学家",
+      "魔术师",
+      "博学者",
+      "酒鬼",
+      "陌客",
+      "政客",
+      "告密者",
+      "哥布林",
+      "限",
+      "画皮",
+      "间谍",
+      "提线木偶",
+      "方古",
+      "痢蛭",
+      "小怪宝",
+      "暴风捕手",
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "提线木偶&气球驾驶员",
+      "间谍&魔术师",
+      "小怪宝&魔术师",
+      "提线木偶&告密者",
+      "提线木偶&小怪宝"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "SUI染钟楼制作组＆钟楼剧本博物馆"
+    ]
+  }
 }

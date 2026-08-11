@@ -26,14 +26,12 @@
     "acfe460028216e51bb681e085e9d254f44902471.png",
     "74f91e569d13d215dfd48d15b837b19644902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
-  "ocr_required_character_count": 26,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 25,
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "神秘学家",
@@ -183,11 +181,6 @@
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.1176
-    },
-    {
       "name": "贵族",
       "team": "townsfolk",
       "ability_coverage": 1.0
@@ -313,19 +306,62 @@
       "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "神秘学家&卡扎力",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "帽匠&人质先生",
+      "team": "jinx",
+      "ability_coverage": 0.5263
+    },
+    {
+      "name": "莽夫&人质先生&怪盗",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "卡扎力&莽夫",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "利维坦&旅店老板",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "利维坦&镇长",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "利维坦&帽匠",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "利维坦&怪盗",
+      "team": "jinx",
+      "ability_coverage": 0.8333
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 7,
-  "ocr_missing_jinx_rule_count": 7,
+  "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
       "text": "*代表非首个夜晚",
       "text_coverage": 1.0
+    },
+    {
+      "text": "⑦ 代表该剧本中建议“伪证天才”选择的角色",
+      "text_coverage": 0.9375
     }
   ],
   "ocr_note_mismatches": [],
@@ -351,10 +387,7 @@
     "代表该剧本中建议 “伪证天才” 选择的角色",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "那名玩家不会死亡。）",
-    "则善良阵营获胜。）"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -617,15 +650,10 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "灯神"
-    ],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "那名玩家不会死亡。）",
-      "则善良阵营获胜。）"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

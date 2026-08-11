@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_heading_characters": [
@@ -20,11 +20,13 @@
     "安柏",
     "米卡",
     "胡桃",
+    "九条裟罗",
     "莫娜",
     "琴",
     "八重神子",
     "迪卢克",
     "温迪",
+    "\"在场\"",
     "雷电将军",
     "纳西妲",
     "芙宁娜",
@@ -49,8 +51,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.202
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17442
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -58,6 +83,7 @@
       "heading_characters": [
         "安柏",
         "米卡",
+        "九条裟罗",
         "莫娜",
         "八重神子",
         "温迪",
@@ -72,6 +98,7 @@
         "胡桃",
         "琴",
         "迪卢克",
+        "\"在场\"",
         "雷电将军",
         "芙宁娜",
         "七七",
@@ -106,6 +133,12 @@
           "y": 0.8125
         },
         {
+          "name": "九条裟罗",
+          "team": "townsfolk",
+          "x": 0.14703,
+          "y": 0.76881
+        },
+        {
           "name": "莫娜",
           "team": "townsfolk",
           "x": 0.14706,
@@ -134,6 +167,12 @@
           "team": "townsfolk",
           "x": 0.1451,
           "y": 0.62936
+        },
+        {
+          "name": "\"在场\"",
+          "team": "minion",
+          "x": 0.56078,
+          "y": 0.6015
         },
         {
           "name": "雷电将军",
@@ -229,7 +268,9 @@
         "对照图-03.png"
       ],
       "characters": [
+        "\"在场\"",
         "七七",
+        "九条裟罗",
         "优菈",
         "债务处理人",
         "八重神子",
@@ -287,6 +328,12 @@
       "y": 0.8125
     },
     {
+      "name": "九条裟罗",
+      "team": "townsfolk",
+      "x": 0.14703,
+      "y": 0.76881
+    },
+    {
       "name": "莫娜",
       "team": "townsfolk",
       "x": 0.14706,
@@ -315,6 +362,12 @@
       "team": "townsfolk",
       "x": 0.1451,
       "y": 0.62936
+    },
+    {
+      "name": "\"在场\"",
+      "team": "minion",
+      "x": 0.56078,
+      "y": 0.6015
     },
     {
       "name": "雷电将军",
@@ -405,7 +458,9 @@
   "ocr_required_character_count": 27,
   "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"在场\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -589,5 +644,13 @@
   ],
   "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
-  "ocr_missing_rule_data": false
+  "ocr_missing_rule_data": false,
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

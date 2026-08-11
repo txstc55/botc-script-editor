@@ -36,6 +36,7 @@
     "洗脑师",
     "舱底鼠",
     "提线木偶",
+    "[未知]",
     "红唇女郎",
     "涡流",
     "小恶魔",
@@ -52,8 +53,17 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.1655
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -81,6 +91,7 @@
         "陌客",
         "圣徒",
         "洗脑师",
+        "[未知]",
         "小恶魔",
         "亡骨魔",
         "苍蝇"
@@ -201,6 +212,12 @@
           "y": 0.3196
         },
         {
+          "name": "[未知]",
+          "team": "minion",
+          "x": 0.55686,
+          "y": 0.31831
+        },
+        {
           "name": "红唇女郎",
           "team": "minion",
           "x": 0.14706,
@@ -252,6 +269,7 @@
         "对照图-03.png"
       ],
       "characters": [
+        "[未知]",
         "亡骨魔",
         "博学者",
         "图书管理员",
@@ -401,6 +419,12 @@
       "team": "minion",
       "x": 0.147,
       "y": 0.3196
+    },
+    {
+      "name": "[未知]",
+      "team": "minion",
+      "x": 0.55686,
+      "y": 0.31831
     },
     {
       "name": "红唇女郎",
@@ -621,5 +645,15 @@
     "你秘密地加入游戏。"
   ],
   "ocr_rule_markers": [],
-  "ocr_missing_rule_data": false
+  "ocr_missing_rule_data": false,
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "你秘密地加入游戏。"
+    ]
+  }
 }

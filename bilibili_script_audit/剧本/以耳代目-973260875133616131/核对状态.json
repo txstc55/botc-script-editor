@@ -20,13 +20,15 @@
     "37ca5531f3bcbab84974c67052e1cd4844902471.png",
     "e97f77679b863fa5130e2b0f8678015544902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-04.png",
-  "ocr_character_matches": 20,
-  "ocr_required_character_count": 20,
+  "ocr_character_matches": 21,
+  "ocr_required_character_count": 21,
   "ocr_missing_characters": [],
-  "ocr_name_confirmed_by_ability": [],
+  "ocr_name_confirmed_by_ability": [
+    "哨兵"
+  ],
   "ocr_heading_characters": [
     "驱魔人",
     "小精灵",
@@ -252,16 +254,37 @@
       "name": "奥赫的谜题",
       "team": "fabled",
       "ability_coverage": 0.7794
+    },
+    {
+      "name": "哨兵",
+      "team": "fabled",
+      "ability_coverage": 1.0
     }
   ],
   "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "瘟疫医生&男爵",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "瘟疫医生&红唇女郎",
+      "team": "jinx",
+      "ability_coverage": 0.6667
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 1,
-  "ocr_missing_jinx_rule_count": 1,
-  "ocr_note_checks": [],
+  "ocr_missing_jinx_rule_count": 0,
+  "ocr_note_checks": [
+    {
+      "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    }
+  ],
   "ocr_note_mismatches": [],
   "ocr_bottom_text": [
     "传奇角色•说书人",
@@ -270,9 +293,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "在初始设置时，可能会额外增加或减少一个外来者。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -479,8 +500,6 @@
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "在初始设置时，可能会额外增加或减少一个外来者。"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

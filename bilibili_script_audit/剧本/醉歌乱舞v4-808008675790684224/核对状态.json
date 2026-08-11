@@ -237,18 +237,22 @@
     "麻脸巫婆",
     "方古",
     "小恶魔",
-    "亡骨魔"
+    "亡骨魔",
+    "诺·达鲺"
   ],
   "ocr_unexpected_characters": [
     "事务官",
     "女裁缝",
     "农夫",
-    "送葬者"
+    "送葬者",
+    "诺·达鲺"
   ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
         "窃贼",
         "枪手",
         "法官",
@@ -256,6 +260,18 @@
         "集骨者"
       ],
       "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.28634
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.26
+        },
         {
           "name": "官员",
           "team": "traveler",
@@ -315,7 +331,8 @@
         "理发师",
         "洗脑师",
         "麻脸巫婆",
-        "方古"
+        "方古",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -461,6 +478,12 @@
           "team": "demon",
           "x": 0.14902,
           "y": 0.17733
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56471,
+          "y": 0.1685
         }
       ],
       "required_character_matches": 20
@@ -491,7 +514,8 @@
         "理发师",
         "洗脑师",
         "麻脸巫婆",
-        "方古"
+        "方古",
+        "诺·达鲺"
       ],
       "heading_character_details": [
         {
@@ -637,6 +661,12 @@
           "team": "demon",
           "x": 0.14902,
           "y": 0.17733
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56471,
+          "y": 0.1685
         }
       ],
       "required_character_matches": 20
@@ -669,6 +699,7 @@
         "畸形秀演员",
         "筑梦师",
         "莽夫",
+        "诺·达鲺",
         "贵族",
         "送葬者",
         "酒鬼",
@@ -828,6 +859,26 @@
       "team": "demon",
       "x": 0.14902,
       "y": 0.17733
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56471,
+      "y": 0.1685
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "钟表匠",
+      "失忆者",
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "与你邻近的两名镇民中毒。"
+    ]
+  }
 }

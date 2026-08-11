@@ -212,6 +212,7 @@
     "灵言师",
     "提线木偶",
     "涡流",
+    "诺·达鲺",
     "亡骨魔",
     "军团"
   ],
@@ -219,8 +220,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29806,
+          "y": 0.2
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27214,
+          "y": 0.1728
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 1
     },
     {
@@ -248,6 +272,7 @@
         "呆瓜",
         "间谍",
         "灵言师",
+        "诺·达鲺",
         "军团"
       ],
       "heading_character_details": [
@@ -378,6 +403,12 @@
           "y": 0.23837
         },
         {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.56269,
+          "y": 0.23825
+        },
+        {
           "name": "亡骨魔",
           "team": "demon",
           "x": 0.14706,
@@ -416,6 +447,7 @@
         "神谕者",
         "筑梦师",
         "艺术家",
+        "诺·达鲺",
         "贤者",
         "贵族",
         "酒鬼",
@@ -560,6 +592,12 @@
       "y": 0.23837
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.56269,
+      "y": 0.23825
+    },
+    {
       "name": "亡骨魔",
       "team": "demon",
       "x": 0.14706,
@@ -571,5 +609,13 @@
       "x": 0.56275,
       "y": 0.1875
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

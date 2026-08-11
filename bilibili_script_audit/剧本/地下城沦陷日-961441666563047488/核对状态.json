@@ -18,11 +18,11 @@
     "6970c5b89c62fc6f007d47ac3443599444902471.png",
     "1df5f798f364919384ae1516e2cca92b44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
-  "ocr_character_matches": 28,
-  "ocr_required_character_count": 28,
+  "ocr_character_matches": 29,
+  "ocr_required_character_count": 29,
   "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "迷题石像"
@@ -227,15 +227,13 @@
       "y": 0.0885
     }
   ],
-  "ocr_unexpected_characters": [
-    "独奏家"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
       "name": "命运龙骰",
       "team": "fabled",
-      "ability_coverage": 0.873
+      "ability_coverage": 1.0
     },
     {
       "name": "暮光精灵",
@@ -360,7 +358,7 @@
     {
       "name": "奇奇默克",
       "team": "demon",
-      "ability_coverage": 0.7568
+      "ability_coverage": 0.9231
     },
     {
       "name": "卓尔卡尼斯",
@@ -371,6 +369,11 @@
       "name": "呓语之球",
       "team": "demon",
       "ability_coverage": 0.9773
+    },
+    {
+      "name": "独奏家",
+      "team": "fabled",
+      "ability_coverage": 1.0
     }
   ],
   "ocr_ability_mismatches": [],
@@ -386,11 +389,16 @@
       "name": "判决者&童子军",
       "team": "jinx",
       "ability_coverage": 0.8947
+    },
+    {
+      "name": "军团长&童子军",
+      "team": "jinx",
+      "ability_coverage": 1.0
     }
   ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 3,
-  "ocr_missing_jinx_rule_count": 1,
+  "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
       "text": "*代表非首个夜晚",
@@ -418,11 +426,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "距离你最远八牙与你之间的镇民玩家能力都会产生错误信息。",
-    "旅行者会被非旅行者角色当作不在游戏中，但",
-    "恶魔仍然可以选择杀死旅行者。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -672,7 +676,7 @@
           "y": 0.0885
         }
       ],
-      "required_character_matches": 27
+      "required_character_matches": 28
     }
   ],
   "ocr_source_board_groups": [
@@ -718,10 +722,6 @@
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "距离你最远八牙与你之间的镇民玩家能力都会产生错误信息。",
-      "旅行者会被非旅行者角色当作不在游戏中，但",
-      "恶魔仍然可以选择杀死旅行者。"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

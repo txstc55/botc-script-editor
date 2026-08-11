@@ -215,6 +215,24 @@
     "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。"
   },
   {
+    "id": "lycanthrope",
+    "name": "半兽人",
+    "team": "townsfolk",
+    "edition": "custom",
+    "ability": "每个夜晚*，你要选择一名存活的玩家：如果他是善良的，他死亡，并且当晚不会再有其他玩家死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lycanthrope.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 5,
+    "otherNightReminder": "唤醒半兽人，让他选择一名玩家。如果该玩家是善良玩家，该玩家死亡，且当晚不会再有其他玩家死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
     "id": "jinyiwei",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5878087694761_691045fa.jpg",
     "edition": "custom",
@@ -478,15 +496,6 @@
     ]
   },
   {
-    "id": "0_meta",
-    "image": "https://i.postimg.cc/gjv6QLc8/20230926005128.png",
-    "name": "和尚 & 半兽人",
-    "team": "jinx",
-    "sch_team": "相克",
-    "setup": 0,
-    "ability": "如果半兽人选择了锦衣卫保护的善良玩家，那么当晚只会有锦衣卫死亡。"
-  },
-  {
     "id": "1_meta",
     "image": "https://i.postimg.cc/gjv6QLc8/20230926005128.png",
     "name": "养蛊人 & 瘟疫医生",
@@ -514,16 +523,9 @@
     "ability": "如果罂粟种植者在场，爪牙们不会同时醒来选择照看小怪宝。他们会依次单独被唤醒，知道其中一人选择照看小怪宝。"
   },
   {
-    "ability": "B站 是苏璃嘛",
-    "image": "https://img2.imgtp.com/2024/04/26/GXmnTq9t.png",
-    "edition": "custom",
-    "id": "Json Write By",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "Json 制作 By",
-    "firstNight": 0,
-    "otherNight": 0,
-    "setup": 0,
-    "team": "fabled"
+    "id": "半兽人&锦衣卫",
+    "name": "半兽人&锦衣卫",
+    "team": "jinx",
+    "ability": "如果半兽人选择了锦衣卫保护的善良玩家，那么当晚只会有锦衣卫死亡。"
   }
 ]

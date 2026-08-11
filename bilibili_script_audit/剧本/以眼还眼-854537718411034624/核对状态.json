@@ -13,14 +13,12 @@
     "对照图-03.png",
     "对照图-04.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
-  "ocr_required_character_count": 26,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 25,
+  "ocr_missing_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -147,30 +145,33 @@
       "name": "奥赫",
       "team": "demon",
       "ability_coverage": 1.0
-    },
-    {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.1111
     }
   ],
-  "ocr_ability_mismatches": [
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
-      "name": "军团&恶作剧者",
+      "name": "军团&莽夫",
       "team": "jinx",
       "ability_coverage": 0.5909
+    },
+    {
+      "name": "提线木偶&罂粟种植者",
+      "team": "jinx",
+      "ability_coverage": 0.5
+    },
+    {
+      "name": "间谍&罂粟种植者",
+      "team": "jinx",
+      "ability_coverage": 0.381
     }
   ],
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-      "text_coverage": 0.619
+      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+      "text_coverage": 0.9167
     },
     {
       "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
@@ -193,9 +194,7 @@
     "*代表",
     "非首心夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "非首心夜晚"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_name_confirmed_by_ability": [
@@ -227,9 +226,7 @@
     "亡骨魔",
     "军团"
   ],
-  "ocr_unexpected_characters": [
-    "诺·达鲺"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
@@ -747,11 +744,15 @@
       "y": 0.1856
     }
   ],
-  "manual_verification": {},
-  "ocr_raw_issues": {
-    "ability_mismatches": [
-      "灯神"
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "非首心夜晚"
     ],
+    "source_image": "对照图-02.png",
+    "reason": "原图底部文字为“非首个夜晚”，OCR 将“个”错识为“心”。"
+  },
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

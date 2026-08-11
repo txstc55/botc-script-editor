@@ -46,11 +46,18 @@
   ],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\"",
     "流莺",
     "乞丐",
     "咖啡师"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "乞丐",
     "巫毒师",
@@ -302,6 +309,9 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "流莺",
         "学徒",
         "咖啡师",
@@ -309,6 +319,24 @@
         "乞丐"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.31541
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.28779
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2615
+        },
         {
           "name": "巫毒师",
           "team": "",
@@ -343,7 +371,23 @@
       "required_character_matches": 0
     }
   ],
-  "ocr_source_board_groups": [],
+  "ocr_source_board_groups": [
+    {
+      "images": [
+        "对照图-02.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "乞丐",
+        "咖啡师",
+        "学徒",
+        "巫毒师",
+        "流莺"
+      ]
+    }
+  ],
   "source_image_ids": [],
   "resolved_source_image_ids": [
     "3219c98332cff60b986b64531278db3944902471.png",
@@ -352,6 +396,24 @@
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
   "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.31541
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.28779
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.2615
+    },
     {
       "name": "巫毒师",
       "team": "",
@@ -382,5 +444,45 @@
       "x": 0.14902,
       "y": 0.0885
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "圣洁之魂",
+      "祖母",
+      "小精灵",
+      "侍女",
+      "数学家",
+      "旅店老板",
+      "半兽人",
+      "艺术家",
+      "博学者",
+      "茶艺师",
+      "食人族",
+      "魔术师",
+      "镇长",
+      "疯子",
+      "莽夫",
+      "理发师",
+      "解谜大师",
+      "间谍",
+      "教父",
+      "魔鬼代言人",
+      "刺客",
+      "提线木偶",
+      "僵怖",
+      "亡骨魔",
+      "诺-达鲺"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "侍女&数学家",
+      "数学家&疯子",
+      "间谍&魔术师"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

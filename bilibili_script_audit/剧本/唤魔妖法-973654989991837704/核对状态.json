@@ -20,7 +20,7 @@
     "515376f397cdd6c4cd06aa970aeae32144902471.png",
     "f3c1f9b4f2d6f0c8e47459758d07386a44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-04.png",
   "ocr_character_matches": 12,
@@ -175,10 +175,16 @@
   "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "召唤师&僵怖",
+      "team": "jinx",
+      "ability_coverage": 0.9062
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 1,
-  "ocr_missing_jinx_rule_count": 1,
+  "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
       "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",

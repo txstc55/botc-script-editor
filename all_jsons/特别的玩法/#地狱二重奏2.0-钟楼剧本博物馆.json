@@ -2,26 +2,19 @@
   {
     "id": "_meta",
     "logo": "https://i.postimg.cc/YSTBJdvP/LOGO.png",
-    "name": "地狱二重奏",
+    "name": "地狱二重奏v2.0.0",
     "townsfolkName": "镇民",
     "author": "钟楼剧本博物馆",
-    "state": [
+    "state": [],
+    "notes": [
       {
-        "stateName": "醉酒与中毒",
-        "stateDescription": "醉酒或中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果醉酒或中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息。醉酒或中毒的玩家不会得知自己醉酒或中毒。"
-      },
-      {
-        "stateName": "相克规则",
-        "stateDescription": "牙噶巴卜与驱魔人：如果驱魔人选中了牙噶巴卜，那么牙噶巴卜的能力在当晚无法造成死亡。"
-      },
-      {
-        "stateName": "私货商人",
-        "stateDescription": "①游戏初始无爪牙角色，会有一个邪恶的恶魔在场，玩家人数配置也有相对应的调整。②恶魔会在首个夜晚得知其他的恶魔玩家。罂粟种植者的能力会阻止这个互认，在罂粟种植者死亡后恶魔会如同首个夜晚一样互认，涡流不会影响这个互认。"
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
       }
     ]
   },
   {
-    "ability": "本局游戏外来者可能+1或-1",
+    "ability": "在初始设置时，可能会额外增加或减少一个外来者。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sentinel.png",
     "edition": "custom",
     "flavor": "",
@@ -38,127 +31,14 @@
     "team": "fabled"
   },
   {
-    "ability": "牙噶巴卜与驱魔人：如果驱魔人选中了牙噶巴卜，那么牙噶巴卜的能力在当晚无法造成死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/djinn.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "djinn_GStone",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "灯神",
-    "official_id": "djinn",
-    "otherNight": 0,
-    "firstNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled"
-  },
-  {
-    "ability": "①游戏初始无爪牙角色，会有一个邪恶的恶魔在场，玩家人数配置也有相对应的调整。②恶魔会在首个夜晚得知其他的恶魔玩家。罂粟种植者的能力会阻止这个互认，在罂粟种植者死亡后恶魔会如同首个夜晚一样互认，涡流不会影响这个互认。",
+    "ability": "游戏初始无爪牙角色，会有额外1个邪恶的恶魔在场，玩家人数配置也有相对应的调整。10人：6镇民、2外来者、2恶魔；11人：6镇民、3外来者、2恶魔；12人：8镇民、2外来者、2恶魔；13人：8镇民、3外来者、2恶魔；14人：10镇民、2外来者、2恶魔；15人：10镇民、3外来者、2恶魔。恶魔会在首个夜晚得知其他的恶魔玩家。罂粟种植者的能力会阻止这个互认，在罂粟种植者死亡后恶魔会如同首个夜晚一样互认，涡流不会影响这个互认。",
     "image": "https://i.postimg.cc/sXYxLptS/image.png",
     "edition": "custom",
     "flavor": "",
-    "id": "erchongchang",
+    "id": "erchongzou",
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "name": "二重唱",
-    "otherNight": 0,
-    "firstNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled"
-  },
-  {
-    "ability": "镇民数量：6，外来者数量：2，恶魔数量2",
-    "image": "https://i.postimg.cc/sXYxLptS/image.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "10ren",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "设置调整10人",
-    "otherNight": 0,
-    "firstNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled"
-  },
-  {
-    "ability": "镇民数量：6，外来者数量：3，恶魔数量2",
-    "image": "https://i.postimg.cc/sXYxLptS/image.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "11ren",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "设置调整11人",
-    "otherNight": 0,
-    "firstNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled"
-  },
-  {
-    "ability": "镇民数量：8，外来者数量：2，恶魔数量2",
-    "image": "https://i.postimg.cc/sXYxLptS/image.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "12ren",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "设置调整12人",
-    "otherNight": 0,
-    "firstNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled"
-  },
-  {
-    "ability": "镇民数量：8，外来者数量：3，恶魔数量2",
-    "image": "https://i.postimg.cc/sXYxLptS/image.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "13ren",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "设置调整13人",
-    "otherNight": 0,
-    "firstNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled"
-  },
-  {
-    "ability": "镇民数量：10，外来者数量：2，恶魔数量2",
-    "image": "https://i.postimg.cc/sXYxLptS/image.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "14ren",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "设置调整14人",
-    "otherNight": 0,
-    "firstNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled"
-  },
-  {
-    "ability": "镇民数量：10，外来者数量：3，恶魔数量2",
-    "image": "https://i.postimg.cc/sXYxLptS/image.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "15ren",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "设置调整15人",
+    "name": "二重奏",
     "otherNight": 0,
     "firstNight": 0,
     "setup": 0,
@@ -641,5 +521,11 @@
     "team": "demon",
     "firstNight": 0,
     "GstoneID": "fang_gu"
+  },
+  {
+    "id": "牙噶巴卜&驱魔人",
+    "name": "牙噶巴卜&驱魔人",
+    "team": "jinx",
+    "ability": "如果驱魔人选中了牙噶巴卜，那么牙噶巴卜的能力在当晚无法造成死亡。"
   }
 ]

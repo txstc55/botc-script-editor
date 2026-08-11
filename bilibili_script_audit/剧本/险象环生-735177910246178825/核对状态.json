@@ -244,8 +244,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29806,
+          "y": 0.1952
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27214,
+          "y": 0.1696
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -641,5 +657,21 @@
       "x": 0.39525,
       "y": 0.1024
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "赏金猎人",
+      "调查员",
+      "告密者",
+      "灯神"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "暴乱&国王&唱诗男孩",
+      "暴乱&调查员"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

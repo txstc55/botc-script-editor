@@ -242,8 +242,24 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -705,5 +721,30 @@
       "x": 0.56078,
       "y": 0.28488
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "帽子奇谭",
+      "共鸣使徒",
+      "窥镜者",
+      "悲剧演员",
+      "白狼",
+      "雾鸮",
+      "大主教",
+      "气球驾驶员",
+      "铜蛇帮"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "哲学家&石像鬼"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "当你陷入”疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+      "中毒/醉酒",
+      "中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒",
+      "玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。"
+    ]
+  }
 }

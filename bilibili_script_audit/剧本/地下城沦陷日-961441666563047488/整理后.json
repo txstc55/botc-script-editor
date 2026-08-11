@@ -31,7 +31,7 @@
 		"image": "https://postimage.me/image/UVWemy",
 		"name": "命运龙骰",
 		"team": "fabled",
-		"ability": "军团长在某次战争中获得的秘宝。每次提名开始前，说书人需袋投掷一颗与场上玩家数量相同点数的般子，由对应座位号的玩家选择一名其他玩家发起提名。"
+		"ability": "军团长在某次战争中获得的秘宝。（建议童子军游戏中加入）每次提名开始前，说书人需要投掷一颗与场上玩家数量相同点数的骰子，由对应座位号的玩家选择一名其他玩家发起提名。"
 	}, {
 		"id": "5_sheshecup4",
 		"image": "https://postimage.me/images/2024/08/01/69f98caa9674532894d01645ee5ab6b1.png",
@@ -402,22 +402,23 @@
 		"setup": 1
 	},
 	{
-		"id": "75b898b8-10b9-4103-8228-bd826e4874e511",
-		"image": "https://postimage.me/images/2024/08/01/7b3b5ae6d3a68a98bdbbaaf91109825b.png",
-		"edition": "custom",
-		"name": "奇奇默克",
-		"ability": "每个夜晚*，你要选择一名玩家：他死亡。你与最近爪牙之间的镇民玩家的能力都会产生错误信息。",
-		"team": "demon",
-		"sch_team": "恶魔",
-		"firstNight": 0,
-		"otherNight": 31,
-		"firstNightReminder": "",
-		"otherNightReminder": "让奇奇默克选择一名玩家。标记那名玩家死亡。",
-		"reminders": [
-			"死亡","错误"
-		],
-		"remindersGlobal": [],
-		"setup": 0
+	  "id": "75b898b8-10b9-4103-8228-bd826e4874e511",
+	  "image": "https://postimage.me/images/2024/08/01/7b3b5ae6d3a68a98bdbbaaf91109825b.png",
+	  "edition": "custom",
+	  "name": "奇奇默克",
+	  "ability": "每个夜晚*，你要选择一名玩家：他死亡。距离你最远爪牙与你之间的镇民玩家能力都会产生错误信息。",
+	  "team": "demon",
+	  "sch_team": "恶魔",
+	  "firstNight": 0,
+	  "otherNight": 31,
+	  "firstNightReminder": "",
+	  "otherNightReminder": "让奇奇默克选择一名玩家。标记那名玩家死亡。",
+	  "reminders": [
+	    "死亡",
+	    "错误"
+	  ],
+	  "remindersGlobal": [],
+	  "setup": 0
 	},
 	{
 		"id": "12_sheshecup1",
@@ -509,5 +510,25 @@
 		"team": "jinx",
 		"setup": 0,
 		"ability": "如果童子军因自身能力被处决，判决者能力不生效。"
-	}
+	},
+  {
+    "ability": "旅行者会被非旅行者角色当作不在游戏中，但恶魔仍然可以选择杀死旅行者。",
+    "image": "https://i.postimg.cc/mD2DR7sv/image.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "recitalist",
+    "name": "独奏家",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  },
+  {
+    "id": "军团长&童子军",
+    "name": "军团长&童子军",
+    "team": "jinx",
+    "ability": "军团长在进行选择时，不会将踏入迷沙陷阱的童子军当作外来者。"
+  }
 ]

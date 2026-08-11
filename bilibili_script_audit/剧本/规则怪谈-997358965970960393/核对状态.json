@@ -264,9 +264,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "圣清之魂"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -280,8 +278,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.1495
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.1205
+        }
+      ],
       "required_character_matches": 3
     },
     {
@@ -647,5 +661,17 @@
       "x": 0.14706,
       "y": 0.093
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "提线木偶&小怪宝",
+      "瘟疫医生&提线木偶",
+      "小怪宝&罂粟种植者"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

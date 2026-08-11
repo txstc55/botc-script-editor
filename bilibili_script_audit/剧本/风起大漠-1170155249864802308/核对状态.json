@@ -13,17 +13,40 @@
   ],
   "review_status": "missing_json",
   "review_notes": [],
-  "ocr_reference_image": "对照图-02.png",
+  "ocr_reference_image": "对照图-01.png",
   "ocr_heading_characters": [
-    "巫祝",
-    "巧匠",
-    "独奏家"
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
   ],
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": []
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29937,
+          "y": 0.20233
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29804,
+          "y": 0.14826
+        }
+      ]
     },
     {
       "image": "对照图-02.png",
@@ -62,22 +85,22 @@
   ],
   "ocr_heading_character_details": [
     {
-      "name": "巫祝",
+      "name": "\"镇民\"",
       "team": "townsfolk",
-      "x": 0.14902,
-      "y": 0.6495
+      "x": 0.29937,
+      "y": 0.20233
     },
     {
-      "name": "巧匠",
+      "name": "\"外来者\"",
       "team": "townsfolk",
-      "x": 0.56275,
-      "y": 0.59884
+      "x": 0.27255,
+      "y": 0.17297
     },
     {
-      "name": "独奏家",
-      "team": "fabled",
-      "x": 0.56275,
-      "y": 0.07994
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29804,
+      "y": 0.14826
     }
   ]
 }

@@ -18,16 +18,15 @@
     "2c39867bf238c27f8256dd766b81b7aa44902471.png",
     "b27fd93ef393828a0be9953ba7176af544902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
-  "ocr_character_matches": 26,
+  "ocr_character_matches": 27,
   "ocr_required_character_count": 27,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
-    "侍女"
+    "侍女",
+    "私货商人"
   ],
   "ocr_heading_characters": [
     "钦天监",
@@ -205,11 +204,6 @@
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.1111
-    },
-    {
       "name": "阴阳师",
       "team": "townsfolk",
       "ability_coverage": 0.9118
@@ -338,17 +332,36 @@
       "name": "痢蛭",
       "team": "demon",
       "ability_coverage": 0.75
+    },
+    {
+      "name": "私货商人",
+      "team": "fabled",
+      "ability_coverage": 0.9091
     }
   ],
-  "ocr_ability_mismatches": [
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "猎手&痢蛭",
+      "team": "jinx",
+      "ability_coverage": 0.125
+    },
+    {
+      "name": "痢蛭&怪盗",
+      "team": "jinx",
+      "ability_coverage": 0.4902
+    },
+    {
+      "name": "方古&怪盗",
+      "team": "jinx",
+      "ability_coverage": 0.3333
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 2,
-  "ocr_missing_jinx_rule_count": 2,
+  "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
       "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
@@ -357,6 +370,10 @@
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
       "text_coverage": 1.0
+    },
+    {
+      "text": "*代表非首个夜晚",
+      "text_coverage": 0.8
     }
   ],
   "ocr_note_mismatches": [],
@@ -375,13 +392,7 @@
     "*代表",
     "非首心夜既"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "死亡时你才会一同死亡。",
-    "（相克規划：縮短如累因沙偿这的能力两束能在首个夜战絞燒醒，别会在",
-    "下一次四自身能力被埃股时选择宿主，在此之前南戴没有免死能力.）",
-    "（都克規則：登遊无法通设方古的感力创道新的方古。）",
-    "非首心夜既"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -393,8 +404,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29806,
+          "y": 0.2016
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27214,
+          "y": 0.1744
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29374,
+          "y": 0.1472
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -606,5 +640,37 @@
         "陌客"
       ]
     }
-  ]
+  ],
+  "manual_verification": {
+    "verified_jinxes": [
+      "猎手&痢蛭",
+      "痢蛭&怪盗",
+      "方古&怪盗"
+    ],
+    "verified_bottom_lines": [
+      "死亡时你才会一同死亡。",
+      "（相克規划：縮短如累因沙偿这的能力两束能在首个夜战絞燒醒，别会在",
+      "下一次四自身能力被埃股时选择宿主，在此之前南戴没有免死能力.）",
+      "（都克規則：登遊无法通设方古的感力创道新的方古。）",
+      "非首心夜既"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图三条灰底相克、痢蛭能力末句和“非首个夜晚”已放大逐字核对；低分辨率 OCR 将这些小字识别为乱码。"
+  },
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [
+      "猎手&痢蛭",
+      "方古&怪盗"
+    ],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "死亡时你才会一同死亡。",
+      "（相克規划：縮短如累因沙偿这的能力两束能在首个夜战絞燒醒，别会在",
+      "下一次四自身能力被埃股时选择宿主，在此之前南戴没有免死能力.）",
+      "（都克規則：登遊无法通设方古的感力创道新的方古。）",
+      "非首心夜既"
+    ]
+  }
 }

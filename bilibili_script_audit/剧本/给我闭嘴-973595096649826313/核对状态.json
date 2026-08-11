@@ -20,15 +20,12 @@
     "7693aca94e30958b88de4dc03c135ae944902471.png",
     "3597e8616742cedea075aaf751caac9344902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-04.png",
-  "ocr_character_matches": 14,
+  "ocr_character_matches": 16,
   "ocr_required_character_count": 16,
-  "ocr_missing_characters": [
-    "呆瓜",
-    "主谋"
-  ],
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "赏金猎人",
@@ -146,10 +143,7 @@
       "y": 0.21199
     }
   ],
-  "ocr_unexpected_characters": [
-    "狂热者",
-    "提线木偶"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -208,9 +202,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "呆瓜",
+      "name": "狂热者",
       "team": "outsider",
-      "ability_coverage": 0.5312
+      "ability_coverage": 1.0
     },
     {
       "name": "疯子",
@@ -223,9 +217,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "主谋",
+      "name": "提线木偶",
       "team": "minion",
-      "ability_coverage": 0.1961
+      "ability_coverage": 1.0
     },
     {
       "name": "利维坦",
@@ -233,15 +227,19 @@
       "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "主谋"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "利维坦&镇长",
+      "team": "jinx",
+      "ability_coverage": 0.8889
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 1,
-  "ocr_missing_jinx_rule_count": 1,
+  "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
       "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
@@ -254,6 +252,10 @@
     {
       "text": "*代表非首个夜晚",
       "text_coverage": 1.0
+    },
+    {
+      "text": "说书人诡计：可以欺骗提线木偶，寡妇在场。",
+      "text_coverage": 0.8
     }
   ],
   "ocr_note_mismatches": [],
@@ -431,7 +433,7 @@
           "y": 0.21199
         }
       ],
-      "required_character_matches": 14
+      "required_character_matches": 16
     }
   ],
   "ocr_source_board_groups": [
@@ -461,9 +463,7 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "主谋"
-    ],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

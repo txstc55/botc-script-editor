@@ -46,7 +46,8 @@
     "提线木偶",
     "军团",
     "小恶魔",
-    "涡流"
+    "涡流",
+    "诺·达鲺"
   ],
   "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
@@ -205,8 +206,8 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
-      "text_coverage": 1.0
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 0.7143
     },
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -266,6 +267,7 @@
         "男爵",
         "红唇女郎",
         "小恶魔",
+        "诺·达鲺",
         "猎手",
         "女裁缝",
         "贤者",
@@ -422,6 +424,12 @@
           "team": "demon",
           "x": 0.56471,
           "y": 0.18
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.14881,
+          "y": 0.17239
         }
       ],
       "required_character_matches": 24
@@ -452,6 +460,7 @@
         "管家",
         "红唇女郎",
         "艺术家",
+        "诺·达鲺",
         "贤者",
         "陌客",
         "食人族",
@@ -612,6 +621,20 @@
       "team": "demon",
       "x": 0.56471,
       "y": 0.18
+    },
+    {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.14881,
+      "y": 0.17239
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

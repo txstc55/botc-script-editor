@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 27,
@@ -202,9 +202,7 @@
       "ability_coverage": 0.3462
     }
   ],
-  "ocr_jinx_mismatches": [
-    "军团&工程师"
-  ],
+  "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
       "text": "*代表非首个夜晚",
@@ -621,7 +619,13 @@
       "y": 0.10029
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_jinxes": [
+      "军团&工程师"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图军团下方灰底相克规则与 JSON 逐字一致，OCR 未能完整拼接小字。"
+  },
   "ocr_raw_issues": {
     "ability_mismatches": [],
     "traveler_mismatches": [],

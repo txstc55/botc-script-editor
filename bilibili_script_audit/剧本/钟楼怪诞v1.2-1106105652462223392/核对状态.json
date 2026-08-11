@@ -220,8 +220,6 @@
   "ocr_unexplained_bottom_lines": [
     "如果你以这种方式自杀，",
     "［无爪牙在场，+1外来者1",
-    "圣诞怪杰Grinch",
-    "雪人Yeti",
     "你在夜晚不会死亡、醉酒或中毒。"
   ],
   "ocr_rule_markers": [],
@@ -235,8 +233,17 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.228
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -271,5 +278,17 @@
       "x": 0.56275,
       "y": 0.81541
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "如果你以这种方式自杀，",
+      "［无爪牙在场，+1外来者1",
+      "你在夜晚不会死亡、醉酒或中毒。"
+    ]
+  }
 }

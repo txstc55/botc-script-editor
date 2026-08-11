@@ -16,7 +16,7 @@
   "resolved_source_image_ids": [
     "f0eb143d1dc1d8be899da59a6daa4fd344902471.png"
   ],
-  "review_status": "ocr_content_match",
+  "review_status": "needs_manual_review",
   "review_notes": [],
   "ocr_source_images": [
     {
@@ -27,6 +27,7 @@
         "送葬者",
         "舞蛇人",
         "变脸师",
+        "\"被处决\"",
         "陌客",
         "解谜大师",
         "异端分子",
@@ -71,6 +72,12 @@
           "y": 0.5
         },
         {
+          "name": "\"被处决\"",
+          "team": "townsfolk",
+          "x": 0.14902,
+          "y": 0.47384
+        },
+        {
           "name": "解谜大师",
           "team": "outsider",
           "x": 0.14706,
@@ -104,6 +111,7 @@
         "对照图-01.png"
       ],
       "characters": [
+        "\"被处决\"",
         "变脸师",
         "小精灵",
         "异端分子",
@@ -125,6 +133,7 @@
     "舞蛇人",
     "变脸师",
     "陌客",
+    "\"被处决\"",
     "解谜大师",
     "异端分子",
     "教父",
@@ -168,6 +177,12 @@
       "y": 0.5
     },
     {
+      "name": "\"被处决\"",
+      "team": "townsfolk",
+      "x": 0.14902,
+      "y": 0.47384
+    },
+    {
       "name": "解谜大师",
       "team": "outsider",
       "x": 0.14706,
@@ -199,7 +214,9 @@
     "哲学家",
     "畸形秀演员"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"被处决\""
+  ],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -308,5 +325,13 @@
   ],
   "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
-  "ocr_missing_rule_data": false
+  "ocr_missing_rule_data": false,
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

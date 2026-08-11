@@ -18,16 +18,15 @@
     "75d276a611734703cabe195c5c07ffa644902471.png",
     "1dcb4a444642e054a69b50a7a034c1c044902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
-  "ocr_character_matches": 19,
-  "ocr_required_character_count": 21,
-  "ocr_missing_characters": [
-    "私货商人",
-    "灯神"
+  "ocr_character_matches": 20,
+  "ocr_required_character_count": 20,
+  "ocr_missing_characters": [],
+  "ocr_name_confirmed_by_ability": [
+    "私货商人"
   ],
-  "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "小精灵",
     "哲学家",
@@ -266,23 +265,32 @@
     {
       "name": "私货商人",
       "team": "fabled",
-      "ability_coverage": 0.45
-    },
-    {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.3333
+      "ability_coverage": 0.9364
     }
   ],
-  "ocr_ability_mismatches": [
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "入殓师&痢蛭",
+      "team": "jinx",
+      "ability_coverage": 0.9333
+    },
+    {
+      "name": "提线木偶&气球驾驶员",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "痢蛭&猎手",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 3,
-  "ocr_missing_jinx_rule_count": 3,
+  "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
       "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
@@ -309,9 +317,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "（相克规则：如果猎手选择了痢蛭的宿主，则宿主会死亡。）"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -325,8 +331,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14826
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -498,5 +527,13 @@
         "食人族"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

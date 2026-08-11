@@ -19,7 +19,7 @@
       }
     ],
     "name": "舞灯祭岁",
-    "author": "鸦木镇墙头草-新仔辣椒酱",
+    "author": "新仔辣椒酱",
     "state": [
       {
         "stateName": "决定是否让“怪盗”加入剧本",
@@ -49,24 +49,12 @@
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
         "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+      },
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
       }
     ]
-  },
-  {
-    "ability": "使用灯神的相克规则，所有玩家都会知道其内容。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "20003_107",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "灯神",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled",
-    "firstNight": 0
   },
   {
     "ability": "在你的首个夜晚，你会得知两个善良角色和两个邪恶角色，其中有且只有两个角色在场。",
@@ -542,5 +530,38 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "remindersGlobal": [],
     "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
+  },
+  {
+    "id": "bootlegger",
+    "name": "私货商人",
+    "team": "fabled",
+    "ability": "在开始游戏前，你需要决定是否让“怪盗”加入剧本，但需要在游戏开始时告知所有玩家。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "猎手&痢蛭",
+    "name": "猎手&痢蛭",
+    "team": "jinx",
+    "ability": "如果猎手选择了痢蛭的宿主，则宿主会死亡。"
+  },
+  {
+    "id": "痢蛭&怪盗",
+    "name": "痢蛭&怪盗",
+    "team": "jinx",
+    "ability": "痢蛭如果因为怪盗的能力而未能在首个夜晚被唤醒，则会在下一次因自身能力被唤醒时选择宿主，在此之前痢蛭没有免死能力。"
+  },
+  {
+    "id": "方古&怪盗",
+    "name": "方古&怪盗",
+    "team": "jinx",
+    "ability": "怪盗无法通过方古的能力创造新的方古。"
   }
 ]

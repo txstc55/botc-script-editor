@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 1,
@@ -53,22 +53,30 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "至尊魔戒 The One Ring",
-    "游戏开始时，会有一名善良玩家持有至尊魔戒。",
-    "如果玩家是在当晚或上个白天从其他玩家处获得了至尊魔戒",
-    "他不可以主动将至尊魔戒传递给其他玩家。",
-    "当玩家获得至尊魔戒或失去至尊魔戒时，他会立刻知道这一信息。",
-    "如果恶魔持有至尊魔戒，邪恶阵营获胜。",
-    "每当至尊魔戒持有者死亡，至尊魔戒会在当晚被被传递给一名对立阵营玩家。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.31686
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.2905
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -86,5 +94,13 @@
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_heading_character_details": []
+  "ocr_heading_character_details": [],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

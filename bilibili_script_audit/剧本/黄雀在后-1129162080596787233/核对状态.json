@@ -41,6 +41,7 @@
     "魔鬼代言人",
     "洗脑师",
     "亡骨魔",
+    "诺·达鲺",
     "涡流",
     "卡扎力"
   ],
@@ -217,8 +218,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.14535
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -232,6 +256,7 @@
         "异教领袖",
         "酒鬼",
         "魔鬼代言人",
+        "诺·达鲺",
         "涡流",
         "传教士",
         "卖花女孩",
@@ -339,6 +364,12 @@
           "team": "demon",
           "x": 0.56078,
           "y": 0.234
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.1488,
+          "y": 0.22912
         },
         {
           "name": "涡流",
@@ -366,6 +397,7 @@
         "异教领袖",
         "酒鬼",
         "魔鬼代言人",
+        "诺·达鲺",
         "涡流",
         "传教士",
         "卖花女孩",
@@ -473,6 +505,12 @@
           "team": "demon",
           "x": 0.56078,
           "y": 0.234
+        },
+        {
+          "name": "诺·达鲺",
+          "team": "demon",
+          "x": 0.1488,
+          "y": 0.22912
         },
         {
           "name": "涡流",
@@ -511,6 +549,7 @@
         "瘟疫医生",
         "筑梦师",
         "茶艺师",
+        "诺·达鲺",
         "调查员",
         "酒鬼",
         "钟表匠",
@@ -627,6 +666,12 @@
       "y": 0.234
     },
     {
+      "name": "诺·达鲺",
+      "team": "demon",
+      "x": 0.1488,
+      "y": 0.22912
+    },
+    {
       "name": "涡流",
       "team": "demon",
       "x": 0.14706,
@@ -638,5 +683,13 @@
       "x": 0.56078,
       "y": 0.17587
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

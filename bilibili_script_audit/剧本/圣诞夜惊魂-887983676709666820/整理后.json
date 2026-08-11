@@ -1,7 +1,7 @@
 [
   {
     "id": "_meta",
-    "name": "圣诞夜惊魂v3.2",
+    "name": "圣诞夜惊魂",
     "author": "钟楼剧本博物馆",
     "logo": "https://www.helloimg.com/i/2024/12/24/676993d7028ba.png",
     "townsfolkName": "镇民",
@@ -43,24 +43,12 @@
       {
         "text": "*代表非首个夜晚",
         "html": "<strong>*代表</strong>非首个夜晚"
+      },
+      {
+        "text": "⑦ 代表该剧本中建议“伪证天才”选择的角色",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">⑦</span> 代表该剧本中建议“伪证天才”选择的角色"
       }
     ]
-  },
-  {
-    "ability": "使用灯神的相克规则。所有人都会知道其内容。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "20003_107",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "灯神",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled",
-    "firstNight": 0
   },
   {
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/noble.png",
@@ -537,5 +525,53 @@
     "firstNight": 21,
     "otherNight": 18,
     "flavor": ""
+  },
+  {
+    "id": "神秘学家&卡扎力",
+    "name": "神秘学家&卡扎力",
+    "team": "jinx",
+    "ability": "在卡扎力选择完爪牙后，如果在场外来者数量少于基础配置，则当作因神秘学家的能力而减少了外来者。"
+  },
+  {
+    "id": "帽匠&人质先生",
+    "name": "帽匠&人质先生",
+    "team": "jinx",
+    "ability": "如果帽匠死亡后，其他恶魔选择变成人质先生，他会变成恶魔伪装中的一名镇民角色，并且“是恶魔”。"
+  },
+  {
+    "id": "莽夫&人质先生&怪盗",
+    "name": "莽夫&人质先生&怪盗",
+    "team": "jinx",
+    "ability": "初始的邪恶玩家不会因获得的莽夫能力转变为善良阵营。"
+  },
+  {
+    "id": "卡扎力&莽夫",
+    "name": "卡扎力&莽夫",
+    "team": "jinx",
+    "ability": "卡扎力可以把莽夫转变成邪恶的爪牙。"
+  },
+  {
+    "id": "利维坦&旅店老板",
+    "name": "利维坦&旅店老板",
+    "team": "jinx",
+    "ability": "如果利维坦发起的提名中被处决的玩家在前一晚曾被旅店老板成功保护，那么那名玩家不会死亡。"
+  },
+  {
+    "id": "利维坦&镇长",
+    "name": "利维坦&镇长",
+    "team": "jinx",
+    "ability": "如果利维坦在场，镇长存活且第五天没有处决发生，则善良阵营获胜。"
+  },
+  {
+    "id": "利维坦&帽匠",
+    "name": "利维坦&帽匠",
+    "team": "jinx",
+    "ability": "如果帽匠在第五个白天或之后死亡，恶魔不能选择变成利维坦。"
+  },
+  {
+    "id": "利维坦&怪盗",
+    "name": "利维坦&怪盗",
+    "team": "jinx",
+    "ability": "在第五个白天之后，怪盗无法获得利维坦的能力。"
   }
 ]

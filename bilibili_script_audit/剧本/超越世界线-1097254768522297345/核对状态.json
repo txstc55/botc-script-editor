@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -31,7 +31,9 @@
   "ocr_heading_characters": [
     "祖母",
     "铁匠",
+    "自然术士★",
     "筑梦师",
+    "魂命少女★",
     "牧师",
     "博学者",
     "赌徒",
@@ -48,12 +50,7 @@
     "红唇女郎",
     "小恶魔"
   ],
-  "ocr_unexpected_characters": [
-    "艺术家",
-    "炼金术士",
-    "巫师",
-    "刺客"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -189,6 +186,10 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 1.0
+    },
+    {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
       "text_coverage": 1.0
     },
@@ -210,16 +211,30 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "某件事“可能”发生，代表说书人决定该事情是否发生。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1975
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.1715
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -235,6 +250,8 @@
         "酒鬼",
         "殉道者",
         "刺客",
+        "自然术士★",
+        "魂命少女★",
         "博学者",
         "艺术家",
         "炼金术士",
@@ -258,10 +275,22 @@
           "y": 0.81395
         },
         {
+          "name": "自然术士★",
+          "team": "townsfolk",
+          "x": 0.56275,
+          "y": 0.80378
+        },
+        {
           "name": "筑梦师",
           "team": "townsfolk",
           "x": 0.14706,
           "y": 0.763
+        },
+        {
+          "name": "魂命少女★",
+          "team": "townsfolk",
+          "x": 0.56275,
+          "y": 0.73983
         },
         {
           "name": "牧师",
@@ -369,6 +398,8 @@
         "酒鬼",
         "殉道者",
         "刺客",
+        "自然术士★",
+        "魂命少女★",
         "博学者",
         "艺术家",
         "炼金术士",
@@ -392,10 +423,22 @@
           "y": 0.81395
         },
         {
+          "name": "自然术士★",
+          "team": "townsfolk",
+          "x": 0.56275,
+          "y": 0.80378
+        },
+        {
           "name": "筑梦师",
           "team": "townsfolk",
           "x": 0.14706,
           "y": 0.763
+        },
+        {
+          "name": "魂命少女★",
+          "team": "townsfolk",
+          "x": 0.56275,
+          "y": 0.73983
         },
         {
           "name": "牧师",
@@ -512,10 +555,12 @@
         "祖母",
         "筑梦师",
         "红唇女郎",
+        "自然术士★",
         "艺术家",
         "赌徒",
         "酒鬼",
-        "铁匠"
+        "铁匠",
+        "魂命少女★"
       ]
     }
   ],
@@ -544,10 +589,22 @@
       "y": 0.81395
     },
     {
+      "name": "自然术士★",
+      "team": "townsfolk",
+      "x": 0.56275,
+      "y": 0.80378
+    },
+    {
       "name": "筑梦师",
       "team": "townsfolk",
       "x": 0.14706,
       "y": 0.763
+    },
+    {
+      "name": "魂命少女★",
+      "team": "townsfolk",
+      "x": 0.56275,
+      "y": 0.73983
     },
     {
       "name": "牧师",
@@ -639,5 +696,13 @@
       "x": 0.56078,
       "y": 0.228
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

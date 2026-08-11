@@ -1,5 +1,16 @@
 [
   {
+    "id": "_meta",
+    "name": "以耳代目",
+    "author": "夜雀",
+    "notes": [
+      {
+        "text": "*代表非首个夜晚",
+        "html": "<strong>*代表</strong>非首个夜晚"
+      }
+    ]
+  },
+  {
     "id": "pixie0",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pixie.png",
     "name": "小精灵",
@@ -328,5 +339,33 @@
     "reminders": [],
     "setup": 0,
     "ability": "初始爪牙始终设置为投毒者；首个白天被处决的玩家可能不会死亡；恶魔的伪装调整为每个夜晚得知一名不在场角色（最多为三）；赏金猎人与红唇女郎仅在九人游戏加入"
+  },
+  {
+    "ability": "在初始设置时，可能会额外增加或减少一个外来者。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sentinel.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20003_105",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "哨兵",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "team": "fabled",
+    "firstNight": 0
+  },
+  {
+    "id": "瘟疫医生&男爵",
+    "name": "瘟疫医生&男爵",
+    "team": "jinx",
+    "ability": "如果说书人获得了男爵的能力，至多两名玩家会变成不在场的外来者。"
+  },
+  {
+    "id": "瘟疫医生&红唇女郎",
+    "name": "瘟疫医生&红唇女郎",
+    "team": "jinx",
+    "ability": "如果瘟疫医生死亡且说书人会因此获得红唇女郎的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
   }
 ]

@@ -54,10 +54,17 @@
   ],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\"",
     "顶上之果",
     "墓园之花"
   ],
-  "ocr_unexpected_characters": [],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "墓园之花",
     "顶上之果"
@@ -328,10 +335,31 @@
     {
       "image": "对照图-02.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "顶上之果",
         "墓园之花"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.23547
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.2064
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.18
+        },
         {
           "name": "顶上之果",
           "team": "traveler",
@@ -358,6 +386,24 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_heading_character_details": [
     {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.23547
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27059,
+      "y": 0.2064
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.18
+    },
+    {
       "name": "顶上之果",
       "team": "traveler",
       "x": 0.14693,
@@ -369,5 +415,51 @@
       "x": 0.56075,
       "y": 0.09437
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "疯狂生长",
+      "雏菊",
+      "梅花",
+      "水仙",
+      "水草",
+      "竹子",
+      "睡莲",
+      "狗尾草",
+      "蓬莱蕉",
+      "堇菜",
+      "树蕨",
+      "常青树",
+      "三叶草",
+      "银杏",
+      "牵牛花",
+      "树翁",
+      "珊瑚",
+      "仙人掌",
+      "落叶",
+      "椰树",
+      "食人花",
+      "寄生植株",
+      "捕蝇草",
+      "玫瑰",
+      "烈阳炽葵",
+      "荆棘",
+      "枯木",
+      "树妖",
+      "第一夜",
+      "第二夜",
+      "第三夜",
+      "第四夜",
+      "第五夜",
+      "第六夜",
+      "第七夜"
+    ],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

@@ -44,8 +44,16 @@
     "茵席之乱"
   ],
   "ocr_name_confirmed_by_ability": [],
-  "ocr_heading_characters": [],
-  "ocr_unexpected_characters": [],
+  "ocr_heading_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
+  "ocr_unexpected_characters": [
+    "\"镇民\"",
+    "\"外来者\"",
+    "\"爪牙\""
+  ],
   "ocr_travelers_seen": [
     "领主",
     "游歌者"
@@ -246,9 +254,7 @@
     "*建议7人以上加入旅行者"
   ],
   "ocr_unexplained_bottom_lines": [
-    "领主 Lord",
     "每个白天限一次，你可以公开选择除你以外的一名玩家：如果他不是",
-    "游歌者 Minstrel",
     "每个白天限一次，你可以选择公开为除你以外的一名玩家",
     "献唱一曲。如果你这样做，他的投票将在今天记作两票。",
     "*建议7人以上加入旅行者"
@@ -264,8 +270,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.26599
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.23837
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.21076
+        }
+      ],
       "required_character_matches": 2
     }
   ],
@@ -277,5 +306,67 @@
   ],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_heading_character_details": []
+  "ocr_heading_character_details": [
+    {
+      "name": "\"镇民\"",
+      "team": "townsfolk",
+      "x": 0.29608,
+      "y": 0.26599
+    },
+    {
+      "name": "\"外来者\"",
+      "team": "townsfolk",
+      "x": 0.27255,
+      "y": 0.23837
+    },
+    {
+      "name": "\"爪牙\"",
+      "team": "townsfolk",
+      "x": 0.29412,
+      "y": 0.21076
+    }
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [
+      "王",
+      "王后",
+      "象",
+      "马",
+      "车",
+      "食客",
+      "传令官",
+      "抄写员",
+      "修士",
+      "酒侍",
+      "王子",
+      "公主",
+      "总管",
+      "伪王",
+      "兵",
+      "信使",
+      "少女",
+      "篡位者",
+      "骗子",
+      "共犯",
+      "阴险酒侍",
+      "伊斯巴达登",
+      "飞龙",
+      "贾巴沃克",
+      "莫甘娜",
+      "伊斯巴达登的信息",
+      "茵席之乱"
+    ],
+    "traveler_mismatches": [
+      "游歌者"
+    ],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "每个白天限一次，你可以公开选择除你以外的一名玩家：如果他不是",
+      "每个白天限一次，你可以选择公开为除你以外的一名玩家",
+      "献唱一曲。如果你这样做，他的投票将在今天记作两票。",
+      "*建议7人以上加入旅行者"
+    ]
+  }
 }

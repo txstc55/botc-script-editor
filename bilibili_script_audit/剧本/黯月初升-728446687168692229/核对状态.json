@@ -217,6 +217,9 @@
     {
       "image": "对照图-01.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "学徒",
         "女舍监",
         "法官",
@@ -224,6 +227,24 @@
         "主教"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.32533
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.29797
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.27035
+        },
         {
           "name": "学徒",
           "team": "",
@@ -443,12 +464,33 @@
     {
       "image": "对照图-03.png",
       "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\"",
         "女舍监",
         "法官",
         "巫毒师",
         "主教"
       ],
       "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.32403
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27255,
+          "y": 0.29794
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.27033
+        },
         {
           "name": "巫毒师",
           "team": "",
@@ -832,6 +874,21 @@
   "ocr_source_board_groups": [
     {
       "images": [
+        "对照图-01.png"
+      ],
+      "characters": [
+        "\"外来者\"",
+        "\"爪牙\"",
+        "\"镇民\"",
+        "主教",
+        "女舍监",
+        "学徒",
+        "巫毒师",
+        "法官"
+      ]
+    },
+    {
+      "images": [
         "对照图-02.png",
         "对照图-04.png",
         "对照图-05.png"
@@ -1026,5 +1083,16 @@
       "x": 0.56275,
       "y": 0.17733
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "复活/反台/起死回生",
+      "已死亡玩家再次变为存活玩家。该玩家视为重新进场，会重新获得能力（包括限一次，首个夜晚⋯）。"
+    ]
+  }
 }

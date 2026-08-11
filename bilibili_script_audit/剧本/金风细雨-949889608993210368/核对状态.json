@@ -12,11 +12,11 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
-  "ocr_character_matches": 24,
-  "ocr_required_character_count": 24,
+  "ocr_character_matches": 25,
+  "ocr_required_character_count": 25,
   "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
@@ -46,9 +46,7 @@
     "珀",
     "姑获鸟"
   ],
-  "ocr_unexpected_characters": [
-    "风水师"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -60,6 +58,11 @@
       "name": "贵族",
       "team": "townsfolk",
       "ability_coverage": 1.0
+    },
+    {
+      "name": "风水师",
+      "team": "townsfolk",
+      "ability_coverage": 0.9792
     },
     {
       "name": "驿使",
@@ -215,8 +218,31 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29608,
+          "y": 0.20058
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17267
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29216,
+          "y": 0.14667
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -400,7 +426,7 @@
           "y": 0.17587
         }
       ],
-      "required_character_matches": 24
+      "required_character_matches": 25
     }
   ],
   "ocr_source_board_groups": [
@@ -596,5 +622,13 @@
       "x": 0.14902,
       "y": 0.17587
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

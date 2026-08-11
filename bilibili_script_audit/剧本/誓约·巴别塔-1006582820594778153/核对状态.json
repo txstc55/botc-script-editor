@@ -144,8 +144,24 @@
     },
     {
       "image": "对照图-02.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.45294,
+          "y": 0.2005
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.42941,
+          "y": 0.17442
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -315,5 +331,17 @@
       "x": 0.14902,
       "y": 0.1655
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": [
+      "如果你被审判，在回答后你立即被处决，即使有任何原因让审判结果颠倒。",
+      "如果你被审判，你不会被处决，但要失去1次逃脱，即使有任何原因让审判结果颠倒。",
+      "［锁定和逃脱会相互抵消］"
+    ]
+  }
 }

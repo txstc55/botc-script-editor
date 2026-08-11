@@ -7,8 +7,8 @@
     "author": "The Good Couch",
     "notes": [
       {
-        "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事“可能”发生，代表说书人决定该事情是否发生。"
+        "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事情“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>”发生，代表由说书人来决定该事情是否发生。"
       },
       {
         "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
@@ -486,23 +486,21 @@
     "flavor": ""
   },
   {
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "灯神",
-    "firstNight": 0,
-    "reminders": [],
-    "id": "djinnbutton",
-    "team": "fabled",
-    "name_eng": "Djinn",
-    "setup": 0,
-    "ability": "使用灯神的相克规则。所有玩家都会知道其内容。",
-    "edition": "custom",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png"
-  },
-  {
-    "id": "军团&恶作剧者",
-    "name": "军团&恶作剧者",
+    "id": "军团&莽夫",
+    "name": "军团&莽夫",
     "team": "jinx",
     "ability": "互为克星的角色在同一时间里只能有其中一个角色在场。"
+  },
+  {
+    "id": "提线木偶&罂粟种植者",
+    "name": "提线木偶&罂粟种植者",
+    "team": "jinx",
+    "ability": "当罂粟种植者死亡后，恶魔会知道谁是提线木偶，但提线木偶什么都不会知道。"
+  },
+  {
+    "id": "间谍&罂粟种植者",
+    "name": "间谍&罂粟种植者",
+    "team": "jinx",
+    "ability": "如果罂粟种植者在场，直到其死亡前间谍无法查看魔典。"
   }
 ]

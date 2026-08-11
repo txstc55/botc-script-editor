@@ -18,14 +18,12 @@
     "379e76044dee7564a022bf81326b532e44902471.png",
     "0b727f6fe2b5c8fb5f4f46f95bed3d3c44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 23,
-  "ocr_required_character_count": 24,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 23,
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [],
   "ocr_heading_characters": [
     "贵族",
@@ -182,14 +180,9 @@
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.4423
-    },
-    {
       "name": "高空项目",
       "team": "fabled",
-      "ability_coverage": 0.8723
+      "ability_coverage": 0.9556
     },
     {
       "name": "贵族",
@@ -302,19 +295,28 @@
       "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "食人族&杂耍艺人",
+      "team": "jinx",
+      "ability_coverage": 0.975
+    },
+    {
+      "name": "悟道者&村夫",
+      "team": "jinx",
+      "ability_coverage": 0.0652
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
-      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-      "text_coverage": 0.7143
+      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+      "text_coverage": 1.0
     },
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -552,13 +554,19 @@
       ]
     }
   ],
-  "manual_verification": {},
-  "ocr_raw_issues": {
-    "ability_mismatches": [
-      "灯神"
+  "manual_verification": {
+    "verified_jinxes": [
+      "悟道者&村夫"
     ],
+    "source_image": "对照图-03.png",
+    "reason": "原图悟道者下方灰底相克规则已放大逐字核对，与 JSON 一致；OCR 未能正确识别低对比度小字。"
+  },
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
     "traveler_mismatches": [],
-    "jinx_mismatches": [],
+    "jinx_mismatches": [
+      "悟道者&村夫"
+    ],
     "note_mismatches": [],
     "unexplained_bottom_lines": []
   }

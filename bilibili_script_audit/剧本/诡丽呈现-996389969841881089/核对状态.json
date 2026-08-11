@@ -42,6 +42,7 @@
     "政客",
     "解谜大师",
     "食人魔",
+    "寡妇",
     "鹰身女妖",
     "提线木偶",
     "教父",
@@ -138,6 +139,12 @@
       "team": "outsider",
       "x": 0.56275,
       "y": 0.401
+    },
+    {
+      "name": "寡妇",
+      "team": "minion",
+      "x": 0.52941,
+      "y": 0.321
     },
     {
       "name": "鹰身女妖",
@@ -345,8 +352,31 @@
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
+      "heading_characters": [
+        "\"镇民\"",
+        "\"外来者\"",
+        "\"爪牙\""
+      ],
+      "heading_character_details": [
+        {
+          "name": "\"镇民\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.199
+        },
+        {
+          "name": "\"外来者\"",
+          "team": "townsfolk",
+          "x": 0.27059,
+          "y": 0.17297
+        },
+        {
+          "name": "\"爪牙\"",
+          "team": "townsfolk",
+          "x": 0.29412,
+          "y": 0.1468
+        }
+      ],
       "required_character_matches": 0
     },
     {
@@ -370,6 +400,7 @@
         "渔夫",
         "政客",
         "食人魔",
+        "寡妇",
         "提线木偶",
         "利维坦"
       ],
@@ -465,6 +496,12 @@
           "y": 0.401
         },
         {
+          "name": "寡妇",
+          "team": "minion",
+          "x": 0.52941,
+          "y": 0.321
+        },
+        {
           "name": "鹰身女妖",
           "team": "minion",
           "x": 0.14897,
@@ -511,6 +548,7 @@
         "哲学家",
         "图书管理员",
         "女祭司",
+        "寡妇",
         "将军",
         "小精灵",
         "戏法师",
@@ -526,5 +564,13 @@
         "鹰身女妖"
       ]
     }
-  ]
+  ],
+  "manual_verification": {},
+  "ocr_raw_issues": {
+    "ability_mismatches": [],
+    "traveler_mismatches": [],
+    "jinx_mismatches": [],
+    "note_mismatches": [],
+    "unexplained_bottom_lines": []
+  }
 }

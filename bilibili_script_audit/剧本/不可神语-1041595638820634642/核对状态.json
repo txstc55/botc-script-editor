@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -190,7 +190,7 @@
     {
       "name": "召唤师&罂粟种植者",
       "team": "jinx",
-      "ability_coverage": 0.3023
+      "ability_coverage": 0.3793
     },
     {
       "name": "召唤师&帽匠",
@@ -198,10 +198,7 @@
       "ability_coverage": 0.2821
     }
   ],
-  "ocr_jinx_mismatches": [
-    "召唤师&罂粟种植者",
-    "召唤师&帽匠"
-  ],
+  "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
       "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
@@ -603,12 +600,18 @@
       "y": 0.17297
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_jinxes": [
+      "召唤师&罂粟种植者",
+      "召唤师&帽匠"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图召唤师下方两条灰底相克规则已逐字核对；JSON 已按原图删去多余内容，OCR 未能完整拼接灰底小字。"
+  },
   "ocr_raw_issues": {
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [
-      "召唤师&罂粟种植者",
       "召唤师&帽匠"
     ],
     "note_mismatches": [],
