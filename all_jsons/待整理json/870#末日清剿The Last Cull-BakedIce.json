@@ -1,7 +1,7 @@
 [
   {
     "id": "_meta",
-    "name": "末日清剿The Last Cull",
+    "name": "末日清剿",
     "author": "BakedIce",
     "logo": "https://www.helloimg.com/i/2026/01/13/69663d5af0bed.png",
     "almanac": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/almanac.html",
@@ -330,21 +330,6 @@
     "flavor": "<body><span id=\"cease\"></span></body>\n<script>\nlet phases = [\"Let me show you how if feels to be your mirror image!\", \"let Me show you how it feels to be your mirror image!\", \"let me Show you how it feels to be your mirror image!\", \"let me show You how it feels to be your mirror image!\", \"let me show you How it feels to be your mirror image!\", \"let me show you how It feels to be your mirror image!\", \"let me show you how it Feels to be your mirror image!\", \"let me show you how it feels To be your mirror image!\", \"let me show you how it feels to Be your mirror image!\", \"let me show you how it feels to be Your mirror image!\", \"let me show you how it feels to be your Mirror image!\", \"let me show you how it feels to be your mirror Image!\"];\nlet i = 0;\n\nsetInterval(() => {\n  document.getElementById(\"cease\").innerHTML = phases[i];\n  i++;\n  if(i == phases.length) i = 0;\n}, 500);\n</script>"
   },
   {
-    "id": "zabbyani_the_last_cull__",
-    "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/zabbyani_the_last_cull__.png",
-    "otherNightReminder": "The Zabb-Yani chooses a player, that player dies -- Mark them with the \"dead\" reminder token. Think about what information this player has gained from abilities or game rules (such as Minion Info) this game. You may take one set of their information, and make whatever changes are needed to make that set of information false (were it to be learned tonight). You may use the Zabb-Yani's \"?\" reminder to aid you in this process.",
-    "reminders": [
-      "死亡",
-      "?"
-    ],
-    "setup": 1,
-    "name": "扎布·亚尼",
-    "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡且他得知过的正确信息可能转变为错误信息。[无外来者在场]",
-    "flavor": "Less is more. Less body is more spirit. Less will to defy creation is more to create miracles. Less truth is more possibilities. Less hope is more obedience to fate.",
-    "otherNight": 10
-  },
-  {
     "id": "ratking_the_last_cull__",
     "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/ratking_the_last_cull__.png",
     "otherNightReminder": "The Rat King chooses a player, that player dies -- Mark them with the \"dead\" reminder token. If this is the first player who's died due to the Rat King ability, their Townsfolk neighbors are poisoned -- Mark them with the \"poisoned\" reminder tokens.",
@@ -391,6 +376,21 @@
     "attribution": "TheDarkArtist for the final wording and art touch ups.",
     "flavor": "No, doctor I don't think you're listening to me! I understand that rapid eye movement is normal whilst you sleep, but I don't think I am asleep. Am I?",
     "otherNight": 13
+  },
+  {
+    "id": "zabbyani_the_last_cull__",
+    "image": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/zabbyani_the_last_cull__.png",
+    "otherNightReminder": "The Zabb-Yani chooses a player, that player dies -- Mark them with the \"dead\" reminder token. Think about what information this player has gained from abilities or game rules (such as Minion Info) this game. You may take one set of their information, and make whatever changes are needed to make that set of information false (were it to be learned tonight). You may use the Zabb-Yani's \"?\" reminder to aid you in this process.",
+    "reminders": [
+      "死亡",
+      "?"
+    ],
+    "setup": 1,
+    "name": "扎布·亚尼",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡且他得知过的正确信息可能转变为错误信息。[无外来者在场]",
+    "flavor": "Less is more. Less body is more spirit. Less will to defy creation is more to create miracles. Less truth is more possibilities. Less hope is more obedience to fate.",
+    "otherNight": 10
   },
   {
     "id": "coalcrusher_the_last_cull__",

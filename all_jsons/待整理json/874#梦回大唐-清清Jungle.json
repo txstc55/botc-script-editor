@@ -13,25 +13,41 @@
     ]
   },
   {
+    "id": "四吠陀",
+    "name": "四吠陀",
+    "team": "fabled",
+    "ability": "【剧本在12人及以下时使用召唤师】【在13人及以上时使用麻脸巫婆】如果一名玩家死亡了，他变成说书人选择的旅行者角色。说书人会公开宣布他是哪个旅行者。如果已经有四名玩家死亡并变成了旅行者，其他玩家将正常死亡，不再变为旅行者。",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/23/9fmohn9ldebl3ntosy95ho1wt1vmrng.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "印度教教徒",
+    "name": "印度教教徒",
+    "team": "fabled",
+    "ability": "最先死亡的四名玩家会立刻以相同阵营的旅行者转世重生。",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/ef/kqlms0w8wp372gvh76lov0c08e6z8m3.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
     "id": "_menghuidatang",
     "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/3/36/kmrowr4h491q6i775hrp57mscbuvya6.png",
     "name": "圣洁之魂",
     "team": "fabled",
     "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。"
-  },
-  {
-    "id": "33_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/2/23/9fmohn9ldebl3ntosy95ho1wt1vmrng.png",
-    "name": "四吠陀",
-    "team": "fabled",
-    "ability": "【剧本12人及以下时使用召唤师】【在13人及以上时使用麻脸巫婆】如果一名玩家死亡了，他变成你选择的旅行者角色。公开宣布他是哪个旅行者。  如果已经有四名玩家死亡并变成了旅行者，其他玩家将正常死亡，不再变为旅行者。"
-  },
-  {
-    "id": "1_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/e/ef/kqlms0w8wp372gvh76lov0c08e6z8m3.png",
-    "name": "印度教教徒",
-    "team": "fabled",
-    "ability": "最先死亡的四名玩家会立刻以相同阵营的旅行者转世重生。如果恶魔死亡变成了旅行者，一名爪牙玩家变成这个恶魔。"
   },
   {
     "id": "2_menghuidatang",
@@ -107,71 +123,6 @@
     "flavor": ""
   },
   {
-    "id": "8_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
-    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
-    "reminders": [
-      "死亡"
-    ],
-    "name": "赌徒",
-    "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
-    "otherNight": 9,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "正面，我赢。 反面，你输。"
-  },
-  {
-    "id": "9_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
-    "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
-    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
-    "reminders": [
-      "未正常生效"
-    ],
-    "name": "数学家",
-    "team": "townsfolk",
-    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
-    "firstNight": 4300,
-    "otherNight": 24,
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
-  },
-  {
-    "id": "10_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png",
-    "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
-    "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
-    "name": "将军",
-    "team": "townsfolk",
-    "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
-    "firstNight": 4100,
-    "otherNight": 22,
-    "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "11_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
-    "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
-    "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
-    "reminders": [
-      "失去能力"
-    ],
-    "name": "传教士",
-    "team": "townsfolk",
-    "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
-    "firstNight": 3300,
-    "otherNight": 5,
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "富有和健康总比贫穷和疾病要好。"
-  },
-  {
     "id": "12_menghuidatang",
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_8586487694761_0ecde168.jpg",
     "firstNightReminder": "唤醒店小二，对他指向标记有店小二的“熟客”和“醉酒”提示标记的这两名玩家。",
@@ -185,70 +136,6 @@
     "firstNight": 3900,
     "otherNightReminder": "",
     "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "13_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/1/1b/b8cbqyq6fub5ob9ijanpyjxpb7tue4h.png",
-    "otherNightReminder": "唤醒打更人，让他进行猜测，并放置提示标记到对应玩家旁。",
-    "reminders": [
-      "警惕",
-      "死亡"
-    ],
-    "name": "打更人",
-    "team": "townsfolk",
-    "ability": "每个夜晚*，你要猜测今晚首个死亡的玩家与你的距离。如果你猜测正确，则除你以外的所有玩家今晚不会死亡，但你可能会死亡。",
-    "otherNight": 7
-  },
-  {
-    "id": "14_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5878087694761_691045fa.jpg",
-    "otherNightReminder": "移除上个夜晚放置的“保护”标记。唤醒锦衣卫，让其选择一名玩家。在该玩家角色标记旁放置“保护”提示标记。",
-    "reminders": [
-      "保护"
-    ],
-    "name": "锦衣卫",
-    "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择一名玩家：如果他在下个黄昏前死亡，你代替他死亡。",
-    "otherNight": 8,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "15_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/geling.png",
-    "otherNightReminder": "如果歌伶在白天使用了能力，且恶魔成为了观众，标记歌伶死亡。",
-    "reminders": [
-      "失去能力",
-      "死亡",
-      "观众"
-    ],
-    "name": "歌伶",
-    "team": "townsfolk",
-    "ability": "每局游戏限一次，在白天时，你可以提议所有玩家观看你的演出，并从同意参加的玩家中选择你的观众。如果恶魔成为了观众，你会在当晚死亡。",
-    "otherNight": 18,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "16_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
-    "remindersGlobal": [
-      "是变脸师"
-    ],
-    "name": "变脸师",
-    "team": "townsfolk",
-    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [
-      "疯狂"
-    ],
     "setup": 0,
     "flavor": ""
   },
@@ -270,6 +157,118 @@
     "flavor": ""
   },
   {
+    "id": "9_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+    "firstNightReminder": "给他展示数字手势来告诉他在首个夜晚里有多少玩家的角色能力受他人影响而未正常生效。",
+    "otherNightReminder": "给他展示数字手势来告诉他从上个黎明到数学家醒来前有多少玩家的角色能力受他人影响而未正常生效。",
+    "reminders": [
+      "未正常生效"
+    ],
+    "name": "数学家",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知有多少名玩家的能力因为其他角色的能力而未正常生效。（从上个黎明到你被唤醒时）",
+    "firstNight": 4300,
+    "otherNight": 24,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
+  },
+  {
+    "id": "11_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
+    "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+    "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+    "reminders": [
+      "失去能力"
+    ],
+    "name": "传教士",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
+    "firstNight": 3300,
+    "otherNight": 5,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "富有和健康总比贫穷和疾病要好。"
+  },
+  {
+    "id": "10_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/general.png",
+    "firstNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+    "otherNightReminder": "唤醒将军，对他用手势比划当前的优势阵营。",
+    "name": "将军",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知说书人认为哪个阵营当前更有优势（善良/邪恶/均势）。",
+    "firstNight": 4100,
+    "otherNight": 22,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "8_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "name": "赌徒",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "正面，我赢。 反面，你输。"
+  },
+  {
+    "id": "14_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_5878087694761_691045fa.jpg",
+    "otherNightReminder": "移除上个夜晚放置的“保护”标记。唤醒锦衣卫，让其选择一名玩家。在该玩家角色标记旁放置“保护”提示标记。",
+    "reminders": [
+      "保护"
+    ],
+    "name": "锦衣卫",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家：如果他在下个黄昏前死亡，你代替他死亡。",
+    "otherNight": 8,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "13_menghuidatang",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/1/1b/b8cbqyq6fub5ob9ijanpyjxpb7tue4h.png",
+    "otherNightReminder": "唤醒打更人，让他进行猜测，并放置提示标记到对应玩家旁。",
+    "reminders": [
+      "警惕",
+      "死亡"
+    ],
+    "name": "打更人",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要猜测今晚首个死亡的玩家与你的距离。如果你猜测正确，则除你以外的所有玩家今晚不会死亡，但你可能会死亡。",
+    "otherNight": 7
+  },
+  {
+    "id": "15_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/geling.png",
+    "otherNightReminder": "如果歌伶在白天使用了能力，且恶魔成为了观众，标记歌伶死亡。",
+    "reminders": [
+      "失去能力",
+      "死亡",
+      "观众"
+    ],
+    "name": "歌伶",
+    "team": "townsfolk",
+    "ability": "每局游戏限一次，在白天时，你可以提议所有玩家观看你的演出，并从同意参加的玩家中选择你的观众。如果恶魔成为了观众，你会在当晚死亡。",
+    "otherNight": 18,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
     "id": "18_menghuidatang",
     "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a5/qlyc7b7l9o10ybyq41qu2g0g47ngi4w.png",
     "otherNightReminder": "在提刑官首次提名后的当晚，唤醒提刑官，告知被其提名的玩家的角色。恶魔会被提刑官的能力当作善良角色。",
@@ -280,6 +279,23 @@
     "team": "townsfolk",
     "ability": "在你首次提名玩家后，你会在当晚得知他的角色。恶魔会被你的能力当作善良角色。",
     "otherNight": 20
+  },
+  {
+    "id": "16_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bianlianshi.png",
+    "remindersGlobal": [
+      "是变脸师"
+    ],
+    "name": "变脸师",
+    "team": "townsfolk",
+    "ability": "每个白天，如果你“疯狂”地证明自己是一个善良角色（与之前不同），你可能会在当晚获得那个角色的能力，直到下个黄昏。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "疯狂"
+    ],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "19_menghuidatang",
@@ -314,22 +330,6 @@
     "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
-    "id": "21_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
-    "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
-    "reminders": [
-      "死亡"
-    ],
-    "name": "修补匠",
-    "team": "outsider",
-    "ability": "你随时可能死亡。",
-    "otherNight": 19,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
     "id": "22_menghuidatang",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
     "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
@@ -344,6 +344,22 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "<咽口水><咧嘴笑><咽口水>"
+  },
+  {
+    "id": "21_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
+    "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
+    "reminders": [
+      "死亡"
+    ],
+    "name": "修补匠",
+    "team": "outsider",
+    "ability": "你随时可能死亡。",
+    "otherNight": 19,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "23_menghuidatang",
@@ -378,20 +394,6 @@
     "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
   },
   {
-    "id": "25_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
-    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
-    "name": "麻脸巫婆",
-    "team": "minion",
-    "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
-    "otherNight": 6,
-    "firstNightReminder": "",
-    "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
     "id": "26_menghuidatang",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/harpy.png",
     "firstNightReminder": "唤醒鹰身女妖并让他依次指向两名玩家。标记第一名玩家“疯狂”，标记第二名玩家“第二名”。",
@@ -408,6 +410,34 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "我从未见过如此光明的一日，阴森利爪不再笼罩着我。"
+  },
+  {
+    "id": "28_menghuidatang",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a8/qqnkbi2bwujkxd82vk9a208bpsxgtwt.png",
+    "firstNightReminder": "每个夜晚，你要选择一个镇民角色：当他下一次通过自身能力获取信息时，改为得知你给出的信息。",
+    "otherNightReminder": "每个夜晚，你要选择一个镇民角色：当他下一次通过自身能力获取信息时，改为得知你给出的信息。",
+    "reminders": [
+      "微醺"
+    ],
+    "name": "酿酒师",
+    "team": "minion",
+    "ability": "每个夜晚，你要选择一个镇民角色：当他下一次通过自身能力获取信息时，改为得知你给出的信息。",
+    "firstNight": 3700,
+    "otherNight": 10
+  },
+  {
+    "id": "25_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+    "otherNightReminder": "让麻脸巫婆选择一名玩家和一个角色。如果她选择的角色不在场：让麻脸巫婆重新入睡。唤醒她的目标玩家。对该玩家展示“你是”信息标记和他的新角色标记。",
+    "name": "麻脸巫婆",
+    "team": "minion",
+    "ability": "每个夜晚*，你要选择一名玩家和一个角色，如果该角色不在场，他变成该角色。如果因此创造了一个恶魔，当晚的死亡由说书人决定。",
+    "otherNight": 6,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "27_menghuidatang",
@@ -429,37 +459,6 @@
     "flavor": ""
   },
   {
-    "id": "28_menghuidatang",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/a/a8/qqnkbi2bwujkxd82vk9a208bpsxgtwt.png",
-    "firstNightReminder": "每个夜晚，你要选择一个镇民角色：当他下一次通过自身能力获取信息时，改为得知你给出的信息。",
-    "otherNightReminder": "每个夜晚，你要选择一个镇民角色：当他下一次通过自身能力获取信息时，改为得知你给出的信息。",
-    "reminders": [
-      "微醺"
-    ],
-    "name": "酿酒师",
-    "team": "minion",
-    "ability": "每个夜晚，你要选择一个镇民角色：当他下一次通过自身能力获取信息时，改为得知你给出的信息。",
-    "firstNight": 3700,
-    "otherNight": 10
-  },
-  {
-    "id": "29_menghuidatang",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
-    "reminders": [
-      "中毒",
-      "死亡"
-    ],
-    "name": "诺-达鲺",
-    "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "otherNight": 14,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
-  },
-  {
     "id": "30_menghuidatang",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vortox.png",
     "otherNightReminder": "让涡流选择一名玩家。标记那名玩家死亡。",
@@ -474,6 +473,23 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "黑白颠倒，对错不再，左右变换，长短无猜。万物紊乱无可寻，短视死亡把命栽，何处寻答？随我来。"
+  },
+  {
+    "id": "32_menghuidatang",
+    "image": "https://clocktower-wiki.gstonegames.com/images/1/18/Lordoftyphon.png",
+    "firstNightReminder": "将位于堤丰之首两侧的对应数量的玩家变成邪恶的爪牙，并分别唤醒他们通知他们的角色和阵营变化。",
+    "otherNightReminder": "唤醒堤丰之首，让他攻击一名玩家。",
+    "reminders": [
+      "死亡"
+    ],
+    "setup": 1,
+    "name": "堤丰之首",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你位于正中，+1爪牙，-或+任意数量外来者]",
+    "firstNight": 12,
+    "otherNight": 16,
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "31_menghuidatang",
@@ -494,21 +510,21 @@
     "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
-    "id": "32_menghuidatang",
-    "image": "https://clocktower-wiki.gstonegames.com/images/1/18/Lordoftyphon.png",
-    "firstNightReminder": "将位于堤丰之首两侧的对应数量的玩家变成邪恶的爪牙，并分别唤醒他们通知他们的角色和阵营变化。",
-    "otherNightReminder": "唤醒堤丰之首，让他攻击一名玩家。",
+    "id": "29_menghuidatang",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
     "reminders": [
+      "中毒",
       "死亡"
     ],
-    "setup": 1,
-    "name": "堤丰之首",
+    "name": "诺-达鲺",
     "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。[邪恶玩家全部邻座，你位于正中，+1爪牙，-或+任意数量外来者]",
-    "firstNight": 12,
-    "otherNight": 16,
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
+    "otherNight": 14,
+    "firstNightReminder": "",
     "remindersGlobal": [],
-    "flavor": ""
+    "setup": 0,
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "id": "隐士&食人魔",
@@ -520,6 +536,6 @@
     "id": "jinxed03",
     "name": "召唤师&传教士",
     "team": "jinx",
-    "ability": "如果召唤师在第三个夜晚或之前被传教士选中，由召唤师来选择创造哪种恶魔，由说书人来决定哪名玩家发生转变。"
+    "ability": "如果召唤师在第三个夜晚或之前被传教士选中，由召唤师来选择创造哪种恶魔，且由说书人来决定哪名玩家发生转变。"
   }
 ]

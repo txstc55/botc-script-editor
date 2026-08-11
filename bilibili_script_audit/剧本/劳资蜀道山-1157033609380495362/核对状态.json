@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -55,6 +55,16 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "事务官",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "骑士",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "共情者",
       "team": "townsfolk",
       "ability_coverage": 1.0
@@ -65,27 +75,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "僧侣",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "守鸦人",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "镇长",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "侍女",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "吟游诗人",
+      "name": "僧侣",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -105,22 +100,27 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "骑士",
+      "name": "吟游诗人",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "事务官",
+      "name": "镇长",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "酒鬼",
-      "team": "outsider",
+      "name": "守鸦人",
+      "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
       "name": "陌客",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "酒鬼",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -209,9 +209,7 @@
     "*代表",
     "非首不夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "非首不夜晚"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -628,8 +626,16 @@
       "y": 0.17733
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "非首不夜晚"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图底部清晰写作“*代表非首个夜晚”，OCR 将“个”误识别并漏掉“首”后的字；角色、能力、夜序和其余说明均已逐项核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

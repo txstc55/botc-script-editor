@@ -437,5 +437,45 @@
     "source_image": "对照图-02.png",
     "source_data": "原 JSON 的 _meta.state 相克规则",
     "reason": "原图在瘟疫医生和召唤师能力下方以极小灰底文字展示三条相克，OCR 无法完整读取；三条规则已由原图与原 JSON 的相克说明交叉核对，并拆成软件可定位渲染的 jinx 记录。"
+  },
+  "1157033609380495362": {
+    "verified_bottom_lines": [
+      "非首不夜晚"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图底部清晰写作“*代表非首个夜晚”，OCR 将“个”误识别并漏掉“首”后的字；角色、能力、夜序和其余说明均已逐项核对。"
+  },
+  "1157276592912728072": {
+    "verified_bottom_lines": [
+      "機影师 Photographer"
+    ],
+    "source_image": "对照图-02.png",
+    "source_data": "https://www.bloodstar.xyz/p/BakedIce/The_Last_Cull__/script.json",
+    "reason": "原图底部传奇角色清晰写作“摄影师 Photographer”，OCR 将“摄”误识别为“機”；摄影师、出席者和清道夫三条传奇规则及重复商羯罗的双夜序均已与原作者 Bloodstar 数据交叉核对。"
+  },
+  "1158319367966949381": {
+    "verified_jinxes": [
+      "隐士&食人魔",
+      "召唤师&传教士"
+    ],
+    "verified_bottom_lines": [
+      "［邪恶角色全部邻座，你靠近正中，+1爪牙，-或＋任意数"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图在隐士和召唤师能力下方清晰展示两条灰底特殊规则；OCR 对小字覆盖不足。末尾截断行是堤丰之首能力的设置括号，并非额外说明。"
+  },
+  "1162949793738129416": {
+    "verified_jinxes": [
+      "游戏玩家"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图在游戏玩家能力下方以灰底图例展示七种俄罗斯方块类型；该条为单角色附加规则，不是传奇角色，已转换成单目标规则以保持软件中的原始位置。"
+  },
+  "1162954548222885888": {
+    "verified_travelers": [
+      "舞龙身"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图没有旅行者区；“舞龙身”只出现在舞龙尾能力的设置文字中，并非旅行者卡。JSON 原有旅行者依照项目规则保留且不参与本图差异判断。"
   }
 }

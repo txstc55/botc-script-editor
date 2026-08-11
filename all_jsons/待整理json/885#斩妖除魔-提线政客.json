@@ -21,7 +21,7 @@
       },
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
         "text": "*代表非首个夜晚",
@@ -283,6 +283,19 @@
     "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
   },
   {
+    "id": "dshuangshengzi",
+    "image": "https://i.postimg.cc/SN6WwP2r/image.png",
+    "edition": "custom",
+    "name": "双生子",
+    "ability": "你以为你是一个在场的镇民角色，且拥有该角色的能力。如果你或他死亡，另一名玩家醉酒。",
+    "team": "outsider",
+    "remindersGlobal": [
+      "是双生子",
+      "醉酒"
+    ],
+    "setup": 1
+  },
+  {
     "id": "wocaishiemo111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lunatic.png",
     "edition": "custom",
@@ -300,19 +313,6 @@
     ],
     "setup": 0,
     "flavor": "吾即是暗夜……没错吧？"
-  },
-  {
-    "id": "dshuangshengzi",
-    "image": "https://i.postimg.cc/SN6WwP2r/image.png",
-    "edition": "custom",
-    "name": "双生子",
-    "ability": "你以为你是一个在场的镇民角色，且拥有该角色的能力。如果你或他死亡，另一名玩家醉酒。",
-    "team": "outsider",
-    "remindersGlobal": [
-      "是双生子",
-      "醉酒"
-    ],
-    "setup": 1
   },
   {
     "id": "yemanren",
@@ -349,6 +349,24 @@
     "setup": 0
   },
   {
+    "id": "xixi111111111111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
+    "edition": "custom",
+    "name": "洗脑师",
+    "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
+    "team": "minion",
+    "firstNight": 3200,
+    "otherNight": 20,
+    "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
+    "reminders": [
+      "疯狂"
+    ],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
+  },
+  {
     "id": "wushihsihsihsihsihsihsish",
     "image": "https://i.postimg.cc/pTc056YB/image.png",
     "edition": "custom",
@@ -382,24 +400,6 @@
     "setup": 1
   },
   {
-    "id": "xixi111111111111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cerenovus.png",
-    "edition": "custom",
-    "name": "洗脑师",
-    "ability": "每个夜晚，你要选择一名玩家和一个善良角色。他明天白天和夜晚需要“疯狂”地证明自己是这个角色，不然他可能被处决。",
-    "team": "minion",
-    "firstNight": 3200,
-    "otherNight": 20,
-    "firstNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
-    "otherNightReminder": "让洗脑师选择一名玩家和一个善良角色。标记那名玩家疯狂。让洗脑师重新入睡。唤醒洗脑师的目标。对这名玩家展示“该角色的能力对你生效”信息标记，洗脑师角色标记，该玩家需要疯狂证明的角色标记。",
-    "reminders": [
-      "疯狂"
-    ],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
-  },
-  {
     "id": "xiaoemo1111111eee111eee111",
     "image": "https://i.postimg.cc/RV4RV9zg/image.png",
     "edition": "custom",
@@ -414,22 +414,6 @@
     ],
     "setup": 1,
     "otherNightReminder": "你拥有一个其他的恶魔能力。该能力会被多数玩家认为在场的恶魔能力覆盖。"
-  },
-  {
-    "id": "xiadawuyao1111eee111eee111",
-    "image": "https://i.postimg.cc/MKfWHkbR/image.png",
-    "edition": "custom",
-    "name": "大巫妖",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。一名死亡玩家首次被大巫妖的能力选择时，他要选择两名玩家：其中不是恶魔的玩家死亡。",
-    "team": "demon",
-    "firstNight": 0,
-    "otherNight": 32,
-    "otherNightReminder": "唤醒穷奇，让他选择攻击一名玩家，或唤醒死亡玩家进行攻击。",
-    "remindersGlobal": [
-      "死亡",
-      "已被选择"
-    ],
-    "setup": 0
   },
   {
     "id": "qiongb1111111111",
@@ -447,6 +431,22 @@
       "死亡"
     ],
     "setup": 1
+  },
+  {
+    "id": "xiadawuyao1111eee111eee111",
+    "image": "https://i.postimg.cc/MKfWHkbR/image.png",
+    "edition": "custom",
+    "name": "大巫妖",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。一名死亡玩家首次被大巫妖的能力选择时，他要选择两名玩家：其中不是恶魔的玩家死亡。",
+    "team": "demon",
+    "firstNight": 0,
+    "otherNight": 32,
+    "otherNightReminder": "唤醒穷奇，让他选择攻击一名玩家，或唤醒死亡玩家进行攻击。",
+    "remindersGlobal": [
+      "死亡",
+      "已被选择"
+    ],
+    "setup": 0
   },
   {
     "id": "taotieeeeeeeeeeee",
@@ -467,27 +467,9 @@
     "flavor": ""
   },
   {
-    "ability": "使用灯神的相克规则，所有玩家都会知道其内容。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "20003_107",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "灯神",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled",
-    "firstNight": 0
-  },
-  {
-    "id": "56786542_meta",
-    "image": "https://clocktower-wiki.gstonegames.com/images/thumb/e/ed/Cannibal.png/300px-Cannibal.png",
-    "name": "食人族&罂粟种植者",
+    "id": "罂粟种植者&食人族",
+    "name": "罂粟种植者&食人族",
     "team": "jinx",
-    "setup": 0,
     "ability": "如果食人族获得了罂粟种植者的能力，当他获得下一个能力时，爪牙和恶魔也会互相认识。"
   }
 ]

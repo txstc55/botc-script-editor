@@ -8,11 +8,11 @@
     "notes": [
       {
         "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事“可能”发生，代表说书人决定该事情是否发生。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>决定该事情是否发生。"
       },
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
         "text": "*代表非首个夜晚",
@@ -33,6 +33,38 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "今晚的预约有些古怪。我从未见过梅威瑟太太此前跟那个哈德逊巷的流氓有过交情。 然而今晚，他们订了一张双人桌。真奇怪。"
+  },
+  {
+    "id": "12_laozishudaoshan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/steward.png",
+    "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
+    "reminders": [
+      "得知"
+    ],
+    "name": "事务官",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知一名善良玩家。",
+    "firstNight": 4000,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "11_laozishudaoshan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
+    "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
+    "reminders": [
+      "得知"
+    ],
+    "name": "骑士",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
+    "firstNight": 4100,
+    "otherNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
   },
   {
     "id": "1_laozishudaoshan",
@@ -67,49 +99,6 @@
     "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
   },
   {
-    "id": "3_laozishudaoshan",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
-    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
-    "reminders": [
-      "保护"
-    ],
-    "name": "僧侣",
-    "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "otherNight": 3,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "4_laozishudaoshan",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
-    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
-    "name": "守鸦人",
-    "team": "townsfolk",
-    "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
-    "otherNight": 9,
-    "firstNightReminder": "",
-    "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
-  },
-  {
-    "id": "5_laozishudaoshan",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mayor.png",
-    "name": "镇长",
-    "team": "townsfolk",
-    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
     "id": "6_laozishudaoshan",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
     "firstNightReminder": "唤醒侍女，让她选择两名除自己以外的存活玩家。用手势比划数字来告知她这些玩家中因自己能力而唤醒的玩家数量。",
@@ -125,16 +114,17 @@
     "flavor": "我没有看到任何不寻常的事，夫人。请原谅我，但要是我真的看到了什么，那一定不是屋子主人在大约十一点的时候溜进了教授的实验室还把那些花花绿绿的药剂混合在了一起，就如你所说的那样，女士。"
   },
   {
-    "id": "7_laozishudaoshan",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/minstrel.png",
+    "id": "3_laozishudaoshan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
     "reminders": [
-      "全员醉酒"
+      "保护"
     ],
-    "name": "吟游诗人",
+    "name": "僧侣",
     "team": "townsfolk",
-    "ability": "当一名爪牙死于处决时，除了你和旅行者以外的所有其他玩家醉酒直到明天黄昏。",
+    "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
+    "otherNight": 3,
     "firstNightReminder": "",
-    "otherNightReminder": "",
     "remindersGlobal": [],
     "setup": 0,
     "flavor": ""
@@ -188,36 +178,59 @@
     "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
   },
   {
-    "id": "11_laozishudaoshan",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/knight.png",
-    "firstNightReminder": "唤醒骑士，对他指向两名非恶魔玩家。",
+    "id": "7_laozishudaoshan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/minstrel.png",
     "reminders": [
-      "得知"
+      "全员醉酒"
     ],
-    "name": "骑士",
+    "name": "吟游诗人",
     "team": "townsfolk",
-    "ability": "在你的首个夜晚，你会得知两名非恶魔玩家。",
-    "firstNight": 4100,
-    "otherNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "当有人倒下时，他也就谋杀了世界上的某个部分。"
-  },
-  {
-    "id": "12_laozishudaoshan",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/steward.png",
-    "firstNightReminder": "唤醒事务官，指向标记有“得知”的那名玩家。让事务官重新入睡。",
-    "reminders": [
-      "得知"
-    ],
-    "name": "事务官",
-    "team": "townsfolk",
-    "ability": "在你的首个夜晚，你会得知一名善良玩家。",
-    "firstNight": 4000,
+    "ability": "当一名爪牙死于处决时，除了你和旅行者以外的所有其他玩家醉酒直到明天黄昏。",
+    "firstNightReminder": "",
     "otherNightReminder": "",
     "remindersGlobal": [],
     "setup": 0,
     "flavor": ""
+  },
+  {
+    "id": "5_laozishudaoshan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mayor.png",
+    "name": "镇长",
+    "team": "townsfolk",
+    "ability": "如果只有三名玩家存活且白天没有人被处决，你的阵营获胜。如果你在夜晚死亡，可能会有一名其他玩家代替你死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "4_laozishudaoshan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
+    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
+    "name": "守鸦人",
+    "team": "townsfolk",
+    "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
+  },
+  {
+    "id": "14_laozishudaoshan",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
+    "name": "陌客",
+    "team": "outsider",
+    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
     "id": "13_laozishudaoshan",
@@ -233,19 +246,6 @@
     "otherNightReminder": "",
     "reminders": [],
     "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
-  },
-  {
-    "id": "14_laozishudaoshan",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
-    "name": "陌客",
-    "team": "outsider",
-    "ability": "你可能会被当作邪恶阵营、爪牙角色或恶魔角色，即使你已死亡。",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
   },
   {
     "id": "15_laozishudaoshan",

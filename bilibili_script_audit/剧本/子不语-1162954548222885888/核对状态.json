@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 26,
@@ -52,7 +52,27 @@
   ],
   "ocr_ability_checks": [
     {
-      "name": "道人",
+      "name": "灶王爷",
+      "team": "townsfolk",
+      "ability_coverage": 0.4545
+    },
+    {
+      "name": "吹糖人",
+      "team": "townsfolk",
+      "ability_coverage": 0.9556
+    },
+    {
+      "name": "镜中姬",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "舞龙头",
+      "team": "townsfolk",
+      "ability_coverage": 0.9556
+    },
+    {
+      "name": "主簿",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -62,42 +82,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "心猿",
+      "name": "儒生",
       "team": "townsfolk",
-      "ability_coverage": 1.0
+      "ability_coverage": 0.9302
     },
     {
-      "name": "龙子",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "缝尸人",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "镜中姬",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "吹糖人",
-      "team": "townsfolk",
-      "ability_coverage": 0.9556
-    },
-    {
-      "name": "舞龙头",
-      "team": "townsfolk",
-      "ability_coverage": 0.9556
-    },
-    {
-      "name": "舞龙尾",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "主簿",
+      "name": "舞龙队",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -107,17 +97,27 @@
       "ability_coverage": 0.8947
     },
     {
-      "name": "儒生",
+      "name": "缝尸人",
       "team": "townsfolk",
-      "ability_coverage": 0.9302
+      "ability_coverage": 1.0
     },
     {
-      "name": "灶王爷",
+      "name": "心猿",
       "team": "townsfolk",
-      "ability_coverage": 0.4545
+      "ability_coverage": 1.0
     },
     {
-      "name": "舞龙队",
+      "name": "舞龙尾",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "道人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "龙子",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -132,23 +132,13 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "蜃",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "祭品",
       "team": "outsider",
       "ability_coverage": 1.0
     },
     {
-      "name": "蛹",
-      "team": "minion",
-      "ability_coverage": 0.7091
-    },
-    {
-      "name": "毛僵",
-      "team": "minion",
+      "name": "蜃",
+      "team": "outsider",
       "ability_coverage": 1.0
     },
     {
@@ -162,6 +152,21 @@
       "ability_coverage": 0.9348
     },
     {
+      "name": "蛹",
+      "team": "minion",
+      "ability_coverage": 0.7091
+    },
+    {
+      "name": "毛僵",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "三尸娘娘",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "阎君",
       "team": "demon",
       "ability_coverage": 1.0
@@ -170,11 +175,6 @@
       "name": "纸夫人",
       "team": "demon",
       "ability_coverage": 0.9388
-    },
-    {
-      "name": "三尸娘娘",
-      "team": "demon",
-      "ability_coverage": 1.0
     },
     {
       "name": "天魔",
@@ -190,9 +190,7 @@
       "ability_coverage": 0.1803
     }
   ],
-  "ocr_traveler_mismatches": [
-    "舞龙身"
-  ],
+  "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
@@ -662,8 +660,16 @@
       "y": 0.17878
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_travelers": [
+      "舞龙身"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图没有旅行者区；“舞龙身”只出现在舞龙尾能力的设置文字中，并非旅行者卡。JSON 原有旅行者依照项目规则保留且不参与本图差异判断。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [
       "舞龙身"

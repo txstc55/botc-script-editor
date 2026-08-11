@@ -11,7 +11,7 @@
       },
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
         "text": "*代表非首个夜晚",
@@ -35,19 +35,6 @@
     "setup": 0
   },
   {
-    "id": "quezi",
-    "image": "https://free.picui.cn/free/2025/09/23/68d2088b8da20.png",
-    "edition": "custom",
-    "name": "瘸子",
-    "ability": "每个夜晚，你要选择一名其他玩家：你会得知他在角色表的左边还是右边。",
-    "team": "townsfolk",
-    "sch_team": "村民",
-    "firstNight": 7100,
-    "otherNight": 71,
-    "firstNightReminder": "每个夜晚，你要选择一名其他玩家：你会得知他在角色表的左边还是右边。",
-    "otherNightReminder": "每个夜晚，你要选择一名其他玩家：你会得知他在角色表的左边还是右边。"
-  },
-  {
     "id": "youxiwanjia",
     "image": "https://free.picui.cn/free/2025/09/23/68d2086dda9a2.png",
     "edition": "custom",
@@ -59,24 +46,6 @@
     "otherNight": 0,
     "firstNightReminder": "在你的首个夜晚，你会得知一个俄罗斯方块类型：它在剧本列表中能够存在一种框选情况使得框选的角色都在场。（或没有一种可以）",
     "reminders": []
-  },
-  {
-    "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
-    "edition": "custom",
-    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。",
-    "id": "fortune_teller_c",
-    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
-    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
-    "name": "占卜师",
-    "otherNight": 69.1,
-    "setup": 0,
-    "reminders": [
-      "干扰项"
-    ],
-    "remindersGlobal": [],
-    "team": "townsfolk",
-    "firstNight": 4700.5
   },
   {
     "ability": "每个夜晚*，如果今天白天有玩家死于处决，你会得知存活镇民的数量。",
@@ -97,19 +66,6 @@
     "firstNight": 0
   },
   {
-    "id": "60a6ac02-e31f-45bd-8b9a-dda1a13ac82d",
-    "name": "盲女",
-    "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择...  当你死亡时，你会得知自己完整的能力。",
-    "image": "https://i.postimg.cc/NMKZWDhD/mang-nu.png",
-    "firstNight": 0.0,
-    "otherNight": 65,
-    "reminders": [],
-    "firstNightReminder": "",
-    "otherNightReminder": "每个夜晚*，你要选择... 当你死亡时，你会得知自己完整的能力。",
-    "remindersGlobal": []
-  },
-  {
     "ability": "每个夜晚*，你会得知在今天白天时是否有爪牙发起过提名。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/town_crier.png",
     "edition": "custom",
@@ -123,24 +79,6 @@
     "reminders": [
       "爪牙已提名",
       "爪牙未提名"
-    ],
-    "remindersGlobal": [],
-    "team": "townsfolk",
-    "firstNight": 0
-  },
-  {
-    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
-    "edition": "custom",
-    "flavor": "正面，我赢。 反面，你输。",
-    "id": "gambler_c",
-    "firstNightReminder": "",
-    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
-    "name": "赌徒",
-    "otherNight": 14.1,
-    "setup": 0,
-    "reminders": [
-      "死亡"
     ],
     "remindersGlobal": [],
     "team": "townsfolk",
@@ -163,21 +101,6 @@
     "firstNight": 0
   },
   {
-    "id": "09642608-615c-4234-b816-ad523129c272",
-    "name": "锈剑骑士",
-    "team": "townsfolk",
-    "ability": "如果你死于爪牙能力，距离你最远一名爪牙中毒。如果你死于恶魔能力，距离你最近一名爪牙死亡。恶魔会知道你离他的(左/右)更近。",
-    "image": "https://i.postimg.cc/Y9vTJRcX/xiu-jian.png",
-    "firstNight": 0.0,
-    "otherNight": 60,
-    "reminders": [
-      "中毒"
-    ],
-    "firstNightReminder": "",
-    "otherNightReminder": "如果你死于爪牙能力，距离你最远一名爪牙中毒。如果你死于恶魔能力，距离你最近一名爪牙死亡。恶魔会知道你离他的(左/右)更近。",
-    "remindersGlobal": []
-  },
-  {
     "id": "b7dcc2fa-ff4f-4188-8529-e3fc099fcfcd",
     "name": "彼岸恋人",
     "team": "townsfolk",
@@ -190,6 +113,98 @@
     ],
     "firstNightReminder": "",
     "otherNightReminder": "",
+    "remindersGlobal": []
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_1944911074371_f61a3c84.jpg",
+    "name": "女王",
+    "team": "townsfolk",
+    "ability": "如果你的相邻玩家均为善良，他们得知你是女王。疯狂证明女王在场的玩家可能会被处决。",
+    "id": "queen",
+    "edition": "custom",
+    "firstNightReminder": "如果女王两侧相邻的玩家都是善良的，分别唤醒她两侧的玩家，对其展示“该角色的能力对你生效”提示标记，女王的角色标记，然后指向女王玩家，随后让该玩家重新入睡。",
+    "otherNightReminder": "如果女王两侧相邻的玩家都是善良的，分别唤醒她两侧的玩家，对其展示“该角色的能力对你生效”提示标记，女王的角色标记，然后指向女王玩家，随后让该玩家重新入睡。",
+    "setup": 0,
+    "reminders": [],
+    "remindersGlobal": [],
+    "firstNight": 5501,
+    "otherNight": 62
+  },
+  {
+    "id": "quezi",
+    "image": "https://free.picui.cn/free/2025/09/23/68d2088b8da20.png",
+    "edition": "custom",
+    "name": "瘸子",
+    "ability": "每个夜晚，你要选择一名其他玩家：你会得知他在角色表的左边还是右边。",
+    "team": "townsfolk",
+    "sch_team": "村民",
+    "firstNight": 7100,
+    "otherNight": 71,
+    "firstNightReminder": "每个夜晚，你要选择一名其他玩家：你会得知他在角色表的左边还是右边。",
+    "otherNightReminder": "每个夜晚，你要选择一名其他玩家：你会得知他在角色表的左边还是右边。"
+  },
+  {
+    "ability": "每个夜晚，你要选择两名玩家：你会得知他们之中是否有恶魔。会有一名善良玩家始终被你的能力当作恶魔。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fortune_teller.png",
+    "edition": "custom",
+    "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。",
+    "id": "fortune_teller_c",
+    "firstNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "otherNightReminder": "让占卜师选择两名玩家。如果其中有恶魔或“干扰项”，点头示意，否则摇头。",
+    "name": "占卜师",
+    "otherNight": 69.1,
+    "setup": 0,
+    "reminders": [
+      "干扰项"
+    ],
+    "remindersGlobal": [],
+    "team": "townsfolk",
+    "firstNight": 4700.5
+  },
+  {
+    "id": "60a6ac02-e31f-45bd-8b9a-dda1a13ac82d",
+    "name": "盲女",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择...  当你死亡时，你会得知自己完整的能力。",
+    "image": "https://i.postimg.cc/NMKZWDhD/mang-nu.png",
+    "firstNight": 0.0,
+    "otherNight": 65,
+    "reminders": [],
+    "firstNightReminder": "",
+    "otherNightReminder": "每个夜晚*，你要选择... 当你死亡时，你会得知自己完整的能力。",
+    "remindersGlobal": []
+  },
+  {
+    "ability": "每个夜晚*，你要选择一名玩家并猜测该玩家的角色：如果你猜错了，你会死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/gambler.png",
+    "edition": "custom",
+    "flavor": "正面，我赢。 反面，你输。",
+    "id": "gambler_c",
+    "firstNightReminder": "",
+    "otherNightReminder": "让赌徒选择一名玩家和一个角色。如果赌徒猜错了，标记赌徒死亡。",
+    "name": "赌徒",
+    "otherNight": 14.1,
+    "setup": 0,
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "team": "townsfolk",
+    "firstNight": 0
+  },
+  {
+    "id": "09642608-615c-4234-b816-ad523129c272",
+    "name": "锈剑骑士",
+    "team": "townsfolk",
+    "ability": "如果你死于爪牙能力，距离你最远一名爪牙中毒。如果你死于恶魔能力，距离你最近一名爪牙死亡。恶魔会知道你离他的(左/右)更近。",
+    "image": "https://i.postimg.cc/Y9vTJRcX/xiu-jian.png",
+    "firstNight": 0.0,
+    "otherNight": 60,
+    "reminders": [
+      "中毒"
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "如果你死于爪牙能力，距离你最远一名爪牙中毒。如果你死于恶魔能力，距离你最近一名爪牙死亡。恶魔会知道你离他的(左/右)更近。",
     "remindersGlobal": []
   },
   {
@@ -207,21 +222,6 @@
       "是炼金术士"
     ],
     "setup": 1
-  },
-  {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_1944911074371_f61a3c84.jpg",
-    "name": "女王",
-    "team": "townsfolk",
-    "ability": "如果你的相邻玩家均为善良，他们得知你是女王。疯狂证明女王在场的玩家可能会被处决。",
-    "id": "queen",
-    "edition": "custom",
-    "firstNightReminder": "如果女王两侧相邻的玩家都是善良的，分别唤醒她两侧的玩家，对其展示“该角色的能力对你生效”提示标记，女王的角色标记，然后指向女王玩家，随后让该玩家重新入睡。",
-    "otherNightReminder": "如果女王两侧相邻的玩家都是善良的，分别唤醒她两侧的玩家，对其展示“该角色的能力对你生效”提示标记，女王的角色标记，然后指向女王玩家，随后让该玩家重新入睡。",
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "firstNight": 5501,
-    "otherNight": 62
   },
   {
     "ability": "每个白天，一名邪恶玩家和一名善良玩家要分别“疯狂”地证明某个事情，否则他们可能死亡。",
@@ -260,23 +260,6 @@
     "firstNight": 0
   },
   {
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_0372326784371_e24569cc.jpg",
-    "name": "乌鸦嘴",
-    "team": "outsider",
-    "ability": "可能会有一名善良玩家得知一条不该存在的信息，即使你已死亡。",
-    "id": "cassandra",
-    "edition": "custom",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "setup": 0,
-    "reminders": [
-      "失去能力"
-    ],
-    "remindersGlobal": [],
-    "firstNight": 0,
-    "otherNight": 0
-  },
-  {
     "ability": "如果你死亡，在当晚恶魔可以选择两名玩家（不能选择其他恶魔）交换角色。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
     "edition": "custom",
@@ -293,6 +276,23 @@
     "remindersGlobal": [],
     "team": "outsider",
     "firstNight": 0
+  },
+  {
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202412/c_0372326784371_e24569cc.jpg",
+    "name": "乌鸦嘴",
+    "team": "outsider",
+    "ability": "可能会有一名善良玩家得知一条不该存在的信息，即使你已死亡。",
+    "id": "cassandra",
+    "edition": "custom",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "setup": 0,
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "firstNight": 0,
+    "otherNight": 0
   },
   {
     "id": "14_wuyejulebu",
@@ -321,6 +321,37 @@
     "firstNight": 3300
   },
   {
+    "id": "9_rose",
+    "image": "https://www.bloodstar.xyz/p/humlet/ROSE/9_rose.png",
+    "otherNightReminder": "唤醒他，他要摇头或是选择一个非恶魔角色，为该角色标记死亡。如果他选择的角色不在场，让他再次选择一名玩家，该玩家变成那个角色。",
+    "reminders": [
+      "失去能力",
+      "被变化",
+      "死亡"
+    ],
+    "name": "帕克",
+    "team": "minion",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择一个非恶魔角色：他死亡。如果该角色不在场，你要再选择一名玩家：他变成该角色。",
+    "attribution": "太一",
+    "flavor": "来吧来吧！让我们把这场严肃的游戏变成我的游乐场！我保证——（眨眨眼）会让一切变得特别特别'有趣'！让我看看今天是谁这么幸运会成为我的新玩具呢？",
+    "otherNight": 8
+  },
+  {
+    "id": "56bee3d5-f3ea-4e29-a5d3-a6d19b467f60",
+    "name": "百臂巨人",
+    "team": "minion",
+    "ability": "如果你死于处决，所有玩家都会得知此事，当你投票时，你的票数等于你死于处决时所获得的票数。",
+    "image": "https://i.postimg.cc/J7bFR2d6/bai-bi.webp",
+    "firstNight": 0.0,
+    "otherNight": 0.0,
+    "reminders": [
+      "死于处决"
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "remindersGlobal": []
+  },
+  {
     "ability": "你与一名对立阵营的玩家互相知道对方是什么角色。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
     "edition": "custom",
@@ -339,22 +370,6 @@
     "firstNight": 3400
   },
   {
-    "id": "9_rose",
-    "image": "https://www.bloodstar.xyz/p/humlet/ROSE/9_rose.png",
-    "otherNightReminder": "唤醒他，他要摇头或是选择一个非恶魔角色，为该角色标记死亡。如果他选择的角色不在场，让他再次选择一名玩家，该玩家变成那个角色。",
-    "reminders": [
-      "失去能力",
-      "被变化",
-      "死亡"
-    ],
-    "name": "帕克",
-    "team": "minion",
-    "ability": "每局游戏限一次，在夜晚时*，你可以选择一个非恶魔角色：他死亡。如果该角色不在场，你要再选择一名玩家：他变成该角色。",
-    "attribution": "太一",
-    "flavor": "来吧来吧！让我们把这场严肃的游戏变成我的游乐场！我保证——（眨眨眼）会让一切变得特别特别'有趣'！让我看看今天是谁这么幸运会成为我的新玩具呢？",
-    "otherNight": 8
-  },
-  {
     "id": "273d368a-fe5d-452f-8cf4-51a4dca4ad17",
     "name": "夏基",
     "team": "minion",
@@ -369,21 +384,6 @@
       "是夏基",
       "中毒"
     ]
-  },
-  {
-    "id": "56bee3d5-f3ea-4e29-a5d3-a6d19b467f60",
-    "name": "百臂巨人",
-    "team": "minion",
-    "ability": "如果你死于处决，所有玩家都会得知此事，当你投票时，你的票数等于你死于处决时所获得的票数。",
-    "image": "https://i.postimg.cc/J7bFR2d6/bai-bi.webp",
-    "firstNight": 0.0,
-    "otherNight": 0.0,
-    "reminders": [
-      "死于处决"
-    ],
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "remindersGlobal": []
   },
   {
     "id": "wushihsihsihsihsihsihsish",
@@ -446,16 +446,9 @@
     "firstNight": 0
   },
   {
-    "id": "els",
-    "name": "",
-    "team": "fabled",
-    "ability": "俄罗斯方块：①上-蓝②左中-橙③中中-绿④右中-红⑤左下-紫⑥中下-白⑦右下-黄",
-    "image": "https://i.postimg.cc/qMLJny2q/e-luo-si-fang-kuai.jpg",
-    "firstNight": 0.0,
-    "otherNight": 0,
-    "reminders": [],
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "remindersGlobal": []
+    "id": "游戏玩家",
+    "name": "游戏玩家",
+    "team": "jinx",
+    "ability": "俄罗斯方块类型：①上-蓝；②左中-橙；③中中-绿；④右中-红；⑤左下-紫；⑥中下-白；⑦右下-黄。"
   }
 ]

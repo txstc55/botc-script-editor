@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 29,
@@ -55,42 +55,22 @@
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
+      "name": "四吠陀",
+      "team": "fabled",
+      "ability_coverage": 0.9394
+    },
+    {
+      "name": "印度教教徒",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "圣洁之魂",
       "team": "fabled",
       "ability_coverage": 1.0
     },
     {
-      "name": "四吠陀",
-      "team": "fabled",
-      "ability_coverage": 0.8696
-    },
-    {
-      "name": "印度教教徒",
-      "team": "fabled",
-      "ability_coverage": 0.6383
-    },
-    {
       "name": "调查员",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "赌徒",
-      "team": "townsfolk",
-      "ability_coverage": 0.8621
-    },
-    {
-      "name": "数学家",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "将军",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "传教士",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -100,12 +80,37 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "打更人",
+      "name": "方士",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
+      "name": "数学家",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "传教士",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "将军",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "赌徒",
+      "team": "townsfolk",
+      "ability_coverage": 0.8621
+    },
+    {
       "name": "锦衣卫",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "打更人",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -115,19 +120,14 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "变脸师",
-      "team": "townsfolk",
-      "ability_coverage": 0.9783
-    },
-    {
-      "name": "方士",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "提刑官",
       "team": "townsfolk",
       "ability_coverage": 1.0
+    },
+    {
+      "name": "变脸师",
+      "team": "townsfolk",
+      "ability_coverage": 0.9783
     },
     {
       "name": "驿使",
@@ -140,12 +140,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "修补匠",
+      "name": "食人魔",
       "team": "outsider",
       "ability_coverage": 1.0
     },
     {
-      "name": "食人魔",
+      "name": "修补匠",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -160,17 +160,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "麻脸巫婆",
-      "team": "minion",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "鹰身女妖",
-      "team": "minion",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "召唤师",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -180,8 +170,13 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "诺-达鲺",
-      "team": "demon",
+      "name": "麻脸巫婆",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "召唤师",
+      "team": "minion",
       "ability_coverage": 1.0
     },
     {
@@ -190,14 +185,19 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "堤丰之首",
+      "team": "demon",
+      "ability_coverage": 0.8378
+    },
+    {
       "name": "痢蛭",
       "team": "demon",
       "ability_coverage": 0.9423
     },
     {
-      "name": "堤丰之首",
+      "name": "诺-达鲺",
       "team": "demon",
-      "ability_coverage": 0.8378
+      "ability_coverage": 1.0
     }
   ],
   "ocr_ability_mismatches": [],
@@ -212,13 +212,10 @@
     {
       "name": "召唤师&传教士",
       "team": "jinx",
-      "ability_coverage": 0.3043
+      "ability_coverage": 0.2979
     }
   ],
-  "ocr_jinx_mismatches": [
-    "隐士&食人魔",
-    "召唤师&传教士"
-  ],
+  "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
       "text": "*代表非首个夜晚",
@@ -243,9 +240,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "［邪恶角色全部邻座，你靠近正中，+1爪牙，-或＋任意数"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -726,8 +721,20 @@
       "y": 0.08708
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_jinxes": [
+      "隐士&食人魔",
+      "召唤师&传教士"
+    ],
+    "verified_bottom_lines": [
+      "［邪恶角色全部邻座，你靠近正中，+1爪牙，-或＋任意数"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原图在隐士和召唤师能力下方清晰展示两条灰底特殊规则；OCR 对小字覆盖不足。末尾截断行是堤丰之首能力的设置括号，并非额外说明。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [

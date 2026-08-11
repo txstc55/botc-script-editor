@@ -12,7 +12,7 @@
       },
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
         "text": "*代表非首个夜晚",
@@ -72,6 +72,23 @@
     "flavor": ""
   },
   {
+    "id": "11_yubujingrensibuxiu",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
+    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
+    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
+    "reminders": [
+      "得知"
+    ],
+    "name": "方士",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
+    "firstNight": 3900,
+    "otherNight": 16,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
     "id": "3_yubujingrensibuxiu",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/empath.png",
     "firstNightReminder": "给他展示数字手势来告诉他与他邻近的存活玩家有几人是邪恶的。",
@@ -85,6 +102,21 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
+  },
+  {
+    "id": "12_yubujingrensibuxiu",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_2147287694761_01761fcb.jpg",
+    "firstNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
+    "otherNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
+    "name": "引路人",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择至多三名玩家：你会得知今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
+    "firstNight": 4000,
+    "otherNight": 17,
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。"
   },
   {
     "id": "4_yubujingrensibuxiu",
@@ -118,6 +150,19 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": ""
+  },
+  {
+    "id": "10_yubujingrensibuxiu",
+    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/91/pxy0b2oikzwvg1ncpxr22dd1xfuqd9e.png",
+    "otherNightReminder": "唤醒道士，让其选择一名玩家。如果他选中了恶魔，在道士角色标记旁放置“死亡”提示标记，并且在恶魔角色标记旁放置“醉酒”提示标记。",
+    "reminders": [
+      "醉酒",
+      "死亡"
+    ],
+    "name": "道士",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择一名玩家：如果你选中了恶魔，你死亡，然后他醉酒直到下个黎明。",
+    "otherNight": 6
   },
   {
     "id": "6_yubujingrensibuxiu",
@@ -179,51 +224,6 @@
     "flavor": "是非曲直，自在人心。"
   },
   {
-    "id": "10_yubujingrensibuxiu",
-    "image": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/9/91/pxy0b2oikzwvg1ncpxr22dd1xfuqd9e.png",
-    "otherNightReminder": "唤醒道士，让其选择一名玩家。如果他选中了恶魔，在道士角色标记旁放置“死亡”提示标记，并且在恶魔角色标记旁放置“醉酒”提示标记。",
-    "reminders": [
-      "醉酒",
-      "死亡"
-    ],
-    "name": "道士",
-    "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择一名玩家：如果你选中了恶魔，你死亡，然后他醉酒直到下个黎明。",
-    "otherNight": 6
-  },
-  {
-    "id": "11_yubujingrensibuxiu",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
-    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
-    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
-    "reminders": [
-      "得知"
-    ],
-    "name": "方士",
-    "team": "townsfolk",
-    "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
-    "firstNight": 3900,
-    "otherNight": 16,
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "12_yubujingrensibuxiu",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_2147287694761_01761fcb.jpg",
-    "firstNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
-    "otherNightReminder": "唤醒引路人，让其选择至多三名玩家。以点头或摇头作为信息给出。",
-    "name": "引路人",
-    "team": "townsfolk",
-    "ability": "每个夜晚，你要选择至多三名玩家：你会得知今晚是否有邪恶玩家的能力选择或影响了他们之中的玩家。",
-    "firstNight": 4000,
-    "otherNight": 17,
-    "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。"
-  },
-  {
     "id": "13_yubujingrensibuxiu",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/recluse.png",
     "name": "陌客",
@@ -235,22 +235,6 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "侬康康窝咦锅惹，咋锅就怼窝恁锅粗暴。介样叭行。麻绳添酒嘿料，泥滴燕绳恨舔没，窝这哈圆酿泥料！侬晓得伐！窝叭象载康岛泥鸟，辣过饿魔阔能揍载窝家边乱晃。呔！窝揍斯弄个以斯！"
-  },
-  {
-    "id": "14_yubujingrensibuxiu",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
-    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
-    "reminders": [
-      "醉酒"
-    ],
-    "name": "心上人",
-    "team": "outsider",
-    "ability": "当你死亡时，会有一名玩家开始醉酒。",
-    "otherNight": 13,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "我永远也忘不掉她……永远……"
   },
   {
     "id": "15_yubujingrensibuxiu",
@@ -267,6 +251,22 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
+  },
+  {
+    "id": "14_yubujingrensibuxiu",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
+    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
+    "reminders": [
+      "醉酒"
+    ],
+    "name": "心上人",
+    "team": "outsider",
+    "ability": "当你死亡时，会有一名玩家开始醉酒。",
+    "otherNight": 13,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我永远也忘不掉她……永远……"
   },
   {
     "id": "16_yubujingrensibuxiu",
@@ -366,23 +366,6 @@
     "flavor": "我们必须让自己的头脑保持敏锐，刀刃保持锋利。邪恶在我们之中穿行，想要不择手段地摧毁我们的善良。那些愚蠢之辈，把我们美丽的小镇给毁了。不要相信任何人。但如果你一定要相信某人，请相信我。"
   },
   {
-    "id": "22_yubujingrensibuxiu",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
-    "reminders": [
-      "中毒",
-      "死亡"
-    ],
-    "name": "诺-达鲺",
-    "team": "demon",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "otherNight": 9,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
-  },
-  {
     "id": "23_yubujingrensibuxiu",
     "image": "https://clocktower-wiki.gstonegames.com/images/1/18/Lordoftyphon.png",
     "firstNightReminder": "将位于堤丰之首两侧的对应数量的玩家变成邪恶的爪牙，并分别唤醒他们通知他们的角色和阵营变化。",
@@ -398,6 +381,23 @@
     "otherNight": 10,
     "remindersGlobal": [],
     "flavor": ""
+  },
+  {
+    "id": "22_yubujingrensibuxiu",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
+    "reminders": [
+      "中毒",
+      "死亡"
+    ],
+    "name": "诺-达鲺",
+    "team": "demon",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
+    "otherNight": 9,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "id": "24_yubujingrensibuxiu",

@@ -1,11 +1,15 @@
 [
   {
     "id": "_meta",
-    "name": "梦殒春宵教皇版",
+    "name": "梦殒春宵·教皇版",
     "author": "TPI",
     "logo": "https://patchwiki.biligame.com/images/jbzlbwgwjcygf/b/b4/1d1nll4npwvvc5d2qn9mj3qkqksjbr5.png",
     "almanac": "有问题联系SE谢谢喵~",
     "notes": [
+      {
+        "text": "至美之名：【教皇会带来重复的角色】会有重复的镇民或外来者出现，也可能两者都会出现。可能只有一个重复的角色在场，也有可能有多个重复的角色在场。可以有两个相同的角色在场，也可以多到任何数量——只要说书人有足够的角色标记。恶魔的三个伪装可以包含这些重复的角色。线下说书人需要使用多套标记，或者至少具备能够使用相同角色标记的方式（至少目前是这样）。重复的外来者可能会导致外来者数量的异常。重复的镇民不会产生这种影响。",
+        "html": "<span style=\"color: rgb(43, 3, 3); font-weight: 900;\">至美之名</span>：<strong>【教皇会带来重复的角色】</strong>会有重复的镇民或外来者出现，也可能两者都会出现。可能只有一个重复的角色在场，也有可能有多个重复的角色在场。可以有两个相同的角色在场，也可以多到任何数量——只要说书人有足够的角色标记。恶魔的三个伪装可以包含这些重复的角色。线下说书人需要使用多套标记，或者至少具备能够使用相同角色标记的方式（至少目前是这样）。重复的外来者可能会导致外来者数量的异常。重复的镇民不会产生这种影响。"
+      },
       {
         "text": "*代表非首个夜晚",
         "html": "<strong>*代表</strong>非首个夜晚"
@@ -131,6 +135,22 @@
     "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
+    "id": "12_mycxjhb",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
+    "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
+    "reminders": [
+      "猜测正确"
+    ],
+    "name": "杂耍艺人",
+    "team": "townsfolk",
+    "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
+    "otherNight": 19,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。"
+  },
+  {
     "id": "8_mycxjhb",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "name": "博学者",
@@ -195,22 +215,6 @@
     "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
   },
   {
-    "id": "12_mycxjhb",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/juggler.png",
-    "otherNightReminder": "给他展示数字手势来告诉他他当天白天猜测正确的次数。",
-    "reminders": [
-      "猜测正确"
-    ],
-    "name": "杂耍艺人",
-    "team": "townsfolk",
-    "ability": "在你的首个白天，你可以公开猜测任意玩家的角色最多五次。在当晚，你会得知猜测正确的角色数量。",
-    "otherNight": 19,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "下一场表演，我需要一朵花、一袋豆子、一条玩具蛇、一支画笔、和一个电动的树篱修剪机。不过我得和你说，宝贝，这可能是我最后的表演了哦。"
-  },
-  {
     "id": "13_mycxjhb",
     "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/sage.png",
     "otherNightReminder": "如果恶魔杀死了贤者，唤醒贤者并指向两名玩家，其中一名玩家是杀死他的恶魔。",
@@ -238,22 +242,6 @@
     "flavor": "我不是怪物！我是人！求你了！"
   },
   {
-    "id": "15_mycxjhb",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
-    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
-    "reminders": [
-      "醉酒"
-    ],
-    "name": "心上人",
-    "team": "outsider",
-    "ability": "当你死亡时，会有一名玩家开始醉酒。",
-    "otherNight": 12,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "我永远也忘不掉她……永远……"
-  },
-  {
     "id": "16_mycxjhb",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/barber.png",
     "otherNightReminder": "如果理发师今天死亡了，唤醒恶魔并展示“该角色的效果对你生效”信息标记和理发师角色标记。如果恶魔选择了两名玩家，将这两名玩家分别独自唤醒。对他们展示“你是”信息标记和他们的新角色标记。",
@@ -270,6 +258,22 @@
     "flavor": "对了，你以前知不知道，理发师和手术医生其实是同一个职业？不知道？那现在你知道了。"
   },
   {
+    "id": "15_mycxjhb",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
+    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
+    "reminders": [
+      "醉酒"
+    ],
+    "name": "心上人",
+    "team": "outsider",
+    "ability": "当你死亡时，会有一名玩家开始醉酒。",
+    "otherNight": 12,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "我永远也忘不掉她……永远……"
+  },
+  {
     "id": "17_mycxjhb",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
     "name": "呆瓜",
@@ -278,22 +282,6 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "18_mycxjhb",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
-    "firstNightReminder": "唤醒镜像双子和他的对立双子，让他们进行眼神接触。对镜像双子展示对立双子的角色标记，并对对立双子展示镜像双子的角色标记。",
-    "reminders": [
-      "对立双子"
-    ],
-    "name": "镜像双子",
-    "team": "minion",
-    "ability": "你与一名对立阵营的玩家互相知道对方是什么角色。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。",
-    "firstNight": 3300,
-    "otherNightReminder": "",
     "remindersGlobal": [],
     "setup": 0,
     "flavor": ""
@@ -342,6 +330,22 @@
     "otherNight": 3,
     "firstNightReminder": "",
     "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "18_mycxjhb",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/evil_twin.png",
+    "firstNightReminder": "唤醒镜像双子和他的对立双子，让他们进行眼神接触。对镜像双子展示对立双子的角色标记，并对对立双子展示镜像双子的角色标记。",
+    "reminders": [
+      "对立双子"
+    ],
+    "name": "镜像双子",
+    "team": "minion",
+    "ability": "你与一名对立阵营的玩家互相知道对方是什么角色。如果其中善良玩家被处决，邪恶阵营获胜。如果你们都存活，善良阵营无法获胜。",
+    "firstNight": 3300,
+    "otherNightReminder": "",
     "remindersGlobal": [],
     "setup": 0,
     "flavor": ""
