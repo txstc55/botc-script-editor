@@ -16,11 +16,11 @@
     "c745efd61081c9f9bb209aea86d9c5f644902471.png",
     "ca9e7821031a9844bbefd18b4f09dabf44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 28,
-  "ocr_required_character_count": 28,
+  "ocr_character_matches": 27,
+  "ocr_required_character_count": 27,
   "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "诺-达鲺",
@@ -214,11 +214,6 @@
       "ability_coverage": 0.9252
     },
     {
-      "name": "可选死亡任务",
-      "team": "fabled",
-      "ability_coverage": 0.9583
-    },
-    {
       "name": "调查员",
       "team": "townsfolk",
       "ability_coverage": 1.0
@@ -369,12 +364,18 @@
       "ability_coverage": 0.6522
     }
   ],
-  "ocr_jinx_mismatches": [
-    "麻脸巫婆&村夫"
-  ],
+  "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 2,
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
+    {
+      "text": "可选规则： ○ 在首个夜晚，告知局外人一个不在场角色。",
+      "text_coverage": 0.7895
+    },
+    {
+      "text": "可选死亡任务： ○ 如果第三方阵营玩家都死亡，说书人可以给每名第三方阵营玩家单独发布一条任务，完成任务后的玩家随获胜阵营一同获胜。 1）所有听到笛声的玩家死亡。 2）将投票标记投给恶魔。",
+      "text_coverage": 1.0
+    },
     {
       "text": "*代表非首个夜晚",
       "text_coverage": 1.0
@@ -400,12 +401,7 @@
     "2 将投票标记投给恶魔。",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "第三方阵营•局外人",
-    "圣清乙魂",
-    "可选規则：",
-    "O 在首个夜晚，告知局外人一个不在场角色。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -614,7 +610,7 @@
           "y": 0.11337
         }
       ],
-      "required_character_matches": 26
+      "required_character_matches": 25
     }
   ],
   "ocr_source_board_groups": [
@@ -651,8 +647,22 @@
       ]
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_jinxes": [
+      "麻脸巫婆&村夫"
+    ],
+    "verified_bottom_lines": [
+      "第三方阵营•局外人",
+      "圣清乙魂",
+      "可选規则："
+    ],
+    "source_image": "对照图-02.png",
+    "source_data": "https://www.bloodstar.xyz/p/SerraEvelyn/rulindadi/script.json",
+    "reason": "麻脸巫婆&村夫相克与原图逐字一致；其余三行分别是第三方分区标题、OCR 误识别的圣洁之魂和可选规则标题。已增加不改变数据库阵营的第三方预览分组，将吹笛者移入紫色“第三方阵营·局外人”区，补首夜可选提醒与两组可选规则说明，并修正剧本名为“如临大笛”。软件图的角色、相克、传奇、说明与双侧夜序均已核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [
@@ -662,8 +672,7 @@
     "unexplained_bottom_lines": [
       "第三方阵营•局外人",
       "圣清乙魂",
-      "可选規则：",
-      "O 在首个夜晚，告知局外人一个不在场角色。"
+      "可选規则："
     ]
   }
 }

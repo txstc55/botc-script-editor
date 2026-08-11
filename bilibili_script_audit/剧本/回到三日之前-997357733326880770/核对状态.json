@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 26,
@@ -211,16 +211,6 @@
       "ability_coverage": 0.4024
     },
     {
-      "name": "暴乱&麻脸巫婆",
-      "team": "jinx",
-      "ability_coverage": 0.7059
-    },
-    {
-      "name": "暴乱与召唤师",
-      "team": "jinx",
-      "ability_coverage": 0.4902
-    },
-    {
       "name": "召唤师&炼金术士",
       "team": "jinx",
       "ability_coverage": 0.38
@@ -231,9 +221,9 @@
       "ability_coverage": 0.5897
     },
     {
-      "name": "召唤师&麻脸巫婆",
+      "name": "召唤师&暴乱",
       "team": "jinx",
-      "ability_coverage": 0.5128
+      "ability_coverage": 0.4906
     },
     {
       "name": "麻脸巫婆&莽夫",
@@ -241,14 +231,17 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "麻脸巫婆与落难少女",
+      "name": "麻脸巫婆&落难少女",
       "team": "jinx",
       "ability_coverage": 0.9032
+    },
+    {
+      "name": "麻脸巫婆&暴乱",
+      "team": "jinx",
+      "ability_coverage": 0.7059
     }
   ],
-  "ocr_jinx_mismatches": [
-    "暴乱&落难少女"
-  ],
+  "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
       "text": "*代表非首个夜晚",
@@ -268,9 +261,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "台表點師受聲禁香營趁流導集飛彌油煙森能懇嬰劑碳台知精难少女往场，"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -703,8 +694,19 @@
       "y": 0.09144
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_jinxes": [
+      "暴乱&落难少女"
+    ],
+    "verified_bottom_lines": [
+      "台表點師受聲禁香營趁流導集飛彌油煙森能懇嬰劑碳台知精难少女往场，"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "该乱码是 OCR 对暴乱&落难少女相克灰框的误识别。已逐字核对并修正全部11条相克：删除原图没有的召唤师&麻脸巫婆，修正召唤师&暴乱、麻脸巫婆&落难少女和麻脸巫婆&暴乱的名称、顺序与措辞；软件图现与原图三个相克分组一致。角色、能力、夜序、圣洁之魂及底部说明也已核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [
