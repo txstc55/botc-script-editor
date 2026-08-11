@@ -2,7 +2,7 @@
   {
     "id": "_meta",
     "author": "Robe",
-    "name": "#再许一日v1.0.1-Robe",
+    "name": "再许一日",
     "logo": "https://www.bloodstar.xyz/p/SerraEvelyn/zaixuyiri/_meta.png",
     "firstNight": [
       "dusk",
@@ -51,7 +51,7 @@
       },
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
         "text": "*代表非首个夜晚",
@@ -355,24 +355,6 @@
     "flavor": ""
   },
   {
-    "id": "touduzheeeeeeee111",
-    "name": "投毒者",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
-    "team": "minion",
-    "edition": "custom",
-    "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
-    "firstNight": 18,
-    "otherNight": 9,
-    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
-    "reminders": [
-      "中毒"
-    ],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
     "id": "noita111",
     "name": "女巫",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/witch.png",
@@ -407,6 +389,24 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
+  },
+  {
+    "id": "touduzheeeeeeee111",
+    "name": "投毒者",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
+    "team": "minion",
+    "edition": "custom",
+    "ability": "每个夜晚，你要选择一名玩家：他在当晚和明天白天中毒。",
+    "firstNight": 18,
+    "otherNight": 9,
+    "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
+    "reminders": [
+      "中毒"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "youzhizhua11111111",
@@ -486,18 +486,72 @@
     "flavor": ""
   },
   {
-    "id": "35addde2-e27a-4de2-9a9e-df0e78364717",
+    "id": "私货商人",
     "name": "私货商人",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
     "team": "fabled",
-    "edition": "custom",
-    "ability": "这个剧本包含有自制角色或自制规则。",
+    "ability": "通讯故障：该剧本中角色在获取信息时，延迟一天一夜获得。邪恶方互认及白天能力不会受到延迟的影响。中毒或醉酒会影响当日的信息产生与接收（而不是前一日）。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
     "firstNight": 0,
-    "otherNight": 0
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
-    "id": "落难少女&寡妇",
-    "name": "落难少女&寡妇",
+    "id": "乞丐",
+    "name": "乞丐",
+    "team": "traveler",
+    "ability": "你只能使用投票标记才能投票。死亡的玩家可以将他的投票标记给你，如果他这么做，你会得知他的阵营。你不会中毒和醉酒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/beggar.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "流莺",
+    "name": "流莺",
+    "team": "traveler",
+    "ability": "每个夜晚*，你要选择一名存活的玩家：如果他同意，你会得知他的角色，但是你们两个可能同时死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/harlot.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 1,
+    "otherNightReminder": "流莺选择一名玩家，将其唤醒，那名玩家选择同意或拒绝。如果同意，将他的角色标记展示给流莺看。然后说书人可以决定两名玩家是否会一起死去。",
+    "reminders": [
+      "死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "侏儒",
+    "name": "侏儒",
+    "team": "traveler",
+    "ability": "当你加入游戏时，所有玩家会得知一名与你阵营相同的玩家。每当他被提名时，你可以杀死提名者。",
+    "image": "https://clocktower-wiki.gstonegames.com/images/7/78/Gnome.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "同伴"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "寡妇&落难少女",
+    "name": "寡妇&落难少女",
     "team": "jinx",
     "ability": "如果寡妇正在场或曾经在场，落难少女中毒。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/widow.png",

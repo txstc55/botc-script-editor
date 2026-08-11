@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 24,
@@ -234,9 +234,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "樂高想點氣處粉麥選素：想能提秀望接后条察 些導良玩家（与之南的每个夜院"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -759,8 +757,16 @@
       "y": 0.186
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "樂高想點氣處粉麥選素：想能提秀望接后条察 些導良玩家（与之南的每个夜院"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "该行是 OCR 对利维坦下方“贤者&利维坦”相克规则的误识别；24 个角色、七条相克规则和三条彩色说明均已逐项核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

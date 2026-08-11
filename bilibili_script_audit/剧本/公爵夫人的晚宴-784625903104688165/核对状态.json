@@ -17,13 +17,15 @@
     "对照图-07.png",
     "对照图-08.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
   "ocr_required_character_count": 25,
   "ocr_missing_characters": [],
-  "ocr_travelers_seen": [],
+  "ocr_travelers_seen": [
+    "小天鹅"
+  ],
   "ocr_ability_checks": [
     {
       "name": "公爵夫人",
@@ -41,14 +43,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "舞蛇人",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "气球驾驶员",
       "team": "townsfolk",
-      "ability_coverage": 0.4103
+      "ability_coverage": 1.0
     },
     {
       "name": "村夫",
@@ -56,32 +53,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "守夜人",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "巡山人",
-      "team": "townsfolk",
-      "ability_coverage": 0.9592
-    },
-    {
-      "name": "艺术家",
-      "team": "townsfolk",
-      "ability_coverage": 0.8571
-    },
-    {
-      "name": "渔夫",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "象棋大师",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "海滩拾荒者",
+      "name": "舞蛇人",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -91,13 +63,38 @@
       "ability_coverage": 0.9677
     },
     {
-      "name": "失忆者",
+      "name": "海滩拾荒者",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "梦游者",
-      "team": "outsider",
+      "name": "象棋大师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "守夜人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "渔夫",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "艺术家",
+      "team": "townsfolk",
+      "ability_coverage": 0.8571
+    },
+    {
+      "name": "巡山人",
+      "team": "townsfolk",
+      "ability_coverage": 0.9592
+    },
+    {
+      "name": "失忆者",
+      "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
@@ -106,7 +103,12 @@
       "ability_coverage": 0.4615
     },
     {
-      "name": "解谜大师",
+      "name": "政客",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "梦游者",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -116,17 +118,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "政客",
+      "name": "解谜大师",
       "team": "outsider",
       "ability_coverage": 1.0
     },
     {
-      "name": "寻谜者",
-      "team": "minion",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "毒瘴魔",
+      "name": "主谋",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -136,7 +133,12 @@
       "ability_coverage": 0.9508
     },
     {
-      "name": "主谋",
+      "name": "毒瘴魔",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "寻谜者",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -151,10 +153,14 @@
       "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "气球驾驶员"
+  "ocr_ability_mismatches": [],
+  "ocr_traveler_checks": [
+    {
+      "name": "小天鹅",
+      "team": "traveler",
+      "ability_coverage": 1.0
+    }
   ],
-  "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
@@ -181,6 +187,10 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
+      "text": "公爵夫人的邀请函：在游戏开始前，宣布公爵夫人在场，公爵夫人会在第1~3天的任意时间离场。在该剧本中旅行者有且至多存在一个，且只能是小天鹅。因为是私人宴会，在这个剧本中死兆星的能力做了游戏性调整。",
+      "text_coverage": 0.9535
+    },
+    {
       "text": "*代表非首个夜晚",
       "text_coverage": 1.0
     }
@@ -201,9 +211,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "小天鹅 Swan Lake"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -437,175 +445,7 @@
       "required_character_matches": 22
     },
     {
-      "image": "对照图-03.png",
-      "heading_characters": [
-        "公爵夫人",
-        "调查员",
-        "修行者",
-        "气球驾驶员",
-        "村夫",
-        "舞蛇人",
-        "博学者",
-        "告密者",
-        "象棋大师",
-        "守夜人",
-        "渔夫",
-        "艺术家",
-        "巡山人",
-        "落难少女",
-        "政客",
-        "解谜大师",
-        "梦游者",
-        "主谋",
-        "狐狸精",
-        "毒瘴魔",
-        "提线木偶",
-        "死兆星"
-      ],
-      "heading_character_details": [
-        {
-          "name": "公爵夫人",
-          "team": "",
-          "x": 0.13725,
-          "y": 0.9315
-        },
-        {
-          "name": "调查员",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.872
-        },
-        {
-          "name": "象棋大师",
-          "team": "townsfolk",
-          "x": 0.5607,
-          "y": 0.87039
-        },
-        {
-          "name": "修行者",
-          "team": "townsfolk",
-          "x": 0.14902,
-          "y": 0.8314
-        },
-        {
-          "name": "守夜人",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.81395
-        },
-        {
-          "name": "气球驾驶员",
-          "team": "townsfolk",
-          "x": 0.14895,
-          "y": 0.77594
-        },
-        {
-          "name": "渔夫",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.75436
-        },
-        {
-          "name": "村夫",
-          "team": "townsfolk",
-          "x": 0.14902,
-          "y": 0.731
-        },
-        {
-          "name": "艺术家",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.699
-        },
-        {
-          "name": "舞蛇人",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.686
-        },
-        {
-          "name": "巡山人",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.6468
-        },
-        {
-          "name": "博学者",
-          "team": "townsfolk",
-          "x": 0.15098,
-          "y": 0.6395
-        },
-        {
-          "name": "告密者",
-          "team": "outsider",
-          "x": 0.14902,
-          "y": 0.5218
-        },
-        {
-          "name": "落难少女",
-          "team": "outsider",
-          "x": 0.56275,
-          "y": 0.5218
-        },
-        {
-          "name": "政客",
-          "team": "outsider",
-          "x": 0.14902,
-          "y": 0.4825
-        },
-        {
-          "name": "解谜大师",
-          "team": "outsider",
-          "x": 0.56275,
-          "y": 0.4665
-        },
-        {
-          "name": "梦游者",
-          "team": "outsider",
-          "x": 0.14706,
-          "y": 0.433
-        },
-        {
-          "name": "主谋",
-          "team": "minion",
-          "x": 0.14902,
-          "y": 0.36628
-        },
-        {
-          "name": "提线木偶",
-          "team": "minion",
-          "x": 0.56074,
-          "y": 0.31674
-        },
-        {
-          "name": "狐狸精",
-          "team": "minion",
-          "x": 0.14902,
-          "y": 0.3125
-        },
-        {
-          "name": "毒瘴魔",
-          "team": "minion",
-          "x": 0.14902,
-          "y": 0.25145
-        },
-        {
-          "name": "死兆星",
-          "team": "demon",
-          "x": 0.14706,
-          "y": 0.17878
-        },
-        {
-          "name": "公爵夫人",
-          "team": "fabled",
-          "x": 0.56077,
-          "y": 0.17582
-        }
-      ],
-      "required_character_matches": 22
-    },
-    {
-      "image": "对照图-04.jpg",
+      "image": "对照图-03.jpg",
       "heading_characters": [
         "死兆星"
       ],
@@ -620,6 +460,12 @@
       "required_character_matches": 1
     },
     {
+      "image": "对照图-04.png",
+      "heading_characters": [],
+      "heading_character_details": [],
+      "required_character_matches": 0
+    },
+    {
       "image": "对照图-05.png",
       "heading_characters": [],
       "heading_character_details": [],
@@ -629,22 +475,16 @@
       "image": "对照图-06.png",
       "heading_characters": [],
       "heading_character_details": [],
-      "required_character_matches": 0
+      "required_character_matches": 1
     },
     {
       "image": "对照图-07.png",
       "heading_characters": [],
       "heading_character_details": [],
-      "required_character_matches": 1
-    },
-    {
-      "image": "对照图-08.png",
-      "heading_characters": [],
-      "heading_character_details": [],
       "required_character_matches": 0
     },
     {
-      "image": "对照图-09.png",
+      "image": "对照图-08.png",
       "heading_characters": [],
       "heading_character_details": [],
       "required_character_matches": 0
@@ -653,8 +493,7 @@
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-02.png",
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "主谋",
@@ -837,15 +676,13 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "气球驾驶员"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "小天鹅 Swan Lake"
-    ]
+    "unexplained_bottom_lines": []
   },
   "source_image_added_ids": [
     "ea2150600631e9298515f6ef4289180a44902471.jpg",

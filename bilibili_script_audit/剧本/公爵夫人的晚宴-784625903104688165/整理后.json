@@ -23,6 +23,10 @@
     ],
     "notes": [
       {
+        "text": "公爵夫人的邀请函：在游戏开始前，宣布公爵夫人在场，公爵夫人会在第1~3天的任意时间离场。在该剧本中旅行者有且至多存在一个，且只能是小天鹅。因为是私人宴会，在这个剧本中死兆星的能力做了游戏性调整。",
+        "html": "<span style=\"color: rgb(103, 69, 46); font-weight: 900;\">公爵夫人的邀请函</span>：在游戏开始前，宣布公爵夫人在场，公爵夫人会在第1~3天的任意时间离场。在该剧本中旅行者有且至多存在一个，且只能是小天鹅。因为是私人宴会，在这个剧本中死兆星的能力做了游戏性调整。"
+      },
+      {
         "text": "*代表非首个夜晚",
         "html": "<strong>*代表</strong>非首个夜晚"
       }
@@ -83,43 +87,21 @@
     "flavor": "此即梦境。彼亦梦境。所见之物，非此即彼。"
   },
   {
-    "id": "wocaishiemo1223322323232323",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
-    "edition": "custom",
-    "name": "舞蛇人",
-    "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 21,
-    "otherNight": 15,
-    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
-    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
-    "reminders": [
-      "中毒"
-    ],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
-  },
-  {
-    "id": "zhuijidelao1da111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
-    "edition": "custom",
+    "id": "气球驾驶员",
     "name": "气球驾驶员",
-    "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1外来者]",
     "team": "townsfolk",
-    "sch_team": "镇民",
+    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
     "firstNight": 50,
-    "otherNight": 90,
     "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
-    "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员曾经得知过的玩家属于不同的角色类型。",
+    "otherNight": 90,
+    "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
     "reminders": [
-      "得知镇民",
-      "得知外来者",
-      "得知爪牙",
-      "得知恶魔"
+      "得知"
     ],
-    "setup": 1
+    "remindersGlobal": [],
+    "setup": 1,
+    "flavor": ""
   },
   {
     "id": "jiushigebaichi111",
@@ -141,6 +123,74 @@
     "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
   },
   {
+    "id": "wocaishiemo1223322323232323",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snake_charmer.png",
+    "edition": "custom",
+    "name": "舞蛇人",
+    "ability": "每个夜晚，你要选择一名存活的玩家：如果你选中了恶魔，你和他交换角色和阵营，然后他中毒。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 21,
+    "otherNight": 15,
+    "firstNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "otherNightReminder": "让舞蛇人选择一名玩家。如果舞蛇人选中了恶魔：展示“你是”信息标记和恶魔角色标记。用拇指向下代表他阵营变为邪恶。在魔典中交换舞蛇人和恶魔的角色标记。让原来的舞蛇人重新入睡。唤醒原来的恶魔。对老恶魔展示“你是”信息标记和舞蛇人角色标记，并用拇指向上代表他阵营变为善良。",
+    "reminders": [
+      "中毒"
+    ],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "这位老爷……虽然我的烟斗是金色的，虽然我只要一首曲子就能驯服最狂野的灯神，但我只是一个卑贱的舞蛇人罢了，哎……听天由命吧。俗话说，人心不足蛇吞象。但不是我，这位老爷……真的不是我。"
+  },
+  {
+    "id": "huojin111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "edition": "custom",
+    "name": "博学者",
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
+  },
+  {
+    "id": "wuye_2",
+    "image": "https://www.helloimg.com/i/2025/01/10/6780d99152b95.png",
+    "edition": "custom",
+    "name": "海滩拾荒者",
+    "ability": "每个白天，你可以私下询问说书人以得知一条该剧本上的角色的能力无法得知的信息。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": 0
+  },
+  {
+    "id": "wuye_1",
+    "image": "https://www.helloimg.com/i/2025/01/10/6780d9a1eb305.png",
+    "edition": "custom",
+    "name": "象棋大师",
+    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人以得知你最重要的队友是谁，但不知道为什么。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "失去能力"
+    ],
+    "setup": 0
+  },
+  {
     "id": "wolaishouhunidemama111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/nightwatchman.png",
     "edition": "custom",
@@ -160,21 +210,21 @@
     "flavor": "The night is cold and lonely, but I have the moon, the stars, the crisp wind and the soft thud of leather boots on cobbled stone for company. Yonder, candlelight flickers behind a murky window..."
   },
   {
-    "id": "haogaodeshan111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/huntsman.png",
+    "id": "diaoshangyizhengtiandeyu111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
     "edition": "custom",
-    "name": "巡山人",
-    "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]",
+    "name": "渔夫",
+    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
     "team": "townsfolk",
     "sch_team": "镇民",
-    "firstNight": 34,
-    "otherNight": 77,
-    "firstNightReminder": "唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
-    "otherNightReminder": "如果巡山人未曾使用能力，唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
     "reminders": [
       "失去能力"
     ],
-    "setup": 1,
+    "setup": 0,
     "remindersGlobal": [],
     "flavor": ""
   },
@@ -198,72 +248,23 @@
     "flavor": "天啊！多么美妙的作品！我的作品……用你们的话怎么说来着……对，璀璨夺目！栩栩如生！没错！"
   },
   {
-    "id": "diaoshangyizhengtiandeyu111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
+    "id": "haogaodeshan111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/huntsman.png",
     "edition": "custom",
-    "name": "渔夫",
-    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
+    "name": "巡山人",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择一名存活的玩家：如果你选中了落难少女，她会变成一个不在场的镇民角色。[+落难少女]",
     "team": "townsfolk",
     "sch_team": "镇民",
-    "firstNight": 0,
-    "otherNight": 0,
-    "firstNightReminder": "",
-    "otherNightReminder": "",
+    "firstNight": 34,
+    "otherNight": 77,
+    "firstNightReminder": "唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
+    "otherNightReminder": "如果巡山人未曾使用能力，唤醒巡山人，他可以摇头不使用能力，或选择一名玩家。如果巡山人选中了落难少女，则在巡山人入睡后通知落难少女角色变化。",
     "reminders": [
       "失去能力"
     ],
-    "setup": 0,
+    "setup": 1,
     "remindersGlobal": [],
     "flavor": ""
-  },
-  {
-    "id": "wuye_1",
-    "image": "https://www.helloimg.com/i/2025/01/10/6780d9a1eb305.png",
-    "edition": "custom",
-    "name": "象棋大师",
-    "ability": "每局游戏限一次，在白天时，你可以私下询问说书人以得知你最重要的队友是谁，但不知道为什么。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 0,
-    "otherNight": 0,
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [
-      "失去能力"
-    ],
-    "setup": 0
-  },
-  {
-    "id": "wuye_2",
-    "image": "https://www.helloimg.com/i/2025/01/10/6780d99152b95.png",
-    "edition": "custom",
-    "name": "海滩拾荒者",
-    "ability": "每个白天，你可以私下询问说书人以得知一条该剧本上的角色的能力无法得知的信息。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 0,
-    "otherNight": 0,
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [],
-    "setup": 0
-  },
-  {
-    "id": "huojin111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
-    "edition": "custom",
-    "name": "博学者",
-    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 0,
-    "otherNight": 0,
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "shiyizhezhezhezhe",
@@ -280,6 +281,40 @@
     "reminders": [
       "？"
     ],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
+  },
+  {
+    "id": "abaaba111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
+    "edition": "custom",
+    "name": "告密者",
+    "ability": "爪牙会在其首个夜晚得知三个伪装。",
+    "team": "outsider",
+    "sch_team": "外来者",
+    "firstNight": 5,
+    "otherNight": 0,
+    "firstNightReminder": "如果告密者在场，对爪牙展示三个不在场的善良角色标记。",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": ""
+  },
+  {
+    "id": "tougexiangxian111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
+    "edition": "custom",
+    "name": "政客",
+    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+    "team": "outsider",
+    "sch_team": "外来者",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
     "setup": 0,
     "remindersGlobal": [],
     "flavor": ""
@@ -304,18 +339,20 @@
     "setup": 1
   },
   {
-    "id": "abaaba111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
+    "id": "bushiwo111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
     "edition": "custom",
-    "name": "告密者",
-    "ability": "爪牙会在其首个夜晚得知三个伪装。",
+    "name": "落难少女",
+    "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
     "team": "outsider",
     "sch_team": "外来者",
-    "firstNight": 5,
+    "firstNight": 5.1,
     "otherNight": 0,
-    "firstNightReminder": "如果告密者在场，对爪牙展示三个不在场的善良角色标记。",
-    "otherNightReminder": "",
-    "reminders": [],
+    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
+    "otherNightReminder": "0",
+    "reminders": [
+      "已被猜测"
+    ],
     "setup": 0,
     "remindersGlobal": [],
     "flavor": ""
@@ -341,56 +378,38 @@
     "flavor": ""
   },
   {
-    "id": "bushiwo111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/damsel.png",
+    "id": "zheshigeyizi111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
     "edition": "custom",
-    "name": "落难少女",
-    "ability": "所有爪牙都知道落难少女在场。每局游戏限一次，任意爪牙可以公开猜测你是落难少女，如果猜对，你的阵营落败。",
-    "team": "outsider",
-    "sch_team": "外来者",
-    "firstNight": 5.1,
-    "otherNight": 0,
-    "firstNightReminder": "如果落难少女在场，对爪牙展示落难少女角色标记。",
-    "otherNightReminder": "0",
-    "reminders": [
-      "已被猜测"
-    ],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": ""
-  },
-  {
-    "id": "tougexiangxian111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
-    "edition": "custom",
-    "name": "政客",
-    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
-    "team": "outsider",
-    "sch_team": "外来者",
+    "name": "主谋",
+    "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
+    "team": "minion",
+    "sch_team": "爪牙",
     "firstNight": 0,
     "otherNight": 0,
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "reminders": [],
+    "reminders": [
+      "主谋日"
+    ],
     "setup": 0,
     "remindersGlobal": [],
-    "flavor": ""
+    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。"
   },
   {
-    "id": "diexue_11",
-    "image": "https://www.helloimg.com/i/2025/01/10/6780ce55a7de8.png",
+    "id": "wuye_6",
+    "image": "https://www.helloimg.com/i/2025/01/10/6780d99fb7ea5.png",
     "edition": "custom",
-    "name": "寻谜者",
-    "ability": "你与一名善良玩家在首个夜晚得知一个问题。每局游戏限一次，你可以公开回答它，如果答对：你的阵营获胜。",
+    "name": "狐狸精",
+    "ability": "在你的首个夜晚，你得知五个不在场的角色。每个夜晚，你要选择其中一个角色：你获得其能力且可能被当做该角色与其对应的类型和阵营，直到下个黄昏。",
     "team": "minion",
     "sch_team": "爪牙",
-    "firstNight": 14,
-    "otherNight": 0,
-    "firstNightReminder": "分别唤醒寻谜者与一个善良玩家，告诉他们一个相同的谜题。",
-    "reminders": [
-      "得知谜题",
-      "答错了"
-    ]
+    "firstNight": 11,
+    "otherNight": 2,
+    "firstNightReminder": "唤醒狐狸精，告诉她五个不在场的角色。然后让她选择一个角色来获得能力。",
+    "otherNightReminder": "唤醒狐狸精，让她选择一个首夜得知的角色之一来获得能力。",
+    "reminders": [],
+    "setup": 0
   },
   {
     "id": "wuye_5",
@@ -411,38 +430,20 @@
     "setup": 0
   },
   {
-    "id": "wuye_6",
-    "image": "https://www.helloimg.com/i/2025/01/10/6780d99fb7ea5.png",
+    "id": "diexue_11",
+    "image": "https://www.helloimg.com/i/2025/01/10/6780ce55a7de8.png",
     "edition": "custom",
-    "name": "狐狸精",
-    "ability": "在你的首个夜晚，你得知五个不在场的角色。每个夜晚，你要选择其中一个角色：你获得其能力且可能被当做该角色与其对应的类型和阵营，直到下个黄昏。",
+    "name": "寻谜者",
+    "ability": "你与一名善良玩家在首个夜晚得知一个问题。每局游戏限一次，你可以公开回答它，如果答对：你的阵营获胜。",
     "team": "minion",
     "sch_team": "爪牙",
-    "firstNight": 11,
-    "otherNight": 2,
-    "firstNightReminder": "唤醒狐狸精，告诉她五个不在场的角色。然后让她选择一个角色来获得能力。",
-    "otherNightReminder": "唤醒狐狸精，让她选择一个首夜得知的角色之一来获得能力。",
-    "reminders": [],
-    "setup": 0
-  },
-  {
-    "id": "zheshigeyizi111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mastermind.png",
-    "edition": "custom",
-    "name": "主谋",
-    "ability": "如果恶魔因为死于处决而因此导致游戏结束时，再额外进行一个夜晚和一个白天。在那个白天如果有玩家被处决，他的阵营落败。",
-    "team": "minion",
-    "sch_team": "爪牙",
-    "firstNight": 0,
+    "firstNight": 14,
     "otherNight": 0,
-    "firstNightReminder": "",
-    "otherNightReminder": "",
+    "firstNightReminder": "分别唤醒寻谜者与一个善良玩家，告诉他们一个相同的谜题。",
     "reminders": [
-      "主谋日"
-    ],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。"
+      "得知谜题",
+      "答错了"
+    ]
   },
   {
     "id": "zheyeshigejiugui111",
@@ -519,5 +520,20 @@
     "team": "jinx",
     "setup": 0,
     "ability": "如果提线木偶抽到了巡山人，也会增加落难少女。"
+  },
+  {
+    "id": "小天鹅",
+    "name": "小天鹅",
+    "team": "traveler",
+    "ability": "你存活时公爵夫人会在游戏中，如果三名玩家拜访公爵夫人，你必须是其中之一。",
+    "image": "https://youke1.picui.cn/s1/2025/07/29/6888a4588e435.png",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   }
 ]
