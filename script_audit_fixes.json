@@ -7124,6 +7124,287 @@
           ]
         }
       ]
+    },
+    {
+      "source": "Bilibili 783248661741043796 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#偷天换日.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "占卜师",
+          "old_team": "townsfolk",
+          "new_name": "失忆者",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/官方已发行剧本/#窃窃私语·汀.json"
+        }
+      ],
+      "meta_updates": {
+        "name": "偷天换日V6.0.0"
+      },
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "小精灵",
+            "将军",
+            "数学家",
+            "共情者",
+            "旅店老板",
+            "城镇公告员",
+            "卖花女孩",
+            "博学者",
+            "半兽人",
+            "女裁缝",
+            "守鸦人",
+            "失忆者",
+            "魔术师"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "疯子",
+            "畸形秀演员",
+            "莽夫",
+            "酒鬼",
+            "陌客"
+          ]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "投毒者",
+            "鹰身女妖",
+            "女巫",
+            "红唇女郎"
+          ]
+        },
+        {
+          "team": "demon",
+          "names": [
+            "小恶魔",
+            "普卡",
+            "方古"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1046121761220853763 对照图-03",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2025剧本世界杯/#兔子洞v4-Zets.json"
+      ],
+      "additions": [
+        {
+          "name": "私货商人",
+          "team": "fabled",
+          "patch": {
+            "ability": "狡兔三窟：如果有五名或五名以上的玩家存活，提名了其他存活邪恶玩家的邪恶玩家（非旅行者），两者之间立即交换角色。"
+          }
+        }
+      ],
+      "meta_updates": {
+        "name": "兔子洞V4.0.0"
+      },
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "小精灵",
+            "修行者",
+            "占卜师",
+            "气球驾驶员",
+            "传教士",
+            "送葬者",
+            "城镇公告员",
+            "杂耍艺人",
+            "博学者",
+            "失忆者",
+            "艺术家",
+            "守鸦人",
+            "镇长"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "管家",
+            "瘟疫医生",
+            "解谜大师",
+            "圣徒"
+          ]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "刺客",
+            "洗脑师",
+            "哥布林",
+            "寡妇"
+          ]
+        },
+        {
+          "team": "demon",
+          "names": [
+            "军团",
+            "卡扎力",
+            "方古",
+            "诺-达鲺"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1009223186069323784 正文 2025.10.29 更新说明",
+      "targets": [
+        "all_jsons/城市赛专属剧本/#先礼后兵-MtyJ.json"
+      ],
+      "replacements": [
+        {
+          "old_name": "渔夫",
+          "old_team": "townsfolk",
+          "new_name": "僧侣",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/官方已发行剧本/#暗流涌动.json"
+        }
+      ],
+      "additions": [
+        {
+          "name": "气球驾驶员",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1197465018500644869 对照图-02",
+      "targets": [
+        "all_jsons/BWG·剧本大乱斗/我说一下—SUI厂牌/#全员拜访-悲悼伶人/#全员拜访-悲悼伶人.json"
+      ],
+      "meta_updates": {
+        "name": "全员拜访",
+        "author": "“我说一下”—悲悼伶人"
+      },
+      "full_roster": {
+        "entries": [
+          {"name": "祖母", "team": "townsfolk"},
+          {"name": "贵族", "team": "townsfolk"},
+          {"name": "共情者", "team": "townsfolk"},
+          {"name": "占卜师", "team": "townsfolk"},
+          {"name": "舞蛇人", "team": "townsfolk"},
+          {"name": "赌徒", "team": "townsfolk"},
+          {
+            "name": "半兽人",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "每个夜晚*，你要选择一名存活的玩家：如果他是善良的，他死亡，并且当晚恶魔不会造成死亡。会有一名善良玩家始终被当作邪恶阵营。"
+            }
+          },
+          {"name": "哲学家", "team": "townsfolk"},
+          {"name": "鸩", "team": "townsfolk"},
+          {
+            "name": "造谣者",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "每个白天，你可以公开发表一个声明。如果该声明正确，在当晚会有一名玩家死亡。"
+            }
+          },
+          {
+            "name": "博学者",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "每个白天，你可以私下拜访说书人获得两条信息：一个是正确的，一个是错误的。"
+            }
+          },
+          {
+            "name": "炼金术士",
+            "team": "townsfolk",
+            "overrides": {
+              "ability": "你拥有一个爪牙角色的能力。当你使用能力时，说书人可能会要求你更换选择。"
+            }
+          },
+          {"name": "守鸦人", "team": "townsfolk"},
+          {
+            "entry": {
+              "id": "3_22",
+              "name": "上帝信徒",
+              "team": "townsfolk",
+              "ability": "如果你是善良的，你不会死亡。你每次因自身能力免于死亡，会有一名镇民开始醉酒。"
+            }
+          },
+          {"name": "酒鬼", "team": "outsider"},
+          {"name": "魔像", "team": "outsider"},
+          {"name": "畸形秀演员", "team": "outsider"},
+          {"name": "食人魔", "team": "outsider"},
+          {
+            "entry": {
+              "id": "4_22",
+              "name": "上帝酒友",
+              "team": "minion",
+              "ability": "每局游戏限一次，在夜晚时，你可以决定下次拜访日事件（即使已经被其他人决定），或者使所有人在下个白天拜访说书人时醉酒到黄昏。"
+            }
+          },
+          {"name": "投毒者", "team": "minion"},
+          {
+            "name": "魔鬼代言人",
+            "team": "minion",
+            "overrides": {
+              "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。"
+            }
+          },
+          {"name": "精神病患者", "team": "minion"},
+          {"name": "狐媚娘", "team": "minion"},
+          {"name": "牙噶巴卜", "team": "demon"},
+          {
+            "name": "痢蛭",
+            "team": "demon",
+            "overrides": {
+              "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他处于死亡状态时你才会立即死亡。"
+            }
+          },
+          {"name": "卡扎力", "team": "demon"},
+          {
+            "name": "姑获鸟",
+            "team": "demon",
+            "overrides": {
+              "ability": "每个夜晚*，你要选择一名玩家：他死亡。当爪牙死于处决时，你可能会获得他的能力，但每局游戏仅能获得一次。"
+            }
+          },
+          {
+            "entry": {
+              "id": "_22",
+              "name": "全员拜访",
+              "team": "fabled",
+              "ability": "只有邪恶玩家会在晚上醒来，其他玩家可以在白天拜访说书人时发动技能，每个白天每名玩家只能拜访一次。"
+            }
+          },
+          {
+            "entry": {
+              "id": "2_22",
+              "name": "拜访日事件",
+              "team": "fabled",
+              "ability": "每个晚上，说书人会提供一些拜访日事件。1分钟之后被最多手指选中的玩家与恶魔进行猜拳，由获胜玩家决定次日事件，平局由说书人决定。"
+            }
+          },
+          {
+            "entry": {
+              "id": "1_22",
+              "name": "拜访相克",
+              "team": "fabled",
+              "ability": "善良阵营的技能造成的死亡由说书人决定死亡时间；死亡时发动的技能在得知死亡的那天白天才能发动。"
+            }
+          }
+        ]
+      }
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",

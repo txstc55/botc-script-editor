@@ -11,11 +11,11 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 5,
-  "ocr_required_character_count": 5,
+  "ocr_character_matches": 30,
+  "ocr_required_character_count": 30,
   "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "拜访相克"
@@ -49,59 +49,158 @@
     "痢蛭",
     "姑获鸟"
   ],
-  "ocr_unexpected_characters": [
-    "祖母",
-    "哲学家",
-    "贵族",
-    "鸩",
-    "共情者",
-    "造谣者",
-    "占卜师",
-    "博学者",
-    "舞蛇人",
-    "炼金术士",
-    "赌徒",
-    "守鸦人",
-    "半兽人",
-    "酒鬼",
-    "畸形秀演员",
-    "魔像",
-    "食人魔",
-    "精神病患者",
-    "投毒者",
-    "狐媚娘",
-    "魔鬼代言人",
-    "卡扎力",
-    "牙噶巴卜",
-    "痢蛭",
-    "姑获鸟"
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
-      "name": "全员拜访",
-      "team": "fabled",
-      "ability_coverage": 0.7576
+      "name": "祖母",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
     },
     {
-      "name": "拜访相克",
-      "team": "fabled",
-      "ability_coverage": 0.9333
+      "name": "贵族",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
     },
     {
-      "name": "拜访日事件",
-      "team": "fabled",
-      "ability_coverage": 0.5667
+      "name": "共情者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "占卜师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "舞蛇人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "赌徒",
+      "team": "townsfolk",
+      "ability_coverage": 0.8966
+    },
+    {
+      "name": "半兽人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "哲学家",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "鸩",
+      "team": "townsfolk",
+      "ability_coverage": 0.9355
+    },
+    {
+      "name": "造谣者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "博学者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "炼金术士",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "守鸦人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
     },
     {
       "name": "上帝信徒",
       "team": "townsfolk",
-      "ability_coverage": 0.4906
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "酒鬼",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "魔像",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "畸形秀演员",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "食人魔",
+      "team": "outsider",
+      "ability_coverage": 1.0
     },
     {
       "name": "上帝酒友",
       "team": "minion",
-      "ability_coverage": 0.5429
+      "ability_coverage": 0.9434
+    },
+    {
+      "name": "投毒者",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "魔鬼代言人",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "精神病患者",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "狐媚娘",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "牙噶巴卜",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "痢蛭",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "卡扎力",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "姑获鸟",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "全员拜访",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "拜访日事件",
+      "team": "fabled",
+      "ability_coverage": 0.9464
+    },
+    {
+      "name": "拜访相克",
+      "team": "fabled",
+      "ability_coverage": 1.0
     }
   ],
   "ocr_ability_mismatches": [],
@@ -137,12 +236,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "当爪牙死于处决时，你可能会获得他的能力，但每局游戏仅能",
-    "在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他",
-    "获得一次。",
-    "处于死亡状态时你才会立即死亡。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -363,7 +457,7 @@
           "y": 0.1875
         }
       ],
-      "required_character_matches": 4
+      "required_character_matches": 29
     }
   ],
   "ocr_source_board_groups": [
@@ -575,15 +669,12 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "当爪牙死于处决时，你可能会获得他的能力，但每局游戏仅能",
-      "在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他",
-      "获得一次。",
-      "处于死亡状态时你才会立即死亡。"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

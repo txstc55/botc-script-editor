@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "source_unavailable",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 0,
@@ -26,7 +26,7 @@
     "气球驾驶员",
     "道士",
     "杂技演员",
-    "渔夫",
+    "僧侣",
     "鸩",
     "哲学家",
     "秉笔",
@@ -87,7 +87,7 @@
     {
       "name": "气球驾驶员",
       "team": "townsfolk",
-      "ability_coverage": 0.0256
+      "ability_coverage": 0.0312
     },
     {
       "name": "道士",
@@ -100,7 +100,7 @@
       "ability_coverage": 0.0
     },
     {
-      "name": "渔夫",
+      "name": "僧侣",
       "team": "townsfolk",
       "ability_coverage": 0.0
     },
@@ -190,7 +190,7 @@
     "气球驾驶员",
     "道士",
     "杂技演员",
-    "渔夫",
+    "僧侣",
     "鸩",
     "哲学家",
     "秉笔",
@@ -290,8 +290,44 @@
       "y": 0.14535
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "source_unavailable": true,
+    "source_image": "对照图-02.png",
+    "source_data": "原帖正文 2025.10.29 更新说明",
+    "reason": "原帖目前只保留 logo 与封面，角色板面已不可访问，无法逐项核对。正文明确记录最新版将渔夫替换为僧侣，并将气球驾驶员替换为新版；这两项已应用，其余内容按“来源过期可忽略”保留。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [
+      "厨师",
+      "阴阳师",
+      "钦天监",
+      "共情者",
+      "占卜师",
+      "传教士",
+      "气球驾驶员",
+      "道士",
+      "杂技演员",
+      "僧侣",
+      "鸩",
+      "哲学家",
+      "秉笔",
+      "酒鬼",
+      "月之子",
+      "食人魔",
+      "煞星",
+      "投毒者",
+      "红唇女郎",
+      "教父",
+      "刺客",
+      "女巫",
+      "小恶魔",
+      "奥赫",
+      "混沌"
+    ],
+    "unexpected_characters": [
+      "\"外来者\"",
+      "\"爪牙\""
+    ],
     "ability_mismatches": [
       "厨师",
       "阴阳师",
@@ -302,7 +338,7 @@
       "气球驾驶员",
       "道士",
       "杂技演员",
-      "渔夫",
+      "僧侣",
       "鸩",
       "哲学家",
       "秉笔",

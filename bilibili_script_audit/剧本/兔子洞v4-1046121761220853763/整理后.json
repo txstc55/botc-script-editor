@@ -2,7 +2,7 @@
   {
     "id": "_meta",
     "author": "Zets",
-    "name": "#兔子洞v4-Zets",
+    "name": "兔子洞V4.0.0",
     "logo": "https://www.bloodstar.xyz/p/SerraEvelyn/tuzidong/_meta.png",
     "firstNight": [
       "dusk",
@@ -123,6 +123,23 @@
       "得知"
     ],
     "setup": 1
+  },
+  {
+    "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
+    "firstNight": 14,
+    "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+    "flavor": "富有和健康总比贫穷和疾病要好。",
+    "id": "preacher",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
+    "name": "传教士",
+    "otherNight": 7,
+    "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+    "reminders": [
+      "失去能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "team": "townsfolk"
   },
   {
     "id": "wanizufen111",
@@ -264,21 +281,38 @@
     "flavor": ""
   },
   {
-    "ability": "每个夜晚，你要选择一名玩家：如果选中了爪牙，他会得知被传教士选中。所有被你选中的爪牙失去能力。",
-    "firstNight": 14,
-    "firstNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
-    "flavor": "富有和健康总比贫穷和疾病要好。",
-    "id": "preacher",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/preacher.png",
-    "name": "传教士",
-    "otherNight": 7,
-    "otherNightReminder": "传教士选择一名玩家。如果选中了爪牙，则唤醒并告知他被传教士选中。",
+    "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。",
+    "firstNight": 38,
+    "firstNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
+    "flavor": "",
+    "id": "butler",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/butler.png",
+    "name": "管家",
+    "otherNight": 55,
+    "otherNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
     "reminders": [
-      "失去能力"
+      "主人"
     ],
     "remindersGlobal": [],
     "setup": 0,
-    "team": "townsfolk"
+    "team": "outsider"
+  },
+  {
+    "ability": "当你死亡时，说书人会获得一个爪牙能力。",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。",
+    "id": "plaguedoctor",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+    "name": "瘟疫医生",
+    "otherNight": 0,
+    "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
+    "reminders": [
+      "说书人能力"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "team": "outsider"
   },
   {
     "id": "wudidejiemidashi111",
@@ -316,38 +350,23 @@
     "flavor": ""
   },
   {
-    "ability": "每个夜晚，你要选择除你以外的一名玩家：明天白天，只有他投票时你才能投票。",
-    "firstNight": 38,
-    "firstNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
-    "flavor": "",
-    "id": "butler",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/butler.png",
-    "name": "管家",
-    "otherNight": 55,
-    "otherNightReminder": "让管家选择一名玩家。标记那名玩家为他的主人。",
-    "reminders": [
-      "主人"
-    ],
-    "remindersGlobal": [],
-    "setup": 0,
-    "team": "outsider"
-  },
-  {
-    "ability": "当你死亡时，说书人会获得一个爪牙能力。",
+    "id": "baonijuhua111",
+    "name": "刺客",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
+    "team": "minion",
+    "edition": "custom",
+    "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
     "firstNight": 0,
-    "firstNightReminder": "",
-    "flavor": "辟免剧勒润动。输要时间康护。莫要，抹药。",
-    "id": "plaguedoctor",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
-    "name": "瘟疫医生",
-    "otherNight": 0,
-    "otherNightReminder": "如果瘟疫医生死亡，说书人获得一项爪牙能力。",
+    "otherNight": 52,
+    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
     "reminders": [
-      "说书人能力"
+      "失去能力",
+      "死亡"
     ],
+    "firstNightReminder": "",
     "remindersGlobal": [],
     "setup": 0,
-    "team": "outsider"
+    "flavor": ""
   },
   {
     "id": "xixi111111111111",
@@ -366,6 +385,23 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "所谓的现实，其实，只是一种想法罢了。具体点来说，是我的想法。"
+  },
+  {
+    "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
+    "firstNight": 0,
+    "firstNightReminder": "",
+    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？",
+    "id": "goblin",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
+    "name": "哥布林",
+    "otherNight": 0,
+    "otherNightReminder": "",
+    "reminders": [
+      "已宣称"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "team": "minion"
   },
   {
     "id": "youzhizhua11111111",
@@ -388,59 +424,22 @@
     "flavor": ""
   },
   {
-    "id": "baonijuhua111",
-    "name": "刺客",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/assassin.png",
-    "team": "minion",
-    "edition": "custom",
-    "ability": "每局游戏限一次，在夜晚时*，你可以选择一名玩家：他死亡，即使因为任何原因让他不会死亡。",
+    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
     "firstNight": 0,
-    "otherNight": 52,
-    "otherNightReminder": "刺客可以选择一名玩家。如果他这么做了，标记那名玩家死亡，且刺客失去能力，之后的夜晚无需再唤醒刺客。",
+    "firstNightReminder": "",
+    "flavor": "",
+    "id": "legion",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
+    "name": "军团",
+    "otherNight": 34,
+    "otherNightReminder": "由说书人决定，让哪一名玩家死亡。",
     "reminders": [
-      "失去能力",
+      "即将被处决",
       "死亡"
     ],
-    "firstNightReminder": "",
     "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "ability": "如果你在被提名后公开声明自己是哥布林且在那个白天被处决，你的阵营获胜。",
-    "firstNight": 0,
-    "firstNightReminder": "",
-    "flavor": "你不会想要侮辱哥布林的。你真的，真的不会。让我们换个话题……我能再吃一块蛋糕吗？",
-    "id": "goblin",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/goblin.png",
-    "name": "哥布林",
-    "otherNight": 0,
-    "otherNightReminder": "",
-    "reminders": [
-      "已宣称"
-    ],
-    "remindersGlobal": [],
-    "setup": 0,
-    "team": "minion"
-  },
-  {
-    "id": "meiyoudashi11111",
-    "name": "诺-达鲺",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
-    "team": "demon",
-    "edition": "custom",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
-    "firstNight": 0,
-    "otherNight": 37,
-    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
-    "reminders": [
-      "中毒",
-      "死亡"
-    ],
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
+    "setup": 1,
+    "team": "demon"
   },
   {
     "id": "kakakakkakakakakakakakaakakak111",
@@ -480,22 +479,23 @@
     "team": "demon"
   },
   {
-    "ability": "每个夜晚*，可能有一名玩家死亡。如果一项提名只有邪恶玩家投票，投票无效。你也会被当作是爪牙。[半数以上玩家为军团]",
+    "id": "meiyoudashi11111",
+    "name": "诺-达鲺",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/no_dashii.png",
+    "team": "demon",
+    "edition": "custom",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
     "firstNight": 0,
-    "firstNightReminder": "",
-    "flavor": "",
-    "id": "legion",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
-    "name": "军团",
-    "otherNight": 34,
-    "otherNightReminder": "由说书人决定，让哪一名玩家死亡。",
+    "otherNight": 37,
+    "otherNightReminder": "让诺-达鲺选择一名玩家。标记那名玩家死亡。",
     "reminders": [
-      "即将被处决",
+      "中毒",
       "死亡"
     ],
+    "firstNightReminder": "",
     "remindersGlobal": [],
-    "setup": 1,
-    "team": "demon"
+    "setup": 0,
+    "flavor": "彼因汝之罪孽，吾已嗅汝之恶臭满溢全身。时日曷丧？予及汝皆亡。竖子命如草芥，以吾之力，使汝终末于深海，终于此良夜。"
   },
   {
     "id": "35addde2-e27a-4de2-9a9e-df0e78364717",
@@ -503,7 +503,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202304/c_1310810162861_4da173fa.jpg",
     "team": "fabled",
     "edition": "custom",
-    "ability": "这个剧本包含有自制角色或自制规则。",
+    "ability": "狡兔三窟：如果有五名或五名以上的玩家存活，提名了其他存活邪恶玩家的邪恶玩家（非旅行者），两者之间立即交换角色。",
     "firstNight": 0,
     "otherNight": 0
   },

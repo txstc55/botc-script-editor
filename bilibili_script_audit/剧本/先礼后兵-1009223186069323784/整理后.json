@@ -126,7 +126,7 @@
     "image": "https://clocktower-wiki.gstonegames.com/images/thumb/3/35/Balloonist.png/300px-Balloonist.png",
     "edition": "custom",
     "name": "气球驾驶员",
-    "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1 外来者]",
+    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 50,
@@ -181,23 +181,22 @@
     "flavor": "列位看官，请扶好帽盔，我将逆天而行，踏空起舞！身如飞燕，胆若雷霆，只为博君一笑一惊！"
   },
   {
-    "id": "diaoshangyizhengtiandeyu111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fisherman.png",
+    "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
     "edition": "custom",
-    "name": "渔夫",
-    "ability": "每局游戏限一次，在白天时，你可以让说书人给你一些能帮助你的阵营获胜的建议。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 0,
-    "otherNight": 0,
+    "flavor": "",
+    "id": "1_15",
     "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [
-      "失去能力"
-    ],
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
+    "name": "僧侣",
+    "otherNight": 13,
     "setup": 0,
+    "reminders": [
+      "保护"
+    ],
     "remindersGlobal": [],
-    "flavor": ""
+    "team": "townsfolk",
+    "firstNight": 0
   },
   {
     "id": "zhenaosheajwiejp214ui90-japtu90q23j5t",
