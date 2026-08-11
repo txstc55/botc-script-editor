@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -79,11 +79,6 @@
       "ability_coverage": 0.9524
     },
     {
-      "name": "唱诗男孩",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "城镇公告员",
       "team": "townsfolk",
       "ability_coverage": 1.0
@@ -114,17 +109,22 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "唱诗男孩",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "罂粟种植者",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "酒鬼",
+      "name": "陌客",
       "team": "outsider",
       "ability_coverage": 1.0
     },
     {
-      "name": "陌客",
+      "name": "酒鬼",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -139,17 +139,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "红唇女郎",
-      "team": "minion",
-      "ability_coverage": 0.8333
-    },
-    {
-      "name": "男爵",
+      "name": "科学怪人",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
-      "name": "科学怪人",
+      "name": "男爵",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -159,12 +154,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "小恶魔",
-      "team": "demon",
-      "ability_coverage": 1.0
+      "name": "红唇女郎",
+      "team": "minion",
+      "ability_coverage": 0.8333
     },
     {
-      "name": "诺-达鲺",
+      "name": "小恶魔",
       "team": "demon",
       "ability_coverage": 1.0
     },
@@ -172,6 +167,11 @@
       "name": "痢蛭",
       "team": "demon",
       "ability_coverage": 0.9423
+    },
+    {
+      "name": "诺-达鲺",
+      "team": "demon",
+      "ability_coverage": 1.0
     },
     {
       "name": "军团",
@@ -187,9 +187,7 @@
       "ability_coverage": 0.1923
     }
   ],
-  "ocr_traveler_mismatches": [
-    "侏儒"
-  ],
+  "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
       "name": "科学怪人&酒鬼",
@@ -644,8 +642,16 @@
       "y": 0.18
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_travelers": [
+      "侏儒"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "原帖封底单独展示侏儒旅行者，其能力与 JSON 逐字一致；正面 25 个角色、两条相克规则和三条带颜色说明也已逐项核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [
       "侏儒"

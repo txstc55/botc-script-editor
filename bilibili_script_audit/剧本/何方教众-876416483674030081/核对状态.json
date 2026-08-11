@@ -12,14 +12,12 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 26,
-  "ocr_required_character_count": 27,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 26,
+  "ocr_missing_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -40,7 +38,7 @@
     {
       "name": "气球驾驶员",
       "team": "townsfolk",
-      "ability_coverage": 0.4615
+      "ability_coverage": 1.0
     },
     {
       "name": "国王",
@@ -150,17 +148,10 @@
     {
       "name": "暴风捕手",
       "team": "fabled",
-      "ability_coverage": 0.8163
-    },
-    {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.2857
+      "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
@@ -197,9 +188,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "母个夜晚，"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -813,11 +802,17 @@
       "y": 0.17297
     }
   ],
-  "manual_verification": {},
-  "ocr_raw_issues": {
-    "ability_mismatches": [
-      "灯神"
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "母个夜晚，"
     ],
+    "source_image": "对照图-02.png",
+    "reason": "该行是 OCR 将小怪宝能力开头的“每个夜晚”误识别为“母个夜晚”；26 个角色、两条相克规则、暴风捕手规则、作者及底部说明均已逐项核对。"
+  },
+  "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

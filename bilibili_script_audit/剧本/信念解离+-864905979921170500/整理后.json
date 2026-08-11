@@ -2,7 +2,7 @@
   {
     "id": "_meta",
     "name": "信念解离+",
-    "author": "Cake&David",
+    "author": "Cake Found & David L",
     "logo": "https://i.postimg.cc/FK7ZbJ4B/LOGO.png",
     "notes": [
       {
@@ -50,20 +50,6 @@
     "ability": "每个夜晚*，你要选择一名玩家：如果他同意，你们都会得知他是否是恶魔。你不可能是恶魔。"
   },
   {
-    "id": "conspiracy",
-    "image": "https://i.postimg.cc/LXpyTSMg/freemasonry-1.png",
-    "firstNight": 14,
-    "firstNightReminder": "唤醒阴谋论者，让他指出与初始邪恶玩家数量相等的玩家。如果他指出所有邪恶玩家，善良阵营获胜。",
-    "otherNight": 12,
-    "otherNightReminder": "移除被选择标记。唤醒阴谋论者，让他指出与初始邪恶玩家数量相等的玩家。如果他指出所有邪恶玩家，善良阵营获胜。",
-    "reminders": [
-      "被选择"
-    ],
-    "name": "阴谋论者",
-    "team": "townsfolk",
-    "ability": "每个夜晚，你要选择与初始邪恶玩家数量相等的玩家：如果你选择的玩家都是邪恶的，善良阵营获胜。"
-  },
-  {
     "id": "vividdreamer",
     "image": "https://i.postimg.cc/t4smRD5J/dream-catcher-1.png",
     "firstNight": 13,
@@ -94,6 +80,20 @@
     "name": "药师",
     "team": "townsfolk",
     "ability": "每个夜晚，你要选择两名玩家：一名玩家健康清醒且恶魔的负面能力对他无效，另一名玩家醉酒，直至下个黄昏。"
+  },
+  {
+    "id": "conspiracy",
+    "image": "https://i.postimg.cc/LXpyTSMg/freemasonry-1.png",
+    "firstNight": 14,
+    "firstNightReminder": "唤醒阴谋论者，让他指出与初始邪恶玩家数量相等的玩家。如果他指出所有邪恶玩家，善良阵营获胜。",
+    "otherNight": 12,
+    "otherNightReminder": "移除被选择标记。唤醒阴谋论者，让他指出与初始邪恶玩家数量相等的玩家。如果他指出所有邪恶玩家，善良阵营获胜。",
+    "reminders": [
+      "被选择"
+    ],
+    "name": "阴谋论者",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你要选择与初始邪恶玩家数量相等的玩家：如果你选择的玩家都是邪恶的，善良阵营获胜。"
   },
   {
     "id": "securityguard",
@@ -282,6 +282,21 @@
     "ability": "每个夜晚*，你要选择一名玩家（与上个夜晚不同）。他在当晚会被当作邪恶阵营和恶魔角色。"
   },
   {
+    "id": "schemer",
+    "image": "https://i.postimg.cc/7YfNShTQ/suspicious.png",
+    "firstNight": 17,
+    "firstNightReminder": "唤醒幕后黑手，给他指出恶魔当晚选择的玩家。如果他点头，为他放置化身为魔标记，将他的角色标记替换为那个善良角色标记，并为他放置恶魔提示标记（可以与当前恶魔不同）。向他展示“你是”提示卡，并展示一个善良角色。。移除当前恶魔的恶魔提示标记。如果幕后黑手变为二重身，他会得知一个在场的善良角色，并且他与那个在场善良角色的玩家都变为二重身。",
+    "otherNight": 21,
+    "otherNightReminder": "唤醒幕后黑手，给他指出恶魔当晚选择的玩家。如果他点头，为他放置化身为魔标记，将他的角色标记替换为那个善良角色标记，并为他放置恶魔提示标记（可以与当前恶魔不同）。向他展示“你是”提示卡，并展示一个善良角色。移除当前恶魔的恶魔提示标记。如果幕后黑手变为二重身，他会得知一个在场的善良角色，并且他与那个在场善良角色的玩家都变为二重身。",
+    "reminders": [
+      "化身为魔"
+    ],
+    "remindersGlobal": [],
+    "name": "幕后黑手",
+    "team": "minion",
+    "ability": "每个夜晚，你可以选择变为恶魔。如果你变为恶魔，当前的恶魔玩家会变为他自以为的善良角色。你会得知恶魔每晚选择的玩家。"
+  },
+  {
     "id": "shoulderdevil",
     "image": "https://i.postimg.cc/BQ6mNNRp/gargoyle.png",
     "firstNight": 18,
@@ -296,21 +311,6 @@
     "name": "代行邪魔",
     "team": "minion",
     "ability": "每个夜晚*，你要选择一名玩家：他今晚选择的玩家之一会死亡。始终会有一名善良玩家知道你在场。恶魔无法制造死亡。"
-  },
-  {
-    "id": "schemer",
-    "image": "https://i.postimg.cc/7YfNShTQ/suspicious.png",
-    "firstNight": 17,
-    "firstNightReminder": "唤醒幕后黑手，给他指出恶魔当晚选择的玩家。如果他点头，为他放置化身为魔标记，将他的角色标记替换为那个善良角色标记，并为他放置恶魔提示标记（可以与当前恶魔不同）。向他展示“你是”提示卡，并展示一个善良角色。。移除当前恶魔的恶魔提示标记。如果幕后黑手变为二重身，他会得知一个在场的善良角色，并且他与那个在场善良角色的玩家都变为二重身。",
-    "otherNight": 21,
-    "otherNightReminder": "唤醒幕后黑手，给他指出恶魔当晚选择的玩家。如果他点头，为他放置化身为魔标记，将他的角色标记替换为那个善良角色标记，并为他放置恶魔提示标记（可以与当前恶魔不同）。向他展示“你是”提示卡，并展示一个善良角色。移除当前恶魔的恶魔提示标记。如果幕后黑手变为二重身，他会得知一个在场的善良角色，并且他与那个在场善良角色的玩家都变为二重身。",
-    "reminders": [
-      "化身为魔"
-    ],
-    "remindersGlobal": [],
-    "name": "幕后黑手",
-    "team": "minion",
-    "ability": "每个夜晚，你可以选择变为恶魔。如果你变为恶魔，当前的恶魔玩家会变为他自以为的善良角色。你会得知恶魔每晚选择的玩家。"
   },
   {
     "id": "psycho",
@@ -344,7 +344,7 @@
     "setup": 1,
     "name": "躁狂症",
     "team": "demon",
-    "ability": "[只能是镇民]你首次杀死的镇民会中毒，改为与他邻近的一名玩家死亡。"
+    "ability": "[只能是镇民]当你首次因自身能力选择镇民时：他中毒，改为一名与他邻近的玩家会死亡。"
   },
   {
     "id": "sociopath",
@@ -361,7 +361,7 @@
     "setup": 1,
     "name": "反社会人格",
     "team": "demon",
-    "ability": "[只能是外来者]你首次杀死外来者时，改为与他邻近的一名玩家死亡。"
+    "ability": "[只能是外来者]当你首次因自身能力选择外来者时，改为一名与他邻近的玩家死亡。"
   },
   {
     "id": "doppelganger",
@@ -380,24 +380,20 @@
     "ability": "[镇民或外来者]会有两名玩家是二重身且拥有相同角色能力。你们不能杀死彼此。每晚你们有且仅有一人能够造成死亡。[-1爪牙]"
   },
   {
-    "id": "Misremember",
-    "image": "https://i.postimg.cc/Y26bqx9x/screaming.png",
-    "firstNight": 0,
-    "otherNight": 0,
-    "reminders": [],
-    "name": "认知错位",
+    "id": "私货商人",
+    "name": "私货商人",
     "team": "fabled",
-    "ability": "恶魔自以为是一个善良角色，并能够正常使用该角色能力，但其实他不是。"
-  },
-  {
-    "id": "twistedminds",
-    "image": "https://i.postimg.cc/Gt3qWjtc/gooey-eyed-sun.png",
+    "edition": "custom",
+    "ability": "邪灵附身：恶魔以为自己是一个善良角色，并能够使用该角色能力，但其实他不是。爪牙代替恶魔获得不在场角色信息。恶魔不会获得初始信息。爪牙可能会得知错误的恶魔。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bootlegger.png",
     "firstNight": 0,
+    "firstNightReminder": "",
     "otherNight": 0,
+    "otherNightReminder": "",
     "reminders": [],
-    "name": "精神扭曲",
-    "team": "fabled",
-    "ability": "爪牙代替恶魔得知不在场角色。恶魔不会获得初始信息。爪牙可能会得知错误的恶魔。"
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "Blood thirst",
@@ -407,6 +403,6 @@
     "reminders": [],
     "name": "嗜血",
     "team": "fabled",
-    "ability": "每个夜晚*，恶魔使用自身能力选择的玩家之一会死亡。"
+    "ability": "每个夜晚*，恶魔使用自身能力选择的玩家之一会死亡。（说书人应回溯恶魔玩家选择过的目标，然后再于对应行动顺序时决定谁会死亡）"
   }
 ]

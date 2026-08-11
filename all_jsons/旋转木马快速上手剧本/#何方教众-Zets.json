@@ -2,7 +2,7 @@
   {
     "id": "_meta",
     "name": "何方教众",
-    "author": "Zets",
+    "author": "Aero",
     "townsfolkName": "镇民",
     "logo": "https://www.bloodstar.xyz/p/ronchi/hefangjiaozhong/_meta.png",
     "almanac": "https://www.bloodstar.xyz/p/ronchi/hefangjiaozhong/almanac.html",
@@ -78,7 +78,7 @@
     "setup": 1,
     "name": "气球驾驶员",
     "team": "townsfolk",
-    "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1 外来者]",
+    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
     "firstNight": 20,
     "otherNight": 11
   },
@@ -418,24 +418,8 @@
     ],
     "name": "暴风捕手",
     "team": "fabled",
-    "ability": "游戏开始时，你要宣布一个善良角色。如果该角色在场，他只能死于处决，但所有邪恶玩家会在首个夜晚得知他是哪一名玩家。",
+    "ability": "游戏开始时，如果异教领袖在场，他只能死于处决，但所有邪恶玩家会在首个夜晚得知他是哪一名玩家。",
     "firstNight": 11
-  },
-  {
-    "ability": "使用灯神的相克规则。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/djinn.png",
-    "edition": "custom",
-    "flavor": "",
-    "id": "20003_107",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "灯神",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "remindersGlobal": [],
-    "team": "fabled",
-    "firstNight": 0
   },
   {
     "id": "洗脑师&哥布林",

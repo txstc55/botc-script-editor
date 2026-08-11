@@ -6786,6 +6786,344 @@
           "notes"
         ]
       }
+    },
+    {
+      "source": "Bilibili 876416483674030081 对照图-02",
+      "targets": [
+        "all_jsons/旋转木马快速上手剧本/#何方教众-Zets.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "气球驾驶员",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]"
+          }
+        },
+        {
+          "name": "暴风捕手",
+          "team": "fabled",
+          "patch": {
+            "ability": "游戏开始时，如果异教领袖在场，他只能死于处决，但所有邪恶玩家会在首个夜晚得知他是哪一名玩家。"
+          }
+        }
+      ],
+      "meta_updates": {
+        "name": "何方教众",
+        "author": "Aero"
+      }
+    },
+    {
+      "source": "Bilibili 1006174506632347655 对照图-03",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/角色竞赛优胜剧本/#侏儒事变-Agenda.json"
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "小精灵",
+            "赏金猎人",
+            "共情者",
+            "女祭司",
+            "国王",
+            "城镇公告员",
+            "神谕者",
+            "渔夫",
+            "博学者",
+            "失忆者",
+            "食人族",
+            "唱诗男孩",
+            "罂粟种植者"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "陌客",
+            "酒鬼",
+            "疯子",
+            "畸形秀演员"
+          ]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "科学怪人",
+            "男爵",
+            "提线木偶",
+            "红唇女郎"
+          ]
+        },
+        {
+          "team": "demon",
+          "names": [
+            "小恶魔",
+            "痢蛭",
+            "诺-达鲺",
+            "军团"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 924988861541515314 对照图-03",
+      "targets": [
+        "all_jsons/华灯初上剧本创作大赛/#侠客风云决-泽渡哥摧毁停车场.json"
+      ],
+      "removals": [
+        {
+          "name": "Json 制作 By",
+          "team": "fabled"
+        }
+      ],
+      "meta_updates": {
+        "name": "侠客风云决",
+        "author": "泽度哥摧毁停车场"
+      },
+      "team_order": [
+        {
+          "team": "minion",
+          "names": [
+            "麻脸巫婆",
+            "红唇女郎",
+            "赶尸人",
+            "寡妇"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 864905979921170500 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/海外/#信念解离+（Trust Issues+）-Cake Found & David L.json"
+      ],
+      "removals": [
+        {
+          "name": "认知错位",
+          "team": "fabled"
+        },
+        {
+          "name": "精神扭曲",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "私货商人",
+          "team": "fabled",
+          "source_json": "all_jsons/来源核对补全/#厄宅黄昏v3.0.1-1110979332241621000.json",
+          "overrides": {
+            "ability": "邪灵附身：恶魔以为自己是一个善良角色，并能够使用该角色能力，但其实他不是。爪牙代替恶魔获得不在场角色信息。恶魔不会获得初始信息。爪牙可能会得知错误的恶魔。"
+          }
+        },
+        {
+          "name": "躁狂症",
+          "team": "demon",
+          "patch": {
+            "ability": "[只能是镇民]当你首次因自身能力选择镇民时：他中毒，改为一名与他邻近的玩家会死亡。"
+          }
+        },
+        {
+          "name": "反社会人格",
+          "team": "demon",
+          "patch": {
+            "ability": "[只能是外来者]当你首次因自身能力选择外来者时，改为一名与他邻近的玩家死亡。"
+          }
+        },
+        {
+          "name": "嗜血",
+          "team": "fabled",
+          "patch": {
+            "ability": "每个夜晚*，恶魔使用自身能力选择的玩家之一会死亡。（说书人应回溯恶魔玩家选择过的目标，然后再于对应行动顺序时决定谁会死亡）"
+          }
+        }
+      ],
+      "meta_updates": {
+        "name": "信念解离+",
+        "author": "Cake Found & David L"
+      },
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "模仿者",
+            "护士长",
+            "心理医生",
+            "白日梦想家",
+            "药师",
+            "阴谋论者",
+            "安保人员",
+            "灵视者",
+            "惯性说谎者",
+            "末日传道士",
+            "胆小鬼",
+            "冰恋者",
+            "审讯官"
+          ]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "煤气灯人",
+            "断罪天使",
+            "幕后黑手",
+            "代行邪魔"
+          ]
+        },
+        {
+          "team": "fabled",
+          "names": [
+            "私货商人",
+            "嗜血"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1140275007779241987 对照图-02",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/799#信马由缰-MtyJ .json"
+      ],
+      "replacements": [
+        {
+          "old_name": "命运裁剪：理发师",
+          "old_team": "jinx",
+          "entry": {
+            "id": "理发师",
+            "image": "https://i.postimg.cc/Bvzgy1nC/barber1.png",
+            "name": "理发师",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "命运裁剪：恶魔可以选择交换两名说书人的角色。"
+          }
+        },
+        {
+          "old_name": "未至之兆：侍女&数学家",
+          "old_team": "jinx",
+          "entry": {
+            "id": "侍女&数学家",
+            "image": "https://i.postimg.cc/BvPDj7Jg/math.png",
+            "name": "侍女&数学家",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "未至之兆：侍女会得知数学家是否醒来，即使她是在数学家之前醒来。"
+          }
+        },
+        {
+          "old_name": "混沌方程：数学家",
+          "old_team": "jinx",
+          "entry": {
+            "id": "数学家",
+            "image": "https://i.postimg.cc/BvPDj7Jg/math.png",
+            "name": "数学家",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "混沌方程：数学家会得知有几名玩家得知的信息正误对调。"
+          }
+        },
+        {
+          "old_name": "偏轨启示：占星师",
+          "old_team": "jinx",
+          "entry": {
+            "id": "占星师",
+            "image": "https://i.postimg.cc/65Sp8Wqg/astro.png",
+            "name": "占星师",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "偏轨启示：如果占星师选择了给出错误信息的说书人，会得知正确信息。"
+          }
+        },
+        {
+          "old_name": "线中虚实：提线木偶",
+          "old_team": "jinx",
+          "entry": {
+            "id": "提线木偶",
+            "image": "https://i.postimg.cc/Z5thkCCq/mario.png",
+            "name": "提线木偶",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "线中虚实：提线木偶因自身能力获取的信息均会正误对调。"
+          }
+        },
+        {
+          "old_name": "幕后真主：提线木偶&寻踪者&寡妇",
+          "old_team": "jinx",
+          "entry": {
+            "id": "提线木偶&寻踪者&寡妇",
+            "image": "https://i.postimg.cc/kMvjMG18/widow1.png",
+            "name": "提线木偶&寻踪者&寡妇",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "幕后真主：如果提线木偶因为寻踪者而获得寡妇的能力，改为由恶魔获得此能力，且他会得知此事。"
+          }
+        },
+        {
+          "old_name": "傀授王命：提线木偶&寻踪者&继生王爵",
+          "old_team": "jinx",
+          "entry": {
+            "id": "提线木偶&寻踪者&继生王爵",
+            "image": "https://i.postimg.cc/hGYkrvWD/equinox.png",
+            "name": "提线木偶&寻踪者&继生王爵",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "傀授王命：如果提线木偶因为寻踪者而获得继生王爵的能力，改为由恶魔选择玩家并得知信息，且他会得知此事。如果恶魔死亡时他们均已死亡，提线木偶变成那个恶魔。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "贵族",
+            "阴阳师",
+            "女家教",
+            "共情者",
+            "侍女",
+            "数学家",
+            "马厩男孩",
+            "卖花女孩",
+            "城镇公告员",
+            "狸猫",
+            "史官",
+            "女裁缝",
+            "占星师"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "怀疑论者",
+            "理发师",
+            "寻踪者",
+            "双生子"
+          ]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "舱底鼠",
+            "寡妇",
+            "[未知]",
+            "继生王爵",
+            "提线木偶"
+          ]
+        },
+        {
+          "team": "demon",
+          "names": [
+            "小恶魔",
+            "亡骨魔",
+            "普卡"
+          ]
+        }
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",

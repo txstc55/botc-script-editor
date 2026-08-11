@@ -7,6 +7,7 @@ from unittest.mock import patch
 
 from audit_bilibili_scripts import (
   CatalogItem,
+  refresh_source_images,
   source_image_urls,
   source_image_urls_for_item,
   sync_local_artifacts,
@@ -62,6 +63,26 @@ class SourceImageTest(unittest.TestCase):
 
       self.assertEqual(metadata["generated_image"], str(local_image))
       self.assertEqual((audit_folder / "软件生成图.jpg").read_bytes(), b"image")
+
+  @patch("audit_bilibili_scripts.fetch_bytes", return_value=b"current")
+  @patch(
+    "audit_bilibili_scripts.source_image_urls_for_item",
+    return_value=["https://i0.hdslb.com/bfs/new_dyn/current.png"],
+  )
+  def test_refresh_replaces_stale_file_for_same_image_id(self, _urls, fetch) -> None:
+    with TemporaryDirectory() as temporary_directory:
+      folder = Path(temporary_directory)
+      image = folder / "对照图-01.png"
+      image.write_bytes(b"stale")
+      metadata = {
+        "source_images": [image.name],
+        "resolved_source_image_ids": ["current.png"],
+      }
+
+      refresh_source_images(self.item, folder, metadata)
+
+      self.assertEqual(image.read_bytes(), b"current")
+      fetch.assert_called_once()
 
 
 if __name__ == "__main__":

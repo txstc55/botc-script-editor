@@ -497,27 +497,14 @@ def refresh_source_images(item: CatalogItem, folder: Path, metadata: dict[str, A
     clean_space(value) for value in metadata.get("source_images", [])
     if clean_space(value)
   ]
-  old_ids = [
-    clean_space(value) for value in metadata.get("resolved_source_image_ids", [])
-    if clean_space(value)
-  ]
   source_files: list[str] = []
   resolved_ids: list[str] = []
   downloaded_ids: list[str] = []
   for index, url in enumerate(urls, start=1):
     image_id = source_image_id(url)
     destination = folder / f"对照图-{index:02d}{image_suffix(url)}"
-    old_path = folder / old_files[index - 1] if index <= len(old_files) else None
-    can_reuse = bool(
-      old_path and old_path.exists() and (
-        not old_ids or (index <= len(old_ids) and old_ids[index - 1] == image_id)
-      )
-    )
-    if can_reuse:
-      destination = old_path
-    else:
-      destination.write_bytes(fetch_bytes(url))
-      downloaded_ids.append(image_id)
+    destination.write_bytes(fetch_bytes(url))
+    downloaded_ids.append(image_id)
     source_files.append(destination.name)
     resolved_ids.append(image_id)
 
