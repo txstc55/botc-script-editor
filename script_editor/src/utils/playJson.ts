@@ -215,6 +215,7 @@ function normalizeTeam(value: unknown, report: PlayCleanupReport): TeamKey | "fa
 }
 
 function toRole(item: RawRecord, name: string): RoleDraft {
+  const previewSection = cleanText(item.previewSection) === "thirdParty" ? "thirdParty" : undefined;
   return {
     id: cleanText(item.id) || name,
     name,
@@ -230,6 +231,8 @@ function toRole(item: RawRecord, name: string): RoleDraft {
     reminders: toStringList(item.reminders),
     remindersGlobal: toStringList(item.remindersGlobal ?? item.reminders_global),
     flavor: cleanText(item.flavor),
+    previewSection,
+    previewSectionLabel: previewSection ? cleanText(item.previewSectionLabel) || undefined : undefined,
   };
 }
 

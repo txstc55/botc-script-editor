@@ -24,6 +24,8 @@ export interface RoleDraft {
   reminders?: string[];
   remindersGlobal?: string[];
   flavor?: string;
+  previewSection?: "thirdParty";
+  previewSectionLabel?: string;
 }
 
 export interface FabledDraft {

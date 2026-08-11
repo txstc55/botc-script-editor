@@ -14,7 +14,7 @@ export interface NightOrderBaseItem {
   image?: string;
   reminder?: string;
   order: number;
-  team: TeamKey | "fabled";
+  team: TeamKey | "fabled" | "thirdParty";
   builtIn?: boolean;
 }
 
@@ -117,7 +117,7 @@ function roleNightOrderItem(
     image: role.image,
     reminder: field === "firstNight" ? role.firstNightReminder : role.otherNightReminder,
     order: role[field] ?? 0,
-    team,
+    team: "previewSection" in role && role.previewSection === "thirdParty" ? "thirdParty" : team,
   };
 }
 

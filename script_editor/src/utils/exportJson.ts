@@ -40,6 +40,8 @@ interface ExportCharacter {
   remindersGlobal: string[];
   setup: 0 | 1;
   flavor: string;
+  previewSection?: "thirdParty";
+  previewSectionLabel?: string;
 }
 
 interface ExportJinx {
@@ -133,6 +135,10 @@ function exportRole(role: RoleDraft, team: TeamKey): ExportCharacter {
   const abilityHtml = cleanText(role.abilityHtml);
   if (abilityHtml) {
     result.abilityHtml = abilityHtml;
+  }
+  if (role.previewSection) {
+    result.previewSection = role.previewSection;
+    result.previewSectionLabel = cleanText(role.previewSectionLabel) || undefined;
   }
   return result;
 }

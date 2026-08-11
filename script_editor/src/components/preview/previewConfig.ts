@@ -95,6 +95,7 @@ export const teamColors: Record<ScriptColorKey, string> = {
   minion: "rgb(143, 23, 1)",
   demon: "rgb(83, 43, 43)",
   traveler: "rgb(103, 14, 171)",
+  thirdParty: "rgb(103, 14, 171)",
   fabled: "rgb(255, 166, 72)",
 };
 

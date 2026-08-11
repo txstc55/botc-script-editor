@@ -1,6 +1,6 @@
 import type { FabledDraft, JinxDraft, RoleDraft, ScriptNoteDraft, TeamKey } from "../../types";
 
-export type ScriptColorKey = TeamKey | "fabled";
+export type ScriptColorKey = TeamKey | "fabled" | "thirdParty";
 export type PreviewSectionKey = ScriptColorKey;
 export type PreviewRole = RoleDraft | FabledDraft;
 
@@ -16,7 +16,7 @@ export interface NightOrderItem {
   image?: string;
   reminder?: string;
   order: number;
-  team: TeamKey | "fabled";
+  team: ScriptColorKey;
   color: string;
   builtIn?: boolean;
 }

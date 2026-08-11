@@ -117,7 +117,9 @@ const previewSections = computed<PreviewSection[]>(() => {
   const roleSections = previewTeamOrder.map((team) => ({
     key: team,
     label: props.script.teams[team].label,
-    roles: uniquePreviewRoles(props.script.teams[team].roles.filter((role) => role.selected)),
+    roles: uniquePreviewRoles(
+      props.script.teams[team].roles.filter((role) => role.selected && role.previewSection !== "thirdParty"),
+    ),
   }));
   const fabledSection: PreviewSection = {
     key: "fabled",
@@ -129,8 +131,19 @@ const previewSections = computed<PreviewSection[]>(() => {
     label: "剧本旅行者",
     roles: uniquePreviewRoles(props.script.teams.traveler.roles.filter((role) => role.selected)),
   };
+  const thirdPartyRoles = uniquePreviewRoles(
+    Object.values(props.script.teams)
+      .flatMap((team) => team.roles)
+      .filter((role) => role.selected && role.previewSection === "thirdParty"),
+  );
+  const thirdPartySection: PreviewSection = {
+    key: "thirdParty",
+    label: thirdPartyRoles[0]?.previewSectionLabel?.trim() || "局外人",
+    roles: thirdPartyRoles,
+  };
 
-  return [...roleSections, fabledSection, travelerSection].filter((section) => section.roles.length > 0);
+  return [...roleSections, fabledSection, thirdPartySection, travelerSection]
+    .filter((section) => section.roles.length > 0);
 });
 
 function uniquePreviewRoles<T extends { name: string }>(roles: T[]): T[] {
@@ -642,7 +655,10 @@ function previewSectionHeading(section: PreviewSection) {
   return `${teamSideLabel(section.key)} · ${section.label}`;
 }
 
-function teamSideLabel(team: TeamKey) {
+function teamSideLabel(team: PreviewSectionKey) {
+  if (team === "thirdParty") {
+    return "第三方阵营";
+  }
   return team === "townsfolk" || team === "outsider" ? "善良阵营" : "邪恶阵营";
 }
 
@@ -735,7 +751,7 @@ function buildCurrentPlayCharacterHighlightRules() {
       }
       rulesByName.set(name, {
         text: name,
-        color: teamColors[team.key],
+        color: role.previewSection === "thirdParty" ? teamColors.thirdParty : teamColors[team.key],
         priority: 2,
       });
     }
