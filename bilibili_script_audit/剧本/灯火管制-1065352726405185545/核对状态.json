@@ -11,18 +11,17 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 32,
-  "ocr_required_character_count": 32,
+  "ocr_character_matches": 31,
+  "ocr_required_character_count": 31,
   "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "免疫者",
     "EM星人",
-    "太阳耀斑",
     "歇斯底里气体",
-    "魔法时刻"
+    "太阳耀斑"
   ],
   "ocr_heading_characters": [
     "医生",
@@ -55,6 +54,11 @@
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
+      "name": "友军",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "士兵",
       "team": "townsfolk",
       "ability_coverage": 0.5556
@@ -70,17 +74,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "侦探",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "标记者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "友军",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -100,12 +94,22 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "猎人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "科学家",
       "team": "townsfolk",
       "ability_coverage": 0.9535
     },
     {
-      "name": "猎人",
+      "name": "侦探",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "教士",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -115,8 +119,8 @@
       "ability_coverage": 0.96
     },
     {
-      "name": "教士",
-      "team": "townsfolk",
+      "name": "无辜者",
+      "team": "outsider",
       "ability_coverage": 1.0
     },
     {
@@ -125,17 +129,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "身份窃贼",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "无辜者",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "站队者",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "身份窃贼",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -157,15 +156,15 @@
     {
       "name": "巫师",
       "team": "minion",
-      "ability_coverage": 0.375
-    },
-    {
-      "name": "背叛者",
-      "team": "demon",
       "ability_coverage": 1.0
     },
     {
       "name": "破坏者",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "背叛者",
       "team": "demon",
       "ability_coverage": 1.0
     },
@@ -190,19 +189,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "太阳耀斑",
-      "team": "fabled",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "歇斯底里气体",
       "team": "fabled",
       "ability_coverage": 1.0
-    },
-    {
-      "name": "魔法时刻",
-      "team": "fabled",
-      "ability_coverage": 0.7931
     },
     {
       "name": "月食事件",
@@ -210,14 +199,17 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "太阳耀斑",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "暴风雪",
       "team": "fabled",
-      "ability_coverage": 0.6154
+      "ability_coverage": 0.8966
     }
   ],
-  "ocr_ability_mismatches": [
-    "巫师"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
@@ -649,9 +641,9 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "巫师"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

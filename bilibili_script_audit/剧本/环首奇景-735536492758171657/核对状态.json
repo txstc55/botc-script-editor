@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 25,
@@ -45,7 +45,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "卖花女孩",
+      "name": "博学者",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -55,7 +55,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "博学者",
+      "name": "卖花女孩",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -90,7 +90,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "修补匠",
+      "name": "呆瓜",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -100,17 +100,17 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "呆瓜",
+      "name": "修补匠",
       "team": "outsider",
       "ability_coverage": 1.0
     },
     {
-      "name": "教父",
+      "name": "炸弹人",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
-      "name": "魔鬼代言人",
+      "name": "教父",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -120,14 +120,14 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "炸弹人",
+      "name": "魔鬼代言人",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
-      "name": "僵怖",
+      "name": "痢蛭",
       "team": "demon",
-      "ability_coverage": 1.0
+      "ability_coverage": 0.7308
     },
     {
       "name": "亡骨魔",
@@ -135,9 +135,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "痢蛭",
+      "name": "僵怖",
       "team": "demon",
-      "ability_coverage": 0.7308
+      "ability_coverage": 1.0
     },
     {
       "name": "涡流",
@@ -152,8 +152,8 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-      "text_coverage": 0.7143
+      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+      "text_coverage": 1.0
     },
     {
       "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
@@ -180,9 +180,7 @@
     "*代表",
     "非首不夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "非首不夜晚"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_name_confirmed_by_ability": [],
@@ -426,196 +424,12 @@
         }
       ],
       "required_character_matches": 25
-    },
-    {
-      "image": "对照图-03.png",
-      "heading_characters": [
-        "厨师",
-        "僧侣",
-        "水手",
-        "侍女",
-        "弄臣",
-        "博学者",
-        "神谕者",
-        "酒鬼",
-        "呆瓜",
-        "炸弹人",
-        "教父",
-        "痢蛭",
-        "亡骨魔",
-        "卖花女孩",
-        "女裁缝",
-        "贤者",
-        "魔术师",
-        "食人族",
-        "异教领袖",
-        "疯子",
-        "修补匠",
-        "灵言师",
-        "魔鬼代言人",
-        "僵怖",
-        "涡流"
-      ],
-      "heading_character_details": [
-        {
-          "name": "卖花女孩",
-          "team": "townsfolk",
-          "x": 0.56271,
-          "y": 0.86764
-        },
-        {
-          "name": "厨师",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.8675
-        },
-        {
-          "name": "僧侣",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.824
-        },
-        {
-          "name": "女裁缝",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.81831
-        },
-        {
-          "name": "水手",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.7718
-        },
-        {
-          "name": "贤者",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.75727
-        },
-        {
-          "name": "侍女",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.72238
-        },
-        {
-          "name": "魔术师",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.69331
-        },
-        {
-          "name": "弄臣",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.6715
-        },
-        {
-          "name": "食人族",
-          "team": "townsfolk",
-          "x": 0.56275,
-          "y": 0.64099
-        },
-        {
-          "name": "博学者",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.62936
-        },
-        {
-          "name": "异教领袖",
-          "team": "townsfolk",
-          "x": 0.56062,
-          "y": 0.58672
-        },
-        {
-          "name": "神谕者",
-          "team": "townsfolk",
-          "x": 0.14706,
-          "y": 0.577
-        },
-        {
-          "name": "疯子",
-          "team": "outsider",
-          "x": 0.56275,
-          "y": 0.50581
-        },
-        {
-          "name": "酒鬼",
-          "team": "outsider",
-          "x": 0.14706,
-          "y": 0.50145
-        },
-        {
-          "name": "呆瓜",
-          "team": "outsider",
-          "x": 0.14706,
-          "y": 0.452
-        },
-        {
-          "name": "修补匠",
-          "team": "outsider",
-          "x": 0.56275,
-          "y": 0.44477
-        },
-        {
-          "name": "炸弹人",
-          "team": "minion",
-          "x": 0.14706,
-          "y": 0.3675
-        },
-        {
-          "name": "灵言师",
-          "team": "minion",
-          "x": 0.56275,
-          "y": 0.36483
-        },
-        {
-          "name": "教父",
-          "team": "minion",
-          "x": 0.14706,
-          "y": 0.31541
-        },
-        {
-          "name": "魔鬼代言人",
-          "team": "minion",
-          "x": 0.56275,
-          "y": 0.305
-        },
-        {
-          "name": "痢蛭",
-          "team": "demon",
-          "x": 0.13725,
-          "y": 0.2295
-        },
-        {
-          "name": "僵怖",
-          "team": "demon",
-          "x": 0.56275,
-          "y": 0.22529
-        },
-        {
-          "name": "亡骨魔",
-          "team": "demon",
-          "x": 0.14706,
-          "y": 0.17442
-        },
-        {
-          "name": "涡流",
-          "team": "demon",
-          "x": 0.56275,
-          "y": 0.17297
-        }
-      ],
-      "required_character_matches": 25
     }
   ],
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-02.png",
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "亡骨魔",
@@ -805,8 +619,16 @@
       "y": 0.17297
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "非首不夜晚"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "原图底部文字为“非首个夜晚”，OCR 将“个”错识为“不”；JSON 和重新导出的软件图片均显示正确。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

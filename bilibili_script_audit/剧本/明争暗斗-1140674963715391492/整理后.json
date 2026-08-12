@@ -8,17 +8,60 @@
     "notes": [
       {
         "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事“可能”发生，代表说书人决定该事情是否发生。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>决定该事情是否发生。"
       },
       {
-        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+        "text": "中毒 / 醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒 / 醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">失去能力</span>，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
         "text": "*代表非首个夜晚",
         "html": "<strong>*代表</strong>非首个夜晚"
+      },
+      {
+        "text": "该角色的能力来自过去",
+        "html": "<strong>该角色的能力来自过去</strong>"
       }
     ]
+  },
+  {
+    "id": "9_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/qintianjian.png",
+    "firstNightReminder": "唤醒钦天监，对他指向对应方向来告知他最近的邪恶玩家的方向。",
+    "name": "钦天监",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知离你最近的邪恶玩家位于你的哪一侧（左/右/相同）。如果与你邻近的玩家中有邪恶阵营，你会得知错误信息。",
+    "firstNight": 3900
+  },
+  {
+    "id": "8_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yinyangshi.png",
+    "firstNightReminder": "唤醒阴阳师，对他展示两个善良角色和两个邪恶角色。",
+    "reminders": [
+      "在场",
+      "不在场"
+    ],
+    "name": "阴阳师",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你会得知两个善良角色和两个邪恶角色。其中有且只有两个角色在场。",
+    "firstNight": 3800
+  },
+  {
+    "id": "12_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
+    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
+    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
+    "reminders": [
+      "得知"
+    ],
+    "name": "方士",
+    "team": "townsfolk",
+    "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
+    "firstNight": 3500,
+    "otherNight": 16,
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
   },
   {
     "id": "_mingzhengandou",
@@ -36,22 +79,6 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "我在你的灵魂中感受到了庞大的恶意！但……那可能只是你的香水味道。我对接骨木汁过敏。"
-  },
-  {
-    "id": "1_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
-    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
-    "reminders": [
-      "保护"
-    ],
-    "name": "僧侣",
-    "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
-    "otherNight": 3,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
   },
   {
     "id": "2_mingzhengandou",
@@ -86,6 +113,37 @@
     "flavor": "任何连续的，且能进行定量初等运算的形式系统X，都具有不完全性。也就是说，在这个形式系统X内存在一些命题，这些命题既不能被证明为真，也不能被证明为否。所以，你喝醉了。"
   },
   {
+    "id": "6_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
+    "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
+    "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
+    "reminders": [
+      "得知"
+    ],
+    "setup": 1,
+    "name": "气球驾驶员",
+    "team": "townsfolk",
+    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
+    "firstNight": 3700,
+    "otherNight": 15
+  },
+  {
+    "id": "1_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/monk.png",
+    "otherNightReminder": "让僧侣选择除自己外的一名玩家。标记那名玩家被保护。",
+    "reminders": [
+      "保护"
+    ],
+    "name": "僧侣",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，你要选择除你以外的一名玩家：当晚恶魔的负面能力对他无效。",
+    "otherNight": 3,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
     "id": "4_mingzhengandou",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
@@ -117,19 +175,17 @@
     "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
-    "id": "6_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
-    "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
-    "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
+    "id": "11_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/daoshi.png",
+    "otherNightReminder": "唤醒道士，让其选择一名玩家。如果他选中了恶魔，在道士角色标记旁放置“死亡”提示标记，并且在恶魔角色标记旁放置“醉酒”提示标记。",
     "reminders": [
-      "得知"
+      "醉酒",
+      "死亡"
     ],
-    "setup": 1,
-    "name": "气球驾驶员",
+    "name": "道士",
     "team": "townsfolk",
-    "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
-    "firstNight": 3700,
-    "otherNight": 15
+    "ability": "每个夜晚*，你要选择一名玩家：如果你选中了恶魔，你死亡，然后他醉酒直到下个黎明。",
+    "otherNight": 5
   },
   {
     "id": "7_mingzhengandou",
@@ -147,28 +203,6 @@
     "flavor": ""
   },
   {
-    "id": "8_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/yinyangshi.png",
-    "firstNightReminder": "唤醒阴阳师，对他展示两个善良角色和两个邪恶角色。",
-    "reminders": [
-      "在场",
-      "不在场"
-    ],
-    "name": "阴阳师",
-    "team": "townsfolk",
-    "ability": "在你的首个夜晚，你会得知两个善良角色和两个邪恶角色。其中有且只有两个角色在场。",
-    "firstNight": 3800
-  },
-  {
-    "id": "9_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/qintianjian.png",
-    "firstNightReminder": "唤醒钦天监，对他指向对应方向来告知他最近的邪恶玩家的方向。",
-    "name": "钦天监",
-    "team": "townsfolk",
-    "ability": "在你的首个夜晚，你会得知离你最近的邪恶玩家位于你的哪一侧（左/右/相同）。如果与你邻近的玩家中有邪恶阵营，你会得知错误信息。",
-    "firstNight": 3900
-  },
-  {
     "id": "10_mingzhengandou",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/banxian.png",
     "name": "半仙",
@@ -177,52 +211,6 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "11_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/daoshi.png",
-    "otherNightReminder": "唤醒道士，让其选择一名玩家。如果他选中了恶魔，在道士角色标记旁放置“死亡”提示标记，并且在恶魔角色标记旁放置“醉酒”提示标记。",
-    "reminders": [
-      "醉酒",
-      "死亡"
-    ],
-    "name": "道士",
-    "team": "townsfolk",
-    "ability": "每个夜晚*，你要选择一名玩家：如果你选中了恶魔，你死亡，然后他醉酒直到下个黎明。",
-    "otherNight": 5
-  },
-  {
-    "id": "12_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
-    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
-    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
-    "reminders": [
-      "得知"
-    ],
-    "name": "方士",
-    "team": "townsfolk",
-    "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
-    "firstNight": 3500,
-    "otherNight": 16,
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
-    "id": "13_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
-    "otherNightReminder": "如果杂技演员左右两侧最近的存活善良玩家之一中毒或醉酒，杂技演员死亡。",
-    "reminders": [
-      "死亡"
-    ],
-    "name": "杂技演员",
-    "team": "outsider",
-    "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
-    "otherNight": 11,
-    "firstNightReminder": "",
     "remindersGlobal": [],
     "setup": 0,
     "flavor": ""
@@ -272,6 +260,22 @@
     "flavor": ""
   },
   {
+    "id": "13_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/acrobat.png",
+    "otherNightReminder": "如果杂技演员左右两侧最近的存活善良玩家之一中毒或醉酒，杂技演员死亡。",
+    "reminders": [
+      "死亡"
+    ],
+    "name": "杂技演员",
+    "team": "outsider",
+    "ability": "每个夜晚*，如果与你邻近的存活善良玩家之一醉酒或中毒，你死亡。",
+    "otherNight": 11,
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
     "id": "17_mingzhengandou",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/poisoner.png",
     "firstNightReminder": "让投毒者选择一名玩家。标记那名玩家中毒。",
@@ -286,6 +290,25 @@
     "otherNight": 2,
     "remindersGlobal": [],
     "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "20_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/summoner.png",
+    "firstNightReminder": "唤醒召唤师，对他展示三个不在场的善良角色标记。",
+    "otherNightReminder": "如果这是游戏中的第三个夜晚，唤醒召唤师，让他选择一名玩家和一个恶魔角色，那名玩家变成由他选择的邪恶恶魔。",
+    "reminders": [
+      "第一晚",
+      "第三晚",
+      "第二晚"
+    ],
+    "setup": 1,
+    "name": "召唤师",
+    "team": "minion",
+    "ability": "在首个夜晚，你会得知三个伪装。在第三个夜晚，你要选择一名玩家：他变成由你选择的邪恶恶魔。[无恶魔在场]",
+    "firstNight": 2200,
+    "otherNight": 4,
+    "remindersGlobal": [],
     "flavor": ""
   },
   {
@@ -321,22 +344,20 @@
     "flavor": "怪物的触手被钉在了教堂大门上。母亲和孩子们在街上跳舞。棒极了。一切都在按我的计划进行。"
   },
   {
-    "id": "20_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/summoner.png",
-    "firstNightReminder": "唤醒召唤师，对他展示三个不在场的善良角色标记。",
-    "otherNightReminder": "如果这是游戏中的第三个夜晚，唤醒召唤师，让他选择一名玩家和一个恶魔角色，那名玩家变成由他选择的邪恶恶魔。",
+    "id": "22_mingzhengandou",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
+    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
     "reminders": [
-      "第一晚",
-      "第三晚",
-      "第二晚"
+      "攻击三次",
+      "死亡"
     ],
-    "setup": 1,
-    "name": "召唤师",
-    "team": "minion",
-    "ability": "在首个夜晚，你会得知三个伪装。在第三个夜晚，你要选择一名玩家：他变成由你选择的邪恶恶魔。[无恶魔在场]",
-    "firstNight": 2200,
-    "otherNight": 4,
+    "name": "珀",
+    "team": "demon",
+    "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
+    "otherNight": 7,
+    "firstNightReminder": "",
     "remindersGlobal": [],
+    "setup": 0,
     "flavor": ""
   },
   {
@@ -356,23 +377,6 @@
     "remindersGlobal": [],
     "setup": 0,
     "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
-  },
-  {
-    "id": "22_mingzhengandou",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/po.png",
-    "otherNightReminder": "珀可以选择一名玩家；或如果上一次他被唤醒时未做选择，让他选择三名玩家。标记这些玩家死亡。",
-    "reminders": [
-      "攻击三次",
-      "死亡"
-    ],
-    "name": "珀",
-    "team": "demon",
-    "ability": "每个夜晚*，你可以选择一名玩家：他死亡。如果你上次选择时没有选择任何玩家，当晚你要选择三名玩家：他们死亡。",
-    "otherNight": 7,
-    "firstNightReminder": "",
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
   },
   {
     "id": "23_mingzhengandou",
@@ -400,7 +404,7 @@
       "中毒",
       "死亡"
     ],
-    "name": "诺-达鲺",
+    "name": "诺·达鲺",
     "team": "demon",
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。与你邻近的两名镇民中毒。",
     "otherNight": 8,
@@ -411,7 +415,7 @@
   },
   {
     "id": "25_mingzhengandou",
-    "name": "数学家&侍女",
+    "name": "侍女&数学家",
     "team": "jinx",
     "ability": "侍女会得知数学家是否醒来，即使她是在数学家之前醒来。"
   },

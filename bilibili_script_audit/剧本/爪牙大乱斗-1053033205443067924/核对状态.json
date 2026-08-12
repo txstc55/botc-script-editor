@@ -16,7 +16,7 @@
     "9b37e3d38353130b8acb65c5bb6241d744902471.png",
     "ca2afdb3fcff022618d64612b2113f7844902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 26,
@@ -201,7 +201,7 @@
     {
       "name": "私货商人",
       "team": "fabled",
-      "ability_coverage": 0.0
+      "ability_coverage": 0.7976
     },
     {
       "name": "理发师",
@@ -329,14 +329,12 @@
       "ability_coverage": 0.9545
     }
   ],
-  "ocr_ability_mismatches": [
-    "私货商人"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
-      "name": "食人魔&熬药巫婆",
+      "name": "食人魔&麻脸巫婆",
       "team": "jinx",
       "ability_coverage": 0.4615
     },
@@ -379,17 +377,16 @@
       "name": "小怪宝&维齐尔",
       "team": "jinx",
       "ability_coverage": 0.9231
-    },
-    {
-      "name": "维齐尔",
-      "team": "jinx",
-      "ability_coverage": 0.6053
     }
   ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 3,
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
+    {
+      "text": "地狱武道会：所有玩家都是爪牙角色，游戏的首个夜晚会通知与初始邪恶玩家数量相同的玩家，他们是邪恶玩家，其他玩家则为善良玩家。若干名玩家会在首个夜晚获得外来者能力，并得知此事。影响该名玩家的状态会同时影响他的爪牙能力和外来者能力。",
+      "text_coverage": 0.9515
+    },
     {
       "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
       "text_coverage": 1.0
@@ -650,9 +647,9 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "私货商人"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

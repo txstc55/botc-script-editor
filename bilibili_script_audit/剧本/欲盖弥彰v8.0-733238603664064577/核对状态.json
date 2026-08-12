@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 24,
@@ -60,11 +60,6 @@
       "ability_coverage": 0.9062
     },
     {
-      "name": "博学者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "女裁缝",
       "team": "townsfolk",
       "ability_coverage": 1.0
@@ -75,9 +70,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "渔夫",
+      "name": "博学者",
       "team": "townsfolk",
-      "ability_coverage": 0.9375
+      "ability_coverage": 1.0
     },
     {
       "name": "守鸦人",
@@ -85,9 +80,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "理发师",
-      "team": "outsider",
-      "ability_coverage": 0.8929
+      "name": "渔夫",
+      "team": "townsfolk",
+      "ability_coverage": 0.9375
     },
     {
       "name": "酒鬼",
@@ -95,14 +90,19 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "畸形秀演员",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "心上人",
       "team": "outsider",
       "ability_coverage": 0.8462
+    },
+    {
+      "name": "理发师",
+      "team": "outsider",
+      "ability_coverage": 0.8929
+    },
+    {
+      "name": "畸形秀演员",
+      "team": "outsider",
+      "ability_coverage": 1.0
     },
     {
       "name": "镜像双子",
@@ -127,17 +127,17 @@
     {
       "name": "小怪宝",
       "team": "demon",
-      "ability_coverage": 0.7045
+      "ability_coverage": 0.7619
+    },
+    {
+      "name": "痢蛭",
+      "team": "demon",
+      "ability_coverage": 0.9149
     },
     {
       "name": "方古",
       "team": "demon",
       "ability_coverage": 0.9107
-    },
-    {
-      "name": "痢蛭",
-      "team": "demon",
-      "ability_coverage": 0.6538
     }
   ],
   "ocr_ability_mismatches": [],
@@ -172,9 +172,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "死亡时你才会一同死亡。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_name_confirmed_by_ability": [
@@ -375,154 +373,12 @@
         }
       ],
       "required_character_matches": 20
-    },
-    {
-      "image": "对照图-03.png",
-      "heading_characters": [
-        "图书管理员",
-        "水手",
-        "贵族",
-        "女裁缝",
-        "小精灵",
-        "哲学家",
-        "气球驾驶员",
-        "博学者",
-        "守鸦人",
-        "将军",
-        "渔夫",
-        "酒鬼",
-        "理发师",
-        "心上人",
-        "镜像双子",
-        "寡妇",
-        "恐惧之灵",
-        "痢蛭",
-        "方古"
-      ],
-      "heading_character_details": [
-        {
-          "name": "图书管理员",
-          "team": "townsfolk",
-          "x": 0.14687,
-          "y": 0.8704
-        },
-        {
-          "name": "水手",
-          "team": "townsfolk",
-          "x": 0.56371,
-          "y": 0.8688
-        },
-        {
-          "name": "贵族",
-          "team": "townsfolk",
-          "x": 0.14687,
-          "y": 0.8224
-        },
-        {
-          "name": "女裁缝",
-          "team": "townsfolk",
-          "x": 0.56367,
-          "y": 0.81111
-        },
-        {
-          "name": "小精灵",
-          "team": "townsfolk",
-          "x": 0.14687,
-          "y": 0.7712
-        },
-        {
-          "name": "哲学家",
-          "team": "townsfolk",
-          "x": 0.56371,
-          "y": 0.752
-        },
-        {
-          "name": "气球驾驶员",
-          "team": "townsfolk",
-          "x": 0.14675,
-          "y": 0.71954
-        },
-        {
-          "name": "博学者",
-          "team": "townsfolk",
-          "x": 0.56371,
-          "y": 0.688
-        },
-        {
-          "name": "守鸦人",
-          "team": "townsfolk",
-          "x": 0.56371,
-          "y": 0.632
-        },
-        {
-          "name": "渔夫",
-          "team": "townsfolk",
-          "x": 0.56156,
-          "y": 0.5696
-        },
-        {
-          "name": "将军",
-          "team": "townsfolk",
-          "x": 0.14687,
-          "y": 0.568
-        },
-        {
-          "name": "理发师",
-          "team": "outsider",
-          "x": 0.56156,
-          "y": 0.4944
-        },
-        {
-          "name": "酒鬼",
-          "team": "outsider",
-          "x": 0.14687,
-          "y": 0.4896
-        },
-        {
-          "name": "心上人",
-          "team": "outsider",
-          "x": 0.14687,
-          "y": 0.4368
-        },
-        {
-          "name": "镜像双子",
-          "team": "minion",
-          "x": 0.14679,
-          "y": 0.36778
-        },
-        {
-          "name": "寡妇",
-          "team": "minion",
-          "x": 0.56156,
-          "y": 0.3664
-        },
-        {
-          "name": "恐惧之灵",
-          "team": "minion",
-          "x": 0.56156,
-          "y": 0.3104
-        },
-        {
-          "name": "方古",
-          "team": "demon",
-          "x": 0.56156,
-          "y": 0.2288
-        },
-        {
-          "name": "痢蛭",
-          "team": "demon",
-          "x": 0.14471,
-          "y": 0.1824
-        }
-      ],
-      "required_character_matches": 20
     }
   ],
   "ocr_source_board_groups": [
     {
       "images": [
-        "对照图-02.png",
-        "对照图-03.png"
+        "对照图-02.png"
       ],
       "characters": [
         "博学者",
@@ -672,13 +528,13 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "死亡时你才会一同死亡。"
-    ]
+    "unexplained_bottom_lines": []
   },
   "source_image_added_ids": [
     "b6d43228a04bf0683aa554c5d6d0ce7d44902471.png",

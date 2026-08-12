@@ -8626,6 +8626,496 @@
           "names": ["三尸娘娘", "阎君", "纸夫人", "天魔"]
         }
       ]
+    },
+    {
+      "source": "Bilibili 733238603664064577 对照图-02（原图 V8.0.0）",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#欲盖弥彰.json"
+      ],
+      "meta_updates": {
+        "notes": [
+          {
+            "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+            "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">失去能力</span>，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "additions": [
+        {
+          "name": "气球驾驶员",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1外来者]"
+          }
+        },
+        {
+          "name": "小怪宝",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]"
+          }
+        },
+        {
+          "name": "痢蛭",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "图书管理员",
+            "贵族",
+            "小精灵",
+            "气球驾驶员",
+            "侍女",
+            "占卜师",
+            "将军",
+            "水手",
+            "女裁缝",
+            "哲学家",
+            "博学者",
+            "守鸦人",
+            "渔夫"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": ["酒鬼", "心上人", "理发师", "畸形秀演员"]
+        },
+        {
+          "team": "minion",
+          "names": ["镜像双子", "哥布林", "寡妇", "恐惧之灵"]
+        },
+        {
+          "team": "demon",
+          "names": ["小怪宝", "痢蛭", "方古"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 954632472656609299 对照图-03（原图 V7.5.1）",
+      "targets": [
+        "all_jsons/节日&活动主题剧本/#邙山走阴7.5-痴愚.json"
+      ],
+      "meta_updates": {
+        "name": "氓山走阴",
+        "notes": [
+          {
+            "text": "末法：黎明时说书人会公布所有玩家所处的区域，黄昏时会有一个区域冥土化，剩余二个区域后，以上行动不再进行。前往冥土化区域的善良玩家会在下个黎明死亡但仍被当作存活。前往冥土化区域的邪恶玩家会在当晚失去能力。",
+            "html": "<strong>末法</strong>：黎明时说书人会公布所有玩家所处的区域，黄昏时会有一个区域冥土化，剩余二个区域后，以上行动不再进行。前往冥土化区域的<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">善良玩家</span>会在下个黎明<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">死亡</span>但仍被当作<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">存活</span>。前往冥土化区域的<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">邪恶玩家</span>会在当晚<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">失去能力</span>。"
+          },
+          {
+            "text": "氓山：夜晚开始时，存活玩家要秘密选择一个区域前往，然后阴神可以选择一个区域并得知哪些玩家处于该区域。",
+            "html": "<span style=\"color: rgb(61, 105, 69); font-weight: 900;\">氓山</span>：夜晚开始时，<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">存活玩家</span>要<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">秘密</span>选择一个<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">区域</span>前往，然后<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">阴神</span>可以选择一个<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">区域</span>并得知哪些玩家处于该<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">区域</span>。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "摘星手",
+            "寿衣张",
+            "走阴人",
+            "捞尸人",
+            "阴阳生",
+            "问米婆",
+            "缝尸匠",
+            "赶尸人",
+            "刽子手",
+            "棺材佬",
+            "出马仙",
+            "仵作",
+            "扎纸匠"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": ["病秧子", "纸人", "冥躯", "长明灯"]
+        },
+        {
+          "team": "minion",
+          "names": ["食香鬼", "僵尸", "嫁衣新娘", "怨婴"]
+        },
+        {
+          "team": "demon",
+          "names": ["黑无常", "白无常"]
+        },
+        {
+          "team": "traveler",
+          "names": ["黄皮子", "黄大仙", "稻草人", "梦蝶"]
+        },
+        {
+          "team": "fabled",
+          "names": ["封禅台", "氓阴镇", "乱葬岗", "黑水河"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1065352726405185545 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#灯火管制-星火乐.json"
+      ],
+      "removals": [
+        {
+          "name": "魔法时刻",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "巫师",
+          "team": "minion",
+          "patch": {
+            "ability": "在你的首个夜晚，你要选择一名玩家：如果被你选择的玩家是善良的：他中毒。在他死亡或在夜晚被除他以外的善良玩家选择时，他解毒，随后加入邪恶；随后你需要再次选择一名玩家。",
+            "firstNightReminder": "在你的首个夜晚，你要选择一名玩家：如果被你选择的玩家是善良的：他中毒。在他死亡或在夜晚被除他以外的善良玩家选择时，他解毒，随后加入邪恶；随后你需要再次选择一名玩家。",
+            "otherNightReminder": "在你的首个夜晚，你要选择一名玩家：如果被你选择的玩家是善良的：他中毒。在他死亡或在夜晚被除他以外的善良玩家选择时，他解毒，随后加入邪恶；随后你需要再次选择一名玩家。",
+            "reminders": ["中毒", "解毒", "加入邪恶"]
+          }
+        },
+        {
+          "name": "雪地冤魂",
+          "team": "fabled",
+          "patch": {
+            "ability": "死亡玩家可以使用遗言票提名。如果一项提名中仅有非善良玩家投票，此次投票会失效。半数玩家为邪恶阵营时（向下取整），不会有玩家因爪牙加入邪恶。“疯狂”的想要改变阵营的玩家，可能不会改变阵营。"
+          }
+        },
+        {
+          "name": "暴风雪",
+          "team": "fabled",
+          "patch": {
+            "ability": "每天只能进行五分钟的公聊（除第一个白天），说书人可以驳回无意义的提名。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "友军",
+            "士兵",
+            "调酒师",
+            "侦察兵",
+            "标记者",
+            "黑客",
+            "离反者",
+            "医生",
+            "猎人",
+            "科学家",
+            "侦探",
+            "教士",
+            "免疫者"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": ["无辜者", "雪人", "站队者", "身份窃贼"]
+        },
+        {
+          "team": "minion",
+          "names": ["告密者", "恶种", "死灵法师", "巫师"]
+        },
+        {
+          "team": "demon",
+          "names": ["破坏者", "背叛者", "绝命毒师", "EM星人"]
+        },
+        {
+          "team": "fabled",
+          "names": ["雪地冤魂", "念珠", "歇斯底里气体", "月食事件", "太阳耀斑", "暴风雪"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1053033205443067924 对照图-02",
+      "targets": [
+        "all_jsons/特别的玩法/#爪牙大乱斗-Nicky.json"
+      ],
+      "meta_updates": {
+        "name": "爪牙大乱斗",
+        "notes": [
+          {
+            "text": "地狱武道会：所有玩家都是爪牙角色，游戏的首个夜晚会通知与初始邪恶玩家数量相同的玩家，他们是邪恶玩家，其他玩家则为善良玩家。若干名玩家会在首个夜晚获得外来者能力，并得知此事。影响该名玩家的状态会同时影响他的爪牙能力和外来者能力。",
+            "html": "<strong>地狱武道会</strong>：所有玩家都是<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">爪牙角色</span>，游戏的首个夜晚会通知与初始<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">邪恶玩家</span>数量相同的玩家，他们是<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">邪恶玩家</span>，其他玩家则为<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">善良玩家</span>。若干名玩家会在首个夜晚获得<span style=\"color: rgb(57, 136, 169); font-weight: 900;\">外来者能力</span>，并得知此事。影响该名玩家的状态会同时影响他的<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">爪牙能力</span>和<span style=\"color: rgb(57, 136, 169); font-weight: 900;\">外来者能力</span>。"
+          },
+          {
+            "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+            "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+          },
+          {
+            "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">失去能力</span>，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "removals": [
+        {
+          "name": "维齐尔",
+          "team": "jinx"
+        },
+        {
+          "name": "食人魔&熬药巫婆",
+          "team": "jinx"
+        }
+      ],
+      "additions": [
+        {
+          "name": "私货商人",
+          "team": "fabled",
+          "patch": {
+            "ability": "洗脑师可以让其他玩家疯狂地证明自己是某个爪牙角色。如果维齐尔是善良的，他只能在三名或更多玩家投票时选择立即处决，不论这些玩家的阵营如何。小怪宝能力中的“所有爪牙”调整为“所有初始邪恶玩家”。"
+          }
+        },
+        {
+          "entry": {
+            "id": "食人魔&麻脸巫婆",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/c/c5/Ogre.png/300px-Ogre.png",
+            "name": "食人魔&麻脸巫婆",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "被麻脸巫婆创造的邪恶食人魔无法因为自身能力转变为善良阵营。"
+          },
+          "before": {
+            "name": "瘟疫医生&男爵",
+            "team": "jinx"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "outsider",
+          "names": ["理发师", "呆瓜", "食人魔", "狂热者", "瘟疫医生"]
+        },
+        {
+          "team": "minion",
+          "names": [
+            "教父",
+            "灵言师",
+            "投毒者",
+            "魔鬼代言人",
+            "鹰身女妖",
+            "女巫",
+            "洗脑师",
+            "恐惧之灵",
+            "麻脸巫婆",
+            "精神病患者",
+            "刺客",
+            "镜像双子",
+            "哥布林",
+            "炸弹人",
+            "主谋",
+            "街头风琴手",
+            "男爵",
+            "红唇女郎",
+            "维齐尔"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1144643771203321857 对照图-02",
+      "targets": [
+        "all_jsons/特别的玩法/827#玄狐阶梯-叮当&蓝铃兰.json"
+      ],
+      "additions": [
+        {
+          "name": "咒狐",
+          "team": "outsider",
+          "patch": {
+            "previewSection": "thirdParty",
+            "previewSectionLabel": "局外人"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "修行者",
+            "侍女",
+            "舞蛇人",
+            "气球驾驶员",
+            "村夫",
+            "郎中",
+            "赌徒",
+            "博学者",
+            "守夜人",
+            "魔术师",
+            "弄臣",
+            "女裁缝",
+            "食人族"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": ["疯子", "政客", "圣徒", "解谜大师", "咒狐"]
+        },
+        {
+          "team": "minion",
+          "names": ["精神病患者", "女巫", "鹰身女妖", "科学怪人", "刺客"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 735536492758171657 对照图-02",
+      "targets": [
+        "all_jsons/经典混合剧本/#环首奇景-Navean.json"
+      ],
+      "meta_updates": {
+        "notes": [
+          {
+            "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事情“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表由<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>来决定该事情是否发生。"
+          },
+          {
+            "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
+            "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">失去能力</span>，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。"
+          },
+          {
+            "text": "*代表非首个夜晚",
+            "html": "<strong>*代表</strong>非首个夜晚"
+          }
+        ]
+      },
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "厨师",
+            "僧侣",
+            "水手",
+            "侍女",
+            "弄臣",
+            "博学者",
+            "神谕者",
+            "卖花女孩",
+            "女裁缝",
+            "贤者",
+            "魔术师",
+            "食人族",
+            "异教领袖"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": ["酒鬼", "呆瓜", "疯子", "修补匠"]
+        },
+        {
+          "team": "minion",
+          "names": ["炸弹人", "教父", "灵言师", "魔鬼代言人"]
+        },
+        {
+          "team": "demon",
+          "names": ["痢蛭", "亡骨魔", "僵怖", "涡流"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1081011468497846297 对照图-03",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/海外快速上手剧本/#生生不息-Ekin.json"
+      ],
+      "additions": [
+        {
+          "name": "告密者",
+          "team": "outsider",
+          "patch": {
+            "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "祖母",
+            "水手",
+            "侍女",
+            "数学家",
+            "将军",
+            "异教领袖",
+            "赌徒",
+            "巡山人",
+            "教授",
+            "造谣者",
+            "博学者",
+            "失忆者",
+            "食人族"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": ["莽夫", "落难少女", "告密者", "政客"]
+        },
+        {
+          "team": "minion",
+          "names": ["刺客", "麻脸巫婆", "教父", "魔鬼代言人"]
+        },
+        {
+          "team": "demon",
+          "names": ["痢蛭", "暴乱", "普卡", "沙巴洛斯"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1113265955643850761 对照图-03（原图 V2.71）",
+      "targets": [
+        "all_jsons/全原创角色剧本/海外/#直面恐惧V2.71（Face Your Fears）-Babel.json"
+      ],
+      "meta_updates": {
+        "author": "Besjbo & Mabel"
+      },
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "狩猎",
+            "腐化",
+            "局外者",
+            "网络",
+            "荒芜",
+            "螺旋",
+            "浩瀚",
+            "终结",
+            "黑暗",
+            "孤独",
+            "埋葬",
+            "杀戮",
+            "血肉"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": ["尤尔根·莱特纳", "彼得·卢卡斯", "黛西·托纳", "杰罗德·凯伊"]
+        },
+        {
+          "team": "minion",
+          "names": ["马丁·布莱克伍德", "梅兰妮·金", "提姆·斯托克", "萨沙·詹姆斯"]
+        },
+        {
+          "team": "demon",
+          "names": ["档案员", "格特鲁德·罗宾森", "乔纳·马格鲁斯", "眼神"]
+        }
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",

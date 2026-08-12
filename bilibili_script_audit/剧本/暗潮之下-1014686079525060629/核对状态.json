@@ -11,15 +11,14 @@
     "对照图-01.jpg",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 26,
+  "ocr_character_matches": 27,
   "ocr_required_character_count": 27,
-  "ocr_missing_characters": [
-    "追猎者"
-  ],
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
+    "追猎者",
     "圣洁之魂"
   ],
   "ocr_heading_characters": [
@@ -45,49 +44,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "气球驾驶员",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "少妇",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "追猎者",
-      "team": "townsfolk",
-      "ability_coverage": 0.6389
-    },
-    {
       "name": "海盗",
       "team": "townsfolk",
       "ability_coverage": 0.95
-    },
-    {
-      "name": "商人",
-      "team": "townsfolk",
-      "ability_coverage": 0.8919
-    },
-    {
-      "name": "造谣者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "大亨",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "食人族",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "小说家",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
     },
     {
       "name": "面包师",
@@ -100,8 +59,23 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "修补匠",
-      "team": "outsider",
+      "name": "气球驾驶员",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "少妇",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "追猎者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "大亨",
+      "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
@@ -110,12 +84,32 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "陌客",
-      "team": "outsider",
+      "name": "小说家",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "造谣者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "商人",
+      "team": "townsfolk",
+      "ability_coverage": 0.8919
+    },
+    {
+      "name": "食人族",
+      "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
       "name": "流浪汉",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "陌客",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -125,13 +119,8 @@
       "ability_coverage": 0.9388
     },
     {
-      "name": "斗牛士",
-      "team": "minion",
-      "ability_coverage": 0.575
-    },
-    {
-      "name": "教父",
-      "team": "minion",
+      "name": "修补匠",
+      "team": "outsider",
       "ability_coverage": 1.0
     },
     {
@@ -140,14 +129,29 @@
       "ability_coverage": 0.8235
     },
     {
+      "name": "教父",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "科学怪人",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
+      "name": "斗牛士",
+      "team": "minion",
+      "ability_coverage": 0.575
+    },
+    {
       "name": "战车",
       "team": "minion",
       "ability_coverage": 1.0
+    },
+    {
+      "name": "西西弗斯",
+      "team": "demon",
+      "ability_coverage": 0.8727
     },
     {
       "name": "普卡",
@@ -158,11 +162,6 @@
       "name": "献礼",
       "team": "demon",
       "ability_coverage": 1.0
-    },
-    {
-      "name": "西西弗斯",
-      "team": "demon",
-      "ability_coverage": 0.8727
     },
     {
       "name": "圣洁之魂",
@@ -180,19 +179,19 @@
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
-      "name": "科学怪人 & 海盗",
-      "team": "jinx",
-      "ability_coverage": 0.8462
-    },
-    {
-      "name": "战车 & 普卡",
-      "team": "jinx",
-      "ability_coverage": 0.9394
-    },
-    {
       "name": "食人族&面包师",
       "team": "jinx",
       "ability_coverage": 1.0
+    },
+    {
+      "name": "科学怪人&海盗",
+      "team": "jinx",
+      "ability_coverage": 0.9615
+    },
+    {
+      "name": "战车&普卡",
+      "team": "jinx",
+      "ability_coverage": 0.9394
     }
   ],
   "ocr_jinx_mismatches": [],
@@ -441,6 +440,8 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

@@ -11,9 +11,9 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-03.png",
+  "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 26,
   "ocr_required_character_count": 26,
   "ocr_missing_characters": [],
@@ -140,16 +140,6 @@
       "ability_coverage": 0.4762
     },
     {
-      "name": "斐斯特伍德",
-      "team": "demon",
-      "ability_coverage": 0.9844
-    },
-    {
-      "name": "造物之语",
-      "team": "demon",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "阖众",
       "team": "demon",
       "ability_coverage": 0.95
@@ -160,9 +150,19 @@
       "ability_coverage": 0.9692
     },
     {
+      "name": "斐斯特伍德",
+      "team": "demon",
+      "ability_coverage": 0.9844
+    },
+    {
+      "name": "造物之语",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "正义女神",
       "team": "fabled",
-      "ability_coverage": 0.9512
+      "ability_coverage": 0.9756
     }
   ],
   "ocr_ability_mismatches": [],
@@ -220,20 +220,12 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "一名旅行者醉酒，所有玩冢都会知道他是谁。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
     {
       "image": "对照图-01.png",
-      "heading_characters": [],
-      "heading_character_details": [],
-      "required_character_matches": 0
-    },
-    {
-      "image": "对照图-02.png",
       "heading_characters": [
         "\"镇民\"",
         "\"外来者\"",
@@ -262,7 +254,7 @@
       "required_character_matches": 0
     },
     {
-      "image": "对照图-03.png",
+      "image": "对照图-02.png",
       "heading_characters": [
         "操纵者",
         "小提琴家",
@@ -321,13 +313,13 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "一名旅行者醉酒，所有玩冢都会知道他是谁。"
-    ]
+    "unexplained_bottom_lines": []
   },
   "source_image_added_ids": [
     "c0c7eb7519506b5f71c77c9a482a240c44902471.png",

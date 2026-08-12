@@ -13,12 +13,12 @@
     ],
     "notes": [
       {
-        "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事“可能”发生，代表说书人决定该事情是否发生。"
+        "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事情“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表由<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>来决定该事情是否发生。"
       },
       {
         "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">失去能力</span>，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。"
       },
       {
         "text": "*代表非首个夜晚",
@@ -199,20 +199,17 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
     "edition": "custom",
-    "flavor": "",
-    "id": "3_68",
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
+    "id": "3_65",
     "firstNightReminder": "",
-    "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
-    "name": "卖花女孩",
-    "otherNight": 58,
+    "otherNightReminder": "",
+    "name": "博学者",
+    "otherNight": 0,
     "setup": 0,
-    "reminders": [
-      "恶魔已投票",
-      "恶魔未投票"
-    ],
+    "reminders": [],
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0
@@ -234,17 +231,20 @@
     "firstNight": 0
   },
   {
-    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "ability": "每个夜晚*，你会得知在今天白天时是否有恶魔投过票。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/flowergirl.png",
     "edition": "custom",
-    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……",
-    "id": "3_65",
+    "flavor": "",
+    "id": "3_68",
     "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "博学者",
-    "otherNight": 0,
+    "otherNightReminder": "对她点头或摇头来示意今天白天是否有恶魔投过票。",
+    "name": "卖花女孩",
+    "otherNight": 58,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "恶魔已投票",
+      "恶魔未投票"
+    ],
     "remindersGlobal": [],
     "team": "townsfolk",
     "firstNight": 0
@@ -353,19 +353,17 @@
     "firstNight": 0
   },
   {
-    "ability": "你随时可能死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
+    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
     "edition": "custom",
     "flavor": "",
-    "id": "2_34",
+    "id": "3_56",
     "firstNightReminder": "",
-    "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
-    "name": "修补匠",
-    "otherNight": 48,
+    "otherNightReminder": "",
+    "name": "呆瓜",
+    "otherNight": 0,
     "setup": 0,
-    "reminders": [
-      "死亡"
-    ],
+    "reminders": [],
     "remindersGlobal": [],
     "team": "outsider",
     "firstNight": 0
@@ -390,19 +388,39 @@
     "firstNight": 7
   },
   {
-    "ability": "当你得知你死亡时，你要公开选择一名存活的玩家：如果他是邪恶的，你的阵营落败。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/klutz.png",
+    "ability": "你随时可能死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/tinker.png",
     "edition": "custom",
     "flavor": "",
-    "id": "3_56",
+    "id": "2_34",
     "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "呆瓜",
-    "otherNight": 0,
+    "otherNightReminder": "修补匠可能会死亡。如果说书人选择让修补匠死亡，放置死亡标记。",
+    "name": "修补匠",
+    "otherNight": 48,
     "setup": 0,
-    "reminders": [],
+    "reminders": [
+      "死亡"
+    ],
     "remindersGlobal": [],
     "team": "outsider",
+    "firstNight": 0
+  },
+  {
+    "ability": "如果你被处决，除三名玩家以外的其他所有玩家均会死亡。一分钟之后，被最多玩家手指指着的玩家死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/boomdandy.png",
+    "edition": "custom",
+    "flavor": "",
+    "id": "20073_133",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "name": "炸弹人",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [
+      "幸存"
+    ],
+    "remindersGlobal": [],
+    "team": "minion",
     "firstNight": 0
   },
   {
@@ -425,24 +443,6 @@
     "firstNight": 21
   },
   {
-    "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
-    "edition": "custom",
-    "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。",
-    "id": "2_29",
-    "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",
-    "otherNightReminder": "让魔鬼代言人选择一名存活玩家，不能是上一夜他选择过的玩家。标记那名玩家处决不死。",
-    "name": "魔鬼代言人",
-    "otherNight": 14,
-    "setup": 0,
-    "reminders": [
-      "处决不死"
-    ],
-    "remindersGlobal": [],
-    "team": "minion",
-    "firstNight": 22
-  },
-  {
     "ability": "在你的首个夜晚，你会得知一个关键词。首个说出该关键词的善良玩家会在当晚转变为邪恶阵营。",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mezepheles.png",
     "edition": "custom",
@@ -462,41 +462,41 @@
     "firstNight": 27
   },
   {
-    "ability": "如果你被处决，除三名玩家以外的其他所有玩家均会死亡。一分钟之后，被最多玩家手指指着的玩家死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/boomdandy.png",
+    "ability": "每个夜晚，你要选择一名存活的玩家（与上个夜晚不同）：如果明天白天他被处决，他不会死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/devils_advocate.png",
     "edition": "custom",
-    "flavor": "",
-    "id": "20073_133",
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "炸弹人",
-    "otherNight": 0,
+    "flavor": "如果异议被驳回，我的委托人将进行无罪申辩，理由是控方不遵守法规第27章B条——针对动词进行非正确或误导性的词形变化。昨晚有九名陪审团成员死亡，这个事实只不过是表面证据，正如威尔斯诉图勒案所开创的先例，这是无罪释放的进一步理由。",
+    "id": "2_29",
+    "firstNightReminder": "让魔鬼代言人选择一名存活玩家。标记那名玩家处决不死。",
+    "otherNightReminder": "让魔鬼代言人选择一名存活玩家，不能是上一夜他选择过的玩家。标记那名玩家处决不死。",
+    "name": "魔鬼代言人",
+    "otherNight": 14,
     "setup": 0,
     "reminders": [
-      "幸存"
+      "处决不死"
     ],
     "remindersGlobal": [],
     "team": "minion",
-    "firstNight": 0
+    "firstNight": 22
   },
   {
-    "ability": "每个夜晚*，如果今天白天没有人死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
     "edition": "custom",
-    "flavor": "我不。明白。你的。方式。人类。同类。向我。指引。泥土。那是。圣地。静卧。安睡。我也。必须。长眠。立刻。",
-    "id": "2_26",
-    "firstNightReminder": "",
-    "otherNightReminder": "如果白天无人死亡，唤醒僵怖，让他攻击一名玩家。",
-    "name": "僵怖",
-    "otherNight": 25,
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。",
+    "id": "20073_141",
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
+    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
+    "name": "痢蛭",
+    "otherNight": 35,
     "setup": 0,
     "reminders": [
-      "死于今日",
+      "中毒",
       "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
-    "firstNight": 0
+    "firstNight": 15
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被你杀死的爪牙保留他的能力，且与他邻近的两名镇民之一中毒。[-1外来者]",
@@ -519,23 +519,23 @@
     "firstNight": 0
   },
   {
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+    "ability": "每个夜晚*，如果今天白天没有人死亡，你会被唤醒并要选择一名玩家：他死亡。当你首次死亡后，你仍存活，但会被当作死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/zombuul.png",
     "edition": "custom",
-    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。",
-    "id": "20073_141",
-    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
-    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
-    "name": "痢蛭",
-    "otherNight": 35,
+    "flavor": "我不。明白。你的。方式。人类。同类。向我。指引。泥土。那是。圣地。静卧。安睡。我也。必须。长眠。立刻。",
+    "id": "2_26",
+    "firstNightReminder": "",
+    "otherNightReminder": "如果白天无人死亡，唤醒僵怖，让他攻击一名玩家。",
+    "name": "僵怖",
+    "otherNight": 25,
     "setup": 0,
     "reminders": [
-      "中毒",
+      "死于今日",
       "死亡"
     ],
     "remindersGlobal": [],
     "team": "demon",
-    "firstNight": 15
+    "firstNight": 0
   },
   {
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。镇民玩家的能力都会产生错误信息。如果白天没人被处决，邪恶阵营获胜。",

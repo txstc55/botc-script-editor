@@ -12,7 +12,7 @@
       },
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">失去能力</span>，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
         "text": "*代表非首个夜晚",
@@ -97,7 +97,7 @@
     "team": "townsfolk",
     "name_eng": "Balloonist",
     "firstNight": 44,
-    "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1 外来者]",
+    "ability": "每个夜晚，你会得知一名不同角色类型的玩家，直到场上所有的角色类型你都得知过一次。[+1外来者]",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png"
   },
   {
@@ -173,23 +173,6 @@
     "flavor": "你们随便谁来我都能把他喝到桌子底下去！说你呢！那个话痨！敢来和我喝一杯么？不来？那你呢，老太婆？你以前喝过老麦基利的加香料朗姆酒吗？保证能让你喝成个真男人！上船咯，噢耶！"
   },
   {
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "name": "博学者",
-    "otherNight": 0,
-    "setup": 0,
-    "reminders": [],
-    "id": "savantbutton",
-    "edition": "custom",
-    "team": "townsfolk",
-    "name_eng": "Savant",
-    "firstNight": 0,
-    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
-    "remindersGlobal": [],
-    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
-  },
-  {
     "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
     "name": "女裁缝",
@@ -232,6 +215,40 @@
   {
     "firstNightReminder": "",
     "otherNightReminder": "",
+    "name": "博学者",
+    "otherNight": 0,
+    "setup": 0,
+    "reminders": [],
+    "id": "savantbutton",
+    "edition": "custom",
+    "team": "townsfolk",
+    "name_eng": "Savant",
+    "firstNight": 0,
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
+  },
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
+    "name": "守鸦人",
+    "otherNight": 42,
+    "setup": 0,
+    "reminders": [],
+    "id": "ravenkeeperbutton",
+    "edition": "custom",
+    "team": "townsfolk",
+    "name_eng": "Ravenkeeper",
+    "firstNight": 0,
+    "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
+    "remindersGlobal": [],
+    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
+  },
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "",
     "name": "渔夫",
     "otherNight": 0,
     "setup": 0,
@@ -250,20 +267,41 @@
   },
   {
     "firstNightReminder": "",
-    "otherNightReminder": "如果守鸦人今晚死亡，唤醒他并让他选择一名玩家。对他展示那名玩家的角色标记。",
-    "name": "守鸦人",
-    "otherNight": 42,
-    "setup": 0,
+    "otherNightReminder": "",
+    "name": "酒鬼",
+    "otherNight": 0,
+    "setup": 1,
     "reminders": [],
-    "id": "ravenkeeperbutton",
+    "id": "drunkbutton",
     "edition": "custom",
-    "team": "townsfolk",
-    "name_eng": "Ravenkeeper",
+    "remindersGlobal": [
+      "是酒鬼"
+    ],
+    "team": "outsider",
+    "name_eng": "Drunk",
     "firstNight": 0,
-    "ability": "如果你在夜晚死亡，你会被唤醒，然后你要选择一名玩家：你会得知他的角色。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ravenkeeper.png",
+    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
+    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
+  },
+  {
+    "firstNightReminder": "",
+    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
+    "name": "心上人",
+    "otherNight": 41,
+    "setup": 0,
+    "reminders": [
+      "醉酒"
+    ],
+    "id": "sweetheartbutton",
+    "edition": "custom",
+    "team": "outsider",
+    "name_eng": "Sweetheart",
+    "firstNight": 0,
+    "ability": "当你死亡时，会有一名玩家开始醉酒。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
     "remindersGlobal": [],
-    "flavor": "我的鸟儿们会替我复仇的！飞吧！飞吧，我尽职的小可爱！去到庄园和溪边！去到小巷和集会所里！快飞吧！"
+    "flavor": "我永远也忘不掉她……永远……"
   },
   {
     "firstNightReminder": "",
@@ -287,25 +325,6 @@
   {
     "firstNightReminder": "",
     "otherNightReminder": "",
-    "name": "酒鬼",
-    "otherNight": 0,
-    "setup": 1,
-    "reminders": [],
-    "id": "drunkbutton",
-    "edition": "custom",
-    "remindersGlobal": [
-      "是酒鬼"
-    ],
-    "team": "outsider",
-    "name_eng": "Drunk",
-    "firstNight": 0,
-    "ability": "你不知道你是酒鬼。你以为你是一个镇民角色，但其实你不是。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/drunk.png",
-    "flavor": "我是个只在社交场合里~嗝儿~喝酒的人，亲爱的。 但无可否认，我是一个非常~嗝儿~擅长社交的人。"
-  },
-  {
-    "firstNightReminder": "",
-    "otherNightReminder": "",
     "name": "畸形秀演员",
     "otherNight": 0,
     "setup": 0,
@@ -319,25 +338,6 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mutant.png",
     "remindersGlobal": [],
     "flavor": "我不是怪物！我是人！求你了！"
-  },
-  {
-    "firstNightReminder": "",
-    "otherNightReminder": "如果心上人死亡，会有一名玩家立刻醉酒。如果你还没有让这件事情发生，那么现在为任意一位玩家放置醉酒标记。",
-    "name": "心上人",
-    "otherNight": 41,
-    "setup": 0,
-    "reminders": [
-      "醉酒"
-    ],
-    "id": "sweetheartbutton",
-    "edition": "custom",
-    "team": "outsider",
-    "name_eng": "Sweetheart",
-    "firstNight": 0,
-    "ability": "当你死亡时，会有一名玩家开始醉酒。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/sweetheart.png",
-    "remindersGlobal": [],
-    "flavor": "我永远也忘不掉她……永远……"
   },
   {
     "firstNightReminder": "唤醒镜像双子和他的对立双子，让他们进行眼神接触。对镜像双子展示对立双子的角色标记，并对对立双子展示镜像双子的角色标记。",
@@ -433,9 +433,29 @@
     "team": "demon",
     "name_eng": "Lil' Monsta",
     "firstNight": 16,
-    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，可能会有一名玩家死亡。[+1爪牙]",
+    "ability": "每个夜晚，所有爪牙要秘密决定由哪名玩家来照看小怪宝并且“是恶魔”。每个夜晚*，会有一名玩家死亡。[+1爪牙]",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
     "flavor": ""
+  },
+  {
+    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
+    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
+    "name": "痢蛭",
+    "otherNight": 35,
+    "setup": 0,
+    "reminders": [
+      "中毒",
+      "死亡"
+    ],
+    "id": "lleechbutton",
+    "edition": "custom",
+    "team": "demon",
+    "name_eng": "Lleech",
+    "firstNight": 15,
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他死亡时你才会一同死亡。",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
+    "remindersGlobal": [],
+    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
     "firstNightReminder": "",
@@ -457,25 +477,5 @@
     "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
     "flavor": ""
-  },
-  {
-    "firstNightReminder": "唤醒痢蛭，让他选择一名玩家以寄生。",
-    "otherNightReminder": "寄生蛭指向一名玩家。那名玩家死亡。",
-    "name": "痢蛭",
-    "otherNight": 35,
-    "setup": 0,
-    "reminders": [
-      "中毒",
-      "死亡"
-    ],
-    "id": "lleechbutton",
-    "edition": "custom",
-    "team": "demon",
-    "name_eng": "Lleech",
-    "firstNight": 15,
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有当他处于死亡状态时你才会立即死亡。",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lleech.png",
-    "remindersGlobal": [],
-    "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   }
 ]

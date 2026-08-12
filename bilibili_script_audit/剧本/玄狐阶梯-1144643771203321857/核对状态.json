@@ -16,7 +16,7 @@
     "0bd3692dbf1955bc01db68fc5e2ea32744902471.png",
     "c3935722849cdca1120feafd79aa6abe44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 27,
@@ -209,17 +209,12 @@
       "ability_coverage": 0.9583
     },
     {
-      "name": "侍女",
+      "name": "修行者",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "赌徒",
-      "team": "townsfolk",
-      "ability_coverage": 0.8966
-    },
-    {
-      "name": "弄臣",
+      "name": "侍女",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -229,37 +224,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "博学者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "女裁缝",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "气球驾驶员",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "守夜人",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "魔术师",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "食人族",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "修行者",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -274,22 +239,42 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "咒狐",
-      "team": "outsider",
-      "ability_coverage": 0.9403
+      "name": "赌徒",
+      "team": "townsfolk",
+      "ability_coverage": 0.8966
     },
     {
-      "name": "圣徒",
-      "team": "outsider",
+      "name": "博学者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "守夜人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "魔术师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "弄臣",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "女裁缝",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "食人族",
+      "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
       "name": "疯子",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "解谜大师",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -299,17 +284,27 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "刺客",
+      "name": "圣徒",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "解谜大师",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "咒狐",
+      "team": "outsider",
+      "ability_coverage": 0.9403
+    },
+    {
+      "name": "精神病患者",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
       "name": "女巫",
-      "team": "minion",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "精神病患者",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -320,6 +315,11 @@
     },
     {
       "name": "科学怪人",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "刺客",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -372,9 +372,7 @@
     "2 将投票标记投给恶魔。",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "第三方阵营•局外人"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -588,8 +586,16 @@
       ]
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "第三方阵营•局外人"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "原图文字是咒狐的自定义章节标题；JSON 已用 previewSection=thirdParty 和 previewSectionLabel=局外人呈现，软件生成图已人工核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
