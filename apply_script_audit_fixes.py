@@ -214,6 +214,22 @@ def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
 
 def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
   changes: list[str] = []
+  id_roster = fix.get("id_roster")
+  if isinstance(id_roster, dict):
+    current = json.loads(raw)
+    if not isinstance(current, list):
+      raise ValueError("ID 阵容剧本 JSON 不是顶层数组")
+    entries = [
+      {"id": entry} if isinstance(entry, str) else standard_script_entry(entry)
+      for entry in id_roster.get("entries", [])
+    ]
+    meta = standard_script_entry(id_roster.get("meta", {}))
+    if meta:
+      entries.insert(0, {"id": "_meta", **meta})
+    if current != entries:
+      raw = json.dumps(entries, ensure_ascii=False, indent=2) + "\n"
+      changes.append("重建 ID 阵容")
+
   for removal in fix.get("removals", []):
     removal_id = str(removal.get("id", "")).strip()
     if removal_id:
@@ -260,6 +276,22 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
     base_indent = object_line_indent(raw, start)
     raw = raw[:start] + formatted_object(new_role, base_indent) + raw[end:]
     changes.append(f"{old_identity[0]} -> {new_role['name']}")
+
+  for rename in fix.get("renames", []):
+    old_identity = (rename["old_name"], rename["team"])
+    new_identity = (rename["new_name"], rename["team"])
+    objects = parsed_objects(raw)
+    old_matches = [item for item in objects if object_identity(item[2]) == old_identity]
+    new_matches = [item for item in objects if object_identity(item[2]) == new_identity]
+    if not old_matches and new_matches:
+      continue
+    if len(old_matches) != 1 or new_matches:
+      raise ValueError(f"待改名角色不是唯一结果：{old_identity[1]}/{old_identity[0]}")
+    start, end, role = old_matches[0]
+    role["name"] = rename["new_name"]
+    base_indent = object_line_indent(raw, start)
+    raw = raw[:start] + formatted_object(role, base_indent) + raw[end:]
+    changes.append(f"{old_identity[0]} -> {rename['new_name']}")
 
   source_sync = fix.get("source_sync")
   if source_sync:

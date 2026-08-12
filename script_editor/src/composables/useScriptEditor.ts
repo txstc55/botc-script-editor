@@ -8,6 +8,7 @@ import {
 } from "../utils/jinxLibrary";
 import { isBatchExportMode } from "../utils/batchExportClient";
 import { loadPlayFromJson } from "../utils/playJson";
+import { hydratePlayRoleIds } from "../utils/roleIdLibrary";
 
 export function useScriptEditor() {
   const script = reactive(structuredClone(sampleScript));
@@ -92,16 +93,18 @@ export function useScriptEditor() {
       ...jinx,
     };
     clearJinxSuppression(nextJinx.name);
-    rememberJinxIncluded(nextJinx);
+    rememberJinxIncluded(nextJinx, true);
     script.jinxes.push(nextJinx);
   }
 
   function removeJinx(id: string) {
     const removed = script.jinxes.find((jinx) => jinx.id === id);
-    if (removed) {
-      rememberJinxRemoved(removed.name);
+    if (!removed) {
+      return;
     }
-    script.jinxes = script.jinxes.filter((jinx) => jinx.id !== id);
+    const normalizedName = normalizeJinxName(removed.name);
+    rememberJinxRemoved(removed.name);
+    script.jinxes = script.jinxes.filter((jinx) => normalizeJinxName(jinx.name) !== normalizedName);
   }
 
   function updateJinx(id: string, nextJinx: JinxDraft) {
@@ -120,7 +123,7 @@ export function useScriptEditor() {
       clearJinxSuppression(previousName);
     }
     clearJinxSuppression(script.jinxes[index].name);
-    rememberJinxIncluded(script.jinxes[index]);
+    rememberJinxIncluded(script.jinxes[index], true);
   }
 
   function setJinxIncluded(id: string, included: boolean) {
@@ -129,7 +132,7 @@ export function useScriptEditor() {
       return;
     }
     jinx.included = included;
-    rememberJinxIncluded(jinx);
+    rememberJinxIncluded(jinx, true);
   }
 
   function addRole(team: TeamKey, role?: RoleDraft) {
@@ -220,7 +223,7 @@ export function useScriptEditor() {
   }
 
   async function loadPlayText(rawText: string, fileName: string, runtimeNotes: string[] = []) {
-    const parsed = JSON.parse(rawText);
+    const parsed = await hydratePlayRoleIds(JSON.parse(rawText));
     const loaded = loadPlayFromJson(parsed, fileName);
     if (runtimeNotes.length) {
       loaded.script.notes = runtimeNotes.map((text, index) => ({
@@ -290,6 +293,7 @@ export function useScriptEditor() {
       script.jinxes.push(draft);
       existingByName.set(normalizedName, draft);
     }
+    applyJinxSuppressions();
   }
 
   function collectPlayCharacters(): PlayCharacterSummary[] {
@@ -365,14 +369,14 @@ export function useScriptEditor() {
     }
   }
 
-  function rememberJinxIncluded(jinx: JinxDraft) {
+  function rememberJinxIncluded(jinx: JinxDraft, explicit = false) {
     const normalizedName = normalizeJinxName(jinx.name);
     if (!normalizedName) {
       return;
     }
     if (jinx.included === false) {
       disabledJinxNames.add(normalizedName);
-    } else {
+    } else if (explicit) {
       disabledJinxNames.delete(normalizedName);
     }
   }
@@ -394,6 +398,16 @@ export function useScriptEditor() {
   function clearJinxSuppression(name: string) {
     const normalizedName = normalizeJinxName(name);
     removedJinxNames.delete(normalizedName);
+    disabledJinxNames.delete(normalizedName);
+  }
+
+  function applyJinxSuppressions() {
+    script.jinxes = script.jinxes.filter((jinx) => !removedJinxNames.has(normalizeJinxName(jinx.name)));
+    for (const jinx of script.jinxes) {
+      if (disabledJinxNames.has(normalizeJinxName(jinx.name))) {
+        jinx.included = false;
+      }
+    }
   }
 
   function resetJinxMemory() {

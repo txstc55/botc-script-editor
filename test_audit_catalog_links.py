@@ -104,17 +104,45 @@ class CatalogLinkTest(unittest.TestCase):
   def test_existing_review_folders_respect_opus_filter(self) -> None:
     with tempfile.TemporaryDirectory() as directory:
       root = Path(directory)
+      catalog = []
       for opus_id in ("1", "2"):
         folder = root / "剧本" / f"剧本-{opus_id}"
         folder.mkdir(parents=True)
         (folder / "核对状态.json").write_text(
-          json.dumps({"opus_id": opus_id}),
+          json.dumps({"opus_id": opus_id, "script_name": f"剧本-{opus_id}"}),
           encoding="utf-8",
         )
+        catalog.append(CatalogItem(
+          opus_id,
+          f"帖子-{opus_id}",
+          f"剧本-{opus_id}",
+          "url",
+          "",
+          "",
+          0,
+          "unmatched",
+          [],
+        ))
 
-      folders = existing_review_folders(root, {"2"})
+      folders = existing_review_folders(root, {"2"}, catalog)
 
     self.assertEqual([folder.name for folder in folders], ["剧本-2"])
+
+  def test_existing_review_folders_ignore_stale_parent_board(self) -> None:
+    with tempfile.TemporaryDirectory() as directory:
+      root = Path(directory)
+      for script_name in ("合集父目录", "子剧本"):
+        folder = root / "剧本" / f"{script_name}-1"
+        folder.mkdir(parents=True)
+        (folder / "核对状态.json").write_text(
+          json.dumps({"opus_id": "1", "script_name": script_name}),
+          encoding="utf-8",
+        )
+      catalog = [CatalogItem("1", "帖子", "子剧本", "url", "", "", 0, "unmatched", [])]
+
+      folders = existing_review_folders(root, set(), catalog)
+
+    self.assertEqual([folder.name for folder in folders], ["子剧本-1"])
 
 
 if __name__ == "__main__":

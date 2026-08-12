@@ -8,6 +8,26 @@ from apply_script_audit_fixes import apply_fix, database_role, rebuild_full_rost
 
 
 class FullRosterTest(unittest.TestCase):
+  def test_id_roster_keeps_ids_short_and_allows_standard_fabled(self):
+    raw = json.dumps([{"id": "old"}], ensure_ascii=False, indent=2) + "\n"
+    fix = {
+      "id_roster": {
+        "meta": {"name": "测试剧本", "author": "作者"},
+        "entries": [
+          "clockmaker",
+          {"id": "规则", "name": "规则", "team": "fabled", "ability": "玩法"},
+        ],
+      },
+    }
+
+    updated, changes = apply_fix(raw, fix)
+    data = json.loads(updated)
+
+    self.assertEqual({"id": "clockmaker"}, data[1])
+    self.assertEqual("fabled", data[2]["team"])
+    self.assertIn("重建 ID 阵容", changes)
+    self.assertEqual((updated, []), apply_fix(updated, fix))
+
   def test_rebuild_preserves_meta_and_jinxes(self):
     source = json.dumps([
       {"id": "_meta", "name": "测试剧本"},
@@ -51,7 +71,7 @@ class FullRosterTest(unittest.TestCase):
     data = json.loads(rebuilt)
     self.assertTrue(changed)
     self.assertEqual(data[0]["name"], "目标剧本")
-    self.assertEqual(data[0]["notes"], ["来源说明"])
+    self.assertNotIn("notes", data[0])
     self.assertEqual(data[1], {"name": "角色甲", "team": "townsfolk", "setup": 1})
     self.assertEqual(data[2]["ability"], "目标相克")
 
@@ -81,6 +101,37 @@ class FullRosterTest(unittest.TestCase):
 
     self.assertEqual(changes, ["新增 角色甲"])
     self.assertEqual([item["id"] for item in json.loads(updated)], ["_meta", "a", "b"])
+
+  def test_rename_preserves_other_role_fields_and_is_idempotent(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "测试剧本"},
+      {
+        "id": "role-a",
+        "name": "角色甲*",
+        "team": "townsfolk",
+        "ability": "原能力",
+        "firstNight": 7,
+      },
+    ], ensure_ascii=False, indent=2)
+    fix = {"renames": [{
+      "old_name": "角色甲*",
+      "new_name": "角色甲",
+      "team": "townsfolk",
+    }]}
+
+    updated, changes = apply_fix(source, fix)
+    unchanged, second_changes = apply_fix(updated, fix)
+
+    self.assertEqual(changes, ["角色甲* -> 角色甲"])
+    self.assertEqual(second_changes, [])
+    self.assertEqual(unchanged, updated)
+    self.assertEqual(json.loads(updated)[1], {
+      "id": "role-a",
+      "name": "角色甲",
+      "team": "townsfolk",
+      "ability": "原能力",
+      "firstNight": 7,
+    })
 
   def test_explicit_addition_updates_existing_entry(self):
     source = json.dumps([

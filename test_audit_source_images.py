@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import json
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -12,6 +13,7 @@ from audit_bilibili_scripts import (
   source_image_urls_for_item,
   sync_local_artifacts,
   source_has_reviewable_board,
+  hydrate_id_only_items,
 )
 
 
@@ -80,6 +82,35 @@ class SourceImageTest(unittest.TestCase):
       [{"heading_characters": [str(index) for index in range(8)]}],
       [{"ability_coverage": 0.0}],
     ))
+
+  def test_id_only_role_is_hydrated_from_generated_database(self) -> None:
+    with TemporaryDirectory() as temporary_directory:
+      root = Path(temporary_directory)
+      (root / "townsfolks").mkdir()
+      (root / "id-map.json").write_text(json.dumps({
+        "exact": {
+          "clockmaker": {
+            "name": "钟表匠",
+            "team": "townsfolk",
+            "fileName": "钟表匠.json",
+          },
+        },
+        "normalized": {},
+      }, ensure_ascii=False), encoding="utf-8")
+      (root / "townsfolks" / "钟表匠.json").write_text(json.dumps({
+        "name": "钟表匠",
+        "team": "townsfolk",
+        "variants": {
+          "ability": ["测试能力"],
+          "image": ["image.png"],
+        },
+      }, ensure_ascii=False), encoding="utf-8")
+
+      result = hydrate_id_only_items([{"id": "clockmaker"}], root)
+
+      self.assertEqual("钟表匠", result[0]["name"])
+      self.assertEqual("测试能力", result[0]["ability"])
+      self.assertEqual("clockmaker", result[0]["id"])
 
   @patch("audit_bilibili_scripts.fetch_bytes", return_value=b"current")
   @patch(

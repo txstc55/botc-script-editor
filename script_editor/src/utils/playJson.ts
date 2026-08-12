@@ -73,7 +73,7 @@ export function loadPlayFromJson(input: unknown, fileName = "导入剧本.json")
   const items = extractItems(input);
   const meta = findMeta(input, items);
 
-  script.name = cleanText(meta?.name) || cleanText((input as RawRecord)?.name) || "未命名剧本";
+  script.name = cleanText(meta?.name) || cleanText((input as RawRecord)?.name) || scriptNameFromFileName(fileName);
   script.author = cleanText(meta?.author) || cleanText((input as RawRecord)?.author);
   script.builtInFirstNightEnabled = {
     minionInfo: Object.prototype.hasOwnProperty.call(meta ?? {}, "minionInfo"),
@@ -379,6 +379,11 @@ function cleanMultilineText(value: unknown): string {
     .replace(/[^\S\n]+/g, " ")
     .replace(/ *\n */g, "\n")
     .trim();
+}
+
+function scriptNameFromFileName(fileName: string) {
+  const name = cleanText(fileName).replace(/\.json$/iu, "").replace(/^#+/u, "");
+  return name && name !== "导入剧本" ? name : "未命名剧本";
 }
 
 function isRecord(value: unknown): value is RawRecord {

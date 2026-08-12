@@ -11,6 +11,7 @@ import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
+from urllib.parse import unquote, urlparse
 
 
 ROOT = Path(__file__).resolve().parent
@@ -28,6 +29,10 @@ TEAM_FOLDERS = {
   "demon": "demons",
   "traveler": "travelers",
   "fabled": "fabled",
+}
+
+CHARACTER_ID_OVERRIDES = {
+  "bigwig": ("fabled", "首席律师"),
 }
 
 TEAM_LABELS_ZH = {
@@ -180,6 +185,75 @@ def canonical_variant_key(value: Any) -> str:
   return json.dumps(value, ensure_ascii=False, sort_keys=True)
 
 
+def normalized_character_alias(value: Any) -> str:
+  normalized = unicodedata.normalize("NFKC", unquote(text(value))).lower()
+  return re.sub(r"[^0-9a-z\u3400-\u9fff]+", "", normalized)
+
+
+def confident_alias_target(counter: Counter[tuple[str, str]]) -> tuple[str, str] | None:
+  ranked = counter.most_common(2)
+  if not ranked:
+    return None
+  if len(ranked) == 1:
+    return ranked[0][0]
+  if ranked[0][1] >= 2 and ranked[0][1] > ranked[1][1] * 2:
+    return ranked[0][0]
+  return None
+
+
+def build_character_id_map(
+  rows: list[dict[str, str]],
+  filenames: dict[tuple[str, str], str],
+) -> dict[str, Any]:
+  exact_candidates: dict[str, Counter[tuple[str, str]]] = defaultdict(Counter)
+  normalized_candidates: dict[str, Counter[tuple[str, str]]] = defaultdict(Counter)
+
+  for row in rows:
+    target = (text(row.get("normalized_team")) or text(row.get("team")), text(row.get("name")))
+    if target not in filenames:
+      continue
+    source_ids = split_list(row.get("source_ids", ""))
+    for source_id in source_ids:
+      raw_id = source_id.rsplit("#", 1)[-1]
+      if not raw_id:
+        continue
+      exact_candidates[raw_id][target] += 1
+      normalized_candidates[normalized_character_alias(raw_id)][target] += 1
+
+    image_path = unquote(urlparse(text(row.get("image"))).path)
+    image_stem = Path(image_path).stem
+    if image_stem:
+      normalized_candidates[normalized_character_alias(image_stem)][target] += max(1, len(source_ids))
+    normalized_candidates[normalized_character_alias(target[1])][target] += max(1, len(source_ids))
+
+  def entry(target: tuple[str, str]) -> dict[str, str]:
+    team, name = target
+    return {
+      "name": name,
+      "team": team,
+      "fileName": filenames[target],
+    }
+
+  exact = {
+    alias: entry(target)
+    for alias, candidates in sorted(exact_candidates.items())
+    if (target := confident_alias_target(candidates)) is not None
+  }
+  normalized = {
+    alias: entry(target)
+    for alias, candidates in sorted(normalized_candidates.items())
+    if alias and (target := confident_alias_target(candidates)) is not None
+  }
+  for alias, target in CHARACTER_ID_OVERRIDES.items():
+    if target in filenames:
+      exact[alias] = entry(target)
+      normalized[normalized_character_alias(alias)] = entry(target)
+  return {
+    "exact": exact,
+    "normalized": normalized,
+  }
+
+
 def build_trait_variants(
   rows: list[dict[str, str]],
   readers: dict[str, Any],
@@ -245,6 +319,7 @@ def build_characters(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[d
     for folder in TEAM_FOLDERS.values()
   }
   total_occurrences = 0
+  filenames: dict[tuple[str, str], str] = {}
 
   for team in TEAM_FOLDERS:
     (CHARACTER_ROOT / TEAM_FOLDERS[team]).mkdir(parents=True, exist_ok=True)
@@ -263,6 +338,7 @@ def build_characters(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[d
     filename, filename_issue = unique_filename(name, "character", used_filenames[folder])
     if filename_issue:
       issues.append({"folder": folder, **filename_issue})
+    filenames[(team, name)] = filename
     payload = {
       "id": name,
       "name": name,
@@ -310,6 +386,7 @@ def build_characters(rows: list[dict[str, str]]) -> tuple[dict[str, Any], list[d
     ],
   }
   write_json(CHARACTER_ROOT / "index.json", index_payload)
+  write_json(CHARACTER_ROOT / "id-map.json", build_character_id_map(rows, filenames))
   return index_payload, issues
 
 

@@ -598,11 +598,77 @@ def json_items(data: Any) -> list[dict[str, Any]]:
   return []
 
 
+def normalized_character_alias(value: Any) -> str:
+  normalized = unicodedata.normalize("NFKC", clean_space(value)).lower()
+  return re.sub(r"[^0-9a-z\u3400-\u9fff]+", "", normalized)
+
+
+def hydrate_id_only_items(
+  items: list[dict[str, Any]],
+  database_root: Path | None = None,
+) -> list[dict[str, Any]]:
+  root = database_root or Path(__file__).with_name("script_editor") / "public" / "characters"
+  try:
+    id_map = json.loads((root / "id-map.json").read_text(encoding="utf-8"))
+  except (OSError, json.JSONDecodeError):
+    return items
+  exact = id_map.get("exact", {}) if isinstance(id_map, dict) else {}
+  normalized = id_map.get("normalized", {}) if isinstance(id_map, dict) else {}
+  team_folders = {
+    "townsfolk": "townsfolks",
+    "outsider": "outsiders",
+    "minion": "minions",
+    "demon": "demons",
+    "traveler": "travelers",
+    "fabled": "fabled",
+  }
+  hydrated: list[dict[str, Any]] = []
+  for item in items:
+    role_id = clean_space(item.get("id"))
+    if role_id == "_meta" or clean_space(item.get("name")) or clean_space(item.get("team")):
+      hydrated.append(item)
+      continue
+    mapped = exact.get(role_id) or normalized.get(normalized_character_alias(role_id))
+    if not isinstance(mapped, dict):
+      hydrated.append(item)
+      continue
+    team = clean_space(mapped.get("team"))
+    folder = team_folders.get(team)
+    file_name = clean_space(mapped.get("fileName"))
+    try:
+      record = json.loads((root / str(folder) / file_name).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+      hydrated.append(item)
+      continue
+    variants = record.get("variants", {}) if isinstance(record, dict) else {}
+
+    def first(field: str, fallback: Any) -> Any:
+      values = variants.get(field, []) if isinstance(variants, dict) else []
+      return values[0] if isinstance(values, list) and values else fallback
+
+    hydrated.append({
+      "name": clean_space(record.get("name")) or clean_space(mapped.get("name")),
+      "team": clean_space(record.get("team")) or team,
+      "ability": first("ability", ""),
+      "image": first("image", ""),
+      "firstNight": first("firstNight", 0),
+      "firstNightReminder": first("firstNightReminder", ""),
+      "otherNight": first("otherNight", 0),
+      "otherNightReminder": first("otherNightReminder", ""),
+      "reminders": first("reminders", []),
+      "remindersGlobal": first("remindersGlobal", []),
+      "setup": first("setup", 0),
+      "flavor": first("flavor", ""),
+      **item,
+    })
+  return hydrated
+
+
 def expected_script_entries(
   json_path: Path,
 ) -> tuple[list[dict[str, str]], list[dict[str, str]], list[dict[str, str]], list[str]]:
   data = json.loads(json_path.read_text(encoding="utf-8"))
-  items = json_items(data)
+  items = hydrate_id_only_items(json_items(data))
   names_by_id = {
     clean_space(item.get("id")): clean_space(item.get("name"))
     for item in items
@@ -876,6 +942,9 @@ def review_item(
     return
   metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
   if not json_path.exists():
+    manual = (review_overrides or {}).get(str(metadata.get("opus_id", "")), {})
+    if not isinstance(manual, dict):
+      raise ValueError("人工核对表条目必须是对象")
     candidates: list[tuple[int, int, Path, list[str]]] = []
     source_reviews: list[dict[str, Any]] = []
     for file_name in metadata.get("source_images", []):
@@ -897,8 +966,15 @@ def review_item(
       metadata["review_status"] = "no_source_image"
     else:
       _, _, image, heading_names = max(candidates, key=lambda value: (value[0], value[1]))
+      source_unavailable = manual.get("source_unavailable") is True or not source_board_groups
+      if source_unavailable and manual.get("source_unavailable") is not True:
+        manual = {
+          "source_unavailable": True,
+          "reason": "现有来源图片不包含可核对的完整角色板面。",
+        }
       metadata.update({
-        "review_status": "missing_json",
+        "review_status": "source_unavailable" if source_unavailable else "missing_json",
+        "manual_verification": manual if source_unavailable else {},
         "ocr_reference_image": image.name,
         "ocr_heading_characters": heading_names,
         "ocr_heading_character_details": next(
@@ -946,6 +1022,9 @@ def review_item(
   board_text = "\n".join(
     candidate[4] for candidate in board_candidates
   )
+  manual = (review_overrides or {}).get(str(metadata.get("opus_id", "")), {})
+  if not isinstance(manual, dict):
+    raise ValueError("人工核对表条目必须是对象")
   retained_notes = [
     clean_space(check.get("text"))
     for check in metadata.get("ocr_note_checks", [])
@@ -956,7 +1035,16 @@ def review_item(
     )
   ]
   detected_note_texts = [note["text"] for note in detected_notes([board_text])]
-  notes = list(dict.fromkeys([*legacy_notes, *retained_notes, *detected_note_texts]))
+  runtime_notes = [
+    clean_space(note) for note in manual.get("runtime_notes", [])
+    if clean_space(note)
+  ]
+  notes = list(dict.fromkeys([
+    *legacy_notes,
+    *retained_notes,
+    *detected_note_texts,
+    *runtime_notes,
+  ]))
   board_lines = [
     line
     for candidate in board_candidates
@@ -1055,16 +1143,13 @@ def review_item(
     "note_mismatches": note_mismatches,
     "unexplained_bottom_lines": unexplained_bottom_lines,
   }
-  manual = (review_overrides or {}).get(str(metadata.get("opus_id", "")), {})
-  if not isinstance(manual, dict):
-    raise ValueError("人工核对表条目必须是对象")
   verified = {
     "missing_characters": set(manual.get("verified_missing_characters", [])),
     "unexpected_characters": set(manual.get("verified_unexpected_characters", [])),
     "ability_mismatches": set(manual.get("verified_abilities", [])),
     "traveler_mismatches": set(manual.get("verified_travelers", [])),
     "jinx_mismatches": set(manual.get("verified_jinxes", [])),
-    "note_mismatches": set(manual.get("verified_notes", [])),
+    "note_mismatches": set(manual.get("verified_notes", [])) | set(runtime_notes),
     "unexplained_bottom_lines": set(manual.get("verified_bottom_lines", [])),
   }
   missing = [value for value in missing if value not in verified["missing_characters"]]
@@ -1513,7 +1598,7 @@ def main() -> None:
     raise ValueError("人工核对表必须是 opus id 到核对记录的对象")
   catalog_path = args.output / "剧本清单.json"
   local_scripts = load_local_scripts(args.json_root)
-  if args.reuse_catalog and catalog_path.exists():
+  if (args.reuse_catalog or args.review_existing) and catalog_path.exists():
     catalog = read_catalog(catalog_path)
   else:
     catalog = collect_catalog(ROOT_URL, local_scripts)
