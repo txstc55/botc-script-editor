@@ -11,7 +11,15 @@ from pathlib import Path
 from typing import Any
 
 
-VIEW_ONLY_FIELDS = {"notes", "abilityHtml", "textHtml", "html", "previewSection", "previewSectionLabel"}
+VIEW_ONLY_FIELDS = {
+  "notes",
+  "abilityHtml",
+  "textHtml",
+  "html",
+  "previewSection",
+  "previewSectionLabel",
+  "sch_team",
+}
 
 
 def standard_script_entry(value: dict[str, Any]) -> dict[str, Any]:

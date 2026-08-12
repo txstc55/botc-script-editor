@@ -75,6 +75,24 @@ class FullRosterTest(unittest.TestCase):
     self.assertEqual(data[1], {"name": "角色甲", "team": "townsfolk", "setup": 1})
     self.assertEqual(data[2]["ability"], "目标相克")
 
+  def test_rebuild_drops_legacy_team_label(self):
+    target = json.dumps([
+      {"id": "_meta", "name": "目标剧本"},
+      {"name": "旧角色", "team": "townsfolk"},
+    ], ensure_ascii=False)
+    source = [{
+      "name": "角色甲",
+      "team": "townsfolk",
+      "sch_team": "村民",
+    }]
+
+    with tempfile.TemporaryDirectory() as directory:
+      path = Path(directory) / "source.json"
+      path.write_text(json.dumps(source, ensure_ascii=False), encoding="utf-8")
+      rebuilt, _ = rebuild_full_roster(target, {"source_json": str(path)})
+
+    self.assertNotIn("sch_team", json.loads(rebuilt)[1])
+
   def test_remove_entry_by_id(self):
     source = json.dumps([
       {"id": "_meta", "name": "测试剧本"},

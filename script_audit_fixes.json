@@ -12950,6 +12950,404 @@
           }
         ]
       }
+    },
+    {
+      "source": "Bilibili 1155495564419268615 对照图-02（山雨欲来）",
+      "targets": [
+        "all_jsons/待整理json/863#山雨欲来.json"
+      ],
+      "removals": [
+        {"name": "风水师", "team": "townsfolk"},
+        {"name": "染坊坊主", "team": "townsfolk"},
+        {"name": "史官", "team": "townsfolk"},
+        {"name": "偃师", "team": "townsfolk"},
+        {"name": "俑匠", "team": "townsfolk"},
+        {"name": "书童", "team": "outsider"},
+        {"name": "阎罗", "team": "demon"}
+      ],
+      "additions": [
+        {
+          "name": "蛊雕",
+          "team": "minion",
+          "patch": {
+            "ability": "每个夜晚，你会得知顺时针方向上的下一名存活的镇民玩家的角色，他中毒且可能被当作邪恶的蛊雕，直到下个黄昏。每局游戏限一次，在夜晚时，你可以改变方向。",
+            "firstNightReminder": "唤醒蛊雕。如果他尚未使用改变方向的能力，允许他选择是否改变方向。对他指向当前方向上的下一名存活镇民玩家，并展示“他是”信息标记和该玩家的角色标记。该玩家中毒且可能被当作邪恶的蛊雕，直到下个黄昏。",
+            "otherNightReminder": "唤醒蛊雕。如果他尚未使用改变方向的能力，允许他选择是否改变方向。对他指向当前方向上的下一名存活镇民玩家，并展示“他是”信息标记和该玩家的角色标记。该玩家中毒且可能被当作邪恶的蛊雕，直到下个黄昏。",
+            "reminders": ["中毒", "改变方向"]
+          }
+        },
+        {
+          "name": "姑获鸟",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。每局游戏限一次，当爪牙死于处决时，你可能会获得他的能力。",
+            "otherNightReminder": "唤醒姑获鸟。如果今天有爪牙死于处决且姑获鸟尚未获得过能力，决定他是否获得该爪牙的能力。让姑获鸟选择一名玩家：他死亡。",
+            "reminders": ["死亡", "获得能力"]
+          }
+        },
+        {
+          "name": "暴君",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你杀死了与你不邻近的玩家，下个夜晚你可以选择至多两名玩家：他们死亡。",
+            "otherNightReminder": "唤醒暴君。如果他上个夜晚杀死了与他不邻近的玩家，允许他选择至多两名玩家；否则让他选择一名玩家。被选择的玩家死亡。",
+            "reminders": ["死亡", "可选两人"]
+          }
+        },
+        {
+          "name": "奸佞",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。爪牙在其死亡的当晚要选择一名玩家：如果他是善良的，他死亡。",
+            "firstNightReminder": "",
+            "otherNightReminder": "唤醒奸佞，让他选择一名玩家：他死亡。如果今晚有爪牙死亡，唤醒该爪牙，让他选择一名玩家：如果他是善良的，他死亡。",
+            "reminders": ["死亡", "爪牙选择"],
+            "remindersGlobal": [],
+            "setup": 0
+          }
+        },
+        {
+          "name": "赦令承旨",
+          "team": "fabled",
+          "patch": {
+            "ability": "解除所有角色能力在进行选择时的限制条件。",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": ["方士", "掮客", "引路人", "巡察", "道士", "狸猫", "知府", "鸩", "宠妃", "驿使", "提刑官", "秉笔"]
+        },
+        {
+          "team": "outsider",
+          "names": ["入殓师", "酒保"]
+        },
+        {
+          "team": "minion",
+          "names": ["蛊雕", "画皮", "酿酒师", "孟婆"]
+        },
+        {
+          "team": "demon",
+          "names": ["姑获鸟", "典狱长", "暴君", "奸佞"]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1097543845586927624 对照图-03/04（平流层以下）及帖子正文",
+      "targets": [
+        "all_jsons/BWG·剧本大乱斗/我说一下—SUI厂牌/#平流层以下-小付/#平流层以下v0.91-小付.json",
+        "all_jsons/BWG·剧本大乱斗/BWG剧本大乱斗收录合集/#平流层以下-小付/#平流层以下v0.91-小付.json"
+      ],
+      "replacements": [
+        {
+          "old_name": "报丧女妖",
+          "old_team": "townsfolk",
+          "new_name": "美学家",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/BWG·剧本大乱斗/602#梅姨阁诗人v1.1-提线苏际泽.json"
+        },
+        {
+          "old_name": "工程师",
+          "old_team": "townsfolk",
+          "new_name": "舰队司令",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/BWG·剧本大乱斗/602#梅姨阁诗人v1.1-提线苏际泽.json"
+        },
+        {
+          "old_name": "教父",
+          "old_team": "minion",
+          "new_name": "限",
+          "new_team": "minion",
+          "source_json": "all_jsons/旋转木马快速上手剧本/#数战速决Quick Maths-Fran .json"
+        },
+        {
+          "old_name": "女巫",
+          "old_team": "minion",
+          "new_name": "红唇女郎",
+          "new_team": "minion",
+          "source_json": "all_jsons/官方已发行剧本/#暗流涌动.json"
+        }
+      ],
+      "additions": [
+        {
+          "name": "天气事件",
+          "team": "fabled",
+          "patch": {
+            "ability": "每晚，恶魔将选择两个天气事件（非本局游戏中生效过的天气），说书人选择其中之一并公开宣布，持续到下个黄昏。",
+            "firstNight": 1,
+            "firstNightReminder": "唤醒恶魔，让他选择两个本局游戏中尚未生效的天气事件。如果恶魔是天气之子，让他改为选择三个不包含上个夜晚生效事件的天气事件。如果没有清醒健康的气象员，由说书人决定其中一个生效；天气之子在场时决定其中两个生效。公开宣布生效的天气事件，持续到下个黄昏；如果构成组合，触发额外灾难气象。",
+            "otherNight": 1,
+            "otherNightReminder": "唤醒恶魔，让他选择两个本局游戏中尚未生效的天气事件。如果恶魔是天气之子，让他改为选择三个不包含上个夜晚生效事件的天气事件。如果没有清醒健康的气象员，由说书人决定其中一个生效；天气之子在场时决定其中两个生效。公开宣布生效的天气事件，持续到下个黄昏；如果构成组合，触发额外灾难气象。",
+            "reminders": ["生效"]
+          }
+        },
+        {
+          "name": "暴雨",
+          "team": "fabled",
+          "patch": {"ability": "私聊只能与邻座玩家窃窃私语。"}
+        },
+        {
+          "name": "沙尘",
+          "team": "fabled",
+          "patch": {"ability": "白天缩短至5分钟，提名环节发言至多5个字。"}
+        },
+        {
+          "name": "高温",
+          "team": "fabled",
+          "patch": {"ability": "所有玩家投票时闭眼，票数将被秘密统计。"}
+        },
+        {
+          "name": "雷电",
+          "team": "fabled",
+          "patch": {"ability": "首个死亡的玩家的投票标记被视为一次提名权。"}
+        },
+        {
+          "name": "暴雪",
+          "team": "fabled",
+          "patch": {"ability": "夜间行动的镇民玩家可以放弃行动，否则可能死亡。"}
+        },
+        {
+          "name": "寒潮",
+          "team": "fabled",
+          "patch": {"ability": "恶魔获得其伪装之一的能力。"}
+        },
+        {
+          "name": "台风",
+          "team": "fabled",
+          "patch": {"ability": "说书人获得一次打破规则的机会。"}
+        },
+        {
+          "name": "大雾",
+          "team": "fabled",
+          "patch": {"ability": "至多1名镇民能力被错误地生效。"}
+        },
+        {
+          "entry": {
+            "id": "私货商人",
+            "name": "私货商人",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "仅当恶魔是天气之子时，若两项天气事件同时生效，则触发对应灾难气象：沙尘+暴雨=酸雨（一名善良玩家中毒）；高温+暴雨=三伏天（如果有人“疯狂”地证明一件事，可能有人被处决）；高温+沙尘=沙尘暴（对自己角色“疯狂”的玩家会有不好的事情发生）；雷电+暴雨=雷暴风暴（被提名的玩家无法发言）；雷电+高温=热力性雷暴（所有邪恶玩家分别选择一名玩家，他们当晚不会被唤醒）；暴雪+暴雨=雨雪交加（恶魔可以放弃杀人，如果如此，夜间未放弃行动的镇民均死亡）；暴雪+沙尘=钻石星辰（恶魔当晚向说书人许愿，可能会伴随代价和线索）；寒潮+暴雨=冻雨（善良玩家可能被跳过唤醒）；台风+暴雨=台风眼（天亮后直接进入提名阶段）；台风+沙尘=超级风暴（对错误事实疯狂的玩家可能会被处决）；大雾+沙尘=雾霾（发言需包含“可能”，否则可能死亡）；寒潮+高温=冰雹（一名善良玩家需要“疯狂”地证明某件事，否则可能被处决）；台风+高温=超级台风（如果白天无人被处决，善良阵营落败）；台风+雷电=隐线（白天只有3次提名机会，玩家不能提名自己）；寒潮+暴雪=雪崩（一旦两名玩家同时发言，立刻入夜）；大雾+暴雨=雪盲（投票将倒数后立刻计票，暂时取消轮盘投票）。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "name": "气象员",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "由你代为说书人来选择当晚触发的天气事件。",
+            "firstNight": 3,
+            "firstNightReminder": "如果气象员清醒健康，唤醒他并展示恶魔选择的天气事件，让他决定其中一个生效；天气之子在场时决定其中两个生效。公开宣布生效的天气事件。",
+            "otherNight": 3,
+            "otherNightReminder": "如果气象员清醒健康，唤醒他并展示恶魔选择的天气事件，让他决定其中一个生效；天气之子在场时决定其中两个生效。公开宣布生效的天气事件。"
+          }
+        },
+        {
+          "name": "失忆者",
+          "team": "townsfolk",
+          "patch": {"firstNight": 4, "otherNight": 5}
+        },
+        {
+          "name": "寡妇",
+          "team": "minion",
+          "patch": {"firstNight": 8, "otherNight": 0}
+        },
+        {
+          "name": "熊孩子",
+          "team": "townsfolk",
+          "patch": {"firstNight": 9, "otherNight": 7}
+        },
+        {
+          "name": "书童",
+          "team": "outsider",
+          "patch": {"firstNight": 10, "otherNight": 14}
+        },
+        {
+          "name": "占卜师",
+          "team": "townsfolk",
+          "patch": {"firstNight": 11, "otherNight": 17}
+        },
+        {
+          "name": "筑梦师",
+          "team": "townsfolk",
+          "patch": {"firstNight": 12, "otherNight": 18}
+        },
+        {
+          "name": "郎中",
+          "team": "townsfolk",
+          "patch": {"firstNight": 13, "otherNight": 20}
+        },
+        {
+          "name": "方士",
+          "team": "townsfolk",
+          "patch": {"firstNight": 14, "otherNight": 21}
+        },
+        {
+          "name": "侍女",
+          "team": "townsfolk",
+          "patch": {"firstNight": 15, "otherNight": 22}
+        },
+        {
+          "name": "美学家",
+          "team": "townsfolk",
+          "patch": {"firstNight": 0, "otherNight": 16}
+        },
+        {
+          "name": "舰队司令",
+          "team": "townsfolk",
+          "patch": {"firstNight": 0, "otherNight": 0}
+        },
+        {
+          "name": "赌徒",
+          "team": "townsfolk",
+          "patch": {"firstNight": 0, "otherNight": 6}
+        },
+        {
+          "name": "知府",
+          "team": "townsfolk",
+          "patch": {"firstNight": 0, "otherNight": 19}
+        },
+        {
+          "name": "农夫",
+          "team": "townsfolk",
+          "patch": {"firstNight": 0, "otherNight": 15}
+        },
+        {
+          "name": "应劫者",
+          "team": "outsider",
+          "patch": {
+            "ability": "如果你死亡，恶魔将获得指定天气事件的能力。",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 4,
+            "otherNightReminder": "如果应劫者死亡且其能力尚未触发，唤醒恶魔并展示应劫者角色标记；之后恶魔每晚指定生效的天气事件，而非由说书人抽取。"
+          }
+        },
+        {
+          "name": "使节",
+          "team": "outsider",
+          "patch": {
+            "ability": "每个夜晚限一次，一名玩家在使用自身能力选择邪恶玩家时会改为选中你，即使你已死亡。"
+          }
+        },
+        {
+          "name": "限",
+          "team": "minion",
+          "patch": {"firstNight": 2, "otherNight": 2}
+        },
+        {
+          "name": "红唇女郎",
+          "team": "minion",
+          "patch": {"firstNight": 0, "otherNight": 9}
+        },
+        {
+          "name": "刺客",
+          "team": "minion",
+          "patch": {"firstNight": 0, "otherNight": 8}
+        },
+        {
+          "name": "天气之子",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。改为选择三个天气事件（非上个夜晚生效的两个天气事件），生效其中两个天气事件。可能触发额外灾难气象。",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 10,
+            "otherNightReminder": "唤醒天气之子，让他选择一名玩家：他死亡。天气事件的选择与生效在天气事件行动步骤处理。"
+          }
+        },
+        {
+          "name": "傀儡师",
+          "team": "demon",
+          "entry": {
+            "id": "傀儡师",
+            "name": "傀儡师",
+            "edition": "custom",
+            "team": "demon",
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。每局游戏限一次，你可以选择一个角色：由你决定该角色获得的信息，且其选择的玩家可能死亡。",
+            "image": "https://www.bloodstar.xyz/p/stellarium/medieval_mythos/poppetmaker_medieval_mythos.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 12,
+            "otherNightReminder": "唤醒傀儡师，让他选择一名玩家：他死亡。如果他尚未使用限一次能力，允许他选择一个角色并决定该角色获得的信息；该角色选择的玩家可能死亡。",
+            "reminders": ["死亡", "决定信息", "可能死亡"],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "name": "方古",
+          "team": "demon",
+          "source_json": "all_jsons/官方已发行剧本/#梦殒春宵.json",
+          "overrides": {"firstNight": 0, "otherNight": 13}
+        },
+        {
+          "name": "机械大军",
+          "team": "demon",
+          "source_json": "all_jsons/全原创角色剧本/国内/#惊天大案-Sui染钟楼.json",
+          "overrides": {"firstNight": 0, "otherNight": 11}
+        },
+        {
+          "entry": {
+            "id": "气象员&应劫者",
+            "name": "气象员&应劫者",
+            "team": "jinx",
+            "ability": "气象员能力生效期间，应劫者的能力无法触发。"
+          }
+        },
+        {
+          "entry": {
+            "id": "方古&红唇女郎",
+            "name": "方古&红唇女郎",
+            "team": "jinx",
+            "ability": "如果方古成功转化了外来者并因此死去，红唇女郎不会变成方古。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "fabled",
+          "names": ["天气事件", "暴雨", "沙尘", "高温", "雷电", "暴雪", "寒潮", "台风", "大雾", "私货商人"]
+        },
+        {
+          "team": "townsfolk",
+          "names": ["方士", "占卜师", "侍女", "筑梦师", "熊孩子", "郎中", "赌徒", "知府", "气象员", "美学家", "失忆者", "艺术家", "舰队司令", "农夫"]
+        },
+        {
+          "team": "outsider",
+          "names": ["应劫者", "使节", "酒鬼", "书童"]
+        },
+        {
+          "team": "minion",
+          "names": ["限", "红唇女郎", "刺客", "寡妇"]
+        },
+        {
+          "team": "demon",
+          "names": ["天气之子", "傀儡师", "方古", "机械大军"]
+        },
+        {
+          "team": "jinx",
+          "names": ["气象员&应劫者", "方古&红唇女郎"]
+        }
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",
