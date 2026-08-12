@@ -18,14 +18,12 @@
     "6856d61c3570651e32aebcbabf126b7744902471.png",
     "046f68d07a82f04815e773e670d4227344902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 15,
-  "ocr_required_character_count": 16,
-  "ocr_missing_characters": [
-    "灯神"
-  ],
+  "ocr_required_character_count": 15,
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "小怪宝"
   ],
@@ -143,7 +141,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "小精灵",
+      "name": "侍女",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -153,7 +151,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "侍女",
+      "name": "小精灵",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -163,19 +161,14 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "疯子",
-      "team": "outsider",
-      "ability_coverage": 0.2778
-    },
-    {
       "name": "呆瓜",
       "team": "outsider",
       "ability_coverage": 0.9688
     },
     {
-      "name": "红唇女郎",
-      "team": "minion",
-      "ability_coverage": 0.9667
+      "name": "疯子",
+      "team": "outsider",
+      "ability_coverage": 0.3056
     },
     {
       "name": "恐惧之灵",
@@ -183,19 +176,24 @@
       "ability_coverage": 0.9455
     },
     {
+      "name": "红唇女郎",
+      "team": "minion",
+      "ability_coverage": 0.9667
+    },
+    {
       "name": "寡妇",
       "team": "minion",
       "ability_coverage": 0.8718
     },
     {
-      "name": "小怪宝",
-      "team": "demon",
-      "ability_coverage": 0.7273
-    },
-    {
       "name": "涡流",
       "team": "demon",
       "ability_coverage": 0.9302
+    },
+    {
+      "name": "小怪宝",
+      "team": "demon",
+      "ability_coverage": 0.7273
     },
     {
       "name": "哨兵",
@@ -206,20 +204,18 @@
       "name": "公爵夫人",
       "team": "fabled",
       "ability_coverage": 0.9048
-    },
-    {
-      "name": "灯神",
-      "team": "fabled",
-      "ability_coverage": 0.2222
     }
   ],
-  "ocr_ability_mismatches": [
-    "疯子",
-    "灯神"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "红唇女郎&小怪宝",
+      "team": "jinx",
+      "ability_coverage": 0.5143
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
@@ -414,11 +410,18 @@
       ]
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_abilities": [
+      "疯子"
+    ],
+    "source_image": "对照图-03.png",
+    "reason": "疯子原图确切措辞为“恶魔知道你的角色以及你在每个夜晚选择了哪些玩家”，已按原图修正，OCR 因小字换行导致覆盖率不足。另已删除原图没有的灯神，补齐红唇女郎&小怪宝相克，并核对哨兵、公爵夫人、全部角色、说明颜色与双侧夜序。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [
-      "疯子",
-      "灯神"
+      "疯子"
     ],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

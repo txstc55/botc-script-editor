@@ -12,13 +12,26 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-02.png",
+  "ocr_reference_image": "对照图-03.png",
   "ocr_heading_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
+    "厨师",
+    "小精灵",
+    "渔夫",
+    "共情者",
+    "博学者",
+    "女祭司",
+    "失忆者",
+    "驱魔人",
+    "吟游诗人",
+    "城镇公告员",
+    "士兵",
+    "心上人",
+    "陌客",
+    "隐士",
+    "投毒者",
+    "教父"
   ],
   "ocr_source_images": [
     {
@@ -174,7 +187,7 @@
           "y": 0.289
         }
       ],
-      "required_character_matches": 1
+      "required_character_matches": 18
     }
   ],
   "ocr_source_board_groups": [
@@ -210,90 +223,275 @@
   ],
   "ocr_heading_character_details": [
     {
-      "name": "\"镇民\"",
+      "name": "厨师",
       "team": "townsfolk",
-      "x": 0.29608,
-      "y": 0.202
+      "x": 0.14706,
+      "y": 0.86192
     },
     {
-      "name": "\"外来者\"",
+      "name": "小精灵",
       "team": "townsfolk",
-      "x": 0.27059,
-      "y": 0.17297
+      "x": 0.14706,
+      "y": 0.811
     },
     {
-      "name": "\"爪牙\"",
+      "name": "渔夫",
       "team": "townsfolk",
-      "x": 0.29412,
-      "y": 0.1468
+      "x": 0.56275,
+      "y": 0.805
+    },
+    {
+      "name": "共情者",
+      "team": "townsfolk",
+      "x": 0.14706,
+      "y": 0.75581
+    },
+    {
+      "name": "博学者",
+      "team": "townsfolk",
+      "x": 0.56275,
+      "y": 0.73837
+    },
+    {
+      "name": "女祭司",
+      "team": "townsfolk",
+      "x": 0.14706,
+      "y": 0.70349
+    },
+    {
+      "name": "失忆者",
+      "team": "townsfolk",
+      "x": 0.56078,
+      "y": 0.67587
+    },
+    {
+      "name": "驱魔人",
+      "team": "townsfolk",
+      "x": 0.14706,
+      "y": 0.66279
+    },
+    {
+      "name": "吟游诗人",
+      "team": "townsfolk",
+      "x": 0.56068,
+      "y": 0.61016
+    },
+    {
+      "name": "城镇公告员",
+      "team": "townsfolk",
+      "x": 0.14706,
+      "y": 0.593
+    },
+    {
+      "name": "士兵",
+      "team": "townsfolk",
+      "x": 0.56078,
+      "y": 0.545
+    },
+    {
+      "name": "心上人",
+      "team": "outsider",
+      "x": 0.56078,
+      "y": 0.46948
+    },
+    {
+      "name": "陌客",
+      "team": "outsider",
+      "x": 0.14706,
+      "y": 0.417
+    },
+    {
+      "name": "隐士",
+      "team": "outsider",
+      "x": 0.56078,
+      "y": 0.414
+    },
+    {
+      "name": "投毒者",
+      "team": "minion",
+      "x": 0.1451,
+      "y": 0.337
+    },
+    {
+      "name": "教父",
+      "team": "minion",
+      "x": 0.56078,
+      "y": 0.289
     }
   ],
-  "ocr_character_matches": 1,
-  "ocr_required_character_count": 1,
+  "ocr_character_matches": 22,
+  "ocr_required_character_count": 22,
   "ocr_missing_characters": [],
-  "ocr_name_confirmed_by_ability": [],
-  "ocr_unexpected_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
+  "ocr_name_confirmed_by_ability": [
+    "神谕者",
+    "杂耍艺人",
+    "恐惧之灵",
+    "亡魂"
   ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
+      "name": "厨师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "小精灵",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "共情者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "女祭司",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "驱魔人",
+      "team": "townsfolk",
+      "ability_coverage": 0.9388
+    },
+    {
+      "name": "城镇公告员",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "神谕者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "杂耍艺人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "渔夫",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "博学者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "失忆者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "吟游诗人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "士兵",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "大象",
       "team": "outsider",
-      "ability_coverage": 0.0
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "陌客",
+      "team": "outsider",
+      "ability_coverage": 0.9167
+    },
+    {
+      "name": "心上人",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "隐士",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "投毒者",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "恐惧之灵",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "亡魂",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "教父",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "牙噶巴卜",
+      "team": "demon",
+      "ability_coverage": 1.0
     }
   ],
-  "ocr_ability_mismatches": [
-    "大象"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
-  "ocr_jinx_checks": [],
+  "ocr_jinx_checks": [
+    {
+      "name": "牙噶巴卜&驱魔人",
+      "team": "jinx",
+      "ability_coverage": 0.9286
+    }
+  ],
   "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 0,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_note_checks": [],
+  "ocr_note_checks": [
+    {
+      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+      "text_coverage": 1.0
+    },
+    {
+      "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    }
+  ],
   "ocr_note_mismatches": [],
   "ocr_bottom_text": [
-    "1",
-    "1",
-    "2",
-    "3",
-    "3",
-    "1",
-    "2",
-    "2",
-    "爪牙",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "恶魔",
-    "钟楼剧本博物馆",
-    "美术设计"
+    "如果驱魔人选中了牙噶巴卜，那么牙噶巴人的能力在当晚",
+    "无法造成死亡。）",
+    "可能",
+    "某件事“可能”发生，代表说书人决定该事情是否发生。",
+    "中毒/醉酒",
+    "中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒",
+    "玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+    "*代表",
+    "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "钟楼剧本博物馆",
-    "美术设计"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "大象"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "钟楼剧本博物馆",
-      "美术设计"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

@@ -16,14 +16,12 @@
   "resolved_source_image_ids": [
     "80a431a2e618472e3994e6932e1da9bd44902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-01.png",
   "ocr_character_matches": 14,
   "ocr_required_character_count": 15,
-  "ocr_missing_characters": [
-    "哨兵"
-  ],
+  "ocr_missing_characters": [],
   "ocr_name_confirmed_by_ability": [
     "精神病患者",
     "梼杌"
@@ -155,11 +153,6 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "酒鬼",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "疯子",
       "team": "outsider",
       "ability_coverage": 0.3889
@@ -170,17 +163,22 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "酒鬼",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "魔鬼代言人",
       "team": "minion",
       "ability_coverage": 0.9143
     },
     {
-      "name": "精神病患者",
+      "name": "赶尸人",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
-      "name": "赶尸人",
+      "name": "精神病患者",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -195,10 +193,7 @@
       "ability_coverage": 0.1053
     }
   ],
-  "ocr_ability_mismatches": [
-    "疯子",
-    "哨兵"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [],
@@ -207,12 +202,12 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
-      "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
       "text_coverage": 1.0
     },
     {
-      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-      "text_coverage": 0.7143
+      "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+      "text_coverage": 1.0
     },
     {
       "text": "*代表非首个夜晚",
@@ -349,7 +344,23 @@
       ]
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_missing_characters": [
+      "哨兵"
+    ],
+    "verified_unexpected_characters": [
+      "\"被处决\""
+    ],
+    "verified_abilities": [
+      "疯子",
+      "哨兵"
+    ],
+    "verified_bottom_lines": [
+      "申毒/醉酒"
+    ],
+    "source_image": "对照图-01.png",
+    "reason": "该帖已拆分为冥昭瞢暗、穷境求生、饕餮盛宴、杌影生殇和狂浪梼天五张板逐一核对。OCR 将能力中的“被处决”误识别为角色名，且因杌影生殇底部区域和小字号漏识别哨兵及疯子能力；原图内容均已人工确认。五份角色、能力、夜序、相克、传奇和带颜色说明均已逐项核对。"
+  },
   "ocr_raw_issues": {
     "missing_characters": [
       "哨兵"

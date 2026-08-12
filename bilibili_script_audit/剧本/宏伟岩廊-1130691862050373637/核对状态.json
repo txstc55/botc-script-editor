@@ -13,25 +13,150 @@
     "对照图-03.png",
     "对照图-04.jpg"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
-  "ocr_reference_image": "对照图-02.png",
-  "ocr_character_matches": 0,
-  "ocr_required_character_count": 0,
+  "ocr_reference_image": "对照图-03.png",
+  "ocr_character_matches": 26,
+  "ocr_required_character_count": 26,
   "ocr_missing_characters": [],
-  "ocr_name_confirmed_by_ability": [],
-  "ocr_heading_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
+  "ocr_name_confirmed_by_ability": [
+    "解谜大师"
   ],
-  "ocr_unexpected_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
-  ],
+  "ocr_heading_characters": [],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
-  "ocr_ability_checks": [],
+  "ocr_ability_checks": [
+    {
+      "name": "厨师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "贵族",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "共情者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "舞蛇人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "数学家",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "僧侣",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "赌徒",
+      "team": "townsfolk",
+      "ability_coverage": 0.8621
+    },
+    {
+      "name": "半兽人",
+      "team": "townsfolk",
+      "ability_coverage": 0.9608
+    },
+    {
+      "name": "女裁缝",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "哲学家",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "公主",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "炼金术士",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "农夫",
+      "team": "townsfolk",
+      "ability_coverage": 0.9
+    },
+    {
+      "name": "管家",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "疯子",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "解谜大师",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "食人魔",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "麻脸巫婆",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "鹰身女妖",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "魔鬼代言人",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "哥布林",
+      "team": "minion",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "小恶魔",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "方古",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "普卡",
+      "team": "demon",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "痢蛭",
+      "team": "demon",
+      "ability_coverage": 0.9423
+    },
+    {
+      "name": "遗忘之门",
+      "team": "fabled",
+      "ability_coverage": 1.0
+    }
+  ],
   "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
@@ -42,48 +167,47 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "疯子&数学家",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "食人魔&麻脸巫婆",
+      "team": "jinx",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "遗忘之门",
       "team": "jinx",
       "ability_coverage": 0.186
-    },
-    {
-      "name": "数学家&疯子",
-      "team": "jinx",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "麻脸巫婆&食人魔",
-      "team": "jinx",
-      "ability_coverage": 1.0
     }
   ],
-  "ocr_jinx_mismatches": [
-    "遗忘之门"
+  "ocr_jinx_mismatches": [],
+  "ocr_note_checks": [
+    {
+      "text": "一无所知 玩家不会知道自己的角色。玩家不会从盲抽袋里抽取角色标记。在游戏开始时，由说书人直接把标记放置在魔典中。角色的能力依然正常生效。玩家会和正常一样被唤醒并使用自己的能力。当玩家死亡时，他们会得知自己的角色和阵营。因此他们中毒或醉酒，也会获得正确信息。恶魔和爪牙互相不认识。",
+      "text_coverage": 0.928
+    },
+    {
+      "text": "*代表非首个夜晚",
+      "text_coverage": 1.0
+    }
   ],
-  "ocr_note_checks": [],
   "ocr_note_mismatches": [],
   "ocr_bottom_text": [
-    "1",
-    "1",
-    "3",
-    "2",
-    "1",
-    "爪牙",
-    "3",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
-    "恶魔",
-    "钟楼剧本博物馆",
-    "美术设计"
+    "被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，",
+    "在你的首个夜晚，你要选择一名存活的玩家：他中毒，只有他",
+    "但每局游戏仅能成功转化一次。［+1外来者］",
+    "处于死亡状态时你才会立即死亡。",
+    "奇遇角色",
+    "遺忘之门 Tor",
+    "玩家不知道自己的角色和阵营。",
+    "当他们死亡时才会得知这些信息。",
+    "$油油總身靠業皆濃“憂霧父会選褶矗品恕燻争炎生丁变化.",
+    "*代表",
+    "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "钟楼剧本博物馆",
-    "美术设计"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [
     "相克规则"
   ],
@@ -122,13 +246,13 @@
           "y": 0.14535
         }
       ],
-      "required_character_matches": 0
+      "required_character_matches": 1
     },
     {
       "image": "对照图-03.png",
       "heading_characters": [],
       "heading_character_details": [],
-      "required_character_matches": 0
+      "required_character_matches": 25
     },
     {
       "image": "对照图-04.jpg",
@@ -147,28 +271,22 @@
   ],
   "ocr_jinx_marker_count": 3,
   "ocr_missing_jinx_rule_count": 0,
-  "ocr_heading_character_details": [
-    {
-      "name": "\"镇民\"",
-      "team": "townsfolk",
-      "x": 0.29608,
-      "y": 0.2005
-    },
-    {
-      "name": "\"外来者\"",
-      "team": "townsfolk",
-      "x": 0.27059,
-      "y": 0.17442
-    },
-    {
-      "name": "\"爪牙\"",
-      "team": "townsfolk",
-      "x": 0.29216,
-      "y": 0.14535
-    }
-  ],
-  "manual_verification": {},
+  "ocr_heading_character_details": [],
+  "manual_verification": {
+    "verified_jinxes": [
+      "遗忘之门"
+    ],
+    "verified_bottom_lines": [
+      "遺忘之门 Tor",
+      "$油油總身靠業皆濃“憂霧父会選褶矗品恕燻争炎生丁变化."
+    ],
+    "source_image": "对照图-03.png",
+    "source_data": "https://www.bloodstar.xyz/p/SerraEvelyn/the_grand_tor/script.json",
+    "reason": "两行是 OCR 对奇遇角色“遗忘之门”标题及其相克灰框的误识别。原始 JSON 仅含英文官方 id，已具体化为13名镇民、4名外来者、4名爪牙、4名恶魔和遗忘之门，补齐一无所知说明，并按原图列顺序与锚点整理4条相克。全部能力、图标、双侧夜序及说明均已逐项核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [
@@ -176,8 +294,8 @@
     ],
     "note_mismatches": [],
     "unexplained_bottom_lines": [
-      "钟楼剧本博物馆",
-      "美术设计"
+      "遺忘之门 Tor",
+      "$油油總身靠業皆濃“憂霧父会選褶矗品恕燻争炎生丁变化."
     ]
   }
 }

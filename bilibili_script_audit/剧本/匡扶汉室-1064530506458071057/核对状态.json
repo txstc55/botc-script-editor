@@ -16,7 +16,7 @@
     "33f538c604aac2781e1cf71d941f13a244902471.png",
     "2fcc2d960d44de00fd4b52b7cb743ee944902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 26,
@@ -209,11 +209,7 @@
       "y": 0.1845
     }
   ],
-  "ocr_unexpected_characters": [
-    "\"镇民\"",
-    "\"外来者\"",
-    "\"爪牙\""
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -237,17 +233,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "神谕者",
+      "name": "村夫",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "博学者",
-      "team": "townsfolk",
-      "ability_coverage": 0.7419
-    },
-    {
-      "name": "村夫",
+      "name": "神谕者",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -257,14 +248,19 @@
       "ability_coverage": 0.9608
     },
     {
+      "name": "侍臣",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "女裁缝",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "侍臣",
+      "name": "博学者",
       "team": "townsfolk",
-      "ability_coverage": 1.0
+      "ability_coverage": 0.7419
     },
     {
       "name": "艺术家",
@@ -287,7 +283,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "政客",
+      "name": "食人魔",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -297,14 +293,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "食人魔",
+      "name": "政客",
       "team": "outsider",
       "ability_coverage": 1.0
-    },
-    {
-      "name": "红唇女郎",
-      "team": "minion",
-      "ability_coverage": 0.8
     },
     {
       "name": "镜像双子",
@@ -317,6 +308,11 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "红唇女郎",
+      "team": "minion",
+      "ability_coverage": 0.8
+    },
+    {
       "name": "维齐尔",
       "team": "minion",
       "ability_coverage": 0.9783
@@ -324,11 +320,6 @@
     {
       "name": "科学怪人",
       "team": "minion",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "方古",
-      "team": "demon",
       "ability_coverage": 1.0
     },
     {
@@ -340,6 +331,11 @@
       "name": "痢蛭",
       "team": "demon",
       "ability_coverage": 0.9423
+    },
+    {
+      "name": "方古",
+      "team": "demon",
+      "ability_coverage": 1.0
     },
     {
       "name": "私货商人",
@@ -372,24 +368,22 @@
       "ability_coverage": 0.9615
     },
     {
-      "name": "科学怪人&食人魔",
+      "name": "食人魔&科学怪人",
       "team": "jinx",
       "ability_coverage": 1.0
     },
     {
-      "name": "科学怪人&政客",
+      "name": "政客&科学怪人",
       "team": "jinx",
       "ability_coverage": 1.0
     },
     {
-      "name": "炼金术士&科学怪人",
+      "name": "科学怪人&炼金术士",
       "team": "jinx",
       "ability_coverage": 0.9429
     }
   ],
-  "ocr_jinx_mismatches": [
-    "维齐尔&侍臣"
-  ],
+  "ocr_jinx_mismatches": [],
   "ocr_jinx_marker_count": 6,
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
@@ -664,8 +658,25 @@
       ]
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_unexpected_characters": [
+      "\"镇民\"",
+      "\"外来者\"",
+      "\"爪牙\""
+    ],
+    "verified_jinxes": [
+      "维齐尔&侍臣"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "三项是 OCR 将原图分区标题误识别为角色名；维齐尔&侍臣相克灰框已放大逐字核对，内容与 JSON 一致。已补作者、按原图左右栏重排角色与相克锚点，并核对全部角色、七条相克、私货商人规则、彩色说明和双侧夜序。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [
+      "\"镇民\"",
+      "\"外来者\"",
+      "\"爪牙\""
+    ],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [

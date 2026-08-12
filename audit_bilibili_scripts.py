@@ -1280,15 +1280,23 @@ def review_existing_folder(
     return folder.name, str(error)
 
 
-def existing_review_folders(output_root: Path, opus_ids: set[str]) -> list[Path]:
-  folders = sorted(path.parent for path in (output_root / "剧本").glob("*/核对状态.json"))
-  if not opus_ids:
-    return folders
-  return [
-    folder for folder in folders
-    if str(json.loads((folder / "核对状态.json").read_text(encoding="utf-8")).get("opus_id", ""))
-    in opus_ids
-  ]
+def existing_review_folders(
+  output_root: Path,
+  opus_ids: set[str],
+  catalog: list[CatalogItem],
+) -> list[Path]:
+  catalog_keys = {(item.opus_id, item.script_name) for item in catalog}
+  folders: list[Path] = []
+  for metadata_path in sorted((output_root / "剧本").glob("*/核对状态.json")):
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    key = (
+      str(metadata.get("opus_id", "")),
+      str(metadata.get("script_name", metadata_path.parent.name)),
+    )
+    if key not in catalog_keys or (opus_ids and key[0] not in opus_ids):
+      continue
+    folders.append(metadata_path.parent)
+  return folders
 
 
 def local_known_roster(path: str) -> set[str]:
@@ -1377,10 +1385,17 @@ def roster_match_suggestions(
   return suggestions
 
 
-def write_review_summary(output_root: Path) -> None:
+def write_review_summary(output_root: Path, catalog: list[CatalogItem]) -> None:
+  catalog_keys = {(item.opus_id, item.script_name) for item in catalog}
   items: list[dict[str, Any]] = []
   for metadata_path in sorted((output_root / "剧本").glob("*/核对状态.json")):
     metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    key = (
+      str(metadata.get("opus_id", "")),
+      str(metadata.get("script_name", metadata_path.parent.name)),
+    )
+    if key not in catalog_keys:
+      continue
     items.append({
       "script_name": metadata.get("script_name", metadata_path.parent.name),
       "opus_id": metadata.get("opus_id", ""),
@@ -1470,7 +1485,7 @@ def main() -> None:
   )
   if args.review_existing:
     ocr_binary = build_ocr_tool(args.output)
-    folders = existing_review_folders(args.output, set(args.opus_id))
+    folders = existing_review_folders(args.output, set(args.opus_id), catalog)
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
       futures = [
         executor.submit(review_existing_folder, folder, ocr_binary, review_overrides)
@@ -1482,7 +1497,7 @@ def main() -> None:
           print(f"[{index}/{len(folders)}] 核对失败：{name}：{error}", file=sys.stderr)
         else:
           print(f"[{index}/{len(folders)}] 核对完成：{name}")
-    write_review_summary(args.output)
+    write_review_summary(args.output, catalog)
     return
   if args.suggest_roster_matches:
     suggestions = roster_match_suggestions(catalog, args.output, local_scripts)

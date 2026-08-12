@@ -17,12 +17,12 @@
     "a jinxed": "相克",
     "notes": [
       {
-        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
-        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，说书人可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
-      },
-      {
         "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
         "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>：当你陷入“<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">疯狂</span>”时，意味着你需要向其他玩家<span style=\"color: rgb(14, 127, 207); font-weight: 900;\">有诚意且努力</span>的证明某件事情，如不这么做会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">受到惩罚</span>。"
+      },
+      {
+        "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒/醉酒</span>：<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家会<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">失去能力</span>，但会认为自己仍具有能力，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>会做出这些玩家仍然具有能力的行为。如果<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>玩家的角色能力会给他提供信息，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>可能会给出<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">错误信息</span>，<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>的玩家不会得知自己<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">中毒</span>。<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">醉酒</span>同理。"
       },
       {
         "text": "*代表非首个夜晚",
@@ -35,7 +35,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/qintianjian.png",
     "edition": "custom",
     "name": "钦天监",
-    "ability": "在你的首个夜晚，你会得知离你最近的邪恶玩家位于你的哪一侧（左/右/相同）。如果与你邻近的玩家中有邪恶阵营，你会得知错误信息。",
+    "ability": "在你的首个夜晚，你会得知离你最近的邪恶玩家位于你的哪一侧（左/右/相同）。如果与你邻近的玩家中有邪恶阵营，你会得知错误信息作为替代。",
     "team": "townsfolk",
     "sch_team": "镇民",
     "firstNight": 62,
@@ -76,6 +76,25 @@
     "otherNightReminder": "",
     "reminders": [
       "失去能力",
+      "得知"
+    ],
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": ""
+  },
+  {
+    "id": "fangshidfygsgsdg213123123213123123",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
+    "edition": "custom",
+    "name": "方士",
+    "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 53.6,
+    "otherNight": 96.5,
+    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
+    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
+    "reminders": [
       "得知"
     ],
     "remindersGlobal": [],
@@ -132,25 +151,6 @@
     "flavor": "船篙点波心，跟着这篷船，避过暗礁浅涡，往前面渡头走。"
   },
   {
-    "id": "fangshidfygsgsdg213123123213123123",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_9290087694761_94c7b6f3.jpg",
-    "edition": "custom",
-    "name": "方士",
-    "ability": "在你的首个夜晚，你要选择一个数字。在该数字对应的那一个夜晚，你会得知对应数量的在场角色。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 53.6,
-    "otherNight": 96.5,
-    "firstNightReminder": "唤醒方士，让他选一个数字。如果他选择了1，给他展示一个在场角色。",
-    "otherNightReminder": "在游戏的对应天数唤醒方士，给他展示对应数量的在场角色。",
-    "reminders": [
-      "得知"
-    ],
-    "remindersGlobal": [],
-    "setup": 0,
-    "flavor": ""
-  },
-  {
     "id": "shiguanuwhaouhsoifhais",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/shiguan.png",
     "edition": "custom",
@@ -170,6 +170,24 @@
     "flavor": ""
   },
   {
+    "id": "xunchashaoihwronaklsndfkasnd",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xuncha.png",
+    "edition": "custom",
+    "name": "巡察",
+    "ability": "每个夜晚*，你要选择除你以外的两个善良角色：如果他们都存活，他们当晚不会死亡。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 30.2,
+    "firstNightReminder": "",
+    "otherNightReminder": "唤醒巡查，让他选择两个善良角色（镇民或外来者），如果他们都在场并存活（华白注：应该是需要在场的），他们两个今晚不会死亡。",
+    "reminders": [
+      "不会死亡"
+    ],
+    "remindersGlobal": [],
+    "setup": 0
+  },
+  {
     "id": "daoshishishishishishishshishiss",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/daoshi.png",
     "edition": "custom",
@@ -184,24 +202,6 @@
     "reminders": [
       "醉酒",
       "死亡"
-    ],
-    "remindersGlobal": [],
-    "setup": 0
-  },
-  {
-    "id": "xunchashaoihwronaklsndfkasnd",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xuncha.png",
-    "edition": "custom",
-    "name": "巡察",
-    "ability": "每个夜晚*，你要选择除你以外的两个善良角色：如果他们都存活，他们当晚不会死亡。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 0,
-    "otherNight": 30.2,
-    "firstNightReminder": "",
-    "otherNightReminder": "唤醒巡查，让他选择两个善良角色（镇民或外来者），如果他们都在场并存活（华白注：应该是需要在场的），他们两个今晚不会死亡。",
-    "reminders": [
-      "不会死亡"
     ],
     "remindersGlobal": [],
     "setup": 0
@@ -266,7 +266,7 @@
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/snitch.png",
     "edition": "custom",
     "name": "告密者",
-    "ability": "爪牙会在其首个夜晚得知三个伪装。",
+    "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。",
     "team": "outsider",
     "sch_team": "外来者",
     "firstNight": 5,
@@ -336,24 +336,24 @@
     "flavor": ""
   },
   {
-    "id": "zhijiagedaziji111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
+    "id": "huasapidpaiwo12341231231231231i123p12ip3p1i23p1",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
     "edition": "custom",
-    "name": "教父",
-    "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
+    "name": "画皮",
+    "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
     "team": "minion",
     "sch_team": "爪牙",
-    "firstNight": 21,
-    "otherNight": 53,
-    "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
-    "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
+    "firstNight": 29.5,
+    "otherNight": 54.5,
+    "firstNightReminder": "唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
+    "otherNightReminder": "如果首夜被画皮变成活尸的玩家死亡，他重生，然后画皮重获能力。唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
     "reminders": [
-      "死于今日",
-      "死亡"
+      "以为存活",
+      "重获能力"
     ],
-    "setup": 1,
+    "setup": 0,
     "remindersGlobal": [],
-    "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。"
+    "flavor": ""
   },
   {
     "id": "baonijuhua111",
@@ -396,44 +396,43 @@
     "flavor": "把毒蛇、蝎子、蜈蚣、蟾蜍、蜘蛛放在一起……多！来！点！"
   },
   {
-    "id": "huasapidpaiwo12341231231231231i123p12ip3p1i23p1",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202403/c_8796728760171_7caa0950.jpg",
+    "id": "zhijiagedaziji111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/godfather.png",
     "edition": "custom",
-    "name": "画皮",
-    "ability": "在你的首个夜晚，你要选择一名存活玩家：他死亡但会被当作存活。当他下一次死亡时，他重生，随后你重获能力。",
+    "name": "教父",
+    "ability": "在你的首个夜晚，你会得知有哪些外来者角色在场。如果有外来者在白天死亡，你会在当晚被唤醒并且你要选择一名玩家：他死亡。[-1或+1外来者]",
     "team": "minion",
     "sch_team": "爪牙",
-    "firstNight": 29.5,
-    "otherNight": 54.5,
-    "firstNightReminder": "唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
-    "otherNightReminder": "如果首夜被画皮变成活尸的玩家死亡，他重生，然后画皮重获能力。唤醒画皮，让画皮选择一名存活玩家，那名存活玩家变成活尸。",
+    "firstNight": 21,
+    "otherNight": 53,
+    "firstNightReminder": "唤醒教父，对他展示外来者角色标记，告诉他有哪些外来者在场。",
+    "otherNightReminder": "如果今天白天有外来者死亡，唤醒教父，让他攻击一名玩家。",
     "reminders": [
-      "以为存活",
-      "重获能力"
+      "死于今日",
+      "死亡"
     ],
-    "setup": 0,
+    "setup": 1,
     "remindersGlobal": [],
-    "flavor": ""
+    "flavor": "通常来说，这只是件小事。但在你侮辱我女儿时，你就侮辱了我。你侮辱我，就侮辱了我的家族。你真的应该更小心些——要是你不幸发生意外事故，那就太遗憾了。"
   },
   {
-    "id": "xiaoweibaxiliuxiliu111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
+    "id": "baojunuiuaowjoedijapwu4e90e2aj4rpia",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baojun.png",
     "edition": "custom",
-    "name": "普卡",
-    "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
+    "name": "暴君",
+    "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
     "team": "demon",
     "sch_team": "恶魔",
-    "firstNight": 30,
-    "otherNight": 33,
-    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
-    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡并恢复健康。",
+    "firstNight": 0,
+    "otherNight": 50.2,
+    "firstNightReminder": "",
+    "otherNightReminder": "唤醒暴君，让他攻击至多两名玩家。但是暴君选择的玩家数量不能与上个夜晚死亡的玩家数量相同。",
     "reminders": [
-      "中毒",
       "死亡"
     ],
     "setup": 0,
     "remindersGlobal": [],
-    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
+    "flavor": ""
   },
   {
     "id": "taowuuuuuuuuuuuu11111111",
@@ -474,23 +473,24 @@
     "flavor": ""
   },
   {
-    "id": "baojunuiuaowjoedijapwu4e90e2aj4rpia",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/baojun.png",
+    "id": "xiaoweibaxiliuxiliu111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pukka.png",
     "edition": "custom",
-    "name": "暴君",
-    "ability": "每个夜晚*，你可以选择至多两名玩家：他们死亡。你选择的玩家数量不能与上个夜晚死亡的玩家数量相同（超过二人时算作二人）。",
+    "name": "普卡",
+    "ability": "每个夜晚，你要选择一名玩家：他中毒。上个因你的能力中毒的玩家会死亡并恢复健康。",
     "team": "demon",
     "sch_team": "恶魔",
-    "firstNight": 0,
-    "otherNight": 50.2,
-    "firstNightReminder": "",
-    "otherNightReminder": "唤醒暴君，让他攻击至多两名玩家。但是暴君选择的玩家数量不能与上个夜晚死亡的玩家数量相同。",
+    "firstNight": 30,
+    "otherNight": 33,
+    "firstNightReminder": "让普卡选择一名玩家。标记那名玩家中毒。",
+    "otherNightReminder": "唤醒普卡，让他选择一名玩家，该玩家中毒。上一个被普卡中毒的玩家死亡并恢复健康。",
     "reminders": [
+      "中毒",
       "死亡"
     ],
     "setup": 0,
     "remindersGlobal": [],
-    "flavor": ""
+    "flavor": "您人真好，发生了这样的事情，您还愿意让我来您金碧辉煌的家里做客。我很抱歉，刚才不小心划伤了您。这是一点点赔礼，没事的，请收下吧，把这根金牙签当做我那卑微的歉意吧。"
   },
   {
     "id": "0_meta",

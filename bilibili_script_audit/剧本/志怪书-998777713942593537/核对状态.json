@@ -12,7 +12,7 @@
     "对照图-02.png",
     "对照图-03.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-03.png",
   "ocr_character_matches": 25,
@@ -52,7 +52,7 @@
     {
       "name": "钦天监",
       "team": "townsfolk",
-      "ability_coverage": 0.9423
+      "ability_coverage": 0.9464
     },
     {
       "name": "阴阳师",
@@ -63,6 +63,11 @@
       "name": "刀客",
       "team": "townsfolk",
       "ability_coverage": 0.9615
+    },
+    {
+      "name": "方士",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
     },
     {
       "name": "侍女",
@@ -80,22 +85,17 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "方士",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "史官",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "道士",
+      "name": "巡察",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
-      "name": "巡察",
+      "name": "道士",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -117,7 +117,7 @@
     {
       "name": "告密者",
       "team": "outsider",
-      "ability_coverage": 0.3077
+      "ability_coverage": 1.0
     },
     {
       "name": "魔像",
@@ -135,9 +135,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "教父",
+      "name": "画皮",
       "team": "minion",
-      "ability_coverage": 0.9649
+      "ability_coverage": 0.9535
     },
     {
       "name": "刺客",
@@ -150,14 +150,14 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "画皮",
+      "name": "教父",
       "team": "minion",
-      "ability_coverage": 0.9535
+      "ability_coverage": 0.9649
     },
     {
-      "name": "普卡",
+      "name": "暴君",
       "team": "demon",
-      "ability_coverage": 0.9394
+      "ability_coverage": 0.94
     },
     {
       "name": "梼杌",
@@ -170,14 +170,12 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "暴君",
+      "name": "普卡",
       "team": "demon",
-      "ability_coverage": 0.94
+      "ability_coverage": 0.9394
     }
   ],
-  "ocr_ability_mismatches": [
-    "告密者"
-  ],
+  "ocr_ability_mismatches": [],
   "ocr_traveler_checks": [],
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
@@ -190,11 +188,11 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
+      "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
       "text_coverage": 1.0
     },
     {
-      "text": "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力的证明某件事情，如不这么做会受到惩罚。",
+      "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
       "text_coverage": 1.0
     },
     {
@@ -597,9 +595,9 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
-    "ability_mismatches": [
-      "告密者"
-    ],
+    "missing_characters": [],
+    "unexpected_characters": [],
+    "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],

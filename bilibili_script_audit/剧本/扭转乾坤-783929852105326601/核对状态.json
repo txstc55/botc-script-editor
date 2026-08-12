@@ -11,7 +11,7 @@
     "对照图-01.png",
     "对照图-02.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "ocr_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 27,
@@ -27,52 +27,7 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "博学者",
-      "team": "townsfolk",
-      "ability_coverage": 0.7097
-    },
-    {
-      "name": "半兽人",
-      "team": "townsfolk",
-      "ability_coverage": 0.5294
-    },
-    {
-      "name": "茶艺师",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "舞蛇人",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "失忆者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "无神论者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "罂粟种植者",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
       "name": "哲学家",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "气球驾驶员",
-      "team": "townsfolk",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "炼金术士",
       "team": "townsfolk",
       "ability_coverage": 1.0
     },
@@ -87,22 +42,52 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "瓦舍学徒",
-      "team": "outsider",
+      "name": "舞蛇人",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "气球驾驶员",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "半兽人",
+      "team": "townsfolk",
+      "ability_coverage": 0.5294
+    },
+    {
+      "name": "博学者",
+      "team": "townsfolk",
+      "ability_coverage": 0.7097
+    },
+    {
+      "name": "茶艺师",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "罂粟种植者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "炼金术士",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "失忆者",
+      "team": "townsfolk",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "无神论者",
+      "team": "townsfolk",
       "ability_coverage": 1.0
     },
     {
       "name": "酒鬼",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "魔像",
-      "team": "outsider",
-      "ability_coverage": 1.0
-    },
-    {
-      "name": "政客",
       "team": "outsider",
       "ability_coverage": 1.0
     },
@@ -112,17 +97,37 @@
       "ability_coverage": 1.0
     },
     {
+      "name": "政客",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "魔像",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
+      "name": "瓦舍学徒",
+      "team": "outsider",
+      "ability_coverage": 1.0
+    },
+    {
       "name": "采莲君",
       "team": "minion",
       "ability_coverage": 0.7571
     },
     {
-      "name": "麻脸巫婆",
+      "name": "精神病患者",
+      "team": "minion",
+      "ability_coverage": 0.98
+    },
+    {
+      "name": "投毒者",
       "team": "minion",
       "ability_coverage": 1.0
     },
     {
-      "name": "投毒者",
+      "name": "麻脸巫婆",
       "team": "minion",
       "ability_coverage": 1.0
     },
@@ -132,19 +137,9 @@
       "ability_coverage": 1.0
     },
     {
-      "name": "精神病患者",
-      "team": "minion",
-      "ability_coverage": 0.98
-    },
-    {
       "name": "镜中魔",
       "team": "demon",
       "ability_coverage": 0.9032
-    },
-    {
-      "name": "僵怖",
-      "team": "demon",
-      "ability_coverage": 0.9574
     },
     {
       "name": "亡骨魔",
@@ -155,6 +150,11 @@
       "name": "哈迪寂亚",
       "team": "demon",
       "ability_coverage": 0.9792
+    },
+    {
+      "name": "僵怖",
+      "team": "demon",
+      "ability_coverage": 1.0
     }
   ],
   "ocr_ability_mismatches": [],
@@ -170,8 +170,8 @@
   "ocr_jinx_mismatches": [],
   "ocr_note_checks": [
     {
-      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-      "text_coverage": 0.8095
+      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+      "text_coverage": 1.0
     },
     {
       "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -199,9 +199,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "玩家视野里）会被当作死亡。"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_name_confirmed_by_ability": [
@@ -659,12 +657,12 @@
   ],
   "manual_verification": {},
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],
     "note_mismatches": [],
-    "unexplained_bottom_lines": [
-      "玩家视野里）会被当作死亡。"
-    ]
+    "unexplained_bottom_lines": []
   }
 }

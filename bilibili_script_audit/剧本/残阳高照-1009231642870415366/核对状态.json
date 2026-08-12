@@ -16,7 +16,7 @@
     "0a3ce5ad7f1339d04f4ec9ecdfbfb44844902471.png",
     "82e7f547807e3831464c5b308706b42344902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_reference_image": "对照图-02.png",
   "ocr_character_matches": 11,
@@ -167,8 +167,8 @@
   "ocr_missing_jinx_rule_count": 0,
   "ocr_note_checks": [
     {
-      "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-      "text_coverage": 0.7143
+      "text": "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
+      "text_coverage": 1.0
     },
     {
       "text": "中毒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。",
@@ -190,9 +190,7 @@
     "*代表",
     "非首个夜晚"
   ],
-  "ocr_unexplained_bottom_lines": [
-    "蟹氽客獎元上架暴金吞具秀器有合冬破」含楼"
-  ],
+  "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
   "ocr_source_images": [
@@ -323,8 +321,16 @@
       ]
     }
   ],
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_bottom_lines": [
+      "蟹氽客獎元上架暴金吞具秀器有合冬破」含楼"
+    ],
+    "source_image": "对照图-02.png",
+    "reason": "该乱码来自原图背景中浅色斜向的钟楼剧本博物馆装饰水印，不是额外内容。已逐字修正“可能”说明，补齐引号内“可能”、多处“说书人”、“失去能力”和“错误信息”的红色加粗；角色、能力、说明及双侧夜序均已核对。"
+  },
   "ocr_raw_issues": {
+    "missing_characters": [],
+    "unexpected_characters": [],
     "ability_mismatches": [],
     "traveler_mismatches": [],
     "jinx_mismatches": [],

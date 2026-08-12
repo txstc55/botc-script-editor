@@ -2,10 +2,11 @@
   {
     "id": "_meta",
     "name": "匡扶汉室",
+    "author": "星火乐",
     "notes": [
       {
         "text": "可能：某件事“可能”发生，代表说书人决定该事情是否发生。",
-        "html": "<span style=\"color: rgb(103, 14, 171); font-weight: 900;\">可能</span>：某件事“可能”发生，代表说书人决定该事情是否发生。"
+        "html": "<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>：某件事“<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">可能</span>”发生，代表<span style=\"color: rgb(143, 23, 1); font-weight: 900;\">说书人</span>决定该事情是否发生。"
       },
       {
         "text": "中毒/醉酒：中毒的玩家会失去能力，但会认为自己仍具有能力，说书人会做出这些玩家仍然具有能力的行为。如果中毒玩家的角色能力会给他提供信息，说书人可能会给出错误信息，中毒的玩家不会得知自己中毒。醉酒同理。",
@@ -94,40 +95,6 @@
     "flavor": "我的皮肤有些刺痛。这有些不太对劲。我能感觉得到。"
   },
   {
-    "id": "zhengdanideyanjing111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
-    "edition": "custom",
-    "name": "神谕者",
-    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 0,
-    "otherNight": 87,
-    "firstNightReminder": "",
-    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
-    "reminders": [],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
-  },
-  {
-    "id": "huojin111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
-    "edition": "custom",
-    "name": "博学者",
-    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 0,
-    "otherNight": 0,
-    "firstNightReminder": "",
-    "otherNightReminder": "",
-    "reminders": [],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
-  },
-  {
     "id": "jiushigebaichi111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/village_idiot.png",
     "edition": "custom",
@@ -145,6 +112,23 @@
     "setup": 1,
     "remindersGlobal": [],
     "flavor": "玫瑰花是蓝色哒！草桂花是红色哒！哦豁，俺说反啦！"
+  },
+  {
+    "id": "zhengdanideyanjing111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/oracle.png",
+    "edition": "custom",
+    "name": "神谕者",
+    "ability": "每个夜晚*，你会得知有多少名死亡的玩家是邪恶的。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 87,
+    "firstNightReminder": "",
+    "otherNightReminder": "给他展示数字手势来告诉他当前已死亡的玩家中有多少玩家是邪恶的。",
+    "reminders": [],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "唯有受选者才能凝视面纱之外的光景。亡者躁动不安……他们的每一根僵硬的手指都指向了刺骨的北地。"
   },
   {
     "id": "furryhaoye111",
@@ -167,25 +151,6 @@
     "flavor": ""
   },
   {
-    "id": "lingluowawa111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
-    "edition": "custom",
-    "name": "女裁缝",
-    "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
-    "team": "townsfolk",
-    "sch_team": "镇民",
-    "firstNight": 46,
-    "otherNight": 88,
-    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
-    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
-    "reminders": [
-      "失去能力"
-    ],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
-  },
-  {
     "id": "wohehehehehehehezuidiaoniladao111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/courtier.png",
     "edition": "custom",
@@ -206,6 +171,42 @@
     "setup": 0,
     "remindersGlobal": [],
     "flavor": "比起一只羊带领的一百头狮子，我更害怕一头狮子带领的一百只羊。"
+  },
+  {
+    "id": "lingluowawa111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/seamstress.png",
+    "edition": "custom",
+    "name": "女裁缝",
+    "ability": "每局游戏限一次，在夜晚时，你可以选择除你以外的两名玩家：你会得知他们是否为同一阵营。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 46,
+    "otherNight": 88,
+    "firstNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "otherNightReminder": "女裁缝可以选择除自己以外的两名玩家。如果她这么做了，对她点头或摇头示意这两名玩家是否为同一阵营，随后标记女裁缝失去能力。之后的夜晚无需再唤醒女裁缝。",
+    "reminders": [
+      "失去能力"
+    ],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "你听到那个穿羊绒大衣的家伙对我们小贝尔说什么了吗？他说……‘好’？哎，行吧，和哈利还有那个杂耍艺人那一出相比，这算不了什么。说什么？我可不说，我又不是什么长舌妇。"
+  },
+  {
+    "id": "huojin111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/savant.png",
+    "edition": "custom",
+    "name": "博学者",
+    "ability": "每个白天，你可以私下询问说书人以得知两条信息：一个是正确的，一个是错误的。",
+    "team": "townsfolk",
+    "sch_team": "镇民",
+    "firstNight": 0,
+    "otherNight": 0,
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": 0,
+    "remindersGlobal": [],
+    "flavor": "地上有七十二根火柴……今天的太阳落得更早，月亮还是按时升起……一块破布……庄园里的邪恶之物……三个又三个……我们相信的事物和他真正看到的不一样……绿光代表镁……残留物，但是图案不太对……地上有七十二根火柴……"
   },
   {
     "id": "xitele111",
@@ -282,21 +283,23 @@
     "flavor": "吾即是暗夜……没错吧？"
   },
   {
-    "id": "tougexiangxian111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
+    "id": "haochiaichi111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
     "edition": "custom",
-    "name": "政客",
-    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
+    "name": "食人魔",
+    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
     "team": "outsider",
     "sch_team": "外来者",
-    "firstNight": 0,
+    "firstNight": 59,
     "otherNight": 0,
-    "firstNightReminder": "",
+    "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
     "otherNightReminder": "",
-    "reminders": [],
+    "reminders": [
+      "挚友"
+    ],
     "setup": 0,
     "remindersGlobal": [],
-    "flavor": ""
+    "flavor": "<咽口水><咧嘴笑><咽口水>"
   },
   {
     "id": "fengmaoziyuailisi111",
@@ -318,42 +321,21 @@
     "flavor": ""
   },
   {
-    "id": "haochiaichi111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/ogre.png",
+    "id": "tougexiangxian111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/politician.png",
     "edition": "custom",
-    "name": "食人魔",
-    "ability": "在你的首个夜晚，你要选择除你以外的一名玩家：你转变为他的阵营，即使你已醉酒或中毒，但你不知道你转变后的阵营。",
+    "name": "政客",
+    "ability": "如果你是对你的阵营落败负最大责任的人，你转变阵营并获胜，即使你已死亡。",
     "team": "outsider",
     "sch_team": "外来者",
-    "firstNight": 59,
-    "otherNight": 0,
-    "firstNightReminder": "唤醒食人魔，让他选择一名玩家。如果他选择了邪恶玩家，将他的角色标记在魔典中倒置以表示他转变为邪恶阵营。",
-    "otherNightReminder": "",
-    "reminders": [
-      "挚友"
-    ],
-    "setup": 0,
-    "remindersGlobal": [],
-    "flavor": "<咽口水><咧嘴笑><咽口水>"
-  },
-  {
-    "id": "hongchunnvlangaaaaaaaa111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
-    "edition": "custom",
-    "name": "红唇女郎",
-    "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
-    "team": "minion",
-    "sch_team": "爪牙",
     "firstNight": 0,
-    "otherNight": 26,
-    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
-    "reminders": [
-      "是恶魔"
-    ],
+    "otherNight": 0,
     "firstNightReminder": "",
-    "remindersGlobal": [],
+    "otherNightReminder": "",
+    "reminders": [],
     "setup": 0,
-    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
+    "remindersGlobal": [],
+    "flavor": ""
   },
   {
     "id": "jiejiene111",
@@ -392,6 +374,25 @@
     "flavor": ""
   },
   {
+    "id": "hongchunnvlangaaaaaaaa111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/scarlet_woman.png",
+    "edition": "custom",
+    "name": "红唇女郎",
+    "ability": "如果大于等于五名玩家存活时（旅行者不计算在内）恶魔死亡，你变成那个恶魔。",
+    "team": "minion",
+    "sch_team": "爪牙",
+    "firstNight": 0,
+    "otherNight": 26,
+    "otherNightReminder": "如果红唇女郎的能力曾被触发，唤醒她并告知她变成了哪个恶魔角色。",
+    "reminders": [
+      "是恶魔"
+    ],
+    "firstNightReminder": "",
+    "remindersGlobal": [],
+    "setup": 0,
+    "flavor": "你曾向我展示了紫焰议会的秘密。我们也曾一起在烈火里拥抱，在欲望中交欢，在兽性的驱使下耳鬓厮磨，我将永生永世侍奉于你。但今晚，我亲爱的，我是你的主人。"
+  },
+  {
     "id": "tiehuaibi11111",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vizier.png",
     "edition": "custom",
@@ -424,27 +425,6 @@
     "setup": 1,
     "remindersGlobal": [],
     "flavor": "恒星的氢能，取之不尽，静待采掘；碳、氧、氖，尽数裂解。分子引发混沌，熵增由此产生，宇宙现象更替，原子紊乱重塑，物质聚合坍缩。所有的一切，都集中在这一个小小的锥形瓶中。"
-  },
-  {
-    "id": "fangguuuuuuuuuuuuuu111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
-    "edition": "custom",
-    "name": "方古",
-    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
-    "team": "demon",
-    "sch_team": "恶魔",
-    "firstNight": 0,
-    "otherNight": 36,
-    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
-    "reminders": [
-      "死亡"
-    ],
-    "setup": 1,
-    "firstNightReminder": "",
-    "remindersGlobal": [
-      "限一次"
-    ],
-    "flavor": ""
   },
   {
     "id": "woliuliuliu111",
@@ -486,6 +466,37 @@
     "flavor": "美味，美味，美味，美味，美味，美味，美味，美味的脑——馅儿饼！是的。美味的老馅儿饼。我想说的就是这个。"
   },
   {
+    "id": "fangguuuuuuuuuuuuuu111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+    "edition": "custom",
+    "name": "方古",
+    "ability": "每个夜晚*，你要选择一名玩家：他死亡。被该能力杀死的外来者改为变成邪恶的方古且你代替他死亡，但每局游戏仅能成功转化一次。[+1外来者]",
+    "team": "demon",
+    "sch_team": "恶魔",
+    "firstNight": 0,
+    "otherNight": 36,
+    "otherNightReminder": "唤醒方古，让他攻击一名玩家。如果该玩家是外来者并成功转化，则方古死亡，在他入睡后通知那名外来者角色变化。",
+    "reminders": [
+      "死亡"
+    ],
+    "setup": 1,
+    "firstNightReminder": "",
+    "remindersGlobal": [
+      "限一次"
+    ],
+    "flavor": ""
+  },
+  {
+    "id": "fangguiiiiii1111111111",
+    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/doomsayer.png",
+    "edition": "custom",
+    "name": "私货商人",
+    "ability": "所有玩家的阵营随机，且他们不知道自己是什么阵营。[爪牙数量与外来者数量任意]说书人可以在游戏开始前宣布，本局游戏是否使用“关于政客的相克规则”（默认使用）。",
+    "team": "fabled",
+    "firstNight": 0,
+    "otherNight": 0
+  },
+  {
     "id": "71_meta",
     "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Fanggu.png/300px-Fanggu.png",
     "name": "方古&红唇女郎",
@@ -520,7 +531,7 @@
   {
     "id": "1122222222222222222222222353578822222333_meta",
     "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
-    "name": "科学怪人&食人魔",
+    "name": "食人魔&科学怪人",
     "team": "jinx",
     "setup": 0,
     "ability": "恶魔无法拥有食人魔的能力。"
@@ -528,7 +539,7 @@
   {
     "id": "112222222299999222222222222222333_meta",
     "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
-    "name": "科学怪人&政客",
+    "name": "政客&科学怪人",
     "team": "jinx",
     "setup": 0,
     "ability": "恶魔无法拥有政客的能力。"
@@ -536,19 +547,9 @@
   {
     "id": "112222222222435325645742222222222222333_meta",
     "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/alchemist.png",
-    "name": "炼金术士&科学怪人",
+    "name": "科学怪人&炼金术士",
     "team": "jinx",
     "setup": 0,
     "ability": "如果炼金术士拥有科学怪人的能力，炼金术士不会得知恶魔因此获得了哪个角色的能力。"
-  },
-  {
-    "id": "fangguiiiiii1111111111",
-    "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/doomsayer.png",
-    "edition": "custom",
-    "name": "私货商人",
-    "ability": "所有玩家的阵营随机，且他们不知道自己是什么阵营。[爪牙数量与外来者数量任意]说书人可以在游戏开始前宣布，本局游戏是否使用“关于政客的相克规则”（默认使用）。",
-    "team": "fabled",
-    "firstNight": 0,
-    "otherNight": 0
   }
 ]

@@ -4,7 +4,7 @@
   "script_name": "饕餮盛宴",
   "url": "https://www.bilibili.com/opus/957005209965428759",
   "local_json": "all_jsons/汀西维尔剧本/#饕餮盛宴·汀-清清.json",
-  "generated_image": "",
+  "generated_image": "all_jsons/汀西维尔剧本/#饕餮盛宴·汀-清清.jpg",
   "match_score": 1.0,
   "status": "matched",
   "source_image_ids": [
@@ -16,7 +16,7 @@
   "resolved_source_image_ids": [
     "f0eb143d1dc1d8be899da59a6daa4fd344902471.png"
   ],
-  "review_status": "needs_manual_review",
+  "review_status": "manual_content_match",
   "review_notes": [],
   "ocr_source_images": [
     {
@@ -214,9 +214,7 @@
     "哲学家",
     "畸形秀演员"
   ],
-  "ocr_unexpected_characters": [
-    "\"被处决\""
-  ],
+  "ocr_unexpected_characters": [],
   "ocr_travelers_seen": [],
   "ocr_ability_checks": [
     {
@@ -290,7 +288,7 @@
   "ocr_traveler_mismatches": [],
   "ocr_jinx_checks": [
     {
-      "name": "教父&异端分子",
+      "name": "异端分子&教父",
       "team": "jinx",
       "ability_coverage": 0.4667
     }
@@ -326,7 +324,23 @@
   "ocr_unexplained_bottom_lines": [],
   "ocr_rule_markers": [],
   "ocr_missing_rule_data": false,
-  "manual_verification": {},
+  "manual_verification": {
+    "verified_missing_characters": [
+      "哨兵"
+    ],
+    "verified_unexpected_characters": [
+      "\"被处决\""
+    ],
+    "verified_abilities": [
+      "疯子",
+      "哨兵"
+    ],
+    "verified_bottom_lines": [
+      "申毒/醉酒"
+    ],
+    "source_image": "对照图-01.png",
+    "reason": "该帖已拆分为冥昭瞢暗、穷境求生、饕餮盛宴、杌影生殇和狂浪梼天五张板逐一核对。OCR 将能力中的“被处决”误识别为角色名，且因杌影生殇底部区域和小字号漏识别哨兵及疯子能力；原图内容均已人工确认。五份角色、能力、夜序、相克、传奇和带颜色说明均已逐项核对。"
+  },
   "ocr_raw_issues": {
     "missing_characters": [],
     "unexpected_characters": [
