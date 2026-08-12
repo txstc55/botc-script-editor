@@ -21,6 +21,11 @@ type CharacterSource = "custom" | "database";
 type JinxSource = "custom" | "database";
 type CharacterTeam = "townsfolk" | "outsider" | "minion" | "demon" | "traveler";
 
+interface AuditNote {
+  text: string;
+  html?: string;
+}
+
 const characterFolders: Record<CharacterTeam, string> = {
   townsfolk: "townsfolks",
   outsider: "outsiders",
@@ -509,7 +514,7 @@ function customJinxPlugin(): Plugin {
 }
 
 function batchExportPlugin(): Plugin {
-  let auditNotesPromise: Promise<Map<string, string[]>> | null = null;
+  let auditNotesPromise: Promise<Map<string, AuditNote[]>> | null = null;
 
   const auditNotes = () => auditNotesPromise ??= readAuditNotes();
 
@@ -607,7 +612,7 @@ function batchExportPlugin(): Plugin {
 }
 
 async function readAuditNotes() {
-  const notesByPath = new Map<string, string[]>();
+  const notesByPath = new Map<string, AuditNote[]>();
   let entries: Awaited<ReturnType<typeof readdir>>;
   try {
     entries = await readdir(auditScriptsDir, { withFileTypes: true });
@@ -627,11 +632,18 @@ async function readAuditNotes() {
       const notes = Array.isArray(status.ocr_note_checks)
         ? status.ocr_note_checks
           .filter(isRecord)
-          .map((item) => cleanText(item.text))
-          .filter(Boolean)
+          .map((item) => ({
+            text: cleanText(item.text),
+            html: cleanText(item.html) || undefined,
+          }))
+          .filter((item) => item.text)
         : [];
       if (relativePath && notes.length) {
-        notesByPath.set(relativePath, [...new Set([...(notesByPath.get(relativePath) ?? []), ...notes])]);
+        const merged = new Map(
+          [...(notesByPath.get(relativePath) ?? []), ...notes]
+            .map((note) => [note.text, note]),
+        );
+        notesByPath.set(relativePath, [...merged.values()]);
       }
     } catch {
       // Incomplete audit folders do not contribute runtime notes.

@@ -10,6 +10,7 @@ from audit_bilibili_scripts import review_item
 class ReviewOverrideTests(unittest.TestCase):
   def test_runtime_notes_are_added_without_changing_script_json(self) -> None:
     note = "中毒/醉酒：中毒的玩家会失去能力。醉酒同理。"
+    html = '<span style="color: red;">中毒/醉酒</span>：中毒的玩家会失去能力。醉酒同理。'
     with tempfile.TemporaryDirectory() as temp_dir:
       folder = Path(temp_dir)
       (folder / "对照图-01.png").write_bytes(b"board")
@@ -31,12 +32,43 @@ class ReviewOverrideTests(unittest.TestCase):
 
       with patch("audit_bilibili_scripts.ocr_lines", return_value=lines):
         review_item(folder, Path("unused"), {
-          "123": {"runtime_notes": [note], "reason": "人工逐字核对"},
+          "123": {"runtime_notes": [{"text": note, "html": html}], "reason": "人工逐字核对"},
         })
 
       state = json.loads(state_path.read_text(encoding="utf-8"))
       self.assertIn(note, [item["text"] for item in state["ocr_note_checks"]])
+      self.assertEqual(html, next(
+        item["html"] for item in state["ocr_note_checks"] if item["text"] == note
+      ))
       self.assertEqual(original, script_path.read_text(encoding="utf-8"))
+
+  def test_role_name_punctuation_does_not_cause_a_missing_role(self) -> None:
+    with tempfile.TemporaryDirectory() as temp_dir:
+      folder = Path(temp_dir)
+      (folder / "对照图-01.png").write_bytes(b"board")
+      (folder / "整理后.json").write_text(json.dumps([
+        {"id": "_meta", "name": "测试剧本"},
+        {
+          "name": "冥想·Contemplation",
+          "team": "townsfolk",
+          "ability": "在你的首个夜晚，你会得知一个角色。",
+        },
+      ], ensure_ascii=False), encoding="utf-8")
+      state_path = folder / "核对状态.json"
+      state_path.write_text(json.dumps({
+        "opus_id": "123",
+        "source_images": ["对照图-01.png"],
+      }, ensure_ascii=False), encoding="utf-8")
+      lines = [
+        {"text": "冥想 Contemplation", "x": 0.1, "y": 0.6, "height": 0.02},
+        {"text": "在你的首个夜晚，你会得知一个角色。", "x": 0.1, "y": 0.5, "height": 0.01},
+      ]
+
+      with patch("audit_bilibili_scripts.ocr_lines", return_value=lines):
+        review_item(folder, Path("unused"), {})
+
+      state = json.loads(state_path.read_text(encoding="utf-8"))
+      self.assertEqual([], state["ocr_missing_characters"])
 
   def test_missing_json_with_only_cover_is_source_unavailable(self) -> None:
     with tempfile.TemporaryDirectory() as temp_dir:

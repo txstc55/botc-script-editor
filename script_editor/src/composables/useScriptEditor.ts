@@ -7,6 +7,7 @@ import {
   loadMatchingJinxRecords,
 } from "../utils/jinxLibrary";
 import { isBatchExportMode } from "../utils/batchExportClient";
+import type { RuntimeScriptNote } from "../utils/batchExportClient";
 import { loadPlayFromJson } from "../utils/playJson";
 import { hydratePlayRoleIds } from "../utils/roleIdLibrary";
 
@@ -222,13 +223,18 @@ export function useScriptEditor() {
     }
   }
 
-  async function loadPlayText(rawText: string, fileName: string, runtimeNotes: string[] = []) {
+  async function loadPlayText(
+    rawText: string,
+    fileName: string,
+    runtimeNotes: Array<string | RuntimeScriptNote> = [],
+  ) {
     const parsed = await hydratePlayRoleIds(JSON.parse(rawText));
     const loaded = loadPlayFromJson(parsed, fileName);
     if (runtimeNotes.length) {
-      loaded.script.notes = runtimeNotes.map((text, index) => ({
+      loaded.script.notes = runtimeNotes.map((note, index) => ({
         id: `runtime-note-${index}`,
-        text,
+        text: typeof note === "string" ? note : note.text,
+        textHtml: typeof note === "string" ? undefined : note.html,
       }));
     }
     resetJinxMemory();

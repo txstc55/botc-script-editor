@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -896,8 +897,27 @@ def source_has_reviewable_board(
   source_reviews: list[dict[str, Any]],
   ability_checks: list[dict[str, Any]],
 ) -> bool:
-  if not required_count or matched_count:
+  if not required_count:
     return True
+  matched_threshold = max(3, round(required_count * 0.2))
+  if matched_count >= matched_threshold:
+    return True
+  has_section_metadata = any("section_teams" in review for review in source_reviews)
+  has_main_sections = any(
+    set(review.get("section_teams", [])) & {"townsfolk", "outsider", "minion", "demon"}
+    for review in source_reviews
+  )
+  if has_main_sections:
+    return True
+  if any(review.get("traveler_supplement") for review in source_reviews):
+    return False
+  detected_sections = {
+    team
+    for review in source_reviews
+    for team in review.get("section_teams", [])
+  }
+  if detected_sections and detected_sections <= {"traveler", "fabled"}:
+    return False
   max_heading_count = max(
     (len(review.get("heading_characters", [])) for review in source_reviews),
     default=0,
@@ -906,12 +926,16 @@ def source_has_reviewable_board(
     (float(check.get("ability_coverage", 0) or 0) for check in ability_checks),
     default=0.0,
   )
+  if has_section_metadata:
+    return max_ability_coverage >= 0.35
   return max_heading_count >= 8 or max_ability_coverage >= 0.35
 
 
 def text_is_explained(text: str, known_texts: list[str]) -> bool:
   normalized = normalized_ocr_text(text)
   if len(normalized) < 4:
+    return True
+  if "非首" in text and "夜晚" in text:
     return True
   return any(
     normalized in normalized_ocr_text(known)
@@ -956,6 +980,12 @@ def review_item(
         "image": image.name,
         "heading_characters": heading_names,
         "heading_character_details": detected_heading_character_details(lines),
+        "section_teams": list(dict.fromkeys(
+          team for line in lines if (team := section_team(clean_space(line.get("text"))))
+        )),
+        "traveler_supplement": "加入旅行者" in normalized_ocr_text("".join(
+          clean_space(line.get("text")) for line in lines
+        )),
       })
     source_board_groups = group_source_boards(source_reviews)
     metadata.update({
@@ -992,12 +1022,17 @@ def review_item(
     image = folder / file_name
     lines = ocr_lines(ocr_binary, image)
     text = "\n".join(clean_space(line.get("text")) for line in lines)
-    score = sum(name in text for name in required_names)
+    normalized_text = normalized_ocr_text(text)
+    score = sum(normalized_ocr_text(name) in normalized_text for name in required_names)
     candidates.append((score, image.stat().st_size, image, lines, text))
     source_reviews.append({
       "image": image.name,
       "heading_characters": detected_heading_characters(lines),
       "heading_character_details": detected_heading_character_details(lines),
+      "section_teams": list(dict.fromkeys(
+        team for line in lines if (team := section_team(clean_space(line.get("text"))))
+      )),
+      "traveler_supplement": "加入旅行者" in normalized_ocr_text(text),
       "required_character_matches": score,
     })
   if not candidates:
@@ -1025,8 +1060,11 @@ def review_item(
   manual = (review_overrides or {}).get(str(metadata.get("opus_id", "")), {})
   if not isinstance(manual, dict):
     raise ValueError("人工核对表条目必须是对象")
-  retained_notes = [
-    clean_space(check.get("text"))
+  retained_note_specs = [
+    {
+      "text": clean_space(check.get("text")),
+      "html": str(check.get("html") or "").strip(),
+    }
     for check in metadata.get("ocr_note_checks", [])
     if (
       isinstance(check, dict)
@@ -1034,23 +1072,37 @@ def review_item(
       and not is_standard_note_text(check.get("text"))
     )
   ]
-  detected_note_texts = [note["text"] for note in detected_notes([board_text])]
-  runtime_notes = [
-    clean_space(note) for note in manual.get("runtime_notes", [])
-    if clean_space(note)
+  detected_note_specs = detected_notes([board_text])
+  runtime_note_specs = [
+    {
+      "text": clean_space(note.get("text") if isinstance(note, dict) else note),
+      "html": str(note.get("html") or "").strip() if isinstance(note, dict) else "",
+    }
+    for note in manual.get("runtime_notes", [])
+    if clean_space(note.get("text") if isinstance(note, dict) else note)
   ]
-  notes = list(dict.fromkeys([
-    *legacy_notes,
-    *retained_notes,
-    *detected_note_texts,
-    *runtime_notes,
-  ]))
+  note_specs_by_text: dict[str, dict[str, str]] = {}
+  for note in (
+    *({"text": text, "html": ""} for text in legacy_notes),
+    *retained_note_specs,
+    *detected_note_specs,
+    *runtime_note_specs,
+  ):
+    text = clean_space(note.get("text"))
+    if text and (text not in note_specs_by_text or note.get("html")):
+      note_specs_by_text[text] = {"text": text, "html": str(note.get("html") or "")}
+  notes = list(note_specs_by_text)
+  runtime_notes = [note["text"] for note in runtime_note_specs]
   board_lines = [
     line
     for candidate in board_candidates
     for line in candidate[3]
   ]
-  exact_missing = [name for name in required_names if name not in board_text]
+  normalized_board_text = normalized_ocr_text(board_text)
+  exact_missing = [
+    name for name in required_names
+    if normalized_ocr_text(name) not in normalized_board_text
+  ]
   visible_travelers = [entry for entry in travelers if entry["name"] in board_text]
   traveler_hits = [entry["name"] for entry in visible_travelers]
   ability_checks = content_checks(required, board_text)
@@ -1060,6 +1112,7 @@ def review_item(
     {
       "text": note,
       "text_coverage": round(ngram_coverage(note, board_text), 4),
+      **({"html": note_specs_by_text[note]["html"]} if note_specs_by_text[note]["html"] else {}),
     }
     for note in notes
   ]
@@ -1231,10 +1284,13 @@ def write_catalog(catalog: list[CatalogItem], output_root: Path) -> None:
     "unmatched": sum(item.status != "matched" for item in catalog),
     "items": [asdict(item) for item in catalog],
   }
-  (output_root / "剧本清单.json").write_text(
+  catalog_path = output_root / "剧本清单.json"
+  temporary_path = output_root / f".{catalog_path.name}.{os.getpid()}.tmp"
+  temporary_path.write_text(
     json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
     encoding="utf-8",
   )
+  os.replace(temporary_path, catalog_path)
 
 
 def read_catalog(path: Path) -> list[CatalogItem]:

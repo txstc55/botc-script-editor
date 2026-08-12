@@ -12,7 +12,12 @@ export interface BatchExportManifest {
 
 export interface BatchExportSource {
   text: string;
-  notes: string[];
+  notes: RuntimeScriptNote[];
+}
+
+export interface RuntimeScriptNote {
+  text: string;
+  html?: string;
 }
 
 export function isBatchExportMode() {

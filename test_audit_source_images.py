@@ -83,6 +83,29 @@ class SourceImageTest(unittest.TestCase):
       [{"ability_coverage": 0.0}],
     ))
 
+  def test_traveler_only_page_is_not_a_reviewable_main_board(self) -> None:
+    self.assertFalse(source_has_reviewable_board(
+      25,
+      1,
+      [{
+        "heading_characters": [str(index) for index in range(8)],
+        "section_teams": ["traveler"],
+      }],
+      [{"ability_coverage": 0.1}],
+    ))
+
+  def test_unlabeled_traveler_supplement_is_not_a_main_board(self) -> None:
+    self.assertFalse(source_has_reviewable_board(
+      25,
+      2,
+      [{
+        "heading_characters": ["官员", "窃贼"],
+        "section_teams": [],
+        "traveler_supplement": True,
+      }],
+      [{"ability_coverage": 1.0}],
+    ))
+
   def test_id_only_role_is_hydrated_from_generated_database(self) -> None:
     with TemporaryDirectory() as temporary_directory:
       root = Path(temporary_directory)

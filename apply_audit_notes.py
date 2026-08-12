@@ -73,9 +73,11 @@ NOTE_DEFINITIONS = (
       f'<span style="{MINION_STYLE}">醉酒</span>同理。'
     ),
     matches=lambda text: bool(
-      re.search(r"中毒.{0,2}玩家.{0,3}失去能力", text)
-      and "如果中毒玩家" in text
-      and re.search(r"醉酒.{0,4}同理", text)
+      "中毒" in text
+      and "失去能力" in text
+      and "如果中毒" in text
+      and "错误信息" in text
+      and re.search(r"[醉辞]酒.{0,4}同理", text)
     ),
     position_marker="失去能力",
   ),
@@ -96,10 +98,12 @@ NOTE_DEFINITIONS = (
       f'<span style="{MINION_STYLE}">中毒</span>。'
     ),
     matches=lambda text: bool(
-      re.search(r"中毒.{0,2}玩家.{0,3}失去能力", text)
-      and "如果中毒玩家" in text
+      "中毒" in text
+      and "失去能力" in text
+      and "如果中毒" in text
+      and "错误信息" in text
       and re.search(r"不会.{0,6}得知.{0,4}中毒", text)
-      and "醉酒同理" not in text
+      and not re.search(r"[醉辞]酒.{0,4}同理", text)
     ),
     position_marker="失去能力",
   ),

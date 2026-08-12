@@ -58,6 +58,23 @@ class AuditNoteTests(unittest.TestCase):
 
     self.assertEqual(notes, [])
 
+  def test_poison_note_tolerates_ocr_errors_in_player(self) -> None:
+    notes = detected_notes([
+      "中毒的玩案会失去能力，但会认为自己仍具有能力。",
+      "如果中毒玩象的角色能力会给他提供信息，说书人可能会给出错误信息，",
+      "中毒的玩家不会得知自己中毒。",
+    ])
+
+    self.assertEqual([note["text"].split("：", 1)[0] for note in notes], ["中毒"])
+
+  def test_poison_drunk_note_tolerates_ocr_error_in_drunk(self) -> None:
+    notes = detected_notes([
+      "中毒的玩案会失去能力。如果中毒玩家的能力提供信息，可能会得到错误信息。",
+      "中毒的玩家不会得知自己中毒。辞酒同理。",
+    ])
+
+    self.assertEqual([note["text"].split("：", 1)[0] for note in notes], ["中毒/醉酒"])
+
 
 if __name__ == "__main__":
   unittest.main()

@@ -87,6 +87,20 @@ class FullRosterTest(unittest.TestCase):
     self.assertEqual(changes, ["移除 old-rule"])
     self.assertEqual([item["id"] for item in json.loads(updated)], ["_meta", "角色甲"])
 
+  def test_remove_last_duplicate_from_compact_json(self):
+    source = json.dumps([
+      {"id": "_meta"},
+      {"id": "same", "name": "保留"},
+      {"id": "same", "name": "移除"},
+    ], ensure_ascii=False, separators=(",", ":"))
+
+    updated, changes = apply_fix(source, {
+      "removals": [{"id": "same", "occurrence": 2}],
+    })
+
+    self.assertEqual(changes, ["移除 same"])
+    self.assertEqual([item.get("name") for item in json.loads(updated)], [None, "保留"])
+
   def test_add_entry_before_existing_role(self):
     source = json.dumps([
       {"id": "_meta", "name": "测试剧本"},

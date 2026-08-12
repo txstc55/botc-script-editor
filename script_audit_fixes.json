@@ -472,24 +472,6 @@
       ]
     },
     {
-      "source": "Bilibili 1113211727390965794 对照图-03",
-      "targets": ["all_jsons/万象星启体验剧本/剧本/#渊墟之外V2.8.1 9.17-弦舞.json"],
-      "replacements": [
-        {
-          "old_name": "店小二&符文吞噬者",
-          "old_team": "jinx",
-          "entry": {
-            "id": "112222222299999222222222562222333_meta",
-            "image": "https://clocktower-wiki.gstonegames.com/images/f/f1/Boffin.png",
-            "name": "庄小二&符文吞噬者",
-            "team": "jinx",
-            "setup": 0,
-            "ability": "如果恶魔杀死了庄小二导致符文吞噬者获得了庄小二的能力，庄小二的醉酒标记不会移动。"
-          }
-        }
-      ]
-    },
-    {
       "source": "Bilibili 1145025933095206945 对照图-02",
       "targets": ["all_jsons/万象星启体验剧本/剧本/831#一人成军-提线政客.json"],
       "replacements": [
@@ -9152,6 +9134,28 @@
       "targets": [
         "all_jsons/旋转木马快速上手剧本/#虔诚信仰-Emerald.json"
       ],
+      "removals": [
+        {
+          "name": "报丧女妖&涡流",
+          "team": "jinx"
+        },
+        {
+          "name": "食人族&罂粟种植者",
+          "team": "jinx"
+        },
+        {
+          "name": "维齐尔&政客",
+          "team": "jinx"
+        },
+        {
+          "name": "麻脸巫婆&落难少女",
+          "team": "jinx"
+        },
+        {
+          "name": "麻脸巫婆&政客",
+          "team": "jinx"
+        }
+      ],
       "additions": [
         {
           "name": "告密者",
@@ -9788,6 +9792,1902 @@
       "removals": [
         {"name": "提线木偶", "team": "minion"}
       ]
+    },
+    {
+      "source": "Bilibili 1113211727390965794 对照图-03",
+      "targets": ["all_jsons/万象星启体验剧本/剧本/#渊墟之外V2.8.1 9.17-弦舞.json"],
+      "replacements": [
+        {
+          "old_name": "庄小二&符文吞噬者",
+          "old_team": "jinx",
+          "entry": {
+            "id": "店小二&符文吞噬者",
+            "name": "店小二&符文吞噬者",
+            "team": "jinx",
+            "ability": "如果恶魔杀死了店小二导致符文吞噬者获得了店小二的能力，店小二的醉酒标记不会移动。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1145675456754745363 对照图-03",
+      "targets": ["all_jsons/万象星启体验剧本/剧本/833#礼献长夜-鬼.json"],
+      "removals": [
+        {"name": "帽匠可选规则", "team": "jinx"},
+        {"name": "红唇女郎&献礼", "team": "jinx"}
+      ]
+    },
+    {
+      "source": "Bilibili 1118103798232907812 对照图-03",
+      "targets": ["all_jsons/全原创角色剧本/汀西维尔/#纺都颂歌-小烯C2H43g.json"],
+      "additions": [
+        {
+          "name": "虚空之神",
+          "team": "demon",
+          "patch": {
+            "ability": "你以为是你一个镇民角色且拥有该角色的能力，当你在决斗中失败时，你反败为胜。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1100977942548185110 对照图-03",
+      "targets": ["all_jsons/全原创角色剧本/海外/#鸦木高中（Ravenswood High）- !Pooley.json"],
+      "renames": [
+        {"old_name": "时空客*", "new_name": "时空客", "team": "townsfolk"},
+        {"old_name": "挚友*", "new_name": "挚友", "team": "townsfolk"},
+        {"old_name": "社交达人*", "new_name": "社交达人", "team": "townsfolk"},
+        {"old_name": "浪漫主义者*", "new_name": "浪漫主义者", "team": "outsider"},
+        {"old_name": "纪律委员*", "new_name": "纪律委员", "team": "outsider"},
+        {"old_name": "女王蜂*", "new_name": "女王蜂", "team": "demon"},
+        {"old_name": "霸凌者*", "new_name": "霸凌者", "team": "demon"},
+        {"old_name": "魔鬼教师*", "new_name": "魔鬼教师", "team": "demon"},
+        {"old_name": "毕业生*", "new_name": "毕业生", "team": "traveler"}
+      ],
+      "replacements": [
+        {
+          "old_name": "舞会王室",
+          "old_team": "fabled",
+          "entry": {
+            "id": "25_rhigh",
+            "name": "舞会皇室",
+            "team": "fabled",
+            "image": "https://www.bloodstar.xyz/p/worryhours/rhigh/25_rhigh.png",
+            "ability": "每个白天被处决的玩家可以选择一名存活的玩家（与上个白天不同）。这名玩家“是皇室”并且邪恶玩家的负面能力对他无效直到下个黎明。当玩家“是皇室”并且能力带有“殊荣”关键词将触发其描述效果。",
+            "remindersGlobal": ["是皇室"]
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1120296469219246130 对照图-02",
+      "targets": ["all_jsons/全原创角色剧本/海外/#黑潮叛约 High Seas of Mutiny FINAL-Gordon Fitzgerald .json"],
+      "renames": [
+        {"old_name": "领航员RI", "new_name": "领航员", "team": "townsfolk"},
+        {"old_name": "水手长I", "new_name": "水手长", "team": "townsfolk"},
+        {"old_name": "船长IC", "new_name": "船长", "team": "townsfolk"},
+        {"old_name": "西印度海盗RC", "new_name": "西印度海盗", "team": "townsfolk"},
+        {"old_name": "旱鸭子R", "new_name": "旱鸭子", "team": "townsfolk"},
+        {"old_name": "酒馆女C", "new_name": "酒馆女", "team": "townsfolk"},
+        {"old_name": "合法海盗RI", "new_name": "合法海盗", "team": "townsfolk"},
+        {"old_name": "大副RI", "new_name": "大副", "team": "townsfolk"},
+        {"old_name": "火药猴R", "new_name": "火药猴", "team": "townsfolk"},
+        {"old_name": "寄居蟹RIC", "new_name": "寄居蟹", "team": "townsfolk"},
+        {"old_name": "藤壶RC", "new_name": "藤壶", "team": "outsider"},
+        {"old_name": "酒糟鼻R", "new_name": "酒糟鼻", "team": "outsider"},
+        {"old_name": "美人鱼RI", "new_name": "美人鱼", "team": "outsider"},
+        {"old_name": "神秘祭司RI", "new_name": "神秘祭司", "team": "minion"},
+        {"old_name": "海灵RI", "new_name": "海灵", "team": "minion"},
+        {"old_name": "食尸者R", "new_name": "食尸者", "team": "minion"},
+        {"old_name": "克拉肯R", "new_name": "克拉肯", "team": "demon"},
+        {"old_name": "卡吕普索C", "new_name": "卡吕普索", "team": "demon"},
+        {"old_name": "鲁萨尔卡R", "new_name": "鲁萨尔卡", "team": "demon"},
+        {"old_name": "海坊主I", "new_name": "海坊主", "team": "demon"},
+        {"old_name": "舱底鼠RI", "new_name": "舱底鼠", "team": "traveler"},
+        {"old_name": "无赖汉RC", "new_name": "无赖汉", "team": "traveler"},
+        {"old_name": "海军准将RC", "new_name": "海军准将", "team": "traveler"},
+        {"old_name": "叛船咒徒RIC", "new_name": "叛船咒徒", "team": "traveler"},
+        {"old_name": "荒岛生还者C", "new_name": "荒岛生还者", "team": "traveler"}
+      ],
+      "replacements": [
+        {
+          "old_name": "亡灵海盗RI",
+          "old_team": "minion",
+          "entry": {
+            "id": "undeadpirate",
+            "name": "亡灵海盗",
+            "team": "minion",
+            "edition": "HSoM",
+            "image": "https://i.postimg.cc/kMVjwhb9/image.png",
+            "ability": "如果你死于处决，当晚你可以选择与你邻近的一名存活玩家：他死亡。",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 6,
+            "otherNightReminder": "如果你死于处决，当晚你可以选择与你邻近的一名存活玩家：他死亡。",
+            "reminders": ["失去能力", "死亡"],
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 954348974517518337 对照图-03",
+      "targets": ["all_jsons/节日&活动主题剧本/#阴兵借道7.5-痴愚.json"],
+      "additions": [
+        {
+          "name": "氓山",
+          "team": "fabled",
+          "entry": {
+            "id": "氓山",
+            "name": "氓山",
+            "team": "fabled",
+            "image": "",
+            "ability": "夜晚开始时，存活玩家要秘密选择一个区域前往，然后阴神可以选择一个区域并得知哪些玩家处于该区域。",
+            "setup": 0
+          },
+          "before": {"name": "封禅台", "team": "fabled"}
+        },
+        {
+          "name": "末法",
+          "team": "fabled",
+          "entry": {
+            "id": "末法",
+            "name": "末法",
+            "team": "fabled",
+            "image": "",
+            "ability": "黎明时说书人会公布所有玩家所处的区域，黄昏时会有一个区域冥土化，剩余二个区域后，以上行动不再进行。前往冥土化区域的善良玩家会在下个黎明死亡但仍被当作存活。前往冥土化区域的邪恶玩家会在当晚失去能力。",
+            "setup": 0
+          },
+          "before": {"name": "封禅台", "team": "fabled"}
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1077848774825476101 对照图-02",
+      "targets": [
+        "all_jsons/特别的玩法/#赤子之心4.0-溜溜.json"
+      ],
+      "id_roster": {
+        "meta": {
+          "name": "赤子之心v6",
+          "author": "溜溜"
+        },
+        "entries": [
+          "librarian",
+          "dianxiaoer",
+          "fortune_teller",
+          "xionghaizi",
+          "seamstress",
+          "towncrier",
+          "flowergirl",
+          "zhifu",
+          "nightwatchman",
+          "philosopher",
+          "alsaahir",
+          {
+            "id": "wudaozhe",
+            "name": "悟道者",
+            "team": "townsfolk",
+            "ability": "你以为你是一个外来者，但你实际上不是。如果有邪恶玩家的能力选择或影响了你，你会立即变成一个不在场的镇民角色。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/wudaozhe.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [
+              "是悟道者"
+            ],
+            "setup": 1,
+            "flavor": ""
+          },
+          "bingbi",
+          {
+            "id": "xizi_new",
+            "name": "戏子",
+            "team": "townsfolk",
+            "ability": "其他善良玩家醉酒（旅行者除外），你们互相认识且无法转变阵营，对调胜负结果，即使你失去能力。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/xizi.png",
+            "firstNight": 12,
+            "firstNightReminder": "唤醒所有善良角色并让他们互认。",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [
+              "善良醉酒"
+            ],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          },
+          "hermit",
+          "witch",
+          "xaan",
+          "scarlet_woman",
+          "boffin",
+          "goblin",
+          "hundun",
+          "fang_gu",
+          "vigormortis",
+          {
+            "id": "科学怪人&戏子",
+            "name": "科学怪人&戏子",
+            "team": "jinx",
+            "ability": "恶魔无法拥有戏子的能力。"
+          },
+          {
+            "id": "科学怪人&熊孩子",
+            "name": "科学怪人&熊孩子",
+            "team": "jinx",
+            "ability": "如果科学怪人存活且熊孩子不在场，恶魔只会获得熊孩子的能力。"
+          },
+          {
+            "id": "戏子&哥布林",
+            "name": "戏子&哥布林",
+            "team": "jinx",
+            "ability": "戏子无法反转由哥布林的能力产生的胜负结果。"
+          },
+          {
+            "id": "方古&红唇女郎",
+            "name": "方古&红唇女郎",
+            "team": "jinx",
+            "ability": "如果即将出现两名存活的恶魔，其中之一是由红唇女郎转变的，红唇女郎不会变成恶魔。"
+          },
+          {
+            "id": "灯火阑珊",
+            "name": "灯火阑珊",
+            "team": "fabled",
+            "ability": "所有的外来者都是隐士。隐士不改变外来者数量。拥有隐士能力的玩家首夜依次睁眼并抽取两枚已发布的外来者角色，获得他们的能力（无法抽得酒鬼/疯子/异端分子/政客/圣徒）。游戏开始前说书人根据玩家情况指定抽取范围，极端情况由说书人指定能力。相克及规则细节以说书人公开声称为准。",
+            "image": "",
+            "setup": 1
+          }
+        ]
+      }
+    },
+    {
+      "source": "Bilibili 1094278369072119809 对照图-03",
+      "targets": [
+        "all_jsons/角色主题竞赛剧本/#急转直下-Nick B.json"
+      ],
+      "id_roster": {
+        "meta": {
+          "name": "急转直下v1.3.1",
+          "author": "Nick B"
+        },
+        "entries": [
+          "clockmaker",
+          "pixie",
+          "noble",
+          "empath",
+          "snake_charmer",
+          "general",
+          "monk",
+          "oracle",
+          "flowergirl",
+          "artist",
+          "slayer",
+          "philosopher",
+          "sage",
+          "klutz",
+          "barber",
+          "drunk",
+          "plague_doctor",
+          "mezepheles",
+          "poisoner",
+          "scarlet_woman",
+          "baron",
+          "summoner",
+          "imp",
+          "vigormortis",
+          "vortox",
+          "spirit_of_ivory",
+          {
+            "id": "瘟疫医生&红唇女郎",
+            "name": "瘟疫医生&红唇女郎",
+            "team": "jinx",
+            "ability": "如果瘟疫医生死亡且说书人会因此获得红唇女郎的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。"
+          },
+          {
+            "id": "瘟疫医生&男爵",
+            "name": "瘟疫医生&男爵",
+            "team": "jinx",
+            "ability": "如果说书人获得了男爵的能力，至多两名玩家会变成不在场的外来者。"
+          },
+          {
+            "id": "召唤师&钟表匠",
+            "name": "召唤师&钟表匠",
+            "team": "jinx",
+            "ability": "如果召唤师在场，在创造恶魔之后钟表匠才会得知信息。"
+          }
+        ]
+      }
+    },
+    {
+      "source": "Bilibili 1130686093858963492 对照图-03",
+      "targets": [
+        "all_jsons/旋转木马快速上手剧本/778#履上华髻 Peruke On My Shoes.json"
+      ],
+      "id_roster": {
+        "meta": {
+          "name": "履上华髻 Peruke On My Shoes",
+          "author": "Ben & Jams",
+          "logo": "https://www.bloodstar.xyz/p/SerraEvelyn/PerukeOnMyShoes/_meta.png"
+        },
+        "entries": [
+          "steward",
+          "knight",
+          "grandmother",
+          "bountyhunter",
+          "villageidiot",
+          "dreamer",
+          "flowergirl",
+          "towncrier",
+          "oracle",
+          "undertaker",
+          "soldier",
+          "amnesiac",
+          "sage",
+          "drunk",
+          "recluse",
+          "barber",
+          "politician",
+          "spy",
+          "harpy",
+          "witch",
+          "xaan",
+          "kazali",
+          "vigormortis",
+          "legion",
+          "bigwig",
+          {
+            "id": "卡扎力&赏金猎人",
+            "name": "卡扎力&赏金猎人",
+            "team": "jinx",
+            "ability": "在卡扎力行动完毕后，如果赏金猎人仍然在场，才会创造邪恶镇民。"
+          },
+          {
+            "id": "卡扎力&士兵",
+            "name": "卡扎力&士兵",
+            "team": "jinx",
+            "ability": "卡扎力可以把士兵转变成邪恶的爪牙。"
+          }
+        ]
+      }
+    },
+    {
+      "source": "Bilibili 1049813135275327494 对照图-03",
+      "targets": [
+        "all_jsons/汀西维尔剧本/#大限将至·汀-清清Jungle.json"
+      ],
+      "additions": [
+        {
+          "name": "暴乱",
+          "team": "demon",
+          "patch": {
+            "ability": "在第三个白天，所有爪牙会变成暴乱，当天被提名的玩家会立即死亡且必须再次提名一名存活的玩家。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1014698539232526371 对照图-03",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/#彻底疯狂-寒水.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 783240385312849922 对照图-02",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/国内快速上手剧本/#愚者欢宴.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "异端分子",
+          "team": "outsider",
+          "patch": {
+            "ability": "所有本来获胜的玩家，改为落败；所有本来落败的玩家，改为获胜，即使你已死亡。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 932127466797924372 对照图-03",
+      "targets": [
+        "all_jsons/华灯初上剧本创作大赛/#我的后半生-闻人.json"
+      ],
+      "removals": [
+        {
+          "name": "圣徒",
+          "team": "outsider"
+        },
+        {
+          "name": "Json 制作 By",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1040139799486267392 对照图-02",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/#来煎人寿-Pakchoi.json"
+      ],
+      "removals": [
+        {
+          "name": "独奏家",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "清道夫",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "如果你的邻座玩家都已经死亡，会发生一些好事。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 935323725385957416 对照图-03",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/海外快速上手剧本/#滚出我的沼泽-Aero&Jams.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 925429254632505369 对照图-03",
+      "targets": [
+        "all_jsons/华灯初上剧本创作大赛/#白日放歌-利尼维亚首席气球驾驶员.json"
+      ],
+      "removals": [
+        {
+          "name": "Json 制作 By",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 851916637326016537 对照图-03",
+      "targets": [
+        "all_jsons/特别的玩法/#红胡子帮-Cam.json"
+      ],
+      "renames": [
+        {
+          "old_name": "私货商人：莽夫落脚点",
+          "new_name": "私货商人：莽夫们的落脚点",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "私货商人：莽夫们的落脚点",
+          "team": "fabled",
+          "patch": {
+            "ability": "游戏过程中可能会存在若干名重复的莽夫角色（最多为四名）。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 885709684827226151 对照图-02",
+      "targets": [
+        "all_jsons/汀西维尔剧本/#货比三家·汀-摸鱼学徒.json"
+      ],
+      "replacements": [
+        {
+          "old_name": "驱魔人",
+          "old_team": "townsfolk",
+          "entry": {
+            "id": "道士",
+            "name": "道士",
+            "team": "townsfolk",
+            "ability": "每个夜晚*，你要选择一名玩家：如果他是恶魔，你死亡，并且当晚不会再有其他玩家死亡。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/upload/202301/c_0866187694761_98fba0d5.jpg",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 22,
+            "otherNightReminder": "唤醒道士，让其选择一名玩家。如果他选中了恶魔，在他的角色标记旁放置“死亡”提示标记。",
+            "reminders": [
+              "死亡"
+            ],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 880499700486111264 对照图-03",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/海外快速上手剧本/#逢魔而起.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        },
+        {
+          "name": "炼金术士&提线木偶&气球驾驶员",
+          "team": "jinx"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "卖花女孩",
+          "old_team": "townsfolk",
+          "entry": {
+            "id": "气球驾驶员",
+            "name": "气球驾驶员",
+            "team": "townsfolk",
+            "ability": "每个夜晚，你会得知一名与上个夜晚得知的玩家角色类型不同的玩家。[+0~1外来者]",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/balloonist.png",
+            "firstNight": 50,
+            "firstNightReminder": "唤醒气球驾驶员，对他指向一名玩家。",
+            "otherNight": 90,
+            "otherNightReminder": "唤醒气球驾驶员，对他指向一名玩家，这名玩家与之前气球驾驶员上一个夜晚得知过的玩家属于不同的角色类型。",
+            "reminders": [
+              "得知"
+            ],
+            "remindersGlobal": [],
+            "setup": 1,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 783862206380900390 对照图-02",
+      "targets": [
+        "all_jsons/部分原创角色剧本/不含私货/1-200期/#醉梦龙庭-泽度哥摧毁停车场.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "阴阳鱼",
+          "team": "fabled",
+          "patch": {
+            "ability": "游戏开始时，说书人会宣布决定玩家“阴阳”属性的方式，属性为“阴”“阳”的玩家各占一半。（如果玩家数量为奇数，说书人要宣布“阴”或“阳”的数量加一以维持相等；旅行者没有阴阳属性。）阴阳平衡：存活玩家中“阴”和“阳”数量相等称之为阴阳平衡，否则为失衡。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1047076717159514134 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2025剧本世界杯/#非吾华厦-JC（海外）.json"
+      ],
+      "renames": [
+        {
+          "old_name": "私货商人",
+          "new_name": "私货商人：我从哪里来？",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "私货商人：我从哪里来？",
+          "team": "fabled",
+          "patch": {
+            "ability": "失忆者在该剧本中是个外来者。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 914321580126896133 对照图-03",
+      "targets": [
+        "all_jsons/华灯初上剧本创作大赛/#风雅集-苏通染.json"
+      ],
+      "additions": [
+        {
+          "name": "混沌",
+          "team": "demon",
+          "patch": {
+            "ability": "每个夜晚*，你要选择一名玩家：他死亡。如果你以这种方式杀死了一名与你邻近的镇民玩家，所有善良玩家会中毒直到下个黄昏。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1064271910761660437 对照图-02",
+      "targets": [
+        "all_jsons/城市赛专属剧本/#黑夜问白天-小諧星ChinHoYiu.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1014702232888672263 对照图-02",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/#黑星升起1.13-驯鹿.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1129042736281812993 对照图-03",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/764#心动男嘉宾v2.1-轩轩大王.json"
+      ],
+      "additions": [
+        {
+          "name": "[通讯录]",
+          "team": "fabled",
+          "patch": {
+            "ability": "除了老妈子、微双直男之外的镇民角色都是“通讯录”。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 871592196030070785 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#梨园残梦3.5-痴愚.json"
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "逢场作戏",
+            "name": "逢场作戏",
+            "team": "fabled",
+            "ability": "在游戏开始时，说书人会决定第一个剧目。一个剧目中，会有玩家饰演其中的角色（不再是原本的角色）。一个剧目上演两天后的当天黄昏会变更剧目，且之前剧目的玩家变成原本的角色。所有玩家都知道当前上演的剧目。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "一唱一和",
+            "name": "一唱一和",
+            "team": "fabled",
+            "ability": "在游戏开始时，说书人会将所有玩家两两组成搭档，饰反派的玩家会相互组成搭档或没有搭档。搭档之间可以随时私聊，在夜晚时会被一同唤醒。如果搭档之一转变了阵营，另一名也转变为相同阵营。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 973216087214653456 对照图-03",
+      "targets": [
+        "all_jsons/海外社区推荐剧本/#爬行都市-Aero.json"
+      ],
+      "additions": [
+        {
+          "name": "暴风捕手",
+          "team": "fabled",
+          "overrides": {
+            "ability": "游戏开始时，如果酒鬼在场，他只能死于处决，但所有邪恶玩家会在首个夜晚得知他是哪一名玩家。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1006582820594778153 对照图-03",
+      "targets": [
+        "all_jsons/全原创角色剧本/汀西维尔/#誓约·巴别塔-泽度哥摧毁停车场.json"
+      ],
+      "removals": [
+        {
+          "name": "誓约巴别塔",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "末日倒计时",
+            "name": "末日倒计时",
+            "team": "fabled",
+            "ability": "善良阵营玩家（怪人除外）被投票处决时，邪恶阵营获胜。游戏第五日结束时，邪恶阵营获胜。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "巴别塔审判",
+            "name": "巴别塔审判",
+            "team": "fabled",
+            "ability": "没有担任过审判官的玩家可以申请成为今天的审判官，所有玩家要对这项申请举手表决，如果超过半数玩家同意，则申请通过；审判官要公开询问一名其他存活玩家一个是非问题。如果他没有如实回答，他立即被处决。每个白天至多进行一次审判。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 865297053855514707 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/海外/#诡异童话Ⅱ（A New Kind Of Fairy Tale Ⅱ）-Melodia & Astral Zucchinii.json"
+      ],
+      "renames": [
+        {
+          "old_name": "金轮女",
+          "new_name": "金纺女",
+          "team": "outsider"
+        }
+      ],
+      "additions": [
+        {
+          "name": "金纺女",
+          "team": "outsider",
+          "patch": {
+            "ability": "每个白天，你要拜访说书人以领取一个试炼：如果你在当天白天没有完成它，会触发对应的惩罚。每局游戏限一次，你可以公开猜测一名玩家是邪恶的：如果猜对，你失去能力。",
+            "otherNightReminder": "每个白天，你要拜访说书人以领取一个试炼：如果你在当天白天没有完成它，会触发对应的惩罚。每局游戏限一次，你可以公开猜测一名玩家是邪恶的：如果猜对，你失去能力。"
+          }
+        },
+        {
+          "name": "红桃法令",
+          "team": "fabled",
+          "patch": {
+            "ability": "当这个花色被选择时，恶魔要再选择一条法令：它会被一同加入游戏但不被公布。"
+          }
+        },
+        {
+          "entry": {
+            "id": "姆温都的挑战",
+            "name": "姆温都的挑战",
+            "team": "fabled",
+            "ability": "著名演员：在提名阶段开始时，宣布你是一名著名演员。你会有30秒的时间扮演剧本上的一个角色，但不能提及它的名字和角色能力。如果有玩家猜对你的角色，你可以换个角色继续扮演。你可以一直演到时间结束。奖励：在当晚时，你会得知今天猜测正确的角色之中，哪些角色在场。产品推销：在提名阶段开始时，宣布你有产品需要推销。你要选择两名玩家让他们各给你一个词。接下来你有30秒的时间推销由那两个词构成名字的产品。随后，除你以外的玩家按顺时针顺序对你的产品轮流竞标出价，或者选择不出价，直至有玩家以最高价胜出。奖励：你会得知出价最高的玩家今晚是否因其自身能力醒来。玩家画像：为一名玩家画像。在提名阶段时，除你以外的玩家各自有30秒的时间选择他们认为你画得最像谁。如果半数以上的玩家猜测正确，你完成挑战。奖励：你会得知那名玩家的角色类型，并且可能在下个白天继续重复这个挑战。同人小说：使用剧本中的至少两个角色创作一个《染·钟楼谜团》的同人小说。大声读出这个小说，或是将它交给说书人，你完成挑战。奖励：你创作的小说里的角色，每有两个角色在场，你会得知一名玩家。你只能得知每个角色类型各一名玩家。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "金纺女的试练",
+            "name": "金纺女的试练",
+            "team": "fabled",
+            "ability": "猜猜我的谜语：你必须整天都使用谜语并押着韵律说话。惩罚：直至游戏结束为止，如果你猜测了错误的邪恶玩家，你的阵营落败。神童：说书人给你安排一个主题，你只能参加与这个主题相关的讨论，至少一次。惩罚：你必须在下个白天额外完成一个试练（由你选择），若未完成会受到对应的惩罚。应声虫：你要“疯狂”地证明别人告诉你的所有事情都是真的。惩罚：与你邻近的一名存活镇民玩家获得错误信息，直至你获得该惩罚的下个黄昏。野兽直觉：你要“疯狂”地证明你是一头野兽（由说书人选择）。惩罚：会有一名玩家在今晚死亡。戏剧性讽示：你要“疯狂”地证明你是在莎士比亚戏剧中担当主演的一名戏剧演员。惩罚：会有一名邪恶玩家在今晚查看魔典。身份窃贼：你要“疯狂”地证明你是另一名玩家（由你选择）。惩罚：直至游戏结束为止，如果你死于处决，你的阵营落败。语言障碍：你必须整天都说着莫名其妙、毫无意义的话语。惩罚：你可能会被当作邪恶阵营、爪牙角色或恶魔角色，直至你获得该惩罚的下个黄昏。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 747194593096761400 对照图-01/02",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/40#诡镇疑云-木木木.json"
+      ],
+      "removals": [
+        {
+          "name": "已失踪",
+          "team": "traveler"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "理智",
+            "name": "理智",
+            "team": "fabled",
+            "ability": "理智是玩家自身的一种状态，角色能力可以改变该状态（如同存活/死亡）。当玩家丧失理智时，他会得知另一个角色且以为自己是该角色，并获得该角色的能力，但使用该能力可能没有效果，也可能会获得错误信息。当玩家恢复理智时，他会得知自己真正的角色，并失去之前所获得的另一个角色的能力。旅行者和已丧失理智的玩家不能丧失理智。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "[-X理智]",
+            "name": "[-X理智]",
+            "team": "fabled",
+            "ability": "游戏开始时，会有X名玩家丧失理智。这些玩家在设置阶段中看到的角色并不是自己真正的角色。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 1,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "失踪",
+            "name": "失踪",
+            "team": "fabled",
+            "ability": "如果有一名玩家失踪，该玩家（及其角色）会被当作不在游戏中，但在选择能力目标和判定胜利/落败条件时除外。说书人会在黎明时宣布有哪些玩家失踪，恶魔的失踪不会导致游戏结束。不能与失踪玩家进行任何交流，不能对他们发起提名或进行投票，可以对他们使用能力但没有效果；他们可以窃听未失踪玩家们的私聊，同时失踪的玩家们可以私下交流。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1085899016736079876 对照图-03",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/博物馆推荐/#魂归故里-提线政客.json"
+      ],
+      "additions": [
+        {
+          "name": "暴风捕手",
+          "team": "fabled",
+          "overrides": {
+            "ability": "游戏开始时，如果公主在场，他只能死于处决，但所有邪恶玩家会在首个夜晚得知他是哪一名玩家。"
+          }
+        },
+        {
+          "name": "失败的上帝",
+          "team": "fabled",
+          "overrides": {
+            "ability": "每局游戏至少一次，说书人将会出现失误，但会纠正并公开承认自己曾处理有误。"
+          }
+        },
+        {
+          "name": "圣洁之魂",
+          "team": "fabled",
+          "overrides": {
+            "ability": "游戏过程中邪恶玩家的总数最多能比初始设置多一名。"
+          }
+        },
+        {
+          "name": "笑匠",
+          "team": "traveler",
+          "overrides": {
+            "ability": "每个白天，公开选择一名玩家：一名除他以外的玩家在今晚改变角色。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1099497793739816962 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/海外/#炼狱（Purgatory）-Svendetta.json"
+      ],
+      "removals": [
+        {
+          "name": "盲从·运作",
+          "team": "jinx"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1026783039635587074 对照图-03",
+      "targets": [
+        "all_jsons/节日&活动主题剧本/#岁岁年年-蓝铃兰（新年）.json"
+      ],
+      "renames": [
+        {
+          "old_name": "舞龙（身）",
+          "new_name": "舞龙身",
+          "team": "traveler"
+        }
+      ],
+      "additions": [
+        {
+          "name": "告密者",
+          "team": "outsider",
+          "patch": {
+            "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。",
+            "firstNightReminder": "如果告密者在场，对每名爪牙分别展示三个不在场的角色标记。"
+          }
+        },
+        {
+          "name": "舞龙身",
+          "team": "traveler",
+          "patch": {
+            "ability": "你无法被流放。每个白天，舞龙头可以向一名非旅行者玩家发起流放，此次流放仅舞龙能参与，且半数以上舞龙同意即可流放成功。［不可直接选择］"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 736280106227466241 对照图-02",
+      "targets": [
+        "all_jsons/汀西维尔剧本/#要赢了吗·汀.json"
+      ],
+      "additions": [
+        {
+          "name": "异端分子",
+          "team": "outsider",
+          "patch": {
+            "ability": "所有本来获胜的玩家，改为落败；所有本来落败的玩家，改为获胜，即使你已死亡。"
+          }
+        },
+        {
+          "entry": {
+            "id": "私货商人",
+            "name": "私货商人",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "复数个异端分子胜负会反转多次。食人族死后保留获得的死亡后有效的技能。农夫死后大概率会传给外来者。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 869067541240086564 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#暮色村庄-调和师.json"
+      ],
+      "renames": [
+        {
+          "old_name": "本轮控票",
+          "new_name": "控票",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "瘟疫的诅咒",
+          "team": "fabled",
+          "patch": {
+            "ability": "玩家处于瘟疫状态时，选择的能力目标会失效，且他会得知此事。如果该玩家被处决，提名者会继承瘟疫状态。玩家第二次获得瘟疫状态时死亡。恶魔不会处于瘟疫状态。蔓延在村庄上空的瘟疫，即使“瘟疫状态”的来源已经离场，状态依然存在。"
+          }
+        },
+        {
+          "name": "控票",
+          "team": "fabled",
+          "patch": {
+            "ability": "（只会在邪恶的点票员能力触发时加入游戏作为标志）邪恶的点票员发动能力，本轮场上的票数计算规则变为：存活玩家总数-存活玩家投票数+已死亡玩家投票数（若票数最高者有多名则一并处决）"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 733312021835022339 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#好事多磨.json"
+      ],
+      "removals": [
+        {
+          "name": "哨兵",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1024563860082786304 对照图-03",
+      "targets": [
+        "all_jsons/SUI染钟楼投稿&火乐杯剧本/#审判日-七海小烯.json"
+      ],
+      "removals": [
+        {
+          "name": "哄疯子小助手",
+          "team": "fabled"
+        },
+        {
+          "name": "私货商人",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "终末天启",
+            "name": "终末天启",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "每局游戏限一次，一名军团玩家可以拜访说书人并伪造一条巫师的线索。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1129156471334895641 对照图-02",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/765#归去来兮-际尘.json"
+      ],
+      "removals": [
+        {
+          "name": "圣洁之魂",
+          "team": "fabled"
+        },
+        {
+          "name": "摆渡人",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 752279722705027080 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#心理博弈v8.0.0.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "半兽人&赌徒",
+            "name": "半兽人&赌徒",
+            "team": "jinx",
+            "ability": "赌徒会先于半兽人行动。如果赌徒赌博失败且半兽人存活，那么无论半兽人选择了哪名玩家，当晚只会有赌徒死亡。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lycanthrope.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "麻脸巫婆&莽夫",
+            "name": "麻脸巫婆&莽夫",
+            "team": "jinx",
+            "ability": "麻脸巫婆无法将一名邪恶玩家变成莽夫。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit-hag.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "利维坦&旅店老板",
+            "name": "利维坦&旅店老板",
+            "team": "jinx",
+            "ability": "如果利维坦发起的提名中被处决的玩家在前一晚曾被旅店老板成功保护，那么那名玩家不会死亡。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "利维坦&镇长",
+            "name": "利维坦&镇长",
+            "team": "jinx",
+            "ability": "如果利维坦在场，镇长存活且第五天没有处决发生，则善良阵营获胜。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/role_icon/leviathan.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 884096688362356769 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#心理博弈XI-Habby.json"
+      ],
+      "removals": [
+        {
+          "name": "圣洁之魂",
+          "team": "fabled"
+        },
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1147375379000852499 对照图-02",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/845#慢性扼杀 A Job That Slowly Kills You-Panfex.json"
+      ],
+      "removals": [
+        {
+          "name": "园丁",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "食人族&罂粟种植者",
+            "name": "食人族&罂粟种植者",
+            "team": "jinx",
+            "ability": "如果食人族获得了罂粟种植者的能力，当他获得下一个能力时，爪牙和恶魔也会互相认识。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 925433661267902467 对照图-03",
+      "targets": [
+        "all_jsons/节日&活动主题剧本/#成双成对-Dream.json"
+      ],
+      "removals": [
+        {
+          "name": "Json 制作 By",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1060160523245453321 对照图-02",
+      "targets": [
+        "all_jsons/SUI染钟楼投稿&火乐杯剧本/#择日而亡-海雾.json"
+      ],
+      "renames": [
+        {
+          "old_name": "私货哈迪寂亚&主谋",
+          "new_name": "哈迪寂亚&主谋",
+          "team": "jinx"
+        }
+      ],
+      "additions": [
+        {
+          "name": "农夫",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "当你在夜晚死亡时，一名存活的善良玩家会变成农夫。"
+          }
+        },
+        {
+          "name": "哈迪寂亚&主谋",
+          "team": "jinx",
+          "patch": {
+            "id": "哈迪寂亚&主谋"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1093217074050760706 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#指鹅为鸭-V647刘子奇.json"
+      ],
+      "renames": [
+        {
+          "old_name": "任务",
+          "new_name": "任务系统",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "工程师",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "如果你与另一名玩家同时破坏了任务，则你们都视为在任务中工作。如果只有你破坏了任务，则视为你在任务中摸鱼。",
+            "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/17_goosegooseduck.png",
+            "firstNightReminder": "",
+            "otherNightReminder": "",
+            "reminders": []
+          }
+        },
+        {
+          "name": "间谍",
+          "team": "minion",
+          "patch": {
+            "ability": "在你的首个夜晚，你会得知一名在场的中立角色。每个夜晚*，你可以猜测该角色是哪位玩家。如果你猜对，则他无法单独获胜，并加入鸭的阵营。",
+            "image": "https://www.bloodstar.xyz/p/victor647/GooseGooseDuck/28_goosegooseduck.png",
+            "firstNightReminder": "唤醒间谍，告诉他一名在场的中立角色。",
+            "otherNightReminder": "唤醒间谍，让他猜测该角色是哪位玩家。如果猜对，告知目标玩家他加入鸭的阵营。",
+            "reminders": [
+              "加入鸭的阵营"
+            ]
+          }
+        },
+        {
+          "name": "任务系统",
+          "team": "fabled",
+          "patch": {
+            "id": "任务系统"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 851839194759168000 对照图-03",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/海外快速上手剧本/#疫病仆从.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "提线木偶&告密者",
+            "name": "提线木偶&告密者",
+            "team": "jinx",
+            "ability": "提线木偶不会得知三个不在场的角色，如果提线木偶与告密者均在场，改为由恶魔额外得知三个不在场角色。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "瘟疫医生&提线木偶",
+            "name": "瘟疫医生&提线木偶",
+            "team": "jinx",
+            "ability": "如果在瘟疫医生死亡时说书人获得了提线木偶的能力，且与恶魔邻座的存活玩家中有镇民或外来者，其中一名玩家会变成邪恶的提线木偶。如果此时场上的邪恶玩家数量比初始设置时的数量超出一名或更多，改为无事发生。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "瘟疫医生&间谍",
+            "name": "瘟疫医生&间谍",
+            "team": "jinx",
+            "ability": "如果瘟疫医生死亡且说书人会因此获得间谍的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "瘟疫医生&红唇女郎",
+            "name": "瘟疫医生&红唇女郎",
+            "team": "jinx",
+            "ability": "如果瘟疫医生死亡且说书人会因此获得红唇女郎的能力，改为一名存活的爪牙玩家获得此能力，且他会得知此事。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/plague_doctor.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "提线木偶&小怪宝",
+            "name": "提线木偶&小怪宝",
+            "team": "jinx",
+            "ability": "提线木偶会与一名爪牙玩家邻座，而不是恶魔。提线木偶不会被唤醒来决定是否照看小怪宝，也不会在照看小怪宝时得知自己是提线木偶。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/marionette.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "小怪宝&红唇女郎",
+            "name": "小怪宝&红唇女郎",
+            "team": "jinx",
+            "ability": "如果在五名及以上的玩家存活时照看小怪宝的玩家死亡，当晚红唇女郎必须要照看小怪宝。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/lil_monsta.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 735535711079366673 对照图-02",
+      "targets": [
+        "all_jsons/经典混合剧本/#罂粟花开-Danny.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        },
+        {
+          "name": "亡骨魔",
+          "team": "demon"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1129168398473756727 对照图-03",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/768#血肉磨坊-qqwawawawa.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 905707954465931283 对照图-03",
+      "targets": [
+        "all_jsons/海外社区推荐剧本/#魔鬼党·汀-Zets.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 732886094221148193 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#回旋迷阵.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1009233150403936288 对照图-03",
+      "targets": [
+        "all_jsons/汀西维尔剧本/#汀西维尓革命-张顺风.json"
+      ],
+      "replacements": [
+        {
+          "old_name": "贵族",
+          "old_team": "townsfolk",
+          "new_name": "事务官",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/旋转木马快速上手剧本/#言简意赅-Zets.json"
+        },
+        {
+          "old_name": "将军",
+          "old_team": "townsfolk",
+          "new_name": "城镇公告员",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/官方已发行剧本/#梦殒春宵.json"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1066111698680676372 对照图-03",
+      "targets": [
+        "all_jsons/角色主题竞赛剧本/#瓦路易基的胡须-Luxray.json"
+      ],
+      "removals": [
+        {
+          "name": "私货商人",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "侏儒",
+          "team": "traveler",
+          "source_json": "all_jsons/快速上手与角色主题竞赛剧本/角色竞赛优胜剧本/#侏儒事变-Agenda.json"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1110990559266209811 对照图-02",
+      "targets": [
+        "all_jsons/旋转木马快速上手剧本/#监守自盗-Dave.json"
+      ],
+      "removals": [
+        {
+          "id": "town_crier_c"
+        },
+        {
+          "id": "fisherman_c"
+        },
+        {
+          "id": "high_priestess_c",
+          "occurrence": 2
+        },
+        {
+          "id": "village_idiot_c",
+          "occurrence": 2
+        },
+        {
+          "id": "gambler_c",
+          "occurrence": 2
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 888572074339074053 对照图-02",
+      "targets": [
+        "all_jsons/经典混合剧本/#险象环生Pro-Zets.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1024740482014511155 对照图-03",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#黑暗时代v9-小烯C2H43g.json"
+      ],
+      "removals": [
+        {
+          "name": "备注",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1060040448866779141 对照图-03",
+      "targets": [
+        "all_jsons/SUI染钟楼投稿&火乐杯剧本/#新手村v7-小烯C2H43g.json"
+      ],
+      "meta_updates": {
+        "name": "新手村v10"
+      },
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "异教领袖",
+          "old_team": "townsfolk",
+          "new_name": "渔夫",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/官方已发行剧本/#窃窃私语·汀.json"
+        },
+        {
+          "old_name": "村夫",
+          "old_team": "townsfolk",
+          "new_name": "杂耍艺人",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#生日宴会！.json"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 756285535633276951 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#生日宴会！.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "侍臣",
+          "old_team": "townsfolk",
+          "new_name": "杂技演员",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/旋转木马快速上手剧本/#灵猴拜学-Jams,Josh,Kerry&zak.json"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 929766183758987287 对照图-03",
+      "targets": [
+        "all_jsons/华灯初上剧本创作大赛/#谨言慎行-际尘.json"
+      ],
+      "removals": [
+        {
+          "name": "Json 制作 By",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 924305270233890817 对照图-03",
+      "targets": [
+        "all_jsons/华灯初上剧本创作大赛/#首夜狂欢-稚宇.json"
+      ],
+      "removals": [
+        {
+          "name": "Json 制作 By",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 991403568614342658 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#双生之城 v1.4-际尘.json"
+      ],
+      "removals": [
+        {
+          "name": "独奏家",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1097269646290059265 对照图-02",
+      "targets": [
+        "all_jsons/BWG·剧本大乱斗/仙乐阁—先乐阅厂牌/#含光承影-小虫/含光承影.json"
+      ],
+      "removals": [
+        {
+          "id": "61_clock"
+        },
+        {
+          "id": "62_clock"
+        },
+        {
+          "id": "63_clock"
+        },
+        {
+          "id": "64_clock"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "女裁缝",
+          "old_team": "townsfolk",
+          "new_name": "筑梦师",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/官方已发行剧本/#梦殒春宵.json"
+        },
+        {
+          "old_name": "郎中",
+          "old_team": "townsfolk",
+          "new_name": "贞洁者",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/BWG·剧本大乱斗/谜题管理局—苏通染厂牌/#恶魔学院-会飞的小熊/#恶魔学院v2.2-会飞的小熊.json"
+        }
+      ],
+      "additions": [
+        {
+          "name": "世界法则",
+          "team": "fabled",
+          "patch": {
+            "ability": "在夜晚时，魔典会被一面单面反射镜对半切开，镜子会被固定不变，且不会告知玩家位置。半数玩家（包括恶魔）处于镜内，其余玩家处于镜外。镜中玩家不受影响，镜外的玩家能力（选角色的能力除外）会被镜子反射。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 972601601961230337 对照图-03",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#彼岸花开v1-际尘.json"
+      ],
+      "renames": [
+        {
+          "old_name": "植物学家",
+          "new_name": "自然术士",
+          "team": "townsfolk"
+        },
+        {
+          "old_name": "达普鬼虫",
+          "new_name": "咒蛾",
+          "team": "minion"
+        },
+        {
+          "old_name": "史矛革",
+          "new_name": "灾厄之喉",
+          "team": "demon"
+        },
+        {
+          "old_name": "脊蛊",
+          "new_name": "蚀疫魔",
+          "team": "demon"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "继生王爵&史矛革",
+          "old_team": "jinx",
+          "entry": {
+            "id": "jinx1",
+            "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/18_equinoxflower.png",
+            "name": "继生王爵&灾厄之喉",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "继生王爵因自身能力变成了新的灾厄之喉，会保留上一个灾厄之喉的诅咒。"
+          }
+        },
+        {
+          "old_name": "脊蛊&迷雾人",
+          "old_team": "jinx",
+          "entry": {
+            "id": "jinx3",
+            "image": "https://www.bloodstar.xyz/p/jc3635/EquinoxFlower/24_equinoxflower.png",
+            "name": "蚀疫魔&迷雾人",
+            "team": "jinx",
+            "setup": 0,
+            "ability": "如果迷雾人首夜选择了镇民角色，会被蚀疫魔的能力当作镇民而中毒。中毒后迷雾人失去能力，蚀疫魔的中毒效果不会再次转移。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 737173596870279218 对照图-02",
+      "targets": [
+        "all_jsons/汀西维尔剧本/#秘谋会议·汀.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1053027458761097225 对照图-02",
+      "targets": [
+        "all_jsons/特别的玩法/#混乱再临-Soulusion.json"
+      ],
+      "removals": [
+        {
+          "name": "私货商人",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "告密者",
+          "team": "outsider",
+          "patch": {
+            "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。"
+          }
+        },
+        {
+          "entry": {
+            "id": "报丧女妖&涡流",
+            "name": "报丧女妖&涡流",
+            "team": "jinx",
+            "ability": "如果恶魔杀死报丧女妖时涡流在场，玩家仍然会得知正确信息。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/banshee.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "食人族&罂粟种植者",
+            "name": "食人族&罂粟种植者",
+            "team": "jinx",
+            "ability": "如果食人族获得了罂粟种植者的能力，当他死亡或失去罂粟种植者的能力时，爪牙和恶魔会互相认识。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/cannibal.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "维齐尔&政客",
+            "name": "维齐尔&政客",
+            "team": "jinx",
+            "ability": "维齐尔的能力可能会将政客当作邪恶阵营。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/vizier.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "麻脸巫婆&落难少女",
+            "name": "麻脸巫婆&落难少女",
+            "team": "jinx",
+            "ability": "如果麻脸巫婆创造了落难少女，改为由说书人来决定哪一名玩家变成落难少女。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit_hag.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "麻脸巫婆&政客",
+            "name": "麻脸巫婆&政客",
+            "team": "jinx",
+            "ability": "被麻脸巫婆创造的邪恶政客无法因为自身能力转变为善良阵营。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/pit_hag.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 903738205161914372 对照图-02",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/博物馆推荐/#胡言乱语-刘中奇.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "讷神",
+            "name": "讷神",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "会有一顶讷帽。当玩家戴着讷帽的时候，只能说单音节词，但投票算作两票。如果违反规则，讷帽会被转移。",
+            "image": "/audit_icons/言外之意/调神.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [
+              "讷帽"
+            ],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        },
+        {
+          "entry": {
+            "id": "结巴绅士",
+            "name": "结巴绅士",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "会有一副搞笑眼镜。当玩家戴着搞笑眼镜的时候，只能用说书人指定的一种语言说话（外语、方言），但投票算作两票。如果违反规则，搞笑眼镜会被转移。",
+            "image": "/audit_icons/胡言乱语/结巴绅士.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [
+              "搞笑眼镜"
+            ],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 851944936838266917 对照图-02",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/角色竞赛优胜剧本/#群星之夜.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 870063780378181702 对照图-03",
+      "targets": [
+        "all_jsons/快速上手与角色主题竞赛剧本/海外快速上手剧本/#绅士谢幕.json"
+      ],
+      "removals": [
+        {
+          "name": "哨兵",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 857754133520711688 对照图-03",
+      "targets": [
+        "all_jsons/城市赛专属剧本/#追峰逐日-贾卡jaques.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "entry": {
+            "id": "方古&红唇女郎",
+            "name": "方古&红唇女郎",
+            "team": "jinx",
+            "ability": "如果方古成功转化了外来者并因此死去，红唇女郎不会变成方古。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/fang_gu.png",
+            "setup": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 931396304238542870 对照图-03",
+      "targets": [
+        "all_jsons/华灯初上剧本创作大赛/#恶路难行-Boxiao.json"
+      ],
+      "removals": [
+        {
+          "name": "Json 制作 By",
+          "team": "fabled"
+        },
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 850079963268775961 对照图-02",
+      "targets": [
+        "all_jsons/万象星启体验剧本/剧本/#怎会如此-小熊.json"
+      ],
+      "removals": [
+        {
+          "name": "梦卜者",
+          "team": "townsfolk"
+        },
+        {
+          "name": "圣洁之魂",
+          "team": "fabled"
+        }
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",
@@ -9868,7 +11768,6 @@
     {"script_name": "侠客风云决", "team": "townsfolk"},
     {"script_name": "各凭本事", "team": "townsfolk"},
     {"script_name": "含光承影", "team": "outsider"},
-    {"script_name": "冥河摆渡v1.2", "team": "fabled"},
     {"script_name": "审判日v10", "team": "outsider"},
     {"script_name": "岁岁年年", "team": "townsfolk"},
     {"script_name": "或者三日之都", "team": "demon"},
