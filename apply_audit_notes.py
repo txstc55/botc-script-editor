@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add standard bottom-of-board explanations confirmed by source-image OCR."""
+"""Detect standard bottom-of-board explanations without changing script JSON."""
 
 from __future__ import annotations
 
@@ -72,9 +72,10 @@ NOTE_DEFINITIONS = (
       f'<span style="{MINION_STYLE}">中毒</span>。'
       f'<span style="{MINION_STYLE}">醉酒</span>同理。'
     ),
-    matches=lambda text: (
-      "中毒" in text and "醉酒" in text and "失去能力" in text and
-      ("醉酒同理" in text or "中毒/醉酒" in text)
+    matches=lambda text: bool(
+      re.search(r"中毒.{0,2}玩家.{0,3}失去能力", text)
+      and "如果中毒玩家" in text
+      and re.search(r"醉酒.{0,4}同理", text)
     ),
     position_marker="失去能力",
   ),
@@ -94,7 +95,12 @@ NOTE_DEFINITIONS = (
       f'<span style="{MINION_STYLE}">中毒</span>的玩家不会得知自己'
       f'<span style="{MINION_STYLE}">中毒</span>。'
     ),
-    matches=lambda text: "中毒" in text and "失去能力" in text and "醉酒" not in text,
+    matches=lambda text: bool(
+      re.search(r"中毒.{0,2}玩家.{0,3}失去能力", text)
+      and "如果中毒玩家" in text
+      and re.search(r"不会.{0,6}得知.{0,4}中毒", text)
+      and "醉酒同理" not in text
+    ),
     position_marker="失去能力",
   ),
   NoteDefinition(
@@ -112,6 +118,14 @@ LEGACY_NOTE_TEXTS = {
   "可能：某件事情“可能”发生，代表由说书人来决定该事情是否发生。",
   "疯狂：当你陷入“疯狂”时，意味着你需要向其他玩家有诚意且努力地证明某件事情，如不这么做会受到惩罚。",
 }
+
+
+def is_standard_note_text(value: Any) -> bool:
+  normalized = clean_text(value)
+  return normalized in {
+    *(clean_text(definition.text) for definition in NOTE_DEFINITIONS),
+    *(clean_text(text) for text in LEGACY_NOTE_TEXTS),
+  }
 
 
 def clean_text(value: Any) -> str:
@@ -158,76 +172,6 @@ def meta_span(raw: str) -> tuple[int, int, dict[str, Any]]:
   raise ValueError("JSON 中没有 _meta 对象")
 
 
-def formatted_notes_property(notes: list[dict[str, str]], property_indent: str) -> str:
-  serialized = json.dumps(notes, ensure_ascii=False, indent=2)
-  serialized = serialized.replace("\n", f"\n{property_indent}")
-  return f'{property_indent}"notes": {serialized}'
-
-
-def insert_notes(raw: str, notes: list[dict[str, str]]) -> str:
-  start, end, meta = meta_span(raw)
-  if meta.get("notes"):
-    raise ValueError("_meta.notes 已存在，请人工合并")
-  object_text = raw[start:end]
-  property_match = re.search(r"\n([ \t]+)\"", object_text)
-  property_indent = property_match.group(1) if property_match else "  "
-  closing_match = re.search(r"\n([ \t]*)\}\s*$", object_text)
-  closing_indent = closing_match.group(1) if closing_match else ""
-  closing_index = object_text.rfind("}")
-  prefix = object_text[:closing_index].rstrip()
-  separator = "" if prefix.endswith("{") else ","
-  replacement = (
-    f"{prefix}{separator}\n"
-    f"{formatted_notes_property(notes, property_indent)}\n"
-    f"{closing_indent}}}"
-  )
-  return raw[:start] + replacement + raw[end:]
-
-
-def replace_notes(raw: str, notes: list[dict[str, str]]) -> str:
-  start, end, meta = meta_span(raw)
-  if not isinstance(meta.get("notes"), list):
-    return insert_notes(raw, notes)
-  object_text = raw[start:end]
-  key_match = re.search(r'"notes"\s*:\s*', object_text)
-  if not key_match:
-    raise ValueError("无法定位 _meta.notes")
-  array_start = object_text.find("[", key_match.end())
-  if array_start < 0:
-    raise ValueError("_meta.notes 不是数组")
-  in_string = False
-  escaped = False
-  depth = 0
-  array_end = -1
-  for index in range(array_start, len(object_text)):
-    character = object_text[index]
-    if in_string:
-      if escaped:
-        escaped = False
-      elif character == "\\":
-        escaped = True
-      elif character == '"':
-        in_string = False
-      continue
-    if character == '"':
-      in_string = True
-    elif character == "[":
-      depth += 1
-    elif character == "]":
-      depth -= 1
-      if depth == 0:
-        array_end = index + 1
-        break
-  if array_end < 0:
-    raise ValueError("_meta.notes 数组没有结束")
-  line_start = object_text.rfind("\n", 0, key_match.start()) + 1
-  property_indent = object_text[line_start:key_match.start()]
-  serialized = json.dumps(notes, ensure_ascii=False, indent=2)
-  serialized = serialized.replace("\n", f"\n{property_indent}")
-  replacement = object_text[:array_start] + serialized + object_text[array_end:]
-  return raw[:start] + replacement + raw[end:]
-
-
 def detected_notes(bottom_lines: list[str]) -> list[dict[str, str]]:
   text = clean_text("\n".join(bottom_lines))
   definitions = [definition for definition in NOTE_DEFINITIONS if definition.matches(text)]
@@ -255,47 +199,40 @@ def process_metadata(
   use_source_notes: bool,
 ) -> tuple[str, int, str]:
   metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+  source_notes: list[dict[str, str]] = []
   local_json = Path(str(metadata.get("local_json", "")))
-  if not local_json.exists():
-    return str(metadata.get("script_name", metadata_path.parent.name)), 0, "没有本地 JSON"
-  notes = detected_notes(metadata.get("ocr_bottom_text", [])) if use_source_notes else []
-  raw = local_json.read_text(encoding="utf-8")
-  try:
-    _, _, meta = meta_span(raw)
-  except ValueError as error:
-    return str(metadata.get("script_name", local_json.stem)), 0, str(error)
-  existing = meta.get("notes", [])
-  if existing:
-    canonical_texts = {
-      clean_text(definition.text) for definition in NOTE_DEFINITIONS
-    }
-    canonical_texts.update(clean_text(text) for text in LEGACY_NOTE_TEXTS)
-    preserved = [
-      note for note in existing
-      if not isinstance(note, dict) or clean_text(note.get("text")) not in canonical_texts
-    ]
-    reconciled = [*preserved, *notes]
-    if reconciled == existing:
-      message = "说明已存在" if notes else "源图没有标准说明"
-      return str(metadata.get("script_name", local_json.stem)), 0, message
-    if apply:
-      local_json.write_text(replace_notes(raw, reconciled), encoding="utf-8")
-    if not notes:
-      reason = "阵容匹配度不足，移除脚本生成的标准说明" if not use_source_notes else "移除源图未包含的标准说明"
-      return str(metadata.get("script_name", local_json.stem)), 0, reason
-    return str(metadata.get("script_name", local_json.stem)), len(notes), ""
-  if not notes:
-    message = "阵容匹配度不足" if not use_source_notes else "源图没有标准说明"
-    return str(metadata.get("script_name", local_json.stem)), 0, message
-  if apply:
-    local_json.write_text(insert_notes(raw, notes), encoding="utf-8")
-  return str(metadata.get("script_name", local_json.stem)), len(notes), ""
+  if local_json.exists():
+    data = json.loads(local_json.read_text(encoding="utf-8"))
+    items = data if isinstance(data, list) else []
+    meta = next(
+      (item for item in items if isinstance(item, dict) and item.get("id") == "_meta"),
+      {},
+    )
+    for note in meta.get("notes", []):
+      text = str(note.get("text", "") if isinstance(note, dict) else note).strip()
+      if text:
+        source_notes.append({"text": text})
+  detected = detected_notes(metadata.get("ocr_bottom_text", [])) if use_source_notes else []
+  existing = [
+    check for check in metadata.get("ocr_note_checks", [])
+    if isinstance(check, dict) and str(check.get("text", "")).strip()
+  ]
+  checks_by_text = {str(check["text"]).strip(): check for check in existing}
+  for note in [*source_notes, *detected]:
+    checks_by_text.setdefault(note["text"].strip(), {"text": note["text"].strip()})
+  checks = list(checks_by_text.values())
+  if apply and checks != existing:
+    metadata["ocr_note_checks"] = checks
+    metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+  added_count = len(checks) - len(existing)
+  message = "" if checks else "阵容匹配度不足" if not use_source_notes else "源图没有标准说明"
+  return str(metadata.get("script_name", metadata_path.parent.name)), added_count, message
 
 
 def parse_args() -> argparse.Namespace:
   parser = argparse.ArgumentParser()
   parser.add_argument("--audit-root", type=Path, default=Path("bilibili_script_audit"))
-  parser.add_argument("--apply", action="store_true")
+  parser.add_argument("--apply", action="store_true", help="Store detected text in existing audit status files.")
   return parser.parse_args()
 
 
@@ -319,11 +256,8 @@ def main() -> None:
     if count:
       changed_scripts += 1
       note_count += count
-      print(f"{'写入' if args.apply else '待写入'}：{name}（{count} 条）")
-    elif "移除" in message:
-      changed_scripts += 1
-      print(f"{'写入' if args.apply else '待写入'}：{name}（{message}）")
-    elif message not in {"源图没有标准说明", "说明已存在"}:
+      print(f"{'记录' if args.apply else '待记录'}：{name}（{count} 条）")
+    elif message and message != "源图没有标准说明":
       review_messages.append(f"{name}：{message}")
   print(f"剧本 {changed_scripts} 个，说明 {note_count} 条。")
   if review_messages:

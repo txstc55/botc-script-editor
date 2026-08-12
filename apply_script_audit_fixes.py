@@ -11,6 +11,16 @@ from pathlib import Path
 from typing import Any
 
 
+VIEW_ONLY_FIELDS = {"notes", "abilityHtml", "textHtml", "html", "previewSection", "previewSectionLabel"}
+
+
+def standard_script_entry(value: dict[str, Any]) -> dict[str, Any]:
+  return {
+    key: item for key, item in value.items()
+    if key not in VIEW_ONLY_FIELDS
+  }
+
+
 def top_level_object_spans(raw: str) -> list[tuple[int, int]]:
   spans: list[tuple[int, int]] = []
   in_string = False
@@ -77,7 +87,7 @@ def object_identity(value: dict[str, Any]) -> tuple[str, str]:
 
 
 def normalized_source_role(value: dict[str, Any]) -> dict[str, Any]:
-  role = dict(value)
+  role = standard_script_entry(value)
   if clean_team(role.get("team")) in {"traveller", "traveller2"}:
     role["team"] = "traveler"
   if "setup" in role:
@@ -108,7 +118,7 @@ def sync_source_roles(
     if len(matches) != 1:
       raise ValueError(f"来源同步角色不是唯一结果：{identity[1]}/{identity[0]}")
     start, end, current = matches[0]
-    merged = dict(current)
+    merged = standard_script_entry(current)
     merged.update(source_role_value)
     if merged == current:
       continue
@@ -128,7 +138,7 @@ def database_rows() -> dict[tuple[str, str], list[dict[str, str]]]:
 def database_role(spec: dict[str, Any]) -> dict[str, Any]:
   entry = spec.get("entry")
   if isinstance(entry, dict):
-    return entry
+    return standard_script_entry(entry)
 
   source_json = spec.get("source_json")
   if source_json:
@@ -136,7 +146,7 @@ def database_role(spec: dict[str, Any]) -> dict[str, Any]:
     overrides = spec.get("overrides")
     if isinstance(overrides, dict):
       role.update(overrides)
-    return role
+    return standard_script_entry(role)
 
   from audit_bilibili_scripts import clean_space
   from extract_audit_role_replacements import row_entry
@@ -154,7 +164,7 @@ def database_role(spec: dict[str, Any]) -> dict[str, Any]:
   overrides = spec.get("overrides")
   if isinstance(overrides, dict):
     role.update(overrides)
-  return role
+  return standard_script_entry(role)
 
 
 def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
@@ -168,10 +178,10 @@ def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
   if len(meta) != 1:
     raise ValueError("剧本 _meta 不是唯一结果")
   jinxes = [
-    item for item in data
+    standard_script_entry(item) for item in data
     if isinstance(item, dict) and "jinx" in clean_team(item.get("team"))
   ]
-  target_meta = dict(meta[0])
+  target_meta = standard_script_entry(meta[0])
   source_path = roster.get("source_json")
   if source_path:
     source = json.loads(Path(source_path).read_text(encoding="utf-8"))
@@ -182,6 +192,8 @@ def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
       {},
     )
     for field in roster.get("meta_fields", []):
+      if field in VIEW_ONLY_FIELDS:
+        continue
       if field in source_meta:
         target_meta[field] = source_meta[field]
     entries = [
@@ -234,6 +246,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
         replacement["new_name"],
         replacement["new_team"],
       )
+    new_role = standard_script_entry(new_role)
     objects = parsed_objects(raw)
     old_matches = [item for item in objects if object_identity(item[2]) == old_identity]
     new_matches = [item for item in objects if object_identity(item[2]) == object_identity(new_role)]
@@ -260,7 +273,10 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
       changes.append(f"从来源同步 {len(changed_names)} 个角色")
 
   for addition in fix.get("additions", []):
-    current_patch = addition.get("patch")
+    raw_patch = addition.get("patch")
+    current_patch = standard_script_entry(raw_patch) if isinstance(raw_patch, dict) else raw_patch
+    if isinstance(raw_patch, dict) and not current_patch:
+      continue
     if isinstance(current_patch, dict):
       identity = (addition["name"], addition["team"])
       current_matches = [
@@ -269,7 +285,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
       ]
       if len(current_matches) != 1:
         raise ValueError(f"待更新角色不是唯一结果：{identity[1]}/{identity[0]}")
-      new_role = dict(current_matches[0][2])
+      new_role = standard_script_entry(current_matches[0][2])
       new_role.update(current_patch)
       explicit_entry = True
     else:
@@ -277,6 +293,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
       explicit_entry = isinstance(new_role, dict) or isinstance(addition.get("overrides"), dict)
       if not isinstance(new_role, dict):
         new_role = database_role(addition)
+    new_role = standard_script_entry(new_role)
     matches = [
       item for item in parsed_objects(raw)
       if object_identity(item[2]) == object_identity(new_role)
@@ -333,7 +350,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
 
   for roster in fix.get("team_rosters", []):
     team = roster["team"]
-    entries = roster["entries"]
+    entries = [standard_script_entry(entry) for entry in roster["entries"]]
     objects = parsed_objects(raw)
     matches = [
       (index, start, end, value)
@@ -354,6 +371,8 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
 
   meta_updates = fix.get("meta_updates")
   if isinstance(meta_updates, dict):
+    meta_updates = standard_script_entry(meta_updates)
+  if meta_updates:
     matches = [
       item for item in parsed_objects(raw)
       if str(item[2].get("id", "")).strip() == "_meta"
@@ -371,26 +390,6 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
       raw = raw[:start] + formatted_object(meta, base_indent) + raw[end:]
       changes.append(f"更新剧本信息 {', '.join(changed_fields)}")
 
-  notes = fix.get("meta_notes", [])
-  if notes:
-    matches = [
-      item for item in parsed_objects(raw)
-      if str(item[2].get("id", "")).strip() == "_meta"
-    ]
-    if len(matches) != 1:
-      raise ValueError("剧本 _meta 不是唯一结果")
-    start, end, meta = matches[0]
-    existing_notes = meta.setdefault("notes", [])
-    existing_texts = {
-      str(item.get("text", "")).strip() if isinstance(item, dict) else str(item).strip()
-      for item in existing_notes
-    }
-    new_notes = [note for note in notes if note.get("text", "").strip() not in existing_texts]
-    if new_notes:
-      existing_notes.extend(new_notes)
-      base_indent = object_line_indent(raw, start)
-      raw = raw[:start] + formatted_object(meta, base_indent) + raw[end:]
-      changes.append(f"新增说明 {len(new_notes)} 条")
   full_roster = fix.get("full_roster")
   if isinstance(full_roster, dict):
     raw, changed = rebuild_full_roster(raw, full_roster)

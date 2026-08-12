@@ -219,9 +219,15 @@ export function useScriptEditor() {
     }
   }
 
-  async function loadPlayText(rawText: string, fileName: string) {
+  async function loadPlayText(rawText: string, fileName: string, runtimeNotes: string[] = []) {
     const parsed = JSON.parse(rawText);
     const loaded = loadPlayFromJson(parsed, fileName);
+    if (runtimeNotes.length) {
+      loaded.script.notes = runtimeNotes.map((text, index) => ({
+        id: `runtime-note-${index}`,
+        text,
+      }));
+    }
     resetJinxMemory();
     Object.assign(script, loaded.script);
     importError.value = "";

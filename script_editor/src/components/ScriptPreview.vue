@@ -674,6 +674,13 @@ function noteTextHtml(note: ScriptNoteDraft) {
   if (note.textHtml && plainTextFromHtml(note.textHtml) === normalizeAbilityText(note.text)) {
     return note.textHtml;
   }
+  const separatorIndex = note.text.search(/[：:]/u);
+  if (separatorIndex >= 0) {
+    return `<strong>${highlightAbilityText(note.text.slice(0, separatorIndex))}</strong>${escapeHtml(note.text[separatorIndex])}${highlightAbilityText(note.text.slice(separatorIndex + 1))}`;
+  }
+  if (note.text.startsWith("*代表")) {
+    return `<strong>*代表</strong>${highlightAbilityText(note.text.slice(3))}`;
+  }
   return highlightAbilityText(note.text);
 }
 

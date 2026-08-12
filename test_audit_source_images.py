@@ -11,6 +11,7 @@ from audit_bilibili_scripts import (
   source_image_urls,
   source_image_urls_for_item,
   sync_local_artifacts,
+  source_has_reviewable_board,
 )
 
 
@@ -63,6 +64,22 @@ class SourceImageTest(unittest.TestCase):
 
       self.assertEqual(metadata["generated_image"], str(local_image))
       self.assertEqual((audit_folder / "软件生成图.jpg").read_bytes(), b"image")
+
+  def test_cover_and_article_screenshots_are_not_reviewable_boards(self) -> None:
+    self.assertFalse(source_has_reviewable_board(
+      25,
+      0,
+      [{"heading_characters": []}, {"heading_characters": ["旅行者"]}],
+      [{"ability_coverage": 0.1}],
+    ))
+
+  def test_complete_alternate_roster_still_requires_review(self) -> None:
+    self.assertTrue(source_has_reviewable_board(
+      25,
+      0,
+      [{"heading_characters": [str(index) for index in range(8)]}],
+      [{"ability_coverage": 0.0}],
+    ))
 
   @patch("audit_bilibili_scripts.fetch_bytes", return_value=b"current")
   @patch(

@@ -24,6 +24,8 @@ from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
 
+from apply_audit_notes import detected_notes, is_standard_note_text
+
 
 ROOT_URL = "https://www.bilibili.com/opus/882589412561518648"
 JINA_OPUS_URL = "https://r.jina.ai/http://www.bilibili.com/opus/{opus_id}"
@@ -822,6 +824,25 @@ def group_source_boards(source_reviews: list[dict[str, Any]]) -> list[dict[str, 
   return groups
 
 
+def source_has_reviewable_board(
+  required_count: int,
+  matched_count: int,
+  source_reviews: list[dict[str, Any]],
+  ability_checks: list[dict[str, Any]],
+) -> bool:
+  if not required_count or matched_count:
+    return True
+  max_heading_count = max(
+    (len(review.get("heading_characters", [])) for review in source_reviews),
+    default=0,
+  )
+  max_ability_coverage = max(
+    (float(check.get("ability_coverage", 0) or 0) for check in ability_checks),
+    default=0.0,
+  )
+  return max_heading_count >= 8 or max_ability_coverage >= 0.35
+
+
 def text_is_explained(text: str, known_texts: list[str]) -> bool:
   normalized = normalized_ocr_text(text)
   if len(normalized) < 4:
@@ -887,7 +908,7 @@ def review_item(
       })
     metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return
-  required, travelers, jinxes, notes = expected_script_entries(json_path)
+  required, travelers, jinxes, legacy_notes = expected_script_entries(json_path)
   required_names = [entry["name"] for entry in required]
   candidates: list[tuple[int, int, Path, list[dict[str, Any]], str]] = []
   source_reviews: list[dict[str, Any]] = []
@@ -925,6 +946,17 @@ def review_item(
   board_text = "\n".join(
     candidate[4] for candidate in board_candidates
   )
+  retained_notes = [
+    clean_space(check.get("text"))
+    for check in metadata.get("ocr_note_checks", [])
+    if (
+      isinstance(check, dict)
+      and clean_space(check.get("text"))
+      and not is_standard_note_text(check.get("text"))
+    )
+  ]
+  detected_note_texts = [note["text"] for note in detected_notes([board_text])]
+  notes = list(dict.fromkeys([*legacy_notes, *retained_notes, *detected_note_texts]))
   board_lines = [
     line
     for candidate in board_candidates
@@ -1052,6 +1084,17 @@ def review_item(
     set(values) & verified[key] for key, values in raw_issues.items()
   )
   source_unavailable = manual.get("source_unavailable") is True
+  source_unavailable = source_unavailable or not source_has_reviewable_board(
+    len(required_names),
+    score,
+    source_reviews,
+    ability_checks,
+  )
+  if source_unavailable and manual.get("source_unavailable") is not True:
+    manual = {
+      "source_unavailable": True,
+      "reason": "现有来源图片不包含可核对的完整角色板面。",
+    }
   needs_manual_review = bool(
     missing or ability_mismatches or traveler_mismatches or jinx_mismatches or note_mismatches or
     unexplained_bottom_lines or missing_rule_data or unexpected_characters or missing_jinx_rule_count

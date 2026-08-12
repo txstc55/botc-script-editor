@@ -7,6 +7,7 @@ import vue from "@vitejs/plugin-vue";
 
 const projectDir = path.dirname(fileURLToPath(import.meta.url));
 const allJsonsDir = path.resolve(projectDir, "..", "all_jsons");
+const auditScriptsDir = path.resolve(projectDir, "..", "bilibili_script_audit", "剧本");
 const customFabledDir = path.join(projectDir, "public", "custom", "fabled");
 const customFabledIndexPath = path.join(customFabledDir, "index.json");
 const databaseFabledDir = path.join(projectDir, "public", "characters", "fabled");
@@ -508,6 +509,10 @@ function customJinxPlugin(): Plugin {
 }
 
 function batchExportPlugin(): Plugin {
+  let auditNotesPromise: Promise<Map<string, string[]>> | null = null;
+
+  const auditNotes = () => auditNotesPromise ??= readAuditNotes();
+
   return {
     name: "botc-batch-export",
     configureServer(server) {
@@ -527,13 +532,8 @@ function batchExportPlugin(): Plugin {
             ? allFiles.filter((file) => file.relativePath.includes(filter))
             : allFiles;
           if (process.env.BOTC_BATCH_REQUIRE_NOTES === "1") {
-            const filesWithNotes = await Promise.all(filteredFiles.map(async (file) => ({
-              file,
-              hasNotes: /"notes"\s*:/u.test(await readFile(resolveAllJsonsPath(file.relativePath), "utf8")),
-            })));
-            filteredFiles = filesWithNotes
-              .filter((entry) => entry.hasNotes)
-              .map((entry) => entry.file);
+            const notesByPath = await auditNotes();
+            filteredFiles = filteredFiles.filter((file) => notesByPath.has(file.relativePath));
           }
           const files = Number.isFinite(limit) && limit > 0
             ? filteredFiles.slice(0, Math.floor(limit))
@@ -562,9 +562,10 @@ function batchExportPlugin(): Plugin {
           const body = await readRequestJson(request);
           const sourcePath = resolveAllJsonsPath(cleanText(body.relativePath));
           const text = await readFile(sourcePath, "utf8");
+          const notes = (await auditNotes()).get(relativeAllJsonsPath(sourcePath)) ?? [];
           response.statusCode = 200;
           response.setHeader("content-type", "application/json");
-          response.end(JSON.stringify({ text }));
+          response.end(JSON.stringify({ text, notes }));
         } catch (error) {
           response.statusCode = 500;
           response.end(error instanceof Error ? error.message : "Failed to read source JSON.");
@@ -603,6 +604,40 @@ function batchExportPlugin(): Plugin {
       });
     },
   };
+}
+
+async function readAuditNotes() {
+  const notesByPath = new Map<string, string[]>();
+  let entries: Awaited<ReturnType<typeof readdir>>;
+  try {
+    entries = await readdir(auditScriptsDir, { withFileTypes: true });
+  } catch {
+    return notesByPath;
+  }
+  for (const entry of entries) {
+    if (!entry.isDirectory()) {
+      continue;
+    }
+    try {
+      const status = JSON.parse(await readFile(path.join(auditScriptsDir, entry.name, "核对状态.json"), "utf8"));
+      if (!isRecord(status)) {
+        continue;
+      }
+      const relativePath = cleanText(status.local_json).replace(/^all_jsons[\\/]/u, "").split(path.sep).join("/");
+      const notes = Array.isArray(status.ocr_note_checks)
+        ? status.ocr_note_checks
+          .filter(isRecord)
+          .map((item) => cleanText(item.text))
+          .filter(Boolean)
+        : [];
+      if (relativePath && notes.length) {
+        notesByPath.set(relativePath, [...new Set([...(notesByPath.get(relativePath) ?? []), ...notes])]);
+      }
+    } catch {
+      // Incomplete audit folders do not contribute runtime notes.
+    }
+  }
+  return notesByPath;
 }
 
 function fabledDirectory(source: FabledSource) {

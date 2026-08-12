@@ -228,8 +228,8 @@ async function startBatchExport() {
     for (const item of manifest.files) {
       batchStatus.current = item.relativePath;
       try {
-        const jsonText = await loadBatchExportJson(item.relativePath);
-        await editor.loadPlayText(jsonText, item.fileName);
+        const source = await loadBatchExportJson(item.relativePath);
+        await editor.loadPlayText(source.text, item.fileName, source.notes);
         await waitForPreviewRender();
         const dataUrl = await previewRef.value?.renderPreviewImageDataUrl({
           type: "image/jpeg",

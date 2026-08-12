@@ -9,7 +9,6 @@ import re
 from pathlib import Path
 from typing import Any
 
-from apply_audit_notes import detected_notes
 from audit_bilibili_scripts import (
   build_ocr_tool,
   clean_space,
@@ -160,9 +159,6 @@ def candidate_for_folder(
   author = detected_author(lines)
   if author:
     meta["author"] = author
-  notes = detected_notes([board_text])
-  if notes:
-    meta["notes"] = notes
   return [meta, *entries], {
     "reference_image": str(reference),
     "role_count": len(entries),

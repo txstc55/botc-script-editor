@@ -92,6 +92,11 @@ def note(text: str, html: str) -> dict[str, str]:
 
 
 def write_script(path: Path, items: list[dict[str, Any]]) -> None:
+  view_only_fields = {"notes", "abilityHtml", "textHtml", "html", "previewSection", "previewSectionLabel"}
+  items = [
+    {key: value for key, value in item.items() if key not in view_only_fields}
+    for item in items
+  ]
   path.parent.mkdir(parents=True, exist_ok=True)
   path.write_text(json.dumps(items, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
   print(path.relative_to(ROOT))

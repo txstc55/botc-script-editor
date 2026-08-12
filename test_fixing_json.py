@@ -1,31 +1,53 @@
 #!/usr/bin/env python3
 
+import json
 import unittest
 
-from fixing_json import expand_character_ids, normalized_character_id
+from fixing_json import fix_file, strip_view_only_fields
 
 
-class CharacterIdExpansionTest(unittest.TestCase):
-  def test_expands_only_known_top_level_ids(self) -> None:
-    data = ["chef", "unknown", {"name": "已有角色"}]
-    counts = expand_character_ids(data, {
-      "chef": {"id": "chef", "name": "厨师", "team": "townsfolk"},
-    })
-    self.assertEqual(data[0]["name"], "厨师")
-    self.assertEqual(data[1], "unknown")
-    self.assertEqual(sum(counts.values()), 1)
+class FixingJsonTests(unittest.TestCase):
+  def test_strip_view_fields_keeps_standard_fields(self) -> None:
+    source = [{
+      "id": "_meta",
+      "name": "[保留名称]",
+      "notes": [{"text": "说明", "html": "<b>说明</b>"}],
+    }, {
+      "name": "角色",
+      "team": "townsfolk",
+      "abilityHtml": "<b>能力</b>",
+      "previewSection": "thirdParty",
+      "reminders": ["[保留标签]"],
+    }]
 
-  def test_normalizes_separator_variants(self) -> None:
-    self.assertEqual(normalized_character_id("lil_monsta"), "lilmonsta")
+    fixed, counts = strip_view_only_fields(json.dumps(source, ensure_ascii=False, indent=2).encode())
+    data = json.loads(fixed)
 
-  def test_drops_string_when_full_character_exists(self) -> None:
-    data = ["chef", {"id": "custom", "name": "厨师", "team": "townsfolk"}]
-    counts = expand_character_ids(data, {
-      "chef": {"id": "chef", "name": "厨师", "team": "townsfolk"},
-    })
-    self.assertEqual(len(data), 1)
-    self.assertEqual(data[0]["id"], "custom")
-    self.assertEqual(counts["duplicate_character_id:chef"], 1)
+    self.assertEqual(data[0], {"id": "_meta", "name": "[保留名称]"})
+    self.assertEqual(data[1]["reminders"], ["[保留标签]"])
+    self.assertEqual(counts["view_field:notes"], 1)
+    self.assertEqual(counts["view_field:abilityHtml"], 1)
+    self.assertEqual(counts["view_field:previewSection"], 1)
+
+  def test_view_only_does_not_run_other_normalization(self) -> None:
+    with self.subTest("boolean setup remains unchanged"):
+      from pathlib import Path
+      import tempfile
+
+      with tempfile.TemporaryDirectory() as directory:
+        path = Path(directory) / "script.json"
+        path.write_text(json.dumps([{
+          "id": "_meta",
+          "notes": [{"text": "说明"}],
+        }, {
+          "name": "角色",
+          "team": "townsfolk",
+          "setup": True,
+        }], ensure_ascii=False, indent=2), encoding="utf-8")
+
+        fix_file(path, False, {}, view_only=True)
+
+        self.assertIs(json.loads(path.read_text())[1]["setup"], True)
 
 
 if __name__ == "__main__":

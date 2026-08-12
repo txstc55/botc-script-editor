@@ -106,13 +106,14 @@ CHARACTER_REFERENCE_OVERRIDES = {
   "hermit": Path("all_jsons/BWG·剧本大乱斗/BWG剧本大乱斗收录合集/#言出法随-讷之/#言出法随-讷之.json"),
   "wraith": Path("all_jsons/万象星启体验剧本/剧本/768#血肉磨坊-qqwawawawa.json"),
 }
+VIEW_ONLY_FIELDS = {"notes", "abilityHtml", "textHtml", "previewSection", "previewSectionLabel"}
 
 
-def json_paths(input_dir: Path) -> list[Path]:
+def json_paths(input_dir: Path, file_name: str = "") -> list[Path]:
   return sorted(
     path
     for path in input_dir.rglob("*")
-    if path.is_file() and path.suffix.lower() == ".json"
+    if path.is_file() and path.suffix.lower() == ".json" and (not file_name or path.name == file_name)
   )
 
 
@@ -248,6 +249,58 @@ def clean_text(value: object) -> str:
   return str(value).strip()
 
 
+def top_level_object_spans(raw: str) -> list[tuple[int, int]]:
+  spans: list[tuple[int, int]] = []
+  in_string = False
+  escaped = False
+  depth = 0
+  start = -1
+  for index, character in enumerate(raw):
+    if in_string:
+      if escaped:
+        escaped = False
+      elif character == "\\":
+        escaped = True
+      elif character == '"':
+        in_string = False
+      continue
+    if character == '"':
+      in_string = True
+    elif character == "{":
+      if depth == 0:
+        start = index
+      depth += 1
+    elif character == "}" and depth:
+      depth -= 1
+      if depth == 0 and start >= 0:
+        spans.append((start, index + 1))
+        start = -1
+  return spans
+
+
+def strip_view_only_fields(raw: bytes) -> tuple[bytes, Counter[str]]:
+  has_bom = raw.startswith(b"\xef\xbb\xbf")
+  text = raw.decode("utf-8-sig")
+  counts: Counter[str] = Counter()
+  for start, end in reversed(top_level_object_spans(text)):
+    value = json.loads(text[start:end])
+    if not isinstance(value, dict):
+      continue
+    removed = [field for field in VIEW_ONLY_FIELDS if field in value]
+    if not removed:
+      continue
+    for field in removed:
+      value.pop(field)
+      counts[f"view_field:{field}"] += 1
+    line_start = text.rfind("\n", 0, start) + 1
+    base_indent = re.match(r"[ \t]*", text[line_start:start]).group(0)
+    lines = json.dumps(value, ensure_ascii=False, indent=2).splitlines()
+    replacement = lines[0] + "\n" + "\n".join(base_indent + line for line in lines[1:])
+    text = text[:start] + replacement + text[end:]
+  encoded = text.encode("utf-8")
+  return (b"\xef\xbb\xbf" + encoded if has_bom else encoded), counts
+
+
 def has_night_order(value: object) -> bool:
   try:
     return float(value or 0) != 0
@@ -267,6 +320,8 @@ def parse_args() -> argparse.Namespace:
     action="store_true",
     help="Report files that would change without writing them.",
   )
+  parser.add_argument("--file-name", default="", help="Only process JSON files with this exact name.")
+  parser.add_argument("--view-only", action="store_true", help="Only remove editor-only display fields.")
   return parser.parse_args()
 
 
@@ -373,9 +428,15 @@ def fix_file(
   path: Path,
   dry_run: bool,
   character_registry: dict[str, dict[str, Any]],
+  view_only: bool = False,
 ) -> Counter[str]:
   original = path.read_bytes()
   counts: Counter[str] = Counter()
+  if view_only:
+    fixed, counts = strip_view_only_fields(original)
+    if fixed != original and not dry_run:
+      path.write_bytes(fixed)
+    return counts
   url_fixed = fix_url_pointer_file(original, counts)
   if url_fixed is not None:
     if url_fixed != original and not dry_run:
@@ -405,6 +466,8 @@ def fix_file(
   fixed = TEAM_RE.sub(replace_team, original)
   fixed = JINX_TEAM_RE.sub(replace_jinx_team, fixed)
   fixed = SETUP_RE.sub(replace_setup, fixed)
+  fixed, view_field_counts = strip_view_only_fields(fixed)
+  counts.update(view_field_counts)
 
   try:
     parsed = json.loads(fixed.decode("utf-8-sig"))
@@ -448,13 +511,13 @@ def fix_url_pointer_file(original: bytes, counts: Counter[str]) -> bytes | None:
 def main() -> int:
   args = parse_args()
   input_dir = Path(args.input_dir)
-  paths = json_paths(input_dir)
+  paths = json_paths(input_dir, args.file_name)
   character_registry, unresolved_ids = build_character_id_registry(paths)
   total_counts: Counter[str] = Counter()
   changed_files = 0
 
   for path in paths:
-    counts = fix_file(path, args.dry_run, character_registry)
+    counts = fix_file(path, args.dry_run, character_registry, args.view_only)
     if counts:
       changed_files += 1
       total_counts.update(counts)

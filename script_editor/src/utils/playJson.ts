@@ -20,6 +20,14 @@ const TEAM_ALIASES: Record<string, TeamKey> = {
   traveller2: "traveler",
 };
 
+const THIRD_PARTY_ROLES_BY_SCRIPT: Record<string, string> = {
+  诚信奸商: "奇迹商人",
+  精灵皮鞋: "皮匠",
+  如临大笛: "吹笛者",
+  玄狐阶梯: "咒狐",
+  眼保健操: "小女孩",
+};
+
 export const teamLabels: Record<TeamKey, string> = {
   townsfolk: "镇民",
   outsider: "外来者",
@@ -136,6 +144,15 @@ export function loadPlayFromJson(input: unknown, fileName = "导入剧本.json")
     const missingTargets = jinx.targets.filter((target) => !importedCharacterNames.has(target));
     if (missingTargets.length) {
       jinx.initiallyMissingTargets = missingTargets;
+    }
+  }
+
+  const thirdPartyRole = THIRD_PARTY_ROLES_BY_SCRIPT[script.name.replace(/[vV]?\d+(?:\.\d+)*$/u, "")];
+  if (thirdPartyRole) {
+    const role = script.teams.outsider.roles.find((item) => item.name === thirdPartyRole);
+    if (role) {
+      role.previewSection = "thirdParty";
+      role.previewSectionLabel = "局外人";
     }
   }
 

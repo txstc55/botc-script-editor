@@ -10,6 +10,11 @@ export interface BatchExportManifest {
   files: BatchExportFile[];
 }
 
+export interface BatchExportSource {
+  text: string;
+  notes: string[];
+}
+
 export function isBatchExportMode() {
   return typeof window !== "undefined" && new URLSearchParams(window.location.search).has("batchExport");
 }
@@ -56,8 +61,7 @@ export async function loadBatchExportJson(relativePath: string) {
   if (!response.ok) {
     throw new Error(await response.text());
   }
-  const body = await response.json() as { text: string };
-  return body.text;
+  return await response.json() as BatchExportSource;
 }
 
 export async function saveBatchExportImage(relativePath: string, dataUrl: string) {
