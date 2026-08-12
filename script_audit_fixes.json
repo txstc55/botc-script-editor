@@ -11688,6 +11688,596 @@
           "team": "fabled"
         }
       ]
+    },
+    {
+      "source": "Bilibili 871855598028718136 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#法革风暴-哈德良凯撒.json"
+      ],
+      "removals": [
+        {
+          "name": "作者留言",
+          "team": "fabled"
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 868536369747591184 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/国内/#歌剧魅影3.0-泽渡哥摧毁停车场.json"
+      ],
+      "removals": [
+        {
+          "name": "作者",
+          "team": "fabled"
+        }
+      ],
+      "additions": [
+        {
+          "name": "假面",
+          "team": "fabled",
+          "patch": {
+            "ability": "当你存活时，如果你试图向其他玩家说明或暗示你的真实角色，你可能会被说书人处决。（假面规则属于角色能力，只有6个镇民具有。不具有假面的玩家无需遵守。说书人不会因假面而进行对邪恶阵营不利的处决。剧幕宣布前不能因此执行处决）"
+          }
+        },
+        {
+          "name": "剧幕",
+          "team": "fabled",
+          "patch": {
+            "ability": "在每个白天的提名阶段前几分钟，说书人会宣布今天上演的剧幕台词。《歌剧魅影》剧目在每个白天仅能公布一个，每个角色的剧幕在每局游戏中仅能被公布一个。"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 850404632741019664 对照图-05（帖子后置修改版 V2.0）",
+      "targets": [
+        "all_jsons/汀西维尔剧本/#堕落天使·汀.json"
+      ],
+      "removals": [
+        {
+          "name": "灯神",
+          "team": "fabled"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "畸形秀演员",
+          "old_team": "outsider",
+          "new_name": "告密者",
+          "new_team": "outsider",
+          "source_json": "all_jsons/快速上手与角色主题竞赛剧本/海外快速上手剧本/#世纪谍杀.json"
+        },
+        {
+          "old_name": "天使告诉恶魔",
+          "old_team": "jinx",
+          "entry": {
+            "id": "私货商人",
+            "name": "私货商人",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "天使告诉恶魔：即使这是一个汀西维尔模式的游戏，恶魔仍然获得两个不在场角色的伪装。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/200px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ],
+      "additions": [
+        {
+          "name": "入殓师",
+          "team": "outsider",
+          "source_json": "all_jsons/汀西维尔剧本/#穷境求生·汀-清清.json",
+          "before": {
+            "name": "疯子",
+            "team": "outsider"
+          }
+        },
+        {
+          "entry": {
+            "id": "侍女&数学家",
+            "name": "侍女&数学家",
+            "team": "jinx",
+            "ability": "侍女会得知数学家是否醒来，即使她是在数学家之前醒来。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/chambermaid.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "数学家&疯子",
+            "name": "数学家&疯子",
+            "team": "jinx",
+            "ability": "数学家会得知疯子是否攻击了与真正的恶魔不同的目标。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/mathematician.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "军团&工程师",
+            "name": "军团&工程师",
+            "team": "jinx",
+            "ability": "军团和工程师不能在初始时同时在场。如果工程师创造了军团，那么包括所有邪恶玩家在内的绝大多数玩家都会变成邪恶的军团。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/legion.png",
+            "setup": 0
+          }
+        },
+        {
+          "entry": {
+            "id": "堕落天使",
+            "name": "堕落天使",
+            "edition": "custom",
+            "team": "fabled",
+            "ability": "在第一个夜晚开始时，所有玩家都会知道堕落天使庇护了一名爪牙玩家以及他是谁。如果善良玩家杀死了他，会发生很不好的事情；但如果是恶魔杀死了他，大概会无事发生。",
+            "image": "https://oss.gstonegames.com/data_file/clocktower/web/icons/angel.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [
+              "庇护"
+            ],
+            "remindersGlobal": [],
+            "setup": 0,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1099549045538422792 对照图-02",
+      "targets": [
+        "all_jsons/全原创角色剧本/海外/#颤栗夜宴（Charged Dinner）-Malvora.json"
+      ],
+      "replacements": [
+        {
+          "old_name": "情场高手",
+          "old_team": "townsfolk",
+          "entry": {
+            "id": "patrolman_charged_dinner",
+            "name": "巡警",
+            "image": "/audit_icons/颤栗夜宴/巡警.png",
+            "team": "townsfolk",
+            "edition": "Charged Dinner",
+            "ability": "在你的首个夜晚，你和一名邪恶玩家会得知一名善良玩家和他的角色。",
+            "flavor": "",
+            "firstNight": 32,
+            "firstNightReminder": "唤醒巡警和一名邪恶玩家，向他们展示同一名善良玩家及其角色。",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 0
+          }
+        },
+        {
+          "old_name": "邮差",
+          "old_team": "townsfolk",
+          "entry": {
+            "id": "groundskeeper_charged_dinner",
+            "name": "园丁",
+            "image": "/audit_icons/颤栗夜宴/园丁.png",
+            "team": "townsfolk",
+            "edition": "Charged Dinner",
+            "ability": "每局游戏限一次，在夜晚时*，你可以选择一名死亡的玩家：你得知他的阵营。",
+            "flavor": "",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 20,
+            "otherNightReminder": "如果园丁尚未使用能力，唤醒园丁。他可以选择一名死亡的玩家，并得知他的阵营。",
+            "reminders": [
+              "已使用"
+            ],
+            "remindersGlobal": [],
+            "setup": 0
+          }
+        }
+      ],
+      "additions": [
+        {
+          "name": "神秘学者",
+          "team": "townsfolk",
+          "patch": {
+            "firstNight": 34
+          }
+        },
+        {
+          "name": "侦探",
+          "team": "townsfolk",
+          "patch": {
+            "firstNight": 35
+          }
+        },
+        {
+          "name": "退伍军人",
+          "team": "outsider",
+          "patch": {
+            "firstNight": 36
+          }
+        },
+        {
+          "name": "监护人",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "如果只有善良玩家在白天发起过提名，当晚，会有一名善良玩家得知你是谁。",
+            "otherNight": 0,
+            "otherNightReminder": ""
+          }
+        },
+        {
+          "name": "检察官",
+          "team": "townsfolk",
+          "patch": {
+            "otherNight": 21
+          }
+        },
+        {
+          "name": "社会名流",
+          "team": "townsfolk",
+          "patch": {
+            "otherNight": 22
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 808008675790684224 对照图-02",
+      "targets": [
+        "all_jsons/BOTC世界杯优选剧本/2022剧本世界杯/#醉歌乱舞.json"
+      ],
+      "full_roster": {
+        "entries": [
+          {"name": "事务官", "team": "townsfolk"},
+          {"name": "贵族", "team": "townsfolk"},
+          {"name": "赏金猎人", "team": "townsfolk"},
+          {"name": "筑梦师", "team": "townsfolk"},
+          {"name": "侍女", "team": "townsfolk"},
+          {"name": "数学家", "team": "townsfolk"},
+          {"name": "送葬者", "team": "townsfolk"},
+          {"name": "旅店老板", "team": "townsfolk"},
+          {"name": "博学者", "team": "townsfolk"},
+          {"name": "哲学家", "team": "townsfolk"},
+          {"name": "女裁缝", "team": "townsfolk"},
+          {"name": "吟游诗人", "team": "townsfolk"},
+          {"name": "农夫", "team": "townsfolk"},
+          {"name": "酒鬼", "team": "outsider"},
+          {"name": "畸形秀演员", "team": "outsider"},
+          {"name": "心上人", "team": "outsider"},
+          {"name": "莽夫", "team": "outsider"},
+          {"name": "理发师", "team": "outsider"},
+          {"name": "投毒者", "team": "minion"},
+          {"name": "教父", "team": "minion"},
+          {"name": "洗脑师", "team": "minion"},
+          {"name": "麻脸巫婆", "team": "minion"},
+          {"name": "小恶魔", "team": "demon"},
+          {"name": "亡骨魔", "team": "demon"},
+          {"name": "方古", "team": "demon"},
+          {"name": "诺·达鲺", "team": "demon"}
+        ]
+      }
+    },
+    {
+      "source": "Bilibili 808008873104375829 对照图-02",
+      "targets": [
+        "all_jsons/海外社区推荐剧本/#觅影寻踪v6.1.0-Narninian&Zaba.json"
+      ],
+      "meta_updates": {
+        "name": "觅影寻踪"
+      },
+      "full_roster": {
+        "entries": [
+          {"name": "图书管理员", "team": "townsfolk"},
+          {"name": "贵族", "team": "townsfolk"},
+          {"name": "小精灵", "team": "townsfolk"},
+          {"name": "传教士", "team": "townsfolk"},
+          {"name": "筑梦师", "team": "townsfolk"},
+          {"name": "城镇公告员", "team": "townsfolk"},
+          {"name": "送葬者", "team": "townsfolk"},
+          {"name": "神谕者", "team": "townsfolk"},
+          {"name": "艺术家", "team": "townsfolk"},
+          {"name": "女裁缝", "team": "townsfolk"},
+          {"name": "守鸦人", "team": "townsfolk"},
+          {"name": "巡山人", "team": "townsfolk"},
+          {"name": "贞洁者", "team": "townsfolk"},
+          {"name": "畸形秀演员", "team": "outsider"},
+          {"name": "酒鬼", "team": "outsider"},
+          {"name": "莽夫", "team": "outsider"},
+          {"name": "落难少女", "team": "outsider"},
+          {"name": "教父", "team": "minion"},
+          {"name": "投毒者", "team": "minion"},
+          {"name": "灵言师", "team": "minion"},
+          {"name": "洗脑师", "team": "minion"},
+          {"name": "亡骨魔", "team": "demon"},
+          {"name": "普卡", "team": "demon"},
+          {"name": "小恶魔", "team": "demon"},
+          {"name": "奥赫", "team": "demon"}
+        ]
+      }
+    },
+    {
+      "source": "Bilibili 735177910246178825 对照图-02",
+      "targets": [
+        "all_jsons/经典混合剧本/#险象环生Pro-Zets.json"
+      ],
+      "meta_updates": {
+        "name": "险象环生"
+      },
+      "removals": [
+        {"name": "赏金猎人", "team": "townsfolk"},
+        {"name": "事务官", "team": "townsfolk"},
+        {"name": "调查员", "team": "townsfolk"},
+        {"name": "女祭司", "team": "townsfolk"},
+        {"name": "艺术家", "team": "townsfolk"},
+        {"name": "提线木偶", "team": "minion"},
+        {"name": "暴乱&调查员", "team": "jinx"}
+      ],
+      "additions": [
+        {
+          "name": "告密者",
+          "team": "outsider",
+          "patch": {
+            "ability": "在你的首个夜晚，所有爪牙分别会得知三个不在场的角色。"
+          }
+        },
+        {
+          "name": "炼金术士",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "你以为你是一个（其他）善良角色，但其实你不是。恶魔会知道你是提线木偶。[炼金术士会与恶魔邻座]",
+            "setup": 1
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "厨师",
+            "贵族",
+            "小精灵",
+            "将军",
+            "国王",
+            "气球驾驶员",
+            "神谕者",
+            "博学者",
+            "女裁缝",
+            "唱诗男孩",
+            "食人族",
+            "魔术师",
+            "炼金术士"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "疯子",
+            "心上人",
+            "政客",
+            "告密者",
+            "解谜大师"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1199517299873153026 对照图-02",
+      "targets": [
+        "all_jsons/BWG·剧本大乱斗/好玩优先—刘中奇厂牌/#未来之主-Tiger小王/#未来之主-Tiger小王.json"
+      ],
+      "renames": [
+        {
+          "old_name": "共情着",
+          "new_name": "共情者",
+          "team": "townsfolk"
+        }
+      ],
+      "replacements": [
+        {
+          "old_name": "水手",
+          "old_team": "townsfolk",
+          "new_name": "僧侣",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/官方已发行剧本/#暗流涌动.json"
+        },
+        {
+          "old_name": "魔像",
+          "old_team": "outsider",
+          "new_name": "修补匠",
+          "new_team": "outsider",
+          "source_json": "all_jsons/官方已发行剧本/#黯月初升.json"
+        },
+        {
+          "old_name": "莽夫",
+          "old_team": "outsider",
+          "new_name": "隐士",
+          "new_team": "outsider",
+          "source_json": "all_jsons/旋转木马快速上手剧本/#意气用事-tpi.json"
+        },
+        {
+          "old_name": "时空悖论",
+          "old_team": "fabled",
+          "entry": {
+            "id": "平行悖论",
+            "name": "平行悖论",
+            "team": "fabled",
+            "ability": "角色能力无法修改角色类型数量配置，+0~1外来者，邪恶阵营没有伪装身份。你只会得知你的角色类型，首个夜晚前，你要选择变成这个类型的其中一个角色。多于一名相同角色同时在场上时，他们中一半（向下取整）的玩家始终醉酒，并获得错误信息。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/300px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [
+              "醉酒"
+            ],
+            "remindersGlobal": [],
+            "setup": 1,
+            "flavor": ""
+          }
+        }
+      ]
+    },
+    {
+      "source": "Bilibili 1118803757644120069 对照图-02",
+      "targets": [
+        "all_jsons/BWG·剧本大乱斗/我说一下—SUI厂牌/#鱼跃龙门-北风三刀/#鱼跃龙门-北风三刀.json"
+      ],
+      "replacements": [
+        {
+          "old_name": "祖母",
+          "old_team": "townsfolk",
+          "new_name": "修行者",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/旋转木马快速上手剧本/#意气用事-tpi.json"
+        },
+        {
+          "old_name": "刀客",
+          "old_team": "townsfolk",
+          "new_name": "小精灵",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/旋转木马快速上手剧本/#言简意赅-Zets.json"
+        },
+        {
+          "old_name": "旅店老板",
+          "old_team": "townsfolk",
+          "new_name": "舞蛇人",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/官方已发行剧本/#梦殒春宵.json"
+        },
+        {
+          "old_name": "驱魔人",
+          "old_team": "townsfolk",
+          "new_name": "牛仔",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/来源核对补全/#罪案疑云v2-1168941294555234313.json"
+        },
+        {
+          "old_name": "复仇者",
+          "old_team": "townsfolk",
+          "new_name": "秉笔",
+          "new_team": "townsfolk",
+          "source_json": "all_jsons/部分原创角色剧本/不含私货/201-400期/#忘川渡尘-际尘.json"
+        },
+        {
+          "old_name": "痢蛭",
+          "old_team": "demon",
+          "new_name": "梼杌",
+          "new_team": "demon",
+          "source_json": "all_jsons/山雨欲来体验剧本/#志怪书-苏通染.json"
+        },
+        {
+          "old_name": "呵！长大了！",
+          "old_team": "fabled",
+          "entry": {
+            "id": "私货商人",
+            "name": "私货商人",
+            "team": "fabled",
+            "ability": "啊！长大了！：初始的恶魔始终设置为小怪宝（入夜首先开家长会）。当一名邪恶玩家被连续两次照顾小怪宝时，当晚照顾小怪宝的玩家要选择成为一名新的邪恶恶魔。",
+            "image": "https://clocktower-wiki.gstonegames.com/images/thumb/9/97/Bootlegger.png/300px-Bootlegger.png",
+            "firstNight": 0,
+            "firstNightReminder": "",
+            "otherNight": 0,
+            "otherNightReminder": "",
+            "reminders": [],
+            "remindersGlobal": [],
+            "setup": 1,
+            "flavor": ""
+          }
+        }
+      ],
+      "additions": [
+        {
+          "name": "风向标",
+          "team": "townsfolk",
+          "patch": {
+            "ability": "在你的首个夜晚，你会得知邪恶玩家中是否奇数位玩家更多。如果相同，你得知的信息由说书人决定。"
+          }
+        },
+        {
+          "name": "隐士",
+          "team": "outsider",
+          "source_json": "all_jsons/旋转木马快速上手剧本/#意气用事-tpi.json",
+          "before": {"name": "告密者", "team": "outsider"}
+        },
+        {
+          "entry": {
+            "id": "提线木偶&告密者",
+            "name": "提线木偶&告密者",
+            "team": "jinx",
+            "ability": "提线木偶不会得知三个不在场的角色，如果提线木偶与告密者均在场，改为由恶魔额外得知三个不在场角色。"
+          }
+        },
+        {
+          "entry": {
+            "id": "提线木偶&小怪宝",
+            "name": "提线木偶&小怪宝",
+            "team": "jinx",
+            "ability": "提线木偶会与一名爪牙玩家邻座，而不是恶魔。提线木偶不会被唤醒来决定是否照看小怪宝，也不会在照看小怪宝时得知自己是提线木偶。"
+          }
+        },
+        {
+          "entry": {
+            "id": "梼杌&舞蛇人",
+            "name": "梼杌&舞蛇人",
+            "team": "jinx",
+            "ability": "如果梼杌的角色发生了交换，不会因此移除原本梼杌的“失去能力”提示标记。"
+          }
+        },
+        {
+          "entry": {
+            "id": "梼杌&提线木偶",
+            "name": "梼杌&提线木偶",
+            "team": "jinx",
+            "ability": "梼杌不会得知谁是提线木偶。在梼杌使得提线木偶失去能力后，梼杌会得知对应的那一名提线木偶是谁，但提线木偶会仍然以为自己是一个善良角色。"
+          }
+        }
+      ],
+      "team_order": [
+        {
+          "team": "townsfolk",
+          "names": [
+            "修行者",
+            "小精灵",
+            "风向标",
+            "水手",
+            "筑梦师",
+            "舞蛇人",
+            "气球驾驶员",
+            "城镇公告员",
+            "赌徒",
+            "造谣者",
+            "牛仔",
+            "哲学家",
+            "秉笔"
+          ]
+        },
+        {
+          "team": "outsider",
+          "names": [
+            "酒鬼",
+            "魔像",
+            "陌客",
+            "隐士",
+            "告密者"
+          ]
+        },
+        {
+          "team": "demon",
+          "names": [
+            "小怪宝",
+            "珀",
+            "阎罗",
+            "混沌",
+            "梼杌"
+          ]
+        }
+      ]
     }
   ],
   "role_candidate_file": "bilibili_script_audit/角色替换候选.json",
@@ -11774,6 +12364,9 @@
     {"script_name": "新手村v10", "team": "minion"},
     {"script_name": "曼珠沙华", "team": "outsider"},
     {"script_name": "未来之主", "team": "minion"},
+    {"script_name": "瓷牛商会v2.6", "team": "demon"},
+    {"script_name": "瓷牛商会v2.6", "team": "outsider"},
+    {"script_name": "瓷牛商会v2.6", "team": "townsfolk"},
     {"script_name": "沉科难返v1.8", "team": "demon"},
     {"script_name": "浊月毕方", "team": "outsider"},
     {"script_name": "浊月毕方", "team": "townsfolk"},
