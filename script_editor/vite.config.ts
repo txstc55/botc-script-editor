@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, unlink, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, stat, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
@@ -532,10 +532,25 @@ function batchExportPlugin(): Plugin {
           const requestUrl = new URL(request.url ?? "", "http://127.0.0.1");
           const limit = Number(requestUrl.searchParams.get("limit") || 0);
           const filter = cleanText(requestUrl.searchParams.get("filter"));
+          const staleOnly = requestUrl.searchParams.get("stale") === "1";
           const allFiles = await listAllJsonFiles(allJsonsDir);
           let filteredFiles = filter
             ? allFiles.filter((file) => file.relativePath.includes(filter))
             : allFiles;
+          if (staleOnly) {
+            filteredFiles = (await Promise.all(filteredFiles.map(async (file) => {
+              const sourcePath = resolveAllJsonsPath(file.relativePath);
+              try {
+                const [sourceStat, imageStat] = await Promise.all([
+                  stat(sourcePath),
+                  stat(imagePathForSourceJson(sourcePath)),
+                ]);
+                return sourceStat.mtimeMs > imageStat.mtimeMs ? file : null;
+              } catch {
+                return file;
+              }
+            }))).filter((file): file is NonNullable<typeof file> => file !== null);
+          }
           if (process.env.BOTC_BATCH_REQUIRE_NOTES === "1") {
             const notesByPath = await auditNotes();
             filteredFiles = filteredFiles.filter((file) => notesByPath.has(file.relativePath));

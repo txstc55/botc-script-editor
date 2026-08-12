@@ -20,12 +20,29 @@ const TEAM_ALIASES: Record<string, TeamKey> = {
   traveller2: "traveler",
 };
 
-const THIRD_PARTY_ROLES_BY_SCRIPT: Record<string, string> = {
-  诚信奸商: "奇迹商人",
-  精灵皮鞋: "皮匠",
-  如临大笛: "吹笛者",
-  玄狐阶梯: "咒狐",
-  眼保健操: "小女孩",
+const THIRD_PARTY_ROLES_BY_SCRIPT: Record<string, { label: string; names: string[] }> = {
+  诚信奸商: { label: "局外人", names: ["奇迹商人"] },
+  精灵皮鞋: { label: "局外人", names: ["皮匠"] },
+  如临大笛: { label: "局外人", names: ["吹笛者"] },
+  玄狐阶梯: { label: "局外人", names: ["咒狐"] },
+  眼保健操: { label: "局外人", names: ["小女孩"] },
+  致命华尔兹: {
+    label: "变装假面",
+    names: [
+      "叫花子",
+      "渔夫",
+      "造谣者",
+      "替罪羊",
+      "巫师",
+      "精神病患者",
+      "学徒",
+      "鎏金执事",
+      "暗鸢",
+      "流莺",
+      "巫女",
+      "舞伴",
+    ],
+  },
 };
 
 export const teamLabels: Record<TeamKey, string> = {
@@ -147,12 +164,13 @@ export function loadPlayFromJson(input: unknown, fileName = "导入剧本.json")
     }
   }
 
-  const thirdPartyRole = THIRD_PARTY_ROLES_BY_SCRIPT[script.name.replace(/[vV]?\d+(?:\.\d+)*$/u, "")];
-  if (thirdPartyRole) {
-    const role = script.teams.outsider.roles.find((item) => item.name === thirdPartyRole);
-    if (role) {
-      role.previewSection = "thirdParty";
-      role.previewSectionLabel = "局外人";
+  const thirdPartySection = THIRD_PARTY_ROLES_BY_SCRIPT[script.name.replace(/[vV]?\d+(?:\.\d+)*$/u, "")];
+  if (thirdPartySection) {
+    for (const role of Object.values(script.teams).flatMap((team) => team.roles)) {
+      if (thirdPartySection.names.includes(role.name)) {
+        role.previewSection = "thirdParty";
+        role.previewSectionLabel = thirdPartySection.label;
+      }
     }
   }
 

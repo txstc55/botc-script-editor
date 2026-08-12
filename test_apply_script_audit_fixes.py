@@ -4,10 +4,28 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from apply_script_audit_fixes import apply_fix, database_role, rebuild_full_roster
+from apply_script_audit_fixes import (
+  apply_fix,
+  database_role,
+  normalized_source_role,
+  rebuild_full_roster,
+)
 
 
 class FullRosterTest(unittest.TestCase):
+  def test_source_role_uses_general_json_normalization(self):
+    role = normalized_source_role({
+      "name": "角色甲",
+      "team": "townsfolk",
+      "ability": "能力",
+      "firstNight": 1,
+      "firstNightReminder": "",
+      "flavor": '"背景"',
+    })
+
+    self.assertEqual("能力", role["firstNightReminder"])
+    self.assertEqual("背景", role["flavor"])
+
   def test_id_roster_keeps_ids_short_and_allows_standard_fabled(self):
     raw = json.dumps([{"id": "old"}], ensure_ascii=False, indent=2) + "\n"
     fix = {
@@ -47,6 +65,25 @@ class FullRosterTest(unittest.TestCase):
     self.assertTrue(changed)
     self.assertEqual([item.get("name") for item in data], ["测试剧本", "角色甲", "角色甲&角色乙"])
     self.assertFalse(rebuild_full_roster(rebuilt, roster)[1])
+
+  def test_rebuild_preserves_existing_role_variants(self):
+    source = json.dumps([
+      {"id": "_meta", "name": "测试剧本"},
+      {
+        "id": "角色甲",
+        "name": "角色甲",
+        "team": "townsfolk",
+        "ability": "剧本专属能力",
+        "firstNight": 12,
+      },
+    ], ensure_ascii=False)
+
+    rebuilt, changed = rebuild_full_roster(source, {
+      "entries": [{"name": "角色甲", "team": "townsfolk"}],
+    })
+
+    self.assertFalse(changed)
+    self.assertEqual("剧本专属能力", json.loads(rebuilt)[1]["ability"])
 
   def test_rebuild_can_copy_roles_from_verified_script(self):
     target = json.dumps([

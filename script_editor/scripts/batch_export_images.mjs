@@ -9,6 +9,7 @@ const projectDir = path.resolve(path.dirname(scriptPath), "..");
 const port = Number(process.env.BOTC_BATCH_PORT || 1430);
 const limit = Number(process.env.BOTC_BATCH_LIMIT || 0);
 const filter = String(process.env.BOTC_BATCH_FILTER || "").trim();
+const staleOnly = process.env.BOTC_BATCH_STALE_ONLY === "1";
 const baseUrl = `http://127.0.0.1:${port}`;
 const batchParams = new URLSearchParams({ batchExport: "1" });
 if (Number.isFinite(limit) && limit > 0) {
@@ -16,6 +17,9 @@ if (Number.isFinite(limit) && limit > 0) {
 }
 if (filter) {
   batchParams.set("batchFilter", filter);
+}
+if (staleOnly) {
+  batchParams.set("batchStale", "1");
 }
 const batchUrl = `${baseUrl}/?${batchParams}`;
 
@@ -88,6 +92,9 @@ async function waitForBatchServer() {
       }
       if (filter) {
         manifestParams.set("filter", filter);
+      }
+      if (staleOnly) {
+        manifestParams.set("stale", "1");
       }
       const manifestUrl = manifestParams.size
         ? `${baseUrl}/__batch_export_manifest?${manifestParams}`

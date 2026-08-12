@@ -39,15 +39,24 @@ export function batchExportFilter() {
   return new URLSearchParams(window.location.search).get("batchFilter")?.trim() ?? "";
 }
 
+export function batchExportStaleOnly() {
+  return typeof window !== "undefined"
+    && new URLSearchParams(window.location.search).get("batchStale") === "1";
+}
+
 export async function loadBatchExportManifest() {
   const limit = batchExportLimit();
   const filter = batchExportFilter();
+  const staleOnly = batchExportStaleOnly();
   const params = new URLSearchParams();
   if (limit) {
     params.set("limit", String(limit));
   }
   if (filter) {
     params.set("filter", filter);
+  }
+  if (staleOnly) {
+    params.set("stale", "1");
   }
   const url = params.size ? `/__batch_export_manifest?${params}` : "/__batch_export_manifest";
   const response = await fetch(url);

@@ -100,6 +100,10 @@ def normalized_source_role(value: dict[str, Any]) -> dict[str, Any]:
     role["team"] = "traveler"
   if "setup" in role:
     role["setup"] = int(bool(role["setup"]))
+  from fixing_json import backfill_missing_reminders, normalize_wrapped_text_values
+
+  normalize_wrapped_text_values([role])
+  backfill_missing_reminders([role])
   return role
 
 
@@ -146,7 +150,7 @@ def database_rows() -> dict[tuple[str, str], list[dict[str, str]]]:
 def database_role(spec: dict[str, Any]) -> dict[str, Any]:
   entry = spec.get("entry")
   if isinstance(entry, dict):
-    return standard_script_entry(entry)
+    return normalized_source_role(entry)
 
   source_json = spec.get("source_json")
   if source_json:
@@ -154,7 +158,7 @@ def database_role(spec: dict[str, Any]) -> dict[str, Any]:
     overrides = spec.get("overrides")
     if isinstance(overrides, dict):
       role.update(overrides)
-    return standard_script_entry(role)
+    return normalized_source_role(role)
 
   from audit_bilibili_scripts import clean_space
   from extract_audit_role_replacements import row_entry
@@ -172,7 +176,7 @@ def database_role(spec: dict[str, Any]) -> dict[str, Any]:
   overrides = spec.get("overrides")
   if isinstance(overrides, dict):
     role.update(overrides)
-  return standard_script_entry(role)
+  return normalized_source_role(role)
 
 
 def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
@@ -213,7 +217,23 @@ def rebuild_full_roster(raw: str, roster: dict[str, Any]) -> tuple[str, bool]:
       and "jinx" not in clean_team(item.get("team"))
     ]
   else:
-    entries = [database_role(spec) for spec in roster.get("entries", [])]
+    current_by_identity = {
+      object_identity(item): standard_script_entry(item)
+      for item in data
+      if isinstance(item, dict) and item.get("team")
+    }
+    entries = []
+    for spec in roster.get("entries", []):
+      identity = (str(spec.get("name", "")), str(spec.get("team", "")))
+      has_explicit_data = any(
+        key in spec for key in ("entry", "source_json", "ability", "overrides")
+      )
+      current = current_by_identity.get(identity)
+      entries.append(
+        database_role(spec)
+        if has_explicit_data or current is None
+        else current
+      )
   rebuilt = [target_meta, *entries, *jinxes]
   if data == rebuilt:
     return raw, False
@@ -278,7 +298,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
         replacement["new_name"],
         replacement["new_team"],
       )
-    new_role = standard_script_entry(new_role)
+    new_role = normalized_source_role(new_role)
     objects = parsed_objects(raw)
     old_matches = [item for item in objects if object_identity(item[2]) == old_identity]
     new_matches = [item for item in objects if object_identity(item[2]) == object_identity(new_role)]
@@ -341,7 +361,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
       explicit_entry = isinstance(new_role, dict) or isinstance(addition.get("overrides"), dict)
       if not isinstance(new_role, dict):
         new_role = database_role(addition)
-    new_role = standard_script_entry(new_role)
+    new_role = normalized_source_role(new_role)
     matches = [
       item for item in parsed_objects(raw)
       if object_identity(item[2]) == object_identity(new_role)
@@ -398,7 +418,7 @@ def apply_fix(raw: str, fix: dict[str, Any]) -> tuple[str, list[str]]:
 
   for roster in fix.get("team_rosters", []):
     team = roster["team"]
-    entries = [standard_script_entry(entry) for entry in roster["entries"]]
+    entries = [normalized_source_role(entry) for entry in roster["entries"]]
     objects = parsed_objects(raw)
     matches = [
       (index, start, end, value)
@@ -581,18 +601,31 @@ def main() -> None:
     *reviewed_roster_fixes(manifest, args.manifest),
     *reviewed_cross_roster_fixes(manifest, args.manifest),
   ]
-  changed_files = 0
+  originals: dict[Path, str] = {}
+  updates: dict[Path, str] = {}
+  messages: dict[Path, list[str]] = {}
   for fix in fixes:
     for target_value in fix.get("targets", []):
       target = Path(target_value)
-      raw = target.read_text(encoding="utf-8")
+      if target not in originals:
+        originals[target] = target.read_text(encoding="utf-8")
+        updates[target] = originals[target]
+        messages[target] = []
+      raw = updates[target]
       updated, changes = apply_fix(raw, fix)
       if not changes:
         continue
-      changed_files += 1
-      print(f"{'写入' if args.apply else '待写入'}：{target}：{'; '.join(changes)}")
-      if args.apply:
-        target.write_text(updated, encoding="utf-8")
+      updates[target] = updated
+      messages[target].extend(changes)
+
+  changed_files = 0
+  for target, updated in updates.items():
+    if updated == originals[target]:
+      continue
+    changed_files += 1
+    print(f"{'写入' if args.apply else '待写入'}：{target}：{'; '.join(messages[target])}")
+    if args.apply:
+      target.write_text(updated, encoding="utf-8")
   print(f"剧本文件 {changed_files} 个。")
 
 

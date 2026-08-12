@@ -142,7 +142,11 @@ const previewSections = computed<PreviewSection[]>(() => {
     roles: thirdPartyRoles,
   };
 
-  return [...roleSections, fabledSection, thirdPartySection, travelerSection]
+  const sections = props.script.name.replace(/[vV]?\d+(?:\.\d+)*$/u, "") === "致命华尔兹"
+    ? [thirdPartySection, ...roleSections, fabledSection, travelerSection]
+    : [...roleSections, fabledSection, thirdPartySection, travelerSection];
+
+  return sections
     .filter((section) => section.roles.length > 0);
 });
 
