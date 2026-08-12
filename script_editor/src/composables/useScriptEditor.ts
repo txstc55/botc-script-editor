@@ -245,7 +245,7 @@ export function useScriptEditor() {
   async function addMatchingDatabaseJinxes(options: { includeNew?: boolean } = {}) {
     rememberCurrentJinxStates();
     const revision = ++jinxMatchRevision;
-    const includeNew = options.includeNew ?? true;
+    const includeNew = options.includeNew ?? false;
     const characters = collectPlayCharacters();
     const names = characters.map((character) => character.name);
     const records = await loadMatchingJinxRecords(names);
