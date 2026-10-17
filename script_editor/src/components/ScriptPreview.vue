@@ -5,12 +5,12 @@ import type { JinxDraft, ScriptDraft, ScriptNoteDraft, TeamKey } from "../types"
 import {
   buildFirstNightOrderItems,
   buildOtherNightOrderItems,
-  formatNightOrder,
   type NightOrderBaseItem,
 } from "../utils/nightOrders";
 import { buildExportJson } from "../utils/exportJson";
 import { previewTeamOrder } from "../utils/playJson";
 import TextFormatToolbar from "./preview/TextFormatToolbar.vue";
+import NightOrderIcon from "./preview/NightOrderIcon.vue";
 import {
   backgroundColorOptions,
   COLUMN_GAP,
@@ -37,9 +37,6 @@ import {
   LEFT_RAIL_X,
   MIN_CHARACTER_HIGHLIGHT_NAME_LENGTH,
   MIN_PREVIEW_HEIGHT,
-  NIGHT_FALLBACK_FONT_SIZE,
-  NIGHT_ICON_CENTER,
-  NIGHT_ICON_FALLBACK_RADIUS,
   NIGHT_ICON_GAP,
   NIGHT_ICON_SIZE,
   NIGHT_ICON_START_Y,
@@ -2178,12 +2175,15 @@ async function inlineExportImages(svg: SVGSVGElement) {
       }
 
       const dataUrl = await fetchExportImageDataUrl(href);
+      const fallback = image.parentElement?.querySelector<SVGGElement>("[data-night-icon-fallback]");
       if (dataUrl) {
         image.setAttribute("href", dataUrl);
         image.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", dataUrl);
+        if (fallback) fallback.style.display = "none";
         return;
       }
 
+      if (fallback) fallback.style.removeProperty("display");
       clearExportImage(image);
     }),
   );
@@ -2447,35 +2447,7 @@ defineExpose({
             :key="item.id"
             :transform="`translate(${NIGHT_ICON_X} ${NIGHT_ICON_START_Y + index * NIGHT_ICON_STEP})`"
           >
-            <title>{{ `${item.name} ${formatNightOrder(item.order)}${item.reminder ? `\n${item.reminder}` : ""}` }}</title>
-            <image
-              v-if="item.image"
-              :href="item.image"
-              :width="NIGHT_ICON_SIZE"
-              :height="NIGHT_ICON_SIZE"
-              preserveAspectRatio="xMidYMid meet"
-            />
-            <template v-else>
-              <circle
-                :cx="NIGHT_ICON_CENTER"
-                :cy="NIGHT_ICON_CENTER"
-                :r="NIGHT_ICON_FALLBACK_RADIUS"
-                fill="#f8fafc"
-                :stroke="item.color"
-                stroke-width="2"
-              />
-              <text
-                class="svg-night-fallback"
-                :x="NIGHT_ICON_CENTER"
-                :y="NIGHT_ICON_CENTER"
-                :font-size="NIGHT_FALLBACK_FONT_SIZE"
-                text-anchor="middle"
-                dominant-baseline="central"
-                :fill="item.color"
-              >
-                {{ item.name.slice(0, 1) }}
-              </text>
-            </template>
+            <NightOrderIcon :item="item" />
           </g>
         </g>
 
@@ -2503,35 +2475,7 @@ defineExpose({
             :key="item.id"
             :transform="`translate(${NIGHT_ICON_X} ${NIGHT_ICON_START_Y + index * NIGHT_ICON_STEP})`"
           >
-            <title>{{ `${item.name} ${formatNightOrder(item.order)}${item.reminder ? `\n${item.reminder}` : ""}` }}</title>
-            <image
-              v-if="item.image"
-              :href="item.image"
-              :width="NIGHT_ICON_SIZE"
-              :height="NIGHT_ICON_SIZE"
-              preserveAspectRatio="xMidYMid meet"
-            />
-            <template v-else>
-              <circle
-                :cx="NIGHT_ICON_CENTER"
-                :cy="NIGHT_ICON_CENTER"
-                :r="NIGHT_ICON_FALLBACK_RADIUS"
-                fill="#f8fafc"
-                :stroke="item.color"
-                stroke-width="2"
-              />
-              <text
-                class="svg-night-fallback"
-                :x="NIGHT_ICON_CENTER"
-                :y="NIGHT_ICON_CENTER"
-                :font-size="NIGHT_FALLBACK_FONT_SIZE"
-                text-anchor="middle"
-                dominant-baseline="central"
-                :fill="item.color"
-              >
-                {{ item.name.slice(0, 1) }}
-              </text>
-            </template>
+            <NightOrderIcon :item="item" />
           </g>
         </g>
 
